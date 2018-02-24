@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+temp
+target/
+work
+logs/*
+.idea
+log/*
+debug
+gc.log
+*.iml

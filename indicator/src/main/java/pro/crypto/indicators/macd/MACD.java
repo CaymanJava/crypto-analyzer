@@ -132,7 +132,9 @@ public class MACD implements Indicator<MACDResult> {
     }
 
     private BigDecimal countDifference(BigDecimal minuend, BigDecimal subtrahend) {
-        return isNull(minuend) || isNull(subtrahend) ? null : MathHelper.scaleAndRoundValue(minuend.subtract(subtrahend));
+        return isNull(minuend) || isNull(subtrahend) || subtrahend.compareTo(BigDecimal.ZERO) == 0
+                ? null
+                : MathHelper.scaleAndRoundValue(minuend.subtract(subtrahend));
     }
 
     private BigDecimal[] countSignalLineValues(BigDecimal[] indicatorValues) {

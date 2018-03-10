@@ -102,6 +102,10 @@ public class MACD implements Indicator<MACDResult> {
     private BigDecimal[] countMACD() {
         MovingAverageResult[] slowMovingAverageResult = MovingAverageFactory.createMovingAverage(buildSlowMovingAverageCreationRequest()).getResult();
         MovingAverageResult[] fastMovingAverageResult = MovingAverageFactory.createMovingAverage(buildFastMovingAverageCreationRequest()).getResult();
+        return countMACD(slowMovingAverageResult, fastMovingAverageResult);
+    }
+
+    private BigDecimal[] countMACD(MovingAverageResult[] slowMovingAverageResult, MovingAverageResult[] fastMovingAverageResult) {
         BigDecimal[] indicatorValues = new BigDecimal[slowMovingAverageResult.length];
         for (int i = 0; i < indicatorValues.length; i++) {
             indicatorValues[i] = countDifference(slowMovingAverageResult[i].getIndicatorValue(), fastMovingAverageResult[i].getIndicatorValue());

@@ -208,7 +208,7 @@ public class MACD implements Indicator<MACDResult> {
 
     private void checkIncomingDataLength() {
         if (originalData.length <= slowPeriod + signalPeriod) {
-            throw new WrongIncomingParametersException(format("Incoming tick data is no enough " +
+            throw new WrongIncomingParametersException(format("Incoming tick data is not enough " +
                             "{indicator: {%s}, tickLength: {%d}, slowPeriod: {%d}, signalPeriod: {%d}}",
                     getType().toString(), originalData.length, slowPeriod, signalPeriod));
         }

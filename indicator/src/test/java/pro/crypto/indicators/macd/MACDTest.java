@@ -18,6 +18,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.MOVING_AVERAGE_CONVERGENCE_DIVERGENCE;
+import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class MACDTest {
@@ -178,6 +179,20 @@ public class MACDTest {
                 .signalPeriod(9)
                 .priceType(CLOSE)
                 .movingAverageType(MOVING_AVERAGE_CONVERGENCE_DIVERGENCE)
+                .build()).getResult();
+    }
+
+    @Test
+    public void notEnoughDataTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Incoming tick data is not enough {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, tickLength: {10}, slowPeriod: {12}, signalPeriod: {9}}");
+        new MACD(MACDCreationRequest.builder()
+                .originalData(new Tick[10])
+                .slowPeriod(12)
+                .fastPeriod(26)
+                .signalPeriod(9)
+                .priceType(CLOSE)
+                .movingAverageType(SIMPLE_MOVING_AVERAGE)
                 .build()).getResult();
     }
 

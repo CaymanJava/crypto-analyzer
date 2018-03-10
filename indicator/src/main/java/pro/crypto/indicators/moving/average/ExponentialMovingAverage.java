@@ -1,11 +1,13 @@
-package pro.crypto.moving.average;
+package pro.crypto.indicators.moving.average;
 
+import pro.crypto.helper.MathHelper;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.PriceType;
 import pro.crypto.model.result.MovingAverageResult;
+import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
@@ -37,12 +39,6 @@ public class ExponentialMovingAverage extends MovingAverage {
         fillAllPositions();
     }
 
-    private BigDecimal countAlphaCoefficient(int antiAliasingInterval) {
-        return scaleAndRoundValue(new BigDecimal(2).divide(
-                new BigDecimal(antiAliasingInterval).add(new BigDecimal(1))
-        ));
-    }
-
     private void fillStartIndicatorValue() {
         countSimpleAverage(0, antiAliasingInterval - 1, antiAliasingInterval, originalData);
     }
@@ -56,17 +52,24 @@ public class ExponentialMovingAverage extends MovingAverage {
     private MovingAverageResult buildMovingAverageResult(int currentIndex) {
         return new MovingAverageResult(
                 originalData[currentIndex].getTickTime(),
-                scaleAndRoundValue(extractPriceByType(originalData[currentIndex])),
-                scaleAndRoundValue(countExponentialAverage(currentIndex)));
+                MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
+                MathHelper.scaleAndRoundValue(countExponentialAverage(currentIndex)));
     }
 
     // EMAt = α * Pt + (1 - α) * EMAt-1
     private BigDecimal countExponentialAverage(int currentIndex) {
-        return alphaCoefficient.multiply(extractPriceByType(originalData[currentIndex]))
+        return alphaCoefficient.multiply(originalData[currentIndex].getPriceByType(priceType))
                 .add(
                         (new BigDecimal(1).subtract(alphaCoefficient))
                                 .multiply(result[currentIndex - 1].getIndicatorValue())
                 );
+    }
+
+    // α = 2 / (N + 1)
+    private BigDecimal countAlphaCoefficient(int antiAliasingInterval) {
+        return MathHelper.scaleAndRoundValue(new BigDecimal(2).divide(
+                new BigDecimal(antiAliasingInterval).add(new BigDecimal(1)), 10, RoundingMode.HALF_UP
+        ));
     }
 
 }

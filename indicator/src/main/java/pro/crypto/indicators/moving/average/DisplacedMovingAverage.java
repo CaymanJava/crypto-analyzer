@@ -1,9 +1,9 @@
-package pro.crypto.moving.average;
+package pro.crypto.indicators.moving.average;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.TimeFrameShifter;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.PriceType;
+import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.Shift;
 import pro.crypto.model.result.MovingAverageResult;
 import pro.crypto.model.tick.Tick;
@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
-import static pro.crypto.model.IndicatorType.DISPLACED_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.*;
 import static pro.crypto.model.ShiftType.LEFT;
 import static pro.crypto.model.ShiftType.RIGHT;
 
@@ -29,7 +29,7 @@ public class DisplacedMovingAverage extends MovingAverage {
                            Tick[] originalData, int period,
                            BigDecimal alphaCoefficient, Shift shift) {
         checkData(originalIndicatorType, priceType, originalData, period, shift);
-        this.originalIndicatorType = originalIndicatorType;
+        this.originalIndicatorType = isNull(originalIndicatorType) ? SIMPLE_MOVING_AVERAGE : originalIndicatorType;
         this.priceType = priceType;
         this.originalData = originalData;
         this.period = period;
@@ -78,9 +78,19 @@ public class DisplacedMovingAverage extends MovingAverage {
     }
 
     private void checkOriginalIndicatorType(IndicatorType originalIndicatorType) {
-        if (isNull(originalIndicatorType)) {
-            throw new WrongIncomingParametersException(format("Incoming original indicator type is null {indicator: {%s}}", getType().toString()));
+        if (!isMovingAverageType(originalIndicatorType)) {
+            throw new WrongIncomingParametersException(format("Incoming original indicator type is not a moving average {indicator: {%s}}, movingAverageType: {%s}",
+                    getType().toString(), originalIndicatorType.toString()));
         }
+    }
+
+    private boolean isMovingAverageType(IndicatorType originalIndicatorType) {
+        return isNull(originalIndicatorType) || // null is ok
+                originalIndicatorType == SIMPLE_MOVING_AVERAGE ||
+                originalIndicatorType == EXPONENTIAL_MOVING_AVERAGE ||
+                originalIndicatorType == WEIGHTED_MOVING_AVERAGE ||
+                originalIndicatorType == SMOOTHED_MOVING_AVERAGE ||
+                originalIndicatorType == HULL_MOVING_AVERAGE;
     }
 
     private void checkShiftData(Shift shift) {

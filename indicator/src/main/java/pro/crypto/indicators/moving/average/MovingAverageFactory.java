@@ -1,4 +1,4 @@
-package pro.crypto.moving.average;
+package pro.crypto.indicators.moving.average;
 
 import pro.crypto.exception.UnknownTypeException;
 import pro.crypto.model.request.MovingAverageCreationRequest;

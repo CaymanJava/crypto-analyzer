@@ -1,7 +1,8 @@
-package pro.crypto.moving.average;
+package pro.crypto.indicators.moving.average;
 
+import pro.crypto.helper.MathHelper;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.PriceType;
+import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.result.MovingAverageResult;
 import pro.crypto.model.tick.Tick;
 
@@ -59,7 +60,7 @@ public class WeightedMovingAverage extends MovingAverage {
         int currentWeight = 1;
         BigDecimal weightedPriceSum = new BigDecimal(0);
         for (int i = currentIndex - period + 1; i <= currentIndex; i++) {
-            weightedPriceSum = weightedPriceSum.add(extractPriceByType(originalData[i]).multiply(new BigDecimal(currentWeight)));
+            weightedPriceSum = weightedPriceSum.add(originalData[i].getPriceByType(priceType).multiply(new BigDecimal(currentWeight)));
             currentWeight++;
         }
         return weightedPriceSum;
@@ -68,8 +69,8 @@ public class WeightedMovingAverage extends MovingAverage {
     private MovingAverageResult buildMovingAverageResult(int currentIndex, BigDecimal indicatorValue) {
         return new MovingAverageResult(
                 originalData[currentIndex].getTickTime(),
-                scaleAndRoundValue(extractPriceByType(originalData[currentIndex])),
-                scaleAndRoundValue(indicatorValue)
+                MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
+                MathHelper.scaleAndRoundValue(indicatorValue)
         );
     }
 

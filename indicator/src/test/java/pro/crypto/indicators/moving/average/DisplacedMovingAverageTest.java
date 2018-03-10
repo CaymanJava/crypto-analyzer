@@ -1,10 +1,11 @@
-package pro.crypto.moving.average;
+package pro.crypto.indicators.moving.average;
 
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
+import pro.crypto.indicators.tick.generator.FifteenMinTickWithClosePriceOnlyGenerator;
 import pro.crypto.model.Shift;
 import pro.crypto.model.result.MovingAverageResult;
 import pro.crypto.model.tick.Tick;
@@ -17,7 +18,7 @@ import static java.util.Objects.isNull;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static pro.crypto.model.IndicatorType.*;
-import static pro.crypto.model.PriceType.CLOSE;
+import static pro.crypto.model.tick.PriceType.CLOSE;
 import static pro.crypto.model.ShiftType.RIGHT;
 import static pro.crypto.model.tick.TimeFrame.FIFTEEN_MIN;
 
@@ -176,13 +177,15 @@ public class DisplacedMovingAverageTest {
     }
 
     @Test
-    public void emptyOriginalIndicatorTypeTest() {
+    public void wrongOriginalIndicatorTypeTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming original indicator type is null {indicator: {DISPLACED_MOVING_AVERAGE}}");
+        expectedException.expectMessage("Incoming original indicator type is not a moving average {indicator: {DISPLACED_MOVING_AVERAGE}}," +
+                " movingAverageType: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}");
         MovingAverageFactory.createMovingAverage(MovingAverageCreationRequest.builder()
                 .originalData(new Tick[30])
                 .period(5)
                 .indicatorType(DISPLACED_MOVING_AVERAGE)
+                .originalIndicatorType(MOVING_AVERAGE_CONVERGENCE_DIVERGENCE)
                 .priceType(CLOSE)
                 .shift(new Shift(RIGHT, 3, FIFTEEN_MIN))
                 .build()).getResult();

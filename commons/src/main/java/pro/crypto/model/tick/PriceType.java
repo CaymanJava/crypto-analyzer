@@ -1,4 +1,4 @@
-package pro.crypto.model;
+package pro.crypto.model.tick;
 
 public enum PriceType {
 

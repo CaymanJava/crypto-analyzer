@@ -8,7 +8,6 @@ public class EntryPointBootstrap {
 
     public static void main(String[] args) {
         SpringApplication.run(EntryPointBootstrap.class, args);
-
     }
 
 }

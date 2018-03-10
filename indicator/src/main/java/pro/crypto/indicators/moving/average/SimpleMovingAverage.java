@@ -1,7 +1,7 @@
-package pro.crypto.moving.average;
+package pro.crypto.indicators.moving.average;
 
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.PriceType;
+import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 public class SimpleMovingAverage extends MovingAverage {

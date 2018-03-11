@@ -1,4 +1,4 @@
-package pro.crypto.indicators.moving.average;
+package pro.crypto.indicators.ma;
 
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;

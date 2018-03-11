@@ -1,13 +1,12 @@
-package pro.crypto.indicators.moving.average;
+package pro.crypto.indicators.ma;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.result.MovingAverageResult;
+import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
@@ -49,8 +48,8 @@ public class ExponentialMovingAverage extends MovingAverage {
         }
     }
 
-    private MovingAverageResult buildMovingAverageResult(int currentIndex) {
-        return new MovingAverageResult(
+    private MAResult buildMovingAverageResult(int currentIndex) {
+        return new MAResult(
                 originalData[currentIndex].getTickTime(),
                 MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
                 MathHelper.scaleAndRoundValue(countExponentialAverage(currentIndex)));
@@ -67,9 +66,7 @@ public class ExponentialMovingAverage extends MovingAverage {
 
     // α = 2 / (N + 1)
     private BigDecimal countAlphaCoefficient(int antiAliasingInterval) {
-        return MathHelper.scaleAndRoundValue(new BigDecimal(2).divide(
-                new BigDecimal(antiAliasingInterval).add(new BigDecimal(1)), 10, RoundingMode.HALF_UP
-        ));
+        return MathHelper.divide(new BigDecimal(2), new BigDecimal(antiAliasingInterval).add(new BigDecimal(1)));
     }
 
 }

@@ -8,11 +8,9 @@ import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
-public class MovingAverageResult {
+public class CCIResult {
 
     private LocalDateTime time;
-
-    private BigDecimal originalValue;
 
     private BigDecimal indicatorValue;
 

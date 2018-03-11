@@ -10,4 +10,8 @@ public class MathHelper {
         return isNull(value) ? null : value.setScale(10, BigDecimal.ROUND_HALF_UP);
     }
 
+    public static BigDecimal divide(BigDecimal divisible, BigDecimal divisor) {
+        return divisible.divide(divisor, 10, BigDecimal.ROUND_HALF_UP);
+    }
+
 }

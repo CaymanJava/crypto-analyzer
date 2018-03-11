@@ -1,9 +1,9 @@
-package pro.crypto.indicators.moving.average;
+package pro.crypto.indicators.ma;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
-import pro.crypto.model.result.MovingAverageResult;
+import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -46,8 +46,8 @@ public class HullMovingAverage extends MovingAverage {
         return simpleAverageFromDividedTwoPeriod.subtract(simpleAverageFromPeriod).add(simpleAverageFromDividedTwoPeriod);
     }
 
-    private MovingAverageResult buildMovingAverageResult(int currentIndex, BigDecimal indicatorValue) {
-        return new MovingAverageResult(
+    private MAResult buildMovingAverageResult(int currentIndex, BigDecimal indicatorValue) {
+        return new MAResult(
                 originalData[currentIndex].getTickTime(),
                 MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
                 MathHelper.scaleAndRoundValue(indicatorValue)

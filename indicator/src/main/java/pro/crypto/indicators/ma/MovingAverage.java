@@ -1,22 +1,22 @@
-package pro.crypto.indicators.moving.average;
+package pro.crypto.indicators.ma;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.tick.PriceType;
-import pro.crypto.model.result.MovingAverageResult;
+import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 
 import static java.util.Objects.isNull;
 
-public abstract class MovingAverage implements Indicator<MovingAverageResult> {
+public abstract class MovingAverage implements Indicator<MAResult> {
 
-    protected MovingAverageResult[] result;
+    protected MAResult[] result;
     protected PriceType priceType;
 
     @Override
-    public MovingAverageResult[] getResult() {
+    public MAResult[] getResult() {
         if (isNull(result)) {
             calculate();
         }
@@ -36,7 +36,7 @@ public abstract class MovingAverage implements Indicator<MovingAverageResult> {
 
     void fillStartPositions(Tick[] originalData, int period) {
         for (int currentIndex = 0; currentIndex < period - 1; currentIndex++) {
-            result[currentIndex] = new MovingAverageResult(
+            result[currentIndex] = new MAResult(
                     originalData[currentIndex].getTickTime(),
                     MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
                     null);
@@ -44,7 +44,7 @@ public abstract class MovingAverage implements Indicator<MovingAverageResult> {
     }
 
     void initResultArray(int length) {
-        result = new MovingAverageResult[length];
+        result = new MAResult[length];
     }
 
     BigDecimal countAndGetSimpleAverage(int fromIndex, int toIndex, Tick[] originalData, int period) {
@@ -52,11 +52,11 @@ public abstract class MovingAverage implements Indicator<MovingAverageResult> {
         for (int currentIndex = fromIndex; currentIndex <= toIndex; currentIndex++) {
             periodSum = periodSum.add(originalData[currentIndex].getPriceByType(priceType));
         }
-        return MathHelper.scaleAndRoundValue(periodSum.divide(new BigDecimal(period), BigDecimal.ROUND_HALF_UP));
+        return MathHelper.divide(periodSum, new BigDecimal(period));
     }
 
-    private MovingAverageResult buildMovingAverageResult(int currentIndex, Tick[] originalData, BigDecimal simpleAverage) {
-        return new MovingAverageResult(
+    private MAResult buildMovingAverageResult(int currentIndex, Tick[] originalData, BigDecimal simpleAverage) {
+        return new MAResult(
                 originalData[currentIndex].getTickTime(),
                 MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
                 simpleAverage);

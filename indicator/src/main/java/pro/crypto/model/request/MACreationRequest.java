@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class MovingAverageCreationRequest {
+public class MACreationRequest {
 
     @NotNull
     private IndicatorType indicatorType;

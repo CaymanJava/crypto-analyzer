@@ -2,22 +2,19 @@ package pro.crypto.indicators.macd;
 
 import pro.crypto.exception.UnexpectedValueException;
 import pro.crypto.exception.WrongIncomingParametersException;
+import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.MathHelper;
-import pro.crypto.indicators.moving.average.MovingAverageFactory;
+import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.MACDCreationRequest;
-import pro.crypto.model.request.MovingAverageCreationRequest;
+import pro.crypto.model.request.MACreationRequest;
 import pro.crypto.model.result.MACDResult;
-import pro.crypto.model.result.MovingAverageResult;
+import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.stream.Stream;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
@@ -25,9 +22,7 @@ import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-//Moving Average Convergence Divergence
-
-public class MACD implements Indicator<MACDResult> {
+public class MovingAverageConvergenceDivergence implements Indicator<MACDResult> {
 
     private final Tick[] originalData;
     private final IndicatorType movingAverageType;
@@ -38,7 +33,7 @@ public class MACD implements Indicator<MACDResult> {
 
     private MACDResult[] result;
 
-    public MACD(MACDCreationRequest request) {
+    public MovingAverageConvergenceDivergence(MACDCreationRequest request) {
         this.originalData = request.getOriginalData();
         this.movingAverageType = request.getMovingAverageType();
         this.priceType = request.getPriceType();
@@ -100,12 +95,12 @@ public class MACD implements Indicator<MACDResult> {
     }
 
     private BigDecimal[] countMACD() {
-        MovingAverageResult[] slowMovingAverageResult = MovingAverageFactory.createMovingAverage(buildSlowMovingAverageCreationRequest()).getResult();
-        MovingAverageResult[] fastMovingAverageResult = MovingAverageFactory.createMovingAverage(buildFastMovingAverageCreationRequest()).getResult();
+        MAResult[] slowMovingAverageResult = MovingAverageFactory.createMovingAverage(buildSlowMovingAverageCreationRequest()).getResult();
+        MAResult[] fastMovingAverageResult = MovingAverageFactory.createMovingAverage(buildFastMovingAverageCreationRequest()).getResult();
         return countMACD(slowMovingAverageResult, fastMovingAverageResult);
     }
 
-    private BigDecimal[] countMACD(MovingAverageResult[] slowMovingAverageResult, MovingAverageResult[] fastMovingAverageResult) {
+    private BigDecimal[] countMACD(MAResult[] slowMovingAverageResult, MAResult[] fastMovingAverageResult) {
         BigDecimal[] indicatorValues = new BigDecimal[slowMovingAverageResult.length];
         for (int i = 0; i < indicatorValues.length; i++) {
             indicatorValues[i] = countDifference(slowMovingAverageResult[i].getIndicatorValue(), fastMovingAverageResult[i].getIndicatorValue());
@@ -113,8 +108,8 @@ public class MACD implements Indicator<MACDResult> {
         return indicatorValues;
     }
 
-    private MovingAverageCreationRequest buildSlowMovingAverageCreationRequest() {
-        return MovingAverageCreationRequest.builder()
+    private MACreationRequest buildSlowMovingAverageCreationRequest() {
+        return MACreationRequest.builder()
                 .originalData(originalData)
                 .indicatorType(movingAverageType)
                 .period(slowPeriod)
@@ -122,8 +117,8 @@ public class MACD implements Indicator<MACDResult> {
                 .build();
     }
 
-    private MovingAverageCreationRequest buildFastMovingAverageCreationRequest() {
-        return MovingAverageCreationRequest.builder()
+    private MACreationRequest buildFastMovingAverageCreationRequest() {
+        return MACreationRequest.builder()
                 .originalData(originalData)
                 .indicatorType(movingAverageType)
                 .period(fastPeriod)
@@ -138,13 +133,13 @@ public class MACD implements Indicator<MACDResult> {
     }
 
     private BigDecimal[] countSignalLineValues(BigDecimal[] indicatorValues) {
-        Tick[] fakeTicks = createFakeTicksForMovingAverage(indicatorValues);
-        MovingAverageResult[] emaIndicatorValue = MovingAverageFactory.createMovingAverage(buildSignalLineMovingAverageRequest(fakeTicks))
+        Tick[] fakeTicks = FakeTicksCreator.createFakeTicksWithCloseOnly(indicatorValues);
+        MAResult[] emaIndicatorValue = MovingAverageFactory.createMovingAverage(buildSignalLineMovingAverageRequest(fakeTicks))
                 .getResult();
         return copyEmaIndicatorValueToResultArray(indicatorValues, emaIndicatorValue);
     }
 
-    private BigDecimal[] copyEmaIndicatorValueToResultArray(BigDecimal[] indicatorValues, MovingAverageResult[] emaIndicatorValue) {
+    private BigDecimal[] copyEmaIndicatorValueToResultArray(BigDecimal[] indicatorValues, MAResult[] emaIndicatorValue) {
         int startPosition = findSignalLineStartPosition(indicatorValues);
         BigDecimal[] signalLineResult = new BigDecimal[indicatorValues.length];
         for (int i = 0; i < emaIndicatorValue.length; i++) {
@@ -162,34 +157,13 @@ public class MACD implements Indicator<MACDResult> {
         throw new UnexpectedValueException(format("Can't find any non null value in array of indicator value's {indicator: {%s}}", getType().toString()));
     }
 
-    private Tick[] createFakeTicksForMovingAverage(BigDecimal[] indicatorValues) {
-        List<Tick> fakeTicks = new ArrayList<>();
-        Stream.of(indicatorValues)
-                .filter(Objects::nonNull)
-                .forEach(indicatorValue -> {
-                    fakeTicks.add(Tick.builder()
-                            .close(indicatorValue)
-                            .build());
-                });
-        return fakeTicks.toArray(new Tick[fakeTicks.size()]);
-    }
-
-    private MovingAverageCreationRequest buildSignalLineMovingAverageRequest(Tick[] fakeTicks) {
-        return MovingAverageCreationRequest.builder()
+    private MACreationRequest buildSignalLineMovingAverageRequest(Tick[] fakeTicks) {
+        return MACreationRequest.builder()
                 .originalData(fakeTicks)
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .period(signalPeriod)
                 .priceType(CLOSE)
                 .build();
-    }
-
-    private MACDResult buildMACDResult(BigDecimal indicatorValue, BigDecimal signalLineValue, BigDecimal barChartValue, int currentIndex) {
-        return new MACDResult(
-                originalData[currentIndex].getTickTime(),
-                originalData[currentIndex].getPriceByType(priceType),
-                indicatorValue,
-                signalLineValue,
-                barChartValue);
     }
 
     private BigDecimal[] countBarChartValue(BigDecimal[] indicatorValues, BigDecimal[] signalLineValues) {
@@ -204,6 +178,15 @@ public class MACD implements Indicator<MACDResult> {
         for (int i = 0; i < result.length; i++) {
             result[i] = buildMACDResult(indicatorValues[i], signalLineValues[i], barChartValues[i], i);
         }
+    }
+
+    private MACDResult buildMACDResult(BigDecimal indicatorValue, BigDecimal signalLineValue, BigDecimal barChartValue, int currentIndex) {
+        return new MACDResult(
+                originalData[currentIndex].getTickTime(),
+                originalData[currentIndex].getPriceByType(priceType),
+                indicatorValue,
+                signalLineValue,
+                barChartValue);
     }
 
     private void checkIncomingDataLength() {

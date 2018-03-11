@@ -1,9 +1,9 @@
-package pro.crypto.indicators.moving.average;
+package pro.crypto.indicators.ma;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
-import pro.crypto.model.result.MovingAverageResult;
+import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -41,17 +41,17 @@ public class SmoothedMovingAverage extends MovingAverage {
         }
     }
 
-    private MovingAverageResult buildMovingAverageResult(int currentIndex) {
-        return new MovingAverageResult(
+    private MAResult buildMovingAverageResult(int currentIndex) {
+        return new MAResult(
                 originalData[currentIndex].getTickTime(),
                 MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
                 MathHelper.scaleAndRoundValue(countSmoothedAverage(currentIndex)));
     }
 
     private BigDecimal countSmoothedAverage(int currentIndex) {
-        return ((result[currentIndex - 1].getIndicatorValue().multiply(new BigDecimal(period - 1)))
-                .add(originalData[currentIndex].getPriceByType(priceType)))
-                .divide(new BigDecimal(period), BigDecimal.ROUND_HALF_UP);
+        return MathHelper.divide((result[currentIndex - 1].getIndicatorValue().multiply(new BigDecimal(period - 1)))
+                .add(originalData[currentIndex].getPriceByType(priceType)),
+                new BigDecimal(period));
     }
 
     private void fillStartIndicatorValue() {

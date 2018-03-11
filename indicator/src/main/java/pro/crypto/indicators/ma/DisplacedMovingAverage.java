@@ -1,13 +1,13 @@
-package pro.crypto.indicators.moving.average;
+package pro.crypto.indicators.ma;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.TimeFrameShifter;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.Shift;
-import pro.crypto.model.result.MovingAverageResult;
+import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
-import pro.crypto.model.request.MovingAverageCreationRequest;
+import pro.crypto.model.request.MACreationRequest;
 
 import java.math.BigDecimal;
 
@@ -45,7 +45,7 @@ public class DisplacedMovingAverage extends MovingAverage {
     @Override
     public void calculate() {
         initResultArray(originalData.length + shift.getValue());
-        MovingAverageResult[] originalResult = MovingAverageFactory.createMovingAverage(MovingAverageCreationRequest.builder()
+        MAResult[] originalResult = MovingAverageFactory.createMovingAverage(MACreationRequest.builder()
                 .indicatorType(originalIndicatorType)
                 .originalData(originalData)
                 .priceType(priceType)
@@ -62,13 +62,13 @@ public class DisplacedMovingAverage extends MovingAverage {
         checkIncomingData(originalData, period, priceType);
     }
 
-    private void fillRightShift(MovingAverageResult[] originalResult) {
+    private void fillRightShift(MAResult[] originalResult) {
         for (int i = 0; i < originalResult.length; i++) {
-            result[i] = new MovingAverageResult(originalResult[i].getTime(),originalResult[i].getOriginalValue(), null);
+            result[i] = new MAResult(originalResult[i].getTime(),originalResult[i].getOriginalValue(), null);
         }
 
         for (int i = result.length - 1; i >= originalResult.length; i--) {
-            result[i] = new MovingAverageResult(
+            result[i] = new MAResult(
                     new TimeFrameShifter(originalResult[i - shift.getValue()].getTime(), shift).shiftTime(), null, null);
         }
 
@@ -116,7 +116,7 @@ public class DisplacedMovingAverage extends MovingAverage {
         }
     }
 
-    private void shiftResult(MovingAverageResult[] intermediateResult) {
+    private void shiftResult(MAResult[] intermediateResult) {
         if (shift.getType() == RIGHT) {
             fillRightShift(intermediateResult);
         }

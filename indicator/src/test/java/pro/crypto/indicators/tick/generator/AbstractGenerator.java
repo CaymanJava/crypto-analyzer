@@ -26,6 +26,16 @@ public abstract class AbstractGenerator {
                 .build();
     }
 
+    Tick generateFullTick(double open, double high, double low, double close) {
+        return Tick.builder()
+                .open(generateBigDecimalWithScale(open))
+                .high(generateBigDecimalWithScale(high))
+                .low(generateBigDecimalWithScale(low))
+                .close(generateBigDecimalWithScale(close))
+                .tickTime(this.startDateTime)
+                .build();
+    }
+
     private BigDecimal generateBigDecimalWithScale(double value) {
         return new BigDecimal(value).setScale(10, BigDecimal.ROUND_HALF_UP);
     }

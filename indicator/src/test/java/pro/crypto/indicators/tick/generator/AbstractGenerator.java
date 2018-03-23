@@ -26,12 +26,13 @@ public abstract class AbstractGenerator {
                 .build();
     }
 
-    Tick generateFullTick(double open, double high, double low, double close) {
+    Tick generateFullTick(double open, double high, double low, double close, double volume) {
         return Tick.builder()
                 .open(generateBigDecimalWithScale(open))
                 .high(generateBigDecimalWithScale(high))
                 .low(generateBigDecimalWithScale(low))
                 .close(generateBigDecimalWithScale(close))
+                .baseVolume(generateBigDecimalWithScale(volume))
                 .tickTime(this.startDateTime)
                 .build();
     }

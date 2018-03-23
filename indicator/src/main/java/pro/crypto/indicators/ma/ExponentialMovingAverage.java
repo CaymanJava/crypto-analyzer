@@ -33,16 +33,16 @@ public class ExponentialMovingAverage extends MovingAverage {
     @Override
     public void calculate() {
         initResultArray(originalData.length);
-        fillStartPositions(originalData, antiAliasingInterval);
-        fillStartIndicatorValue();
-        fillAllPositions();
+        fillInInitialPositions(originalData, antiAliasingInterval);
+        fillInInitialIndicatorValue();
+        fillInRemainPositions();
     }
 
-    private void fillStartIndicatorValue() {
+    private void fillInInitialIndicatorValue() {
         countSimpleAverage(0, antiAliasingInterval - 1, antiAliasingInterval, originalData);
     }
 
-    private void fillAllPositions() {
+    private void fillInRemainPositions() {
         for (int i = antiAliasingInterval; i < result.length; i++) {
             result[i] = buildMovingAverageResult(i);
         }

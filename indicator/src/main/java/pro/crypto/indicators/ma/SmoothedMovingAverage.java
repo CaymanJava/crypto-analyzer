@@ -30,12 +30,12 @@ public class SmoothedMovingAverage extends MovingAverage {
     @Override
     public void calculate() {
         initResultArray(originalData.length);
-        fillStartPositions(originalData, period);
-        fillStartIndicatorValue();
-        fillAllPositions();
+        fillInInitialPositions(originalData, period);
+        fillInStartIndicatorValue();
+        fillInRemainPositions();
     }
 
-    private void fillAllPositions() {
+    private void fillInRemainPositions() {
         for (int currentIndex = period; currentIndex < originalData.length; currentIndex++) {
             result[currentIndex] = buildMovingAverageResult(currentIndex);
         }
@@ -54,7 +54,7 @@ public class SmoothedMovingAverage extends MovingAverage {
                 new BigDecimal(period));
     }
 
-    private void fillStartIndicatorValue() {
+    private void fillInStartIndicatorValue() {
         countSimpleAverage(0, period - 1, period, originalData);
     }
 

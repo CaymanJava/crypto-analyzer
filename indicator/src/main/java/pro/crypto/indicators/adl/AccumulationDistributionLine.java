@@ -66,13 +66,17 @@ public class AccumulationDistributionLine implements Indicator<ADLResult> {
     }
 
     private void countAccumulationDistributionLine(BigDecimal[] moneyFlowVolumes) {
-        fillStartIndicatorPosition(moneyFlowVolumes);
+        fillInStartIndicatorPosition(moneyFlowVolumes);
+        fillInRemainPositions(moneyFlowVolumes);
+    }
+
+    private void fillInRemainPositions(BigDecimal[] moneyFlowVolumes) {
         for (int i = 1; i < originalData.length; i++) {
             result[i] = countAccumulationDistributionValue(moneyFlowVolumes, i);
         }
     }
 
-    private void fillStartIndicatorPosition(BigDecimal[] moneyFlowVolumes) {
+    private void fillInStartIndicatorPosition(BigDecimal[] moneyFlowVolumes) {
         result[0] = new ADLResult(originalData[0].getTickTime(), scaleAndRoundValue(moneyFlowVolumes[0]));
     }
 

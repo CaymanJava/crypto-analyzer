@@ -34,7 +34,7 @@ public abstract class MovingAverage implements Indicator<MAResult> {
         result[currentIndex] = buildMovingAverageResult(currentIndex, originalData, simpleAverage);
     }
 
-    void fillStartPositions(Tick[] originalData, int period) {
+    void fillInInitialPositions(Tick[] originalData, int period) {
         for (int currentIndex = 0; currentIndex < period - 1; currentIndex++) {
             result[currentIndex] = new MAResult(
                     originalData[currentIndex].getTickTime(),

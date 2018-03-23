@@ -62,7 +62,7 @@ public class DisplacedMovingAverage extends MovingAverage {
         checkIncomingData(originalData, period, priceType);
     }
 
-    private void fillRightShift(MAResult[] originalResult) {
+    private void fillInRightShift(MAResult[] originalResult) {
         for (int i = 0; i < originalResult.length; i++) {
             result[i] = new MAResult(originalResult[i].getTime(),originalResult[i].getOriginalValue(), null);
         }
@@ -118,7 +118,7 @@ public class DisplacedMovingAverage extends MovingAverage {
 
     private void shiftResult(MAResult[] intermediateResult) {
         if (shift.getType() == RIGHT) {
-            fillRightShift(intermediateResult);
+            fillInRightShift(intermediateResult);
         }
     }
 

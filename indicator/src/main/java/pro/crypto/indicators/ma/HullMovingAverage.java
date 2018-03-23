@@ -30,11 +30,11 @@ public class HullMovingAverage extends MovingAverage {
     @Override
     public void calculate() {
         initResultArray(this.originalData.length);
-        fillStartPositions(originalData, period);
-        fillAllPositions();
+        fillInInitialPositions(originalData, period);
+        fillInRemainPositions();
     }
 
-    private void fillAllPositions() {
+    private void fillInRemainPositions() {
         for (int currentIndex = period - 1; currentIndex < originalData.length; currentIndex++) {
             result[currentIndex] = buildMovingAverageResult(currentIndex, countIndicatorValue(currentIndex));
         }

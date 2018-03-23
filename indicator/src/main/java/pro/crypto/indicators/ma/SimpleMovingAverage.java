@@ -24,11 +24,11 @@ public class SimpleMovingAverage extends MovingAverage {
     @Override
     public void calculate() {
         initResultArray(this.originalData.length);
-        fillStartPositions(originalData, period);
-        fillAllPositions();
+        fillInInitialPositions(originalData, period);
+        fillInRemainPositions();
     }
 
-    private void fillAllPositions() {
+    private void fillInRemainPositions() {
         int from = 0;
         for (int i = period - 1; i < originalData.length; i++) {
             countSimpleAverage(from, i, period, originalData);

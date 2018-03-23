@@ -30,11 +30,11 @@ public class WeightedMovingAverage extends MovingAverage {
     @Override
     public void calculate() {
         initResultArray(originalData.length);
-        fillStartPositions(originalData, period);
-        fillAllPositions();
+        fillInInitialPositions(originalData, period);
+        fillInRemainPositions();
     }
 
-    private void fillAllPositions() {
+    private void fillInRemainPositions() {
         int weightedCoefficientSum = countWeightedCoefficientSum();
 
         for (int currentIndex = period - 1; currentIndex < originalData.length; currentIndex++) {

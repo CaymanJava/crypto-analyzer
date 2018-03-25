@@ -11,7 +11,9 @@ public class MathHelper {
     }
 
     public static BigDecimal divide(BigDecimal divisible, BigDecimal divisor) {
-        return divisible.divide(divisor, 10, BigDecimal.ROUND_HALF_UP);
+        return isNull(divisible) || isNull(divisor) || divisor.compareTo(BigDecimal.ZERO) == 0
+                ? null
+                : divisible.divide(divisor, 10, BigDecimal.ROUND_HALF_UP);
     }
 
 }

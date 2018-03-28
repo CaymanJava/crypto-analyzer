@@ -38,7 +38,7 @@ public abstract class MovingAverage implements Indicator<MAResult> {
         for (int currentIndex = 0; currentIndex < period - 1; currentIndex++) {
             result[currentIndex] = new MAResult(
                     originalData[currentIndex].getTickTime(),
-                    MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
+                    MathHelper.scaleAndRound(originalData[currentIndex].getPriceByType(priceType)),
                     null);
         }
     }
@@ -58,7 +58,7 @@ public abstract class MovingAverage implements Indicator<MAResult> {
     private MAResult buildMovingAverageResult(int currentIndex, Tick[] originalData, BigDecimal simpleAverage) {
         return new MAResult(
                 originalData[currentIndex].getTickTime(),
-                MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
+                MathHelper.scaleAndRound(originalData[currentIndex].getPriceByType(priceType)),
                 simpleAverage);
     }
 

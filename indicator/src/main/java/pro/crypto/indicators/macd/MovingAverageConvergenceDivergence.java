@@ -129,7 +129,7 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
     private BigDecimal countDifference(BigDecimal minuend, BigDecimal subtrahend) {
         return isNull(minuend) || isNull(subtrahend)
                 ? null
-                : MathHelper.scaleAndRoundValue(minuend.subtract(subtrahend));
+                : MathHelper.scaleAndRound(minuend.subtract(subtrahend));
     }
 
     private BigDecimal[] countSignalLineValues(BigDecimal[] indicatorValues) {

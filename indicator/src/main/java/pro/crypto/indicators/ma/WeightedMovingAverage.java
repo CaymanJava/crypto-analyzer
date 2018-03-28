@@ -69,8 +69,8 @@ public class WeightedMovingAverage extends MovingAverage {
     private MAResult buildMovingAverageResult(int currentIndex, BigDecimal indicatorValue) {
         return new MAResult(
                 originalData[currentIndex].getTickTime(),
-                MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
-                MathHelper.scaleAndRoundValue(indicatorValue)
+                MathHelper.scaleAndRound(originalData[currentIndex].getPriceByType(priceType)),
+                MathHelper.scaleAndRound(indicatorValue)
         );
     }
 

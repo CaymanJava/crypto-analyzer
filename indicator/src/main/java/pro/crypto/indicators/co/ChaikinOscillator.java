@@ -19,7 +19,7 @@ import java.util.stream.Stream;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
-import static pro.crypto.helper.MathHelper.scaleAndRoundValue;
+import static pro.crypto.helper.MathHelper.scaleAndRound;
 import static pro.crypto.model.IndicatorType.CHAIKIN_OSCILLATOR;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
@@ -125,7 +125,7 @@ public class ChaikinOscillator implements Indicator<COResult> {
     private BigDecimal countDifference(BigDecimal slowEmaValue, BigDecimal fastEmaValue) {
         return isNull(slowEmaValue) || isNull(fastEmaValue)
                 ? null
-                : scaleAndRoundValue(slowEmaValue.subtract(fastEmaValue));
+                : scaleAndRound(slowEmaValue.subtract(fastEmaValue));
     }
 
 }

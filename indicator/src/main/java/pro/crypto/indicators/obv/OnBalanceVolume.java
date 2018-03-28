@@ -1,5 +1,6 @@
 package pro.crypto.indicators.obv;
 
+import pro.crypto.helper.MathHelper;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.OBVCreationRequest;
@@ -9,7 +10,6 @@ import pro.crypto.model.tick.Tick;
 import java.math.BigDecimal;
 
 import static java.util.Objects.isNull;
-import static pro.crypto.helper.MathHelper.scaleAndRoundValue;
 import static pro.crypto.model.IndicatorType.ON_BALANCE_VOLUME;
 
 public class OnBalanceVolume implements Indicator<OBVResult> {
@@ -49,7 +49,7 @@ public class OnBalanceVolume implements Indicator<OBVResult> {
     }
 
     private void fillInFirstIndicatorPosition() {
-        result[0] = new OBVResult(originalData[0].getTickTime(), scaleAndRoundValue(originalData[0].getBaseVolume()));
+        result[0] = new OBVResult(originalData[0].getTickTime(), MathHelper.scaleAndRound(originalData[0].getBaseVolume()));
     }
 
     private void fillInRemainPositions() {
@@ -71,21 +71,21 @@ public class OnBalanceVolume implements Indicator<OBVResult> {
     private OBVResult buildSamePriceResult(int currentIndex) {
         return new OBVResult(
                 originalData[currentIndex].getTickTime(),
-                scaleAndRoundValue(result[currentIndex - 1].getIndicatorValue().subtract(new BigDecimal(1)))
+                MathHelper.scaleAndRound(result[currentIndex - 1].getIndicatorValue().subtract(new BigDecimal(1)))
         );
     }
 
     private OBVResult buildFallingPriceResult(int currentIndex) {
         return new OBVResult(
                 originalData[currentIndex].getTickTime(),
-                scaleAndRoundValue(result[currentIndex - 1].getIndicatorValue().subtract(originalData[currentIndex].getBaseVolume()))
+                MathHelper.scaleAndRound(result[currentIndex - 1].getIndicatorValue().subtract(originalData[currentIndex].getBaseVolume()))
         );
     }
 
     private OBVResult buildRisingPriceResult(int currentIndex) {
         return new OBVResult(
                 originalData[currentIndex].getTickTime(),
-                scaleAndRoundValue(result[currentIndex - 1].getIndicatorValue().add(originalData[currentIndex].getBaseVolume()))
+                MathHelper.scaleAndRound(result[currentIndex - 1].getIndicatorValue().add(originalData[currentIndex].getBaseVolume()))
         );
     }
 

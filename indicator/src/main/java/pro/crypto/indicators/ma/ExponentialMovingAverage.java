@@ -51,8 +51,8 @@ public class ExponentialMovingAverage extends MovingAverage {
     private MAResult buildMovingAverageResult(int currentIndex) {
         return new MAResult(
                 originalData[currentIndex].getTickTime(),
-                MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
-                MathHelper.scaleAndRoundValue(countExponentialAverage(currentIndex)));
+                MathHelper.scaleAndRound(originalData[currentIndex].getPriceByType(priceType)),
+                MathHelper.scaleAndRound(countExponentialAverage(currentIndex)));
     }
 
     // EMAt = α * Pt + (1 - α) * EMAt-1

@@ -44,8 +44,8 @@ public class SmoothedMovingAverage extends MovingAverage {
     private MAResult buildMovingAverageResult(int currentIndex) {
         return new MAResult(
                 originalData[currentIndex].getTickTime(),
-                MathHelper.scaleAndRoundValue(originalData[currentIndex].getPriceByType(priceType)),
-                MathHelper.scaleAndRoundValue(countSmoothedAverage(currentIndex)));
+                MathHelper.scaleAndRound(originalData[currentIndex].getPriceByType(priceType)),
+                MathHelper.scaleAndRound(countSmoothedAverage(currentIndex)));
     }
 
     private BigDecimal countSmoothedAverage(int currentIndex) {

@@ -16,9 +16,7 @@ import static java.time.LocalDateTime.of;
 import static java.util.Objects.isNull;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
-import static pro.crypto.model.IndicatorType.MOVING_AVERAGE_CONVERGENCE_DIVERGENCE;
-import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class MovingAverageConvergenceDivergenceTest {
@@ -156,22 +154,9 @@ public class MovingAverageConvergenceDivergenceTest {
     }
 
     @Test
-    public void emptyIndicatorTypeTest() {
-        expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming original indicator type is not supported {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, movingAverageType: {null}");
-        new MovingAverageConvergenceDivergence(MACDCreationRequest.builder()
-                .originalData(new Tick[100])
-                .slowPeriod(12)
-                .fastPeriod(26)
-                .signalPeriod(9)
-                .priceType(CLOSE)
-                .build()).getResult();
-    }
-
-    @Test
     public void unsupportedIndicatorTypeTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming original indicator type is not supported {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, movingAverageType: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}");
+        expectedException.expectMessage("Incoming original indicator type is not a moving average {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}}, movingAverageType: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}");
         new MovingAverageConvergenceDivergence(MACDCreationRequest.builder()
                 .originalData(new Tick[100])
                 .slowPeriod(12)

@@ -3,6 +3,7 @@ package pro.crypto.indicators.macd;
 import pro.crypto.exception.UnexpectedValueException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.FakeTicksCreator;
+import pro.crypto.helper.IndicatorTypeChecker;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
@@ -35,7 +36,7 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
 
     public MovingAverageConvergenceDivergence(MACDCreationRequest request) {
         this.originalData = request.getOriginalData();
-        this.movingAverageType = request.getMovingAverageType();
+        this.movingAverageType = isNull(request.getMovingAverageType()) ? EXPONENTIAL_MOVING_AVERAGE : request.getMovingAverageType();
         this.priceType = request.getPriceType();
         this.slowPeriod = request.getSlowPeriod();
         this.fastPeriod = request.getFastPeriod();
@@ -80,18 +81,10 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
     }
 
     private void checkMovingAverageType() {
-        if (!isMovingAverageType()) {
-            throw new WrongIncomingParametersException(format("Incoming original indicator type is not supported {indicator: {%s}, movingAverageType: {%s}}",
-                    getType().toString(), movingAverageType));
+        if (nonNull(movingAverageType) && !IndicatorTypeChecker.isMovingAverageType(movingAverageType)) {
+            throw new WrongIncomingParametersException(format("Incoming original indicator type is not a moving average {indicator: {%s}}, movingAverageType: {%s}",
+                    getType().toString(), movingAverageType.toString()));
         }
-    }
-
-    private boolean isMovingAverageType() {
-        return movingAverageType == SIMPLE_MOVING_AVERAGE ||
-                movingAverageType == EXPONENTIAL_MOVING_AVERAGE ||
-                movingAverageType == WEIGHTED_MOVING_AVERAGE ||
-                movingAverageType == SMOOTHED_MOVING_AVERAGE ||
-                movingAverageType == HULL_MOVING_AVERAGE;
     }
 
     private BigDecimal[] countMACD() {

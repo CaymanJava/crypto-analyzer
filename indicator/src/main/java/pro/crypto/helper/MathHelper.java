@@ -26,4 +26,9 @@ public class MathHelper {
         return firstValue.compareTo(secondValue) < 0 ? firstValue : secondValue;
     }
 
+    public static BigDecimal sqrt(BigDecimal value) {
+        if (isNull(value)) return null;
+        return BigDecimal.valueOf(StrictMath.sqrt(value.doubleValue()));
+    }
+
 }

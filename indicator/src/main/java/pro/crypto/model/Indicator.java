@@ -7,7 +7,7 @@ import pro.crypto.model.tick.Tick;
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
 
-public interface Indicator<T> {
+public interface Indicator<T extends IndicatorResult> {
 
     IndicatorType getType();
 
@@ -30,7 +30,6 @@ public interface Indicator<T> {
             throw new WrongIncomingParametersException(format("Period should be less than tick data size {indicator: {%s}, period: {%d}, size: {%d}}",
                     getType().toString(), period, originalData.length));
         }
-        checkPeriod(period);
     }
 
     default void checkPeriod(int period) {

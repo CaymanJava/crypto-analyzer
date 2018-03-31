@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
-public class CMFResult implements IndicatorResult {
+public class StDevResult implements IndicatorResult {
 
     private LocalDateTime time;
 

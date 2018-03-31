@@ -27,6 +27,7 @@ public abstract class MovingAverage implements Indicator<MAResult> {
         checkOriginalData(originalData);
         checkOriginalDataSize(originalData, period);
         checkPriceType(priceType);
+        checkPeriod(period);
     }
 
     void countSimpleAverage(int fromIndex, int currentIndex, int period, Tick[] originalData) {

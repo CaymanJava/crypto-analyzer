@@ -1,6 +1,7 @@
 package pro.crypto.indicators.ma;
 
 import pro.crypto.exception.WrongIncomingParametersException;
+import pro.crypto.helper.IndicatorTypeChecker;
 import pro.crypto.helper.TimeFrameShifter;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
@@ -13,6 +14,7 @@ import java.math.BigDecimal;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.*;
 import static pro.crypto.model.ShiftType.LEFT;
 import static pro.crypto.model.ShiftType.RIGHT;
@@ -59,6 +61,7 @@ public class DisplacedMovingAverage extends MovingAverage {
     private void checkData(IndicatorType originalIndicatorType, PriceType priceType, Tick[] originalData, int period, Shift shift) {
         checkShiftData(shift);
         checkOriginalIndicatorType(originalIndicatorType);
+        checkPeriod(period);
         checkIncomingData(originalData, period, priceType);
     }
 
@@ -78,19 +81,10 @@ public class DisplacedMovingAverage extends MovingAverage {
     }
 
     private void checkOriginalIndicatorType(IndicatorType originalIndicatorType) {
-        if (!isMovingAverageType(originalIndicatorType)) {
+        if (nonNull(originalIndicatorType) && !IndicatorTypeChecker.isMovingAverageType(originalIndicatorType)) {
             throw new WrongIncomingParametersException(format("Incoming original indicator type is not a moving average {indicator: {%s}}, movingAverageType: {%s}",
                     getType().toString(), originalIndicatorType.toString()));
         }
-    }
-
-    private boolean isMovingAverageType(IndicatorType originalIndicatorType) {
-        return isNull(originalIndicatorType) || // null is ok
-                originalIndicatorType == SIMPLE_MOVING_AVERAGE ||
-                originalIndicatorType == EXPONENTIAL_MOVING_AVERAGE ||
-                originalIndicatorType == WEIGHTED_MOVING_AVERAGE ||
-                originalIndicatorType == SMOOTHED_MOVING_AVERAGE ||
-                originalIndicatorType == HULL_MOVING_AVERAGE;
     }
 
     private void checkShiftData(Shift shift) {

@@ -1,13 +1,13 @@
 package pro.crypto.indicators.ma;
 
 import pro.crypto.exception.UnknownTypeException;
-import pro.crypto.model.request.MACreationRequest;
+import pro.crypto.model.request.MARequest;
 
 import static java.lang.String.format;
 
 public class MovingAverageFactory {
 
-    public static MovingAverage createMovingAverage(MACreationRequest request) {
+    public static MovingAverage createMovingAverage(MARequest request) {
         switch (request.getIndicatorType()) {
             case DISPLACED_MOVING_AVERAGE:
                 return new DisplacedMovingAverage(request.getOriginalIndicatorType(), request.getPriceType(),

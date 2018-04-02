@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicators.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.request.ADLCreationRequest;
+import pro.crypto.model.request.ADLRequest;
 import pro.crypto.model.result.ADLResult;
 import pro.crypto.model.tick.Tick;
 
@@ -30,7 +30,7 @@ public class AccumulationDistributionLineTest {
 
     @Test
     public void testADL() {
-        ADLResult[] result = new AccumulationDistributionLine(new ADLCreationRequest(originalData)).getResult();
+        ADLResult[] result = new AccumulationDistributionLine(new ADLRequest(originalData)).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
         assertEquals(result[0].getIndicatorValue(), new BigDecimal(-15.0661805778).setScale(10, BigDecimal.ROUND_HALF_UP));
@@ -50,14 +50,14 @@ public class AccumulationDistributionLineTest {
     public void emptyOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {ACCUMULATION_DISTRIBUTION_LINE}, size: {0}}");
-        new AccumulationDistributionLine(new ADLCreationRequest(new Tick[0])).getResult();
+        new AccumulationDistributionLine(new ADLRequest(new Tick[0])).getResult();
     }
 
     @Test
     public void nullOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {ACCUMULATION_DISTRIBUTION_LINE}}");
-        new AccumulationDistributionLine(new ADLCreationRequest(null)).getResult();
+        new AccumulationDistributionLine(new ADLRequest(null)).getResult();
     }
 
 }

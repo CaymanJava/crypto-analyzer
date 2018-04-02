@@ -6,29 +6,36 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
+import pro.crypto.model.Shift;
 import pro.crypto.model.tick.Tick;
 
 import javax.validation.constraints.NotNull;
+import java.math.BigDecimal;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class MACDCreationRequest {
+public class MARequest {
 
     @NotNull
-    private Tick[] originalData;
+    private IndicatorType indicatorType;
 
-    @NotNull
-    private IndicatorType movingAverageType;
+    // only from DMA
+    private IndicatorType originalIndicatorType;
+
+    // only from DMA
+    private Shift shift;
 
     @NotNull
     private PriceType priceType;
 
-    private int slowPeriod;
+    @NotNull
+    private Tick[] originalData;
 
-    private int fastPeriod;
+    private int period;
 
-    private int signalPeriod;
+    // only for EMA and for DMA which based on EMA
+    private BigDecimal alphaCoefficient;
 
 }

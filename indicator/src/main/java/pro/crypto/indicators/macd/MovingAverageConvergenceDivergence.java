@@ -8,8 +8,8 @@ import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.request.MACDCreationRequest;
-import pro.crypto.model.request.MACreationRequest;
+import pro.crypto.model.request.MACDRequest;
+import pro.crypto.model.request.MARequest;
 import pro.crypto.model.result.MACDResult;
 import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.PriceType;
@@ -34,7 +34,7 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
 
     private MACDResult[] result;
 
-    public MovingAverageConvergenceDivergence(MACDCreationRequest request) {
+    public MovingAverageConvergenceDivergence(MACDRequest request) {
         this.originalData = request.getOriginalData();
         this.movingAverageType = isNull(request.getMovingAverageType()) ? EXPONENTIAL_MOVING_AVERAGE : request.getMovingAverageType();
         this.priceType = request.getPriceType();
@@ -101,8 +101,8 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
         return indicatorValues;
     }
 
-    private MACreationRequest buildSlowMovingAverageCreationRequest() {
-        return MACreationRequest.builder()
+    private MARequest buildSlowMovingAverageCreationRequest() {
+        return MARequest.builder()
                 .originalData(originalData)
                 .indicatorType(movingAverageType)
                 .period(slowPeriod)
@@ -110,8 +110,8 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
                 .build();
     }
 
-    private MACreationRequest buildFastMovingAverageCreationRequest() {
-        return MACreationRequest.builder()
+    private MARequest buildFastMovingAverageCreationRequest() {
+        return MARequest.builder()
                 .originalData(originalData)
                 .indicatorType(movingAverageType)
                 .period(fastPeriod)
@@ -150,8 +150,8 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
         throw new UnexpectedValueException(format("Can't find any non null value in array of indicator value's {indicator: {%s}}", getType().toString()));
     }
 
-    private MACreationRequest buildSignalLineMovingAverageRequest(Tick[] fakeTicks) {
-        return MACreationRequest.builder()
+    private MARequest buildSignalLineMovingAverageRequest(Tick[] fakeTicks) {
+        return MARequest.builder()
                 .originalData(fakeTicks)
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .period(signalPeriod)

@@ -6,9 +6,9 @@ import pro.crypto.indicators.adl.AccumulationDistributionLine;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.request.ADLCreationRequest;
-import pro.crypto.model.request.COCreationRequest;
-import pro.crypto.model.request.MACreationRequest;
+import pro.crypto.model.request.ADLRequest;
+import pro.crypto.model.request.CORequest;
+import pro.crypto.model.request.MARequest;
 import pro.crypto.model.result.ADLResult;
 import pro.crypto.model.result.COResult;
 import pro.crypto.model.result.MAResult;
@@ -32,7 +32,7 @@ public class ChaikinOscillator implements Indicator<COResult> {
 
     private COResult[] result;
 
-    public ChaikinOscillator(COCreationRequest request) {
+    public ChaikinOscillator(CORequest request) {
         this.originalData = request.getOriginalData();
         this.slowPeriod = request.getSlowPeriod();
         this.fastPeriod = request.getFastPeriod();
@@ -81,11 +81,11 @@ public class ChaikinOscillator implements Indicator<COResult> {
     }
 
     private ADLResult[] countADL() {
-        return new AccumulationDistributionLine(new ADLCreationRequest(originalData)).getResult();
+        return new AccumulationDistributionLine(new ADLRequest(originalData)).getResult();
     }
 
     private MAResult[] countSlowEmaForAdl(ADLResult[] adlResult) {
-        return MovingAverageFactory.createMovingAverage(MACreationRequest.builder()
+        return MovingAverageFactory.createMovingAverage(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(createFakeTicks(adlResult))
                 .priceType(CLOSE)
@@ -95,7 +95,7 @@ public class ChaikinOscillator implements Indicator<COResult> {
     }
 
     private MAResult[] countFastEmaForAdl(ADLResult[] adlResult) {
-        return MovingAverageFactory.createMovingAverage(MACreationRequest.builder()
+        return MovingAverageFactory.createMovingAverage(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(createFakeTicks(adlResult))
                 .priceType(CLOSE)

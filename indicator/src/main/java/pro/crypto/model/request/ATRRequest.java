@@ -1,5 +1,6 @@
 package pro.crypto.model.request;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,9 +13,11 @@ import javax.validation.constraints.NotNull;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class OBVCreationRequest {
+public class ATRRequest {
 
     @NotNull
     private Tick[] originalData;
+
+    private int period;
 
 }

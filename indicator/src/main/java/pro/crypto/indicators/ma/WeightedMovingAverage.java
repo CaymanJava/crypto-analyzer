@@ -2,12 +2,13 @@ package pro.crypto.indicators.ma;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.result.MAResult;
+import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 
+import static java.util.stream.IntStream.range;
 import static pro.crypto.model.IndicatorType.WEIGHTED_MOVING_AVERAGE;
 
 public class WeightedMovingAverage extends MovingAverage {
@@ -44,11 +45,7 @@ public class WeightedMovingAverage extends MovingAverage {
     }
 
     private int countWeightedCoefficientSum() {
-        int weightedSum = 0;
-        for (int i = 1; i <= period; i++) {
-            weightedSum += i;
-        }
-        return weightedSum;
+        return range(1, period + 1).reduce(0, (a, b) -> a + b);
     }
 
     private BigDecimal countIndicatorValue(int weightedCoefficientSum, int currentIndex) {
@@ -58,7 +55,7 @@ public class WeightedMovingAverage extends MovingAverage {
 
     private BigDecimal countWeightedPriceSum(int currentIndex) {
         int currentWeight = 1;
-        BigDecimal weightedPriceSum = new BigDecimal(0);
+        BigDecimal weightedPriceSum = BigDecimal.ZERO;
         for (int i = currentIndex - period + 1; i <= currentIndex; i++) {
             weightedPriceSum = weightedPriceSum.add(originalData[i].getPriceByType(priceType).multiply(new BigDecimal(currentWeight)));
             currentWeight++;

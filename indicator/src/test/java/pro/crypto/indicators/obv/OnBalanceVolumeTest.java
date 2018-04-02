@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicators.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.request.OBVCreationRequest;
+import pro.crypto.model.request.OBVRequest;
 import pro.crypto.model.result.OBVResult;
 import pro.crypto.model.tick.Tick;
 
@@ -30,7 +30,7 @@ public class OnBalanceVolumeTest {
 
     @Test
     public void testADL() {
-        OBVResult[] result = new OnBalanceVolume(new OBVCreationRequest(originalData)).getResult();
+        OBVResult[] result = new OnBalanceVolume(new OBVRequest(originalData)).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
         assertEquals(result[0].getIndicatorValue(), new BigDecimal(15.5471000000).setScale(10, BigDecimal.ROUND_HALF_UP));
@@ -50,14 +50,14 @@ public class OnBalanceVolumeTest {
     public void emptyOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {ON_BALANCE_VOLUME}, size: {0}}");
-        new OnBalanceVolume(new OBVCreationRequest(new Tick[0])).getResult();
+        new OnBalanceVolume(new OBVRequest(new Tick[0])).getResult();
     }
 
     @Test
     public void nullOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {ON_BALANCE_VOLUME}}");
-        new OnBalanceVolume(new OBVCreationRequest(null)).getResult();
+        new OnBalanceVolume(new OBVRequest(null)).getResult();
     }
 
 }

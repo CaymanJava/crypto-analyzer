@@ -8,7 +8,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.Shift;
 import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
-import pro.crypto.model.request.MACreationRequest;
+import pro.crypto.model.request.MARequest;
 
 import java.math.BigDecimal;
 
@@ -47,13 +47,7 @@ public class DisplacedMovingAverage extends MovingAverage {
     @Override
     public void calculate() {
         initResultArray(originalData.length + shift.getValue());
-        MAResult[] originalResult = MovingAverageFactory.createMovingAverage(MACreationRequest.builder()
-                .indicatorType(originalIndicatorType)
-                .originalData(originalData)
-                .priceType(priceType)
-                .period(period)
-                .alphaCoefficient(alphaCoefficient)
-                .build())
+        MAResult[] originalResult = MovingAverageFactory.createMovingAverage(buildMovingAverageRequest())
                 .getResult();
         shiftResult(originalResult);
     }
@@ -63,28 +57,6 @@ public class DisplacedMovingAverage extends MovingAverage {
         checkOriginalIndicatorType(originalIndicatorType);
         checkPeriod(period);
         checkIncomingData(originalData, period, priceType);
-    }
-
-    private void fillInRightShift(MAResult[] originalResult) {
-        for (int i = 0; i < originalResult.length; i++) {
-            result[i] = new MAResult(originalResult[i].getTime(),originalResult[i].getOriginalValue(), null);
-        }
-
-        for (int i = result.length - 1; i >= originalResult.length; i--) {
-            result[i] = new MAResult(
-                    new TimeFrameShifter(originalResult[i - shift.getValue()].getTime(), shift).shiftTime(), null, null);
-        }
-
-        for (int i = shift.getValue(); i < result.length; i++) {
-            result[i].setIndicatorValue(originalResult[i - shift.getValue()].getIndicatorValue());
-        }
-    }
-
-    private void checkOriginalIndicatorType(IndicatorType originalIndicatorType) {
-        if (nonNull(originalIndicatorType) && !IndicatorTypeChecker.isMovingAverageType(originalIndicatorType)) {
-            throw new WrongIncomingParametersException(format("Incoming original indicator type is not a moving average {indicator: {%s}}, movingAverageType: {%s}",
-                    getType().toString(), originalIndicatorType.toString()));
-        }
     }
 
     private void checkShiftData(Shift shift) {
@@ -110,9 +82,41 @@ public class DisplacedMovingAverage extends MovingAverage {
         }
     }
 
+    private void checkOriginalIndicatorType(IndicatorType originalIndicatorType) {
+        if (nonNull(originalIndicatorType) && !IndicatorTypeChecker.isMovingAverageType(originalIndicatorType)) {
+            throw new WrongIncomingParametersException(format("Incoming original indicator type is not a moving average {indicator: {%s}}, movingAverageType: {%s}",
+                    getType().toString(), originalIndicatorType.toString()));
+        }
+    }
+
+    private MARequest buildMovingAverageRequest() {
+        return MARequest.builder()
+                .indicatorType(originalIndicatorType)
+                .originalData(originalData)
+                .priceType(priceType)
+                .period(period)
+                .alphaCoefficient(alphaCoefficient)
+                .build();
+    }
+
     private void shiftResult(MAResult[] intermediateResult) {
         if (shift.getType() == RIGHT) {
             fillInRightShift(intermediateResult);
+        }
+    }
+
+    private void fillInRightShift(MAResult[] originalResult) {
+        for (int i = 0; i < originalResult.length; i++) {
+            result[i] = new MAResult(originalResult[i].getTime(),originalResult[i].getOriginalValue(), null);
+        }
+
+        for (int i = result.length - 1; i >= originalResult.length; i--) {
+            result[i] = new MAResult(
+                    new TimeFrameShifter(originalResult[i - shift.getValue()].getTime(), shift).shiftTime(), null, null);
+        }
+
+        for (int i = shift.getValue(); i < result.length; i++) {
+            result[i].setIndicatorValue(originalResult[i - shift.getValue()].getIndicatorValue());
         }
     }
 

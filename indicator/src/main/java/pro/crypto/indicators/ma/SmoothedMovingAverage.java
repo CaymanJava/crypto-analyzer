@@ -55,7 +55,7 @@ public class SmoothedMovingAverage extends MovingAverage {
     }
 
     private void fillInStartIndicatorValue() {
-        countSimpleAverage(0, period - 1, period, originalData);
+        countSimpleAverage(0, period - 1, originalData);
     }
 
 }

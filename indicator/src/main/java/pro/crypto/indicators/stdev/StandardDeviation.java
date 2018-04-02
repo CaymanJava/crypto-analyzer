@@ -6,7 +6,7 @@ import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.request.MACreationRequest;
+import pro.crypto.model.request.MARequest;
 import pro.crypto.model.request.StDevRequest;
 import pro.crypto.model.result.MAResult;
 import pro.crypto.model.result.StDevResult;
@@ -76,15 +76,13 @@ public class StandardDeviation implements Indicator<StDevResult> {
     }
 
     private BigDecimal[] countMovingAveragePrices() {
-        MAResult[] movingAverageResult = MovingAverageFactory.createMovingAverage(buildSignalLineMovingAverageRequest())
-                .getResult();
-        return Stream.of(movingAverageResult)
+        return Stream.of(MovingAverageFactory.createMovingAverage(buildSignalLineMovingAverageRequest()).getResult())
                 .map(MAResult::getIndicatorValue)
                 .toArray(BigDecimal[]::new);
     }
 
-    private MACreationRequest buildSignalLineMovingAverageRequest() {
-        return MACreationRequest.builder()
+    private MARequest buildSignalLineMovingAverageRequest() {
+        return MARequest.builder()
                 .originalData(originalData)
                 .indicatorType(movingAverageType)
                 .period(period)

@@ -12,11 +12,9 @@ import javax.validation.constraints.NotNull;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CCICreationRequest {
+public class ADLRequest {
 
     @NotNull
     private Tick[] originalData;
-
-    private int period;
 
 }

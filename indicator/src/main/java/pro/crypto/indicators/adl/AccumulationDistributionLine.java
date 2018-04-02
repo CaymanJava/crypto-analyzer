@@ -4,7 +4,7 @@ import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MoneyFlowVolumesCounter;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.request.ADLCreationRequest;
+import pro.crypto.model.request.ADLRequest;
 import pro.crypto.model.result.ADLResult;
 import pro.crypto.model.tick.Tick;
 
@@ -19,7 +19,7 @@ public class AccumulationDistributionLine implements Indicator<ADLResult> {
 
     private ADLResult[] result;
 
-    public AccumulationDistributionLine(ADLCreationRequest request) {
+    public AccumulationDistributionLine(ADLRequest request) {
         this.originalData = request.getOriginalData();
         checkOriginalData(originalData);
     }
@@ -62,7 +62,7 @@ public class AccumulationDistributionLine implements Indicator<ADLResult> {
     private ADLResult countAccumulationDistributionValue(BigDecimal[] moneyFlowVolumes, int currentIndex) {
         return new ADLResult(
                 originalData[currentIndex].getTickTime(),
-                MathHelper.scaleAndRound(moneyFlowVolumes[currentIndex].add(result[currentIndex - 1].getIndicatorValue()))
+                MathHelper.sum(moneyFlowVolumes[currentIndex], result[currentIndex - 1].getIndicatorValue())
         );
     }
 

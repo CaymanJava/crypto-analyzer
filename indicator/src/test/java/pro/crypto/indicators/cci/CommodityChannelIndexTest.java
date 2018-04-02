@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicators.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.request.CCICreationRequest;
+import pro.crypto.model.request.CCIRequest;
 import pro.crypto.model.result.CCIResult;
 import pro.crypto.model.tick.Tick;
 
@@ -31,7 +31,7 @@ public class CommodityChannelIndexTest {
 
     @Test
     public void testCCIWithTwentyDaysPeriod() {
-        CCIResult[] result = new CommodityChannelIndex(createRequest()).getResult();
+        CCIResult[] result = new CommodityChannelIndex(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertTrue(isNull(result[0].getIndicatorValue()));
         assertTrue(isNull(result[10].getIndicatorValue()));
@@ -50,7 +50,7 @@ public class CommodityChannelIndexTest {
     public void emptyOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {COMMODITY_CHANNEL_INDEX}, size: {0}}");
-        new CommodityChannelIndex(CCICreationRequest.builder()
+        new CommodityChannelIndex(CCIRequest.builder()
                 .originalData(new Tick[0])
                 .period(20)
                 .build()).getResult();
@@ -60,7 +60,7 @@ public class CommodityChannelIndexTest {
     public void nullOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {COMMODITY_CHANNEL_INDEX}}");
-        new CommodityChannelIndex(CCICreationRequest.builder()
+        new CommodityChannelIndex(CCIRequest.builder()
                 .originalData(null)
                 .period(20)
                 .build()).getResult();
@@ -70,7 +70,7 @@ public class CommodityChannelIndexTest {
     public void periodMoreThanTickDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be less than tick data size {indicator: {COMMODITY_CHANNEL_INDEX}, period: {20}, size: {19}}");
-        new CommodityChannelIndex(CCICreationRequest.builder()
+        new CommodityChannelIndex(CCIRequest.builder()
                 .originalData(new Tick[19])
                 .period(20)
                 .build()).getResult();
@@ -80,14 +80,14 @@ public class CommodityChannelIndexTest {
     public void periodLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {COMMODITY_CHANNEL_INDEX}, period: {-20}}");
-        new CommodityChannelIndex(CCICreationRequest.builder()
+        new CommodityChannelIndex(CCIRequest.builder()
                 .originalData(new Tick[19])
                 .period(-20)
                 .build()).getResult();
     }
 
-    private CCICreationRequest createRequest() {
-        return CCICreationRequest.builder()
+    private CCIRequest buildRequest() {
+        return CCIRequest.builder()
                 .originalData(originalData)
                 .period(20)
                 .build();

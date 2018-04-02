@@ -3,7 +3,7 @@ package pro.crypto.indicators.obv;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.request.OBVCreationRequest;
+import pro.crypto.model.request.OBVRequest;
 import pro.crypto.model.result.OBVResult;
 import pro.crypto.model.tick.Tick;
 
@@ -18,7 +18,7 @@ public class OnBalanceVolume implements Indicator<OBVResult> {
 
     private OBVResult[] result;
 
-    public OnBalanceVolume(OBVCreationRequest request) {
+    public OnBalanceVolume(OBVRequest request) {
         this.originalData = request.getOriginalData();
         checkOriginalData(originalData);
     }

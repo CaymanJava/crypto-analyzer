@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicators.tick.generator.OneDayTickWithClosePriceGenerator;
-import pro.crypto.model.request.MACDCreationRequest;
+import pro.crypto.model.request.MACDRequest;
 import pro.crypto.model.result.MACDResult;
 import pro.crypto.model.tick.Tick;
 
@@ -77,7 +77,7 @@ public class MovingAverageConvergenceDivergenceTest {
     public void emptyOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, size: {0}}");
-        new MovingAverageConvergenceDivergence(MACDCreationRequest.builder()
+        new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[0])
                 .slowPeriod(12)
                 .fastPeriod(26)
@@ -91,7 +91,7 @@ public class MovingAverageConvergenceDivergenceTest {
     public void nullOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}}");
-        new MovingAverageConvergenceDivergence(MACDCreationRequest.builder()
+        new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(null)
                 .slowPeriod(12)
                 .fastPeriod(26)
@@ -105,7 +105,7 @@ public class MovingAverageConvergenceDivergenceTest {
     public void emptyPriceTypeTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming price type is null {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}}");
-        new MovingAverageConvergenceDivergence(MACDCreationRequest.builder()
+        new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[100])
                 .slowPeriod(12)
                 .fastPeriod(26)
@@ -118,7 +118,7 @@ public class MovingAverageConvergenceDivergenceTest {
     public void emptySlowPeriodTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, period: {0}}");
-        new MovingAverageConvergenceDivergence(MACDCreationRequest.builder()
+        new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[100])
                 .fastPeriod(26)
                 .signalPeriod(9)
@@ -131,7 +131,7 @@ public class MovingAverageConvergenceDivergenceTest {
     public void emptyFastPeriodTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, period: {0}}");
-        new MovingAverageConvergenceDivergence(MACDCreationRequest.builder()
+        new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[100])
                 .slowPeriod(12)
                 .signalPeriod(9)
@@ -144,7 +144,7 @@ public class MovingAverageConvergenceDivergenceTest {
     public void emptySignalPeriodTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, period: {0}}");
-        new MovingAverageConvergenceDivergence(MACDCreationRequest.builder()
+        new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[100])
                 .slowPeriod(12)
                 .fastPeriod(26)
@@ -157,7 +157,7 @@ public class MovingAverageConvergenceDivergenceTest {
     public void unsupportedIndicatorTypeTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming original indicator type is not a moving average {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}}, movingAverageType: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}");
-        new MovingAverageConvergenceDivergence(MACDCreationRequest.builder()
+        new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[100])
                 .slowPeriod(12)
                 .fastPeriod(26)
@@ -171,7 +171,7 @@ public class MovingAverageConvergenceDivergenceTest {
     public void notEnoughDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is not enough {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, tickLength: {10}, slowPeriod: {12}, signalPeriod: {9}}");
-        new MovingAverageConvergenceDivergence(MACDCreationRequest.builder()
+        new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[10])
                 .slowPeriod(12)
                 .fastPeriod(26)
@@ -181,8 +181,8 @@ public class MovingAverageConvergenceDivergenceTest {
                 .build()).getResult();
     }
 
-    private MACDCreationRequest createRequest() {
-        return MACDCreationRequest.builder()
+    private MACDRequest createRequest() {
+        return MACDRequest.builder()
                 .originalData(originalData)
                 .slowPeriod(12)
                 .fastPeriod(26)

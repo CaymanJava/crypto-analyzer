@@ -9,6 +9,7 @@ import pro.crypto.model.result.CMFResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -79,11 +80,7 @@ public class ChaikinMoneyFlow implements Indicator<CMFResult> {
     }
 
     private BigDecimal countSum(BigDecimal[] values, int currentIndex) {
-        BigDecimal sum = BigDecimal.ZERO;
-        for (int i = currentIndex - period + 1; i <= currentIndex; i++) {
-            sum = sum.add(values[i]);
-        }
-        return sum;
+        return MathHelper.sum(Arrays.copyOfRange(values, currentIndex - period + 1, currentIndex + 1));
     }
 
     private void countChaikinMoneyFlowValues(BigDecimal[] moneyFlowSum, BigDecimal[] volumesSum) {

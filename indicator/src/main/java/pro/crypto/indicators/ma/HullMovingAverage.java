@@ -41,8 +41,8 @@ public class HullMovingAverage extends MovingAverage {
     }
 
     private BigDecimal countIndicatorValue(int currentIndex) {
-        BigDecimal simpleAverageFromPeriod = countAndGetSimpleAverage(currentIndex - period + 1, currentIndex, originalData, period);
-        BigDecimal simpleAverageFromDividedTwoPeriod = countAndGetSimpleAverage(currentIndex - period/2 + 1, currentIndex, originalData, period/2);
+        BigDecimal simpleAverageFromPeriod = countAndGetSimpleAverage(currentIndex - period + 1, currentIndex, originalData);
+        BigDecimal simpleAverageFromDividedTwoPeriod = countAndGetSimpleAverage(currentIndex - period/2 + 1, currentIndex, originalData);
         return simpleAverageFromDividedTwoPeriod.subtract(simpleAverageFromPeriod).add(simpleAverageFromDividedTwoPeriod);
     }
 

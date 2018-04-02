@@ -8,7 +8,7 @@ import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicators.tick.generator.FifteenMinTickWithClosePriceOnlyGenerator;
 import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
-import pro.crypto.model.request.MACreationRequest;
+import pro.crypto.model.request.MARequest;
 
 import java.math.BigDecimal;
 
@@ -27,7 +27,7 @@ public class ExponentialMovingAverageTest {
 
     private Tick[] originalData;
 
-    private MACreationRequest request;
+    private MARequest request;
 
     @Before
     public void init() {
@@ -68,7 +68,7 @@ public class ExponentialMovingAverageTest {
     public void emptyOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {EXPONENTIAL_MOVING_AVERAGE}, size: {0}}");
-        MovingAverageFactory.createMovingAverage(MACreationRequest.builder()
+        MovingAverageFactory.createMovingAverage(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(new Tick[0])
                 .period(5)
@@ -81,7 +81,7 @@ public class ExponentialMovingAverageTest {
     public void nullOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {EXPONENTIAL_MOVING_AVERAGE}}");
-        MovingAverageFactory.createMovingAverage(MACreationRequest.builder()
+        MovingAverageFactory.createMovingAverage(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(null)
                 .period(5)
@@ -94,7 +94,7 @@ public class ExponentialMovingAverageTest {
     public void periodMoreThanTickDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be less than tick data size {indicator: {EXPONENTIAL_MOVING_AVERAGE}, period: {5}, size: {1}}");
-        MovingAverageFactory.createMovingAverage(MACreationRequest.builder()
+        MovingAverageFactory.createMovingAverage(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(new Tick[1])
                 .period(5)
@@ -107,7 +107,7 @@ public class ExponentialMovingAverageTest {
     public void periodLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {EXPONENTIAL_MOVING_AVERAGE}, period: {-5}}");
-        MovingAverageFactory.createMovingAverage(MACreationRequest.builder()
+        MovingAverageFactory.createMovingAverage(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(new Tick[1])
                 .period(-5)
@@ -120,7 +120,7 @@ public class ExponentialMovingAverageTest {
     public void emptyPriceTypeTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming price type is null {indicator: {EXPONENTIAL_MOVING_AVERAGE}}");
-        MovingAverageFactory.createMovingAverage(MACreationRequest.builder()
+        MovingAverageFactory.createMovingAverage(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(new Tick[30])
                 .period(5)
@@ -129,8 +129,8 @@ public class ExponentialMovingAverageTest {
                 .build()).getResult();
     }
 
-    private MACreationRequest buildMovingAverageCreationRequest() {
-        return MACreationRequest.builder()
+    private MARequest buildMovingAverageCreationRequest() {
+        return MARequest.builder()
                 .originalData(originalData)
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .priceType(CLOSE)

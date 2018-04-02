@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicators.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.request.COCreationRequest;
+import pro.crypto.model.request.CORequest;
 import pro.crypto.model.result.COResult;
 import pro.crypto.model.tick.Tick;
 
@@ -71,7 +71,7 @@ public class ChaikinOscillatorTest {
     public void emptyOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {CHAIKIN_OSCILLATOR}, size: {0}}");
-        new ChaikinOscillator(COCreationRequest.builder()
+        new ChaikinOscillator(CORequest.builder()
                 .originalData(new Tick[0])
                 .slowPeriod(3)
                 .fastPeriod(10)
@@ -82,7 +82,7 @@ public class ChaikinOscillatorTest {
     public void nullOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {CHAIKIN_OSCILLATOR}}");
-        new ChaikinOscillator(COCreationRequest.builder()
+        new ChaikinOscillator(CORequest.builder()
                 .originalData(null)
                 .slowPeriod(3)
                 .fastPeriod(10)
@@ -93,7 +93,7 @@ public class ChaikinOscillatorTest {
     public void emptySlowPeriodTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {CHAIKIN_OSCILLATOR}, period: {0}}");
-        new ChaikinOscillator(COCreationRequest.builder()
+        new ChaikinOscillator(CORequest.builder()
                 .originalData(new Tick[30])
                 .fastPeriod(10)
                 .build()).getResult();
@@ -103,7 +103,7 @@ public class ChaikinOscillatorTest {
     public void emptyFastPeriodTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {CHAIKIN_OSCILLATOR}, period: {0}}");
-        new ChaikinOscillator(COCreationRequest.builder()
+        new ChaikinOscillator(CORequest.builder()
                 .originalData(new Tick[30])
                 .fastPeriod(10)
                 .build()).getResult();
@@ -113,15 +113,15 @@ public class ChaikinOscillatorTest {
     public void notEnoughDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is not enough {indicator: {CHAIKIN_OSCILLATOR}, tickLength: {5}, fastPeriod: {10}}");
-        new ChaikinOscillator(COCreationRequest.builder()
+        new ChaikinOscillator(CORequest.builder()
                 .originalData(new Tick[5])
                 .slowPeriod(3)
                 .fastPeriod(10)
                 .build()).getResult();
     }
 
-    private COCreationRequest buildCORequest(int slowPeriod, int fastPeriod) {
-        return COCreationRequest.builder()
+    private CORequest buildCORequest(int slowPeriod, int fastPeriod) {
+        return CORequest.builder()
                 .originalData(originalData)
                 .slowPeriod(slowPeriod)
                 .fastPeriod(fastPeriod)

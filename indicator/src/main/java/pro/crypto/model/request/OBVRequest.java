@@ -12,13 +12,9 @@ import javax.validation.constraints.NotNull;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class COCreationRequest {
+public class OBVRequest {
 
     @NotNull
     private Tick[] originalData;
-
-    private int slowPeriod;
-
-    private int fastPeriod;
 
 }

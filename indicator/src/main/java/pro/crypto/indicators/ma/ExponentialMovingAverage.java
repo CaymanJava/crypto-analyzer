@@ -39,7 +39,7 @@ public class ExponentialMovingAverage extends MovingAverage {
     }
 
     private void fillInInitialIndicatorValue() {
-        countSimpleAverage(0, antiAliasingInterval - 1, antiAliasingInterval, originalData);
+        countSimpleAverage(0, antiAliasingInterval - 1, originalData);
     }
 
     private void fillInRemainPositions() {

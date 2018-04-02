@@ -2,6 +2,7 @@ package pro.crypto.indicators.uo;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.MathHelper;
+import pro.crypto.helper.TrueRangeCounter;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.UORequest;
@@ -9,6 +10,7 @@ import pro.crypto.model.result.UOResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
@@ -40,7 +42,7 @@ public class UltimateOscillator implements Indicator<UOResult> {
     public void calculate() {
         result = new UOResult[originalData.length];
         BigDecimal[] buyingPressureValues = countBuyingPressureValues();
-        BigDecimal[] trueRangeValues = countTrueRangeValues();
+        BigDecimal[] trueRangeValues = TrueRangeCounter.countTrueRangeValues(originalData);
         countUltimateOscillatorValues(buyingPressureValues, trueRangeValues);
     }
 
@@ -98,21 +100,6 @@ public class UltimateOscillator implements Indicator<UOResult> {
         return MathHelper.min(originalData[currentIndex].getLow(), originalData[currentIndex - 1].getClose());
     }
 
-    private BigDecimal[] countTrueRangeValues() {
-        BigDecimal[] trueRangeValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 1; currentIndex < trueRangeValues.length; currentIndex++) {
-            trueRangeValues[currentIndex] = countTrueRange(currentIndex);
-        }
-        return trueRangeValues;
-    }
-
-    private BigDecimal countTrueRange(int currentIndex) {
-        BigDecimal firstRange = originalData[currentIndex].getHigh().subtract(originalData[currentIndex].getLow());
-        BigDecimal secondRange = originalData[currentIndex].getHigh().subtract(originalData[currentIndex - 1].getClose());
-        BigDecimal thirdRange = originalData[currentIndex].getClose().subtract(originalData[currentIndex].getLow());
-        return MathHelper.max(MathHelper.max(firstRange, secondRange), thirdRange);
-    }
-
     private void countUltimateOscillatorValues(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues) {
         fillInInitialPositions();
         fillInRemainPosition(buyingPressureValues, trueRangeValues);
@@ -159,11 +146,7 @@ public class UltimateOscillator implements Indicator<UOResult> {
     }
 
     private BigDecimal countValuesSum(BigDecimal[] values, int currentIndex, int period) {
-        BigDecimal sum = BigDecimal.ZERO;
-        for (int i = currentIndex - period + 1; i <= currentIndex; i++) {
-            sum = sum.add(values[i]);
-        }
-        return sum;
+        return MathHelper.sum(Arrays.copyOfRange(values, currentIndex - period + 1, currentIndex + 1));
     }
 
     private UOResult countUltimateOscillatorValue(BigDecimal shortQuotient, BigDecimal middleQuotient, BigDecimal longQuotient, int currentPeriod) {
@@ -178,9 +161,10 @@ public class UltimateOscillator implements Indicator<UOResult> {
         final int middlePeriodWeightCoefficient = 2;
         final int longPeriodWeightCoefficient = 1;
         return MathHelper.divide(
-                shortQuotient.multiply(new BigDecimal(shortPeriodWeightCoefficient))
-                        .add(middleQuotient.multiply(new BigDecimal(middlePeriodWeightCoefficient)))
-                        .add(longQuotient.multiply(new BigDecimal(longPeriodWeightCoefficient))),
+                MathHelper.sum(
+                        shortQuotient.multiply(new BigDecimal(shortPeriodWeightCoefficient)),
+                        middleQuotient.multiply(new BigDecimal(middlePeriodWeightCoefficient)),
+                        longQuotient.multiply(new BigDecimal(longPeriodWeightCoefficient))),
                 new BigDecimal(shortPeriodWeightCoefficient + middlePeriodWeightCoefficient + longPeriodWeightCoefficient)
         );
     }

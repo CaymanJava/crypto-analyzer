@@ -2,11 +2,13 @@ package pro.crypto.indicators.ma;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.Indicator;
-import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.result.MAResult;
+import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 
@@ -30,8 +32,8 @@ public abstract class MovingAverage implements Indicator<MAResult> {
         checkPeriod(period);
     }
 
-    void countSimpleAverage(int fromIndex, int currentIndex, int period, Tick[] originalData) {
-        BigDecimal simpleAverage = countAndGetSimpleAverage(fromIndex, currentIndex, originalData, period);
+    void countSimpleAverage(int fromIndex, int currentIndex, Tick[] originalData) {
+        BigDecimal simpleAverage = MathHelper.average(extractPricesBetweenIndexes(fromIndex, currentIndex, originalData));
         result[currentIndex] = buildMovingAverageResult(currentIndex, originalData, simpleAverage);
     }
 
@@ -48,12 +50,14 @@ public abstract class MovingAverage implements Indicator<MAResult> {
         result = new MAResult[length];
     }
 
-    BigDecimal countAndGetSimpleAverage(int fromIndex, int toIndex, Tick[] originalData, int period) {
-        BigDecimal periodSum = new BigDecimal(0);
-        for (int currentIndex = fromIndex; currentIndex <= toIndex; currentIndex++) {
-            periodSum = periodSum.add(originalData[currentIndex].getPriceByType(priceType));
-        }
-        return MathHelper.divide(periodSum, new BigDecimal(period));
+    BigDecimal countAndGetSimpleAverage(int fromIndex, int toIndex, Tick[] originalData) {
+        return MathHelper.average(extractPricesBetweenIndexes(fromIndex, toIndex, originalData));
+    }
+
+    private BigDecimal[] extractPricesBetweenIndexes(int fromIndex, int toIndex, Tick[] originalData) {
+        return Stream.of(Arrays.copyOfRange(originalData, fromIndex, toIndex + 1))
+                .map(tick -> tick.getPriceByType(priceType))
+                .toArray(BigDecimal[]::new);
     }
 
     private MAResult buildMovingAverageResult(int currentIndex, Tick[] originalData, BigDecimal simpleAverage) {

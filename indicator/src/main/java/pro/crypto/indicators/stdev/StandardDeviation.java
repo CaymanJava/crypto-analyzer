@@ -47,9 +47,9 @@ public class StandardDeviation implements Indicator<StDevResult> {
     @Override
     public void calculate() {
         result = new StDevResult[originalData.length];
-        BigDecimal[] averagePrices = countMovingAveragePrices();
-        BigDecimal[] divisibleValues = countDivisibleValues(averagePrices);
-        countStandardDeviation(divisibleValues);
+        BigDecimal[] averagePrices = calculateMovingAveragePrices();
+        BigDecimal[] divisibleValues = calculateDivisibleValues(averagePrices);
+        calculateStandardDeviation(divisibleValues);
     }
 
     @Override
@@ -75,7 +75,7 @@ public class StandardDeviation implements Indicator<StDevResult> {
         }
     }
 
-    private BigDecimal[] countMovingAveragePrices() {
+    private BigDecimal[] calculateMovingAveragePrices() {
         return Stream.of(MovingAverageFactory.createMovingAverage(buildSignalLineMovingAverageRequest()).getResult())
                 .map(MAResult::getIndicatorValue)
                 .toArray(BigDecimal[]::new);
@@ -91,34 +91,34 @@ public class StandardDeviation implements Indicator<StDevResult> {
     }
 
     // Σ (x - MAResult)^2
-    private BigDecimal[] countDivisibleValues(BigDecimal[] averagePrices) {
+    private BigDecimal[] calculateDivisibleValues(BigDecimal[] averagePrices) {
         BigDecimal[] sumValues = new BigDecimal[averagePrices.length];
         for (int currentIndex = 0; currentIndex < sumValues.length; currentIndex++) {
-            sumValues[currentIndex] = countSumOfDifferenceBetweenPriceAndMovingAverage(averagePrices[currentIndex], currentIndex);
+            sumValues[currentIndex] = calculateSumOfDifferenceBetweenPriceAndMovingAverage(averagePrices[currentIndex], currentIndex);
         }
         return sumValues;
     }
 
-    private BigDecimal countSumOfDifferenceBetweenPriceAndMovingAverage(BigDecimal averagePrice, int currentIndex) {
+    private BigDecimal calculateSumOfDifferenceBetweenPriceAndMovingAverage(BigDecimal averagePrice, int currentIndex) {
         if (isNull(averagePrice)) return null;
         BigDecimal sum = BigDecimal.ZERO;
         for (int i = currentIndex - period + 1; i < currentIndex + 1; i++) {
-            sum = sum.add(countDifference(averagePrice, i).pow(2));
+            sum = sum.add(calculateDifference(averagePrice, i).pow(2));
         }
         return sum;
     }
 
-    private BigDecimal countDifference(BigDecimal averagePrice, int index) {
+    private BigDecimal calculateDifference(BigDecimal averagePrice, int index) {
         return originalData[index].getPriceByType(priceType).subtract(averagePrice);
     }
 
-    private void countStandardDeviation(BigDecimal[] divisibleValues) {
+    private void calculateStandardDeviation(BigDecimal[] divisibleValues) {
         for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = countStandardDeviationValue(divisibleValues[currentIndex], currentIndex);
+            result[currentIndex] = calculateStandardDeviationValue(divisibleValues[currentIndex], currentIndex);
         }
     }
 
-    private StDevResult countStandardDeviationValue(BigDecimal divisibleValue, int currentIndex) {
+    private StDevResult calculateStandardDeviationValue(BigDecimal divisibleValue, int currentIndex) {
         if (isNull(divisibleValue)) return new StDevResult(originalData[currentIndex].getTickTime(), null);
         return new StDevResult(
                 originalData[currentIndex].getTickTime(),

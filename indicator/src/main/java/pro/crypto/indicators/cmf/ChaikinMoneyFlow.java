@@ -1,7 +1,7 @@
 package pro.crypto.indicators.cmf;
 
 import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.MoneyFlowVolumesCounter;
+import pro.crypto.helper.MoneyFlowVolumesCalculator;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.CMFRequest;
@@ -36,10 +36,10 @@ public class ChaikinMoneyFlow implements Indicator<CMFResult> {
     @Override
     public void calculate() {
         result = new CMFResult[originalData.length];
-        BigDecimal[] moneyFlowVolumes = MoneyFlowVolumesCounter.countMoneyFlowVolumes(originalData);
-        BigDecimal[] moneyFlowSum = countMoneyFlowSum(moneyFlowVolumes);
-        BigDecimal[] volumesSum = countVolumesSum();
-        countChaikinMoneyFlowValues(moneyFlowSum, volumesSum);
+        BigDecimal[] moneyFlowVolumes = MoneyFlowVolumesCalculator.calculate(originalData);
+        BigDecimal[] moneyFlowSum = calculateMoneyFlowSum(moneyFlowVolumes);
+        BigDecimal[] volumesSum = calculateVolumesSum();
+        calculateChaikinMoneyFlowValues(moneyFlowSum, volumesSum);
     }
 
     @Override
@@ -56,19 +56,19 @@ public class ChaikinMoneyFlow implements Indicator<CMFResult> {
         checkPeriod(period);
     }
 
-    private BigDecimal[] countMoneyFlowSum(BigDecimal[] moneyFlowVolumes) {
+    private BigDecimal[] calculateMoneyFlowSum(BigDecimal[] moneyFlowVolumes) {
         BigDecimal[] moneyFlowSum = new BigDecimal[originalData.length];
         for (int currentIndex = period - 1; currentIndex < moneyFlowSum.length; currentIndex++) {
-            moneyFlowSum[currentIndex] = countSum(moneyFlowVolumes, currentIndex);
+            moneyFlowSum[currentIndex] = calculateSum(moneyFlowVolumes, currentIndex);
         }
         return moneyFlowSum;
     }
 
-    private BigDecimal[] countVolumesSum() {
+    private BigDecimal[] calculateVolumesSum() {
         BigDecimal[] volumesSum = new BigDecimal[originalData.length];
         BigDecimal[] baseVolumes = extractBaseVolumes();
         for (int currentIndex = period - 1; currentIndex < volumesSum.length; currentIndex++) {
-            volumesSum[currentIndex] = countSum(baseVolumes, currentIndex);
+            volumesSum[currentIndex] = calculateSum(baseVolumes, currentIndex);
         }
         return volumesSum;
     }
@@ -79,11 +79,11 @@ public class ChaikinMoneyFlow implements Indicator<CMFResult> {
                 .toArray(BigDecimal[]::new);
     }
 
-    private BigDecimal countSum(BigDecimal[] values, int currentIndex) {
+    private BigDecimal calculateSum(BigDecimal[] values, int currentIndex) {
         return MathHelper.sum(Arrays.copyOfRange(values, currentIndex - period + 1, currentIndex + 1));
     }
 
-    private void countChaikinMoneyFlowValues(BigDecimal[] moneyFlowSum, BigDecimal[] volumesSum) {
+    private void calculateChaikinMoneyFlowValues(BigDecimal[] moneyFlowSum, BigDecimal[] volumesSum) {
         for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
             result[currentIndex] = new CMFResult(
                     originalData[currentIndex].getTickTime(),

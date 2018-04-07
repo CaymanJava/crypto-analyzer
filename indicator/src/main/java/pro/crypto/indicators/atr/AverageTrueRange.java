@@ -1,7 +1,7 @@
 package pro.crypto.indicators.atr;
 
 import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.TrueRangeCounter;
+import pro.crypto.helper.TrueRangeCalculator;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.ATRRequest;
@@ -35,8 +35,8 @@ public class AverageTrueRange implements Indicator<ATRResult> {
     @Override
     public void calculate() {
         result = new ATRResult[originalData.length];
-        BigDecimal[] trueRangeValues = TrueRangeCounter.countTrueRangeValues(originalData);
-        countAverageTrueRangeValues(trueRangeValues);
+        BigDecimal[] trueRangeValues = TrueRangeCalculator.calculate(originalData);
+        calculateAverageTrueRangeValues(trueRangeValues);
     }
 
     @Override
@@ -53,7 +53,7 @@ public class AverageTrueRange implements Indicator<ATRResult> {
         checkPeriod(period);
     }
 
-    private void countAverageTrueRangeValues(BigDecimal[] trueRangeValues) {
+    private void calculateAverageTrueRangeValues(BigDecimal[] trueRangeValues) {
         fillInInitialValues();
         fillInFirstValue(trueRangeValues);
         fillInRemainValues(trueRangeValues);
@@ -73,12 +73,12 @@ public class AverageTrueRange implements Indicator<ATRResult> {
 
     private void fillInRemainValues(BigDecimal[] trueRangeValues) {
         for (int currentIndex = period - 1; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = countAverageTrueRange(trueRangeValues[currentIndex], currentIndex);
+            result[currentIndex] = calculateAverageTrueRange(trueRangeValues[currentIndex], currentIndex);
         }
     }
 
     // ATRk = (ATRk-1 * (n - 1) + TRk) / n
-    private ATRResult countAverageTrueRange(BigDecimal trueRangeValue, int currentIndex) {
+    private ATRResult calculateAverageTrueRange(BigDecimal trueRangeValue, int currentIndex) {
         return new ATRResult(
                 originalData[currentIndex].getTickTime(),
                 MathHelper.divide(

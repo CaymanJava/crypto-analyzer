@@ -45,17 +45,17 @@ public class SmoothedMovingAverage extends MovingAverage {
         return new MAResult(
                 originalData[currentIndex].getTickTime(),
                 MathHelper.scaleAndRound(originalData[currentIndex].getPriceByType(priceType)),
-                MathHelper.scaleAndRound(countSmoothedAverage(currentIndex)));
+                MathHelper.scaleAndRound(calculateSmoothedAverage(currentIndex)));
     }
 
-    private BigDecimal countSmoothedAverage(int currentIndex) {
+    private BigDecimal calculateSmoothedAverage(int currentIndex) {
         return MathHelper.divide((result[currentIndex - 1].getIndicatorValue().multiply(new BigDecimal(period - 1)))
                 .add(originalData[currentIndex].getPriceByType(priceType)),
                 new BigDecimal(period));
     }
 
     private void fillInStartIndicatorValue() {
-        countSimpleAverage(0, period - 1, originalData);
+        calculateSimpleAverage(0, period - 1, originalData);
     }
 
 }

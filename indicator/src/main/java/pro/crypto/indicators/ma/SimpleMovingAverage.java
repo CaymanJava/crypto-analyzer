@@ -31,7 +31,7 @@ public class SimpleMovingAverage extends MovingAverage {
     private void fillInRemainPositions() {
         int from = 0;
         for (int i = period - 1; i < originalData.length; i++) {
-            countSimpleAverage(from, i, originalData);
+            calculateSimpleAverage(from, i, originalData);
             from++;
         }
     }

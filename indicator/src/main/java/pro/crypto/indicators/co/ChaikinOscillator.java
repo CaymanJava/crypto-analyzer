@@ -47,10 +47,10 @@ public class ChaikinOscillator implements Indicator<COResult> {
     @Override
     public void calculate() {
         result = new COResult[originalData.length];
-        ADLResult[] adlResult = countADL();
-        MAResult[] slowEma = countSlowEmaForAdl(adlResult);
-        MAResult[] fastEma = countFastEmaForAdl(adlResult);
-        countChaikinOscillatorValues(slowEma, fastEma);
+        ADLResult[] adlResult = calculateADL();
+        MAResult[] slowEma = calculateSlowEmaForAdl(adlResult);
+        MAResult[] fastEma = calculateFastEmaForAdl(adlResult);
+        calculateChaikinOscillatorValues(slowEma, fastEma);
     }
 
     @Override
@@ -80,11 +80,11 @@ public class ChaikinOscillator implements Indicator<COResult> {
         }
     }
 
-    private ADLResult[] countADL() {
+    private ADLResult[] calculateADL() {
         return new AccumulationDistributionLine(new ADLRequest(originalData)).getResult();
     }
 
-    private MAResult[] countSlowEmaForAdl(ADLResult[] adlResult) {
+    private MAResult[] calculateSlowEmaForAdl(ADLResult[] adlResult) {
         return MovingAverageFactory.createMovingAverage(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(createFakeTicks(adlResult))
@@ -94,7 +94,7 @@ public class ChaikinOscillator implements Indicator<COResult> {
                 .getResult();
     }
 
-    private MAResult[] countFastEmaForAdl(ADLResult[] adlResult) {
+    private MAResult[] calculateFastEmaForAdl(ADLResult[] adlResult) {
         return MovingAverageFactory.createMovingAverage(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(createFakeTicks(adlResult))
@@ -105,24 +105,24 @@ public class ChaikinOscillator implements Indicator<COResult> {
     }
 
     private Tick[] createFakeTicks(ADLResult[] adlResult) {
-        return FakeTicksCreator.createFakeTicksWithCloseOnly(Stream.of(adlResult)
+        return FakeTicksCreator.createWithCloseOnly(Stream.of(adlResult)
                 .map(ADLResult::getIndicatorValue)
                 .toArray(BigDecimal[]::new)
         );
     }
 
-    private void countChaikinOscillatorValues(MAResult[] slowEma, MAResult[] fastEma) {
+    private void calculateChaikinOscillatorValues(MAResult[] slowEma, MAResult[] fastEma) {
         for (int i = 0; i < result.length; i++) {
-            result[i] = countChaikinOscillatorValue(slowEma, fastEma, i);
+            result[i] = calculateChaikinOscillatorValue(slowEma, fastEma, i);
         }
     }
 
-    private COResult countChaikinOscillatorValue(MAResult[] slowEma, MAResult[] fastEma, int currentIndex) {
+    private COResult calculateChaikinOscillatorValue(MAResult[] slowEma, MAResult[] fastEma, int currentIndex) {
         return new COResult(originalData[currentIndex].getTickTime(),
-                countDifference(slowEma[currentIndex].getIndicatorValue(), fastEma[currentIndex].getIndicatorValue()));
+                calculateDifference(slowEma[currentIndex].getIndicatorValue(), fastEma[currentIndex].getIndicatorValue()));
     }
 
-    private BigDecimal countDifference(BigDecimal slowEmaValue, BigDecimal fastEmaValue) {
+    private BigDecimal calculateDifference(BigDecimal slowEmaValue, BigDecimal fastEmaValue) {
         return isNull(slowEmaValue) || isNull(fastEmaValue)
                 ? null
                 : scaleAndRound(slowEmaValue.subtract(fastEmaValue));

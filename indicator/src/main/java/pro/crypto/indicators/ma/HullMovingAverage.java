@@ -36,13 +36,13 @@ public class HullMovingAverage extends MovingAverage {
 
     private void fillInRemainPositions() {
         for (int currentIndex = period - 1; currentIndex < originalData.length; currentIndex++) {
-            result[currentIndex] = buildMovingAverageResult(currentIndex, countIndicatorValue(currentIndex));
+            result[currentIndex] = buildMovingAverageResult(currentIndex, calculateIndicatorValue(currentIndex));
         }
     }
 
-    private BigDecimal countIndicatorValue(int currentIndex) {
-        BigDecimal simpleAverageFromPeriod = countAndGetSimpleAverage(currentIndex - period + 1, currentIndex, originalData);
-        BigDecimal simpleAverageFromDividedTwoPeriod = countAndGetSimpleAverage(currentIndex - period/2 + 1, currentIndex, originalData);
+    private BigDecimal calculateIndicatorValue(int currentIndex) {
+        BigDecimal simpleAverageFromPeriod = calculateAndGetSimpleAverage(currentIndex - period + 1, currentIndex, originalData);
+        BigDecimal simpleAverageFromDividedTwoPeriod = calculateAndGetSimpleAverage(currentIndex - period/2 + 1, currentIndex, originalData);
         return simpleAverageFromDividedTwoPeriod.subtract(simpleAverageFromPeriod).add(simpleAverageFromDividedTwoPeriod);
     }
 

@@ -25,14 +25,14 @@ public abstract class MovingAverage implements Indicator<MAResult> {
         return result;
     }
 
-    void checkIncomingData(Tick[] originalData, int period, PriceType priceType) {
+    protected void checkIncomingData(Tick[] originalData, int period, PriceType priceType) {
         checkOriginalData(originalData);
         checkOriginalDataSize(originalData, period);
         checkPriceType(priceType);
         checkPeriod(period);
     }
 
-    void countSimpleAverage(int fromIndex, int currentIndex, Tick[] originalData) {
+    void calculateSimpleAverage(int fromIndex, int currentIndex, Tick[] originalData) {
         BigDecimal simpleAverage = MathHelper.average(extractPricesBetweenIndexes(fromIndex, currentIndex, originalData));
         result[currentIndex] = buildMovingAverageResult(currentIndex, originalData, simpleAverage);
     }
@@ -50,7 +50,7 @@ public abstract class MovingAverage implements Indicator<MAResult> {
         result = new MAResult[length];
     }
 
-    BigDecimal countAndGetSimpleAverage(int fromIndex, int toIndex, Tick[] originalData) {
+    BigDecimal calculateAndGetSimpleAverage(int fromIndex, int toIndex, Tick[] originalData) {
         return MathHelper.average(extractPricesBetweenIndexes(fromIndex, toIndex, originalData));
     }
 

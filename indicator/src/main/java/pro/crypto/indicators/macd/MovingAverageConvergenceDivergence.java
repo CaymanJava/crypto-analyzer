@@ -52,9 +52,9 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
     @Override
     public void calculate() {
         this.result = new MACDResult[originalData.length];
-        BigDecimal[] indicatorValues = countMACD();
-        BigDecimal[] signalLineValues = countSignalLineValues(indicatorValues);
-        BigDecimal[] barChartValues = countBarChartValue(indicatorValues, signalLineValues);
+        BigDecimal[] indicatorValues = calculateMACD();
+        BigDecimal[] signalLineValues = calculateSignalLineValues(indicatorValues);
+        BigDecimal[] barChartValues = calculateBarChartValue(indicatorValues, signalLineValues);
         buildResult(indicatorValues, signalLineValues, barChartValues);
     }
 
@@ -87,16 +87,16 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
         }
     }
 
-    private BigDecimal[] countMACD() {
+    private BigDecimal[] calculateMACD() {
         MAResult[] slowMovingAverageResult = MovingAverageFactory.createMovingAverage(buildSlowMovingAverageCreationRequest()).getResult();
         MAResult[] fastMovingAverageResult = MovingAverageFactory.createMovingAverage(buildFastMovingAverageCreationRequest()).getResult();
-        return countMACD(slowMovingAverageResult, fastMovingAverageResult);
+        return calculateMACD(slowMovingAverageResult, fastMovingAverageResult);
     }
 
-    private BigDecimal[] countMACD(MAResult[] slowMovingAverageResult, MAResult[] fastMovingAverageResult) {
+    private BigDecimal[] calculateMACD(MAResult[] slowMovingAverageResult, MAResult[] fastMovingAverageResult) {
         BigDecimal[] indicatorValues = new BigDecimal[slowMovingAverageResult.length];
         for (int i = 0; i < indicatorValues.length; i++) {
-            indicatorValues[i] = countDifference(slowMovingAverageResult[i].getIndicatorValue(), fastMovingAverageResult[i].getIndicatorValue());
+            indicatorValues[i] = calculateDifference(slowMovingAverageResult[i].getIndicatorValue(), fastMovingAverageResult[i].getIndicatorValue());
         }
         return indicatorValues;
     }
@@ -119,14 +119,14 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
                 .build();
     }
 
-    private BigDecimal countDifference(BigDecimal minuend, BigDecimal subtrahend) {
+    private BigDecimal calculateDifference(BigDecimal minuend, BigDecimal subtrahend) {
         return isNull(minuend) || isNull(subtrahend)
                 ? null
                 : MathHelper.scaleAndRound(minuend.subtract(subtrahend));
     }
 
-    private BigDecimal[] countSignalLineValues(BigDecimal[] indicatorValues) {
-        Tick[] fakeTicks = FakeTicksCreator.createFakeTicksWithCloseOnly(indicatorValues);
+    private BigDecimal[] calculateSignalLineValues(BigDecimal[] indicatorValues) {
+        Tick[] fakeTicks = FakeTicksCreator.createWithCloseOnly(indicatorValues);
         MAResult[] emaIndicatorValue = MovingAverageFactory.createMovingAverage(buildSignalLineMovingAverageRequest(fakeTicks))
                 .getResult();
         return copyEmaIndicatorValueToResultArray(indicatorValues, emaIndicatorValue);
@@ -159,10 +159,10 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
                 .build();
     }
 
-    private BigDecimal[] countBarChartValue(BigDecimal[] indicatorValues, BigDecimal[] signalLineValues) {
+    private BigDecimal[] calculateBarChartValue(BigDecimal[] indicatorValues, BigDecimal[] signalLineValues) {
         BigDecimal[] barChartValues = new BigDecimal[indicatorValues.length];
         for (int i = 0; i < barChartValues.length; i++) {
-            barChartValues[i] = countDifference(indicatorValues[i], signalLineValues[i]);
+            barChartValues[i] = calculateDifference(indicatorValues[i], signalLineValues[i]);
         }
         return barChartValues;
     }

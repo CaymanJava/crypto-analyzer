@@ -22,7 +22,7 @@ public class ExponentialMovingAverage extends MovingAverage {
         this.originalData = originalData;
         this.antiAliasingInterval = antiAliasingInterval;
         this.priceType = priceType;
-        this.alphaCoefficient = isNull(alphaCoefficient) ? countAlphaCoefficient(antiAliasingInterval) : alphaCoefficient;
+        this.alphaCoefficient = isNull(alphaCoefficient) ? calculateAlphaCoefficient(antiAliasingInterval) : alphaCoefficient;
     }
 
     @Override
@@ -39,7 +39,7 @@ public class ExponentialMovingAverage extends MovingAverage {
     }
 
     private void fillInInitialIndicatorValue() {
-        countSimpleAverage(0, antiAliasingInterval - 1, originalData);
+        calculateSimpleAverage(0, antiAliasingInterval - 1, originalData);
     }
 
     private void fillInRemainPositions() {
@@ -52,20 +52,18 @@ public class ExponentialMovingAverage extends MovingAverage {
         return new MAResult(
                 originalData[currentIndex].getTickTime(),
                 MathHelper.scaleAndRound(originalData[currentIndex].getPriceByType(priceType)),
-                MathHelper.scaleAndRound(countExponentialAverage(currentIndex)));
+                MathHelper.scaleAndRound(calculateExponentialAverage(currentIndex)));
     }
 
     // EMAt = α * Pt + (1 - α) * EMAt-1
-    private BigDecimal countExponentialAverage(int currentIndex) {
-        return alphaCoefficient.multiply(originalData[currentIndex].getPriceByType(priceType))
-                .add(
-                        (new BigDecimal(1).subtract(alphaCoefficient))
-                                .multiply(result[currentIndex - 1].getIndicatorValue())
-                );
+    private BigDecimal calculateExponentialAverage(int currentIndex) {
+        return MathHelper.sum(
+                alphaCoefficient.multiply(originalData[currentIndex].getPriceByType(priceType)),
+                new BigDecimal(1).subtract(alphaCoefficient).multiply(result[currentIndex - 1].getIndicatorValue()));
     }
 
     // α = 2 / (N + 1)
-    private BigDecimal countAlphaCoefficient(int antiAliasingInterval) {
+    private BigDecimal calculateAlphaCoefficient(int antiAliasingInterval) {
         return MathHelper.divide(new BigDecimal(2), new BigDecimal(antiAliasingInterval).add(new BigDecimal(1)));
     }
 

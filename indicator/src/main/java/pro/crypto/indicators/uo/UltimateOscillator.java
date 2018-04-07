@@ -2,7 +2,7 @@ package pro.crypto.indicators.uo;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.TrueRangeCounter;
+import pro.crypto.helper.TrueRangeCalculator;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.UORequest;
@@ -41,9 +41,9 @@ public class UltimateOscillator implements Indicator<UOResult> {
     @Override
     public void calculate() {
         result = new UOResult[originalData.length];
-        BigDecimal[] buyingPressureValues = countBuyingPressureValues();
-        BigDecimal[] trueRangeValues = TrueRangeCounter.countTrueRangeValues(originalData);
-        countUltimateOscillatorValues(buyingPressureValues, trueRangeValues);
+        BigDecimal[] buyingPressureValues = calculateBuyingPressureValues();
+        BigDecimal[] trueRangeValues = TrueRangeCalculator.calculate(originalData);
+        calculateUltimateOscillatorValues(buyingPressureValues, trueRangeValues);
     }
 
     @Override
@@ -83,24 +83,24 @@ public class UltimateOscillator implements Indicator<UOResult> {
         }
     }
 
-    private BigDecimal[] countBuyingPressureValues() {
+    private BigDecimal[] calculateBuyingPressureValues() {
         BigDecimal[] buyingPressureValues = new BigDecimal[originalData.length];
         for (int currentIndex = 1; currentIndex < buyingPressureValues.length; currentIndex++) {
-            buyingPressureValues[currentIndex] = countBuyingPressureValue(currentIndex);
+            buyingPressureValues[currentIndex] = calculateBuyingPressureValue(currentIndex);
         }
         return buyingPressureValues;
     }
 
-    private BigDecimal countBuyingPressureValue(int currentIndex) {
-        BigDecimal trueLength = countTrueLength(currentIndex);
+    private BigDecimal calculateBuyingPressureValue(int currentIndex) {
+        BigDecimal trueLength = calculateTrueLength(currentIndex);
         return originalData[currentIndex].getClose().subtract(trueLength);
     }
 
-    private BigDecimal countTrueLength(int currentIndex) {
+    private BigDecimal calculateTrueLength(int currentIndex) {
         return MathHelper.min(originalData[currentIndex].getLow(), originalData[currentIndex - 1].getClose());
     }
 
-    private void countUltimateOscillatorValues(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues) {
+    private void calculateUltimateOscillatorValues(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues) {
         fillInInitialPositions();
         fillInRemainPosition(buyingPressureValues, trueRangeValues);
     }
@@ -113,50 +113,50 @@ public class UltimateOscillator implements Indicator<UOResult> {
 
     private void fillInRemainPosition(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues) {
         for (int currentPeriod = longPeriod; currentPeriod < originalData.length; currentPeriod++) {
-            result[currentPeriod] = countUltimateOscillator(buyingPressureValues, trueRangeValues, currentPeriod);
+            result[currentPeriod] = calculateUltimateOscillator(buyingPressureValues, trueRangeValues, currentPeriod);
         }
     }
 
-    private UOResult countUltimateOscillator(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues, int currentPeriod) {
-        BigDecimal shortQuotient = countShortQuotient(buyingPressureValues, trueRangeValues, currentPeriod);
-        BigDecimal middleQuotient = countMiddleQuotient(buyingPressureValues, trueRangeValues, currentPeriod);
-        BigDecimal longQuotient = countLongQuotient(buyingPressureValues, trueRangeValues, currentPeriod);
+    private UOResult calculateUltimateOscillator(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues, int currentPeriod) {
+        BigDecimal shortQuotient = calculateShortQuotient(buyingPressureValues, trueRangeValues, currentPeriod);
+        BigDecimal middleQuotient = calculateMiddleQuotient(buyingPressureValues, trueRangeValues, currentPeriod);
+        BigDecimal longQuotient = calculateLongQuotient(buyingPressureValues, trueRangeValues, currentPeriod);
         if (isNull(shortQuotient) || isNull(middleQuotient) || isNull(longQuotient)) {
             return new UOResult(originalData[currentPeriod].getTickTime(), null);
         }
-        return countUltimateOscillatorValue(shortQuotient, middleQuotient, longQuotient, currentPeriod);
+        return calculateUltimateOscillatorValue(shortQuotient, middleQuotient, longQuotient, currentPeriod);
     }
 
-    private BigDecimal countShortQuotient(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues, int currentPeriod) {
-        BigDecimal shortBuyingPressureSum = countValuesSum(buyingPressureValues, currentPeriod, shortPeriod);
-        BigDecimal shortTrueRangeSum = countValuesSum(trueRangeValues, currentPeriod, shortPeriod);
+    private BigDecimal calculateShortQuotient(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues, int currentPeriod) {
+        BigDecimal shortBuyingPressureSum = calculateValuesSum(buyingPressureValues, currentPeriod, shortPeriod);
+        BigDecimal shortTrueRangeSum = calculateValuesSum(trueRangeValues, currentPeriod, shortPeriod);
         return MathHelper.divide(shortBuyingPressureSum, shortTrueRangeSum);
     }
 
-    private BigDecimal countMiddleQuotient(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues, int currentPeriod) {
-        BigDecimal shortBuyingPressureSum = countValuesSum(buyingPressureValues, currentPeriod, middlePeriod);
-        BigDecimal shortTrueRangeSum = countValuesSum(trueRangeValues, currentPeriod, middlePeriod);
+    private BigDecimal calculateMiddleQuotient(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues, int currentPeriod) {
+        BigDecimal shortBuyingPressureSum = calculateValuesSum(buyingPressureValues, currentPeriod, middlePeriod);
+        BigDecimal shortTrueRangeSum = calculateValuesSum(trueRangeValues, currentPeriod, middlePeriod);
         return MathHelper.divide(shortBuyingPressureSum, shortTrueRangeSum);
     }
 
-    private BigDecimal countLongQuotient(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues, int currentPeriod) {
-        BigDecimal shortBuyingPressureSum = countValuesSum(buyingPressureValues, currentPeriod, longPeriod);
-        BigDecimal shortTrueRangeSum = countValuesSum(trueRangeValues, currentPeriod, longPeriod);
+    private BigDecimal calculateLongQuotient(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues, int currentPeriod) {
+        BigDecimal shortBuyingPressureSum = calculateValuesSum(buyingPressureValues, currentPeriod, longPeriod);
+        BigDecimal shortTrueRangeSum = calculateValuesSum(trueRangeValues, currentPeriod, longPeriod);
         return MathHelper.divide(shortBuyingPressureSum, shortTrueRangeSum);
     }
 
-    private BigDecimal countValuesSum(BigDecimal[] values, int currentIndex, int period) {
+    private BigDecimal calculateValuesSum(BigDecimal[] values, int currentIndex, int period) {
         return MathHelper.sum(Arrays.copyOfRange(values, currentIndex - period + 1, currentIndex + 1));
     }
 
-    private UOResult countUltimateOscillatorValue(BigDecimal shortQuotient, BigDecimal middleQuotient, BigDecimal longQuotient, int currentPeriod) {
-        BigDecimal rawValue = countUltimateOscillatorRawValue(shortQuotient, middleQuotient, longQuotient);
+    private UOResult calculateUltimateOscillatorValue(BigDecimal shortQuotient, BigDecimal middleQuotient, BigDecimal longQuotient, int currentPeriod) {
+        BigDecimal rawValue = calculateUltimateOscillatorRawValue(shortQuotient, middleQuotient, longQuotient);
         return isNull(rawValue)
                 ? new UOResult(originalData[currentPeriod].getTickTime(), null)
                 : new UOResult(originalData[currentPeriod].getTickTime(), rawValue.multiply(new BigDecimal(100)));
     }
 
-    private BigDecimal countUltimateOscillatorRawValue(BigDecimal shortQuotient, BigDecimal middleQuotient, BigDecimal longQuotient) {
+    private BigDecimal calculateUltimateOscillatorRawValue(BigDecimal shortQuotient, BigDecimal middleQuotient, BigDecimal longQuotient) {
         final int shortPeriodWeightCoefficient = 4;
         final int middlePeriodWeightCoefficient = 2;
         final int longPeriodWeightCoefficient = 1;

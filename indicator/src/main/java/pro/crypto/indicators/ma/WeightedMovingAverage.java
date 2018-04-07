@@ -36,24 +36,24 @@ public class WeightedMovingAverage extends MovingAverage {
     }
 
     private void fillInRemainPositions() {
-        int weightedCoefficientSum = countWeightedCoefficientSum();
+        int weightedCoefficientSum = calculateWeightedCoefficientSum();
 
         for (int currentIndex = period - 1; currentIndex < originalData.length; currentIndex++) {
-            BigDecimal indicatorValue = countIndicatorValue(weightedCoefficientSum, currentIndex);
+            BigDecimal indicatorValue = calculateIndicatorValue(weightedCoefficientSum, currentIndex);
             result[currentIndex] = buildMovingAverageResult(currentIndex, indicatorValue);
         }
     }
 
-    private int countWeightedCoefficientSum() {
+    private int calculateWeightedCoefficientSum() {
         return range(1, period + 1).reduce(0, (a, b) -> a + b);
     }
 
-    private BigDecimal countIndicatorValue(int weightedCoefficientSum, int currentIndex) {
-        BigDecimal weightedPriceSum = countWeightedPriceSum(currentIndex);
+    private BigDecimal calculateIndicatorValue(int weightedCoefficientSum, int currentIndex) {
+        BigDecimal weightedPriceSum = calculateWeightedPriceSum(currentIndex);
         return MathHelper.divide(weightedPriceSum, new BigDecimal(weightedCoefficientSum));
     }
 
-    private BigDecimal countWeightedPriceSum(int currentIndex) {
+    private BigDecimal calculateWeightedPriceSum(int currentIndex) {
         int currentWeight = 1;
         BigDecimal weightedPriceSum = BigDecimal.ZERO;
         for (int i = currentIndex - period + 1; i <= currentIndex; i++) {

@@ -32,7 +32,7 @@ public class OnBalanceVolume implements Indicator<OBVResult> {
     @Override
     public void calculate() {
         result = new OBVResult[originalData.length];
-        countOnBalanceVolumesValues();
+        calculateOnBalanceVolumesValues();
     }
 
     @Override
@@ -43,7 +43,7 @@ public class OnBalanceVolume implements Indicator<OBVResult> {
         return result;
     }
 
-    private void countOnBalanceVolumesValues() {
+    private void calculateOnBalanceVolumesValues() {
         fillInFirstIndicatorPosition();
         fillInRemainPositions();
     }
@@ -54,11 +54,11 @@ public class OnBalanceVolume implements Indicator<OBVResult> {
 
     private void fillInRemainPositions() {
         for (int i = 1; i < originalData.length; i++) {
-            result[i] = countOnBalanceVolumeValue(i);
+            result[i] = calculateOnBalanceVolumeValue(i);
         }
     }
 
-    private OBVResult countOnBalanceVolumeValue(int currentIndex) {
+    private OBVResult calculateOnBalanceVolumeValue(int currentIndex) {
         int priceComparing = compareCurrentCloseWithPrevious(currentIndex);
         if (priceComparing == 0) {
             return buildSamePriceResult(currentIndex);

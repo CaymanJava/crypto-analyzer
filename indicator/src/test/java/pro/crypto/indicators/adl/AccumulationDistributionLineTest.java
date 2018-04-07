@@ -29,7 +29,7 @@ public class AccumulationDistributionLineTest {
     }
 
     @Test
-    public void testADL() {
+    public void testAccumulationDistributionLine() {
         ADLResult[] result = new AccumulationDistributionLine(new ADLRequest(originalData)).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));

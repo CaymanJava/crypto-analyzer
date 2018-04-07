@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 public class FakeTicksCreator {
 
-    public static Tick[] createFakeTicksWithCloseOnly(BigDecimal[] values) {
+    public static Tick[] createWithCloseOnly(BigDecimal[] values) {
         List<Tick> fakeTicks = new ArrayList<>();
         Stream.of(values)
                 .filter(Objects::nonNull)

@@ -17,7 +17,7 @@ public class MathHelper {
                 : divisible.divide(divisor, 10, BigDecimal.ROUND_HALF_UP);
     }
 
-    public static BigDecimal max(BigDecimal firstValue, BigDecimal secondValue) {
+    static BigDecimal max(BigDecimal firstValue, BigDecimal secondValue) {
         if (isNull(firstValue) || isNull(secondValue)) return null;
         return firstValue.compareTo(secondValue) > 0 ? firstValue : secondValue;
     }
@@ -33,14 +33,14 @@ public class MathHelper {
     }
 
     public static BigDecimal average(BigDecimal[] values) {
-        return divide(countSum(values), new BigDecimal(values.length));
+        return divide(calculateSum(values), new BigDecimal(values.length));
     }
 
     public static BigDecimal sum(BigDecimal... values) {
-        return countSum(values);
+        return calculateSum(values);
     }
 
-    private static BigDecimal countSum(BigDecimal[] values) {
+    private static BigDecimal calculateSum(BigDecimal[] values) {
         return scaleAndRound(Stream.of(values)
                 .reduce(BigDecimal.ZERO, BigDecimal::add));
     }

@@ -52,7 +52,7 @@ public class KeltnerChannel implements Indicator<KELTResult> {
     @Override
     public void calculate() {
         result = new KELTResult[originalData.length];
-        MAResult[] movingAverageResult = MovingAverageFactory.createMovingAverage(buildMovingAverageRequest()).getResult();
+        MAResult[] movingAverageResult = MovingAverageFactory.create(buildMovingAverageRequest()).getResult();
         ATRResult[] averageTrueRangeResult = new AverageTrueRange(buildAverageTrueRangeRequest()).getResult();
         calculateKeltnerChannelValues(movingAverageResult, averageTrueRangeResult);
     }

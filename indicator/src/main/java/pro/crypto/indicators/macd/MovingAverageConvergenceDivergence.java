@@ -88,8 +88,8 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
     }
 
     private BigDecimal[] calculateMACD() {
-        MAResult[] slowMovingAverageResult = MovingAverageFactory.createMovingAverage(buildSlowMovingAverageCreationRequest()).getResult();
-        MAResult[] fastMovingAverageResult = MovingAverageFactory.createMovingAverage(buildFastMovingAverageCreationRequest()).getResult();
+        MAResult[] slowMovingAverageResult = MovingAverageFactory.create(buildSlowMovingAverageCreationRequest()).getResult();
+        MAResult[] fastMovingAverageResult = MovingAverageFactory.create(buildFastMovingAverageCreationRequest()).getResult();
         return calculateMACD(slowMovingAverageResult, fastMovingAverageResult);
     }
 
@@ -127,7 +127,7 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
 
     private BigDecimal[] calculateSignalLineValues(BigDecimal[] indicatorValues) {
         Tick[] fakeTicks = FakeTicksCreator.createWithCloseOnly(indicatorValues);
-        MAResult[] emaIndicatorValue = MovingAverageFactory.createMovingAverage(buildSignalLineMovingAverageRequest(fakeTicks))
+        MAResult[] emaIndicatorValue = MovingAverageFactory.create(buildSignalLineMovingAverageRequest(fakeTicks))
                 .getResult();
         return copyEmaIndicatorValueToResultArray(indicatorValues, emaIndicatorValue);
     }

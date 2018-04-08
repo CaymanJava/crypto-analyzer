@@ -42,7 +42,7 @@ public class DisplacedMovingAverageTest {
     @Test
     public void displaceSimpleMovingAverageTest() {
         request.setOriginalIndicatorType(SIMPLE_MOVING_AVERAGE);
-        MAResult[] result = MovingAverageFactory.createMovingAverage(request).getResult();
+        MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length + request.getShift().getValue());
         assertTrue(isNull(result[0].getIndicatorValue()));
         assertTrue(isNull(result[4].getIndicatorValue()));
@@ -55,7 +55,7 @@ public class DisplacedMovingAverageTest {
     @Test
     public void displaceExponentialMovingAverageTest() {
         request.setOriginalIndicatorType(EXPONENTIAL_MOVING_AVERAGE);
-        MAResult[] result = MovingAverageFactory.createMovingAverage(request).getResult();
+        MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length + request.getShift().getValue());
         assertTrue(isNull(result[0].getIndicatorValue()));
         assertTrue(isNull(result[4].getIndicatorValue()));
@@ -69,7 +69,7 @@ public class DisplacedMovingAverageTest {
     public void displaceHullMovingAverageTest() {
         request.setOriginalIndicatorType(HULL_MOVING_AVERAGE);
         request.setPeriod(4);
-        MAResult[] result = MovingAverageFactory.createMovingAverage(request).getResult();
+        MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length + request.getShift().getValue());
         assertTrue(isNull(result[0].getIndicatorValue()));
         assertTrue(isNull(result[5].getIndicatorValue()));
@@ -83,7 +83,7 @@ public class DisplacedMovingAverageTest {
     @Test
     public void displaceSmoothedMovingAverageTest() {
         request.setOriginalIndicatorType(SMOOTHED_MOVING_AVERAGE);
-        MAResult[] result = MovingAverageFactory.createMovingAverage(request).getResult();
+        MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length + request.getShift().getValue());
         assertTrue(isNull(result[0].getIndicatorValue()));
         assertTrue(isNull(result[4].getIndicatorValue()));
@@ -96,7 +96,7 @@ public class DisplacedMovingAverageTest {
     @Test
     public void displaceWeightedMovingAverageTest() {
         request.setOriginalIndicatorType(WEIGHTED_MOVING_AVERAGE);
-        MAResult[] result = MovingAverageFactory.createMovingAverage(request).getResult();
+        MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length + request.getShift().getValue());
         assertTrue(isNull(result[0].getIndicatorValue()));
         assertTrue(isNull(result[4].getIndicatorValue()));
@@ -110,7 +110,7 @@ public class DisplacedMovingAverageTest {
     public void emptyOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {DISPLACED_MOVING_AVERAGE}, size: {0}}");
-        MovingAverageFactory.createMovingAverage(MARequest.builder()
+        MovingAverageFactory.create(MARequest.builder()
                 .originalData(new Tick[0])
                 .period(5)
                 .indicatorType(DISPLACED_MOVING_AVERAGE)
@@ -124,7 +124,7 @@ public class DisplacedMovingAverageTest {
     public void nullOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {DISPLACED_MOVING_AVERAGE}}");
-        MovingAverageFactory.createMovingAverage(MARequest.builder()
+        MovingAverageFactory.create(MARequest.builder()
                 .originalData(null)
                 .period(5)
                 .indicatorType(DISPLACED_MOVING_AVERAGE)
@@ -138,7 +138,7 @@ public class DisplacedMovingAverageTest {
     public void periodMoreThanTickDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be less than tick data size {indicator: {DISPLACED_MOVING_AVERAGE}, period: {5}, size: {1}}");
-        MovingAverageFactory.createMovingAverage(MARequest.builder()
+        MovingAverageFactory.create(MARequest.builder()
                 .originalData(new Tick[1])
                 .period(5)
                 .indicatorType(DISPLACED_MOVING_AVERAGE)
@@ -152,7 +152,7 @@ public class DisplacedMovingAverageTest {
     public void periodLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {DISPLACED_MOVING_AVERAGE}, period: {-5}}");
-        MovingAverageFactory.createMovingAverage(MARequest.builder()
+        MovingAverageFactory.create(MARequest.builder()
                 .originalData(new Tick[1])
                 .period(-5)
                 .indicatorType(DISPLACED_MOVING_AVERAGE)
@@ -166,7 +166,7 @@ public class DisplacedMovingAverageTest {
     public void emptyPriceTypeTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming price type is null {indicator: {DISPLACED_MOVING_AVERAGE}}");
-        MovingAverageFactory.createMovingAverage(MARequest.builder()
+        MovingAverageFactory.create(MARequest.builder()
                 .originalData(new Tick[30])
                 .period(5)
                 .indicatorType(DISPLACED_MOVING_AVERAGE)
@@ -181,7 +181,7 @@ public class DisplacedMovingAverageTest {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming original indicator type is not a moving average {indicator: {DISPLACED_MOVING_AVERAGE}}," +
                 " movingAverageType: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}");
-        MovingAverageFactory.createMovingAverage(MARequest.builder()
+        MovingAverageFactory.create(MARequest.builder()
                 .originalData(new Tick[30])
                 .period(5)
                 .indicatorType(DISPLACED_MOVING_AVERAGE)

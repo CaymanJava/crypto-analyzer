@@ -38,7 +38,7 @@ public class WeightedMovingAverageTest {
     @Test
     public void testWithPeriodThree() throws Exception {
         request.setPeriod(3);
-        MAResult[] result = MovingAverageFactory.createMovingAverage(request).getResult();
+        MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
         assertTrue(isNull(result[0].getIndicatorValue()));
         assertTrue(isNull(result[1].getIndicatorValue()));
@@ -51,7 +51,7 @@ public class WeightedMovingAverageTest {
     @Test
     public void testWithPeriodFive() throws Exception {
         request.setPeriod(5);
-        MAResult[] result = MovingAverageFactory.createMovingAverage(request).getResult();
+        MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
         assertTrue(isNull(result[0].getIndicatorValue()));
         assertTrue(isNull(result[3].getIndicatorValue()));
@@ -65,7 +65,7 @@ public class WeightedMovingAverageTest {
     public void emptyOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {WEIGHTED_MOVING_AVERAGE}, size: {0}}");
-        MovingAverageFactory.createMovingAverage(MARequest.builder()
+        MovingAverageFactory.create(MARequest.builder()
                 .originalData(new Tick[0])
                 .period(5)
                 .indicatorType(WEIGHTED_MOVING_AVERAGE)
@@ -77,7 +77,7 @@ public class WeightedMovingAverageTest {
     public void nullOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {WEIGHTED_MOVING_AVERAGE}}");
-        MovingAverageFactory.createMovingAverage(MARequest.builder()
+        MovingAverageFactory.create(MARequest.builder()
                 .originalData(null)
                 .period(5)
                 .indicatorType(WEIGHTED_MOVING_AVERAGE)
@@ -89,7 +89,7 @@ public class WeightedMovingAverageTest {
     public void periodMoreThanTickDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be less than tick data size {indicator: {WEIGHTED_MOVING_AVERAGE}, period: {5}, size: {1}}");
-        MovingAverageFactory.createMovingAverage(MARequest.builder()
+        MovingAverageFactory.create(MARequest.builder()
                 .originalData(new Tick[1])
                 .period(5)
                 .indicatorType(WEIGHTED_MOVING_AVERAGE)
@@ -101,7 +101,7 @@ public class WeightedMovingAverageTest {
     public void periodLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {WEIGHTED_MOVING_AVERAGE}, period: {-5}}");
-        MovingAverageFactory.createMovingAverage(MARequest.builder()
+        MovingAverageFactory.create(MARequest.builder()
                 .originalData(new Tick[1])
                 .period(-5)
                 .indicatorType(WEIGHTED_MOVING_AVERAGE)
@@ -113,7 +113,7 @@ public class WeightedMovingAverageTest {
     public void emptyPriceTypeTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming price type is null {indicator: {WEIGHTED_MOVING_AVERAGE}}");
-        MovingAverageFactory.createMovingAverage(MARequest.builder()
+        MovingAverageFactory.create(MARequest.builder()
                 .originalData(new Tick[30])
                 .period(5)
                 .indicatorType(WEIGHTED_MOVING_AVERAGE)

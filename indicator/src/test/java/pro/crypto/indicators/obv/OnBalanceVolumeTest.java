@@ -29,7 +29,7 @@ public class OnBalanceVolumeTest {
     }
 
     @Test
-    public void testADL() {
+    public void testOnBalanceVolume() {
         OBVResult[] result = new OnBalanceVolume(new OBVRequest(originalData)).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));

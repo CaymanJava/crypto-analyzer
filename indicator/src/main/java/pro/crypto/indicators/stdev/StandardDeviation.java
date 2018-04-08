@@ -76,7 +76,7 @@ public class StandardDeviation implements Indicator<StDevResult> {
     }
 
     private BigDecimal[] calculateMovingAveragePrices() {
-        return Stream.of(MovingAverageFactory.createMovingAverage(buildSignalLineMovingAverageRequest()).getResult())
+        return Stream.of(MovingAverageFactory.create(buildSignalLineMovingAverageRequest()).getResult())
                 .map(MAResult::getIndicatorValue)
                 .toArray(BigDecimal[]::new);
     }

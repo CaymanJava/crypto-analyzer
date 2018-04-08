@@ -85,7 +85,7 @@ public class ChaikinOscillator implements Indicator<COResult> {
     }
 
     private MAResult[] calculateSlowEmaForAdl(ADLResult[] adlResult) {
-        return MovingAverageFactory.createMovingAverage(MARequest.builder()
+        return MovingAverageFactory.create(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(createFakeTicks(adlResult))
                 .priceType(CLOSE)
@@ -95,7 +95,7 @@ public class ChaikinOscillator implements Indicator<COResult> {
     }
 
     private MAResult[] calculateFastEmaForAdl(ADLResult[] adlResult) {
-        return MovingAverageFactory.createMovingAverage(MARequest.builder()
+        return MovingAverageFactory.create(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(createFakeTicks(adlResult))
                 .priceType(CLOSE)

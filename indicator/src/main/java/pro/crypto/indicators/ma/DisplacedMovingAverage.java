@@ -47,7 +47,7 @@ public class DisplacedMovingAverage extends MovingAverage {
     @Override
     public void calculate() {
         initResultArray(originalData.length + shift.getValue());
-        MAResult[] originalResult = MovingAverageFactory.createMovingAverage(buildMovingAverageRequest())
+        MAResult[] originalResult = MovingAverageFactory.create(buildMovingAverageRequest())
                 .getResult();
         shiftResult(originalResult);
     }

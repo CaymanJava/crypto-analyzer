@@ -7,7 +7,7 @@ import static java.lang.String.format;
 
 public class MovingAverageFactory {
 
-    public static MovingAverage createMovingAverage(MARequest request) {
+    public static MovingAverage create(MARequest request) {
         switch (request.getIndicatorType()) {
             case DISPLACED_MOVING_AVERAGE:
                 return new DisplacedMovingAverage(request.getOriginalIndicatorType(), request.getPriceType(),

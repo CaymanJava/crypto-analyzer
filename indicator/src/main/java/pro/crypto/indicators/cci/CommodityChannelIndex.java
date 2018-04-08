@@ -70,7 +70,7 @@ public class CommodityChannelIndex implements Indicator<CCIResult> {
 
     private MAResult[] calculateSimpleMovingAverage(BigDecimal[] typicalPrices) {
         Tick[] fakeTicks = FakeTicksCreator.createWithCloseOnly(typicalPrices);
-        return MovingAverageFactory.createMovingAverage(buildTypicalPriceMovingAverageRequest(fakeTicks)).getResult();
+        return MovingAverageFactory.create(buildTypicalPriceMovingAverageRequest(fakeTicks)).getResult();
     }
 
     private MARequest buildTypicalPriceMovingAverageRequest(Tick[] fakeTicks) {

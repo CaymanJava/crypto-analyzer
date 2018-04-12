@@ -130,16 +130,16 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
         }
     }
 
-    private RSIResult buildRelativeStrengthIndexResult(BigDecimal positivePriceMovingAverageValue, BigDecimal negativePriceMovingAverageValue, int currentIndex) {
-        return isNull(positivePriceMovingAverageValue) || isNull(negativePriceMovingAverageValue)
+    private RSIResult buildRelativeStrengthIndexResult(BigDecimal averageGain, BigDecimal averageLoss, int currentIndex) {
+        return isNull(averageGain) || isNull(averageLoss)
                 ? new RSIResult(originalData[currentIndex].getTickTime(), null)
-                : calculateRelativeStrengthIndexValue(positivePriceMovingAverageValue, negativePriceMovingAverageValue, currentIndex);
+                : calculateRelativeStrengthIndexValue(averageGain, averageLoss, currentIndex);
     }
 
-    private RSIResult calculateRelativeStrengthIndexValue(BigDecimal positivePriceMovingAverageValue, BigDecimal negativePriceMovingAverageValue, int currentIndex) {
-        return isZeroValue(negativePriceMovingAverageValue)
+    private RSIResult calculateRelativeStrengthIndexValue(BigDecimal averageGain, BigDecimal averageLoss, int currentIndex) {
+        return isZeroValue(averageLoss)
                 ? new RSIResult(originalData[currentIndex].getTickTime(), MathHelper.scaleAndRound(new BigDecimal(100)))
-                : new RSIResult(originalData[currentIndex].getTickTime(), calculateRelativeStrengthIndexValue(positivePriceMovingAverageValue, negativePriceMovingAverageValue));
+                : new RSIResult(originalData[currentIndex].getTickTime(), calculateRelativeStrengthIndexValue(averageGain, averageLoss));
     }
 
     private boolean isZeroValue(BigDecimal negativePriceMovingAverageValue) {
@@ -148,16 +148,16 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
 
     //RSI = 100 - (100 / (RS + 1))
     //RS = MA(positive) / MA(negative)
-    private BigDecimal calculateRelativeStrengthIndexValue(BigDecimal positivePriceMovingAverageValue, BigDecimal negativePriceMovingAverageValue) {
+    private BigDecimal calculateRelativeStrengthIndexValue(BigDecimal averageGain, BigDecimal averageLoss) {
         BigDecimal relativeValue = MathHelper.divide(new BigDecimal(100),
-                BigDecimal.ONE.add(calculateRelativeStrength(positivePriceMovingAverageValue, negativePriceMovingAverageValue)));
+                BigDecimal.ONE.add(calculateRelativeStrength(averageGain, averageLoss)));
         return nonNull(relativeValue)
                 ? new BigDecimal(100).subtract(relativeValue)
                 : null;
     }
 
-    private BigDecimal calculateRelativeStrength(BigDecimal positivePriceMovingAverageValue, BigDecimal negativePriceMovingAverageValue) {
-        return MathHelper.divide(positivePriceMovingAverageValue, negativePriceMovingAverageValue);
+    private BigDecimal calculateRelativeStrength(BigDecimal averageGain, BigDecimal averageLoss) {
+        return MathHelper.divide(averageGain, averageLoss);
     }
 
 }

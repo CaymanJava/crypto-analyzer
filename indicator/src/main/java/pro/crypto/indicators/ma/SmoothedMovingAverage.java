@@ -44,7 +44,6 @@ public class SmoothedMovingAverage extends MovingAverage {
     private MAResult buildMovingAverageResult(int currentIndex) {
         return new MAResult(
                 originalData[currentIndex].getTickTime(),
-                MathHelper.scaleAndRound(originalData[currentIndex].getPriceByType(priceType)),
                 MathHelper.scaleAndRound(calculateSmoothedAverage(currentIndex)));
     }
 

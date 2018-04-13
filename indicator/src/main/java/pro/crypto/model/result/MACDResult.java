@@ -13,8 +13,6 @@ public class MACDResult implements IndicatorResult {
 
     private LocalDateTime time;
 
-    private BigDecimal originalValue;
-
     private BigDecimal indicatorValue;
 
     private BigDecimal signalLineResult;

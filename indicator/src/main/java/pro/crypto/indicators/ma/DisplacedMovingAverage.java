@@ -107,12 +107,12 @@ public class DisplacedMovingAverage extends MovingAverage {
 
     private void fillInRightShift(MAResult[] originalResult) {
         for (int i = 0; i < originalResult.length; i++) {
-            result[i] = new MAResult(originalResult[i].getTime(),originalResult[i].getOriginalValue(), null);
+            result[i] = new MAResult(originalResult[i].getTime(), null);
         }
 
         for (int i = result.length - 1; i >= originalResult.length; i--) {
             result[i] = new MAResult(
-                    new TimeFrameShifter(originalResult[i - shift.getValue()].getTime(), shift).shiftTime(), null, null);
+                    new TimeFrameShifter(originalResult[i - shift.getValue()].getTime(), shift).shiftTime(), null);
         }
 
         for (int i = shift.getValue(); i < result.length; i++) {

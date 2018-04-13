@@ -43,8 +43,8 @@ public class CommodityChannelIndex implements Indicator<CCIResult> {
         result = new CCIResult[originalData.length];
         BigDecimal[] typicalPrices = calculateTypicalPrices();
         MAResult[] smaResult = calculateSimpleMovingAverage(typicalPrices);
-        BigDecimal[] meanAbsoluteDeviations = calculateMeanAbsoluteDeviations(smaResult);
-        BigDecimal[] commodityChannelIndexes = calculateCommodityChannelIndexes(smaResult, meanAbsoluteDeviations);
+        BigDecimal[] meanAbsoluteDeviations = calculateMeanAbsoluteDeviations(typicalPrices, smaResult);
+        BigDecimal[] commodityChannelIndexes = calculateCommodityChannelIndexes(typicalPrices, smaResult, meanAbsoluteDeviations);
         buildResult(commodityChannelIndexes);
     }
 
@@ -82,46 +82,47 @@ public class CommodityChannelIndex implements Indicator<CCIResult> {
                 .build();
     }
 
-    private BigDecimal[] calculateMeanAbsoluteDeviations(MAResult[] smaResult) {
+    private BigDecimal[] calculateMeanAbsoluteDeviations(BigDecimal[] typicalPrices, MAResult[] smaResult) {
         BigDecimal[] meanAbsoluteDeviations = new BigDecimal[originalData.length];
         for (int currentIndex = period - 1; currentIndex < meanAbsoluteDeviations.length; currentIndex++) {
-            meanAbsoluteDeviations[currentIndex] = calculateMeanAbsoluteDeviation(smaResult, currentIndex);
+            meanAbsoluteDeviations[currentIndex] = calculateMeanAbsoluteDeviation(typicalPrices, smaResult, currentIndex);
         }
         return meanAbsoluteDeviations;
     }
 
-    private BigDecimal calculateMeanAbsoluteDeviation(MAResult[] smaResult, int currentIndex) {
-        BigDecimal absoluteSum = calculateAbsoluteSum(smaResult, currentIndex);
+    private BigDecimal calculateMeanAbsoluteDeviation(BigDecimal[] typicalPrices, MAResult[] smaResult, int currentIndex) {
+        BigDecimal absoluteSum = calculateAbsoluteSum(typicalPrices, smaResult, currentIndex);
         return MathHelper.divide(absoluteSum, new BigDecimal(period));
     }
 
-    private BigDecimal calculateAbsoluteSum(MAResult[] smaResult, int currentIndex) {
+    private BigDecimal calculateAbsoluteSum(BigDecimal[] typicalPrices, MAResult[] smaResult, int currentIndex) {
         BigDecimal absoluteSum = BigDecimal.ZERO;
         for (int i = currentIndex - period + 1; i <= currentIndex; i++) {
-            absoluteSum = absoluteSum.add(smaResult[currentIndex].getIndicatorValue().subtract(smaResult[i].getOriginalValue()).abs());
+            absoluteSum = absoluteSum.add(smaResult[currentIndex].getIndicatorValue().subtract(typicalPrices[i]).abs());
         }
         return absoluteSum;
     }
 
-    private BigDecimal[] calculateCommodityChannelIndexes(MAResult[] smaResult, BigDecimal[] meanAbsoluteDeviations) {
+    private BigDecimal[] calculateCommodityChannelIndexes(BigDecimal[] typicalPrices, MAResult[] smaResult, BigDecimal[] meanAbsoluteDeviations) {
         BigDecimal[] commodityChannelIndexes = new BigDecimal[originalData.length];
         for (int currentIndex = 0; currentIndex < commodityChannelIndexes.length; currentIndex++) {
             if (isNeedToSkip(currentIndex, smaResult, meanAbsoluteDeviations)) {
                 continue;
             }
-            commodityChannelIndexes[currentIndex] = calculateCommodityChannelIndex(currentIndex, smaResult, meanAbsoluteDeviations);
+            commodityChannelIndexes[currentIndex] = calculateCommodityChannelIndex(
+                    typicalPrices[currentIndex], smaResult[currentIndex].getIndicatorValue(), meanAbsoluteDeviations[currentIndex]);
         }
         return commodityChannelIndexes;
     }
 
     private boolean isNeedToSkip(int index, MAResult[] smaResult, BigDecimal[] meanAbsoluteDeviations) {
-        return isNull(smaResult[index].getIndicatorValue()) || isNull(smaResult[index].getOriginalValue()) ||
+        return isNull(smaResult[index].getIndicatorValue()) || isNull(originalData[index].getClose()) ||
                 isNull(meanAbsoluteDeviations[index]) || meanAbsoluteDeviations[index].compareTo(BigDecimal.ZERO) == 0;
     }
 
-    private BigDecimal calculateCommodityChannelIndex(int index, MAResult[] smaResult, BigDecimal[] meanAbsoluteDeviations) {
-        return MathHelper.divide(smaResult[index].getOriginalValue().subtract(smaResult[index].getIndicatorValue()),
-                new BigDecimal(0.015).multiply(meanAbsoluteDeviations[index]));
+    private BigDecimal calculateCommodityChannelIndex(BigDecimal typicalPrice, BigDecimal smaIndicatorValue, BigDecimal meanAbsoluteDeviation) {
+        return MathHelper.divide(typicalPrice.subtract(smaIndicatorValue),
+                new BigDecimal(0.015).multiply(meanAbsoluteDeviation));
     }
 
     private void buildResult(BigDecimal[] commodityChannelIndexes) {

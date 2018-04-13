@@ -176,7 +176,6 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
     private MACDResult buildMACDResult(BigDecimal indicatorValue, BigDecimal signalLineValue, BigDecimal barChartValue, int currentIndex) {
         return new MACDResult(
                 originalData[currentIndex].getTickTime(),
-                originalData[currentIndex].getPriceByType(priceType),
                 indicatorValue,
                 signalLineValue,
                 barChartValue);

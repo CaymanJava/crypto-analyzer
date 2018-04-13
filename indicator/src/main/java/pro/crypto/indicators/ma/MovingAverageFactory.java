@@ -23,6 +23,8 @@ public class MovingAverageFactory {
                 return new SmoothedMovingAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
             case WEIGHTED_MOVING_AVERAGE:
                 return new WeightedMovingAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
+            case MODIFIED_MOVING_AVERAGE:
+                return new ModifiedMovingAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
             default:
                 throw new UnknownTypeException(format("Unknown moving average type {type:{%s}}", request.getIndicatorType()));
         }

@@ -13,8 +13,6 @@ public class MAResult implements IndicatorResult {
 
     private LocalDateTime time;
 
-    private BigDecimal originalValue;
-
     private BigDecimal indicatorValue;
 
 }

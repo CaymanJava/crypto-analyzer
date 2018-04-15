@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.model.tick.Tick;
 
-import javax.validation.constraints.NotNull;
 
 @Data
 @Builder
@@ -14,7 +13,6 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 public class ADLRequest {
 
-    @NotNull
     private Tick[] originalData;
 
 }

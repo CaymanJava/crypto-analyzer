@@ -1,9 +1,7 @@
 package pro.crypto.indicators.macd;
 
 import pro.crypto.exception.UnexpectedValueException;
-import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.IndicatorTypeChecker;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
@@ -20,7 +18,8 @@ import java.math.BigDecimal;
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.IndicatorType.*;
+import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.MOVING_AVERAGE_CONVERGENCE_DIVERGENCE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class MovingAverageConvergenceDivergence implements Indicator<MACDResult> {
@@ -68,23 +67,16 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
+        checkOriginalDataSize(originalData, slowPeriod + signalPeriod);
         checkPriceType(priceType);
         checkPeriods();
-        checkMovingAverageType();
+        checkMovingAverageType(movingAverageType);
     }
 
     private void checkPeriods() {
         checkPeriod(slowPeriod);
         checkPeriod(fastPeriod);
         checkPeriod(signalPeriod);
-        checkIncomingDataLength();
-    }
-
-    private void checkMovingAverageType() {
-        if (nonNull(movingAverageType) && !IndicatorTypeChecker.isMovingAverageType(movingAverageType)) {
-            throw new WrongIncomingParametersException(format("Incoming original indicator type is not a moving average {indicator: {%s}}, movingAverageType: {%s}",
-                    getType().toString(), movingAverageType.toString()));
-        }
     }
 
     private BigDecimal[] calculateMACD() {
@@ -179,14 +171,6 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
                 indicatorValue,
                 signalLineValue,
                 barChartValue);
-    }
-
-    private void checkIncomingDataLength() {
-        if (originalData.length <= slowPeriod + signalPeriod) {
-            throw new WrongIncomingParametersException(format("Incoming tick data is not enough " +
-                            "{indicator: {%s}, tickLength: {%d}, slowPeriod: {%d}, signalPeriod: {%d}}",
-                    getType().toString(), originalData.length, slowPeriod, signalPeriod));
-        }
     }
 
 }

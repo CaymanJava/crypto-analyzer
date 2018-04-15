@@ -1,8 +1,6 @@
 package pro.crypto.indicators.rsi;
 
-import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.IndicatorTypeChecker;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
@@ -16,7 +14,6 @@ import pro.crypto.model.tick.Tick;
 import java.math.BigDecimal;
 import java.util.stream.Stream;
 
-import static java.lang.String.format;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.RELATIVE_STRENGTH_INDEX;
@@ -63,14 +60,7 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
         checkOriginalData(originalData);
         checkOriginalDataSize(originalData, period);
         checkPeriod(period);
-        checkMovingAverageType();
-    }
-
-    private void checkMovingAverageType() {
-        if (nonNull(movingAverageType) && !IndicatorTypeChecker.isMovingAverageType(movingAverageType)) {
-            throw new WrongIncomingParametersException(format("Incoming original indicator type is not a moving average {indicator: {%s}}, movingAverageType: {%s}",
-                    getType().toString(), movingAverageType.toString()));
-        }
+        checkMovingAverageType(movingAverageType);
     }
 
     private BigDecimal[] calculatePriceDifference() {

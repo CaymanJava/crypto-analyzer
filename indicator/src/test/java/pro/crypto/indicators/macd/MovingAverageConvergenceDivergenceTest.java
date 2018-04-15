@@ -164,7 +164,7 @@ public class MovingAverageConvergenceDivergenceTest {
     @Test
     public void notEnoughDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming tick data is not enough {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, tickLength: {10}, slowPeriod: {12}, signalPeriod: {9}}");
+        expectedException.expectMessage("Period should be less than tick data size {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, period: {21}, size: {10}}");
         new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[10])
                 .slowPeriod(12)

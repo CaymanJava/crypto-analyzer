@@ -17,14 +17,16 @@ public class MathHelper {
                 : divisible.divide(divisor, 10, BigDecimal.ROUND_HALF_UP);
     }
 
-    static BigDecimal max(BigDecimal firstValue, BigDecimal secondValue) {
-        if (isNull(firstValue) || isNull(secondValue)) return null;
-        return firstValue.compareTo(secondValue) > 0 ? firstValue : secondValue;
+    public static BigDecimal max(BigDecimal... values) {
+        return scaleAndRound(Stream.of(values)
+                .max(BigDecimal::compareTo)
+                .orElse(null));
     }
 
-    public static BigDecimal min(BigDecimal firstValue, BigDecimal secondValue) {
-        if (isNull(firstValue) || isNull(secondValue)) return null;
-        return firstValue.compareTo(secondValue) < 0 ? firstValue : secondValue;
+    public static BigDecimal min(BigDecimal... values) {
+        return scaleAndRound(Stream.of(values)
+                .min(BigDecimal::compareTo)
+                .orElse(null));
     }
 
     public static BigDecimal sqrt(BigDecimal value) {

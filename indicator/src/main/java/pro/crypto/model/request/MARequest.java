@@ -5,11 +5,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.Shift;
+import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 @Data
@@ -18,7 +17,6 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class MARequest {
 
-    @NotNull
     private IndicatorType indicatorType;
 
     // only from DMA
@@ -27,10 +25,8 @@ public class MARequest {
     // only from DMA
     private Shift shift;
 
-    @NotNull
     private PriceType priceType;
 
-    @NotNull
     private Tick[] originalData;
 
     private int period;

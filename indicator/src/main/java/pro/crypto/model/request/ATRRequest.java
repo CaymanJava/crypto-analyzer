@@ -1,13 +1,10 @@
 package pro.crypto.model.request;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.model.tick.Tick;
-
-import javax.validation.constraints.NotNull;
 
 @Data
 @Builder
@@ -15,7 +12,6 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 public class ATRRequest {
 
-    @NotNull
     private Tick[] originalData;
 
     private int period;

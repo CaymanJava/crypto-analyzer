@@ -7,15 +7,12 @@ import lombok.NoArgsConstructor;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
-import javax.validation.constraints.NotNull;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class RSIRequest {
 
-    @NotNull
     private Tick[] originalData;
 
     private IndicatorType movingAverageType;

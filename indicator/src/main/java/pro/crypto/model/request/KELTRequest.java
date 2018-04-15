@@ -8,15 +8,12 @@ import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
-import javax.validation.constraints.NotNull;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class KELTRequest {
 
-    @NotNull
     private Tick[] originalData;
 
     private PriceType priceType;

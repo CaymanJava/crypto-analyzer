@@ -11,6 +11,7 @@ public class IndicatorTypeChecker {
                 originalIndicatorType == EXPONENTIAL_MOVING_AVERAGE ||
                 originalIndicatorType == WEIGHTED_MOVING_AVERAGE ||
                 originalIndicatorType == SMOOTHED_MOVING_AVERAGE ||
+                originalIndicatorType == MODIFIED_MOVING_AVERAGE ||
                 originalIndicatorType == HULL_MOVING_AVERAGE;
     }
 

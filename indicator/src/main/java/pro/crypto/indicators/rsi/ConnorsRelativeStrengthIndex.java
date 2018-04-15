@@ -6,7 +6,6 @@ import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.CRSIRequest;
 import pro.crypto.model.request.RSIRequest;
-import pro.crypto.model.result.CRSIResult;
 import pro.crypto.model.result.RSIResult;
 import pro.crypto.model.tick.Tick;
 
@@ -17,7 +16,7 @@ import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.CONNORS_RELATIVE_STRENGTH_INDEX;
 
-public class ConnorsRelativeStrengthIndex implements Indicator<CRSIResult> {
+public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
 
     private final Tick[] originalData;
     private final IndicatorType movingAverageType;
@@ -25,7 +24,7 @@ public class ConnorsRelativeStrengthIndex implements Indicator<CRSIResult> {
     private final int streakRsiPeriod;
     private final int percentRankPeriod;
 
-    private CRSIResult[] result;
+    private RSIResult[] result;
 
     public ConnorsRelativeStrengthIndex(CRSIRequest request) {
         this.originalData = request.getOriginalData();
@@ -43,7 +42,7 @@ public class ConnorsRelativeStrengthIndex implements Indicator<CRSIResult> {
 
     @Override
     public void calculate() {
-        result = new CRSIResult[originalData.length];
+        result = new RSIResult[originalData.length];
         BigDecimal[] simpleRelativeStrengthIndexValues = calculateSimpleRelativeStrengthIndex();
         BigDecimal[] streakRelativeStrengthIndexValues = calculateStreakRelativeStrengthIndex();
         BigDecimal[] percentRankValues = calculatePercentRank();
@@ -51,7 +50,7 @@ public class ConnorsRelativeStrengthIndex implements Indicator<CRSIResult> {
     }
 
     @Override
-    public CRSIResult[] getResult() {
+    public RSIResult[] getResult() {
         if (isNull(result)) {
             calculate();
         }
@@ -180,7 +179,7 @@ public class ConnorsRelativeStrengthIndex implements Indicator<CRSIResult> {
 
     private void calculateConnorsRelativeStrengthIndexValues(BigDecimal[] simpleRSI, BigDecimal[] streakRSI, BigDecimal[] percentRank) {
         for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new CRSIResult(
+            result[currentIndex] = new RSIResult(
                     originalData[currentIndex].getTickTime(),
                     calculateConnorsRelativeStrengthIndexValue(simpleRSI[currentIndex], streakRSI[currentIndex], percentRank[currentIndex]));
         }

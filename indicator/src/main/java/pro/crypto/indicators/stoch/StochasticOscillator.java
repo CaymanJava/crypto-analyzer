@@ -2,6 +2,7 @@ package pro.crypto.indicators.stoch;
 
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.MathHelper;
+import pro.crypto.helper.MinMaxCalculator;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -12,7 +13,6 @@ import pro.crypto.model.result.StochResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.Arrays;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -68,39 +68,15 @@ public class StochasticOscillator implements Indicator<StochResult> {
     }
 
     private BigDecimal[] calculateFastStochasticOscillator() {
-        BigDecimal[] minValues = calculateMinimumValues();
-        BigDecimal[] maxValues = calculateMaximumValues();
+        BigDecimal[] minValues = MinMaxCalculator.calculateMinimumValues(extractLowValues(), fastPeriod);
+        BigDecimal[] maxValues = MinMaxCalculator.calculateMaximumValues(extractHighValues(), fastPeriod);
         return calculateFastStochasticOscillator(minValues, maxValues);
-    }
-
-    private BigDecimal[] calculateMinimumValues() {
-        BigDecimal[] minValues = new BigDecimal[originalData.length];
-        for (int currentIndex = fastPeriod - 1; currentIndex < minValues.length; currentIndex++) {
-            minValues[currentIndex] = MathHelper.min(extractLowValuesForComparing(currentIndex));
-        }
-        return minValues;
-    }
-
-    private BigDecimal[] extractLowValuesForComparing(int currentIndex) {
-        return Arrays.copyOfRange(extractLowValues(), currentIndex - fastPeriod + 1, currentIndex + 1);
     }
 
     private BigDecimal[] extractLowValues() {
         return Stream.of(originalData)
                 .map(Tick::getLow)
                 .toArray(BigDecimal[]::new);
-    }
-
-    private BigDecimal[] calculateMaximumValues() {
-        BigDecimal[] maxValues = new BigDecimal[originalData.length];
-        for (int currentIndex = fastPeriod - 1; currentIndex < maxValues.length; currentIndex++) {
-            maxValues[currentIndex] = MathHelper.max(extractHighValuesForComparing(currentIndex));
-        }
-        return maxValues;
-    }
-
-    private BigDecimal[] extractHighValuesForComparing(int currentIndex) {
-        return Arrays.copyOfRange(extractHighValues(), currentIndex - fastPeriod + 1, currentIndex + 1);
     }
 
     private BigDecimal[] extractHighValues() {

@@ -7,7 +7,7 @@ import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicators.tick.generator.OneDayTickWithFullPriceGenerator;
 import pro.crypto.model.request.CRSIRequest;
-import pro.crypto.model.result.CRSIResult;
+import pro.crypto.model.result.RSIResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -33,7 +33,7 @@ public class ConnorsRelativeStrengthIndexTest {
 
     @Test
     public void testConnorsRelativeStrengthIndexWithExponentialMovingAverageAndDefaultPeriods() {
-        CRSIResult[] result = new ConnorsRelativeStrengthIndex(buildRequest()).getResult();
+        RSIResult[] result = new ConnorsRelativeStrengthIndex(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertTrue(isNull(result[0].getIndicatorValue()));
         assertTrue(isNull(result[5].getIndicatorValue()));

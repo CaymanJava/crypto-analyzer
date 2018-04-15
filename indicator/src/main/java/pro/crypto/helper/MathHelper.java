@@ -17,12 +17,6 @@ public class MathHelper {
                 : divisible.divide(divisor, 10, BigDecimal.ROUND_HALF_UP);
     }
 
-    public static BigDecimal max(BigDecimal... values) {
-        return scaleAndRound(Stream.of(values)
-                .max(BigDecimal::compareTo)
-                .orElse(null));
-    }
-
     public static BigDecimal min(BigDecimal... values) {
         return scaleAndRound(Stream.of(values)
                 .min(BigDecimal::compareTo)
@@ -40,6 +34,12 @@ public class MathHelper {
 
     public static BigDecimal sum(BigDecimal... values) {
         return calculateSum(values);
+    }
+
+    static BigDecimal max(BigDecimal... values) {
+        return scaleAndRound(Stream.of(values)
+                .max(BigDecimal::compareTo)
+                .orElse(null));
     }
 
     private static BigDecimal calculateSum(BigDecimal[] values) {

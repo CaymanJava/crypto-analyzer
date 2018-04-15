@@ -17,6 +17,7 @@ import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static pro.crypto.model.IndicatorType.MODIFIED_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.STOCHASTIC_OSCILLATOR;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
@@ -31,7 +32,7 @@ public class StochasticOscillator implements Indicator<StochResult> {
 
     public StochasticOscillator(StochRequest request) {
         this.originalData = request.getOriginalData();
-        this.movingAverageType = request.getMovingAverageType();
+        this.movingAverageType = isNull(request.getMovingAverageType()) ? MODIFIED_MOVING_AVERAGE : request.getMovingAverageType();
         this.fastPeriod = request.getFastPeriod();
         this.slowPeriod = request.getSlowPeriod();
         checkIncomingData();
@@ -131,14 +132,18 @@ public class StochasticOscillator implements Indicator<StochResult> {
     }
 
     private BigDecimal[] calculateSlowStochasticOscillator(BigDecimal[] fastStochastic) {
-        BigDecimal[] slowStochastic = Stream.of(MovingAverageFactory.create(buildMovingAverageRequest(fastStochastic)).getResult())
+        BigDecimal[] slowStochastic = Stream.of(calculateMovingAverageResult(fastStochastic))
                 .map(MAResult::getIndicatorValue)
                 .toArray(BigDecimal[]::new);
         BigDecimal[] result = new BigDecimal[fastStochastic.length];
         for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = isNull(fastStochastic[currentIndex]) ? null : slowStochastic[currentIndex - fastPeriod + 1];
+            result[currentIndex] = nonNull(fastStochastic[currentIndex]) ? slowStochastic[currentIndex - fastPeriod + 1] : null;
         }
         return result;
+    }
+
+    private MAResult[] calculateMovingAverageResult(BigDecimal[] fastStochastic) {
+        return MovingAverageFactory.create(buildMovingAverageRequest(fastStochastic)).getResult();
     }
 
     private MARequest buildMovingAverageRequest(BigDecimal[] fastStochastic) {

@@ -1,14 +1,12 @@
 package pro.crypto.model.result;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Value;
 import pro.crypto.model.IndicatorResult;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-@Data
-@AllArgsConstructor
+@Value
 public class KELTResult implements IndicatorResult {
 
     private LocalDateTime time;

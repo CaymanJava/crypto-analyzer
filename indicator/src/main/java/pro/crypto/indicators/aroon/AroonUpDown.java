@@ -144,10 +144,8 @@ public class AroonUpDown implements Indicator<AroonResult> {
     }
 
     private BigDecimal calculateAroonValue(Integer days) {
-        BigDecimal aroonAbs = MathHelper.divide(new BigDecimal(period).subtract(new BigDecimal(days)), new BigDecimal(period));
-        return nonNull(aroonAbs) ?
-                aroonAbs.multiply(new BigDecimal(100))
-                : null;
+        return MathHelper.divide(new BigDecimal(period).subtract(new BigDecimal(days)).multiply(new BigDecimal(100)),
+                new BigDecimal(period));
     }
 
     private void calculateAroonOscillatorValues(BigDecimal[] aroonUpValues, BigDecimal[] aroonDownValues) {

@@ -43,23 +43,23 @@ public class PreferableStochasticOscillatorTest {
         assertTrue(isNull(result[14].getFastStochastic()));
         assertTrue(isNull(result[14].getSlowStochastic()));
         assertEquals(result[15].getTime(), of(2018, 3, 12, 0, 0));
-        assertEquals(result[15].getFastStochastic(), new BigDecimal(5.1774560933).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[15].getFastStochastic(), new BigDecimal(5.1774560918).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertTrue(isNull(result[15].getSlowStochastic()));
         assertEquals(result[17].getTime(), of(2018, 3, 14, 0, 0));
-        assertEquals(result[17].getFastStochastic(), new BigDecimal(23.5114430784).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[17].getSlowStochastic(), new BigDecimal(15.4053965828).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[17].getFastStochastic(), new BigDecimal(23.5114430781).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[17].getSlowStochastic(), new BigDecimal(15.4053965825).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[28].getTime(), of(2018, 3, 25, 0, 0));
-        assertEquals(result[28].getFastStochastic(), new BigDecimal(51.0711126238).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[28].getSlowStochastic(), new BigDecimal(26.7877943637).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[28].getFastStochastic(), new BigDecimal(51.0711126231).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[28].getSlowStochastic(), new BigDecimal(26.7877943631).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getFastStochastic(), new BigDecimal(85.6660248578).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getFastStochastic(), new BigDecimal(85.6660248579).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[32].getSlowStochastic(), new BigDecimal(70.2792866213).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getFastStochastic(), new BigDecimal(89.7247978764).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[45].getSlowStochastic(), new BigDecimal(90.2357825983).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[45].getFastStochastic(), new BigDecimal(89.7247978773).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[45].getSlowStochastic(), new BigDecimal(90.2357825985).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getFastStochastic(), new BigDecimal(9.8491602516).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[72].getSlowStochastic(), new BigDecimal(20.6941211114).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getFastStochastic(), new BigDecimal(9.8491602527).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getSlowStochastic(), new BigDecimal(20.6941211124).setScale(10, BigDecimal.ROUND_HALF_UP));
     }
 
     @Test

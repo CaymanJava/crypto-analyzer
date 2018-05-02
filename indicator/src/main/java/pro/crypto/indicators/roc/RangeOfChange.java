@@ -10,7 +10,6 @@ import pro.crypto.model.tick.Tick;
 import java.math.BigDecimal;
 
 import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.RANGE_OF_CHANGE;
 
 public class RangeOfChange implements Indicator<ROCResult> {
@@ -72,11 +71,9 @@ public class RangeOfChange implements Indicator<ROCResult> {
     }
 
     private BigDecimal calculateRangeOfChangeValue(int currentIndex) {
-        BigDecimal rangeOfChangeAbs = MathHelper.divide(originalData[currentIndex].getClose()
-                        .subtract(originalData[currentIndex - period + 1].getClose()), originalData[currentIndex - period + 1].getClose());
-        return nonNull(rangeOfChangeAbs)
-                ? rangeOfChangeAbs.multiply(new BigDecimal(100))
-                : null;
+        return MathHelper.divide(originalData[currentIndex].getClose()
+                        .subtract(originalData[currentIndex - period + 1].getClose()).multiply(new BigDecimal(100)),
+                originalData[currentIndex - period + 1].getClose());
     }
 
 }

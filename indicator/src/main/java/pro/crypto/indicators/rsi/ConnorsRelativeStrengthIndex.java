@@ -13,7 +13,6 @@ import java.math.BigDecimal;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.CONNORS_RELATIVE_STRENGTH_INDEX;
 
 public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
@@ -143,12 +142,9 @@ public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private BigDecimal calculatePercentagePriceChange(int currentIndex) {
-        BigDecimal relativeChange = MathHelper.divide(
-                originalData[currentIndex].getClose().subtract(originalData[currentIndex - 1].getClose()),
+        return MathHelper.divide(
+                originalData[currentIndex].getClose().subtract(originalData[currentIndex - 1].getClose()).multiply(new BigDecimal(100)),
                 originalData[currentIndex].getClose());
-        return nonNull(relativeChange)
-                ? MathHelper.scaleAndRound(relativeChange.multiply(new BigDecimal(100)))
-                : null;
     }
 
     private BigDecimal[] calculatePercentRankValues(BigDecimal[] percentagePriceChanges) {
@@ -161,10 +157,7 @@ public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
 
     private BigDecimal calculatePercentRank(BigDecimal[] percentagePriceChanges, int currentIndex) {
         BigDecimal percentRankValue = countPercentageInPeriodLessThanCurrent(percentagePriceChanges, currentIndex);
-        BigDecimal relativeRank = MathHelper.divide(percentRankValue, new BigDecimal(percentRankPeriod));
-        return nonNull(relativeRank)
-                ? MathHelper.scaleAndRound(relativeRank.multiply(new BigDecimal(100)))
-                : null;
+        return MathHelper.divide(percentRankValue.multiply(new BigDecimal(100)), new BigDecimal(percentRankPeriod));
     }
 
     private BigDecimal countPercentageInPeriodLessThanCurrent(BigDecimal[] percentagePriceChanges, int currentIndex) {

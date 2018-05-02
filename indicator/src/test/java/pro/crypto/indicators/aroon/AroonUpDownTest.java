@@ -44,29 +44,29 @@ public class AroonUpDownTest {
         assertTrue(isNull(result[13].getAroonDown()));
         assertTrue(isNull(result[13].getAroonOscillator()));
         assertEquals(result[14].getTime(), of(2018, 3, 11, 0, 0));
-        assertEquals(result[14].getAroonUp(), new BigDecimal(42.8571428600).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[14].getAroonUp(), new BigDecimal(42.8571428571).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[14].getAroonDown(), new BigDecimal(100.0000000000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[14].getAroonOscillator(), new BigDecimal(-57.1428571400).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[14].getAroonOscillator(), new BigDecimal(-57.1428571429).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[26].getTime(), of(2018, 3, 23, 0, 0));
         assertEquals(result[26].getAroonUp(), new BigDecimal(0E-10).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[26].getAroonDown(), new BigDecimal(92.8571428600).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[26].getAroonOscillator(), new BigDecimal(-92.8571428600).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[26].getAroonDown(), new BigDecimal(92.8571428571).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[26].getAroonOscillator(), new BigDecimal(-92.8571428571).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
         assertEquals(result[32].getAroonUp(), new BigDecimal(100.0000000000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[32].getAroonDown(), new BigDecimal(64.2857142900).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[32].getAroonOscillator(), new BigDecimal(35.7142857100).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getAroonDown(), new BigDecimal(64.2857142857).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getAroonOscillator(), new BigDecimal(35.7142857143).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[47].getTime(), of(2018, 4, 13, 0, 0));
-        assertEquals(result[47].getAroonUp(), new BigDecimal(78.5714285700).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[47].getAroonUp(), new BigDecimal(78.5714285714).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[47].getAroonDown(), new BigDecimal(0E-10).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[47].getAroonOscillator(), new BigDecimal(78.5714285700).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[47].getAroonOscillator(), new BigDecimal(78.5714285714).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[64].getTime(), of(2018, 4, 30, 0, 0));
-        assertEquals(result[64].getAroonUp(), new BigDecimal(92.8571428600).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[64].getAroonUp(), new BigDecimal(92.8571428571).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[64].getAroonDown(), new BigDecimal(0E-10).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[64].getAroonOscillator(), new BigDecimal(92.8571428600).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[64].getAroonOscillator(), new BigDecimal(92.8571428571).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getAroonUp(), new BigDecimal(35.7142857100).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getAroonUp(), new BigDecimal(35.7142857143).setScale(10, BigDecimal.ROUND_HALF_UP));
         assertEquals(result[72].getAroonDown(), new BigDecimal(100.0000000000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[72].getAroonOscillator(), new BigDecimal(-64.2857142900).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getAroonOscillator(), new BigDecimal(-64.2857142857).setScale(10, BigDecimal.ROUND_HALF_UP));
     }
 
     @Test

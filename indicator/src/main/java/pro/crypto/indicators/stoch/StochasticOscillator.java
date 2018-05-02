@@ -101,10 +101,7 @@ public class StochasticOscillator implements Indicator<StochResult> {
 
     // %K = 100 * (CLOSE - MINn)/(MAXn - MINn)
     private BigDecimal calculateFastStochasticOscillatorValue(BigDecimal minValue, BigDecimal maxValue, BigDecimal close) {
-        BigDecimal stochCoefficient = MathHelper.divide(close.subtract(minValue), maxValue.subtract(minValue));
-        return nonNull(stochCoefficient)
-                ? new BigDecimal(100).multiply(stochCoefficient)
-                : null;
+        return MathHelper.divide(close.subtract(minValue).multiply(new BigDecimal(100)), maxValue.subtract(minValue));
     }
 
     private BigDecimal[] calculateSlowStochasticOscillator(BigDecimal[] fastStochastic) {

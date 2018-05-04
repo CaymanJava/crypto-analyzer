@@ -3,46 +3,26 @@ package pro.crypto.indicators.tick.generator;
 import pro.crypto.model.tick.Tick;
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
 
-public class OneDayTickWithFullPriceGenerator extends AbstractGenerator {
+public class IncreasedQuantityTickGenerator extends OneDayTickWithFullPriceGenerator {
 
-    public OneDayTickWithFullPriceGenerator(LocalDateTime startDateTime) {
-        this.startDateTime = startDateTime;
+    public IncreasedQuantityTickGenerator(LocalDateTime startDateTime) {
+        super(startDateTime);
     }
 
     @Override
     public Tick[] generate() {
-        return new Tick[] {
-                generateTick(1302.67, 1302.67, 1263.23, 1263.84, 15.5471),
-                generateTick(1268.65, 1294.65, 1261, 1292.3101, 97.4022),
-                generateTick(1274.76, 1274.76, 1251, 1251, 15.3186),
-                generateTick(1280.27, 1304.02, 1280.27, 1295.3, 89.7768),
-                generateTick(1286.75, 1310.33, 1270.73, 1304.60, 46.3168),
-                generateTick(1306.13, 1322.4301, 1299.53, 1320.09, 27.9656),
-                generateTick(1328.35, 1347.27, 1314.96, 1315.45, 57.1999),
-                generateTick(1305.72, 1305.72, 1279.09, 1279.68, 182.9905),
-                generateTick(1272.9399, 1292.36, 1270.59, 1291.4, 85.1414),
-                generateTick(1286.85, 1292.73, 1267.6899, 1275.88, 92.1347),
-                generateTick(1292.91, 1298.5, 1258.85, 1259.9399, 31.5042),
-                generateTick(1244.52, 1263.90, 1233.08, 1252.13, 59.7610),
-                generateTick(1233.9399, 1242.91, 1216.1899, 1216.45, 133.6559),
-                generateTick(1229.47, 1232.96, 1216.24, 1221.09, 28.1290),
-                generateTick(1209.13, 1209.72, 1177.41, 1184.9301, 36.9924),
-                generateTick(1170.95, 1200.45, 1169.04, 1182.17, 136.9005),
-                generateTick(1195.60, 1227.23, 1184.12, 1222.29, 72.3155),
-                generateTick(1231.85, 1239.62, 1206.91, 1221.61, 137.6180),
-                generateTick(1213.77, 1235.08, 1198.12, 1199.16, 17.7410),
-                generateTick(1187.48, 1190.74, 1160.0699, 1172.0601, 116.2540),
-                generateTick(1180.26, 1214.01, 1160.71, 1213.72, 95.1671),
-                generateTick(1208.03, 1222.72, 1183.76, 1187.3101, 142.2453),
-                generateTick(1183.11, 1197.96, 1164.51, 1165.5601, 149.9313),
-                generateTick(1174.58, 1175.75, 1135.27, 1139.9, 133.9619),
-                generateTick(1135.79, 1145.79, 1113.36, 1119.4, 180.4000),
-                generateTick(1129.8199, 1144.13, 1109.64, 1129.21, 50.8459),
-                generateTick(1117.14, 1135.89, 1112.08, 1114.11, 180.8447),
-                generateTick(1116.76, 1165.83, 1108.49, 1163.37, 199.8597),
-                generateTick(1179.90, 1220.12, 1179.90, 1210.47, 3.5140),
-                generateTick(1198.50, 1221.60, 1193.42, 1220.53, 145.0532),
+        List<Tick> ticks = Arrays.asList(super.generate());
+        List<Tick> additionalTicks = generateAdditionalTicks();
+        return Stream.concat(ticks.stream(), additionalTicks.stream())
+                .toArray(Tick[]::new);
+    }
+
+    private List<Tick> generateAdditionalTicks() {
+        return Arrays.asList(generateTick(1198.50, 1221.60, 1193.42, 1220.53, 145.0532),
                 generateTick(1259.87, 1282.74, 1259.87, 1282.4399, 153.5853),
                 generateTick(1239.54, 1253.61, 1229.0601, 1232.42, 170.3715),
                 generateTick(1272.26, 1283.21, 1263.46, 1272.29, 89.5419),
@@ -85,14 +65,7 @@ public class OneDayTickWithFullPriceGenerator extends AbstractGenerator {
                 generateTick(1374.60, 1397.80, 1373.90, 1390.80, 79.2830),
                 generateTick(1382.10, 1407.15, 1377.71, 1396.59, 76.3990),
                 generateTick(1407.02, 1411.6899, 1388.51, 1399.55, 58.4988),
-                generateTick(1387.71, 1387.71, 1362.5601, 1362.61, 13.9093)
-        };
-    }
-
-    Tick generateTick(double open, double high, double low, double close, double volume) {
-        Tick tick = generateFullTick(open, high, low, close, volume);
-        plusOneDay();
-        return tick;
+                generateTick(1387.71, 1387.71, 1362.5601, 1362.61, 13.9093));
     }
 
 }

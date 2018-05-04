@@ -22,7 +22,6 @@ import static pro.crypto.model.tick.PriceType.CLOSE;
 import static pro.crypto.model.ShiftType.RIGHT;
 import static pro.crypto.model.tick.TimeFrame.FIFTEEN_MIN;
 
-
 public class DisplacedMovingAverageTest {
 
     @Rule

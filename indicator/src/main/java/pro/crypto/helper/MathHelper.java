@@ -28,7 +28,7 @@ public class MathHelper {
         return BigDecimal.valueOf(StrictMath.sqrt(value.doubleValue()));
     }
 
-    public static BigDecimal average(BigDecimal[] values) {
+    public static BigDecimal average(BigDecimal... values) {
         return divide(calculateSum(values), new BigDecimal(values.length));
     }
 
@@ -36,7 +36,7 @@ public class MathHelper {
         return calculateSum(values);
     }
 
-    static BigDecimal max(BigDecimal... values) {
+    public static BigDecimal max(BigDecimal... values) {
         return scaleAndRound(Stream.of(values)
                 .max(BigDecimal::compareTo)
                 .orElse(null));

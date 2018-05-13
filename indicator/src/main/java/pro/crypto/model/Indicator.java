@@ -17,7 +17,7 @@ public interface Indicator<T extends IndicatorResult> {
 
     T[] getResult();
 
-    default void checkOriginalData(Tick[] originalData) {
+    default void checkOriginalData(Tick... originalData) {
         if (isNull(originalData)) {
             throw new WrongIncomingParametersException(format("Incoming tick data is null {indicator: {%s}}", getType().toString()));
         }

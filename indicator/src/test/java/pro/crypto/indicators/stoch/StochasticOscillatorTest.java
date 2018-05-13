@@ -10,12 +10,9 @@ import pro.crypto.model.request.StochRequest;
 import pro.crypto.model.result.StochResult;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.MODIFIED_MOVING_AVERAGE;
 
@@ -35,30 +32,30 @@ public class StochasticOscillatorTest {
     public void testStochasticOscillatorWithPeriodFourteenAndModifiedMovingAverage() {
         StochResult[] result = new StochasticOscillator(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getFastStochastic()));
-        assertTrue(isNull(result[0].getSlowStochastic()));
-        assertTrue(isNull(result[10].getFastStochastic()));
-        assertTrue(isNull(result[10].getSlowStochastic()));
-        assertTrue(isNull(result[12].getFastStochastic()));
-        assertTrue(isNull(result[12].getSlowStochastic()));
+        assertNull(result[0].getFastStochastic());
+        assertNull(result[0].getSlowStochastic());
+        assertNull(result[10].getFastStochastic());
+        assertNull(result[10].getSlowStochastic());
+        assertNull(result[12].getFastStochastic());
+        assertNull(result[12].getSlowStochastic());
         assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getFastStochastic(), new BigDecimal(3.7382485976).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertTrue(isNull(result[13].getSlowStochastic()));
+        assertEquals(result[13].getFastStochastic(), toBigDecimal(3.7382485976));
+        assertNull(result[13].getSlowStochastic());
         assertEquals(result[15].getTime(), of(2018, 3, 12, 0, 0));
-        assertEquals(result[15].getFastStochastic(), new BigDecimal(7.3668854850).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[15].getSlowStochastic(), new BigDecimal(5.1774560918).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[15].getFastStochastic(), toBigDecimal(7.366885485));
+        assertEquals(result[15].getSlowStochastic(), toBigDecimal(5.1774560918));
         assertEquals(result[28].getTime(), of(2018, 3, 25, 0, 0));
-        assertEquals(result[28].getFastStochastic(), new BigDecimal(77.7701517578).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[28].getSlowStochastic(), new BigDecimal(38.9215214551).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[28].getFastStochastic(), toBigDecimal(77.7701517578));
+        assertEquals(result[28].getSlowStochastic(), toBigDecimal(38.9215214551));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getFastStochastic(), new BigDecimal(93.7500000000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[32].getSlowStochastic(), new BigDecimal(77.9710889173).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getFastStochastic(), toBigDecimal(93.75));
+        assertEquals(result[32].getSlowStochastic(), toBigDecimal(77.9710889173));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getFastStochastic(), new BigDecimal(88.6727962826).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[45].getSlowStochastic(), new BigDecimal(89.9802821872).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[45].getFastStochastic(), toBigDecimal(88.6727962826));
+        assertEquals(result[45].getSlowStochastic(), toBigDecimal(89.9802821872));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getFastStochastic(), new BigDecimal(0.0314073910).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[72].getSlowStochastic(), new BigDecimal(15.2716406824).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getFastStochastic(), toBigDecimal(0.031407391));
+        assertEquals(result[72].getSlowStochastic(), toBigDecimal(15.2716406824));
     }
 
     @Test

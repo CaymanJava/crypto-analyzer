@@ -10,12 +10,9 @@ import pro.crypto.model.request.KELTRequest;
 import pro.crypto.model.result.KELTResult;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
@@ -37,33 +34,33 @@ public class KeltnerChannelTest {
         KELTResult[] result = new KeltnerChannel(buildKELTRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
-        assertTrue(isNull(result[0].getBasis()));
-        assertTrue(isNull(result[0].getUpperEnvelope()));
-        assertTrue(isNull(result[0].getLowerEnvelope()));
+        assertNull(result[0].getBasis());
+        assertNull(result[0].getUpperEnvelope());
+        assertNull(result[0].getLowerEnvelope());
         assertEquals(result[8].getTime(), of(2018, 3, 5, 0, 0));
-        assertTrue(isNull(result[8].getBasis()));
-        assertTrue(isNull(result[8].getUpperEnvelope()));
-        assertTrue(isNull(result[8].getLowerEnvelope()));
+        assertNull(result[8].getBasis());
+        assertNull(result[8].getUpperEnvelope());
+        assertNull(result[8].getLowerEnvelope());
         assertEquals(result[18].getTime(), of(2018, 3, 15, 0, 0));
-        assertTrue(isNull(result[18].getBasis()));
-        assertTrue(isNull(result[18].getUpperEnvelope()));
-        assertTrue(isNull(result[18].getLowerEnvelope()));
+        assertNull(result[18].getBasis());
+        assertNull(result[18].getUpperEnvelope());
+        assertNull(result[18].getLowerEnvelope());
         assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getBasis(), new BigDecimal(1251.0690100000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[19].getUpperEnvelope(), new BigDecimal(1315.9051068638).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[19].getLowerEnvelope(), new BigDecimal(1186.2329131362).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[19].getBasis(), toBigDecimal(1251.06901));
+        assertEquals(result[19].getUpperEnvelope(), toBigDecimal(1315.9051068638));
+        assertEquals(result[19].getLowerEnvelope(), toBigDecimal(1186.2329131362));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getBasis(), new BigDecimal(1215.1899224323).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[32].getUpperEnvelope(), new BigDecimal(1294.1996591075).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[32].getLowerEnvelope(), new BigDecimal(1136.1801857571).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getBasis(), toBigDecimal(1215.1899224323));
+        assertEquals(result[32].getUpperEnvelope(), toBigDecimal(1294.1996591075));
+        assertEquals(result[32].getLowerEnvelope(), toBigDecimal(1136.1801857571));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getBasis(), new BigDecimal(1306.1636910393).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[45].getUpperEnvelope(), new BigDecimal(1381.5257791479).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[45].getLowerEnvelope(), new BigDecimal(1230.8016029307).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[45].getBasis(), toBigDecimal(1306.1636910393));
+        assertEquals(result[45].getUpperEnvelope(), toBigDecimal(1381.5257791479));
+        assertEquals(result[45].getLowerEnvelope(), toBigDecimal(1230.8016029307));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getBasis(), new BigDecimal(1405.7344873457).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[72].getUpperEnvelope(), new BigDecimal(1472.1575939069).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[72].getLowerEnvelope(), new BigDecimal(1339.3113807845).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getBasis(), toBigDecimal(1405.7344873457));
+        assertEquals(result[72].getUpperEnvelope(), toBigDecimal(1472.1575939069));
+        assertEquals(result[72].getLowerEnvelope(), toBigDecimal(1339.3113807845));
     }
 
     @Test
@@ -191,7 +188,6 @@ public class KeltnerChannelTest {
                 .averageTrueRangeShift(2)
                 .build()).getResult();
     }
-
 
     private KELTRequest buildKELTRequest() {
         return KELTRequest.builder()

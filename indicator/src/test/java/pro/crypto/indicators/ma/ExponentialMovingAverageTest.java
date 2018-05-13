@@ -6,16 +6,13 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicators.tick.generator.FifteenMinTickWithClosePriceOnlyGenerator;
+import pro.crypto.model.request.MARequest;
 import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
-import pro.crypto.model.request.MARequest;
-
-import java.math.BigDecimal;
 
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 import static pro.crypto.model.tick.PriceType.OPEN;
@@ -42,26 +39,26 @@ public class ExponentialMovingAverageTest {
         request.setAlphaCoefficient(null);
         MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[1].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[1].getIndicatorValue());
         assertEquals(result[3].getTime(), of(2018, 2, 25, 0, 45));
-        assertEquals(result[3].getIndicatorValue(), new BigDecimal(6.8000000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[3].getIndicatorValue(), toBigDecimal(6.8));
         assertEquals(result[16].getTime(), of(2018, 2, 25, 4, 0));
-        assertEquals(result[16].getIndicatorValue(), new BigDecimal(7.0685180665).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[16].getIndicatorValue(), toBigDecimal(7.0685180665));
     }
 
     @Test
     public void testWithPeriodFive() throws Exception {
         request.setPeriod(5);
-        request.setAlphaCoefficient(new BigDecimal(0.4));
+        request.setAlphaCoefficient(toBigDecimal(0.4));
         MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[3].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[3].getIndicatorValue());
         assertEquals(result[4].getTime(), of(2018, 2, 25, 1, 0));
-        assertEquals(result[4].getIndicatorValue(), new BigDecimal(6.7000000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[4].getIndicatorValue(), toBigDecimal(6.7));
         assertEquals(result[16].getTime(), of(2018, 2, 25, 4, 0));
-        assertEquals(result[16].getIndicatorValue(), new BigDecimal(6.9413140066).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[16].getIndicatorValue(), toBigDecimal(6.9413140066));
     }
 
     @Test
@@ -73,7 +70,7 @@ public class ExponentialMovingAverageTest {
                 .originalData(new Tick[0])
                 .period(5)
                 .priceType(OPEN)
-                .alphaCoefficient(new BigDecimal(0.4))
+                .alphaCoefficient(toBigDecimal(0.4))
                 .build()).getResult();
     }
 
@@ -86,7 +83,7 @@ public class ExponentialMovingAverageTest {
                 .originalData(null)
                 .period(5)
                 .priceType(OPEN)
-                .alphaCoefficient(new BigDecimal(0.4))
+                .alphaCoefficient(toBigDecimal(0.4))
                 .build()).getResult();
     }
 
@@ -99,7 +96,7 @@ public class ExponentialMovingAverageTest {
                 .originalData(new Tick[1])
                 .period(5)
                 .priceType(OPEN)
-                .alphaCoefficient(new BigDecimal(0.4))
+                .alphaCoefficient(toBigDecimal(0.4))
                 .build()).getResult();
     }
 
@@ -112,7 +109,7 @@ public class ExponentialMovingAverageTest {
                 .originalData(new Tick[1])
                 .period(-5)
                 .priceType(OPEN)
-                .alphaCoefficient(new BigDecimal(0.4))
+                .alphaCoefficient(toBigDecimal(0.4))
                 .build()).getResult();
     }
 
@@ -125,7 +122,7 @@ public class ExponentialMovingAverageTest {
                 .originalData(new Tick[30])
                 .period(5)
                 .priceType(null)
-                .alphaCoefficient(new BigDecimal(0.4))
+                .alphaCoefficient(toBigDecimal(0.4))
                 .build()).getResult();
     }
 

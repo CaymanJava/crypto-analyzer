@@ -10,12 +10,9 @@ import pro.crypto.model.request.WPRRequest;
 import pro.crypto.model.result.WPRResult;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 
 public class WilliamsPercentRangeTest {
 
@@ -33,19 +30,19 @@ public class WilliamsPercentRangeTest {
     public void testWPRWithDefaultPeriod() {
         WPRResult[] result = new WilliamsPercentRange(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[6].getIndicatorValue()));
-        assertTrue(isNull(result[12].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[6].getIndicatorValue());
+        assertNull(result[12].getIndicatorValue());
         assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getIndicatorValue(), new BigDecimal(-96.2617514000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[13].getIndicatorValue(), toBigDecimal(-96.2617514));
         assertEquals(result[28].getTime(), of(2018, 3, 25, 0, 0));
-        assertEquals(result[28].getIndicatorValue(), new BigDecimal(-22.2298482400).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[28].getIndicatorValue(), toBigDecimal(-22.22984824));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), new BigDecimal(-6.2500000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getIndicatorValue(), toBigDecimal(-6.25));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), new BigDecimal(-11.3272037200).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[45].getIndicatorValue(), toBigDecimal(-11.32720372));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), new BigDecimal(-99.9685926100).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-99.96859261));
     }
 
     @Test

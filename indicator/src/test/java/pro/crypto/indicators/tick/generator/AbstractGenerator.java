@@ -2,8 +2,9 @@ package pro.crypto.indicators.tick.generator;
 
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
+
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 
 public abstract class AbstractGenerator {
 
@@ -21,24 +22,20 @@ public abstract class AbstractGenerator {
 
     Tick generateTickWithCloseOnly(double close) {
         return Tick.builder()
-                .close(generateBigDecimalWithScale(close))
+                .close(toBigDecimal(close))
                 .tickTime(this.startDateTime)
                 .build();
     }
 
     Tick generateFullTick(double open, double high, double low, double close, double volume) {
         return Tick.builder()
-                .open(generateBigDecimalWithScale(open))
-                .high(generateBigDecimalWithScale(high))
-                .low(generateBigDecimalWithScale(low))
-                .close(generateBigDecimalWithScale(close))
-                .baseVolume(generateBigDecimalWithScale(volume))
+                .open(toBigDecimal(open))
+                .high(toBigDecimal(high))
+                .low(toBigDecimal(low))
+                .close(toBigDecimal(close))
+                .baseVolume(toBigDecimal(volume))
                 .tickTime(this.startDateTime)
                 .build();
-    }
-
-    private BigDecimal generateBigDecimalWithScale(double value) {
-        return new BigDecimal(value).setScale(10, BigDecimal.ROUND_HALF_UP);
     }
 
 }

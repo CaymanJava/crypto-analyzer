@@ -10,12 +10,9 @@ import pro.crypto.model.request.MARequest;
 import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.MODIFIED_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
@@ -35,19 +32,19 @@ public class ModifiedMovingAverageTest {
     public void testModifiedMovingAverageWithPeriodFourteen() {
         MAResult[] result = MovingAverageFactory.create(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[5].getIndicatorValue()));
-        assertTrue(isNull(result[12].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[5].getIndicatorValue());
+        assertNull(result[12].getIndicatorValue());
         assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getIndicatorValue(), new BigDecimal(1274.2257142857).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[13].getIndicatorValue(), toBigDecimal(1274.2257142857));
         assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), new BigDecimal(1246.4466901395).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[19].getIndicatorValue(), toBigDecimal(1246.4466901395));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), new BigDecimal(1216.5396205782).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1216.5396205782));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), new BigDecimal(1291.1096049109).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1291.1096049109));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), new BigDecimal(1397.6274556392).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1397.6274556392));
     }
 
     @Test

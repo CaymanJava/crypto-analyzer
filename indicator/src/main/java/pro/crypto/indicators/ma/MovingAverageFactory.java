@@ -26,7 +26,7 @@ public class MovingAverageFactory {
             case MODIFIED_MOVING_AVERAGE:
                 return new ModifiedMovingAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
             default:
-                throw new UnknownTypeException(format("Unknown moving average type {type:{%s}}", request.getIndicatorType()));
+                throw new UnknownTypeException(format("Unknown moving average type {type: {%s}}", request.getIndicatorType()));
         }
     }
 

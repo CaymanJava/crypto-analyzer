@@ -7,19 +7,16 @@ import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicators.tick.generator.FifteenMinTickWithClosePriceOnlyGenerator;
 import pro.crypto.model.Shift;
+import pro.crypto.model.request.MARequest;
 import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
-import pro.crypto.model.request.MARequest;
-
-import java.math.BigDecimal;
 
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.*;
-import static pro.crypto.model.tick.PriceType.CLOSE;
 import static pro.crypto.model.ShiftType.RIGHT;
+import static pro.crypto.model.tick.PriceType.CLOSE;
 import static pro.crypto.model.tick.TimeFrame.FIFTEEN_MIN;
 
 public class DisplacedMovingAverageTest {
@@ -43,12 +40,12 @@ public class DisplacedMovingAverageTest {
         request.setOriginalIndicatorType(SIMPLE_MOVING_AVERAGE);
         MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length + request.getShift().getValue());
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[4].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[4].getIndicatorValue());
         assertEquals(result[5].getTime(), of(2018, 2, 25, 1, 15));
-        assertEquals(result[5].getIndicatorValue(), new BigDecimal(6.5000000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[5].getIndicatorValue(), toBigDecimal(6.5));
         assertEquals(result[19].getTime(), of(2018, 2, 25, 4, 45));
-        assertEquals(result[19].getIndicatorValue(), new BigDecimal(7.1666666667).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[19].getIndicatorValue(), toBigDecimal(7.1666666667));
     }
 
     @Test
@@ -56,12 +53,12 @@ public class DisplacedMovingAverageTest {
         request.setOriginalIndicatorType(EXPONENTIAL_MOVING_AVERAGE);
         MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length + request.getShift().getValue());
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[4].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[4].getIndicatorValue());
         assertEquals(result[5].getTime(), of(2018, 2, 25, 1, 15));
-        assertEquals(result[5].getIndicatorValue(), new BigDecimal(6.5000000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[5].getIndicatorValue(), toBigDecimal(6.5));
         assertEquals(result[19].getTime(), of(2018, 2, 25, 4, 45));
-        assertEquals(result[19].getIndicatorValue(), new BigDecimal(7.0685180665).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[19].getIndicatorValue(), toBigDecimal(7.0685180665));
     }
 
     @Test
@@ -70,12 +67,12 @@ public class DisplacedMovingAverageTest {
         request.setPeriod(4);
         MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length + request.getShift().getValue());
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[5].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[5].getIndicatorValue());
         assertEquals(result[6].getTime(), of(2018, 2, 25, 1, 30));
-        assertEquals(result[6].getIndicatorValue(), new BigDecimal(7.6500000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[6].getIndicatorValue(), toBigDecimal(7.65));
         assertEquals(result[19].getTime(), of(2018, 2, 25, 4, 45));
-        assertEquals(result[19].getIndicatorValue(), new BigDecimal(7.8750000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[19].getIndicatorValue(), toBigDecimal(7.875));
         request.setPeriod(3);
     }
 
@@ -84,12 +81,12 @@ public class DisplacedMovingAverageTest {
         request.setOriginalIndicatorType(SMOOTHED_MOVING_AVERAGE);
         MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length + request.getShift().getValue());
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[4].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[4].getIndicatorValue());
         assertEquals(result[5].getTime(), of(2018, 2, 25, 1, 15));
-        assertEquals(result[5].getIndicatorValue(), new BigDecimal(6.5000000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[5].getIndicatorValue(), toBigDecimal(6.5));
         assertEquals(result[19].getTime(), of(2018, 2, 25, 4, 45));
-        assertEquals(result[19].getIndicatorValue(), new BigDecimal(6.8478116417).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[19].getIndicatorValue(), toBigDecimal(6.8478116417));
     }
 
     @Test
@@ -97,12 +94,12 @@ public class DisplacedMovingAverageTest {
         request.setOriginalIndicatorType(WEIGHTED_MOVING_AVERAGE);
         MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length + request.getShift().getValue());
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[4].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[4].getIndicatorValue());
         assertEquals(result[5].getTime(), of(2018, 2, 25, 1, 15));
-        assertEquals(result[5].getIndicatorValue(), new BigDecimal(6.6166666667).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[5].getIndicatorValue(), toBigDecimal(6.6166666667));
         assertEquals(result[19].getTime(), of(2018, 2, 25, 4, 45));
-        assertEquals(result[19].getIndicatorValue(), new BigDecimal(7.2333333333).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[19].getIndicatorValue(), toBigDecimal(7.2333333333));
     }
 
     @Test

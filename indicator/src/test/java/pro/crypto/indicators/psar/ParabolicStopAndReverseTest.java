@@ -10,12 +10,9 @@ import pro.crypto.model.request.PSARRequest;
 import pro.crypto.model.result.PSARResult;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 
 public class ParabolicStopAndReverseTest {
 
@@ -33,19 +30,19 @@ public class ParabolicStopAndReverseTest {
     public void testParabolicSAR() {
         PSARResult[] result = new ParabolicStopAndReverse(buildSARRequest()).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
         assertEquals(result[1].getTime(), of(2018, 2, 26, 0, 0));
-        assertEquals(result[1].getIndicatorValue(), new BigDecimal(1302.6700000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[1].getIndicatorValue(), toBigDecimal(1302.67));
         assertEquals(result[9].getTime(), of(2018, 3, 6, 0, 0));
-        assertEquals(result[9].getIndicatorValue(), new BigDecimal(1345.7364000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[9].getIndicatorValue(), toBigDecimal(1345.7364));
         assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), new BigDecimal(1239.6200000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[19].getIndicatorValue(), toBigDecimal(1239.62));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), new BigDecimal(1140.9989782400).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1140.99897824));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), new BigDecimal(1313.7200000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1313.72));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), new BigDecimal(1467.6677384358).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1467.6677384358));
     }
 
     @Test
@@ -54,8 +51,8 @@ public class ParabolicStopAndReverseTest {
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {PARABOLIC_STOP_AND_REVERSE}, size: {0}}");
         new ParabolicStopAndReverse(PSARRequest.builder()
                 .originalData(new Tick[0])
-                .minAccelerationFactor(new BigDecimal(0.02))
-                .maxAccelerationFactor(new BigDecimal(0.2))
+                .minAccelerationFactor(toBigDecimal(0.02))
+                .maxAccelerationFactor(toBigDecimal(0.2))
                 .build()).getResult();
     }
 
@@ -65,8 +62,8 @@ public class ParabolicStopAndReverseTest {
         expectedException.expectMessage("Incoming tick data is null {indicator: {PARABOLIC_STOP_AND_REVERSE}}");
         new ParabolicStopAndReverse(PSARRequest.builder()
                 .originalData(null)
-                .minAccelerationFactor(new BigDecimal(0.02))
-                .maxAccelerationFactor(new BigDecimal(0.2))
+                .minAccelerationFactor(toBigDecimal(0.02))
+                .maxAccelerationFactor(toBigDecimal(0.2))
                 .build()).getResult();
     }
 
@@ -77,8 +74,8 @@ public class ParabolicStopAndReverseTest {
                 "{indicator: {PARABOLIC_STOP_AND_REVERSE}, minAccelerationFactor: {0.300}, maxAccelerationFactor: {0.200}}");
         new ParabolicStopAndReverse(PSARRequest.builder()
                 .originalData(new Tick[100])
-                .minAccelerationFactor(new BigDecimal(0.3))
-                .maxAccelerationFactor(new BigDecimal(0.2))
+                .minAccelerationFactor(toBigDecimal(0.3))
+                .maxAccelerationFactor(toBigDecimal(0.2))
                 .build()).getResult();
     }
 
@@ -89,8 +86,8 @@ public class ParabolicStopAndReverseTest {
                 "{indicator: {PARABOLIC_STOP_AND_REVERSE}, minAccelerationFactor: {-0.020}}");
         new ParabolicStopAndReverse(PSARRequest.builder()
                 .originalData(new Tick[100])
-                .minAccelerationFactor(new BigDecimal(-0.02))
-                .maxAccelerationFactor(new BigDecimal(0.2))
+                .minAccelerationFactor(toBigDecimal(-0.02))
+                .maxAccelerationFactor(toBigDecimal(0.2))
                 .build()).getResult();
     }
 
@@ -101,16 +98,16 @@ public class ParabolicStopAndReverseTest {
                 "{indicator: {PARABOLIC_STOP_AND_REVERSE}, minAccelerationFactor: {-0.200}}");
         new ParabolicStopAndReverse(PSARRequest.builder()
                 .originalData(new Tick[100])
-                .minAccelerationFactor(new BigDecimal(0.02))
-                .maxAccelerationFactor(new BigDecimal(-0.2))
+                .minAccelerationFactor(toBigDecimal(0.02))
+                .maxAccelerationFactor(toBigDecimal(-0.2))
                 .build()).getResult();
     }
 
     private PSARRequest buildSARRequest() {
         return PSARRequest.builder()
                 .originalData(originalData)
-                .minAccelerationFactor(new BigDecimal(0.02))
-                .maxAccelerationFactor(new BigDecimal(0.2))
+                .minAccelerationFactor(toBigDecimal(0.02))
+                .maxAccelerationFactor(toBigDecimal(0.2))
                 .build();
     }
 

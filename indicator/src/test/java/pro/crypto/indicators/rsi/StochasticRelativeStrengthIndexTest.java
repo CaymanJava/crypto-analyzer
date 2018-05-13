@@ -10,12 +10,9 @@ import pro.crypto.model.request.StochRSIRequest;
 import pro.crypto.model.result.RSIResult;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.*;
 
 public class StochasticRelativeStrengthIndexTest {
@@ -34,20 +31,20 @@ public class StochasticRelativeStrengthIndexTest {
     public void testStochasticRelativeStrengthIndexWithExponentialMovingAverage() {
         RSIResult[] result = new StochasticRelativeStrengthIndex(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[5].getIndicatorValue()));
-        assertTrue(isNull(result[12].getIndicatorValue()));
-        assertTrue(isNull(result[25].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[5].getIndicatorValue());
+        assertNull(result[12].getIndicatorValue());
+        assertNull(result[25].getIndicatorValue());
         assertEquals(result[26].getTime(), of(2018, 3, 23, 0, 0));
-        assertEquals(result[26].getIndicatorValue(), new BigDecimal(0.0568788623).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[26].getIndicatorValue(), toBigDecimal(0.0568788623));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), new BigDecimal(0.8180305509).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getIndicatorValue(), toBigDecimal(0.8180305509));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), new BigDecimal(1.0000000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1.0));
         assertEquals(result[66].getTime(), of(2018, 5, 2, 0, 0));
-        assertEquals(result[66].getIndicatorValue(), new BigDecimal(0.0000000000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[66].getIndicatorValue(), toBigDecimal(0.0));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), new BigDecimal(0.0381200833).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(0.0381200833));
     }
 
     @Test

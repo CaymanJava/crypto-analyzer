@@ -10,12 +10,9 @@ import pro.crypto.model.request.ENVRequest;
 import pro.crypto.model.result.ENVResult;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 
@@ -35,62 +32,62 @@ public class MovingAverageEnvelopesTest {
     public void testMovingAverageEnvelopesWithSMAAndPeriodTwentyAndPercentageFive() {
         ENVResult[] result = new MovingAverageEnvelopes(buildENVRequest(5)).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getBasis()));
-        assertTrue(isNull(result[0].getUpperEnvelope()));
-        assertTrue(isNull(result[0].getLowerEnvelope()));
-        assertTrue(isNull(result[8].getBasis()));
-        assertTrue(isNull(result[8].getUpperEnvelope()));
-        assertTrue(isNull(result[8].getLowerEnvelope()));
-        assertTrue(isNull(result[18].getBasis()));
-        assertTrue(isNull(result[18].getUpperEnvelope()));
-        assertTrue(isNull(result[18].getLowerEnvelope()));
+        assertNull(result[0].getBasis());
+        assertNull(result[0].getUpperEnvelope());
+        assertNull(result[0].getLowerEnvelope());
+        assertNull(result[8].getBasis());
+        assertNull(result[8].getUpperEnvelope());
+        assertNull(result[8].getLowerEnvelope());
+        assertNull(result[18].getBasis());
+        assertNull(result[18].getUpperEnvelope());
+        assertNull(result[18].getLowerEnvelope());
         assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getBasis(), new BigDecimal(1251.0690100000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[19].getUpperEnvelope(), new BigDecimal(1313.6224605000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[19].getLowerEnvelope(), new BigDecimal(1188.5155595000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[19].getBasis(), toBigDecimal(1251.06901));
+        assertEquals(result[19].getUpperEnvelope(), toBigDecimal(1313.6224605));
+        assertEquals(result[19].getLowerEnvelope(), toBigDecimal(1188.5155595));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getBasis(), new BigDecimal(1192.7020150000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[32].getUpperEnvelope(), new BigDecimal(1252.3371157500).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[32].getLowerEnvelope(), new BigDecimal(1133.0669142500).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getBasis(), toBigDecimal(1192.702015));
+        assertEquals(result[32].getUpperEnvelope(), toBigDecimal(1252.33711575));
+        assertEquals(result[32].getLowerEnvelope(), toBigDecimal(1133.06691425));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getBasis(), new BigDecimal(1288.3630000000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[45].getUpperEnvelope(), new BigDecimal(1352.7811500000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[45].getLowerEnvelope(), new BigDecimal(1223.9448500000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[45].getBasis(), toBigDecimal(1288.363));
+        assertEquals(result[45].getUpperEnvelope(), toBigDecimal(1352.78115));
+        assertEquals(result[45].getLowerEnvelope(), toBigDecimal(1223.94485));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getBasis(), new BigDecimal(1427.1024900000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[72].getUpperEnvelope(), new BigDecimal(1498.4576145000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[72].getLowerEnvelope(), new BigDecimal(1355.7473655000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getBasis(), toBigDecimal(1427.10249));
+        assertEquals(result[72].getUpperEnvelope(), toBigDecimal(1498.4576145));
+        assertEquals(result[72].getLowerEnvelope(), toBigDecimal(1355.7473655));
     }
 
     @Test
     public void testMovingAverageEnvelopesWithSMAAndPeriodTwentyAndPercentageSeven() {
         ENVResult[] result = new MovingAverageEnvelopes(buildENVRequest(7)).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getBasis()));
-        assertTrue(isNull(result[0].getUpperEnvelope()));
-        assertTrue(isNull(result[0].getLowerEnvelope()));
-        assertTrue(isNull(result[8].getBasis()));
-        assertTrue(isNull(result[8].getUpperEnvelope()));
-        assertTrue(isNull(result[8].getLowerEnvelope()));
-        assertTrue(isNull(result[18].getBasis()));
-        assertTrue(isNull(result[18].getUpperEnvelope()));
-        assertTrue(isNull(result[18].getLowerEnvelope()));
+        assertNull(result[0].getBasis());
+        assertNull(result[0].getUpperEnvelope());
+        assertNull(result[0].getLowerEnvelope());
+        assertNull(result[8].getBasis());
+        assertNull(result[8].getUpperEnvelope());
+        assertNull(result[8].getLowerEnvelope());
+        assertNull(result[18].getBasis());
+        assertNull(result[18].getUpperEnvelope());
+        assertNull(result[18].getLowerEnvelope());
         assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getBasis(), new BigDecimal(1251.0690100000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[19].getUpperEnvelope(), new BigDecimal(1338.6438407000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[19].getLowerEnvelope(), new BigDecimal(1163.4941793000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[19].getBasis(), toBigDecimal(1251.06901));
+        assertEquals(result[19].getUpperEnvelope(), toBigDecimal(1338.6438407));
+        assertEquals(result[19].getLowerEnvelope(), toBigDecimal(1163.4941793));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getBasis(), new BigDecimal(1192.7020150000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[32].getUpperEnvelope(), new BigDecimal(1276.1911560500).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[32].getLowerEnvelope(), new BigDecimal(1109.2128739500).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getBasis(), toBigDecimal(1192.702015));
+        assertEquals(result[32].getUpperEnvelope(), toBigDecimal(1276.19115605));
+        assertEquals(result[32].getLowerEnvelope(), toBigDecimal(1109.21287395));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getBasis(), new BigDecimal(1288.3630000000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[45].getUpperEnvelope(), new BigDecimal(1378.5484100000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[45].getLowerEnvelope(), new BigDecimal(1198.1775900000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[45].getBasis(), toBigDecimal(1288.363));
+        assertEquals(result[45].getUpperEnvelope(), toBigDecimal(1378.54841));
+        assertEquals(result[45].getLowerEnvelope(), toBigDecimal(1198.17759));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getBasis(), new BigDecimal(1427.1024900000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[72].getUpperEnvelope(), new BigDecimal(1526.9996643000).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[72].getLowerEnvelope(), new BigDecimal(1327.2053157000).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getBasis(), toBigDecimal(1427.10249));
+        assertEquals(result[72].getUpperEnvelope(), toBigDecimal(1526.9996643));
+        assertEquals(result[72].getLowerEnvelope(), toBigDecimal(1327.2053157));
     }
 
     @Test

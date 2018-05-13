@@ -42,6 +42,10 @@ public class MathHelper {
                 .orElse(null));
     }
 
+    public static BigDecimal toBigDecimal(Double value) {
+        return isNull(value) ? null : MathHelper.scaleAndRound(new BigDecimal(value));
+    }
+
     private static BigDecimal calculateSum(BigDecimal[] values) {
         return scaleAndRound(Stream.of(values)
                 .reduce(BigDecimal.ZERO, BigDecimal::add));

@@ -10,15 +10,11 @@ import pro.crypto.model.request.UORequest;
 import pro.crypto.model.result.UOResult;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 
 public class UltimateOscillatorTest {
-
 
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
@@ -34,17 +30,17 @@ public class UltimateOscillatorTest {
     public void testUOWithDefaultPeriods() {
         UOResult[] result = new UltimateOscillator(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[10].getIndicatorValue()));
-        assertTrue(isNull(result[27].getIndicatorValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[10].getIndicatorValue());
+        assertNull(result[27].getIndicatorValue());
         assertEquals(result[28].getTime(), of(2018, 3, 25, 0, 0));
-        assertEquals(result[28].getIndicatorValue(), new BigDecimal(48.8058991100).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[28].getIndicatorValue(), toBigDecimal(48.80589911));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), new BigDecimal(68.4482305900).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getIndicatorValue(), toBigDecimal(68.44823059));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), new BigDecimal(64.4682879900).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[45].getIndicatorValue(), toBigDecimal(64.46828799));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), new BigDecimal(40.1867732200).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(40.18677322));
     }
 
     @Test

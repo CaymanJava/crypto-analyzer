@@ -10,12 +10,9 @@ import pro.crypto.model.request.MACDRequest;
 import pro.crypto.model.result.MACDResult;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
@@ -35,36 +32,36 @@ public class MovingAverageConvergenceDivergenceTest {
     public void testMACDWithRecommendedPeriods() {
         MACDResult[] result = new MovingAverageConvergenceDivergence(createRequest()).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getIndicatorValue()));
-        assertTrue(isNull(result[0].getSignalLineResult()));
-        assertTrue(isNull(result[0].getBarChartValue()));
-        assertTrue(isNull(result[24].getIndicatorValue()));
-        assertTrue(isNull(result[24].getSignalLineResult()));
-        assertTrue(isNull(result[24].getBarChartValue()));
+        assertNull(result[0].getIndicatorValue());
+        assertNull(result[0].getSignalLineResult());
+        assertNull(result[0].getBarChartValue());
+        assertNull(result[24].getIndicatorValue());
+        assertNull(result[24].getSignalLineResult());
+        assertNull(result[24].getBarChartValue());
         assertEquals(result[25].getTime(), of(2018, 3, 22, 0, 0));
-        assertEquals(result[25].getIndicatorValue(), new BigDecimal(0.4056563357).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertTrue(isNull(result[25].getSignalLineResult()));
-        assertTrue(isNull(result[25].getBarChartValue()));
+        assertEquals(result[25].getIndicatorValue(), toBigDecimal(0.4056563357));
+        assertNull(result[25].getSignalLineResult());
+        assertNull(result[25].getBarChartValue());
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), new BigDecimal(0.2846054137).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertTrue(isNull(result[32].getSignalLineResult()));
-        assertTrue(isNull(result[32].getBarChartValue()));
+        assertEquals(result[32].getIndicatorValue(), toBigDecimal(0.2846054137));
+        assertNull(result[32].getSignalLineResult());
+        assertNull(result[32].getBarChartValue());
         assertEquals(result[33].getTime(), of(2018, 3, 30, 0, 0));
-        assertEquals(result[33].getIndicatorValue(), new BigDecimal(0.1889216936).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[33].getSignalLineResult(), new BigDecimal(0.3917744361).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[33].getBarChartValue(), new BigDecimal(-0.2028527425).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[33].getIndicatorValue(), toBigDecimal(0.1889216936));
+        assertEquals(result[33].getSignalLineResult(), toBigDecimal(0.3917744361));
+        assertEquals(result[33].getBarChartValue(), toBigDecimal(-0.2028527425));
         assertEquals(result[38].getTime(), of(2018, 4, 4, 0, 0));
-        assertEquals(result[38].getIndicatorValue(), new BigDecimal(0.1968265092).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[38].getSignalLineResult(), new BigDecimal(0.2394121086).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[38].getBarChartValue(), new BigDecimal(-0.0425855994).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[38].getIndicatorValue(), toBigDecimal(0.1968265092));
+        assertEquals(result[38].getSignalLineResult(), toBigDecimal(0.2394121086));
+        assertEquals(result[38].getBarChartValue(), toBigDecimal(-0.0425855994));
         assertEquals(result[44].getTime(), of(2018, 4, 10, 0, 0));
-        assertEquals(result[44].getIndicatorValue(), new BigDecimal(0.3922420233).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[44].getSignalLineResult(), new BigDecimal(0.2972576828).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[44].getBarChartValue(), new BigDecimal(0.0949843405).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[44].getIndicatorValue(), toBigDecimal(0.3922420233));
+        assertEquals(result[44].getSignalLineResult(), toBigDecimal(0.2972576828));
+        assertEquals(result[44].getBarChartValue(), toBigDecimal(0.0949843405));
         assertEquals(result[49].getTime(), of(2018, 4, 15, 0, 0));
-        assertEquals(result[49].getIndicatorValue(), new BigDecimal(0.1824057756).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[49].getSignalLineResult(), new BigDecimal(0.3203577637).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[49].getBarChartValue(), new BigDecimal(-0.1379519881).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[49].getIndicatorValue(), toBigDecimal(0.1824057756));
+        assertEquals(result[49].getSignalLineResult(), toBigDecimal(0.3203577637));
+        assertEquals(result[49].getBarChartValue(), toBigDecimal(-0.1379519881));
     }
 
     @Test

@@ -10,12 +10,9 @@ import pro.crypto.model.request.ADXRequest;
 import pro.crypto.model.result.ADXResult;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static pro.crypto.helper.MathHelper.toBigDecimal;
 
 public class AverageDirectionalMovementIndexTest {
 
@@ -29,40 +26,39 @@ public class AverageDirectionalMovementIndexTest {
         originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
     }
 
-
     @Test
     public void testADXWithPeriodFourteen() {
         ADXResult[] result = new AverageDirectionalMovementIndex(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
-        assertTrue(isNull(result[0].getAverageDirectionalIndex()));
-        assertTrue(isNull(result[0].getPositiveDirectionalIndicator()));
-        assertTrue(isNull(result[0].getNegativeDirectionalIndicator()));
-        assertTrue(isNull(result[5].getAverageDirectionalIndex()));
-        assertTrue(isNull(result[5].getPositiveDirectionalIndicator()));
-        assertTrue(isNull(result[5].getNegativeDirectionalIndicator()));
-        assertTrue(isNull(result[12].getAverageDirectionalIndex()));
-        assertTrue(isNull(result[12].getPositiveDirectionalIndicator()));
-        assertTrue(isNull(result[12].getNegativeDirectionalIndicator()));
+        assertNull(result[0].getAverageDirectionalIndex());
+        assertNull(result[0].getPositiveDirectionalIndicator());
+        assertNull(result[0].getNegativeDirectionalIndicator());
+        assertNull(result[5].getAverageDirectionalIndex());
+        assertNull(result[5].getPositiveDirectionalIndicator());
+        assertNull(result[5].getNegativeDirectionalIndicator());
+        assertNull(result[12].getAverageDirectionalIndex());
+        assertNull(result[12].getPositiveDirectionalIndicator());
+        assertNull(result[12].getNegativeDirectionalIndicator());
         assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getPositiveDirectionalIndicator(), new BigDecimal(13.2075192300).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[13].getNegativeDirectionalIndicator(), new BigDecimal(30.5178688900).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertTrue(isNull(result[13].getAverageDirectionalIndex()));
+        assertEquals(result[13].getPositiveDirectionalIndicator(), toBigDecimal(13.20751923));
+        assertEquals(result[13].getNegativeDirectionalIndicator(), toBigDecimal(30.51786889));
+        assertNull(result[13].getAverageDirectionalIndex());
         assertEquals(result[26].getTime(), of(2018, 3, 23, 0, 0));
-        assertEquals(result[26].getPositiveDirectionalIndicator(), new BigDecimal(9.2671830300).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[26].getNegativeDirectionalIndicator(), new BigDecimal(34.0579625700).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[26].getAverageDirectionalIndex(), new BigDecimal(43.1045848871).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[26].getPositiveDirectionalIndicator(), toBigDecimal(9.26718303));
+        assertEquals(result[26].getNegativeDirectionalIndicator(), toBigDecimal(34.05796257));
+        assertEquals(result[26].getAverageDirectionalIndex(), toBigDecimal(43.1045848871));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getPositiveDirectionalIndicator(), new BigDecimal(32.5961524900).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[32].getNegativeDirectionalIndicator(), new BigDecimal(28.9342728500).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[32].getAverageDirectionalIndex(), new BigDecimal(24.9081703821).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[32].getPositiveDirectionalIndicator(), toBigDecimal(32.59615249));
+        assertEquals(result[32].getNegativeDirectionalIndicator(), toBigDecimal(28.93427285));
+        assertEquals(result[32].getAverageDirectionalIndex(), toBigDecimal(24.9081703821));
         assertEquals(result[64].getTime(), of(2018, 4, 30, 0, 0));
-        assertEquals(result[64].getPositiveDirectionalIndicator(), new BigDecimal(29.7876748300).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[64].getNegativeDirectionalIndicator(), new BigDecimal(24.6451779200).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[64].getAverageDirectionalIndex(), new BigDecimal(26.2239851160).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[64].getPositiveDirectionalIndicator(), toBigDecimal(29.78767483));
+        assertEquals(result[64].getNegativeDirectionalIndicator(), toBigDecimal(24.64517792));
+        assertEquals(result[64].getAverageDirectionalIndex(), toBigDecimal(26.223985116));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getPositiveDirectionalIndicator(), new BigDecimal(14.9248524900).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[72].getNegativeDirectionalIndicator(), new BigDecimal(34.3464633600).setScale(10, BigDecimal.ROUND_HALF_UP));
-        assertEquals(result[72].getAverageDirectionalIndex(), new BigDecimal(27.2733245358).setScale(10, BigDecimal.ROUND_HALF_UP));
+        assertEquals(result[72].getPositiveDirectionalIndicator(), toBigDecimal(14.92485249));
+        assertEquals(result[72].getNegativeDirectionalIndicator(), toBigDecimal(34.34646336));
+        assertEquals(result[72].getAverageDirectionalIndex(), toBigDecimal(27.2733245358));
     }
 
     @Test
@@ -104,7 +100,6 @@ public class AverageDirectionalMovementIndexTest {
                 .period(-10)
                 .build()).getResult();
     }
-
 
     private ADXRequest buildRequest() {
         return ADXRequest.builder()

@@ -15,12 +15,13 @@ public class PivotPointFactory {
                 return new WoodiePivotPoints(request.getOriginalData());
             case CAMARILLA_PIVOT_POINTS:
                 return new CamarillaPivotPoints(request.getOriginalData());
+            case DE_MARK_PIVOT_POINTS:
+                return new DeMarkPivotPoints(request.getOriginalData());
+            case FIBONACCI_PIVOT_POINTS:
+                return new FibonacciPivotPoints(request.getOriginalData());
             default:
                 throw new UnknownTypeException(format("Unknown Pivot Points type {type: {%s}}", request.getIndicatorType()));
         }
     }
-
-//    DEMARK_PIVOT_POINTS,
-//    FIBONACCI_PIVOT_POINTS
 
 }

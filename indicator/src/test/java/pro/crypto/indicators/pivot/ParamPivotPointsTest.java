@@ -18,16 +18,14 @@ import static java.time.LocalDateTime.of;
 import static org.junit.Assert.assertEquals;
 import static org.junit.runners.Parameterized.Parameters;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
-import static pro.crypto.model.IndicatorType.CAMARILLA_PIVOT_POINTS;
-import static pro.crypto.model.IndicatorType.FLOOR_PIVOT_POINTS;
-import static pro.crypto.model.IndicatorType.WOODIE_PIVOT_POINTS;
+import static pro.crypto.model.IndicatorType.*;
 
 @RunWith(Parameterized.class)
-public class PivotPointsTest {
+public class ParamPivotPointsTest {
 
     private final PivotTestHelper testHelper;
 
-    public PivotPointsTest(PivotTestHelper testHelper) {
+    public ParamPivotPointsTest(PivotTestHelper testHelper) {
         this.testHelper = testHelper;
     }
 
@@ -50,7 +48,7 @@ public class PivotPointsTest {
     }
 
     @Test
-    public void floorPivotPointsTest() throws Exception {
+    public void pivotPointsTest() throws Exception {
         assertEquals(testHelper.getActualResult(), testHelper.getExpectedResult());
     }
 
@@ -83,7 +81,22 @@ public class PivotPointsTest {
                         1270.4795833327, 1268.6691666673, 1266.85875, 1261.4275),
                 buildCamarillaPivotTestHelper(41, 1320.6366666667,
                         1329.8540000011, 1332.9779999989, 1336.102, 1345.474,
-                        1323.6059999989, 1320.4820000011, 1317.358, 1307.986)
+                        1323.6059999989, 1320.4820000011, 1317.358, 1307.986),
+                buildDeMarkPivotTestHelper(43, 5396.08,
+                        1384.32, 1337.21),
+                buildDeMarkPivotTestHelper(47, 5519.73,
+                        1388.395, 1359.785),
+                buildDeMarkPivotTestHelper(51, 5438.89,
+                        1385.315, 1347.705),
+                buildFibonacciPivotTestHelper(54, 1404.2566333333,
+                        1416.3889533333, 1423.8843133333, 1436.0166333333,
+                        1392.1243133333, 1384.6289533333, 1372.4966333333),
+                buildFibonacciPivotTestHelper(61, 1480.6699666667,
+                        1491.6830266667, 1498.4869066667, 1509.4999666667,
+                        1469.6569066667, 1462.8530266667, 1451.8399666667),
+                buildFibonacciPivotTestHelper(72, 1370.9600333333,
+                        1380.5672951333, 1386.5026715333, 1396.1099333333,
+                        1361.3527715333, 1355.4173951333, 1345.8101333333)
         );
     }
 
@@ -108,6 +121,18 @@ public class PivotPointsTest {
                                                                  Double thirdSupport, Double fourthSupport) {
         return buildPivotTestHelper(position, CAMARILLA_PIVOT_POINTS, pivot, firstResistance, secondResistance, thirdResistance, fourthResistance,
                 firstSupport, secondSupport, thirdSupport, fourthSupport);
+    }
+
+    private static PivotTestHelper buildDeMarkPivotTestHelper(int position, Double pivot, Double firstResistance, Double firstSupport) {
+        return buildPivotTestHelper(position, DE_MARK_PIVOT_POINTS, pivot, firstResistance, null, null, null,
+                firstSupport, null, null, null);
+    }
+
+    private static PivotTestHelper buildFibonacciPivotTestHelper(int position, Double pivot,
+                                                                 Double firstResistance, Double secondResistance, Double thirdResistance,
+                                                                 Double firstSupport, Double secondSupport, Double thirdSupport) {
+        return buildPivotTestHelper(position, FIBONACCI_PIVOT_POINTS, pivot, firstResistance, secondResistance, thirdResistance, null,
+                firstSupport, secondSupport, thirdSupport, null);
     }
 
     private static PivotTestHelper buildPivotTestHelper(int position, IndicatorType type, Double pivot, Double firstResistance, Double secondResistance, Double thirdResistance, Double fourthResistance, Double firstSupport, Double secondSupport, Double thirdSupport, Double fourthSupport) {

@@ -27,6 +27,12 @@ public interface Indicator<T extends IndicatorResult> {
         }
     }
 
+    default void checkOriginalData(Tick originalData) {
+        if (isNull(originalData)) {
+            throw new WrongIncomingParametersException(format("Incoming tick data is null {indicator: {%s}}", getType().toString()));
+        }
+    }
+
     default void checkOriginalDataSize(Tick[] originalData, int period) {
         if (period >= originalData.length) {
             throw new WrongIncomingParametersException(format("Period should be less than tick data size {indicator: {%s}, period: {%d}, size: {%d}}",

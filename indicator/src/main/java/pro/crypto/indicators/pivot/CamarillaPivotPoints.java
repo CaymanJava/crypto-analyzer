@@ -2,7 +2,6 @@ package pro.crypto.indicators.pivot;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.result.PivotResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -22,67 +21,65 @@ public class CamarillaPivotPoints extends PivotPoints {
 
     @Override
     public void calculate() {
-        result = new PivotResult[1];
-        BigDecimal pivot = calculatePivot();
-        BigDecimal firstResistance = calculateFirstResistance();
-        BigDecimal secondResistance = calculateSecondResistance();
-        BigDecimal thirdResistance = calculateThirdResistance();
-        BigDecimal fourthResistance = calculateFourthResistance();
-        BigDecimal firstSupport = calculateFirstSupport();
-        BigDecimal secondSupport = calculateSecondSupport();
-        BigDecimal thirdSupport = calculateThirdSupport();
-        BigDecimal fourthSupport = calculateFourthSupport();
-        result[0] = new PivotResult(originalData.getTickTime(), pivot,
-                firstResistance, secondResistance, thirdResistance, fourthResistance,
-                firstSupport, secondSupport, thirdSupport, fourthSupport);
+        calculatePivotPoints();
     }
 
     // (H + L + C) / 3
-    private BigDecimal calculatePivot() {
-        return MathHelper.divide(originalData.getHigh().add(originalData.getLow()).add(originalData.getClose()), new BigDecimal(3));
+    @Override
+    BigDecimal calculatePivot() {
+        return calculateDefaultPivot();
     }
 
     // (H - L) x 1.1 / 12 + C
-    private BigDecimal calculateFirstResistance() {
+    @Override
+    BigDecimal calculateFirstResistance() {
         return calculateResistance(calculateFirstCoefficient());
     }
 
     // (H - L) x 1.1 / 6 + C
-    private BigDecimal calculateSecondResistance() {
+    @Override
+    BigDecimal calculateSecondResistance() {
         return calculateResistance(calculateSecondCoefficient());
     }
 
     // (H - L) x 1.1 / 4 + C
-    private BigDecimal calculateThirdResistance() {
+    @Override
+    BigDecimal calculateThirdResistance() {
         return calculateResistance(calculateThirdCoefficient());
     }
 
-    private BigDecimal calculateFourthResistance() {
+    @Override
+        // (H - L) x 1.1 / 2 + C
+    BigDecimal calculateFourthResistance() {
         return calculateResistance(calculateFourthCoefficient());
     }
 
-    private BigDecimal calculateResistance(BigDecimal coefficient) {
-        return MathHelper.scaleAndRound(originalData.getHigh().subtract(originalData.getLow()).multiply(coefficient).add(originalData.getClose()));
-    }
-
     // C - (H - L) x 1.1 / 12
-    private BigDecimal calculateFirstSupport() {
+    @Override
+    BigDecimal calculateFirstSupport() {
         return calculateSupport(calculateFirstCoefficient());
     }
 
     // C - (H - L) x 1.1 / 6
-    private BigDecimal calculateSecondSupport() {
+    @Override
+    BigDecimal calculateSecondSupport() {
         return calculateSupport(calculateSecondCoefficient());
     }
 
     // C - (H - L) x 1.1 / 4
-    private BigDecimal calculateThirdSupport() {
+    @Override
+    BigDecimal calculateThirdSupport() {
         return calculateSupport(calculateThirdCoefficient());
     }
 
     // C - (H - L) x 1.1 / 2
-    private BigDecimal calculateFourthSupport() {
+    @Override
+    BigDecimal calculateFourthSupport() {
         return calculateSupport(calculateFourthCoefficient());
+    }
+
+    private BigDecimal calculateResistance(BigDecimal coefficient) {
+        return MathHelper.scaleAndRound(originalData.getHigh().subtract(originalData.getLow()).multiply(coefficient).add(originalData.getClose()));
     }
 
     private BigDecimal calculateSupport(BigDecimal coefficient) {

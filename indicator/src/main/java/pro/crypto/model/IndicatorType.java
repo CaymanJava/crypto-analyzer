@@ -40,6 +40,7 @@ public enum IndicatorType {
     CAMARILLA_PIVOT_POINTS,
     DE_MARK_PIVOT_POINTS,
     FIBONACCI_PIVOT_POINTS,
-    ALLIGATOR
+    ALLIGATOR,
+    FRACTAL
 
 }

@@ -2,6 +2,7 @@ package pro.crypto.indicators.ic;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.MathHelper;
+import pro.crypto.helper.PriceExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.ICRequest;
@@ -9,7 +10,6 @@ import pro.crypto.model.result.ICResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.lang.String.format;
 import static java.util.Arrays.copyOfRange;
@@ -117,8 +117,8 @@ public class IchimokuClouds implements Indicator<ICResult> {
 
     private BigDecimal[] calculateAverageBetweenMaxMin(int period) {
         BigDecimal[] conversionLine = new BigDecimal[originalData.length];
-        BigDecimal[] highValues = extractHighValues();
-        BigDecimal[] lowValues = extractLowValues();
+        BigDecimal[] highValues = PriceExtractor.extractHighValues(originalData);
+        BigDecimal[] lowValues = PriceExtractor.extractLowValues(originalData);
         for (int currentIndex = period - 1; currentIndex < conversionLine.length; currentIndex++) {
             conversionLine[currentIndex] = MathHelper.average(
                     MathHelper.max(copyOfRange(highValues, currentIndex - period + 1, currentIndex + 1)),
@@ -130,26 +130,8 @@ public class IchimokuClouds implements Indicator<ICResult> {
 
     private BigDecimal[] calculateLaggingSpan() {
         BigDecimal[] laggingSpan = new BigDecimal[originalData.length];
-        System.arraycopy(extractCloseValues(), displaced, laggingSpan, 0, laggingSpan.length - displaced);
+        System.arraycopy(PriceExtractor.extractCloseValues(originalData), displaced, laggingSpan, 0, laggingSpan.length - displaced);
         return laggingSpan;
-    }
-
-    private BigDecimal[] extractHighValues() {
-        return Stream.of(originalData)
-                .map(Tick::getHigh)
-                .toArray(BigDecimal[]::new);
-    }
-
-    private BigDecimal[] extractLowValues() {
-        return Stream.of(originalData)
-                .map(Tick::getLow)
-                .toArray(BigDecimal[]::new);
-    }
-
-    private BigDecimal[] extractCloseValues() {
-        return Stream.of(originalData)
-                .map(Tick::getClose)
-                .toArray(BigDecimal[]::new);
     }
 
     private void buildIchimokuClouds(BigDecimal[] conversionLine, BigDecimal[] baseLine,

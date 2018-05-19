@@ -2,6 +2,7 @@ package pro.crypto.indicators.wpr;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MinMaxCalculator;
+import pro.crypto.helper.PriceExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.WPRRequest;
@@ -9,7 +10,6 @@ import pro.crypto.model.result.WPRResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -36,8 +36,8 @@ public class WilliamsPercentRange implements Indicator<WPRResult> {
     @Override
     public void calculate() {
         result = new WPRResult[originalData.length];
-        BigDecimal[] maxValues = MinMaxCalculator.calculateMaximumValues(extractHighPrices(), period);
-        BigDecimal[] minValues = MinMaxCalculator.calculateMinimumValues(extractLowPrices(), period);
+        BigDecimal[] maxValues = MinMaxCalculator.calculateMaximumValues(PriceExtractor.extractHighValues(originalData), period);
+        BigDecimal[] minValues = MinMaxCalculator.calculateMinimumValues(PriceExtractor.extractLowValues(originalData), period);
         calculateWilliamsPercentRange(maxValues, minValues);
     }
 
@@ -53,18 +53,6 @@ public class WilliamsPercentRange implements Indicator<WPRResult> {
         checkOriginalData(originalData);
         checkOriginalDataSize(originalData, period);
         checkPeriod(period);
-    }
-
-    private BigDecimal[] extractHighPrices() {
-        return Stream.of(originalData)
-                .map(Tick::getHigh)
-                .toArray(BigDecimal[]::new);
-    }
-
-    private BigDecimal[] extractLowPrices() {
-        return Stream.of(originalData)
-                .map(Tick::getLow)
-                .toArray(BigDecimal[]::new);
     }
 
     private void calculateWilliamsPercentRange(BigDecimal[] maxValues, BigDecimal[] minValues) {

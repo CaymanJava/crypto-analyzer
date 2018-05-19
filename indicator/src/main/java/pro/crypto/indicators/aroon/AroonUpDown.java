@@ -1,6 +1,7 @@
 package pro.crypto.indicators.aroon;
 
 import pro.crypto.helper.MathHelper;
+import pro.crypto.helper.PriceExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.AroonRequest;
@@ -66,17 +67,11 @@ public class AroonUpDown implements Indicator<AroonResult> {
 
     private Integer[] calculateDaysAfterMaxValues() {
         Integer[] daysAfterMaxPrice = new Integer[originalData.length];
-        BigDecimal[] highValues = extractHighValues();
+        BigDecimal[] highValues = PriceExtractor.extractHighValues(originalData);
         for (int currentIndex = period; currentIndex < originalData.length; currentIndex++) {
             daysAfterMaxPrice[currentIndex] = calculateDaysAfterMaxValue(copyOfRange(highValues, currentIndex - period, currentIndex + 1));
         }
         return daysAfterMaxPrice;
-    }
-
-    private BigDecimal[] extractHighValues() {
-        return Stream.of(originalData)
-                .map(Tick::getHigh)
-                .toArray(BigDecimal[]::new);
     }
 
     private Integer calculateDaysAfterMaxValue(BigDecimal[] highValues) {

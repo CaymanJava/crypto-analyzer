@@ -3,6 +3,7 @@ package pro.crypto.indicators.stoch;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MinMaxCalculator;
+import pro.crypto.helper.PriceExtractor;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -68,21 +69,9 @@ public class StochasticOscillator implements Indicator<StochResult> {
     }
 
     private BigDecimal[] calculateFastStochasticOscillator() {
-        BigDecimal[] minValues = MinMaxCalculator.calculateMinimumValues(extractLowValues(), fastPeriod);
-        BigDecimal[] maxValues = MinMaxCalculator.calculateMaximumValues(extractHighValues(), fastPeriod);
+        BigDecimal[] minValues = MinMaxCalculator.calculateMinimumValues(PriceExtractor.extractLowValues(originalData), fastPeriod);
+        BigDecimal[] maxValues = MinMaxCalculator.calculateMaximumValues(PriceExtractor.extractHighValues(originalData), fastPeriod);
         return calculateFastStochasticOscillator(minValues, maxValues);
-    }
-
-    private BigDecimal[] extractLowValues() {
-        return Stream.of(originalData)
-                .map(Tick::getLow)
-                .toArray(BigDecimal[]::new);
-    }
-
-    private BigDecimal[] extractHighValues() {
-        return Stream.of(originalData)
-                .map(Tick::getHigh)
-                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal[] calculateFastStochasticOscillator(BigDecimal[] minValues, BigDecimal[] maxValues) {

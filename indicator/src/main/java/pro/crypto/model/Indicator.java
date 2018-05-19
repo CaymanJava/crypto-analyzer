@@ -47,6 +47,13 @@ public interface Indicator<T extends IndicatorResult> {
         }
     }
 
+    default void checkDisplaced(int displaced) {
+        if (displaced <= 0) {
+            throw new WrongIncomingParametersException(format("Displaced value should be more than 0 {indicator: {%s}, displaced: {%d}}",
+                    getType().toString(), displaced));
+        }
+    }
+
     default void checkPriceType(PriceType priceType) {
         if (isNull(priceType)) {
             throw new WrongIncomingParametersException(format("Incoming price type is null {indicator: {%s}}", getType().toString()));

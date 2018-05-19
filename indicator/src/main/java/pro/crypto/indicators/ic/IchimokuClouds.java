@@ -63,7 +63,7 @@ public class IchimokuClouds implements Indicator<ICResult> {
         checkOriginalData(originalData);
         checkPeriods();
         checkOriginalDataSize(originalData, baseLinePeriod + leadingSpanPeriod);
-        checkDisplaced();
+        checkDisplaced(displaced);
     }
 
     private void checkPeriods() {
@@ -86,13 +86,6 @@ public class IchimokuClouds implements Indicator<ICResult> {
                     getType().toString(), baseLinePeriod, leadingSpanPeriod));
         }
 
-    }
-
-    private void checkDisplaced() {
-        if (displaced <= 0) {
-            throw new WrongIncomingParametersException(format("Displaced value should be more than 0 {indicator: {%s}, displaced: {%d}}",
-                    getType().toString(), displaced));
-        }
     }
 
     private BigDecimal[] calculateConversionLine() {

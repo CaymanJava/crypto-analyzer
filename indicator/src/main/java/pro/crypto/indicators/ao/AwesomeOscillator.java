@@ -1,9 +1,6 @@
 package pro.crypto.indicators.ao;
 
-import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.MAResultExtractor;
-import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.MedianPriceCalculator;
+import pro.crypto.helper.*;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -23,14 +20,16 @@ import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class AwesomeOscillator implements Indicator<AOResult> {
 
-    private final static int SLOW_PERIOD = 5;
-    private final static int FAST_PERIOD = 34;
     private final Tick[] originalData;
+    private final int slowPeriod;
+    private final int fastPeriod;
 
     private AOResult[] result;
 
     public AwesomeOscillator(AORequest request) {
         this.originalData = request.getOriginalData();
+        this.slowPeriod = request.getSlowPeriod();
+        this.fastPeriod = request.getFastPeriod();
         checkIncomingData();
     }
 
@@ -46,7 +45,7 @@ public class AwesomeOscillator implements Indicator<AOResult> {
         BigDecimal[] slowMovingAverage = calculateSlowMovingAverage(medianPrices);
         BigDecimal[] fastMovingAverage = calculateFastMovingAverage(medianPrices);
         BigDecimal[] awesomeOscillatorValues = calculateAwesomeOscillator(slowMovingAverage, fastMovingAverage);
-        Boolean[] increasedFlags = calculateIncreasedFlags(awesomeOscillatorValues);
+        Boolean[] increasedFlags = IncreasedQualifier.define(awesomeOscillatorValues);
         buildAwesomeOscillatorResult(awesomeOscillatorValues, increasedFlags);
     }
 
@@ -60,15 +59,16 @@ public class AwesomeOscillator implements Indicator<AOResult> {
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkOriginalDataSize(originalData, FAST_PERIOD);
+        checkOriginalDataSize(originalData, slowPeriod);
+        checkOriginalDataSize(originalData, fastPeriod);
     }
 
     private BigDecimal[] calculateSlowMovingAverage(BigDecimal[] medianPrices) {
-        return MAResultExtractor.extract(calculateSimpleMovingAverage(medianPrices, SLOW_PERIOD));
+        return MAResultExtractor.extract(calculateSimpleMovingAverage(medianPrices, slowPeriod));
     }
 
     private BigDecimal[] calculateFastMovingAverage(BigDecimal[] medianPrices) {
-        return MAResultExtractor.extract(calculateSimpleMovingAverage(medianPrices, FAST_PERIOD));
+        return MAResultExtractor.extract(calculateSimpleMovingAverage(medianPrices, fastPeriod));
     }
 
     private MAResult[] calculateSimpleMovingAverage(BigDecimal[] medianPrices, int period) {
@@ -100,24 +100,6 @@ public class AwesomeOscillator implements Indicator<AOResult> {
 
     private BigDecimal calculateAwesomeOscillatorValue(BigDecimal slowMAValue, BigDecimal fastMAValue) {
         return MathHelper.scaleAndRound(slowMAValue.subtract(fastMAValue));
-    }
-
-    private Boolean[] calculateIncreasedFlags(BigDecimal[] awesomeOscillatorValues) {
-        Boolean[] increasedFlags = new Boolean[originalData.length];
-        for (int currentIndex = 1; currentIndex < increasedFlags.length; currentIndex++) {
-            increasedFlags[currentIndex] = defineIncreasedFlag(awesomeOscillatorValues, currentIndex);
-        }
-        return increasedFlags;
-    }
-
-    private Boolean defineIncreasedFlag(BigDecimal[] awesomeOscillatorValues, int currentIndex) {
-        return isNull(awesomeOscillatorValues[currentIndex]) && isNull(awesomeOscillatorValues[currentIndex - 1])
-                ? null
-                : defineIncreasedFlag(awesomeOscillatorValues[currentIndex], awesomeOscillatorValues[currentIndex - 1]);
-    }
-
-    private Boolean defineIncreasedFlag(BigDecimal currentValue, BigDecimal previousValue) {
-        return !(isNull(previousValue) && nonNull(currentValue)) && currentValue.compareTo(previousValue) >= 0;
     }
 
     private void buildAwesomeOscillatorResult(BigDecimal[] awesomeOscillatorValues, Boolean[] increasedFlags) {

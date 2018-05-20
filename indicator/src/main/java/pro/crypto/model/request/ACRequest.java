@@ -10,12 +10,14 @@ import pro.crypto.model.tick.Tick;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AORequest {
+public class ACRequest {
 
     private Tick[] originalData;
 
     private int slowPeriod;
 
     private int fastPeriod;
+
+    private int smoothedPeriod;
 
 }

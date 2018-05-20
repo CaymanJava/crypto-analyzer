@@ -29,7 +29,7 @@ public class AwesomeOscillatorTest {
 
     @Test
     public void testAwesomeOscillator() {
-        AOResult[] result = new AwesomeOscillator(new AORequest(originalData)).getResult();
+        AOResult[] result = new AwesomeOscillator(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[0].getIncreased());
@@ -56,21 +56,52 @@ public class AwesomeOscillatorTest {
     public void emptyOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {AWESOME_OSCILLATOR}, size: {0}}");
-        new AwesomeOscillator(new AORequest(new Tick[0])).getResult();
+        new AwesomeOscillator(AORequest.builder()
+                .originalData(new Tick[0])
+                .slowPeriod(5)
+                .fastPeriod(34)
+                .build()).getResult();
     }
 
     @Test
     public void nullOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {AWESOME_OSCILLATOR}}");
-        new AwesomeOscillator(new AORequest(null)).getResult();
+        new AwesomeOscillator(AORequest.builder()
+                .originalData(null)
+                .slowPeriod(5)
+                .fastPeriod(34)
+                .build()).getResult();
     }
 
     @Test
-    public void originalDataSizeLessThanFastPeriod() {
+    public void originalDataSizeLessThanSlowPeriodTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Period should be less than tick data size {indicator: {AWESOME_OSCILLATOR}, period: {5}, size: {4}}");
+        new AwesomeOscillator(AORequest.builder()
+                .originalData(new Tick[4])
+                .slowPeriod(5)
+                .fastPeriod(34)
+                .build()).getResult();
+    }
+
+    @Test
+    public void originalDataSizeLessThanFastPeriodTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be less than tick data size {indicator: {AWESOME_OSCILLATOR}, period: {34}, size: {33}}");
-        new AwesomeOscillator(new AORequest(new Tick[33])).getResult();
+        new AwesomeOscillator(AORequest.builder()
+                .originalData(new Tick[33])
+                .slowPeriod(5)
+                .fastPeriod(34)
+                .build()).getResult();
+    }
+
+    private AORequest buildRequest() {
+        return AORequest.builder()
+                .originalData(originalData)
+                .slowPeriod(5)
+                .fastPeriod(34)
+                .build();
     }
 
 }

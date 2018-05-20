@@ -96,6 +96,28 @@ public class AwesomeOscillatorTest {
                 .build()).getResult();
     }
 
+    @Test
+    public void slowPeriodLessThanZeroTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Period should be more than 0 {indicator: {AWESOME_OSCILLATOR}, period: {-5}}");
+        new AwesomeOscillator(AORequest.builder()
+                .originalData(new Tick[100])
+                .slowPeriod(-5)
+                .fastPeriod(34)
+                .build()).getResult();
+    }
+
+    @Test
+    public void fastPeriodLessThanZeroTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Period should be more than 0 {indicator: {AWESOME_OSCILLATOR}, period: {-34}}");
+        new AwesomeOscillator(AORequest.builder()
+                .originalData(new Tick[100])
+                .slowPeriod(5)
+                .fastPeriod(-34)
+                .build()).getResult();
+    }
+
     private AORequest buildRequest() {
         return AORequest.builder()
                 .originalData(originalData)

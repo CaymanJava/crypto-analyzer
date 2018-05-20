@@ -112,6 +112,42 @@ public class AccelerationDecelerationOscillatorTest {
                 .build()).getResult();
     }
 
+    @Test
+    public void slowPeriodLessThanZeroTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Period should be more than 0 {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, period: {-5}}");
+        new AccelerationDecelerationOscillator(ACRequest.builder()
+                .originalData(new Tick[100])
+                .slowPeriod(-5)
+                .fastPeriod(34)
+                .smoothedPeriod(5)
+                .build()).getResult();
+    }
+
+    @Test
+    public void fastPeriodLessThanZeroTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Period should be more than 0 {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, period: {-34}}");
+        new AccelerationDecelerationOscillator(ACRequest.builder()
+                .originalData(new Tick[100])
+                .slowPeriod(5)
+                .fastPeriod(-34)
+                .smoothedPeriod(5)
+                .build()).getResult();
+    }
+
+    @Test
+    public void smoothedPeriodLessThanZeroTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Period should be more than 0 {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, period: {-5}}");
+        new AccelerationDecelerationOscillator(ACRequest.builder()
+                .originalData(new Tick[100])
+                .slowPeriod(5)
+                .fastPeriod(34)
+                .smoothedPeriod(-5)
+                .build()).getResult();
+    }
+
     private ACRequest buildRequest() {
         return ACRequest.builder()
                 .originalData(originalData)

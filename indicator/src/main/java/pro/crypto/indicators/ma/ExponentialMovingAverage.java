@@ -14,15 +14,15 @@ import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 public class ExponentialMovingAverage extends MovingAverage {
 
     private final Tick[] originalData;
-    private final int antiAliasingInterval;
+    private final int period;
     private final BigDecimal alphaCoefficient;
 
-    ExponentialMovingAverage(Tick[] originalData, int antiAliasingInterval, PriceType priceType, BigDecimal alphaCoefficient) {
-        checkIncomingData(originalData, antiAliasingInterval, priceType);
+    ExponentialMovingAverage(Tick[] originalData, int period, PriceType priceType, BigDecimal alphaCoefficient) {
+        checkIncomingData(originalData, period, priceType);
         this.originalData = originalData;
-        this.antiAliasingInterval = antiAliasingInterval;
+        this.period = period;
         this.priceType = priceType;
-        this.alphaCoefficient = isNull(alphaCoefficient) ? calculateAlphaCoefficient(antiAliasingInterval) : alphaCoefficient;
+        this.alphaCoefficient = isNull(alphaCoefficient) ? calculateAlphaCoefficient(period) : alphaCoefficient;
     }
 
     @Override
@@ -33,17 +33,17 @@ public class ExponentialMovingAverage extends MovingAverage {
     @Override
     public void calculate() {
         initResultArray(originalData.length);
-        fillInInitialPositions(originalData, antiAliasingInterval);
+        fillInInitialPositions(originalData, period);
         fillInInitialIndicatorValue();
         fillInRemainPositions();
     }
 
     private void fillInInitialIndicatorValue() {
-        calculateSimpleAverage(0, antiAliasingInterval - 1, originalData);
+        calculateSimpleAverage(0, period - 1, originalData);
     }
 
     private void fillInRemainPositions() {
-        for (int i = antiAliasingInterval; i < result.length; i++) {
+        for (int i = period; i < result.length; i++) {
             result[i] = buildMovingAverageResult(i);
         }
     }

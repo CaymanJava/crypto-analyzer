@@ -61,6 +61,8 @@ public class AwesomeOscillator implements Indicator<AOResult> {
         checkOriginalData(originalData);
         checkOriginalDataSize(originalData, slowPeriod);
         checkOriginalDataSize(originalData, fastPeriod);
+        checkPeriod(slowPeriod);
+        checkPeriod(fastPeriod);
     }
 
     private BigDecimal[] calculateSlowMovingAverage(BigDecimal[] medianPrices) {

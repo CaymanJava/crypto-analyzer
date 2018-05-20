@@ -69,6 +69,9 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
         checkOriginalDataSize(originalData, slowPeriod);
         checkOriginalDataSize(originalData, fastPeriod);
         checkOriginalDataSize(originalData, fastPeriod + smoothedPeriod);
+        checkPeriod(slowPeriod);
+        checkPeriod(fastPeriod);
+        checkPeriod(smoothedPeriod);
     }
 
     private BigDecimal[] calculateAwesomeOscillatorValues() {

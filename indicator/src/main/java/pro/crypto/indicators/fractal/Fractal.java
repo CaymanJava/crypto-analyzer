@@ -13,6 +13,8 @@ import java.math.BigDecimal;
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.FRACTAL;
+import static pro.crypto.model.tick.PriceType.HIGH;
+import static pro.crypto.model.tick.PriceType.LOW;
 
 public class Fractal implements Indicator<FractalResult> {
 
@@ -59,7 +61,7 @@ public class Fractal implements Indicator<FractalResult> {
 
     private boolean[] calculateUpFractals() {
         boolean[] upFractals = new boolean[originalData.length];
-        BigDecimal[] highValues = PriceExtractor.extractHighValues(originalData);
+        BigDecimal[] highValues = PriceExtractor.extractValuesByType(originalData, HIGH);
         for (int currentIndex = 2; currentIndex < upFractals.length; ) {
             if (isPossibleToDefineFractal(currentIndex)) {
                 boolean upFractal = defineUpFractalPresence(highValues, currentIndex);
@@ -87,7 +89,7 @@ public class Fractal implements Indicator<FractalResult> {
 
     private boolean[] calculateDownFractals() {
         boolean[] downFractals = new boolean[originalData.length];
-        BigDecimal[] lowValues = PriceExtractor.extractLowValues(originalData);
+        BigDecimal[] lowValues = PriceExtractor.extractValuesByType(originalData, LOW);
         for (int currentIndex = 2; currentIndex < downFractals.length;) {
             if (isPossibleToDefineFractal(currentIndex)) {
                 boolean downFractal = defineDownFractalPresence(lowValues, currentIndex);

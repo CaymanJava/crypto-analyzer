@@ -14,6 +14,8 @@ import java.math.BigDecimal;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.WILLIAMS_PERCENT_RANGE;
+import static pro.crypto.model.tick.PriceType.HIGH;
+import static pro.crypto.model.tick.PriceType.LOW;
 
 public class WilliamsPercentRange implements Indicator<WPRResult> {
 
@@ -36,8 +38,8 @@ public class WilliamsPercentRange implements Indicator<WPRResult> {
     @Override
     public void calculate() {
         result = new WPRResult[originalData.length];
-        BigDecimal[] maxValues = MinMaxCalculator.calculateMaximumValues(PriceExtractor.extractHighValues(originalData), period);
-        BigDecimal[] minValues = MinMaxCalculator.calculateMinimumValues(PriceExtractor.extractLowValues(originalData), period);
+        BigDecimal[] maxValues = MinMaxCalculator.calculateMaximumValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
+        BigDecimal[] minValues = MinMaxCalculator.calculateMinimumValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
         calculateWilliamsPercentRange(maxValues, minValues);
     }
 

@@ -19,6 +19,7 @@ import java.math.BigDecimal;
 import java.util.stream.Stream;
 
 import static java.lang.String.format;
+import static java.util.Locale.ENGLISH;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.BOLLINGER_BANDS;
@@ -29,7 +30,7 @@ public class BollingerBands implements Indicator<BBResult> {
     private final Tick[] originalData;
     private final int period;
     private final PriceType priceType;
-    private final int standardDeviationCoefficient;
+    private final double standardDeviationCoefficient;
     private final IndicatorType movingAverageType;
 
     private BBResult[] result;
@@ -75,8 +76,8 @@ public class BollingerBands implements Indicator<BBResult> {
 
     private void checkStDevCoefficient() {
         if (standardDeviationCoefficient <= 1) {
-            throw new WrongIncomingParametersException(format("Standard Deviation Coefficient should be more than 1 " +
-                            "{indicator: {%s}, standardDeviationCoefficient: {%d}}",
+            throw new WrongIncomingParametersException(format(ENGLISH, "Standard Deviation Coefficient should be more than 1 " +
+                            "{indicator: {%s}, standardDeviationCoefficient: {%.2f}}",
                     getType().toString(), standardDeviationCoefficient));
         }
     }

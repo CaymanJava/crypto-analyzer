@@ -116,7 +116,7 @@ public class BollingerBandsTest {
     public void coefficientLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Standard Deviation Coefficient should be more than 1 " +
-                "{indicator: {BOLLINGER_BANDS}, standardDeviationCoefficient: {-2}}");
+                "{indicator: {BOLLINGER_BANDS}, standardDeviationCoefficient: {-2.00}}");
         new BollingerBands(BBRequest.builder()
                 .originalData(new Tick[100])
                 .period(20)

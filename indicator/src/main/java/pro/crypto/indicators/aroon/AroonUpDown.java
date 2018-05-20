@@ -15,6 +15,7 @@ import static java.util.Arrays.copyOfRange;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.AROON_UP_DOWN;
+import static pro.crypto.model.tick.PriceType.HIGH;
 
 public class AroonUpDown implements Indicator<AroonResult> {
 
@@ -67,7 +68,7 @@ public class AroonUpDown implements Indicator<AroonResult> {
 
     private Integer[] calculateDaysAfterMaxValues() {
         Integer[] daysAfterMaxPrice = new Integer[originalData.length];
-        BigDecimal[] highValues = PriceExtractor.extractHighValues(originalData);
+        BigDecimal[] highValues = PriceExtractor.extractValuesByType(originalData, HIGH);
         for (int currentIndex = period; currentIndex < originalData.length; currentIndex++) {
             daysAfterMaxPrice[currentIndex] = calculateDaysAfterMaxValue(copyOfRange(highValues, currentIndex - period, currentIndex + 1));
         }

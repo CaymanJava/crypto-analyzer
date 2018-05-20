@@ -32,9 +32,9 @@ public class AverageTrueRangeTest {
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[5].getIndicatorValue());
-        assertNull(result[7].getIndicatorValue());
-        assertEquals(result[8].getTime(), of(2018, 3, 5, 0, 0));
-        assertEquals(result[8].getIndicatorValue(), toBigDecimal(32.5644555556));
+        assertNull(result[8].getIndicatorValue());
+        assertEquals(result[9].getTime(), of(2018, 3, 6, 0, 0));
+        assertEquals(result[9].getIndicatorValue(), toBigDecimal(31.8120200000));
         assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
         assertEquals(result[19].getIndicatorValue(), toBigDecimal(32.4180484319));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));

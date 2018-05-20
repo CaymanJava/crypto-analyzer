@@ -60,19 +60,19 @@ public class AverageTrueRange implements Indicator<ATRResult> {
     }
 
     private void fillInInitialValues() {
-        for (int i = 0; i < period - 2; i++) {
+        for (int i = 0; i < period - 1; i++) {
             result[i] = new ATRResult(originalData[i].getTickTime(), null);
         }
     }
 
     private void fillInFirstValue(BigDecimal[] trueRangeValues) {
-        result[period - 2] = new ATRResult(
-                originalData[period - 2].getTickTime(),
-                MathHelper.average(Arrays.copyOfRange(trueRangeValues, 0, period - 1)));
+        result[period - 1] = new ATRResult(
+                originalData[period - 1].getTickTime(),
+                MathHelper.average(Arrays.copyOfRange(trueRangeValues, 0, period)));
     }
 
     private void fillInRemainValues(BigDecimal[] trueRangeValues) {
-        for (int currentIndex = period - 1; currentIndex < result.length; currentIndex++) {
+        for (int currentIndex = period; currentIndex < result.length; currentIndex++) {
             result[currentIndex] = calculateAverageTrueRange(trueRangeValues[currentIndex], currentIndex);
         }
     }

@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -12,18 +11,14 @@ import pro.crypto.model.tick.Tick;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class KELTRequest {
+public class ATRBRequest {
 
     private Tick[] originalData;
 
+    private int period;
+
+    private double shift;
+
     private PriceType priceType;
-
-    private IndicatorType movingAverageType;
-
-    private int movingAveragePeriod;
-
-    private int averageTrueRangePeriod;
-
-    private double averageTrueRangeShift;
 
 }

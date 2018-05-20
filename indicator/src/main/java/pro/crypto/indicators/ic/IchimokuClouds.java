@@ -15,6 +15,9 @@ import static java.lang.String.format;
 import static java.util.Arrays.copyOfRange;
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.ICHIMOKU_CLOUDS;
+import static pro.crypto.model.tick.PriceType.CLOSE;
+import static pro.crypto.model.tick.PriceType.HIGH;
+import static pro.crypto.model.tick.PriceType.LOW;
 
 public class IchimokuClouds implements Indicator<ICResult> {
 
@@ -117,8 +120,8 @@ public class IchimokuClouds implements Indicator<ICResult> {
 
     private BigDecimal[] calculateAverageBetweenMaxMin(int period) {
         BigDecimal[] conversionLine = new BigDecimal[originalData.length];
-        BigDecimal[] highValues = PriceExtractor.extractHighValues(originalData);
-        BigDecimal[] lowValues = PriceExtractor.extractLowValues(originalData);
+        BigDecimal[] highValues = PriceExtractor.extractValuesByType(originalData, HIGH);
+        BigDecimal[] lowValues = PriceExtractor.extractValuesByType(originalData, LOW);
         for (int currentIndex = period - 1; currentIndex < conversionLine.length; currentIndex++) {
             conversionLine[currentIndex] = MathHelper.average(
                     MathHelper.max(copyOfRange(highValues, currentIndex - period + 1, currentIndex + 1)),
@@ -130,7 +133,7 @@ public class IchimokuClouds implements Indicator<ICResult> {
 
     private BigDecimal[] calculateLaggingSpan() {
         BigDecimal[] laggingSpan = new BigDecimal[originalData.length];
-        System.arraycopy(PriceExtractor.extractCloseValues(originalData), displaced, laggingSpan, 0, laggingSpan.length - displaced);
+        System.arraycopy(PriceExtractor.extractValuesByType(originalData, CLOSE), displaced, laggingSpan, 0, laggingSpan.length - displaced);
         return laggingSpan;
     }
 

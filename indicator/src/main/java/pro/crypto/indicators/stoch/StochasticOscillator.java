@@ -17,6 +17,8 @@ import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.MODIFIED_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.STOCHASTIC_OSCILLATOR;
 import static pro.crypto.model.tick.PriceType.CLOSE;
+import static pro.crypto.model.tick.PriceType.HIGH;
+import static pro.crypto.model.tick.PriceType.LOW;
 
 public class StochasticOscillator implements Indicator<StochResult> {
 
@@ -65,8 +67,8 @@ public class StochasticOscillator implements Indicator<StochResult> {
     }
 
     private BigDecimal[] calculateFastStochasticOscillator() {
-        BigDecimal[] minValues = MinMaxCalculator.calculateMinimumValues(PriceExtractor.extractLowValues(originalData), fastPeriod);
-        BigDecimal[] maxValues = MinMaxCalculator.calculateMaximumValues(PriceExtractor.extractHighValues(originalData), fastPeriod);
+        BigDecimal[] minValues = MinMaxCalculator.calculateMinimumValues(PriceExtractor.extractValuesByType(originalData, LOW), fastPeriod);
+        BigDecimal[] maxValues = MinMaxCalculator.calculateMaximumValues(PriceExtractor.extractValuesByType(originalData, HIGH), fastPeriod);
         return calculateFastStochasticOscillator(minValues, maxValues);
     }
 

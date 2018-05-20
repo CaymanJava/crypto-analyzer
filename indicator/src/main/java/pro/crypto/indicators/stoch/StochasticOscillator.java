@@ -1,9 +1,6 @@
 package pro.crypto.indicators.stoch;
 
-import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.MinMaxCalculator;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.*;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -14,7 +11,6 @@ import pro.crypto.model.result.StochResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -94,9 +90,7 @@ public class StochasticOscillator implements Indicator<StochResult> {
     }
 
     private BigDecimal[] calculateSlowStochasticOscillator(BigDecimal[] fastStochastic) {
-        BigDecimal[] slowStochastic = Stream.of(calculateMovingAverageResult(fastStochastic))
-                .map(MAResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
+        BigDecimal[] slowStochastic = MAResultExtractor.extract(calculateMovingAverageResult(fastStochastic));
         BigDecimal[] result = new BigDecimal[fastStochastic.length];
         for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
             result[currentIndex] = nonNull(fastStochastic[currentIndex]) ? slowStochastic[currentIndex - fastPeriod + 1] : null;

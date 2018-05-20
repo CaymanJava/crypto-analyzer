@@ -13,7 +13,6 @@ import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.COMMODITY_CHANNEL_INDEX;
@@ -41,7 +40,7 @@ public class CommodityChannelIndex implements Indicator<CCIResult> {
     @Override
     public void calculate() {
         result = new CCIResult[originalData.length];
-        BigDecimal[] typicalPrices = calculateTypicalPrices();
+        BigDecimal[] typicalPrices = TypicalPriceCalculator.calculateTypicalPrices(originalData);
         MAResult[] smaResult = calculateSimpleMovingAverage(typicalPrices);
         BigDecimal[] meanAbsoluteDeviations = calculateMeanAbsoluteDeviations(typicalPrices, smaResult);
         BigDecimal[] commodityChannelIndexes = calculateCommodityChannelIndexes(typicalPrices, smaResult, meanAbsoluteDeviations);
@@ -60,12 +59,6 @@ public class CommodityChannelIndex implements Indicator<CCIResult> {
         checkOriginalData(originalData);
         checkOriginalDataSize(originalData, period);
         checkPeriod(period);
-    }
-
-    private BigDecimal[] calculateTypicalPrices() {
-        return Stream.of(originalData)
-                .map(TypicalPriceCalculator::calculate)
-                .toArray(BigDecimal[]::new);
     }
 
     private MAResult[] calculateSimpleMovingAverage(BigDecimal[] typicalPrices) {

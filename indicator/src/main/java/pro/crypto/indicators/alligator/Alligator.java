@@ -1,7 +1,8 @@
 package pro.crypto.indicators.alligator;
 
 import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.MathHelper;
+import pro.crypto.helper.MAResultExtractor;
+import pro.crypto.helper.MedianPriceCalculator;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -55,7 +56,7 @@ public class Alligator implements Indicator<AlligatorResult> {
     @Override
     public void calculate() {
         result = new AlligatorResult[originalData.length];
-        BigDecimal[] medianPrices = calculateMedianPrices();
+        BigDecimal[] medianPrices = MedianPriceCalculator.calculate(originalData);
         BigDecimal[] jawValues = calculateJawValues(medianPrices);
         BigDecimal[] teethValues = calculateTeethValues(medianPrices);
         BigDecimal[] lipsValues = calculateLipsValues(medianPrices);
@@ -83,16 +84,6 @@ public class Alligator implements Indicator<AlligatorResult> {
         checkDisplaced(lipsOffset);
     }
 
-    private BigDecimal[] calculateMedianPrices() {
-        return Stream.of(originalData)
-                .map(this::calculateMedianPrice)
-                .toArray(BigDecimal[]::new);
-    }
-
-    private BigDecimal calculateMedianPrice(Tick tick) {
-        return MathHelper.divide(tick.getHigh().add(tick.getLow()), new BigDecimal(2));
-    }
-
     private BigDecimal[] calculateJawValues(BigDecimal[] medianPrices) {
         return calculateDisplacedMovingAverage(medianPrices, jawPeriod, jawOffset);
     }
@@ -106,7 +97,11 @@ public class Alligator implements Indicator<AlligatorResult> {
     }
 
     private BigDecimal[] calculateDisplacedMovingAverage(BigDecimal[] medianPrices, int period, int displaced) {
-        return extractMAResult(MovingAverageFactory.create(buildMARequest(medianPrices, period, displaced)).getResult());
+        return MAResultExtractor.extract(calculateMovingAverage(medianPrices, period, displaced));
+    }
+
+    private MAResult[] calculateMovingAverage(BigDecimal[] medianPrices, int period, int displaced) {
+        return MovingAverageFactory.create(buildMARequest(medianPrices, period, displaced)).getResult();
     }
 
     private MARequest buildMARequest(BigDecimal[] medianPrices, int period, int displaced) {
@@ -128,12 +123,6 @@ public class Alligator implements Indicator<AlligatorResult> {
         return Stream.of(originalData)
                 .map(Tick::getTickTime)
                 .toArray(LocalDateTime[]::new);
-    }
-
-    private BigDecimal[] extractMAResult(MAResult[] result) {
-        return Stream.of(result)
-                .map(MAResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
     }
 
     private void buildAlligatorResult(BigDecimal[] jawValues, BigDecimal[] teethValues, BigDecimal[] lipsValues) {

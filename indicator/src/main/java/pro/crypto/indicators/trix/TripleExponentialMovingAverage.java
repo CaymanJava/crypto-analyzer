@@ -1,6 +1,7 @@
 package pro.crypto.indicators.trix;
 
 import pro.crypto.helper.FakeTicksCreator;
+import pro.crypto.helper.MAResultExtractor;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.indicators.roc.RangeOfChange;
 import pro.crypto.model.Indicator;
@@ -8,7 +9,6 @@ import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.MARequest;
 import pro.crypto.model.request.ROCRequest;
 import pro.crypto.model.request.TRIXRequest;
-import pro.crypto.model.result.MAResult;
 import pro.crypto.model.result.ROCResult;
 import pro.crypto.model.result.TRIXResult;
 import pro.crypto.model.tick.Tick;
@@ -68,20 +68,14 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
     }
 
     private BigDecimal[] calculateOriginalMovingAverage() {
-        return extractMovingAverageValues(MovingAverageFactory
+        return MAResultExtractor.extract(MovingAverageFactory
                 .create(buildMARequest(originalData, period)).getResult());
     }
 
     private BigDecimal[] calculateDoubleMovingAverage(BigDecimal[] singleEMA) {
-        return extractMovingAverageValues(MovingAverageFactory.create(
+        return MAResultExtractor.extract(MovingAverageFactory.create(
                 buildMARequest(FakeTicksCreator.createWithCloseOnly(singleEMA), period))
                 .getResult());
-    }
-
-    private BigDecimal[] extractMovingAverageValues(MAResult[] maResults) {
-        return Stream.of(maResults)
-                .map(MAResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal[] calculateTrixValues(BigDecimal[] tripleEMA) {
@@ -102,7 +96,7 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
     }
 
     private BigDecimal[] calculateSignalLine(BigDecimal[] trixValues) {
-        return extractMovingAverageValues(MovingAverageFactory.create(
+        return MAResultExtractor.extract(MovingAverageFactory.create(
                 buildMARequest(FakeTicksCreator.createWithCloseOnly(trixValues), SIGNAL_LINE_PERIOD))
                 .getResult());
     }

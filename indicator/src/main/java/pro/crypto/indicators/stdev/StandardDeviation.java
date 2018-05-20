@@ -1,5 +1,6 @@
 package pro.crypto.indicators.stdev;
 
+import pro.crypto.helper.MAResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
@@ -12,7 +13,6 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
@@ -65,9 +65,11 @@ public class StandardDeviation implements Indicator<StDevResult> {
     }
 
     private BigDecimal[] calculateMovingAveragePrices() {
-        return Stream.of(MovingAverageFactory.create(buildSignalLineMovingAverageRequest()).getResult())
-                .map(MAResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
+        return MAResultExtractor.extract(calculateMovingAverage());
+    }
+
+    private MAResult[] calculateMovingAverage() {
+        return MovingAverageFactory.create(buildSignalLineMovingAverageRequest()).getResult();
     }
 
     private MARequest buildSignalLineMovingAverageRequest() {

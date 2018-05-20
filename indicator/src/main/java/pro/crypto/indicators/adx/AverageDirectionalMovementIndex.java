@@ -1,20 +1,15 @@
 package pro.crypto.indicators.adx;
 
-import pro.crypto.helper.BigDecimalTuple;
-import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.TrueRangeCalculator;
+import pro.crypto.helper.*;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.ADXRequest;
 import pro.crypto.model.request.MARequest;
 import pro.crypto.model.result.ADXResult;
-import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -127,7 +122,7 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
 
     private BigDecimal[] calculateDirectionalIndicators(BigDecimal[] positiveDirectionalMovements, BigDecimal[] trueRanges) {
         BigDecimal[] ratios = calculateRatios(positiveDirectionalMovements, trueRanges);
-        return extractIndicatorResults(MovingAverageFactory.create(buildMARequest(ratios)).getResult());
+        return MAResultExtractor.extract(MovingAverageFactory.create(buildMARequest(ratios)).getResult());
     }
 
     private BigDecimal[] calculateRatios(BigDecimal[] directionalMovements, BigDecimal[] trueRanges) {
@@ -136,12 +131,6 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
             ratios[i] = MathHelper.divide(directionalMovements[i], trueRanges[i]);
         }
         return ratios;
-    }
-
-    private BigDecimal[] extractIndicatorResults(MAResult[] movingAverageResult) {
-        return Stream.of(movingAverageResult)
-                .map(MAResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimalTuple[] buildDirectionalIndicators(BigDecimal[] positiveDirectionalIndicators, BigDecimal[] negativeDirectionalIndicators) {
@@ -157,7 +146,7 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
 
     private BigDecimal[] calculateAverageDirectionalIndexes(BigDecimalTuple[] directionalIndicators) {
         BigDecimal[] directionalMovementIndexValues = calculateDirectionalMovementIndexValues(directionalIndicators);
-        return extractIndicatorResults(MovingAverageFactory.create(buildMARequest(directionalMovementIndexValues)).getResult());
+        return MAResultExtractor.extract(MovingAverageFactory.create(buildMARequest(directionalMovementIndexValues)).getResult());
     }
 
     private BigDecimal[] calculateDirectionalMovementIndexValues(BigDecimalTuple[] directionalIndicators) {

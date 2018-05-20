@@ -41,6 +41,7 @@ public enum IndicatorType {
     DE_MARK_PIVOT_POINTS,
     FIBONACCI_PIVOT_POINTS,
     ALLIGATOR,
-    FRACTAL
+    FRACTAL,
+    AWESOME_OSCILLATOR
 
 }

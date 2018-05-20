@@ -1,6 +1,7 @@
 package pro.crypto.indicators.stoch;
 
 import pro.crypto.helper.FakeTicksCreator;
+import pro.crypto.helper.MAResultExtractor;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -86,9 +87,7 @@ public class PreferableStochasticOscillator implements Indicator<StochResult> {
     }
 
     private BigDecimal[] calculateSlowStochasticOscillator(BigDecimal[] fastStochastic) {
-        BigDecimal[] slowStochastic = Stream.of(calculateMovingAverageResult(fastStochastic))
-                .map(MAResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
+        BigDecimal[] slowStochastic = MAResultExtractor.extract(calculateMovingAverageResult(fastStochastic));
         BigDecimal[] result = new BigDecimal[fastStochastic.length];
         for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
             result[currentIndex] = nonNull(fastStochastic[currentIndex]) ? slowStochastic[currentIndex - fastPeriod - 1] : null;

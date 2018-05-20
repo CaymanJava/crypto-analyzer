@@ -1,17 +1,16 @@
 package pro.crypto.indicators.efi;
 
 import pro.crypto.helper.FakeTicksCreator;
+import pro.crypto.helper.MAResultExtractor;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.EFIRequest;
 import pro.crypto.model.request.MARequest;
 import pro.crypto.model.result.EFIResult;
-import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -78,7 +77,7 @@ public class ElderForceIndex implements Indicator<EFIResult> {
     }
 
     private BigDecimal[] smoothValue(BigDecimal[] forceIndexValues) {
-        return extractMAResult(MovingAverageFactory.create(buildMARequest(forceIndexValues)).getResult());
+        return MAResultExtractor.extract(MovingAverageFactory.create(buildMARequest(forceIndexValues)).getResult());
     }
 
     private MARequest buildMARequest(BigDecimal[] forceIndexValues) {
@@ -88,12 +87,6 @@ public class ElderForceIndex implements Indicator<EFIResult> {
                 .priceType(CLOSE)
                 .period(period)
                 .build();
-    }
-
-    private BigDecimal[] extractMAResult(MAResult[] result) {
-        return Stream.of(result)
-                .map(MAResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
     }
 
     private void buildEldersForceIndexResult(BigDecimal[] forceIndexValues, BigDecimal[] smoothedIndexValues) {

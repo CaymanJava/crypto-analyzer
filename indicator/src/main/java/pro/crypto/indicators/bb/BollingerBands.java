@@ -2,6 +2,7 @@ package pro.crypto.indicators.bb;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.BigDecimalTuple;
+import pro.crypto.helper.MAResultExtractor;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.indicators.stdev.StandardDeviation;
 import pro.crypto.model.Indicator;
@@ -10,7 +11,6 @@ import pro.crypto.model.request.BBRequest;
 import pro.crypto.model.request.MARequest;
 import pro.crypto.model.request.StDevRequest;
 import pro.crypto.model.result.BBResult;
-import pro.crypto.model.result.MAResult;
 import pro.crypto.model.result.StDevResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
@@ -82,7 +82,7 @@ public class BollingerBands implements Indicator<BBResult> {
     }
 
     private BigDecimal[] calculateMiddleBand() {
-        return extractMovingAverageResults(MovingAverageFactory.create(buildSMARequest()).getResult());
+        return MAResultExtractor.extract(MovingAverageFactory.create(buildSMARequest()).getResult());
     }
 
     private MARequest buildSMARequest() {
@@ -92,12 +92,6 @@ public class BollingerBands implements Indicator<BBResult> {
                 .priceType(priceType)
                 .indicatorType(SIMPLE_MOVING_AVERAGE)
                 .build();
-    }
-
-    private BigDecimal[] extractMovingAverageResults(MAResult[] movingAverageResult) {
-        return Stream.of(movingAverageResult)
-                .map(MAResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimalTuple[] calculateLowerAndUpperBandValues(BigDecimal[] middleBand) {

@@ -120,7 +120,7 @@ public class KeltnerChannelTest {
     }
 
     @Test
-    public void averageTrueRangeShiftMoreThanTickDataTest() {
+    public void averageTrueRangeShiftLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Average true range shift should be more than 0 {indicator: {KELTNER_CHANNEL}, shift: {-2.00}}");
         new KeltnerChannel(KELTRequest.builder()

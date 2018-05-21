@@ -1,6 +1,7 @@
 package pro.crypto.indicators.atrb;
 
 import pro.crypto.exception.WrongIncomingParametersException;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.indicators.atr.AverageTrueRange;
@@ -14,7 +15,6 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.lang.String.format;
 import static java.util.Locale.ENGLISH;
@@ -76,7 +76,7 @@ public class AverageTrueRangeBands implements Indicator<ATRBResult> {
     }
 
     private BigDecimal[] calculateAverageTrueRangeValues() {
-        return extractATRValues(calculateAverageTrueRange());
+        return IndicatorResultExtractor.extract(calculateAverageTrueRange());
     }
 
     private ATRResult[] calculateAverageTrueRange() {
@@ -88,12 +88,6 @@ public class AverageTrueRangeBands implements Indicator<ATRBResult> {
                 .originalData(originalData)
                 .period(period)
                 .build();
-    }
-
-    private BigDecimal[] extractATRValues(ATRResult[] result) {
-        return Stream.of(result)
-                .map(ATRResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
     }
 
     private void buildAverageTrueRangeBandsResult(BigDecimal[] atrValues, BigDecimal[] middleBandValues) {

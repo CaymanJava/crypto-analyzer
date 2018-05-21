@@ -1,6 +1,6 @@
 package pro.crypto.indicators.dpo;
 
-import pro.crypto.helper.MAResultExtractor;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
@@ -64,7 +64,7 @@ public class DetrendedPriceOscillator implements Indicator<DPOResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues() {
-        return MAResultExtractor.extract(calculateMovingAverage());
+        return IndicatorResultExtractor.extract(calculateMovingAverage());
     }
 
     private MAResult[] calculateMovingAverage() {

@@ -1,7 +1,7 @@
 package pro.crypto.indicators.ma;
 
 import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.MAResultExtractor;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.MARequest;
 import pro.crypto.model.result.MAResult;
@@ -54,7 +54,7 @@ public class DoubleExponentialMovingAverage extends MovingAverage {
     }
 
     private BigDecimal[] calculateExponentialMovingAverageValues(Tick[] data, PriceType priceType) {
-        return MAResultExtractor.extract(calculateExponentialMovingAverage(data, priceType));
+        return IndicatorResultExtractor.extract(calculateExponentialMovingAverage(data, priceType));
     }
 
     private MAResult[] calculateExponentialMovingAverage(Tick[] data, PriceType priceType) {

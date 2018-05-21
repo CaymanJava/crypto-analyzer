@@ -2,7 +2,7 @@ package pro.crypto.indicators.bb;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.BigDecimalTuple;
-import pro.crypto.helper.MAResultExtractor;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.indicators.stdev.StandardDeviation;
 import pro.crypto.model.Indicator;
@@ -11,12 +11,10 @@ import pro.crypto.model.request.BBRequest;
 import pro.crypto.model.request.MARequest;
 import pro.crypto.model.request.StDevRequest;
 import pro.crypto.model.result.BBResult;
-import pro.crypto.model.result.StDevResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.lang.String.format;
 import static java.util.Locale.ENGLISH;
@@ -83,7 +81,7 @@ public class BollingerBands implements Indicator<BBResult> {
     }
 
     private BigDecimal[] calculateMiddleBand() {
-        return MAResultExtractor.extract(MovingAverageFactory.create(buildSMARequest()).getResult());
+        return IndicatorResultExtractor.extract(MovingAverageFactory.create(buildSMARequest()).getResult());
     }
 
     private MARequest buildSMARequest() {
@@ -101,7 +99,7 @@ public class BollingerBands implements Indicator<BBResult> {
     }
 
     private BigDecimal[] calculateStandardDeviation() {
-        return extractStandardDeviationResult(new StandardDeviation(buildStDevRequest()).getResult());
+        return IndicatorResultExtractor.extract(new StandardDeviation(buildStDevRequest()).getResult());
     }
 
     private StDevRequest buildStDevRequest() {
@@ -111,12 +109,6 @@ public class BollingerBands implements Indicator<BBResult> {
                 .period(period)
                 .movingAverageType(movingAverageType)
                 .build();
-    }
-
-    private BigDecimal[] extractStandardDeviationResult(StDevResult[] result) {
-        return Stream.of(result)
-                .map(StDevResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimalTuple[] calculateLowerAndUpperBands(BigDecimal[] middleBand, BigDecimal[] standardDeviationValues) {

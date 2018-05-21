@@ -1,7 +1,7 @@
 package pro.crypto.indicators.alligator;
 
 import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.MAResultExtractor;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MedianPriceCalculator;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
@@ -97,7 +97,7 @@ public class Alligator implements Indicator<AlligatorResult> {
     }
 
     private BigDecimal[] calculateDisplacedMovingAverage(BigDecimal[] medianPrices, int period, int displaced) {
-        return MAResultExtractor.extract(calculateMovingAverage(medianPrices, period, displaced));
+        return IndicatorResultExtractor.extract(calculateMovingAverage(medianPrices, period, displaced));
     }
 
     private MAResult[] calculateMovingAverage(BigDecimal[] medianPrices, int period, int displaced) {

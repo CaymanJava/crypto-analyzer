@@ -1,7 +1,7 @@
 package pro.crypto.indicators.efi;
 
 import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.MAResultExtractor;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -77,7 +77,7 @@ public class ElderForceIndex implements Indicator<EFIResult> {
     }
 
     private BigDecimal[] smoothValue(BigDecimal[] forceIndexValues) {
-        return MAResultExtractor.extract(MovingAverageFactory.create(buildMARequest(forceIndexValues)).getResult());
+        return IndicatorResultExtractor.extract(MovingAverageFactory.create(buildMARequest(forceIndexValues)).getResult());
     }
 
     private MARequest buildMARequest(BigDecimal[] forceIndexValues) {

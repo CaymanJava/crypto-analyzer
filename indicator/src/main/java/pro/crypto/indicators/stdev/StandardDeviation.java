@@ -1,6 +1,6 @@
 package pro.crypto.indicators.stdev;
 
-import pro.crypto.helper.MAResultExtractor;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
@@ -65,7 +65,7 @@ public class StandardDeviation implements Indicator<StDevResult> {
     }
 
     private BigDecimal[] calculateMovingAveragePrices() {
-        return MAResultExtractor.extract(calculateMovingAverage());
+        return IndicatorResultExtractor.extract(calculateMovingAverage());
     }
 
     private MAResult[] calculateMovingAverage() {

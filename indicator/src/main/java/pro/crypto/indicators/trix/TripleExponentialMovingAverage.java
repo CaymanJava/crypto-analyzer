@@ -1,7 +1,7 @@
 package pro.crypto.indicators.trix;
 
 import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.MAResultExtractor;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.indicators.roc.RangeOfChange;
 import pro.crypto.model.Indicator;
@@ -9,13 +9,11 @@ import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.MARequest;
 import pro.crypto.model.request.ROCRequest;
 import pro.crypto.model.request.TRIXRequest;
-import pro.crypto.model.result.ROCResult;
 import pro.crypto.model.result.TRIXResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -68,18 +66,18 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
     }
 
     private BigDecimal[] calculateOriginalMovingAverage() {
-        return MAResultExtractor.extract(MovingAverageFactory
+        return IndicatorResultExtractor.extract(MovingAverageFactory
                 .create(buildMARequest(originalData, period)).getResult());
     }
 
     private BigDecimal[] calculateDoubleMovingAverage(BigDecimal[] singleEMA) {
-        return MAResultExtractor.extract(MovingAverageFactory.create(
+        return IndicatorResultExtractor.extract(MovingAverageFactory.create(
                 buildMARequest(FakeTicksCreator.createWithCloseOnly(singleEMA), period))
                 .getResult());
     }
 
     private BigDecimal[] calculateTrixValues(BigDecimal[] tripleEMA) {
-        return extractRangeOfChangeValues(new RangeOfChange(buildROCRequest(tripleEMA)).getResult());
+        return IndicatorResultExtractor.extract(new RangeOfChange(buildROCRequest(tripleEMA)).getResult());
     }
 
     private ROCRequest buildROCRequest(BigDecimal[] tripleEMA) {
@@ -89,14 +87,8 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
                 .build();
     }
 
-    private BigDecimal[] extractRangeOfChangeValues(ROCResult[] rocValues) {
-        return Stream.of(rocValues)
-                .map(ROCResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
-    }
-
     private BigDecimal[] calculateSignalLine(BigDecimal[] trixValues) {
-        return MAResultExtractor.extract(MovingAverageFactory.create(
+        return IndicatorResultExtractor.extract(MovingAverageFactory.create(
                 buildMARequest(FakeTicksCreator.createWithCloseOnly(trixValues), SIGNAL_LINE_PERIOD))
                 .getResult());
     }

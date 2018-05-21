@@ -1,6 +1,7 @@
 package pro.crypto.indicators.rsi;
 
 import pro.crypto.helper.FakeTicksCreator;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -10,7 +11,6 @@ import pro.crypto.model.result.RSIResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.CONNORS_RELATIVE_STRENGTH_INDEX;
@@ -68,19 +68,13 @@ public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private BigDecimal[] calculateSimpleRelativeStrengthIndex() {
-        return extractIndicatorResult(new RelativeStrengthIndex(buildRSIRequest(originalData, simpleRsiPeriod)).getResult());
+        return IndicatorResultExtractor.extract(new RelativeStrengthIndex(buildRSIRequest(originalData, simpleRsiPeriod)).getResult());
     }
 
     private BigDecimal[] calculateStreakRelativeStrengthIndex() {
         BigDecimal[] trendDurationValues = calculateTrendDuration();
         Tick[] fakeTicks = FakeTicksCreator.createWithCloseOnly(trendDurationValues);
-        return extractIndicatorResult(new RelativeStrengthIndex(buildRSIRequest(fakeTicks, streakRsiPeriod)).getResult());
-    }
-
-    private BigDecimal[] extractIndicatorResult(RSIResult[] result) {
-        return Stream.of(result)
-                .map(RSIResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
+        return IndicatorResultExtractor.extract(new RelativeStrengthIndex(buildRSIRequest(fakeTicks, streakRsiPeriod)).getResult());
     }
 
     private BigDecimal[] calculateTrendDuration() {

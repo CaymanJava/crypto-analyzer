@@ -1,5 +1,6 @@
 package pro.crypto.indicators.rsi;
 
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MinMaxCalculator;
 import pro.crypto.model.Indicator;
@@ -63,9 +64,7 @@ public class StochasticRelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private BigDecimal[] calculateRelativeStrengthIndexValues() {
-        return Stream.of(calculateRelativeStrengthIndex())
-                .map(RSIResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
+        return IndicatorResultExtractor.extract(calculateRelativeStrengthIndex());
     }
 
     private RSIResult[] calculateRelativeStrengthIndex() {

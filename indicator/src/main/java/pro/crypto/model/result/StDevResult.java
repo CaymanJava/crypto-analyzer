@@ -1,13 +1,13 @@
 package pro.crypto.model.result;
 
 import lombok.Value;
-import pro.crypto.model.IndicatorResult;
+import pro.crypto.model.SimpleIndicatorResult;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class StDevResult implements IndicatorResult {
+public class StDevResult implements SimpleIndicatorResult {
 
     private LocalDateTime time;
 

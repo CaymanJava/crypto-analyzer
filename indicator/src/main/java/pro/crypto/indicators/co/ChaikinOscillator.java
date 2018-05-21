@@ -2,6 +2,7 @@ package pro.crypto.indicators.co;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.FakeTicksCreator;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicators.adl.AccumulationDistributionLine;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
@@ -15,7 +16,6 @@ import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
@@ -105,10 +105,7 @@ public class ChaikinOscillator implements Indicator<COResult> {
     }
 
     private Tick[] createFakeTicks(ADLResult[] adlResult) {
-        return FakeTicksCreator.createWithCloseOnly(Stream.of(adlResult)
-                .map(ADLResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new)
-        );
+        return FakeTicksCreator.createWithCloseOnly(IndicatorResultExtractor.extract(adlResult));
     }
 
     private void calculateChaikinOscillatorValues(MAResult[] slowEma, MAResult[] fastEma) {

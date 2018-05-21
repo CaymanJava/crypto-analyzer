@@ -1,7 +1,7 @@
 package pro.crypto.indicators.rsi;
 
 import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.MAResultExtractor;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
@@ -97,7 +97,7 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
 
     private BigDecimal[] calculateMovingAveragePriceValues(BigDecimal[] positivePriceDifferences) {
         Tick[] faceTicks = buildFakeTicksForMovingAverage(positivePriceDifferences);
-        return MAResultExtractor.extract(calculateMovingAverage(faceTicks));
+        return IndicatorResultExtractor.extract(calculateMovingAverage(faceTicks));
     }
 
     private MAResult[] calculateMovingAverage(Tick[] faceTicks) {

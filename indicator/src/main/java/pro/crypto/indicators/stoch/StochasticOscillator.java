@@ -92,7 +92,7 @@ public class StochasticOscillator implements Indicator<StochResult> {
     }
 
     private BigDecimal[] calculateSlowStochasticOscillator(BigDecimal[] fastStochastic) {
-        BigDecimal[] slowStochastic = MAResultExtractor.extract(calculateMovingAverageResult(fastStochastic));
+        BigDecimal[] slowStochastic = IndicatorResultExtractor.extract(calculateMovingAverageResult(fastStochastic));
         BigDecimal[] result = new BigDecimal[fastStochastic.length];
         for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
             result[currentIndex] = nonNull(fastStochastic[currentIndex]) ? slowStochastic[currentIndex - fastPeriod + 1] : null;

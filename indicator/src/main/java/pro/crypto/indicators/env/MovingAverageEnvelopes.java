@@ -1,7 +1,7 @@
 package pro.crypto.indicators.env;
 
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.helper.MAResultExtractor;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ma.MovingAverage;
 import pro.crypto.indicators.ma.MovingAverageFactory;
@@ -77,7 +77,7 @@ public class MovingAverageEnvelopes implements Indicator<ENVResult> {
     }
 
     private BigDecimal[] calculateBasisValues() {
-        return MAResultExtractor.extract(buildMARequest().getResult());
+        return IndicatorResultExtractor.extract(buildMARequest().getResult());
     }
 
     private MovingAverage buildMARequest() {

@@ -2,7 +2,7 @@ package pro.crypto.indicators.ac;
 
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IncreasedQualifier;
-import pro.crypto.helper.MAResultExtractor;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ao.AwesomeOscillator;
 import pro.crypto.indicators.ma.MovingAverageFactory;
@@ -17,7 +17,6 @@ import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -75,7 +74,7 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
     }
 
     private BigDecimal[] calculateAwesomeOscillatorValues() {
-        return extractAwesomeOscillatorValues(calculateAwesomeOscillator());
+        return IndicatorResultExtractor.extract(calculateAwesomeOscillator());
     }
 
     private AOResult[] calculateAwesomeOscillator() {
@@ -90,19 +89,13 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
                 .build();
     }
 
-    private BigDecimal[] extractAwesomeOscillatorValues(AOResult[] result) {
-        return Stream.of(result)
-                .map(AOResult::getIndicatorValue)
-                .toArray(BigDecimal[]::new);
-    }
-
     private BigDecimal[] calculateAccelerationDecelerationOscillator(BigDecimal[] awesomeOscillatorValues) {
         BigDecimal[] movingAverageValues = calculateMovingAverage(awesomeOscillatorValues);
         return calculateAccelerationDecelerationOscillator(awesomeOscillatorValues, movingAverageValues);
     }
 
     private BigDecimal[] calculateMovingAverage(BigDecimal[] awesomeOscillatorValues) {
-        BigDecimal[] maValues = MAResultExtractor.extract(calculateMovingAverageValues(awesomeOscillatorValues));
+        BigDecimal[] maValues = IndicatorResultExtractor.extract(calculateMovingAverageValues(awesomeOscillatorValues));
         BigDecimal[] result = new BigDecimal[awesomeOscillatorValues.length];
         System.arraycopy(maValues, 0, result, fastPeriod - 1, maValues.length);
         return result;

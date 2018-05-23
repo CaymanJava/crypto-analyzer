@@ -98,7 +98,7 @@ public class ChaikinOscillatorTest {
         expectedException.expectMessage("Period should be more than 0 {indicator: {CHAIKIN_OSCILLATOR}, period: {0}}");
         new ChaikinOscillator(CORequest.builder()
                 .originalData(new Tick[30])
-                .fastPeriod(10)
+                .slowPeriod(10)
                 .build()).getResult();
     }
 

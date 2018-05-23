@@ -1,8 +1,6 @@
 package pro.crypto.indicators.rsi;
 
-import pro.crypto.helper.FakeTicksCreator;
-import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.helper.MathHelper;
+import pro.crypto.helper.*;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -43,10 +41,7 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
     @Override
     public void calculate() {
         result = new RSIResult[originalData.length];
-        BigDecimal[] priceDifferences = calculatePriceDifference();
-        BigDecimal[] positivePriceDifferences = extractPositivePriceDifferences(priceDifferences);
-        BigDecimal[] negativePriceDifferences = extractNegativePriceDifferences(priceDifferences);
-        calculateRelativeStrengthIndex(positivePriceDifferences, negativePriceDifferences);
+        calculateRelativeStrengthIndex(PriceDifferencesCalculator.calculate(originalData));
     }
 
     @Override
@@ -64,40 +59,27 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
         checkMovingAverageType(movingAverageType);
     }
 
-    private BigDecimal[] calculatePriceDifference() {
-        BigDecimal[] priceDifferences = new BigDecimal[originalData.length];
-        priceDifferences[0] = BigDecimal.ZERO;
-        for (int i = 1; i < priceDifferences.length; i++) {
-            priceDifferences[i] = originalData[i].getClose().subtract(originalData[i - 1].getClose());
-        }
-        return priceDifferences;
-    }
-
-    private BigDecimal[] extractPositivePriceDifferences(BigDecimal[] priceDifferences) {
-        return Stream.of(priceDifferences)
-                .map(priceDifference -> priceDifference.compareTo(BigDecimal.ZERO) > 0
-                            ? priceDifference
-                            : BigDecimal.ZERO)
-                .toArray(BigDecimal[]::new);
-    }
-
-    private BigDecimal[] extractNegativePriceDifferences(BigDecimal[] priceDifferences) {
-        return Stream.of(priceDifferences)
-                .map(priceDifference -> priceDifference.compareTo(BigDecimal.ZERO) < 0
-                        ? priceDifference.abs()
-                        : BigDecimal.ZERO)
-                .toArray(BigDecimal[]::new);
-    }
-
-    private void calculateRelativeStrengthIndex(BigDecimal[] positivePriceDifferences, BigDecimal[] negativePriceDifferences) {
-        BigDecimal[] positivePriceMovingAverageValues = calculateMovingAveragePriceValues(positivePriceDifferences);
-        BigDecimal[] negativePriceMovingAverageValues = calculateMovingAveragePriceValues(negativePriceDifferences);
+    private void calculateRelativeStrengthIndex(BigDecimalTuple[] priceDifferences) {
+        BigDecimal[] positivePriceMovingAverageValues = calculateMovingAveragePriceValues(extractPositiveDifferences(priceDifferences));
+        BigDecimal[] negativePriceMovingAverageValues = calculateMovingAveragePriceValues(extractNegativeDifferences(priceDifferences));
         calculateRelativeStrengthIndexValues(positivePriceMovingAverageValues, negativePriceMovingAverageValues);
     }
 
+    private BigDecimal[] extractPositiveDifferences(BigDecimalTuple[] priceDifferences) {
+        return Stream.of(priceDifferences)
+                .map(BigDecimalTuple::getLeft)
+                .toArray(BigDecimal[]::new);
+    }
+
+    private BigDecimal[] extractNegativeDifferences(BigDecimalTuple[] priceDifferences) {
+        return Stream.of(priceDifferences)
+                .map(BigDecimalTuple::getRight)
+                .toArray(BigDecimal[]::new);
+    }
+
     private BigDecimal[] calculateMovingAveragePriceValues(BigDecimal[] positivePriceDifferences) {
-        Tick[] faceTicks = buildFakeTicksForMovingAverage(positivePriceDifferences);
-        return IndicatorResultExtractor.extract(calculateMovingAverage(faceTicks));
+        Tick[] fakeTicks = buildFakeTicksForMovingAverage(positivePriceDifferences);
+        return IndicatorResultExtractor.extract(calculateMovingAverage(fakeTicks));
     }
 
     private MAResult[] calculateMovingAverage(Tick[] faceTicks) {

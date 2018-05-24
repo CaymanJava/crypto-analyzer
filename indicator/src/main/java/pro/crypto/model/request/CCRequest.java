@@ -11,11 +11,15 @@ import pro.crypto.model.tick.Tick;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ROCRequest {
+public class CCRequest {
 
     private Tick[] originalData;
 
     private int period;
+
+    private int shortROCPeriod;
+
+    private int longROCPeriod;
 
     private PriceType priceType;
 

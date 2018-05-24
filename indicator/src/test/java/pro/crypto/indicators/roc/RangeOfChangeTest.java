@@ -13,6 +13,7 @@ import pro.crypto.model.tick.Tick;
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class RangeOfChangeTest {
 
@@ -32,19 +33,19 @@ public class RangeOfChangeTest {
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[8].getIndicatorValue());
-        assertNull(result[12].getIndicatorValue());
-        assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getIndicatorValue(), toBigDecimal(-3.3825484239));
+        assertNull(result[13].getIndicatorValue());
+        assertEquals(result[14].getTime(), of(2018, 3, 11, 0, 0));
+        assertEquals(result[14].getIndicatorValue(), toBigDecimal(-6.2436621724));
         assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(-10.9004447147));
+        assertEquals(result[19].getIndicatorValue(), toBigDecimal(-11.2136217985));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(8.5516007242));
+        assertEquals(result[32].getIndicatorValue(), toBigDecimal(6.0984355716));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(10.1289800281));
+        assertEquals(result[45].getIndicatorValue(), toBigDecimal(13.6917609257));
         assertEquals(result[58].getTime(), of(2018, 4, 24, 0, 0));
-        assertEquals(result[58].getIndicatorValue(), toBigDecimal(4.8231465357));
+        assertEquals(result[58].getIndicatorValue(), toBigDecimal(5.1699199450));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-8.0535237118));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-7.2259215382));
     }
 
     @Test
@@ -54,6 +55,7 @@ public class RangeOfChangeTest {
         new RangeOfChange(ROCRequest.builder()
                 .originalData(new Tick[0])
                 .period(14)
+                .priceType(CLOSE)
                 .build()).getResult();
     }
 
@@ -64,6 +66,7 @@ public class RangeOfChangeTest {
         new RangeOfChange(ROCRequest.builder()
                 .originalData(null)
                 .period(14)
+                .priceType(CLOSE)
                 .build()).getResult();
     }
 
@@ -74,6 +77,7 @@ public class RangeOfChangeTest {
         new RangeOfChange(ROCRequest.builder()
                 .originalData(new Tick[19])
                 .period(20)
+                .priceType(CLOSE)
                 .build()).getResult();
     }
 
@@ -84,6 +88,17 @@ public class RangeOfChangeTest {
         new RangeOfChange(ROCRequest.builder()
                 .originalData(new Tick[100])
                 .period(-14)
+                .priceType(CLOSE)
+                .build()).getResult();
+    }
+
+    @Test
+    public void emptyPriceTypeTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Incoming price type is null {indicator: {RANGE_OF_CHANGE}}");
+        new RangeOfChange(ROCRequest.builder()
+                .originalData(new Tick[100])
+                .period(14)
                 .build()).getResult();
     }
 
@@ -91,6 +106,7 @@ public class RangeOfChangeTest {
         return ROCRequest.builder()
                 .originalData(originalData)
                 .period(14)
+                .priceType(CLOSE)
                 .build();
     }
 

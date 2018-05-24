@@ -83,7 +83,8 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
     private ROCRequest buildROCRequest(BigDecimal[] tripleEMA) {
         return ROCRequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(tripleEMA))
-                .period(2)
+                .period(1)
+                .priceType(CLOSE)
                 .build();
     }
 

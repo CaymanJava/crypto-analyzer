@@ -105,7 +105,7 @@ public class ChaikinOscillatorTest {
     @Test
     public void notEnoughDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming tick data is not enough {indicator: {CHAIKIN_OSCILLATOR}, tickLength: {5}, fastPeriod: {10}}");
+        expectedException.expectMessage("Period should be less than tick data size {indicator: {CHAIKIN_OSCILLATOR}, period: {10}, size: {5}}");
         new ChaikinOscillator(CORequest.builder()
                 .originalData(new Tick[5])
                 .slowPeriod(3)

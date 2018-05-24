@@ -1,6 +1,5 @@
 package pro.crypto.indicators.co;
 
-import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicators.adl.AccumulationDistributionLine;
@@ -17,7 +16,6 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 
-import static java.lang.String.format;
 import static java.util.Objects.isNull;
 import static pro.crypto.helper.MathHelper.scaleAndRound;
 import static pro.crypto.model.IndicatorType.CHAIKIN_OSCILLATOR;
@@ -63,21 +61,9 @@ public class ChaikinOscillator implements Indicator<COResult> {
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkPeriods();
-    }
-
-    private void checkPeriods() {
+        checkOriginalDataSize(originalData, fastPeriod);
         checkPeriod(slowPeriod);
         checkPeriod(fastPeriod);
-        checkIncomingDataLength();
-    }
-
-    private void checkIncomingDataLength() {
-        if (originalData.length <= fastPeriod) {
-            throw new WrongIncomingParametersException(format("Incoming tick data is not enough " +
-                            "{indicator: {%s}, tickLength: {%d}, fastPeriod: {%d}}",
-                    getType().toString(), originalData.length, fastPeriod));
-        }
     }
 
     private ADLResult[] calculateADL() {

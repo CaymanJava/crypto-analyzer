@@ -28,6 +28,8 @@ public class MovingAverageFactory {
             case DOUBLE_EXPONENTIAL_MOVING_AVERAGE:
                 return new DoubleExponentialMovingAverage(request.getOriginalData(), request.getPeriod(),
                         request.getPriceType(), request.getAlphaCoefficient());
+            case KAUFMAN_ADAPTIVE_MOVING_AVERAGE:
+                return new KaufmanAdaptiveMovingAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
             default:
                 throw new UnknownTypeException(format("Unknown moving average type {type: {%s}}", request.getIndicatorType()));
         }

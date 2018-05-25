@@ -16,7 +16,7 @@ public class ModifiedMovingAverage extends MovingAverage {
     private final Tick[] originalData;
     private final int period;
 
-    public ModifiedMovingAverage(Tick[] originalData, int period, PriceType priceType) {
+    ModifiedMovingAverage(Tick[] originalData, int period, PriceType priceType) {
         checkIncomingData(originalData, period, priceType);
         this.originalData = originalData;
         this.period = period;

@@ -99,7 +99,7 @@ public class ChandelierExit implements Indicator<CEResult> {
     }
 
     private BigDecimal[] calculateMaxValues() {
-        return MinMaxCalculator.calculateMaximumValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
+        return MinMaxCalculator.calculateMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
     }
 
     private BigDecimal calculateLongExit(BigDecimal averageTrueRangeValue, BigDecimal maxValue) {
@@ -122,7 +122,7 @@ public class ChandelierExit implements Indicator<CEResult> {
     }
 
     private BigDecimal[] calculateMinValues() {
-        return MinMaxCalculator.calculateMinimumValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
+        return MinMaxCalculator.calculateMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
     }
 
     private BigDecimal calculateShortExit(BigDecimal averageTrueRangeValue, BigDecimal minValue) {

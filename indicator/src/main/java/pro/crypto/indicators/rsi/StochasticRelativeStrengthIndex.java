@@ -86,12 +86,12 @@ public class StochasticRelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private BigDecimal[] calculateMinValues(BigDecimal[] relativeStrengthIndexValues) {
-        BigDecimal[] minValues = MinMaxCalculator.calculateMinimumValues(extractNonNullValues(relativeStrengthIndexValues), stochPeriod);
+        BigDecimal[] minValues = MinMaxCalculator.calculateMinValues(extractNonNullValues(relativeStrengthIndexValues), stochPeriod);
         return addEmptyFields(relativeStrengthIndexValues, minValues);
     }
 
     private BigDecimal[] calculateMaxValues(BigDecimal[] relativeStrengthIndexValues) {
-        BigDecimal[] maxValues = MinMaxCalculator.calculateMaximumValues(extractNonNullValues(relativeStrengthIndexValues), stochPeriod);
+        BigDecimal[] maxValues = MinMaxCalculator.calculateMaxValues(extractNonNullValues(relativeStrengthIndexValues), stochPeriod);
         return addEmptyFields(relativeStrengthIndexValues, maxValues);
     }
 

@@ -30,6 +30,8 @@ public class MovingAverageFactory {
                         request.getPriceType(), request.getAlphaCoefficient());
             case KAUFMAN_ADAPTIVE_MOVING_AVERAGE:
                 return new KaufmanAdaptiveMovingAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
+            case VARIABLE_INDEX_DYNAMIC_AVERAGE:
+                return new VariableIndexDynamicAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
             default:
                 throw new UnknownTypeException(format("Unknown moving average type {type: {%s}}", request.getIndicatorType()));
         }

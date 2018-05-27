@@ -38,32 +38,25 @@ public class ExponentialMovingAverage extends MovingAverage {
         fillInRemainPositions();
     }
 
+    // α = 2 / (N + 1)
+    private BigDecimal calculateAlphaCoefficient(int antiAliasingInterval) {
+        return MathHelper.divide(new BigDecimal(2), new BigDecimal(antiAliasingInterval).add(new BigDecimal(1)));
+    }
+
     private void fillInInitialIndicatorValue() {
         calculateSimpleAverage(0, period - 1, originalData);
     }
 
     private void fillInRemainPositions() {
-        for (int i = period; i < result.length; i++) {
-            result[i] = buildMovingAverageResult(i);
+        for (int currentIndex = period; currentIndex < result.length; currentIndex++) {
+            result[currentIndex] = buildMovingAverageResult(currentIndex);
         }
     }
 
     private MAResult buildMovingAverageResult(int currentIndex) {
         return new MAResult(
                 originalData[currentIndex].getTickTime(),
-                MathHelper.scaleAndRound(calculateExponentialAverage(currentIndex)));
-    }
-
-    // EMAt = α * Pt + (1 - α) * EMAt-1
-    private BigDecimal calculateExponentialAverage(int currentIndex) {
-        return MathHelper.sum(
-                alphaCoefficient.multiply(originalData[currentIndex].getPriceByType(priceType)),
-                new BigDecimal(1).subtract(alphaCoefficient).multiply(result[currentIndex - 1].getIndicatorValue()));
-    }
-
-    // α = 2 / (N + 1)
-    private BigDecimal calculateAlphaCoefficient(int antiAliasingInterval) {
-        return MathHelper.divide(new BigDecimal(2), new BigDecimal(antiAliasingInterval).add(new BigDecimal(1)));
+                MathHelper.scaleAndRound(calculateExponentialAverage(originalData, currentIndex, alphaCoefficient)));
     }
 
 }

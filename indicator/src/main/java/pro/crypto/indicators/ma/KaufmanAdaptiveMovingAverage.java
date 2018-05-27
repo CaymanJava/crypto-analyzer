@@ -126,16 +126,9 @@ public class KaufmanAdaptiveMovingAverage extends MovingAverage {
         }
     }
 
-    private MAResult calculateKaufmanAdaptiveMovingAverage(BigDecimal scaledSmoothingConstant, int currentIndex) {
-        return new MAResult(originalData[currentIndex].getTickTime(), calculateKaufmanAdaptiveMovingAverageValue(scaledSmoothingConstant, currentIndex));
-    }
-
     // KAMA(i) = KAMA(i - 1) + SC(i) x (Price(i) - KAMA(i - 1))
-    private BigDecimal calculateKaufmanAdaptiveMovingAverageValue(BigDecimal scaledSmoothingConstant, int currentIndex) {
-        return MathHelper.scaleAndRound(result[currentIndex - 1].getIndicatorValue()
-                .add(scaledSmoothingConstant
-                        .multiply(originalData[currentIndex].getPriceByType(priceType)
-                                .subtract(result[currentIndex - 1].getIndicatorValue()))));
+    private MAResult calculateKaufmanAdaptiveMovingAverage(BigDecimal scaledSmoothingConstant, int currentIndex) {
+        return new MAResult(originalData[currentIndex].getTickTime(), calculateExponentialAverage(originalData, currentIndex, scaledSmoothingConstant));
     }
 
 }

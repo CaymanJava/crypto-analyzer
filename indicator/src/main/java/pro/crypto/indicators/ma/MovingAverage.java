@@ -53,6 +53,13 @@ public abstract class MovingAverage implements Indicator<MAResult> {
         return MathHelper.average(extractPricesBetweenIndexes(fromIndex, toIndex, originalData));
     }
 
+    // EMAt = α * Pt + (1 - α) * EMAt-1
+    BigDecimal calculateExponentialAverage(Tick[]originalData, int currentIndex, BigDecimal alphaCoefficient) {
+        return MathHelper.sum(
+                alphaCoefficient.multiply(originalData[currentIndex].getPriceByType(priceType)),
+                new BigDecimal(1).subtract(alphaCoefficient).multiply(result[currentIndex - 1].getIndicatorValue()));
+    }
+
     private BigDecimal[] extractPricesBetweenIndexes(int fromIndex, int toIndex, Tick[] originalData) {
         return Stream.of(Arrays.copyOfRange(originalData, fromIndex, toIndex + 1))
                 .map(tick -> tick.getPriceByType(priceType))

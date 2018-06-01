@@ -2,7 +2,7 @@ package pro.crypto.indicators.ce;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.helper.MinMaxCalculator;
+import pro.crypto.helper.MinMaxFinder;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.indicators.atr.AverageTrueRange;
 import pro.crypto.model.Indicator;
@@ -99,7 +99,7 @@ public class ChandelierExit implements Indicator<CEResult> {
     }
 
     private BigDecimal[] calculateMaxValues() {
-        return MinMaxCalculator.calculateMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
+        return MinMaxFinder.findMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
     }
 
     private BigDecimal calculateLongExit(BigDecimal averageTrueRangeValue, BigDecimal maxValue) {
@@ -122,7 +122,7 @@ public class ChandelierExit implements Indicator<CEResult> {
     }
 
     private BigDecimal[] calculateMinValues() {
-        return MinMaxCalculator.calculateMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
+        return MinMaxFinder.findMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
     }
 
     private BigDecimal calculateShortExit(BigDecimal averageTrueRangeValue, BigDecimal minValue) {

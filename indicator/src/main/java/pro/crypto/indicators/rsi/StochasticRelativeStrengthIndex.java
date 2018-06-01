@@ -2,7 +2,7 @@ package pro.crypto.indicators.rsi;
 
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.MinMaxCalculator;
+import pro.crypto.helper.MinMaxFinder;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.RSIRequest;
@@ -86,12 +86,12 @@ public class StochasticRelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private BigDecimal[] calculateMinValues(BigDecimal[] relativeStrengthIndexValues) {
-        BigDecimal[] minValues = MinMaxCalculator.calculateMinValues(extractNonNullValues(relativeStrengthIndexValues), stochPeriod);
+        BigDecimal[] minValues = MinMaxFinder.findMinValues(extractNonNullValues(relativeStrengthIndexValues), stochPeriod);
         return addEmptyFields(relativeStrengthIndexValues, minValues);
     }
 
     private BigDecimal[] calculateMaxValues(BigDecimal[] relativeStrengthIndexValues) {
-        BigDecimal[] maxValues = MinMaxCalculator.calculateMaxValues(extractNonNullValues(relativeStrengthIndexValues), stochPeriod);
+        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(extractNonNullValues(relativeStrengthIndexValues), stochPeriod);
         return addEmptyFields(relativeStrengthIndexValues, maxValues);
     }
 

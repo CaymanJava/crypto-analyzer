@@ -1,7 +1,7 @@
 package pro.crypto.indicators.wpr;
 
 import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.MinMaxCalculator;
+import pro.crypto.helper.MinMaxFinder;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -38,8 +38,8 @@ public class WilliamsPercentRange implements Indicator<WPRResult> {
     @Override
     public void calculate() {
         result = new WPRResult[originalData.length];
-        BigDecimal[] maxValues = MinMaxCalculator.calculateMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
-        BigDecimal[] minValues = MinMaxCalculator.calculateMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
+        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
+        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
         calculateWilliamsPercentRange(maxValues, minValues);
     }
 

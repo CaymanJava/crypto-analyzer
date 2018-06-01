@@ -2,7 +2,7 @@ package pro.crypto.indicators.chop;
 
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.MinMaxCalculator;
+import pro.crypto.helper.MinMaxFinder;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.indicators.atr.AverageTrueRange;
 import pro.crypto.model.Indicator;
@@ -44,8 +44,8 @@ public class ChoppinessIndex implements Indicator<CHOPResult> {
     public void calculate() {
         result = new CHOPResult[originalData.length];
         BigDecimal[] atrSumValues = calculateATRSumValues();
-        BigDecimal[] maxValues = MinMaxCalculator.calculateMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
-        BigDecimal[] minValues = MinMaxCalculator.calculateMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
+        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
+        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
         calculateChoppinessIndexResult(atrSumValues, maxValues, minValues);
     }
 

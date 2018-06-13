@@ -1,6 +1,5 @@
 package pro.crypto.indicators.atrb;
 
-import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceExtractor;
@@ -16,8 +15,6 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 
-import static java.lang.String.format;
-import static java.util.Locale.ENGLISH;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE_BANDS;
@@ -65,14 +62,7 @@ public class AverageTrueRangeBands implements Indicator<ATRBResult> {
         checkOriginalDataSize(originalData, period);
         checkPeriod(period);
         checkPriceType(priceType);
-        checkShift();
-    }
-
-    private void checkShift() {
-        if (shift < 0) {
-            throw new WrongIncomingParametersException(format(ENGLISH, "Shift should be more or equals 0 {indicator: {%s}, shift: {%.2f}}",
-                    getType().toString(), shift));
-        }
+        checkShift(shift);
     }
 
     private BigDecimal[] calculateAverageTrueRangeValues() {

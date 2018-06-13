@@ -1,6 +1,5 @@
 package pro.crypto.indicators.kelt;
 
-import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.atr.AverageTrueRange;
 import pro.crypto.indicators.ma.MovingAverageFactory;
@@ -17,8 +16,6 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 
-import static java.lang.String.format;
-import static java.util.Locale.ENGLISH;
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.KELTNER_CHANNEL;
 
@@ -70,16 +67,9 @@ public class KeltnerChannel implements Indicator<KELTResult> {
         checkOriginalDataSize(originalData, averageTrueRangePeriod);
         checkPeriod(movingAveragePeriod);
         checkPeriod(averageTrueRangePeriod);
-        checkShift();
+        checkShift(averageTrueRangeShift);
         checkPriceType(priceType);
         checkMovingAverageType(movingAverageType);
-    }
-
-    private void checkShift() {
-        if (averageTrueRangeShift <= 0) {
-            throw new WrongIncomingParametersException(format(ENGLISH, "Average true range shift should be more than 0 {indicator: {%s}, shift: {%.2f}}",
-                    getType().toString(), averageTrueRangeShift));
-        }
     }
 
     private MARequest buildMovingAverageRequest() {

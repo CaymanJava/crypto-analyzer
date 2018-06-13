@@ -6,6 +6,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import static java.lang.String.format;
+import static java.util.Locale.ENGLISH;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 
@@ -51,6 +52,13 @@ public interface Indicator<T extends IndicatorResult> {
         if (displaced <= 0) {
             throw new WrongIncomingParametersException(format("Displaced value should be more than 0 {indicator: {%s}, displaced: {%d}}",
                     getType().toString(), displaced));
+        }
+    }
+
+    default void checkShift(double shift) {
+        if (shift < 0) {
+            throw new WrongIncomingParametersException(format(ENGLISH, "Shift should be more or equals 0 {indicator: {%s}, shift: {%.2f}}",
+                    getType().toString(), shift));
         }
     }
 

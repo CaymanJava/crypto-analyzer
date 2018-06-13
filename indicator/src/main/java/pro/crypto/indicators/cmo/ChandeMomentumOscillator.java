@@ -36,8 +36,8 @@ public class ChandeMomentumOscillator implements Indicator<CMOResult> {
     @Override
     public void calculate() {
         result = new CMOResult[originalData.length];
-        BigDecimalTuple[] priceDifferences = PriceDifferencesCalculator.calculate(originalData);
-        BigDecimalTuple[] priceDifferenceSumValues = calculatePriceDifferenceSumValues(priceDifferences);
+        BigDecimalTuple[] priceDifferences = PriceDifferencesCalculator.calculateCloseDifference(originalData);
+        BigDecimalTuple[] priceDifferenceSumValues = PriceDifferencesCalculator.calculatePriceDifferencesSum(priceDifferences, period);
         calculateChandeMomentumOscillatorResult(priceDifferenceSumValues);
     }
 
@@ -53,24 +53,6 @@ public class ChandeMomentumOscillator implements Indicator<CMOResult> {
         checkOriginalData(originalData);
         checkOriginalDataSize(originalData, period);
         checkPeriod(period);
-    }
-
-    private BigDecimalTuple[] calculatePriceDifferenceSumValues(BigDecimalTuple[] priceDifferences) {
-        BigDecimalTuple[] sum = new BigDecimalTuple[priceDifferences.length];
-        for (int currentIndex = period; currentIndex < sum.length; currentIndex++) {
-            sum[currentIndex] = calculatePriceDifferenceSum(priceDifferences, currentIndex);
-        }
-        return sum;
-    }
-
-    private BigDecimalTuple calculatePriceDifferenceSum(BigDecimalTuple[] priceDifferences, int outsideIndex) {
-        BigDecimal positiveDifferenceSum = BigDecimal.ZERO;
-        BigDecimal negativeDifferenceSum = BigDecimal.ZERO;
-        for (int currentIndex = outsideIndex - period + 1; currentIndex <= outsideIndex; currentIndex++) {
-            positiveDifferenceSum = positiveDifferenceSum.add(priceDifferences[currentIndex].getLeft());
-            negativeDifferenceSum = negativeDifferenceSum.add(priceDifferences[currentIndex].getRight());
-        }
-        return new BigDecimalTuple(positiveDifferenceSum, negativeDifferenceSum);
     }
 
     private void calculateChandeMomentumOscillatorResult(BigDecimalTuple[] priceDifferenceSumValues) {

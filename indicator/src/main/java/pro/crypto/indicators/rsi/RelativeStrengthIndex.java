@@ -11,6 +11,7 @@ import pro.crypto.model.result.RSIResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.function.Function;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -41,7 +42,7 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
     @Override
     public void calculate() {
         result = new RSIResult[originalData.length];
-        calculateRelativeStrengthIndex(PriceDifferencesCalculator.calculate(originalData));
+        calculateRelativeStrengthIndex(PriceDifferencesCalculator.calculateCloseDifference(originalData));
     }
 
     @Override
@@ -60,20 +61,14 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private void calculateRelativeStrengthIndex(BigDecimalTuple[] priceDifferences) {
-        BigDecimal[] positivePriceMovingAverageValues = calculateMovingAveragePriceValues(extractPositiveDifferences(priceDifferences));
-        BigDecimal[] negativePriceMovingAverageValues = calculateMovingAveragePriceValues(extractNegativeDifferences(priceDifferences));
+        BigDecimal[] positivePriceMovingAverageValues = calculateMovingAveragePriceValues(extractDifferences(priceDifferences, BigDecimalTuple::getLeft));
+        BigDecimal[] negativePriceMovingAverageValues = calculateMovingAveragePriceValues(extractDifferences(priceDifferences, BigDecimalTuple::getRight));
         calculateRelativeStrengthIndexValues(positivePriceMovingAverageValues, negativePriceMovingAverageValues);
     }
 
-    private BigDecimal[] extractPositiveDifferences(BigDecimalTuple[] priceDifferences) {
+    private BigDecimal[] extractDifferences(BigDecimalTuple[] priceDifferences, Function<BigDecimalTuple, BigDecimal> getDifference) {
         return Stream.of(priceDifferences)
-                .map(BigDecimalTuple::getLeft)
-                .toArray(BigDecimal[]::new);
-    }
-
-    private BigDecimal[] extractNegativeDifferences(BigDecimalTuple[] priceDifferences) {
-        return Stream.of(priceDifferences)
-                .map(BigDecimalTuple::getRight)
+                .map(getDifference)
                 .toArray(BigDecimal[]::new);
     }
 
@@ -100,8 +95,10 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private void calculateRelativeStrengthIndexValues(BigDecimal[] positivePriceMovingAverageValues, BigDecimal[] negativePriceMovingAverageValues) {
-        for (int i = 0; i < result.length; i++) {
-            result[i] = buildRelativeStrengthIndexResult(positivePriceMovingAverageValues[i], negativePriceMovingAverageValues[i], i);
+        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
+            result[currentIndex] = buildRelativeStrengthIndexResult(
+                    positivePriceMovingAverageValues[currentIndex],
+                    negativePriceMovingAverageValues[currentIndex], currentIndex);
         }
     }
 

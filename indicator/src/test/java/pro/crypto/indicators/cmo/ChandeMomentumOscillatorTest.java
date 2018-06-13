@@ -31,9 +31,9 @@ public class ChandeMomentumOscillatorTest {
         CMOResult[] result = new ChandeMomentumOscillator(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
-        assertNull(result[8].getIndicatorValue());
-        assertEquals(result[9].getTime(), of(2018, 3, 6, 0, 0));
-        assertEquals(result[9].getIndicatorValue(), toBigDecimal(5.8299381852));
+        assertNull(result[7].getIndicatorValue());
+        assertEquals(result[8].getTime(), of(2018, 3, 5, 0, 0));
+        assertEquals(result[8].getIndicatorValue(), toBigDecimal(14.4293042625));
         assertEquals(result[20].getTime(), of(2018, 3, 17, 0, 0));
         assertEquals(result[20].getIndicatorValue(), toBigDecimal(-18.1822657347));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));

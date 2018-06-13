@@ -26,8 +26,7 @@ public class MathHelper {
     }
 
     public static BigDecimal sqrt(BigDecimal value) {
-        if (isNull(value)) return null;
-        return BigDecimal.valueOf(StrictMath.sqrt(value.doubleValue()));
+        return isNull(value) ? null : BigDecimal.valueOf(StrictMath.sqrt(value.doubleValue()));
     }
 
     public static BigDecimal average(BigDecimal... values) {
@@ -53,11 +52,11 @@ public class MathHelper {
         final int numOfDigits = scale + 2;
         MathContext mc = new MathContext(numOfDigits, RoundingMode.HALF_EVEN);
 
-        if(value.signum() <= 0) {
+        if (value.signum() <= 0) {
             throw new ArithmeticException("Log of a negative number! (or zero)");
-        } else if(value.compareTo(BigDecimal.ONE) == 0) {
+        } else if (value.compareTo(BigDecimal.ONE) == 0) {
             return BigDecimal.ZERO;
-        } else if(value.compareTo(BigDecimal.ONE) < 0) {
+        } else if (value.compareTo(BigDecimal.ONE) < 0) {
             return (log((BigDecimal.ONE).divide(value, mc), scale)).negate();
         }
 
@@ -65,7 +64,7 @@ public class MathHelper {
         int leftDigits = value.precision() - value.scale();
         sb.append(leftDigits - 1).append(".");
         int n = 0;
-        while(n < numOfDigits) {
+        while (n < numOfDigits) {
             value = (value.movePointLeft(leftDigits - 1)).pow(10, mc);
             leftDigits = value.precision() - value.scale();
             sb.append(leftDigits - 1);

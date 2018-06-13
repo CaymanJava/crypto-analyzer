@@ -69,10 +69,10 @@ public class StandardDeviation implements Indicator<StDevResult> {
     }
 
     private MAResult[] calculateMovingAverage() {
-        return MovingAverageFactory.create(buildSignalLineMovingAverageRequest()).getResult();
+        return MovingAverageFactory.create(buildMovingAverageRequest()).getResult();
     }
 
-    private MARequest buildSignalLineMovingAverageRequest() {
+    private MARequest buildMovingAverageRequest() {
         return MARequest.builder()
                 .originalData(originalData)
                 .indicatorType(movingAverageType)

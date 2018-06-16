@@ -28,7 +28,7 @@ public class MarketFacilitationIndexTest {
     }
 
     @Test
-    public void testHistoricalVolatility() {
+    public void testMarketFacilitationIndex() {
         MFIResult[] result = new MarketFacilitationIndex(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));

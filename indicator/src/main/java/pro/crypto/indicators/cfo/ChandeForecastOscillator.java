@@ -89,7 +89,7 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
                 : null;
     }
 
-    // slope = m = ∑((x(i) - x(avg)) * (y(i) - y(avg))) /  ∑((x(i) - x(abg))^2)
+    // slope = m = ∑((x(i) - x(avg)) * (y(i) - y(avg))) /  ∑((x(i) - x(avg))^2)
     // linearRegression = y(avg) − m * x(avg)
     private BigDecimal calculateLinearRegressionValue(BigDecimal averagePrice, BigDecimal averageCoefficient, int outsideIndex) {
         BigDecimal divisible = BigDecimal.ZERO;

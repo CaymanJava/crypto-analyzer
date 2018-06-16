@@ -40,7 +40,7 @@ public class MarketFacilitationIndexTest {
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
         assertEquals(result[45].getIndicatorValue(), toBigDecimal(0.1297450545));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1.8081355640));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1.808135564));
     }
 
     @Test

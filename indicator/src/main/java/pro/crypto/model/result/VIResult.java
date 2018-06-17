@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class NVIResult implements SimpleIndicatorResult {
+public class VIResult implements SimpleIndicatorResult {
 
     private LocalDateTime time;
 

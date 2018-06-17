@@ -12,11 +12,13 @@ import pro.crypto.model.tick.Tick;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class NVIRequest {
+public class VIRequest {
 
     private Tick[] originalData;
 
     private int period;
+
+    private IndicatorType volumeIndexType;
 
     private IndicatorType movingAverageType;
 

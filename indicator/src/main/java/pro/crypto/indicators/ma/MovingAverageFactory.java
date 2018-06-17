@@ -4,10 +4,15 @@ import pro.crypto.exception.UnknownTypeException;
 import pro.crypto.model.request.MARequest;
 
 import static java.lang.String.format;
+import static java.util.Objects.isNull;
 
 public class MovingAverageFactory {
 
     public static MovingAverage create(MARequest request) {
+        if (isNull(request.getIndicatorType())) {
+            throw new UnknownTypeException(format("Unknown moving average type {type: {%s}}", request.getIndicatorType()));
+        }
+
         switch (request.getIndicatorType()) {
             case DISPLACED_MOVING_AVERAGE:
                 return new DisplacedMovingAverage(request.getOriginalIndicatorType(), request.getPriceType(),

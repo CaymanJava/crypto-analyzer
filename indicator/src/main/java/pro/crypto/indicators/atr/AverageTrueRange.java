@@ -60,8 +60,8 @@ public class AverageTrueRange implements Indicator<ATRResult> {
     }
 
     private void fillInInitialValues() {
-        for (int i = 0; i < period - 1; i++) {
-            result[i] = new ATRResult(originalData[i].getTickTime(), null);
+        for (int currentIndex = 0; currentIndex < period - 1; currentIndex++) {
+            result[currentIndex] = new ATRResult(originalData[currentIndex].getTickTime(), null);
         }
     }
 

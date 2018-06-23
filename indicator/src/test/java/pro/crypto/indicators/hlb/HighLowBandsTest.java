@@ -154,7 +154,6 @@ public class HighLowBandsTest {
                 .build()).getResult();
     }
 
-
     private HLBRequest buildRequest(int period, double shiftPercentage) {
         return HLBRequest.builder()
                 .originalData(originalData)

@@ -16,6 +16,7 @@ import pro.crypto.model.result.PGOResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -42,9 +43,8 @@ public class PrettyGoodOscillator implements Indicator<PGOResult> {
 
     @Override
     public void calculate() {
-        result = new PGOResult[originalData.length];
         BigDecimal[] atrValues = calculateAverageTrueRangeValues();
-        BigDecimal[] smoothedAtrValues= smoothATRValues(atrValues);
+        BigDecimal[] smoothedAtrValues = smoothATRValues(atrValues);
         BigDecimal[] smaValues = calculateSimpleMovingAverageValues();
         calculatePrettyGoodOscillator(smoothedAtrValues, smaValues);
     }
@@ -107,12 +107,16 @@ public class PrettyGoodOscillator implements Indicator<PGOResult> {
     }
 
     private void calculatePrettyGoodOscillator(BigDecimal[] smoothedAtrValues, BigDecimal[] smaValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new PGOResult(
-                    originalData[currentIndex].getTickTime(),
-                    calculatePrettyGoodOscillator(smoothedAtrValues[currentIndex], smaValues[currentIndex], originalData[currentIndex].getClose())
-            );
-        }
+        result = IntStream.range(0, originalData.length)
+                .mapToObj(idx -> buildPGOResult(smoothedAtrValues, smaValues, idx))
+                .toArray(PGOResult[]::new);
+    }
+
+    private PGOResult buildPGOResult(BigDecimal[] smoothedAtrValues, BigDecimal[] smaValues, int currentIndex) {
+        return new PGOResult(
+                originalData[currentIndex].getTickTime(),
+                calculatePrettyGoodOscillator(smoothedAtrValues[currentIndex], smaValues[currentIndex], originalData[currentIndex].getClose())
+        );
     }
 
     private BigDecimal calculatePrettyGoodOscillator(BigDecimal smoothedAtrValue, BigDecimal smaValue, BigDecimal closePrice) {

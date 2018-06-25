@@ -15,6 +15,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -65,11 +66,19 @@ public class ChoppinessIndex implements Indicator<CHOPResult> {
 
     private BigDecimal[] calculateATRSumValues() {
         BigDecimal[] atrValues = IndicatorResultExtractor.extract(calculateAverageTrueRange());
-        BigDecimal[] atrSumValues = new BigDecimal[originalData.length];
-        for (int currentIndex = period - 1; currentIndex < atrSumValues.length; currentIndex++) {
-            atrSumValues[currentIndex] = MathHelper.sum(Arrays.copyOfRange(atrValues, currentIndex - period + 1, currentIndex + 1));
-        }
-        return atrSumValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateATRSum(atrValues, idx))
+                .toArray(BigDecimal[]::new);
+    }
+
+    private BigDecimal calculateATRSum(BigDecimal[] atrValues, int currentIndex) {
+        return currentIndex >= period - 1
+                ? calculateATRSumValue(atrValues, currentIndex)
+                : null;
+    }
+
+    private BigDecimal calculateATRSumValue(BigDecimal[] atrValues, int currentIndex) {
+        return MathHelper.sum(Arrays.copyOfRange(atrValues, currentIndex - period + 1, currentIndex + 1));
     }
 
     private ATRResult[] calculateAverageTrueRange() {
@@ -85,11 +94,10 @@ public class ChoppinessIndex implements Indicator<CHOPResult> {
 
     private void calculateChoppinessIndexResult(BigDecimal[] atrSumValues, BigDecimal[] maxValues, BigDecimal[] minValues) {
         BigDecimal log10Period = MathHelper.log(new BigDecimal(period), 10);
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new CHOPResult(
-                    originalData[currentIndex].getTickTime(),
-                    calculateChoppinessIndex(atrSumValues[currentIndex], maxValues[currentIndex], minValues[currentIndex], log10Period));
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new CHOPResult(
+                        originalData[idx].getTickTime(),
+                        calculateChoppinessIndex(atrSumValues[idx], maxValues[idx], minValues[idx], log10Period)));
     }
 
     private BigDecimal calculateChoppinessIndex(BigDecimal atrSumValue, BigDecimal maxValue, BigDecimal minValue, BigDecimal log10Period) {

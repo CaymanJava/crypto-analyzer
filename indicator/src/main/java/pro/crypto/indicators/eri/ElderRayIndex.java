@@ -12,6 +12,7 @@ import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -76,9 +77,8 @@ public class ElderRayIndex implements Indicator<ERIResult> {
     }
 
     private void calculateElderRayIndicatorResult(BigDecimal[] movingAverageValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = calculateElderRayIndicator(originalData[currentIndex], movingAverageValues[currentIndex]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = calculateElderRayIndicator(originalData[idx], movingAverageValues[idx]));
     }
 
     private ERIResult calculateElderRayIndicator(Tick tick, BigDecimal movingAverageValue) {

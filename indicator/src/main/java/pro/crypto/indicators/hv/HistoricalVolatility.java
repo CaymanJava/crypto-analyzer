@@ -14,6 +14,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -71,15 +72,20 @@ public class HistoricalVolatility implements Indicator<HVResult> {
     }
 
     private BigDecimal[] calculateContinuouslyCompoundedReturns() {
-        BigDecimal[] continuouslyCompoundedReturns = new BigDecimal[originalData.length];
-        for (int currentIndex = standardDeviations; currentIndex < continuouslyCompoundedReturns.length; currentIndex++) {
-            continuouslyCompoundedReturns[currentIndex] = calculateContinuouslyCompoundedReturn(currentIndex);
-        }
-        return continuouslyCompoundedReturns;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(this::calculateContinuouslyCompoundedReturn)
+                .toArray(BigDecimal[]::new);
     }
 
     // ln(C(i) - C(i-stDev))
     private BigDecimal calculateContinuouslyCompoundedReturn(int index) {
+        return index >= standardDeviations
+                ? calculateContinuouslyCompoundedReturnValue(index)
+                : null;
+    }
+
+    // ln(C(i) - C(i-stDev))
+    private BigDecimal calculateContinuouslyCompoundedReturnValue(int index) {
         return MathHelper.ln(MathHelper.divide(originalData[index].getPriceByType(priceType), originalData[index - standardDeviations].getPriceByType(priceType)));
     }
 
@@ -109,9 +115,10 @@ public class HistoricalVolatility implements Indicator<HVResult> {
 
     private void calculateHistoricalVolatility(BigDecimal[] oneDayVolatilityValues) {
         BigDecimal annualizingFactor = calculateAnnualizingFactor();
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new HVResult(originalData[currentIndex].getTickTime(), calculateHistoricalVolatility(oneDayVolatilityValues[currentIndex], annualizingFactor));
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new HVResult(originalData[idx].getTickTime(),
+                        calculateHistoricalVolatility(oneDayVolatilityValues[idx], annualizingFactor)
+                ));
     }
 
     private BigDecimal calculateAnnualizingFactor() {

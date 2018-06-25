@@ -11,6 +11,7 @@ import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -87,11 +88,9 @@ public class AwesomeOscillator implements Indicator<AOResult> {
     }
 
     private BigDecimal[] calculateAwesomeOscillator(BigDecimal[] slowMovingAverage, BigDecimal[] fastMovingAverage) {
-        BigDecimal[] awesomeOscillatorValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < awesomeOscillatorValues.length; currentIndex++) {
-            awesomeOscillatorValues[currentIndex] = calculateAwesomeOscillator(slowMovingAverage[currentIndex], fastMovingAverage[currentIndex]);
-        }
-        return awesomeOscillatorValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateAwesomeOscillator(slowMovingAverage[idx], fastMovingAverage[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateAwesomeOscillator(BigDecimal slowMAValue, BigDecimal fastMAValue) {
@@ -105,12 +104,11 @@ public class AwesomeOscillator implements Indicator<AOResult> {
     }
 
     private void buildAwesomeOscillatorResult(BigDecimal[] awesomeOscillatorValues, Boolean[] increasedFlags) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new AOResult(
-                    originalData[currentIndex].getTickTime(),
-                    awesomeOscillatorValues[currentIndex],
-                    increasedFlags[currentIndex]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new AOResult(
+                        originalData[idx].getTickTime(),
+                        awesomeOscillatorValues[idx],
+                        increasedFlags[idx]));
     }
 
 }

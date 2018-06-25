@@ -10,6 +10,7 @@ import pro.crypto.model.result.WPRResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -37,7 +38,6 @@ public class WilliamsPercentRange implements Indicator<WPRResult> {
 
     @Override
     public void calculate() {
-        result = new WPRResult[originalData.length];
         BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
         BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
         calculateWilliamsPercentRange(maxValues, minValues);
@@ -58,11 +58,15 @@ public class WilliamsPercentRange implements Indicator<WPRResult> {
     }
 
     private void calculateWilliamsPercentRange(BigDecimal[] maxValues, BigDecimal[] minValues) {
-        for (int i = 0; i < result.length; i++) {
-            result[i] = nonNull(maxValues[i]) && nonNull(minValues[i])
-                    ? new WPRResult(originalData[i].getTickTime(), calculateWilliamsPercentRangeValue(maxValues[i], minValues[i], originalData[i].getClose()))
-                    : new WPRResult(originalData[i].getTickTime(), null);
-        }
+        result = IntStream.range(0, originalData.length)
+                .mapToObj(idx -> buildWPRResult(maxValues, minValues, idx))
+                .toArray(WPRResult[]::new);
+    }
+
+    private WPRResult buildWPRResult(BigDecimal[] maxValues, BigDecimal[] minValues, int currentIndex) {
+        return nonNull(maxValues[currentIndex]) && nonNull(minValues[currentIndex])
+                ? new WPRResult(originalData[currentIndex].getTickTime(), calculateWilliamsPercentRangeValue(maxValues[currentIndex], minValues[currentIndex], originalData[currentIndex].getClose()))
+                : new WPRResult(originalData[currentIndex].getTickTime(), null);
     }
 
     private BigDecimal calculateWilliamsPercentRangeValue(BigDecimal maxValue, BigDecimal minValue, BigDecimal close) {

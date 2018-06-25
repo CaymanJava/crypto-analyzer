@@ -1,6 +1,7 @@
 package pro.crypto.indicators.rsi;
 
 import pro.crypto.helper.*;
+import pro.crypto.helper.model.BigDecimalTuple;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -12,6 +13,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.function.Function;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -95,17 +97,15 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private void calculateRelativeStrengthIndexValues(BigDecimal[] positivePriceMovingAverageValues, BigDecimal[] negativePriceMovingAverageValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = buildRelativeStrengthIndexResult(
-                    positivePriceMovingAverageValues[currentIndex],
-                    negativePriceMovingAverageValues[currentIndex], currentIndex);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = buildRelativeStrengthIndexResult(positivePriceMovingAverageValues[idx],
+                        negativePriceMovingAverageValues[idx], idx));
     }
 
     private RSIResult buildRelativeStrengthIndexResult(BigDecimal averageGain, BigDecimal averageLoss, int currentIndex) {
-        return isNull(averageGain) || isNull(averageLoss)
-                ? new RSIResult(originalData[currentIndex].getTickTime(), null)
-                : calculateRelativeStrengthIndexValue(averageGain, averageLoss, currentIndex);
+        return nonNull(averageGain) && nonNull(averageLoss)
+                ? calculateRelativeStrengthIndexValue(averageGain, averageLoss, currentIndex)
+                : new RSIResult(originalData[currentIndex].getTickTime(), null);
     }
 
     private RSIResult calculateRelativeStrengthIndexValue(BigDecimal averageGain, BigDecimal averageLoss, int currentIndex) {

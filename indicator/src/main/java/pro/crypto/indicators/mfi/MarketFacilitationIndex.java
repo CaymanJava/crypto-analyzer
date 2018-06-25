@@ -8,6 +8,7 @@ import pro.crypto.model.result.MFIResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.MARKET_FACILITATION_INDEX;
@@ -30,8 +31,7 @@ public class MarketFacilitationIndex implements Indicator<MFIResult> {
 
     @Override
     public void calculate() {
-        result = new MFIResult[originalData.length];
-        calculateMarketFacilitationIndex();
+        result = calculateMarketFacilitationIndex();
     }
 
     @Override
@@ -42,10 +42,14 @@ public class MarketFacilitationIndex implements Indicator<MFIResult> {
         return result;
     }
 
-    private void calculateMarketFacilitationIndex() {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new MFIResult(originalData[currentIndex].getTickTime(), calculateMarketFacilitationIndexValue(originalData[currentIndex]));
-        }
+    private MFIResult[] calculateMarketFacilitationIndex() {
+        return IntStream.range(0, originalData.length)
+                .mapToObj(this::buildMarketFacilitationIndexResult)
+                .toArray(MFIResult[]::new);
+    }
+
+    private MFIResult buildMarketFacilitationIndexResult(int currentIndex) {
+        return new MFIResult(originalData[currentIndex].getTickTime(), calculateMarketFacilitationIndexValue(originalData[currentIndex]));
     }
 
     private BigDecimal calculateMarketFacilitationIndexValue(Tick tick) {

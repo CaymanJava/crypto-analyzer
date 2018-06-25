@@ -1,7 +1,7 @@
 package pro.crypto.indicators.bb;
 
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.helper.BigDecimalTuple;
+import pro.crypto.helper.model.BigDecimalTuple;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.indicators.stdev.StandardDeviation;
@@ -15,6 +15,8 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.function.BiFunction;
+import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Locale.ENGLISH;
@@ -112,39 +114,36 @@ public class BollingerBands implements Indicator<BBResult> {
     }
 
     private BigDecimalTuple[] calculateLowerAndUpperBands(BigDecimal[] middleBand, BigDecimal[] standardDeviationValues) {
-        BigDecimalTuple[] lowerAndUpperValue = new BigDecimalTuple[originalData.length];
-        for (int currentIndex = 0; currentIndex < lowerAndUpperValue.length; currentIndex++) {
-            lowerAndUpperValue[currentIndex] = nonNull(standardDeviationValues[currentIndex]) && nonNull(middleBand[currentIndex])
-                    ? calculateLowerAndUpperBandValues(standardDeviationValues[currentIndex], middleBand[currentIndex])
-                    : new BigDecimalTuple(null, null);
-        }
-        return lowerAndUpperValue;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateLowerAndUpperBands(middleBand, standardDeviationValues, idx))
+                .toArray(BigDecimalTuple[]::new);
+    }
+
+    private BigDecimalTuple calculateLowerAndUpperBands(BigDecimal[] middleBand, BigDecimal[] standardDeviationValues, int currentIndex) {
+        return nonNull(standardDeviationValues[currentIndex]) && nonNull(middleBand[currentIndex])
+                ? calculateLowerAndUpperBandValues(standardDeviationValues[currentIndex], middleBand[currentIndex])
+                : new BigDecimalTuple(null, null);
     }
 
     private BigDecimalTuple calculateLowerAndUpperBandValues(BigDecimal standardDeviationValue, BigDecimal middleBandValue) {
         return new BigDecimalTuple(
-                calculateLowerBandValue(standardDeviationValue, middleBandValue),
-                calculateUpperBandValue(standardDeviationValue, middleBandValue)
+                calculateBandValue(standardDeviationValue, middleBandValue, BigDecimal::subtract),
+                calculateBandValue(standardDeviationValue, middleBandValue, BigDecimal::add)
         );
     }
 
-    private BigDecimal calculateUpperBandValue(BigDecimal standardDeviationValue, BigDecimal middleBandValue) {
-        return middleBandValue.add(standardDeviationValue.multiply(new BigDecimal(standardDeviationCoefficient)));
-    }
-
-    private BigDecimal calculateLowerBandValue(BigDecimal standardDeviationValue, BigDecimal middleBandValue) {
-        return middleBandValue.subtract(standardDeviationValue.multiply(new BigDecimal(standardDeviationCoefficient)));
+    private BigDecimal calculateBandValue(BigDecimal standardDeviationValue, BigDecimal middleBandValue, BiFunction<BigDecimal, BigDecimal, BigDecimal> bandFunction) {
+        return bandFunction.apply(middleBandValue, standardDeviationValue.multiply(new BigDecimal(standardDeviationCoefficient)));
     }
 
     private void buildBollingerBandsResult(BigDecimal[] middleBand, BigDecimalTuple[] lowerAndUpperBands) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new BBResult(
-                    originalData[currentIndex].getTickTime(),
-                    lowerAndUpperBands[currentIndex].getRight(),
-                    middleBand[currentIndex],
-                    lowerAndUpperBands[currentIndex].getLeft()
-            );
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new BBResult(
+                        originalData[idx].getTickTime(),
+                        lowerAndUpperBands[idx].getRight(),
+                        middleBand[idx],
+                        lowerAndUpperBands[idx].getLeft()
+                ));
     }
 
 }

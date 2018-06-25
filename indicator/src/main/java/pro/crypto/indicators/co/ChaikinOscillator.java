@@ -15,8 +15,10 @@ import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 import static pro.crypto.helper.MathHelper.scaleAndRound;
 import static pro.crypto.model.IndicatorType.CHAIKIN_OSCILLATOR;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
@@ -95,9 +97,8 @@ public class ChaikinOscillator implements Indicator<COResult> {
     }
 
     private void calculateChaikinOscillatorValues(MAResult[] slowEma, MAResult[] fastEma) {
-        for (int i = 0; i < result.length; i++) {
-            result[i] = calculateChaikinOscillatorValue(slowEma, fastEma, i);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = calculateChaikinOscillatorValue(slowEma, fastEma, idx));
     }
 
     private COResult calculateChaikinOscillatorValue(MAResult[] slowEma, MAResult[] fastEma, int currentIndex) {
@@ -106,9 +107,9 @@ public class ChaikinOscillator implements Indicator<COResult> {
     }
 
     private BigDecimal calculateDifference(BigDecimal slowEmaValue, BigDecimal fastEmaValue) {
-        return isNull(slowEmaValue) || isNull(fastEmaValue)
-                ? null
-                : scaleAndRound(slowEmaValue.subtract(fastEmaValue));
+        return nonNull(slowEmaValue) && nonNull(fastEmaValue)
+                ? scaleAndRound(slowEmaValue.subtract(fastEmaValue))
+                : null;
     }
 
 }

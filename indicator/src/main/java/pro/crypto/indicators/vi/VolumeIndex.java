@@ -14,6 +14,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.tick.PriceType.CLOSE;
@@ -57,13 +58,13 @@ public abstract class VolumeIndex implements Indicator<VIResult> {
     BigDecimal[] calculateVolumeIndexes() {
         BigDecimal[] negativeVolumeIndexes = new BigDecimal[originalData.length];
         negativeVolumeIndexes[0] = originalData[0].getBaseVolume();
-        for (int currentIndex = 1; currentIndex < negativeVolumeIndexes.length; currentIndex++) {
-            negativeVolumeIndexes[currentIndex] = calculateVolumeIndex(negativeVolumeIndexes, currentIndex);
-        }
+        IntStream.range(1, negativeVolumeIndexes.length)
+                .forEach(idx -> negativeVolumeIndexes[idx] = calculateVolumeIndexValue(negativeVolumeIndexes, idx));
+
         return negativeVolumeIndexes;
     }
 
-    abstract BigDecimal calculateVolumeIndex(BigDecimal[] negativeVolumeIndexes, int currentIndex);
+    abstract BigDecimal calculateVolumeIndexValue(BigDecimal[] negativeVolumeIndexes, int currentIndex);
 
     boolean isCurrentVolumeMoreThanPrevious(int currentIndex) {
         return originalData[currentIndex].getBaseVolume().compareTo(originalData[currentIndex - 1].getBaseVolume()) > 0;
@@ -73,17 +74,16 @@ public abstract class VolumeIndex implements Indicator<VIResult> {
         return previousNegativeVolumeIndex.multiply(calculatePriceRatio(currentIndex));
     }
 
-    BigDecimal[] calculateMovingAverageValues(BigDecimal[] negativeVolumeIndexes) {
+    private BigDecimal[] calculateMovingAverageValues(BigDecimal[] negativeVolumeIndexes) {
         return IndicatorResultExtractor.extract(calculateMovingAverage(negativeVolumeIndexes));
     }
 
-    void buildNegativeVolumeIndexResult(BigDecimal[] negativeVolumeIndexes, BigDecimal[] movingAverageValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new VIResult(
-                    originalData[currentIndex].getTickTime(),
-                    MathHelper.scaleAndRound(negativeVolumeIndexes[currentIndex]),
-                    movingAverageValues[currentIndex]);
-        }
+    private void buildNegativeVolumeIndexResult(BigDecimal[] negativeVolumeIndexes, BigDecimal[] movingAverageValues) {
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new VIResult(
+                        originalData[idx].getTickTime(),
+                        MathHelper.scaleAndRound(negativeVolumeIndexes[idx]),
+                        movingAverageValues[idx]));
     }
 
     private void checkIncomingData() {

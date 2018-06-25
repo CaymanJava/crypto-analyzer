@@ -161,7 +161,6 @@ public class PriceMomentumOscillator implements Indicator<PMOResult> {
 
     private void buildPriceMomentumOscillatorResult(BigDecimal[] priceMomentumOscillatorValues, BigDecimal[] signalLineValues) {
         IntStream.range(0, result.length)
-                .parallel()
                 .forEach(currentIndex -> buildPriceMomentumOscillatorResult(currentIndex, priceMomentumOscillatorValues[currentIndex], signalLineValues[currentIndex]));
     }
 

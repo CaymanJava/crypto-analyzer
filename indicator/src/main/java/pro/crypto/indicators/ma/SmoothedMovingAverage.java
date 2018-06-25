@@ -7,6 +7,7 @@ import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static pro.crypto.model.IndicatorType.SMOOTHED_MOVING_AVERAGE;
 
@@ -36,9 +37,12 @@ public class SmoothedMovingAverage extends MovingAverage {
     }
 
     private void fillInRemainPositions() {
-        for (int currentIndex = period; currentIndex < originalData.length; currentIndex++) {
-            result[currentIndex] = buildMovingAverageResult(currentIndex);
-        }
+        IntStream.range(period, originalData.length)
+                .forEach(this::setMovingAverageResult);
+    }
+
+    private void setMovingAverageResult(int currentIndex) {
+        result[currentIndex] = buildMovingAverageResult(currentIndex);
     }
 
     private MAResult buildMovingAverageResult(int currentIndex) {
@@ -49,7 +53,7 @@ public class SmoothedMovingAverage extends MovingAverage {
 
     private BigDecimal calculateSmoothedAverage(int currentIndex) {
         return MathHelper.divide((result[currentIndex - 1].getIndicatorValue().multiply(new BigDecimal(period - 1)))
-                .add(originalData[currentIndex].getPriceByType(priceType)),
+                        .add(originalData[currentIndex].getPriceByType(priceType)),
                 new BigDecimal(period));
     }
 

@@ -11,6 +11,7 @@ import pro.crypto.model.result.EFIResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -58,14 +59,18 @@ public class ElderForceIndex implements Indicator<EFIResult> {
     }
 
     private BigDecimal[] calculateForceIndexValues() {
-        BigDecimal[] forceIndexValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 1; currentIndex < forceIndexValues.length; currentIndex++) {
-            forceIndexValues[currentIndex] = calculateForceIndex(currentIndex);
-        }
-        return forceIndexValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(this::calculateForceIndex)
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateForceIndex(int currentIndex) {
+        return currentIndex > 0
+                ? calculateForceIndexValues(currentIndex)
+                : null;
+    }
+
+    private BigDecimal calculateForceIndexValues(int currentIndex) {
         return originalData[currentIndex].getClose()
                 .subtract(originalData[currentIndex - 1]
                         .getClose()).multiply(originalData[currentIndex].getBaseVolume());
@@ -90,14 +95,18 @@ public class ElderForceIndex implements Indicator<EFIResult> {
     }
 
     private void buildEldersForceIndexResult(BigDecimal[] forceIndexValues, BigDecimal[] smoothedIndexValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new EFIResult(
-                    originalData[currentIndex].getTickTime(),
-                    nonNull(forceIndexValues[currentIndex])
-                            ? smoothedIndexValues[currentIndex - 1]
-                            : null
-            );
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new EFIResult(
+                        originalData[idx].getTickTime(),
+                        extractSmoothedIndex(forceIndexValues, smoothedIndexValues, idx)
+                ));
+
+    }
+
+    private BigDecimal extractSmoothedIndex(BigDecimal[] forceIndexValues, BigDecimal[] smoothedIndexValues, int currentIndex) {
+        return nonNull(forceIndexValues[currentIndex])
+                ? smoothedIndexValues[currentIndex - 1]
+                : null;
     }
 
 }

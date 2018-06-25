@@ -10,6 +10,7 @@ import pro.crypto.model.result.GAPOResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.GOPALAKRISHNAN_RANGE_INDEX;
@@ -55,37 +56,35 @@ public class GopalakrishnanRangeIndex implements Indicator<GAPOResult> {
     }
 
     private void calculateGopalakrishnanRangeIndex() {
-        fillInInitialPositions();
-        fillInRemainPosition();
-    }
-
-    private void fillInInitialPositions() {
-        for (int currentIndex = 0; currentIndex < period - 1; currentIndex++) {
-            result[currentIndex] = new GAPOResult(originalData[currentIndex].getTickTime(), null);
-        }
-    }
-
-    private void fillInRemainPosition() {
         BigDecimal[] maxValues = findMaxValues();
         BigDecimal[] minValues = findMinValues();
         BigDecimal log10Period = calculateLog10Period();
-        for (int currentIndex = period - 1; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new GAPOResult(
-                    originalData[currentIndex].getTickTime(),
-                    calculateGopalakrishnanRangeIndexValue(maxValues[currentIndex], minValues[currentIndex], log10Period));
-        }
-    }
-
-    private BigDecimal[] findMinValues() {
-        return MinMaxFinder.findMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = buildGopalakrishnanRangeIndexResult(maxValues, minValues, log10Period, idx));
     }
 
     private BigDecimal[] findMaxValues() {
         return MinMaxFinder.findMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
     }
 
+    private BigDecimal[] findMinValues() {
+        return MinMaxFinder.findMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
+    }
+
     private BigDecimal calculateLog10Period() {
         return MathHelper.log(new BigDecimal(period), 10);
+    }
+
+    private GAPOResult buildGopalakrishnanRangeIndexResult(BigDecimal[] maxValues, BigDecimal[] minValues, BigDecimal log10Period, int currentIndex) {
+        return currentIndex < period - 1
+                ? buildEmptyResult(originalData[currentIndex])
+                : new GAPOResult(
+                originalData[currentIndex].getTickTime(),
+                calculateGopalakrishnanRangeIndexValue(maxValues[currentIndex], minValues[currentIndex], log10Period));
+    }
+
+    private GAPOResult buildEmptyResult(Tick originalDatum) {
+        return new GAPOResult(originalDatum.getTickTime(), null);
     }
 
     // Lg(MAX(High) - MIN(Low)) / Lg(period)

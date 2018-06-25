@@ -10,6 +10,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
@@ -60,9 +61,8 @@ public class AverageTrueRange implements Indicator<ATRResult> {
     }
 
     private void fillInInitialValues() {
-        for (int currentIndex = 0; currentIndex < period - 1; currentIndex++) {
-            result[currentIndex] = new ATRResult(originalData[currentIndex].getTickTime(), null);
-        }
+        IntStream.range(0, period - 1)
+                .forEach(idx -> result[idx] = new ATRResult(originalData[idx].getTickTime(), null));
     }
 
     private void fillInFirstValue(BigDecimal[] trueRangeValues) {
@@ -72,9 +72,8 @@ public class AverageTrueRange implements Indicator<ATRResult> {
     }
 
     private void fillInRemainValues(BigDecimal[] trueRangeValues) {
-        for (int currentIndex = period; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = calculateAverageTrueRange(trueRangeValues[currentIndex], currentIndex);
-        }
+        IntStream.range(period, result.length)
+                .forEach(idx -> result[idx] = calculateAverageTrueRange(trueRangeValues[idx], idx));
     }
 
     // ATRk = (ATRk-1 * (n - 1) + TRk) / n

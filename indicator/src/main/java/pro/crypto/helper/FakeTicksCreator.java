@@ -5,37 +5,39 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class FakeTicksCreator {
 
     public static Tick[] createWithCloseOnly(BigDecimal[] values) {
-        List<Tick> fakeTicks = new ArrayList<>();
-        Stream.of(values)
+        return Stream.of(values)
                 .filter(Objects::nonNull)
-                .forEach(indicatorValue -> {
-                    fakeTicks.add(Tick.builder()
-                            .close(indicatorValue)
-                            .build());
-                });
-        return fakeTicks.toArray(new Tick[fakeTicks.size()]);
+                .map(FakeTicksCreator::buildTickWithClose)
+                .toArray(Tick[]::new);
     }
 
     public static Tick[] createWithCloseAndTime(BigDecimal[] values, LocalDateTime[] tickTimes) {
         if (values.length != tickTimes.length) {
             throw new WrongIncomingParametersException("Array of price values and tick's times should have the same length");
         }
-        Tick[] fakeTicks = new Tick[values.length];
-        for (int i = 0; i < fakeTicks.length; i++) {
-            fakeTicks[i] = Tick.builder()
-                    .tickTime(tickTimes[i])
-                    .close(values[i])
-                    .build();
-        }
-        return fakeTicks;
+        return IntStream.range(0, values.length)
+                .mapToObj(idx -> buildTickWithCloseAndTime(values[idx], tickTimes[idx]))
+                .toArray(Tick[]::new);
+    }
+
+    private static Tick buildTickWithClose(BigDecimal value) {
+        return Tick.builder()
+                .close(value)
+                .build();
+    }
+
+    private static Tick buildTickWithCloseAndTime(BigDecimal value, LocalDateTime time) {
+        return Tick.builder()
+                .close(value)
+                .tickTime(time)
+                .build();
     }
 
 }

@@ -8,6 +8,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.KAUFMAN_ADAPTIVE_MOVING_AVERAGE;
@@ -46,48 +47,52 @@ public class KaufmanAdaptiveMovingAverage extends MovingAverage {
     }
 
     private BigDecimal[] calculateChanges() {
-        BigDecimal[] changes = new BigDecimal[originalData.length];
-        for (int currentIndex = period; currentIndex < changes.length; currentIndex++) {
-            changes[currentIndex] = calculatePriceChange(currentIndex, period);
-        }
-        return changes;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculatePriceChange(idx, period))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal[] calculateVolatility() {
-        BigDecimal[] volatilityValues = new BigDecimal[originalData.length];
         BigDecimal[] oneDayPriceChanges = calculateOneDaysPriceChanges();
-        for (int currentIndex = period; currentIndex < volatilityValues.length; currentIndex++) {
-            volatilityValues[currentIndex] = calculateVolatility(oneDayPriceChanges, currentIndex);
-        }
-        return volatilityValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateVolatility(oneDayPriceChanges, idx))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal[] calculateOneDaysPriceChanges() {
-        BigDecimal[] oneDayPriceChanges = new BigDecimal[originalData.length];
-        for (int currentIndex = 1; currentIndex < oneDayPriceChanges.length; currentIndex++) {
-            oneDayPriceChanges[currentIndex] = calculatePriceChange(currentIndex, 1);
-        }
-        return oneDayPriceChanges;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculatePriceChange(idx, 1))
+                .toArray(BigDecimal[]::new);
+    }
+
+    private BigDecimal calculatePriceChange(int currentIndex, int period) {
+        return currentIndex >= period
+                ? calculatePriceChangeValue(currentIndex, period)
+                : null;
     }
 
     // ABS(Price(i) - Price(i - n))
-    private BigDecimal calculatePriceChange(int currentIndex, int period) {
+    private BigDecimal calculatePriceChangeValue(int currentIndex, int period) {
         return originalData[currentIndex].getPriceByType(priceType)
                 .subtract(originalData[currentIndex - period].getPriceByType(priceType))
                 .abs();
     }
 
-    // ∑(ABS(Price(i) - Price(i - 1)))
     private BigDecimal calculateVolatility(BigDecimal[] oneDayPriceChanges, int currentIndex) {
+        return currentIndex >= period
+                ? calculateVolatilityValue(oneDayPriceChanges, currentIndex)
+                : null;
+    }
+
+    // ∑(ABS(Price(i) - Price(i - 1)))
+    private BigDecimal calculateVolatilityValue(BigDecimal[] oneDayPriceChanges, int currentIndex) {
         return MathHelper.sum(Arrays.copyOfRange(oneDayPriceChanges, currentIndex - period + 1, currentIndex + 1));
     }
 
     private BigDecimal[] calculateEfficiencyRatios(BigDecimal[] changes, BigDecimal[] volatilityValues) {
-        BigDecimal[] efficiencyRatios = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < efficiencyRatios.length; currentIndex++) {
-            efficiencyRatios[currentIndex] = calculateEfficiencyRatio(changes[currentIndex], volatilityValues[currentIndex]);
-        }
-        return efficiencyRatios;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateEfficiencyRatio(changes[idx], volatilityValues[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateEfficiencyRatio(BigDecimal change, BigDecimal volatilityValue) {
@@ -97,11 +102,9 @@ public class KaufmanAdaptiveMovingAverage extends MovingAverage {
     }
 
     private BigDecimal[] calculateScaledSmoothingConstants(BigDecimal[] efficiencyRatios) {
-        BigDecimal[] scaledSmoothingConstants = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < scaledSmoothingConstants.length; currentIndex++) {
-            scaledSmoothingConstants[currentIndex] = calculateScaledSmoothingConstant(efficiencyRatios[currentIndex]);
-        }
-        return scaledSmoothingConstants;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateScaledSmoothingConstant(efficiencyRatios[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateScaledSmoothingConstant(BigDecimal efficiencyRatio) {
@@ -121,9 +124,8 @@ public class KaufmanAdaptiveMovingAverage extends MovingAverage {
     private void calculateKaufmanAdaptiveMovingAverage(BigDecimal[] scaledSmoothingConstants) {
         fillInInitialPositions(originalData, period);
         calculateSimpleAverage(0, period - 1, originalData);
-        for (int currentIndex = period; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = calculateKaufmanAdaptiveMovingAverage(scaledSmoothingConstants[currentIndex], currentIndex);
-        }
+        IntStream.range(period, result.length)
+                .forEach(idx -> result[idx] = calculateKaufmanAdaptiveMovingAverage(scaledSmoothingConstants[idx], idx));
     }
 
     // KAMA(i) = KAMA(i - 1) + SC(i) x (Price(i) - KAMA(i - 1))

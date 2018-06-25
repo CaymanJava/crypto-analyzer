@@ -17,6 +17,7 @@ import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -116,12 +117,9 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
     }
 
     private BigDecimal[] calculateAccelerationDecelerationOscillator(BigDecimal[] awesomeOscillatorValues, BigDecimal[] movingAverageValues) {
-        BigDecimal[] acOscillatorValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < acOscillatorValues.length; currentIndex++) {
-            acOscillatorValues[currentIndex] = calculateAccelerationDecelerationOscillator(
-                    awesomeOscillatorValues[currentIndex], movingAverageValues[currentIndex]);
-        }
-        return acOscillatorValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateAccelerationDecelerationOscillator(awesomeOscillatorValues[idx], movingAverageValues[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateAccelerationDecelerationOscillator(BigDecimal awesomeOscillatorValue, BigDecimal movingAverageValue) {
@@ -135,12 +133,11 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
     }
 
     private void buildAccelerationDecelerationResult(BigDecimal[] accelerationDecelerationValues, Boolean[] increasedFlags) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new ACResult(
-                    originalData[currentIndex].getTickTime(),
-                    accelerationDecelerationValues[currentIndex],
-                    increasedFlags[currentIndex]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new ACResult(
+                        originalData[idx].getTickTime(),
+                        accelerationDecelerationValues[idx],
+                        increasedFlags[idx]));
     }
 
 }

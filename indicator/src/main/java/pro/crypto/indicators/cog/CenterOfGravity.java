@@ -3,6 +3,7 @@ package pro.crypto.indicators.cog;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
+import pro.crypto.helper.model.BigDecimalTuple;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -14,6 +15,8 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.CENTER_OF_GRAVITY;
@@ -69,37 +72,43 @@ public class CenterOfGravity implements Indicator<COGResult> {
     }
 
     private BigDecimal[] calculateCenterOfGravityValues() {
-        BigDecimal[] centerOfGravityValues = new BigDecimal[originalData.length];
-        for (int currentIndex = period - 1; currentIndex < centerOfGravityValues.length; currentIndex++) {
-            centerOfGravityValues[currentIndex] = calculateCenterOfGravity(currentIndex);
-        }
-        return centerOfGravityValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(this::calculateCenterOfGravity)
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateCenterOfGravity(int outsideIndex) {
-        BigDecimal divisible = BigDecimal.ZERO;
-        BigDecimal divisor = BigDecimal.ZERO;
-        int coefficient = 0;
-        for (int currentIndex = outsideIndex - period + 1; currentIndex <= outsideIndex; currentIndex++) {
-            divisible = calculateDivisible(divisible, coefficient, currentIndex);
-            divisor = calculateDivisor(divisor, currentIndex);
-            coefficient++;
-        }
-        return MathHelper.divide(divisible, divisor);
+        return outsideIndex >= period - 1
+                ? calculateCenterOfGravityValue(outsideIndex)
+                : null;
     }
 
-    private BigDecimal calculateDivisible(BigDecimal divisible, int coefficient, int currentIndex) {
-        return divisible.add(new BigDecimal(coefficient + 1).multiply(originalData[currentIndex].getPriceByType(priceType)));
+    private BigDecimal calculateCenterOfGravityValue(int outsideIndex) {
+        final AtomicInteger coefficient = new AtomicInteger(0);
+        BigDecimalTuple divisibleDivisor = IntStream.rangeClosed(outsideIndex - period + 1, outsideIndex)
+                .mapToObj(idx -> calculateDivisibleDivisor(coefficient, idx))
+                .reduce(BigDecimalTuple.zero(), BigDecimalTuple::add);
+        return MathHelper.divide(divisibleDivisor.getLeft(), divisibleDivisor.getRight());
     }
 
-    private BigDecimal calculateDivisor(BigDecimal divisor, int currentIndex) {
-        return divisor.add(originalData[currentIndex].getPriceByType(priceType));
+    private BigDecimalTuple calculateDivisibleDivisor(AtomicInteger coefficient, int currentIndex) {
+        BigDecimal divisible = calculateDivisible(coefficient.getAndIncrement(), currentIndex);
+        BigDecimal divisor = calculateDivisor(currentIndex);
+        return new BigDecimalTuple(divisible, divisor);
+    }
+
+    private BigDecimal calculateDivisible(int coefficient, int currentIndex) {
+        return new BigDecimal(coefficient + 1).multiply(originalData[currentIndex].getPriceByType(priceType));
+    }
+
+    private BigDecimal calculateDivisor(int currentIndex) {
+        return originalData[currentIndex].getPriceByType(priceType);
     }
 
     private BigDecimal[] calculateSignalLineValues(BigDecimal[] centerOfGravityValues) {
         BigDecimal[] signalLineValues = new BigDecimal[centerOfGravityValues.length];
         BigDecimal[] movingAverageValues = IndicatorResultExtractor.extract(calculateMovingAverage(centerOfGravityValues));
-        System.arraycopy(movingAverageValues, 0, signalLineValues, signalLinePeriod- 1, movingAverageValues.length);
+        System.arraycopy(movingAverageValues, 0, signalLineValues, signalLinePeriod - 1, movingAverageValues.length);
         return signalLineValues;
     }
 
@@ -117,13 +126,12 @@ public class CenterOfGravity implements Indicator<COGResult> {
     }
 
     private void buildCenterOfGravityResult(BigDecimal[] centerOfGravityValues, BigDecimal[] signalLineValues) {
-        for (int currentIndex = 0; currentIndex < result.length ; currentIndex++) {
-            result[currentIndex] = new COGResult(
-                    originalData[currentIndex].getTickTime(),
-                    centerOfGravityValues[currentIndex],
-                    signalLineValues[currentIndex]
-            );
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new COGResult(
+                        originalData[idx].getTickTime(),
+                        centerOfGravityValues[idx],
+                        signalLineValues[idx]
+                ));
     }
 
 }

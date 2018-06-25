@@ -1,6 +1,10 @@
 package pro.crypto.indicators.adx;
 
-import pro.crypto.helper.*;
+import pro.crypto.helper.FakeTicksCreator;
+import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.MathHelper;
+import pro.crypto.helper.TrueRangeCalculator;
+import pro.crypto.helper.model.BigDecimalTuple;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
@@ -10,6 +14,9 @@ import pro.crypto.model.result.ADXResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.function.BiFunction;
+import java.util.function.Function;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -64,21 +71,31 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
     }
 
     private BigDecimal[] calculateUpMovement() {
-        BigDecimal[] upMovementValues = new BigDecimal[originalData.length];
-        upMovementValues[0] = BigDecimal.ZERO;
-        for (int currentIndex = 1; currentIndex < upMovementValues.length; currentIndex++) {
-            upMovementValues[currentIndex] = originalData[currentIndex].getHigh().subtract(originalData[currentIndex - 1].getHigh());
+        return calculateMovement(this::calculateUpMovement);
+    }
+
+    private BigDecimal calculateUpMovement(int currentIndex) {
+        if (currentIndex == 0) {
+            return BigDecimal.ZERO;
         }
-        return upMovementValues;
+        return originalData[currentIndex].getHigh().subtract(originalData[currentIndex - 1].getHigh());
     }
 
     private BigDecimal[] calculateDownMovement() {
-        BigDecimal[] downMovementValues = new BigDecimal[originalData.length];
-        downMovementValues[0] = BigDecimal.ZERO;
-        for (int currentIndex = 1; currentIndex < downMovementValues.length; currentIndex++) {
-            downMovementValues[currentIndex] = originalData[currentIndex - 1].getLow().subtract(originalData[currentIndex].getLow());
+        return calculateMovement(this::calculateDownMovement);
+    }
+
+    private BigDecimal calculateDownMovement(int currentIndex) {
+        if (currentIndex == 0) {
+            return BigDecimal.ZERO;
         }
-        return downMovementValues;
+        return originalData[currentIndex - 1].getLow().subtract(originalData[currentIndex].getLow());
+    }
+
+    private BigDecimal[] calculateMovement(Function<Integer, BigDecimal> movementFunction) {
+        return IntStream.range(0, originalData.length)
+                .mapToObj(movementFunction::apply)
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimalTuple[] calculateDirectionalIndicatorsValues(BigDecimal[] upMovementValues, BigDecimal[] downMovementValues) {
@@ -91,12 +108,7 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
     }
 
     private BigDecimal[] calculatePositiveDirectionalMovements(BigDecimal[] upMovementValues, BigDecimal[] downMovementValues) {
-        BigDecimal[] positiveDirectionalMovements = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < positiveDirectionalMovements.length; currentIndex++) {
-            positiveDirectionalMovements[currentIndex] =
-                    calculatePositiveDirectionalMovement(upMovementValues[currentIndex], downMovementValues[currentIndex]);
-        }
-        return positiveDirectionalMovements;
+        return calculateDirectionalMovements(upMovementValues, downMovementValues, this::calculatePositiveDirectionalMovement);
     }
 
     private BigDecimal calculatePositiveDirectionalMovement(BigDecimal upMovementValue, BigDecimal downMovementValue) {
@@ -106,12 +118,7 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
     }
 
     private BigDecimal[] calculateNegativeDirectionalMovements(BigDecimal[] upMovementValues, BigDecimal[] downMovementValues) {
-        BigDecimal[] negativeDirectionalMovements = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < negativeDirectionalMovements.length; currentIndex++) {
-            negativeDirectionalMovements[currentIndex] =
-                    calculateNegativeDirectionalMovement(upMovementValues[currentIndex], downMovementValues[currentIndex]);
-        }
-        return negativeDirectionalMovements;
+        return calculateDirectionalMovements(upMovementValues, downMovementValues, this::calculateNegativeDirectionalMovement);
     }
 
     private BigDecimal calculateNegativeDirectionalMovement(BigDecimal upMovementValue, BigDecimal downMovementValue) {
@@ -120,28 +127,32 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
                 : BigDecimal.ZERO;
     }
 
+    private BigDecimal[] calculateDirectionalMovements(BigDecimal[] upMovementValues, BigDecimal[] downMovementValues,
+                                                       BiFunction<BigDecimal, BigDecimal, BigDecimal> directMovementFunction) {
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> directMovementFunction.apply(upMovementValues[idx], downMovementValues[idx]))
+                .toArray(BigDecimal[]::new);
+    }
+
     private BigDecimal[] calculateDirectionalIndicators(BigDecimal[] positiveDirectionalMovements, BigDecimal[] trueRanges) {
         BigDecimal[] ratios = calculateRatios(positiveDirectionalMovements, trueRanges);
         return IndicatorResultExtractor.extract(MovingAverageFactory.create(buildMARequest(ratios)).getResult());
     }
 
     private BigDecimal[] calculateRatios(BigDecimal[] directionalMovements, BigDecimal[] trueRanges) {
-        BigDecimal[] ratios = new BigDecimal[originalData.length];
-        for (int i = 0; i < ratios.length; i++) {
-            ratios[i] = MathHelper.divide(directionalMovements[i], trueRanges[i]);
-        }
-        return ratios;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> MathHelper.divide(directionalMovements[idx], trueRanges[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimalTuple[] buildDirectionalIndicators(BigDecimal[] positiveDirectionalIndicators, BigDecimal[] negativeDirectionalIndicators) {
-        BigDecimalTuple[] directionalIndicators = new BigDecimalTuple[originalData.length];
-        for (int i = 0; i < directionalIndicators.length; i++) {
-            directionalIndicators[i] = new BigDecimalTuple(
-                    multiplyByOneHundred(positiveDirectionalIndicators[i]),
-                    multiplyByOneHundred(negativeDirectionalIndicators[i])
-            );
-        }
-        return directionalIndicators;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> buildTuple(positiveDirectionalIndicators[idx], negativeDirectionalIndicators[idx]))
+                .toArray(BigDecimalTuple[]::new);
+    }
+
+    private BigDecimalTuple buildTuple(BigDecimal positiveDirectionalIndicator, BigDecimal negativeDirectionalIndicator) {
+        return new BigDecimalTuple(multiplyByOneHundred(positiveDirectionalIndicator), multiplyByOneHundred(negativeDirectionalIndicator));
     }
 
     private BigDecimal[] calculateAverageDirectionalIndexes(BigDecimalTuple[] directionalIndicators) {
@@ -150,11 +161,9 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
     }
 
     private BigDecimal[] calculateDirectionalMovementIndexValues(BigDecimalTuple[] directionalIndicators) {
-        BigDecimal[] directionalMovementIndexValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < directionalMovementIndexValues.length; currentIndex++) {
-            directionalMovementIndexValues[currentIndex] = calculateDirectionalMovementIndex(directionalIndicators[currentIndex]);
-        }
-        return directionalMovementIndexValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateDirectionalMovementIndex(directionalIndicators[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateDirectionalMovementIndex(BigDecimalTuple directionalIndicator) {
@@ -187,16 +196,22 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
     }
 
     private void buildAverageDirectionalMovementIndex(BigDecimalTuple[] directionalIndicators, BigDecimal[] averageDirectionalIndexes) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new ADXResult(
-                    originalData[currentIndex].getTickTime(),
-                    directionalIndicators[currentIndex].getLeft(),
-                    directionalIndicators[currentIndex].getRight(),
-                    nonNull(directionalIndicators[currentIndex].getLeft()) && nonNull(directionalIndicators[currentIndex].getRight())
-                            ? averageDirectionalIndexes[currentIndex - period + 1]
-                            : null
-            );
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = buildADXResult(directionalIndicators, averageDirectionalIndexes, idx));
+    }
+
+    private ADXResult buildADXResult(BigDecimalTuple[] directionalIndicators, BigDecimal[] averageDirectionalIndexes, int idx) {
+        return new ADXResult(
+                originalData[idx].getTickTime(),
+                directionalIndicators[idx].getLeft(),
+                directionalIndicators[idx].getRight(),
+                extractAverageDirectionalIndex(directionalIndicators, averageDirectionalIndexes, idx));
+    }
+
+    private BigDecimal extractAverageDirectionalIndex(BigDecimalTuple[] directionalIndicators, BigDecimal[] averageDirectionalIndexes, int currentIndex) {
+        return nonNull(directionalIndicators[currentIndex].getLeft()) && nonNull(directionalIndicators[currentIndex].getRight())
+                ? averageDirectionalIndexes[currentIndex - period + 1]
+                : null;
     }
 
 }

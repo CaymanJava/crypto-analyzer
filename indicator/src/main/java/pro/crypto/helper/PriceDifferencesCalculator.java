@@ -1,21 +1,20 @@
 package pro.crypto.helper;
 
+import pro.crypto.helper.model.BigDecimalTuple;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.function.Function;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class PriceDifferencesCalculator {
 
     public static BigDecimalTuple[] calculateCloseDifference(Tick[] data) {
-        BigDecimalTuple[] priceDifferences = new BigDecimalTuple[data.length];
-        priceDifferences[0] = new BigDecimalTuple(BigDecimal.ZERO, BigDecimal.ZERO);
-        for (int currentIndex = 1; currentIndex < priceDifferences.length; currentIndex++) {
-            priceDifferences[currentIndex] = calculateCloseDifference(data, currentIndex);
-        }
-        return priceDifferences;
+        return IntStream.range(0, data.length)
+                .mapToObj(idx -> calculateCloseDifference(data, idx))
+                .toArray(BigDecimalTuple[]::new);
     }
 
     public static BigDecimalTuple[] calculateOpenCloseDifference(Tick[] data) {
@@ -25,23 +24,24 @@ public class PriceDifferencesCalculator {
     }
 
     public static BigDecimalTuple[] calculatePriceDifferencesSum(BigDecimalTuple[] priceDifferences, int period) {
-        BigDecimalTuple[] priceDifferencesSum = new BigDecimalTuple[priceDifferences.length];
-        for (int currentIndex = period - 1; currentIndex < priceDifferences.length; currentIndex++) {
-            priceDifferencesSum[currentIndex] = calculatePriceDifferencesSumValue(priceDifferences, currentIndex, period);
-        }
+        final BigDecimalTuple[] priceDifferencesSum = new BigDecimalTuple[priceDifferences.length];
+        IntStream.range(period - 1, priceDifferences.length)
+                .forEach(idx -> priceDifferencesSum[idx] = calculatePriceDifferencesSumValue(priceDifferences, idx, period));
         return priceDifferencesSum;
     }
 
     private static BigDecimalTuple calculateCloseDifference(Tick[] data, int currentIndex) {
-        BigDecimal difference =  data[currentIndex].getClose().subtract(data[currentIndex - 1].getClose());
-        if (difference.compareTo(BigDecimal.ZERO) > 0) {
-            return new BigDecimalTuple(difference, BigDecimal.ZERO);
+        if (currentIndex == 0) {
+            return new BigDecimalTuple(BigDecimal.ZERO, BigDecimal.ZERO);
         }
-        return new BigDecimalTuple(BigDecimal.ZERO, difference.abs());
+        return buildDifference(data[currentIndex].getClose().subtract(data[currentIndex - 1].getClose()));
     }
 
     private static BigDecimalTuple calculateOpenCloseDifference(Tick tick) {
-        BigDecimal difference =  tick.getClose().subtract(tick.getOpen());
+        return buildDifference(tick.getClose().subtract(tick.getOpen()));
+    }
+
+    private static BigDecimalTuple buildDifference(BigDecimal difference) {
         if (difference.compareTo(BigDecimal.ZERO) > 0) {
             return new BigDecimalTuple(difference, BigDecimal.ZERO);
         }
@@ -62,7 +62,8 @@ public class PriceDifferencesCalculator {
         return MathHelper.sum(extractDifferences(priceDifferences, currentIndex, period, BigDecimalTuple::getRight));
     }
 
-    private static BigDecimal[] extractDifferences(BigDecimalTuple[] priceDifferences, int currentIndex, int period, Function<BigDecimalTuple, BigDecimal> getDifference) {
+    private static BigDecimal[] extractDifferences(BigDecimalTuple[] priceDifferences, int currentIndex, int period,
+                                                   Function<BigDecimalTuple, BigDecimal> getDifference) {
         return Stream.of(Arrays.copyOfRange(priceDifferences, currentIndex - period + 1, currentIndex + 1))
                 .map(getDifference)
                 .toArray(BigDecimal[]::new);

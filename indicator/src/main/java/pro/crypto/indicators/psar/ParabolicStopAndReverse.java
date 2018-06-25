@@ -9,6 +9,7 @@ import pro.crypto.model.result.PSARResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
@@ -90,9 +91,8 @@ public class ParabolicStopAndReverse implements Indicator<PSARResult> {
 
     private void calculateParabolicStopAndReverse() {
         fillInInitialValues();
-        for (int currentIndex = 2; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = calculateParabolicStopAndReverseValue(currentIndex);
-        }
+        IntStream.range(2, result.length)
+                .forEach(this::setPSARResult);
     }
 
     private void fillInInitialValues() {
@@ -101,6 +101,10 @@ public class ParabolicStopAndReverse implements Indicator<PSARResult> {
         accelerationFactors[1] = minAccelerationFactor;
         result[0] = new PSARResult(originalData[0].getTickTime(), null);
         result[1] = new PSARResult(originalData[1].getTickTime(), originalData[0].getHigh());
+    }
+
+    private void setPSARResult(int currentIndex) {
+        result[currentIndex] = calculateParabolicStopAndReverseValue(currentIndex);
     }
 
     private PSARResult calculateParabolicStopAndReverseValue(int currentIndex) {
@@ -119,17 +123,23 @@ public class ParabolicStopAndReverse implements Indicator<PSARResult> {
     }
 
     private void calculateTentativeSAR(BigDecimal temporarySAR, int currentIndex) {
-        if (trendIndexes[currentIndex - 1] < 0) {
-            tentativeSARValues[currentIndex] = MathHelper.max(
-                    temporarySAR,
-                    originalData[currentIndex - 1].getHigh(),
-                    originalData[currentIndex - 2].getHigh());
-        } else {
-            tentativeSARValues[currentIndex] = MathHelper.min(
-                    temporarySAR,
-                    originalData[currentIndex - 1].getLow(),
-                    originalData[currentIndex - 2].getLow());
-        }
+        tentativeSARValues[currentIndex] = trendIndexes[currentIndex - 1] < 0
+                ? calculateNegativeTentativeSAR(temporarySAR, currentIndex)
+                : calculatePositiveTentativeSAR(temporarySAR, currentIndex);
+    }
+
+    private BigDecimal calculatePositiveTentativeSAR(BigDecimal temporarySAR, int currentIndex) {
+        return MathHelper.min(
+                temporarySAR,
+                originalData[currentIndex - 1].getLow(),
+                originalData[currentIndex - 2].getLow());
+    }
+
+    private BigDecimal calculateNegativeTentativeSAR(BigDecimal temporarySAR, int currentIndex) {
+        return MathHelper.max(
+                temporarySAR,
+                originalData[currentIndex - 1].getHigh(),
+                originalData[currentIndex - 2].getHigh());
     }
 
     private void calculateTrendIndex(int currentIndex) {
@@ -218,10 +228,10 @@ public class ParabolicStopAndReverse implements Indicator<PSARResult> {
 
     private BigDecimal calculateParabolicSAR(int currentIndex) {
         if (isDowntrendJustStarted(currentIndex)) {
-            return MathHelper.max(extremePoints[currentIndex - 1], originalData[currentIndex].getHigh());
+            return calculateDowntrendParabolic(currentIndex);
         }
         if (isUptrendJustStarted(currentIndex)) {
-            return MathHelper.min(extremePoints[currentIndex - 1], originalData[currentIndex].getLow());
+            return calculateUpParabolic(currentIndex);
         }
         return scaleAndRound(tentativeSARValues[currentIndex]);
     }
@@ -230,8 +240,16 @@ public class ParabolicStopAndReverse implements Indicator<PSARResult> {
         return trendIndexes[index] == -1;
     }
 
+    private BigDecimal calculateDowntrendParabolic(int currentIndex) {
+        return MathHelper.max(extremePoints[currentIndex - 1], originalData[currentIndex].getHigh());
+    }
+
     private boolean isUptrendJustStarted(int index) {
         return trendIndexes[index] == 1;
+    }
+
+    private BigDecimal calculateUpParabolic(int currentIndex) {
+        return MathHelper.min(extremePoints[currentIndex - 1], originalData[currentIndex].getLow());
     }
 
 }

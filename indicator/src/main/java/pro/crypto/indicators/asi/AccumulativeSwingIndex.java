@@ -9,6 +9,7 @@ import pro.crypto.model.result.ASIResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Locale.ENGLISH;
@@ -68,26 +69,34 @@ public class AccumulativeSwingIndex implements Indicator<ASIResult> {
     }
 
     private BigDecimal[] calculateKCoefficients() {
-        BigDecimal[] kCoefficients = new BigDecimal[originalData.length];
-        for (int currentIndex = 1; currentIndex < kCoefficients.length; currentIndex++) {
-            kCoefficients[currentIndex] = calculateKCoefficient(currentIndex);
-        }
-        return kCoefficients;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(this::calculateKCoefficient)
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateKCoefficient(int currentIndex) {
+        return currentIndex > 0
+                ? calculateKCoefficientValue(currentIndex)
+                : null;
+    }
+
+    private BigDecimal calculateKCoefficientValue(int currentIndex) {
         return MathHelper.max(calculateFirstParameter(currentIndex), calculateSecondParameter(currentIndex));
     }
 
     private BigDecimal[] calculateRCoefficients() {
-        BigDecimal[] rCoefficients = new BigDecimal[originalData.length];
-        for (int currentIndex = 1; currentIndex < rCoefficients.length; currentIndex++) {
-            rCoefficients[currentIndex] = calculateRCoefficient(currentIndex);
-        }
-        return rCoefficients;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(this::calculateRCoefficient)
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateRCoefficient(int currentIndex) {
+        return currentIndex > 0
+                ? calculateRCoefficientValue(currentIndex)
+                : null;
+    }
+
+    private BigDecimal calculateRCoefficientValue(int currentIndex) {
         BigDecimal firstParameter = calculateFirstParameter(currentIndex);
         BigDecimal secondParameter = calculateSecondParameter(currentIndex);
         BigDecimal thirdParameter = calculateThirdParameter(currentIndex);
@@ -97,11 +106,10 @@ public class AccumulativeSwingIndex implements Indicator<ASIResult> {
 
     private BigDecimal calculateRCoefficient(BigDecimal firstParameter, BigDecimal secondParameter,
                                              BigDecimal thirdParameter, BigDecimal fourthParameter) {
-        if (firstParameter.compareTo(secondParameter) > 0) {
-            if (firstParameter.compareTo(thirdParameter) > 0) {
-                return calculateRForFirstParameter(firstParameter, secondParameter, fourthParameter);
-            }
-        } else if (secondParameter.compareTo(thirdParameter) > 0) {
+        if (firstParameter.compareTo(secondParameter) > 0 && firstParameter.compareTo(thirdParameter) > 0) {
+            return calculateRForFirstParameter(firstParameter, secondParameter, fourthParameter);
+        }
+        if (secondParameter.compareTo(thirdParameter) > 0) {
             return calculateRForSecondParameter(firstParameter, secondParameter, fourthParameter);
         }
         return calculateRForThirdParameter(thirdParameter, fourthParameter);
@@ -148,16 +156,19 @@ public class AccumulativeSwingIndex implements Indicator<ASIResult> {
     }
 
     private BigDecimal[] calculateSwingIndexes(BigDecimal[] kCoefficients, BigDecimal[] rCoefficients) {
-        BigDecimal[] swingIndexes = new BigDecimal[originalData.length];
-        for (int currentIndex = 1; currentIndex < swingIndexes.length; currentIndex++) {
-            swingIndexes[currentIndex] = calculateSwingIndex(currentIndex,
-                    kCoefficients[currentIndex], rCoefficients[currentIndex]);
-        }
-        return swingIndexes;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateSwingIndex(idx, kCoefficients[idx], rCoefficients[idx]))
+                .toArray(BigDecimal[]::new);
+    }
+
+    private BigDecimal calculateSwingIndex(int currentIndex, BigDecimal kCoefficient, BigDecimal rCoefficient) {
+        return currentIndex > 0
+                ? calculateSwingIndexValue(currentIndex, kCoefficient, rCoefficient)
+                : null;
     }
 
     // 50 * ( (C(i) - C(i-1) + 0.5 * (C(i) - O(i)) + 0.25 * (C(i-1) - O(i-1)) / R) * (K / L)
-    private BigDecimal calculateSwingIndex(int currentIndex, BigDecimal kCoefficient, BigDecimal rCoefficient) {
+    private BigDecimal calculateSwingIndexValue(int currentIndex, BigDecimal kCoefficient, BigDecimal rCoefficient) {
         BigDecimal quotient = MathHelper.divide(calculateDivisible(currentIndex), rCoefficient);
         return nonNull(quotient)
                 ? MathHelper.divide(quotient.multiply(kCoefficient), new BigDecimal(limitMoveValue))
@@ -166,18 +177,18 @@ public class AccumulativeSwingIndex implements Indicator<ASIResult> {
 
     private BigDecimal calculateDivisible(int currentIndex) {
         return new BigDecimal(50)
-                        .multiply(originalData[currentIndex].getClose().subtract(originalData[currentIndex - 1].getClose())
-                                .add(new BigDecimal(0.5).multiply(originalData[currentIndex].getClose().subtract(originalData[currentIndex].getOpen())))
-                                .add(new BigDecimal(0.25).multiply(originalData[currentIndex - 1].getClose().subtract(originalData[currentIndex - 1].getOpen()))));
+                .multiply(originalData[currentIndex].getClose().subtract(originalData[currentIndex - 1].getClose())
+                        .add(new BigDecimal(0.5).multiply(originalData[currentIndex].getClose().subtract(originalData[currentIndex].getOpen())))
+                        .add(new BigDecimal(0.25).multiply(originalData[currentIndex - 1].getClose().subtract(originalData[currentIndex - 1].getOpen()))));
     }
 
     private void calculateAccumulativeSwingIndexResult(BigDecimal[] swingIndexes) {
         fillInInitialValues(swingIndexes[1]);
-        for (int currentIndex = 2; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new ASIResult(
-                    originalData[currentIndex].getTickTime(),
-                    calculateAccumulativeSwingIndex(swingIndexes[currentIndex], currentIndex));
-        }
+        IntStream.range(2, result.length)
+                .forEach(idx -> result[idx] = new ASIResult(
+                        originalData[idx].getTickTime(),
+                        calculateAccumulativeSwingIndex(swingIndexes[idx], idx))
+                );
     }
 
     private BigDecimal calculateAccumulativeSwingIndex(BigDecimal swingIndex, int currentIndex) {

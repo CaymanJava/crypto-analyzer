@@ -13,6 +13,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -81,11 +82,10 @@ public class DisparityIndex implements Indicator<DIResult> {
     }
 
     private void calculateDisparityIndexResult(BigDecimal[] movingAverageValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new DIResult(
-                    originalData[currentIndex].getTickTime(),
-                    calculateDisparityIndex(movingAverageValues[currentIndex], currentIndex));
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new DIResult(
+                        originalData[idx].getTickTime(),
+                        calculateDisparityIndex(movingAverageValues[idx], idx)));
     }
 
     private BigDecimal calculateDisparityIndex(BigDecimal movingAverageValue, int currentIndex) {

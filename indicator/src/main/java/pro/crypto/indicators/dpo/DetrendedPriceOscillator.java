@@ -13,6 +13,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -82,13 +83,12 @@ public class DetrendedPriceOscillator implements Indicator<DPOResult> {
     }
 
     private void buildDetrendedPriceOscillatorResult(BigDecimal[] movingAverageValues) {
-        for (int i = 0; i < result.length; i++) {
-            result[i] = new DPOResult(
-                    originalData[i].getTickTime(),
-                    calculateDetrendedPriceOscillator(
-                            movingAverageValues[i],
-                            originalData[i].getPriceByType(priceType)));
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new DPOResult(
+                        originalData[idx].getTickTime(),
+                        calculateDetrendedPriceOscillator(
+                                movingAverageValues[idx],
+                                originalData[idx].getPriceByType(priceType))));
     }
 
     private BigDecimal calculateDetrendedPriceOscillator(BigDecimal movingAverageValue, BigDecimal priceByType) {

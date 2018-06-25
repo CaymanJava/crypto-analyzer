@@ -7,6 +7,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
@@ -48,9 +49,12 @@ public class ExponentialMovingAverage extends MovingAverage {
     }
 
     private void fillInRemainPositions() {
-        for (int currentIndex = period; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = buildMovingAverageResult(currentIndex);
-        }
+        IntStream.range(period, result.length)
+                .forEach(this::setMovingAverageResult);
+    }
+
+    private void setMovingAverageResult(int idx) {
+        result[idx] = buildMovingAverageResult(idx);
     }
 
     private MAResult buildMovingAverageResult(int currentIndex) {

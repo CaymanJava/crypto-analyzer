@@ -13,6 +13,7 @@ import pro.crypto.model.result.ENVResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.lang.String.format;
@@ -122,13 +123,10 @@ public class MovingAverageEnvelopes implements Indicator<ENVResult> {
     }
 
     private void buildMovingAverageEnvelopesResult(BigDecimal[] basisValues, BigDecimal[] upperEnvelopeValues, BigDecimal[] lowerEnvelopeValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new ENVResult(
-                    originalData[currentIndex].getTickTime(),
-                    basisValues[currentIndex],
-                    upperEnvelopeValues[currentIndex],
-                    lowerEnvelopeValues[currentIndex]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new ENVResult(
+                        originalData[idx].getTickTime(), basisValues[idx],
+                        upperEnvelopeValues[idx], lowerEnvelopeValues[idx]));
     }
 
 }

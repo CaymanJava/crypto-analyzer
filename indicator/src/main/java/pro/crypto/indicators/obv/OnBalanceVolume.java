@@ -8,6 +8,7 @@ import pro.crypto.model.result.OBVResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.ON_BALANCE_VOLUME;
@@ -53,16 +54,20 @@ public class OnBalanceVolume implements Indicator<OBVResult> {
     }
 
     private void fillInRemainPositions() {
-        for (int i = 1; i < originalData.length; i++) {
-            result[i] = calculateOnBalanceVolumeValue(i);
-        }
+        IntStream.range(1, result.length)
+                .forEach(this::setOBVResult);
+    }
+
+    private void setOBVResult(int currentIndex) {
+        result[currentIndex] = calculateOnBalanceVolumeValue(currentIndex);
     }
 
     private OBVResult calculateOnBalanceVolumeValue(int currentIndex) {
         int priceComparing = compareCurrentCloseWithPrevious(currentIndex);
         if (priceComparing == 0) {
             return buildSamePriceResult(currentIndex);
-        } else if (priceComparing < 0) {
+        }
+        if (priceComparing < 0) {
             return buildFallingPriceResult(currentIndex);
         }
         return buildRisingPriceResult(currentIndex);

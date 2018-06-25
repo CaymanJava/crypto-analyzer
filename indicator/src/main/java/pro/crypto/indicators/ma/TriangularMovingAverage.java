@@ -9,6 +9,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.TRIANGULAR_MOVING_AVERAGE;
@@ -47,9 +48,8 @@ public class TriangularMovingAverage extends MovingAverage {
 
     private void calculateTriangularMovingAverage(BigDecimal[] simpleMovingAverageValues) {
         BigDecimal[] triangularMovingAverageValues = calculateTriangularMovingAverageValues(simpleMovingAverageValues);
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new MAResult(originalData[currentIndex].getTickTime(), triangularMovingAverageValues[currentIndex]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new MAResult(originalData[idx].getTickTime(), triangularMovingAverageValues[idx]));
     }
 
     private BigDecimal[] calculateTriangularMovingAverageValues(BigDecimal[] simpleMovingAverageValues) {

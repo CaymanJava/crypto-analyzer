@@ -6,9 +6,12 @@ import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.FractalRequest;
 import pro.crypto.model.result.FractalResult;
+import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.function.BiFunction;
+import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
@@ -35,8 +38,8 @@ public class Fractal implements Indicator<FractalResult> {
     @Override
     public void calculate() {
         result = new FractalResult[originalData.length];
-        boolean[] upFractals = calculateUpFractals();
-        boolean[] downFractals = calculateDownFractals();
+        boolean[] upFractals = calculateFractals(HIGH, this::defineUpFractalPresence);
+        boolean[] downFractals = calculateFractals(LOW, this::defineDownFractalPresence);
         buildFractalResult(upFractals, downFractals);
     }
 
@@ -59,21 +62,6 @@ public class Fractal implements Indicator<FractalResult> {
         }
     }
 
-    private boolean[] calculateUpFractals() {
-        boolean[] upFractals = new boolean[originalData.length];
-        BigDecimal[] highValues = PriceExtractor.extractValuesByType(originalData, HIGH);
-        for (int currentIndex = 2; currentIndex < upFractals.length; ) {
-            if (isPossibleToDefineFractal(currentIndex)) {
-                boolean upFractal = defineUpFractalPresence(highValues, currentIndex);
-                upFractals[currentIndex] = upFractal;
-                currentIndex = calculateNextIndex(currentIndex, upFractal);
-            } else {
-                currentIndex++;
-            }
-        }
-        return upFractals;
-    }
-
     private boolean defineUpFractalPresence(BigDecimal[] highValues, int currentIndex) {
         return isCurrentValueMorePreviousTwo(highValues, currentIndex)
                 && isCurrentValueMoreOrEqualsNextTwo(highValues, currentIndex);
@@ -87,19 +75,19 @@ public class Fractal implements Indicator<FractalResult> {
         return highValues[currentIndex].compareTo(highValues[currentIndex + 1]) >= 0 && highValues[currentIndex].compareTo(highValues[currentIndex + 2]) >= 0;
     }
 
-    private boolean[] calculateDownFractals() {
-        boolean[] downFractals = new boolean[originalData.length];
-        BigDecimal[] lowValues = PriceExtractor.extractValuesByType(originalData, LOW);
-        for (int currentIndex = 2; currentIndex < downFractals.length;) {
+    private boolean[] calculateFractals(PriceType priceType, BiFunction<BigDecimal[], Integer, Boolean> defineFractalFunction) {
+        boolean[] fractals = new boolean[originalData.length];
+        BigDecimal[] lowValues = PriceExtractor.extractValuesByType(originalData, priceType);
+        for (int currentIndex = 2; currentIndex < fractals.length; ) {
             if (isPossibleToDefineFractal(currentIndex)) {
-                boolean downFractal = defineDownFractalPresence(lowValues, currentIndex);
-                downFractals[currentIndex] = downFractal;
-                currentIndex = calculateNextIndex(currentIndex, downFractal);
+                boolean fractal = defineFractalFunction.apply(lowValues, currentIndex);
+                fractals[currentIndex] = fractal;
+                currentIndex = calculateNextIndex(currentIndex, fractal);
             } else {
                 currentIndex++;
             }
         }
-        return downFractals;
+        return fractals;
     }
 
     private boolean isPossibleToDefineFractal(int currentIndex) {
@@ -124,12 +112,8 @@ public class Fractal implements Indicator<FractalResult> {
     }
 
     private void buildFractalResult(boolean[] upFractals, boolean[] downFractals) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new FractalResult(
-                    originalData[currentIndex].getTickTime(),
-                    upFractals[currentIndex],
-                    downFractals[currentIndex]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new FractalResult(originalData[idx].getTickTime(), upFractals[idx], downFractals[idx]));
     }
 
 }

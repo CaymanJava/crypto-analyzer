@@ -13,6 +13,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
@@ -91,18 +92,17 @@ public class BollingerBandsWidth implements Indicator<BBWResult> {
     }
 
     private void calculateBollingerBandsWidth(BBResult[] bollingerBands) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = calculateBollingerBandsWidth(bollingerBands[currentIndex], currentIndex);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = calculateBollingerBandsWidth(bollingerBands[idx], idx));
     }
 
     private BBWResult calculateBollingerBandsWidth(BBResult bollingerBandsValue, int currentIndex) {
         return nonNull(bollingerBandsValue.getUpperBand()) && nonNull(bollingerBandsValue.getMiddleBand()) && nonNull(bollingerBandsValue.getLowerBand())
-                ? calculateBollingerBandsWidthResult(bollingerBandsValue, currentIndex)
+                ? buildBollingerBandsWidthResult(bollingerBandsValue, currentIndex)
                 : new BBWResult(originalData[currentIndex].getTickTime(), null);
     }
 
-    private BBWResult calculateBollingerBandsWidthResult(BBResult bollingerBandsValue, int currentIndex) {
+    private BBWResult buildBollingerBandsWidthResult(BBResult bollingerBandsValue, int currentIndex) {
         return new BBWResult(originalData[currentIndex].getTickTime(), calculateBollingerBandsWidthValue(bollingerBandsValue));
     }
 

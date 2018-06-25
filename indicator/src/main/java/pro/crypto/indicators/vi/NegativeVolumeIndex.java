@@ -19,7 +19,7 @@ public class NegativeVolumeIndex extends VolumeIndex {
     }
 
     @Override
-    BigDecimal calculateVolumeIndex(BigDecimal[] negativeVolumeIndexes, int currentIndex) {
+    BigDecimal calculateVolumeIndexValue(BigDecimal[] negativeVolumeIndexes, int currentIndex) {
         return isCurrentVolumeMoreThanPrevious(currentIndex)
                 ? negativeVolumeIndexes[currentIndex - 1]
                 : calculateVolumeIndexValue(negativeVolumeIndexes[currentIndex - 1], currentIndex);

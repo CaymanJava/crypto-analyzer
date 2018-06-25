@@ -9,6 +9,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.RANGE_OF_CHANGE;
@@ -55,9 +56,12 @@ public class RangeOfChange implements Indicator<ROCResult> {
     }
 
     private void calculateRangeOfChangeValues() {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = buildRocResult(currentIndex);
-        }
+        IntStream.range(0, result.length)
+                .forEach(this::setROCResult);
+    }
+
+    private void setROCResult(int currentIndex) {
+        result[currentIndex] = buildRocResult(currentIndex);
     }
 
     private ROCResult buildRocResult(int currentIndex) {

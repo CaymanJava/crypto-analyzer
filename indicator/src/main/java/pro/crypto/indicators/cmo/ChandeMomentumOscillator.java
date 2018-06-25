@@ -1,6 +1,6 @@
 package pro.crypto.indicators.cmo;
 
-import pro.crypto.helper.BigDecimalTuple;
+import pro.crypto.helper.model.BigDecimalTuple;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceDifferencesCalculator;
 import pro.crypto.model.Indicator;
@@ -10,6 +10,7 @@ import pro.crypto.model.result.CMOResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -56,9 +57,9 @@ public class ChandeMomentumOscillator implements Indicator<CMOResult> {
     }
 
     private void calculateChandeMomentumOscillatorResult(BigDecimalTuple[] priceDifferenceSumValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new CMOResult(originalData[currentIndex].getTickTime(), calculateChandeMomentumOscillator(priceDifferenceSumValues[currentIndex]));
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new CMOResult(originalData[idx].getTickTime(),
+                        calculateChandeMomentumOscillator(priceDifferenceSumValues[idx])));
     }
 
     private BigDecimal calculateChandeMomentumOscillator(BigDecimalTuple priceDifferenceSum) {

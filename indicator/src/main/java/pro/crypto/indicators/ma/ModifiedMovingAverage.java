@@ -7,6 +7,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.MODIFIED_MOVING_AVERAGE;
@@ -41,11 +42,12 @@ public class ModifiedMovingAverage extends MovingAverage {
     }
 
     private void fillInRemainPositions() {
-        for (int i = period; i < result.length; i++) {
-            result[i] = new MAResult(
-                    originalData[i].getTickTime(),
-                    calculateIndicatorValue(i));
-        }
+        IntStream.range(period, result.length)
+                .forEach(this::setMAResult);
+    }
+
+    private void setMAResult(int currentIndex) {
+        result[currentIndex] = new MAResult(originalData[currentIndex].getTickTime(), calculateIndicatorValue(currentIndex));
     }
 
     //MMAt = MMAt-1 + (Pt - MMAt-1)/n

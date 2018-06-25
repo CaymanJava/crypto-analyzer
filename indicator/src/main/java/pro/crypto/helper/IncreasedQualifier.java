@@ -1,6 +1,7 @@
 package pro.crypto.helper;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -8,17 +9,15 @@ import static java.util.Objects.nonNull;
 public class IncreasedQualifier {
 
     public static Boolean[] define(BigDecimal[] values) {
-        Boolean[] increasedFlags = new Boolean[values.length];
-        for (int currentIndex = 1; currentIndex < increasedFlags.length; currentIndex++) {
-            increasedFlags[currentIndex] = defineIncreasedFlag(values, currentIndex);
-        }
-        return increasedFlags;
+        return IntStream.range(0, values.length)
+                .mapToObj(idx -> defineIncreasedFlag(values, idx))
+                .toArray(Boolean[]::new);
     }
 
-    private static Boolean defineIncreasedFlag(BigDecimal[] awesomeOscillatorValues, int currentIndex) {
-        return isNull(awesomeOscillatorValues[currentIndex]) && isNull(awesomeOscillatorValues[currentIndex - 1])
+    private static Boolean defineIncreasedFlag(BigDecimal[] values, int currentIndex) {
+        return currentIndex == 0 || isNull(values[currentIndex]) && isNull(values[currentIndex - 1])
                 ? null
-                : defineIncreasedFlag(awesomeOscillatorValues[currentIndex], awesomeOscillatorValues[currentIndex - 1]);
+                : defineIncreasedFlag(values[currentIndex], values[currentIndex - 1]);
     }
 
     private static Boolean defineIncreasedFlag(BigDecimal currentValue, BigDecimal previousValue) {

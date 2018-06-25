@@ -2,6 +2,7 @@ package pro.crypto.indicators.macd;
 
 import pro.crypto.exception.UnexpectedValueException;
 import pro.crypto.helper.FakeTicksCreator;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
@@ -14,6 +15,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
@@ -86,11 +88,9 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
     }
 
     private BigDecimal[] calculateMACD(MAResult[] slowMovingAverageResult, MAResult[] fastMovingAverageResult) {
-        BigDecimal[] indicatorValues = new BigDecimal[slowMovingAverageResult.length];
-        for (int i = 0; i < indicatorValues.length; i++) {
-            indicatorValues[i] = calculateDifference(slowMovingAverageResult[i].getIndicatorValue(), fastMovingAverageResult[i].getIndicatorValue());
-        }
-        return indicatorValues;
+        return IntStream.range(0, slowMovingAverageResult.length)
+                .mapToObj(idx -> calculateDifference(slowMovingAverageResult[idx].getIndicatorValue(), fastMovingAverageResult[idx].getIndicatorValue()))
+                .toArray(BigDecimal[]::new);
     }
 
     private MARequest buildSlowMovingAverageCreationRequest() {
@@ -112,39 +112,35 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
     }
 
     private BigDecimal calculateDifference(BigDecimal minuend, BigDecimal subtrahend) {
-        return isNull(minuend) || isNull(subtrahend)
-                ? null
-                : MathHelper.scaleAndRound(minuend.subtract(subtrahend));
+        return nonNull(minuend) && nonNull(subtrahend)
+                ? MathHelper.scaleAndRound(minuend.subtract(subtrahend))
+                : null;
     }
 
     private BigDecimal[] calculateSignalLineValues(BigDecimal[] indicatorValues) {
-        Tick[] fakeTicks = FakeTicksCreator.createWithCloseOnly(indicatorValues);
-        MAResult[] emaIndicatorValue = MovingAverageFactory.create(buildSignalLineMovingAverageRequest(fakeTicks))
-                .getResult();
+        BigDecimal[] emaIndicatorValue = IndicatorResultExtractor.extract(MovingAverageFactory.create(buildSignalLineMovingAverageRequest(indicatorValues))
+                .getResult());
         return copyEmaIndicatorValueToResultArray(indicatorValues, emaIndicatorValue);
     }
 
-    private BigDecimal[] copyEmaIndicatorValueToResultArray(BigDecimal[] indicatorValues, MAResult[] emaIndicatorValue) {
+    private BigDecimal[] copyEmaIndicatorValueToResultArray(BigDecimal[] indicatorValues, BigDecimal[] emaIndicatorValue) {
         int startPosition = findSignalLineStartPosition(indicatorValues);
         BigDecimal[] signalLineResult = new BigDecimal[indicatorValues.length];
-        for (int i = 0; i < emaIndicatorValue.length; i++) {
-            signalLineResult[i + startPosition] = emaIndicatorValue[i].getIndicatorValue();
-        }
+        System.arraycopy(emaIndicatorValue, 0, signalLineResult, startPosition, emaIndicatorValue.length);
         return signalLineResult;
     }
 
     private int findSignalLineStartPosition(BigDecimal[] indicatorValues) {
-        for (int i = 0; i < indicatorValues.length; i++) {
-            if (nonNull(indicatorValues[i])) {
-                return i;
-            }
-        }
-        throw new UnexpectedValueException(format("Can't find any non null value in array of indicator value's {indicator: {%s}}", getType().toString()));
+        return IntStream.range(0, indicatorValues.length)
+                .filter(idx -> nonNull(indicatorValues[idx]))
+                .findFirst()
+                .orElseThrow(() -> new UnexpectedValueException(format("Can't find any non null value in array of indicator value's {indicator: {%s}}",
+                        getType().toString())));
     }
 
-    private MARequest buildSignalLineMovingAverageRequest(Tick[] fakeTicks) {
+    private MARequest buildSignalLineMovingAverageRequest(BigDecimal[] indicatorValues) {
         return MARequest.builder()
-                .originalData(fakeTicks)
+                .originalData(FakeTicksCreator.createWithCloseOnly(indicatorValues))
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .period(signalPeriod)
                 .priceType(CLOSE)
@@ -152,17 +148,14 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
     }
 
     private BigDecimal[] calculateBarChartValue(BigDecimal[] indicatorValues, BigDecimal[] signalLineValues) {
-        BigDecimal[] barChartValues = new BigDecimal[indicatorValues.length];
-        for (int i = 0; i < barChartValues.length; i++) {
-            barChartValues[i] = calculateDifference(indicatorValues[i], signalLineValues[i]);
-        }
-        return barChartValues;
+        return IntStream.range(0, indicatorValues.length)
+                .mapToObj(idx -> calculateDifference(indicatorValues[idx], signalLineValues[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private void buildResult(BigDecimal[] indicatorValues, BigDecimal[] signalLineValues, BigDecimal[] barChartValues) {
-        for (int i = 0; i < result.length; i++) {
-            result[i] = buildMACDResult(indicatorValues[i], signalLineValues[i], barChartValues[i], i);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = buildMACDResult(indicatorValues[idx], signalLineValues[idx], barChartValues[idx], idx));
     }
 
     private MACDResult buildMACDResult(BigDecimal indicatorValue, BigDecimal signalLineValue, BigDecimal barChartValue, int currentIndex) {

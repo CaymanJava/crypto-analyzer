@@ -9,6 +9,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.DOUBLE_EXPONENTIAL_MOVING_AVERAGE;
@@ -73,13 +74,12 @@ public class DoubleExponentialMovingAverage extends MovingAverage {
     }
 
     private void calculateDoubleExponentialMovingAverage(BigDecimal[] exponentialMovingAverage, BigDecimal[] doubleSmoothedEMA) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new MAResult(
-                    originalData[currentIndex].getTickTime(),
-                    calculateDoubleExponentialMovingAverage(exponentialMovingAverage[currentIndex],
-                            doubleSmoothedEMA[currentIndex])
-            );
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new MAResult(
+                        originalData[idx].getTickTime(),
+                        calculateDoubleExponentialMovingAverage(exponentialMovingAverage[idx],
+                                doubleSmoothedEMA[idx])
+                ));
     }
 
     private BigDecimal calculateDoubleExponentialMovingAverage(BigDecimal exponentialMovingAverageValue, BigDecimal doubleSmoothedEMAValue) {

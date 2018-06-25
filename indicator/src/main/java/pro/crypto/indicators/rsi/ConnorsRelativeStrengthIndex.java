@@ -11,8 +11,11 @@ import pro.crypto.model.result.RSIResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.CONNORS_RELATIVE_STRENGTH_INDEX;
 
 public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
@@ -80,9 +83,8 @@ public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
     private BigDecimal[] calculateTrendDuration() {
         BigDecimal[] trendDurationValues = new BigDecimal[originalData.length];
         trendDurationValues[0] = BigDecimal.ZERO;
-        for (int currentIndex = 1; currentIndex < trendDurationValues.length; currentIndex++) {
-            trendDurationValues[currentIndex] = calculateTrendDurationValue(trendDurationValues[currentIndex - 1], currentIndex);
-        }
+        IntStream.range(1, trendDurationValues.length)
+                .forEach(idx -> trendDurationValues[idx] = calculateTrendDurationValue(trendDurationValues[idx - 1], idx));
         return trendDurationValues;
     }
 
@@ -90,27 +92,25 @@ public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
         BigDecimal difference = originalData[currentIndex].getClose().subtract(originalData[currentIndex - 1].getClose());
         if (difference.compareTo(BigDecimal.ZERO) > 0) {
             return calculateUpTrendValue(previousTrendDurationValue);
-        } else if (difference.compareTo(BigDecimal.ZERO) < 0) {
-            return calculateDownTrendValue(previousTrendDurationValue);
-        } else {
-            return BigDecimal.ZERO;
         }
+        if (difference.compareTo(BigDecimal.ZERO) < 0) {
+            return calculateDownTrendValue(previousTrendDurationValue);
+        }
+        return BigDecimal.ZERO;
     }
 
     private BigDecimal calculateUpTrendValue(BigDecimal previousTrendDurationValue) {
         if (previousTrendDurationValue.compareTo(BigDecimal.ZERO) < 0) {
             return BigDecimal.ONE;
-        } else {
-            return previousTrendDurationValue.add(BigDecimal.ONE);
         }
+        return previousTrendDurationValue.add(BigDecimal.ONE);
     }
 
     private BigDecimal calculateDownTrendValue(BigDecimal previousTrendDurationValue) {
         if (previousTrendDurationValue.compareTo(BigDecimal.ZERO) > 0) {
             return new BigDecimal(-1);
-        } else {
-            return previousTrendDurationValue.subtract(BigDecimal.ONE);
         }
+        return previousTrendDurationValue.subtract(BigDecimal.ONE);
     }
 
     private RSIRequest buildRSIRequest(Tick[] data, int period) {
@@ -129,9 +129,8 @@ public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
     private BigDecimal[] calculatePercentagePriceChanges() {
         BigDecimal[] percentagePriceChanges = new BigDecimal[originalData.length];
         percentagePriceChanges[0] = BigDecimal.ZERO;
-        for (int currentIndex = 1; currentIndex < percentagePriceChanges.length; currentIndex++) {
-            percentagePriceChanges[currentIndex] = calculatePercentagePriceChange(currentIndex);
-        }
+        IntStream.range(1, percentagePriceChanges.length)
+                .forEach(idx -> percentagePriceChanges[idx] = calculatePercentagePriceChange(idx));
         return percentagePriceChanges;
     }
 
@@ -142,40 +141,41 @@ public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private BigDecimal[] calculatePercentRankValues(BigDecimal[] percentagePriceChanges) {
-        BigDecimal[] percentRankValues = new BigDecimal[originalData.length];
-        for (int currentIndex = percentRankPeriod - 1; currentIndex < percentRankValues.length; currentIndex++) {
-            percentRankValues[currentIndex] = calculatePercentRank(percentagePriceChanges, currentIndex);
-        }
-        return percentRankValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculatePercentRank(percentagePriceChanges, idx))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculatePercentRank(BigDecimal[] percentagePriceChanges, int currentIndex) {
+        return currentIndex >= percentRankPeriod - 1
+                ? calculatePercentRankValue(percentagePriceChanges, currentIndex)
+                : null;
+    }
+
+    private BigDecimal calculatePercentRankValue(BigDecimal[] percentagePriceChanges, int currentIndex) {
         BigDecimal percentRankValue = countPercentageInPeriodLessThanCurrent(percentagePriceChanges, currentIndex);
         return MathHelper.divide(percentRankValue.multiply(new BigDecimal(100)), new BigDecimal(percentRankPeriod));
     }
 
     private BigDecimal countPercentageInPeriodLessThanCurrent(BigDecimal[] percentagePriceChanges, int currentIndex) {
-        int percentRankValue = 0;
-        for (int i = currentIndex - percentRankPeriod + 1; i < currentIndex; i++) {
-            if (percentagePriceChanges[i].compareTo(percentagePriceChanges[currentIndex]) < 0) {
-                percentRankValue++;
-            }
-        }
-        return new BigDecimal(percentRankValue);
+        AtomicInteger percentRankValue = new AtomicInteger(0);
+        IntStream.range(currentIndex - percentRankPeriod + 1, currentIndex)
+                .filter(idx -> percentagePriceChanges[idx].compareTo(percentagePriceChanges[currentIndex]) < 0)
+                .forEach(idx -> percentRankValue.incrementAndGet());
+        return new BigDecimal(percentRankValue.get());
     }
 
     private void calculateConnorsRelativeStrengthIndexValues(BigDecimal[] simpleRSI, BigDecimal[] streakRSI, BigDecimal[] percentRank) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new RSIResult(
-                    originalData[currentIndex].getTickTime(),
-                    calculateConnorsRelativeStrengthIndexValue(simpleRSI[currentIndex], streakRSI[currentIndex], percentRank[currentIndex]));
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new RSIResult(
+                        originalData[idx].getTickTime(),
+                        calculateConnorsRelativeStrengthIndexValue(simpleRSI[idx], streakRSI[idx], percentRank[idx])));
     }
 
     private BigDecimal calculateConnorsRelativeStrengthIndexValue(BigDecimal simpleRSIValue, BigDecimal streakRSIValue, BigDecimal percentRankValue) {
-        return isNull(simpleRSIValue) || isNull(streakRSIValue) || isNull(percentRankValue)
-                ? null
-                : MathHelper.divide(MathHelper.sum(simpleRSIValue, streakRSIValue, percentRankValue), new BigDecimal(3));
+        return nonNull(simpleRSIValue) && nonNull(streakRSIValue) && nonNull(percentRankValue)
+                ? MathHelper.divide(MathHelper.sum(simpleRSIValue, streakRSIValue, percentRankValue), new BigDecimal(3))
+                : null;
     }
 
 }

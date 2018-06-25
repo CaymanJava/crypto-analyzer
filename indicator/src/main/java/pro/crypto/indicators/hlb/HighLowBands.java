@@ -13,6 +13,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -126,12 +127,11 @@ public class HighLowBands implements Indicator<HLBResult> {
     }
 
     private void buildHighLowBandsResult(BigDecimal[] basisValues, BigDecimal[] upperEnvelopeValues, BigDecimal[] lowerEnvelopeValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new HLBResult(
-                    originalData[currentIndex].getTickTime(), basisValues[currentIndex],
-                    upperEnvelopeValues[currentIndex], lowerEnvelopeValues[currentIndex]
-            );
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new HLBResult(
+                        originalData[idx].getTickTime(), basisValues[idx],
+                        upperEnvelopeValues[idx], lowerEnvelopeValues[idx]
+                ));
     }
 
 }

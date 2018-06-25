@@ -8,6 +8,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -38,11 +39,10 @@ public abstract class MovingAverage implements Indicator<MAResult> {
     }
 
     void fillInInitialPositions(Tick[] originalData, int period) {
-        for (int currentIndex = 0; currentIndex < period - 1; currentIndex++) {
-            result[currentIndex] = new MAResult(
-                    originalData[currentIndex].getTickTime(),
-                    null);
-        }
+        IntStream.range(0, period - 1)
+                .forEach(idx -> result[idx] = new MAResult(
+                        originalData[idx].getTickTime(),
+                        null));
     }
 
     void initResultArray(int length) {
@@ -54,7 +54,7 @@ public abstract class MovingAverage implements Indicator<MAResult> {
     }
 
     // EMAt = α * Pt + (1 - α) * EMAt-1
-    BigDecimal calculateExponentialAverage(Tick[]originalData, int currentIndex, BigDecimal alphaCoefficient) {
+    BigDecimal calculateExponentialAverage(Tick[] originalData, int currentIndex, BigDecimal alphaCoefficient) {
         return MathHelper.sum(
                 alphaCoefficient.multiply(originalData[currentIndex].getPriceByType(priceType)),
                 new BigDecimal(1).subtract(alphaCoefficient).multiply(result[currentIndex - 1].getIndicatorValue()));

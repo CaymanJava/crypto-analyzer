@@ -14,6 +14,7 @@ import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -70,11 +71,15 @@ public class KlingerVolumeOscillator implements Indicator<KVOResult> {
 
     private BigDecimal[] calculateTrendValues() {
         BigDecimal[] typicalPrices = TypicalPriceCalculator.calculateTypicalPrices(originalData);
-        BigDecimal[] trendValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 1; currentIndex < trendValues.length; currentIndex++) {
-            trendValues[currentIndex] = calculateTrendValue(typicalPrices, currentIndex);
-        }
-        return trendValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateTrend(typicalPrices, idx))
+                .toArray(BigDecimal[]::new);
+    }
+
+    private BigDecimal calculateTrend(BigDecimal[] typicalPrices, int currentIndex) {
+        return currentIndex > 0
+                ? calculateTrendValue(typicalPrices, currentIndex)
+                : null;
     }
 
     private BigDecimal calculateTrendValue(BigDecimal[] typicalPrices, int currentIndex) {
@@ -90,11 +95,9 @@ public class KlingerVolumeOscillator implements Indicator<KVOResult> {
     }
 
     private BigDecimal[] calculateKlingerOscillatorValues(BigDecimal[] shortEmaValues, BigDecimal[] longEmaValues) {
-        BigDecimal[] klingerOscillatorValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < klingerOscillatorValues.length; currentIndex++) {
-            klingerOscillatorValues[currentIndex] = calculateKlingerOscillator(shortEmaValues[currentIndex], longEmaValues[currentIndex]);
-        }
-        return klingerOscillatorValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateKlingerOscillator(shortEmaValues[idx], longEmaValues[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateKlingerOscillator(BigDecimal shortEmaValue, BigDecimal longEmaValue) {
@@ -128,12 +131,11 @@ public class KlingerVolumeOscillator implements Indicator<KVOResult> {
     }
 
     private void buildKlingerVolumeOscillatorResult(BigDecimal[] klingerVolumeOscillatorValues, BigDecimal[] signalLineValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new KVOResult(
-                    originalData[currentIndex].getTickTime(),
-                    MathHelper.scaleAndRound(klingerVolumeOscillatorValues[currentIndex]),
-                    signalLineValues[currentIndex]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new KVOResult(
+                        originalData[idx].getTickTime(),
+                        MathHelper.scaleAndRound(klingerVolumeOscillatorValues[idx]),
+                        signalLineValues[idx]));
     }
 
 }

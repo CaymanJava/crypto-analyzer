@@ -13,6 +13,7 @@ import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -64,15 +65,19 @@ public class EaseOfMovement implements Indicator<EOMResult> {
     }
 
     private BigDecimal[] calculateDistanceMovedValues() {
-        BigDecimal[] distanceMovedValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 1; currentIndex < distanceMovedValues.length; currentIndex++) {
-            distanceMovedValues[currentIndex] = calculateDistanceMoved(currentIndex);
-        }
-        return distanceMovedValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(this::calculateDistanceMoved)
+                .toArray(BigDecimal[]::new);
+    }
+
+    private BigDecimal calculateDistanceMoved(int currentIndex) {
+        return currentIndex > 0
+                ? calculateDistanceMovedValue(currentIndex)
+                : null;
     }
 
     // ((High(i) + Low(i)) / 2 - (High(i - 1) + Low(i - 1)) / 2)
-    private BigDecimal calculateDistanceMoved(int currentIndex) {
+    private BigDecimal calculateDistanceMovedValue(int currentIndex) {
         return MathHelper.average(originalData[currentIndex].getHigh(), originalData[currentIndex].getLow())
                 .subtract(MathHelper.average(originalData[currentIndex - 1].getHigh(), originalData[currentIndex - 1].getLow()));
     }
@@ -90,24 +95,21 @@ public class EaseOfMovement implements Indicator<EOMResult> {
 
     // DM / BR
     private BigDecimal[] calculateNotSmoothedEaseOfMovementValues(BigDecimal[] distanceMovedValues, BigDecimal[] boxRatios) {
-        BigDecimal[] eomValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < eomValues.length; currentIndex++) {
-            eomValues[currentIndex] = MathHelper.divide(distanceMovedValues[currentIndex], boxRatios[currentIndex]);
-        }
-        return eomValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> MathHelper.divide(distanceMovedValues[idx], boxRatios[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private void calculateEaseOfMovementResult(BigDecimal[] notSmoothedEOMValues) {
         BigDecimal[] smoothedEOMValues = calculateMovingAverageValues(notSmoothedEOMValues);
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new EOMResult(originalData[currentIndex].getTickTime(), smoothedEOMValues[currentIndex]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new EOMResult(originalData[idx].getTickTime(), smoothedEOMValues[idx]));
     }
 
     private BigDecimal[] calculateMovingAverageValues(BigDecimal[] notSmoothedEOMValues) {
         BigDecimal[] movingAverageValues = IndicatorResultExtractor.extract(calculateMovingAverage(notSmoothedEOMValues));
         BigDecimal[] smoothedEOMValues = new BigDecimal[originalData.length];
-        System.arraycopy(movingAverageValues, 0, smoothedEOMValues,  1, movingAverageValues.length);
+        System.arraycopy(movingAverageValues, 0, smoothedEOMValues, 1, movingAverageValues.length);
         return smoothedEOMValues;
     }
 

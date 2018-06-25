@@ -14,6 +14,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -105,24 +106,20 @@ public class MassIndex implements Indicator<MIResult> {
     }
 
     private void fillInInitialPositions() {
-        for (int currentIndex = 0; currentIndex < EXPONENTIAL_MOVING_AVERAGE_PERIOD * 2 + period - 3; currentIndex++) {
-            result[currentIndex] = new MIResult(originalData[currentIndex].getTickTime(), null);
-        }
+        IntStream.range(0, EXPONENTIAL_MOVING_AVERAGE_PERIOD * 2 + period - 3)
+                .forEach(idx ->  result[idx] = new MIResult(originalData[idx].getTickTime(), null));
     }
 
     private void fillInRemainPositions(BigDecimal[] singleMovingAverage, BigDecimal[] doubleMovingAverage) {
         BigDecimal[] emaRatio = calculateEMARation(singleMovingAverage, doubleMovingAverage);
-        for (int currentIndex = EXPONENTIAL_MOVING_AVERAGE_PERIOD * 2 + period - 3; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new MIResult(originalData[currentIndex].getTickTime(), calculateMassIndex(emaRatio, currentIndex));
-        }
+        IntStream.range(EXPONENTIAL_MOVING_AVERAGE_PERIOD * 2 + period - 3, result.length)
+                .forEach(idx -> result[idx] = new MIResult(originalData[idx].getTickTime(), calculateMassIndex(emaRatio, idx)));
     }
 
     private BigDecimal[] calculateEMARation(BigDecimal[] singleMovingAverage, BigDecimal[] doubleMovingAverage) {
-        BigDecimal[] emaRatio = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < emaRatio.length; currentIndex++) {
-            emaRatio[currentIndex] = calculateEMARation(singleMovingAverage[currentIndex], doubleMovingAverage[currentIndex]);
-        }
-        return emaRatio;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateEMARation(singleMovingAverage[idx], doubleMovingAverage[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateEMARation(BigDecimal singleMovingAverageValue, BigDecimal doubleMovingAverageValue) {

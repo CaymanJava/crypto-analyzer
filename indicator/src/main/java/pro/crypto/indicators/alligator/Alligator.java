@@ -16,6 +16,7 @@ import pro.crypto.model.tick.TimeFrame;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -126,10 +127,9 @@ public class Alligator implements Indicator<AlligatorResult> {
     }
 
     private void buildAlligatorResult(BigDecimal[] jawValues, BigDecimal[] teethValues, BigDecimal[] lipsValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new AlligatorResult(originalData[currentIndex].getTickTime(), jawValues[currentIndex],
-                    teethValues[currentIndex], lipsValues[currentIndex]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new AlligatorResult(originalData[idx].getTickTime(), jawValues[idx],
+                        teethValues[idx], lipsValues[idx]));
     }
 
 }

@@ -11,9 +11,11 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.ULTIMATE_OSCILLATOR;
 
 public class UltimateOscillator implements Indicator<UOResult> {
@@ -84,11 +86,15 @@ public class UltimateOscillator implements Indicator<UOResult> {
     }
 
     private BigDecimal[] calculateBuyingPressureValues() {
-        BigDecimal[] buyingPressureValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 1; currentIndex < buyingPressureValues.length; currentIndex++) {
-            buyingPressureValues[currentIndex] = calculateBuyingPressureValue(currentIndex);
-        }
-        return buyingPressureValues;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(this::calculateBuyingPressure)
+                .toArray(BigDecimal[]::new);
+    }
+
+    private BigDecimal calculateBuyingPressure(int currentIndex) {
+        return currentIndex > 0
+                ? calculateBuyingPressureValue(currentIndex)
+                : null;
     }
 
     private BigDecimal calculateBuyingPressureValue(int currentIndex) {
@@ -106,25 +112,22 @@ public class UltimateOscillator implements Indicator<UOResult> {
     }
 
     private void fillInInitialPositions() {
-        for (int currentIndex = 0; currentIndex < longPeriod; currentIndex++) {
-            result[currentIndex] = new UOResult(originalData[currentIndex].getTickTime(), null);
-        }
+        IntStream.range(0, longPeriod)
+                .forEach(idx -> result[idx] = new UOResult(originalData[idx].getTickTime(), null));
     }
 
     private void fillInRemainPosition(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues) {
-        for (int currentPeriod = longPeriod; currentPeriod < originalData.length; currentPeriod++) {
-            result[currentPeriod] = calculateUltimateOscillator(buyingPressureValues, trueRangeValues, currentPeriod);
-        }
+        IntStream.range(longPeriod, originalData.length)
+                .forEach(idx -> result[idx] = calculateUltimateOscillator(buyingPressureValues, trueRangeValues, idx));
     }
 
     private UOResult calculateUltimateOscillator(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues, int currentPeriod) {
         BigDecimal shortQuotient = calculateShortQuotient(buyingPressureValues, trueRangeValues, currentPeriod);
         BigDecimal middleQuotient = calculateMiddleQuotient(buyingPressureValues, trueRangeValues, currentPeriod);
         BigDecimal longQuotient = calculateLongQuotient(buyingPressureValues, trueRangeValues, currentPeriod);
-        if (isNull(shortQuotient) || isNull(middleQuotient) || isNull(longQuotient)) {
-            return new UOResult(originalData[currentPeriod].getTickTime(), null);
-        }
-        return calculateUltimateOscillatorValue(shortQuotient, middleQuotient, longQuotient, currentPeriod);
+        return isNull(shortQuotient) || isNull(middleQuotient) || isNull(longQuotient)
+                ? new UOResult(originalData[currentPeriod].getTickTime(), null)
+                : calculateUltimateOscillatorValue(shortQuotient, middleQuotient, longQuotient, currentPeriod);
     }
 
     private BigDecimal calculateShortQuotient(BigDecimal[] buyingPressureValues, BigDecimal[] trueRangeValues, int currentPeriod) {
@@ -151,9 +154,9 @@ public class UltimateOscillator implements Indicator<UOResult> {
 
     private UOResult calculateUltimateOscillatorValue(BigDecimal shortQuotient, BigDecimal middleQuotient, BigDecimal longQuotient, int currentPeriod) {
         BigDecimal rawValue = calculateUltimateOscillatorRawValue(shortQuotient, middleQuotient, longQuotient);
-        return isNull(rawValue)
-                ? new UOResult(originalData[currentPeriod].getTickTime(), null)
-                : new UOResult(originalData[currentPeriod].getTickTime(), rawValue.multiply(new BigDecimal(100)));
+        return nonNull(rawValue)
+                ? new UOResult(originalData[currentPeriod].getTickTime(), rawValue.multiply(new BigDecimal(100)))
+                : new UOResult(originalData[currentPeriod].getTickTime(), null);
     }
 
     private BigDecimal calculateUltimateOscillatorRawValue(BigDecimal shortQuotient, BigDecimal middleQuotient, BigDecimal longQuotient) {

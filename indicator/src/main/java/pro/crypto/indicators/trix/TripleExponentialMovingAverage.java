@@ -14,6 +14,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -105,16 +106,13 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
 
     private void buildTripleExponentialMovingAverage(BigDecimal[] trixValues, BigDecimal[] signalLineValues) {
         int indicatorStartIndex = period * 3 - 3;
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = buildTRIXResult(trixValues, signalLineValues, indicatorStartIndex, currentIndex);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = buildTRIXResult(trixValues, signalLineValues, indicatorStartIndex, idx));
     }
 
     private TRIXResult buildTRIXResult(BigDecimal[] trixValues, BigDecimal[] signalLineValues, int indicatorStartIndex, int currentIndex) {
         return currentIndex >= indicatorStartIndex
-                ? buildTRIXResult(
-                originalData[currentIndex].getTickTime(),
-                trixValues[currentIndex - indicatorStartIndex],
+                ? buildTRIXResult(originalData[currentIndex].getTickTime(), trixValues[currentIndex - indicatorStartIndex],
                 extractSignalLineValue(trixValues, signalLineValues, currentIndex, indicatorStartIndex))
                 : buildEmptyTRIXResult(originalData[currentIndex].getTickTime());
     }

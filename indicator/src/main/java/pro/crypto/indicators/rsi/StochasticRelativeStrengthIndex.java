@@ -12,6 +12,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.Objects;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -96,11 +97,9 @@ public class StochasticRelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private BigDecimal[] addEmptyFields(BigDecimal[] relativeStrengthIndexValues, BigDecimal[] values) {
-        BigDecimal[] result = new BigDecimal[relativeStrengthIndexValues.length];
-        for (int i = 0; i < result.length; i++) {
-            result[i] = isNull(relativeStrengthIndexValues[i]) ? null : values[i - rsiPeriod + 1];
-        }
-        return result;
+        return IntStream.range(0, relativeStrengthIndexValues.length)
+                .mapToObj(idx -> nonNull(relativeStrengthIndexValues[idx]) ? values[idx - rsiPeriod + 1] : null)
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal[] extractNonNullValues(BigDecimal[] relativeStrengthIndexValues) {
@@ -110,15 +109,14 @@ public class StochasticRelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private void calculateStochasticRelativeStrengthIndex(BigDecimal[] relativeStrengthIndexValues, BigDecimal[] minValues, BigDecimal[] maxValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new RSIResult(
-                    originalData[currentIndex].getTickTime(),
-                    calculateStochasticRelativeStrengthIndex(
-                            relativeStrengthIndexValues[currentIndex],
-                            minValues[currentIndex],
-                            maxValues[currentIndex])
-            );
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new RSIResult(
+                        originalData[idx].getTickTime(),
+                        calculateStochasticRelativeStrengthIndex(
+                                relativeStrengthIndexValues[idx],
+                                minValues[idx],
+                                maxValues[idx])
+                ));
     }
 
     private BigDecimal calculateStochasticRelativeStrengthIndex(BigDecimal relativeStrengthIndexValue, BigDecimal minValue, BigDecimal maxValue) {

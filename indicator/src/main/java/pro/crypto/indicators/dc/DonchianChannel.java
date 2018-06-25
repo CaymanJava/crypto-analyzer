@@ -10,6 +10,7 @@ import pro.crypto.model.result.DCResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -67,19 +68,17 @@ public class DonchianChannel implements Indicator<DCResult> {
     }
 
     private BigDecimal[] calculateUpperEnvelopes() {
-        return MinMaxFinder.findMaxExcludedLast(PriceExtractor.extractValuesByType(originalData, HIGH), highPeriod);
+        return MinMaxFinder.findMaxExcludingLast(PriceExtractor.extractValuesByType(originalData, HIGH), highPeriod);
     }
 
     private BigDecimal[] calculateLowerEnvelopes() {
-        return MinMaxFinder.findMinExcludedLast(PriceExtractor.extractValuesByType(originalData, LOW), lowPeriod);
+        return MinMaxFinder.findMinExcludingLast(PriceExtractor.extractValuesByType(originalData, LOW), lowPeriod);
     }
 
     private BigDecimal[] calculateMiddleEnvelopes(BigDecimal[] upperEnvelopes, BigDecimal[] lowerEnvelopes) {
-        BigDecimal[] middleEnvelopes = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < middleEnvelopes.length; currentIndex++) {
-            middleEnvelopes[currentIndex] = calculateMiddleEnvelope(upperEnvelopes[currentIndex], lowerEnvelopes[currentIndex]);
-        }
-        return middleEnvelopes;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateMiddleEnvelope(upperEnvelopes[idx], lowerEnvelopes[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateMiddleEnvelope(BigDecimal upperEnvelope, BigDecimal lowerEnvelope) {
@@ -89,13 +88,10 @@ public class DonchianChannel implements Indicator<DCResult> {
     }
 
     private void buildDonchianResult(BigDecimal[] upperEnvelopes, BigDecimal[] lowerEnvelopes, BigDecimal[] middleEnvelopes) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new DCResult(
-                    originalData[currentIndex].getTickTime(),
-                    middleEnvelopes[currentIndex],
-                    upperEnvelopes[currentIndex],
-                    lowerEnvelopes[currentIndex]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new DCResult(
+                        originalData[idx].getTickTime(), middleEnvelopes[idx],
+                        upperEnvelopes[idx], lowerEnvelopes[idx]));
     }
 
 }

@@ -2,6 +2,7 @@ package pro.crypto.indicators.cfo;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.model.BigDecimalTuple;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.CFORequest;
@@ -11,6 +12,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
@@ -61,21 +63,27 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
     }
 
     private BigDecimal[] calculateAveragePrices() {
-        BigDecimal[] averagePrices = new BigDecimal[originalData.length];
-        for (int currentIndex = period - 1; currentIndex < averagePrices.length; currentIndex++) {
-            averagePrices[currentIndex] = MathHelper.average(Arrays.copyOfRange(
-                    PriceExtractor.extractValuesByType(originalData, priceType), currentIndex - period + 1, currentIndex + 1));
-        }
-        return averagePrices;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(this::calculateAveragePrice)
+                .toArray(BigDecimal[]::new);
+    }
+
+    private BigDecimal calculateAveragePrice(int currentIndex) {
+        return currentIndex >= period - 1
+                ? calculateAveragePriceValue(currentIndex)
+                : null;
+    }
+
+    private BigDecimal calculateAveragePriceValue(int currentIndex) {
+        return MathHelper.average(Arrays.copyOfRange(
+                PriceExtractor.extractValuesByType(originalData, priceType), currentIndex - period + 1, currentIndex + 1));
     }
 
     private BigDecimal[] calculateLinearRegression(BigDecimal[] averagePrices) {
-        BigDecimal[] linearRegressionValues = new BigDecimal[averagePrices.length];
         BigDecimal averageCoefficient = calculateAverageCoefficient();
-        for (int currentIndex = 0; currentIndex < linearRegressionValues.length; currentIndex++) {
-            linearRegressionValues[currentIndex] = calculateLinearRegression(averagePrices[currentIndex], averageCoefficient, currentIndex);
-        }
-        return linearRegressionValues;
+        return IntStream.range(0, averagePrices.length)
+                .mapToObj(idx -> calculateLinearRegression(averagePrices[idx], averageCoefficient, idx))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateAverageCoefficient() {
@@ -92,15 +100,18 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
     // slope = m = ∑((x(i) - x(avg)) * (y(i) - y(avg))) /  ∑((x(i) - x(avg))^2)
     // linearRegression = y(avg) − m * x(avg)
     private BigDecimal calculateLinearRegressionValue(BigDecimal averagePrice, BigDecimal averageCoefficient, int outsideIndex) {
-        BigDecimal divisible = BigDecimal.ZERO;
-        BigDecimal divisor = BigDecimal.ZERO;
-        int coefficient = 1;
-        for (int currentIndex = outsideIndex - period + 1; currentIndex <= outsideIndex; currentIndex++) {
-            divisible = divisible.add(calculateDivisible(averagePrice, averageCoefficient, coefficient, currentIndex));
-            divisor = divisor.add(calculateDivisor(coefficient, averageCoefficient));
-            coefficient++;
-        }
-        return calculateLinearRegressionValue(averagePrice, averageCoefficient, divisible, divisor);
+        final AtomicInteger coefficient = new AtomicInteger(0);
+        BigDecimalTuple divisibleDivisor = IntStream.rangeClosed(outsideIndex - period + 1, outsideIndex)
+                .mapToObj(idx -> calculateDivisibleDivisor(averagePrice, averageCoefficient, coefficient, idx))
+                .reduce(BigDecimalTuple.zero(), BigDecimalTuple::add);
+        return calculateLinearRegressionValue(averagePrice, averageCoefficient, divisibleDivisor.getLeft(), divisibleDivisor.getRight());
+    }
+
+    private BigDecimalTuple calculateDivisibleDivisor(BigDecimal averagePrice, BigDecimal averageCoefficient,
+                                                      AtomicInteger coefficient, int currentIndex) {
+        BigDecimal divisible = calculateDivisible(averagePrice, averageCoefficient, coefficient.incrementAndGet(), currentIndex);
+        BigDecimal divisor = calculateDivisor(coefficient.get(), averageCoefficient);
+        return new BigDecimalTuple(divisible, divisor);
     }
 
     // (x(i) - x(avg)) * (y(i) - y(avg))
@@ -122,10 +133,9 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
     }
 
     private void calculateChandeForecastOscillatorResult(BigDecimal[] linearRegressionValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new CFOResult(originalData[currentIndex].getTickTime(),
-                    calculateChandeForecastOscillator(linearRegressionValues[currentIndex], originalData[currentIndex].getPriceByType(priceType)));
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new CFOResult(originalData[idx].getTickTime(),
+                        calculateChandeForecastOscillator(linearRegressionValues[idx], originalData[idx].getPriceByType(priceType))));
     }
 
     private BigDecimal calculateChandeForecastOscillator(BigDecimal linearRegression, BigDecimal price) {

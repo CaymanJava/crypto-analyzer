@@ -15,6 +15,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.KELTNER_CHANNEL;
@@ -89,12 +90,9 @@ public class KeltnerChannel implements Indicator<KELTResult> {
     }
 
     private void calculateKeltnerChannelValues(MAResult[] movingAverageResult, ATRResult[] averageTrueRangeResult) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = calculateKeltnerChannelValue(
-                    movingAverageResult[currentIndex].getIndicatorValue(),
-                    averageTrueRangeResult[currentIndex].getIndicatorValue(),
-                    currentIndex);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = calculateKeltnerChannelValue(movingAverageResult[idx].getIndicatorValue(),
+                        averageTrueRangeResult[idx].getIndicatorValue(), idx));
     }
 
     private KELTResult calculateKeltnerChannelValue(BigDecimal maValue, BigDecimal atrValue, int currentIndex) {

@@ -14,6 +14,8 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.function.BiFunction;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -81,9 +83,8 @@ public class AverageTrueRangeBands implements Indicator<ATRBResult> {
     }
 
     private void buildAverageTrueRangeBandsResult(BigDecimal[] atrValues, BigDecimal[] middleBandValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = buildATRBResult(atrValues[currentIndex], middleBandValues[currentIndex], currentIndex);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = buildATRBResult(atrValues[idx], middleBandValues[idx], idx));
     }
 
     private ATRBResult buildATRBResult(BigDecimal atrValue, BigDecimal middleBandValue, int currentIndex) {
@@ -95,18 +96,14 @@ public class AverageTrueRangeBands implements Indicator<ATRBResult> {
     private ATRBResult calculateAndBuildATRBResult(BigDecimal atrValue, BigDecimal middleBandValue, int currentIndex) {
         return new ATRBResult(
                 originalData[currentIndex].getTickTime(),
-                calculateUpperBand(atrValue, middleBandValue),
+                calculateBandValue(atrValue, middleBandValue, BigDecimal::add),
                 middleBandValue,
-                calculateLowerBand(atrValue, middleBandValue)
+                calculateBandValue(atrValue, middleBandValue, BigDecimal::subtract)
         );
     }
 
-    private BigDecimal calculateLowerBand(BigDecimal atrValue, BigDecimal middleBandValue) {
-        return MathHelper.scaleAndRound(middleBandValue.subtract(atrValue.multiply(new BigDecimal(shift))));
-    }
-
-    private BigDecimal calculateUpperBand(BigDecimal atrValue, BigDecimal middleBandValue) {
-        return MathHelper.scaleAndRound(middleBandValue.add(atrValue.multiply(new BigDecimal(shift))));
+    private BigDecimal calculateBandValue(BigDecimal atrValue, BigDecimal middleBandValue, BiFunction<BigDecimal, BigDecimal, BigDecimal> bandFunction) {
+        return MathHelper.scaleAndRound(bandFunction.apply(middleBandValue, atrValue.multiply(new BigDecimal(shift))));
     }
 
     private ATRBResult buildEmptyATRBResult(int currentIndex) {

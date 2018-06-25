@@ -4,18 +4,20 @@ import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.IndicatorTypeChecker;
 import pro.crypto.helper.TimeFrameShifter;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.Shift;
-import pro.crypto.model.result.MAResult;
-import pro.crypto.model.tick.Tick;
 import pro.crypto.model.request.MARequest;
+import pro.crypto.model.result.MAResult;
+import pro.crypto.model.tick.PriceType;
+import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.IndicatorType.*;
+import static pro.crypto.model.IndicatorType.DISPLACED_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.ShiftType.LEFT;
 import static pro.crypto.model.ShiftType.RIGHT;
 
@@ -106,18 +108,26 @@ public class DisplacedMovingAverage extends MovingAverage {
     }
 
     private void fillInRightShift(MAResult[] originalResult) {
-        for (int i = 0; i < originalResult.length; i++) {
-            result[i] = new MAResult(originalResult[i].getTime(), null);
-        }
+        fillInTime(originalResult);
+        shiftTime(originalResult);
+        fillInShiftedValues(originalResult);
+    }
 
-        for (int i = result.length - 1; i >= originalResult.length; i--) {
-            result[i] = new MAResult(
-                    new TimeFrameShifter(originalResult[i - shift.getValue()].getTime(), shift).shiftTime(), null);
-        }
+    private void fillInTime(MAResult[] originalResult) {
+        IntStream.range(0, originalResult.length)
+                .forEach(idx -> result[idx] = new MAResult(originalResult[idx].getTime(), null));
+    }
 
-        for (int i = shift.getValue(); i < result.length; i++) {
-            result[i].setIndicatorValue(originalResult[i - shift.getValue()].getIndicatorValue());
-        }
+    private void shiftTime(MAResult[] originalResult) {
+        IntStream.rangeClosed(originalResult.length, result.length - 1)
+                .distinct()
+                .forEach(idx -> result[idx] = new MAResult(
+                        new TimeFrameShifter(originalResult[idx - shift.getValue()].getTime(), shift).shiftTime(), null));
+    }
+
+    private void fillInShiftedValues(MAResult[] originalResult) {
+        IntStream.range(shift.getValue(), result.length)
+                .forEach(idx -> result[idx].setIndicatorValue(originalResult[idx - shift.getValue()].getIndicatorValue()));
     }
 
 }

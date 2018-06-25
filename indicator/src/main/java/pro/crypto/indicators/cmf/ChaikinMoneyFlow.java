@@ -10,6 +10,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -57,20 +58,16 @@ public class ChaikinMoneyFlow implements Indicator<CMFResult> {
     }
 
     private BigDecimal[] calculateMoneyFlowSum(BigDecimal[] moneyFlowVolumes) {
-        BigDecimal[] moneyFlowSum = new BigDecimal[originalData.length];
-        for (int currentIndex = period - 1; currentIndex < moneyFlowSum.length; currentIndex++) {
-            moneyFlowSum[currentIndex] = calculateSum(moneyFlowVolumes, currentIndex);
-        }
-        return moneyFlowSum;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateSum(moneyFlowVolumes, idx))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal[] calculateVolumesSum() {
-        BigDecimal[] volumesSum = new BigDecimal[originalData.length];
         BigDecimal[] baseVolumes = extractBaseVolumes();
-        for (int currentIndex = period - 1; currentIndex < volumesSum.length; currentIndex++) {
-            volumesSum[currentIndex] = calculateSum(baseVolumes, currentIndex);
-        }
-        return volumesSum;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateSum(baseVolumes, idx))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal[] extractBaseVolumes() {
@@ -80,16 +77,21 @@ public class ChaikinMoneyFlow implements Indicator<CMFResult> {
     }
 
     private BigDecimal calculateSum(BigDecimal[] values, int currentIndex) {
+        return currentIndex >= period - 1
+                ? calculateSumValue(values, currentIndex)
+                : null;
+    }
+
+    private BigDecimal calculateSumValue(BigDecimal[] values, int currentIndex) {
         return MathHelper.sum(Arrays.copyOfRange(values, currentIndex - period + 1, currentIndex + 1));
     }
 
     private void calculateChaikinMoneyFlowValues(BigDecimal[] moneyFlowSum, BigDecimal[] volumesSum) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new CMFResult(
-                    originalData[currentIndex].getTickTime(),
-                    MathHelper.divide(moneyFlowSum[currentIndex], volumesSum[currentIndex])
-            );
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new CMFResult(
+                        originalData[idx].getTickTime(),
+                        MathHelper.divide(moneyFlowSum[idx], volumesSum[idx])
+                ));
     }
 
 }

@@ -1,21 +1,25 @@
 package pro.crypto.indicators.aroon;
 
 import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.PriceExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.request.AroonRequest;
 import pro.crypto.model.result.AroonResult;
+import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.stream.Stream;
+import java.util.function.BiFunction;
+import java.util.function.Function;
+import java.util.stream.IntStream;
 
 import static java.util.Arrays.copyOfRange;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static pro.crypto.helper.PriceExtractor.extractValuesByType;
 import static pro.crypto.model.IndicatorType.AROON_UP_DOWN;
 import static pro.crypto.model.tick.PriceType.HIGH;
+import static pro.crypto.model.tick.PriceType.LOW;
 
 public class AroonUpDown implements Indicator<AroonResult> {
 
@@ -59,78 +63,53 @@ public class AroonUpDown implements Indicator<AroonResult> {
 
     private BigDecimal[] calculateAroonUpValues() {
         Integer[] daysAfterMaxValues = calculateDaysAfterMaxValues();
-        BigDecimal[] aroonUpValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < originalData.length; currentIndex++) {
-            aroonUpValues[currentIndex] = calculateAroon(daysAfterMaxValues[currentIndex]);
-        }
-        return aroonUpValues;
-    }
-
-    private Integer[] calculateDaysAfterMaxValues() {
-        Integer[] daysAfterMaxPrice = new Integer[originalData.length];
-        BigDecimal[] highValues = PriceExtractor.extractValuesByType(originalData, HIGH);
-        for (int currentIndex = period; currentIndex < originalData.length; currentIndex++) {
-            daysAfterMaxPrice[currentIndex] = calculateDaysAfterMaxValue(copyOfRange(highValues, currentIndex - period, currentIndex + 1));
-        }
-        return daysAfterMaxPrice;
-    }
-
-    private Integer calculateDaysAfterMaxValue(BigDecimal[] highValues) {
-        Integer maxValueIndex = findMaxValueIndex(highValues);
-        return period - maxValueIndex;
-    }
-
-    private Integer findMaxValueIndex(BigDecimal[] highValues) {
-        Integer maxValueIndex = 0;
-        BigDecimal maxValue = highValues[0];
-        for (int currentIndex = 1; currentIndex < highValues.length; currentIndex++) {
-            if (highValues[currentIndex].compareTo(maxValue) >= 0) {
-                maxValue = highValues[currentIndex];
-                maxValueIndex = currentIndex;
-            }
-        }
-        return maxValueIndex;
-    }
-
-    private BigDecimal[] calculateAroonDownValues() {
-        Integer[] daysAfterMinValues = calculateDaysAfterMinValues();
-        BigDecimal[] aroonDownValues = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < originalData.length; currentIndex++) {
-            aroonDownValues[currentIndex] = calculateAroon(daysAfterMinValues[currentIndex]);
-        }
-        return aroonDownValues;
-    }
-
-    private Integer[] calculateDaysAfterMinValues() {
-        Integer[] daysAfterMinPrice = new Integer[originalData.length];
-        BigDecimal[] lowValues = extractLowValues();
-        for (int currentIndex = period; currentIndex < originalData.length; currentIndex++) {
-            daysAfterMinPrice[currentIndex] = calculateDaysAfterMinValue(copyOfRange(lowValues, currentIndex - period, currentIndex + 1));
-        }
-        return daysAfterMinPrice;
-    }
-
-    private BigDecimal[] extractLowValues() {
-        return Stream.of(originalData)
-                .map(Tick::getLow)
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateAroon(daysAfterMaxValues[idx]))
                 .toArray(BigDecimal[]::new);
     }
 
-    private Integer calculateDaysAfterMinValue(BigDecimal[] lowValues) {
-        Integer minValueIndex = findMinValueIndex(lowValues);
-        return period - minValueIndex;
+    private Integer[] calculateDaysAfterMaxValues() {
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateDaysAfter(HIGH, idx, this::findMaxValueIndex))
+                .toArray(Integer[]::new);
+    }
+
+    private Integer findMaxValueIndex(BigDecimal[] highValues) {
+        return findIndex(highValues, (a, b) -> a.compareTo(b) >= 0);
+    }
+
+    private BigDecimal[] calculateAroonDownValues() {
+        final Integer[] daysAfterMinValues = calculateDaysAfterMinValues();
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateAroon(daysAfterMinValues[idx]))
+                .toArray(BigDecimal[]::new);
+    }
+
+    private Integer[] calculateDaysAfterMinValues() {
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateDaysAfter(LOW, idx, this::findMinValueIndex))
+                .toArray(Integer[]::new);
     }
 
     private Integer findMinValueIndex(BigDecimal[] lowValues) {
-        Integer minValueIndex = 0;
-        BigDecimal minValue = lowValues[0];
-        for (int currentIndex = 1; currentIndex < lowValues.length; currentIndex++) {
-            if (lowValues[currentIndex].compareTo(minValue) <= 0) {
-                minValue = lowValues[currentIndex];
-                minValueIndex = currentIndex;
-            }
-        }
-        return minValueIndex;
+        return findIndex(lowValues, (a, b) -> a.compareTo(b) <= 0);
+    }
+
+    private Integer calculateDaysAfter(PriceType priceType, int currentIndex, Function<BigDecimal[], Integer> findIndex) {
+        return currentIndex >= period
+                ? calculateDaysAfterValue(priceType, currentIndex, findIndex)
+                : null;
+    }
+
+    private Integer calculateDaysAfterValue(PriceType priceType, int currentIndex, Function<BigDecimal[], Integer> findIndex) {
+        BigDecimal[] shortCutValues = copyOfRange(extractValuesByType(originalData, priceType), currentIndex - period, currentIndex + 1);
+        return period - findIndex.apply(shortCutValues);
+    }
+
+    private Integer findIndex(BigDecimal[] values, BiFunction<BigDecimal, BigDecimal, Boolean> compareFunction) {
+        return IntStream.range(0, values.length)
+                .reduce((a, b) -> compareFunction.apply(values[a], values[b]) ? a : b)
+                .orElse(0);
     }
 
     private BigDecimal calculateAroon(Integer days) {
@@ -145,24 +124,19 @@ public class AroonUpDown implements Indicator<AroonResult> {
     }
 
     private void calculateAroonOscillatorValues(BigDecimal[] aroonUpValues, BigDecimal[] aroonDownValues) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new AroonResult(
-                    originalData[currentIndex].getTickTime(),
-                    aroonUpValues[currentIndex],
-                    aroonDownValues[currentIndex],
-                    calculateAroonOscillator(aroonUpValues[currentIndex], aroonDownValues[currentIndex])
-            );
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new AroonResult(
+                        originalData[idx].getTickTime(),
+                        aroonUpValues[idx],
+                        aroonDownValues[idx],
+                        calculateAroonOscillator(aroonUpValues[idx], aroonDownValues[idx])
+                ));
     }
 
     private BigDecimal calculateAroonOscillator(BigDecimal aroonUpValue, BigDecimal aroonDownValue) {
         return nonNull(aroonUpValue) && nonNull(aroonDownValue)
-                ? calculateAroonOscillatorValue(aroonUpValue, aroonDownValue)
+                ? aroonUpValue.subtract(aroonDownValue)
                 : null;
-    }
-
-    private BigDecimal calculateAroonOscillatorValue(BigDecimal aroonUpValue, BigDecimal aroonDownValue) {
-        return aroonUpValue.subtract(aroonDownValue);
     }
 
 }

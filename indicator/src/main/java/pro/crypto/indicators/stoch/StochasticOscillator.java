@@ -11,6 +11,7 @@ import pro.crypto.model.result.StochResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -73,11 +74,9 @@ public class StochasticOscillator implements Indicator<StochResult> {
     }
 
     private BigDecimal[] calculateFastStochasticOscillator(BigDecimal[] minValues, BigDecimal[] maxValues) {
-        BigDecimal[] fastStochastic = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < fastStochastic.length; currentIndex++) {
-            fastStochastic[currentIndex] = calculateFastStochasticOscillator(minValues[currentIndex], maxValues[currentIndex], currentIndex);
-        }
-        return fastStochastic;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateFastStochasticOscillator(minValues[idx], maxValues[idx], idx))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateFastStochasticOscillator(BigDecimal minValue, BigDecimal maxValue, int currentIndex) {
@@ -93,11 +92,9 @@ public class StochasticOscillator implements Indicator<StochResult> {
 
     private BigDecimal[] calculateSlowStochasticOscillator(BigDecimal[] fastStochastic) {
         BigDecimal[] slowStochastic = IndicatorResultExtractor.extract(calculateMovingAverageResult(fastStochastic));
-        BigDecimal[] result = new BigDecimal[fastStochastic.length];
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = nonNull(fastStochastic[currentIndex]) ? slowStochastic[currentIndex - fastPeriod + 1] : null;
-        }
-        return result;
+        return IntStream.range(0, result.length)
+                .mapToObj(idx -> nonNull(fastStochastic[idx]) ? slowStochastic[idx - fastPeriod + 1] : null)
+                .toArray(BigDecimal[]::new);
     }
 
     private MAResult[] calculateMovingAverageResult(BigDecimal[] fastStochastic) {
@@ -114,9 +111,8 @@ public class StochasticOscillator implements Indicator<StochResult> {
     }
 
     private void buildStochasticOscillatorResult(BigDecimal[] fastStochastic, BigDecimal[] slowStochastic) {
-        for (int i = 0; i < result.length; i++) {
-            result[i] = new StochResult(originalData[i].getTickTime(), fastStochastic[i], slowStochastic[i]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new StochResult(originalData[idx].getTickTime(), fastStochastic[idx], slowStochastic[idx]));
     }
 
 }

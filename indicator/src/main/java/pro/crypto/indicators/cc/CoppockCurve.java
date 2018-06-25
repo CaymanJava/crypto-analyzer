@@ -17,6 +17,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
@@ -109,11 +110,9 @@ public class CoppockCurve implements Indicator<CCResult> {
     }
 
     private BigDecimal[] calculateNotSmoothedCoppockCurve(BigDecimal[] longRoCValues, BigDecimal[] shortRocValues) {
-        BigDecimal[] ccResult = new BigDecimal[originalData.length];
-        for (int currentIndex = 0; currentIndex < ccResult.length; currentIndex++) {
-            ccResult[currentIndex] = calculateNotSmoothedCoppockCurve(longRoCValues[currentIndex], shortRocValues[currentIndex]);
-        }
-        return ccResult;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateNotSmoothedCoppockCurve(longRoCValues[idx], shortRocValues[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateNotSmoothedCoppockCurve(BigDecimal longRoCValue, BigDecimal shortRocValue) {
@@ -124,9 +123,8 @@ public class CoppockCurve implements Indicator<CCResult> {
 
     private void calculateCoppockCurveResult(BigDecimal[] notSmoothedCCValues) {
         BigDecimal[] wmaResult = calculateWeightedMovingAverage(notSmoothedCCValues);
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new CCResult(originalData[currentIndex].getTickTime(), wmaResult[currentIndex]);
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new CCResult(originalData[idx].getTickTime(), wmaResult[idx]));
     }
 
     private BigDecimal[] calculateWeightedMovingAverage(BigDecimal[] notSmoothedCCValues) {

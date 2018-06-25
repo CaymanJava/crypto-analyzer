@@ -7,6 +7,7 @@ import pro.crypto.model.result.MAResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static pro.crypto.model.IndicatorType.HULL_MOVING_AVERAGE;
 
@@ -35,14 +36,13 @@ public class HullMovingAverage extends MovingAverage {
     }
 
     private void fillInRemainPositions() {
-        for (int currentIndex = period - 1; currentIndex < originalData.length; currentIndex++) {
-            result[currentIndex] = buildMovingAverageResult(currentIndex, calculateIndicatorValue(currentIndex));
-        }
+        IntStream.range(period - 1, originalData.length)
+                .forEach(idx -> result[idx] = buildMovingAverageResult(idx, calculateIndicatorValue(idx)));
     }
 
     private BigDecimal calculateIndicatorValue(int currentIndex) {
         BigDecimal simpleAverageFromPeriod = calculateAndGetSimpleAverage(currentIndex - period + 1, currentIndex, originalData);
-        BigDecimal simpleAverageFromDividedTwoPeriod = calculateAndGetSimpleAverage(currentIndex - period/2 + 1, currentIndex, originalData);
+        BigDecimal simpleAverageFromDividedTwoPeriod = calculateAndGetSimpleAverage(currentIndex - period / 2 + 1, currentIndex, originalData);
         return simpleAverageFromDividedTwoPeriod.subtract(simpleAverageFromPeriod).add(simpleAverageFromDividedTwoPeriod);
     }
 

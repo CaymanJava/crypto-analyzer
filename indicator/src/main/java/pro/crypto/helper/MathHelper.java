@@ -54,9 +54,11 @@ public class MathHelper {
 
         if (value.signum() <= 0) {
             throw new ArithmeticException("Log of a negative number! (or zero)");
-        } else if (value.compareTo(BigDecimal.ONE) == 0) {
+        }
+        if (value.compareTo(BigDecimal.ONE) == 0) {
             return BigDecimal.ZERO;
-        } else if (value.compareTo(BigDecimal.ONE) < 0) {
+        }
+        if (value.compareTo(BigDecimal.ONE) < 0) {
             return (log((BigDecimal.ONE).divide(value, mc), scale)).negate();
         }
 
@@ -77,13 +79,13 @@ public class MathHelper {
 
     // http://qaru.site/questions/25608/logarithm-of-a-bigdecimal/186892#186892
     public static BigDecimal ln(BigDecimal value) {
-        MathContext context = new MathContext(100);
+        MathContext context = new MathContext(15);
         if (value.compareTo(BigDecimal.ONE) == 0) {
             return BigDecimal.ZERO;
         }
         value = value.subtract(BigDecimal.ONE);
-        BigDecimal ret = new BigDecimal(1001);
-        for (long i = 1000; i >= 0; i--) {
+        BigDecimal ret = new BigDecimal(31);
+        for (long i = 30; i >= 0; i--) {
             BigDecimal n = new BigDecimal(i / 2 + 1).pow(2);
             n = n.multiply(value, context);
             ret = n.divide(ret, context);

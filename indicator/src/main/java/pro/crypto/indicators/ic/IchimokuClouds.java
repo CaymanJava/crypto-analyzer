@@ -10,6 +10,7 @@ import pro.crypto.model.result.ICResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Arrays.copyOfRange;
@@ -88,7 +89,6 @@ public class IchimokuClouds implements Indicator<ICResult> {
                             "{indicator: {%s}, baseLinePeriod: {%d}, leadingSpanPeriod: {%d}}",
                     getType().toString(), baseLinePeriod, leadingSpanPeriod));
         }
-
     }
 
     private BigDecimal[] calculateConversionLine() {
@@ -100,18 +100,26 @@ public class IchimokuClouds implements Indicator<ICResult> {
     }
 
     private BigDecimal[] calculateLeadingSpanA(BigDecimal[] conversionLine, BigDecimal[] baseLine) {
-        BigDecimal[] leadingSpanA = new BigDecimal[originalData.length];
-        for (int currentIndex = baseLinePeriod + displaced - 1; currentIndex < leadingSpanA.length; currentIndex++) {
-            leadingSpanA[currentIndex] = MathHelper.average(
-                    conversionLine[currentIndex - displaced],
-                    baseLine[currentIndex - displaced]);
-        }
-        return leadingSpanA;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateLeadingSpanA(conversionLine, baseLine, idx))
+                .toArray(BigDecimal[]::new);
+    }
+
+    private BigDecimal calculateLeadingSpanA(BigDecimal[] conversionLine, BigDecimal[] baseLine, int currentIndex) {
+        return currentIndex >= baseLinePeriod + displaced - 1
+                ? calculateLeadingSpanAValue(conversionLine, baseLine, currentIndex)
+                : null;
+    }
+
+    private BigDecimal calculateLeadingSpanAValue(BigDecimal[] conversionLine, BigDecimal[] baseLine, int currentIndex) {
+        return MathHelper.average(
+                conversionLine[currentIndex - displaced],
+                baseLine[currentIndex - displaced]);
     }
 
     private BigDecimal[] calculateLeadingSpanB() {
-        BigDecimal[] leadingSpanB = new BigDecimal[originalData.length];
         BigDecimal[] notShiftedData = calculateAverageBetweenMaxMin(leadingSpanPeriod);
+        BigDecimal[] leadingSpanB = new BigDecimal[originalData.length];
         System.arraycopy(notShiftedData, leadingSpanPeriod - 1,
                 leadingSpanB, displaced + leadingSpanPeriod - 1,
                 leadingSpanB.length - (displaced + leadingSpanPeriod - 1));
@@ -119,16 +127,23 @@ public class IchimokuClouds implements Indicator<ICResult> {
     }
 
     private BigDecimal[] calculateAverageBetweenMaxMin(int period) {
-        BigDecimal[] conversionLine = new BigDecimal[originalData.length];
         BigDecimal[] highValues = PriceExtractor.extractValuesByType(originalData, HIGH);
         BigDecimal[] lowValues = PriceExtractor.extractValuesByType(originalData, LOW);
-        for (int currentIndex = period - 1; currentIndex < conversionLine.length; currentIndex++) {
-            conversionLine[currentIndex] = MathHelper.average(
-                    MathHelper.max(copyOfRange(highValues, currentIndex - period + 1, currentIndex + 1)),
-                    MathHelper.min(copyOfRange(lowValues, currentIndex - period + 1, currentIndex + 1))
-            );
-        }
-        return conversionLine;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateAverage(period, highValues, lowValues, idx))
+                .toArray(BigDecimal[]::new);
+    }
+
+    private BigDecimal calculateAverage(int period, BigDecimal[] highValues, BigDecimal[] lowValues, int currentIndex) {
+        return currentIndex >= period - 1
+                ? calculateAverageValue(period, highValues, lowValues, currentIndex)
+                : null;
+    }
+
+    private BigDecimal calculateAverageValue(int period, BigDecimal[] highValues, BigDecimal[] lowValues, int currentIndex) {
+        return MathHelper.average(
+                MathHelper.max(copyOfRange(highValues, currentIndex - period + 1, currentIndex + 1)),
+                MathHelper.min(copyOfRange(lowValues, currentIndex - period + 1, currentIndex + 1)));
     }
 
     private BigDecimal[] calculateLaggingSpan() {
@@ -140,16 +155,9 @@ public class IchimokuClouds implements Indicator<ICResult> {
     private void buildIchimokuClouds(BigDecimal[] conversionLine, BigDecimal[] baseLine,
                                      BigDecimal[] leadingSpanA, BigDecimal[] leadingSpanB,
                                      BigDecimal[] laggingSpan) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new ICResult(
-                    originalData[currentIndex].getTickTime(),
-                    conversionLine[currentIndex],
-                    baseLine[currentIndex],
-                    leadingSpanA[currentIndex],
-                    leadingSpanB[currentIndex],
-                    laggingSpan[currentIndex]
-            );
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new ICResult(originalData[idx].getTickTime(), conversionLine[idx],
+                        baseLine[idx], leadingSpanA[idx], leadingSpanB[idx], laggingSpan[idx]));
     }
 
 }

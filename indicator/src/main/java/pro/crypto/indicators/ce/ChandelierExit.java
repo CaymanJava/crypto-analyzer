@@ -14,6 +14,8 @@ import pro.crypto.model.result.CEResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.function.BiFunction;
+import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Locale.ENGLISH;
@@ -90,59 +92,41 @@ public class ChandelierExit implements Indicator<CEResult> {
     }
 
     private BigDecimal[] calculateLongExits(BigDecimal[] averageTrueRangeValues) {
-        BigDecimal[] longExits = new BigDecimal[originalData.length];
-        BigDecimal[] maxValues = calculateMaxValues();
-        for (int currentIndex = period - 1; currentIndex < longExits.length; currentIndex++) {
-            longExits[currentIndex] = calculateLongExit(averageTrueRangeValues[currentIndex], maxValues[currentIndex]);
-        }
-        return longExits;
+        final BigDecimal[] maxValues = calculateMaxValues();
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateExit(averageTrueRangeValues[idx], maxValues[idx], idx, BigDecimal::subtract))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal[] calculateMaxValues() {
         return MinMaxFinder.findMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
     }
 
-    private BigDecimal calculateLongExit(BigDecimal averageTrueRangeValue, BigDecimal maxValue) {
-        return nonNull(averageTrueRangeValue) && nonNull(maxValue)
-                ? calculateLongExitValue(averageTrueRangeValue, maxValue)
-                : null;
-    }
-
-    private BigDecimal calculateLongExitValue(BigDecimal averageTrueRangeValue, BigDecimal maxValue) {
-        return maxValue.subtract(averageTrueRangeValue.multiply(new BigDecimal(factor)));
-    }
-
     private BigDecimal[] calculateShortExits(BigDecimal[] averageTrueRangeValues) {
-        BigDecimal[] shortExits = new BigDecimal[originalData.length];
         BigDecimal[] minValues = calculateMinValues();
-        for (int currentIndex = period - 1; currentIndex < shortExits.length; currentIndex++) {
-            shortExits[currentIndex] = calculateShortExit(averageTrueRangeValues[currentIndex], minValues[currentIndex]);
-        }
-        return shortExits;
+        return IntStream.range(0, originalData.length)
+                .mapToObj(idx -> calculateExit(averageTrueRangeValues[idx], minValues[idx], idx, BigDecimal::add))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal[] calculateMinValues() {
         return MinMaxFinder.findMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
     }
 
-    private BigDecimal calculateShortExit(BigDecimal averageTrueRangeValue, BigDecimal minValue) {
-        return nonNull(averageTrueRangeValue) && nonNull(minValue)
-                ? calculateShortExitValue(averageTrueRangeValue, minValue)
+    private BigDecimal calculateExit(BigDecimal averageTrueRangeValue, BigDecimal minValue, int currentIndex,
+                                     BiFunction<BigDecimal, BigDecimal, BigDecimal> exitFunction) {
+        return isPossibleToCalculate(averageTrueRangeValue, minValue, currentIndex)
+                ? exitFunction.apply(minValue, averageTrueRangeValue.multiply(new BigDecimal(factor)))
                 : null;
     }
 
-    private BigDecimal calculateShortExitValue(BigDecimal averageTrueRangeValue, BigDecimal minValue) {
-        return minValue.add(averageTrueRangeValue.multiply(new BigDecimal(factor)));
+    private boolean isPossibleToCalculate(BigDecimal averageTrueRangeValue, BigDecimal value, int currentIndex) {
+        return currentIndex >= period - 1 && nonNull(averageTrueRangeValue) && nonNull(value);
     }
 
     private void buildChandelierResults(BigDecimal[] longExits, BigDecimal[] shortExits) {
-        for (int currentIndex = 0; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = new CEResult(
-                    originalData[currentIndex].getTickTime(),
-                    longExits[currentIndex],
-                    shortExits[currentIndex]
-            );
-        }
+        IntStream.range(0, result.length)
+                .forEach(idx -> result[idx] = new CEResult(originalData[idx].getTickTime(), longExits[idx], shortExits[idx]));
     }
 
 }

@@ -4,6 +4,9 @@ import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.IntStream;
+
 public class SimpleMovingAverage extends MovingAverage {
 
     private final Tick[] originalData;
@@ -29,11 +32,9 @@ public class SimpleMovingAverage extends MovingAverage {
     }
 
     private void fillInRemainPositions() {
-        int from = 0;
-        for (int i = period - 1; i < originalData.length; i++) {
-            calculateSimpleAverage(from, i, originalData);
-            from++;
-        }
+        AtomicInteger from = new AtomicInteger(0);
+        IntStream.range(period - 1, originalData.length)
+                .forEach(idx -> calculateSimpleAverage(from.getAndIncrement(), idx, originalData));
     }
 
 }

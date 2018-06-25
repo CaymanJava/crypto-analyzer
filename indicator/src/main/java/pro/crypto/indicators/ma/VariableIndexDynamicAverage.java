@@ -11,6 +11,7 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
@@ -79,9 +80,8 @@ public class VariableIndexDynamicAverage extends MovingAverage {
     private void calculateVariableIndexDynamicAverageResult(BigDecimal[] alphaCoefficients) {
         fillInInitialPositions(originalData, period);
         calculateSimpleAverage(0, period - 1, originalData);
-        for (int currentIndex = period; currentIndex < result.length; currentIndex++) {
-            result[currentIndex] = calculateVariableIndexDynamicAverage(alphaCoefficients[currentIndex], currentIndex);
-        }
+        IntStream.range(period, result.length)
+                .forEach(idx -> result[idx] = calculateVariableIndexDynamicAverage(alphaCoefficients[idx], idx));
     }
 
     private MAResult calculateVariableIndexDynamicAverage(BigDecimal alphaCoefficient, int currentIndex) {

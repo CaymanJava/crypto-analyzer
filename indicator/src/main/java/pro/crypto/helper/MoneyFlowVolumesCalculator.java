@@ -3,6 +3,7 @@ package pro.crypto.helper;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static pro.crypto.helper.MathHelper.divide;
@@ -10,17 +11,15 @@ import static pro.crypto.helper.MathHelper.scaleAndRound;
 
 public class MoneyFlowVolumesCalculator {
 
-    public static BigDecimal[] calculate(Tick[] originalData) {
-        BigDecimal[] moneyFlowMultipliers = calculateMoneyFlowMultipliers(originalData);
-        BigDecimal[] moneyFlowVolumes = new BigDecimal[originalData.length];
-        for (int i = 0; i < originalData.length; i++) {
-            moneyFlowVolumes[i] = scaleAndRound(originalData[i].getBaseVolume().multiply(moneyFlowMultipliers[i]));
-        }
-        return moneyFlowVolumes;
+    public static BigDecimal[] calculate(Tick[] data) {
+        BigDecimal[] moneyFlowMultipliers = calculateMoneyFlowMultipliers(data);
+        return IntStream.range(0, data.length)
+                .mapToObj(idx -> scaleAndRound(data[idx].getBaseVolume().multiply(moneyFlowMultipliers[idx])))
+                .toArray(BigDecimal[]::new);
     }
 
-    private static BigDecimal[] calculateMoneyFlowMultipliers(Tick[] originalData) {
-        return Stream.of(originalData)
+    private static BigDecimal[] calculateMoneyFlowMultipliers(Tick[] data) {
+        return Stream.of(data)
                 .map(MoneyFlowVolumesCalculator::calculateMoneyFlowMultiplier)
                 .toArray(BigDecimal[]::new);
     }

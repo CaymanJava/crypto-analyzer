@@ -30,7 +30,7 @@ public class MovingAverageConvergenceDivergenceTest {
 
     @Test
     public void testMACDWithRecommendedPeriods() {
-        MACDResult[] result = new MovingAverageConvergenceDivergence(createRequest()).getResult();
+        MACDResult[] result = new MovingAverageConvergenceDivergence(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[0].getSignalLineResult());
@@ -161,7 +161,7 @@ public class MovingAverageConvergenceDivergenceTest {
     @Test
     public void notEnoughDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Period should be less than tick data size {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, period: {21}, size: {10}}");
+        expectedException.expectMessage("Period should be less than tick data size {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, period: {35}, size: {10}}");
         new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[10])
                 .slowPeriod(12)
@@ -172,7 +172,7 @@ public class MovingAverageConvergenceDivergenceTest {
                 .build()).getResult();
     }
 
-    private MACDRequest createRequest() {
+    private MACDRequest buildRequest() {
         return MACDRequest.builder()
                 .originalData(originalData)
                 .slowPeriod(12)

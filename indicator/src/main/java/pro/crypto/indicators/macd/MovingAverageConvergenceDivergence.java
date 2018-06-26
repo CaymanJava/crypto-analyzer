@@ -69,7 +69,7 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkOriginalDataSize(originalData, slowPeriod + signalPeriod);
+        checkOriginalDataSize(originalData, fastPeriod + signalPeriod);
         checkPriceType(priceType);
         checkPeriods();
         checkMovingAverageType(movingAverageType);
@@ -82,8 +82,8 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
     }
 
     private BigDecimal[] calculateMACD() {
-        MAResult[] slowMovingAverageResult = MovingAverageFactory.create(buildSlowMovingAverageCreationRequest()).getResult();
-        MAResult[] fastMovingAverageResult = MovingAverageFactory.create(buildFastMovingAverageCreationRequest()).getResult();
+        MAResult[] slowMovingAverageResult = MovingAverageFactory.create(buildMARequest(slowPeriod)).getResult();
+        MAResult[] fastMovingAverageResult = MovingAverageFactory.create(buildMARequest(fastPeriod)).getResult();
         return calculateMACD(slowMovingAverageResult, fastMovingAverageResult);
     }
 
@@ -93,20 +93,11 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
                 .toArray(BigDecimal[]::new);
     }
 
-    private MARequest buildSlowMovingAverageCreationRequest() {
+    private MARequest buildMARequest(int period) {
         return MARequest.builder()
                 .originalData(originalData)
                 .indicatorType(movingAverageType)
-                .period(slowPeriod)
-                .priceType(priceType)
-                .build();
-    }
-
-    private MARequest buildFastMovingAverageCreationRequest() {
-        return MARequest.builder()
-                .originalData(originalData)
-                .indicatorType(movingAverageType)
-                .period(fastPeriod)
+                .period(period)
                 .priceType(priceType)
                 .build();
     }

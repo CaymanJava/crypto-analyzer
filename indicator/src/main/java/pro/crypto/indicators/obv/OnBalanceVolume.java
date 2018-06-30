@@ -24,7 +24,6 @@ public class OnBalanceVolume implements Indicator<OBVResult> {
         checkOriginalData(originalData);
     }
 
-
     @Override
     public IndicatorType getType() {
         return ON_BALANCE_VOLUME;

@@ -7,14 +7,12 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class PPOResult implements SimpleIndicatorResult {
+public class KSTResult implements SimpleIndicatorResult {
 
     private LocalDateTime time;
 
     private BigDecimal indicatorValue;
 
     private BigDecimal signalLineValue;
-
-    private BigDecimal barChartValue;
 
 }

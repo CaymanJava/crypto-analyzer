@@ -13,6 +13,6 @@ public class TRIXResult implements SimpleIndicatorResult {
 
     private BigDecimal indicatorValue;
 
-    private BigDecimal signalLineResult;
+    private BigDecimal signalLineValue;
 
 }

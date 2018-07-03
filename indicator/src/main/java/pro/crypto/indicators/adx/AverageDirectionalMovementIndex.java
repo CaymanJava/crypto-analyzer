@@ -4,7 +4,7 @@ import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.TrueRangeCalculator;
-import pro.crypto.helper.model.BigDecimalTuple;
+import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;

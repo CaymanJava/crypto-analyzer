@@ -41,6 +41,8 @@ public class MovingAverageFactory {
                 return new TriangularMovingAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
             case WELLES_WILDERS_MOVING_AVERAGE:
                 return new WellesWildersMovingAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
+            case TIME_SERIES_MOVING_AVERAGE:
+                return new TimeSeriesMovingAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
             default:
                 throw new UnknownTypeException(format("Unknown moving average type {type: {%s}}", request.getIndicatorType()));
         }

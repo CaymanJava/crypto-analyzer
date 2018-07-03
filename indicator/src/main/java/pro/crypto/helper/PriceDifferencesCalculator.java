@@ -1,6 +1,6 @@
 package pro.crypto.helper;
 
-import pro.crypto.helper.model.BigDecimalTuple;
+import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;

@@ -1,6 +1,6 @@
 package pro.crypto.indicators.cmo;
 
-import pro.crypto.helper.model.BigDecimalTuple;
+import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceDifferencesCalculator;
 import pro.crypto.model.Indicator;

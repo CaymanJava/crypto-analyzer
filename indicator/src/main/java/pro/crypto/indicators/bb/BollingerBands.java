@@ -1,7 +1,7 @@
 package pro.crypto.indicators.bb;
 
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.helper.model.BigDecimalTuple;
+import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.indicators.stdev.StandardDeviation;

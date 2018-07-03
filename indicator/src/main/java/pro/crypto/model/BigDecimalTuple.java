@@ -1,4 +1,4 @@
-package pro.crypto.helper.model;
+package pro.crypto.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

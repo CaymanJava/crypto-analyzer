@@ -1,7 +1,7 @@
 package pro.crypto.indicators.rsi;
 
 import pro.crypto.helper.*;
-import pro.crypto.helper.model.BigDecimalTuple;
+import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.indicators.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorType;

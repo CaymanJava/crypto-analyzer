@@ -15,11 +15,11 @@ import static junit.framework.TestCase.assertNull;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
-import static pro.crypto.model.IndicatorType.WELLES_WILDERS_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.TIME_SERIES_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 import static pro.crypto.model.tick.PriceType.OPEN;
 
-public class WellesWildersMovingAverageTest {
+public class TimeSeriesMovingAverageTest {
 
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
@@ -32,51 +32,51 @@ public class WellesWildersMovingAverageTest {
     }
 
     @Test
-    public void testWellesWildersMovingAverageWithPeriodFifteen() {
+    public void testTimeSeriesMovingAverageWithPeriodFifteen() {
         MAResult[] result = MovingAverageFactory.create(buildRequest(15)).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[13].getIndicatorValue());
         assertEquals(result[14].getTime(), of(2018, 3, 11, 0, 0));
-        assertEquals(result[14].getIndicatorValue(), toBigDecimal(1268.2726733333));
+        assertEquals(result[14].getIndicatorValue(), toBigDecimal(1229.8321057144));
         assertEquals(result[26].getTime(), of(2018, 3, 23, 0, 0));
-        assertEquals(result[26].getIndicatorValue(), toBigDecimal(1209.8082589447));
+        assertEquals(result[26].getIndicatorValue(), toBigDecimal(1170.9277142856));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1218.0206519087));
+        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1228.66348));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1288.192638534));
+        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1331.13914));
         assertEquals(result[58].getTime(), of(2018, 4, 24, 0, 0));
-        assertEquals(result[58].getIndicatorValue(), toBigDecimal(1355.6846799945));
+        assertEquals(result[58].getIndicatorValue(), toBigDecimal(1433.1417085712));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1394.8520579474));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1430.1197085712));
     }
 
     @Test
-    public void testWellesWildersMovingAverageWithPeriodTwenty() {
+    public void testTimeSeriesMovingAverageWithPeriodTwenty() {
         MAResult[] result = MovingAverageFactory.create(buildRequest(20)).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[18].getIndicatorValue());
         assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(1251.06901));
+        assertEquals(result[19].getIndicatorValue(), toBigDecimal(1238.3043552629));
         assertEquals(result[26].getTime(), of(2018, 3, 23, 0, 0));
-        assertEquals(result[26].getIndicatorValue(), toBigDecimal(1220.4036196938));
+        assertEquals(result[26].getIndicatorValue(), toBigDecimal(1201.670184474));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1223.7623955362));
+        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1258.40271815765));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1277.6258670481));
+        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1285.0520910529));
         assertEquals(result[58].getTime(), of(2018, 4, 24, 0, 0));
-        assertEquals(result[58].getIndicatorValue(), toBigDecimal(1337.2639460060));
+        assertEquals(result[58].getIndicatorValue(), toBigDecimal(1406.58474473685));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1380.4094976018));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1386.79497368455));
     }
 
     @Test
     public void emptyOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {WELLES_WILDERS_MOVING_AVERAGE}, size: {0}}");
+        expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {TIME_SERIES_MOVING_AVERAGE}, size: {0}}");
         MovingAverageFactory.create(MARequest.builder()
-                .indicatorType(WELLES_WILDERS_MOVING_AVERAGE)
+                .indicatorType(TIME_SERIES_MOVING_AVERAGE)
                 .originalData(new Tick[0])
                 .period(5)
                 .priceType(OPEN)
@@ -86,9 +86,9 @@ public class WellesWildersMovingAverageTest {
     @Test
     public void nullOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming tick data is null {indicator: {WELLES_WILDERS_MOVING_AVERAGE}}");
+        expectedException.expectMessage("Incoming tick data is null {indicator: {TIME_SERIES_MOVING_AVERAGE}}");
         MovingAverageFactory.create(MARequest.builder()
-                .indicatorType(WELLES_WILDERS_MOVING_AVERAGE)
+                .indicatorType(TIME_SERIES_MOVING_AVERAGE)
                 .originalData(null)
                 .period(5)
                 .priceType(OPEN)
@@ -98,9 +98,9 @@ public class WellesWildersMovingAverageTest {
     @Test
     public void periodMoreThanTickDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Period should be less than tick data size {indicator: {WELLES_WILDERS_MOVING_AVERAGE}, period: {20}, size: {19}}");
+        expectedException.expectMessage("Period should be less than tick data size {indicator: {TIME_SERIES_MOVING_AVERAGE}, period: {20}, size: {19}}");
         MovingAverageFactory.create(MARequest.builder()
-                .indicatorType(WELLES_WILDERS_MOVING_AVERAGE)
+                .indicatorType(TIME_SERIES_MOVING_AVERAGE)
                 .originalData(new Tick[19])
                 .period(20)
                 .priceType(OPEN)
@@ -110,9 +110,9 @@ public class WellesWildersMovingAverageTest {
     @Test
     public void periodLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Period should be more than 0 {indicator: {WELLES_WILDERS_MOVING_AVERAGE}, period: {-5}}");
+        expectedException.expectMessage("Period should be more than 0 {indicator: {TIME_SERIES_MOVING_AVERAGE}, period: {-5}}");
         MovingAverageFactory.create(MARequest.builder()
-                .indicatorType(WELLES_WILDERS_MOVING_AVERAGE)
+                .indicatorType(TIME_SERIES_MOVING_AVERAGE)
                 .originalData(new Tick[100])
                 .period(-5)
                 .priceType(OPEN)
@@ -122,9 +122,9 @@ public class WellesWildersMovingAverageTest {
     @Test
     public void emptyPriceTypeTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming price type is null {indicator: {WELLES_WILDERS_MOVING_AVERAGE}}");
+        expectedException.expectMessage("Incoming price type is null {indicator: {TIME_SERIES_MOVING_AVERAGE}}");
         MovingAverageFactory.create(MARequest.builder()
-                .indicatorType(WELLES_WILDERS_MOVING_AVERAGE)
+                .indicatorType(TIME_SERIES_MOVING_AVERAGE)
                 .originalData(new Tick[100])
                 .period(5)
                 .build()).getResult();
@@ -135,7 +135,7 @@ public class WellesWildersMovingAverageTest {
                 .originalData(originalData)
                 .period(period)
                 .priceType(CLOSE)
-                .indicatorType(WELLES_WILDERS_MOVING_AVERAGE)
+                .indicatorType(TIME_SERIES_MOVING_AVERAGE)
                 .build();
     }
 

@@ -110,7 +110,7 @@ public class LinearRegression implements Indicator<LRResult> {
     // slope = m = ∑((x(i) - x(avg)) * (y(i) - y(avg))) /  ∑((x(i) - x(avg))^2)
     // linearRegression = y(avg) − m * x(avg)
     private BigDecimal calculateLinearRegressionValue(BigDecimal averagePrice, BigDecimal averageCoefficient, int outsideIndex) {
-        final AtomicInteger coefficient = new AtomicInteger(0);
+        AtomicInteger coefficient = new AtomicInteger(0);
         BigDecimalTuple divisibleDivisor = IntStream.rangeClosed(outsideIndex - period + 1, outsideIndex)
                 .mapToObj(idx -> calculateDivisibleDivisor(averagePrice, averageCoefficient, coefficient, idx))
                 .reduce(BigDecimalTuple.zero(), BigDecimalTuple::add);

@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -235,7 +236,7 @@ public class AlligatorTest {
                 .build()).getResult();
     }
 
-    private AlligatorRequest buildRequest() {
+    private IndicatorRequest buildRequest() {
         return AlligatorRequest.builder()
                 .originalData(originalData)
                 .jawPeriod(13)

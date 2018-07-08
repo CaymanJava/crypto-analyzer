@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -149,7 +150,7 @@ public class CoppockCurveTest {
                 .build()).getResult();
     }
 
-    private CCRequest buildRequest() {
+    private IndicatorRequest buildRequest() {
         return CCRequest.builder()
                 .originalData(originalData)
                 .priceType(CLOSE)

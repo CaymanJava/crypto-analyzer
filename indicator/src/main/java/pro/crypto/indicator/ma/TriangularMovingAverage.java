@@ -2,7 +2,9 @@ package pro.crypto.indicator.ma;
 
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -63,11 +65,11 @@ public class TriangularMovingAverage extends MovingAverage {
         return isPeriodEven() ? period / 2 - 1 : period / 2;
     }
 
-    private MAResult[] calculateMovingAverage(Tick[] data, int period) {
+    private SimpleIndicatorResult[] calculateMovingAverage(Tick[] data, int period) {
         return MovingAverageFactory.create(buildMARequest(data, period)).getResult();
     }
 
-    private MARequest buildMARequest(Tick[] data, int period) {
+    private IndicatorRequest buildMARequest(Tick[] data, int period) {
         return MARequest.builder()
                 .originalData(data)
                 .period(period)

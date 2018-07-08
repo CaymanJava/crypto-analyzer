@@ -1,9 +1,10 @@
 package pro.crypto.indicator.cmo;
 
-import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceDifferencesCalculator;
+import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -21,7 +22,8 @@ public class ChandeMomentumOscillator implements Indicator<CMOResult> {
 
     private CMOResult[] result;
 
-    public ChandeMomentumOscillator(CMORequest request) {
+    public ChandeMomentumOscillator(IndicatorRequest creationRequest) {
+        CMORequest request = (CMORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();

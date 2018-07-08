@@ -4,6 +4,7 @@ import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -14,9 +15,7 @@ import static java.lang.String.format;
 import static java.util.Arrays.copyOfRange;
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.ICHIMOKU_CLOUDS;
-import static pro.crypto.model.tick.PriceType.CLOSE;
-import static pro.crypto.model.tick.PriceType.HIGH;
-import static pro.crypto.model.tick.PriceType.LOW;
+import static pro.crypto.model.tick.PriceType.*;
 
 public class IchimokuClouds implements Indicator<ICResult> {
 
@@ -28,7 +27,8 @@ public class IchimokuClouds implements Indicator<ICResult> {
 
     private ICResult[] result;
 
-    public IchimokuClouds(ICRequest request) {
+    public IchimokuClouds(IndicatorRequest creationRequest) {
+        ICRequest request = (ICRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.conversionLinePeriod = request.getConversionLinePeriod();
         this.baseLinePeriod = request.getBaseLinePeriod();

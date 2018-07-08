@@ -2,11 +2,12 @@ package pro.crypto.indicator.cfo;
 
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
+import pro.crypto.indicator.lr.LRRequest;
 import pro.crypto.indicator.lr.LinearRegression;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.lr.LRRequest;
-import pro.crypto.indicator.lr.LRResult;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -25,7 +26,8 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
 
     private CFOResult[] result;
 
-    public ChandeForecastOscillator(CFORequest request) {
+    public ChandeForecastOscillator(IndicatorRequest creationRequest) {
+        CFORequest request = (CFORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         this.priceType = request.getPriceType();
@@ -63,11 +65,11 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
         return IndicatorResultExtractor.extract(calculateLinearRegression());
     }
 
-    private LRResult[] calculateLinearRegression() {
+    private SimpleIndicatorResult[] calculateLinearRegression() {
         return new LinearRegression(buildLRRequest()).getResult();
     }
 
-    private LRRequest buildLRRequest() {
+    private IndicatorRequest buildLRRequest() {
         return LRRequest.builder()
                 .originalData(originalData)
                 .period(period)

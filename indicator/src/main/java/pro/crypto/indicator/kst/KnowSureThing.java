@@ -4,13 +4,13 @@ import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
+import pro.crypto.indicator.roc.ROCRequest;
 import pro.crypto.indicator.roc.RangeOfChange;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.roc.ROCRequest;
-import pro.crypto.indicator.roc.ROCResult;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -41,7 +41,8 @@ public class KnowSureThing implements Indicator<KSTResult> {
 
     private KSTResult[] result;
 
-    public KnowSureThing(KSTRequest request) {
+    public KnowSureThing(IndicatorRequest creationRequest) {
+        KSTRequest request = (KSTRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.priceType = request.getPriceType();
         this.lightestROCPeriod = request.getLightestROCPeriod();
@@ -131,11 +132,11 @@ public class KnowSureThing implements Indicator<KSTResult> {
         return IndicatorResultExtractor.extract(calculateRangeOfChange(period));
     }
 
-    private ROCResult[] calculateRangeOfChange(int period) {
+    private SimpleIndicatorResult[] calculateRangeOfChange(int period) {
         return new RangeOfChange(buildROCRequest(period)).getResult();
     }
 
-    private ROCRequest buildROCRequest(int period) {
+    private IndicatorRequest buildROCRequest(int period) {
         return ROCRequest.builder()
                 .originalData(originalData)
                 .period(period)
@@ -175,11 +176,11 @@ public class KnowSureThing implements Indicator<KSTResult> {
         return IndicatorResultExtractor.extract(calculateMovingAverage(values, period));
     }
 
-    private MAResult[] calculateMovingAverage(BigDecimal[] values, int period) {
+    private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] values, int period) {
         return MovingAverageFactory.create(buildSMARequest(values, period)).getResult();
     }
 
-    private MARequest buildSMARequest(BigDecimal[] values, int period) {
+    private IndicatorRequest buildSMARequest(BigDecimal[] values, int period) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(values))
                 .indicatorType(SIMPLE_MOVING_AVERAGE)

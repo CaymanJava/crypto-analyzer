@@ -3,14 +3,14 @@ package pro.crypto.indicator.pgo;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
-import pro.crypto.indicator.ma.MAResult;
+import pro.crypto.indicator.atr.ATRRequest;
 import pro.crypto.indicator.atr.AverageTrueRange;
+import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.atr.ATRRequest;
-import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.atr.ATRResult;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -28,7 +28,8 @@ public class PrettyGoodOscillator implements Indicator<PGOResult> {
 
     private PGOResult[] result;
 
-    public PrettyGoodOscillator(PGORequest request) {
+    public PrettyGoodOscillator(IndicatorRequest creationRequest) {
+        PGORequest request = (PGORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();
@@ -65,11 +66,11 @@ public class PrettyGoodOscillator implements Indicator<PGOResult> {
         return IndicatorResultExtractor.extract(calculateAverageTrueRange());
     }
 
-    private ATRResult[] calculateAverageTrueRange() {
+    private SimpleIndicatorResult[] calculateAverageTrueRange() {
         return new AverageTrueRange(buildATRRequest()).getResult();
     }
 
-    private ATRRequest buildATRRequest() {
+    private IndicatorRequest buildATRRequest() {
         return ATRRequest.builder()
                 .originalData(originalData)
                 .period(period)
@@ -91,11 +92,11 @@ public class PrettyGoodOscillator implements Indicator<PGOResult> {
         return IndicatorResultExtractor.extract(calculateMovingAverage(data, movingAverageType));
     }
 
-    private MAResult[] calculateMovingAverage(Tick[] data, IndicatorType movingAverageType) {
+    private SimpleIndicatorResult[] calculateMovingAverage(Tick[] data, IndicatorType movingAverageType) {
         return MovingAverageFactory.create(buildMARequest(data, movingAverageType)).getResult();
     }
 
-    private MARequest buildMARequest(Tick[] data, IndicatorType movingAverageType) {
+    private IndicatorRequest buildMARequest(Tick[] data, IndicatorType movingAverageType) {
         return MARequest.builder()
                 .originalData(data)
                 .priceType(CLOSE)

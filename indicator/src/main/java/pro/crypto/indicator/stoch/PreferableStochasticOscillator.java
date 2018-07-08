@@ -3,10 +3,11 @@ package pro.crypto.indicator.stoch;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -28,7 +29,8 @@ public class PreferableStochasticOscillator implements Indicator<StochResult> {
 
     private StochResult[] result;
 
-    public PreferableStochasticOscillator(StochRequest request) {
+    public PreferableStochasticOscillator(IndicatorRequest creationRequest) {
+        StochRequest request = (StochRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.movingAverageType = isNull(request.getMovingAverageType()) ? MODIFIED_MOVING_AVERAGE : request.getMovingAverageType();
         this.fastPeriod = request.getFastPeriod();
@@ -76,7 +78,7 @@ public class PreferableStochasticOscillator implements Indicator<StochResult> {
         return new StochasticOscillator(buildStochasticRequest()).getResult();
     }
 
-    private StochRequest buildStochasticRequest() {
+    private IndicatorRequest buildStochasticRequest() {
         return StochRequest.builder()
                 .originalData(originalData)
                 .movingAverageType(movingAverageType)
@@ -92,11 +94,11 @@ public class PreferableStochasticOscillator implements Indicator<StochResult> {
                 .toArray(BigDecimal[]::new);
     }
 
-    private MAResult[] calculateMovingAverageResult(BigDecimal[] fastStochastic) {
+    private SimpleIndicatorResult[] calculateMovingAverageResult(BigDecimal[] fastStochastic) {
         return MovingAverageFactory.create(buildModifiedMovingAverageRequest(fastStochastic)).getResult();
     }
 
-    private MARequest buildModifiedMovingAverageRequest(BigDecimal[] fastStochastic) {
+    private IndicatorRequest buildModifiedMovingAverageRequest(BigDecimal[] fastStochastic) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(fastStochastic))
                 .period(slowPeriod)

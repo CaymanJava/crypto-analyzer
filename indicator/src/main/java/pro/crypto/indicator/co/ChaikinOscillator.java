@@ -2,14 +2,14 @@ package pro.crypto.indicator.co;
 
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.indicator.ma.MAResult;
+import pro.crypto.indicator.adl.ADLRequest;
 import pro.crypto.indicator.adl.AccumulationDistributionLine;
+import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.adl.ADLRequest;
-import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.adl.ADLResult;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -30,7 +30,8 @@ public class ChaikinOscillator implements Indicator<COResult> {
 
     private COResult[] result;
 
-    public ChaikinOscillator(CORequest request) {
+    public ChaikinOscillator(IndicatorRequest creationRequest) {
+        CORequest request = (CORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.slowPeriod = request.getSlowPeriod();
         this.fastPeriod = request.getFastPeriod();
@@ -45,9 +46,9 @@ public class ChaikinOscillator implements Indicator<COResult> {
     @Override
     public void calculate() {
         result = new COResult[originalData.length];
-        ADLResult[] adlResult = calculateADL();
-        MAResult[] slowEma = calculateSlowEmaForAdl(adlResult);
-        MAResult[] fastEma = calculateFastEmaForAdl(adlResult);
+        SimpleIndicatorResult[] adlResult = calculateADL();
+        SimpleIndicatorResult[] slowEma = calculateEmaForAdl(adlResult, slowPeriod);
+        SimpleIndicatorResult[] fastEma = calculateEmaForAdl(adlResult, fastPeriod);
         calculateChaikinOscillatorValues(slowEma, fastEma);
     }
 
@@ -66,40 +67,30 @@ public class ChaikinOscillator implements Indicator<COResult> {
         checkPeriod(fastPeriod);
     }
 
-    private ADLResult[] calculateADL() {
+    private SimpleIndicatorResult[] calculateADL() {
         return new AccumulationDistributionLine(new ADLRequest(originalData)).getResult();
     }
 
-    private MAResult[] calculateSlowEmaForAdl(ADLResult[] adlResult) {
+    private SimpleIndicatorResult[] calculateEmaForAdl(SimpleIndicatorResult[] adlResult, int period) {
         return MovingAverageFactory.create(MARequest.builder()
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .originalData(createFakeTicks(adlResult))
                 .priceType(CLOSE)
-                .period(slowPeriod)
+                .period(period)
                 .build())
                 .getResult();
     }
 
-    private MAResult[] calculateFastEmaForAdl(ADLResult[] adlResult) {
-        return MovingAverageFactory.create(MARequest.builder()
-                .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
-                .originalData(createFakeTicks(adlResult))
-                .priceType(CLOSE)
-                .period(fastPeriod)
-                .build())
-                .getResult();
-    }
-
-    private Tick[] createFakeTicks(ADLResult[] adlResult) {
+    private Tick[] createFakeTicks(SimpleIndicatorResult[] adlResult) {
         return FakeTicksCreator.createWithCloseOnly(IndicatorResultExtractor.extract(adlResult));
     }
 
-    private void calculateChaikinOscillatorValues(MAResult[] slowEma, MAResult[] fastEma) {
+    private void calculateChaikinOscillatorValues(SimpleIndicatorResult[] slowEma, SimpleIndicatorResult[] fastEma) {
         IntStream.range(0, result.length)
                 .forEach(idx -> result[idx] = calculateChaikinOscillatorValue(slowEma, fastEma, idx));
     }
 
-    private COResult calculateChaikinOscillatorValue(MAResult[] slowEma, MAResult[] fastEma, int currentIndex) {
+    private COResult calculateChaikinOscillatorValue(SimpleIndicatorResult[] slowEma, SimpleIndicatorResult[] fastEma, int currentIndex) {
         return new COResult(originalData[currentIndex].getTickTime(),
                 calculateDifference(slowEma[currentIndex].getIndicatorValue(), fastEma[currentIndex].getIndicatorValue()));
     }

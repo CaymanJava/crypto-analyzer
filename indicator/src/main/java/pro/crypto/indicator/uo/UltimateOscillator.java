@@ -4,6 +4,7 @@ import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.TrueRangeCalculator;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -25,7 +26,8 @@ public class UltimateOscillator implements Indicator<UOResult> {
 
     private UOResult[] result;
 
-    public UltimateOscillator(UORequest request) {
+    public UltimateOscillator(IndicatorRequest creationRequest) {
+        UORequest request = (UORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.shortPeriod = request.getShortPeriod();
         this.middlePeriod = request.getMiddlePeriod();

@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -299,7 +300,7 @@ public class KnowSureThingTest {
                 .build()).getResult();
     }
 
-    private KSTRequest buildRequest() {
+    private IndicatorRequest buildRequest() {
         return KSTRequest.builder()
                 .originalData(originalData)
                 .priceType(CLOSE)

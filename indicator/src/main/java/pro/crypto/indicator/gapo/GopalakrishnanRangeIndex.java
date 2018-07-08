@@ -4,6 +4,7 @@ import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MinMaxFinder;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -22,7 +23,8 @@ public class GopalakrishnanRangeIndex implements Indicator<GAPOResult> {
 
     private GAPOResult[] result;
 
-    public GopalakrishnanRangeIndex(GAPORequest request) {
+    public GopalakrishnanRangeIndex(IndicatorRequest creationRequest) {
+        GAPORequest request = (GAPORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();

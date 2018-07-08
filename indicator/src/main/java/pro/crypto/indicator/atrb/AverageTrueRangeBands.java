@@ -3,11 +3,12 @@ package pro.crypto.indicator.atrb;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceExtractor;
-import pro.crypto.indicator.atr.ATRResult;
+import pro.crypto.indicator.atr.ATRRequest;
 import pro.crypto.indicator.atr.AverageTrueRange;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.atr.ATRRequest;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -28,7 +29,8 @@ public class AverageTrueRangeBands implements Indicator<ATRBResult> {
 
     private ATRBResult[] result;
 
-    public AverageTrueRangeBands(ATRBRequest request) {
+    public AverageTrueRangeBands(IndicatorRequest creationRequest) {
+        ATRBRequest request = (ATRBRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         this.shift = request.getShift();
@@ -69,11 +71,11 @@ public class AverageTrueRangeBands implements Indicator<ATRBResult> {
         return IndicatorResultExtractor.extract(calculateAverageTrueRange());
     }
 
-    private ATRResult[] calculateAverageTrueRange() {
+    private SimpleIndicatorResult[] calculateAverageTrueRange() {
         return new AverageTrueRange(buildATRRequest()).getResult();
     }
 
-    private ATRRequest buildATRRequest() {
+    private IndicatorRequest buildATRRequest() {
         return ATRRequest.builder()
                 .originalData(originalData)
                 .period(period)

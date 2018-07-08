@@ -4,10 +4,11 @@ import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -26,7 +27,8 @@ public class EaseOfMovement implements Indicator<EOMResult> {
 
     private EOMResult[] result;
 
-    public EaseOfMovement(EOMRequest request) {
+    public EaseOfMovement(IndicatorRequest creationRequest) {
+        EOMRequest request = (EOMRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.movingAverageType = request.getMovingAverageType();
         this.movingAveragePeriod = request.getMovingAveragePeriod();
@@ -111,11 +113,11 @@ public class EaseOfMovement implements Indicator<EOMResult> {
         return smoothedEOMValues;
     }
 
-    private MAResult[] calculateMovingAverage(BigDecimal[] notSmoothedEOMValues) {
+    private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] notSmoothedEOMValues) {
         return MovingAverageFactory.create(buildMARequest(notSmoothedEOMValues)).getResult();
     }
 
-    private MARequest buildMARequest(BigDecimal[] notSmoothedEOMValues) {
+    private IndicatorRequest buildMARequest(BigDecimal[] notSmoothedEOMValues) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(notSmoothedEOMValues))
                 .period(movingAveragePeriod)

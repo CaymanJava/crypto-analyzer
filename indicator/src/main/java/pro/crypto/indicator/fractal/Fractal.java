@@ -3,6 +3,7 @@ package pro.crypto.indicator.fractal;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
@@ -23,8 +24,8 @@ public class Fractal implements Indicator<FractalResult> {
 
     private FractalResult[] result;
 
-    public Fractal(FractalRequest request) {
-        this.originalData = request.getOriginalData();
+    public Fractal(IndicatorRequest creationRequest) {
+        this.originalData = creationRequest.getOriginalData();
         checkIncomingData();
     }
 

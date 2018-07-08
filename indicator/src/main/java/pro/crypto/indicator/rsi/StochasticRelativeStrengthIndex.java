@@ -4,7 +4,9 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MinMaxFinder;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -25,7 +27,8 @@ public class StochasticRelativeStrengthIndex implements Indicator<RSIResult> {
 
     private RSIResult[] result;
 
-    public StochasticRelativeStrengthIndex(StochRSIRequest request) {
+    public StochasticRelativeStrengthIndex(IndicatorRequest creationRequest) {
+        StochRSIRequest request = (StochRSIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.movingAverageType = request.getMovingAverageType();
         this.rsiPeriod = request.getRsiPeriod();
@@ -65,11 +68,11 @@ public class StochasticRelativeStrengthIndex implements Indicator<RSIResult> {
         return IndicatorResultExtractor.extract(calculateRelativeStrengthIndex());
     }
 
-    private RSIResult[] calculateRelativeStrengthIndex() {
+    private SimpleIndicatorResult[] calculateRelativeStrengthIndex() {
         return new RelativeStrengthIndex(buildRSIRequest()).getResult();
     }
 
-    private RSIRequest buildRSIRequest() {
+    private IndicatorRequest buildRSIRequest() {
         return RSIRequest.builder()
                 .originalData(originalData)
                 .movingAverageType(movingAverageType)

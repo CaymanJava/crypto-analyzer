@@ -5,10 +5,11 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.TypicalPriceCalculator;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -29,7 +30,8 @@ public class KlingerVolumeOscillator implements Indicator<KVOResult> {
 
     private KVOResult[] result;
 
-    public KlingerVolumeOscillator(KVORequest request) {
+    public KlingerVolumeOscillator(IndicatorRequest creationRequest) {
+        KVORequest request = (KVORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.shortPeriod = request.getShortPeriod();
         this.longPeriod = request.getLongPeriod();
@@ -115,11 +117,11 @@ public class KlingerVolumeOscillator implements Indicator<KVOResult> {
         return result;
     }
 
-    private MAResult[] calculateMovingAverage(BigDecimal[] values, int period) {
+    private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] values, int period) {
         return MovingAverageFactory.create(buildMARequest(values, period)).getResult();
     }
 
-    private MARequest buildMARequest(BigDecimal[] values, int period) {
+    private IndicatorRequest buildMARequest(BigDecimal[] values, int period) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(values))
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)

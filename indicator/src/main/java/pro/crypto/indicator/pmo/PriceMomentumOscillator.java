@@ -4,13 +4,13 @@ import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.indicator.roc.ROCRequest;
-import pro.crypto.indicator.roc.ROCResult;
 import pro.crypto.indicator.roc.RangeOfChange;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -36,7 +36,8 @@ public class PriceMomentumOscillator implements Indicator<PMOResult> {
 
     private PMOResult[] result;
 
-    public PriceMomentumOscillator(PMORequest request) {
+    public PriceMomentumOscillator(IndicatorRequest creationRequest) {
+        PMORequest request = (PMORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.priceType = request.getPriceType();
         this.smoothingPeriod = request.getSmoothingPeriod();
@@ -85,11 +86,11 @@ public class PriceMomentumOscillator implements Indicator<PMOResult> {
         return IndicatorResultExtractor.extract(calculateRangeOfChange());
     }
 
-    private ROCResult[] calculateRangeOfChange() {
+    private SimpleIndicatorResult[] calculateRangeOfChange() {
         return new RangeOfChange(buildROCRequest()).getResult();
     }
 
-    private ROCRequest buildROCRequest() {
+    private IndicatorRequest buildROCRequest() {
         return ROCRequest.builder()
                 .originalData(originalData)
                 .priceType(priceType)
@@ -143,11 +144,11 @@ public class PriceMomentumOscillator implements Indicator<PMOResult> {
         return MathHelper.divide(new BigDecimal(2), new BigDecimal(period));
     }
 
-    private MAResult[] calculateExponentialMovingAverage(BigDecimal[] prices, BigDecimal alphaCoefficient, int period) {
+    private SimpleIndicatorResult[] calculateExponentialMovingAverage(BigDecimal[] prices, BigDecimal alphaCoefficient, int period) {
         return MovingAverageFactory.create(buildEMARequest(prices, alphaCoefficient, period)).getResult();
     }
 
-    private MARequest buildEMARequest(BigDecimal[] values, BigDecimal alphaCoefficient, int period) {
+    private IndicatorRequest buildEMARequest(BigDecimal[] values, BigDecimal alphaCoefficient, int period) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(values))
                 .alphaCoefficient(alphaCoefficient)

@@ -1,13 +1,16 @@
 package pro.crypto.indicator.ma;
 
 import pro.crypto.exception.UnknownTypeException;
+import pro.crypto.model.IndicatorRequest;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
 
 public class MovingAverageFactory {
 
-    public static MovingAverage create(MARequest request) {
+    public static MovingAverage create(IndicatorRequest creationRequest) {
+        MARequest request = (MARequest) creationRequest;
+
         if (isNull(request.getIndicatorType())) {
             throw new UnknownTypeException(format("Unknown moving average type {type: {%s}}", request.getIndicatorType()));
         }

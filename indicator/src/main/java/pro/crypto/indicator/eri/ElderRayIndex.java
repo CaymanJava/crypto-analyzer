@@ -3,10 +3,11 @@ package pro.crypto.indicator.eri;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -25,7 +26,8 @@ public class ElderRayIndex implements Indicator<ERIResult> {
 
     private ERIResult[] result;
 
-    public ElderRayIndex(ERIRequest request) {
+    public ElderRayIndex(IndicatorRequest creationRequest) {
+        ERIRequest request = (ERIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();
@@ -61,11 +63,11 @@ public class ElderRayIndex implements Indicator<ERIResult> {
         return IndicatorResultExtractor.extract(calculateExponentialMovingAverage());
     }
 
-    private MAResult[] calculateExponentialMovingAverage() {
+    private SimpleIndicatorResult[] calculateExponentialMovingAverage() {
         return MovingAverageFactory.create(buildMARequest()).getResult();
     }
 
-    private MARequest buildMARequest() {
+    private IndicatorRequest buildMARequest() {
         return MARequest.builder()
                 .originalData(originalData)
                 .period(period)

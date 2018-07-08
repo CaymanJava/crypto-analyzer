@@ -5,6 +5,7 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
@@ -24,7 +25,8 @@ public class QuickStick implements Indicator<QSResult> {
 
     private QSResult[] result;
 
-    public QuickStick(QSRequest request) {
+    public QuickStick(IndicatorRequest creationRequest) {
+        QSRequest request = (QSRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.movingAverageType = request.getMovingAverageType();
         this.period = request.getPeriod();
@@ -76,7 +78,7 @@ public class QuickStick implements Indicator<QSResult> {
         return MovingAverageFactory.create(buildMARequest(closeOpenDifference)).getResult();
     }
 
-    private MARequest buildMARequest(BigDecimal[] closeOpenDifference) {
+    private IndicatorRequest buildMARequest(BigDecimal[] closeOpenDifference) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(closeOpenDifference))
                 .period(period)

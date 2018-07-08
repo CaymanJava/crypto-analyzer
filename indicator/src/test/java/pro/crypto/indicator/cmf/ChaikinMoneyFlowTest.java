@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -26,7 +27,7 @@ public class ChaikinMoneyFlowTest {
 
     @Test
     public void testCMFTwentyOneDaysPeriod() {
-        CMFResult[] result = new ChaikinMoneyFlow(createRequest()).getResult();
+        CMFResult[] result = new ChaikinMoneyFlow(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[10].getIndicatorValue());
@@ -83,8 +84,11 @@ public class ChaikinMoneyFlowTest {
                 .build()).getResult();
     }
 
-    private CMFRequest createRequest() {
-        return new CMFRequest(originalData, 21);
+    private IndicatorRequest buildRequest() {
+        return CMFRequest.builder()
+                .originalData(originalData)
+                .period(21)
+                .build();
     }
 
 }

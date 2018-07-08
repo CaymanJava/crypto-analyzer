@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 import pro.crypto.model.tick.TimeFrame;
 
@@ -11,7 +12,7 @@ import pro.crypto.model.tick.TimeFrame;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AlligatorRequest {
+public class AlligatorRequest implements IndicatorRequest {
 
     private Tick[] originalData;
 

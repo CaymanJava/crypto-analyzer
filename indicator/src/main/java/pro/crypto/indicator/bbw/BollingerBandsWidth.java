@@ -4,6 +4,7 @@ import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.bb.BollingerBands;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.indicator.bb.BBRequest;
 import pro.crypto.indicator.bb.BBResult;
@@ -29,7 +30,8 @@ public class BollingerBandsWidth implements Indicator<BBWResult> {
 
     private BBWResult[] result;
 
-    public BollingerBandsWidth(BBWRequest request) {
+    public BollingerBandsWidth(IndicatorRequest creationRequest) {
+        BBWRequest request = (BBWRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         this.priceType = request.getPriceType();
@@ -76,10 +78,10 @@ public class BollingerBandsWidth implements Indicator<BBWResult> {
     }
 
     private BBResult[] calculateBollingerBands() {
-        return new BollingerBands(buildBBRequest()).getResult();
+        return new BollingerBands(buildRequest()).getResult();
     }
 
-    private BBRequest buildBBRequest() {
+    private IndicatorRequest buildRequest() {
         return BBRequest.builder()
                 .originalData(originalData)
                 .period(period)

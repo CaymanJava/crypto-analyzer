@@ -5,6 +5,7 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.indicator.roc.RangeOfChange;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.roc.ROCRequest;
@@ -28,7 +29,8 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
 
     private TRIXResult[] result;
 
-    public TripleExponentialMovingAverage(TRIXRequest request) {
+    public TripleExponentialMovingAverage(IndicatorRequest creationRequest) {
+        TRIXRequest request = (TRIXRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();
@@ -79,7 +81,7 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
         return IndicatorResultExtractor.extract(new RangeOfChange(buildROCRequest(tripleEMA)).getResult());
     }
 
-    private ROCRequest buildROCRequest(BigDecimal[] tripleEMA) {
+    private IndicatorRequest buildROCRequest(BigDecimal[] tripleEMA) {
         return ROCRequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(tripleEMA))
                 .period(1)
@@ -93,7 +95,7 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
                 .getResult());
     }
 
-    private MARequest buildMARequest(Tick[] data, int period) {
+    private IndicatorRequest buildMARequest(Tick[] data, int period) {
         return MARequest.builder()
                 .originalData(data)
                 .period(period)

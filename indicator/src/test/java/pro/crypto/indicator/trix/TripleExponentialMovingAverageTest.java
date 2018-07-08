@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -27,7 +28,7 @@ public class TripleExponentialMovingAverageTest {
 
     @Test
     public void testTRIXWithPeriodEighteen() {
-        TRIXResult[] result = new TripleExponentialMovingAverage(buildTRIXRequest(18)).getResult();
+        TRIXResult[] result = new TripleExponentialMovingAverage(buildRequest(18)).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[0].getSignalLineValue());
@@ -54,7 +55,7 @@ public class TripleExponentialMovingAverageTest {
 
     @Test
     public void testTRIXWithPeriodFourteen() {
-        TRIXResult[] result = new TripleExponentialMovingAverage(buildTRIXRequest(14)).getResult();
+        TRIXResult[] result = new TripleExponentialMovingAverage(buildRequest(14)).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[0].getSignalLineValue());
@@ -120,7 +121,7 @@ public class TripleExponentialMovingAverageTest {
                 .build()).getResult();
     }
 
-    private TRIXRequest buildTRIXRequest(int period) {
+    private IndicatorRequest buildRequest(int period) {
         return TRIXRequest.builder()
                 .originalData(originalData)
                 .period(period)

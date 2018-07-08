@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -104,7 +105,7 @@ public class ModifiedMovingAverageTest {
                 .build()).getResult();
     }
 
-    private MARequest buildRequest() {
+    private IndicatorRequest buildRequest() {
         return MARequest.builder()
                 .indicatorType(MODIFIED_MOVING_AVERAGE)
                 .originalData(originalData)

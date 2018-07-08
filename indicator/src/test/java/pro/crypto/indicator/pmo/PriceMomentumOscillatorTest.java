@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -165,7 +166,7 @@ public class PriceMomentumOscillatorTest {
                 .build()).getResult();
     }
 
-    private PMORequest buildRequest(int smoothingPeriod, int doubleSmoothingPeriod, int signalLinePeriod) {
+    private IndicatorRequest buildRequest(int smoothingPeriod, int doubleSmoothingPeriod, int signalLinePeriod) {
         return PMORequest.builder()
                 .originalData(originalData)
                 .priceType(CLOSE)

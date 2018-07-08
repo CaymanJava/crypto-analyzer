@@ -3,11 +3,12 @@ package pro.crypto.indicator.env;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
+import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverage;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -30,7 +31,8 @@ public class MovingAverageEnvelopes implements Indicator<ENVResult> {
 
     private ENVResult[] result;
 
-    public MovingAverageEnvelopes(ENVRequest request) {
+    public MovingAverageEnvelopes(IndicatorRequest creationRequest) {
+        ENVRequest request = (ENVRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.movingAverageType = isNull(request.getMovingAverageType()) ? SIMPLE_MOVING_AVERAGE : request.getMovingAverageType();
         this.movingAveragePeriod = request.getMovingAveragePeriod();

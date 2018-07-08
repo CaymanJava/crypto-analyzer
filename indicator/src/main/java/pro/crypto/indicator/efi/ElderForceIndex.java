@@ -2,10 +2,11 @@ package pro.crypto.indicator.efi;
 
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -24,7 +25,8 @@ public class ElderForceIndex implements Indicator<EFIResult> {
 
     private EFIResult[] result;
 
-    public ElderForceIndex(EFIRequest request) {
+    public ElderForceIndex(IndicatorRequest creationRequest) {
+        EFIRequest request = (EFIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();
@@ -83,7 +85,7 @@ public class ElderForceIndex implements Indicator<EFIResult> {
         return IndicatorResultExtractor.extract(MovingAverageFactory.create(buildMARequest(forceIndexValues)).getResult());
     }
 
-    private MARequest buildMARequest(BigDecimal[] forceIndexValues) {
+    private IndicatorRequest buildMARequest(BigDecimal[] forceIndexValues) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(forceIndexValues))
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)

@@ -21,7 +21,7 @@ public class SinglePivotPointsTest {
         expectedException.expectMessage("Unknown Pivot Points type {type: {SIMPLE_MOVING_AVERAGE}}");
         PivotPointFactory.create(PivotRequest.builder()
                 .indicatorType(SIMPLE_MOVING_AVERAGE)
-                .originalData(new Tick())
+                .originalData(new Tick[100])
                 .build());
     }
 
@@ -31,7 +31,7 @@ public class SinglePivotPointsTest {
         expectedException.expectMessage("Incoming tick data is null {indicator: {FIBONACCI_PIVOT_POINTS}}");
         PivotPointFactory.create(PivotRequest.builder()
                 .indicatorType(FIBONACCI_PIVOT_POINTS)
-                .originalData(null)
+                .originalData(new Tick[1])
                 .build());
     }
 

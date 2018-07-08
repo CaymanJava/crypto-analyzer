@@ -7,6 +7,7 @@ import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.indicator.atr.ATRRequest;
 import pro.crypto.model.tick.PriceType;
@@ -29,7 +30,8 @@ public class KeltnerChannel implements Indicator<KELTResult> {
 
     private KELTResult[] result;
 
-    public KeltnerChannel(KELTRequest request) {
+    public KeltnerChannel(IndicatorRequest creationRequest) {
+        KELTRequest request = (KELTRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.priceType = request.getPriceType();
         this.movingAverageType = request.getMovingAverageType();
@@ -47,8 +49,8 @@ public class KeltnerChannel implements Indicator<KELTResult> {
     @Override
     public void calculate() {
         result = new KELTResult[originalData.length];
-        MAResult[] movingAverageResult = MovingAverageFactory.create(buildMovingAverageRequest()).getResult();
-        ATRResult[] averageTrueRangeResult = new AverageTrueRange(buildAverageTrueRangeRequest()).getResult();
+        MAResult[] movingAverageResult = MovingAverageFactory.create(buildMARequest()).getResult();
+        ATRResult[] averageTrueRangeResult = new AverageTrueRange(buildATRRequest()).getResult();
         calculateKeltnerChannelValues(movingAverageResult, averageTrueRangeResult);
     }
 
@@ -71,7 +73,7 @@ public class KeltnerChannel implements Indicator<KELTResult> {
         checkMovingAverageType(movingAverageType);
     }
 
-    private MARequest buildMovingAverageRequest() {
+    private IndicatorRequest buildMARequest() {
         return MARequest.builder()
                 .originalData(originalData)
                 .period(movingAveragePeriod)
@@ -80,7 +82,7 @@ public class KeltnerChannel implements Indicator<KELTResult> {
                 .build();
     }
 
-    private ATRRequest buildAverageTrueRangeRequest() {
+    private IndicatorRequest buildATRRequest() {
         return ATRRequest.builder()
                 .originalData(originalData)
                 .period(averageTrueRangePeriod)

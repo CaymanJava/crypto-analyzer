@@ -4,6 +4,7 @@ import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
@@ -26,7 +27,8 @@ public class LinearRegression implements Indicator<LRResult> {
 
     private LRResult[] result;
 
-    public LinearRegression(LRRequest request) {
+    public LinearRegression(IndicatorRequest creationRequest) {
+        LRRequest request = (LRRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.averageCalculation = request.isAverageCalculation();
         this.priceType = request.getPriceType();

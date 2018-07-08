@@ -2,6 +2,7 @@ package pro.crypto.indicator.pvt;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
@@ -19,7 +20,8 @@ public class PriceVolumeTrend implements Indicator<PVTResult> {
 
     private PVTResult[] result;
 
-    public PriceVolumeTrend(PVTRequest request) {
+    public PriceVolumeTrend(IndicatorRequest creationRequest) {
+        PVTRequest request = (PVTRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.priceType = request.getPriceType();
         checkIncomingData();

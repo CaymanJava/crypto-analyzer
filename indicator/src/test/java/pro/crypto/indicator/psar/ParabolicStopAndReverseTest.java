@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -26,7 +27,7 @@ public class ParabolicStopAndReverseTest {
 
     @Test
     public void testParabolicSAR() {
-        PSARResult[] result = new ParabolicStopAndReverse(buildSARRequest()).getResult();
+        PSARResult[] result = new ParabolicStopAndReverse(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertEquals(result[1].getTime(), of(2018, 2, 26, 0, 0));
@@ -101,7 +102,7 @@ public class ParabolicStopAndReverseTest {
                 .build()).getResult();
     }
 
-    private PSARRequest buildSARRequest() {
+    private IndicatorRequest buildRequest() {
         return PSARRequest.builder()
                 .originalData(originalData)
                 .minAccelerationFactor(toBigDecimal(0.02))

@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -124,7 +125,7 @@ public class LinearRegressionTest {
                 .build()).getResult();
     }
 
-    private LRRequest buildRequest(boolean averageCalculation) {
+    private IndicatorRequest buildRequest(boolean averageCalculation) {
         return LRRequest.builder()
                 .originalData(originalData)
                 .period(5)

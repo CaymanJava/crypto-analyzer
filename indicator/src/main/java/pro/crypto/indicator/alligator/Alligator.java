@@ -3,12 +3,9 @@ package pro.crypto.indicator.alligator;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MedianPriceCalculator;
-import pro.crypto.indicator.ma.MAResult;
-import pro.crypto.indicator.ma.MovingAverageFactory;
-import pro.crypto.model.Indicator;
-import pro.crypto.model.IndicatorType;
-import pro.crypto.model.Shift;
 import pro.crypto.indicator.ma.MARequest;
+import pro.crypto.indicator.ma.MovingAverageFactory;
+import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
 import pro.crypto.model.tick.TimeFrame;
 
@@ -35,7 +32,8 @@ public class Alligator implements Indicator<AlligatorResult> {
 
     private AlligatorResult[] result;
 
-    public Alligator(AlligatorRequest request) {
+    public Alligator(IndicatorRequest creationRequest) {
+        AlligatorRequest request = (AlligatorRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.jawPeriod = request.getJawPeriod();
         this.jawOffset = request.getJawOffset();
@@ -99,11 +97,11 @@ public class Alligator implements Indicator<AlligatorResult> {
         return IndicatorResultExtractor.extract(calculateMovingAverage(medianPrices, period, displaced));
     }
 
-    private MAResult[] calculateMovingAverage(BigDecimal[] medianPrices, int period, int displaced) {
+    private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] medianPrices, int period, int displaced) {
         return MovingAverageFactory.create(buildMARequest(medianPrices, period, displaced)).getResult();
     }
 
-    private MARequest buildMARequest(BigDecimal[] medianPrices, int period, int displaced) {
+    private IndicatorRequest buildMARequest(BigDecimal[] medianPrices, int period, int displaced) {
         return MARequest.builder()
                 .originalData(createFakeTicks(medianPrices))
                 .priceType(CLOSE)

@@ -4,10 +4,11 @@ import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -26,7 +27,8 @@ public abstract class VolumeIndex implements Indicator<VIResult> {
 
     VIResult[] result;
 
-    VolumeIndex(VIRequest request) {
+    VolumeIndex(IndicatorRequest creationRequest) {
+        VIRequest request = (VIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         this.movingAverageType = request.getMovingAverageType();
@@ -96,11 +98,11 @@ public abstract class VolumeIndex implements Indicator<VIResult> {
         return MathHelper.divide(originalData[currentIndex].getPriceByType(priceType), originalData[currentIndex - 1].getPriceByType(priceType));
     }
 
-    private MAResult[] calculateMovingAverage(BigDecimal[] negativeVolumeIndexes) {
+    private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] negativeVolumeIndexes) {
         return MovingAverageFactory.create(buildMARequest(negativeVolumeIndexes)).getResult();
     }
 
-    private MARequest buildMARequest(BigDecimal[] negativeVolumeIndexes) {
+    private IndicatorRequest buildMARequest(BigDecimal[] negativeVolumeIndexes) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(negativeVolumeIndexes))
                 .priceType(CLOSE)

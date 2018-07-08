@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -11,9 +12,9 @@ import pro.crypto.model.tick.Tick;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PivotRequest {
+public class PivotRequest implements IndicatorRequest {
 
-    private Tick originalData;
+    private Tick[] originalData;
 
     private IndicatorType indicatorType;
 

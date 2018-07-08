@@ -3,9 +3,10 @@ package pro.crypto.indicator.ma;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.cmo.CMORequest;
-import pro.crypto.indicator.cmo.CMOResult;
 import pro.crypto.indicator.cmo.ChandeMomentumOscillator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -47,11 +48,11 @@ public class VariableIndexDynamicAverage extends MovingAverage {
                 .toArray(BigDecimal[]::new);
     }
 
-    private CMOResult[] calculateChandeMomentumOscillator() {
+    private SimpleIndicatorResult[] calculateChandeMomentumOscillator() {
         return new ChandeMomentumOscillator(buildCMORequest()).getResult();
     }
 
-    private CMORequest buildCMORequest() {
+    private IndicatorRequest buildCMORequest() {
         return CMORequest.builder()
                 .originalData(originalData)
                 .period(period)

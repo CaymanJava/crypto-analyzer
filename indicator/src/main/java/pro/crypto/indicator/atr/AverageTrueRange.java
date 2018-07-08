@@ -3,6 +3,7 @@ package pro.crypto.indicator.atr;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.TrueRangeCalculator;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -20,7 +21,8 @@ public class AverageTrueRange implements Indicator<ATRResult> {
 
     private ATRResult[] result;
 
-    public AverageTrueRange(ATRRequest request) {
+    public AverageTrueRange(IndicatorRequest creationRequest) {
+        ATRRequest request = (ATRRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();

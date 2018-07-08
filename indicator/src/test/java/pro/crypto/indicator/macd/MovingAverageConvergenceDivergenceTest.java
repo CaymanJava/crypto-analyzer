@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithClosePriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -27,7 +28,7 @@ public class MovingAverageConvergenceDivergenceTest {
     }
 
     @Test
-    public void testMACDWithRecommendedPeriods() {
+    public void testMovingAverageConvergenceDivergence() {
         MACDResult[] result = new MovingAverageConvergenceDivergence(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
@@ -170,7 +171,7 @@ public class MovingAverageConvergenceDivergenceTest {
                 .build()).getResult();
     }
 
-    private MACDRequest buildRequest() {
+    private IndicatorRequest buildRequest() {
         return MACDRequest.builder()
                 .originalData(originalData)
                 .slowPeriod(12)

@@ -8,6 +8,7 @@ import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -29,7 +30,8 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
 
     private ADXResult[] result;
 
-    public AverageDirectionalMovementIndex(ADXRequest request) {
+    public AverageDirectionalMovementIndex(IndicatorRequest creationRequest) {
+        ADXRequest request = (ADXRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();
@@ -184,7 +186,7 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
                 : null;
     }
 
-    private MARequest buildMARequest(BigDecimal[] ratios) {
+    private IndicatorRequest buildMARequest(BigDecimal[] ratios) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(ratios))
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)

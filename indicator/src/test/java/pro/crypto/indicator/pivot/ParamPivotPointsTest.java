@@ -37,7 +37,7 @@ public class ParamPivotPointsTest {
         PivotTestHelper(int position, IndicatorType type, BigDecimal pivot,
                         BigDecimal firstResistance, BigDecimal secondResistance, BigDecimal thirdResistance, BigDecimal fourthResistance,
                         BigDecimal firstSupport, BigDecimal secondSupport, BigDecimal thirdSupport, BigDecimal fourthSupport) {
-            this.actualResult = PivotPointFactory.create(new PivotRequest(ORIGINAL_DATA[position], type)).getResult()[0];
+            this.actualResult = PivotPointFactory.create(new PivotRequest(new Tick[]{ORIGINAL_DATA[position]}, type)).getResult()[0];
             this.expectedResult = new PivotResult(ORIGINAL_DATA[position].getTickTime(), pivot,
                     firstResistance, secondResistance, thirdResistance, fourthResistance,
                     firstSupport, secondSupport, thirdSupport, fourthSupport);

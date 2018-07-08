@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -27,7 +28,7 @@ public class RangeOfChangeTest {
 
     @Test
     public void testRangeOfChangeWithPeriodFourteen() {
-        ROCResult[] result = new RangeOfChange(buildROCRequest()).getResult();
+        ROCResult[] result = new RangeOfChange(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[8].getIndicatorValue());
@@ -100,7 +101,7 @@ public class RangeOfChangeTest {
                 .build()).getResult();
     }
 
-    private ROCRequest buildROCRequest() {
+    private IndicatorRequest buildRequest() {
         return ROCRequest.builder()
                 .originalData(originalData)
                 .period(14)

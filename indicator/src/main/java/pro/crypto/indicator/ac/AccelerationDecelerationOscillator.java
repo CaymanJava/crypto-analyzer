@@ -4,14 +4,14 @@ import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IncreasedQualifier;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
-import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
-import pro.crypto.indicator.ma.MovingAverageFactory;
-import pro.crypto.indicator.ao.AwesomeOscillator;
-import pro.crypto.model.Indicator;
-import pro.crypto.model.IndicatorType;
 import pro.crypto.indicator.ao.AORequest;
-import pro.crypto.indicator.ao.AOResult;
+import pro.crypto.indicator.ao.AwesomeOscillator;
+import pro.crypto.indicator.ma.MARequest;
+import pro.crypto.indicator.ma.MovingAverageFactory;
+import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -32,7 +32,8 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
 
     private ACResult[] result;
 
-    public AccelerationDecelerationOscillator(ACRequest request) {
+    public AccelerationDecelerationOscillator(IndicatorRequest creationRequest) {
+        ACRequest request = (ACRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.slowPeriod = request.getSlowPeriod();
         this.fastPeriod = request.getFastPeriod();
@@ -76,11 +77,11 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
         return IndicatorResultExtractor.extract(calculateAwesomeOscillator());
     }
 
-    private AOResult[] calculateAwesomeOscillator() {
+    private SimpleIndicatorResult[] calculateAwesomeOscillator() {
         return new AwesomeOscillator(buildAORequest()).getResult();
     }
 
-    private AORequest buildAORequest() {
+    private IndicatorRequest buildAORequest() {
         return AORequest.builder()
                 .originalData(originalData)
                 .slowPeriod(slowPeriod)
@@ -100,12 +101,12 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
         return result;
     }
 
-    private MAResult[] calculateMovingAverageValues(BigDecimal[] awesomeOscillatorValues) {
+    private SimpleIndicatorResult[] calculateMovingAverageValues(BigDecimal[] awesomeOscillatorValues) {
         return MovingAverageFactory.create(buildMARequest(awesomeOscillatorValues))
                 .getResult();
     }
 
-    private MARequest buildMARequest(BigDecimal[] awesomeOscillatorValues) {
+    private IndicatorRequest buildMARequest(BigDecimal[] awesomeOscillatorValues) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(awesomeOscillatorValues))
                 .priceType(CLOSE)

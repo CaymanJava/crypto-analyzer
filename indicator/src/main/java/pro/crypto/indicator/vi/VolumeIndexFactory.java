@@ -1,13 +1,16 @@
 package pro.crypto.indicator.vi;
 
 import pro.crypto.exception.UnknownTypeException;
+import pro.crypto.model.IndicatorRequest;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
 
 public class VolumeIndexFactory {
 
-    public static VolumeIndex create(VIRequest request) {
+    public static VolumeIndex create(IndicatorRequest creationRequest) {
+        VIRequest request = (VIRequest) creationRequest;
+
         if (isNull(request.getVolumeIndexType())) {
             throw new UnknownTypeException(format("Unknown volume index type {type: {%s}}", request.getVolumeIndexType()));
         }

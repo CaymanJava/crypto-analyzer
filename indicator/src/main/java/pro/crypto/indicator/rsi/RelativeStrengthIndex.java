@@ -1,12 +1,12 @@
 package pro.crypto.indicator.rsi;
 
-import pro.crypto.helper.*;
+import pro.crypto.helper.FakeTicksCreator;
+import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.MathHelper;
+import pro.crypto.helper.PriceDifferencesCalculator;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
-import pro.crypto.model.BigDecimalTuple;
-import pro.crypto.model.Indicator;
-import pro.crypto.model.IndicatorType;
+import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -27,7 +27,8 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
 
     private RSIResult[] result;
 
-    public RelativeStrengthIndex(RSIRequest request) {
+    public RelativeStrengthIndex(IndicatorRequest creationRequest) {
+        RSIRequest request = (RSIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.movingAverageType = request.getMovingAverageType();
         this.period = request.getPeriod();
@@ -77,7 +78,7 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
         return IndicatorResultExtractor.extract(calculateMovingAverage(fakeTicks));
     }
 
-    private MAResult[] calculateMovingAverage(Tick[] faceTicks) {
+    private SimpleIndicatorResult[] calculateMovingAverage(Tick[] faceTicks) {
         return MovingAverageFactory.create(buildMovingAverageRequest(faceTicks)).getResult();
     }
 
@@ -85,7 +86,7 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
         return FakeTicksCreator.createWithCloseOnly(positivePriceDifferences);
     }
 
-    private MARequest buildMovingAverageRequest(Tick[] ticks) {
+    private IndicatorRequest buildMovingAverageRequest(Tick[] ticks) {
         return MARequest.builder()
                 .originalData(ticks)
                 .indicatorType(movingAverageType)

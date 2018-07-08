@@ -1,14 +1,15 @@
 package pro.crypto.indicator.bb;
 
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.indicator.ma.MovingAverageFactory;
-import pro.crypto.indicator.stdev.StandardDeviation;
-import pro.crypto.model.Indicator;
-import pro.crypto.model.IndicatorType;
 import pro.crypto.indicator.ma.MARequest;
+import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.indicator.stdev.StDevRequest;
+import pro.crypto.indicator.stdev.StandardDeviation;
+import pro.crypto.model.BigDecimalTuple;
+import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -33,7 +34,8 @@ public class BollingerBands implements Indicator<BBResult> {
 
     private BBResult[] result;
 
-    public BollingerBands(BBRequest request) {
+    public BollingerBands(IndicatorRequest creationRequest) {
+        BBRequest request = (BBRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         this.priceType = request.getPriceType();
@@ -84,7 +86,7 @@ public class BollingerBands implements Indicator<BBResult> {
         return IndicatorResultExtractor.extract(MovingAverageFactory.create(buildSMARequest()).getResult());
     }
 
-    private MARequest buildSMARequest() {
+    private IndicatorRequest buildSMARequest() {
         return MARequest.builder()
                 .originalData(originalData)
                 .period(period)
@@ -102,7 +104,7 @@ public class BollingerBands implements Indicator<BBResult> {
         return IndicatorResultExtractor.extract(new StandardDeviation(buildStDevRequest()).getResult());
     }
 
-    private StDevRequest buildStDevRequest() {
+    private IndicatorRequest buildStDevRequest() {
         return StDevRequest.builder()
                 .originalData(originalData)
                 .priceType(priceType)

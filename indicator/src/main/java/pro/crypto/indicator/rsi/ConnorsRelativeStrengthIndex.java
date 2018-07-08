@@ -4,6 +4,7 @@ import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -25,7 +26,8 @@ public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
 
     private RSIResult[] result;
 
-    public ConnorsRelativeStrengthIndex(CRSIRequest request) {
+    public ConnorsRelativeStrengthIndex(IndicatorRequest creationRequest) {
+        CRSIRequest request = (CRSIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.movingAverageType = request.getMovingAverageType();
         this.simpleRsiPeriod = request.getSimpleRsiPeriod();
@@ -110,7 +112,7 @@ public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
         return previousTrendDurationValue.subtract(BigDecimal.ONE);
     }
 
-    private RSIRequest buildRSIRequest(Tick[] data, int period) {
+    private IndicatorRequest buildRSIRequest(Tick[] data, int period) {
         return RSIRequest.builder()
                 .originalData(data)
                 .movingAverageType(movingAverageType)

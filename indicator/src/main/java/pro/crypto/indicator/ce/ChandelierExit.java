@@ -4,11 +4,12 @@ import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MinMaxFinder;
 import pro.crypto.helper.PriceExtractor;
+import pro.crypto.indicator.atr.ATRRequest;
 import pro.crypto.indicator.atr.AverageTrueRange;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.atr.ATRRequest;
-import pro.crypto.indicator.atr.ATRResult;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -31,7 +32,8 @@ public class ChandelierExit implements Indicator<CEResult> {
 
     private CEResult[] result;
 
-    public ChandelierExit(CERequest request) {
+    public ChandelierExit(IndicatorRequest creationRequest) {
+        CERequest request = (CERequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         this.factor = request.getFactor();
@@ -78,11 +80,11 @@ public class ChandelierExit implements Indicator<CEResult> {
         return IndicatorResultExtractor.extract(calculateAverageTrueRange());
     }
 
-    private ATRResult[] calculateAverageTrueRange() {
+    private SimpleIndicatorResult[] calculateAverageTrueRange() {
         return new AverageTrueRange(buildATRRequest()).getResult();
     }
 
-    private ATRRequest buildATRRequest() {
+    private IndicatorRequest buildATRRequest() {
         return ATRRequest.builder()
                 .originalData(originalData)
                 .period(period)

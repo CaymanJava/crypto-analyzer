@@ -2,11 +2,12 @@ package pro.crypto.indicator.di;
 
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
+import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -26,7 +27,8 @@ public class DisparityIndex implements Indicator<DIResult> {
 
     private DIResult[] result;
 
-    public DisparityIndex(DIRequest request) {
+    public DisparityIndex(IndicatorRequest creationRequest) {
+        DIRequest request = (DIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.movingAverageType = request.getMovingAverageType();
         this.period = request.getPeriod();
@@ -66,11 +68,11 @@ public class DisparityIndex implements Indicator<DIResult> {
         return IndicatorResultExtractor.extract(calculateMovingAverage());
     }
 
-    private MAResult[] calculateMovingAverage() {
+    private SimpleIndicatorResult[] calculateMovingAverage() {
         return MovingAverageFactory.create(buildMARequest()).getResult();
     }
 
-    private MARequest buildMARequest() {
+    private IndicatorRequest buildMARequest() {
         return MARequest.builder()
                 .originalData(originalData)
                 .period(period)

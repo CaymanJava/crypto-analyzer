@@ -3,6 +3,7 @@ package pro.crypto.indicator.ma;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.lr.LRRequest;
 import pro.crypto.indicator.lr.LinearRegression;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
@@ -44,7 +45,7 @@ public class TimeSeriesMovingAverage extends MovingAverage {
         return new LinearRegression(buildLRRequest()).getResult();
     }
 
-    private LRRequest buildLRRequest() {
+    private IndicatorRequest buildLRRequest() {
         return LRRequest.builder()
                 .originalData(originalData)
                 .priceType(priceType)

@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -29,7 +30,7 @@ public class BollingerBandsTest {
 
     @Test
     public void testBollingerBandsWithDefaultParameters() {
-        BBResult[] result = new BollingerBands(buildBBRequest()).getResult();
+        BBResult[] result = new BollingerBands(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getUpperBand());
         assertNull(result[0].getMiddleBand());
@@ -150,7 +151,7 @@ public class BollingerBandsTest {
                 .build()).getResult();
     }
 
-    private BBRequest buildBBRequest() {
+    private IndicatorRequest buildRequest() {
         return BBRequest.builder()
                 .originalData(originalData)
                 .period(20)

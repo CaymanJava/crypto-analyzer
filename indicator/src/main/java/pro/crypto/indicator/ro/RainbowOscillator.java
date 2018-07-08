@@ -5,6 +5,7 @@ import pro.crypto.indicator.rma.RMARequest;
 import pro.crypto.indicator.rma.RMAResult;
 import pro.crypto.indicator.rma.RainbowMovingAverage;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
@@ -39,7 +40,8 @@ public class RainbowOscillator implements Indicator<ROResult> {
 
     private ROResult[] result;
 
-    public RainbowOscillator(RORequest request) {
+    public RainbowOscillator(IndicatorRequest creationRequest) {
+        RORequest request = (RORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.priceType = request.getPriceType();
         this.period = request.getPeriod();
@@ -85,7 +87,7 @@ public class RainbowOscillator implements Indicator<ROResult> {
         rmaResults = new RainbowMovingAverage(buildRMARequest()).getResult();
     }
 
-    private RMARequest buildRMARequest() {
+    private IndicatorRequest buildRMARequest() {
         return RMARequest.builder()
                 .originalData(originalData)
                 .priceType(priceType)

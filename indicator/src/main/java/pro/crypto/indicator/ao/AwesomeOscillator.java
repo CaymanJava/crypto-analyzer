@@ -2,10 +2,11 @@ package pro.crypto.indicator.ao;
 
 import pro.crypto.helper.*;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -25,7 +26,8 @@ public class AwesomeOscillator implements Indicator<AOResult> {
 
     private AOResult[] result;
 
-    public AwesomeOscillator(AORequest request) {
+    public AwesomeOscillator(IndicatorRequest creationRequest) {
+        AORequest request = (AORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.slowPeriod = request.getSlowPeriod();
         this.fastPeriod = request.getFastPeriod();
@@ -72,11 +74,11 @@ public class AwesomeOscillator implements Indicator<AOResult> {
         return IndicatorResultExtractor.extract(calculateSimpleMovingAverage(medianPrices, fastPeriod));
     }
 
-    private MAResult[] calculateSimpleMovingAverage(BigDecimal[] medianPrices, int period) {
+    private SimpleIndicatorResult[] calculateSimpleMovingAverage(BigDecimal[] medianPrices, int period) {
         return MovingAverageFactory.create(buildMARequest(medianPrices, period)).getResult();
     }
 
-    private MARequest buildMARequest(BigDecimal[] medianPrices, int period) {
+    private IndicatorRequest buildMARequest(BigDecimal[] medianPrices, int period) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(medianPrices))
                 .period(period)

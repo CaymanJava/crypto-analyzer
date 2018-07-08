@@ -5,10 +5,11 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.TypicalPriceCalculator;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -27,7 +28,8 @@ public class CommodityChannelIndex implements Indicator<CCIResult> {
 
     private CCIResult[] result;
 
-    public CommodityChannelIndex(CCIRequest request) {
+    public CommodityChannelIndex(IndicatorRequest creationRequest) {
+        CCIRequest request = (CCIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();
@@ -66,11 +68,11 @@ public class CommodityChannelIndex implements Indicator<CCIResult> {
         return IndicatorResultExtractor.extract(calculateMovingAverage(typicalPrices));
     }
 
-    private MAResult[] calculateMovingAverage(BigDecimal[] typicalPrices) {
+    private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] typicalPrices) {
         return MovingAverageFactory.create(buildMovingAverageRequest(typicalPrices)).getResult();
     }
 
-    private MARequest buildMovingAverageRequest(BigDecimal[] typicalPrices) {
+    private IndicatorRequest buildMovingAverageRequest(BigDecimal[] typicalPrices) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(typicalPrices))
                 .indicatorType(SIMPLE_MOVING_AVERAGE)

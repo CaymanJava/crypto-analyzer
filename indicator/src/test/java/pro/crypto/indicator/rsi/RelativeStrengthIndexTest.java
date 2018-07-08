@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -109,7 +110,7 @@ public class RelativeStrengthIndexTest {
                 .build()).getResult();
     }
 
-    private RSIRequest buildRequest(IndicatorType movingAverage) {
+    private IndicatorRequest buildRequest(IndicatorType movingAverage) {
         return RSIRequest.builder()
                 .originalData(originalData)
                 .movingAverageType(movingAverage)

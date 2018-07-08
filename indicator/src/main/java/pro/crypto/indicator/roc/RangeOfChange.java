@@ -2,6 +2,7 @@ package pro.crypto.indicator.roc;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
@@ -20,7 +21,8 @@ public class RangeOfChange implements Indicator<ROCResult> {
 
     private ROCResult[] result;
 
-    public RangeOfChange(ROCRequest request) {
+    public RangeOfChange(IndicatorRequest creationRequest) {
+        ROCRequest request = (ROCRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         this.priceType = request.getPriceType();

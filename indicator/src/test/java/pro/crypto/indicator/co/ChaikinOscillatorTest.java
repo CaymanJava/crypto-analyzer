@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -26,7 +27,7 @@ public class ChaikinOscillatorTest {
 
     @Test
     public void testChaikinOscillatorWithPeriodsThreeAndTen() {
-        COResult[] result = new ChaikinOscillator(buildCORequest(3, 10)).getResult();
+        COResult[] result = new ChaikinOscillator(buildRequest(3, 10)).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[8].getIndicatorValue());
@@ -44,7 +45,7 @@ public class ChaikinOscillatorTest {
 
     @Test
     public void testChaikinOscillatorWithPeriodsSixAndTwenty() {
-        COResult[] result = new ChaikinOscillator(buildCORequest(6, 20)).getResult();
+        COResult[] result = new ChaikinOscillator(buildRequest(6, 20)).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[18].getIndicatorValue());
@@ -111,7 +112,7 @@ public class ChaikinOscillatorTest {
                 .build()).getResult();
     }
 
-    private CORequest buildCORequest(int slowPeriod, int fastPeriod) {
+    private IndicatorRequest buildRequest(int slowPeriod, int fastPeriod) {
         return CORequest.builder()
                 .originalData(originalData)
                 .slowPeriod(slowPeriod)

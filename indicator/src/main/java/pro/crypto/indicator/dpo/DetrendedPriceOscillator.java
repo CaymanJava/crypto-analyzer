@@ -3,10 +3,11 @@ package pro.crypto.indicator.dpo;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -26,7 +27,8 @@ public class DetrendedPriceOscillator implements Indicator<DPOResult> {
 
     private DPOResult[] result;
 
-    public DetrendedPriceOscillator(DPORequest request) {
+    public DetrendedPriceOscillator(IndicatorRequest creationRequest) {
+        DPORequest request = (DPORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         this.movingAverageType = request.getMovingAverageType();
@@ -66,12 +68,12 @@ public class DetrendedPriceOscillator implements Indicator<DPOResult> {
         return IndicatorResultExtractor.extract(calculateMovingAverage());
     }
 
-    private MAResult[] calculateMovingAverage() {
+    private SimpleIndicatorResult[] calculateMovingAverage() {
         return MovingAverageFactory.create(buildMARequest())
                 .getResult();
     }
 
-    private MARequest buildMARequest() {
+    private IndicatorRequest buildMARequest() {
         return MARequest.builder()
                 .originalData(originalData)
                 .period(period)

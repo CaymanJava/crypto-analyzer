@@ -4,11 +4,12 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MinMaxFinder;
 import pro.crypto.helper.PriceExtractor;
-import pro.crypto.indicator.atr.ATRResult;
+import pro.crypto.indicator.atr.ATRRequest;
 import pro.crypto.indicator.atr.AverageTrueRange;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.atr.ATRRequest;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -28,7 +29,8 @@ public class ChoppinessIndex implements Indicator<CHOPResult> {
 
     private CHOPResult[] result;
 
-    public ChoppinessIndex(CHOPRequest request) {
+    public ChoppinessIndex(IndicatorRequest creationRequest) {
+        CHOPRequest request = (CHOPRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();
@@ -79,11 +81,11 @@ public class ChoppinessIndex implements Indicator<CHOPResult> {
         return MathHelper.sum(Arrays.copyOfRange(atrValues, currentIndex - period + 1, currentIndex + 1));
     }
 
-    private ATRResult[] calculateAverageTrueRange() {
+    private SimpleIndicatorResult[] calculateAverageTrueRange() {
         return new AverageTrueRange(buildATRRequest()).getResult();
     }
 
-    private ATRRequest buildATRRequest() {
+    private IndicatorRequest buildATRRequest() {
         return ATRRequest.builder()
                 .originalData(originalData)
                 .period(1)

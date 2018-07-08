@@ -4,10 +4,11 @@ import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -29,7 +30,8 @@ public class PercentagePriceOscillator implements Indicator<PPOResult> {
 
     private PPOResult[] result;
 
-    public PercentagePriceOscillator(PPORequest request) {
+    public PercentagePriceOscillator(IndicatorRequest creationRequest) {
+        PPORequest request = (PPORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.movingAverageType = request.getMovingAverageType();
         this.priceType = request.getPriceType();
@@ -109,11 +111,11 @@ public class PercentagePriceOscillator implements Indicator<PPOResult> {
         return IndicatorResultExtractor.extract(calculateMovingAverageResult(data, period));
     }
 
-    private MAResult[] calculateMovingAverageResult(Tick[] data, int period) {
+    private SimpleIndicatorResult[] calculateMovingAverageResult(Tick[] data, int period) {
         return MovingAverageFactory.create(buildMARequest(data, period)).getResult();
     }
 
-    private MARequest buildMARequest(Tick[] data, int period) {
+    private IndicatorRequest buildMARequest(Tick[] data, int period) {
         return MARequest.builder()
                 .originalData(data)
                 .period(period)

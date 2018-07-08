@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -29,7 +30,7 @@ public class KeltnerChannelTest {
 
     @Test
     public void testKeltnerChannelWithDefaultParameters() {
-        KELTResult[] result = new KeltnerChannel(buildKELTRequest()).getResult();
+        KELTResult[] result = new KeltnerChannel(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
         assertNull(result[0].getBasis());
@@ -187,7 +188,7 @@ public class KeltnerChannelTest {
                 .build()).getResult();
     }
 
-    private KELTRequest buildKELTRequest() {
+    private IndicatorRequest buildRequest() {
         return KELTRequest.builder()
                 .originalData(originalData)
                 .priceType(CLOSE)

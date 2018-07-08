@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -30,7 +31,7 @@ public class PriceVolumeTrendTest {
 
     @Test
     public void testPriceVolumeTrend() {
-        PVTResult[] result = new PriceVolumeTrend(buildSARRequest()).getResult();
+        PVTResult[] result = new PriceVolumeTrend(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
         assertEquals(result[0].getIndicatorValue(), BigDecimal.ZERO);
@@ -57,7 +58,7 @@ public class PriceVolumeTrendTest {
                 .build()).getResult();
     }
 
-    private PVTRequest buildSARRequest() {
+    private IndicatorRequest buildRequest() {
         return PVTRequest.builder()
                 .originalData(originalData)
                 .priceType(CLOSE)

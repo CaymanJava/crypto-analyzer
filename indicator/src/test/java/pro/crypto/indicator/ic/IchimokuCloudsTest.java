@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.IncreasedQuantityTickGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -26,7 +27,7 @@ public class IchimokuCloudsTest {
 
     @Test
     public void testIchimokuCloudsWithDefaultParameters() {
-        ICResult[] result = new IchimokuClouds(buildICRequest()).getResult();
+        ICResult[] result = new IchimokuClouds(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getConversionLineValue());
         assertNull(result[0].getBaseLineValue());
@@ -202,7 +203,7 @@ public class IchimokuCloudsTest {
                 .build()).getResult();
     }
 
-    private ICRequest buildICRequest() {
+    private IndicatorRequest buildRequest() {
         return ICRequest.builder()
                 .originalData(originalData)
                 .conversionLinePeriod(9)

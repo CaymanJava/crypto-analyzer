@@ -4,13 +4,13 @@ import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
-import pro.crypto.indicator.roc.ROCResult;
+import pro.crypto.indicator.roc.ROCRequest;
 import pro.crypto.indicator.roc.RangeOfChange;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.roc.ROCRequest;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -34,7 +34,8 @@ public class CoppockCurve implements Indicator<CCResult> {
 
     private CCResult[] result;
 
-    public CoppockCurve(CCRequest request) {
+    public CoppockCurve(IndicatorRequest creationRequest) {
+        CCRequest request = (CCRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         this.shortROCPeriod = request.getShortROCPeriod();
@@ -95,11 +96,11 @@ public class CoppockCurve implements Indicator<CCResult> {
         return IndicatorResultExtractor.extract(calculateRangeOfChange(shortROCPeriod));
     }
 
-    private ROCResult[] calculateRangeOfChange(int longRocPeriod) {
+    private SimpleIndicatorResult[] calculateRangeOfChange(int longRocPeriod) {
         return new RangeOfChange(buildROCRequest(longRocPeriod)).getResult();
     }
 
-    private ROCRequest buildROCRequest(int longRocPeriod) {
+    private IndicatorRequest buildROCRequest(int longRocPeriod) {
         return ROCRequest.builder()
                 .originalData(originalData)
                 .period(longRocPeriod)
@@ -132,11 +133,11 @@ public class CoppockCurve implements Indicator<CCResult> {
         return smoothedCC;
     }
 
-    private MAResult[] calculateMovingAverage(BigDecimal[] notSmoothedCCValues) {
+    private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] notSmoothedCCValues) {
         return MovingAverageFactory.create(buildMARequest(notSmoothedCCValues)).getResult();
     }
 
-    private MARequest buildMARequest(BigDecimal[] notSmoothedCCValues) {
+    private IndicatorRequest buildMARequest(BigDecimal[] notSmoothedCCValues) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(notSmoothedCCValues))
                 .period(period)

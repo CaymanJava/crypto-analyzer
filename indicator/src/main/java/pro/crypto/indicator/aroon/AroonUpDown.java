@@ -2,6 +2,7 @@ package pro.crypto.indicator.aroon;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
@@ -26,7 +27,8 @@ public class AroonUpDown implements Indicator<AroonResult> {
 
     private AroonResult[] result;
 
-    public AroonUpDown(AroonRequest request) {
+    public AroonUpDown(IndicatorRequest creationRequest) {
+        AroonRequest request = (AroonRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();

@@ -3,11 +3,12 @@ package pro.crypto.indicator.hv;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
-import pro.crypto.indicator.stdev.StDevResult;
+import pro.crypto.indicator.stdev.StDevRequest;
 import pro.crypto.indicator.stdev.StandardDeviation;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.stdev.StDevRequest;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -30,7 +31,8 @@ public class HistoricalVolatility implements Indicator<HVResult> {
 
     private HVResult[] result;
 
-    public HistoricalVolatility(HVRequest request) {
+    public HistoricalVolatility(IndicatorRequest creationRequest) {
+        HVRequest request = (HVRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         this.priceType = request.getPriceType();
@@ -98,11 +100,11 @@ public class HistoricalVolatility implements Indicator<HVResult> {
         return IndicatorResultExtractor.extract(calculateStandardDeviation(continuouslyCompoundedReturns));
     }
 
-    private StDevResult[] calculateStandardDeviation(BigDecimal[] continuouslyCompoundedReturns) {
+    private SimpleIndicatorResult[] calculateStandardDeviation(BigDecimal[] continuouslyCompoundedReturns) {
         return new StandardDeviation(buildStDevRequest(continuouslyCompoundedReturns)).getResult();
     }
 
-    private StDevRequest buildStDevRequest(BigDecimal[] continuouslyCompoundedReturns) {
+    private IndicatorRequest buildStDevRequest(BigDecimal[] continuouslyCompoundedReturns) {
         return StDevRequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(continuouslyCompoundedReturns))
                 .period(period)

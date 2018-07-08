@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -26,7 +27,7 @@ public class ElderForceIndexTest {
 
     @Test
     public void testElderForceIndexWithPeriodThirteen() {
-        EFIResult[] result = new ElderForceIndex(buildEFIRequest()).getResult();
+        EFIResult[] result = new ElderForceIndex(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[8].getIndicatorValue());
@@ -85,7 +86,7 @@ public class ElderForceIndexTest {
                 .build()).getResult();
     }
 
-    private EFIRequest buildEFIRequest() {
+    private IndicatorRequest buildRequest() {
         return EFIRequest.builder()
                 .originalData(originalData)
                 .period(13)

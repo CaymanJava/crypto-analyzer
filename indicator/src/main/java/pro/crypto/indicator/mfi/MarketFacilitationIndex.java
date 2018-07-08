@@ -2,6 +2,7 @@ package pro.crypto.indicator.mfi;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -17,8 +18,8 @@ public class MarketFacilitationIndex implements Indicator<MFIResult> {
 
     private MFIResult[] result;
 
-    public MarketFacilitationIndex(MFIRequest request) {
-        this.originalData = request.getOriginalData();
+    public MarketFacilitationIndex(IndicatorRequest creationRequest) {
+        this.originalData = creationRequest.getOriginalData();
         checkOriginalData(originalData);
     }
 

@@ -5,6 +5,7 @@ import pro.crypto.helper.MedianPriceCalculator;
 import pro.crypto.helper.MinMaxFinder;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -25,7 +26,8 @@ public class EhlersFisherTransform implements Indicator<EFTResult> {
     private BigDecimal[] valuesForTransform;
     private EFTResult[] result;
 
-    public EhlersFisherTransform(EFTRequest request) {
+    public EhlersFisherTransform(IndicatorRequest creationRequest) {
+        EFTRequest request = (EFTRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();

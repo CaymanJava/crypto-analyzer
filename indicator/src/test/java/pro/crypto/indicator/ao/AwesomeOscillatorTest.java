@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -40,13 +41,13 @@ public class AwesomeOscillatorTest {
         assertEquals(result[48].getIndicatorValue(), toBigDecimal(132.2333335294));
         assertTrue(result[48].getIncreased());
         assertEquals(result[53].getTime(), of(2018, 4, 19, 0, 0));
-        assertEquals(result[53].getIndicatorValue(), toBigDecimal(83.4718050000));
+        assertEquals(result[53].getIndicatorValue(), toBigDecimal(83.471805));
         assertFalse(result[53].getIncreased());
         assertEquals(result[61].getTime(), of(2018, 4, 27, 0, 0));
         assertEquals(result[61].getIndicatorValue(), toBigDecimal(114.7475208824));
         assertTrue(result[61].getIncreased());
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-10.6772100000));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-10.67721));
         assertFalse(result[72].getIncreased());
     }
 
@@ -116,7 +117,7 @@ public class AwesomeOscillatorTest {
                 .build()).getResult();
     }
 
-    private AORequest buildRequest() {
+    private IndicatorRequest buildRequest() {
         return AORequest.builder()
                 .originalData(originalData)
                 .slowPeriod(5)

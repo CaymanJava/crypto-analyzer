@@ -3,6 +3,7 @@ package pro.crypto.indicator.asi;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -22,7 +23,8 @@ public class AccumulativeSwingIndex implements Indicator<ASIResult> {
 
     private ASIResult[] result;
 
-    public AccumulativeSwingIndex(ASIRequest request) {
+    public AccumulativeSwingIndex(IndicatorRequest creationRequest) {
+        ASIRequest request = (ASIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.limitMoveValue = request.getLimitMoveValue();
         checkIncomingData();

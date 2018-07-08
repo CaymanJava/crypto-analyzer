@@ -1,6 +1,7 @@
 package pro.crypto.indicator.ma;
 
 import pro.crypto.helper.MathHelper;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
@@ -41,7 +42,7 @@ public class WellesWildersMovingAverage extends MovingAverage {
         return MovingAverageFactory.create(buildEMARequest(alphaCoefficient)).getResult();
     }
 
-    private MARequest buildEMARequest(BigDecimal alphaCoefficient) {
+    private IndicatorRequest buildEMARequest(BigDecimal alphaCoefficient) {
         return MARequest.builder()
                 .originalData(originalData)
                 .priceType(priceType)

@@ -4,10 +4,11 @@ import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -30,7 +31,8 @@ public class MassIndex implements Indicator<MIResult> {
 
     private MIResult[] result;
 
-    public MassIndex(MIRequest request) {
+    public MassIndex(IndicatorRequest creationRequest) {
+        MIRequest request = (MIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();
@@ -85,11 +87,11 @@ public class MassIndex implements Indicator<MIResult> {
         return result;
     }
 
-    private MAResult[] calculateExponentialMovingAverage(BigDecimal[] values) {
+    private SimpleIndicatorResult[] calculateExponentialMovingAverage(BigDecimal[] values) {
         return MovingAverageFactory.create(buildMARequest(values)).getResult();
     }
 
-    private MARequest buildMARequest(BigDecimal[] values) {
+    private IndicatorRequest buildMARequest(BigDecimal[] values) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(values))
                 .period(EXPONENTIAL_MOVING_AVERAGE_PERIOD)

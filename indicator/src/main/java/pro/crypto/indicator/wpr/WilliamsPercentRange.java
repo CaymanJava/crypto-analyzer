@@ -4,6 +4,7 @@ import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MinMaxFinder;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -23,7 +24,8 @@ public class WilliamsPercentRange implements Indicator<WPRResult> {
 
     private WPRResult[] result;
 
-    public WilliamsPercentRange(WPRRequest request) {
+    public WilliamsPercentRange(IndicatorRequest creationRequest) {
+        WPRRequest request = (WPRRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();

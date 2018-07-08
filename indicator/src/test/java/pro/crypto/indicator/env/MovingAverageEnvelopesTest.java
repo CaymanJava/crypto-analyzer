@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -28,7 +29,7 @@ public class MovingAverageEnvelopesTest {
 
     @Test
     public void testMovingAverageEnvelopesWithSMAAndPeriodTwentyAndPercentageFive() {
-        ENVResult[] result = new MovingAverageEnvelopes(buildENVRequest(5)).getResult();
+        ENVResult[] result = new MovingAverageEnvelopes(buildRequest(5)).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getBasis());
         assertNull(result[0].getUpperEnvelope());
@@ -59,7 +60,7 @@ public class MovingAverageEnvelopesTest {
 
     @Test
     public void testMovingAverageEnvelopesWithSMAAndPeriodTwentyAndPercentageSeven() {
-        ENVResult[] result = new MovingAverageEnvelopes(buildENVRequest(7)).getResult();
+        ENVResult[] result = new MovingAverageEnvelopes(buildRequest(7)).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getBasis());
         assertNull(result[0].getUpperEnvelope());
@@ -173,7 +174,7 @@ public class MovingAverageEnvelopesTest {
                 .build()).getResult();
     }
 
-    private ENVRequest buildENVRequest(int percentage) {
+    private IndicatorRequest buildRequest(int percentage) {
         return ENVRequest.builder()
                 .originalData(originalData)
                 .movingAverageType(SIMPLE_MOVING_AVERAGE)

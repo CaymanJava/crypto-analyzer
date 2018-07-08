@@ -1,9 +1,10 @@
 package pro.crypto.indicator.imi;
 
-import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceDifferencesCalculator;
+import pro.crypto.model.BigDecimalTuple;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -21,7 +22,8 @@ public class IntradayMomentumIndex implements Indicator<IMIResult> {
 
     private IMIResult[] result;
 
-    public IntradayMomentumIndex(IMIRequest request) {
+    public IntradayMomentumIndex(IndicatorRequest creationRequest) {
+        IMIRequest request = (IMIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();

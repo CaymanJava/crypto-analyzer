@@ -4,6 +4,7 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
@@ -37,7 +38,8 @@ public class RainbowMovingAverage implements Indicator<RMAResult> {
     private BigDecimal[] ninthMAValues;
     private BigDecimal[] tenthMAValues;
 
-    public RainbowMovingAverage(RMARequest request) {
+    public RainbowMovingAverage(IndicatorRequest creationRequest) {
+        RMARequest request = (RMARequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.priceType = request.getPriceType();
         this.period = request.getPeriod();
@@ -90,7 +92,7 @@ public class RainbowMovingAverage implements Indicator<RMAResult> {
         return MovingAverageFactory.create(buildMAResult(originalData, priceType)).getResult();
     }
 
-    private MARequest buildMAResult(Tick[] originalData, PriceType priceType) {
+    private IndicatorRequest buildMAResult(Tick[] originalData, PriceType priceType) {
         return MARequest.builder()
                 .originalData(originalData)
                 .period(period)

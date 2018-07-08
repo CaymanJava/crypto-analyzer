@@ -7,6 +7,7 @@ import org.junit.rules.ExpectedException;
 import pro.crypto.exception.UnknownTypeException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -167,7 +168,7 @@ public class VolumeIndexTest {
                 .build()).getResult();
     }
 
-    private VIRequest buildRequest(IndicatorType volumeIndexType) {
+    private IndicatorRequest buildRequest(IndicatorType volumeIndexType) {
         return VIRequest.builder()
                 .originalData(originalData)
                 .period(25)

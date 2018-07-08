@@ -3,6 +3,7 @@ package pro.crypto.indicator.cmf;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MoneyFlowVolumesCalculator;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -21,7 +22,8 @@ public class ChaikinMoneyFlow implements Indicator<CMFResult> {
 
     private CMFResult[] result;
 
-    public ChaikinMoneyFlow(CMFRequest request) {
+    public ChaikinMoneyFlow(IndicatorRequest creationRequest) {
+        CMFRequest request = (CMFRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();

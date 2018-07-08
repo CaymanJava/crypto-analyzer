@@ -3,12 +3,9 @@ package pro.crypto.indicator.cog;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
-import pro.crypto.model.BigDecimalTuple;
-import pro.crypto.indicator.ma.MovingAverageFactory;
-import pro.crypto.model.Indicator;
-import pro.crypto.model.IndicatorType;
-import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.indicator.ma.MARequest;
+import pro.crypto.indicator.ma.MovingAverageFactory;
+import pro.crypto.model.*;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -30,7 +27,8 @@ public class CenterOfGravity implements Indicator<COGResult> {
 
     private COGResult[] result;
 
-    public CenterOfGravity(COGRequest request) {
+    public CenterOfGravity(IndicatorRequest creationRequest) {
+        COGRequest request = (COGRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.priceType = request.getPriceType();
         this.movingAverageType = request.getMovingAverageType();
@@ -114,7 +112,7 @@ public class CenterOfGravity implements Indicator<COGResult> {
         return MovingAverageFactory.create(buildMARequest(centerOfGravityValues)).getResult();
     }
 
-    private MARequest buildMARequest(BigDecimal[] centerOfGravityValues) {
+    private IndicatorRequest buildMARequest(BigDecimal[] centerOfGravityValues) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(centerOfGravityValues))
                 .period(signalLinePeriod)

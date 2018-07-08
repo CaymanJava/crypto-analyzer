@@ -3,6 +3,7 @@ package pro.crypto.indicator.adl;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MoneyFlowVolumesCalculator;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
@@ -18,7 +19,8 @@ public class AccumulationDistributionLine implements Indicator<ADLResult> {
 
     private ADLResult[] result;
 
-    public AccumulationDistributionLine(ADLRequest request) {
+    public AccumulationDistributionLine(IndicatorRequest creationRequest) {
+        ADLRequest request = (ADLRequest) creationRequest;
         this.originalData = request.getOriginalData();
         checkOriginalData(originalData);
     }

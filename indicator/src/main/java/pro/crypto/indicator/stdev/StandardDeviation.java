@@ -3,10 +3,11 @@ package pro.crypto.indicator.stdev;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
-import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -26,7 +27,8 @@ public class StandardDeviation implements Indicator<StDevResult> {
 
     private StDevResult[] result;
 
-    public StandardDeviation(StDevRequest request) {
+    public StandardDeviation(IndicatorRequest creationRequest) {
+        StDevRequest request = (StDevRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.priceType = request.getPriceType();
         this.movingAverageType = isNull(request.getMovingAverageType()) ? SIMPLE_MOVING_AVERAGE : request.getMovingAverageType();
@@ -67,11 +69,11 @@ public class StandardDeviation implements Indicator<StDevResult> {
         return IndicatorResultExtractor.extract(calculateMovingAverage());
     }
 
-    private MAResult[] calculateMovingAverage() {
+    private SimpleIndicatorResult[] calculateMovingAverage() {
         return MovingAverageFactory.create(buildMovingAverageRequest()).getResult();
     }
 
-    private MARequest buildMovingAverageRequest() {
+    private IndicatorRequest buildMovingAverageRequest() {
         return MARequest.builder()
                 .originalData(originalData)
                 .indicatorType(movingAverageType)

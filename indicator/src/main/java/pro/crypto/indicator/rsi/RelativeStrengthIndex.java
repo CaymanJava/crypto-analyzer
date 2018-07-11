@@ -43,7 +43,7 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
     @Override
     public void calculate() {
         result = new RSIResult[originalData.length];
-        calculateRelativeStrengthIndex(PriceDifferencesCalculator.calculateCloseDifference(originalData));
+        calculateRelativeStrengthIndex(PriceDifferencesCalculator.calculatePriceDifference(originalData, CLOSE));
     }
 
     @Override

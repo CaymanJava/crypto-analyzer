@@ -1,6 +1,7 @@
 package pro.crypto.helper;
 
 import pro.crypto.model.BigDecimalTuple;
+import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -11,9 +12,9 @@ import java.util.stream.Stream;
 
 public class PriceDifferencesCalculator {
 
-    public static BigDecimalTuple[] calculateCloseDifference(Tick[] data) {
+    public static BigDecimalTuple[] calculatePriceDifference(Tick[] data, PriceType priceType) {
         return IntStream.range(0, data.length)
-                .mapToObj(idx -> calculateCloseDifference(data, idx))
+                .mapToObj(idx -> calculatePriceDifference(data, priceType, idx))
                 .toArray(BigDecimalTuple[]::new);
     }
 
@@ -30,11 +31,11 @@ public class PriceDifferencesCalculator {
         return priceDifferencesSum;
     }
 
-    private static BigDecimalTuple calculateCloseDifference(Tick[] data, int currentIndex) {
+    private static BigDecimalTuple calculatePriceDifference(Tick[] data, PriceType priceType, int currentIndex) {
         if (currentIndex == 0) {
             return new BigDecimalTuple(BigDecimal.ZERO, BigDecimal.ZERO);
         }
-        return buildDifference(data[currentIndex].getClose().subtract(data[currentIndex - 1].getClose()));
+        return buildDifference(data[currentIndex].getPriceByType(priceType).subtract(data[currentIndex - 1].getPriceByType(priceType)));
     }
 
     private static BigDecimalTuple calculateOpenCloseDifference(Tick tick) {

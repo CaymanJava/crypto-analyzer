@@ -14,6 +14,7 @@ import java.util.stream.IntStream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.CHANDE_MOMENTUM_OSCILLATOR;
+import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class ChandeMomentumOscillator implements Indicator<CMOResult> {
 
@@ -37,7 +38,7 @@ public class ChandeMomentumOscillator implements Indicator<CMOResult> {
     @Override
     public void calculate() {
         result = new CMOResult[originalData.length];
-        BigDecimalTuple[] priceDifferences = PriceDifferencesCalculator.calculateCloseDifference(originalData);
+        BigDecimalTuple[] priceDifferences = PriceDifferencesCalculator.calculatePriceDifference(originalData, CLOSE);
         BigDecimalTuple[] priceDifferenceSumValues = PriceDifferencesCalculator.calculatePriceDifferencesSum(priceDifferences, period);
         calculateChandeMomentumOscillatorResult(priceDifferenceSumValues);
     }

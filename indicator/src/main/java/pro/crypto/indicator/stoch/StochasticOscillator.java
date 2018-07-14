@@ -72,20 +72,24 @@ public class StochasticOscillator implements Indicator<StochResult> {
     }
 
     private BigDecimal[] calculateFastStochasticOscillator(BigDecimal[] minValues, BigDecimal[] maxValues) {
-        return IntStream.range(0, originalData.length)
-                .mapToObj(idx -> calculateFastStochasticOscillator(minValues[idx], maxValues[idx], idx))
-                .toArray(BigDecimal[]::new);
+        BigDecimal[] fastStochastic = new BigDecimal[originalData.length];
+        IntStream.range(1, originalData.length)
+                .forEach(idx -> fastStochastic[idx] = calculateFastStochasticOscillator(minValues[idx], maxValues[idx], fastStochastic[idx - 1], idx));
+        return fastStochastic;
     }
 
-    private BigDecimal calculateFastStochasticOscillator(BigDecimal minValue, BigDecimal maxValue, int currentIndex) {
+    private BigDecimal calculateFastStochasticOscillator(BigDecimal minValue, BigDecimal maxValue, BigDecimal previousStochastic, int currentIndex) {
         return nonNull(minValue) && nonNull(maxValue) && nonNull(originalData[currentIndex].getClose())
-                ? calculateFastStochasticOscillatorValue(minValue, maxValue, originalData[currentIndex].getClose())
+                ? calculateFastStochasticOscillatorValue(minValue, maxValue, previousStochastic, originalData[currentIndex].getClose())
                 : null;
     }
 
     // %K = 100 * (CLOSE - MINn)/(MAXn - MINn)
-    private BigDecimal calculateFastStochasticOscillatorValue(BigDecimal minValue, BigDecimal maxValue, BigDecimal close) {
-        return MathHelper.divide(close.subtract(minValue).multiply(new BigDecimal(100)), maxValue.subtract(minValue));
+    private BigDecimal calculateFastStochasticOscillatorValue(BigDecimal minValue, BigDecimal maxValue, BigDecimal previousStochastic, BigDecimal close) {
+        if (maxValue.subtract(minValue).compareTo(BigDecimal.ZERO) > 0) {
+            return MathHelper.divide(close.subtract(minValue).multiply(new BigDecimal(100)), maxValue.subtract(minValue));
+        }
+        return previousStochastic;
     }
 
     private BigDecimal[] calculateSlowStochasticOscillator(BigDecimal[] fastStochastic) {

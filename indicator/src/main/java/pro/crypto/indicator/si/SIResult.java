@@ -1,4 +1,4 @@
-package pro.crypto.indicator.asi;
+package pro.crypto.indicator.si;
 
 import lombok.Value;
 import pro.crypto.model.SimpleIndicatorResult;
@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class ASIResult implements SimpleIndicatorResult {
+public class SIResult implements SimpleIndicatorResult {
 
     private LocalDateTime time;
 

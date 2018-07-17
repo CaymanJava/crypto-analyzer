@@ -1,4 +1,4 @@
-package pro.crypto.indicator.asi;
+package pro.crypto.indicator.si;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +11,7 @@ import pro.crypto.model.tick.Tick;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ASIRequest implements IndicatorRequest {
+public class SIRequest implements IndicatorRequest {
 
     private Tick[] originalData;
 

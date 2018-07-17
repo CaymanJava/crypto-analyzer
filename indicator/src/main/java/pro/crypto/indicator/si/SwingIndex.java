@@ -1,4 +1,4 @@
-package pro.crypto.indicator.asi;
+package pro.crypto.indicator.si;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.MathHelper;
@@ -14,17 +14,17 @@ import static java.lang.String.format;
 import static java.util.Locale.ENGLISH;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.IndicatorType.ACCUMULATIVE_SWING_INDEX;
+import static pro.crypto.model.IndicatorType.SWING_INDEX;
 
-public class AccumulativeSwingIndex implements Indicator<ASIResult> {
+public class SwingIndex implements Indicator<SIResult> {
 
     private final Tick[] originalData;
     private final double limitMoveValue;
 
-    private ASIResult[] result;
+    private SIResult[] result;
 
-    public AccumulativeSwingIndex(IndicatorRequest creationRequest) {
-        ASIRequest request = (ASIRequest) creationRequest;
+    public SwingIndex(IndicatorRequest creationRequest) {
+        SIRequest request = (SIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.limitMoveValue = request.getLimitMoveValue();
         checkIncomingData();
@@ -32,18 +32,18 @@ public class AccumulativeSwingIndex implements Indicator<ASIResult> {
 
     @Override
     public IndicatorType getType() {
-        return ACCUMULATIVE_SWING_INDEX;
+        return SWING_INDEX;
     }
 
     @Override
     public void calculate() {
-        result = new ASIResult[originalData.length];
-        BigDecimal[] swingIndexes = calculateSwingIndexes();
-        calculateAccumulativeSwingIndexResult(swingIndexes);
+        BigDecimal[] kCoefficients = calculateKCoefficients();
+        BigDecimal[] rCoefficients = calculateRCoefficients();
+        buildSwingIndexResult(kCoefficients, rCoefficients);
     }
 
     @Override
-    public ASIResult[] getResult() {
+    public SIResult[] getResult() {
         if (isNull(result)) {
             calculate();
         }
@@ -60,12 +60,6 @@ public class AccumulativeSwingIndex implements Indicator<ASIResult> {
             throw new WrongIncomingParametersException(format(ENGLISH, "Limit move value should be more than 0 {indicator: {%s}, shift: {%.2f}}",
                     getType().toString(), limitMoveValue));
         }
-    }
-
-    private BigDecimal[] calculateSwingIndexes() {
-        BigDecimal[] kCoefficients = calculateKCoefficients();
-        BigDecimal[] rCoefficients = calculateRCoefficients();
-        return calculateSwingIndexes(kCoefficients, rCoefficients);
     }
 
     private BigDecimal[] calculateKCoefficients() {
@@ -155,10 +149,10 @@ public class AccumulativeSwingIndex implements Indicator<ASIResult> {
                 .add(new BigDecimal(0.25).multiply(fourthParameter));
     }
 
-    private BigDecimal[] calculateSwingIndexes(BigDecimal[] kCoefficients, BigDecimal[] rCoefficients) {
-        return IntStream.range(0, originalData.length)
-                .mapToObj(idx -> calculateSwingIndex(idx, kCoefficients[idx], rCoefficients[idx]))
-                .toArray(BigDecimal[]::new);
+    private void buildSwingIndexResult(BigDecimal[] kCoefficients, BigDecimal[] rCoefficients) {
+        result = IntStream.range(0, originalData.length)
+                .mapToObj(idx -> new SIResult(originalData[idx].getTickTime(), calculateSwingIndex(idx, kCoefficients[idx], rCoefficients[idx])))
+                .toArray(SIResult[]::new);
     }
 
     private BigDecimal calculateSwingIndex(int currentIndex, BigDecimal kCoefficient, BigDecimal rCoefficient) {
@@ -180,24 +174,6 @@ public class AccumulativeSwingIndex implements Indicator<ASIResult> {
                 .multiply(originalData[currentIndex].getClose().subtract(originalData[currentIndex - 1].getClose())
                         .add(new BigDecimal(0.5).multiply(originalData[currentIndex].getClose().subtract(originalData[currentIndex].getOpen())))
                         .add(new BigDecimal(0.25).multiply(originalData[currentIndex - 1].getClose().subtract(originalData[currentIndex - 1].getOpen()))));
-    }
-
-    private void calculateAccumulativeSwingIndexResult(BigDecimal[] swingIndexes) {
-        fillInInitialValues(swingIndexes[1]);
-        IntStream.range(2, result.length)
-                .forEach(idx -> result[idx] = new ASIResult(
-                        originalData[idx].getTickTime(),
-                        calculateAccumulativeSwingIndex(swingIndexes[idx], idx))
-                );
-    }
-
-    private BigDecimal calculateAccumulativeSwingIndex(BigDecimal swingIndex, int currentIndex) {
-        return MathHelper.scaleAndRound(swingIndex.add(result[currentIndex - 1].getIndicatorValue()));
-    }
-
-    private void fillInInitialValues(BigDecimal firstSwingIndex) {
-        result[0] = new ASIResult(originalData[0].getTickTime(), null);
-        result[1] = new ASIResult(originalData[1].getTickTime(), firstSwingIndex);
     }
 
 }

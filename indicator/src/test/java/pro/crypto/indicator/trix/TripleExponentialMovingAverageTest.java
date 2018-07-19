@@ -10,7 +10,6 @@ import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
-import static java.util.Objects.isNull;
 import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 
@@ -38,10 +37,10 @@ public class TripleExponentialMovingAverageTest {
         assertNull(result[51].getSignalLineValue());
         assertEquals(result[52].getTime(), of(2018, 4, 18, 0, 0));
         assertEquals(result[52].getIndicatorValue(), toBigDecimal(0.4083115144));
-        assertTrue(isNull(result[52].getSignalLineValue()));
+        assertNull(result[52].getSignalLineValue());
         assertEquals(result[59].getTime(), of(2018, 4, 25, 0, 0));
         assertEquals(result[59].getIndicatorValue(), toBigDecimal(0.4202200915));
-        assertTrue(isNull(result[59].getSignalLineValue()));
+        assertNull(result[59].getSignalLineValue());
         assertEquals(result[60].getTime(), of(2018, 4, 26, 0, 0));
         assertEquals(result[60].getIndicatorValue(), toBigDecimal(0.4267473783));
         assertEquals(result[60].getSignalLineValue(), toBigDecimal(0.4103691603));

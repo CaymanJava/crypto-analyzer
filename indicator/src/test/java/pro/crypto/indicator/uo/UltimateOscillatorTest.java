@@ -105,7 +105,7 @@ public class UltimateOscillatorTest {
     @Test
     public void periodMoreThanTickDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming tick data is not enough {indicator: {ULTIMATE_OSCILLATOR}, tickLength: {19}, fastPeriod: {28}}");
+        expectedException.expectMessage("Period should be less than tick data size {indicator: {ULTIMATE_OSCILLATOR}, period: {29}, size: {19}}");
         new UltimateOscillator(UORequest.builder()
                 .originalData(new Tick[19])
                 .shortPeriod(7)
@@ -119,7 +119,7 @@ public class UltimateOscillatorTest {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incorrect period values {indicator: {ULTIMATE_OSCILLATOR}, shortPeriod: {16}, middlePeriod: {14}}, longPeriod: {28}}");
         new UltimateOscillator(UORequest.builder()
-                .originalData(new Tick[19])
+                .originalData(new Tick[100])
                 .shortPeriod(16)
                 .middlePeriod(14)
                 .longPeriod(28)
@@ -131,7 +131,7 @@ public class UltimateOscillatorTest {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incorrect period values {indicator: {ULTIMATE_OSCILLATOR}, shortPeriod: {7}, middlePeriod: {29}}, longPeriod: {28}}");
         new UltimateOscillator(UORequest.builder()
-                .originalData(new Tick[19])
+                .originalData(new Tick[100])
                 .shortPeriod(7)
                 .middlePeriod(29)
                 .longPeriod(28)

@@ -58,6 +58,7 @@ public class UltimateOscillator implements Indicator<UOResult> {
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
+        checkOriginalDataSize(originalData, longPeriod + 1);
         checkPeriods();
     }
 
@@ -66,7 +67,6 @@ public class UltimateOscillator implements Indicator<UOResult> {
         checkPeriod(middlePeriod);
         checkPeriod(longPeriod);
         checkPeriodsLength();
-        checkIncomingDataLength();
     }
 
     private void checkPeriodsLength() {
@@ -74,14 +74,6 @@ public class UltimateOscillator implements Indicator<UOResult> {
             throw new WrongIncomingParametersException(format("Incorrect period values " +
                             "{indicator: {%s}, shortPeriod: {%d}, middlePeriod: {%d}}, longPeriod: {%d}}",
                     getType().toString(), shortPeriod, middlePeriod, longPeriod));
-        }
-    }
-
-    private void checkIncomingDataLength() {
-        if (originalData.length <= longPeriod + 1) {
-            throw new WrongIncomingParametersException(format("Incoming tick data is not enough " +
-                            "{indicator: {%s}, tickLength: {%d}, fastPeriod: {%d}}",
-                    getType().toString(), originalData.length, longPeriod));
         }
     }
 

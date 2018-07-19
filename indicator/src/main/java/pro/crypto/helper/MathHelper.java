@@ -5,18 +5,20 @@ import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.stream.Stream;
 
-import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 
 public class MathHelper {
 
     public static BigDecimal scaleAndRound(BigDecimal value) {
-        return isNull(value) ? null : value.setScale(10, BigDecimal.ROUND_HALF_UP);
+        return nonNull(value)
+                ? value.setScale(10, BigDecimal.ROUND_HALF_UP)
+                : null;
     }
 
     public static BigDecimal divide(BigDecimal divisible, BigDecimal divisor) {
-        return isNull(divisible) || isNull(divisor) || divisor.compareTo(BigDecimal.ZERO) == 0
-                ? null
-                : divisible.divide(divisor, 10, BigDecimal.ROUND_HALF_UP);
+        return nonNull(divisible) && nonNull(divisor) && divisor.compareTo(BigDecimal.ZERO) != 0
+                ? divisible.divide(divisor, 10, BigDecimal.ROUND_HALF_UP)
+                : null;
     }
 
     public static BigDecimal min(BigDecimal... values) {
@@ -26,7 +28,9 @@ public class MathHelper {
     }
 
     public static BigDecimal sqrt(BigDecimal value) {
-        return isNull(value) ? null : BigDecimal.valueOf(StrictMath.sqrt(value.doubleValue()));
+        return nonNull(value)
+                ? BigDecimal.valueOf(StrictMath.sqrt(value.doubleValue()))
+                : null;
     }
 
     public static BigDecimal average(BigDecimal... values) {
@@ -44,7 +48,9 @@ public class MathHelper {
     }
 
     public static BigDecimal toBigDecimal(Double value) {
-        return isNull(value) ? null : MathHelper.scaleAndRound(new BigDecimal(value));
+        return nonNull(value)
+                ? MathHelper.scaleAndRound(new BigDecimal(value))
+                : null;
     }
 
     // https://stackoverflow.com/questions/739532/logarithm-of-a-bigdecimal/745984#745984

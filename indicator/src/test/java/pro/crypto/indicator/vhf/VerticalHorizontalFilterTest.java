@@ -26,7 +26,7 @@ public class VerticalHorizontalFilterTest {
     }
 
     @Test
-    public void testWPRWithDefaultPeriod() {
+    public void testVerticalHorizontalFilterWithDefaultPeriod() {
         VHFResult[] result = new VerticalHorizontalFilter(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());

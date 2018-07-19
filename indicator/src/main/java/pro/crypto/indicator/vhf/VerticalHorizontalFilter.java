@@ -21,7 +21,6 @@ public class VerticalHorizontalFilter implements Indicator<VHFResult> {
 
     private final Tick[] originalData;
     private final int period;
-    private final BigDecimal[] closePrices;
 
     private VHFResult[] result;
 
@@ -30,7 +29,6 @@ public class VerticalHorizontalFilter implements Indicator<VHFResult> {
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
         checkIncomingData();
-        this.closePrices = PriceExtractor.extractValuesByType(originalData, CLOSE);
     }
 
     @Override
@@ -60,6 +58,7 @@ public class VerticalHorizontalFilter implements Indicator<VHFResult> {
     }
 
     private BigDecimal[] calculateNumerators() {
+        BigDecimal[] closePrices = PriceExtractor.extractValuesByType(originalData, CLOSE);
         BigDecimal[] maxCloseValues = MinMaxFinder.findMaxValues(closePrices, period);
         BigDecimal[] minCloseValues = MinMaxFinder.findMinValues(closePrices, period);
         return calculateNumerators(maxCloseValues, minCloseValues);
@@ -85,7 +84,7 @@ public class VerticalHorizontalFilter implements Indicator<VHFResult> {
     private BigDecimal[] calculateAbsoluteCloseDifferences() {
         BigDecimal[] absoluteCloseDiffs = new BigDecimal[originalData.length];
         IntStream.range(1, absoluteCloseDiffs.length)
-                .forEach(idx -> absoluteCloseDiffs[idx] = closePrices[idx].subtract(closePrices[idx - 1]).abs());
+                .forEach(idx -> absoluteCloseDiffs[idx] = originalData[idx].getClose().subtract(originalData[idx - 1].getClose()).abs());
         return absoluteCloseDiffs;
     }
 

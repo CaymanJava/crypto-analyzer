@@ -26,7 +26,7 @@ public class UltimateOscillatorTest {
     }
 
     @Test
-    public void testUOWithDefaultPeriods() {
+    public void testUltimateOscillatorWithDefaultPeriods() {
         UOResult[] result = new UltimateOscillator(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
@@ -91,7 +91,7 @@ public class UltimateOscillatorTest {
     }
 
     @Test
-    public void periodLessThanZeroTest() {
+    public void longPeriodLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {ULTIMATE_OSCILLATOR}, period: {-28}}");
         new UltimateOscillator(UORequest.builder()
@@ -103,7 +103,7 @@ public class UltimateOscillatorTest {
     }
 
     @Test
-    public void periodMoreThanTickDataTest() {
+    public void periodsMoreThanTickDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be less than tick data size {indicator: {ULTIMATE_OSCILLATOR}, period: {29}, size: {19}}");
         new UltimateOscillator(UORequest.builder()

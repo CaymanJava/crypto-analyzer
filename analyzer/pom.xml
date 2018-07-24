@@ -4,7 +4,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>crypto-analyzer</groupId>
     <artifactId>analyzer</artifactId>
     <version>0.0.1</version>
 
@@ -13,5 +12,20 @@
         <groupId>crypto-analyzer</groupId>
         <version>0.0.1</version>
     </parent>
-    
+
+    <dependencies>
+        <dependency>
+            <groupId>crypto-analyzer</groupId>
+            <artifactId>indicator</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>crypto-analyzer</groupId>
+            <artifactId>indicator</artifactId>
+            <version>0.0.1</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
 </project>

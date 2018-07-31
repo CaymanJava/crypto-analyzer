@@ -27,7 +27,7 @@ public class ADLAnalyzerTest {
     }
 
     @Test
-    public void testADLAnalyzer() {
+    public void testAccumulationDistributionLineAnalyzer() {
         ADLResult[] indicatorResult = new AccumulationDistributionLine(buildIndicatorRequest()).getResult();
         ADLAnalyzerResult[] analyzerResults = new ADLAnalyzer(buildAnalyzerResult(indicatorResult)).getResult();
         assertTrue(analyzerResults.length == originalData.length);

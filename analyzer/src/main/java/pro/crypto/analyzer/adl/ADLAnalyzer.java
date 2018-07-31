@@ -7,6 +7,7 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.adl.ADLResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.AnalyzerResult;
 import pro.crypto.model.Signal;
 import pro.crypto.model.tick.Tick;
 
@@ -94,7 +95,7 @@ public class ADLAnalyzer implements Analyzer<ADLAnalyzerResult> {
                 .toArray(ADLAnalyzerResult[]::new);
     }
 
-    private ADLAnalyzerResult buildADLAnalyzerResult(int currentIndex, Signal signal) {
+    private AnalyzerResult buildADLAnalyzerResult(int currentIndex, Signal signal) {
         return new ADLAnalyzerResult(
                 originalData[currentIndex].getTickTime(),
                 isNull(signal) ? NEUTRAL : signal,

@@ -26,8 +26,10 @@ public class MoneyFlowVolumesCalculator {
 
     // MFM = ((CLOSE - LOW - HIGH + CLOSE)) / (HIGH - LOW)
     private static BigDecimal calculateMoneyFlowMultiplier(Tick tick) {
-        return divide(tick.getClose().subtract(tick.getLow()).subtract(tick.getHigh()).add(tick.getClose()),
-                tick.getHigh().subtract(tick.getLow()));
+        return tick.getHigh().subtract(tick.getLow()).compareTo(BigDecimal.ZERO) != 0
+                ? divide(tick.getClose().subtract(tick.getLow()).subtract(tick.getHigh()).add(tick.getClose()),
+                tick.getHigh().subtract(tick.getLow()))
+                : BigDecimal.ONE;
     }
 
 }

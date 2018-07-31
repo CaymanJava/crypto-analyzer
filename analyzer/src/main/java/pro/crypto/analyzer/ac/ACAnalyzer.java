@@ -1,8 +1,8 @@
 package pro.crypto.analyzer.ac;
 
 import pro.crypto.indicator.ac.ACResult;
-import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.Analyzer;
 import pro.crypto.model.Signal;
 import pro.crypto.model.tick.Tick;
 
@@ -22,8 +22,7 @@ public class ACAnalyzer implements Analyzer<ACAnalyzeResult> {
 
     private ACAnalyzeResult[] result;
 
-    public ACAnalyzer(AnalyzerRequest analyzerRequest) {
-        ACAnalyzeRequest request = (ACAnalyzeRequest) analyzerRequest;
+    public ACAnalyzer(AnalyzerRequest request) {
         this.originalData = request.getOriginalData();
         this.indicatorResults = (ACResult[]) request.getIndicatorResults();
     }

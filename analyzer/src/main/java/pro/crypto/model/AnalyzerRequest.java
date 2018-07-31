@@ -1,11 +1,19 @@
 package pro.crypto.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import pro.crypto.model.tick.Tick;
 
-public interface AnalyzerRequest {
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class AnalyzerRequest {
 
-    Tick[] getOriginalData();
+    private Tick[] originalData;
 
-    IndicatorResult[] getIndicatorResults();
+    private IndicatorResult[] indicatorResults;
 
 }

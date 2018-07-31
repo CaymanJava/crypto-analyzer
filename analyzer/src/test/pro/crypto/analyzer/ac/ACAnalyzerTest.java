@@ -57,7 +57,7 @@ public class ACAnalyzerTest {
     }
 
     private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return ACAnalyzeRequest.builder()
+        return AnalyzerRequest.builder()
                 .originalData(originalData)
                 .indicatorResults(indicatorResults)
                 .build();

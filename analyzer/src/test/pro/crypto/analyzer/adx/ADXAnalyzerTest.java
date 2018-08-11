@@ -18,8 +18,8 @@ import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.NEUTRAL;
 import static pro.crypto.model.Signal.SELL;
-import static pro.crypto.model.TrendStrength.NORMAL;
-import static pro.crypto.model.TrendStrength.WEAK;
+import static pro.crypto.model.Strength.NORMAL;
+import static pro.crypto.model.Strength.WEAK;
 
 public class ADXAnalyzerTest {
 
@@ -37,25 +37,25 @@ public class ADXAnalyzerTest {
         assertTrue(result.length == originalData.length);
         assertNull(result[25].getIndicatorValue());
         assertEquals(result[25].getSignal(), NEUTRAL);
-        assertEquals(result[25].getTrendStrength(), NORMAL);
+        assertEquals(result[25].getStrength(), NORMAL);
         assertEquals(result[26].getIndicatorValue(), toBigDecimal(43.1045848871));
         assertEquals(result[26].getSignal(), NEUTRAL);
-        assertEquals(result[26].getTrendStrength(), NORMAL);
+        assertEquals(result[26].getStrength(), NORMAL);
         assertEquals(result[28].getIndicatorValue(), toBigDecimal(36.1905620414));
         assertEquals(result[28].getSignal(), BUY);
-        assertEquals(result[28].getTrendStrength(), NORMAL);
+        assertEquals(result[28].getStrength(), NORMAL);
         assertEquals(result[33].getIndicatorValue(), toBigDecimal(21.7463844666));
         assertEquals(result[33].getSignal(), SELL);
-        assertEquals(result[33].getTrendStrength(), NORMAL);
+        assertEquals(result[33].getStrength(), NORMAL);
         assertEquals(result[35].getIndicatorValue(), toBigDecimal(19.2631215658));
         assertEquals(result[35].getSignal(), NEUTRAL);
-        assertEquals(result[35].getTrendStrength(), WEAK);
+        assertEquals(result[35].getStrength(), WEAK);
         assertEquals(result[56].getIndicatorValue(), toBigDecimal(17.7528644891));
         assertEquals(result[56].getSignal(), BUY);
-        assertEquals(result[56].getTrendStrength(), WEAK);
+        assertEquals(result[56].getStrength(), WEAK);
         assertEquals(result[65].getIndicatorValue(), toBigDecimal(24.7670170996));
         assertEquals(result[65].getSignal(), SELL);
-        assertEquals(result[65].getTrendStrength(), NORMAL);
+        assertEquals(result[65].getStrength(), NORMAL);
     }
 
     private IndicatorRequest buildIndicatorRequest() {

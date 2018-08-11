@@ -1,7 +1,14 @@
 package pro.crypto.model;
 
-public enum TrendStrength {
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-    WEAK, NORMAL, STRONG
+@Data
+@AllArgsConstructor
+public class TrendStrength {
+
+    private Trend trend;
+
+    private Strength strength;
 
 }

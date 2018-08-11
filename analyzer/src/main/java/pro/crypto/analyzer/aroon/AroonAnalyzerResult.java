@@ -1,17 +1,16 @@
-package pro.crypto.analyzer.adx;
+package pro.crypto.analyzer.aroon;
 
-import lombok.Builder;
 import lombok.Value;
 import pro.crypto.model.AnalyzerResult;
 import pro.crypto.model.Signal;
+import pro.crypto.model.Trend;
 import pro.crypto.model.Strength;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-@Builder
-public class ADXAnalyzerResult implements AnalyzerResult {
+public class AroonAnalyzerResult implements AnalyzerResult {
 
     private LocalDateTime time;
 
@@ -21,7 +20,7 @@ public class ADXAnalyzerResult implements AnalyzerResult {
 
     private BigDecimal closePrice;
 
-    private BigDecimal entryPoint;
+    private Trend trend;
 
     private Strength strength;
 

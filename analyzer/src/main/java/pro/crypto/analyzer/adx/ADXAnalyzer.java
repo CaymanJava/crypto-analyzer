@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.Signal.*;
-import static pro.crypto.model.TrendStrength.*;
+import static pro.crypto.model.Strength.*;
 
 public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult>{
 
@@ -26,9 +26,9 @@ public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult>{
 
     @Override
     public void analyze() {
-        TrendStrength[] trendStrengths = defineTrendStrengths();
+        Strength[] strengths = defineTrendStrengths();
         Signal[] signals = recognizeSignals();
-        buildADXAnalyzerResults(trendStrengths, signals);
+        buildADXAnalyzerResults(strengths, signals);
     }
 
     @Override
@@ -39,13 +39,13 @@ public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult>{
         return result;
     }
 
-    private TrendStrength[] defineTrendStrengths() {
+    private Strength[] defineTrendStrengths() {
         return IntStream.range(0, indicatorResults.length)
                 .mapToObj(this::defineTrendStrength)
-                .toArray(TrendStrength[]::new);
+                .toArray(Strength[]::new);
     }
 
-    private TrendStrength defineTrendStrength(int currentIndex) {
+    private Strength defineTrendStrength(int currentIndex) {
         if (isNull(indicatorResults[currentIndex].getAverageDirectionalIndex())) {
             return NORMAL;
         }
@@ -98,20 +98,20 @@ public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult>{
                 : SELL;
     }
 
-    private void buildADXAnalyzerResults(TrendStrength[] trendStrengths, Signal[] signals) {
+    private void buildADXAnalyzerResults(Strength[] strengths, Signal[] signals) {
         result = IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> buildADXAnalyzerResult(trendStrengths[idx], signals[idx], idx))
+                .mapToObj(idx -> buildADXAnalyzerResult(strengths[idx], signals[idx], idx))
                 .toArray(ADXAnalyzerResult[]::new);
     }
 
-    private AnalyzerResult buildADXAnalyzerResult(TrendStrength trendStrength, Signal signal, int currentIndex) {
+    private AnalyzerResult buildADXAnalyzerResult(Strength strength, Signal signal, int currentIndex) {
         return ADXAnalyzerResult.builder()
                 .time(originalData[currentIndex].getTickTime())
                 .signal(signal)
                 .indicatorValue(indicatorResults[currentIndex].getAverageDirectionalIndex())
                 .closePrice(originalData[currentIndex].getClose())
                 .entryPoint(definePotentialEntryPoint(signal, currentIndex))
-                .trendStrength(trendStrength)
+                .strength(strength)
                 .build();
     }
 

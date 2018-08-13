@@ -27,8 +27,8 @@ public class AverageTrueRangeBandsTest {
     }
 
     @Test
-    public void testAverageTrueRangeBandsWithDefaultParameters() {
-        ATRBResult[] result = new AverageTrueRangeBands(buildRequest()).getResult();
+    public void testAverageTrueRangeBandsWithShiftThree() {
+        ATRBResult[] result = new AverageTrueRangeBands(buildRequest(3)).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getUpperBand());
         assertNull(result[0].getMiddleBand());
@@ -37,25 +37,57 @@ public class AverageTrueRangeBandsTest {
         assertNull(result[3].getMiddleBand());
         assertNull(result[3].getLowerBand());
         assertEquals(result[4].getTime(), of(2018, 3, 1, 0, 0));
-        assertEquals(result[4].getUpperBand(), toBigDecimal(1418.2820000000));
-        assertEquals(result[4].getMiddleBand(), toBigDecimal(1304.6000000000));
-        assertEquals(result[4].getLowerBand(), toBigDecimal(1190.9180000000));
+        assertEquals(result[4].getUpperBand(), toBigDecimal(1418.282));
+        assertEquals(result[4].getMiddleBand(), toBigDecimal(1304.6));
+        assertEquals(result[4].getLowerBand(), toBigDecimal(1190.918));
         assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
         assertEquals(result[19].getUpperBand(), toBigDecimal(1270.4683297416));
-        assertEquals(result[19].getMiddleBand(), toBigDecimal(1172.0601000000));
+        assertEquals(result[19].getMiddleBand(), toBigDecimal(1172.0601));
         assertEquals(result[19].getLowerBand(), toBigDecimal(1073.6518702584));
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getUpperBand(), toBigDecimal(1398.6937785800));
-        assertEquals(result[32].getMiddleBand(), toBigDecimal(1272.2900000000));
-        assertEquals(result[32].getLowerBand(), toBigDecimal(1145.8862214200));
+        assertEquals(result[32].getUpperBand(), toBigDecimal(1398.69377858));
+        assertEquals(result[32].getMiddleBand(), toBigDecimal(1272.29));
+        assertEquals(result[32].getLowerBand(), toBigDecimal(1145.88622142));
         assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
         assertEquals(result[45].getUpperBand(), toBigDecimal(1513.7373087742));
-        assertEquals(result[45].getMiddleBand(), toBigDecimal(1401.1600000000));
+        assertEquals(result[45].getMiddleBand(), toBigDecimal(1401.16));
         assertEquals(result[45].getLowerBand(), toBigDecimal(1288.5826912258));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
         assertEquals(result[72].getUpperBand(), toBigDecimal(1455.2670945928));
-        assertEquals(result[72].getMiddleBand(), toBigDecimal(1362.6100000000));
+        assertEquals(result[72].getMiddleBand(), toBigDecimal(1362.61));
         assertEquals(result[72].getLowerBand(), toBigDecimal(1269.9529054072));
+    }
+
+    @Test
+    public void testAverageTrueRangeBandsWithShiftOne() {
+        ATRBResult[] result = new AverageTrueRangeBands(buildRequest(1)).getResult();
+        assertTrue(result.length == originalData.length);
+        assertNull(result[0].getUpperBand());
+        assertNull(result[0].getMiddleBand());
+        assertNull(result[0].getLowerBand());
+        assertNull(result[3].getUpperBand());
+        assertNull(result[3].getMiddleBand());
+        assertNull(result[3].getLowerBand());
+        assertEquals(result[4].getTime(), of(2018, 3, 1, 0, 0));
+        assertEquals(result[4].getUpperBand(), toBigDecimal(1342.494));
+        assertEquals(result[4].getMiddleBand(), toBigDecimal(1304.6));
+        assertEquals(result[4].getLowerBand(), toBigDecimal(1266.706));
+        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
+        assertEquals(result[19].getUpperBand(), toBigDecimal(1204.8628432472));
+        assertEquals(result[19].getMiddleBand(), toBigDecimal(1172.0601));
+        assertEquals(result[19].getLowerBand(), toBigDecimal(1139.2573567528));
+        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
+        assertEquals(result[32].getUpperBand(), toBigDecimal(1314.42459286));
+        assertEquals(result[32].getMiddleBand(), toBigDecimal(1272.29));
+        assertEquals(result[32].getLowerBand(), toBigDecimal(1230.15540714));
+        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
+        assertEquals(result[45].getUpperBand(), toBigDecimal(1438.6857695914));
+        assertEquals(result[45].getMiddleBand(), toBigDecimal(1401.16));
+        assertEquals(result[45].getLowerBand(), toBigDecimal(1363.6342304086));
+        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
+        assertEquals(result[72].getUpperBand(), toBigDecimal(1393.4956981976));
+        assertEquals(result[72].getMiddleBand(), toBigDecimal(1362.61));
+        assertEquals(result[72].getLowerBand(), toBigDecimal(1331.7243018024));
     }
 
     @Test
@@ -129,11 +161,11 @@ public class AverageTrueRangeBandsTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest() {
+    private IndicatorRequest buildRequest(double shift) {
         return ATRBRequest.builder()
                 .originalData(originalData)
                 .period(5)
-                .shift(3)
+                .shift(shift)
                 .priceType(CLOSE)
                 .build();
     }

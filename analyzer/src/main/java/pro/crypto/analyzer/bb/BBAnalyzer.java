@@ -1,6 +1,6 @@
-package pro.crypto.analyzer.atrb;
+package pro.crypto.analyzer.bb;
 
-import pro.crypto.indicator.atrb.ATRBResult;
+import pro.crypto.indicator.bb.BBResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.AnalyzerResult;
@@ -12,35 +12,35 @@ import static java.util.Objects.isNull;
 import static pro.crypto.analyzer.helper.BandAnalyzer.*;
 import static pro.crypto.model.Signal.NEUTRAL;
 
-public class ATRBAnalyzer implements Analyzer<ATRBAnalyzerResult> {
+public class BBAnalyzer implements Analyzer<BBAnalyzerResult> {
 
     private final Tick[] originalData;
-    private final ATRBResult[] indicatorResults;
+    private final BBResult[] indicatorResults;
 
-    private ATRBAnalyzerResult[] result;
+    private BBAnalyzerResult[] result;
 
-    public ATRBAnalyzer(AnalyzerRequest request) {
+    public BBAnalyzer(AnalyzerRequest request) {
         this.originalData = request.getOriginalData();
-        this.indicatorResults = (ATRBResult[]) request.getIndicatorResults();
+        this.indicatorResults = (BBResult[]) request.getIndicatorResults();
     }
 
     @Override
     public void analyze() {
         result = IntStream.range(0, indicatorResults.length)
-                .mapToObj(this::buildATRBResult)
-                .toArray(ATRBAnalyzerResult[]::new);
+                .mapToObj(this::buildBBResult)
+                .toArray(BBAnalyzerResult[]::new);
     }
 
     @Override
-    public ATRBAnalyzerResult[] getResult() {
+    public BBAnalyzerResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
         return result;
     }
 
-    private AnalyzerResult buildATRBResult(int currentIndex) {
-        return new ATRBAnalyzerResult(
+    private AnalyzerResult buildBBResult(int currentIndex) {
+        return new BBAnalyzerResult(
                 originalData[currentIndex].getTickTime(), NEUTRAL,
                 indicatorResults[currentIndex].getMiddleBand(), originalData[currentIndex].getClose(),
                 isUpperBandCrossPriceRange(originalData[currentIndex], indicatorResults[currentIndex]),

@@ -1,4 +1,4 @@
-package pro.crypto.analyzer.atrb;
+package pro.crypto.analyzer.bb;
 
 import lombok.Value;
 import pro.crypto.model.AnalyzerResult;
@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class ATRBAnalyzerResult implements AnalyzerResult {
+public class BBAnalyzerResult implements AnalyzerResult {
 
     private LocalDateTime time;
 

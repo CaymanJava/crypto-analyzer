@@ -65,12 +65,12 @@ public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult>{
     }
 
     private Signal tryRecognizeSignal(int currentIndex) {
-        return possibleRecognizeSignal(currentIndex)
+        return isPossibleRecognizeSignal(currentIndex)
                 ? recognizeSignal(currentIndex)
                 : NEUTRAL;
     }
 
-    private boolean possibleRecognizeSignal(int currentIndex) {
+    private boolean isPossibleRecognizeSignal(int currentIndex) {
         return currentIndex > 0
                 && nonNull(indicatorResults[currentIndex].getPositiveDirectionalIndicator())
                 && nonNull(indicatorResults[currentIndex].getNegativeDirectionalIndicator())

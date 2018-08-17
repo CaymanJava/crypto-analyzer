@@ -13,4 +13,6 @@ public class ATRResult implements SimpleIndicatorResult {
 
     private BigDecimal indicatorValue;
 
+    private BigDecimal signalLineValue;
+
 }

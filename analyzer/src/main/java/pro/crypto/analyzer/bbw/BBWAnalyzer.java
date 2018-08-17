@@ -9,13 +9,10 @@ import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.List;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static java.util.stream.Collectors.toList;
 import static pro.crypto.model.Signal.NEUTRAL;
 
 public class BBWAnalyzer implements Analyzer<BBWAnalyzerResult> {
@@ -57,13 +54,6 @@ public class BBWAnalyzer implements Analyzer<BBWAnalyzerResult> {
                 .toArray(BigDecimal[]::new);
     }
 
-    public static void main(String[] args) {
-        List<BigDecimal> collect = Stream.of(new BigDecimal(2), new BigDecimal(5), new BigDecimal(3), new BigDecimal(1))
-                .sorted(BigDecimal::compareTo)
-                .collect(toList());
-        System.out.println(collect);
-    }
-
     private boolean isPreviousValueCavity(Boolean currentIncreased, Boolean previousIncreased) {
         return isPossibleDefineCavity(currentIncreased, previousIncreased) && (currentIncreased && !previousIncreased);
     }
@@ -92,8 +82,8 @@ public class BBWAnalyzer implements Analyzer<BBWAnalyzerResult> {
     }
 
     private boolean isPossibleToDefineStartTrend(int currentIndex) {
-        return currentIndex > 0 &&
-                nonNull(indicatorResults[currentIndex - 1].getIndicatorValue())
+        return currentIndex > 0
+                && nonNull(indicatorResults[currentIndex - 1].getIndicatorValue())
                 && nonNull(indicatorResults[currentIndex].getIndicatorValue());
     }
 

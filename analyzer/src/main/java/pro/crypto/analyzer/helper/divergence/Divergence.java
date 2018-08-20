@@ -12,11 +12,15 @@ import java.util.function.BiFunction;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import static java.math.BigDecimal.ONE;
 import static java.math.BigDecimal.ZERO;
+import static java.util.Arrays.asList;
 import static java.util.Comparator.comparing;
 import static java.util.Objects.nonNull;
 import static java.util.stream.Stream.*;
 import static pro.crypto.analyzer.helper.divergence.DivergenceClass.*;
+import static pro.crypto.analyzer.helper.divergence.DivergenceType.*;
+import static pro.crypto.analyzer.helper.divergence.DivergenceType.BULLISH;
 
 public class Divergence {
 
@@ -36,8 +40,8 @@ public class Divergence {
     public DivergenceResult[] find() {
         Boolean[] priceIncreases = calculatePriceIncreases();
         Boolean[] indicatorIncreases = calculateIndicatorIncreases();
-        priceIncreaseIndexes = new HashSet<>(Arrays.asList(extractIncreaseDecreaseIndexes(priceIncreases, true)));
-        priceDecreaseIndexes = new HashSet<>(Arrays.asList(extractIncreaseDecreaseIndexes(priceIncreases, false)));
+        priceIncreaseIndexes = new HashSet<>(asList(extractIncreaseDecreaseIndexes(priceIncreases, true)));
+        priceDecreaseIndexes = new HashSet<>(asList(extractIncreaseDecreaseIndexes(priceIncreases, false)));
         indicatorIncreaseIndexes = extractIncreaseDecreaseIndexes(indicatorIncreases, true);
         indicatorDecreaseIndexes = extractIncreaseDecreaseIndexes(indicatorIncreases, false);
         return findDivergences();
@@ -67,7 +71,6 @@ public class Divergence {
 
     private DivergenceResult[] findBearerDivergences() {
         return IntStream.range(0, indicatorIncreaseIndexes.length - 1)
-                .filter(idx -> nonNull(indicatorDecreaseIndexes[idx]))
                 .mapToObj(this::findBearerDivergenceWithRemainIndexes)
                 .flatMap(Stream::of)
                 .toArray(DivergenceResult[]::new);
@@ -75,11 +78,12 @@ public class Divergence {
 
     private DivergenceResult[] findBearerDivergenceWithRemainIndexes(int outerIndex) {
         return IntStream.range(outerIndex + 1, indicatorIncreaseIndexes.length)
-                .filter(idx -> pricesHaveIncreases(outerIndex, idx))
-                .filter(idx -> !indicatorValuesCrossZero(outerIndex, idx))
-                .filter(idx -> isDivergenceExist(outerIndex, idx))
-                .filter(idx -> !middleIncreaseValuesCrossLine(outerIndex, idx))
-                .mapToObj(idx -> defineBearerDivergence(outerIndex, idx))
+                .filter(idx -> pricesHaveIncreases(indicatorIncreaseIndexes[outerIndex], indicatorIncreaseIndexes[idx]))
+                .filter(idx -> !isIndicatorValuesCrossZero(indicatorIncreaseIndexes[outerIndex], indicatorIncreaseIndexes[idx]))
+                .filter(idx -> isDivergenceExist(indicatorIncreaseIndexes[outerIndex], indicatorIncreaseIndexes[idx]))
+                .filter(idx -> !middleIncreaseValuesCrossLine(indicatorIncreaseIndexes[outerIndex], indicatorIncreaseIndexes[idx]))
+                .mapToObj(idx -> defineBearerDivergence(indicatorIncreaseIndexes[outerIndex], indicatorIncreaseIndexes[idx]))
+                .filter(Objects::nonNull)
                 .toArray(DivergenceResult[]::new);
     }
 
@@ -188,7 +192,7 @@ public class Divergence {
 
     private Boolean isIncreaseIndicatorCrossLine(BigDecimal intersectionPoint, int indicatorIndex) {
         return indicatorValues[indicatorIndex].compareTo(intersectionPoint) > 0
-                && priceDeviationLessThanOnePercent(indicatorValues[indicatorIndex], intersectionPoint);
+                && isPriceDeviationLessThanOnePercent(indicatorValues[indicatorIndex], intersectionPoint);
     }
 
     private Triangular calculateIndicatorTriangular(int fromIndex, int toIndex) {
@@ -219,42 +223,71 @@ public class Divergence {
     }
 
     private DivergenceResult defineBearerDivergence(int fromIndex, int toIndex) {
-        return new DivergenceResult(DivergenceType.BEARER, defineBearerDivergenceClass(fromIndex, toIndex), fromIndex, toIndex);
+        DivergenceClass divergenceClass = defineBearerDivergenceClass(fromIndex, toIndex);
+        return nonNull(divergenceClass)
+                ? new DivergenceResult(BEARER, divergenceClass, fromIndex, toIndex)
+                : null;
     }
 
     private DivergenceClass defineBearerDivergenceClass(int fromIndex, int toIndex) {
-        if (!priceDeviationLessThanOnePercent(fromIndex, toIndex) && lastPriceHigher(fromIndex, toIndex) && lastIndicatorValueLower(fromIndex, toIndex)) {
-            return A_CLASS;
+        if (isClassicBearerDivergence(fromIndex, toIndex)) {
+            return CLASSIC;
         }
-        if (priceDeviationLessThanOnePercent(fromIndex, toIndex) && lastIndicatorValueLower(fromIndex, toIndex)) {
-            return B_CLASS;
+        if (isExtendedBearerDivergence(fromIndex, toIndex)) {
+            return EXTENDED;
         }
-        return C_CLASS;
+        if (isHiddenBearerDivergence(fromIndex, toIndex)) {
+            return HIDDEN;
+        }
+        return null;
     }
 
-    private boolean lastPriceHigher(int fromIndex, int toIndex) {
+    private boolean isClassicBearerDivergence(int fromIndex, int toIndex) {
+        return !isPriceDeviationLessThanOnePercent(fromIndex, toIndex)
+                && isFirstClassicBearerType(fromIndex, toIndex)
+                || isSecondClassicBearerType(fromIndex, toIndex);
+    }
+
+    private boolean isFirstClassicBearerType(int fromIndex, int toIndex) {
+        return isLastPriceHigher(fromIndex, toIndex) && isLastIndicatorValueLower(fromIndex, toIndex);
+    }
+
+    private boolean isSecondClassicBearerType(int fromIndex, int toIndex) {
+        return isLastPriceHigher(fromIndex, toIndex) && isIndicatorDeviationLessThanOnePercent(fromIndex, toIndex);
+    }
+
+    private boolean isExtendedBearerDivergence(int fromIndex, int toIndex) {
+        return isPriceDeviationLessThanOnePercent(fromIndex, toIndex) && isLastIndicatorValueLower(fromIndex, toIndex);
+    }
+
+    private boolean isHiddenBearerDivergence(int fromIndex, int toIndex) {
+        return isLastPriceLower(fromIndex, toIndex)
+                && isLastIndicatorValueHigher(fromIndex, toIndex);
+    }
+
+    private boolean isLastPriceHigher(int fromIndex, int toIndex) {
         return originalData[toIndex].getClose().compareTo(originalData[fromIndex].getClose()) > 0;
     }
 
-    private boolean lastIndicatorValueLower(int fromIndex, int toIndex) {
+    private boolean isLastIndicatorValueLower(int fromIndex, int toIndex) {
         return indicatorValues[toIndex].compareTo(indicatorValues[fromIndex]) < 0;
     }
 
     private DivergenceResult[] findBullishDivergences() {
-        return IntStream.range(0, indicatorIncreaseIndexes.length - 1)
-                .filter(idx -> nonNull(indicatorDecreaseIndexes[idx]))
+        return IntStream.range(0, indicatorDecreaseIndexes.length - 1)
                 .mapToObj(this::findBullishDivergenceWithRemainIndexes)
                 .flatMap(Stream::of)
                 .toArray(DivergenceResult[]::new);
     }
 
     private DivergenceResult[] findBullishDivergenceWithRemainIndexes(int outerIndex) {
-        return IntStream.range(outerIndex + 1, indicatorIncreaseIndexes.length)
-                .filter(idx -> pricesHaveDecreases(outerIndex, idx))
-                .filter(idx -> !indicatorValuesCrossZero(outerIndex, idx))
-                .filter(idx -> isDivergenceExist(outerIndex, idx))
-                .filter(idx -> !middleDecreaseValuesCrossLine(outerIndex, idx))
-                .mapToObj(idx -> defineBullishDivergence(outerIndex, idx))
+        return IntStream.range(outerIndex + 1, indicatorDecreaseIndexes.length)
+                .filter(idx -> pricesHaveDecreases(indicatorDecreaseIndexes[outerIndex], indicatorDecreaseIndexes[idx]))
+                .filter(idx -> !isIndicatorValuesCrossZero(indicatorDecreaseIndexes[outerIndex], indicatorDecreaseIndexes[idx]))
+                .filter(idx -> isDivergenceExist(indicatorDecreaseIndexes[outerIndex], indicatorDecreaseIndexes[idx]))
+                .filter(idx -> !middleDecreaseValuesCrossLine(indicatorDecreaseIndexes[outerIndex], indicatorDecreaseIndexes[idx]))
+                .mapToObj(idx -> defineBullishDivergence(indicatorDecreaseIndexes[outerIndex], indicatorDecreaseIndexes[idx]))
+                .filter(Objects::nonNull)
                 .toArray(DivergenceResult[]::new);
     }
 
@@ -262,7 +295,7 @@ public class Divergence {
         return priceDecreaseIndexes.contains(fromIndex) && priceDecreaseIndexes.contains(toIndex);
     }
 
-    private boolean indicatorValuesCrossZero(int fromIndex, int toIndex) {
+    private boolean isIndicatorValuesCrossZero(int fromIndex, int toIndex) {
         return indicatorValues[fromIndex].compareTo(ZERO) != indicatorValues[toIndex].compareTo(ZERO);
     }
 
@@ -335,39 +368,73 @@ public class Divergence {
 
     private Boolean isDecreaseIndicatorCrossLine(BigDecimal intersectionPoint, int indicatorIndex) {
         return indicatorValues[indicatorIndex].compareTo(intersectionPoint) > 0
-                && priceDeviationLessThanOnePercent(indicatorValues[indicatorIndex], intersectionPoint);
+                && isPriceDeviationLessThanOnePercent(indicatorValues[indicatorIndex], intersectionPoint);
     }
 
     private DivergenceResult defineBullishDivergence(int fromIndex, int toIndex) {
-        return new DivergenceResult(DivergenceType.BULLISH, defineBullishDivergenceClass(fromIndex, toIndex), fromIndex, toIndex);
+        DivergenceClass divergenceClass = defineBullishDivergenceClass(fromIndex, toIndex);
+        return nonNull(divergenceClass)
+                ? new DivergenceResult(BULLISH, divergenceClass, fromIndex, toIndex)
+                : null;
     }
 
     private DivergenceClass defineBullishDivergenceClass(int fromIndex, int toIndex) {
-        if (!priceDeviationLessThanOnePercent(fromIndex, toIndex) && lastPriceLower(fromIndex, toIndex) && lastIndicatorValueHigher(fromIndex, toIndex)) {
-            return A_CLASS;
+        if (isClassicBullishDivergence(fromIndex, toIndex)) {
+            return CLASSIC;
         }
-        if (priceDeviationLessThanOnePercent(fromIndex, toIndex) && lastIndicatorValueHigher(fromIndex, toIndex)) {
-            return B_CLASS;
+        if (isExtendedBullishDivergence(fromIndex, toIndex)) {
+            return EXTENDED;
         }
-        return C_CLASS;
+        if (isHiddenBullishDivergence(fromIndex, toIndex)) {
+            return HIDDEN;
+        }
+        return null;
     }
 
-    private boolean lastPriceLower(int fromIndex, int toIndex) {
+    private boolean isClassicBullishDivergence(int fromIndex, int toIndex) {
+        return !isPriceDeviationLessThanOnePercent(fromIndex, toIndex)
+                && isFirstClassicBullishType(fromIndex, toIndex)
+                && isSecondClassicBullishType(fromIndex, toIndex);
+    }
+
+    private boolean isFirstClassicBullishType(int fromIndex, int toIndex) {
+        return isLastPriceLower(fromIndex, toIndex) && isLastIndicatorValueHigher(fromIndex, toIndex);
+    }
+
+    private boolean isLastPriceLower(int fromIndex, int toIndex) {
         return originalData[toIndex].getClose().compareTo(originalData[fromIndex].getClose()) < 0;
     }
 
-    private boolean lastIndicatorValueHigher(int fromIndex, int toIndex) {
+    private boolean isLastIndicatorValueHigher(int fromIndex, int toIndex) {
         return indicatorValues[toIndex].compareTo(indicatorValues[fromIndex]) < 0;
     }
 
-    private boolean priceDeviationLessThanOnePercent(int fromIndex, int toIndex) {
-        BigDecimal deviation = calculateDeviation(originalData[fromIndex].getClose(), originalData[toIndex].getClose());
-        return deviation.compareTo(new BigDecimal(1)) <= 0;
+    private boolean isSecondClassicBullishType(int fromIndex, int toIndex) {
+        return isLastPriceLower(fromIndex, toIndex) && isIndicatorDeviationLessThanOnePercent(fromIndex, toIndex);
     }
 
-    private boolean priceDeviationLessThanOnePercent(BigDecimal firstValue, BigDecimal secondValue) {
+    private boolean isExtendedBullishDivergence(int fromIndex, int toIndex) {
+        return isPriceDeviationLessThanOnePercent(fromIndex, toIndex) && isLastIndicatorValueHigher(fromIndex, toIndex);
+    }
+
+    private boolean isHiddenBullishDivergence(int fromIndex, int toIndex) {
+        return isLastPriceHigher(fromIndex, toIndex)
+                && isLastIndicatorValueLower(fromIndex, toIndex);
+    }
+
+    private boolean isPriceDeviationLessThanOnePercent(int fromIndex, int toIndex) {
+        BigDecimal deviation = calculateDeviation(originalData[fromIndex].getClose(), originalData[toIndex].getClose());
+        return deviation.compareTo(ONE) <= 0;
+    }
+
+    private boolean isIndicatorDeviationLessThanOnePercent(int fromIndex, int toIndex) {
+        BigDecimal deviation = calculateDeviation(indicatorValues[fromIndex], indicatorValues[toIndex]);
+        return deviation.compareTo(ONE) <= 0;
+    }
+
+    private boolean isPriceDeviationLessThanOnePercent(BigDecimal firstValue, BigDecimal secondValue) {
         BigDecimal deviation = calculateDeviation(firstValue, secondValue);
-        return deviation.compareTo(new BigDecimal(1)) <= 0;
+        return deviation.compareTo(ONE) <= 0;
     }
 
     private BigDecimal calculateDeviation(BigDecimal firstValue, BigDecimal secondValue) {

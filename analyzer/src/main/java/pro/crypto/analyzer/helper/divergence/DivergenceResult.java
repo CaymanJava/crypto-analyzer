@@ -6,7 +6,7 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class DivergenceResult /*implements Comparable<DivergenceResult>*/ {
+public class DivergenceResult {
 
     private DivergenceType divergenceType;
 
@@ -16,8 +16,4 @@ public class DivergenceResult /*implements Comparable<DivergenceResult>*/ {
 
     private int indexTo;
 
-//    @Override
-//    public int compareTo(DivergenceResult another) {
-//        return this.getIndexFrom() > 0;
-//    }
 }

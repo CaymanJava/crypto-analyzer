@@ -15,11 +15,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
-import static pro.crypto.analyzer.helper.divergence.DivergenceClass.A_CLASS;
-import static pro.crypto.analyzer.helper.divergence.DivergenceClass.B_CLASS;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.NEUTRAL;
-import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.Signal.*;
 
 public class ADLAnalyzer implements Analyzer<ADLAnalyzerResult> {
 
@@ -64,29 +60,33 @@ public class ADLAnalyzer implements Analyzer<ADLAnalyzerResult> {
     private void recognizeSignal(DivergenceResult divergence, Signal[] signals) {
         switch (divergence.getDivergenceType()) {
             case BEARER:
-                if (lastPriceLowerPrevious(divergence.getIndexTo()) && isClassAdmissible(divergence)) {
-                    signals[divergence.getIndexTo() + 1] = SELL;
-                }
+                recognizeBearerSignal(divergence, signals);
                 break;
             case BULLISH:
-                if (!lastPriceLowerPrevious(divergence.getIndexTo()) && isClassAdmissible(divergence)) {
-                    signals[divergence.getIndexTo() + 1] = BUY;
-                }
+                recognizeBullishSignal(divergence, signals);
                 break;
             default: /*NOP*/
         }
     }
 
-    private boolean lastPriceLowerPrevious(int indexTo) {
-        return priceExist(indexTo + 1) && originalData[indexTo + 1].getClose().compareTo(originalData[indexTo].getClose()) < 0;
+    private void recognizeBearerSignal(DivergenceResult divergence, Signal[] signals) {
+        if (isLastPriceLowerPrevious(divergence.getIndexTo()) /*&& isClassicOrExtended(divergence.getDivergenceClass())*/) {
+            signals[divergence.getIndexTo() + 1] = SELL;
+        }
     }
 
-    private boolean priceExist(int priceIndex) {
+    private void recognizeBullishSignal(DivergenceResult divergence, Signal[] signals) {
+        if (!isLastPriceLowerPrevious(divergence.getIndexTo())/* && isClassicOrExtended(divergence.getDivergenceClass())*/) {
+            signals[divergence.getIndexTo() + 1] = BUY;
+        }
+    }
+
+    private boolean isLastPriceLowerPrevious(int indexTo) {
+        return isPriceExist(indexTo + 1) && originalData[indexTo + 1].getClose().compareTo(originalData[indexTo].getClose()) < 0;
+    }
+
+    private boolean isPriceExist(int priceIndex) {
         return priceIndex <= originalData.length;
-    }
-
-    private boolean isClassAdmissible(DivergenceResult divergence) {
-        return divergence.getDivergenceClass() == A_CLASS || divergence.getDivergenceClass() == B_CLASS;
     }
 
     private void buildADLAnalyzerResults(Signal[] signals) {
@@ -101,7 +101,7 @@ public class ADLAnalyzer implements Analyzer<ADLAnalyzerResult> {
                 isNull(signal) ? NEUTRAL : signal,
                 indicatorResults[currentIndex].getIndicatorValue(),
                 originalData[currentIndex].getClose()
-                );
+        );
     }
 
 }

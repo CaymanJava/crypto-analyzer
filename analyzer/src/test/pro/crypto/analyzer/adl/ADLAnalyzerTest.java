@@ -14,6 +14,7 @@ import static java.time.LocalDateTime.of;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.NEUTRAL;
 import static pro.crypto.model.Signal.SELL;
 
@@ -35,6 +36,12 @@ public class ADLAnalyzerTest {
         assertEquals(analyzerResults[31].getSignal(), SELL);
         assertEquals(analyzerResults[35].getIndicatorValue(), toBigDecimal(-163.7707684989));
         assertEquals(analyzerResults[35].getSignal(), SELL);
+        assertEquals(analyzerResults[37].getIndicatorValue(), toBigDecimal(-170.2435303218));
+        assertEquals(analyzerResults[37].getSignal(), SELL);
+        assertEquals(analyzerResults[38].getIndicatorValue(), toBigDecimal(-68.2995968351));
+        assertEquals(analyzerResults[38].getSignal(), BUY);
+        assertEquals(analyzerResults[39].getIndicatorValue(), toBigDecimal(-186.5266594385));
+        assertEquals(analyzerResults[39].getSignal(), SELL);
         assertEquals(analyzerResults[72].getIndicatorValue(), toBigDecimal(347.8292776260));
         assertEquals(analyzerResults[72].getSignal(), NEUTRAL);
     }

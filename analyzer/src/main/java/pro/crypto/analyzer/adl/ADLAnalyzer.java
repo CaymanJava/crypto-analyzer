@@ -70,13 +70,13 @@ public class ADLAnalyzer implements Analyzer<ADLAnalyzerResult> {
     }
 
     private void recognizeBearerSignal(DivergenceResult divergence, Signal[] signals) {
-        if (isLastPriceLowerPrevious(divergence.getIndexTo()) /*&& isClassicOrExtended(divergence.getDivergenceClass())*/) {
+        if (isLastPriceLowerPrevious(divergence.getIndexTo())) {
             signals[divergence.getIndexTo() + 1] = SELL;
         }
     }
 
     private void recognizeBullishSignal(DivergenceResult divergence, Signal[] signals) {
-        if (!isLastPriceLowerPrevious(divergence.getIndexTo())/* && isClassicOrExtended(divergence.getDivergenceClass())*/) {
+        if (!isLastPriceLowerPrevious(divergence.getIndexTo())) {
             signals[divergence.getIndexTo() + 1] = BUY;
         }
     }

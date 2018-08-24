@@ -28,7 +28,8 @@ public class ChandelierExit implements Indicator<CEResult> {
 
     private final Tick[] originalData;
     private final int period;
-    private final double factor;
+    private final double longFactor;
+    private final double shortFactor;
 
     private CEResult[] result;
 
@@ -36,7 +37,8 @@ public class ChandelierExit implements Indicator<CEResult> {
         CERequest request = (CERequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
-        this.factor = request.getFactor();
+        this.longFactor = request.getLongFactor();
+        this.shortFactor = request.getShortFactor();
         checkIncomingData();
     }
 
@@ -66,13 +68,17 @@ public class ChandelierExit implements Indicator<CEResult> {
         checkOriginalData(originalData);
         checkOriginalDataSize(originalData, period);
         checkPeriod(period);
-        checkFactor();
+        checkFactors();
     }
 
-    private void checkFactor() {
-        if (factor < 0) {
-            throw new WrongIncomingParametersException(format(ENGLISH, "Chandelier exit factor should be more than 0 {indicator: {%s}, shift: {%.2f}}",
-                    getType().toString(), factor));
+    private void checkFactors() {
+        if (longFactor < 0) {
+            throw new WrongIncomingParametersException(format(ENGLISH, "Chandelier exit long factor should be more than 0 {indicator: {%s}, shift: {%.2f}}",
+                    getType().toString(), longFactor));
+        }
+        if (shortFactor < 0) {
+            throw new WrongIncomingParametersException(format(ENGLISH, "Chandelier exit short factor should be more than 0 {indicator: {%s}, shift: {%.2f}}",
+                    getType().toString(), shortFactor));
         }
     }
 
@@ -94,7 +100,7 @@ public class ChandelierExit implements Indicator<CEResult> {
     private BigDecimal[] calculateLongExits(BigDecimal[] averageTrueRangeValues) {
         final BigDecimal[] maxValues = calculateMaxValues();
         return IntStream.range(0, originalData.length)
-                .mapToObj(idx -> calculateExit(averageTrueRangeValues[idx], maxValues[idx], idx, BigDecimal::subtract))
+                .mapToObj(idx -> calculateExit(averageTrueRangeValues[idx], maxValues[idx], idx, BigDecimal::subtract, longFactor))
                 .toArray(BigDecimal[]::new);
     }
 
@@ -105,7 +111,7 @@ public class ChandelierExit implements Indicator<CEResult> {
     private BigDecimal[] calculateShortExits(BigDecimal[] averageTrueRangeValues) {
         BigDecimal[] minValues = calculateMinValues();
         return IntStream.range(0, originalData.length)
-                .mapToObj(idx -> calculateExit(averageTrueRangeValues[idx], minValues[idx], idx, BigDecimal::add))
+                .mapToObj(idx -> calculateExit(averageTrueRangeValues[idx], minValues[idx], idx, BigDecimal::add, shortFactor))
                 .toArray(BigDecimal[]::new);
     }
 
@@ -114,7 +120,7 @@ public class ChandelierExit implements Indicator<CEResult> {
     }
 
     private BigDecimal calculateExit(BigDecimal averageTrueRangeValue, BigDecimal minValue, int currentIndex,
-                                     BiFunction<BigDecimal, BigDecimal, BigDecimal> exitFunction) {
+                                     BiFunction<BigDecimal, BigDecimal, BigDecimal> exitFunction, double factor) {
         return isPossibleToCalculate(averageTrueRangeValue, minValue, currentIndex)
                 ? exitFunction.apply(minValue, averageTrueRangeValue.multiply(new BigDecimal(factor)))
                 : null;

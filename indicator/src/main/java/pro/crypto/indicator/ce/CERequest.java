@@ -17,6 +17,8 @@ public class CERequest implements IndicatorRequest {
 
     private int period;
 
-    private double factor;
+    private double longFactor;
+
+    private double shortFactor;
 
 }

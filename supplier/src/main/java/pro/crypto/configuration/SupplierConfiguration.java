@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import pro.crypto.supplier.BittrexSpiderClient;
 
 @EnableFeignClients(clients = {BittrexSpiderClient.class})
-@ComponentScan(value = {"pro.crypto.data.supplier.**"})
+@ComponentScan(value = {"pro.crypto.supplier.**"})
 @Configuration
 public class SupplierConfiguration {
 }

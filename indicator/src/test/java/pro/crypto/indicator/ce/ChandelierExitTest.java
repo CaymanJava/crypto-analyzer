@@ -61,7 +61,8 @@ public class ChandelierExitTest {
         new ChandelierExit(CERequest.builder()
                 .originalData(new Tick[0])
                 .period(22)
-                .factor(3)
+                .longFactor(3)
+                .shortFactor(3)
                 .build()).getResult();
     }
 
@@ -72,7 +73,8 @@ public class ChandelierExitTest {
         new ChandelierExit(CERequest.builder()
                 .originalData(null)
                 .period(22)
-                .factor(3)
+                .longFactor(3)
+                .shortFactor(3)
                 .build()).getResult();
     }
 
@@ -83,18 +85,32 @@ public class ChandelierExitTest {
         new ChandelierExit(CERequest.builder()
                 .originalData(new Tick[21])
                 .period(22)
-                .factor(3)
+                .longFactor(3)
+                .shortFactor(3)
                 .build()).getResult();
     }
 
     @Test
-    public void factorLessThanZeroTest() {
+    public void longFactorLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Chandelier exit factor should be more than 0 {indicator: {CHANDELIER_EXIT}, shift: {-3.00}}");
+        expectedException.expectMessage("Chandelier exit long factor should be more than 0 {indicator: {CHANDELIER_EXIT}, shift: {-3.00}}");
         new ChandelierExit(CERequest.builder()
                 .originalData(new Tick[100])
                 .period(22)
-                .factor(-3)
+                .longFactor(-3)
+                .shortFactor(3)
+                .build()).getResult();
+    }
+
+    @Test
+    public void shortFactorLessThanZeroTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Chandelier exit short factor should be more than 0 {indicator: {CHANDELIER_EXIT}, shift: {-3.00}}");
+        new ChandelierExit(CERequest.builder()
+                .originalData(new Tick[100])
+                .period(22)
+                .longFactor(3)
+                .shortFactor(-3)
                 .build()).getResult();
     }
 
@@ -105,7 +121,8 @@ public class ChandelierExitTest {
         new ChandelierExit(CERequest.builder()
                 .originalData(new Tick[100])
                 .period(-22)
-                .factor(3)
+                .longFactor(3)
+                .shortFactor(3)
                 .build()).getResult();
     }
 
@@ -113,7 +130,8 @@ public class ChandelierExitTest {
         return CERequest.builder()
                 .originalData(originalData)
                 .period(22)
-                .factor(3)
+                .longFactor(3)
+                .shortFactor(3)
                 .build();
     }
 

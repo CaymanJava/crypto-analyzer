@@ -13,4 +13,6 @@ public class CFOResult implements SimpleIndicatorResult {
 
     private BigDecimal indicatorValue;
 
+    private BigDecimal signalLineValue;
+
 }

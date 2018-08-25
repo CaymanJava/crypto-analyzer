@@ -1,9 +1,12 @@
 package pro.crypto.indicator.cfo;
 
+import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.lr.LRRequest;
 import pro.crypto.indicator.lr.LinearRegression;
+import pro.crypto.indicator.ma.MARequest;
+import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -17,11 +20,14 @@ import java.util.stream.IntStream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.CHANDE_FORECAST_OSCILLATOR;
+import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class ChandeForecastOscillator implements Indicator<CFOResult> {
 
     private final Tick[] originalData;
     private final int period;
+    private final int movingAveragePeriod;
+    private final IndicatorType movingAverageType;
     private final PriceType priceType;
 
     private CFOResult[] result;
@@ -30,6 +36,8 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
         CFORequest request = (CFORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
+        this.movingAveragePeriod = request.getMovingAveragePeriod();
+        this.movingAverageType = request.getMovingAverageType();
         this.priceType = request.getPriceType();
         checkIncomingData();
     }
@@ -43,7 +51,9 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
     public void calculate() {
         result = new CFOResult[originalData.length];
         BigDecimal[] linearRegressionValues = calculateLinearRegressionValues();
-        calculateChandeForecastOscillatorResult(linearRegressionValues);
+        BigDecimal[] chandeForecastValues = calculateChandeForecastOscillator(linearRegressionValues);
+        BigDecimal[] signalLineValues = calculateSignalLine(chandeForecastValues);
+        buildChandeForecastOscillatorResult(chandeForecastValues, signalLineValues);
     }
 
     @Override
@@ -56,8 +66,10 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkOriginalDataSize(originalData, period);
+        checkOriginalDataSize(originalData, period + movingAveragePeriod);
+        checkMovingAverageType(movingAverageType);
         checkPeriod(period);
+        checkPeriod(movingAveragePeriod);
         checkPriceType(priceType);
     }
 
@@ -78,10 +90,10 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
                 .build();
     }
 
-    private void calculateChandeForecastOscillatorResult(BigDecimal[] linearRegressionValues) {
-        IntStream.range(0, result.length)
-                .forEach(idx -> result[idx] = new CFOResult(originalData[idx].getTickTime(),
-                        calculateChandeForecastOscillator(linearRegressionValues[idx], originalData[idx].getPriceByType(priceType))));
+    private BigDecimal[] calculateChandeForecastOscillator(BigDecimal[] linearRegressionValues) {
+        return IntStream.range(0, result.length)
+                .mapToObj(idx -> calculateChandeForecastOscillator(linearRegressionValues[idx], originalData[idx].getPriceByType(priceType)))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateChandeForecastOscillator(BigDecimal linearRegression, BigDecimal price) {
@@ -93,6 +105,40 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
     // CFO =(PRICE(i) − LinearRegression) * 100 / PRICE(i)
     private BigDecimal calculateChandeForecastOscillatorValue(BigDecimal linearRegression, BigDecimal price) {
         return MathHelper.divide(price.subtract(linearRegression).multiply(new BigDecimal(100)), price);
+    }
+
+    private BigDecimal[] calculateSignalLine(BigDecimal[] chandeForecastValues) {
+        BigDecimal[] movingAverageValues = calculateMovingAverageValues(chandeForecastValues);
+        BigDecimal[] result = new BigDecimal[originalData.length];
+        System.arraycopy(movingAverageValues, 0, result, period - 1, movingAverageValues.length);
+        return result;
+    }
+
+    private BigDecimal[] calculateMovingAverageValues(BigDecimal[] chandeForecastValues) {
+        return IndicatorResultExtractor.extract(calculateMovingAverage(chandeForecastValues));
+    }
+
+    private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] chandeForecastValues) {
+        return MovingAverageFactory.create(buildMARequest(chandeForecastValues)).getResult();
+    }
+
+    private IndicatorRequest buildMARequest(BigDecimal[] chandeForecastValues) {
+        return MARequest.builder()
+                .originalData(FakeTicksCreator.createWithCloseOnly(chandeForecastValues))
+                .priceType(CLOSE)
+                .indicatorType(movingAverageType)
+                .period(movingAveragePeriod)
+                .build();
+    }
+
+    private void buildChandeForecastOscillatorResult(BigDecimal[] chandeForecastValues, BigDecimal[] signalLineValues) {
+        result = IntStream.range(0, originalData.length)
+                .mapToObj(idx -> buildChandeForecastOscillatorResult(chandeForecastValues[idx], signalLineValues[idx], idx))
+                .toArray(CFOResult[]::new);
+    }
+
+    private CFOResult buildChandeForecastOscillatorResult(BigDecimal chandeForecastValue, BigDecimal signalLineValue, int currentIndex) {
+        return new CFOResult(originalData[currentIndex].getTickTime(), chandeForecastValue, signalLineValue);
     }
 
 }

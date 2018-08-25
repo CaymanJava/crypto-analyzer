@@ -50,8 +50,8 @@ public class ChandelierExitTest {
         assertEquals(result[45].getLongChandelierExit(), toBigDecimal(1310.1626664502));
         assertEquals(result[45].getShortChandelierExit(), toBigDecimal(1218.3573335498));
         assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getLongChandelierExit(), toBigDecimal(1417.0923441340));
-        assertEquals(result[72].getShortChandelierExit(), toBigDecimal(1438.4775558660));
+        assertEquals(result[72].getLongChandelierExit(), toBigDecimal(1417.092344134));
+        assertEquals(result[72].getShortChandelierExit(), toBigDecimal(1438.477555866));
     }
 
     @Test

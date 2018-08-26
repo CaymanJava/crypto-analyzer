@@ -1,25 +1,18 @@
 package pro.crypto.analyzer.bbw;
 
 import lombok.Value;
-import pro.crypto.model.AnalyzerResult;
-import pro.crypto.model.Signal;
+import pro.crypto.model.result.StartTrendResult;
+import pro.crypto.model.result.TrendPresenceResult;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class BBWAnalyzerResult implements AnalyzerResult {
+public class BBWAnalyzerResult implements TrendPresenceResult, StartTrendResult {
 
     private LocalDateTime time;
 
-    private Signal signal;
+    private boolean startTrend;
 
-    private BigDecimal indicatorValue;
-
-    private BigDecimal closePrice;
-
-    private Boolean startTrend;
-
-    private Boolean trendExist;
+    private boolean trend;
 
 }

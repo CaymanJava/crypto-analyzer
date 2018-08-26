@@ -65,9 +65,11 @@ public class CFOAnalyzer implements Analyzer<CFOAnalyzerResult> {
         if (isIndicatorAboveSignalLine(currentIndex) && !isIndicatorInOversoldLevel(currentIndex)) {
             return BUY;
         }
+
         if (isIndicatorUnderSignalLine(currentIndex) && !isIndicatorInOverboughtLevel(currentIndex)) {
             return SELL;
         }
+
         return NEUTRAL;
     }
 
@@ -93,11 +95,7 @@ public class CFOAnalyzer implements Analyzer<CFOAnalyzerResult> {
 
     private void buildCFOAnalyzerResult(Signal[] signals) {
         result = IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new CFOAnalyzerResult(
-                        originalData[idx].getTickTime(), signals[idx],
-                        indicatorResults[idx].getIndicatorValue(),
-                        originalData[idx].getClose()
-                        ))
+                .mapToObj(idx -> new CFOAnalyzerResult(originalData[idx].getTickTime(), signals[idx]))
                 .toArray(CFOAnalyzerResult[]::new);
     }
 

@@ -11,9 +11,7 @@ import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
-import static junit.framework.TestCase.assertNull;
 import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 
 public class ATRAnalyzerTest {
@@ -30,30 +28,30 @@ public class ATRAnalyzerTest {
         IndicatorResult[] indicatorResults = new AverageTrueRange(buildIndicatorRequest()).getResult();
         ATRAnalyzerResult[] result = new ATRAnalyzer(buildAnalyzerRequest(indicatorResults)).getResult();
         assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertFalse(result[0].getStartTrend());
-        assertFalse(result[0].getTrendExist());
-        assertEquals(result[9].getIndicatorValue(), toBigDecimal(31.81202));
-        assertFalse(result[9].getStartTrend());
-        assertFalse(result[9].getTrendExist());
-        assertEquals(result[18].getIndicatorValue(), toBigDecimal(32.6122649243));
-        assertFalse(result[18].getStartTrend());
-        assertTrue(result[18].getTrendExist());
-        assertEquals(result[27].getIndicatorValue(), toBigDecimal(36.2405423251));
-        assertTrue(result[27].getStartTrend());
-        assertTrue(result[27].getTrendExist());
-        assertEquals(result[37].getIndicatorValue(), toBigDecimal(38.1619396657));
-        assertFalse(result[37].getStartTrend());
-        assertFalse(result[37].getTrendExist());
-        assertEquals(result[44].getIndicatorValue(), toBigDecimal(39.4189378381));
-        assertTrue(result[44].getStartTrend());
-        assertTrue(result[44].getTrendExist());
-        assertEquals(result[61].getIndicatorValue(), toBigDecimal(37.1283885232));
-        assertTrue(result[61].getStartTrend());
-        assertTrue(result[61].getTrendExist());
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(33.2115532806));
-        assertFalse(result[72].getStartTrend());
-        assertFalse(result[72].getTrendExist());
+        assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
+        assertFalse(result[0].isStartTrend());
+        assertFalse(result[0].isTrend());
+        assertEquals(result[9].getTime(), of(2018, 3, 6, 0, 0));
+        assertFalse(result[9].isStartTrend());
+        assertFalse(result[9].isTrend());
+        assertEquals(result[18].getTime(), of(2018, 3, 15, 0, 0));
+        assertFalse(result[18].isStartTrend());
+        assertTrue(result[18].isTrend());
+        assertEquals(result[27].getTime(), of(2018, 3, 24, 0, 0));
+        assertTrue(result[27].isStartTrend());
+        assertTrue(result[27].isTrend());
+        assertEquals(result[37].getTime(), of(2018, 4, 3, 0, 0));
+        assertFalse(result[37].isStartTrend());
+        assertFalse(result[37].isTrend());
+        assertEquals(result[44].getTime(), of(2018, 4, 10, 0, 0));
+        assertTrue(result[44].isStartTrend());
+        assertTrue(result[44].isTrend());
+        assertEquals(result[61].getTime(), of(2018, 4, 27, 0, 0));
+        assertTrue(result[61].isStartTrend());
+        assertTrue(result[61].isTrend());
+        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
+        assertFalse(result[72].isStartTrend());
+        assertFalse(result[72].isTrend());
     }
 
     private IndicatorRequest buildIndicatorRequest() {

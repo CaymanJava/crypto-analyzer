@@ -1,27 +1,19 @@
 package pro.crypto.analyzer.atrb;
 
 import lombok.Value;
-import pro.crypto.model.AnalyzerResult;
-import pro.crypto.model.Signal;
+import pro.crypto.model.result.CrossBandResult;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class ATRBAnalyzerResult implements AnalyzerResult {
+public class ATRBAnalyzerResult implements CrossBandResult {
 
     private LocalDateTime time;
 
-    private Signal signal;
+    private boolean crossUpperBand;
 
-    private BigDecimal indicatorValue;
+    private boolean crossLowerBand;
 
-    private BigDecimal closePrice;
-
-    private Boolean crossUpperBand;
-
-    private Boolean crossLowerBand;
-
-    private Boolean crossMiddleBand;
+    private boolean crossMiddleBand;
 
 }

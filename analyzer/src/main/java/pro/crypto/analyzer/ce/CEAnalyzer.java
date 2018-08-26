@@ -119,9 +119,11 @@ public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
         if (nonNull(longExit) && isNull(shortExit)) {
             return longExit;
         }
+
         if (isNull(longExit) && nonNull(shortExit)) {
             return shortExit;
         }
+
         return NEUTRAL;
     }
 
@@ -132,17 +134,7 @@ public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
     }
 
     private CEAnalyzerResult buildCEAnalyzerResult(Signal signal, int currentIndex) {
-        return new CEAnalyzerResult(
-                originalData[currentIndex].getTickTime(), signal,
-                extractIndicatorValue(signal, currentIndex),
-                originalData[currentIndex].getClose()
-        );
-    }
-
-    private BigDecimal extractIndicatorValue(Signal signal, int currentIndex) {
-        return signal == SELL
-                ? indicatorResults[currentIndex].getLongChandelierExit()
-                : indicatorResults[currentIndex].getShortChandelierExit();
+        return new CEAnalyzerResult(indicatorResults[currentIndex].getTime(), signal);
     }
 
 }

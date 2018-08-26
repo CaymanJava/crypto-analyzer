@@ -5,9 +5,7 @@ import org.junit.Test;
 import pro.crypto.indicator.adx.ADXRequest;
 import pro.crypto.indicator.adx.AverageDirectionalMovementIndex;
 import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.IndicatorRequest;
-import pro.crypto.model.IndicatorResult;
+import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -15,10 +13,9 @@ import static junit.framework.TestCase.assertNull;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.NEUTRAL;
-import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.Signal.*;
 import static pro.crypto.model.Strength.NORMAL;
+import static pro.crypto.model.Strength.UNDEFINED;
 import static pro.crypto.model.Strength.WEAK;
 
 public class ADXAnalyzerTest {
@@ -35,27 +32,34 @@ public class ADXAnalyzerTest {
         IndicatorResult[] indicatorResults = new AverageDirectionalMovementIndex(buildIndicatorRequest()).getResult();
         ADXAnalyzerResult[] result = new ADXAnalyzer(buildAnalyzerRequest(indicatorResults)).getResult();
         assertTrue(result.length == originalData.length);
-        assertNull(result[25].getIndicatorValue());
+        assertEquals(result[25].getTime(), of(2018, 3, 22, 0, 0));
+        assertNull(result[25].getEntryPoint());
         assertEquals(result[25].getSignal(), NEUTRAL);
-        assertEquals(result[25].getStrength(), NORMAL);
-        assertEquals(result[26].getIndicatorValue(), toBigDecimal(43.1045848871));
+        assertEquals(result[25].getTrendStrength(), new TrendStrength(Trend.UNDEFINED, UNDEFINED));
+        assertEquals(result[26].getTime(), of(2018, 3, 23, 0, 0));
+        assertNull(result[26].getEntryPoint());
         assertEquals(result[26].getSignal(), NEUTRAL);
-        assertEquals(result[26].getStrength(), NORMAL);
-        assertEquals(result[28].getIndicatorValue(), toBigDecimal(36.1905620414));
+        assertEquals(result[26].getTrendStrength(), new TrendStrength(Trend.UNDEFINED, NORMAL));
+        assertEquals(result[28].getTime(), of(2018, 3, 25, 0, 0));
+        assertEquals(result[28].getEntryPoint(), toBigDecimal(1220.12));
         assertEquals(result[28].getSignal(), BUY);
-        assertEquals(result[28].getStrength(), NORMAL);
-        assertEquals(result[33].getIndicatorValue(), toBigDecimal(21.7463844666));
+        assertEquals(result[28].getTrendStrength(), new TrendStrength(Trend.UNDEFINED, NORMAL));
+        assertEquals(result[33].getTime(), of(2018, 3, 30, 0, 0));
+        assertEquals(result[33].getEntryPoint(), toBigDecimal(1253.4399));
         assertEquals(result[33].getSignal(), SELL);
-        assertEquals(result[33].getStrength(), NORMAL);
-        assertEquals(result[35].getIndicatorValue(), toBigDecimal(19.2631215658));
+        assertEquals(result[33].getTrendStrength(), new TrendStrength(Trend.UNDEFINED, NORMAL));
+        assertEquals(result[35].getTime(), of(2018, 4, 1, 0, 0));
+        assertNull(result[35].getEntryPoint());
         assertEquals(result[35].getSignal(), NEUTRAL);
-        assertEquals(result[35].getStrength(), WEAK);
-        assertEquals(result[56].getIndicatorValue(), toBigDecimal(17.7528644891));
+        assertEquals(result[35].getTrendStrength(), new TrendStrength(Trend.UNDEFINED, WEAK));
+        assertEquals(result[56].getTime(), of(2018, 4, 22, 0, 0));
+        assertEquals(result[56].getEntryPoint(), toBigDecimal(1419.64));
         assertEquals(result[56].getSignal(), BUY);
-        assertEquals(result[56].getStrength(), WEAK);
-        assertEquals(result[65].getIndicatorValue(), toBigDecimal(24.7670170996));
+        assertEquals(result[56].getTrendStrength(), new TrendStrength(Trend.UNDEFINED, WEAK));
+        assertEquals(result[65].getTime(), of(2018, 5, 1, 0, 0));
+        assertEquals(result[65].getEntryPoint(), toBigDecimal(1412.92));
         assertEquals(result[65].getSignal(), SELL);
-        assertEquals(result[65].getStrength(), NORMAL);
+        assertEquals(result[65].getTrendStrength(), new TrendStrength(Trend.UNDEFINED, NORMAL));
     }
 
     private IndicatorRequest buildIndicatorRequest() {

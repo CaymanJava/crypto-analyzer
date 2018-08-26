@@ -2,7 +2,6 @@ package pro.crypto.analyzer.aroon;
 
 import pro.crypto.indicator.aroon.AroonResult;
 import pro.crypto.model.*;
-import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
@@ -12,13 +11,11 @@ import static java.util.Objects.nonNull;
 
 public class AroonAnalyzer implements Analyzer<AroonAnalyzerResult> {
 
-    private final Tick[] originalData;
     private final AroonResult[] indicatorResults;
 
     private AroonAnalyzerResult[] result;
 
     public AroonAnalyzer(AnalyzerRequest request) {
-        this.originalData = request.getOriginalData();
         this.indicatorResults = (AroonResult[]) request.getIndicatorResults();
     }
 
@@ -178,11 +175,7 @@ public class AroonAnalyzer implements Analyzer<AroonAnalyzerResult> {
     }
 
     private AroonAnalyzerResult buildAroonUpAnalyzerResult(TrendStrength trend, int currentIndex) {
-        return new AroonAnalyzerResult(
-                originalData[currentIndex].getTickTime(), null,
-                indicatorResults[currentIndex].getAroonOscillator(), originalData[currentIndex].getClose(),
-                trend.getTrend(), trend.getStrength()
-        );
+        return new AroonAnalyzerResult(indicatorResults[currentIndex].getTime(), new TrendStrength(trend.getTrend(), trend.getStrength()));
     }
 
 }

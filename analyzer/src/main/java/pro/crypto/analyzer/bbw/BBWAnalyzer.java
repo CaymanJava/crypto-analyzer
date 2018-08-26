@@ -6,24 +6,20 @@ import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.bbw.BBWResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.NEUTRAL;
 
 public class BBWAnalyzer implements Analyzer<BBWAnalyzerResult> {
 
-    private final Tick[] originalData;
     private final BBWResult[] indicatorResults;
 
     private BBWAnalyzerResult[] result;
 
     public BBWAnalyzer(AnalyzerRequest request) {
-        this.originalData = request.getOriginalData();
         this.indicatorResults = (BBWResult[]) request.getIndicatorResults();
     }
 
@@ -70,8 +66,9 @@ public class BBWAnalyzer implements Analyzer<BBWAnalyzerResult> {
 
     private BBWAnalyzerResult buildBBAnalyzerResult(BigDecimal extremelyLowValue, int currentIndex) {
         return new BBWAnalyzerResult(
-                originalData[currentIndex].getTickTime(), NEUTRAL, indicatorResults[currentIndex].getIndicatorValue(),
-                originalData[currentIndex].getClose(), defineStartTrend(extremelyLowValue, currentIndex), isTrendExist(extremelyLowValue, currentIndex)
+                indicatorResults[currentIndex].getTime(),
+                defineStartTrend(extremelyLowValue, currentIndex),
+                isTrendExist(extremelyLowValue, currentIndex)
         );
     }
 

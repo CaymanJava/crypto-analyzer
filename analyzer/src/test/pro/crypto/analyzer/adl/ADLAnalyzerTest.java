@@ -13,10 +13,7 @@ import pro.crypto.model.tick.Tick;
 import static java.time.LocalDateTime.of;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.NEUTRAL;
-import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.Signal.*;
 
 public class ADLAnalyzerTest {
 
@@ -30,20 +27,20 @@ public class ADLAnalyzerTest {
     @Test
     public void testAccumulationDistributionLineAnalyzer() {
         ADLResult[] indicatorResult = new AccumulationDistributionLine(buildIndicatorRequest()).getResult();
-        ADLAnalyzerResult[] analyzerResults = new ADLAnalyzer(buildAnalyzerResult(indicatorResult)).getResult();
-        assertTrue(analyzerResults.length == originalData.length);
-        assertEquals(analyzerResults[31].getIndicatorValue(), toBigDecimal(-431.100481141));
-        assertEquals(analyzerResults[31].getSignal(), SELL);
-        assertEquals(analyzerResults[35].getIndicatorValue(), toBigDecimal(-163.7707684989));
-        assertEquals(analyzerResults[35].getSignal(), SELL);
-        assertEquals(analyzerResults[37].getIndicatorValue(), toBigDecimal(-170.2435303218));
-        assertEquals(analyzerResults[37].getSignal(), SELL);
-        assertEquals(analyzerResults[38].getIndicatorValue(), toBigDecimal(-68.2995968351));
-        assertEquals(analyzerResults[38].getSignal(), BUY);
-        assertEquals(analyzerResults[39].getIndicatorValue(), toBigDecimal(-186.5266594385));
-        assertEquals(analyzerResults[39].getSignal(), SELL);
-        assertEquals(analyzerResults[72].getIndicatorValue(), toBigDecimal(347.8292776260));
-        assertEquals(analyzerResults[72].getSignal(), NEUTRAL);
+        ADLAnalyzerResult[] result = new ADLAnalyzer(buildAnalyzerResult(indicatorResult)).getResult();
+        assertTrue(result.length == originalData.length);
+        assertEquals(result[31].getTime(), of(2018, 3, 28, 0, 0));
+        assertEquals(result[31].getSignal(), SELL);
+        assertEquals(result[35].getTime(), of(2018, 4, 1, 0, 0));
+        assertEquals(result[35].getSignal(), SELL);
+        assertEquals(result[37].getTime(), of(2018, 4, 3, 0, 0));
+        assertEquals(result[37].getSignal(), SELL);
+        assertEquals(result[38].getTime(), of(2018, 4, 4, 0, 0));
+        assertEquals(result[38].getSignal(), BUY);
+        assertEquals(result[39].getTime(), of(2018, 4, 5, 0, 0));
+        assertEquals(result[39].getSignal(), SELL);
+        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
+        assertEquals(result[72].getSignal(), NEUTRAL);
     }
 
     private AnalyzerRequest buildAnalyzerResult(ADLResult[] indicatorResult) {

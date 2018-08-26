@@ -11,10 +11,8 @@ import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
-import static junit.framework.TestCase.assertNull;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.Signal.*;
 
 public class CEAnalyzerTest {
@@ -31,21 +29,21 @@ public class CEAnalyzerTest {
         IndicatorResult[] indicatorResults = new ChandelierExit(buildIndicatorRequest()).getResult();
         CEAnalyzerResult[] result = new CEAnalyzer(buildAnalyzerRequest(indicatorResults)).getResult();
         assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
+        assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
         assertEquals(result[0].getSignal(), NEUTRAL);
-        assertEquals(result[21].getIndicatorValue(), toBigDecimal(1260.0804090908));
+        assertEquals(result[21].getTime(), of(2018, 3, 18, 0, 0));
         assertEquals(result[21].getSignal(), NEUTRAL);
-        assertEquals(result[29].getIndicatorValue(), toBigDecimal(1213.4778827282));
+        assertEquals(result[29].getTime(), of(2018, 3, 26, 0, 0));
         assertEquals(result[29].getSignal(), BUY);
-        assertEquals(result[56].getIndicatorValue(), toBigDecimal(1388.9657641606));
+        assertEquals(result[56].getTime(), of(2018, 4, 22, 0, 0));
         assertEquals(result[56].getSignal(), BUY);
-        assertEquals(result[66].getIndicatorValue(), toBigDecimal(1413.9083180680));
+        assertEquals(result[66].getTime(), of(2018, 5, 2, 0, 0));
         assertEquals(result[66].getSignal(), SELL);
-        assertEquals(result[67].getIndicatorValue(), toBigDecimal(1427.0714100260));
+        assertEquals(result[67].getTime(), of(2018, 5, 3, 0, 0));
         assertEquals(result[67].getSignal(), NEUTRAL);
-        assertEquals(result[68].getIndicatorValue(), toBigDecimal(1412.3025358843));
+        assertEquals(result[68].getTime(), of(2018, 5, 4, 0, 0));
         assertEquals(result[68].getSignal(), SELL);
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1438.477555866));
+        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
         assertEquals(result[72].getSignal(), NEUTRAL);
     }
 

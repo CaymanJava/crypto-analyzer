@@ -26,26 +26,26 @@ public class AroonAnalyzerTest {
         IndicatorResult[] indicatorResults = new AroonUpDown(buildIndicatorRequest()).getResult();
         AroonAnalyzerResult[] result = new AroonAnalyzer(buildAnalyzerRequest(indicatorResults)).getResult();
         assertTrue(result.length == originalData.length);
-        assertEquals(result[0].getTrend(), Trend.UNDEFINED);
-        assertEquals(result[0].getStrength(), Strength.UNDEFINED);
-        assertEquals(result[14].getTrend(), Trend.DOWNTREND);
-        assertEquals(result[14].getStrength(), Strength.STRONG);
-        assertEquals(result[30].getTrend(), Trend.UPTREND);
-        assertEquals(result[30].getStrength(), Strength.STRONG);
-        assertEquals(result[31].getTrend(), Trend.CONSOLIDATION);
-        assertEquals(result[31].getStrength(), Strength.NORMAL);
-        assertEquals(result[35].getTrend(), Trend.UPTREND);
-        assertEquals(result[35].getStrength(), Strength.NORMAL);
-        assertEquals(result[50].getTrend(), Trend.UPTREND);
-        assertEquals(result[50].getStrength(), Strength.NORMAL);
-        assertEquals(result[51].getTrend(), Trend.CONSOLIDATION);
-        assertEquals(result[51].getStrength(), Strength.NORMAL);
-        assertEquals(result[68].getTrend(), Trend.DOWNTREND);
-        assertEquals(result[68].getStrength(), Strength.STRONG);
-        assertEquals(result[69].getTrend(), Trend.CONSOLIDATION);
-        assertEquals(result[69].getStrength(), Strength.NORMAL);
-        assertEquals(result[72].getTrend(), Trend.DOWNTREND);
-        assertEquals(result[72].getStrength(), Strength.STRONG);
+        assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
+        assertEquals(result[0].getTrendStrength(), new TrendStrength(Trend.UNDEFINED, Strength.UNDEFINED));
+        assertEquals(result[14].getTime(), of(2018, 3, 11, 0, 0));
+        assertEquals(result[14].getTrendStrength(), new TrendStrength(Trend.DOWNTREND, Strength.STRONG));
+        assertEquals(result[30].getTime(), of(2018, 3, 27, 0, 0));
+        assertEquals(result[30].getTrendStrength(), new TrendStrength(Trend.UPTREND, Strength.STRONG));
+        assertEquals(result[31].getTime(), of(2018, 3, 28, 0, 0));
+        assertEquals(result[31].getTrendStrength(), new TrendStrength(Trend.CONSOLIDATION, Strength.NORMAL));
+        assertEquals(result[35].getTime(), of(2018, 4, 1, 0, 0));
+        assertEquals(result[35].getTrendStrength(), new TrendStrength(Trend.UPTREND, Strength.NORMAL));
+        assertEquals(result[50].getTime(), of(2018, 4, 16, 0, 0));
+        assertEquals(result[50].getTrendStrength(), new TrendStrength(Trend.UPTREND, Strength.NORMAL));
+        assertEquals(result[51].getTime(), of(2018, 4, 17, 0, 0));
+        assertEquals(result[51].getTrendStrength(), new TrendStrength(Trend.CONSOLIDATION, Strength.NORMAL));
+        assertEquals(result[68].getTime(), of(2018, 5, 4, 0, 0));
+        assertEquals(result[68].getTrendStrength(), new TrendStrength(Trend.DOWNTREND, Strength.STRONG));
+        assertEquals(result[69].getTime(), of(2018, 5, 5, 0, 0));
+        assertEquals(result[69].getTrendStrength(), new TrendStrength(Trend.CONSOLIDATION, Strength.NORMAL));
+        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
+        assertEquals(result[72].getTrendStrength(), new TrendStrength(Trend.DOWNTREND, Strength.STRONG));
     }
 
     private IndicatorRequest buildIndicatorRequest() {

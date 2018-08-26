@@ -2,6 +2,7 @@ package pro.crypto.analyzer.adx;
 
 import pro.crypto.indicator.adx.ADXResult;
 import pro.crypto.model.*;
+import pro.crypto.model.result.AnalyzerResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -12,7 +13,7 @@ import static java.util.Objects.nonNull;
 import static pro.crypto.model.Signal.*;
 import static pro.crypto.model.Strength.*;
 
-public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult>{
+public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult> {
 
     private final Tick[] originalData;
     private final ADXResult[] indicatorResults;
@@ -47,7 +48,7 @@ public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult>{
 
     private Strength defineTrendStrength(int currentIndex) {
         if (isNull(indicatorResults[currentIndex].getAverageDirectionalIndex())) {
-            return NORMAL;
+            return UNDEFINED;
         }
         if (indicatorResults[currentIndex].getAverageDirectionalIndex().compareTo(new BigDecimal(20)) < 0) {
             return WEAK;
@@ -87,8 +88,8 @@ public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult>{
     private boolean isIntersection(int currentIndex) {
         return indicatorResults[currentIndex - 1].getPositiveDirectionalIndicator()
                 .compareTo(indicatorResults[currentIndex - 1].getNegativeDirectionalIndicator()) !=
-                        indicatorResults[currentIndex].getPositiveDirectionalIndicator()
-                                .compareTo(indicatorResults[currentIndex].getNegativeDirectionalIndicator());
+                indicatorResults[currentIndex].getPositiveDirectionalIndicator()
+                        .compareTo(indicatorResults[currentIndex].getNegativeDirectionalIndicator());
     }
 
     private Signal recognizeBuyOrSellSignal(int currentIndex) {
@@ -108,10 +109,8 @@ public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult>{
         return ADXAnalyzerResult.builder()
                 .time(originalData[currentIndex].getTickTime())
                 .signal(signal)
-                .indicatorValue(indicatorResults[currentIndex].getAverageDirectionalIndex())
-                .closePrice(originalData[currentIndex].getClose())
+                .trendStrength(new TrendStrength(Trend.UNDEFINED, strength))
                 .entryPoint(definePotentialEntryPoint(signal, currentIndex))
-                .strength(strength)
                 .build();
     }
 

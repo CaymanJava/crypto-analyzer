@@ -104,12 +104,15 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
         if (isOverboughtIntersection(currentIndex)) {
             return new SignalStrength(defineOverboughtSignal(currentIndex), NORMAL);
         }
+
         if (isOversoldIntersection(currentIndex)) {
             return new SignalStrength(defineOverSoldSignal(currentIndex), NORMAL);
         }
+
         if (isZeroLineIntersection(currentIndex)) {
             return new SignalStrength(defineZeroLineSignal(currentIndex), WEAK);
         }
+
         return null;
     }
 
@@ -167,12 +170,15 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
         if (nonNull(divergenceSignal) && nonNull(crossSignal)) {
             return tryMergeSignals(divergenceSignal, crossSignal);
         }
+
         if (nonNull(crossSignal)) {
             return crossSignal;
         }
+
         if (nonNull(divergenceSignal)) {
             return divergenceSignal;
         }
+
         return new SignalStrength(NEUTRAL, UNDEFINED);
     }
 
@@ -207,10 +213,7 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
     }
 
     private CCIAnalyzerResult buildCCIAnalyzerResult(SignalStrength mergedSignal, int currentIndex) {
-        return new CCIAnalyzerResult(
-                originalData[currentIndex].getTickTime(), mergedSignal.getSignal(), mergedSignal.getStrength(),
-                indicatorResults[currentIndex].getIndicatorValue(), originalData[currentIndex].getClose(), defineSecurityLevel(currentIndex)
-        );
+        return new CCIAnalyzerResult(indicatorResults[currentIndex].getTime(), mergedSignal, defineSecurityLevel(currentIndex));
     }
 
     private SecurityLevel defineSecurityLevel(int currentIndex) {
@@ -227,9 +230,11 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
         if (indicatorValue.compareTo(OVERBOUGHT_LEVEL) >= 0) {
             return SecurityLevel.OVERBOUGHT;
         }
+
         if (indicatorValue.compareTo(OVERSOLD_LEVEL) <= 0) {
             return SecurityLevel.OVERSOLD;
         }
+
         return SecurityLevel.NORMAL;
     }
 

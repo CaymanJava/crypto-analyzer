@@ -1,29 +1,24 @@
 package pro.crypto.analyzer.ac;
 
 import pro.crypto.indicator.ac.ACResult;
-import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.Signal;
-import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.NEUTRAL;
-import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.Signal.*;
 
 public class ACAnalyzer implements Analyzer<ACAnalyzeResult> {
 
-    private final Tick[] originalData;
     private final ACResult[] indicatorResults;
 
     private ACAnalyzeResult[] result;
 
     public ACAnalyzer(AnalyzerRequest request) {
-        this.originalData = request.getOriginalData();
         this.indicatorResults = (ACResult[]) request.getIndicatorResults();
     }
 
@@ -122,10 +117,7 @@ public class ACAnalyzer implements Analyzer<ACAnalyzeResult> {
 
     private void buildACResult(Signal[] signals) {
         result = IntStream.range(0, signals.length)
-                .mapToObj(idx -> new ACAnalyzeResult(
-                        indicatorResults[idx].getTime(), signals[idx],
-                        indicatorResults[idx].getIndicatorValue(), originalData[idx].getClose()
-                ))
+                .mapToObj(idx -> new ACAnalyzeResult(indicatorResults[idx].getTime(), signals[idx]))
                 .toArray(ACAnalyzeResult[]::new);
     }
 

@@ -11,10 +11,8 @@ import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
-import static junit.framework.TestCase.assertNull;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.Signal.*;
 
 public class AOAnalyzerTest {
@@ -31,17 +29,17 @@ public class AOAnalyzerTest {
         IndicatorResult[] indicatorResults = new AwesomeOscillator(buildIndicatorRequest()).getResult();
         AOAnalyzerResult[] result = new AOAnalyzer(buildAnalyzerRequest(indicatorResults)).getResult();
         assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
+        assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
         assertEquals(result[0].getSignal(), NEUTRAL);
-        assertEquals(result[53].getIndicatorValue(), toBigDecimal(83.471805));
+        assertEquals(result[53].getTime(), of(2018, 4, 19, 0, 0));
         assertEquals(result[53].getSignal(), NEUTRAL);
-        assertEquals(result[54].getIndicatorValue(), toBigDecimal(91.4281091176));
+        assertEquals(result[54].getTime(), of(2018, 4, 20, 0, 0));
         assertEquals(result[54].getSignal(), BUY);
-        assertEquals(result[62].getIndicatorValue(), toBigDecimal(114.0108652941));
+        assertEquals(result[62].getTime(), of(2018, 4, 28, 0, 0));
         assertEquals(result[62].getSignal(), SELL);
-        assertEquals(result[71].getIndicatorValue(), toBigDecimal(-1.7644832353));
+        assertEquals(result[71].getTime(), of(2018, 5, 7, 0, 0));
         assertEquals(result[71].getSignal(), SELL);
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-10.67721));
+        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
         assertEquals(result[72].getSignal(), NEUTRAL);
     }
 

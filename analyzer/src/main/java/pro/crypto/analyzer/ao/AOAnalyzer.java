@@ -4,7 +4,6 @@ import pro.crypto.indicator.ao.AOResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.Signal;
-import pro.crypto.model.tick.Tick;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,21 +13,17 @@ import java.util.stream.Stream;
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.NEUTRAL;
-import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.Signal.*;
 
 public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
 
     private final static int POSSIBLE_INDEX_AMOUNT_TO_TWO_PEAKS = 6;
 
-    private final Tick[] originalData;
     private final AOResult[] indicatorResults;
 
     private AOAnalyzerResult[] result;
 
     public AOAnalyzer(AnalyzerRequest request) {
-        this.originalData = request.getOriginalData();
         this.indicatorResults = (AOResult[]) request.getIndicatorResults();
     }
 
@@ -344,12 +339,7 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
     }
 
     private AOAnalyzerResult buildAOAnalyzerResult(Signal signal, int currentIndex) {
-        return new AOAnalyzerResult(
-                originalData[currentIndex].getTickTime(),
-                signal,
-                indicatorResults[currentIndex].getIndicatorValue(),
-                originalData[currentIndex].getClose()
-        );
+        return new AOAnalyzerResult(indicatorResults[currentIndex].getTime(), signal);
     }
 
 }

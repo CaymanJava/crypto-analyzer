@@ -3,7 +3,7 @@ package pro.crypto.analyzer.alligator;
 import pro.crypto.indicator.alligator.AlligatorResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.AnalyzerResult;
+import pro.crypto.model.result.AnalyzerResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -11,7 +11,6 @@ import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.NEUTRAL;
 
 public class AlligatorAnalyzer implements Analyzer<AlligatorAnalyzerResult> {
 
@@ -66,7 +65,7 @@ public class AlligatorAnalyzer implements Analyzer<AlligatorAnalyzerResult> {
     }
 
     private boolean defineTrend(int currentIndex) {
-        return isPossibleDefine(currentIndex) && !isIntersectionExist(currentIndex) && trendExist(currentIndex);
+        return isPossibleDefine(currentIndex) && !isIntersection(currentIndex) && isTrend(currentIndex);
     }
 
     private boolean isPossibleDefine(int currentIndex) {
@@ -79,7 +78,7 @@ public class AlligatorAnalyzer implements Analyzer<AlligatorAnalyzerResult> {
                 && nonNull(indicatorResults[currentIndex - 1].getTeethValue());
     }
 
-    private boolean isIntersectionExist(int currentIndex) {
+    private boolean isIntersection(int currentIndex) {
         return isLineMutualIntersectionExist(currentIndex) || linesCrossPrice(currentIndex);
     }
 
@@ -137,7 +136,7 @@ public class AlligatorAnalyzer implements Analyzer<AlligatorAnalyzerResult> {
                 .compareTo(originalData[currentIndex].getClose());
     }
 
-    private boolean trendExist(int currentIndex) {
+    private boolean isTrend(int currentIndex) {
         return isJawLineFartherFromPrice(currentIndex)
                 && isTeethLineBetweenJawAndLips(currentIndex)
                 && lipsLineCloserToPrice(currentIndex);
@@ -173,9 +172,6 @@ public class AlligatorAnalyzer implements Analyzer<AlligatorAnalyzerResult> {
     private AnalyzerResult buildAlligatorsAnalyzerResult(int currentIndex) {
         return AlligatorAnalyzerResult.builder()
                 .time(originalData[currentIndex].getTickTime())
-                .signal(NEUTRAL)
-                .indicatorValue(null)
-                .closePrice(originalData[currentIndex].getClose())
                 .awakePeriods(awakePeriods[currentIndex])
                 .trend(trends[currentIndex])
                 .build();

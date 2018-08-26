@@ -4,26 +4,21 @@ import pro.crypto.indicator.cc.CCResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.Signal;
-import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.NEUTRAL;
-import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.Signal.*;
 
 public class CCAnalyzer implements Analyzer<CCAnalyzerResult> {
 
-    private final Tick[] originalData;
     private final CCResult[] indicatorResults;
 
     private CCAnalyzerResult[] result;
 
     public CCAnalyzer(AnalyzerRequest request) {
-        this.originalData = request.getOriginalData();
         this.indicatorResults = (CCResult[]) request.getIndicatorResults();
     }
 
@@ -43,10 +38,7 @@ public class CCAnalyzer implements Analyzer<CCAnalyzerResult> {
     }
 
     private CCAnalyzerResult buildCCAnalyzerResult(int currentIndex) {
-        return new CCAnalyzerResult(
-                originalData[currentIndex].getTickTime(), findSignal(currentIndex),
-                indicatorResults[currentIndex].getIndicatorValue(), originalData[currentIndex].getClose()
-        );
+        return new CCAnalyzerResult(indicatorResults[currentIndex].getTime(), findSignal(currentIndex));
     }
 
     private Signal findSignal(int currentIndex) {

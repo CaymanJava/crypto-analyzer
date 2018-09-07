@@ -37,8 +37,7 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
 
     @Override
     public void analyze() {
-        DivergenceResult[] divergences = new Divergence(buildDivergenceRequest()).find();
-        SignalStrength[] divergenceSignals = findDivergenceSignals(divergences);
+        SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
         SignalStrength[] mergedSignals = mergeSignalStrengths(divergenceSignals, crossSignals);
         buildCCIAnalyzerResult(mergedSignals);
@@ -52,6 +51,15 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
         return result;
     }
 
+    private SignalStrength[] findDivergenceSignals() {
+        DivergenceResult[] divergences = new Divergence(buildDivergenceRequest()).find();
+        SignalStrength[] signalStrengths = new SignalStrength[indicatorResults.length];
+        Stream.of(divergences)
+                .filter(this::isPriceExist)
+                .forEach(divergence -> signalStrengths[divergence.getIndexTo() + 1] = new SignalStrength(divergence.recognizeSignal(), WEAK));
+        return signalStrengths;
+    }
+
     private DivergenceRequest buildDivergenceRequest() {
         return DivergenceRequest.builder()
                 .originalData(originalData)
@@ -59,27 +67,8 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
                 .build();
     }
 
-    private SignalStrength[] findDivergenceSignals(DivergenceResult[] divergences) {
-        SignalStrength[] signalStrengths = new SignalStrength[indicatorResults.length];
-        Stream.of(divergences)
-                .filter(this::isPriceExist)
-                .forEach(divergence -> signalStrengths[divergence.getIndexTo() + 1] = new SignalStrength(recognizeSignal(divergence), WEAK));
-        return signalStrengths;
-    }
-
     private boolean isPriceExist(DivergenceResult divergence) {
         return divergence.getIndexTo() < originalData.length;
-    }
-
-    private Signal recognizeSignal(DivergenceResult divergence) {
-        switch (divergence.getDivergenceType()) {
-            case BEARER:
-                return SELL;
-            case BULLISH:
-                return BUY;
-            default:
-                return null;
-        }
     }
 
     private SignalStrength[] findCrossSignals() {

@@ -15,6 +15,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
+import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.VARIABLE_INDEX_DYNAMIC_AVERAGE;
 
 public class VariableIndexDynamicAverage extends MovingAverage {
@@ -56,6 +57,8 @@ public class VariableIndexDynamicAverage extends MovingAverage {
         return CMORequest.builder()
                 .originalData(originalData)
                 .period(period)
+                .signalLinePeriod(2)
+                .movingAverageType(SIMPLE_MOVING_AVERAGE)
                 .build();
     }
 

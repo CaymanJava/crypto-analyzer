@@ -22,7 +22,7 @@ public class DivergenceResult {
 
     public Signal recognizeSignal() {
         switch (divergenceType) {
-            case BEARER:
+            case BEARISH:
                 return SELL;
             case BULLISH:
                 return BUY;

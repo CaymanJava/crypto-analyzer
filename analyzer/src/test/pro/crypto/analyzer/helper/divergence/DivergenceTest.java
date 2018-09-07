@@ -18,7 +18,7 @@ import static org.junit.Assert.assertEquals;
 import static pro.crypto.analyzer.helper.divergence.DivergenceClass.CLASSIC;
 import static pro.crypto.analyzer.helper.divergence.DivergenceClass.EXTENDED;
 import static pro.crypto.analyzer.helper.divergence.DivergenceClass.HIDDEN;
-import static pro.crypto.analyzer.helper.divergence.DivergenceType.BEARER;
+import static pro.crypto.analyzer.helper.divergence.DivergenceType.BEARISH;
 import static pro.crypto.analyzer.helper.divergence.DivergenceType.BULLISH;
 
 public class DivergenceTest {
@@ -39,23 +39,23 @@ public class DivergenceTest {
         assertEquals(divergenceResult[0].getDivergenceClass(), HIDDEN);
         assertEquals(divergenceResult[0].getIndexFrom(), 19);
         assertEquals(divergenceResult[0].getIndexTo(), 21);
-        assertEquals(divergenceResult[1].getDivergenceType(), BEARER);
+        assertEquals(divergenceResult[1].getDivergenceType(), BEARISH);
         assertEquals(divergenceResult[1].getDivergenceClass(), CLASSIC);
         assertEquals(divergenceResult[1].getIndexFrom(), 20);
         assertEquals(divergenceResult[1].getIndexTo(), 29);
-        assertEquals(divergenceResult[2].getDivergenceType(), BEARER);
+        assertEquals(divergenceResult[2].getDivergenceType(), BEARISH);
         assertEquals(divergenceResult[2].getDivergenceClass(), CLASSIC);
         assertEquals(divergenceResult[2].getIndexFrom(), 20);
         assertEquals(divergenceResult[2].getIndexTo(), 30);
-        assertEquals(divergenceResult[3].getDivergenceType(), BEARER);
+        assertEquals(divergenceResult[3].getDivergenceType(), BEARISH);
         assertEquals(divergenceResult[3].getDivergenceClass(), CLASSIC);
         assertEquals(divergenceResult[3].getIndexFrom(), 30);
         assertEquals(divergenceResult[3].getIndexTo(), 33);
-        assertEquals(divergenceResult[4].getDivergenceType(), BEARER);
+        assertEquals(divergenceResult[4].getDivergenceType(), BEARISH);
         assertEquals(divergenceResult[4].getDivergenceClass(), CLASSIC);
         assertEquals(divergenceResult[4].getIndexFrom(), 8);
         assertEquals(divergenceResult[4].getIndexTo(), 34);
-        assertEquals(divergenceResult[5].getDivergenceType(), BEARER);
+        assertEquals(divergenceResult[5].getDivergenceType(), BEARISH);
         assertEquals(divergenceResult[5].getDivergenceClass(), CLASSIC);
         assertEquals(divergenceResult[5].getIndexFrom(), 8);
         assertEquals(divergenceResult[5].getIndexTo(), 36);
@@ -63,7 +63,7 @@ public class DivergenceTest {
         assertEquals(divergenceResult[6].getDivergenceClass(), EXTENDED);
         assertEquals(divergenceResult[6].getIndexFrom(), 35);
         assertEquals(divergenceResult[6].getIndexTo(), 37);
-        assertEquals(divergenceResult[7].getDivergenceType(), BEARER);
+        assertEquals(divergenceResult[7].getDivergenceType(), BEARISH);
         assertEquals(divergenceResult[7].getDivergenceClass(), CLASSIC);
         assertEquals(divergenceResult[7].getIndexFrom(), 36);
         assertEquals(divergenceResult[7].getIndexTo(), 38);
@@ -71,7 +71,7 @@ public class DivergenceTest {
         assertEquals(divergenceResult[8].getDivergenceClass(), HIDDEN);
         assertEquals(divergenceResult[8].getIndexFrom(), 37);
         assertEquals(divergenceResult[8].getIndexTo(), 39);
-        assertEquals(divergenceResult[9].getDivergenceType(), BEARER);
+        assertEquals(divergenceResult[9].getDivergenceType(), BEARISH);
         assertEquals(divergenceResult[9].getDivergenceClass(), EXTENDED);
         assertEquals(divergenceResult[9].getIndexFrom(), 46);
         assertEquals(divergenceResult[9].getIndexTo(), 56);

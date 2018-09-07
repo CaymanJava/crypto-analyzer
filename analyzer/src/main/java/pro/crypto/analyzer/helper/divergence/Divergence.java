@@ -225,7 +225,7 @@ public class Divergence {
     private DivergenceResult defineBearerDivergence(int fromIndex, int toIndex) {
         DivergenceClass divergenceClass = defineBearerDivergenceClass(fromIndex, toIndex);
         return nonNull(divergenceClass)
-                ? new DivergenceResult(BEARER, divergenceClass, fromIndex, toIndex)
+                ? new DivergenceResult(BEARISH, divergenceClass, fromIndex, toIndex)
                 : null;
     }
 

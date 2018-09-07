@@ -1,11 +1,12 @@
 package pro.crypto.indicator.cmo;
 
+import pro.crypto.helper.FakeTicksCreator;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceDifferencesCalculator;
-import pro.crypto.model.BigDecimalTuple;
-import pro.crypto.model.Indicator;
-import pro.crypto.model.IndicatorRequest;
-import pro.crypto.model.IndicatorType;
+import pro.crypto.indicator.ma.MARequest;
+import pro.crypto.indicator.ma.MovingAverageFactory;
+import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -20,6 +21,8 @@ public class ChandeMomentumOscillator implements Indicator<CMOResult> {
 
     private final Tick[] originalData;
     private final int period;
+    private final int signalLinePeriod;
+    private final IndicatorType movingAverageType;
 
     private CMOResult[] result;
 
@@ -27,6 +30,8 @@ public class ChandeMomentumOscillator implements Indicator<CMOResult> {
         CMORequest request = (CMORequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
+        this.signalLinePeriod = request.getSignalLinePeriod();
+        this.movingAverageType = request.getMovingAverageType();
         checkIncomingData();
     }
 
@@ -40,7 +45,9 @@ public class ChandeMomentumOscillator implements Indicator<CMOResult> {
         result = new CMOResult[originalData.length];
         BigDecimalTuple[] priceDifferences = PriceDifferencesCalculator.calculatePriceDifference(originalData, CLOSE);
         BigDecimalTuple[] priceDifferenceSumValues = PriceDifferencesCalculator.calculatePriceDifferencesSum(priceDifferences, period);
-        calculateChandeMomentumOscillatorResult(priceDifferenceSumValues);
+        BigDecimal[] cmoValues = calculateChandeMomentumOscillatorResult(priceDifferenceSumValues);
+        BigDecimal[] signalLineValues = calculateSignalLineValues(cmoValues);
+        buildChandeMomentumOscillatorResult(cmoValues, signalLineValues);
     }
 
     @Override
@@ -53,14 +60,16 @@ public class ChandeMomentumOscillator implements Indicator<CMOResult> {
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkOriginalDataSize(originalData, period);
+        checkOriginalDataSize(originalData, period + signalLinePeriod);
+        checkMovingAverageType(movingAverageType);
         checkPeriod(period);
+        checkPeriod(signalLinePeriod);
     }
 
-    private void calculateChandeMomentumOscillatorResult(BigDecimalTuple[] priceDifferenceSumValues) {
-        IntStream.range(0, result.length)
-                .forEach(idx -> result[idx] = new CMOResult(originalData[idx].getTickTime(),
-                        calculateChandeMomentumOscillator(priceDifferenceSumValues[idx])));
+    private BigDecimal[] calculateChandeMomentumOscillatorResult(BigDecimalTuple[] priceDifferenceSumValues) {
+        return IntStream.range(0, result.length)
+                .mapToObj(idx -> calculateChandeMomentumOscillator(priceDifferenceSumValues[idx]))
+                .toArray(BigDecimal[]::new);
     }
 
     private BigDecimal calculateChandeMomentumOscillator(BigDecimalTuple priceDifferenceSum) {
@@ -75,6 +84,32 @@ public class ChandeMomentumOscillator implements Indicator<CMOResult> {
                         .multiply(priceDifferenceSum.getLeft().subtract(priceDifferenceSum.getRight())),
                 priceDifferenceSum.getLeft().add(priceDifferenceSum.getRight())
         );
+    }
+
+    private BigDecimal[] calculateSignalLineValues(BigDecimal[] cmoValues) {
+        BigDecimal[] movingAverageValues = IndicatorResultExtractor.extract(calculateMovingAverage(cmoValues));
+        BigDecimal[] result = new BigDecimal[originalData.length];
+        System.arraycopy(movingAverageValues, 0, result, period - 1, movingAverageValues.length);
+        return result;
+    }
+
+    private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] cmoValues) {
+        return MovingAverageFactory.create(buildMARequest(cmoValues)).getResult();
+    }
+
+    private IndicatorRequest buildMARequest(BigDecimal[] cmoValues) {
+        return MARequest.builder()
+                .originalData(FakeTicksCreator.createWithCloseOnly(cmoValues))
+                .priceType(CLOSE)
+                .period(signalLinePeriod)
+                .indicatorType(movingAverageType)
+                .build();
+    }
+
+    private void buildChandeMomentumOscillatorResult(BigDecimal[] cmoValues, BigDecimal[] signalLineValues) {
+        result = IntStream.range(0, originalData.length)
+                .mapToObj(idx -> new CMOResult(originalData[idx].getTickTime(), cmoValues[idx], signalLineValues[idx]))
+                .toArray(CMOResult[]::new);
     }
 
 }

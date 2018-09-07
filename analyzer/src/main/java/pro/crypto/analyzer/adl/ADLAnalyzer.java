@@ -59,7 +59,7 @@ public class ADLAnalyzer implements Analyzer<ADLAnalyzerResult> {
 
     private void recognizeSignal(DivergenceResult divergence, Signal[] signals) {
         switch (divergence.getDivergenceType()) {
-            case BEARER:
+            case BEARISH:
                 recognizeBearerSignal(divergence, signals);
                 break;
             case BULLISH:

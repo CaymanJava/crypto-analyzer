@@ -1,10 +1,10 @@
-package pro.crypto.analyzer.cci;
+package pro.crypto.analyzer.cmo;
 
 import pro.crypto.analyzer.helper.divergence.Divergence;
 import pro.crypto.analyzer.helper.divergence.DivergenceRequest;
 import pro.crypto.analyzer.helper.divergence.DivergenceResult;
 import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.indicator.cci.CCIResult;
+import pro.crypto.indicator.cmo.CMOResult;
 import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
 
@@ -19,20 +19,20 @@ import static pro.crypto.model.Signal.NEUTRAL;
 import static pro.crypto.model.Signal.SELL;
 import static pro.crypto.model.Strength.*;
 
-public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
+public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
 
-    private final static BigDecimal OVERBOUGHT_LEVEL = new BigDecimal(100);
-    private final static BigDecimal OVERSOLD_LEVEL = new BigDecimal(-100);
+    private final static BigDecimal OVERBOUGHT_LEVEL = new BigDecimal(50);
+    private final static BigDecimal OVERSOLD_LEVEL = new BigDecimal(-50);
     private final static BigDecimal ZERO_LEVEL = BigDecimal.ZERO;
 
     private final Tick[] originalData;
-    private final CCIResult[] indicatorResults;
+    private final CMOResult[] indicatorResults;
 
-    private CCIAnalyzerResult[] result;
+    private CMOAnalyzerResult[] result;
 
-    public CCIAnalyzer(AnalyzerRequest request) {
+    public CMOAnalyzer(AnalyzerRequest request) {
         this.originalData = request.getOriginalData();
-        this.indicatorResults = (CCIResult[]) request.getIndicatorResults();
+        this.indicatorResults = (CMOResult[]) request.getIndicatorResults();
     }
 
     @Override
@@ -40,11 +40,11 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
         SignalStrength[] mergedSignals = mergeSignalStrengths(divergenceSignals, crossSignals);
-        buildCCIAnalyzerResult(mergedSignals);
+        buildCMOAnalyzerResult(mergedSignals);
     }
 
     @Override
-    public CCIAnalyzerResult[] getResult() {
+    public CMOAnalyzerResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
@@ -73,66 +73,55 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
 
     private SignalStrength[] findCrossSignals() {
         return IntStream.range(0, indicatorResults.length)
-                .mapToObj(this::findCrossSignal)
+                .mapToObj(this::tryDefineCrossSignal)
                 .toArray(SignalStrength[]::new);
     }
 
-    private SignalStrength findCrossSignal(int currentIndex) {
-        return isPossibleDefineSignal(currentIndex)
+    private SignalStrength tryDefineCrossSignal(int currentIndex) {
+        return isPossibleDefineCrossSignal(currentIndex)
                 ? defineCrossSignal(currentIndex)
                 : null;
     }
 
-    private boolean isPossibleDefineSignal(int currentIndex) {
+    private boolean isPossibleDefineCrossSignal(int currentIndex) {
         return currentIndex > 0
                 && nonNull(indicatorResults[currentIndex - 1].getIndicatorValue())
                 && nonNull(indicatorResults[currentIndex].getIndicatorValue());
     }
 
     private SignalStrength defineCrossSignal(int currentIndex) {
-        if (isOverboughtIntersection(currentIndex)) {
-            return new SignalStrength(defineOverboughtSignal(currentIndex), NORMAL);
+        if (isOversoldIntersection(currentIndex)) {
+            return new SignalStrength(BUY, STRONG);
         }
 
-        if (isOversoldIntersection(currentIndex)) {
-            return new SignalStrength(defineOverSoldSignal(currentIndex), NORMAL);
+        if (isOverboughtIntersection(currentIndex)) {
+            return new SignalStrength(SELL, STRONG);
         }
 
         if (isZeroLineIntersection(currentIndex)) {
-            return new SignalStrength(defineZeroLineSignal(currentIndex), WEAK);
+            return new SignalStrength(defineZeroLineSignal(currentIndex), NORMAL);
+        }
+
+        if (isPossibleDefineSignalLineIntersection(currentIndex) && isSignalLineIntersection(currentIndex)) {
+            return new SignalStrength(defineSignalLineSignal(currentIndex), WEAK);
         }
 
         return null;
     }
 
-    private boolean isOverboughtIntersection(int currentIndex) {
-        return isIntersection(OVERBOUGHT_LEVEL, currentIndex);
-    }
-
-    private Signal defineOverboughtSignal(int currentIndex) {
-        return isCrossDownUpOverbought(currentIndex) ? BUY : SELL;
-    }
-
-    private boolean isCrossDownUpOverbought(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(OVERBOUGHT_LEVEL) < 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(OVERBOUGHT_LEVEL) >= 0;
-    }
-
     private boolean isOversoldIntersection(int currentIndex) {
-        return isIntersection(OVERSOLD_LEVEL, currentIndex);
-    }
-
-    private Signal defineOverSoldSignal(int currentIndex) {
-        return isCrossUpDownOversold(currentIndex) ? BUY : SELL;
-    }
-
-    private boolean isCrossUpDownOversold(int currentIndex) {
         return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(OVERSOLD_LEVEL) < 0
                 && indicatorResults[currentIndex].getIndicatorValue().compareTo(OVERSOLD_LEVEL) >= 0;
     }
 
+    private boolean isOverboughtIntersection(int currentIndex) {
+        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(OVERBOUGHT_LEVEL) > 0
+                && indicatorResults[currentIndex].getIndicatorValue().compareTo(OVERBOUGHT_LEVEL) <= 0;
+    }
+
     private boolean isZeroLineIntersection(int currentIndex) {
-        return isIntersection(ZERO_LEVEL, currentIndex);
+        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(ZERO_LEVEL)
+                != indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO_LEVEL);
     }
 
     private Signal defineZeroLineSignal(int currentIndex) {
@@ -144,9 +133,23 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
                 && indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO_LEVEL) >= 0;
     }
 
-    private boolean isIntersection(BigDecimal intersectionLevel, int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(intersectionLevel)
-                != indicatorResults[currentIndex].getIndicatorValue().compareTo(intersectionLevel);
+    private boolean isPossibleDefineSignalLineIntersection(int currentIndex) {
+        return nonNull(indicatorResults[currentIndex - 1].getSignalLineValue())
+                && nonNull(indicatorResults[currentIndex].getSignalLineValue());
+    }
+
+    private boolean isSignalLineIntersection(int currentIndex) {
+        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(indicatorResults[currentIndex - 1].getSignalLineValue())
+                != indicatorResults[currentIndex].getIndicatorValue().compareTo(indicatorResults[currentIndex].getSignalLineValue());
+    }
+
+    private Signal defineSignalLineSignal(int currentIndex) {
+        return isCrossDownUpSignalLine(currentIndex) ? BUY : SELL;
+    }
+
+    private boolean isCrossDownUpSignalLine(int currentIndex) {
+        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(indicatorResults[currentIndex - 1].getSignalLineValue()) < 0
+                && indicatorResults[currentIndex].getIndicatorValue().compareTo(indicatorResults[currentIndex].getSignalLineValue()) >= 0;
     }
 
     private SignalStrength[] mergeSignalStrengths(SignalStrength[] divergenceSignals, SignalStrength[] crossSignals) {
@@ -192,17 +195,20 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
     }
 
     private Strength defineStrength(SignalStrength crossSignal) {
-        return crossSignal.getStrength() == WEAK ? NORMAL : STRONG;
+        switch (crossSignal.getStrength()) {
+            case WEAK:
+                return NORMAL;
+            case NORMAL:
+                return STRONG;
+            default:
+                return STRONG;
+        }
     }
 
-    private void buildCCIAnalyzerResult(SignalStrength[] mergedSignals) {
+    private void buildCMOAnalyzerResult(SignalStrength[] mergedSignals) {
         result = IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> buildCCIAnalyzerResult(mergedSignals[idx], idx))
-                .toArray(CCIAnalyzerResult[]::new);
-    }
-
-    private CCIAnalyzerResult buildCCIAnalyzerResult(SignalStrength mergedSignal, int currentIndex) {
-        return new CCIAnalyzerResult(indicatorResults[currentIndex].getTime(), mergedSignal, defineSecurityLevel(currentIndex));
+                .mapToObj(idx -> new CMOAnalyzerResult(indicatorResults[idx].getTime(), mergedSignals[idx], defineSecurityLevel(idx)))
+                .toArray(CMOAnalyzerResult[]::new);
     }
 
     private SecurityLevel defineSecurityLevel(int currentIndex) {

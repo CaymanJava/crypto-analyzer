@@ -1,5 +1,6 @@
 package pro.crypto.analyzer.ce;
 
+import pro.crypto.analyzer.helper.SignalMerger;
 import pro.crypto.indicator.ce.CEResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -13,7 +14,6 @@ import java.util.stream.IntStream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.NEUTRAL;
 import static pro.crypto.model.Signal.SELL;
 
 public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
@@ -111,20 +111,8 @@ public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
 
     private Signal[] mergeSignals(Signal[] longExits, Signal[] shortExits) {
         return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> mergeSignals(longExits[idx], shortExits[idx]))
+                .mapToObj(idx -> new SignalMerger().merge(longExits[idx], shortExits[idx]))
                 .toArray(Signal[]::new);
-    }
-
-    private Signal mergeSignals(Signal longExit, Signal shortExit) {
-        if (nonNull(longExit) && isNull(shortExit)) {
-            return longExit;
-        }
-
-        if (isNull(longExit) && nonNull(shortExit)) {
-            return shortExit;
-        }
-
-        return NEUTRAL;
     }
 
     private void buildCEAnalyzerResult(Signal[] mergedSignals) {

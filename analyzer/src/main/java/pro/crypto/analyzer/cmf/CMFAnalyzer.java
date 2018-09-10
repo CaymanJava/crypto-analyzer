@@ -1,16 +1,17 @@
 package pro.crypto.analyzer.cmf;
 
-import pro.crypto.analyzer.helper.divergence.Divergence;
-import pro.crypto.analyzer.helper.divergence.DivergenceRequest;
-import pro.crypto.analyzer.helper.divergence.DivergenceResult;
+import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.analyzer.helper.SignalMerger;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cmf.CMFResult;
-import pro.crypto.model.*;
+import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.Signal;
+import pro.crypto.model.Trend;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -34,8 +35,8 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
 
     @Override
     public void analyze() {
-        Signal[] intersectionSignals = findIntersectionSignals();
         Signal[] divergenceSignals = findDivergenceSignals();
+        Signal[] intersectionSignals = findIntersectionSignals();
         Signal[] mergedSignals = mergeSignals(intersectionSignals, divergenceSignals);
         Trend[] trends = defineTrends();
         buildCMFAnalyzerResult(mergedSignals, trends);
@@ -49,6 +50,10 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
         return result;
     }
 
+    private Signal[] findDivergenceSignals() {
+        return new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extract(indicatorResults));
+    }
+
     private Signal[] findIntersectionSignals() {
         return IntStream.range(0, indicatorResults.length)
                 .mapToObj(this::tryDefineIntersectionSignal)
@@ -58,7 +63,7 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
     private Signal tryDefineIntersectionSignal(int currentIndex) {
         return isPossibleDefineSignal(currentIndex)
                 ? defineIntersectionSignal(currentIndex)
-                : NEUTRAL;
+                : null;
     }
 
     private boolean isPossibleDefineSignal(int currentIndex) {
@@ -76,7 +81,7 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
             return SELL;
         }
 
-        return NEUTRAL;
+        return null;
     }
 
     private boolean isBuyIntersection(int currentIndex) {
@@ -89,52 +94,10 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
                 && indicatorResults[currentIndex].getIndicatorValue().compareTo(BEARER_SIGNAL_LINE) <= 0;
     }
 
-    private Signal[] findDivergenceSignals() {
-        DivergenceResult[] divergences = new Divergence(buildDivergenceRequest()).find();
-        Signal[] signals = new Signal[indicatorResults.length];
-        Stream.of(divergences)
-                .filter(this::isPriceExist)
-                .forEach(divergence -> signals[divergence.getIndexTo() + 1] = divergence.recognizeSignal());
-        return signals;
-    }
-
-    private boolean isPriceExist(DivergenceResult divergence) {
-        return divergence.getIndexTo() < originalData.length;
-    }
-
-    private DivergenceRequest buildDivergenceRequest() {
-        return DivergenceRequest.builder()
-                .originalData(originalData)
-                .indicatorValues(IndicatorResultExtractor.extract(indicatorResults))
-                .build();
-    }
-
     private Signal[] mergeSignals(Signal[] intersectionSignals, Signal[] divergenceSignals) {
         return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> mergeSignals(intersectionSignals[idx], divergenceSignals[idx]))
+                .mapToObj(idx -> new SignalMerger().merge(intersectionSignals[idx], divergenceSignals[idx]))
                 .toArray(Signal[]::new);
-    }
-
-    private Signal mergeSignals(Signal intersectionSignal, Signal divergenceSignal) {
-        if (nonNull(intersectionSignal) && nonNull(divergenceSignal)) {
-            return tryMergeSignals(intersectionSignal, divergenceSignal);
-        }
-
-        if (nonNull(divergenceSignal)) {
-            return divergenceSignal;
-        }
-
-        if (nonNull(intersectionSignal)) {
-            return intersectionSignal;
-        }
-
-        return NEUTRAL;
-    }
-
-    private Signal tryMergeSignals(Signal intersectionSignal, Signal divergenceSignal) {
-        return intersectionSignal == divergenceSignal
-                ? intersectionSignal
-                : divergenceSignal;
     }
 
     private Trend[] defineTrends() {

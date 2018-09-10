@@ -1,5 +1,6 @@
 package pro.crypto.analyzer.ao;
 
+import pro.crypto.analyzer.helper.SignalMerger;
 import pro.crypto.indicator.ao.AOResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -294,42 +295,14 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
 
     private Signal[] mergeTwoPeaksSignals(Signal[] buySignals, Signal[] sellSignals) {
         return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> mergeTwoPeaksSignals(buySignals[idx], sellSignals[idx]))
+                .mapToObj(idx -> new SignalMerger().merge(buySignals[idx], sellSignals[idx]))
                 .toArray(Signal[]::new);
-    }
-
-    private Signal mergeTwoPeaksSignals(Signal buySignal, Signal sellSignal) {
-        if (nonNull(buySignal) && isNull(sellSignal)) {
-            return buySignal;
-        }
-
-        if (isNull(buySignal) && nonNull(sellSignal)) {
-            return sellSignal;
-        }
-
-        return null;
     }
 
     private Signal[] mergeSignals(Signal[] saucerSignals, Signal[] crossZeroSignals, Signal[] twoPeaksSignals) {
         return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> mergeSignals(saucerSignals[idx], crossZeroSignals[idx], twoPeaksSignals[idx]))
+                .mapToObj(idx -> new SignalMerger().merge(saucerSignals[idx], crossZeroSignals[idx], twoPeaksSignals[idx]))
                 .toArray(Signal[]::new);
-    }
-
-    private Signal mergeSignals(Signal saucerSignal, Signal crossZeroSignal, Signal twoPeaksSignal) {
-        if (nonNull(saucerSignal) && isNull(crossZeroSignal) && isNull(twoPeaksSignal)) {
-            return saucerSignal;
-        }
-
-        if (isNull(saucerSignal) && nonNull(crossZeroSignal) && isNull(twoPeaksSignal)) {
-            return crossZeroSignal;
-        }
-
-        if (isNull(saucerSignal) && isNull(crossZeroSignal) && nonNull(twoPeaksSignal)) {
-            return twoPeaksSignal;
-        }
-
-        return NEUTRAL;
     }
 
     private void buildAOAnalyzerResult(Signal[] signals) {

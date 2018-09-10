@@ -1,8 +1,7 @@
 package pro.crypto.analyzer.cci;
 
-import pro.crypto.analyzer.helper.divergence.Divergence;
-import pro.crypto.analyzer.helper.divergence.DivergenceRequest;
-import pro.crypto.analyzer.helper.divergence.DivergenceResult;
+import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.analyzer.helper.SignalStrengthMerger;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cci.CCIResult;
 import pro.crypto.model.*;
@@ -14,9 +13,7 @@ import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.NEUTRAL;
-import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.Signal.*;
 import static pro.crypto.model.Strength.*;
 
 public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
@@ -39,7 +36,7 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
     public void analyze() {
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalStrengths(divergenceSignals, crossSignals);
+        SignalStrength[] mergedSignals = mergeSignal(divergenceSignals, crossSignals);
         buildCCIAnalyzerResult(mergedSignals);
     }
 
@@ -52,23 +49,15 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
     }
 
     private SignalStrength[] findDivergenceSignals() {
-        DivergenceResult[] divergences = new Divergence(buildDivergenceRequest()).find();
-        SignalStrength[] signalStrengths = new SignalStrength[indicatorResults.length];
-        Stream.of(divergences)
-                .filter(this::isPriceExist)
-                .forEach(divergence -> signalStrengths[divergence.getIndexTo() + 1] = new SignalStrength(divergence.recognizeSignal(), WEAK));
-        return signalStrengths;
+        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extract(indicatorResults)))
+                .map(this::toSignalStrength)
+                .toArray(SignalStrength[]::new);
     }
 
-    private DivergenceRequest buildDivergenceRequest() {
-        return DivergenceRequest.builder()
-                .originalData(originalData)
-                .indicatorValues(IndicatorResultExtractor.extract(indicatorResults))
-                .build();
-    }
-
-    private boolean isPriceExist(DivergenceResult divergence) {
-        return divergence.getIndexTo() < originalData.length;
+    private SignalStrength toSignalStrength(Signal signal) {
+        return nonNull(signal)
+                ? new SignalStrength(signal, WEAK)
+                : null;
     }
 
     private SignalStrength[] findCrossSignals() {
@@ -149,50 +138,10 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
                 != indicatorResults[currentIndex].getIndicatorValue().compareTo(intersectionLevel);
     }
 
-    private SignalStrength[] mergeSignalStrengths(SignalStrength[] divergenceSignals, SignalStrength[] crossSignals) {
+    private SignalStrength[] mergeSignal(SignalStrength[] divergenceSignals, SignalStrength[] crossSignals) {
         return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> mergeSignalStrengths(divergenceSignals[idx], crossSignals[idx]))
+                .mapToObj(idx -> new SignalStrengthMerger().merge(divergenceSignals[idx], crossSignals[idx]))
                 .toArray(SignalStrength[]::new);
-    }
-
-    private SignalStrength mergeSignalStrengths(SignalStrength divergenceSignal, SignalStrength crossSignal) {
-        if (nonNull(divergenceSignal) && nonNull(crossSignal)) {
-            return tryMergeSignals(divergenceSignal, crossSignal);
-        }
-
-        if (nonNull(crossSignal)) {
-            return crossSignal;
-        }
-
-        if (nonNull(divergenceSignal)) {
-            return divergenceSignal;
-        }
-
-        return new SignalStrength(NEUTRAL, UNDEFINED);
-    }
-
-    private SignalStrength tryMergeSignals(SignalStrength divergenceSignal, SignalStrength crossSignal) {
-        return signalsTheSame(divergenceSignal, crossSignal)
-                ? mergeSameSignals(crossSignal)
-                : mergeDifferentSignals(crossSignal);
-    }
-
-    private boolean signalsTheSame(SignalStrength divergenceSignal, SignalStrength crossSignal) {
-        return divergenceSignal.getSignal() == crossSignal.getSignal();
-    }
-
-    private SignalStrength mergeSameSignals(SignalStrength crossSignal) {
-        return new SignalStrength(crossSignal.getSignal(), defineStrength(crossSignal));
-    }
-
-    private SignalStrength mergeDifferentSignals(SignalStrength crossSignal) {
-        return crossSignal.getStrength() == WEAK
-                ? new SignalStrength(NEUTRAL, NORMAL)
-                : crossSignal;
-    }
-
-    private Strength defineStrength(SignalStrength crossSignal) {
-        return crossSignal.getStrength() == WEAK ? NORMAL : STRONG;
     }
 
     private void buildCCIAnalyzerResult(SignalStrength[] mergedSignals) {

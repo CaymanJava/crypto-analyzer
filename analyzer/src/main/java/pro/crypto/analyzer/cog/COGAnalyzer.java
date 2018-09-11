@@ -25,7 +25,9 @@ public class COGAnalyzer implements Analyzer<COGAnalyzerResult> {
 
     @Override
     public void analyze() {
-        buildCOGAnalyzerResult();
+        result = IntStream.range(0, indicatorResults.length)
+                .mapToObj(idx -> new COGAnalyzerResult(indicatorResults[idx].getTime(), findSignal(idx)))
+                .toArray(COGAnalyzerResult[]::new);
     }
 
     @Override
@@ -34,12 +36,6 @@ public class COGAnalyzer implements Analyzer<COGAnalyzerResult> {
             analyze();
         }
         return result;
-    }
-
-    private void buildCOGAnalyzerResult() {
-        result = IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new COGAnalyzerResult(indicatorResults[idx].getTime(), findSignal(idx)))
-                .toArray(COGAnalyzerResult[]::new);
     }
 
     private Signal findSignal(int currentIndex) {

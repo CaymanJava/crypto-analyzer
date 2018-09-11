@@ -1,20 +1,20 @@
 package pro.crypto.indicator.dc;
 
 import lombok.Value;
-import pro.crypto.model.IndicatorResult;
+import pro.crypto.model.IndicatorBandResult;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class DCResult implements IndicatorResult {
+public class DCResult implements IndicatorBandResult {
 
     private LocalDateTime time;
 
-    private BigDecimal basis;
+    private BigDecimal middleBand;
 
-    private BigDecimal upperEnvelope;
+    private BigDecimal upperBand;
 
-    private BigDecimal lowerEnvelope;
+    private BigDecimal lowerBand;
 
 }

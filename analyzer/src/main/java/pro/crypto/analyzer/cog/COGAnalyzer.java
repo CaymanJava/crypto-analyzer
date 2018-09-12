@@ -1,17 +1,17 @@
 package pro.crypto.analyzer.cog;
 
+import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cog.COGResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.Signal;
 
+import java.math.BigDecimal;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.NEUTRAL;
-import static pro.crypto.model.Signal.SELL;
 
 public class COGAnalyzer implements Analyzer<COGAnalyzerResult> {
 
@@ -25,9 +25,8 @@ public class COGAnalyzer implements Analyzer<COGAnalyzerResult> {
 
     @Override
     public void analyze() {
-        result = IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new COGAnalyzerResult(indicatorResults[idx].getTime(), findSignal(idx)))
-                .toArray(COGAnalyzerResult[]::new);
+        Signal[] signals = findSignals();
+        buildCOGAnalyzerResult(signals);
     }
 
     @Override
@@ -38,52 +37,20 @@ public class COGAnalyzer implements Analyzer<COGAnalyzerResult> {
         return result;
     }
 
-    private Signal findSignal(int currentIndex) {
-        return isPossibleDefineSignal(currentIndex)
-                ? tryDefineSignal(currentIndex)
-                : NEUTRAL;
+    private Signal[] findSignals() {
+        return new DynamicLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), extractSignalLineValues()).find();
     }
 
-    private boolean isPossibleDefineSignal(int currentIndex) {
-        return currentIndex > 0
-                && nonNull(indicatorResults[currentIndex - 1].getIndicatorValue())
-                && nonNull(indicatorResults[currentIndex - 1].getSignalLineValue())
-                && nonNull(indicatorResults[currentIndex].getIndicatorValue())
-                && nonNull(indicatorResults[currentIndex].getSignalLineValue());
+    private BigDecimal[] extractSignalLineValues() {
+        return Stream.of(indicatorResults)
+                .map(COGResult::getSignalLineValue)
+                .toArray(BigDecimal[]::new);
     }
 
-    private Signal tryDefineSignal(int currentIndex) {
-        if (isSignalLineIntersection(currentIndex)) {
-            return defineSignal(currentIndex);
-        }
-        return NEUTRAL;
-    }
-
-    private boolean isSignalLineIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(indicatorResults[currentIndex - 1].getSignalLineValue())
-                != indicatorResults[currentIndex].getIndicatorValue().compareTo(indicatorResults[currentIndex].getSignalLineValue());
-    }
-
-    private Signal defineSignal(int currentIndex) {
-        if (isBuyIntersection(currentIndex)) {
-            return BUY;
-        }
-
-        if (isSellIntersection(currentIndex)) {
-            return SELL;
-        }
-
-        return NEUTRAL;
-    }
-
-    private boolean isBuyIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(indicatorResults[currentIndex - 1].getSignalLineValue()) < 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(indicatorResults[currentIndex].getSignalLineValue()) > 0;
-    }
-
-    private boolean isSellIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(indicatorResults[currentIndex - 1].getSignalLineValue()) > 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(indicatorResults[currentIndex].getSignalLineValue()) < 0;
+    private void buildCOGAnalyzerResult(Signal[] signals) {
+        result = IntStream.range(0, indicatorResults.length)
+                .mapToObj(idx -> new COGAnalyzerResult(indicatorResults[idx].getTime(), signals[idx]))
+                .toArray(COGAnalyzerResult[]::new);
     }
 
 }

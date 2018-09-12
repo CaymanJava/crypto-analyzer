@@ -1,5 +1,7 @@
 package pro.crypto.analyzer.cmo;
 
+import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
+import pro.crypto.analyzer.helper.StaticLineCrossFinder;
 import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.analyzer.helper.SignalStrengthMerger;
 import pro.crypto.helper.IndicatorResultExtractor;
@@ -37,7 +39,7 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
     public void analyze() {
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalStrengths(divergenceSignals, crossSignals);
+        SignalStrength[] mergedSignals = mergeSignals(divergenceSignals, crossSignals);
         buildCMOAnalyzerResult(mergedSignals);
     }
 
@@ -51,100 +53,75 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
 
     private SignalStrength[] findDivergenceSignals() {
         return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extract(indicatorResults)))
-                .map(this::toSignalStrength)
+                .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
-    }
-
-    private SignalStrength toSignalStrength(Signal signal) {
-        return nonNull(signal)
-                ? new SignalStrength(signal, WEAK)
-                : null;
     }
 
     private SignalStrength[] findCrossSignals() {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(this::tryDefineCrossSignal)
+        BigDecimal[] indicatorValues = IndicatorResultExtractor.extract(indicatorResults);
+        SignalStrength[] securityLevelSignals = findSecurityLevelSignals(indicatorValues);
+        SignalStrength[] zeroLineSignals = findZeroLineSignals(indicatorValues);
+        SignalStrength[] signalLineSignals = findSignalLineSignals(indicatorValues);
+        return mergeSignals(securityLevelSignals, zeroLineSignals, signalLineSignals);
+    }
+
+    private SignalStrength[] findSecurityLevelSignals(BigDecimal[] indicatorValues) {
+        SignalStrength[] oversoldSignals = findOversoldSignals(indicatorValues);
+        SignalStrength[] overboughtSignals = findOverboughtSignals(indicatorValues);
+        return mergeSignals(oversoldSignals, overboughtSignals);
+    }
+
+    private SignalStrength[] findOverboughtSignals(BigDecimal[] indicatorValues) {
+        return Stream.of(new StaticLineCrossFinder(indicatorValues, OVERBOUGHT_LEVEL).find())
+                .map(signal -> removeFalsePositiveSignal(signal, BUY))
+                .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
 
-    private SignalStrength tryDefineCrossSignal(int currentIndex) {
-        return isPossibleDefineCrossSignal(currentIndex)
-                ? defineCrossSignal(currentIndex)
+    private SignalStrength[] findOversoldSignals(BigDecimal[] indicatorValues) {
+        return Stream.of(new StaticLineCrossFinder(indicatorValues, OVERSOLD_LEVEL).find())
+                .map(signal -> removeFalsePositiveSignal(signal, SELL))
+                .map(signal -> toSignalStrength(signal, STRONG))
+                .toArray(SignalStrength[]::new);
+    }
+
+    private Signal removeFalsePositiveSignal(Signal signal, Signal falsePositive) {
+        return signal != falsePositive ? signal : null;
+    }
+
+    private SignalStrength[] findZeroLineSignals(BigDecimal[] indicatorValues) {
+        return Stream.of(new StaticLineCrossFinder(indicatorValues, ZERO_LEVEL).find())
+                .map(signal -> toSignalStrength(signal, NORMAL))
+                .toArray(SignalStrength[]::new);
+    }
+
+    private SignalStrength[] findSignalLineSignals(BigDecimal[] indicatorValues) {
+        return Stream.of(new DynamicLineCrossFinder(indicatorValues, extractSignalLineValues()).find())
+                .map(signal -> toSignalStrength(signal, WEAK))
+                .toArray(SignalStrength[]::new);
+    }
+
+    private BigDecimal[] extractSignalLineValues() {
+        return Stream.of(indicatorResults)
+                .map(CMOResult::getSignalLineValue)
+                .toArray(BigDecimal[]::new);
+    }
+
+    private SignalStrength toSignalStrength(Signal signal, Strength strength) {
+        return nonNull(signal) && signal != NEUTRAL
+                ? new SignalStrength(signal, strength)
                 : null;
     }
 
-    private boolean isPossibleDefineCrossSignal(int currentIndex) {
-        return currentIndex > 0
-                && nonNull(indicatorResults[currentIndex - 1].getIndicatorValue())
-                && nonNull(indicatorResults[currentIndex].getIndicatorValue());
-    }
-
-    private SignalStrength defineCrossSignal(int currentIndex) {
-        if (isOversoldIntersection(currentIndex)) {
-            return new SignalStrength(BUY, STRONG);
-        }
-
-        if (isOverboughtIntersection(currentIndex)) {
-            return new SignalStrength(SELL, STRONG);
-        }
-
-        if (isZeroLineIntersection(currentIndex)) {
-            return new SignalStrength(defineZeroLineSignal(currentIndex), NORMAL);
-        }
-
-        if (isPossibleDefineSignalLineIntersection(currentIndex) && isSignalLineIntersection(currentIndex)) {
-            return new SignalStrength(defineSignalLineSignal(currentIndex), WEAK);
-        }
-
-        return null;
-    }
-
-    private boolean isOversoldIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(OVERSOLD_LEVEL) < 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(OVERSOLD_LEVEL) >= 0;
-    }
-
-    private boolean isOverboughtIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(OVERBOUGHT_LEVEL) > 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(OVERBOUGHT_LEVEL) <= 0;
-    }
-
-    private boolean isZeroLineIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(ZERO_LEVEL)
-                != indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO_LEVEL);
-    }
-
-    private Signal defineZeroLineSignal(int currentIndex) {
-        return isCrossDownUpZeroLine(currentIndex) ? BUY : SELL;
-    }
-
-    private boolean isCrossDownUpZeroLine(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(ZERO_LEVEL) < 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO_LEVEL) >= 0;
-    }
-
-    private boolean isPossibleDefineSignalLineIntersection(int currentIndex) {
-        return nonNull(indicatorResults[currentIndex - 1].getSignalLineValue())
-                && nonNull(indicatorResults[currentIndex].getSignalLineValue());
-    }
-
-    private boolean isSignalLineIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(indicatorResults[currentIndex - 1].getSignalLineValue())
-                != indicatorResults[currentIndex].getIndicatorValue().compareTo(indicatorResults[currentIndex].getSignalLineValue());
-    }
-
-    private Signal defineSignalLineSignal(int currentIndex) {
-        return isCrossDownUpSignalLine(currentIndex) ? BUY : SELL;
-    }
-
-    private boolean isCrossDownUpSignalLine(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(indicatorResults[currentIndex - 1].getSignalLineValue()) < 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(indicatorResults[currentIndex].getSignalLineValue()) >= 0;
-    }
-
-    private SignalStrength[] mergeSignalStrengths(SignalStrength[] divergenceSignals, SignalStrength[] crossSignals) {
+    private SignalStrength[] mergeSignals(SignalStrength[] firstSignals, SignalStrength[] secondSignals, SignalStrength[] thirdSignals) {
         return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new SignalStrengthMerger().merge(divergenceSignals[idx], crossSignals[idx]))
+                .mapToObj(idx -> new SignalStrengthMerger().merge(firstSignals[idx], secondSignals[idx], thirdSignals[idx]))
+                .toArray(SignalStrength[]::new);
+    }
+
+    private SignalStrength[] mergeSignals(SignalStrength[] firstSignals, SignalStrength[] secondSignals) {
+        return IntStream.range(0, indicatorResults.length)
+                .mapToObj(idx -> new SignalStrengthMerger().merge(firstSignals[idx], secondSignals[idx]))
                 .toArray(SignalStrength[]::new);
     }
 

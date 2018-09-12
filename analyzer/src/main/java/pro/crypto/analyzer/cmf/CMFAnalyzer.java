@@ -2,6 +2,7 @@ package pro.crypto.analyzer.cmf;
 
 import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.analyzer.helper.SignalMerger;
+import pro.crypto.analyzer.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cmf.CMFResult;
 import pro.crypto.model.Analyzer;
@@ -12,6 +13,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -55,48 +57,31 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
     }
 
     private Signal[] findIntersectionSignals() {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(this::tryDefineIntersectionSignal)
+        BigDecimal[] indicatorValues = IndicatorResultExtractor.extract(indicatorResults);
+        Signal[] buySignals = findBuySignals(indicatorValues);
+        Signal[] sellSignals = findSellSignals(indicatorValues);
+        return mergeSignals(buySignals, sellSignals);
+    }
+
+    private Signal[] findBuySignals(BigDecimal[] indicatorValues) {
+        return Stream.of(new StaticLineCrossFinder(indicatorValues, BULLISH_SIGNAL_LINE).find())
+                .map(signal -> removeFalsePositiveSignal(signal, SELL))
                 .toArray(Signal[]::new);
     }
 
-    private Signal tryDefineIntersectionSignal(int currentIndex) {
-        return isPossibleDefineSignal(currentIndex)
-                ? defineIntersectionSignal(currentIndex)
-                : null;
+    private Signal[] findSellSignals(BigDecimal[] indicatorValues) {
+        return Stream.of(new StaticLineCrossFinder(indicatorValues, BEARER_SIGNAL_LINE).find())
+                .map(signal -> removeFalsePositiveSignal(signal, BUY))
+                .toArray(Signal[]::new);
     }
 
-    private boolean isPossibleDefineSignal(int currentIndex) {
-        return currentIndex > 0
-                && nonNull(indicatorResults[currentIndex - 1].getIndicatorValue())
-                && nonNull(indicatorResults[currentIndex].getIndicatorValue());
+    private Signal removeFalsePositiveSignal(Signal signal, Signal falsePositive) {
+        return signal != falsePositive ? signal : null;
     }
 
-    private Signal defineIntersectionSignal(int currentIndex) {
-        if (isBuyIntersection(currentIndex)) {
-            return BUY;
-        }
-
-        if (isSellIntersection(currentIndex)) {
-            return SELL;
-        }
-
-        return null;
-    }
-
-    private boolean isBuyIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(BULLISH_SIGNAL_LINE) < 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(BULLISH_SIGNAL_LINE) >= 0;
-    }
-
-    private boolean isSellIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(BEARER_SIGNAL_LINE) > 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(BEARER_SIGNAL_LINE) <= 0;
-    }
-
-    private Signal[] mergeSignals(Signal[] intersectionSignals, Signal[] divergenceSignals) {
+    private Signal[] mergeSignals(Signal[] firstSignals, Signal[] sellSignals) {
         return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new SignalMerger().merge(intersectionSignals[idx], divergenceSignals[idx]))
+                .mapToObj(idx -> new SignalMerger().merge(firstSignals[idx], sellSignals[idx]))
                 .toArray(Signal[]::new);
     }
 

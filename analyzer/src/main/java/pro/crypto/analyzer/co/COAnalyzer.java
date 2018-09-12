@@ -1,5 +1,6 @@
 package pro.crypto.analyzer.co;
 
+import pro.crypto.analyzer.helper.StaticLineCrossFinder;
 import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.analyzer.helper.SignalStrengthMerger;
 import pro.crypto.helper.IncreasedQualifier;
@@ -52,52 +53,20 @@ public class COAnalyzer implements Analyzer<COAnalyzerResult> {
 
     private SignalStrength[] findDivergenceSignals() {
         return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extract(indicatorResults)))
-                .map(this::toSignalStrength)
+                .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
-    }
-
-    private SignalStrength toSignalStrength(Signal signal) {
-        return nonNull(signal)
-                ? new SignalStrength(signal, WEAK)
-                : null;
     }
 
     private SignalStrength[] findCrossSignals() {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(this::findCrossSignal)
+        return Stream.of(new StaticLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), ZERO_LEVEL).find())
+                .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
 
-    private SignalStrength findCrossSignal(int currentIndex) {
-        return isPossibleDefineCrossSignal(currentIndex)
-                ? defineCrossSignal(currentIndex)
+    private SignalStrength toSignalStrength(Signal signal, Strength strength) {
+        return nonNull(signal)
+                ? new SignalStrength(signal, strength)
                 : null;
-    }
-
-    private boolean isPossibleDefineCrossSignal(int currentIndex) {
-        return currentIndex > 0
-                && nonNull(indicatorResults[currentIndex - 1].getIndicatorValue())
-                && nonNull(indicatorResults[currentIndex].getIndicatorValue());
-    }
-
-    private SignalStrength defineCrossSignal(int currentIndex) {
-        return isZeroLineIntersection(currentIndex)
-                ? new SignalStrength(defineZeroLineSignal(currentIndex), STRONG)
-                : null;
-    }
-
-    private boolean isZeroLineIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(ZERO_LEVEL)
-                != indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO_LEVEL);
-    }
-
-    private Signal defineZeroLineSignal(int currentIndex) {
-        return isCrossDownUpZeroLine(currentIndex) ? BUY : SELL;
-    }
-
-    private boolean isCrossDownUpZeroLine(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(ZERO_LEVEL) < 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO_LEVEL) >= 0;
     }
 
     private SignalStrength[] findIncreaseDecreaseSignals() {

@@ -1,6 +1,8 @@
 package pro.crypto.analyzer.ao;
 
+import pro.crypto.analyzer.helper.StaticLineCrossFinder;
 import pro.crypto.analyzer.helper.SignalMerger;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.ao.AOResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -87,37 +89,7 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
     }
 
     private Signal[] findCrossZeroSignals() {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(this::findCrossZeroSignal)
-                .toArray(Signal[]::new);
-    }
-
-    private Signal findCrossZeroSignal(int currentIndex) {
-        return possibleToDefineTwoValuesSignal(currentIndex) && !twoIndicatorValuesInSamePlane(currentIndex)
-                ? defineCrossZeroSignal(currentIndex)
-                : null;
-    }
-
-    private boolean possibleToDefineTwoValuesSignal(int currentIndex) {
-        return currentIndex > 0
-                && nonNull(indicatorResults[currentIndex - 1].getIndicatorValue())
-                && nonNull(indicatorResults[currentIndex - 1].getIncreased())
-                && nonNull(indicatorResults[currentIndex].getIndicatorValue())
-                && nonNull(indicatorResults[currentIndex].getIncreased());
-    }
-
-    private boolean twoIndicatorValuesInSamePlane(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(ZERO)
-                == indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO);
-    }
-
-    private Signal defineCrossZeroSignal(int currentIndex) {
-        return crossLineDownUp(currentIndex) ? BUY : SELL;
-    }
-
-    private boolean crossLineDownUp(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(ZERO) <= 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO) > 0;
+        return new StaticLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), ZERO).find();
     }
 
     private Signal[] findTwoPeaksSignals() {
@@ -169,8 +141,7 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
     private Integer[] findPeaksBuySignalIndexes(int[] peaksIndexes) {
         return IntStream.range(1, peaksIndexes.length)
                 .filter(idx -> isSecondPeakMoreThanPrevious(peaksIndexes, idx))
-                .map(idx -> peaksIndexes[idx] + 1)
-                .boxed()
+                .mapToObj(idx -> peaksIndexes[idx] + 1)
                 .toArray(Integer[]::new);
     }
 
@@ -262,8 +233,7 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
     private Integer[] findPeaksSellSignalIndexes(int[] peaksIndexes) {
         return IntStream.range(1, peaksIndexes.length)
                 .filter(idx -> isSecondPeakLessThanPrevious(peaksIndexes, idx))
-                .map(idx -> peaksIndexes[idx] + 1)
-                .boxed()
+                .mapToObj(idx -> peaksIndexes[idx] + 1)
                 .toArray(Integer[]::new);
     }
 

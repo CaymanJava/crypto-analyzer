@@ -1,6 +1,8 @@
 package pro.crypto.analyzer.ce;
 
+import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
 import pro.crypto.analyzer.helper.SignalMerger;
+import pro.crypto.helper.PriceExtractor;
 import pro.crypto.indicator.ce.CEResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -10,11 +12,12 @@ import pro.crypto.model.tick.Tick;
 import java.math.BigDecimal;
 import java.util.function.Function;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
 import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
 
@@ -30,8 +33,9 @@ public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
 
     @Override
     public void analyze() {
-        Signal[] longExits = findLongExitSignals();
-        Signal[] shortExits = findShortExitSignals();
+        BigDecimal[] closePrices = PriceExtractor.extractValuesByType(originalData, CLOSE);
+        Signal[] longExits = findLongExitSignals(closePrices);
+        Signal[] shortExits = findShortExitSignals(closePrices);
         Signal[] mergedSignals = mergeSignals(longExits, shortExits);
         buildCEAnalyzerResult(mergedSignals);
     }
@@ -44,69 +48,26 @@ public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
         return result;
     }
 
-    private Signal[] findLongExitSignals() {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(this::findLongExitSignal)
+    private Signal[] findLongExitSignals(BigDecimal[] closePrices) {
+        return Stream.of(new DynamicLineCrossFinder(closePrices, extractExits(CEResult::getLongChandelierExit)).find())
+                .map(signal -> removeFalsePositiveSignal(signal, BUY))
                 .toArray(Signal[]::new);
     }
 
-    private Signal findLongExitSignal(int currentIndex) {
-        return isPossibleDefineSignal(currentIndex, CEResult::getLongChandelierExit)
-                && isIntersection(currentIndex, CEResult::getLongChandelierExit)
-                ? defineLongExitSignal(currentIndex)
-                : null;
-    }
-
-    private Signal defineLongExitSignal(int currentIndex) {
-        return isUpDownCross(currentIndex)
-                ? SELL
-                : null;
-    }
-
-    private boolean isUpDownCross(int currentIndex) {
-        return originalData[currentIndex - 1].getClose()
-                .compareTo(indicatorResults[currentIndex - 1].getLongChandelierExit()) > 0
-                && originalData[currentIndex].getClose()
-                .compareTo(indicatorResults[currentIndex].getLongChandelierExit()) <= 0;
-    }
-
-    private Signal[] findShortExitSignals() {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(this::findShortExitSignal)
+    private Signal[] findShortExitSignals(BigDecimal[] closePrices) {
+        return Stream.of(new DynamicLineCrossFinder(closePrices, extractExits(CEResult::getShortChandelierExit)).find())
+                .map(signal -> removeFalsePositiveSignal(signal, SELL))
                 .toArray(Signal[]::new);
     }
 
-    private Signal findShortExitSignal(int currentIndex) {
-        return isPossibleDefineSignal(currentIndex, CEResult::getShortChandelierExit)
-                && isIntersection(currentIndex, CEResult::getShortChandelierExit)
-                ? defineShortExitSignal(currentIndex)
-                : null;
+    private Signal removeFalsePositiveSignal(Signal signal, Signal falsePositive) {
+        return signal != falsePositive ? signal : null;
     }
 
-    private Signal defineShortExitSignal(int currentIndex) {
-        return isDownUpCross(currentIndex)
-                ? BUY
-                : null;
-    }
-
-    private boolean isDownUpCross(int currentIndex) {
-        return originalData[currentIndex - 1].getClose()
-                .compareTo(indicatorResults[currentIndex - 1].getShortChandelierExit()) < 0
-                && originalData[currentIndex].getClose()
-                .compareTo(indicatorResults[currentIndex].getShortChandelierExit()) >= 0;
-    }
-
-    private boolean isIntersection(int currentIndex, Function<CEResult, BigDecimal> getExitFunction) {
-        return originalData[currentIndex - 1].getClose()
-                .compareTo(getExitFunction.apply(indicatorResults[currentIndex - 1]))
-                != originalData[currentIndex].getClose()
-                .compareTo(getExitFunction.apply(indicatorResults[currentIndex]));
-    }
-
-    private boolean isPossibleDefineSignal(int currentIndex, Function<CEResult, BigDecimal> getExitFunction) {
-        return currentIndex > 0
-                && nonNull(getExitFunction.apply(indicatorResults[currentIndex - 1]))
-                && nonNull(getExitFunction.apply(indicatorResults[currentIndex]));
+    private BigDecimal[] extractExits(Function<CEResult, BigDecimal> extractExitFunction) {
+        return Stream.of(indicatorResults)
+                .map(extractExitFunction)
+                .toArray(BigDecimal[]::new);
     }
 
     private Signal[] mergeSignals(Signal[] longExits, Signal[] shortExits) {

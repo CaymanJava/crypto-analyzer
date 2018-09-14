@@ -84,16 +84,19 @@ public class DetrendedPriceOscillator implements Indicator<DPOResult> {
 
     private void buildDetrendedPriceOscillatorResult(BigDecimal[] movingAverageValues) {
         IntStream.range(0, result.length)
-                .forEach(idx -> result[idx] = new DPOResult(
-                        originalData[idx].getTickTime(),
-                        calculateDetrendedPriceOscillator(
-                                movingAverageValues[idx],
-                                originalData[idx].getPriceByType(priceType))));
+                .forEach(idx -> result[idx] = buildDPOResult(movingAverageValues, idx));
     }
 
-    private BigDecimal calculateDetrendedPriceOscillator(BigDecimal movingAverageValue, BigDecimal priceByType) {
-        return nonNull(movingAverageValue)
-                ? calculateDetrendedPriceOscillatorValue(movingAverageValue, priceByType)
+    private DPOResult buildDPOResult(BigDecimal[] movingAverageValues, int currentIndex) {
+        return new DPOResult(
+                originalData[currentIndex].getTickTime(),
+                calculateDetrendedPriceOscillator(movingAverageValues, originalData[currentIndex].getPriceByType(priceType), currentIndex));
+    }
+
+    private BigDecimal calculateDetrendedPriceOscillator(BigDecimal[] movingAverageValues, BigDecimal priceByType, int currentIndex) {
+        int maIndex = currentIndex - (period / 2 + 1);
+        return maIndex > 0 && nonNull(movingAverageValues[maIndex])
+                ? calculateDetrendedPriceOscillatorValue(movingAverageValues[maIndex], priceByType)
                 : null;
     }
 

@@ -100,7 +100,6 @@ public class ElderForceIndex implements Indicator<EFIResult> {
                         originalData[idx].getTickTime(),
                         extractSmoothedIndex(forceIndexValues, smoothedIndexValues, idx)
                 ));
-
     }
 
     private BigDecimal extractSmoothedIndex(BigDecimal[] forceIndexValues, BigDecimal[] smoothedIndexValues, int currentIndex) {

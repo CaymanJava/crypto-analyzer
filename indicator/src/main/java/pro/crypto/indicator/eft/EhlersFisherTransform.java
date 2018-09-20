@@ -12,6 +12,7 @@ import pro.crypto.model.tick.Tick;
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
 
+import static java.math.BigDecimal.*;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.EHLERS_FISHER_TRANSFORM;
@@ -85,7 +86,7 @@ public class EhlersFisherTransform implements Indicator<EFTResult> {
     // Value(i) = 0.33 * 2 * ((MP - Min) / (Max - Min) - 0.5) + 0.67 * Value[i - 1];
     private BigDecimal calculateValueForTransform(BigDecimal medianPrice, BigDecimal maxValue, BigDecimal minValue, BigDecimal previousValue) {
         if (isNull(previousValue)) {
-            return BigDecimal.ZERO;
+            return ZERO;
         }
         return roundIfNecessary(calculateValue(medianPrice, maxValue, minValue, previousValue));
     }
@@ -106,7 +107,7 @@ public class EhlersFisherTransform implements Indicator<EFTResult> {
     // If Value(i) > 0.99 then Value(i) = 0.999;
     // If Value(i) < -0.99 then Value(i) = -0.999;
     private BigDecimal roundIfNecessary(BigDecimal value) {
-        return value.compareTo(BigDecimal.ZERO) > 0
+        return value.compareTo(ZERO) > 0
                 ? MathHelper.min(value, new BigDecimal(0.9999))
                 : MathHelper.max(value, new BigDecimal(-0.9999));
     }
@@ -132,7 +133,7 @@ public class EhlersFisherTransform implements Indicator<EFTResult> {
     }
 
     private BigDecimal calculateEhlersFisherTransform(BigDecimal valueForTransform, BigDecimal previousEFT) {
-        return nonNull(valueForTransform) && valueForTransform.compareTo(BigDecimal.ZERO) != 0
+        return nonNull(valueForTransform) && valueForTransform.compareTo(ZERO) != 0
                 ? calculateEhlersFisherTransformValue(valueForTransform, previousEFT)
                 : null;
     }
@@ -141,11 +142,11 @@ public class EhlersFisherTransform implements Indicator<EFTResult> {
     private BigDecimal calculateEhlersFisherTransformValue(BigDecimal valueForTransform, BigDecimal previousEFT) {
         return MathHelper.scaleAndRound(new BigDecimal(0.5)
                 .multiply(MathHelper.ln(calculateRatio(valueForTransform)))
-                .add(new BigDecimal(0.5).multiply(isNull(previousEFT) ? BigDecimal.ZERO : previousEFT)));
+                .add(new BigDecimal(0.5).multiply(isNull(previousEFT) ? ZERO : previousEFT)));
     }
 
     private BigDecimal calculateRatio(BigDecimal valueForTransform) {
-        return MathHelper.divide(BigDecimal.ONE.add(valueForTransform), BigDecimal.ONE.subtract(valueForTransform));
+        return MathHelper.divide(ONE.add(valueForTransform), ONE.subtract(valueForTransform));
     }
 
 }

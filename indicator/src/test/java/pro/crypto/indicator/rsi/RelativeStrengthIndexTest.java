@@ -1,13 +1,8 @@
 package pro.crypto.indicator.rsi;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
-import pro.crypto.model.IndicatorType;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -15,21 +10,13 @@ import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.*;
 
-public class RelativeStrengthIndexTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class RelativeStrengthIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testRelativeStrengthIndexWithSmoothedMovingAverage() {
-        RSIResult[] result = new RelativeStrengthIndex(buildRequest(SMOOTHED_MOVING_AVERAGE)).getResult();
+        RSIRequest request = buildRequest();
+        request.setMovingAverageType(SMOOTHED_MOVING_AVERAGE);
+        RSIResult[] result = new RelativeStrengthIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[5].getIndicatorValue());
@@ -48,7 +35,9 @@ public class RelativeStrengthIndexTest {
 
     @Test
     public void testRelativeStrengthIndexWithExponentialMovingAverage() {
-        RSIResult[] result = new RelativeStrengthIndex(buildRequest(EXPONENTIAL_MOVING_AVERAGE)).getResult();
+        RSIRequest request = buildRequest();
+        request.setMovingAverageType(EXPONENTIAL_MOVING_AVERAGE);
+        RSIResult[] result = new RelativeStrengthIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[5].getIndicatorValue());
@@ -110,10 +99,10 @@ public class RelativeStrengthIndexTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(IndicatorType movingAverage) {
+    @Override
+    protected RSIRequest buildRequest() {
         return RSIRequest.builder()
                 .originalData(originalData)
-                .movingAverageType(movingAverage)
                 .period(14)
                 .build();
     }

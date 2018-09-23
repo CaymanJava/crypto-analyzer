@@ -45,8 +45,8 @@ public class ChoppinessIndex implements Indicator<CHOPResult> {
     public void calculate() {
         result = new CHOPResult[originalData.length];
         BigDecimal[] atrSumValues = calculateATRSumValues();
-        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
-        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
+        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceExtractor.extract(originalData, HIGH), period);
+        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceExtractor.extract(originalData, LOW), period);
         calculateChoppinessIndexResult(atrSumValues, maxValues, minValues);
     }
 

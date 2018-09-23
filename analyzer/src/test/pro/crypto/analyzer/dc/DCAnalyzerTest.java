@@ -1,26 +1,16 @@
 package pro.crypto.analyzer.dc;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.dc.DCRequest;
 import pro.crypto.indicator.dc.DonchianChannel;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 
-public class DCAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class DCAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testDonchianChannelAnalyzer() {
@@ -57,18 +47,12 @@ public class DCAnalyzerTest {
         assertFalse(result[72].isCrossMiddleBand());
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return DCRequest.builder()
                 .originalData(originalData)
                 .highPeriod(20)
                 .lowPeriod(20)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

@@ -31,8 +31,8 @@ public class ParabolicStopAndReverse implements Indicator<PSARResult> {
     public ParabolicStopAndReverse(IndicatorRequest creationRequest) {
         PSARRequest request = (PSARRequest) creationRequest;
         this.originalData = request.getOriginalData();
-        this.minAccelerationFactor = request.getMinAccelerationFactor().setScale(3,BigDecimal.ROUND_HALF_UP);
-        this.maxAccelerationFactor = request.getMaxAccelerationFactor().setScale(3,BigDecimal.ROUND_HALF_UP);
+        this.minAccelerationFactor = new BigDecimal(request.getMinAccelerationFactor()).setScale(3,BigDecimal.ROUND_HALF_UP);
+        this.maxAccelerationFactor = new BigDecimal(request.getMaxAccelerationFactor()).setScale(3,BigDecimal.ROUND_HALF_UP);
         this.deltaAccelerationFactor = new BigDecimal(0.02).setScale(2, BigDecimal.ROUND_HALF_UP);
         checkIncomingData();
         initAuxiliaryArrays();

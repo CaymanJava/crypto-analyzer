@@ -1,11 +1,8 @@
 package pro.crypto.indicator.stc;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.IncreasedQuantityTickGenerator;
+import pro.crypto.indicator.IncreaseQuantityIndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
@@ -16,17 +13,7 @@ import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.MOVING_AVERAGE_CONVERGENCE_DIVERGENCE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class SchaffTrendCycleTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new IncreasedQuantityTickGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class SchaffTrendCycleTest extends IncreaseQuantityIndicatorAbstractTest {
 
     @Test
     public void testSchaffTrendCycleWithDefaultParams() {
@@ -159,7 +146,8 @@ public class SchaffTrendCycleTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest() {
+    @Override
+    protected IndicatorRequest buildRequest() {
         return STCRequest.builder()
                 .originalData(originalData)
                 .priceType(CLOSE)

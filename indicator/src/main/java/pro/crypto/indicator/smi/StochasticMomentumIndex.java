@@ -44,8 +44,8 @@ public class StochasticMomentumIndex implements Indicator<SMIResult> {
 
     @Override
     public void calculate() {
-        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
-        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
+        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceExtractor.extract(originalData, LOW), period);
+        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceExtractor.extract(originalData, HIGH), period);
         BigDecimal[] doubleMAPriceDiffs = calculateDoubleMAPriceDifference(maxValues, minValues);
         BigDecimal[] doubleMAMaxMinDiffs = calculateDoubleMAMaxMinDifference(maxValues, minValues);
         BigDecimal[] stochasticMomentumValues = calculateStochasticMomentum(doubleMAPriceDiffs, doubleMAMaxMinDiffs);

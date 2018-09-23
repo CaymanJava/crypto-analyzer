@@ -47,7 +47,7 @@ public class AverageTrueRangeBands implements Indicator<ATRBResult> {
     public void calculate() {
         result = new ATRBResult[originalData.length];
         BigDecimal[] atrValues = calculateAverageTrueRangeValues();
-        BigDecimal[] middleBandValues = PriceExtractor.extractValuesByType(originalData, priceType);
+        BigDecimal[] middleBandValues = PriceExtractor.extract(originalData, priceType);
         buildAverageTrueRangeBandsResult(atrValues, middleBandValues);
     }
 

@@ -1,12 +1,13 @@
 package pro.crypto.analyzer.cci;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.cci.CCIRequest;
 import pro.crypto.indicator.cci.CommodityChannelIndex;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.*;
-import pro.crypto.model.tick.Tick;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
+import pro.crypto.model.SecurityLevel;
+import pro.crypto.model.SignalStrength;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.assertEquals;
@@ -14,14 +15,7 @@ import static org.junit.Assert.assertTrue;
 import static pro.crypto.model.Signal.*;
 import static pro.crypto.model.Strength.*;
 
-public class CCIAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class CCIAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testCommodityChannelIndexAnalyzer() {
@@ -57,17 +51,11 @@ public class CCIAnalyzerTest {
         assertEquals(result[72].getSecurityLevel(), SecurityLevel.OVERSOLD);
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return CCIRequest.builder()
                 .originalData(originalData)
                 .period(20)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

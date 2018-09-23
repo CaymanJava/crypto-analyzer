@@ -1,12 +1,14 @@
 package pro.crypto.analyzer.co;
 
-import pro.crypto.analyzer.helper.StaticLineCrossFinder;
 import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.analyzer.helper.SignalStrengthMerger;
+import pro.crypto.analyzer.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IncreasedQualifier;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.co.COResult;
-import pro.crypto.model.*;
+import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.SignalStrength;
+import pro.crypto.model.Strength;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -16,7 +18,8 @@ import java.util.stream.Stream;
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.*;
+import static pro.crypto.model.Signal.BUY;
+import static pro.crypto.model.Signal.SELL;
 import static pro.crypto.model.Strength.*;
 
 public class COAnalyzer implements Analyzer<COAnalyzerResult> {
@@ -39,7 +42,7 @@ public class COAnalyzer implements Analyzer<COAnalyzerResult> {
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
         SignalStrength[] increaseDecreaseSignals = findIncreaseDecreaseSignals();
-        SignalStrength[] mergedSignals = mergeSignals(divergenceSignals, crossSignals, increaseDecreaseSignals);
+        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, crossSignals, increaseDecreaseSignals);
         buildCOAnalyzerResult(mergedSignals);
     }
 
@@ -61,12 +64,6 @@ public class COAnalyzer implements Analyzer<COAnalyzerResult> {
         return Stream.of(new StaticLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), ZERO_LEVEL).find())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
-    }
-
-    private SignalStrength toSignalStrength(Signal signal, Strength strength) {
-        return nonNull(signal)
-                ? new SignalStrength(signal, strength)
-                : null;
     }
 
     private SignalStrength[] findIncreaseDecreaseSignals() {
@@ -135,12 +132,6 @@ public class COAnalyzer implements Analyzer<COAnalyzerResult> {
 
     private Strength defineSellStrength(int currentIndex) {
         return indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO_LEVEL) > 0 ? STRONG : NORMAL;
-    }
-
-    private SignalStrength[] mergeSignals(SignalStrength[] divergenceSignals, SignalStrength[] crossSignals, SignalStrength[] increaseDecreaseSignals) {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new SignalStrengthMerger().merge(divergenceSignals[idx], crossSignals[idx], increaseDecreaseSignals[idx]))
-                .toArray(SignalStrength[]::new);
     }
 
     private void buildCOAnalyzerResult(SignalStrength[] mergedSignals) {

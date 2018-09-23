@@ -20,6 +20,6 @@ public class ENVRequest implements IndicatorRequest {
 
     private int movingAveragePeriod;
 
-    private int indentationPercentage;
+    private double indentationPercentage;
 
 }

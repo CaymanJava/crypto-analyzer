@@ -1,11 +1,8 @@
 package pro.crypto.indicator.psar;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
@@ -13,17 +10,7 @@ import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 
-public class ParabolicStopAndReverseTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class ParabolicStopAndReverseTest extends IndicatorAbstractTest {
 
     @Test
     public void testParabolicSAR() {
@@ -50,8 +37,8 @@ public class ParabolicStopAndReverseTest {
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {PARABOLIC_STOP_AND_REVERSE}, size: {0}}");
         new ParabolicStopAndReverse(PSARRequest.builder()
                 .originalData(new Tick[0])
-                .minAccelerationFactor(toBigDecimal(0.02))
-                .maxAccelerationFactor(toBigDecimal(0.2))
+                .minAccelerationFactor(0.02)
+                .maxAccelerationFactor(0.2)
                 .build()).getResult();
     }
 
@@ -61,8 +48,8 @@ public class ParabolicStopAndReverseTest {
         expectedException.expectMessage("Incoming tick data is null {indicator: {PARABOLIC_STOP_AND_REVERSE}}");
         new ParabolicStopAndReverse(PSARRequest.builder()
                 .originalData(null)
-                .minAccelerationFactor(toBigDecimal(0.02))
-                .maxAccelerationFactor(toBigDecimal(0.2))
+                .minAccelerationFactor(0.02)
+                .maxAccelerationFactor(0.2)
                 .build()).getResult();
     }
 
@@ -73,8 +60,8 @@ public class ParabolicStopAndReverseTest {
                 "{indicator: {PARABOLIC_STOP_AND_REVERSE}, minAccelerationFactor: {0.300}, maxAccelerationFactor: {0.200}}");
         new ParabolicStopAndReverse(PSARRequest.builder()
                 .originalData(new Tick[100])
-                .minAccelerationFactor(toBigDecimal(0.3))
-                .maxAccelerationFactor(toBigDecimal(0.2))
+                .minAccelerationFactor(0.3)
+                .maxAccelerationFactor(0.2)
                 .build()).getResult();
     }
 
@@ -85,8 +72,8 @@ public class ParabolicStopAndReverseTest {
                 "{indicator: {PARABOLIC_STOP_AND_REVERSE}, minAccelerationFactor: {-0.020}}");
         new ParabolicStopAndReverse(PSARRequest.builder()
                 .originalData(new Tick[100])
-                .minAccelerationFactor(toBigDecimal(-0.02))
-                .maxAccelerationFactor(toBigDecimal(0.2))
+                .minAccelerationFactor(-0.02)
+                .maxAccelerationFactor(0.2)
                 .build()).getResult();
     }
 
@@ -97,16 +84,17 @@ public class ParabolicStopAndReverseTest {
                 "{indicator: {PARABOLIC_STOP_AND_REVERSE}, minAccelerationFactor: {-0.200}}");
         new ParabolicStopAndReverse(PSARRequest.builder()
                 .originalData(new Tick[100])
-                .minAccelerationFactor(toBigDecimal(0.02))
-                .maxAccelerationFactor(toBigDecimal(-0.2))
+                .minAccelerationFactor(0.02)
+                .maxAccelerationFactor(-0.2)
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest() {
+    @Override
+    protected IndicatorRequest buildRequest() {
         return PSARRequest.builder()
                 .originalData(originalData)
-                .minAccelerationFactor(toBigDecimal(0.02))
-                .maxAccelerationFactor(toBigDecimal(0.2))
+                .minAccelerationFactor(0.02)
+                .maxAccelerationFactor(0.2)
                 .build();
     }
 

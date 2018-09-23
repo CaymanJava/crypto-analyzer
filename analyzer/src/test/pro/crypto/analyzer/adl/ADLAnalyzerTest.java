@@ -1,33 +1,23 @@
 package pro.crypto.analyzer.adl;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.adl.ADLRequest;
 import pro.crypto.indicator.adl.ADLResult;
 import pro.crypto.indicator.adl.AccumulationDistributionLine;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.IndicatorRequest;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 import static pro.crypto.model.Signal.*;
 
-public class ADLAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class ADLAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testAccumulationDistributionLineAnalyzer() {
         ADLResult[] indicatorResult = new AccumulationDistributionLine(buildIndicatorRequest()).getResult();
-        ADLAnalyzerResult[] result = new ADLAnalyzer(buildAnalyzerResult(indicatorResult)).getResult();
+        ADLAnalyzerResult[] result = new ADLAnalyzer(buildAnalyzerRequest(indicatorResult)).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[31].getTime(), of(2018, 3, 28, 0, 0));
         assertEquals(result[31].getSignal(), SELL);
@@ -43,14 +33,8 @@ public class ADLAnalyzerTest {
         assertEquals(result[72].getSignal(), NEUTRAL);
     }
 
-    private AnalyzerRequest buildAnalyzerResult(ADLResult[] indicatorResult) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResult)
-                .build();
-    }
-
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return ADLRequest.builder()
                 .originalData(originalData)
                 .build();

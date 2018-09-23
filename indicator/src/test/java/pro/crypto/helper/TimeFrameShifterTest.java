@@ -19,7 +19,6 @@ import static pro.crypto.model.ShiftType.LEFT;
 import static pro.crypto.model.ShiftType.RIGHT;
 import static pro.crypto.model.tick.TimeFrame.*;
 
-
 @RunWith(Parameterized.class)
 public class TimeFrameShifterTest {
 

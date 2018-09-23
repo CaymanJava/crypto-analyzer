@@ -1,33 +1,21 @@
 package pro.crypto.indicator.rwi;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 
-public class RandomWalkIndexTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class RandomWalkIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testRandomWalkIndexWithPeriodFourteen() {
-        RWIResult[] result = new RandomWalkIndex(buildRequest(14)).getResult();
+        RWIRequest request = buildRequest();
+        request.setPeriod(14);
+        RWIResult[] result = new RandomWalkIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getHighValue());
         assertNull(result[0].getLowValue());
@@ -52,7 +40,9 @@ public class RandomWalkIndexTest {
 
     @Test
     public void testRandomWalkIndexWithPeriodTen() {
-        RWIResult[] result = new RandomWalkIndex(buildRequest(10)).getResult();
+        RWIRequest request = buildRequest();
+        request.setPeriod(10);
+        RWIResult[] result = new RandomWalkIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getHighValue());
         assertNull(result[0].getLowValue());
@@ -115,10 +105,10 @@ public class RandomWalkIndexTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(int period) {
+    @Override
+    protected RWIRequest buildRequest() {
         return RWIRequest.builder()
                 .originalData(originalData)
-                .period(period)
                 .build();
     }
 

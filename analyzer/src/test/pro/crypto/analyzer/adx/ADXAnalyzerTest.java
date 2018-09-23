@@ -1,12 +1,13 @@
 package pro.crypto.analyzer.adx;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.adx.ADXRequest;
 import pro.crypto.indicator.adx.AverageDirectionalMovementIndex;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.*;
-import pro.crypto.model.tick.Tick;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
+import pro.crypto.model.Trend;
+import pro.crypto.model.TrendStrength;
 
 import static java.time.LocalDateTime.of;
 import static junit.framework.TestCase.assertNull;
@@ -14,18 +15,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.Signal.*;
-import static pro.crypto.model.Strength.NORMAL;
-import static pro.crypto.model.Strength.UNDEFINED;
-import static pro.crypto.model.Strength.WEAK;
+import static pro.crypto.model.Strength.*;
 
-public class ADXAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class ADXAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testAverageDirectionalMovementIndexAnalyzer() {
@@ -62,17 +54,11 @@ public class ADXAnalyzerTest {
         assertEquals(result[65].getTrendStrength(), new TrendStrength(Trend.UNDEFINED, NORMAL));
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return ADXRequest.builder()
                 .originalData(originalData)
                 .period(14)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

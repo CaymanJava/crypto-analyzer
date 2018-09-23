@@ -1,11 +1,8 @@
 package pro.crypto.indicator.ma;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
@@ -15,17 +12,7 @@ import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.MODIFIED_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class ModifiedMovingAverageTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class ModifiedMovingAverageTest extends IndicatorAbstractTest {
 
     @Test
     public void testModifiedMovingAverageWithPeriodFourteen() {
@@ -105,7 +92,8 @@ public class ModifiedMovingAverageTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest() {
+    @Override
+    protected IndicatorRequest buildRequest() {
         return MARequest.builder()
                 .indicatorType(MODIFIED_MOVING_AVERAGE)
                 .originalData(originalData)

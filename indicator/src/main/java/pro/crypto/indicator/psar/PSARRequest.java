@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
 @Data
 @Builder
 @AllArgsConstructor
@@ -17,8 +15,8 @@ public class PSARRequest implements IndicatorRequest {
 
     private Tick[] originalData;
 
-    private BigDecimal minAccelerationFactor;
+    private double minAccelerationFactor;
 
-    private BigDecimal maxAccelerationFactor;
+    private double maxAccelerationFactor;
 
 }

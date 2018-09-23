@@ -1,11 +1,8 @@
 package pro.crypto.indicator.ma;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
@@ -15,17 +12,7 @@ import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.VARIABLE_INDEX_DYNAMIC_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class VariableIndexDynamicAverageTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class VariableIndexDynamicAverageTest extends IndicatorAbstractTest {
 
     @Test
     public void testVariableIndexDynamicAverageWithPeriodTen() {
@@ -107,7 +94,8 @@ public class VariableIndexDynamicAverageTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest() {
+    @Override
+    protected IndicatorRequest buildRequest() {
         return MARequest.builder()
                 .originalData(originalData)
                 .period(10)

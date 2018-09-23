@@ -1,27 +1,17 @@
 package pro.crypto.analyzer.atr;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.atr.ATRRequest;
 import pro.crypto.indicator.atr.AverageTrueRange;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 
-public class ATRAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class ATRAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testAverageTrueRangeAnalyzer() {
@@ -54,19 +44,13 @@ public class ATRAnalyzerTest {
         assertFalse(result[72].isTrend());
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return ATRRequest.builder()
                 .originalData(originalData)
                 .period(10)
                 .movingAverageType(SIMPLE_MOVING_AVERAGE)
                 .movingAveragePeriod(10)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

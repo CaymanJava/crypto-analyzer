@@ -1,11 +1,8 @@
 package pro.crypto.indicator.ma;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.FifteenMinTickWithClosePriceOnlyGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -14,46 +11,54 @@ import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.WEIGHTED_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class WeightedMovingAverageTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    private MARequest request;
-
-    @Before
-    public void init() {
-        FifteenMinTickWithClosePriceOnlyGenerator generator = new FifteenMinTickWithClosePriceOnlyGenerator(of(2018, 2, 25, 0, 0));
-        originalData = generator.generate();
-        request = buildMovingAverageCreationRequest();
-    }
+public class WeightedMovingAverageTest extends IndicatorAbstractTest {
 
     @Test
-    public void testWithPeriodThree() throws Exception {
-        request.setPeriod(3);
+    public void testWeightedMovingAverageWithPeriodFifteen() {
+        MARequest request = buildRequest();
+        request.setPeriod(15);
         MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
-        assertNull(result[1].getIndicatorValue());
-        assertEquals(result[3].getTime(), of(2018, 2, 25, 0, 45));
-        assertEquals(result[3].getIndicatorValue(), toBigDecimal(6.9166666667));
-        assertEquals(result[16].getTime(), of(2018, 2, 25, 4, 0));
-        assertEquals(result[16].getIndicatorValue(), toBigDecimal(7.2333333333));
+        assertNull(result[13].getIndicatorValue());
+        assertEquals(result[14].getTime(), of(2018, 3, 11, 0, 0));
+        assertEquals(result[14].getIndicatorValue(), toBigDecimal(1255.176255));
+        assertEquals(result[24].getTime(), of(2018, 3, 21, 0, 0));
+        assertEquals(result[24].getIndicatorValue(), toBigDecimal(1180.4837825));
+        assertEquals(result[31].getTime(), of(2018, 3, 28, 0, 0));
+        assertEquals(result[31].getIndicatorValue(), toBigDecimal(1189.9120833333));
+        assertEquals(result[43].getTime(), of(2018, 4, 9, 0, 0));
+        assertEquals(result[43].getIndicatorValue(), toBigDecimal(1315.2931741667));
+        assertEquals(result[57].getTime(), of(2018, 4, 23, 0, 0));
+        assertEquals(result[57].getIndicatorValue(), toBigDecimal(1395.5807591667));
+        assertEquals(result[68].getTime(), of(2018, 5, 4, 0, 0));
+        assertEquals(result[68].getIndicatorValue(), toBigDecimal(1437.8453175));
+        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1412.029655));
     }
 
     @Test
-    public void testWithPeriodFive() throws Exception {
-        request.setPeriod(5);
+    public void testWeightedMovingAveragePeriodTwenty() {
+        MARequest request = buildRequest();
+        request.setPeriod(20);
         MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
-        assertNull(result[3].getIndicatorValue());
-        assertEquals(result[4].getTime(), of(2018, 2, 25, 1, 0));
-        assertEquals(result[4].getIndicatorValue(), toBigDecimal(6.84));
-        assertEquals(result[16].getTime(), of(2018, 2, 25, 4, 0));
-        assertEquals(result[16].getIndicatorValue(), toBigDecimal(6.8666666667));
+        assertNull(result[18].getIndicatorValue());
+        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
+        assertEquals(result[19].getIndicatorValue(), toBigDecimal(1231.0905838095));
+        assertEquals(result[24].getTime(), of(2018, 3, 21, 0, 0));
+        assertEquals(result[24].getIndicatorValue(), toBigDecimal(1194.1985019048));
+        assertEquals(result[31].getTime(), of(2018, 3, 28, 0, 0));
+        assertEquals(result[31].getIndicatorValue(), toBigDecimal(1189.04453));
+        assertEquals(result[43].getTime(), of(2018, 4, 9, 0, 0));
+        assertEquals(result[43].getIndicatorValue(), toBigDecimal(1298.4248138095));
+        assertEquals(result[57].getTime(), of(2018, 4, 23, 0, 0));
+        assertEquals(result[57].getIndicatorValue(), toBigDecimal(1387.5981038095));
+        assertEquals(result[68].getTime(), of(2018, 5, 4, 0, 0));
+        assertEquals(result[68].getIndicatorValue(), toBigDecimal(1434.5342252381));
+        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1419.8086090476));
     }
 
     @Test
@@ -116,7 +121,8 @@ public class WeightedMovingAverageTest {
                 .build()).getResult();
     }
 
-    private MARequest buildMovingAverageCreationRequest() {
+    @Override
+    protected MARequest buildRequest() {
         return MARequest.builder()
                 .originalData(originalData)
                 .indicatorType(WEIGHTED_MOVING_AVERAGE)

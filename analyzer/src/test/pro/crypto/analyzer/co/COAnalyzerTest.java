@@ -1,15 +1,12 @@
 package pro.crypto.analyzer.co;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.co.CORequest;
 import pro.crypto.indicator.co.ChaikinOscillator;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.SignalStrength;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.assertEquals;
@@ -17,14 +14,7 @@ import static org.junit.Assert.assertTrue;
 import static pro.crypto.model.Signal.*;
 import static pro.crypto.model.Strength.*;
 
-public class COAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class COAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testChaikinOscillatorAnalyzer() {
@@ -53,18 +43,12 @@ public class COAnalyzerTest {
         assertEquals(result[72].getSignalStrength(), new SignalStrength(NEUTRAL, UNDEFINED));
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return CORequest.builder()
                 .originalData(originalData)
                 .slowPeriod(6)
                 .fastPeriod(20)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

@@ -1,25 +1,16 @@
 package pro.crypto.analyzer.aroon;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.aroon.AroonRequest;
 import pro.crypto.indicator.aroon.AroonUpDown;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
 import pro.crypto.model.*;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class AroonAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class AroonAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testAroonAnalyzer() {
@@ -48,17 +39,11 @@ public class AroonAnalyzerTest {
         assertEquals(result[72].getTrendStrength(), new TrendStrength(Trend.DOWNTREND, Strength.STRONG));
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return AroonRequest.builder()
                 .originalData(originalData)
                 .period(14)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

@@ -1,11 +1,8 @@
 package pro.crypto.indicator.ma;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -14,21 +11,13 @@ import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.TRIANGULAR_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class TriangularMovingAverageTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class TriangularMovingAverageTest extends IndicatorAbstractTest {
 
     @Test
     public void testTriangularMovingAverageWithEvenPeriod() {
-        MAResult[] result = MovingAverageFactory.create(buildRequest(14)).getResult();
+        MARequest request = buildRequest();
+        request.setPeriod(14);
+        MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[5].getIndicatorValue());
@@ -47,7 +36,9 @@ public class TriangularMovingAverageTest {
 
     @Test
     public void testTriangularMovingAverageWithOddPeriod() {
-        MAResult[] result = MovingAverageFactory.create(buildRequest(13)).getResult();
+        MARequest request = buildRequest();
+        request.setPeriod(13);
+        MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[5].getIndicatorValue());
@@ -123,10 +114,10 @@ public class TriangularMovingAverageTest {
                 .build()).getResult();
     }
 
-    private MARequest buildRequest(int period) {
+    @Override
+    protected MARequest buildRequest() {
         return MARequest.builder()
                 .originalData(originalData)
-                .period(period)
                 .priceType(CLOSE)
                 .indicatorType(TRIANGULAR_MOVING_AVERAGE)
                 .build();

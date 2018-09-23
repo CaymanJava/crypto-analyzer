@@ -1,12 +1,8 @@
 package pro.crypto.indicator.hlb;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -14,21 +10,14 @@ import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class HighLowBandsTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class HighLowBandsTest extends IndicatorAbstractTest {
 
     @Test
     public void testHighLowBandsWithPeriodThirteenAndFivePercentageShift() {
-        HLBResult[] result = new HighLowBands(buildRequest(13, 5)).getResult();
+        HLBRequest request = buildRequest();
+        request.setPeriod(13);
+        request.setShiftPercentage(5);
+        HLBResult[] result = new HighLowBands(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getBasis());
         assertNull(result[0].getUpperEnvelope());
@@ -56,7 +45,10 @@ public class HighLowBandsTest {
 
     @Test
     public void testHighLowBandsWithPeriodFourteenAndFourPercentageShift() {
-        HLBResult[] result = new HighLowBands(buildRequest(14, 4)).getResult();
+        HLBRequest request = buildRequest();
+        request.setPeriod(14);
+        request.setShiftPercentage(4);
+        HLBResult[] result = new HighLowBands(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getBasis());
         assertNull(result[0].getUpperEnvelope());
@@ -153,12 +145,11 @@ public class HighLowBandsTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(int period, double shiftPercentage) {
+    @Override
+    protected HLBRequest buildRequest() {
         return HLBRequest.builder()
                 .originalData(originalData)
                 .priceType(CLOSE)
-                .period(period)
-                .shiftPercentage(shiftPercentage)
                 .build();
     }
 

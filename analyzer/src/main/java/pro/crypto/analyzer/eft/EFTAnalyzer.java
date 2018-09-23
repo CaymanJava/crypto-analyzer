@@ -1,11 +1,12 @@
 package pro.crypto.analyzer.eft;
 
 import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
-import pro.crypto.analyzer.helper.SignalStrengthMerger;
 import pro.crypto.analyzer.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.eft.EFTResult;
-import pro.crypto.model.*;
+import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.SignalStrength;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
@@ -13,8 +14,6 @@ import java.util.stream.Stream;
 
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.NEUTRAL;
 import static pro.crypto.model.Strength.NORMAL;
 import static pro.crypto.model.Strength.STRONG;
 
@@ -33,7 +32,7 @@ public class EFTAnalyzer implements Analyzer<EFTAnalyzerResult> {
         BigDecimal[] indicatorValues = IndicatorResultExtractor.extract(indicatorResults);
         SignalStrength[] zeroLineCrossSignals = findZeroLineCrossSignals(indicatorValues);
         SignalStrength[] triggerCrossSignals = findTriggerCrossSignals(indicatorValues);
-        SignalStrength[] mergedSignals = mergeSignals(zeroLineCrossSignals, triggerCrossSignals);
+        SignalStrength[] mergedSignals = mergeSignalsStrength(zeroLineCrossSignals, triggerCrossSignals);
         buildEFTAnalyzerResult(mergedSignals);
     }
 
@@ -61,18 +60,6 @@ public class EFTAnalyzer implements Analyzer<EFTAnalyzerResult> {
         return Stream.of(indicatorResults)
                 .map(EFTResult::getTrigger)
                 .toArray(BigDecimal[]::new);
-    }
-
-    private SignalStrength toSignalStrength(Signal signal, Strength strength) {
-        return nonNull(signal) && signal != NEUTRAL
-                ? new SignalStrength(signal, strength)
-                : null;
-    }
-
-    private SignalStrength[] mergeSignals(SignalStrength[] zeroLineCrossSignals, SignalStrength[] triggerCrossSignals) {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new SignalStrengthMerger().merge(zeroLineCrossSignals[idx], triggerCrossSignals[idx]))
-                .toArray(SignalStrength[]::new);
     }
 
     private void buildEFTAnalyzerResult(SignalStrength[] mergedSignals) {

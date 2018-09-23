@@ -4,7 +4,7 @@ import pro.crypto.model.tick.Tick;
 
 import java.time.LocalDateTime;
 
-public class OneDayTickWithFullPriceGenerator extends AbstractGenerator {
+public class OneDayTickWithFullPriceGenerator extends TickAbstractGenerator {
 
     public OneDayTickWithFullPriceGenerator(LocalDateTime startDateTime) {
         this.startDateTime = startDateTime;
@@ -12,7 +12,7 @@ public class OneDayTickWithFullPriceGenerator extends AbstractGenerator {
 
     @Override
     public Tick[] generate() {
-        return new Tick[] {
+        return new Tick[]{
                 generateTick(1302.67, 1302.67, 1263.23, 1263.84, 15.5471),
                 generateTick(1268.65, 1294.65, 1261, 1292.3101, 97.4022),
                 generateTick(1274.76, 1274.76, 1251, 1251, 15.3186),

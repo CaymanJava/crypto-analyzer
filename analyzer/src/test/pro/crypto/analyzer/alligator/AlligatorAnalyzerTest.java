@@ -1,28 +1,18 @@
 package pro.crypto.analyzer.alligator;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.alligator.Alligator;
 import pro.crypto.indicator.alligator.AlligatorRequest;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static pro.crypto.model.tick.TimeFrame.ONE_DAY;
 
-public class AlligatorAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class AlligatorAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testAlligatorAnalyzer() {
@@ -52,7 +42,8 @@ public class AlligatorAnalyzerTest {
         assertEquals(result[72].isTrend(), false);
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return AlligatorRequest.builder()
                 .originalData(originalData)
                 .jawPeriod(13)
@@ -62,13 +53,6 @@ public class AlligatorAnalyzerTest {
                 .lipsPeriod(5)
                 .lipsOffset(3)
                 .timeFrame(ONE_DAY)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

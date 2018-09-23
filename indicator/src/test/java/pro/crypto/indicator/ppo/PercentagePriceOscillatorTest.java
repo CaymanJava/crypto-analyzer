@@ -1,11 +1,8 @@
 package pro.crypto.indicator.ppo;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
@@ -16,17 +13,7 @@ import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class PercentagePriceOscillatorTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class PercentagePriceOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testPercentagePriceOscillatorWithRecommendedPeriods() {
@@ -175,7 +162,8 @@ public class PercentagePriceOscillatorTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest() {
+    @Override
+    protected IndicatorRequest buildRequest() {
         return PPORequest.builder()
                 .originalData(originalData)
                 .slowPeriod(12)

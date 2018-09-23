@@ -66,8 +66,8 @@ public class StochasticOscillator implements Indicator<StochResult> {
     }
 
     private BigDecimal[] calculateFastStochasticOscillator() {
-        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceExtractor.extractValuesByType(originalData, LOW), fastPeriod);
-        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), fastPeriod);
+        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceExtractor.extract(originalData, LOW), fastPeriod);
+        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceExtractor.extract(originalData, HIGH), fastPeriod);
         return calculateFastStochasticOscillator(minValues, maxValues);
     }
 

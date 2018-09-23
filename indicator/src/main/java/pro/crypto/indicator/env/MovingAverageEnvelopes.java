@@ -27,7 +27,7 @@ public class MovingAverageEnvelopes implements Indicator<ENVResult> {
     private final Tick[] originalData;
     private final IndicatorType movingAverageType;
     private final int movingAveragePeriod;
-    private final int indentationPercentage;
+    private final double indentationPercentage;
 
     private ENVResult[] result;
 
@@ -70,9 +70,9 @@ public class MovingAverageEnvelopes implements Indicator<ENVResult> {
         checkMovingAverageType(movingAverageType);
     }
 
-    private void checkPercentage(int indentationPercentage) {
+    private void checkPercentage(double indentationPercentage) {
         if (indentationPercentage >= 100 || indentationPercentage <= 0) {
-            throw new WrongIncomingParametersException(format("Percentage should be in the range (0, 100) {indicator: {%s}, indentationPercentage: {%d}}",
+            throw new WrongIncomingParametersException(format("Percentage should be in the range (0, 100) {indicator: {%s}, indentationPercentage: {%.2f}}",
                     getType().toString(), indentationPercentage));
         }
     }

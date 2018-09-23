@@ -105,7 +105,7 @@ public class ChandelierExit implements Indicator<CEResult> {
     }
 
     private BigDecimal[] calculateMaxValues() {
-        return MinMaxFinder.findMaxValues(PriceExtractor.extractValuesByType(originalData, HIGH), period);
+        return MinMaxFinder.findMaxValues(PriceExtractor.extract(originalData, HIGH), period);
     }
 
     private BigDecimal[] calculateShortExits(BigDecimal[] averageTrueRangeValues) {
@@ -116,7 +116,7 @@ public class ChandelierExit implements Indicator<CEResult> {
     }
 
     private BigDecimal[] calculateMinValues() {
-        return MinMaxFinder.findMinValues(PriceExtractor.extractValuesByType(originalData, LOW), period);
+        return MinMaxFinder.findMinValues(PriceExtractor.extract(originalData, LOW), period);
     }
 
     private BigDecimal calculateExit(BigDecimal averageTrueRangeValue, BigDecimal minValue, int currentIndex,

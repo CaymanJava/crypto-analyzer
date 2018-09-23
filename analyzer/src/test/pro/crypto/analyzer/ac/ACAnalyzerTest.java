@@ -1,28 +1,18 @@
 package pro.crypto.analyzer.ac;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.ac.ACRequest;
 import pro.crypto.indicator.ac.AccelerationDecelerationOscillator;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static pro.crypto.model.Signal.*;
 
-public class ACAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class ACAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testAccelerationDecelerationOscillatorAnalyzer() {
@@ -45,19 +35,13 @@ public class ACAnalyzerTest {
         assertEquals(result[72].getSignal(), BUY);
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return ACRequest.builder()
                 .originalData(originalData)
                 .slowPeriod(5)
                 .fastPeriod(34)
                 .smoothedPeriod(5)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

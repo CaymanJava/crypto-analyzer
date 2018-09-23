@@ -1,33 +1,21 @@
 package pro.crypto.indicator.efi;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 
-public class ElderForceIndexTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class ElderForceIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testElderForceIndexWithPeriodThirteen() {
-        EFIResult[] result = new ElderForceIndex(buildRequest(13)).getResult();
+        EFIRequest request = buildRequest();
+        request.setPeriod(13);
+        EFIResult[] result = new ElderForceIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[8].getIndicatorValue());
@@ -48,7 +36,9 @@ public class ElderForceIndexTest {
 
     @Test
     public void testElderForceIndexWithPeriodTwo() {
-        EFIResult[] result = new ElderForceIndex(buildRequest(2)).getResult();
+        EFIRequest request = buildRequest();
+        request.setPeriod(2);
+        EFIResult[] result = new ElderForceIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[1].getIndicatorValue());
@@ -106,10 +96,10 @@ public class ElderForceIndexTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(int period) {
+    @Override
+    protected EFIRequest buildRequest() {
         return EFIRequest.builder()
                 .originalData(originalData)
-                .period(period)
                 .build();
     }
 

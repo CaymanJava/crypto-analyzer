@@ -1,12 +1,8 @@
 package pro.crypto.indicator.smi;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -15,21 +11,14 @@ import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 
-public class StochasticMomentumIndexTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class StochasticMomentumIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testStochasticMomentumIndexWithTenAndThreePeriods() {
-        SMIResult[] result = new StochasticMomentumIndex(buildRequest(10, 3)).getResult();
+        SMIRequest request = buildRequest();
+        request.setPeriod(10);
+        request.setSmoothingPeriod(3);
+        SMIResult[] result = new StochasticMomentumIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[0].getSignalLineValue());
@@ -57,7 +46,10 @@ public class StochasticMomentumIndexTest {
 
     @Test
     public void testStochasticMomentumIndexWithFourteenAndFourPeriods() {
-        SMIResult[] result = new StochasticMomentumIndex(buildRequest(14, 4)).getResult();
+        SMIRequest request = buildRequest();
+        request.setPeriod(14);
+        request.setSmoothingPeriod(4);
+        SMIResult[] result = new StochasticMomentumIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[0].getSignalLineValue());
@@ -155,11 +147,10 @@ public class StochasticMomentumIndexTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(int period, int smoothingPeriod) {
+    @Override
+    protected SMIRequest buildRequest() {
         return SMIRequest.builder()
                 .originalData(originalData)
-                .period(period)
-                .smoothingPeriod(smoothingPeriod)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
                 .build();
     }

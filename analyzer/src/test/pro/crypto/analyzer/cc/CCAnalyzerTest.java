@@ -1,14 +1,11 @@
 package pro.crypto.analyzer.cc;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.cc.CCRequest;
 import pro.crypto.indicator.cc.CoppockCurve;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.assertEquals;
@@ -16,14 +13,7 @@ import static org.junit.Assert.assertTrue;
 import static pro.crypto.model.Signal.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class CCAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class CCAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testCoppockCurveAnalyzer() {
@@ -48,20 +38,14 @@ public class CCAnalyzerTest {
         assertEquals(result[72].getSignal(), NEUTRAL);
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return CCRequest.builder()
                 .originalData(originalData)
                 .priceType(CLOSE)
                 .shortROCPeriod(11)
                 .longROCPeriod(14)
                 .period(10)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

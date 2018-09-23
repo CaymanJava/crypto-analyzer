@@ -58,7 +58,7 @@ public class VerticalHorizontalFilter implements Indicator<VHFResult> {
     }
 
     private BigDecimal[] calculateNumerators() {
-        BigDecimal[] closePrices = PriceExtractor.extractValuesByType(originalData, CLOSE);
+        BigDecimal[] closePrices = PriceExtractor.extract(originalData, CLOSE);
         BigDecimal[] maxCloseValues = MinMaxFinder.findMaxValues(closePrices, period);
         BigDecimal[] minCloseValues = MinMaxFinder.findMinValues(closePrices, period);
         return calculateNumerators(maxCloseValues, minCloseValues);

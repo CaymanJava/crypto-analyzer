@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
 import static java.util.Arrays.copyOfRange;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.helper.PriceExtractor.extractValuesByType;
+import static pro.crypto.helper.PriceExtractor.extract;
 import static pro.crypto.model.IndicatorType.AROON_UP_DOWN;
 import static pro.crypto.model.tick.PriceType.HIGH;
 import static pro.crypto.model.tick.PriceType.LOW;
@@ -102,7 +102,7 @@ public class AroonUpDown implements Indicator<AroonResult> {
     }
 
     private Integer calculateDaysAfterValue(PriceType priceType, int currentIndex, Function<BigDecimal[], Integer> findIndex) {
-        BigDecimal[] shortCutValues = copyOfRange(extractValuesByType(originalData, priceType), currentIndex - period, currentIndex + 1);
+        BigDecimal[] shortCutValues = copyOfRange(extract(originalData, priceType), currentIndex - period, currentIndex + 1);
         return period - findIndex.apply(shortCutValues);
     }
 

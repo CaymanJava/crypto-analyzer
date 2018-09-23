@@ -1,11 +1,8 @@
 package pro.crypto.indicator.gapo;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
@@ -13,17 +10,7 @@ import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 
-public class GopalakrishnanRangeIndexTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class GopalakrishnanRangeIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testGopalakrishnanRangeIndexWithPeriodFourteen() {
@@ -86,7 +73,8 @@ public class GopalakrishnanRangeIndexTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest() {
+    @Override
+    protected IndicatorRequest buildRequest() {
         return GAPORequest.builder()
                 .originalData(originalData)
                 .period(14)

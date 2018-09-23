@@ -1,11 +1,8 @@
 package pro.crypto.indicator.ma;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -17,21 +14,13 @@ import static pro.crypto.model.IndicatorType.TIME_SERIES_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 import static pro.crypto.model.tick.PriceType.OPEN;
 
-public class TimeSeriesMovingAverageTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class TimeSeriesMovingAverageTest extends IndicatorAbstractTest {
 
     @Test
     public void testTimeSeriesMovingAverageWithPeriodFifteen() {
-        MAResult[] result = MovingAverageFactory.create(buildRequest(15)).getResult();
+        MARequest request = buildRequest();
+        request.setPeriod(15);
+        MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[13].getIndicatorValue());
@@ -51,7 +40,9 @@ public class TimeSeriesMovingAverageTest {
 
     @Test
     public void testTimeSeriesMovingAverageWithPeriodTwenty() {
-        MAResult[] result = MovingAverageFactory.create(buildRequest(20)).getResult();
+        MARequest request = buildRequest();
+        request.setPeriod(20);
+        MAResult[] result = MovingAverageFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[18].getIndicatorValue());
@@ -128,10 +119,10 @@ public class TimeSeriesMovingAverageTest {
                 .build()).getResult();
     }
 
-    private MARequest buildRequest(int period) {
+    @Override
+    protected MARequest buildRequest() {
         return MARequest.builder()
                 .originalData(originalData)
-                .period(period)
                 .priceType(CLOSE)
                 .indicatorType(TIME_SERIES_MOVING_AVERAGE)
                 .build();

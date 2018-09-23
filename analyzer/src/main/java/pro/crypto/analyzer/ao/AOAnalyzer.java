@@ -269,12 +269,6 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
                 .toArray(Signal[]::new);
     }
 
-    private Signal[] mergeSignals(Signal[] saucerSignals, Signal[] crossZeroSignals, Signal[] twoPeaksSignals) {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new SignalMerger().merge(saucerSignals[idx], crossZeroSignals[idx], twoPeaksSignals[idx]))
-                .toArray(Signal[]::new);
-    }
-
     private void buildAOAnalyzerResult(Signal[] signals) {
         result = IntStream.range(0, signals.length)
                 .mapToObj(idx -> buildAOAnalyzerResult(signals[idx], idx))

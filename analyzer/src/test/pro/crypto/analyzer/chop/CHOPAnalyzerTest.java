@@ -1,26 +1,16 @@
 package pro.crypto.analyzer.chop;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.chop.CHOPRequest;
 import pro.crypto.indicator.chop.ChoppinessIndex;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 
-public class CHOPAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class CHOPAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testChoppinessIndexAnalyzer() {
@@ -45,17 +35,11 @@ public class CHOPAnalyzerTest {
         assertTrue(result[72].isTrend());
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return CHOPRequest.builder()
                 .originalData(originalData)
                 .period(14)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

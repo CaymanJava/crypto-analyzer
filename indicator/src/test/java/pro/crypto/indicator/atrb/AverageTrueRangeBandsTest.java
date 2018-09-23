@@ -1,12 +1,8 @@
 package pro.crypto.indicator.atrb;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -14,21 +10,13 @@ import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class AverageTrueRangeBandsTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class AverageTrueRangeBandsTest extends IndicatorAbstractTest {
 
     @Test
     public void testAverageTrueRangeBandsWithShiftThree() {
-        ATRBResult[] result = new AverageTrueRangeBands(buildRequest(3)).getResult();
+        ATRBRequest request = buildRequest();
+        request.setShift(3);
+        ATRBResult[] result = new AverageTrueRangeBands(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getUpperBand());
         assertNull(result[0].getMiddleBand());
@@ -60,7 +48,9 @@ public class AverageTrueRangeBandsTest {
 
     @Test
     public void testAverageTrueRangeBandsWithShiftOne() {
-        ATRBResult[] result = new AverageTrueRangeBands(buildRequest(1)).getResult();
+        ATRBRequest request = buildRequest();
+        request.setShift(1);
+        ATRBResult[] result = new AverageTrueRangeBands(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getUpperBand());
         assertNull(result[0].getMiddleBand());
@@ -161,11 +151,11 @@ public class AverageTrueRangeBandsTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(double shift) {
+    @Override
+    protected ATRBRequest buildRequest() {
         return ATRBRequest.builder()
                 .originalData(originalData)
                 .period(5)
-                .shift(shift)
                 .priceType(CLOSE)
                 .build();
     }

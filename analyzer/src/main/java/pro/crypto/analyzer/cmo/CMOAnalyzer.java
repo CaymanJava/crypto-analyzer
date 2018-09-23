@@ -1,12 +1,14 @@
 package pro.crypto.analyzer.cmo;
 
+import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
 import pro.crypto.analyzer.helper.StaticLineCrossFinder;
-import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.analyzer.helper.SignalStrengthMerger;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cmo.CMOResult;
-import pro.crypto.model.*;
+import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.SecurityLevel;
+import pro.crypto.model.SignalStrength;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -16,7 +18,8 @@ import java.util.stream.Stream;
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.*;
+import static pro.crypto.model.Signal.BUY;
+import static pro.crypto.model.Signal.SELL;
 import static pro.crypto.model.Strength.*;
 
 public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
@@ -39,7 +42,7 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
     public void analyze() {
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignals(divergenceSignals, crossSignals);
+        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, crossSignals);
         buildCMOAnalyzerResult(mergedSignals);
     }
 
@@ -62,13 +65,13 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
         SignalStrength[] securityLevelSignals = findSecurityLevelSignals(indicatorValues);
         SignalStrength[] zeroLineSignals = findZeroLineSignals(indicatorValues);
         SignalStrength[] signalLineSignals = findSignalLineSignals(indicatorValues);
-        return mergeSignals(securityLevelSignals, zeroLineSignals, signalLineSignals);
+        return mergeSignalsStrength(securityLevelSignals, zeroLineSignals, signalLineSignals);
     }
 
     private SignalStrength[] findSecurityLevelSignals(BigDecimal[] indicatorValues) {
         SignalStrength[] oversoldSignals = findOversoldSignals(indicatorValues);
         SignalStrength[] overboughtSignals = findOverboughtSignals(indicatorValues);
-        return mergeSignals(oversoldSignals, overboughtSignals);
+        return mergeSignalsStrength(oversoldSignals, overboughtSignals);
     }
 
     private SignalStrength[] findOverboughtSignals(BigDecimal[] indicatorValues) {
@@ -83,10 +86,6 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
                 .map(signal -> removeFalsePositiveSignal(signal, SELL))
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
-    }
-
-    private Signal removeFalsePositiveSignal(Signal signal, Signal falsePositive) {
-        return signal != falsePositive ? signal : null;
     }
 
     private SignalStrength[] findZeroLineSignals(BigDecimal[] indicatorValues) {
@@ -105,24 +104,6 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
         return Stream.of(indicatorResults)
                 .map(CMOResult::getSignalLineValue)
                 .toArray(BigDecimal[]::new);
-    }
-
-    private SignalStrength toSignalStrength(Signal signal, Strength strength) {
-        return nonNull(signal) && signal != NEUTRAL
-                ? new SignalStrength(signal, strength)
-                : null;
-    }
-
-    private SignalStrength[] mergeSignals(SignalStrength[] firstSignals, SignalStrength[] secondSignals, SignalStrength[] thirdSignals) {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new SignalStrengthMerger().merge(firstSignals[idx], secondSignals[idx], thirdSignals[idx]))
-                .toArray(SignalStrength[]::new);
-    }
-
-    private SignalStrength[] mergeSignals(SignalStrength[] firstSignals, SignalStrength[] secondSignals) {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new SignalStrengthMerger().merge(firstSignals[idx], secondSignals[idx]))
-                .toArray(SignalStrength[]::new);
     }
 
     private void buildCMOAnalyzerResult(SignalStrength[] mergedSignals) {

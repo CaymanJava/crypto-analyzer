@@ -1,32 +1,23 @@
 package pro.crypto.analyzer.efi;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.efi.EFIRequest;
 import pro.crypto.indicator.efi.ElderForceIndex;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static pro.crypto.model.Signal.*;
 
-public class EFIAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class EFIAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testElderForceIndexAnalyzerWithPeriodThirteen() {
-        IndicatorResult[] indicatorResults = new ElderForceIndex(buildIndicatorRequest(13)).getResult();
+        EFIRequest indicatorRequest = buildIndicatorRequest();
+        indicatorRequest.setPeriod(13);
+        IndicatorResult[] indicatorResults = new ElderForceIndex(indicatorRequest).getResult();
         EFIAnalyzerResult[] result = new EFIAnalyzer(buildAnalyzerRequest(indicatorResults)).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
@@ -55,7 +46,9 @@ public class EFIAnalyzerTest {
 
     @Test
     public void testElderForceIndexAnalyzerWithPeriodTwo() {
-        IndicatorResult[] indicatorResults = new ElderForceIndex(buildIndicatorRequest(2)).getResult();
+        EFIRequest indicatorRequest = buildIndicatorRequest();
+        indicatorRequest.setPeriod(2);
+        IndicatorResult[] indicatorResults = new ElderForceIndex(indicatorRequest).getResult();
         EFIAnalyzerResult[] result = new EFIAnalyzer(buildAnalyzerRequest(indicatorResults)).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
@@ -84,17 +77,10 @@ public class EFIAnalyzerTest {
         assertEquals(result[72].getSignal(), SELL);
     }
 
-    private IndicatorRequest buildIndicatorRequest(int period) {
+    @Override
+    protected EFIRequest buildIndicatorRequest() {
         return EFIRequest.builder()
                 .originalData(originalData)
-                .period(period)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

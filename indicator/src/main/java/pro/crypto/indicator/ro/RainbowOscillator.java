@@ -19,7 +19,7 @@ import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.helper.MinMaxFinder.*;
 import static pro.crypto.helper.MinMaxFinder.findMaxValues;
-import static pro.crypto.helper.PriceExtractor.extractValuesByType;
+import static pro.crypto.helper.PriceExtractor.extract;
 import static pro.crypto.model.IndicatorType.RAINBOW_OSCILLATOR;
 
 public class RainbowOscillator implements Indicator<ROResult> {
@@ -96,11 +96,11 @@ public class RainbowOscillator implements Indicator<ROResult> {
     }
 
     private void findMaxPriceValues() {
-        maxPriceValues = findMaxValues(extractValuesByType(originalData, priceType), highLowLookBack);
+        maxPriceValues = findMaxValues(extract(originalData, priceType), highLowLookBack);
     }
 
     private void findMinPriceValues() {
-        minPriceValues = findMinValues(extractValuesByType(originalData, priceType), highLowLookBack);
+        minPriceValues = findMinValues(extract(originalData, priceType), highLowLookBack);
     }
 
     private void findMaxRmaValues() {
@@ -172,7 +172,7 @@ public class RainbowOscillator implements Indicator<ROResult> {
     // 100 * (Price(i) - average RMA(i)) / (MaxPrice(i) - MinPrice(i))
     private BigDecimal calculateRainbowOscillatorValue(int currentIndex) {
         return MathHelper.divide(new BigDecimal(100)
-                .multiply(originalData[currentIndex].getPriceByType(priceType).subtract(avgRmaValues[currentIndex])),
+                        .multiply(originalData[currentIndex].getPriceByType(priceType).subtract(avgRmaValues[currentIndex])),
                 maxPriceValues[currentIndex].subtract(minPriceValues[currentIndex]));
     }
 
@@ -192,7 +192,7 @@ public class RainbowOscillator implements Indicator<ROResult> {
     // 100 * (MaxRMA(i) - MinRMA(i)) / (MaxPrice(i) - MinPrice(i))
     private BigDecimal calculateUpperEnvelopeValue(int currentIndex) {
         return MathHelper.divide(new BigDecimal(100)
-                .multiply(maxRmaValues[currentIndex].subtract(minRmaValues[currentIndex])),
+                        .multiply(maxRmaValues[currentIndex].subtract(minRmaValues[currentIndex])),
                 maxPriceValues[currentIndex].subtract(minPriceValues[currentIndex]));
     }
 

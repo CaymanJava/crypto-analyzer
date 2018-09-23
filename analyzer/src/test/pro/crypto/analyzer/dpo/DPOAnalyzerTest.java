@@ -1,15 +1,10 @@
 package pro.crypto.analyzer.dpo;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.dpo.DPORequest;
 import pro.crypto.indicator.dpo.DetrendedPriceOscillator;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
-import pro.crypto.model.IndicatorType;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.assertEquals;
@@ -19,18 +14,14 @@ import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.Signal.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class DPOAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class DPOAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testCenterOfGravityAnalyzerWithPeriodSeven() {
-        IndicatorResult[] indicatorResults = new DetrendedPriceOscillator(buildIndicatorRequest(7, SIMPLE_MOVING_AVERAGE)).getResult();
+        DPORequest indicatorRequest = buildIndicatorRequest();
+        indicatorRequest.setPeriod(7);
+        indicatorRequest.setMovingAverageType(SIMPLE_MOVING_AVERAGE);
+        IndicatorResult[] indicatorResults = new DetrendedPriceOscillator(indicatorRequest).getResult();
         DPOAnalyzerResult[] result = new DPOAnalyzer(buildAnalyzerRequest(indicatorResults)).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
@@ -49,7 +40,10 @@ public class DPOAnalyzerTest {
 
     @Test
     public void testCenterOfGravityAnalyzerWithPeriodTen() {
-        IndicatorResult[] indicatorResults = new DetrendedPriceOscillator(buildIndicatorRequest(10, EXPONENTIAL_MOVING_AVERAGE)).getResult();
+        DPORequest indicatorRequest = buildIndicatorRequest();
+        indicatorRequest.setPeriod(10);
+        indicatorRequest.setMovingAverageType(EXPONENTIAL_MOVING_AVERAGE);
+        IndicatorResult[] indicatorResults = new DetrendedPriceOscillator(indicatorRequest).getResult();
         DPOAnalyzerResult[] result = new DPOAnalyzer(buildAnalyzerRequest(indicatorResults)).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
@@ -62,19 +56,11 @@ public class DPOAnalyzerTest {
         assertEquals(result[72].getSignal(), NEUTRAL);
     }
 
-    private IndicatorRequest buildIndicatorRequest(int period, IndicatorType movingAverageType) {
+    @Override
+    protected DPORequest buildIndicatorRequest() {
         return DPORequest.builder()
                 .originalData(originalData)
-                .period(period)
-                .movingAverageType(movingAverageType)
                 .priceType(CLOSE)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

@@ -1,14 +1,9 @@
 package pro.crypto.indicator.vi;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.UnknownTypeException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
-import pro.crypto.model.IndicatorType;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -17,21 +12,13 @@ import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class VolumeIndexTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class VolumeIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testNegativeVolumeIndexWithPeriodTwentyFive() {
-        VIResult[] result = VolumeIndexFactory.create(buildRequest(NEGATIVE_VOLUME_INDEX)).getResult();
+        VIRequest request = buildRequest();
+        request.setVolumeIndexType(NEGATIVE_VOLUME_INDEX);
+        VIResult[] result = VolumeIndexFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
         assertEquals(result[0].getIndicatorValue(), toBigDecimal(15.5471));
@@ -55,7 +42,9 @@ public class VolumeIndexTest {
 
     @Test
     public void testPositiveVolumeIndexWithPeriodTwentyFive() {
-        VIResult[] result = VolumeIndexFactory.create(buildRequest(POSITIVE_VOLUME_INDEX)).getResult();
+        VIRequest request = buildRequest();
+        request.setVolumeIndexType(POSITIVE_VOLUME_INDEX);
+        VIResult[] result = VolumeIndexFactory.create(request).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
         assertEquals(result[0].getIndicatorValue(), toBigDecimal(15.5471));
@@ -168,13 +157,13 @@ public class VolumeIndexTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(IndicatorType volumeIndexType) {
+    @Override
+    protected VIRequest buildRequest() {
         return VIRequest.builder()
                 .originalData(originalData)
                 .period(25)
                 .priceType(CLOSE)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
-                .volumeIndexType(volumeIndexType)
                 .build();
     }
 

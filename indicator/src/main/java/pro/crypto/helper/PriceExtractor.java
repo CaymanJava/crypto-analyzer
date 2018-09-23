@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 public class PriceExtractor {
 
-    public static BigDecimal[] extractValuesByType(Tick[] ticks, PriceType priceType) {
+    public static BigDecimal[] extract(Tick[] ticks, PriceType priceType) {
         return Stream.of(ticks)
                 .map(tick -> tick.getPriceByType(priceType))
                 .toArray(BigDecimal[]::new);

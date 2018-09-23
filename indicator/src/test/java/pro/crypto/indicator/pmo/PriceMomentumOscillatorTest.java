@@ -1,12 +1,8 @@
 package pro.crypto.indicator.pmo;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -14,21 +10,15 @@ import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class PriceMomentumOscillatorTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class PriceMomentumOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testPriceMomentumOscillatorWithShortCutPeriods() {
-        PMOResult[] result = new PriceMomentumOscillator(buildRequest(25, 10, 5)).getResult();
+        PMORequest request = buildRequest();
+        request.setSmoothingPeriod(25);
+        request.setDoubleSmoothingPeriod(10);
+        request.setSignalPeriod(5);
+        PMOResult[] result = new PriceMomentumOscillator(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[0].getSignalLineValue());
@@ -53,7 +43,11 @@ public class PriceMomentumOscillatorTest {
 
     @Test
     public void testPriceMomentumOscillatorWithDefaultPeriods() {
-        PMOResult[] result = new PriceMomentumOscillator(buildRequest(35, 20, 10)).getResult();
+        PMORequest request = buildRequest();
+        request.setSmoothingPeriod(35);
+        request.setDoubleSmoothingPeriod(20);
+        request.setSignalPeriod(10);
+        PMOResult[] result = new PriceMomentumOscillator(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[0].getSignalLineValue());
@@ -166,13 +160,11 @@ public class PriceMomentumOscillatorTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(int smoothingPeriod, int doubleSmoothingPeriod, int signalLinePeriod) {
+    @Override
+    protected PMORequest buildRequest() {
         return PMORequest.builder()
                 .originalData(originalData)
                 .priceType(CLOSE)
-                .smoothingPeriod(smoothingPeriod)
-                .doubleSmoothingPeriod(doubleSmoothingPeriod)
-                .signalPeriod(signalLinePeriod)
                 .build();
     }
 

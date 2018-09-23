@@ -68,11 +68,11 @@ public class DonchianChannel implements Indicator<DCResult> {
     }
 
     private BigDecimal[] calculateUpperEnvelopes() {
-        return MinMaxFinder.findMaxExcludingLast(PriceExtractor.extractValuesByType(originalData, HIGH), highPeriod);
+        return MinMaxFinder.findMaxExcludingLast(PriceExtractor.extract(originalData, HIGH), highPeriod);
     }
 
     private BigDecimal[] calculateLowerEnvelopes() {
-        return MinMaxFinder.findMinExcludingLast(PriceExtractor.extractValuesByType(originalData, LOW), lowPeriod);
+        return MinMaxFinder.findMinExcludingLast(PriceExtractor.extract(originalData, LOW), lowPeriod);
     }
 
     private BigDecimal[] calculateMiddleEnvelopes(BigDecimal[] upperEnvelopes, BigDecimal[] lowerEnvelopes) {

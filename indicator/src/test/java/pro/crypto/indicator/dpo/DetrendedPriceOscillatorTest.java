@@ -1,38 +1,24 @@
 package pro.crypto.indicator.dpo;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
-import pro.crypto.model.IndicatorType;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
-import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
-import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
-import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class DetrendedPriceOscillatorTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class DetrendedPriceOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testDetrendedPriceOscillatorWithPeriodSeven() {
-        DPOResult[] result = new DetrendedPriceOscillator(buildRequest(7, SIMPLE_MOVING_AVERAGE)).getResult();
+        DPORequest request = buildRequest();
+        request.setPeriod(7);
+        request.setMovingAverageType(SIMPLE_MOVING_AVERAGE);
+        DPOResult[] result = new DetrendedPriceOscillator(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[9].getIndicatorValue());
@@ -52,7 +38,10 @@ public class DetrendedPriceOscillatorTest {
 
     @Test
     public void testDetrendedPriceOscillatorWithPeriodThree() {
-        DPOResult[] result = new DetrendedPriceOscillator(buildRequest(10, EXPONENTIAL_MOVING_AVERAGE)).getResult();
+        DPORequest request = buildRequest();
+        request.setPeriod(10);
+        request.setMovingAverageType(EXPONENTIAL_MOVING_AVERAGE);
+        DPOResult[] result = new DetrendedPriceOscillator(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[14].getIndicatorValue());
@@ -142,11 +131,10 @@ public class DetrendedPriceOscillatorTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(int period, IndicatorType indicatorType) {
+    @Override
+    protected DPORequest buildRequest() {
         return DPORequest.builder()
                 .originalData(originalData)
-                .period(period)
-                .movingAverageType(indicatorType)
                 .priceType(CLOSE)
                 .build();
     }

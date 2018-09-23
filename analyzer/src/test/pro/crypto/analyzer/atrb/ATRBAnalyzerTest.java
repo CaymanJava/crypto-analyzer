@@ -1,27 +1,17 @@
 package pro.crypto.analyzer.atrb;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.atrb.ATRBRequest;
 import pro.crypto.indicator.atrb.AverageTrueRangeBands;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class ATRBAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class ATRBAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testAverageTrueRangeBandsAnalyzer() {
@@ -66,19 +56,13 @@ public class ATRBAnalyzerTest {
         assertTrue(result[72].isCrossMiddleBand());
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return ATRBRequest.builder()
                 .originalData(originalData)
                 .period(5)
                 .shift(1)
                 .priceType(CLOSE)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

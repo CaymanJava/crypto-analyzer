@@ -1,7 +1,6 @@
 package pro.crypto.analyzer.cmf;
 
 import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.analyzer.helper.SignalMerger;
 import pro.crypto.analyzer.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cmf.CMFResult;
@@ -17,7 +16,8 @@ import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.*;
+import static pro.crypto.model.Signal.BUY;
+import static pro.crypto.model.Signal.SELL;
 import static pro.crypto.model.Trend.*;
 
 public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
@@ -72,16 +72,6 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
     private Signal[] findSellSignals(BigDecimal[] indicatorValues) {
         return Stream.of(new StaticLineCrossFinder(indicatorValues, BEARER_SIGNAL_LINE).find())
                 .map(signal -> removeFalsePositiveSignal(signal, BUY))
-                .toArray(Signal[]::new);
-    }
-
-    private Signal removeFalsePositiveSignal(Signal signal, Signal falsePositive) {
-        return signal != falsePositive ? signal : null;
-    }
-
-    private Signal[] mergeSignals(Signal[] firstSignals, Signal[] sellSignals) {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new SignalMerger().merge(firstSignals[idx], sellSignals[idx]))
                 .toArray(Signal[]::new);
     }
 

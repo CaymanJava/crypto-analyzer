@@ -1,12 +1,13 @@
 package pro.crypto.analyzer.cmo;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.cmo.CMORequest;
 import pro.crypto.indicator.cmo.ChandeMomentumOscillator;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.*;
-import pro.crypto.model.tick.Tick;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
+import pro.crypto.model.SecurityLevel;
+import pro.crypto.model.SignalStrength;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.assertEquals;
@@ -15,14 +16,7 @@ import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.Signal.*;
 import static pro.crypto.model.Strength.*;
 
-public class CMOAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class CMOAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testChandeMomentumOscillatorAnalyzer() {
@@ -64,19 +58,13 @@ public class CMOAnalyzerTest {
         assertEquals(result[72].getSecurityLevel(), SecurityLevel.OVERSOLD);
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return CMORequest.builder()
                 .originalData(originalData)
                 .period(9)
                 .signalLinePeriod(10)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

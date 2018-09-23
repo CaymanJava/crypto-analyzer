@@ -1,11 +1,8 @@
 package pro.crypto.indicator.macd;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithClosePriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
@@ -15,17 +12,7 @@ import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class MovingAverageConvergenceDivergenceTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithClosePriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class MovingAverageConvergenceDivergenceTest extends IndicatorAbstractTest {
 
     @Test
     public void testMovingAverageConvergenceDivergence() {
@@ -38,29 +25,37 @@ public class MovingAverageConvergenceDivergenceTest {
         assertNull(result[24].getSignalLineResult());
         assertNull(result[24].getBarChartValue());
         assertEquals(result[25].getTime(), of(2018, 3, 22, 0, 0));
-        assertEquals(result[25].getIndicatorValue(), toBigDecimal(0.4056563357));
+        assertEquals(result[25].getIndicatorValue(), toBigDecimal(-53.2538699758));
         assertNull(result[25].getSignalLineResult());
         assertNull(result[25].getBarChartValue());
         assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(0.2846054137));
+        assertEquals(result[32].getIndicatorValue(), toBigDecimal(-13.557054726));
         assertNull(result[32].getSignalLineResult());
         assertNull(result[32].getBarChartValue());
         assertEquals(result[33].getTime(), of(2018, 3, 30, 0, 0));
-        assertEquals(result[33].getIndicatorValue(), toBigDecimal(0.1889216936));
-        assertEquals(result[33].getSignalLineResult(), toBigDecimal(0.3917744361));
-        assertEquals(result[33].getBarChartValue(), toBigDecimal(-0.2028527425));
+        assertEquals(result[33].getIndicatorValue(), toBigDecimal(-6.5494925671));
+        assertEquals(result[33].getSignalLineResult(), toBigDecimal(-33.7846225485));
+        assertEquals(result[33].getBarChartValue(), toBigDecimal(27.2351299814));
         assertEquals(result[38].getTime(), of(2018, 4, 4, 0, 0));
-        assertEquals(result[38].getIndicatorValue(), toBigDecimal(0.1968265092));
-        assertEquals(result[38].getSignalLineResult(), toBigDecimal(0.2394121086));
-        assertEquals(result[38].getBarChartValue(), toBigDecimal(-0.0425855994));
+        assertEquals(result[38].getIndicatorValue(), toBigDecimal(17.5923276967));
+        assertEquals(result[38].getSignalLineResult(), toBigDecimal(-3.4887882607));
+        assertEquals(result[38].getBarChartValue(), toBigDecimal(21.0811159574));
         assertEquals(result[44].getTime(), of(2018, 4, 10, 0, 0));
-        assertEquals(result[44].getIndicatorValue(), toBigDecimal(0.3922420233));
-        assertEquals(result[44].getSignalLineResult(), toBigDecimal(0.2972576828));
-        assertEquals(result[44].getBarChartValue(), toBigDecimal(0.0949843405));
+        assertEquals(result[44].getIndicatorValue(), toBigDecimal(31.9319044814));
+        assertEquals(result[44].getSignalLineResult(), toBigDecimal(17.8573326025));
+        assertEquals(result[44].getBarChartValue(), toBigDecimal(14.0745718789));
         assertEquals(result[49].getTime(), of(2018, 4, 15, 0, 0));
-        assertEquals(result[49].getIndicatorValue(), toBigDecimal(0.1824057756));
-        assertEquals(result[49].getSignalLineResult(), toBigDecimal(0.3203577637));
-        assertEquals(result[49].getBarChartValue(), toBigDecimal(-0.1379519881));
+        assertEquals(result[49].getIndicatorValue(), toBigDecimal(32.094978201));
+        assertEquals(result[49].getSignalLineResult(), toBigDecimal(30.4281777488));
+        assertEquals(result[49].getBarChartValue(), toBigDecimal(1.6668004522));
+        assertEquals(result[61].getTime(), of(2018, 4, 27, 0, 0));
+        assertEquals(result[61].getIndicatorValue(), toBigDecimal(44.8499553601));
+        assertEquals(result[61].getSignalLineResult(), toBigDecimal(38.8860027323));
+        assertEquals(result[61].getBarChartValue(), toBigDecimal(5.9639526278));
+        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
+        assertEquals(result[72].getIndicatorValue(), toBigDecimal(6.5633752317));
+        assertEquals(result[72].getSignalLineResult(), toBigDecimal(20.6154250793));
+        assertEquals(result[72].getBarChartValue(), toBigDecimal(-14.0520498476));
     }
 
     @Test
@@ -171,7 +166,8 @@ public class MovingAverageConvergenceDivergenceTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest() {
+    @Override
+    protected IndicatorRequest buildRequest() {
         return MACDRequest.builder()
                 .originalData(originalData)
                 .slowPeriod(12)

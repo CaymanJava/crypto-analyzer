@@ -1,11 +1,8 @@
 package pro.crypto.indicator.fractal;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import java.util.stream.Stream;
@@ -13,21 +10,11 @@ import java.util.stream.Stream;
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 
-public class FractalTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class FractalTest extends IndicatorAbstractTest {
 
     @Test
     public void testFractalIndicator() {
-        FractalResult[] result = new Fractal(new FractalRequest(originalData)).getResult();
+        FractalResult[] result = new Fractal(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertTrue(extractUpFractals(result).length == 8);
         assertTrue(extractDownFractals(result).length == 9);
@@ -84,6 +71,11 @@ public class FractalTest {
                 .map(FractalResult::isDownFractal)
                 .filter(fractal -> fractal)
                 .toArray(Boolean[]::new);
+    }
+
+    @Override
+    protected FractalRequest buildRequest() {
+        return new FractalRequest(originalData);
     }
 
 }

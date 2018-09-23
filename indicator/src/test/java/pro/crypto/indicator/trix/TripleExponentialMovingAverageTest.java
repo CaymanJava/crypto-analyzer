@@ -1,33 +1,21 @@
 package pro.crypto.indicator.trix;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 
-public class TripleExponentialMovingAverageTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class TripleExponentialMovingAverageTest extends IndicatorAbstractTest {
 
     @Test
     public void testTRIXWithPeriodEighteen() {
-        TRIXResult[] result = new TripleExponentialMovingAverage(buildRequest(18)).getResult();
+        TRIXRequest request = buildRequest();
+        request.setPeriod(18);
+        TRIXResult[] result = new TripleExponentialMovingAverage(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[0].getSignalLineValue());
@@ -54,7 +42,9 @@ public class TripleExponentialMovingAverageTest {
 
     @Test
     public void testTRIXWithPeriodFourteen() {
-        TRIXResult[] result = new TripleExponentialMovingAverage(buildRequest(14)).getResult();
+        TRIXRequest request = buildRequest();
+        request.setPeriod(14);
+        TRIXResult[] result = new TripleExponentialMovingAverage(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[0].getSignalLineValue());
@@ -120,10 +110,10 @@ public class TripleExponentialMovingAverageTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(int period) {
+    @Override
+    protected TRIXRequest buildRequest() {
         return TRIXRequest.builder()
                 .originalData(originalData)
-                .period(period)
                 .build();
     }
 

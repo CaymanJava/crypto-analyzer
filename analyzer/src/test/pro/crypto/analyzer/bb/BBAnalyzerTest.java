@@ -1,28 +1,18 @@
 package pro.crypto.analyzer.bb;
 
-import org.junit.Before;
 import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
 import pro.crypto.indicator.bb.BBRequest;
 import pro.crypto.indicator.bb.BollingerBands;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
-import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class BBAnalyzerTest {
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class BBAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
     public void testBollingerBandsAnalyzer() {
@@ -63,20 +53,14 @@ public class BBAnalyzerTest {
         assertFalse(result[72].isCrossMiddleBand());
     }
 
-    private IndicatorRequest buildIndicatorRequest() {
+    @Override
+    protected IndicatorRequest buildIndicatorRequest() {
         return BBRequest.builder()
                 .originalData(originalData)
                 .period(20)
                 .priceType(CLOSE)
                 .standardDeviationCoefficient(2)
                 .movingAverageType(SIMPLE_MOVING_AVERAGE)
-                .build();
-    }
-
-    private AnalyzerRequest buildAnalyzerRequest(IndicatorResult[] indicatorResults) {
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
                 .build();
     }
 

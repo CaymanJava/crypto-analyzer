@@ -1,12 +1,8 @@
 package pro.crypto.indicator.di;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -16,21 +12,13 @@ import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class DisparityIndexTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class DisparityIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testDisparityIndexWithPeriodFourteen() {
-        DIResult[] result = new DisparityIndex(buildRequest(14)).getResult();
+        DIRequest request = buildRequest();
+        request.setPeriod(14);
+        DIResult[] result = new DisparityIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[12].getIndicatorValue());
@@ -50,7 +38,9 @@ public class DisparityIndexTest {
 
     @Test
     public void testDisparityIndexWithPeriodThirty() {
-        DIResult[] result = new DisparityIndex(buildRequest(30)).getResult();
+        DIRequest request = buildRequest();
+        request.setPeriod(30);
+        DIResult[] result = new DisparityIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertNull(result[28].getIndicatorValue());
@@ -140,10 +130,10 @@ public class DisparityIndexTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(int period) {
+    @Override
+    protected DIRequest buildRequest() {
         return DIRequest.builder()
                 .originalData(originalData)
-                .period(period)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
                 .priceType(CLOSE)
                 .build();

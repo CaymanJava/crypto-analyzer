@@ -1,7 +1,6 @@
 package pro.crypto.analyzer.ce;
 
 import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
-import pro.crypto.analyzer.helper.SignalMerger;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.indicator.ce.CEResult;
 import pro.crypto.model.Analyzer;
@@ -33,7 +32,7 @@ public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
 
     @Override
     public void analyze() {
-        BigDecimal[] closePrices = PriceExtractor.extractValuesByType(originalData, CLOSE);
+        BigDecimal[] closePrices = PriceExtractor.extract(originalData, CLOSE);
         Signal[] longExits = findLongExitSignals(closePrices);
         Signal[] shortExits = findShortExitSignals(closePrices);
         Signal[] mergedSignals = mergeSignals(longExits, shortExits);
@@ -60,20 +59,10 @@ public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
                 .toArray(Signal[]::new);
     }
 
-    private Signal removeFalsePositiveSignal(Signal signal, Signal falsePositive) {
-        return signal != falsePositive ? signal : null;
-    }
-
     private BigDecimal[] extractExits(Function<CEResult, BigDecimal> extractExitFunction) {
         return Stream.of(indicatorResults)
                 .map(extractExitFunction)
                 .toArray(BigDecimal[]::new);
-    }
-
-    private Signal[] mergeSignals(Signal[] longExits, Signal[] shortExits) {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new SignalMerger().merge(longExits[idx], shortExits[idx]))
-                .toArray(Signal[]::new);
     }
 
     private void buildCEAnalyzerResult(Signal[] mergedSignals) {

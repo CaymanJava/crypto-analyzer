@@ -1,11 +1,8 @@
 package pro.crypto.indicator.atr;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
@@ -14,17 +11,7 @@ import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 
-public class AverageTrueRangeTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class AverageTrueRangeTest extends IndicatorAbstractTest {
 
     @Test
     public void testATRWithPeriodTen() {
@@ -98,7 +85,8 @@ public class AverageTrueRangeTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest() {
+    @Override
+    protected IndicatorRequest buildRequest() {
         return ATRRequest.builder()
                 .originalData(originalData)
                 .period(10)

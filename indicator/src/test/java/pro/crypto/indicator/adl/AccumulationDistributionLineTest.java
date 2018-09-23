@@ -1,11 +1,9 @@
 package pro.crypto.indicator.adl;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -13,21 +11,11 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 
-public class AccumulationDistributionLineTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class AccumulationDistributionLineTest extends IndicatorAbstractTest {
 
     @Test
     public void testAccumulationDistributionLine() {
-        ADLResult[] result = new AccumulationDistributionLine(new ADLRequest(originalData)).getResult();
+        ADLResult[] result = new AccumulationDistributionLine(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
         assertEquals(result[0].getIndicatorValue(), toBigDecimal(-15.0661805778));
@@ -55,6 +43,13 @@ public class AccumulationDistributionLineTest {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {ACCUMULATION_DISTRIBUTION_LINE}}");
         new AccumulationDistributionLine(new ADLRequest(null)).getResult();
+    }
+
+    @Override
+    protected IndicatorRequest buildRequest() {
+        return ADLRequest.builder()
+                .originalData(originalData)
+                .build();
     }
 
 }

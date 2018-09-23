@@ -60,24 +60,12 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
         SignalStrength[] overboughtSignals = findCrossSignals(indicatorValues, OVERBOUGHT_LEVEL, NORMAL);
         SignalStrength[] oversoldSignals = findCrossSignals(indicatorValues, OVERSOLD_LEVEL, NORMAL);
         SignalStrength[] zeroLineSignals = findCrossSignals(indicatorValues, ZERO_LEVEL, WEAK);
-        return mergeSignals(overboughtSignals, oversoldSignals, zeroLineSignals);
-    }
-
-    private SignalStrength toSignalStrength(Signal signal, Strength strength) {
-        return nonNull(signal)
-                ? new SignalStrength(signal, strength)
-                : null;
+        return mergeSignalsStrength(overboughtSignals, oversoldSignals, zeroLineSignals);
     }
 
     private SignalStrength[] findCrossSignals(BigDecimal[] indicatorValues, BigDecimal level, Strength strength) {
         return Stream.of(new StaticLineCrossFinder(indicatorValues, level).find())
                 .map(signal -> toSignalStrength(signal, strength))
-                .toArray(SignalStrength[]::new);
-    }
-
-    private SignalStrength[] mergeSignals(SignalStrength[] overboughtSignals, SignalStrength[] oversellSignals, SignalStrength[] zeroLineSignals) {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new SignalStrengthMerger().merge(overboughtSignals[idx], oversellSignals[idx], zeroLineSignals[idx]))
                 .toArray(SignalStrength[]::new);
     }
 

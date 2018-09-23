@@ -1,11 +1,9 @@
 package pro.crypto.indicator.obv;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
@@ -13,21 +11,11 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 
-public class OnBalanceVolumeTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class OnBalanceVolumeTest extends IndicatorAbstractTest {
 
     @Test
     public void testOnBalanceVolume() {
-        OBVResult[] result = new OnBalanceVolume(new OBVRequest(originalData)).getResult();
+        OBVResult[] result = new OnBalanceVolume(buildRequest()).getResult();
         assertTrue(result.length == originalData.length);
         assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
         assertEquals(result[0].getIndicatorValue(), toBigDecimal(15.5471));
@@ -55,6 +43,11 @@ public class OnBalanceVolumeTest {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {ON_BALANCE_VOLUME}}");
         new OnBalanceVolume(new OBVRequest(null)).getResult();
+    }
+
+    @Override
+    protected IndicatorRequest buildRequest() {
+        return new OBVRequest(originalData);
     }
 
 }

@@ -1,33 +1,21 @@
 package pro.crypto.indicator.si;
 
-import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
-import pro.crypto.model.IndicatorRequest;
+import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.tick.Tick;
 
 import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 
-public class AccumulativeSwingIndexTest {
-
-    @Rule
-    public ExpectedException expectedException = ExpectedException.none();
-
-    private Tick[] originalData;
-
-    @Before
-    public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
-    }
+public class AccumulativeSwingIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testASIWithLimitThree() {
-        SIResult[] result = new AccumulativeSwingIndex(buildRequest(3)).getResult();
+        SIRequest request = buildRequest();
+        request.setLimitMoveValue(3);
+        SIResult[] result = new AccumulativeSwingIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertEquals(result[1].getTime(), of(2018, 2, 26, 0, 0));
@@ -48,7 +36,9 @@ public class AccumulativeSwingIndexTest {
 
     @Test
     public void testASIWithLimitHalf() {
-        SIResult[] result = new AccumulativeSwingIndex(buildRequest(0.5)).getResult();
+        SIRequest request = buildRequest();
+        request.setLimitMoveValue(0.5);
+        SIResult[] result = new AccumulativeSwingIndex(request).getResult();
         assertTrue(result.length == originalData.length);
         assertNull(result[0].getIndicatorValue());
         assertEquals(result[1].getTime(), of(2018, 2, 26, 0, 0));
@@ -97,10 +87,10 @@ public class AccumulativeSwingIndexTest {
                 .build()).getResult();
     }
 
-    private IndicatorRequest buildRequest(double limitMoveValue) {
+    @Override
+    protected SIRequest buildRequest() {
         return SIRequest.builder()
                 .originalData(originalData)
-                .limitMoveValue(limitMoveValue)
                 .build();
     }
 

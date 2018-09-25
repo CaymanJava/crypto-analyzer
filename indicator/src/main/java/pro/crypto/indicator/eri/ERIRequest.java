@@ -17,4 +17,8 @@ public class ERIRequest implements IndicatorRequest {
 
     private int period;
 
+    private int signalLinePeriod;
+
+    private int smoothLinePeriod;
+
 }

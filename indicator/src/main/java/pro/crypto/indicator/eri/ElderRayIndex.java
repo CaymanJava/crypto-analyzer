@@ -1,5 +1,6 @@
 package pro.crypto.indicator.eri;
 
+import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
@@ -13,16 +14,18 @@ import pro.crypto.model.tick.Tick;
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
 
+import static java.lang.Integer.max;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.IndicatorType.ELDER_RAY_INDEX;
-import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class ElderRayIndex implements Indicator<ERIResult> {
 
     private final Tick[] originalData;
     private final int period;
+    private final int signalLinePeriod;
+    private final int smoothLinePeriod;
 
     private ERIResult[] result;
 
@@ -30,6 +33,8 @@ public class ElderRayIndex implements Indicator<ERIResult> {
         ERIRequest request = (ERIRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
+        this.signalLinePeriod = request.getSignalLinePeriod();
+        this.smoothLinePeriod = request.getSmoothLinePeriod();
         checkIncomingData();
     }
 
@@ -42,7 +47,10 @@ public class ElderRayIndex implements Indicator<ERIResult> {
     public void calculate() {
         result = new ERIResult[originalData.length];
         BigDecimal[] movingAverageValues = calculateMovingAverageValues();
-        calculateElderRayIndicatorResult(movingAverageValues);
+        BigDecimal[] indicatorValues = calculateElderRayIndicatorValues(movingAverageValues);
+        BigDecimal[] signalLineValues = calculateSignalLineValues(indicatorValues);
+        BigDecimal[] smoothedLineValues = calculateSmoothedLineValues(indicatorValues);
+        buildElderRayIndicatorResult(movingAverageValues, indicatorValues, signalLineValues, smoothedLineValues);
     }
 
     @Override
@@ -55,8 +63,10 @@ public class ElderRayIndex implements Indicator<ERIResult> {
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkOriginalDataSize(originalData, period);
+        checkOriginalDataSize(originalData, period + max(signalLinePeriod, smoothLinePeriod));
         checkPeriod(period);
+        checkPeriod(signalLinePeriod);
+        checkPeriod(smoothLinePeriod);
     }
 
     private BigDecimal[] calculateMovingAverageValues() {
@@ -64,35 +74,75 @@ public class ElderRayIndex implements Indicator<ERIResult> {
     }
 
     private SimpleIndicatorResult[] calculateExponentialMovingAverage() {
-        return MovingAverageFactory.create(buildMARequest()).getResult();
+        return MovingAverageFactory.create(buildEMARequest()).getResult();
     }
 
-    private IndicatorRequest buildMARequest() {
+    private IndicatorRequest buildEMARequest() {
+        return buildMARequest(originalData, EXPONENTIAL_MOVING_AVERAGE, period);
+    }
+
+    private BigDecimal[] calculateElderRayIndicatorValues(BigDecimal[] movingAverageValues) {
+        return IntStream.range(0, result.length)
+                .mapToObj(idx -> calculateElderRayIndicator(originalData[idx], movingAverageValues[idx]))
+                .toArray(BigDecimal[]::new);
+    }
+
+    private BigDecimal calculateElderRayIndicator(Tick tick, BigDecimal movingAverageValue) {
+        return nonNull(movingAverageValue)
+                ? calculateElderRayIndicatorValue(tick, movingAverageValue)
+                : null;
+    }
+
+    private BigDecimal calculateElderRayIndicatorValue(Tick tick, BigDecimal movingAverageValue) {
+        return MathHelper.average(tick.getHigh(), tick.getLow()).subtract(movingAverageValue);
+    }
+
+    private BigDecimal[] calculateSignalLineValues(BigDecimal[] indicatorValues) {
+        BigDecimal[] signalLineValues = IndicatorResultExtractor.extract(calculateSimpleMovingAverage(indicatorValues));
+        BigDecimal[] result = new BigDecimal[originalData.length];
+        System.arraycopy(signalLineValues, 0, result, period - 1, signalLineValues.length);
+        return result;
+    }
+
+    private SimpleIndicatorResult[] calculateSimpleMovingAverage(BigDecimal[] indicatorValues) {
+        return MovingAverageFactory.create(buildSMARequest(indicatorValues)).getResult();
+    }
+
+    private IndicatorRequest buildSMARequest(BigDecimal[] indicatorValues) {
+        return buildMARequest(FakeTicksCreator.createWithCloseOnly(indicatorValues), SIMPLE_MOVING_AVERAGE, signalLinePeriod);
+    }
+
+    private BigDecimal[] calculateSmoothedLineValues(BigDecimal[] indicatorValues) {
+        BigDecimal[] smoothedLineValues = IndicatorResultExtractor.extract(calculateSmoothedMovingAverage(indicatorValues));
+        BigDecimal[] result = new BigDecimal[originalData.length];
+        System.arraycopy(smoothedLineValues, 0, result, period - 1, smoothedLineValues.length);
+        return result;
+    }
+
+    private SimpleIndicatorResult[] calculateSmoothedMovingAverage(BigDecimal[] indicatorValues) {
+        return MovingAverageFactory.create(buildSMMARequest(indicatorValues)).getResult();
+    }
+
+    private IndicatorRequest buildSMMARequest(BigDecimal[] indicatorValues) {
+        return buildMARequest(FakeTicksCreator.createWithCloseOnly(indicatorValues), SMOOTHED_MOVING_AVERAGE, smoothLinePeriod);
+    }
+
+    private IndicatorRequest buildMARequest(Tick[] ticks, IndicatorType indicatorType, int period) {
         return MARequest.builder()
-                .originalData(originalData)
+                .originalData(ticks)
                 .period(period)
                 .priceType(CLOSE)
-                .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
+                .indicatorType(indicatorType)
                 .build();
     }
 
-    private void calculateElderRayIndicatorResult(BigDecimal[] movingAverageValues) {
-        IntStream.range(0, result.length)
-                .forEach(idx -> result[idx] = calculateElderRayIndicator(originalData[idx], movingAverageValues[idx]));
-    }
+    private void buildElderRayIndicatorResult(BigDecimal[] movingAverageValues, BigDecimal[] indicatorValues,
+                                              BigDecimal[] signalLineValues, BigDecimal[] smoothedLineValues) {
+        result = IntStream.range(0, indicatorValues.length)
+                .mapToObj(idx -> new ERIResult(originalData[idx].getTickTime(), movingAverageValues[idx],
+                        indicatorValues[idx], signalLineValues[idx], smoothedLineValues[idx]))
+                .toArray(ERIResult[]::new);
 
-    private ERIResult calculateElderRayIndicator(Tick tick, BigDecimal movingAverageValue) {
-        return nonNull(movingAverageValue)
-                ? buildElderRayIndicatorResult(tick, movingAverageValue)
-                : new ERIResult(tick.getTickTime(), null, null);
-    }
-
-    private ERIResult buildElderRayIndicatorResult(Tick tick, BigDecimal movingAverageValue) {
-        return new ERIResult(tick.getTickTime(), calculatePower(tick.getHigh(), movingAverageValue), calculatePower(tick.getLow(), movingAverageValue));
-    }
-
-    private BigDecimal calculatePower(BigDecimal high, BigDecimal movingAverageValue) {
-        return MathHelper.scaleAndRound(high.subtract(movingAverageValue));
     }
 
 }

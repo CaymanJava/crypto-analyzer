@@ -1,8 +1,8 @@
-package pro.crypto.analyzer.efi;
+package pro.crypto.analyzer.eom;
 
 import pro.crypto.analyzer.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.indicator.efi.EFIResult;
+import pro.crypto.indicator.eom.EOMResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.Signal;
@@ -12,24 +12,24 @@ import java.util.stream.IntStream;
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
 
-public class EFIAnalyzer implements Analyzer<EFIAnalyzerResult> {
+public class EOMAnalyzer implements Analyzer<EOMAnalyzerResult> {
 
-    private final EFIResult[] indicatorResults;
+    private final EOMResult[] indicatorResults;
 
-    private EFIAnalyzerResult[] result;
-
-    public EFIAnalyzer(AnalyzerRequest request) {
-        this.indicatorResults = (EFIResult[]) request.getIndicatorResults();
+    public EOMAnalyzer(AnalyzerRequest request) {
+        this.indicatorResults = (EOMResult[]) request.getIndicatorResults();
     }
+
+    private EOMAnalyzerResult[] result;
 
     @Override
     public void analyze() {
         Signal[] signals = findSignals();
-        buildEFIAnalyzerResult(signals);
+        buildEOMAnalyzerResult(signals);
     }
 
     @Override
-    public EFIAnalyzerResult[] getResult() {
+    public EOMAnalyzerResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
@@ -40,10 +40,10 @@ public class EFIAnalyzer implements Analyzer<EFIAnalyzerResult> {
         return new StaticLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), ZERO).find();
     }
 
-    private void buildEFIAnalyzerResult(Signal[] signals) {
+    private void buildEOMAnalyzerResult(Signal[] signals) {
         result = IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new EFIAnalyzerResult(indicatorResults[idx].getTime(), signals[idx]))
-                .toArray(EFIAnalyzerResult[]::new);
+                .mapToObj(idx -> new EOMAnalyzerResult(indicatorResults[idx].getTime(), signals[idx]))
+                .toArray(EOMAnalyzerResult[]::new);
     }
 
 }

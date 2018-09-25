@@ -16,7 +16,7 @@ import static pro.crypto.model.Signal.*;
 public class EOMAnalyzerTest extends AnalyzerAbstractTest {
 
     @Test
-    public void testCenterOfGravityAnalyzerWithPeriodSeven() {
+    public void testEaseOfMovementAnalyzerWithPeriodFourteen() {
         IndicatorResult[] indicatorResults = new EaseOfMovement(buildIndicatorRequest()).getResult();
         EOMAnalyzerResult[] result = new EOMAnalyzer(buildAnalyzerRequest(indicatorResults)).getResult();
         assertTrue(result.length == originalData.length);

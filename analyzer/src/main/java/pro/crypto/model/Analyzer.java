@@ -26,26 +26,30 @@ public interface Analyzer<T extends AnalyzerResult> {
     }
 
     default SignalStrength[] mergeSignalsStrength(SignalStrength[] firstSignals, SignalStrength[] secondSignals, SignalStrength[] thirdSignals) {
+        SignalStrengthMerger signalStrengthMerger = new SignalStrengthMerger();
         return IntStream.range(0, firstSignals.length)
-                .mapToObj(idx -> new SignalStrengthMerger().merge(firstSignals[idx], secondSignals[idx], thirdSignals[idx]))
+                .mapToObj(idx -> signalStrengthMerger.merge(firstSignals[idx], secondSignals[idx], thirdSignals[idx]))
                 .toArray(SignalStrength[]::new);
     }
 
     default SignalStrength[] mergeSignalsStrength(SignalStrength[] firstSignals, SignalStrength[] secondSignals) {
+        SignalStrengthMerger signalStrengthMerger = new SignalStrengthMerger();
         return IntStream.range(0, firstSignals.length)
-                .mapToObj(idx -> new SignalStrengthMerger().merge(firstSignals[idx], secondSignals[idx]))
+                .mapToObj(idx -> signalStrengthMerger.merge(firstSignals[idx], secondSignals[idx]))
                 .toArray(SignalStrength[]::new);
     }
 
     default Signal[] mergeSignals(Signal[] firstSignals, Signal[] secondSignals, Signal[] thirdSignals) {
+        SignalMerger signalMerger = new SignalMerger();
         return IntStream.range(0, firstSignals.length)
-                .mapToObj(idx -> new SignalMerger().merge(firstSignals[idx], secondSignals[idx], thirdSignals[idx]))
+                .mapToObj(idx -> signalMerger.merge(firstSignals[idx], secondSignals[idx], thirdSignals[idx]))
                 .toArray(Signal[]::new);
     }
 
     default Signal[] mergeSignals(Signal[] firstSignals, Signal[] sellSignals) {
+        SignalMerger signalMerger = new SignalMerger();
         return IntStream.range(0, firstSignals.length)
-                .mapToObj(idx -> new SignalMerger().merge(firstSignals[idx], sellSignals[idx]))
+                .mapToObj(idx -> signalMerger.merge(firstSignals[idx], sellSignals[idx]))
                 .toArray(Signal[]::new);
     }
 

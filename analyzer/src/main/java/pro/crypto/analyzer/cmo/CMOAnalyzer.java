@@ -1,8 +1,8 @@
 package pro.crypto.analyzer.cmo;
 
-import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
-import pro.crypto.analyzer.helper.StaticLineCrossFinder;
+import pro.crypto.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cmo.CMOResult;
 import pro.crypto.model.Analyzer;

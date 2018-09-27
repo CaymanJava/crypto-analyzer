@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.dpo;
 
-import pro.crypto.analyzer.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.dpo.DPOResult;
 import pro.crypto.model.Analyzer;

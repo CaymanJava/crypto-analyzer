@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.fractal;
 
-import pro.crypto.analyzer.helper.SignalMerger;
+import pro.crypto.helper.SignalMerger;
 import pro.crypto.indicator.fractal.FractalResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;

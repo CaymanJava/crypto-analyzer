@@ -1,4 +1,4 @@
-package pro.crypto.analyzer.helper;
+package pro.crypto.helper;
 
 import pro.crypto.model.SignalStrength;
 import pro.crypto.model.Strength;
@@ -19,7 +19,9 @@ public class SignalStrengthMerger {
         Stream.of(signals)
                 .filter(Objects::nonNull)
                 .forEach(this::calculateSignalPoints);
-        return getResult();
+        SignalStrength result = getResult();
+        refreshPoints();
+        return result;
     }
 
     private SignalStrength getResult() {
@@ -86,6 +88,11 @@ public class SignalStrengthMerger {
             default:
                 return 0;
         }
+    }
+
+    private void refreshPoints() {
+        buyPoints = 0;
+        sellPoints = 0;
     }
 
 }

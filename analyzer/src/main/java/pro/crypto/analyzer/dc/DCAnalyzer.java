@@ -8,7 +8,7 @@ import pro.crypto.model.tick.Tick;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
-import static pro.crypto.analyzer.helper.BandAnalyzer.*;
+import static pro.crypto.helper.BandAnalyzer.*;
 
 public class DCAnalyzer implements Analyzer<DCAnalyzerResult> {
 

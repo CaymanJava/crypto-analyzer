@@ -1,4 +1,4 @@
-package pro.crypto.analyzer.helper.divergence;
+package pro.crypto.helper.divergence;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

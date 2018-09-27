@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.ao;
 
-import pro.crypto.analyzer.helper.StaticLineCrossFinder;
-import pro.crypto.analyzer.helper.SignalMerger;
+import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.SignalMerger;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.ao.AOResult;
 import pro.crypto.model.Analyzer;

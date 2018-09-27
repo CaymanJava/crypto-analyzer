@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.adl;
 
-import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.adl.ADLResult;
 import pro.crypto.model.Analyzer;

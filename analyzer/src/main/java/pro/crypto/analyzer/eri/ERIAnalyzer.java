@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.eri;
 
-import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossFinder;
 import pro.crypto.indicator.eri.ERIResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;

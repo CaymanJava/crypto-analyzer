@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.co;
 
-import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.analyzer.helper.StaticLineCrossFinder;
+import pro.crypto.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IncreasedQualifier;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.co.COResult;

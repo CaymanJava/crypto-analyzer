@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.efi;
 
-import pro.crypto.analyzer.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.efi.EFIResult;
 import pro.crypto.model.Analyzer;

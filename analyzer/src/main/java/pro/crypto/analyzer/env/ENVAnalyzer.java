@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.env;
 
-import pro.crypto.analyzer.helper.BandAnalyzer;
-import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.BandAnalyzer;
+import pro.crypto.helper.DynamicLineCrossFinder;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.indicator.env.ENVResult;
 import pro.crypto.model.Analyzer;

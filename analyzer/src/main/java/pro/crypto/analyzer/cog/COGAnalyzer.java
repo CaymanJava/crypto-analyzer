@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.cog;
 
-import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossFinder;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cog.COGResult;
 import pro.crypto.model.Analyzer;

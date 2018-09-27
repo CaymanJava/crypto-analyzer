@@ -129,8 +129,8 @@ public class HighLowBands implements Indicator<HLBResult> {
     private void buildHighLowBandsResult(BigDecimal[] basisValues, BigDecimal[] upperEnvelopeValues, BigDecimal[] lowerEnvelopeValues) {
         IntStream.range(0, result.length)
                 .forEach(idx -> result[idx] = new HLBResult(
-                        originalData[idx].getTickTime(), basisValues[idx],
-                        upperEnvelopeValues[idx], lowerEnvelopeValues[idx]
+                        originalData[idx].getTickTime(), upperEnvelopeValues[idx],
+                        basisValues[idx], lowerEnvelopeValues[idx]
                 ));
     }
 

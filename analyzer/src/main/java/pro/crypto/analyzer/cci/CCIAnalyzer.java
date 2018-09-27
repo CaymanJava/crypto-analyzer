@@ -1,8 +1,8 @@
 package pro.crypto.analyzer.cci;
 
-import pro.crypto.analyzer.helper.StaticLineCrossFinder;
-import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.analyzer.helper.SignalStrengthMerger;
+import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.helper.SignalStrengthMerger;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cci.CCIResult;
 import pro.crypto.model.*;

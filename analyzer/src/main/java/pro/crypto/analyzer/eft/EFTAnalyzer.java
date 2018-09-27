@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.eft;
 
-import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
-import pro.crypto.analyzer.helper.StaticLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.eft.EFTResult;
 import pro.crypto.model.Analyzer;

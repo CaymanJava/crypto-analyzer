@@ -1,4 +1,4 @@
-package pro.crypto.analyzer.helper.divergence;
+package pro.crypto.helper.divergence;
 
 import pro.crypto.helper.IncreasedQualifier;
 import pro.crypto.helper.MathHelper;
@@ -18,9 +18,9 @@ import static java.util.Arrays.asList;
 import static java.util.Comparator.comparing;
 import static java.util.Objects.nonNull;
 import static java.util.stream.Stream.*;
-import static pro.crypto.analyzer.helper.divergence.DivergenceClass.*;
-import static pro.crypto.analyzer.helper.divergence.DivergenceType.*;
-import static pro.crypto.analyzer.helper.divergence.DivergenceType.BULLISH;
+import static pro.crypto.helper.divergence.DivergenceClass.*;
+import static pro.crypto.helper.divergence.DivergenceType.*;
+import static pro.crypto.helper.divergence.DivergenceType.BULLISH;
 
 public class Divergence {
 

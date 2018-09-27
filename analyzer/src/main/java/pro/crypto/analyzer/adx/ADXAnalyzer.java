@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.adx;
 
-import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossFinder;
 import pro.crypto.indicator.adx.ADXResult;
 import pro.crypto.model.*;
 import pro.crypto.model.result.AnalyzerResult;

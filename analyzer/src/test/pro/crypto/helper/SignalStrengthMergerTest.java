@@ -1,4 +1,4 @@
-package pro.crypto.analyzer.helper;
+package pro.crypto.helper;
 
 import lombok.Data;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package pro.crypto.analyzer.helper;
+package pro.crypto.helper;
 
 import pro.crypto.model.Signal;
 
@@ -10,14 +10,14 @@ import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.NEUTRAL;
 import static pro.crypto.model.Signal.SELL;
 
-public class StaticLineCrossFinder {
+public class DynamicLineCrossFinder {
 
     private final BigDecimal[] firstLineValues;
-    private final BigDecimal secondLine;
+    private final BigDecimal[] secondLineValues;
 
-    public StaticLineCrossFinder(BigDecimal[] firstLineValues, BigDecimal secondLine) {
+    public DynamicLineCrossFinder(BigDecimal[] firstLineValues, BigDecimal[] secondLineValues) {
         this.firstLineValues = firstLineValues;
-        this.secondLine = secondLine;
+        this.secondLineValues = secondLineValues;
     }
 
     public Signal[] find() {
@@ -35,7 +35,9 @@ public class StaticLineCrossFinder {
     private boolean isPossibleDefineCrossSignal(int currentIndex) {
         return currentIndex > 0
                 && nonNull(firstLineValues[currentIndex - 1])
-                && nonNull(firstLineValues[currentIndex]);
+                && nonNull(firstLineValues[currentIndex])
+                && nonNull(secondLineValues[currentIndex - 1])
+                && nonNull(secondLineValues[currentIndex]);
     }
 
     private Signal defineCrossSignal(int currentIndex) {
@@ -45,8 +47,8 @@ public class StaticLineCrossFinder {
     }
 
     private boolean isLineIntersection(int currentIndex) {
-        return firstLineValues[currentIndex - 1].compareTo(secondLine)
-                != firstLineValues[currentIndex].compareTo(secondLine);
+        return firstLineValues[currentIndex - 1].compareTo(secondLineValues[currentIndex - 1])
+                != firstLineValues[currentIndex].compareTo(secondLineValues[currentIndex]);
     }
 
     private Signal defineCrossLineSignal(int currentIndex) {
@@ -60,13 +62,13 @@ public class StaticLineCrossFinder {
     }
 
     private boolean isCrossUpLine(int currentIndex) {
-        return firstLineValues[currentIndex - 1].compareTo(secondLine) < 0
-                && firstLineValues[currentIndex].compareTo(secondLine) >= 0;
+        return firstLineValues[currentIndex - 1].compareTo(secondLineValues[currentIndex - 1]) < 0
+                && firstLineValues[currentIndex].compareTo(secondLineValues[currentIndex]) >= 0;
     }
 
     private boolean isCrossDownLine(int currentIndex) {
-        return firstLineValues[currentIndex - 1].compareTo(secondLine) > 0
-                && firstLineValues[currentIndex].compareTo(secondLine) <= 0;
+        return firstLineValues[currentIndex - 1].compareTo(secondLineValues[currentIndex - 1]) > 0
+                && firstLineValues[currentIndex].compareTo(secondLineValues[currentIndex]) <= 0;
     }
 
 }

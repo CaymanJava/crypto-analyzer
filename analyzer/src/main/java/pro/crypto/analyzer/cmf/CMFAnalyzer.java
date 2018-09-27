@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.cmf;
 
-import pro.crypto.analyzer.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.analyzer.helper.StaticLineCrossFinder;
+import pro.crypto.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cmf.CMFResult;
 import pro.crypto.model.Analyzer;

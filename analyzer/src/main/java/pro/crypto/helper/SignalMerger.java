@@ -1,4 +1,4 @@
-package pro.crypto.analyzer.helper;
+package pro.crypto.helper;
 
 import pro.crypto.model.Signal;
 

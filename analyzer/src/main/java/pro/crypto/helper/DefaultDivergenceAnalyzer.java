@@ -1,8 +1,8 @@
-package pro.crypto.analyzer.helper;
+package pro.crypto.helper;
 
-import pro.crypto.analyzer.helper.divergence.Divergence;
-import pro.crypto.analyzer.helper.divergence.DivergenceRequest;
-import pro.crypto.analyzer.helper.divergence.DivergenceResult;
+import pro.crypto.helper.divergence.Divergence;
+import pro.crypto.helper.divergence.DivergenceRequest;
+import pro.crypto.helper.divergence.DivergenceResult;
 import pro.crypto.model.Signal;
 import pro.crypto.model.tick.Tick;
 

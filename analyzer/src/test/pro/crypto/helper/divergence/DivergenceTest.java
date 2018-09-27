@@ -1,4 +1,4 @@
-package pro.crypto.analyzer.helper.divergence;
+package pro.crypto.helper.divergence;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -15,11 +15,11 @@ import java.math.BigDecimal;
 import static java.time.LocalDateTime.of;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
-import static pro.crypto.analyzer.helper.divergence.DivergenceClass.CLASSIC;
-import static pro.crypto.analyzer.helper.divergence.DivergenceClass.EXTENDED;
-import static pro.crypto.analyzer.helper.divergence.DivergenceClass.HIDDEN;
-import static pro.crypto.analyzer.helper.divergence.DivergenceType.BEARISH;
-import static pro.crypto.analyzer.helper.divergence.DivergenceType.BULLISH;
+import static pro.crypto.helper.divergence.DivergenceClass.CLASSIC;
+import static pro.crypto.helper.divergence.DivergenceClass.EXTENDED;
+import static pro.crypto.helper.divergence.DivergenceClass.HIDDEN;
+import static pro.crypto.helper.divergence.DivergenceType.BEARISH;
+import static pro.crypto.helper.divergence.DivergenceType.BULLISH;
 
 public class DivergenceTest {
 

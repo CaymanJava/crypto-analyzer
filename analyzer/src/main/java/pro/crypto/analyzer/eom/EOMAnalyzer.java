@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.eom;
 
-import pro.crypto.analyzer.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossFinder;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.eom.EOMResult;
 import pro.crypto.model.Analyzer;

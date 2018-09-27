@@ -1,4 +1,4 @@
-package pro.crypto.analyzer.helper.divergence;
+package pro.crypto.helper.divergence;
 
 import lombok.*;
 import pro.crypto.model.Signal;

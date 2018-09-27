@@ -16,6 +16,9 @@ import static pro.crypto.model.IndicatorType.GOPALAKRISHNAN_RANGE_INDEX;
 import static pro.crypto.model.tick.PriceType.HIGH;
 import static pro.crypto.model.tick.PriceType.LOW;
 
+/**
+ * This indicator is only for recognizing gaps. It doesn't have any analyzers or strategies
+ */
 public class GopalakrishnanRangeIndex implements Indicator<GAPOResult> {
 
     private final Tick[] originalData;

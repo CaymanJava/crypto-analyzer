@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.ce;
 
-import pro.crypto.analyzer.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossFinder;
 import pro.crypto.helper.PriceExtractor;
 import pro.crypto.indicator.ce.CEResult;
 import pro.crypto.model.Analyzer;

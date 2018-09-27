@@ -1,7 +1,7 @@
 package pro.crypto.model;
 
-import pro.crypto.analyzer.helper.SignalMerger;
-import pro.crypto.analyzer.helper.SignalStrengthMerger;
+import pro.crypto.helper.SignalMerger;
+import pro.crypto.helper.SignalStrengthMerger;
 import pro.crypto.model.result.AnalyzerResult;
 
 import java.util.stream.IntStream;

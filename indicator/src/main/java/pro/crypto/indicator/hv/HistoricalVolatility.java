@@ -21,6 +21,9 @@ import static pro.crypto.model.IndicatorType.HISTORICAL_VOLATILITY;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
+/**
+ * This indicator is only for history volatility calculation. It doesn't have any analyzers or strategies
+ */
 public class HistoricalVolatility implements Indicator<HVResult> {
 
     private final Tick[] originalData;

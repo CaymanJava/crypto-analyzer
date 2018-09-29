@@ -2,7 +2,7 @@ package pro.crypto.indicator.stc;
 
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.IncreaseQuantityIndicatorAbstractTest;
+import pro.crypto.indicator.IncreasedQuantityIndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
@@ -13,7 +13,7 @@ import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.MOVING_AVERAGE_CONVERGENCE_DIVERGENCE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class SchaffTrendCycleTest extends IncreaseQuantityIndicatorAbstractTest {
+public class SchaffTrendCycleTest extends IncreasedQuantityIndicatorAbstractTest {
 
     @Test
     public void testSchaffTrendCycleWithDefaultParams() {

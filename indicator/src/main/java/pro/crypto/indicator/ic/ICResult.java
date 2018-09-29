@@ -11,14 +11,14 @@ public class ICResult implements IndicatorResult {
 
     private LocalDateTime time;
 
-    private BigDecimal conversionLineValue;
+    private BigDecimal conversionLineValue; // Tenkan-sen
 
-    private BigDecimal baseLineValue;
+    private BigDecimal baseLineValue; // Kijun-sen
 
-    private BigDecimal leadingSpanAValue;
+    private BigDecimal leadingSpanAValue; // Senkou Span A
 
-    private BigDecimal leadingSpanBValue;
+    private BigDecimal leadingSpanBValue; // Senkou Span B
 
-    private BigDecimal laggingSpanValue;
+    private BigDecimal laggingSpanValue; // Chinkou Span
 
 }

@@ -2,7 +2,7 @@ package pro.crypto.indicator.ic;
 
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.indicator.IncreaseQuantityIndicatorAbstractTest;
+import pro.crypto.indicator.IncreasedQuantityIndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.tick.Tick;
 
@@ -10,7 +10,7 @@ import static java.time.LocalDateTime.of;
 import static org.junit.Assert.*;
 import static pro.crypto.helper.MathHelper.toBigDecimal;
 
-public class IchimokuCloudsTest extends IncreaseQuantityIndicatorAbstractTest {
+public class IchimokuCloudsTest extends IncreasedQuantityIndicatorAbstractTest {
 
     @Test
     public void testIchimokuCloudsWithDefaultParameters() {

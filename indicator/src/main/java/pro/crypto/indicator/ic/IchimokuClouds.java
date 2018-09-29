@@ -45,11 +45,11 @@ public class IchimokuClouds implements Indicator<ICResult> {
     @Override
     public void calculate() {
         result = new ICResult[originalData.length];
-        BigDecimal[] conversionLine = calculateConversionLine();
-        BigDecimal[] baseLine = calculateBaseLine();
-        BigDecimal[] leadingSpanA = calculateLeadingSpanA(conversionLine, baseLine);
-        BigDecimal[] leadingSpanB = calculateLeadingSpanB();
-        BigDecimal[] laggingSpan = calculateLaggingSpan();
+        BigDecimal[] conversionLine = calculateConversionLine(); // Tenkan-sen
+        BigDecimal[] baseLine = calculateBaseLine(); // Kijun-sen
+        BigDecimal[] leadingSpanA = calculateLeadingSpanA(conversionLine, baseLine); // Senkou Span A
+        BigDecimal[] leadingSpanB = calculateLeadingSpanB(); // Senkou Span B
+        BigDecimal[] laggingSpan = calculateLaggingSpan(); //Chinkou Span
         buildIchimokuClouds(conversionLine, baseLine, leadingSpanA, leadingSpanB, laggingSpan);
     }
 

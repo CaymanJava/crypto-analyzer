@@ -1,11 +1,11 @@
-package pro.crypto.indicator;
+package pro.crypto.analyzer;
 
 import org.junit.Before;
 import pro.crypto.indicator.tick.generator.IncreasedQuantityTickGenerator;
 
 import static java.time.LocalDateTime.of;
 
-public abstract class IncreaseQuantityIndicatorAbstractTest extends IndicatorAbstractTest {
+public abstract class IncreasedQuantityAnalyzerAbstractTest extends AnalyzerAbstractTest {
 
     @Before
     public void init() {

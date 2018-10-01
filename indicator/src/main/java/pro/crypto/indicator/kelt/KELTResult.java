@@ -1,20 +1,20 @@
 package pro.crypto.indicator.kelt;
 
 import lombok.Value;
-import pro.crypto.model.IndicatorResult;
+import pro.crypto.model.IndicatorBandResult;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class KELTResult implements IndicatorResult {
+public class KELTResult implements IndicatorBandResult {
 
     private LocalDateTime time;
 
-    private BigDecimal basis;
+    private BigDecimal upperBand;
 
-    private BigDecimal upperEnvelope;
+    private BigDecimal middleBand;
 
-    private BigDecimal lowerEnvelope;
+    private BigDecimal lowerBand;
 
 }

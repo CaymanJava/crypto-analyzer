@@ -105,8 +105,8 @@ public class KeltnerChannel implements Indicator<KELTResult> {
         BigDecimal channelRadius = calculateChannelRadius(atrValue);
         return new KELTResult(
                 originalData[currentIndex].getTickTime(),
-                maValue,
                 calculateUpperEnvelope(maValue, channelRadius),
+                maValue,
                 calculateLowerEnvelope(maValue, channelRadius));
     }
 

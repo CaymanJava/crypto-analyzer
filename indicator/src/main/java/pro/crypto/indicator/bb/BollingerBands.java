@@ -83,7 +83,7 @@ public class BollingerBands implements Indicator<BBResult> {
     }
 
     private BigDecimal[] calculateMiddleBand() {
-        return IndicatorResultExtractor.extract(MovingAverageFactory.create(buildSMARequest()).getResult());
+        return IndicatorResultExtractor.extractIndicatorValue(MovingAverageFactory.create(buildSMARequest()).getResult());
     }
 
     private IndicatorRequest buildSMARequest() {
@@ -101,7 +101,7 @@ public class BollingerBands implements Indicator<BBResult> {
     }
 
     private BigDecimal[] calculateStandardDeviation() {
-        return IndicatorResultExtractor.extract(new StandardDeviation(buildStDevRequest()).getResult());
+        return IndicatorResultExtractor.extractIndicatorValue(new StandardDeviation(buildStDevRequest()).getResult());
     }
 
     private IndicatorRequest buildStDevRequest() {

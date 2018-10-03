@@ -37,7 +37,7 @@ public class DPOAnalyzer implements Analyzer<DPOAnalyzerResult> {
     }
 
     private Signal[] findSignals() {
-        return new StaticLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), ZERO).find();
+        return new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO).find();
     }
 
     private void buildCOGAnalyzerResult(Signal[] signals) {

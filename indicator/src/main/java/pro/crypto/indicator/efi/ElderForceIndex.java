@@ -82,7 +82,7 @@ public class ElderForceIndex implements Indicator<EFIResult> {
     }
 
     private BigDecimal[] smoothValue(BigDecimal[] forceIndexValues) {
-        return IndicatorResultExtractor.extract(MovingAverageFactory.create(buildMARequest(forceIndexValues)).getResult());
+        return IndicatorResultExtractor.extractIndicatorValue(MovingAverageFactory.create(buildMARequest(forceIndexValues)).getResult());
     }
 
     private IndicatorRequest buildMARequest(BigDecimal[] forceIndexValues) {

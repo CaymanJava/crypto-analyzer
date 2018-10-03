@@ -33,7 +33,7 @@ public class DivergenceTest {
     @Test
     public void testDivergenceFinder() {
         ADLResult[] result = new AccumulationDistributionLine(buildIndicatorRequest()).getResult();
-        DivergenceResult[] divergenceResult = new Divergence(buildDivergenceRequest(IndicatorResultExtractor.extract(result))).find();
+        DivergenceResult[] divergenceResult = new Divergence(buildDivergenceRequest(IndicatorResultExtractor.extractIndicatorValue(result))).find();
         assertTrue(divergenceResult.length == 11);
         assertEquals(divergenceResult[0].getDivergenceType(), BULLISH);
         assertEquals(divergenceResult[0].getDivergenceClass(), HIDDEN);

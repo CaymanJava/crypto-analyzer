@@ -50,7 +50,7 @@ public class KSTAnalyzer implements Analyzer<KSTAnalyzerResult> {
     }
 
     private void extractIndicatorValues() {
-        indicatorValues = IndicatorResultExtractor.extract(indicatorResults);
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
     }
 
     private SignalStrength[] findDivergenceSignals() {
@@ -66,15 +66,9 @@ public class KSTAnalyzer implements Analyzer<KSTAnalyzerResult> {
     }
 
     private SignalStrength[] findSignalLineCrossSignals() {
-        return Stream.of(new DynamicLineCrossFinder(indicatorValues, extractSignalLineValues()).find())
+        return Stream.of(new DynamicLineCrossFinder(indicatorValues, IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).find())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
-    }
-
-    private BigDecimal[] extractSignalLineValues() {
-        return Stream.of(indicatorResults)
-                .map(KSTResult::getSignalLineValue)
-                .toArray(BigDecimal[]::new);
     }
 
     private void buildKSTAnalyzerResult(SignalStrength[] mergedSignals) {

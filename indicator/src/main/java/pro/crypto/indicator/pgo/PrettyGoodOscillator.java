@@ -63,7 +63,7 @@ public class PrettyGoodOscillator implements Indicator<PGOResult> {
     }
 
     private BigDecimal[] calculateAverageTrueRangeValues() {
-        return IndicatorResultExtractor.extract(calculateAverageTrueRange());
+        return IndicatorResultExtractor.extractIndicatorValue(calculateAverageTrueRange());
     }
 
     private SimpleIndicatorResult[] calculateAverageTrueRange() {
@@ -89,7 +89,7 @@ public class PrettyGoodOscillator implements Indicator<PGOResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues(Tick[] data, IndicatorType movingAverageType) {
-        return IndicatorResultExtractor.extract(calculateMovingAverage(data, movingAverageType));
+        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(data, movingAverageType));
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage(Tick[] data, IndicatorType movingAverageType) {

@@ -65,7 +65,7 @@ public class ChoppinessIndex implements Indicator<CHOPResult> {
     }
 
     private BigDecimal[] calculateATRSumValues() {
-        BigDecimal[] atrValues = IndicatorResultExtractor.extract(calculateAverageTrueRange());
+        BigDecimal[] atrValues = IndicatorResultExtractor.extractIndicatorValue(calculateAverageTrueRange());
         return IntStream.range(0, originalData.length)
                 .mapToObj(idx -> calculateATRSum(atrValues, idx))
                 .toArray(BigDecimal[]::new);

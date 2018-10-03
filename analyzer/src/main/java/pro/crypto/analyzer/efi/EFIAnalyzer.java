@@ -37,7 +37,7 @@ public class EFIAnalyzer implements Analyzer<EFIAnalyzerResult> {
     }
 
     private Signal[] findSignals() {
-        return new StaticLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), ZERO).find();
+        return new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO).find();
     }
 
     private void buildEFIAnalyzerResult(Signal[] signals) {

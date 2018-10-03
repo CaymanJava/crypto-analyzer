@@ -39,7 +39,7 @@ public class TriangularMovingAverage extends MovingAverage {
     }
 
     private BigDecimal[] calculateSimpleMovingAverageValues() {
-        return IndicatorResultExtractor.extract(calculateMovingAverage(originalData, calculateSMAPeriod()));
+        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(originalData, calculateSMAPeriod()));
     }
 
     private int calculateSMAPeriod() {
@@ -53,7 +53,7 @@ public class TriangularMovingAverage extends MovingAverage {
     }
 
     private BigDecimal[] calculateTriangularMovingAverageValues(BigDecimal[] simpleMovingAverageValues) {
-        BigDecimal[] movingAverageValues = IndicatorResultExtractor.extract(
+        BigDecimal[] movingAverageValues = IndicatorResultExtractor.extractIndicatorValue(
                 calculateMovingAverage(
                         FakeTicksCreator.createWithCloseOnly(simpleMovingAverageValues), period / 2 + 1));
         BigDecimal[] result = new BigDecimal[originalData.length];

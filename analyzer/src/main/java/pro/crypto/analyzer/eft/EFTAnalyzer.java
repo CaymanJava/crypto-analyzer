@@ -29,7 +29,7 @@ public class EFTAnalyzer implements Analyzer<EFTAnalyzerResult> {
 
     @Override
     public void analyze() {
-        BigDecimal[] indicatorValues = IndicatorResultExtractor.extract(indicatorResults);
+        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
         SignalStrength[] zeroLineCrossSignals = findZeroLineCrossSignals(indicatorValues);
         SignalStrength[] triggerCrossSignals = findTriggerCrossSignals(indicatorValues);
         SignalStrength[] mergedSignals = mergeSignalsStrength(zeroLineCrossSignals, triggerCrossSignals);

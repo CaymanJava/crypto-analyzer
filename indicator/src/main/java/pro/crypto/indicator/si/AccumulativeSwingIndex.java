@@ -64,7 +64,7 @@ public class AccumulativeSwingIndex implements Indicator<SIResult> {
     }
 
     private BigDecimal[] calculateSwingIndexes() {
-        return IndicatorResultExtractor.extract(calculateSwingIndex());
+        return IndicatorResultExtractor.extractIndicatorValue(calculateSwingIndex());
     }
 
     private SimpleIndicatorResult[] calculateSwingIndex() {

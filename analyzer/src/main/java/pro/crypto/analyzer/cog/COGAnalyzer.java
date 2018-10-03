@@ -7,9 +7,7 @@ import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.Signal;
 
-import java.math.BigDecimal;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 
@@ -38,13 +36,8 @@ public class COGAnalyzer implements Analyzer<COGAnalyzerResult> {
     }
 
     private Signal[] findSignals() {
-        return new DynamicLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), extractSignalLineValues()).find();
-    }
-
-    private BigDecimal[] extractSignalLineValues() {
-        return Stream.of(indicatorResults)
-                .map(COGResult::getSignalLineValue)
-                .toArray(BigDecimal[]::new);
+        return new DynamicLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults),
+                IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).find();
     }
 
     private void buildCOGAnalyzerResult(Signal[] signals) {

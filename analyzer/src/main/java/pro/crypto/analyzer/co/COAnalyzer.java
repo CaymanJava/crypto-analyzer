@@ -55,13 +55,13 @@ public class COAnalyzer implements Analyzer<COAnalyzerResult> {
     }
 
     private SignalStrength[] findDivergenceSignals() {
-        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extract(indicatorResults)))
+        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValue(indicatorResults)))
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findCrossSignals() {
-        return Stream.of(new StaticLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), ZERO_LEVEL).find())
+        return Stream.of(new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO_LEVEL).find())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
@@ -74,7 +74,7 @@ public class COAnalyzer implements Analyzer<COAnalyzerResult> {
     }
 
     private Boolean[] calculateIndicatorIncreases() {
-        return IncreasedQualifier.define(IndicatorResultExtractor.extract(indicatorResults));
+        return IncreasedQualifier.define(IndicatorResultExtractor.extractIndicatorValue(indicatorResults));
     }
 
     private SignalStrength findIncreaseDecreaseSignal(int currentIndex) {

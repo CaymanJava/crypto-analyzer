@@ -103,7 +103,7 @@ public class CenterOfGravity implements Indicator<COGResult> {
 
     private BigDecimal[] calculateSignalLineValues(BigDecimal[] centerOfGravityValues) {
         BigDecimal[] signalLineValues = new BigDecimal[centerOfGravityValues.length];
-        BigDecimal[] movingAverageValues = IndicatorResultExtractor.extract(calculateMovingAverage(centerOfGravityValues));
+        BigDecimal[] movingAverageValues = IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(centerOfGravityValues));
         System.arraycopy(movingAverageValues, 0, signalLineValues, signalLinePeriod - 1, movingAverageValues.length);
         return signalLineValues;
     }

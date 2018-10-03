@@ -44,7 +44,7 @@ public class VariableIndexDynamicAverage extends MovingAverage {
     }
 
     private BigDecimal[] calculateAbsoluteChandeMomentumOscillator() {
-        return Stream.of(IndicatorResultExtractor.extract(calculateChandeMomentumOscillator()))
+        return Stream.of(IndicatorResultExtractor.extractIndicatorValue(calculateChandeMomentumOscillator()))
                 .map(result -> MathHelper.divide(result, new BigDecimal(100)))
                 .toArray(BigDecimal[]::new);
     }

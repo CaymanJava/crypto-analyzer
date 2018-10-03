@@ -111,7 +111,7 @@ public class KlingerVolumeOscillator implements Indicator<KVOResult> {
     }
 
     private BigDecimal[] calculateExponentialMovingAverage(BigDecimal[] values, int period, int shiftCopy) {
-        BigDecimal[] maValues = IndicatorResultExtractor.extract(calculateMovingAverage(values, period));
+        BigDecimal[] maValues = IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(values, period));
         BigDecimal[] result = new BigDecimal[originalData.length];
         System.arraycopy(maValues, 0, result, shiftCopy, maValues.length);
         return result;

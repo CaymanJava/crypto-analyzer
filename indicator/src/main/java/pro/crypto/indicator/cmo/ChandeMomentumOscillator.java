@@ -87,7 +87,7 @@ public class ChandeMomentumOscillator implements Indicator<CMOResult> {
     }
 
     private BigDecimal[] calculateSignalLineValues(BigDecimal[] cmoValues) {
-        BigDecimal[] movingAverageValues = IndicatorResultExtractor.extract(calculateMovingAverage(cmoValues));
+        BigDecimal[] movingAverageValues = IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(cmoValues));
         BigDecimal[] result = new BigDecimal[originalData.length];
         System.arraycopy(movingAverageValues, 0, result, period - 1, movingAverageValues.length);
         return result;

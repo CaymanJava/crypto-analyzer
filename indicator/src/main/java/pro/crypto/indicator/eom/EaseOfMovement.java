@@ -107,7 +107,7 @@ public class EaseOfMovement implements Indicator<EOMResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues(BigDecimal[] notSmoothedEOMValues) {
-        BigDecimal[] movingAverageValues = IndicatorResultExtractor.extract(calculateMovingAverage(notSmoothedEOMValues));
+        BigDecimal[] movingAverageValues = IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(notSmoothedEOMValues));
         BigDecimal[] smoothedEOMValues = new BigDecimal[originalData.length];
         System.arraycopy(movingAverageValues, 0, smoothedEOMValues, 1, movingAverageValues.length);
         return smoothedEOMValues;

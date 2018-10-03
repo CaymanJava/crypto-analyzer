@@ -50,13 +50,13 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
     }
 
     private SignalStrength[] findDivergenceSignals() {
-        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extract(indicatorResults)))
+        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValue(indicatorResults)))
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findCrossSignals() {
-        BigDecimal[] indicatorValues = IndicatorResultExtractor.extract(indicatorResults);
+        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
         SignalStrength[] overboughtSignals = findCrossSignals(indicatorValues, OVERBOUGHT_LEVEL, NORMAL);
         SignalStrength[] oversoldSignals = findCrossSignals(indicatorValues, OVERSOLD_LEVEL, NORMAL);
         SignalStrength[] zeroLineSignals = findCrossSignals(indicatorValues, ZERO_LEVEL, WEAK);

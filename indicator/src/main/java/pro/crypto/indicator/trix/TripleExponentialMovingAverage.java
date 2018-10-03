@@ -67,18 +67,18 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
     }
 
     private BigDecimal[] calculateOriginalMovingAverage() {
-        return IndicatorResultExtractor.extract(MovingAverageFactory
+        return IndicatorResultExtractor.extractIndicatorValue(MovingAverageFactory
                 .create(buildMARequest(originalData, period)).getResult());
     }
 
     private BigDecimal[] calculateDoubleMovingAverage(BigDecimal[] singleEMA) {
-        return IndicatorResultExtractor.extract(MovingAverageFactory.create(
+        return IndicatorResultExtractor.extractIndicatorValue(MovingAverageFactory.create(
                 buildMARequest(FakeTicksCreator.createWithCloseOnly(singleEMA), period))
                 .getResult());
     }
 
     private BigDecimal[] calculateTrixValues(BigDecimal[] tripleEMA) {
-        return IndicatorResultExtractor.extract(new RangeOfChange(buildROCRequest(tripleEMA)).getResult());
+        return IndicatorResultExtractor.extractIndicatorValue(new RangeOfChange(buildROCRequest(tripleEMA)).getResult());
     }
 
     private IndicatorRequest buildROCRequest(BigDecimal[] tripleEMA) {
@@ -90,7 +90,7 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
     }
 
     private BigDecimal[] calculateSignalLine(BigDecimal[] trixValues) {
-        return IndicatorResultExtractor.extract(MovingAverageFactory.create(
+        return IndicatorResultExtractor.extractIndicatorValue(MovingAverageFactory.create(
                 buildMARequest(FakeTicksCreator.createWithCloseOnly(trixValues), SIGNAL_LINE_PERIOD))
                 .getResult());
     }

@@ -66,7 +66,7 @@ public class StandardDeviation implements Indicator<StDevResult> {
     }
 
     private BigDecimal[] calculateMovingAveragePrices() {
-        return IndicatorResultExtractor.extract(calculateMovingAverage());
+        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage());
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage() {

@@ -41,7 +41,7 @@ public class ADLAnalyzer implements Analyzer<ADLAnalyzerResult> {
     }
 
     private Signal[] findDivergenceSignals() {
-        return new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extract(indicatorResults));
+        return new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValue(indicatorResults));
     }
 
     private void buildADLAnalyzerResults(Signal[] signals) {

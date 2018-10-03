@@ -46,13 +46,13 @@ public class DIAnalyzer implements Analyzer<DIAnalyzerResult> {
     }
 
     private SignalStrength[] findDivergenceSignals() {
-        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extract(indicatorResults)))
+        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValue(indicatorResults)))
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findCrossSignals() {
-        return Stream.of(new StaticLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), ZERO).find())
+        return Stream.of(new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO).find())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }

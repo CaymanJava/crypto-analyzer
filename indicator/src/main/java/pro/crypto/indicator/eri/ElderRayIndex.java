@@ -70,7 +70,7 @@ public class ElderRayIndex implements Indicator<ERIResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues() {
-        return IndicatorResultExtractor.extract(calculateExponentialMovingAverage());
+        return IndicatorResultExtractor.extractIndicatorValue(calculateExponentialMovingAverage());
     }
 
     private SimpleIndicatorResult[] calculateExponentialMovingAverage() {
@@ -98,7 +98,7 @@ public class ElderRayIndex implements Indicator<ERIResult> {
     }
 
     private BigDecimal[] calculateSignalLineValues(BigDecimal[] indicatorValues) {
-        BigDecimal[] signalLineValues = IndicatorResultExtractor.extract(calculateSimpleMovingAverage(indicatorValues));
+        BigDecimal[] signalLineValues = IndicatorResultExtractor.extractIndicatorValue(calculateSimpleMovingAverage(indicatorValues));
         BigDecimal[] result = new BigDecimal[originalData.length];
         System.arraycopy(signalLineValues, 0, result, period - 1, signalLineValues.length);
         return result;
@@ -113,7 +113,7 @@ public class ElderRayIndex implements Indicator<ERIResult> {
     }
 
     private BigDecimal[] calculateSmoothedLineValues(BigDecimal[] indicatorValues) {
-        BigDecimal[] smoothedLineValues = IndicatorResultExtractor.extract(calculateSmoothedMovingAverage(indicatorValues));
+        BigDecimal[] smoothedLineValues = IndicatorResultExtractor.extractIndicatorValue(calculateSmoothedMovingAverage(indicatorValues));
         BigDecimal[] result = new BigDecimal[originalData.length];
         System.arraycopy(smoothedLineValues, 0, result, period - 1, smoothedLineValues.length);
         return result;

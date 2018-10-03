@@ -65,7 +65,7 @@ public class StochasticRelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private BigDecimal[] calculateRelativeStrengthIndexValues() {
-        return IndicatorResultExtractor.extract(calculateRelativeStrengthIndex());
+        return IndicatorResultExtractor.extractIndicatorValue(calculateRelativeStrengthIndex());
     }
 
     private SimpleIndicatorResult[] calculateRelativeStrengthIndex() {

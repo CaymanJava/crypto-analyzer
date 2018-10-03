@@ -55,13 +55,13 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
     }
 
     private SignalStrength[] findDivergenceSignals() {
-        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extract(indicatorResults)))
+        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValue(indicatorResults)))
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findCrossSignals() {
-        BigDecimal[] indicatorValues = IndicatorResultExtractor.extract(indicatorResults);
+        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
         SignalStrength[] securityLevelSignals = findSecurityLevelSignals(indicatorValues);
         SignalStrength[] zeroLineSignals = findZeroLineSignals(indicatorValues);
         SignalStrength[] signalLineSignals = findSignalLineSignals(indicatorValues);
@@ -95,15 +95,9 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
     }
 
     private SignalStrength[] findSignalLineSignals(BigDecimal[] indicatorValues) {
-        return Stream.of(new DynamicLineCrossFinder(indicatorValues, extractSignalLineValues()).find())
+        return Stream.of(new DynamicLineCrossFinder(indicatorValues, IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).find())
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
-    }
-
-    private BigDecimal[] extractSignalLineValues() {
-        return Stream.of(indicatorResults)
-                .map(CMOResult::getSignalLineValue)
-                .toArray(BigDecimal[]::new);
     }
 
     private void buildCMOAnalyzerResult(SignalStrength[] mergedSignals) {

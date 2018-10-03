@@ -1,6 +1,7 @@
 package pro.crypto.analyzer.eri;
 
 import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.eri.ERIResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -8,7 +9,6 @@ import pro.crypto.model.SignalStrength;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.function.Function;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -127,14 +127,14 @@ public class ERIAnalyzer implements Analyzer<ERIAnalyzerResult> {
     }
 
     private SignalStrength[] findCrossLinesSignals() {
-        return Stream.of(new DynamicLineCrossFinder(extractLine(ERIResult::getSmoothedLineValue), extractLine(ERIResult::getSignalLineValue)).find())
+        return Stream.of(new DynamicLineCrossFinder(extractSmoothedLine(), IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).find())
                 .map(signal -> toSignalStrength(signal, NORMAL))
                 .toArray(SignalStrength[]::new);
     }
 
-    private BigDecimal[] extractLine(Function<ERIResult, BigDecimal> lineExtractFunction) {
+    private BigDecimal[] extractSmoothedLine() {
         return Stream.of(indicatorResults)
-                .map(lineExtractFunction)
+                .map(ERIResult::getSmoothedLineValue)
                 .toArray(BigDecimal[]::new);
     }
 

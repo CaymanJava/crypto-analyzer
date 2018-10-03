@@ -78,7 +78,7 @@ public class MovingAverageEnvelopes implements Indicator<ENVResult> {
     }
 
     private BigDecimal[] calculateBasisValues() {
-        return IndicatorResultExtractor.extract(buildMARequest().getResult());
+        return IndicatorResultExtractor.extractIndicatorValue(buildMARequest().getResult());
     }
 
     private MovingAverage buildMARequest() {

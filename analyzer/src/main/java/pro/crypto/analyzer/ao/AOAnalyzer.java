@@ -89,7 +89,7 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
     }
 
     private Signal[] findCrossZeroSignals() {
-        return new StaticLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), ZERO).find();
+        return new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO).find();
     }
 
     private Signal[] findTwoPeaksSignals() {

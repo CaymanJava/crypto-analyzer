@@ -108,7 +108,7 @@ public class PercentagePriceOscillator implements Indicator<PPOResult> {
     }
 
     private BigDecimal[] calculateMovingAverage(Tick[] data, int period) {
-        return IndicatorResultExtractor.extract(calculateMovingAverageResult(data, period));
+        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverageResult(data, period));
     }
 
     private SimpleIndicatorResult[] calculateMovingAverageResult(Tick[] data, int period) {

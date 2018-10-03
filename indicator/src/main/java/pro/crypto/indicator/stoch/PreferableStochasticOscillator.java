@@ -88,7 +88,7 @@ public class PreferableStochasticOscillator implements Indicator<StochResult> {
     }
 
     private BigDecimal[] calculateSlowStochasticOscillator(BigDecimal[] fastStochastic) {
-        BigDecimal[] slowStochastic = IndicatorResultExtractor.extract(calculateMovingAverageResult(fastStochastic));
+        BigDecimal[] slowStochastic = IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverageResult(fastStochastic));
         return IntStream.range(0, fastStochastic.length)
                 .mapToObj(idx -> nonNull(fastStochastic[idx]) ? slowStochastic[idx - fastPeriod - 1] : null)
                 .toArray(BigDecimal[]::new);

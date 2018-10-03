@@ -82,7 +82,7 @@ public class ChaikinOscillator implements Indicator<COResult> {
     }
 
     private Tick[] createFakeTicks(SimpleIndicatorResult[] adlResult) {
-        return FakeTicksCreator.createWithCloseOnly(IndicatorResultExtractor.extract(adlResult));
+        return FakeTicksCreator.createWithCloseOnly(IndicatorResultExtractor.extractIndicatorValue(adlResult));
     }
 
     private void calculateChaikinOscillatorValues(SimpleIndicatorResult[] slowEma, SimpleIndicatorResult[] fastEma) {

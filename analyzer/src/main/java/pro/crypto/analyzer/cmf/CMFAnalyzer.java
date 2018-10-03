@@ -53,11 +53,11 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
     }
 
     private Signal[] findDivergenceSignals() {
-        return new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extract(indicatorResults));
+        return new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValue(indicatorResults));
     }
 
     private Signal[] findIntersectionSignals() {
-        BigDecimal[] indicatorValues = IndicatorResultExtractor.extract(indicatorResults);
+        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
         Signal[] buySignals = findBuySignals(indicatorValues);
         Signal[] sellSignals = findSellSignals(indicatorValues);
         return mergeSignals(buySignals, sellSignals);

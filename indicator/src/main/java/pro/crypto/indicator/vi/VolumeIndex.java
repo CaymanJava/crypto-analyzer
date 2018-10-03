@@ -75,7 +75,7 @@ public abstract class VolumeIndex implements Indicator<VIResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues(BigDecimal[] negativeVolumeIndexes) {
-        return IndicatorResultExtractor.extract(calculateMovingAverage(negativeVolumeIndexes));
+        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(negativeVolumeIndexes));
     }
 
     private void buildNegativeVolumeIndexResult(BigDecimal[] negativeVolumeIndexes, BigDecimal[] movingAverageValues) {

@@ -55,7 +55,7 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
     }
 
     private void extractIndicatorValues() {
-        indicatorValues = IndicatorResultExtractor.extract(indicatorResults);
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
     }
 
     private SignalStrength[] findDivergenceSignals() {

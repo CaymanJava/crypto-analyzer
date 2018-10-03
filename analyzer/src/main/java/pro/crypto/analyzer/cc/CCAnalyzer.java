@@ -37,7 +37,7 @@ public class CCAnalyzer implements Analyzer<CCAnalyzerResult> {
     }
 
     private Signal[] findCrossSignals() {
-        return new StaticLineCrossFinder(IndicatorResultExtractor.extract(indicatorResults), ZERO).find();
+        return new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO).find();
     }
 
     private void buildCCAnalyzerResult(Signal[] signals) {

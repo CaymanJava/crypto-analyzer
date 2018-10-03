@@ -1,13 +1,14 @@
 package pro.crypto.indicator.tmf;
 
 import lombok.Value;
+import pro.crypto.model.SignalLineIndicatorResult;
 import pro.crypto.model.SimpleIndicatorResult;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class TMFResult implements SimpleIndicatorResult {
+public class TMFResult implements SimpleIndicatorResult, SignalLineIndicatorResult {
 
     private LocalDateTime time;
 

@@ -1,13 +1,14 @@
 package pro.crypto.indicator.eri;
 
 import lombok.Value;
+import pro.crypto.model.SignalLineIndicatorResult;
 import pro.crypto.model.SimpleIndicatorResult;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Value
-public class ERIResult implements SimpleIndicatorResult {
+public class ERIResult implements SimpleIndicatorResult, SignalLineIndicatorResult {
 
     private LocalDateTime time;
 

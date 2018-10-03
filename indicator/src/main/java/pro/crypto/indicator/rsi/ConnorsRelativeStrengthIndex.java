@@ -70,13 +70,13 @@ public class ConnorsRelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private BigDecimal[] calculateSimpleRelativeStrengthIndex() {
-        return IndicatorResultExtractor.extract(new RelativeStrengthIndex(buildRSIRequest(originalData, simpleRsiPeriod)).getResult());
+        return IndicatorResultExtractor.extractIndicatorValue(new RelativeStrengthIndex(buildRSIRequest(originalData, simpleRsiPeriod)).getResult());
     }
 
     private BigDecimal[] calculateStreakRelativeStrengthIndex() {
         BigDecimal[] trendDurationValues = calculateTrendDuration();
         Tick[] fakeTicks = FakeTicksCreator.createWithCloseOnly(trendDurationValues);
-        return IndicatorResultExtractor.extract(new RelativeStrengthIndex(buildRSIRequest(fakeTicks, streakRsiPeriod)).getResult());
+        return IndicatorResultExtractor.extractIndicatorValue(new RelativeStrengthIndex(buildRSIRequest(fakeTicks, streakRsiPeriod)).getResult());
     }
 
     private BigDecimal[] calculateTrendDuration() {

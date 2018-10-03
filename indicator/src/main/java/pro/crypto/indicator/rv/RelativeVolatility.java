@@ -72,7 +72,7 @@ public class RelativeVolatility implements Indicator<RVResult> {
     }
 
     private BigDecimal[] calculateStandardDeviationValues() {
-        return IndicatorResultExtractor.extract(calculateStandardDeviation());
+        return IndicatorResultExtractor.extractIndicatorValue(calculateStandardDeviation());
     }
 
     private SimpleIndicatorResult[] calculateStandardDeviation() {
@@ -116,7 +116,7 @@ public class RelativeVolatility implements Indicator<RVResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues(BigDecimalTuple[] stDevDiffValues, Function<BigDecimalTuple, BigDecimal> extractFunction) {
-        BigDecimal[] maValues = IndicatorResultExtractor.extract(calculateMovingAverage(stDevDiffValues, extractFunction));
+        BigDecimal[] maValues = IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(stDevDiffValues, extractFunction));
         BigDecimal[] result = new BigDecimal[originalData.length];
         System.arraycopy(maValues, 0, result, stDevPeriod - 1, maValues.length);
         return result;

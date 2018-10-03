@@ -69,7 +69,7 @@ public class HighLowBands implements Indicator<HLBResult> {
     }
 
     private BigDecimal[] calculateBasisValues() {
-        return IndicatorResultExtractor.extract(calculateTriangularMovingAverage());
+        return IndicatorResultExtractor.extractIndicatorValue(calculateTriangularMovingAverage());
     }
 
     private SimpleIndicatorResult[] calculateTriangularMovingAverage() {

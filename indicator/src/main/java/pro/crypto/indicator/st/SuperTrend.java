@@ -69,7 +69,7 @@ public class SuperTrend implements Indicator<STResult> {
     }
 
     private BigDecimal[] calculateAverageTrueRangeValues() {
-        return IndicatorResultExtractor.extract(calculateAverageTrueRange());
+        return IndicatorResultExtractor.extractIndicatorValue(calculateAverageTrueRange());
     }
 
     private SimpleIndicatorResult[] calculateAverageTrueRange() {

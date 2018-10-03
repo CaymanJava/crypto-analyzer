@@ -75,7 +75,7 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
 
     private BigDecimal[] calculateMovingAveragePriceValues(BigDecimal[] positivePriceDifferences) {
         Tick[] fakeTicks = buildFakeTicksForMovingAverage(positivePriceDifferences);
-        return IndicatorResultExtractor.extract(calculateMovingAverage(fakeTicks));
+        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(fakeTicks));
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage(Tick[] faceTicks) {

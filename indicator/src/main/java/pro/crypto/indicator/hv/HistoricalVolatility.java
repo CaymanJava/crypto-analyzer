@@ -100,7 +100,7 @@ public class HistoricalVolatility implements Indicator<HVResult> {
     }
 
     private BigDecimal[] calculateStandardDeviationValues(BigDecimal[] continuouslyCompoundedReturns) {
-        return IndicatorResultExtractor.extract(calculateStandardDeviation(continuouslyCompoundedReturns));
+        return IndicatorResultExtractor.extractIndicatorValue(calculateStandardDeviation(continuouslyCompoundedReturns));
     }
 
     private SimpleIndicatorResult[] calculateStandardDeviation(BigDecimal[] continuouslyCompoundedReturns) {

@@ -4,41 +4,19 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class KnowSureThingTest extends IndicatorAbstractTest {
 
     @Test
     public void testKnowSureThingWithRecommendedPeriods() {
-        KSTResult[] result = new KnowSureThing(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[0].getSignalLineValue());
-        assertNull(result[43].getIndicatorValue());
-        assertNull(result[43].getSignalLineValue());
-        assertEquals(result[44].getTime(), of(2018, 4, 10, 0, 0));
-        assertEquals(result[44].getIndicatorValue(), toBigDecimal(87.7155822778));
-        assertNull(result[44].getSignalLineValue());
-        assertEquals(result[52].getTime(), of(2018, 4, 18, 0, 0));
-        assertEquals(result[52].getIndicatorValue(), toBigDecimal(116.0026406883));
-        assertEquals(result[52].getSignalLineValue(), toBigDecimal(108.0579753731));
-        assertEquals(result[57].getTime(), of(2018, 4, 23, 0, 0));
-        assertEquals(result[57].getIndicatorValue(), toBigDecimal(113.5499541796));
-        assertEquals(result[57].getSignalLineValue(), toBigDecimal(113.5655157421));
-        assertEquals(result[59].getTime(), of(2018, 4, 25, 0, 0));
-        assertEquals(result[59].getIndicatorValue(), toBigDecimal(121.2761401644));
-        assertEquals(result[59].getSignalLineValue(), toBigDecimal(115.0203019548));
-        assertEquals(result[68].getTime(), of(2018, 5, 4, 0, 0));
-        assertEquals(result[68].getIndicatorValue(), toBigDecimal(98.8436335952));
-        assertEquals(result[68].getSignalLineValue(), toBigDecimal(119.7698809121));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(54.8187314046));
-        assertEquals(result[72].getSignalLineValue(), toBigDecimal(97.2596028365));
+        IndicatorResult[] expectedResult = loadExpectedResult("know_sure_thing.json", KSTResult[].class);
+        KSTResult[] actualResult = new KnowSureThing(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

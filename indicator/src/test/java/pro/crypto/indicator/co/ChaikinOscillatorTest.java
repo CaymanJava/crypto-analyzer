@@ -3,52 +3,25 @@ package pro.crypto.indicator.co;
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class ChaikinOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testChaikinOscillatorWithPeriodsThreeAndTen() {
-        CORequest request = buildRequest();
-        request.setFastPeriod(10);
-        request.setSlowPeriod(3);
-        COResult[] result = new ChaikinOscillator(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[8].getIndicatorValue());
-        assertEquals(result[9].getTime(), of(2018, 3, 6, 0, 0));
-        assertEquals(result[9].getIndicatorValue(), toBigDecimal(-65.1840313725));
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(-54.4000199895));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(21.9548098196));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(122.1798438436));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-15.7606795517));
+        IndicatorResult[] expectedResult = loadExpectedResult("chaikin_oscillator_1.json", COResult[].class);
+        COResult[] actualResult = new ChaikinOscillator(buildRequest(10, 3)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testChaikinOscillatorWithPeriodsSixAndTwenty() {
-        CORequest request = buildRequest();
-        request.setFastPeriod(20);
-        request.setSlowPeriod(6);
-        COResult[] result = new ChaikinOscillator(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[18].getIndicatorValue());
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(-137.323594815));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(-83.0525354663));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(129.0547908907));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(28.4716151962));
+        IndicatorResult[] expectedResult = loadExpectedResult("chaikin_oscillator_2.json", COResult[].class);
+        COResult[] actualResult = new ChaikinOscillator(buildRequest(20, 6)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -109,6 +82,13 @@ public class ChaikinOscillatorTest extends IndicatorAbstractTest {
         return CORequest.builder()
                 .originalData(originalData)
                 .build();
+    }
+
+    private CORequest buildRequest(int fastPeriod, int slowPeriod) {
+        CORequest request = buildRequest();
+        request.setFastPeriod(fastPeriod);
+        request.setSlowPeriod(slowPeriod);
+        return request;
     }
 
 }

@@ -4,29 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class MarketFacilitationIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testMarketFacilitationIndex() {
-        MFIResult[] result = new MarketFacilitationIndex(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
-        assertEquals(result[0].getIndicatorValue(), toBigDecimal(2.5368075075));
-        assertEquals(result[28].getTime(), of(2018, 3, 25, 0, 0));
-        assertEquals(result[28].getIndicatorValue(), toBigDecimal(11.4456459875));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(0.2205671311));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(0.1297450545));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1.808135564));
+        IndicatorResult[] expectedResult = loadExpectedResult("market_facilitation_index.json", MFIResult[].class);
+        MFIResult[] actualResult = new MarketFacilitationIndex(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

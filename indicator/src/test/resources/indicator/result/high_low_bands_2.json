@@ -1,0 +1,1277 @@
+[
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1336.5866391427,
+    "middleBand": 1285.1794607143,
+    "lowerBand": 1233.7722822859
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1330.2580515715,
+    "middleBand": 1279.0942803571,
+    "lowerBand": 1227.9305091427
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1321.6067354285,
+    "middleBand": 1270.7757071429,
+    "lowerBand": 1219.9446788573
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1311.9770782858,
+    "middleBand": 1261.5164214286,
+    "lowerBand": 1211.0557645714
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1301.1735230000,
+    "middleBand": 1251.1283875000,
+    "lowerBand": 1201.0832520000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1290.0429267142,
+    "middleBand": 1240.4258910714,
+    "lowerBand": 1190.8088554286
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1279.0623894284,
+    "middleBand": 1229.8676821428,
+    "lowerBand": 1180.6729748572
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1269.8697235715,
+    "middleBand": 1221.0285803571,
+    "lowerBand": 1172.1874371427
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1262.4736577142,
+    "middleBand": 1213.9169785714,
+    "lowerBand": 1165.3602994286
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1256.5287632858,
+    "middleBand": 1208.2007339286,
+    "lowerBand": 1159.8727045714
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1251.0823260000,
+    "middleBand": 1202.9637750000,
+    "lowerBand": 1154.8452240000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1244.7329458573,
+    "middleBand": 1196.8586017857,
+    "lowerBand": 1148.9842577141
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1237.7963352858,
+    "middleBand": 1190.1887839286,
+    "lowerBand": 1142.5812325714
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1230.7672371427,
+    "middleBand": 1183.4300357143,
+    "lowerBand": 1136.0928342859
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1223.6274514285,
+    "middleBand": 1176.5648571429,
+    "lowerBand": 1129.5022628573
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1217.0546495716,
+    "middleBand": 1170.2448553572,
+    "lowerBand": 1123.4350611428
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1211.4585172858,
+    "middleBand": 1164.8639589286,
+    "lowerBand": 1118.2694005714
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1208.8180241427,
+    "middleBand": 1162.3250232143,
+    "lowerBand": 1115.8320222859
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1209.8065738573,
+    "middleBand": 1163.2755517857,
+    "lowerBand": 1116.7445297141
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1215.3505092858,
+    "middleBand": 1168.6062589286,
+    "lowerBand": 1121.8620085714
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1225.4203018573,
+    "middleBand": 1178.2887517857,
+    "lowerBand": 1131.1572017141
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 31
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1239.2833105715,
+    "middleBand": 1191.6185678571,
+    "lowerBand": 1143.9538251427
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1255.6103764285,
+    "middleBand": 1207.3176696429,
+    "lowerBand": 1159.0249628573
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1273.3589012858,
+    "middleBand": 1224.3835589286,
+    "lowerBand": 1175.4082165714
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1290.3887155715,
+    "middleBand": 1240.7583803571,
+    "lowerBand": 1191.1280451427
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1306.6045460000,
+    "middleBand": 1256.3505250000,
+    "lowerBand": 1206.0965040000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1321.5296640000,
+    "middleBand": 1270.7016000000,
+    "lowerBand": 1219.8735360000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1334.0328820000,
+    "middleBand": 1282.7239250000,
+    "lowerBand": 1231.4149680000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1343.6261428573,
+    "middleBand": 1291.9482142857,
+    "lowerBand": 1240.2702857141
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1351.1888037142,
+    "middleBand": 1299.2200035714,
+    "lowerBand": 1247.2512034286
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1357.9740645716,
+    "middleBand": 1305.7442928572,
+    "lowerBand": 1253.5145211428
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1364.7245968573,
+    "middleBand": 1312.2351892857,
+    "lowerBand": 1259.7457817141
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1372.4735272858,
+    "middleBand": 1319.6860839286,
+    "lowerBand": 1266.8986405714
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1380.3054701427,
+    "middleBand": 1327.2167982143,
+    "lowerBand": 1274.1281262859
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1388.7439540000,
+    "middleBand": 1335.3307250000,
+    "lowerBand": 1281.9174960000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1397.5510807142,
+    "middleBand": 1343.7991160714,
+    "lowerBand": 1290.0471514286
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1405.8454502858,
+    "middleBand": 1351.7744714286,
+    "lowerBand": 1297.7034925714
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1413.2465360000,
+    "middleBand": 1358.8909000000,
+    "lowerBand": 1304.5352640000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1419.2412074285,
+    "middleBand": 1364.6550071429,
+    "lowerBand": 1310.0688068573
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1423.6114360000,
+    "middleBand": 1368.8571500000,
+    "lowerBand": 1314.1028640000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1426.5353217142,
+    "middleBand": 1371.6685785714,
+    "lowerBand": 1316.8018354286
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1427.8583502858,
+    "middleBand": 1372.9407214286,
+    "lowerBand": 1318.0230925714
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1428.0500074284,
+    "middleBand": 1373.1250071428,
+    "lowerBand": 1318.2000068572
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1429.4974645715,
+    "middleBand": 1374.5167928571,
+    "lowerBand": 1319.5361211427
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1433.3322788573,
+    "middleBand": 1378.2041142857,
+    "lowerBand": 1323.0759497141
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1439.3696627142,
+    "middleBand": 1384.0092910714,
+    "lowerBand": 1328.6489194286
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1447.3700465715,
+    "middleBand": 1391.7019678571,
+    "lowerBand": 1336.0338891427
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1455.7959018573,
+    "middleBand": 1399.8037517857,
+    "lowerBand": 1343.8116017141
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1466.1179000000,
+    "middleBand": 1409.7287500000,
+    "lowerBand": 1353.3396000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1478.0610000000,
+    "middleBand": 1421.2125000000,
+    "lowerBand": 1364.3640000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1490.9358285716,
+    "middleBand": 1433.5921428572,
+    "lowerBand": 1376.2484571428
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1501.6054838573,
+    "middleBand": 1443.8514267857,
+    "lowerBand": 1386.0973697141
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1509.3707534285,
+    "middleBand": 1451.3180321429,
+    "lowerBand": 1393.2653108573
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1513.8178658573,
+    "middleBand": 1455.5941017857,
+    "lowerBand": 1397.3703377141
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1516.5487907142,
+    "middleBand": 1458.2199910714,
+    "lowerBand": 1399.8911914286
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1516.4184174285,
+    "middleBand": 1458.0946321429,
+    "lowerBand": 1399.7708468573
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1512.9037727142,
+    "middleBand": 1454.7151660714,
+    "lowerBand": 1396.5265594286
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1505.8148708573,
+    "middleBand": 1447.8989142857,
+    "lowerBand": 1389.9829577141
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1496.5932261427,
+    "middleBand": 1439.0319482143,
+    "lowerBand": 1381.4706702859
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "upperBand": 1486.4589832858,
+    "middleBand": 1429.2874839286,
+    "lowerBand": 1372.1159845714
+  }
+]

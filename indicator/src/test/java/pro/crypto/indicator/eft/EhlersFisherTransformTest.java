@@ -4,43 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class EhlersFisherTransformTest extends IndicatorAbstractTest {
 
     @Test
     public void testEhlersFisherTransformWithDefaultPeriod() {
-        EFTResult[] result = new EhlersFisherTransform(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[0].getTrigger());
-        assertNull(result[9].getIndicatorValue());
-        assertNull(result[9].getTrigger());
-        assertEquals(result[10].getTime(), of(2018, 3, 7, 0, 0));
-        assertEquals(result[10].getIndicatorValue(), toBigDecimal(-0.1411989406));
-        assertNull(result[10].getTrigger());
-        assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getIndicatorValue(), toBigDecimal(-1.0862365190));
-        assertEquals(result[13].getTrigger(), toBigDecimal(-0.7417553536));
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(-1.1377743519));
-        assertEquals(result[19].getTrigger(), toBigDecimal(-1.0896211008));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(0.9010729753));
-        assertEquals(result[32].getTrigger(), toBigDecimal(0.5198781337));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1.3988614077));
-        assertEquals(result[45].getTrigger(), toBigDecimal(1.3788430911));
-        assertEquals(result[58].getTime(), of(2018, 4, 24, 0, 0));
-        assertEquals(result[58].getIndicatorValue(), toBigDecimal(1.1934769494));
-        assertEquals(result[58].getTrigger(), toBigDecimal(0.9500840595));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-1.3796816085));
-        assertEquals(result[72].getTrigger(), toBigDecimal(-1.1722108547));
+        IndicatorResult[] expectedResult = loadExpectedResult("ehlers_fisher_transform.json", EFTResult[].class);
+        EFTResult[] actualResult = new EhlersFisherTransform(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

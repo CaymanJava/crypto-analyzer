@@ -4,38 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static junit.framework.TestCase.assertNull;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class AccelerationDecelerationOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testAccelerationDecelerationOscillator() {
-        ACResult[] result = new AccelerationDecelerationOscillator(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[0].getIncreased());
-        assertNull(result[36].getIndicatorValue());
-        assertNull(result[36].getIncreased());
-        assertEquals(result[37].getTime(), of(2018, 4, 3, 0, 0));
-        assertEquals(result[37].getIndicatorValue(), toBigDecimal(17.2272410588));
-        assertFalse(result[37].getIncreased());
-        assertEquals(result[44].getTime(), of(2018, 4, 10, 0, 0));
-        assertEquals(result[44].getIndicatorValue(), toBigDecimal(12.6016059412));
-        assertTrue(result[44].getIncreased());
-        assertEquals(result[47].getTime(), of(2018, 4, 13, 0, 0));
-        assertEquals(result[47].getIndicatorValue(), toBigDecimal(19.3762125882));
-        assertFalse(result[47].getIncreased());
-        assertEquals(result[69].getTime(), of(2018, 5, 5, 0, 0));
-        assertEquals(result[69].getIndicatorValue(), toBigDecimal(-39.5137877059));
-        assertTrue(result[69].getIncreased());
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-19.5161944118));
-        assertTrue(result[72].getIncreased());
+        IndicatorResult[] expectedResult = loadExpectedResult("acceleration_deceleration_oscillator.json", ACResult[].class);
+        ACResult[] actualResult = new AccelerationDecelerationOscillator(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

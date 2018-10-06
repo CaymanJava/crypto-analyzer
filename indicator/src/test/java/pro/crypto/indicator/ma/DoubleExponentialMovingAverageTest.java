@@ -4,13 +4,10 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static junit.framework.TestCase.assertNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.DOUBLE_EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
@@ -18,21 +15,9 @@ public class DoubleExponentialMovingAverageTest extends IndicatorAbstractTest {
 
     @Test
     public void testDoubleExponentialMovingAverageWithPeriodFourteen() {
-        MAResult[] result = MovingAverageFactory.create(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[12].getIndicatorValue());
-        assertNull(result[25].getIndicatorValue());
-        assertEquals(result[26].getTime(), of(2018, 3, 23, 0, 0));
-        assertEquals(result[26].getIndicatorValue(), toBigDecimal(1124.1090434681));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1214.7296288443));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1374.1349082716));
-        assertEquals(result[58].getTime(), of(2018, 4, 24, 0, 0));
-        assertEquals(result[58].getIndicatorValue(), toBigDecimal(1441.5036561399));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1402.2108116940));
+        IndicatorResult[] expectedResult = loadExpectedResult("double_exponential_moving_average.json", MAResult[].class);
+        MAResult[] actualResult = MovingAverageFactory.create(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

@@ -4,36 +4,19 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import java.math.BigDecimal;
-
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class PriceVolumeTrendTest extends IndicatorAbstractTest {
 
     @Test
     public void testPriceVolumeTrend() {
-        PVTResult[] result = new PriceVolumeTrend(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
-        assertEquals(result[0].getIndicatorValue(), BigDecimal.ZERO);
-        assertEquals(result[1].getTime(), of(2018, 2, 26, 0, 0));
-        assertEquals(result[1].getIndicatorValue(), toBigDecimal(2.1941467102));
-        assertEquals(result[9].getTime(), of(2018, 3, 6, 0, 0));
-        assertEquals(result[9].getIndicatorValue(), toBigDecimal(0.0437384864));
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(-6.4115314649));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(-2.8102603125));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(9.4888715382));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(20.688969446));
+        IndicatorResult[] expectedResult = loadExpectedResult("price_volume_trend.json", PVTResult[].class);
+        PVTResult[] actualResult = new PriceVolumeTrend(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

@@ -4,11 +4,10 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.MODIFIED_MOVING_AVERAGE;
 
@@ -16,32 +15,9 @@ public class StochasticOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testStochasticOscillatorWithPeriodFourteenAndModifiedMovingAverage() {
-        StochResult[] result = new StochasticOscillator(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getFastStochastic());
-        assertNull(result[0].getSlowStochastic());
-        assertNull(result[10].getFastStochastic());
-        assertNull(result[10].getSlowStochastic());
-        assertNull(result[12].getFastStochastic());
-        assertNull(result[12].getSlowStochastic());
-        assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getFastStochastic(), toBigDecimal(3.7382485976));
-        assertNull(result[13].getSlowStochastic());
-        assertEquals(result[15].getTime(), of(2018, 3, 12, 0, 0));
-        assertEquals(result[15].getFastStochastic(), toBigDecimal(7.366885485));
-        assertEquals(result[15].getSlowStochastic(), toBigDecimal(5.1774560918));
-        assertEquals(result[28].getTime(), of(2018, 3, 25, 0, 0));
-        assertEquals(result[28].getFastStochastic(), toBigDecimal(77.7701517578));
-        assertEquals(result[28].getSlowStochastic(), toBigDecimal(38.9215214551));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getFastStochastic(), toBigDecimal(93.75));
-        assertEquals(result[32].getSlowStochastic(), toBigDecimal(77.9710889173));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getFastStochastic(), toBigDecimal(88.6727962826));
-        assertEquals(result[45].getSlowStochastic(), toBigDecimal(89.9802821872));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getFastStochastic(), toBigDecimal(0.031407391));
-        assertEquals(result[72].getSlowStochastic(), toBigDecimal(15.2716406824));
+        IndicatorResult[] expectedResult = loadExpectedResult("stochastic_oscillator.json", StochResult[].class);
+        StochResult[] actualResult = new StochasticOscillator(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

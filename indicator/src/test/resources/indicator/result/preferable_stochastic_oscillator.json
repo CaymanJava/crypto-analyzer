@@ -1,0 +1,1211 @@
+[
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 5.1774560918
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 17.5272905775
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 23.5114430781,
+    "slowStochastic": 15.4053965825
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 20.2054774724,
+    "slowStochastic": 17.0054235458
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 13.3052477092,
+    "slowStochastic": 15.7720316003
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 25.0700846047,
+    "slowStochastic": 18.8713826018
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 22.3740151847,
+    "slowStochastic": 20.0389267961
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 13.1700300709,
+    "slowStochastic": 17.7492945544
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 8.0032592308,
+    "slowStochastic": 14.5006161132
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 6.0077409480,
+    "slowStochastic": 11.6696577248
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 10.3461080369,
+    "slowStochastic": 11.2284744955
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 6.8925493254,
+    "slowStochastic": 9.7831661055
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 24.3720734883,
+    "slowStochastic": 14.6461352331
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 51.0711126231,
+    "slowStochastic": 26.7877943631
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 68.2565202405,
+    "slowStochastic": 40.6107029889
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 84.0421482121,
+    "slowStochastic": 55.0878513966
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 77.5820497158,
+    "slowStochastic": 62.5859175030
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 85.6660248579,
+    "slowStochastic": 70.2792866213
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 92.7717618025,
+    "slowStochastic": 77.7767783484
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 31
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 95.6850379293,
+    "slowStochastic": 83.7461982087
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 93.0076826581,
+    "slowStochastic": 86.8333596918
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 96.4991190019,
+    "slowStochastic": 90.0552794618
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 90.9956269167,
+    "slowStochastic": 90.3687286134
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 95.4529382116,
+    "slowStochastic": 92.0634651461
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 91.3324130735,
+    "slowStochastic": 91.8197811219
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 86.0582644200,
+    "slowStochastic": 89.8992755546
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 87.1725992294,
+    "slowStochastic": 88.9903834462
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 87.8065902219,
+    "slowStochastic": 88.5957857048
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 93.8539666983,
+    "slowStochastic": 90.3485127026
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 90.7767994720,
+    "slowStochastic": 90.4912749591
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 89.7247978773,
+    "slowStochastic": 90.2357825985
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 94.5502555400,
+    "slowStochastic": 91.6739402457
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 83.0503953868,
+    "slowStochastic": 88.7994252927
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 69.9475362178,
+    "slowStochastic": 82.5154622677
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 49.1814049964,
+    "slowStochastic": 71.4041098439
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 49.5730051237,
+    "slowStochastic": 64.1270749372
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 53.9295165188,
+    "slowStochastic": 60.7278887977
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 73.9436016428,
+    "slowStochastic": 65.1331264127
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 83.8157394440,
+    "slowStochastic": 71.3606640898
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 79.2026162584,
+    "slowStochastic": 73.9746481460
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 66.8125883441,
+    "slowStochastic": 71.5872948787
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 80.6891947988,
+    "slowStochastic": 74.6212615187
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 89.9570600707,
+    "slowStochastic": 79.7331943694
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 92.8637374290,
+    "slowStochastic": 84.1100420559
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 94.9486078579,
+    "slowStochastic": 87.7228973232
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 84.8067933553,
+    "slowStochastic": 86.7508626672
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 91.3852687151,
+    "slowStochastic": 88.2956646832
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 90.4619621593,
+    "slowStochastic": 89.0177638419
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 85.7512751013,
+    "slowStochastic": 87.9289342617
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 73.5280483416,
+    "slowStochastic": 83.1286389550
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 57.1277802638,
+    "slowStochastic": 74.4616860579
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 42.5507550375,
+    "slowStochastic": 63.8247090511
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 39.0655699903,
+    "slowStochastic": 55.5716626975
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 19.5554901840,
+    "slowStochastic": 43.5662718597
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 17.4638563831,
+    "slowStochastic": 34.8654667008
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 18.2934038669,
+    "slowStochastic": 29.3414457562
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 19.6669131144,
+    "slowStochastic": 26.1166015423
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "fastStochastic": 9.8491602527,
+    "slowStochastic": 20.6941211124
+  }
+]

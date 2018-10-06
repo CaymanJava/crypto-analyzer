@@ -3,11 +3,11 @@ package pro.crypto.indicator.smi;
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 
@@ -15,64 +15,16 @@ public class StochasticMomentumIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testStochasticMomentumIndexWithTenAndThreePeriods() {
-        SMIRequest request = buildRequest();
-        request.setPeriod(10);
-        request.setSmoothingPeriod(3);
-        SMIResult[] result = new StochasticMomentumIndex(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[0].getSignalLineValue());
-        assertNull(result[14].getIndicatorValue());
-        assertNull(result[14].getSignalLineValue());
-        assertEquals(result[15].getTime(), of(2018, 3, 12, 0, 0));
-        assertEquals(result[15].getIndicatorValue(), toBigDecimal(-84.3893180320));
-        assertNull(result[15].getSignalLineValue());
-        assertEquals(result[17].getTime(), of(2018, 3, 14, 0, 0));
-        assertEquals(result[17].getIndicatorValue(), toBigDecimal(-67.2608583337));
-        assertEquals(result[17].getSignalLineValue(), toBigDecimal(-76.6225712826));
-        assertEquals(result[33].getTime(), of(2018, 3, 30, 0, 0));
-        assertEquals(result[33].getIndicatorValue(), toBigDecimal(63.8003185515));
-        assertEquals(result[33].getSignalLineValue(), toBigDecimal(47.6172524002));
-        assertEquals(result[49].getTime(), of(2018, 4, 15, 0, 0));
-        assertEquals(result[49].getIndicatorValue(), toBigDecimal(43.6790044904));
-        assertEquals(result[49].getSignalLineValue(), toBigDecimal(55.3226786299));
-        assertEquals(result[58].getTime(), of(2018, 4, 24, 0, 0));
-        assertEquals(result[58].getIndicatorValue(), toBigDecimal(64.8333526054));
-        assertEquals(result[58].getSignalLineValue(), toBigDecimal(54.3933277281));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-65.7067729388));
-        assertEquals(result[72].getSignalLineValue(), toBigDecimal(-57.3561191341));
+        IndicatorResult[] expectedResult = loadExpectedResult("stochastic_momentum_index_1.json", SMIResult[].class);
+        SMIResult[] actualResult = new StochasticMomentumIndex(buildRequest(10, 3)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testStochasticMomentumIndexWithFourteenAndFourPeriods() {
-        SMIRequest request = buildRequest();
-        request.setPeriod(14);
-        request.setSmoothingPeriod(4);
-        SMIResult[] result = new StochasticMomentumIndex(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[0].getSignalLineValue());
-        assertNull(result[21].getIndicatorValue());
-        assertNull(result[21].getSignalLineValue());
-        assertEquals(result[22].getTime(), of(2018, 3, 19, 0, 0));
-        assertEquals(result[22].getIndicatorValue(), toBigDecimal(-64.8195965794));
-        assertNull(result[22].getSignalLineValue());
-        assertEquals(result[25].getTime(), of(2018, 3, 22, 0, 0));
-        assertEquals(result[25].getIndicatorValue(), toBigDecimal(-73.8959879309));
-        assertEquals(result[25].getSignalLineValue(), toBigDecimal(-69.3298997122));
-        assertEquals(result[33].getTime(), of(2018, 3, 30, 0, 0));
-        assertEquals(result[33].getIndicatorValue(), toBigDecimal(33.1749480855));
-        assertEquals(result[33].getSignalLineValue(), toBigDecimal(6.5240193164));
-        assertEquals(result[49].getTime(), of(2018, 4, 15, 0, 0));
-        assertEquals(result[49].getIndicatorValue(), toBigDecimal(63.5608047162));
-        assertEquals(result[49].getSignalLineValue(), toBigDecimal(71.9237208806));
-        assertEquals(result[58].getTime(), of(2018, 4, 24, 0, 0));
-        assertEquals(result[58].getIndicatorValue(), toBigDecimal(58.9210497142));
-        assertEquals(result[58].getSignalLineValue(), toBigDecimal(51.9375723901));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-39.8419668352));
-        assertEquals(result[72].getSignalLineValue(), toBigDecimal(-19.9088000862));
+        IndicatorResult[] expectedResult = loadExpectedResult("stochastic_momentum_index_2.json", SMIResult[].class);
+        SMIResult[] actualResult = new StochasticMomentumIndex(buildRequest(14, 4)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -153,6 +105,13 @@ public class StochasticMomentumIndexTest extends IndicatorAbstractTest {
                 .originalData(originalData)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
                 .build();
+    }
+
+    private IndicatorRequest buildRequest(int period, int smoothingPeriod) {
+        SMIRequest request = buildRequest();
+        request.setPeriod(period);
+        request.setSmoothingPeriod(smoothingPeriod);
+        return request;
     }
 
 }

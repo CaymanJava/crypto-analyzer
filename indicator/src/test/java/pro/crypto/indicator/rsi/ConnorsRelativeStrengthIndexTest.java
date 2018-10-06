@@ -4,11 +4,10 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 
@@ -16,21 +15,9 @@ public class ConnorsRelativeStrengthIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testConnorsRelativeStrengthIndexWithExponentialMovingAverageAndDefaultPeriods() {
-        RSIResult[] result = new ConnorsRelativeStrengthIndex(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[5].getIndicatorValue());
-        assertNull(result[18].getIndicatorValue());
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(12.7399955918));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(65.7254405611));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(77.3575478734));
-        assertEquals(result[63].getTime(), of(2018, 4, 29, 0, 0));
-        assertEquals(result[63].getIndicatorValue(), toBigDecimal(63.0840070673));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(10.0078264472));
+        IndicatorResult[] expectedResult = loadExpectedResult("connors_relative_strength_index.json", RSIResult[].class);
+        RSIResult[] actualResult = new ConnorsRelativeStrengthIndex(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

@@ -4,11 +4,10 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 
@@ -16,23 +15,9 @@ public class EaseOfMovementTest extends IndicatorAbstractTest {
 
     @Test
     public void testEaseOfMovementWithPeriodFourteen() {
-        EOMResult[] result = new EaseOfMovement(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[8].getIndicatorValue());
-        assertNull(result[13].getIndicatorValue());
-        assertEquals(result[14].getTime(), of(2018, 3, 11, 0, 0));
-        assertEquals(result[14].getIndicatorValue(), toBigDecimal(-3.6126264897));
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(-4.2036821021));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(51.2471680053));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(3.5968325448));
-        assertEquals(result[58].getTime(), of(2018, 4, 24, 0, 0));
-        assertEquals(result[58].getIndicatorValue(), toBigDecimal(2.8073664577));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-7.9507970083));
+        IndicatorResult[] expectedResult = loadExpectedResult("ease_of_movement.json", EOMResult[].class);
+        EOMResult[] actualResult = new EaseOfMovement(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

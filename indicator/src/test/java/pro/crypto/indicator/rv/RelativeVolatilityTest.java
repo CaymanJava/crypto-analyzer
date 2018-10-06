@@ -4,31 +4,19 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class RelativeVolatilityTest extends IndicatorAbstractTest {
 
     @Test
     public void testRelativeVolatility() {
-        RVResult[] result = new RelativeVolatility(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[21].getIndicatorValue());
-        assertEquals(result[22].getTime(), of(2018, 3, 19, 0, 0));
-        assertEquals(result[22].getIndicatorValue(), toBigDecimal(23.2611471622));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(60.5969080279));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(71.5569912959));
-        assertEquals(result[58].getTime(), of(2018, 4, 24, 0, 0));
-        assertEquals(result[58].getIndicatorValue(), toBigDecimal(65.5711960860));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(56.4805887211));
+        IndicatorResult[] expectedResult = loadExpectedResult("relative_volatility_index.json", RVResult[].class);
+        RVResult[] actualResult = new RelativeVolatility(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

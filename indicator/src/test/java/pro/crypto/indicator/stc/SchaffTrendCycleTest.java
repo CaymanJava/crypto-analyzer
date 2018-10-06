@@ -4,11 +4,10 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IncreasedQuantityIndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.MOVING_AVERAGE_CONVERGENCE_DIVERGENCE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
@@ -17,21 +16,9 @@ public class SchaffTrendCycleTest extends IncreasedQuantityIndicatorAbstractTest
 
     @Test
     public void testSchaffTrendCycleWithDefaultParams() {
-        STCResult[] result = new SchaffTrendCycle(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[45].getIndicatorValue());
-        assertNull(result[66].getIndicatorValue());
-        assertEquals(result[67].getTime(), of(2018, 5, 3, 0, 0));
-        assertEquals(result[67].getIndicatorValue(), toBigDecimal(88.5115762881));
-        assertEquals(result[75].getTime(), of(2018, 5, 11, 0, 0));
-        assertEquals(result[75].getIndicatorValue(), toBigDecimal(0.3457483449));
-        assertEquals(result[89].getTime(), of(2018, 5, 25, 0, 0));
-        assertEquals(result[89].getIndicatorValue(), toBigDecimal(87.5000211052));
-        assertEquals(result[100].getTime(), of(2018, 6, 5, 0, 0));
-        assertEquals(result[100].getIndicatorValue(), toBigDecimal(99.3940337382));
-        assertEquals(result[116].getTime(), of(2018, 6, 21, 0, 0));
-        assertEquals(result[116].getIndicatorValue(), toBigDecimal(0.3906157537));
+        IndicatorResult[] expectedResult = loadExpectedResult("schaff_trend_cycle.json", STCResult[].class);
+        STCResult[] actualResult = new SchaffTrendCycle(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

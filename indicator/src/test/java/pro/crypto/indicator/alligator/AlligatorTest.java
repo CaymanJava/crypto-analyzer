@@ -4,47 +4,19 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static junit.framework.TestCase.assertNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.tick.TimeFrame.ONE_DAY;
 
 public class AlligatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testAlligatorWithDefaultParameters() {
-        AlligatorResult[] result = new Alligator(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getJawValue());
-        assertNull(result[0].getTeethValue());
-        assertNull(result[0].getLipsValue());
-        assertNull(result[6].getJawValue());
-        assertNull(result[6].getTeethValue());
-        assertNull(result[6].getLipsValue());
-        assertEquals(result[7].getTime(), of(2018, 3, 4, 0, 0));
-        assertNull(result[7].getJawValue());
-        assertNull(result[7].getTeethValue());
-        assertEquals(result[7].getLipsValue(), toBigDecimal(1281.266));
-        assertEquals(result[12].getTime(), of(2018, 3, 9, 0, 0));
-        assertNull(result[12].getJawValue());
-        assertEquals(result[12].getTeethValue(), toBigDecimal(1292.60375625));
-        assertEquals(result[12].getLipsValue(), toBigDecimal(1290.052734576));
-        assertEquals(result[20].getTime(), of(2018, 3, 17, 0, 0));
-        assertEquals(result[20].getJawValue(), toBigDecimal(1281.4792269231));
-        assertEquals(result[20].getTeethValue(), toBigDecimal(1251.1338156589));
-        assertEquals(result[20].getLipsValue(), toBigDecimal(1227.8517165009));
-        assertEquals(result[56].getTime(), of(2018, 4, 22, 0, 0));
-        assertEquals(result[56].getJawValue(), toBigDecimal(1311.3001312506));
-        assertEquals(result[56].getTeethValue(), toBigDecimal(1341.5668294413));
-        assertEquals(result[56].getLipsValue(), toBigDecimal(1370.4866862524));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getJawValue(), toBigDecimal(1405.0122727029));
-        assertEquals(result[72].getTeethValue(), toBigDecimal(1432.1180753009));
-        assertEquals(result[72].getLipsValue(), toBigDecimal(1421.3986480677));
+        IndicatorResult[] expectedResult = loadExpectedResult("alligator.json", AlligatorResult[].class);
+        AlligatorResult[] actualResult = new Alligator(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

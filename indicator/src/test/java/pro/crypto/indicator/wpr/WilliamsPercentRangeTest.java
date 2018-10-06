@@ -4,31 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class WilliamsPercentRangeTest extends IndicatorAbstractTest {
 
     @Test
     public void testWPRWithDefaultPeriod() {
-        WPRResult[] result = new WilliamsPercentRange(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[6].getIndicatorValue());
-        assertNull(result[12].getIndicatorValue());
-        assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getIndicatorValue(), toBigDecimal(-96.2617514));
-        assertEquals(result[28].getTime(), of(2018, 3, 25, 0, 0));
-        assertEquals(result[28].getIndicatorValue(), toBigDecimal(-22.22984824));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(-6.25));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(-11.32720372));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-99.96859261));
+        IndicatorResult[] expectedResult = loadExpectedResult("williams_percent_range.json", WPRResult[].class);
+        WPRResult[] actualResult = new WilliamsPercentRange(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

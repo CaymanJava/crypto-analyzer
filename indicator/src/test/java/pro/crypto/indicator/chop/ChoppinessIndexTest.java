@@ -4,35 +4,19 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class ChoppinessIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testChoppinessIndexWithPeriodFourteen() {
-        CHOPResult[] result = new ChoppinessIndex(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[5].getIndicatorValue());
-        assertNull(result[12].getIndicatorValue());
-        assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getIndicatorValue(), toBigDecimal(45.1936805022));
-        assertEquals(result[20].getTime(), of(2018, 3, 17, 0, 0));
-        assertEquals(result[20].getIndicatorValue(), toBigDecimal(42.7247193636));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(44.6332650948));
-        assertEquals(result[34].getTime(), of(2018, 3, 31, 0, 0));
-        assertEquals(result[34].getIndicatorValue(), toBigDecimal(38.4492257299));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(43.7777667042));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(40.6244324104));
+        IndicatorResult[] expectedResult = loadExpectedResult("choppiness_index.json", CHOPResult[].class);
+        CHOPResult[] actualResult = new ChoppinessIndex(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
-
 
     @Test
     public void emptyOriginalDataTest() {

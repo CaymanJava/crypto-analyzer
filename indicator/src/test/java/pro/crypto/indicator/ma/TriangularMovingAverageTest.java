@@ -3,11 +3,10 @@ package pro.crypto.indicator.ma;
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.TRIANGULAR_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
@@ -15,44 +14,16 @@ public class TriangularMovingAverageTest extends IndicatorAbstractTest {
 
     @Test
     public void testTriangularMovingAverageWithEvenPeriod() {
-        MARequest request = buildRequest();
-        request.setPeriod(14);
-        MAResult[] result = MovingAverageFactory.create(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[5].getIndicatorValue());
-        assertNull(result[12].getIndicatorValue());
-        assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getIndicatorValue(), toBigDecimal(1285.1794607143));
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(1229.8676821428));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1168.6062589286));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1319.6860839286));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1429.2874839286));
+        IndicatorResult[] expectedResult = loadExpectedResult("triangular_moving_average_1.json", MAResult[].class);
+        MAResult[] actualResult = MovingAverageFactory.create(buildRequestWithEvenPeriod()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testTriangularMovingAverageWithOddPeriod() {
-        MARequest request = buildRequest();
-        request.setPeriod(13);
-        MAResult[] result = MovingAverageFactory.create(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[5].getIndicatorValue());
-        assertNull(result[11].getIndicatorValue());
-        assertEquals(result[12].getTime(), of(2018, 3, 9, 0, 0));
-        assertEquals(result[12].getIndicatorValue(), toBigDecimal(1289.2546918367));
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(1224.1155163265));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1169.6895959184));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1322.2394020408));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1424.1412081633));
+        IndicatorResult[] expectedResult = loadExpectedResult("triangular_moving_average_2.json", MAResult[].class);
+        MAResult[] actualResult = MovingAverageFactory.create(buildRequestWithOddPeriod()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -121,6 +92,18 @@ public class TriangularMovingAverageTest extends IndicatorAbstractTest {
                 .priceType(CLOSE)
                 .indicatorType(TRIANGULAR_MOVING_AVERAGE)
                 .build();
+    }
+
+    private MARequest buildRequestWithEvenPeriod() {
+        MARequest request = buildRequest();
+        request.setPeriod(14);
+        return request;
+    }
+
+    private MARequest buildRequestWithOddPeriod() {
+        MARequest request = buildRequest();
+        request.setPeriod(13);
+        return request;
     }
 
 }

@@ -1,0 +1,1277 @@
+[
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "lipsValue": 1281.2660000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "lipsValue": 1287.2088100000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "lipsValue": 1295.9900480000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "lipsValue": 1295.2730384000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "lipsValue": 1292.5134307200
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "teethValue": 1292.6037562500,
+    "lipsValue": 1290.0527345760
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "teethValue": 1291.2126617188,
+    "lipsValue": 1287.7771876608
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "teethValue": 1289.8373227540,
+    "lipsValue": 1279.9197501286
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "teethValue": 1288.4420324098,
+    "lipsValue": 1269.8457901029
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "teethValue": 1283.4480283586,
+    "lipsValue": 1260.7966320823
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "teethValue": 1276.7107685638,
+    "lipsValue": 1247.3503056658
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "teethValue": 1270.1969224933,
+    "lipsValue": 1234.8292445326
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "teethValue": 1260.6179321816,
+    "lipsValue": 1228.9983956261
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1281.4792269231,
+    "teethValue": 1251.1338156589,
+    "lipsValue": 1227.8517165009
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1277.1039017752,
+    "teethValue": 1245.4514637015,
+    "lipsValue": 1225.6013732007
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1270.6778324079,
+    "teethValue": 1242.6781557388,
+    "lipsValue": 1215.5620885606
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1264.0676145304,
+    "teethValue": 1239.4183862715,
+    "lipsValue": 1209.9216708485
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1259.5758749511,
+    "teethValue": 1231.4167067376,
+    "lipsValue": 1208.5853366788
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1256.7827307241,
+    "teethValue": 1225.9096183954,
+    "lipsValue": 1203.1152693430
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1253.6917514376,
+    "teethValue": 1223.0759160960,
+    "lipsValue": 1193.5942154744
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1247.6696897886,
+    "teethValue": 1217.8458015840,
+    "lipsValue": 1180.7903723795
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1243.0304828818,
+    "teethValue": 1210.0538263860,
+    "lipsValue": 1170.0092979036
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1239.9696765063,
+    "teethValue": 1199.9939730878,
+    "lipsValue": 1160.8044383229
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1235.4516244674,
+    "teethValue": 1190.8553514518,
+    "lipsValue": 1156.0755506583
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1229.3022687391,
+    "teethValue": 1182.4965575203,
+    "lipsValue": 1164.8624405266
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1221.6309403746,
+    "teethValue": 1176.8294878303,
+    "lipsValue": 1173.3919524213
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1214.3427911150,
+    "teethValue": 1179.7270518515,
+    "lipsValue": 1192.9745619370
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 31
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1207.3921917985,
+    "teethValue": 1183.1999203701,
+    "lipsValue": 1202.6466595496
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1201.9897155063,
+    "teethValue": 1194.2130553238,
+    "lipsValue": 1216.7843276397
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1201.8374296981,
+    "teethValue": 1200.1033046583,
+    "lipsValue": 1227.5794521118
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1202.2737812598,
+    "teethValue": 1209.2572665760,
+    "lipsValue": 1240.0925616894
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1207.5838750090,
+    "teethValue": 1216.9451020040,
+    "lipsValue": 1250.9000493515
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1210.1801192391,
+    "teethValue": 1226.0950892535,
+    "lipsValue": 1260.6910394812
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1215.0381869899,
+    "teethValue": 1234.5994530968,
+    "lipsValue": 1271.3058315850
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1219.3244764522,
+    "teethValue": 1242.7563964597,
+    "lipsValue": 1279.8946652680
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1224.7722090328,
+    "teethValue": 1251.6324719022,
+    "lipsValue": 1289.5997322144
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1230.1074237226,
+    "teethValue": 1259.4596629144,
+    "lipsValue": 1291.4917857715
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1235.4726218978,
+    "teethValue": 1268.0797050501,
+    "lipsValue": 1296.7114286172
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1241.4951125210,
+    "teethValue": 1271.9522419188,
+    "lipsValue": 1304.4361428938
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1247.0916423271,
+    "teethValue": 1277.6569616790,
+    "lipsValue": 1311.0039143150
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1253.3476698404,
+    "teethValue": 1284.8667164691,
+    "lipsValue": 1329.6741414520
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1256.8640029296,
+    "teethValue": 1291.4177519105,
+    "lipsValue": 1341.8093131616
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1261.5352334735,
+    "teethValue": 1305.5349141717,
+    "lipsValue": 1354.0034505293
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1267.2121385909,
+    "teethValue": 1316.1367999002,
+    "lipsValue": 1360.3577604234
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1272.6015894685,
+    "teethValue": 1326.9671999127,
+    "lipsValue": 1362.6912083387
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1282.7364710478,
+    "teethValue": 1334.3181749236,
+    "lipsValue": 1357.5699566710
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1291.0144348134,
+    "teethValue": 1339.0315280582,
+    "lipsValue": 1355.6609653368
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1299.6117859816,
+    "teethValue": 1338.7882058009,
+    "lipsValue": 1355.1157722694
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1306.2397255215,
+    "teethValue": 1339.9428050758,
+    "lipsValue": 1363.1496078155
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1311.3001312506,
+    "teethValue": 1341.5668294413,
+    "lipsValue": 1370.4866862524
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1313.2835788467,
+    "teethValue": 1348.2815945111,
+    "lipsValue": 1378.2973490019
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1315.9559958585,
+    "teethValue": 1354.7257701972,
+    "lipsValue": 1378.9068892015
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1318.8005346386,
+    "teethValue": 1361.5775489226,
+    "lipsValue": 1382.6305113612
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1324.6839512049,
+    "teethValue": 1364.0484865573,
+    "lipsValue": 1395.9844090890
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1330.4648011122,
+    "teethValue": 1368.2330507376,
+    "lipsValue": 1409.2725272712
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1336.5475087190,
+    "teethValue": 1378.3789193954,
+    "lipsValue": 1422.2250118170
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1339.9934734329,
+    "teethValue": 1388.8846794710,
+    "lipsValue": 1429.7650094536
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1344.4189754765,
+    "teethValue": 1399.5284632871,
+    "lipsValue": 1439.2190075629
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1352.4944389014,
+    "teethValue": 1407.0780303762,
+    "lipsValue": 1448.9911960503
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1360.9506359090,
+    "teethValue": 1415.8226515792,
+    "lipsValue": 1458.7959468402
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1369.6494293006,
+    "teethValue": 1424.8548138818,
+    "lipsValue": 1459.0287474722
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1376.5937039698,
+    "teethValue": 1433.9998308966,
+    "lipsValue": 1452.9330079778
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1384.3199575106,
+    "teethValue": 1437.2448457845,
+    "lipsValue": 1447.9994063822
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1392.3014953944,
+    "teethValue": 1436.1579963114,
+    "lipsValue": 1440.5485251058
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1400.4332995948,
+    "teethValue": 1435.1713717725,
+    "lipsValue": 1430.2858100846
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "jawValue": 1405.0122727029,
+    "teethValue": 1432.1180753009,
+    "lipsValue": 1421.3986480677
+  }
+]

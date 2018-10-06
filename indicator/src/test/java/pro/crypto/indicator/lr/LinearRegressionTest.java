@@ -3,55 +3,26 @@ package pro.crypto.indicator.lr;
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class LinearRegressionTest extends IndicatorAbstractTest {
 
     @Test
     public void testLinearRegressionWithAverageCalculation() {
-        LRRequest request = buildRequest();
-        request.setAverageCalculation(true);
-        LRResult[] result = new LinearRegression(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[3].getIndicatorValue());
-        assertEquals(result[4].getTime(), of(2018, 3, 1, 0, 0));
-        assertEquals(result[4].getIndicatorValue(), toBigDecimal(1256.05705));
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(1212.46296));
-        assertEquals(result[28].getTime(), of(2018, 3, 25, 0, 0));
-        assertEquals(result[28].getIndicatorValue(), toBigDecimal(1082.422));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1202.97098));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1298.286));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1383.431));
+        IndicatorResult[] expectedResult = loadExpectedResult("linear_regression_1.json", LRResult[].class);
+        LRResult[] actualResult = new LinearRegression(buildRequestWithAverageCalculation()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testLinearRegressionWithoutAverageCalculation() {
-        LRResult[] result = new LinearRegression(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[3].getIndicatorValue());
-        assertEquals(result[4].getTime(), of(2018, 3, 1, 0, 0));
-        assertEquals(result[4].getIndicatorValue(), toBigDecimal(1279.24703));
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(1185.06504));
-        assertEquals(result[28].getTime(), of(2018, 3, 25, 0, 0));
-        assertEquals(result[28].getIndicatorValue(), toBigDecimal(1145.58));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1231.631));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1336.468));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1362.703));
+        IndicatorResult[] expectedResult = loadExpectedResult("linear_regression_2.json", LRResult[].class);
+        LRResult[] actualResult = new LinearRegression(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -120,6 +91,12 @@ public class LinearRegressionTest extends IndicatorAbstractTest {
                 .period(5)
                 .priceType(CLOSE)
                 .build();
+    }
+
+    private LRRequest buildRequestWithAverageCalculation() {
+        LRRequest request = buildRequest();
+        request.setAverageCalculation(true);
+        return request;
     }
 
 }

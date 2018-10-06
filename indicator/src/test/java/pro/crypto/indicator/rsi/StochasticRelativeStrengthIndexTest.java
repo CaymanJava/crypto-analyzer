@@ -4,33 +4,19 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.*;
 
 public class StochasticRelativeStrengthIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testStochasticRelativeStrengthIndexWithExponentialMovingAverage() {
-        RSIResult[] result = new StochasticRelativeStrengthIndex(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[5].getIndicatorValue());
-        assertNull(result[12].getIndicatorValue());
-        assertNull(result[25].getIndicatorValue());
-        assertEquals(result[26].getTime(), of(2018, 3, 23, 0, 0));
-        assertEquals(result[26].getIndicatorValue(), toBigDecimal(0.0568788623));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(0.8180305509));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1.0));
-        assertEquals(result[66].getTime(), of(2018, 5, 2, 0, 0));
-        assertEquals(result[66].getIndicatorValue(), toBigDecimal(0.0));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(0.0381200833));
+        IndicatorResult[] expectedResult = loadExpectedResult("stochastic_relative_strength_index.json", RSIResult[].class);
+        RSIResult[] actualResult = new StochasticRelativeStrengthIndex(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

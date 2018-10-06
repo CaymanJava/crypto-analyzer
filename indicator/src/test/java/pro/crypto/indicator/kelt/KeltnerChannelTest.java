@@ -4,11 +4,10 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
@@ -17,36 +16,9 @@ public class KeltnerChannelTest extends IndicatorAbstractTest {
 
     @Test
     public void testKeltnerChannelWithDefaultParameters() {
-        KELTResult[] result = new KeltnerChannel(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
-        assertNull(result[0].getMiddleBand());
-        assertNull(result[0].getUpperBand());
-        assertNull(result[0].getLowerBand());
-        assertEquals(result[8].getTime(), of(2018, 3, 5, 0, 0));
-        assertNull(result[8].getMiddleBand());
-        assertNull(result[8].getUpperBand());
-        assertNull(result[8].getLowerBand());
-        assertEquals(result[18].getTime(), of(2018, 3, 15, 0, 0));
-        assertNull(result[18].getMiddleBand());
-        assertNull(result[18].getUpperBand());
-        assertNull(result[18].getLowerBand());
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getMiddleBand(), toBigDecimal(1251.06901));
-        assertEquals(result[19].getUpperBand(), toBigDecimal(1315.9051068638));
-        assertEquals(result[19].getLowerBand(), toBigDecimal(1186.2329131362));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getMiddleBand(), toBigDecimal(1215.1899224323));
-        assertEquals(result[32].getUpperBand(), toBigDecimal(1294.1996591075));
-        assertEquals(result[32].getLowerBand(), toBigDecimal(1136.1801857571));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getMiddleBand(), toBigDecimal(1306.1636910393));
-        assertEquals(result[45].getUpperBand(), toBigDecimal(1381.5257791479));
-        assertEquals(result[45].getLowerBand(), toBigDecimal(1230.8016029307));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getMiddleBand(), toBigDecimal(1405.7344873457));
-        assertEquals(result[72].getUpperBand(), toBigDecimal(1472.1575939069));
-        assertEquals(result[72].getLowerBand(), toBigDecimal(1339.3113807845));
+        IndicatorResult[] expectedResult = loadExpectedResult("keltner_channel.json", KELTResult[].class);
+        KELTResult[] actualResult = new KeltnerChannel(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

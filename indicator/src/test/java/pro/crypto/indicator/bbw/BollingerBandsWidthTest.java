@@ -4,11 +4,10 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.KELTNER_CHANNEL;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
@@ -17,19 +16,9 @@ public class BollingerBandsWidthTest extends IndicatorAbstractTest {
 
     @Test
     public void testBollingerBandsWidthWithDefaultParameters() {
-        BBWResult[] result = new BollingerBandsWidth(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[10].getIndicatorValue());
-        assertNull(result[18].getIndicatorValue());
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(0.1440312856));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(0.1511931961));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(0.2164965395));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(0.112317199));
+        IndicatorResult[] expectedResult = loadExpectedResult("bollinger_bands_width.json", BBWResult[].class);
+        BBWResult[] actualResult = new BollingerBandsWidth(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

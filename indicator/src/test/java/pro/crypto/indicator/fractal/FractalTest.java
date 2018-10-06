@@ -3,39 +3,18 @@ package pro.crypto.indicator.fractal;
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import java.util.stream.Stream;
-
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 public class FractalTest extends IndicatorAbstractTest {
 
     @Test
     public void testFractalIndicator() {
-        FractalResult[] result = new Fractal(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertTrue(extractUpFractals(result).length == 8);
-        assertTrue(extractDownFractals(result).length == 9);
-        assertEquals(result[2].getTime(), of(2018, 2, 27, 0, 0));
-        assertFalse(result[2].isUpFractal());
-        assertTrue(result[2].isDownFractal());
-        assertEquals(result[6].getTime(), of(2018, 3, 3, 0, 0));
-        assertTrue(result[6].isUpFractal());
-        assertFalse(result[6].isDownFractal());
-        assertEquals(result[10].getTime(), of(2018, 3, 7, 0, 0));
-        assertTrue(result[10].isUpFractal());
-        assertFalse(result[10].isDownFractal());
-        assertEquals(result[15].getTime(), of(2018, 3, 12, 0, 0));
-        assertFalse(result[15].isUpFractal());
-        assertTrue(result[15].isDownFractal());
-        assertEquals(result[63].getTime(), of(2018, 4, 29, 0, 0));
-        assertTrue(result[63].isUpFractal());
-        assertFalse(result[63].isDownFractal());
-        assertEquals(result[68].getTime(), of(2018, 5, 4, 0, 0));
-        assertFalse(result[68].isUpFractal());
-        assertTrue(result[68].isDownFractal());
+        IndicatorResult[] expectedResult = loadExpectedResult("fractal.json", FractalResult[].class);
+        FractalResult[] actualResult = new Fractal(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -57,20 +36,6 @@ public class FractalTest extends IndicatorAbstractTest {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Incoming tick data is null {indicator: {FRACTAL}}");
         new Fractal(new FractalRequest(null)).getResult();
-    }
-
-    private Boolean[] extractUpFractals(FractalResult[] result) {
-        return Stream.of(result)
-                .map(FractalResult::isUpFractal)
-                .filter(fractal -> fractal)
-                .toArray(Boolean[]::new);
-    }
-
-    private Boolean[] extractDownFractals(FractalResult[] result) {
-        return Stream.of(result)
-                .map(FractalResult::isDownFractal)
-                .filter(fractal -> fractal)
-                .toArray(Boolean[]::new);
     }
 
     @Override

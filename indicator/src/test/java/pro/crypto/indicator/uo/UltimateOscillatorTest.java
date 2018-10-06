@@ -4,29 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class UltimateOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testUltimateOscillatorWithDefaultPeriods() {
-        UOResult[] result = new UltimateOscillator(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[10].getIndicatorValue());
-        assertNull(result[27].getIndicatorValue());
-        assertEquals(result[28].getTime(), of(2018, 3, 25, 0, 0));
-        assertEquals(result[28].getIndicatorValue(), toBigDecimal(48.80589911));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(68.44823059));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(64.46828799));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(40.18677322));
+        IndicatorResult[] expectedResult = loadExpectedResult("ultimate_oscillator.json", UOResult[].class);
+        UOResult[] actualResult = new UltimateOscillator(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

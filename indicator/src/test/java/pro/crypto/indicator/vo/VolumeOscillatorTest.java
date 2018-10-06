@@ -4,30 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class VolumeOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testVolumeOscillatorDefaultPeriods() {
-        VOResult[] result = new VolumeOscillator(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[24].getIndicatorValue());
-        assertEquals(result[25].getTime(), of(2018, 3, 22, 0, 0));
-        assertEquals(result[25].getIndicatorValue(), toBigDecimal(24.9096145275));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(17.1765391057));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(7.3934271547));
-        assertEquals(result[61].getTime(), of(2018, 4, 27, 0, 0));
-        assertEquals(result[61].getIndicatorValue(), toBigDecimal(9.1827040418));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-19.8736742978));
+        IndicatorResult[] expectedResult = loadExpectedResult("volume_oscillator.json", VOResult[].class);
+        VOResult[] actualResult = new VolumeOscillator(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

@@ -1,0 +1,2155 @@
+[
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "laggingSpanValue": 1114.1100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "laggingSpanValue": 1163.3700000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "laggingSpanValue": 1210.4700000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "laggingSpanValue": 1220.5300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "laggingSpanValue": 1282.4399000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "laggingSpanValue": 1232.4200000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "laggingSpanValue": 1272.2900000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "laggingSpanValue": 1287.8600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1299.1350000000,
+    "laggingSpanValue": 1309.6700000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1299.1350000000,
+    "laggingSpanValue": 1292.8000000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1299.1350000000,
+    "laggingSpanValue": 1320.2300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1290.1750000000,
+    "laggingSpanValue": 1298.7100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1281.7299500000,
+    "laggingSpanValue": 1331.1300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1281.7299500000,
+    "laggingSpanValue": 1315.8101000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1262.3400000000,
+    "laggingSpanValue": 1300.5300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1237.3800000000,
+    "laggingSpanValue": 1326.7300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1233.7700000000,
+    "laggingSpanValue": 1329.7600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1233.7700000000,
+    "laggingSpanValue": 1360.7000000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1233.7700000000,
+    "laggingSpanValue": 1396.5400000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1211.9849500000,
+    "laggingSpanValue": 1401.1600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1201.4899500000,
+    "laggingSpanValue": 1418.9900000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1199.8449500000,
+    "laggingSpanValue": 1376.7100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1199.8449500000,
+    "laggingSpanValue": 1359.2500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1187.4450000000,
+    "laggingSpanValue": 1319.2100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1176.4900000000,
+    "laggingSpanValue": 1349.5601000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1174.6300000000,
+    "baseLineValue": 1228.4550000000,
+    "laggingSpanValue": 1361.2800000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1172.3600000000,
+    "baseLineValue": 1228.4550000000,
+    "laggingSpanValue": 1411.5200000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1165.6050000000,
+    "baseLineValue": 1227.8800000000,
+    "laggingSpanValue": 1411.1400000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1165.6050000000,
+    "baseLineValue": 1227.8800000000,
+    "laggingSpanValue": 1393.6899000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1165.6050000000,
+    "baseLineValue": 1227.8800000000,
+    "laggingSpanValue": 1374.5100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1195.6150000000,
+    "baseLineValue": 1227.8800000000,
+    "laggingSpanValue": 1419.3500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1195.6150000000,
+    "baseLineValue": 1227.8800000000,
+    "laggingSpanValue": 1467.5601000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1195.8500000000,
+    "baseLineValue": 1207.1050000000,
+    "laggingSpanValue": 1468.7400000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1198.2850000000,
+    "baseLineValue": 1203.4950000000,
+    "laggingSpanValue": 1481.9600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 31
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1210.5100000000,
+    "baseLineValue": 1210.5100000000,
+    "laggingSpanValue": 1444.4100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1210.5100000000,
+    "baseLineValue": 1210.5100000000,
+    "laggingSpanValue": 1487.9399000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1250.0750000000,
+    "baseLineValue": 1214.3700000000,
+    "laggingSpanValue": 1478.7800000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1262.2050000000,
+    "baseLineValue": 1219.7400000000,
+    "laggingSpanValue": 1484.7800000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1280.1950500000,
+    "baseLineValue": 1219.9100000000,
+    "laggingSpanValue": 1448.9600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1287.6350500000,
+    "baseLineValue": 1227.3500000000,
+    "laggingSpanValue": 1430.3500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1299.8249500000,
+    "baseLineValue": 1227.3500000000,
+    "laggingSpanValue": 1410.7500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1299.8249500000,
+    "baseLineValue": 1227.3500000000,
+    "laggingSpanValue": 1422.4399000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1307.6700000000,
+    "baseLineValue": 1228.0350000000,
+    "laggingSpanValue": 1367.1400000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1320.0099500000,
+    "baseLineValue": 1234.6600000000,
+    "laggingSpanValue": 1390.8000000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1349.6099500000,
+    "baseLineValue": 1264.2600000000,
+    "laggingSpanValue": 1396.5900000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1349.6099500000,
+    "baseLineValue": 1264.2600000000,
+    "laggingSpanValue": 1399.5500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1349.6099500000,
+    "baseLineValue": 1264.2600000000,
+    "laggingSpanValue": 1362.6100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1349.6099500000,
+    "baseLineValue": 1264.2600000000,
+    "laggingSpanValue": 1220.5300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1349.6099500000,
+    "baseLineValue": 1264.2600000000,
+    "laggingSpanValue": 1282.4399000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1360.2900000000,
+    "baseLineValue": 1264.2600000000,
+    "laggingSpanValue": 1232.4200000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1366.8750000000,
+    "baseLineValue": 1264.2600000000,
+    "laggingSpanValue": 1272.2900000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1366.8750000000,
+    "baseLineValue": 1264.2600000000,
+    "leadingSpanAValue": 1201.5425000000,
+    "laggingSpanValue": 1287.8600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1369.5499500000,
+    "baseLineValue": 1264.2600000000,
+    "leadingSpanAValue": 1200.4075000000,
+    "laggingSpanValue": 1309.6700000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1369.0549500000,
+    "baseLineValue": 1299.9650000000,
+    "leadingSpanAValue": 1196.7425000000,
+    "laggingSpanValue": 1292.8000000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1372.2449500000,
+    "baseLineValue": 1309.4200000000,
+    "leadingSpanAValue": 1196.7425000000,
+    "laggingSpanValue": 1320.2300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1372.2449500000,
+    "baseLineValue": 1327.2400500000,
+    "leadingSpanAValue": 1196.7425000000,
+    "laggingSpanValue": 1298.7100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1372.2449500000,
+    "baseLineValue": 1327.2400500000,
+    "leadingSpanAValue": 1211.7475000000,
+    "laggingSpanValue": 1331.1300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1393.8949500000,
+    "baseLineValue": 1361.0799500000,
+    "leadingSpanAValue": 1211.7475000000,
+    "laggingSpanValue": 1315.8101000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1401.7150000000,
+    "baseLineValue": 1364.3949500000,
+    "leadingSpanAValue": 1201.4775000000,
+    "laggingSpanValue": 1300.5300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1410.5349500000,
+    "baseLineValue": 1377.3499500000,
+    "leadingSpanAValue": 1200.8900000000,
+    "laggingSpanValue": 1326.7300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1427.3499500000,
+    "baseLineValue": 1383.0649000000,
+    "leadingSpanAValue": 1210.5100000000,
+    "laggingSpanValue": 1329.7600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1429.6050000000,
+    "baseLineValue": 1385.3199500000,
+    "leadingSpanAValue": 1210.5100000000,
+    "laggingSpanValue": 1360.7000000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1432.5999500000,
+    "baseLineValue": 1388.3149000000,
+    "leadingSpanAValue": 1232.2225000000,
+    "laggingSpanValue": 1396.5400000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1444.5999500000,
+    "baseLineValue": 1400.3149000000,
+    "leadingSpanAValue": 1240.9725000000,
+    "laggingSpanValue": 1401.1600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1448.4249500000,
+    "baseLineValue": 1400.3149000000,
+    "leadingSpanAValue": 1250.0525250000,
+    "laggingSpanValue": 1418.9900000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1467.1799500000,
+    "baseLineValue": 1400.3149000000,
+    "leadingSpanAValue": 1257.4925250000,
+    "laggingSpanValue": 1376.7100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1466.0099500000,
+    "baseLineValue": 1410.9949500000,
+    "leadingSpanAValue": 1263.5874750000,
+    "laggingSpanValue": 1359.2500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1456.2699500000,
+    "baseLineValue": 1417.5799500000,
+    "leadingSpanAValue": 1263.5874750000,
+    "laggingSpanValue": 1319.2100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1444.2549000000,
+    "baseLineValue": 1417.5799500000,
+    "leadingSpanAValue": 1267.8525000000,
+    "laggingSpanValue": 1349.5601000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1444.2549000000,
+    "baseLineValue": 1420.2549000000,
+    "leadingSpanAValue": 1277.3349750000,
+    "laggingSpanValue": 1361.2800000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1444.2549000000,
+    "baseLineValue": 1420.2549000000,
+    "leadingSpanAValue": 1306.9349750000,
+    "laggingSpanValue": 1411.5200000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1444.2549000000,
+    "baseLineValue": 1420.2549000000,
+    "leadingSpanAValue": 1306.9349750000,
+    "laggingSpanValue": 1411.1400000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1418.6250000000,
+    "baseLineValue": 1420.2549000000,
+    "leadingSpanAValue": 1306.9349750000,
+    "laggingSpanValue": 1393.6899000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1319.6850000000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1306.9349750000,
+    "laggingSpanValue": 1374.5100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1319.6850000000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1306.9349750000,
+    "laggingSpanValue": 1419.3500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1311.9050000000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1312.2750000000,
+    "laggingSpanValue": 1467.5601000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1302.5549500000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1315.5675000000,
+    "laggingSpanValue": 1468.7400000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1302.5549500000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1315.5675000000,
+    "leadingSpanBValue": 1264.2600000000,
+    "laggingSpanValue": 1481.9600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1302.5549500000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1316.9049750000,
+    "leadingSpanBValue": 1264.2600000000,
+    "laggingSpanValue": 1444.4100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1302.5549500000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1334.5099750000,
+    "leadingSpanBValue": 1264.2600000000,
+    "laggingSpanValue": 1487.9399000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1290.5650000000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1340.8324750000,
+    "leadingSpanBValue": 1266.9550000000,
+    "laggingSpanValue": 1478.7800000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1262.2050000000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1349.7425000000,
+    "leadingSpanBValue": 1266.9550000000,
+    "laggingSpanValue": 1484.7800000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1280.1950500000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1349.7425000000,
+    "leadingSpanBValue": 1266.9550000000,
+    "laggingSpanValue": 1448.9600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1287.6350500000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1377.4874500000,
+    "leadingSpanBValue": 1288.6050000000,
+    "laggingSpanValue": 1430.3500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1299.8249500000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1383.0549750000,
+    "leadingSpanBValue": 1291.9200000000,
+    "laggingSpanValue": 1410.7500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1299.8249500000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1393.9424500000,
+    "leadingSpanBValue": 1297.7149500000,
+    "laggingSpanValue": 1422.4399000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1307.6700000000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1405.2074250000,
+    "leadingSpanBValue": 1297.7149500000,
+    "laggingSpanValue": 1367.1400000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1320.0099500000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1407.4624750000,
+    "leadingSpanBValue": 1299.9700000000,
+    "laggingSpanValue": 1390.8000000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1349.6099500000,
+    "baseLineValue": 1357.4299500000,
+    "leadingSpanAValue": 1410.4574250000,
+    "leadingSpanBValue": 1302.9649500000,
+    "laggingSpanValue": 1396.5900000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1349.6099500000,
+    "baseLineValue": 1334.0549500000,
+    "leadingSpanAValue": 1422.4574250000,
+    "leadingSpanBValue": 1314.9649500000,
+    "laggingSpanValue": 1399.5500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1349.6099500000,
+    "baseLineValue": 1319.6850000000,
+    "leadingSpanAValue": 1424.3699250000,
+    "leadingSpanBValue": 1314.9649500000,
+    "laggingSpanValue": 1362.6100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1349.6099500000,
+    "baseLineValue": 1319.6850000000,
+    "leadingSpanAValue": 1433.7474250000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1349.6099500000,
+    "baseLineValue": 1311.9050000000,
+    "leadingSpanAValue": 1438.5024500000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1360.2900000000,
+    "baseLineValue": 1306.7250000000,
+    "leadingSpanAValue": 1436.9249500000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1366.8750000000,
+    "baseLineValue": 1306.7250000000,
+    "leadingSpanAValue": 1430.9174250000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 31
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1366.8750000000,
+    "baseLineValue": 1306.7250000000,
+    "leadingSpanAValue": 1432.2549000000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1369.5499500000,
+    "baseLineValue": 1306.7250000000,
+    "leadingSpanAValue": 1432.2549000000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1369.0549500000,
+    "baseLineValue": 1306.7250000000,
+    "leadingSpanAValue": 1432.2549000000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1372.2449500000,
+    "baseLineValue": 1309.4200000000,
+    "leadingSpanAValue": 1419.4399500000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1372.2449500000,
+    "baseLineValue": 1327.2400500000,
+    "leadingSpanAValue": 1338.5574750000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1372.2449500000,
+    "baseLineValue": 1327.2400500000,
+    "leadingSpanAValue": 1338.5574750000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1393.8949500000,
+    "baseLineValue": 1361.0799500000,
+    "leadingSpanAValue": 1334.6674750000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1401.7150000000,
+    "baseLineValue": 1364.3949500000,
+    "leadingSpanAValue": 1329.9924500000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1410.5349500000,
+    "baseLineValue": 1377.3499500000,
+    "leadingSpanAValue": 1329.9924500000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1427.3499500000,
+    "baseLineValue": 1383.0649000000,
+    "leadingSpanAValue": 1329.9924500000,
+    "leadingSpanBValue": 1314.9649500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1429.6050000000,
+    "baseLineValue": 1385.3199500000,
+    "leadingSpanAValue": 1329.9924500000,
+    "leadingSpanBValue": 1350.6699500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1432.5999500000,
+    "baseLineValue": 1388.3149000000,
+    "leadingSpanAValue": 1323.9974750000,
+    "leadingSpanBValue": 1357.4299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1444.5999500000,
+    "baseLineValue": 1400.3149000000,
+    "leadingSpanAValue": 1309.8174750000,
+    "leadingSpanBValue": 1357.4299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1448.4249500000,
+    "baseLineValue": 1400.3149000000,
+    "leadingSpanAValue": 1318.8125000000,
+    "leadingSpanBValue": 1357.4299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1467.1799500000,
+    "baseLineValue": 1400.3149000000,
+    "leadingSpanAValue": 1322.5325000000,
+    "leadingSpanBValue": 1357.4299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1466.0099500000,
+    "baseLineValue": 1410.9949500000,
+    "leadingSpanAValue": 1328.6274500000,
+    "leadingSpanBValue": 1357.4299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1456.2699500000,
+    "baseLineValue": 1417.5799500000,
+    "leadingSpanAValue": 1328.6274500000,
+    "leadingSpanBValue": 1357.4299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1444.2549000000,
+    "baseLineValue": 1417.5799500000,
+    "leadingSpanAValue": 1332.5499750000,
+    "leadingSpanBValue": 1357.4299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1444.2549000000,
+    "baseLineValue": 1420.2549000000,
+    "leadingSpanAValue": 1338.7199500000,
+    "leadingSpanBValue": 1357.4299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1444.2549000000,
+    "baseLineValue": 1420.2549000000,
+    "leadingSpanAValue": 1353.5199500000,
+    "leadingSpanBValue": 1357.4299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1444.2549000000,
+    "baseLineValue": 1420.2549000000,
+    "leadingSpanAValue": 1341.8324500000,
+    "leadingSpanBValue": 1357.4299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 6,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "conversionLineValue": 1418.6250000000,
+    "baseLineValue": 1420.2549000000,
+    "leadingSpanAValue": 1334.6474750000,
+    "leadingSpanBValue": 1357.4299500000
+  }
+]

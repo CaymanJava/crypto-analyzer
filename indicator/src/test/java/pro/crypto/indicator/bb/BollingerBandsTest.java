@@ -4,11 +4,10 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.KELTNER_CHANNEL;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
@@ -17,33 +16,9 @@ public class BollingerBandsTest extends IndicatorAbstractTest {
 
     @Test
     public void testBollingerBandsWithDefaultParameters() {
-        BBResult[] result = new BollingerBands(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getUpperBand());
-        assertNull(result[0].getMiddleBand());
-        assertNull(result[0].getLowerBand());
-        assertNull(result[8].getUpperBand());
-        assertNull(result[8].getMiddleBand());
-        assertNull(result[8].getLowerBand());
-        assertNull(result[18].getUpperBand());
-        assertNull(result[18].getMiddleBand());
-        assertNull(result[18].getLowerBand());
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getUpperBand(), toBigDecimal(1341.1655489174));
-        assertEquals(result[19].getMiddleBand(), toBigDecimal(1251.0690100000));
-        assertEquals(result[19].getLowerBand(), toBigDecimal(1160.9724710826));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getUpperBand(), toBigDecimal(1282.8662298336));
-        assertEquals(result[32].getMiddleBand(), toBigDecimal(1192.7020150000));
-        assertEquals(result[32].getLowerBand(), toBigDecimal(1102.5378001664));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getUpperBand(), toBigDecimal(1427.8260655722));
-        assertEquals(result[45].getMiddleBand(), toBigDecimal(1288.3630000000));
-        assertEquals(result[45].getLowerBand(), toBigDecimal(1148.8999344278));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getUpperBand(), toBigDecimal(1507.2465671536));
-        assertEquals(result[72].getMiddleBand(), toBigDecimal(1427.1024900000));
-        assertEquals(result[72].getLowerBand(), toBigDecimal(1346.9584128464));
+        IndicatorResult[] expectedResult = loadExpectedResult("bollinger_bands.json", BBResult[].class);
+        BBResult[] actualResult = new BollingerBands(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

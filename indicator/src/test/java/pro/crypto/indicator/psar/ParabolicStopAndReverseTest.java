@@ -4,31 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class ParabolicStopAndReverseTest extends IndicatorAbstractTest {
 
     @Test
     public void testParabolicSAR() {
-        PSARResult[] result = new ParabolicStopAndReverse(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertEquals(result[1].getTime(), of(2018, 2, 26, 0, 0));
-        assertEquals(result[1].getIndicatorValue(), toBigDecimal(1302.67));
-        assertEquals(result[9].getTime(), of(2018, 3, 6, 0, 0));
-        assertEquals(result[9].getIndicatorValue(), toBigDecimal(1345.7364));
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(1239.62));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1140.99897824));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(1313.72));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1467.6677384358));
+        IndicatorResult[] expectedResult = loadExpectedResult("parabolic_stop_and_reverse.json", PSARResult[].class);
+        PSARResult[] actualResult = new ParabolicStopAndReverse(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

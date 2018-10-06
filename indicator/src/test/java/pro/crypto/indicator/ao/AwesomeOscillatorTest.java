@@ -4,38 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static junit.framework.TestCase.assertNull;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class AwesomeOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testAwesomeOscillator() {
-        AOResult[] result = new AwesomeOscillator(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[0].getIncreased());
-        assertNull(result[32].getIndicatorValue());
-        assertNull(result[32].getIncreased());
-        assertEquals(result[33].getTime(), of(2018, 3, 30, 0, 0));
-        assertEquals(result[33].getIndicatorValue(), toBigDecimal(23.6640029412));
-        assertFalse(result[33].getIncreased());
-        assertEquals(result[48].getTime(), of(2018, 4, 14, 0, 0));
-        assertEquals(result[48].getIndicatorValue(), toBigDecimal(132.2333335294));
-        assertTrue(result[48].getIncreased());
-        assertEquals(result[53].getTime(), of(2018, 4, 19, 0, 0));
-        assertEquals(result[53].getIndicatorValue(), toBigDecimal(83.471805));
-        assertFalse(result[53].getIncreased());
-        assertEquals(result[61].getTime(), of(2018, 4, 27, 0, 0));
-        assertEquals(result[61].getIndicatorValue(), toBigDecimal(114.7475208824));
-        assertTrue(result[61].getIncreased());
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-10.67721));
-        assertFalse(result[72].getIncreased());
+        IndicatorResult[] expectedResult = loadExpectedResult("awesome_oscillator.json", AOResult[].class);
+        AOResult[] actualResult = new AwesomeOscillator(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

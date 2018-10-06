@@ -4,11 +4,10 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.MOVING_AVERAGE_CONVERGENCE_DIVERGENCE;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
@@ -17,27 +16,9 @@ public class CenterOfGravityTest extends IndicatorAbstractTest {
 
     @Test
     public void testCenterOfGravityWithPeriodsTen() {
-        COGResult[] result = new CenterOfGravity(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[0].getSignalLineValue());
-        assertNull(result[8].getIndicatorValue());
-        assertNull(result[8].getSignalLineValue());
-        assertEquals(result[9].getTime(), of(2018, 3, 6, 0, 0));
-        assertEquals(result[9].getIndicatorValue(), toBigDecimal(5.5124647213));
-        assertNull(result[9].getSignalLineValue());
-        assertEquals(result[18].getTime(), of(2018, 3, 15, 0, 0));
-        assertEquals(result[18].getIndicatorValue(), toBigDecimal(5.4490427889));
-        assertEquals(result[18].getSignalLineValue(), toBigDecimal(5.4473202132));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(5.6310637339));
-        assertEquals(result[32].getSignalLineValue(), toBigDecimal(5.4974911621));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(5.5608715031));
-        assertEquals(result[45].getSignalLineValue(), toBigDecimal(5.5510390031));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(5.4387362339));
-        assertEquals(result[72].getSignalLineValue(), toBigDecimal(5.4717574354));
+        IndicatorResult[] expectedResult = loadExpectedResult("center_of_gravity.json", COGResult[].class);
+        COGResult[] actualResult = new CenterOfGravity(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

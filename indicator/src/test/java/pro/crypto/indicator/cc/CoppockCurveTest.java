@@ -4,34 +4,19 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class CoppockCurveTest extends IndicatorAbstractTest {
 
     @Test
     public void testCoppockCurveWithDefaultParameters() {
-        CCResult[] result = new CoppockCurve(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[5].getIndicatorValue());
-        assertNull(result[22].getIndicatorValue());
-        assertEquals(result[23].getTime(), of(2018, 3, 20, 0, 0));
-        assertEquals(result[23].getIndicatorValue(), toBigDecimal(-15.2202068310));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(1.9610278079));
-        assertEquals(result[34].getTime(), of(2018, 3, 31, 0, 0));
-        assertEquals(result[34].getIndicatorValue(), toBigDecimal(10.5274283137));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(20.8735836322));
-        assertEquals(result[58].getTime(), of(2018, 4, 24, 0, 0));
-        assertEquals(result[58].getIndicatorValue(), toBigDecimal(9.3044077192));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-5.2733431323));
+        IndicatorResult[] expectedResult = loadExpectedResult("coppock_curve.json", CCResult[].class);
+        CCResult[] actualResult = new CoppockCurve(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

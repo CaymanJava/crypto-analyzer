@@ -3,11 +3,11 @@ package pro.crypto.indicator.dpo;
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorResult;
+import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
@@ -15,48 +15,16 @@ public class DetrendedPriceOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testDetrendedPriceOscillatorWithPeriodSeven() {
-        DPORequest request = buildRequest();
-        request.setPeriod(7);
-        request.setMovingAverageType(SIMPLE_MOVING_AVERAGE);
-        DPOResult[] result = new DetrendedPriceOscillator(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[9].getIndicatorValue());
-        assertEquals(result[10].getTime(), of(2018, 3, 7, 0, 0));
-        assertEquals(result[10].getIndicatorValue(), toBigDecimal(-31.8586857143));
-        assertEquals(result[20].getTime(), of(2018, 3, 17, 0, 0));
-        assertEquals(result[20].getIndicatorValue(), toBigDecimal(-6.1371428571));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(123.4299857143));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(88.8828428571));
-        assertEquals(result[66].getTime(), of(2018, 5, 2, 0, 0));
-        assertEquals(result[66].getIndicatorValue(), toBigDecimal(-53.3557142857));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-72.1328428571));
+        IndicatorResult[] expectedResult = loadExpectedResult("detrended_price_oscillator_1.json", DPOResult[].class);
+        DPOResult[] actualResult = new DetrendedPriceOscillator(buildRequest(7, SIMPLE_MOVING_AVERAGE)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void testDetrendedPriceOscillatorWithPeriodThree() {
-        DPORequest request = buildRequest();
-        request.setPeriod(10);
-        request.setMovingAverageType(EXPONENTIAL_MOVING_AVERAGE);
-        DPOResult[] result = new DetrendedPriceOscillator(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[14].getIndicatorValue());
-        assertEquals(result[15].getTime(), of(2018, 3, 12, 0, 0));
-        assertEquals(result[15].getIndicatorValue(), toBigDecimal(-106.78501));
-        assertEquals(result[20].getTime(), of(2018, 3, 17, 0, 0));
-        assertEquals(result[20].getIndicatorValue(), toBigDecimal(-31.3697355621));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(113.5218679773));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(112.9968445102));
-        assertEquals(result[54].getTime(), of(2018, 4, 20, 0, 0));
-        assertEquals(result[54].getIndicatorValue(), toBigDecimal(34.146461965));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-78.9917860818));
+    public void testDetrendedPriceOscillatorWithPeriodTen() {
+        IndicatorResult[] expectedResult = loadExpectedResult("detrended_price_oscillator_2.json", DPOResult[].class);
+        DPOResult[] actualResult = new DetrendedPriceOscillator(buildRequest(10, EXPONENTIAL_MOVING_AVERAGE)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -137,6 +105,13 @@ public class DetrendedPriceOscillatorTest extends IndicatorAbstractTest {
                 .originalData(originalData)
                 .priceType(CLOSE)
                 .build();
+    }
+
+    private DPORequest buildRequest(int period, IndicatorType movingAverageType) {
+        DPORequest request = buildRequest();
+        request.setPeriod(period);
+        request.setMovingAverageType(movingAverageType);
+        return request;
     }
 
 }

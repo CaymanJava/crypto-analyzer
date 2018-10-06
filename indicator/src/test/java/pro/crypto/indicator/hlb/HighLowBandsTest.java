@@ -3,75 +3,26 @@ package pro.crypto.indicator.hlb;
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class HighLowBandsTest extends IndicatorAbstractTest {
 
     @Test
     public void testHighLowBandsWithPeriodThirteenAndFivePercentageShift() {
-        HLBRequest request = buildRequest();
-        request.setPeriod(13);
-        request.setShiftPercentage(5);
-        HLBResult[] result = new HighLowBands(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getMiddleBand());
-        assertNull(result[0].getUpperBand());
-        assertNull(result[0].getLowerBand());
-        assertNull(result[11].getMiddleBand());
-        assertNull(result[11].getUpperBand());
-        assertNull(result[11].getLowerBand());
-        assertEquals(result[12].getTime(), of(2018, 3, 9, 0, 0));
-        assertEquals(result[12].getMiddleBand(), toBigDecimal(1289.2546918367));
-        assertEquals(result[12].getUpperBand(), toBigDecimal(1353.7174264287));
-        assertEquals(result[12].getLowerBand(), toBigDecimal(1224.7919572447));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getMiddleBand(), toBigDecimal(1169.6895959184));
-        assertEquals(result[32].getUpperBand(), toBigDecimal(1228.1740757144));
-        assertEquals(result[32].getLowerBand(), toBigDecimal(1111.2051161224));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getMiddleBand(), toBigDecimal(1322.2394020408));
-        assertEquals(result[45].getUpperBand(), toBigDecimal(1388.3513721428));
-        assertEquals(result[45].getLowerBand(), toBigDecimal(1256.1274319388));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getMiddleBand(), toBigDecimal(1424.1412081633));
-        assertEquals(result[72].getUpperBand(), toBigDecimal(1495.3482685713));
-        assertEquals(result[72].getLowerBand(), toBigDecimal(1352.9341477553));
+        IndicatorResult[] expectedResult = loadExpectedResult("high_low_bands_1.json", HLBResult[].class);
+        HLBResult[] actualResult = new HighLowBands(buildRequest(13, 5)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testHighLowBandsWithPeriodFourteenAndFourPercentageShift() {
-        HLBRequest request = buildRequest();
-        request.setPeriod(14);
-        request.setShiftPercentage(4);
-        HLBResult[] result = new HighLowBands(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getMiddleBand());
-        assertNull(result[0].getUpperBand());
-        assertNull(result[0].getLowerBand());
-        assertNull(result[12].getMiddleBand());
-        assertNull(result[12].getUpperBand());
-        assertNull(result[12].getLowerBand());
-        assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getMiddleBand(), toBigDecimal(1285.1794607143));
-        assertEquals(result[13].getUpperBand(), toBigDecimal(1336.5866391427));
-        assertEquals(result[13].getLowerBand(), toBigDecimal(1233.7722822859));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getMiddleBand(), toBigDecimal(1168.6062589286));
-        assertEquals(result[32].getUpperBand(), toBigDecimal(1215.3505092858));
-        assertEquals(result[32].getLowerBand(), toBigDecimal(1121.8620085714));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getMiddleBand(), toBigDecimal(1319.6860839286));
-        assertEquals(result[45].getUpperBand(), toBigDecimal(1372.4735272858));
-        assertEquals(result[45].getLowerBand(), toBigDecimal(1266.8986405714));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getMiddleBand(), toBigDecimal(1429.2874839286));
-        assertEquals(result[72].getUpperBand(), toBigDecimal(1486.4589832858));
-        assertEquals(result[72].getLowerBand(), toBigDecimal(1372.1159845714));
+        IndicatorResult[] expectedResult = loadExpectedResult("high_low_bands_2.json", HLBResult[].class);
+        HLBResult[] actualResult = new HighLowBands(buildRequest(14, 4)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -151,6 +102,13 @@ public class HighLowBandsTest extends IndicatorAbstractTest {
                 .originalData(originalData)
                 .priceType(CLOSE)
                 .build();
+    }
+
+    private HLBRequest buildRequest(int period, int shift) {
+        HLBRequest request = buildRequest();
+        request.setPeriod(period);
+        request.setShiftPercentage(shift);
+        return request;
     }
 
 }

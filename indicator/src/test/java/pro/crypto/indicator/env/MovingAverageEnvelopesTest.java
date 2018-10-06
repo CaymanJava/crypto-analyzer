@@ -3,11 +3,10 @@ package pro.crypto.indicator.env;
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 
@@ -15,68 +14,16 @@ public class MovingAverageEnvelopesTest extends IndicatorAbstractTest {
 
     @Test
     public void testMovingAverageEnvelopesWithPercentageFive() {
-        ENVRequest request = buildRequest();
-        request.setIndentationPercentage(5);
-        ENVResult[] result = new MovingAverageEnvelopes(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getMiddleBand());
-        assertNull(result[0].getUpperBand());
-        assertNull(result[0].getLowerBand());
-        assertNull(result[8].getMiddleBand());
-        assertNull(result[8].getUpperBand());
-        assertNull(result[8].getLowerBand());
-        assertNull(result[18].getMiddleBand());
-        assertNull(result[18].getUpperBand());
-        assertNull(result[18].getLowerBand());
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getMiddleBand(), toBigDecimal(1251.06901));
-        assertEquals(result[19].getUpperBand(), toBigDecimal(1313.6224605));
-        assertEquals(result[19].getLowerBand(), toBigDecimal(1188.5155595));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getMiddleBand(), toBigDecimal(1192.702015));
-        assertEquals(result[32].getUpperBand(), toBigDecimal(1252.33711575));
-        assertEquals(result[32].getLowerBand(), toBigDecimal(1133.06691425));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getMiddleBand(), toBigDecimal(1288.363));
-        assertEquals(result[45].getUpperBand(), toBigDecimal(1352.78115));
-        assertEquals(result[45].getLowerBand(), toBigDecimal(1223.94485));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getMiddleBand(), toBigDecimal(1427.10249));
-        assertEquals(result[72].getUpperBand(), toBigDecimal(1498.4576145));
-        assertEquals(result[72].getLowerBand(), toBigDecimal(1355.7473655));
+        IndicatorResult[] expectedResult = loadExpectedResult("moving_average_envelopes_1.json", ENVResult[].class);
+        ENVResult[] actualResult = new MovingAverageEnvelopes(buildRequestWithPercentageFive()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testMovingAverageEnvelopesWithPercentageSeven() {
-        ENVRequest request = buildRequest();
-        request.setIndentationPercentage(7);
-        ENVResult[] result = new MovingAverageEnvelopes(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getMiddleBand());
-        assertNull(result[0].getUpperBand());
-        assertNull(result[0].getLowerBand());
-        assertNull(result[8].getMiddleBand());
-        assertNull(result[8].getUpperBand());
-        assertNull(result[8].getLowerBand());
-        assertNull(result[18].getMiddleBand());
-        assertNull(result[18].getUpperBand());
-        assertNull(result[18].getLowerBand());
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getMiddleBand(), toBigDecimal(1251.06901));
-        assertEquals(result[19].getUpperBand(), toBigDecimal(1338.6438407));
-        assertEquals(result[19].getLowerBand(), toBigDecimal(1163.4941793));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getMiddleBand(), toBigDecimal(1192.702015));
-        assertEquals(result[32].getUpperBand(), toBigDecimal(1276.19115605));
-        assertEquals(result[32].getLowerBand(), toBigDecimal(1109.21287395));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getMiddleBand(), toBigDecimal(1288.363));
-        assertEquals(result[45].getUpperBand(), toBigDecimal(1378.54841));
-        assertEquals(result[45].getLowerBand(), toBigDecimal(1198.17759));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getMiddleBand(), toBigDecimal(1427.10249));
-        assertEquals(result[72].getUpperBand(), toBigDecimal(1526.9996643));
-        assertEquals(result[72].getLowerBand(), toBigDecimal(1327.2053157));
+        IndicatorResult[] expectedResult = loadExpectedResult("moving_average_envelopes_2.json", ENVResult[].class);
+        ENVResult[] actualResult = new MovingAverageEnvelopes(buildRequestWithPercentageSeven()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -171,6 +118,18 @@ public class MovingAverageEnvelopesTest extends IndicatorAbstractTest {
                 .movingAverageType(SIMPLE_MOVING_AVERAGE)
                 .movingAveragePeriod(20)
                 .build();
+    }
+
+    private ENVRequest buildRequestWithPercentageFive() {
+        ENVRequest request = buildRequest();
+        request.setIndentationPercentage(5);
+        return request;
+    }
+
+    private ENVRequest buildRequestWithPercentageSeven() {
+        ENVRequest request = buildRequest();
+        request.setIndentationPercentage(7);
+        return request;
     }
 
 }

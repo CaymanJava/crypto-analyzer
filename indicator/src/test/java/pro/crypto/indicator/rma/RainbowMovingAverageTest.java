@@ -4,43 +4,19 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static junit.framework.TestCase.assertNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class RainbowMovingAverageTest extends IndicatorAbstractTest {
 
     @Test
     public void testRainbowMovingAverage() {
-        RMAResult[] result = new RainbowMovingAverage(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
-        assertNull(result[0].getFirstMaValue());
-        assertNull(result[0].getSecondMaValue());
-        assertNull(result[0].getThirdMaValue());
-        assertNull(result[0].getFourthMaValue());
-        assertNull(result[0].getFifthMaValue());
-        assertNull(result[0].getSixthMaValue());
-        assertNull(result[0].getSeventhMaValue());
-        assertNull(result[0].getEighthMaValue());
-        assertNull(result[0].getNinthMaValue());
-        assertNull(result[0].getTenthMaValue());
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getFirstMaValue(), toBigDecimal(1381.08));
-        assertEquals(result[72].getSecondMaValue(), toBigDecimal(1389.575));
-        assertEquals(result[72].getThirdMaValue(), toBigDecimal(1392.72875));
-        assertEquals(result[72].getFourthMaValue(), toBigDecimal(1391.918125));
-        assertEquals(result[72].getFifthMaValue(), toBigDecimal(1390.387496875));
-        assertEquals(result[72].getSixthMaValue(), toBigDecimal(1390.269521875));
-        assertEquals(result[72].getSeventhMaValue(), toBigDecimal(1392.1295929688));
-        assertEquals(result[72].getEighthMaValue(), toBigDecimal(1395.6934546876));
-        assertEquals(result[72].getNinthMaValue(), toBigDecimal(1400.5294675782));
-        assertEquals(result[72].getTenthMaValue(), toBigDecimal(1406.3322214845));
+        IndicatorResult[] expectedResult = loadExpectedResult("rainbow_moving_average.json", RMAResult[].class);
+        RMAResult[] actualResult = new RainbowMovingAverage(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

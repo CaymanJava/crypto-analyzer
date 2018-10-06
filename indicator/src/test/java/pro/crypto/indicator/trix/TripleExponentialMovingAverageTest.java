@@ -3,70 +3,26 @@ package pro.crypto.indicator.trix;
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class TripleExponentialMovingAverageTest extends IndicatorAbstractTest {
 
     @Test
     public void testTRIXWithPeriodEighteen() {
-        TRIXRequest request = buildRequest();
-        request.setPeriod(18);
-        TRIXResult[] result = new TripleExponentialMovingAverage(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[0].getSignalLineValue());
-        assertNull(result[8].getIndicatorValue());
-        assertNull(result[8].getSignalLineValue());
-        assertNull(result[51].getIndicatorValue());
-        assertNull(result[51].getSignalLineValue());
-        assertEquals(result[52].getTime(), of(2018, 4, 18, 0, 0));
-        assertEquals(result[52].getIndicatorValue(), toBigDecimal(0.4083115144));
-        assertNull(result[52].getSignalLineValue());
-        assertEquals(result[59].getTime(), of(2018, 4, 25, 0, 0));
-        assertEquals(result[59].getIndicatorValue(), toBigDecimal(0.4202200915));
-        assertNull(result[59].getSignalLineValue());
-        assertEquals(result[60].getTime(), of(2018, 4, 26, 0, 0));
-        assertEquals(result[60].getIndicatorValue(), toBigDecimal(0.4267473783));
-        assertEquals(result[60].getSignalLineValue(), toBigDecimal(0.4103691603));
-        assertEquals(result[65].getTime(), of(2018, 5, 1, 0, 0));
-        assertEquals(result[65].getIndicatorValue(), toBigDecimal(0.4474297471));
-        assertEquals(result[65].getSignalLineValue(), toBigDecimal(0.4344003122));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(0.3042856299));
-        assertEquals(result[72].getSignalLineValue(), toBigDecimal(0.3738696705));
+        IndicatorResult[] expectedResult = loadExpectedResult("triple_exponential_moving_average_1.json", TRIXResult[].class);
+        TRIXResult[] actualResult = new TripleExponentialMovingAverage(buildRequest(18)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testTRIXWithPeriodFourteen() {
-        TRIXRequest request = buildRequest();
-        request.setPeriod(14);
-        TRIXResult[] result = new TripleExponentialMovingAverage(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[0].getSignalLineValue());
-        assertNull(result[8].getIndicatorValue());
-        assertNull(result[8].getSignalLineValue());
-        assertNull(result[39].getIndicatorValue());
-        assertNull(result[39].getSignalLineValue());
-        assertEquals(result[40].getTime(), of(2018, 4, 6, 0, 0));
-        assertEquals(result[40].getIndicatorValue(), toBigDecimal(0.2736429115));
-        assertNull(result[40].getSignalLineValue());
-        assertEquals(result[47].getTime(), of(2018, 4, 13, 0, 0));
-        assertEquals(result[47].getIndicatorValue(), toBigDecimal(0.4608041176));
-        assertNull(result[47].getSignalLineValue());
-        assertEquals(result[48].getTime(), of(2018, 4, 14, 0, 0));
-        assertEquals(result[48].getIndicatorValue(), toBigDecimal(0.4736482148));
-        assertEquals(result[48].getSignalLineValue(), toBigDecimal(0.3745135872));
-        assertEquals(result[65].getTime(), of(2018, 5, 1, 0, 0));
-        assertEquals(result[65].getIndicatorValue(), toBigDecimal(0.4747801761));
-        assertEquals(result[65].getSignalLineValue(), toBigDecimal(0.4669545161));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(0.2178900988));
-        assertEquals(result[72].getSignalLineValue(), toBigDecimal(0.3398574781));
+        IndicatorResult[] expectedResult = loadExpectedResult("triple_exponential_moving_average_2.json", TRIXResult[].class);
+        TRIXResult[] actualResult = new TripleExponentialMovingAverage(buildRequest(14)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -115,6 +71,12 @@ public class TripleExponentialMovingAverageTest extends IndicatorAbstractTest {
         return TRIXRequest.builder()
                 .originalData(originalData)
                 .build();
+    }
+
+    private IndicatorRequest buildRequest(int period) {
+        TRIXRequest request = buildRequest();
+        request.setPeriod(period);
+        return request;
     }
 
 }

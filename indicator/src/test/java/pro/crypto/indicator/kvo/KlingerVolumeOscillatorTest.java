@@ -4,37 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class KlingerVolumeOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testKlingerVolumeOscillator() {
-        KVOResult[] result = new KlingerVolumeOscillator(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[0].getSignalLineValue());
-        assertNull(result[24].getIndicatorValue());
-        assertNull(result[24].getSignalLineValue());
-        assertEquals(result[25].getTime(), of(2018, 3, 22, 0, 0));
-        assertEquals(result[25].getIndicatorValue(), toBigDecimal(-8.6691769306));
-        assertNull(result[25].getSignalLineValue());
-        assertEquals(result[37].getTime(), of(2018, 4, 3, 0, 0));
-        assertEquals(result[37].getIndicatorValue(), toBigDecimal(22.3617101014));
-        assertEquals(result[37].getSignalLineValue(), toBigDecimal(8.3023277073));
-        assertEquals(result[52].getTime(), of(2018, 4, 18, 0, 0));
-        assertEquals(result[52].getIndicatorValue(), toBigDecimal(-1.0531088942));
-        assertEquals(result[52].getSignalLineValue(), toBigDecimal(4.5601647149));
-        assertEquals(result[65].getTime(), of(2018, 5, 1, 0, 0));
-        assertEquals(result[65].getIndicatorValue(), toBigDecimal(-1.3198021570));
-        assertEquals(result[65].getSignalLineValue(), toBigDecimal(8.0932549425));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-7.9427379336));
-        assertEquals(result[72].getSignalLineValue(), toBigDecimal(-4.0894385560));
+        IndicatorResult[] expectedResult = loadExpectedResult("klinger_volume_oscillator.json", KVOResult[].class);
+        KVOResult[] actualResult = new KlingerVolumeOscillator(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

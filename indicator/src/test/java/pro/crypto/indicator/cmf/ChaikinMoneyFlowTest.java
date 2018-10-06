@@ -4,31 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class ChaikinMoneyFlowTest extends IndicatorAbstractTest {
 
     @Test
     public void testCMFTwentyOneDaysPeriod() {
-        CMFResult[] result = new ChaikinMoneyFlow(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[10].getIndicatorValue());
-        assertNull(result[19].getIndicatorValue());
-        assertEquals(result[20].getTime(), of(2018, 3, 17, 0, 0));
-        assertEquals(result[20].getIndicatorValue(), toBigDecimal(-0.100887968));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(-0.1569850648));
-        assertEquals(result[34].getTime(), of(2018, 3, 31, 0, 0));
-        assertEquals(result[34].getIndicatorValue(), toBigDecimal(0.0208990395));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(0.2899809672));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(0.1165375399));
+        IndicatorResult[] expectedResult = loadExpectedResult("chaikin_money_flow.json", CMFResult[].class);
+        CMFResult[] actualResult = new ChaikinMoneyFlow(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

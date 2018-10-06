@@ -4,37 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class DonchianChannelTest extends IndicatorAbstractTest {
 
     @Test
     public void testDonchainChannelWithDefaultParameters() {
-        DCResult[] result = new DonchianChannel(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getMiddleBand());
-        assertNull(result[0].getUpperBand());
-        assertNull(result[0].getLowerBand());
-        assertEquals(result[20].getTime(), of(2018, 3, 17, 0, 0));
-        assertEquals(result[20].getMiddleBand(), toBigDecimal(1253.66995));
-        assertEquals(result[20].getUpperBand(), toBigDecimal(1347.27));
-        assertEquals(result[20].getLowerBand(), toBigDecimal(1160.0699));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getMiddleBand(), toBigDecimal(1195.615));
-        assertEquals(result[32].getUpperBand(), toBigDecimal(1282.74));
-        assertEquals(result[32].getLowerBand(), toBigDecimal(1108.49));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getMiddleBand(), toBigDecimal(1264.26));
-        assertEquals(result[45].getUpperBand(), toBigDecimal(1420.03));
-        assertEquals(result[45].getLowerBand(), toBigDecimal(1108.49));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getMiddleBand(), toBigDecimal(1444.2549));
-        assertEquals(result[72].getUpperBand(), toBigDecimal(1521.4399));
-        assertEquals(result[72].getLowerBand(), toBigDecimal(1367.0699));
+        IndicatorResult[] expectedResult = loadExpectedResult("donchain_channel.json", DCResult[].class);
+        DCResult[] actualResult = new DonchianChannel(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

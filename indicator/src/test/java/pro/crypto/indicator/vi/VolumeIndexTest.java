@@ -4,11 +4,12 @@ import org.junit.Test;
 import pro.crypto.exception.UnknownTypeException;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
+import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.*;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
@@ -16,54 +17,16 @@ public class VolumeIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testNegativeVolumeIndexWithPeriodTwentyFive() {
-        VIRequest request = buildRequest();
-        request.setVolumeIndexType(NEGATIVE_VOLUME_INDEX);
-        VIResult[] result = VolumeIndexFactory.create(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
-        assertEquals(result[0].getIndicatorValue(), toBigDecimal(15.5471));
-        assertNull(result[0].getMovingAverageValue());
-        assertEquals(result[23].getTime(), of(2018, 3, 20, 0, 0));
-        assertEquals(result[23].getIndicatorValue(), toBigDecimal(15.771228981));
-        assertNull(result[23].getMovingAverageValue());
-        assertEquals(result[24].getTime(), of(2018, 3, 21, 0, 0));
-        assertEquals(result[24].getIndicatorValue(), toBigDecimal(15.771228981));
-        assertEquals(result[24].getMovingAverageValue(), toBigDecimal(15.5202395458));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(17.0890726644));
-        assertEquals(result[32].getMovingAverageValue(), toBigDecimal(15.9579241089));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(17.892728641));
-        assertEquals(result[45].getMovingAverageValue(), toBigDecimal(16.8646577814));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(17.1064192833));
-        assertEquals(result[72].getMovingAverageValue(), toBigDecimal(17.8345727616));
+        IndicatorResult[] expectedResult = loadExpectedResult("volume_index_1.json", VIResult[].class);
+        VIResult[] actualResult = VolumeIndexFactory.create(buildRequest(NEGATIVE_VOLUME_INDEX)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testPositiveVolumeIndexWithPeriodTwentyFive() {
-        VIRequest request = buildRequest();
-        request.setVolumeIndexType(POSITIVE_VOLUME_INDEX);
-        VIResult[] result = VolumeIndexFactory.create(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertEquals(result[0].getTime(), of(2018, 2, 25, 0, 0));
-        assertEquals(result[0].getIndicatorValue(), toBigDecimal(15.5471));
-        assertNull(result[0].getMovingAverageValue());
-        assertEquals(result[23].getTime(), of(2018, 3, 20, 0, 0));
-        assertEquals(result[23].getIndicatorValue(), toBigDecimal(13.8231781073));
-        assertNull(result[23].getMovingAverageValue());
-        assertEquals(result[24].getTime(), of(2018, 3, 21, 0, 0));
-        assertEquals(result[24].getIndicatorValue(), toBigDecimal(13.5745816063));
-        assertEquals(result[24].getMovingAverageValue(), toBigDecimal(15.2184195370));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(14.2388299904));
-        assertEquals(result[32].getMovingAverageValue(), toBigDecimal(14.6880889567));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(14.9767590392));
-        assertEquals(result[45].getMovingAverageValue(), toBigDecimal(14.7196196207));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(15.2341822459));
-        assertEquals(result[72].getMovingAverageValue(), toBigDecimal(15.0205975105));
+        IndicatorResult[] expectedResult = loadExpectedResult("volume_index_2.json", VIResult[].class);
+        VIResult[] actualResult = VolumeIndexFactory.create(buildRequest(POSITIVE_VOLUME_INDEX)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -165,6 +128,12 @@ public class VolumeIndexTest extends IndicatorAbstractTest {
                 .priceType(CLOSE)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
                 .build();
+    }
+
+    private IndicatorRequest buildRequest(IndicatorType volumeIndexType) {
+        VIRequest request = buildRequest();
+        request.setVolumeIndexType(volumeIndexType);
+        return request;
     }
 
 }

@@ -4,30 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class VerticalHorizontalFilterTest extends IndicatorAbstractTest {
 
     @Test
     public void testVerticalHorizontalFilterWithDefaultPeriod() {
-        VHFResult[] result = new VerticalHorizontalFilter(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[26].getIndicatorValue());
-        assertEquals(result[27].getTime(), of(2018, 3, 24, 0, 0));
-        assertEquals(result[27].getIndicatorValue(), toBigDecimal(0.3376665956));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(0.3028674035));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(0.4025610201));
-        assertEquals(result[61].getTime(), of(2018, 4, 27, 0, 0));
-        assertEquals(result[61].getIndicatorValue(), toBigDecimal(0.2934743948));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(0.2552686154));
+        IndicatorResult[] expectedResult = loadExpectedResult("vertical_horizontal_filter.json", VHFResult[].class);
+        VHFResult[] actualResult = new VerticalHorizontalFilter(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

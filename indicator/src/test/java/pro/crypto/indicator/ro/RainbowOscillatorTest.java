@@ -4,41 +4,19 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class RainbowOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testRainbowOscillator() {
-        ROResult[] result = new RainbowOscillator(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[9].getIndicatorValue());
-        assertEquals(result[10].getTime(), of(2018, 3, 7, 0, 0));
-        assertEquals(result[10].getIndicatorValue(), toBigDecimal(-43.5067318925));
-        assertEquals(result[10].getUpperEnvelope(), toBigDecimal(52.0240684705));
-        assertEquals(result[10].getLowerEnvelope(), toBigDecimal(-52.0240684705));
-        assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getIndicatorValue(), toBigDecimal(-31.8992603228));
-        assertEquals(result[13].getUpperEnvelope(), toBigDecimal(62.7580842491));
-        assertEquals(result[13].getLowerEnvelope(), toBigDecimal(-62.7580842491));
-        assertEquals(result[27].getTime(), of(2018, 3, 24, 0, 0));
-        assertEquals(result[27].getIndicatorValue(), toBigDecimal(24.9255401437));
-        assertEquals(result[27].getUpperEnvelope(), toBigDecimal(37.9213509837));
-        assertEquals(result[27].getLowerEnvelope(), toBigDecimal(-37.9213509837));
-        assertEquals(result[52].getTime(), of(2018, 4, 18, 0, 0));
-        assertEquals(result[52].getIndicatorValue(), toBigDecimal(49.5118031054));
-        assertEquals(result[52].getUpperEnvelope(), toBigDecimal(40.2829662758));
-        assertEquals(result[52].getLowerEnvelope(), toBigDecimal(-40.2829662758));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-24.9278571228));
-        assertEquals(result[72].getUpperEnvelope(), toBigDecimal(20.6697401035));
-        assertEquals(result[72].getLowerEnvelope(), toBigDecimal(-20.6697401035));
+        IndicatorResult[] expectedResult = loadExpectedResult("rainbow_oscillator.json", ROResult[].class);
+        ROResult[] actualResult = new RainbowOscillator(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

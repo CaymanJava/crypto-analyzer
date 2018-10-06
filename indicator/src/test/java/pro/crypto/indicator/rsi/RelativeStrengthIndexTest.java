@@ -3,55 +3,28 @@ package pro.crypto.indicator.rsi;
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
+import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.*;
 
 public class RelativeStrengthIndexTest extends IndicatorAbstractTest {
 
     @Test
     public void testRelativeStrengthIndexWithSmoothedMovingAverage() {
-        RSIRequest request = buildRequest();
-        request.setMovingAverageType(SMOOTHED_MOVING_AVERAGE);
-        RSIResult[] result = new RelativeStrengthIndex(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[5].getIndicatorValue());
-        assertNull(result[12].getIndicatorValue());
-        assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getIndicatorValue(), toBigDecimal(42.1006008344));
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(37.4026074595));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(57.8833537021));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(68.1565666031));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(44.2698336999));
+        IndicatorResult[] expectedResult = loadExpectedResult("relative_strength_index_1.json", RSIResult[].class);
+        RSIResult[] actualResult = new RelativeStrengthIndex(buildRequest(SMOOTHED_MOVING_AVERAGE)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testRelativeStrengthIndexWithExponentialMovingAverage() {
-        RSIRequest request = buildRequest();
-        request.setMovingAverageType(EXPONENTIAL_MOVING_AVERAGE);
-        RSIResult[] result = new RelativeStrengthIndex(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[5].getIndicatorValue());
-        assertNull(result[12].getIndicatorValue());
-        assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getIndicatorValue(), toBigDecimal(42.1006008344));
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(33.7850600453));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(64.4229260121));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(76.6942003843));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(34.7557515873));
+        IndicatorResult[] expectedResult = loadExpectedResult("relative_strength_index_2.json", RSIResult[].class);
+        RSIResult[] actualResult = new RelativeStrengthIndex(buildRequest(EXPONENTIAL_MOVING_AVERAGE)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -105,6 +78,12 @@ public class RelativeStrengthIndexTest extends IndicatorAbstractTest {
                 .originalData(originalData)
                 .period(14)
                 .build();
+    }
+
+    private IndicatorRequest buildRequest(IndicatorType movingAverageType) {
+        RSIRequest request = buildRequest();
+        request.setMovingAverageType(movingAverageType);
+        return request;
     }
 
 }

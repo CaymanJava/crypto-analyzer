@@ -3,11 +3,10 @@ package pro.crypto.indicator.ma;
 import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
@@ -15,50 +14,16 @@ public class SimpleMovingAverageTest extends IndicatorAbstractTest {
 
     @Test
     public void testSimpleMovingAverageWithPeriodFifteen() {
-        MARequest request = buildRequest();
-        request.setPeriod(15);
-        MAResult[] result = MovingAverageFactory.create(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[13].getIndicatorValue());
-        assertEquals(result[14].getTime(), of(2018, 3, 11, 0, 0));
-        assertEquals(result[14].getIndicatorValue(), toBigDecimal(1268.2726733333));
-        assertEquals(result[24].getTime(), of(2018, 3, 21, 0, 0));
-        assertEquals(result[24].getIndicatorValue(), toBigDecimal(1197.1813533333));
-        assertEquals(result[31].getTime(), of(2018, 3, 28, 0, 0));
-        assertEquals(result[31].getIndicatorValue(), toBigDecimal(1184.7513466667));
-        assertEquals(result[43].getTime(), of(2018, 4, 9, 0, 0));
-        assertEquals(result[43].getIndicatorValue(), toBigDecimal(1298.774));
-        assertEquals(result[57].getTime(), of(2018, 4, 23, 0, 0));
-        assertEquals(result[57].getIndicatorValue(), toBigDecimal(1388.0780066667));
-        assertEquals(result[68].getTime(), of(2018, 5, 4, 0, 0));
-        assertEquals(result[68].getIndicatorValue(), toBigDecimal(1438.75732));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1431.7199866667));
+        IndicatorResult[] expectedResult = loadExpectedResult("simple_moving_average_1.json", MAResult[].class);
+        MAResult[] actualResult = MovingAverageFactory.create(buildRequest(15)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testSimpleMovingAverageWithPeriodTwenty() {
-        MARequest request = buildRequest();
-        request.setPeriod(20);
-        MAResult[] result = MovingAverageFactory.create(request).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[18].getIndicatorValue());
-        assertEquals(result[19].getTime(), of(2018, 3, 16, 0, 0));
-        assertEquals(result[19].getIndicatorValue(), toBigDecimal(1251.06901));
-        assertEquals(result[24].getTime(), of(2018, 3, 21, 0, 0));
-        assertEquals(result[24].getIndicatorValue(), toBigDecimal(1222.011015));
-        assertEquals(result[31].getTime(), of(2018, 3, 28, 0, 0));
-        assertEquals(result[31].getIndicatorValue(), toBigDecimal(1189.910015));
-        assertEquals(result[43].getTime(), of(2018, 4, 9, 0, 0));
-        assertEquals(result[43].getIndicatorValue(), toBigDecimal(1260.9085));
-        assertEquals(result[57].getTime(), of(2018, 4, 23, 0, 0));
-        assertEquals(result[57].getIndicatorValue(), toBigDecimal(1371.25651));
-        assertEquals(result[68].getTime(), of(2018, 5, 4, 0, 0));
-        assertEquals(result[68].getIndicatorValue(), toBigDecimal(1421.703495));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(1427.10249));
+        IndicatorResult[] expectedResult = loadExpectedResult("simple_moving_average_2.json", MAResult[].class);
+        MAResult[] actualResult = MovingAverageFactory.create(buildRequest(20)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -128,6 +93,12 @@ public class SimpleMovingAverageTest extends IndicatorAbstractTest {
                 .indicatorType(SIMPLE_MOVING_AVERAGE)
                 .priceType(CLOSE)
                 .build();
+    }
+
+    private MARequest buildRequest(int period) {
+        MARequest request = buildRequest();
+        request.setPeriod(period);
+        return request;
     }
 
 }

@@ -4,11 +4,10 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 
@@ -16,30 +15,9 @@ public class ChandeMomentumOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testChandeMomentumOscillatorWithPeriodNine() {
-        CMOResult[] result = new ChandeMomentumOscillator(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[0].getSignalLineValue());
-        assertNull(result[7].getIndicatorValue());
-        assertNull(result[7].getSignalLineValue());
-        assertEquals(result[8].getTime(), of(2018, 3, 5, 0, 0));
-        assertEquals(result[8].getIndicatorValue(), toBigDecimal(14.4293042625));
-        assertNull(result[8].getSignalLineValue());
-        assertEquals(result[20].getTime(), of(2018, 3, 17, 0, 0));
-        assertEquals(result[20].getIndicatorValue(), toBigDecimal(-18.1822657347));
-        assertEquals(result[20].getSignalLineValue(), toBigDecimal(-35.0603603331));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getIndicatorValue(), toBigDecimal(43.6024395497));
-        assertEquals(result[32].getSignalLineValue(), toBigDecimal(5.6834551124));
-        assertEquals(result[34].getTime(), of(2018, 3, 31, 0, 0));
-        assertEquals(result[34].getIndicatorValue(), toBigDecimal(58.0817882728));
-        assertEquals(result[34].getSignalLineValue(), toBigDecimal(22.7547017195));
-        assertEquals(result[45].getTime(), of(2018, 4, 11, 0, 0));
-        assertEquals(result[45].getIndicatorValue(), toBigDecimal(43.7057838743));
-        assertEquals(result[45].getSignalLineValue(), toBigDecimal(34.6819301296));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-58.0739250596));
-        assertEquals(result[72].getSignalLineValue(), toBigDecimal(-25.7416015504));
+        IndicatorResult[] expectedResult = loadExpectedResult("chande_momentum_oscillator.json", CMOResult[].class);
+        CMOResult[] actualResult = new ChandeMomentumOscillator(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

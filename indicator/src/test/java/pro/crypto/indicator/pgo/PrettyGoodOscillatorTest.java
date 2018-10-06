@@ -4,32 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class PrettyGoodOscillatorTest extends IndicatorAbstractTest {
 
     @Test
     public void testPrettyGoodOscillatorWithPeriodFourteen() {
-        PGOResult[] result = new PrettyGoodOscillator(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[25].getIndicatorValue());
-        assertEquals(result[26].getTime(), of(2018, 3, 23, 0, 0));
-        assertEquals(result[26].getIndicatorValue(), toBigDecimal(-1.8996877638));
-        assertEquals(result[40].getTime(), of(2018, 4, 6, 0, 0));
-        assertEquals(result[40].getIndicatorValue(), toBigDecimal(0.7158934085));
-        assertEquals(result[48].getTime(), of(2018, 4, 14, 0, 0));
-        assertEquals(result[48].getIndicatorValue(), toBigDecimal(0.3877340879));
-        assertEquals(result[52].getTime(), of(2018, 4, 18, 0, 0));
-        assertEquals(result[52].getIndicatorValue(), toBigDecimal(1.4114431413));
-        assertEquals(result[65].getTime(), of(2018, 5, 1, 0, 0));
-        assertEquals(result[65].getIndicatorValue(), toBigDecimal(-0.3497530806));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-1.8579410284));
+        IndicatorResult[] expectedResult = loadExpectedResult("pretty_good_oscillator.json", PGOResult[].class);
+        PGOResult[] actualResult = new PrettyGoodOscillator(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

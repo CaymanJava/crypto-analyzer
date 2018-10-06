@@ -1,10 +1,17 @@
 package pro.crypto.indicator.tick.generator;
 
+import com.google.gson.Gson;
+import lombok.SneakyThrows;
+import org.apache.commons.io.FileUtils;
 import pro.crypto.model.tick.Tick;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.URL;
 import java.time.LocalDateTime;
 
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static java.util.Objects.nonNull;
 
 public abstract class TickAbstractGenerator {
 
@@ -12,19 +19,15 @@ public abstract class TickAbstractGenerator {
 
     public abstract Tick[] generate();
 
-    void plusOneDay() {
-        this.startDateTime = this.startDateTime.plusDays(1);
-    }
-
-    Tick generateFullTick(double open, double high, double low, double close, double volume) {
-        return Tick.builder()
-                .open(toBigDecimal(open))
-                .high(toBigDecimal(high))
-                .low(toBigDecimal(low))
-                .close(toBigDecimal(close))
-                .baseVolume(toBigDecimal(volume))
-                .tickTime(this.startDateTime)
-                .build();
+    @SneakyThrows(IOException.class)
+    Tick[] loadOriginalData(String fileName) {
+        ClassLoader classLoader = getClass().getClassLoader();
+        URL url = classLoader.getResource("indicator/request/" + fileName);
+        if (nonNull(url)) {
+            File file = new File(url.getFile());
+            return new Gson().fromJson(FileUtils.readFileToString(file, "UTF-8"), Tick[].class);
+        }
+        throw new FileNotFoundException();
     }
 
 }

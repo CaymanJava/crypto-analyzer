@@ -4,51 +4,18 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 
 public class AroonUpDownTest extends IndicatorAbstractTest {
 
     @Test
     public void testAroonWithPeriodFourteen() {
-        AroonResult[] result = new AroonUpDown(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getAroonUp());
-        assertNull(result[0].getAroonDown());
-        assertNull(result[0].getAroonOscillator());
-        assertNull(result[5].getAroonUp());
-        assertNull(result[5].getAroonDown());
-        assertNull(result[5].getAroonOscillator());
-        assertNull(result[13].getAroonUp());
-        assertNull(result[13].getAroonDown());
-        assertNull(result[13].getAroonOscillator());
-        assertEquals(result[14].getTime(), of(2018, 3, 11, 0, 0));
-        assertEquals(result[14].getAroonUp(), toBigDecimal(42.8571428571));
-        assertEquals(result[14].getAroonDown(), toBigDecimal(100.0));
-        assertEquals(result[14].getAroonOscillator(), toBigDecimal(-57.1428571429));
-        assertEquals(result[26].getTime(), of(2018, 3, 23, 0, 0));
-        assertEquals(result[26].getAroonUp(), toBigDecimal(0.0));
-        assertEquals(result[26].getAroonDown(), toBigDecimal(92.8571428571));
-        assertEquals(result[26].getAroonOscillator(), toBigDecimal(-92.8571428571));
-        assertEquals(result[32].getTime(), of(2018, 3, 29, 0, 0));
-        assertEquals(result[32].getAroonUp(), toBigDecimal(100.0));
-        assertEquals(result[32].getAroonDown(), toBigDecimal(64.2857142857));
-        assertEquals(result[32].getAroonOscillator(), toBigDecimal(35.7142857143));
-        assertEquals(result[47].getTime(), of(2018, 4, 13, 0, 0));
-        assertEquals(result[47].getAroonUp(), toBigDecimal(78.5714285714));
-        assertEquals(result[47].getAroonDown(), toBigDecimal(0.0));
-        assertEquals(result[47].getAroonOscillator(), toBigDecimal(78.5714285714));
-        assertEquals(result[64].getTime(), of(2018, 4, 30, 0, 0));
-        assertEquals(result[64].getAroonUp(), toBigDecimal(92.8571428571));
-        assertEquals(result[64].getAroonDown(), toBigDecimal(0.0));
-        assertEquals(result[64].getAroonOscillator(), toBigDecimal(92.8571428571));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getAroonUp(), toBigDecimal(35.7142857143));
-        assertEquals(result[72].getAroonDown(), toBigDecimal(100.0));
-        assertEquals(result[72].getAroonOscillator(), toBigDecimal(-64.2857142857));
+        IndicatorResult[] expectedResult = loadExpectedResult("aroon_up_down.json", AroonResult[].class);
+        AroonResult[] actualResult = new AroonUpDown(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

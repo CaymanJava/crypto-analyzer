@@ -83,8 +83,7 @@ class ICDataGenerator {
     private static ICResult icResult(LocalDateTime tickTime, double tenkan,
                                      double kijun, double senkouA,
                                      double senkouB, double chinkou) {
-        return new ICResult(
-                tickTime, toBigDecimal(tenkan), toBigDecimal(kijun),
+        return new ICResult(tickTime, toBigDecimal(tenkan), toBigDecimal(kijun),
                 toBigDecimal(senkouA), toBigDecimal(senkouB), toBigDecimal(chinkou)
         );
     }

@@ -4,11 +4,10 @@ import org.junit.Test;
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.indicator.IndicatorAbstractTest;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
 
-import static java.time.LocalDateTime.of;
-import static org.junit.Assert.*;
-import static pro.crypto.helper.MathHelper.toBigDecimal;
+import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.AVERAGE_TRUE_RANGE;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 
@@ -16,22 +15,9 @@ public class QuickStickTest extends IndicatorAbstractTest {
 
     @Test
     public void testQuickStick() {
-        QSResult[] result = new QuickStick(buildRequest()).getResult();
-        assertTrue(result.length == originalData.length);
-        assertNull(result[0].getIndicatorValue());
-        assertNull(result[12].getIndicatorValue());
-        assertEquals(result[13].getTime(), of(2018, 3, 10, 0, 0));
-        assertEquals(result[13].getIndicatorValue(), toBigDecimal(-5.3407));
-        assertEquals(result[27].getTime(), of(2018, 3, 24, 0, 0));
-        assertEquals(result[27].getIndicatorValue(), toBigDecimal(-0.6388615112));
-        assertEquals(result[48].getTime(), of(2018, 4, 14, 0, 0));
-        assertEquals(result[48].getIndicatorValue(), toBigDecimal(2.1451538950));
-        assertEquals(result[52].getTime(), of(2018, 4, 18, 0, 0));
-        assertEquals(result[52].getIndicatorValue(), toBigDecimal(6.7928466633));
-        assertEquals(result[65].getTime(), of(2018, 5, 1, 0, 0));
-        assertEquals(result[65].getIndicatorValue(), toBigDecimal(-0.8119739654));
-        assertEquals(result[72].getTime(), of(2018, 5, 8, 0, 0));
-        assertEquals(result[72].getIndicatorValue(), toBigDecimal(-5.1234889056));
+        IndicatorResult[] expectedResult = loadExpectedResult("quick_stick.json", QSResult[].class);
+        QSResult[] actualResult = new QuickStick(buildRequest()).getResult();
+        assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test

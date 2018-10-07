@@ -1,0 +1,19 @@
+package pro.crypto.analyzer.eom;
+
+import org.junit.Test;
+import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.indicator.eom.EOMResult;
+import pro.crypto.model.result.AnalyzerResult;
+
+import static org.junit.Assert.assertArrayEquals;
+
+public class EOMAnalyzerTest extends AnalyzerAbstractTest {
+
+    @Test
+    public void testEaseOfMovementAnalyzerWithPeriodFourteen() {
+        AnalyzerResult[] expectedResult = loadAnalyzerExpectedResult("eom_analyzer.json", EOMAnalyzerResult[].class);
+        EOMAnalyzerResult[] actualResult = new EOMAnalyzer(buildAnalyzerRequest("eom_indicator.json", EOMResult[].class)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
+    }
+
+}

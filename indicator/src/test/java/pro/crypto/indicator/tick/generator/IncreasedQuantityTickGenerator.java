@@ -2,13 +2,7 @@ package pro.crypto.indicator.tick.generator;
 
 import pro.crypto.model.tick.Tick;
 
-import java.time.LocalDateTime;
-
-public class IncreasedQuantityTickGenerator extends OneDayTickWithFullPriceGenerator {
-
-    public IncreasedQuantityTickGenerator(LocalDateTime startDateTime) {
-        super(startDateTime);
-    }
+public class IncreasedQuantityTickGenerator extends OneDayTickGenerator {
 
     @Override
     public Tick[] generate() {

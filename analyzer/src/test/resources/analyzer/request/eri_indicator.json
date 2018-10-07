@@ -1,0 +1,1328 @@
+[
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1278.3130769231,
+    "indicatorValue": -48.7631269231
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1270.1383516459,
+    "indicatorValue": -45.5383516459,
+    "smoothedLineValue": -47.1507392845
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1257.9657442643,
+    "indicatorValue": -64.4007442643,
+    "smoothedLineValue": -55.7757417744
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1247.1377807947,
+    "indicatorValue": -62.3927807947,
+    "smoothedLineValue": -59.0842612846
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1243.5880978230,
+    "indicatorValue": -37.9130978230,
+    "smoothedLineValue": -48.4986795538
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1240.4483695616,
+    "indicatorValue": -17.1833695616,
+    "smoothedLineValue": -32.8410245577
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1234.5500310510,
+    "indicatorValue": -17.9500310510,
+    "smoothedLineValue": -25.3955278044
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1225.6228980410,
+    "indicatorValue": -50.2179480410,
+    "smoothedLineValue": -37.8067379227
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1223.9224840346,
+    "indicatorValue": -36.5624840346,
+    "smoothedLineValue": -37.1846109787
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1218.6921434567,
+    "indicatorValue": -15.4521434567,
+    "smoothedLineValue": -26.3183772177
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1211.1018515320,
+    "indicatorValue": -29.8668515320,
+    "smoothedLineValue": -28.0926143749
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1200.9301584529,
+    "indicatorValue": -45.4201584529,
+    "smoothedLineValue": -36.7563864139
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1189.2829929561,
+    "indicatorValue": -59.7079929561,
+    "signalLineValue": -40.8745446567,
+    "smoothedLineValue": -48.2321896850
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1180.7011368169,
+    "indicatorValue": -53.8161368169,
+    "signalLineValue": -41.2632377254,
+    "smoothedLineValue": -51.0241632510
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1171.1881172688,
+    "indicatorValue": -47.2031172688,
+    "signalLineValue": -41.3912966195,
+    "smoothedLineValue": -49.1136402599
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1170.0712433729,
+    "indicatorValue": -32.9112433729,
+    "signalLineValue": -38.9690273202,
+    "smoothedLineValue": -41.0124418164
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1175.8424943214,
+    "indicatorValue": 24.1675056786,
+    "signalLineValue": -32.3105437453,
+    "smoothedLineValue": -8.4224680689
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1182.2264237060,
+    "indicatorValue": 25.2835762940,
+    "signalLineValue": -27.4492611209,
+    "smoothedLineValue": 8.4305541126
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1196.5426346094,
+    "indicatorValue": 74.7623653906,
+    "signalLineValue": -20.3765122784,
+    "smoothedLineValue": 41.5964597516
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1201.6679725239,
+    "indicatorValue": 39.6670774761,
+    "signalLineValue": -15.9444270071,
+    "smoothedLineValue": 40.6317686139
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1211.7568335949,
+    "indicatorValue": 61.5781664051,
+    "signalLineValue": -7.3447258959,
+    "smoothedLineValue": 51.1049675095
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1222.6287145132,
+    "indicatorValue": 48.1312354868,
+    "signalLineValue": -0.8298243942,
+    "smoothedLineValue": 49.6181014982
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 31
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1235.0631838722,
+    "indicatorValue": 55.0818161278,
+    "signalLineValue": 4.5958648046,
+    "smoothedLineValue": 52.3499588130
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1243.3113004644,
+    "indicatorValue": 50.8186995356,
+    "signalLineValue": 10.8024456559,
+    "smoothedLineValue": 51.5843291743
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1254.2996861156,
+    "indicatorValue": 45.5553138844,
+    "signalLineValue": 17.8005589126,
+    "smoothedLineValue": 48.5698215294
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1260.6440166724,
+    "indicatorValue": 53.1209833276,
+    "signalLineValue": 26.4797109345,
+    "smoothedLineValue": 50.8454024285
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1270.7134428651,
+    "indicatorValue": 43.5365571349,
+    "signalLineValue": 33.9683797000,
+    "smoothedLineValue": 47.1909797817
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1277.1558224577,
+    "indicatorValue": 51.2641775423,
+    "signalLineValue": 41.5427869931,
+    "smoothedLineValue": 49.2275786620
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1280.4949906790,
+    "indicatorValue": 18.5650093210,
+    "signalLineValue": 45.5024987388,
+    "smoothedLineValue": 33.8962939915
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1287.0999920126,
+    "indicatorValue": 30.4900079874,
+    "signalLineValue": 45.9888450703,
+    "smoothedLineValue": 32.1931509895
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1293.1942788698,
+    "indicatorValue": 42.1407211302,
+    "signalLineValue": 47.2855485192,
+    "smoothedLineValue": 37.1669360599
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1302.8379533199,
+    "indicatorValue": 34.4370466801,
+    "signalLineValue": 44.1836009261,
+    "smoothedLineValue": 35.8019913700
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1316.2239599925,
+    "indicatorValue": 88.1310900075,
+    "signalLineValue": 47.9116018901,
+    "smoothedLineValue": 61.9665406888
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1328.3576799972,
+    "indicatorValue": 61.9923200028,
+    "signalLineValue": 47.9434598591,
+    "smoothedLineValue": 61.9794303458
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1341.3051542872,
+    "indicatorValue": 61.4748457128,
+    "signalLineValue": 48.9698914150,
+    "smoothedLineValue": 61.7271380293
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1346.3629893905,
+    "indicatorValue": 39.4120106095,
+    "signalLineValue": 47.7645217597,
+    "smoothedLineValue": 50.5695743194
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1348.2039909067,
+    "indicatorValue": 23.8210090933,
+    "signalLineValue": 45.6877763411,
+    "smoothedLineValue": 37.1952917064
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1344.0619922045,
+    "indicatorValue": -6.9770422045,
+    "signalLineValue": 41.6468258727,
+    "smoothedLineValue": 15.1091247510
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1344.8474361755,
+    "indicatorValue": 3.1775638245,
+    "signalLineValue": 37.8050243724,
+    "smoothedLineValue": 9.1433442878
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1347.1949452940,
+    "indicatorValue": 5.7400547060,
+    "signalLineValue": 34.8976011087,
+    "smoothedLineValue": 7.4416994969
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1356.3842388262,
+    "indicatorValue": 38.9007111738,
+    "signalLineValue": 33.9465652342,
+    "smoothedLineValue": 23.1712053354
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1364.2064904248,
+    "indicatorValue": 35.6285095752,
+    "signalLineValue": 35.2591421768,
+    "smoothedLineValue": 29.3998574553
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1368.4184060797,
+    "indicatorValue": 41.1215939203,
+    "signalLineValue": 36.0769564793,
+    "smoothedLineValue": 35.2607256878
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1369.2886337829,
+    "indicatorValue": 12.0564162171,
+    "signalLineValue": 33.7627791783,
+    "smoothedLineValue": 23.6585709525
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1376.4402575303,
+    "indicatorValue": 21.0847424697,
+    "signalLineValue": 32.7356788545,
+    "smoothedLineValue": 22.3716567111
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1389.4573778870,
+    "indicatorValue": 59.9426221130,
+    "signalLineValue": 30.5673351703,
+    "smoothedLineValue": 41.1571394121
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1400.7834667637,
+    "indicatorValue": 61.6415332363,
+    "signalLineValue": 30.5403515728,
+    "smoothedLineValue": 51.3993363242
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1412.3801143724,
+    "indicatorValue": 61.6548356276,
+    "signalLineValue": 30.5541969509,
+    "smoothedLineValue": 56.5270859759
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1416.9558123206,
+    "indicatorValue": 42.9691876794,
+    "signalLineValue": 30.8278259563,
+    "smoothedLineValue": 49.7481368277
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1427.0963962778,
+    "indicatorValue": 49.9386037222,
+    "signalLineValue": 32.8368716970,
+    "smoothedLineValue": 49.8433702750
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1434.4797682403,
+    "indicatorValue": 53.6001817597,
+    "signalLineValue": 37.4966581558,
+    "smoothedLineValue": 51.7217760174
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1441.6655156367,
+    "indicatorValue": 56.3494343633,
+    "signalLineValue": 41.5868020434,
+    "smoothedLineValue": 54.0356051904
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1442.7075848318,
+    "indicatorValue": 17.2523651682,
+    "signalLineValue": 42.4723643866,
+    "smoothedLineValue": 35.6439851793
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1440.9422155696,
+    "indicatorValue": -12.3921655696,
+    "signalLineValue": 38.5267584833,
+    "smoothedLineValue": 11.6259098049
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1436.6290419155,
+    "indicatorValue": -8.3640419155,
+    "signalLineValue": 35.1427160609,
+    "smoothedLineValue": 1.6309339447
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1434.6020216412,
+    "indicatorValue": -23.8570216412,
+    "signalLineValue": 30.1443610177,
+    "smoothedLineValue": -11.1130438483
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1424.9645899753,
+    "indicatorValue": -35.7296399753,
+    "signalLineValue": 26.4685105414,
+    "smoothedLineValue": -23.4213419118
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1420.0839342631,
+    "indicatorValue": -34.2339342631,
+    "signalLineValue": 22.2132277158,
+    "smoothedLineValue": -28.8276380875
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1416.7276579388,
+    "indicatorValue": -24.2976579388,
+    "signalLineValue": 15.7332061733,
+    "smoothedLineValue": -26.5626480132
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1414.2737068039,
+    "indicatorValue": -14.1737568039,
+    "signalLineValue": 9.9012607856,
+    "smoothedLineValue": -20.3682024086
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "movingAverageValue": 1406.8931772583,
+    "indicatorValue": -31.7581272583,
+    "signalLineValue": 2.7156482559,
+    "smoothedLineValue": -26.0631648335
+  }
+]

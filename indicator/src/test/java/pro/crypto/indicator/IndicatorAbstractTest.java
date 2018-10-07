@@ -6,7 +6,7 @@ import org.apache.commons.io.FileUtils;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.tick.generator.OneDayTickGenerator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
@@ -16,7 +16,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 
-import static java.time.LocalDateTime.of;
 import static java.util.Objects.nonNull;
 
 public abstract class IndicatorAbstractTest {
@@ -27,7 +26,7 @@ public abstract class IndicatorAbstractTest {
 
     @Before
     public void init() {
-        originalData = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
+        originalData = new OneDayTickGenerator().generate();
     }
 
     @SneakyThrows(IOException.class)

@@ -1,0 +1,68 @@
+[
+  {
+    "divergenceType": "BULLISH",
+    "divergenceClass": "HIDDEN",
+    "indexFrom": 19,
+    "indexTo": 21
+  },
+  {
+    "divergenceType": "BEARISH",
+    "divergenceClass": "CLASSIC",
+    "indexFrom": 20,
+    "indexTo": 29
+  },
+  {
+    "divergenceType": "BEARISH",
+    "divergenceClass": "CLASSIC",
+    "indexFrom": 20,
+    "indexTo": 30
+  },
+  {
+    "divergenceType": "BEARISH",
+    "divergenceClass": "CLASSIC",
+    "indexFrom": 30,
+    "indexTo": 33
+  },
+  {
+    "divergenceType": "BEARISH",
+    "divergenceClass": "CLASSIC",
+    "indexFrom": 8,
+    "indexTo": 34
+  },
+  {
+    "divergenceType": "BEARISH",
+    "divergenceClass": "CLASSIC",
+    "indexFrom": 8,
+    "indexTo": 36
+  },
+  {
+    "divergenceType": "BULLISH",
+    "divergenceClass": "EXTENDED",
+    "indexFrom": 35,
+    "indexTo": 37
+  },
+  {
+    "divergenceType": "BEARISH",
+    "divergenceClass": "CLASSIC",
+    "indexFrom": 36,
+    "indexTo": 38
+  },
+  {
+    "divergenceType": "BULLISH",
+    "divergenceClass": "HIDDEN",
+    "indexFrom": 37,
+    "indexTo": 39
+  },
+  {
+    "divergenceType": "BEARISH",
+    "divergenceClass": "EXTENDED",
+    "indexFrom": 46,
+    "indexTo": 56
+  },
+  {
+    "divergenceType": "BULLISH",
+    "divergenceClass": "EXTENDED",
+    "indexFrom": 60,
+    "indexTo": 64
+  }
+]

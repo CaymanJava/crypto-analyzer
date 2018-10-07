@@ -1,0 +1,163 @@
+[
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 1,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    },
+    "trendStrength": {
+      "trend": "UPTREND",
+      "strength": "STRONG"
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 1,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    },
+    "trendStrength": {
+      "trend": "UPTREND",
+      "strength": "STRONG"
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 1,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "STRONG"
+    },
+    "trendStrength": {
+      "trend": "UPTREND",
+      "strength": "STRONG"
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 1,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    },
+    "trendStrength": {
+      "trend": "DOWNTREND",
+      "strength": "STRONG"
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 1,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    },
+    "trendStrength": {
+      "trend": "DOWNTREND",
+      "strength": "STRONG"
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 1,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    },
+    "trendStrength": {
+      "trend": "CONSOLIDATION",
+      "strength": "NORMAL"
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 1,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    },
+    "trendStrength": {
+      "trend": "CONSOLIDATION",
+      "strength": "NORMAL"
+    }
+  }
+]

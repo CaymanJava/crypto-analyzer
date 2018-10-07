@@ -9,13 +9,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
-import java.time.LocalDateTime;
 
 import static java.util.Objects.nonNull;
 
 public abstract class TickAbstractGenerator {
-
-    LocalDateTime startDateTime;
 
     public abstract Tick[] generate();
 

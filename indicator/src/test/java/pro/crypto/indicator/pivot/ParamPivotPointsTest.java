@@ -4,14 +4,13 @@ import lombok.Data;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import pro.crypto.indicator.tick.generator.OneDayTickWithFullPriceGenerator;
+import pro.crypto.indicator.tick.generator.OneDayTickGenerator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.Collection;
 
-import static java.time.LocalDateTime.of;
 import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;
 import static org.junit.runners.Parameterized.Parameters;
@@ -124,7 +123,7 @@ public class ParamPivotPointsTest {
     @Data
     private static class PivotTestHelper {
 
-        private final static Tick[] ORIGINAL_DATA = new OneDayTickWithFullPriceGenerator(of(2018, 2, 25, 0, 0)).generate();
+        private final static Tick[] ORIGINAL_DATA = new OneDayTickGenerator().generate();
         private final PivotResult actualResult;
         private final PivotResult expectedResult;
 

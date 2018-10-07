@@ -1,9 +1,9 @@
-package pro.crypto.indicator;
+package pro.crypto.analyzer;
 
 import org.junit.Before;
 import pro.crypto.indicator.tick.generator.IncreasedQuantityTickGenerator;
 
-public abstract class IncreasedQuantityIndicatorAbstractTest extends IndicatorAbstractTest {
+public class IncreasedQuantityAnalyzerAbstractTest extends AnalyzerAbstractTest {
 
     @Before
     public void init() {

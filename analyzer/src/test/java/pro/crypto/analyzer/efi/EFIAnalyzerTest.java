@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.efi;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.efi.EFIResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class EFIAnalyzerTest extends AnalyzerAbstractTest {
+public class EFIAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testElderForceIndexAnalyzerWithPeriodThirteen() {

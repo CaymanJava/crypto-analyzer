@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.atrb;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.atrb.ATRBResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class ATRBAnalyzerTest extends AnalyzerAbstractTest {
+public class ATRBAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testAverageTrueRangeBandsAnalyzer() {

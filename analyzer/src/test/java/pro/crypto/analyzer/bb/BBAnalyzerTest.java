@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.bb;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.bb.BBResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class BBAnalyzerTest extends AnalyzerAbstractTest {
+public class BBAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testBollingerBandsAnalyzer() {

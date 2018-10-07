@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.co;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.co.COResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class COAnalyzerTest extends AnalyzerAbstractTest {
+public class COAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testChaikinOscillatorAnalyzer() {

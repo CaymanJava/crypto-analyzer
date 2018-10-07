@@ -19,35 +19,35 @@ import static pro.crypto.model.tick.TimeFrame.ONE_DAY;
 public class DisplacedMovingAverageTest extends IndicatorAbstractTest {
 
     @Test
-    public void displacedSimpleMovingAverageTest() {
+    public void testDisplacedSimpleMovingAverage() {
         IndicatorResult[] expectedResult = loadExpectedResult("displaced_moving_average_1.json", MAResult[].class);
         MAResult[] actualResult = MovingAverageFactory.create(buildRequest(SIMPLE_MOVING_AVERAGE)).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void displacedExponentialMovingAverageTest() {
+    public void testDisplacedExponentialMovingAverage() {
         IndicatorResult[] expectedResult = loadExpectedResult("displaced_moving_average_2.json", MAResult[].class);
         MAResult[] actualResult = MovingAverageFactory.create(buildRequest(EXPONENTIAL_MOVING_AVERAGE)).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void displacedHullMovingAverageTest() {
+    public void testDisplacedHullMovingAverage() {
         IndicatorResult[] expectedResult = loadExpectedResult("displaced_moving_average_3.json", MAResult[].class);
         MAResult[] actualResult = MovingAverageFactory.create(buildRequest(HULL_MOVING_AVERAGE)).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void displacedSmoothedMovingAverageTest() {
+    public void testDisplacedSmoothedMovingAverage() {
         IndicatorResult[] expectedResult = loadExpectedResult("displaced_moving_average_4.json", MAResult[].class);
         MAResult[] actualResult = MovingAverageFactory.create(buildRequest(SMOOTHED_MOVING_AVERAGE)).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void displacedWeightedMovingAverageTest() {
+    public void testDisplacedWeightedMovingAverage() {
         IndicatorResult[] expectedResult = loadExpectedResult("displaced_moving_average_5.json", MAResult[].class);
         MAResult[] actualResult = MovingAverageFactory.create(buildRequest(WEIGHTED_MOVING_AVERAGE)).getResult();
         assertArrayEquals(expectedResult, actualResult);

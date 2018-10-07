@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.adx;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.adx.ADXResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class ADXAnalyzerTest extends AnalyzerAbstractTest {
+public class ADXAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testAverageDirectionalMovementIndexAnalyzer() {

@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.cmf;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.cmf.CMFResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class CMFAnalyzerTest extends AnalyzerAbstractTest {
+public class CMFAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testChaikinMoneyFlowAnalyzer() {

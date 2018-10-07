@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.kst;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.kst.KSTResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class KSTAnalyzerTest extends AnalyzerAbstractTest {
+public class KSTAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testKnowSureThingAnalyzer() {

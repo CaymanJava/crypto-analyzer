@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.kvo;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.kvo.KVOResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class KVOAnalyzerTest extends AnalyzerAbstractTest {
+public class KVOAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testKlingerVolumeOscillatorAnalyzer() {

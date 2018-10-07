@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.aroon;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.aroon.AroonResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class AroonAnalyzerTest extends AnalyzerAbstractTest {
+public class AroonAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testAroonAnalyzer() {

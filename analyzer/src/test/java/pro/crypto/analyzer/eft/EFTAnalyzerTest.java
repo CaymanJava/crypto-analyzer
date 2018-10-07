@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.eft;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.eft.EFTResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class EFTAnalyzerTest extends AnalyzerAbstractTest {
+public class EFTAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testEhlersFisherTransformAnalyzer() {

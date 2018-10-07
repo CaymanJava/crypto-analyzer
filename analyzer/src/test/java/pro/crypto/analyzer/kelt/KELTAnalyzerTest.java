@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.kelt;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.kelt.KELTResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class KELTAnalyzerTest extends AnalyzerAbstractTest {
+public class KELTAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testKeltnerChannelAnalyzer() {

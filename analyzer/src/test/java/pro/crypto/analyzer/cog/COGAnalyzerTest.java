@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.cog;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.cog.COGResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class COGAnalyzerTest extends AnalyzerAbstractTest {
+public class COGAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testCenterOfGravityAnalyzer() {

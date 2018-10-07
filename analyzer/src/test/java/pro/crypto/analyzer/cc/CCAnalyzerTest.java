@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.cc;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.cc.CCResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class CCAnalyzerTest extends AnalyzerAbstractTest {
+public class CCAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testCoppockCurveAnalyzer() {

@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.eom;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.eom.EOMResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class EOMAnalyzerTest extends AnalyzerAbstractTest {
+public class EOMAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testEaseOfMovementAnalyzerWithPeriodFourteen() {

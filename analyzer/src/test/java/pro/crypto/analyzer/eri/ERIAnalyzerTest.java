@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.eri;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.eri.ERIResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class ERIAnalyzerTest extends AnalyzerAbstractTest {
+public class ERIAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testEhlersFisherTransformAnalyzer() {

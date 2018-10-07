@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.chop;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.chop.CHOPResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class CHOPAnalyzerTest extends AnalyzerAbstractTest {
+public class CHOPAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testChoppinessIndexAnalyzer() {

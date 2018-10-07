@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.cmo;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.cmo.CMOResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class CMOAnalyzerTest extends AnalyzerAbstractTest {
+public class CMOAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testChandeMomentumOscillatorAnalyzer() {

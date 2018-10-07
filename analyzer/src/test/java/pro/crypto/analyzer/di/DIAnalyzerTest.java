@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.di;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.di.DIResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class DIAnalyzerTest extends AnalyzerAbstractTest {
+public class DIAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testDisparityIndexAnalyzer() {

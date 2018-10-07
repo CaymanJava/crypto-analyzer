@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.ce;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.ce.CEResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class CEAnalyzerTest extends AnalyzerAbstractTest {
+public class CEAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testChandelierExitAnalyzer() {

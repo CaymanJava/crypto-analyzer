@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.hlb;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.hlb.HLBResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class HLBAnalyzerTest extends AnalyzerAbstractTest {
+public class HLBAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testHighLowBandsAnalyzer() {

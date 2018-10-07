@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.imi;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.imi.IMIResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class IMIAnalyzerTest extends AnalyzerAbstractTest {
+public class IMIAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testIntradayMomentumIndexIndexAnalyzer() {

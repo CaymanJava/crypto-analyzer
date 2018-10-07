@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.cci;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.cci.CCIResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class CCIAnalyzerTest extends AnalyzerAbstractTest {
+public class CCIAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testCommodityChannelIndexAnalyzer() {

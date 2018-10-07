@@ -1,14 +1,14 @@
 package pro.crypto.analyzer.ic;
 
 import org.junit.Test;
-import pro.crypto.analyzer.IncreasedQuantityAnalyzerAbstractTest;
+import pro.crypto.analyzer.IncreasedQuantityAnalyzerBaseTest;
 import pro.crypto.indicator.ic.ICResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.analyzer.ic.ICDataGenerator.*;
 
-public class ICAnalyzerTest extends IncreasedQuantityAnalyzerAbstractTest {
+public class ICAnalyzerTest extends IncreasedQuantityAnalyzerBaseTest {
 
     @Test
     public void testIchimokuCloudsAnalyzer() {

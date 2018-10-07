@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.dpo;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.dpo.DPOResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class DPOAnalyzerTest extends AnalyzerAbstractTest {
+public class DPOAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testDetrendedPriceOscillatorAnalyzerWithPeriodSeven() {

@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.ao;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.ao.AOResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class AOAnalyzerTest extends AnalyzerAbstractTest {
+public class AOAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testAccelerationDecelerationOscillatorAnalyzer() {

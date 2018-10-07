@@ -17,7 +17,7 @@ import java.net.URL;
 
 import static java.util.Objects.nonNull;
 
-public class AnalyzerAbstractTest {
+public class AnalyzerBaseTest {
 
     Tick[] originalData;
 

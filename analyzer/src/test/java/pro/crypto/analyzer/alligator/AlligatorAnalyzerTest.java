@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.alligator;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.alligator.AlligatorResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class AlligatorAnalyzerTest extends AnalyzerAbstractTest {
+public class AlligatorAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testAlligatorAnalyzer() {

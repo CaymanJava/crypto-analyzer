@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.fractal;
 
 import org.junit.Test;
-import pro.crypto.analyzer.AnalyzerAbstractTest;
+import pro.crypto.analyzer.AnalyzerBaseTest;
 import pro.crypto.indicator.fractal.FractalResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class FractalAnalyzerTest extends AnalyzerAbstractTest {
+public class FractalAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testFractalAnalyzer() {

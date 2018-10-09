@@ -12,6 +12,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -27,6 +31,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -42,6 +50,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -57,6 +69,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -72,6 +88,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -87,6 +107,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -102,6 +126,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -117,6 +145,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -132,6 +164,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -147,6 +183,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -162,6 +202,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -177,6 +221,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -192,6 +240,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -207,6 +259,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -222,6 +278,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -237,6 +297,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -252,6 +316,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -267,6 +335,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -282,6 +354,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -297,6 +373,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -312,6 +392,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -327,6 +411,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -342,6 +430,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -357,6 +449,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -372,6 +468,10 @@
         "second": 0,
         "nano": 0
       }
+    },
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
     }
   },
   {
@@ -388,7 +488,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": -53.2538699758
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -404,7 +507,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": -54.2949545364
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -420,7 +526,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": -50.5623005116
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -436,7 +545,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": -43.3043829682
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -452,7 +564,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": -36.3219759707
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -468,7 +583,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": -25.4988220485
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -484,7 +602,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": -20.7187496321
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -500,7 +621,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": -13.5570547260
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -516,9 +640,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": -6.5494925671,
-    "signalLineValue": -33.7846225485,
-    "barChartValue": 27.2351299814
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -534,9 +659,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.7552298359,
-    "signalLineValue": -26.8766520716,
-    "barChartValue": 27.6318819075
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -552,9 +678,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 5.1239413514,
-    "signalLineValue": -20.4765333870,
-    "barChartValue": 25.6004747384
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -570,9 +697,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 10.6764766811,
-    "signalLineValue": -14.2459313734,
-    "barChartValue": 24.9224080545
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -588,9 +716,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 13.1883892438,
-    "signalLineValue": -8.7590672500,
-    "barChartValue": 21.9474564938
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -606,9 +735,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.5923276967,
-    "signalLineValue": -3.4887882607,
-    "barChartValue": 21.0811159574
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -624,9 +754,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 19.6201241758,
-    "signalLineValue": 1.1329942266,
-    "barChartValue": 18.4871299492
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -642,9 +773,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 19.7663370974,
-    "signalLineValue": 4.8596628008,
-    "barChartValue": 14.9066742966
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -660,9 +792,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 21.7456624659,
-    "signalLineValue": 8.2368627338,
-    "barChartValue": 13.5087997321
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -678,9 +811,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 23.2903115440,
-    "signalLineValue": 11.2475524958,
-    "barChartValue": 12.0427590482
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -696,9 +830,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 26.7032381808,
-    "signalLineValue": 14.3386896328,
-    "barChartValue": 12.3645485480
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -714,9 +849,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 31.9319044814,
-    "signalLineValue": 17.8573326025,
-    "barChartValue": 14.0745718789
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -732,9 +868,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 36.0330885688,
-    "signalLineValue": 21.4924837958,
-    "barChartValue": 14.5406047730
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -750,9 +887,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 40.2579696780,
-    "signalLineValue": 25.2455809722,
-    "barChartValue": 15.0123887058
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -768,9 +906,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 39.7365179042,
-    "signalLineValue": 28.1437683586,
-    "barChartValue": 11.5927495456
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -786,9 +925,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 37.4823147447,
-    "signalLineValue": 30.0114776358,
-    "barChartValue": 7.4708371089
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -804,9 +944,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 32.0949782010,
-    "signalLineValue": 30.4281777488,
-    "barChartValue": 1.6668004522
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -822,9 +963,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 29.9294663403,
-    "signalLineValue": 30.3284354671,
-    "barChartValue": -0.3989691268
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "NORMAL"
+    }
   },
   {
     "time": {
@@ -840,9 +982,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 28.8266844959,
-    "signalLineValue": 30.0280852729,
-    "barChartValue": -1.2014007770
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -858,9 +1001,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 31.6419216854,
-    "signalLineValue": 30.3508525554,
-    "barChartValue": 1.2910691300
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "NORMAL"
+    }
   },
   {
     "time": {
@@ -876,9 +1020,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 33.4566867578,
-    "signalLineValue": 30.9720193959,
-    "barChartValue": 2.4846673619
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -894,9 +1039,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 33.1052076931,
-    "signalLineValue": 31.3986570553,
-    "barChartValue": 1.7065506378
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -912,9 +1058,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 30.9225445219,
-    "signalLineValue": 31.3034345486,
-    "barChartValue": -0.3808900267
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "NORMAL"
+    }
   },
   {
     "time": {
@@ -930,9 +1077,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 32.4370671677,
-    "signalLineValue": 31.5301610724,
-    "barChartValue": 0.9069060953
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "NORMAL"
+    }
   },
   {
     "time": {
@@ -948,9 +1096,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 37.0998257367,
-    "signalLineValue": 32.6440940053,
-    "barChartValue": 4.4557317314
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -966,9 +1115,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 40.4243171997,
-    "signalLineValue": 34.2001386442,
-    "barChartValue": 6.2241785555
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -984,9 +1134,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 43.6228866676,
-    "signalLineValue": 36.0846882489,
-    "barChartValue": 7.5381984187
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1002,9 +1153,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 42.6363198812,
-    "signalLineValue": 37.3950145754,
-    "barChartValue": 5.2413053058
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1020,9 +1172,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 44.8499553601,
-    "signalLineValue": 38.8860027323,
-    "barChartValue": 5.9639526278
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1038,9 +1191,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 45.3424702760,
-    "signalLineValue": 40.1772962410,
-    "barChartValue": 5.1651740350
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1056,9 +1210,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 45.6902529558,
-    "signalLineValue": 41.2798875840,
-    "barChartValue": 4.4103653718
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1074,9 +1229,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 42.5846097251,
-    "signalLineValue": 41.5408320122,
-    "barChartValue": 1.0437777129
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1092,9 +1248,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 38.1815603607,
-    "signalLineValue": 40.8689776819,
-    "barChartValue": -2.6874173212
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "NORMAL"
+    }
   },
   {
     "time": {
@@ -1110,9 +1267,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 32.7332275510,
-    "signalLineValue": 39.2418276557,
-    "barChartValue": -6.5086001047
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1128,9 +1286,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 29.0240901345,
-    "signalLineValue": 37.1982801515,
-    "barChartValue": -8.1741900170
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1146,9 +1305,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 21.3759238988,
-    "signalLineValue": 34.0338089010,
-    "barChartValue": -12.6578850022
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1164,9 +1324,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.0275779983,
-    "signalLineValue": 30.6325627205,
-    "barChartValue": -13.6049847222
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -1182,9 +1343,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 13.8885881556,
-    "signalLineValue": 27.2837678075,
-    "barChartValue": -13.3951796519
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1200,9 +1362,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 11.5071164762,
-    "signalLineValue": 24.1284375412,
-    "barChartValue": -12.6213210650
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1218,8 +1381,9 @@
         "nano": 0
       }
     },
-    "indicatorValue": 6.5633752317,
-    "signalLineValue": 20.6154250793,
-    "barChartValue": -14.0520498476
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   }
 ]

@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.ic;
 
 import pro.crypto.helper.DynamicLineCrossFinder;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.ic.ICResult;
 import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
@@ -153,7 +153,7 @@ public class ICAnalyzer implements Analyzer<ICAnalyzerResult> {
 
     private SignalStrength[] findPriceKijunCrossSignals() {
         Signal[] signals = new DynamicLineCrossFinder(
-                PriceExtractor.extract(originalData, CLOSE), extractLine(ICResult::getBaseLineValue)).find();
+                PriceVolumeExtractor.extract(originalData, CLOSE), extractLine(ICResult::getBaseLineValue)).find();
         return IntStream.range(0, signals.length)
                 .mapToObj(idx -> toSignalStrength(signals[idx], idx))
                 .toArray(SignalStrength[]::new);

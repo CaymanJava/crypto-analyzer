@@ -19,7 +19,7 @@ import static java.util.Objects.nonNull;
 
 public class AnalyzerBaseTest {
 
-    Tick[] originalData;
+    protected Tick[] originalData;
 
     @Before
     public void init() {

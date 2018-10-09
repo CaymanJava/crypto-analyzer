@@ -3,6 +3,7 @@ package pro.crypto.indicator.tmf;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
@@ -13,7 +14,6 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -68,7 +68,7 @@ public class TwiggsMoneyFlow implements Indicator<TMFResult> {
     }
 
     private BigDecimal[] calculateSmoothedVolumeValues() {
-        BigDecimal[] volumes = extractVolumes();
+        BigDecimal[] volumes = PriceVolumeExtractor.extractBaseVolume(originalData);
         return calculateExponentialMovingAverageValues(volumes);
     }
 
@@ -160,12 +160,6 @@ public class TwiggsMoneyFlow implements Indicator<TMFResult> {
                 .priceType(CLOSE)
                 .indicatorType(EXPONENTIAL_MOVING_AVERAGE)
                 .build();
-    }
-
-    private BigDecimal[] extractVolumes() {
-        return Stream.of(originalData)
-                .map(Tick::getBaseVolume)
-                .toArray(BigDecimal[]::new);
     }
 
     private void buildTwiggsMoneyFlowResult(BigDecimal[] twiggsMoneyFlowValues, BigDecimal[] signalLineValues) {

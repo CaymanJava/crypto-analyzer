@@ -2,6 +2,7 @@ package pro.crypto.indicator.cmf;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MoneyFlowVolumesCalculator;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -10,7 +11,6 @@ import pro.crypto.model.tick.Tick;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.CHAIKIN_MONEY_FLOW;
@@ -64,15 +64,9 @@ public class ChaikinMoneyFlow implements Indicator<CMFResult> {
     }
 
     private BigDecimal[] calculateVolumesSum() {
-        BigDecimal[] baseVolumes = extractBaseVolumes();
+        BigDecimal[] baseVolumes = PriceVolumeExtractor.extractBaseVolume(originalData);
         return IntStream.range(0, originalData.length)
                 .mapToObj(idx -> calculateSum(baseVolumes, idx))
-                .toArray(BigDecimal[]::new);
-    }
-
-    private BigDecimal[] extractBaseVolumes() {
-        return Stream.of(originalData)
-                .map(Tick::getBaseVolume)
                 .toArray(BigDecimal[]::new);
     }
 

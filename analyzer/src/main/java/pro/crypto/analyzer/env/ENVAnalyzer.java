@@ -2,7 +2,7 @@ package pro.crypto.analyzer.env;
 
 import pro.crypto.helper.BandAnalyzer;
 import pro.crypto.helper.DynamicLineCrossFinder;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.env.ENVResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -48,7 +48,7 @@ public class ENVAnalyzer implements Analyzer<ENVAnalyzerResult> {
     }
 
     private SignalStrength[] findSignals() {
-        BigDecimal[] closePrices = PriceExtractor.extract(originalData, CLOSE);
+        BigDecimal[] closePrices = PriceVolumeExtractor.extract(originalData, CLOSE);
         SignalStrength[] upperBandSignals = findUpperBandSignals(closePrices);
         SignalStrength[] lowerBandSignals = findLowerBandSignals(closePrices);
         SignalStrength[] middleBandSignals = findMiddleBandSignals(closePrices);

@@ -2,7 +2,7 @@ package pro.crypto.indicator.atrb;
 
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.atr.ATRRequest;
 import pro.crypto.indicator.atr.AverageTrueRange;
 import pro.crypto.model.Indicator;
@@ -47,7 +47,7 @@ public class AverageTrueRangeBands implements Indicator<ATRBResult> {
     public void calculate() {
         result = new ATRBResult[originalData.length];
         BigDecimal[] atrValues = calculateAverageTrueRangeValues();
-        BigDecimal[] middleBandValues = PriceExtractor.extract(originalData, priceType);
+        BigDecimal[] middleBandValues = PriceVolumeExtractor.extract(originalData, priceType);
         buildAverageTrueRangeBandsResult(atrValues, middleBandValues);
     }
 

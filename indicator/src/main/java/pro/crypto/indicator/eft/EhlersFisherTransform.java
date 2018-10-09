@@ -3,7 +3,7 @@ package pro.crypto.indicator.eft;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MedianPriceCalculator;
 import pro.crypto.helper.MinMaxFinder;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -62,8 +62,8 @@ public class EhlersFisherTransform implements Indicator<EFTResult> {
 
     private void calculateValuesForTransform() {
         BigDecimal[] medianPrices = MedianPriceCalculator.calculate(originalData);
-        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceExtractor.extract(originalData, HIGH), period);
-        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceExtractor.extract(originalData, LOW), period);
+        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceVolumeExtractor.extract(originalData, HIGH), period);
+        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceVolumeExtractor.extract(originalData, LOW), period);
         calculateValuesForTransform(medianPrices, maxValues, minValues);
     }
 

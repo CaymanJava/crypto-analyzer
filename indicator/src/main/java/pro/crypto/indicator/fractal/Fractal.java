@@ -1,7 +1,7 @@
 package pro.crypto.indicator.fractal;
 
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -76,7 +76,7 @@ public class Fractal implements Indicator<FractalResult> {
 
     private boolean[] calculateFractals(PriceType priceType, BiFunction<BigDecimal[], Integer, Boolean> defineFractalFunction) {
         boolean[] fractals = new boolean[originalData.length];
-        BigDecimal[] lowValues = PriceExtractor.extract(originalData, priceType);
+        BigDecimal[] lowValues = PriceVolumeExtractor.extract(originalData, priceType);
         for (int currentIndex = 2; currentIndex < fractals.length; ) {
             if (isPossibleToDefineFractal(currentIndex)) {
                 boolean fractal = defineFractalFunction.apply(lowValues, currentIndex);

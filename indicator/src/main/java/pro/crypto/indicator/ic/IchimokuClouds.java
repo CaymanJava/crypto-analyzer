@@ -2,7 +2,7 @@ package pro.crypto.indicator.ic;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -125,8 +125,8 @@ public class IchimokuClouds implements Indicator<ICResult> {
     }
 
     private BigDecimal[] calculateAverageBetweenMaxMin(int period) {
-        BigDecimal[] highValues = PriceExtractor.extract(originalData, HIGH);
-        BigDecimal[] lowValues = PriceExtractor.extract(originalData, LOW);
+        BigDecimal[] highValues = PriceVolumeExtractor.extract(originalData, HIGH);
+        BigDecimal[] lowValues = PriceVolumeExtractor.extract(originalData, LOW);
         return IntStream.range(0, originalData.length)
                 .mapToObj(idx -> calculateAverage(period, highValues, lowValues, idx))
                 .toArray(BigDecimal[]::new);
@@ -146,7 +146,7 @@ public class IchimokuClouds implements Indicator<ICResult> {
 
     private BigDecimal[] calculateLaggingSpan() {
         BigDecimal[] laggingSpan = new BigDecimal[originalData.length];
-        System.arraycopy(PriceExtractor.extract(originalData, CLOSE), displaced, laggingSpan, 0, laggingSpan.length - displaced);
+        System.arraycopy(PriceVolumeExtractor.extract(originalData, CLOSE), displaced, laggingSpan, 0, laggingSpan.length - displaced);
         return laggingSpan;
     }
 

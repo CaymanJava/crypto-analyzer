@@ -2,7 +2,7 @@ package pro.crypto.indicator.dc;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MinMaxFinder;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -68,11 +68,11 @@ public class DonchianChannel implements Indicator<DCResult> {
     }
 
     private BigDecimal[] calculateUpperEnvelopes() {
-        return MinMaxFinder.findMaxExcludingLast(PriceExtractor.extract(originalData, HIGH), highPeriod);
+        return MinMaxFinder.findMaxExcludingLast(PriceVolumeExtractor.extract(originalData, HIGH), highPeriod);
     }
 
     private BigDecimal[] calculateLowerEnvelopes() {
-        return MinMaxFinder.findMinExcludingLast(PriceExtractor.extract(originalData, LOW), lowPeriod);
+        return MinMaxFinder.findMinExcludingLast(PriceVolumeExtractor.extract(originalData, LOW), lowPeriod);
     }
 
     private BigDecimal[] calculateMiddleEnvelopes(BigDecimal[] upperEnvelopes, BigDecimal[] lowerEnvelopes) {

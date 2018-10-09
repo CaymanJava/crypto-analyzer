@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
 import static java.util.Arrays.copyOfRange;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.helper.PriceExtractor.extract;
+import static pro.crypto.helper.PriceVolumeExtractor.extract;
 import static pro.crypto.model.IndicatorType.AROON_UP_DOWN;
 import static pro.crypto.model.tick.PriceType.HIGH;
 import static pro.crypto.model.tick.PriceType.LOW;

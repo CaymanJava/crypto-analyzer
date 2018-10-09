@@ -2,7 +2,7 @@ package pro.crypto.helper.divergence;
 
 import pro.crypto.helper.IncreasedQualifier;
 import pro.crypto.helper.MathHelper;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -48,7 +48,7 @@ public class Divergence {
     }
 
     private Boolean[] calculatePriceIncreases() {
-        return IncreasedQualifier.define(PriceExtractor.extract(originalData, PriceType.CLOSE));
+        return IncreasedQualifier.define(PriceVolumeExtractor.extract(originalData, PriceType.CLOSE));
     }
 
     private Boolean[] calculateIndicatorIncreases() {

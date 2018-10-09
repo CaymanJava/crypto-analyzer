@@ -2,7 +2,7 @@ package pro.crypto.indicator.gapo;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MinMaxFinder;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -67,11 +67,11 @@ public class GopalakrishnanRangeIndex implements Indicator<GAPOResult> {
     }
 
     private BigDecimal[] findMaxValues() {
-        return MinMaxFinder.findMaxValues(PriceExtractor.extract(originalData, HIGH), period);
+        return MinMaxFinder.findMaxValues(PriceVolumeExtractor.extract(originalData, HIGH), period);
     }
 
     private BigDecimal[] findMinValues() {
-        return MinMaxFinder.findMinValues(PriceExtractor.extract(originalData, LOW), period);
+        return MinMaxFinder.findMinValues(PriceVolumeExtractor.extract(originalData, LOW), period);
     }
 
     private BigDecimal calculateLog10Period() {

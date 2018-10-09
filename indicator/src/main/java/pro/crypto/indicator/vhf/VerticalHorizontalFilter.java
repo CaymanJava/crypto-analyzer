@@ -2,7 +2,7 @@ package pro.crypto.indicator.vhf;
 
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.MinMaxFinder;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -58,7 +58,7 @@ public class VerticalHorizontalFilter implements Indicator<VHFResult> {
     }
 
     private BigDecimal[] calculateNumerators() {
-        BigDecimal[] closePrices = PriceExtractor.extract(originalData, CLOSE);
+        BigDecimal[] closePrices = PriceVolumeExtractor.extract(originalData, CLOSE);
         BigDecimal[] maxCloseValues = MinMaxFinder.findMaxValues(closePrices, period);
         BigDecimal[] minCloseValues = MinMaxFinder.findMinValues(closePrices, period);
         return calculateNumerators(maxCloseValues, minCloseValues);

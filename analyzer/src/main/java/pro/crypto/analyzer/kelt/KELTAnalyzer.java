@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.kelt;
 
 import pro.crypto.helper.DynamicLineCrossFinder;
-import pro.crypto.helper.PriceExtractor;
+import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.kelt.KELTResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -52,7 +52,7 @@ public class KELTAnalyzer implements Analyzer<KELTAnalyzerResult> {
     }
 
     private void extractClosePrices() {
-        closePrices = PriceExtractor.extract(originalData, CLOSE);
+        closePrices = PriceVolumeExtractor.extract(originalData, CLOSE);
     }
 
     private SignalStrength[] findUpperBandCrossSignals() {

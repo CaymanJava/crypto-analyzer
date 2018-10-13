@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
 @Data
@@ -14,5 +15,9 @@ import pro.crypto.model.tick.Tick;
 public class OBVRequest implements IndicatorRequest {
 
     private Tick[] originalData;
+
+    private IndicatorType movingAverageType;
+
+    private int movingAveragePeriod;
 
 }

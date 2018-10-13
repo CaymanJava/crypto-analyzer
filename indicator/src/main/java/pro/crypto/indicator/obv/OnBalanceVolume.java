@@ -1,6 +1,11 @@
 package pro.crypto.indicator.obv;
 
+import pro.crypto.helper.FakeTicksCreator;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
+import pro.crypto.indicator.ma.MARequest;
+import pro.crypto.indicator.ma.MAResult;
+import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -11,16 +16,23 @@ import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.ON_BALANCE_VOLUME;
+import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class OnBalanceVolume implements Indicator<OBVResult> {
 
     private final Tick[] originalData;
+    private final IndicatorType movingAverageType;
+    private final int movingAveragePeriod;
 
+    private BigDecimal[] indicatorResults;
     private OBVResult[] result;
 
     public OnBalanceVolume(IndicatorRequest creationRequest) {
-        this.originalData = creationRequest.getOriginalData();
-        checkOriginalData(originalData);
+        OBVRequest request = (OBVRequest) creationRequest;
+        this.originalData = request.getOriginalData();
+        this.movingAverageType = request.getMovingAverageType();
+        this.movingAveragePeriod = request.getMovingAveragePeriod();
+        checkIncomingData();
     }
 
     @Override
@@ -30,8 +42,9 @@ public class OnBalanceVolume implements Indicator<OBVResult> {
 
     @Override
     public void calculate() {
-        result = new OBVResult[originalData.length];
         calculateOnBalanceVolumesValues();
+        BigDecimal[] signalLineValues = calculateSignalLineValues();
+        buildOnBalanceVolumeResult(signalLineValues);
     }
 
     @Override
@@ -42,58 +55,68 @@ public class OnBalanceVolume implements Indicator<OBVResult> {
         return result;
     }
 
+    private void checkIncomingData() {
+        checkOriginalData(originalData);
+        checkOriginalDataSize(originalData, movingAveragePeriod);
+        checkPeriod(movingAveragePeriod);
+        checkMovingAverageType(movingAverageType);
+    }
+
     private void calculateOnBalanceVolumesValues() {
-        fillInFirstIndicatorPosition();
-        fillInRemainPositions();
+        indicatorResults = new BigDecimal[originalData.length];
+        indicatorResults[0] = originalData[0].getBaseVolume();
+        IntStream.range(1, originalData.length)
+                .forEach(idx -> indicatorResults[idx] = calculateOnBalanceVolumeValue(idx));
     }
 
-    private void fillInFirstIndicatorPosition() {
-        result[0] = new OBVResult(originalData[0].getTickTime(), MathHelper.scaleAndRound(originalData[0].getBaseVolume()));
-    }
-
-    private void fillInRemainPositions() {
-        IntStream.range(1, result.length)
-                .forEach(this::setOBVResult);
-    }
-
-    private void setOBVResult(int currentIndex) {
-        result[currentIndex] = calculateOnBalanceVolumeValue(currentIndex);
-    }
-
-    private OBVResult calculateOnBalanceVolumeValue(int currentIndex) {
+    private BigDecimal calculateOnBalanceVolumeValue(int currentIndex) {
         int priceComparing = compareCurrentCloseWithPrevious(currentIndex);
-        if (priceComparing == 0) {
-            return buildSamePriceResult(currentIndex);
+        if (priceComparing > 0) {
+            return buildRisingPriceResult(currentIndex);
         }
         if (priceComparing < 0) {
             return buildFallingPriceResult(currentIndex);
         }
-        return buildRisingPriceResult(currentIndex);
+        return buildSamePriceResult(currentIndex);
     }
 
-    private OBVResult buildSamePriceResult(int currentIndex) {
-        return new OBVResult(
-                originalData[currentIndex].getTickTime(),
-                MathHelper.scaleAndRound(result[currentIndex - 1].getIndicatorValue().subtract(new BigDecimal(1)))
-        );
+    private BigDecimal buildSamePriceResult(int currentIndex) {
+        return MathHelper.scaleAndRound(indicatorResults[currentIndex - 1].subtract(new BigDecimal(1)));
     }
 
-    private OBVResult buildFallingPriceResult(int currentIndex) {
-        return new OBVResult(
-                originalData[currentIndex].getTickTime(),
-                MathHelper.scaleAndRound(result[currentIndex - 1].getIndicatorValue().subtract(originalData[currentIndex].getBaseVolume()))
-        );
+    private BigDecimal buildFallingPriceResult(int currentIndex) {
+        return MathHelper.scaleAndRound(indicatorResults[currentIndex - 1].subtract(originalData[currentIndex].getBaseVolume()));
     }
 
-    private OBVResult buildRisingPriceResult(int currentIndex) {
-        return new OBVResult(
-                originalData[currentIndex].getTickTime(),
-                MathHelper.scaleAndRound(result[currentIndex - 1].getIndicatorValue().add(originalData[currentIndex].getBaseVolume()))
-        );
+    private BigDecimal buildRisingPriceResult(int currentIndex) {
+        return MathHelper.scaleAndRound(indicatorResults[currentIndex - 1].add(originalData[currentIndex].getBaseVolume()));
     }
 
     private int compareCurrentCloseWithPrevious(int currentIndex) {
         return originalData[currentIndex].getClose().compareTo(originalData[currentIndex - 1].getClose());
+    }
+
+    private BigDecimal[] calculateSignalLineValues() {
+        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverageValues());
+    }
+
+    private MAResult[] calculateMovingAverageValues() {
+        return MovingAverageFactory.create(buildMARequest()).getResult();
+    }
+
+    private IndicatorRequest buildMARequest() {
+        return MARequest.builder()
+                .originalData(FakeTicksCreator.createWithCloseOnly(indicatorResults))
+                .priceType(CLOSE)
+                .period(movingAveragePeriod)
+                .indicatorType(movingAverageType)
+                .build();
+    }
+
+    private void buildOnBalanceVolumeResult(BigDecimal[] signalLineValues) {
+        result = IntStream.range(0, originalData.length)
+                .mapToObj(idx -> new OBVResult(originalData[idx].getTickTime(), indicatorResults[idx], signalLineValues[idx]))
+                .toArray(OBVResult[]::new);
     }
 
 }

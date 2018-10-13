@@ -35,4 +35,14 @@ public class SinglePivotPointsTest {
                 .build());
     }
 
+    @Test
+    public void nullPivotPointTypeTest() {
+        expectedException.expect(UnknownTypeException.class);
+        expectedException.expectMessage("Pivot Points type can not be null");
+        PivotPointFactory.create(PivotRequest.builder()
+                .indicatorType(null)
+                .originalData(new Tick[1])
+                .build());
+    }
+
 }

@@ -12,7 +12,7 @@ public class PivotPointFactory {
         PivotRequest request = (PivotRequest) creationRequest;
 
         if (isNull(request.getIndicatorType())) {
-            throw new UnknownTypeException(format("Unknown Pivot Points type {type: {%s}}", request.getIndicatorType()));
+            throw new UnknownTypeException("Pivot Points type can not be null");
         }
 
         switch (request.getIndicatorType()) {

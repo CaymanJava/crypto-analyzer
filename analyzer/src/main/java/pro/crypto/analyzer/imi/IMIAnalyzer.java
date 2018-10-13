@@ -77,10 +77,6 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
     }
 
     private Strength defineOverboughtStrength(Signal signal) {
-        if (isNull(signal)) {
-            return null;
-        }
-
         if (signal == SELL) {
             return STRONG;
         }
@@ -99,10 +95,6 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
     }
 
     private Strength defineOversoldStrength(Signal signal) {
-        if (isNull(signal)) {
-            return null;
-        }
-
         if (signal == BUY) {
             return STRONG;
         }

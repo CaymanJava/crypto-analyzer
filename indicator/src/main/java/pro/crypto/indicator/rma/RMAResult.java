@@ -31,4 +31,14 @@ public class RMAResult implements IndicatorResult {
 
     private BigDecimal tenthMaValue;
 
+    public BigDecimal[] getAllValues() {
+        return new BigDecimal[]{
+                firstMaValue, secondMaValue,
+                thirdMaValue, fourthMaValue,
+                fifthMaValue, sixthMaValue,
+                seventhMaValue, eighthMaValue,
+                ninthMaValue, tenthMaValue
+        };
+    }
+
 }

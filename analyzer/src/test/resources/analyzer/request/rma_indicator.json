@@ -1,0 +1,1717 @@
+[
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1269.0500333333
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1279.5367000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1283.6333333333,
+    "secondMaValue": 1277.4066888889
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1306.6633333333,
+    "secondMaValue": 1289.9444555555
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1313.3800000000,
+    "secondMaValue": 1301.2255555555,
+    "thirdMaValue": 1289.5255666666
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1305.0733333333,
+    "secondMaValue": 1308.3722222222,
+    "thirdMaValue": 1299.8474111111
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1295.5100000000,
+    "secondMaValue": 1304.6544444444,
+    "thirdMaValue": 1304.7507407407,
+    "fourthMaValue": 1298.0412395061
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1282.3200000000,
+    "secondMaValue": 1294.3011111111,
+    "thirdMaValue": 1302.4425925926,
+    "fourthMaValue": 1302.3469148148
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1275.7399666667,
+    "secondMaValue": 1284.5233222222,
+    "thirdMaValue": 1294.4929592592,
+    "fourthMaValue": 1300.5620975308,
+    "fifthMaValue": 1300.3167506172
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1262.6499666667,
+    "secondMaValue": 1273.5699777778,
+    "thirdMaValue": 1284.1314703704,
+    "fourthMaValue": 1293.6890074074,
+    "fifthMaValue": 1298.8660065843
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1242.8399666667,
+    "secondMaValue": 1260.4099666667,
+    "thirdMaValue": 1272.8344222222,
+    "fourthMaValue": 1283.8196172839,
+    "fifthMaValue": 1292.6902407407,
+    "sixthMaValue": 1297.2909993141
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1229.8900000000,
+    "secondMaValue": 1245.1266444445,
+    "thirdMaValue": 1259.7021962963,
+    "fourthMaValue": 1272.2226962963,
+    "fifthMaValue": 1283.2437736625,
+    "sixthMaValue": 1291.6000069958
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1207.4900333333,
+    "secondMaValue": 1226.7400000000,
+    "thirdMaValue": 1244.0922037037,
+    "fourthMaValue": 1258.8762740741,
+    "fifthMaValue": 1271.6395292181,
+    "sixthMaValue": 1282.5245145404,
+    "seventhMaValue": 1290.4718402834
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1196.0633666667,
+    "secondMaValue": 1211.1478000000,
+    "thirdMaValue": 1227.6714814815,
+    "fourthMaValue": 1243.8219604938,
+    "fifthMaValue": 1258.3069769547,
+    "sixthMaValue": 1271.0634266118,
+    "seventhMaValue": 1281.7293160493
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1196.4633666667,
+    "secondMaValue": 1200.0055888889,
+    "thirdMaValue": 1212.6311296296,
+    "fourthMaValue": 1228.1316049383,
+    "fifthMaValue": 1243.6099465021,
+    "sixthMaValue": 1257.8521508916,
+    "seventhMaValue": 1270.4800306813,
+    "eighthMaValue": 1280.8937290047
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1208.6900000000,
+    "secondMaValue": 1200.4055777778,
+    "thirdMaValue": 1203.8529888889,
+    "fourthMaValue": 1214.7185333333,
+    "fifthMaValue": 1228.8906995885,
+    "sixthMaValue": 1243.6025410151,
+    "seventhMaValue": 1257.5060395062,
+    "eighthMaValue": 1269.9051287456
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1214.3533333333,
+    "secondMaValue": 1206.5022333333,
+    "thirdMaValue": 1202.3044666667,
+    "fourthMaValue": 1206.2628617284,
+    "fifthMaValue": 1216.3710000000,
+    "sixthMaValue": 1229.6238820302,
+    "seventhMaValue": 1243.6928579790,
+    "eighthMaValue": 1257.2263093888,
+    "ninthMaValue": 1269.3417223797
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1197.6100333333,
+    "secondMaValue": 1206.8844555555,
+    "thirdMaValue": 1204.5974222222,
+    "fourthMaValue": 1203.5849592593,
+    "fifthMaValue": 1208.1887847737,
+    "sixthMaValue": 1217.8168281207,
+    "seventhMaValue": 1230.3477503887,
+    "eighthMaValue": 1243.8488826246,
+    "ninthMaValue": 1256.9934402530
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1194.9800333333,
+    "secondMaValue": 1202.3144666666,
+    "thirdMaValue": 1205.2337185185,
+    "fourthMaValue": 1204.0452024691,
+    "fifthMaValue": 1204.6310078189,
+    "sixthMaValue": 1209.7302641975,
+    "seventhMaValue": 1219.0569914495,
+    "eighthMaValue": 1231.0325332724,
+    "ninthMaValue": 1244.0359084286,
+    "tenthMaValue": 1256.7903570204
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1191.0300666667,
+    "secondMaValue": 1194.5400444444,
+    "thirdMaValue": 1201.2463222222,
+    "fourthMaValue": 1203.6924876543,
+    "fifthMaValue": 1203.7742164609,
+    "sixthMaValue": 1205.5313363512,
+    "seventhMaValue": 1211.0261428898,
+    "eighthMaValue": 1220.1436282427,
+    "ninthMaValue": 1231.6750147132,
+    "tenthMaValue": 1244.2347877983
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1188.8634000000,
+    "secondMaValue": 1191.6245000000,
+    "thirdMaValue": 1196.1596703703,
+    "fourthMaValue": 1200.8799037037,
+    "fifthMaValue": 1202.8725312757,
+    "sixthMaValue": 1203.7592518518,
+    "seventhMaValue": 1206.3402841335,
+    "eighthMaValue": 1212.1411394909,
+    "ninthMaValue": 1221.1057670020,
+    "tenthMaValue": 1232.2722300479
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1164.2567333333,
+    "secondMaValue": 1181.3834000000,
+    "thirdMaValue": 1189.1826481481,
+    "fourthMaValue": 1195.5295469135,
+    "fifthMaValue": 1200.0339794238,
+    "sixthMaValue": 1202.2269090535,
+    "seventhMaValue": 1203.8391657522,
+    "eighthMaValue": 1207.0685309252,
+    "ninthMaValue": 1213.1177662196,
+    "tenthMaValue": 1221.9661826449
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1141.6200333333,
+    "secondMaValue": 1164.9133888889,
+    "thirdMaValue": 1179.3070962963,
+    "fourthMaValue": 1188.2164716049,
+    "fifthMaValue": 1194.8753074074,
+    "sixthMaValue": 1199.2606060356,
+    "seventhMaValue": 1201.7489223136,
+    "eighthMaValue": 1203.9761240664,
+    "ninthMaValue": 1207.7285981608,
+    "tenthMaValue": 1213.9840437941
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1129.5033333333,
+    "secondMaValue": 1145.1267000000,
+    "thirdMaValue": 1163.8078296296,
+    "fourthMaValue": 1177.4325246913,
+    "fifthMaValue": 1187.0595144032,
+    "sixthMaValue": 1193.9896004115,
+    "seventhMaValue": 1198.4923718335,
+    "eighthMaValue": 1201.3601532998,
+    "ninthMaValue": 1204.1349360971,
+    "tenthMaValue": 1208.3271001592
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1120.9066666667,
+    "secondMaValue": 1130.6766777778,
+    "thirdMaValue": 1146.9055888889,
+    "fourthMaValue": 1163.3401716049,
+    "fifthMaValue": 1176.3297226337,
+    "sixthMaValue": 1186.0881814814,
+    "seventhMaValue": 1193.1127959762,
+    "eighthMaValue": 1197.7846967078,
+    "ninthMaValue": 1201.0403246913,
+    "tenthMaValue": 1204.3012863164
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1135.5633333333,
+    "secondMaValue": 1128.6577777778,
+    "thirdMaValue": 1134.8203851852,
+    "fourthMaValue": 1148.5112679012,
+    "fifthMaValue": 1163.0946547325,
+    "sixthMaValue": 1175.4946305898,
+    "seventhMaValue": 1185.1908041609,
+    "eighthMaValue": 1192.2653239902,
+    "ninthMaValue": 1197.1367246659,
+    "tenthMaValue": 1200.7706618181
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1162.6500000000,
+    "secondMaValue": 1139.7066666667,
+    "thirdMaValue": 1133.0137074074,
+    "fourthMaValue": 1138.2465604938,
+    "fifthMaValue": 1150.0326666666,
+    "sixthMaValue": 1163.1523480109,
+    "seventhMaValue": 1174.9117200274,
+    "eighthMaValue": 1184.4051067215,
+    "ninthMaValue": 1191.4850424732,
+    "tenthMaValue": 1196.5540306101
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1198.1233333333,
+    "secondMaValue": 1165.4455555555,
+    "thirdMaValue": 1144.6033333333,
+    "fourthMaValue": 1137.4791419753,
+    "fifthMaValue": 1141.4123234568,
+    "sixthMaValue": 1151.5132149520,
+    "seventhMaValue": 1163.3867311842,
+    "eighthMaValue": 1174.4964184575,
+    "ninthMaValue": 1183.7222830564,
+    "tenthMaValue": 1190.7813500652
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1237.8133000000,
+    "secondMaValue": 1199.5288777778,
+    "thirdMaValue": 1168.2270333333,
+    "fourthMaValue": 1148.6146913580,
+    "fifthMaValue": 1141.4467979424,
+    "sixthMaValue": 1144.2972626886,
+    "seventhMaValue": 1152.9876085505,
+    "eighthMaValue": 1163.7620199207,
+    "ninthMaValue": 1174.2211816999,
+    "tenthMaValue": 1183.1428357432
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1245.1299666667,
+    "secondMaValue": 1227.0222000000,
+    "thirdMaValue": 1197.3322111111,
+    "fourthMaValue": 1170.0541925926,
+    "fifthMaValue": 1152.0493419753,
+    "sixthMaValue": 1144.9694877915,
+    "seventhMaValue": 1146.9266551440,
+    "eighthMaValue": 1154.4336649596,
+    "ninthMaValue": 1164.2307011126,
+    "tenthMaValue": 1174.0580552896
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1262.3833000000,
+    "secondMaValue": 1248.4421888889,
+    "thirdMaValue": 1224.9977555556,
+    "fourthMaValue": 1196.8523333333,
+    "fifthMaValue": 1171.8404057613,
+    "sixthMaValue": 1155.1121818930,
+    "seventhMaValue": 1148.1263107910,
+    "eighthMaValue": 1149.3468581618,
+    "ninthMaValue": 1155.8475143474,
+    "tenthMaValue": 1164.7664657200
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1264.1900000000,
+    "secondMaValue": 1257.2344222222,
+    "thirdMaValue": 1244.2329370370,
+    "fourthMaValue": 1222.1876345679,
+    "fifthMaValue": 1196.3647201646,
+    "sixthMaValue": 1173.4181559671,
+    "seventhMaValue": 1157.8332752172,
+    "eighthMaValue": 1150.9620803841,
+    "ninthMaValue": 1151.5808678352,
+    "tenthMaValue": 1157.2196944317
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 31
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1289.9400000000,
+    "secondMaValue": 1272.1711000000,
+    "thirdMaValue": 1259.2825703704,
+    "fourthMaValue": 1242.8377543210,
+    "fifthMaValue": 1220.6259074074,
+    "sixthMaValue": 1196.2770111111,
+    "seventhMaValue": 1174.9357829904,
+    "eighthMaValue": 1160.2984563329,
+    "ninthMaValue": 1153.5357982929,
+    "tenthMaValue": 1153.6547268252
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1296.7766666667,
+    "secondMaValue": 1283.6355555556,
+    "thirdMaValue": 1271.0136925926,
+    "fourthMaValue": 1258.1764000000,
+    "fifthMaValue": 1241.0672629630,
+    "sixthMaValue": 1219.3526301783,
+    "seventhMaValue": 1196.3492657522,
+    "eighthMaValue": 1176.3727746533,
+    "ninthMaValue": 1162.5444371234,
+    "tenthMaValue": 1155.8870344172
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1307.5666666667,
+    "secondMaValue": 1298.0944444445,
+    "thirdMaValue": 1284.6337000000,
+    "fourthMaValue": 1271.6433209877,
+    "fifthMaValue": 1257.5524917696,
+    "sixthMaValue": 1239.7485540467,
+    "seventhMaValue": 1218.4593984454,
+    "eighthMaValue": 1196.5814823960,
+    "ninthMaValue": 1177.7509044607,
+    "tenthMaValue": 1164.6103799590
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1303.9133333333,
+    "secondMaValue": 1302.7522222222,
+    "thirdMaValue": 1294.8274074074,
+    "fourthMaValue": 1283.4916000000,
+    "fifthMaValue": 1271.1037736626,
+    "sixthMaValue": 1256.5745094651,
+    "seventhMaValue": 1238.5585645634,
+    "eighthMaValue": 1217.7890762537,
+    "ninthMaValue": 1196.9144444343,
+    "tenthMaValue": 1179.0699286728
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1316.6900000000,
+    "secondMaValue": 1309.3900000000,
+    "thirdMaValue": 1303.4122222222,
+    "fourthMaValue": 1294.2911098765,
+    "fifthMaValue": 1283.1420102881,
+    "sixthMaValue": 1270.5994252401,
+    "seventhMaValue": 1255.6408295840,
+    "eighthMaValue": 1237.5529308643,
+    "ninthMaValue": 1217.3078298380,
+    "tenthMaValue": 1197.3243929110
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1315.2167000000,
+    "secondMaValue": 1311.9400111111,
+    "thirdMaValue": 1308.0274111111,
+    "fourthMaValue": 1302.0890135802,
+    "fifthMaValue": 1293.2905744856,
+    "sixthMaValue": 1282.5121194788,
+    "seventhMaValue": 1269.8953513947,
+    "eighthMaValue": 1254.6982485140,
+    "ninthMaValue": 1236.6800852107,
+    "tenthMaValue": 1216.9674531610
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1315.8233666667,
+    "secondMaValue": 1315.9100222222,
+    "thirdMaValue": 1312.4133444444,
+    "fourthMaValue": 1307.9509925926,
+    "fifthMaValue": 1301.4437053498,
+    "sixthMaValue": 1292.6254300412,
+    "seventhMaValue": 1281.9123249200,
+    "eighthMaValue": 1269.1495019662,
+    "ninthMaValue": 1253.8002271148,
+    "tenthMaValue": 1235.9293807212
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1314.3567000000,
+    "secondMaValue": 1315.1322555556,
+    "thirdMaValue": 1314.3274296296,
+    "fourthMaValue": 1311.5893950617,
+    "fifthMaValue": 1307.2098004115,
+    "sixthMaValue": 1300.6480267490,
+    "seventhMaValue": 1291.9285254230,
+    "eighthMaValue": 1281.2454005792,
+    "ninthMaValue": 1268.3643836865,
+    "tenthMaValue": 1252.9482320040
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1319.0066666667,
+    "secondMaValue": 1316.3955777778,
+    "thirdMaValue": 1315.8126185185,
+    "fourthMaValue": 1314.1844641975,
+    "fifthMaValue": 1311.2416172839,
+    "sixthMaValue": 1306.6317076817,
+    "seventhMaValue": 1299.9683881573,
+    "eighthMaValue": 1291.2697461668,
+    "ninthMaValue": 1280.5548829041,
+    "tenthMaValue": 1267.5731645685
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1339.0633333333,
+    "secondMaValue": 1324.1422333333,
+    "thirdMaValue": 1318.5566888889,
+    "fourthMaValue": 1316.2322456790,
+    "fifthMaValue": 1314.0020349794,
+    "sixthMaValue": 1310.8178175583,
+    "seventhMaValue": 1306.0325173297,
+    "eighthMaValue": 1299.3098103033,
+    "ninthMaValue": 1290.6083190164,
+    "tenthMaValue": 1279.8425285357
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1362.3333333333,
+    "secondMaValue": 1340.1344444444,
+    "thirdMaValue": 1326.8907518518,
+    "fourthMaValue": 1320.4200197531,
+    "fifthMaValue": 1316.9455765432,
+    "sixthMaValue": 1314.0630762688,
+    "seventhMaValue": 1310.5042005029,
+    "eighthMaValue": 1305.5017019966,
+    "ninthMaValue": 1298.6937528222,
+    "tenthMaValue": 1289.9523182476
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1386.1333333333,
+    "secondMaValue": 1362.5100000000,
+    "thirdMaValue": 1342.2622259259,
+    "fourthMaValue": 1329.2365555555,
+    "fifthMaValue": 1321.9629403292,
+    "sixthMaValue": 1317.6368506173,
+    "seventhMaValue": 1314.1725814815,
+    "eighthMaValue": 1310.2364331047,
+    "ninthMaValue": 1305.0159818015,
+    "tenthMaValue": 1298.1060178800
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1405.5633333333,
+    "secondMaValue": 1384.6766666666,
+    "thirdMaValue": 1362.4403703703,
+    "fourthMaValue": 1343.8644493827,
+    "fifthMaValue": 1331.1736748971,
+    "sixthMaValue": 1323.3607305898,
+    "seventhMaValue": 1318.3535524920,
+    "eighthMaValue": 1314.3434448255,
+    "ninthMaValue": 1310.0271933089,
+    "tenthMaValue": 1304.5789759775
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1398.9533333333,
+    "secondMaValue": 1396.8833333333,
+    "thirdMaValue": 1381.3566666666,
+    "fourthMaValue": 1362.0197543209,
+    "fifthMaValue": 1345.0402530864,
+    "sixthMaValue": 1332.7256227709,
+    "seventhMaValue": 1324.5744013260,
+    "eighthMaValue": 1319.0335117665,
+    "ninthMaValue": 1314.5377965656,
+    "tenthMaValue": 1309.8603238920
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1384.9833333333,
+    "secondMaValue": 1396.5000000000,
+    "thirdMaValue": 1392.6866666666,
+    "fourthMaValue": 1378.8279012345,
+    "fifthMaValue": 1361.5707016460,
+    "sixthMaValue": 1345.9282098765,
+    "seventhMaValue": 1334.0048544124,
+    "eighthMaValue": 1325.6442694101,
+    "ninthMaValue": 1319.6737420007,
+    "tenthMaValue": 1314.7462439584
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1351.7233333333,
+    "secondMaValue": 1378.5533333333,
+    "thirdMaValue": 1390.6455555555,
+    "fourthMaValue": 1388.2296296296,
+    "fifthMaValue": 1376.3590950617,
+    "sixthMaValue": 1360.9900165980,
+    "seventhMaValue": 1346.5479497485,
+    "eighthMaValue": 1335.0424018290,
+    "ninthMaValue": 1326.5733943352,
+    "tenthMaValue": 1320.2616443005
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1342.6733666667,
+    "secondMaValue": 1359.7933444444,
+    "thirdMaValue": 1378.2822259259,
+    "fourthMaValue": 1387.2048160493,
+    "fifthMaValue": 1384.7541156378,
+    "sixthMaValue": 1374.2279707818,
+    "seventhMaValue": 1360.3820657521,
+    "eighthMaValue": 1346.9782899710,
+    "ninthMaValue": 1335.8883204034,
+    "tenthMaValue": 1327.3784855798
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1343.3500333333,
+    "secondMaValue": 1345.9155777778,
+    "thirdMaValue": 1361.4207518518,
+    "fourthMaValue": 1376.7828444444,
+    "fifthMaValue": 1384.0724300411,
+    "sixthMaValue": 1381.7285469135,
+    "seventhMaValue": 1372.3155114311,
+    "eighthMaValue": 1359.7485089772,
+    "ninthMaValue": 1347.2564002591,
+    "tenthMaValue": 1336.5727049992
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1374.1200333333,
+    "secondMaValue": 1353.3811444444,
+    "thirdMaValue": 1353.0300222222,
+    "fourthMaValue": 1364.2443333333,
+    "fifthMaValue": 1376.0773312757,
+    "sixthMaValue": 1381.6346256515,
+    "seventhMaValue": 1379.1970477823,
+    "eighthMaValue": 1370.6315416552,
+    "ninthMaValue": 1359.1194468678,
+    "tenthMaValue": 1347.4213891768
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1394.6466666667,
+    "secondMaValue": 1370.7055777778,
+    "thirdMaValue": 1356.6674333333,
+    "fourthMaValue": 1357.0394024691,
+    "fifthMaValue": 1366.0221934156,
+    "sixthMaValue": 1375.3906515775,
+    "seventhMaValue": 1379.5846080475,
+    "eighthMaValue": 1377.0323890870,
+    "ninthMaValue": 1369.1374799065,
+    "tenthMaValue": 1358.5044423445
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1405.4499666667,
+    "secondMaValue": 1391.4055555556,
+    "thirdMaValue": 1371.8307592593,
+    "fourthMaValue": 1360.5094049383,
+    "fifthMaValue": 1360.5977135802,
+    "sixthMaValue": 1367.5657460905,
+    "seventhMaValue": 1374.8636744398,
+    "eighthMaValue": 1377.8817767565,
+    "ninthMaValue": 1375.1819024996,
+    "tenthMaValue": 1367.8129430913
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1393.1133000000,
+    "secondMaValue": 1397.7366444445,
+    "thirdMaValue": 1386.6159259260,
+    "fourthMaValue": 1371.7047061729,
+    "fifthMaValue": 1363.0845045268,
+    "sixthMaValue": 1363.2348038409,
+    "seventhMaValue": 1368.7304005030,
+    "eighthMaValue": 1374.3928943301,
+    "ninthMaValue": 1376.4356867245,
+    "tenthMaValue": 1373.5850230435
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1395.8499666667,
+    "secondMaValue": 1398.1377444445,
+    "thirdMaValue": 1395.7599814815,
+    "fourthMaValue": 1384.7355555556,
+    "fifthMaValue": 1372.3165555556,
+    "sixthMaValue": 1365.3329245542,
+    "seventhMaValue": 1365.3778248285,
+    "eighthMaValue": 1369.6572999238,
+    "ninthMaValue": 1373.9773236701,
+    "tenthMaValue": 1375.1983042981
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1420.4733666667,
+    "secondMaValue": 1403.1455444445,
+    "thirdMaValue": 1399.6733111112,
+    "fourthMaValue": 1394.0164061729,
+    "fifthMaValue": 1383.4855559671,
+    "sixthMaValue": 1372.9622053498,
+    "seventhMaValue": 1367.1766445816,
+    "eighthMaValue": 1367.0949566377,
+    "ninthMaValue": 1370.3817169639,
+    "tenthMaValue": 1373.5982424528
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1451.8833666667,
+    "secondMaValue": 1422.7355666667,
+    "thirdMaValue": 1408.0062851852,
+    "fourthMaValue": 1401.1465259260,
+    "fifthMaValue": 1393.2994958848,
+    "sixthMaValue": 1383.0338691358,
+    "seventhMaValue": 1373.7763330133,
+    "eighthMaValue": 1368.7769341411,
+    "ninthMaValue": 1368.5097302342,
+    "tenthMaValue": 1370.9562569561
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1472.7533666667,
+    "secondMaValue": 1448.3700333334,
+    "thirdMaValue": 1424.7503814815,
+    "fourthMaValue": 1410.8099925926,
+    "fifthMaValue": 1401.9909748972,
+    "sixthMaValue": 1392.9253422497,
+    "seventhMaValue": 1382.9738055784,
+    "eighthMaValue": 1374.6422610578,
+    "ninthMaValue": 1370.1713839455,
+    "tenthMaValue": 1369.6876103812
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1465.0366666667,
+    "secondMaValue": 1463.2244666667,
+    "thirdMaValue": 1444.7766888889,
+    "fourthMaValue": 1425.8444518519,
+    "fifthMaValue": 1412.6003234568,
+    "sixthMaValue": 1402.6302647463,
+    "seventhMaValue": 1392.8631587106,
+    "eighthMaValue": 1383.2044324341,
+    "ninthMaValue": 1375.5412092110,
+    "tenthMaValue": 1371.4074411302
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1471.4366333333,
+    "secondMaValue": 1469.7422222222,
+    "thirdMaValue": 1460.4455740741,
+    "fourthMaValue": 1443.3242148148,
+    "fifthMaValue": 1426.6595530864,
+    "sixthMaValue": 1413.7502838135,
+    "seventhMaValue": 1403.1019636032,
+    "eighthMaValue": 1392.9796426307,
+    "ninthMaValue": 1383.6087787075,
+    "tenthMaValue": 1376.4404572880
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1470.3766333333,
+    "secondMaValue": 1468.9499777778,
+    "thirdMaValue": 1467.3055555556,
+    "fourthMaValue": 1457.5092728395,
+    "fifthMaValue": 1442.2259798354,
+    "sixthMaValue": 1427.1619521262,
+    "seventhMaValue": 1414.5141668953,
+    "eighthMaValue": 1403.4930964030,
+    "ninthMaValue": 1393.2257238226,
+    "tenthMaValue": 1384.1252372470
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1483.8333000000,
+    "secondMaValue": 1475.2155222222,
+    "thirdMaValue": 1471.3025740741,
+    "fourthMaValue": 1466.3512345679,
+    "fifthMaValue": 1455.7282407407,
+    "sixthMaValue": 1441.5379245542,
+    "seventhMaValue": 1427.4833868313,
+    "eighthMaValue": 1415.0331724433,
+    "ninthMaValue": 1403.8353038257,
+    "tenthMaValue": 1393.5566021186
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1470.8400000000,
+    "secondMaValue": 1475.0166444444,
+    "thirdMaValue": 1473.0607148148,
+    "fourthMaValue": 1470.5562814815,
+    "fifthMaValue": 1464.8055962963,
+    "sixthMaValue": 1454.2532722908,
+    "seventhMaValue": 1440.9843829904,
+    "eighthMaValue": 1427.6606455723,
+    "ninthMaValue": 1415.3956381395,
+    "tenthMaValue": 1404.1522219293
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1454.6966666667,
+    "secondMaValue": 1469.7899888889,
+    "thirdMaValue": 1473.3407185185,
+    "fourthMaValue": 1472.5680024691,
+    "fifthMaValue": 1469.8251728395,
+    "sixthMaValue": 1463.4530032922,
+    "seventhMaValue": 1453.0814000457,
+    "eighthMaValue": 1440.5163899558,
+    "ninthMaValue": 1427.7367359905,
+    "tenthMaValue": 1415.6558926519
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1430.0200000000,
+    "secondMaValue": 1451.8522222222,
+    "thirdMaValue": 1465.5529518518,
+    "fourthMaValue": 1470.6514617284,
+    "fifthMaValue": 1471.2585818930,
+    "sixthMaValue": 1468.6297836763,
+    "seventhMaValue": 1462.1120197531,
+    "eighthMaValue": 1452.0592675964,
+    "ninthMaValue": 1440.0787677082,
+    "tenthMaValue": 1427.7370472794
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1421.1799666667,
+    "secondMaValue": 1435.2988777778,
+    "thirdMaValue": 1452.3136962963,
+    "fourthMaValue": 1463.7357888889,
+    "fifthMaValue": 1468.9850843621,
+    "sixthMaValue": 1470.0229463649,
+    "seventhMaValue": 1467.3685777778,
+    "eighthMaValue": 1460.8539991922,
+    "ninthMaValue": 1451.1432189148,
+    "tenthMaValue": 1439.6529075378
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1400.1099666667,
+    "secondMaValue": 1417.1033111111,
+    "thirdMaValue": 1434.7514703704,
+    "fourthMaValue": 1450.8727061728,
+    "fifthMaValue": 1461.7533189300,
+    "sixthMaValue": 1467.3323283950,
+    "seventhMaValue": 1468.6616861454,
+    "eighthMaValue": 1466.0474278921,
+    "ninthMaValue": 1459.6535648936,
+    "tenthMaValue": 1450.2918505055
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1393.4599666667,
+    "secondMaValue": 1404.9166333334,
+    "thirdMaValue": 1419.1062740741,
+    "fourthMaValue": 1435.3904802469,
+    "fifthMaValue": 1449.9996584362,
+    "sixthMaValue": 1460.2460205761,
+    "seventhMaValue": 1465.8670984453,
+    "eighthMaValue": 1467.2991207895,
+    "ninthMaValue": 1464.7335159579,
+    "tenthMaValue": 1458.5100999221
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1384.8433333333,
+    "secondMaValue": 1392.8044222222,
+    "thirdMaValue": 1404.9414555556,
+    "fourthMaValue": 1419.5997333334,
+    "fifthMaValue": 1435.2876399177,
+    "sixthMaValue": 1449.0135390946,
+    "seventhMaValue": 1458.8639626886,
+    "eighthMaValue": 1464.4642490931,
+    "ninthMaValue": 1465.9369325916,
+    "tenthMaValue": 1463.4413378144
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1395.6466666667,
+    "secondMaValue": 1391.3166555556,
+    "thirdMaValue": 1396.3459037037,
+    "fourthMaValue": 1406.7978777778,
+    "fifthMaValue": 1420.5960304527,
+    "sixthMaValue": 1435.2944429355,
+    "seventhMaValue": 1448.1846675354,
+    "eighthMaValue": 1457.6385762231,
+    "ninthMaValue": 1463.1339820352,
+    "tenthMaValue": 1464.6014768616
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "firstMaValue": 1386.2500000000,
+    "secondMaValue": 1388.9133333333,
+    "thirdMaValue": 1391.0114703704,
+    "fourthMaValue": 1397.4329432099,
+    "fifthMaValue": 1407.9435181070,
+    "sixthMaValue": 1421.2757294925,
+    "seventhMaValue": 1435.1945705075,
+    "eighthMaValue": 1447.4144002438,
+    "ninthMaValue": 1456.5057418533,
+    "tenthMaValue": 1461.8588854934
+  }
+]

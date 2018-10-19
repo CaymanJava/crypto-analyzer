@@ -6,7 +6,7 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.indicator.roc.ROCRequest;
-import pro.crypto.indicator.roc.RangeOfChange;
+import pro.crypto.indicator.roc.RateOfChange;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -52,8 +52,8 @@ public class CoppockCurve implements Indicator<CCResult> {
     @Override
     public void calculate() {
         result = new CCResult[originalData.length];
-        BigDecimal[] longROCValues = calculateLongRangeOfChange();
-        BigDecimal[] shortROCValues = calculateShortRangeOfChange();
+        BigDecimal[] longROCValues = calculateLongRateOfChange();
+        BigDecimal[] shortROCValues = calculateShortRateOfChange();
         BigDecimal[] notSmoothedCCValues = calculateNotSmoothedCoppockCurve(longROCValues, shortROCValues);
         calculateCoppockCurveResult(notSmoothedCCValues);
     }
@@ -88,16 +88,16 @@ public class CoppockCurve implements Indicator<CCResult> {
         }
     }
 
-    private BigDecimal[] calculateLongRangeOfChange() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateRangeOfChange(longROCPeriod));
+    private BigDecimal[] calculateLongRateOfChange() {
+        return IndicatorResultExtractor.extractIndicatorValue(calculateRateOfChange(longROCPeriod));
     }
 
-    private BigDecimal[] calculateShortRangeOfChange() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateRangeOfChange(shortROCPeriod));
+    private BigDecimal[] calculateShortRateOfChange() {
+        return IndicatorResultExtractor.extractIndicatorValue(calculateRateOfChange(shortROCPeriod));
     }
 
-    private SimpleIndicatorResult[] calculateRangeOfChange(int longRocPeriod) {
-        return new RangeOfChange(buildROCRequest(longRocPeriod)).getResult();
+    private SimpleIndicatorResult[] calculateRateOfChange(int longRocPeriod) {
+        return new RateOfChange(buildROCRequest(longRocPeriod)).getResult();
     }
 
     private IndicatorRequest buildROCRequest(int longRocPeriod) {

@@ -6,7 +6,7 @@ import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.indicator.roc.ROCRequest;
-import pro.crypto.indicator.roc.RangeOfChange;
+import pro.crypto.indicator.roc.RateOfChange;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -105,35 +105,35 @@ public class KnowSureThing implements Indicator<KSTResult> {
     }
 
     private BigDecimal[] calculateLightestROCValues() {
-        return calculateSmoothedRangeOfChange(lightestROCPeriod, lightestSMAPeriod);
+        return calculateSmoothedRateOfChange(lightestROCPeriod, lightestSMAPeriod);
     }
 
     private BigDecimal[] calculateLightROCValues() {
-        return calculateSmoothedRangeOfChange(lightROCPeriod, lightSMAPeriod);
+        return calculateSmoothedRateOfChange(lightROCPeriod, lightSMAPeriod);
     }
 
     private BigDecimal[] calculateHeavyROCValues() {
-        return calculateSmoothedRangeOfChange(heavyROCPeriod, heavySMAPeriod);
+        return calculateSmoothedRateOfChange(heavyROCPeriod, heavySMAPeriod);
     }
 
     private BigDecimal[] calculateHeaviestROCValues() {
-        return calculateSmoothedRangeOfChange(heaviestROCPeriod, heaviestSMAPeriod);
+        return calculateSmoothedRateOfChange(heaviestROCPeriod, heaviestSMAPeriod);
     }
 
-    private BigDecimal[] calculateSmoothedRangeOfChange(int rangeOfChangePeriod, int movingAveragePeriod) {
-        BigDecimal[] rocValues = calculateRangeOfChangeValues(rangeOfChangePeriod);
+    private BigDecimal[] calculateSmoothedRateOfChange(int rateOfChangePeriod, int movingAveragePeriod) {
+        BigDecimal[] rocValues = calculateRateOfChangeValues(rateOfChangePeriod);
         BigDecimal[] smoothedRocValues = calculateMovingAverageValues(rocValues, movingAveragePeriod);
         BigDecimal[] result = new BigDecimal[originalData.length];
-        System.arraycopy(smoothedRocValues, 0, result, rangeOfChangePeriod, smoothedRocValues.length);
+        System.arraycopy(smoothedRocValues, 0, result, rateOfChangePeriod, smoothedRocValues.length);
         return result;
     }
 
-    private BigDecimal[] calculateRangeOfChangeValues(int period) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateRangeOfChange(period));
+    private BigDecimal[] calculateRateOfChangeValues(int period) {
+        return IndicatorResultExtractor.extractIndicatorValue(calculateRateOfChange(period));
     }
 
-    private SimpleIndicatorResult[] calculateRangeOfChange(int period) {
-        return new RangeOfChange(buildROCRequest(period)).getResult();
+    private SimpleIndicatorResult[] calculateRateOfChange(int period) {
+        return new RateOfChange(buildROCRequest(period)).getResult();
     }
 
     private IndicatorRequest buildROCRequest(int period) {

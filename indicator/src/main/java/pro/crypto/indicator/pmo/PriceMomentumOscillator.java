@@ -6,7 +6,7 @@ import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.indicator.roc.ROCRequest;
-import pro.crypto.indicator.roc.RangeOfChange;
+import pro.crypto.indicator.roc.RateOfChange;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -77,17 +77,17 @@ public class PriceMomentumOscillator implements Indicator<PMOResult> {
     }
 
     private BigDecimal[] calculatePriceMomentumOscillatorValues() {
-        BigDecimal[] rocValues = calculateRangeOfChangeValues();
-        BigDecimal[] smoothedRocValues = smoothRangeOfChangeValues(rocValues);
+        BigDecimal[] rocValues = calculateRateOfChangeValues();
+        BigDecimal[] smoothedRocValues = smoothRateOfChangeValues(rocValues);
         return calculatePriceMomentumOscillatorValues(smoothedRocValues);
     }
 
-    private BigDecimal[] calculateRangeOfChangeValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateRangeOfChange());
+    private BigDecimal[] calculateRateOfChangeValues() {
+        return IndicatorResultExtractor.extractIndicatorValue(calculateRateOfChange());
     }
 
-    private SimpleIndicatorResult[] calculateRangeOfChange() {
-        return new RangeOfChange(buildROCRequest()).getResult();
+    private SimpleIndicatorResult[] calculateRateOfChange() {
+        return new RateOfChange(buildROCRequest()).getResult();
     }
 
     private IndicatorRequest buildROCRequest() {
@@ -98,14 +98,14 @@ public class PriceMomentumOscillator implements Indicator<PMOResult> {
                 .build();
     }
 
-    private BigDecimal[] smoothRangeOfChangeValues(BigDecimal[] rocValues) {
-        BigDecimal[] smoothedValues = smoothedRangeOfChange(rocValues);
+    private BigDecimal[] smoothRateOfChangeValues(BigDecimal[] rocValues) {
+        BigDecimal[] smoothedValues = smoothedRateOfChange(rocValues);
         BigDecimal[] result = new BigDecimal[originalData.length];
         System.arraycopy(smoothedValues, 0, result, ROC_PERIOD, smoothedValues.length);
         return result;
     }
 
-    private BigDecimal[] smoothedRangeOfChange(BigDecimal[] rocValues) {
+    private BigDecimal[] smoothedRateOfChange(BigDecimal[] rocValues) {
         return Stream.of(IndicatorResultExtractor.extractIndicatorValue(
                 calculateExponentialMovingAverage(rocValues, calculateAlphaCoefficient(smoothingPeriod), smoothingPeriod)))
                 .map(this::multiplyByTen)

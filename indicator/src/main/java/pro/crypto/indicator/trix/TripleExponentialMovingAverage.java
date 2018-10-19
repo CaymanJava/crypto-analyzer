@@ -3,7 +3,7 @@ package pro.crypto.indicator.trix;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.ma.MovingAverageFactory;
-import pro.crypto.indicator.roc.RangeOfChange;
+import pro.crypto.indicator.roc.RateOfChange;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
@@ -78,7 +78,7 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
     }
 
     private BigDecimal[] calculateTrixValues(BigDecimal[] tripleEMA) {
-        return IndicatorResultExtractor.extractIndicatorValue(new RangeOfChange(buildROCRequest(tripleEMA)).getResult());
+        return IndicatorResultExtractor.extractIndicatorValue(new RateOfChange(buildROCRequest(tripleEMA)).getResult());
     }
 
     private IndicatorRequest buildROCRequest(BigDecimal[] tripleEMA) {

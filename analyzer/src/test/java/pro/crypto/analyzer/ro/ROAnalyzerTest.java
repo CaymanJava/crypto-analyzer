@@ -10,7 +10,7 @@ import static org.junit.Assert.assertArrayEquals;
 public class ROAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
-    public void testRainbowMovingAverageAnalyzer() {
+    public void testRainbowOscillatorAnalyzer() {
         AnalyzerResult[] expectedResult = loadAnalyzerExpectedResult("ro_analyzer.json", ROAnalyzerResult[].class);
         ROAnalyzerResult[] actualResult = new ROAnalyzer(buildAnalyzerRequest("ro_indicator.json", ROResult[].class)).getResult();
         assertArrayEquals(expectedResult, actualResult);

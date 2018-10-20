@@ -14,6 +14,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
+import static java.util.Optional.ofNullable;
 import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.SELL;
 
@@ -23,8 +24,8 @@ import static pro.crypto.model.Signal.SELL;
 public class RSIAnalyzer implements Analyzer<RSIAnalyzerResult>{
 
     private final RSIResult[] indicatorResults;
-    private final BigDecimal overboughtLevel;
     private final BigDecimal oversoldLevel;
+    private final BigDecimal overboughtLevel;
 
     private BigDecimal[] indicatorValues;
     private RSIAnalyzerResult[] result;
@@ -32,8 +33,8 @@ public class RSIAnalyzer implements Analyzer<RSIAnalyzerResult>{
     public RSIAnalyzer(AnalyzerRequest analyzerRequest) {
         RSIAnalyzerRequest request = (RSIAnalyzerRequest) analyzerRequest;
         this.indicatorResults = (RSIResult[]) request.getIndicatorResults();
-        this.overboughtLevel = isNull(request.getOverboughtLevel()) ? new BigDecimal(80) : new BigDecimal(request.getOverboughtLevel());
-        this.oversoldLevel = isNull(request.getOversoldLevel()) ? new BigDecimal(20) : new BigDecimal(request.getOversoldLevel());
+        this.oversoldLevel = extractOversoldLevel(request);
+        this.overboughtLevel = extractOverboughtLevel(request);
     }
 
     @Override
@@ -50,6 +51,18 @@ public class RSIAnalyzer implements Analyzer<RSIAnalyzerResult>{
             analyze();
         }
         return result;
+    }
+
+    private BigDecimal extractOversoldLevel(RSIAnalyzerRequest request) {
+        return ofNullable(request.getOversoldLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(20));
+    }
+
+    private BigDecimal extractOverboughtLevel(RSIAnalyzerRequest request) {
+        return ofNullable(request.getOverboughtLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(80));
     }
 
     private void extractIndicatorValues() {

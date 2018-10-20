@@ -13,6 +13,7 @@ import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static java.util.Optional.ofNullable;
 import static pro.crypto.model.SecurityLevel.*;
 import static pro.crypto.model.SecurityLevel.UNDEFINED;
 import static pro.crypto.model.Signal.BUY;
@@ -22,18 +23,20 @@ import static pro.crypto.model.Strength.*;
 
 public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
 
-    private final static BigDecimal OVERBOUGHT_LEVEL = new BigDecimal(70);
-    private final static BigDecimal OVERSOLD_LEVEL = new BigDecimal(30);
-
     private final Tick[] originalData;
     private final IMIResult[] indicatorResults;
+    private final BigDecimal oversoldLevel;
+    private final BigDecimal overboughtLevel;
 
     private BigDecimal[] indicatorValues;
     private IMIAnalyzerResult[] result;
 
-    public IMIAnalyzer(AnalyzerRequest request) {
+    public IMIAnalyzer(AnalyzerRequest analyzerRequest) {
+        IMIAnalyzerRequest request = (IMIAnalyzerRequest) analyzerRequest;
         this.originalData = request.getOriginalData();
         this.indicatorResults = (IMIResult[]) request.getIndicatorResults();
+        this.oversoldLevel = extractOversoldLevel(request);
+        this.overboughtLevel = extractOverboughtLevel(request);
     }
 
     @Override
@@ -54,6 +57,18 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
         return result;
     }
 
+    private BigDecimal extractOversoldLevel(IMIAnalyzerRequest request) {
+        return ofNullable(request.getOversoldLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(30));
+    }
+
+    private BigDecimal extractOverboughtLevel(IMIAnalyzerRequest request) {
+        return ofNullable(request.getOverboughtLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(70));
+    }
+
     private void extractIndicatorValues() {
         indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
     }
@@ -71,7 +86,7 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
     }
 
     private SignalStrength[] findOverboughtSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, OVERBOUGHT_LEVEL).analyze())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, overboughtLevel).analyze())
                 .map(signal -> toSignalStrength(signal, defineOverboughtStrength(signal)))
                 .toArray(SignalStrength[]::new);
     }
@@ -89,7 +104,7 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
     }
 
     private SignalStrength[] findOversoldSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, OVERSOLD_LEVEL).analyze())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, oversoldLevel).analyze())
                 .map(signal -> toSignalStrength(signal, defineOversoldStrength(signal)))
                 .toArray(SignalStrength[]::new);
     }
@@ -119,11 +134,11 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
     }
 
     private SecurityLevel defineSecurityLevel(BigDecimal indicatorValue) {
-        if (indicatorValue.compareTo(OVERBOUGHT_LEVEL) > 0) {
+        if (indicatorValue.compareTo(overboughtLevel) > 0) {
             return OVERBOUGHT;
         }
 
-        if (indicatorValue.compareTo(OVERSOLD_LEVEL) < 0) {
+        if (indicatorValue.compareTo(oversoldLevel) < 0) {
             return OVERSOLD;
         }
 

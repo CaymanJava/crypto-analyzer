@@ -9,25 +9,28 @@ import java.math.BigDecimal;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
+import static java.util.Optional.ofNullable;
 import static pro.crypto.model.Strength.NORMAL;
 import static pro.crypto.model.Strength.WEAK;
 
 public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
 
-    private final static BigDecimal OVERBOUGHT_LEVEL = new BigDecimal(100);
-    private final static BigDecimal OVERSOLD_LEVEL = new BigDecimal(-100);
-    private final static BigDecimal ZERO_LEVEL = BigDecimal.ZERO;
-
     private final Tick[] originalData;
     private final CCIResult[] indicatorResults;
+    private final BigDecimal oversoldLevel;
+    private final BigDecimal overboughtLevel;
 
     private BigDecimal[] indicatorValues;
     private CCIAnalyzerResult[] result;
 
-    public CCIAnalyzer(AnalyzerRequest request) {
+    public CCIAnalyzer(AnalyzerRequest analyzerRequest) {
+        CCIAnalyzerRequest request = (CCIAnalyzerRequest) analyzerRequest;
         this.originalData = request.getOriginalData();
         this.indicatorResults = (CCIResult[]) request.getIndicatorResults();
+        this.oversoldLevel = extractOversoldLevel(request);
+        this.overboughtLevel = extractOverboughtLevel(request);
     }
 
     @Override
@@ -48,6 +51,18 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
         return result;
     }
 
+    private BigDecimal extractOversoldLevel(CCIAnalyzerRequest request) {
+        return ofNullable(request.getOversoldLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(-100));
+    }
+
+    private BigDecimal extractOverboughtLevel(CCIAnalyzerRequest request) {
+        return ofNullable(request.getOverboughtLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(100));
+    }
+
     private void extractIndicatorValues() {
         indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
     }
@@ -59,9 +74,9 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
     }
 
     private SignalStrength[] findCrossSignals() {
-        SignalStrength[] overboughtSignals = findCrossSignals(OVERBOUGHT_LEVEL, NORMAL);
-        SignalStrength[] oversoldSignals = findCrossSignals(OVERSOLD_LEVEL, NORMAL);
-        SignalStrength[] zeroLineSignals = findCrossSignals(ZERO_LEVEL, WEAK);
+        SignalStrength[] overboughtSignals = findCrossSignals(overboughtLevel, NORMAL);
+        SignalStrength[] oversoldSignals = findCrossSignals(oversoldLevel, NORMAL);
+        SignalStrength[] zeroLineSignals = findCrossSignals(ZERO, WEAK);
         return mergeSignalsStrength(overboughtSignals, oversoldSignals, zeroLineSignals);
     }
 
@@ -88,7 +103,7 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
     }
 
     private SecurityLevel[] defineSecurityLevels() {
-        return new SecurityLevelAnalyzer(indicatorValues, OVERBOUGHT_LEVEL, OVERSOLD_LEVEL).analyze();
+        return new SecurityLevelAnalyzer(indicatorValues, overboughtLevel, oversoldLevel).analyze();
     }
 
 }

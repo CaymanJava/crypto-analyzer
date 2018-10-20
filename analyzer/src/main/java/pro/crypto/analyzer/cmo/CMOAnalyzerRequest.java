@@ -1,4 +1,4 @@
-package pro.crypto.analyzer.rsi;
+package pro.crypto.analyzer.cmo;
 
 import lombok.*;
 import pro.crypto.model.AnalyzerRequest;
@@ -10,7 +10,7 @@ import pro.crypto.model.tick.Tick;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class RSIAnalyzerRequest extends AnalyzerRequest {
+public class CMOAnalyzerRequest extends AnalyzerRequest {
 
     private Tick[] originalData;
 

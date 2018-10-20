@@ -10,20 +10,24 @@ import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static java.util.Optional.ofNullable;
 import static java.util.stream.Collectors.toSet;
 
 public class MIAnalyzer implements Analyzer<MIAnalyzerResult> {
 
-    private final static BigDecimal FIRST_REVERSAL_LINE = new BigDecimal(27);
-    private final static BigDecimal SECOND_REVERSAL_LINE = new BigDecimal(26.5);
-    private final static int ALLOWABLE_GAP = 25;
-
     private final MIResult[] indicatorResults;
+    private final BigDecimal firstReversalLine;
+    private final BigDecimal secondReversalLine;
+    private final int allowableGap;
 
     private MIAnalyzerResult[] result;
 
-    public MIAnalyzer(AnalyzerRequest request) {
+    public MIAnalyzer(AnalyzerRequest analyzerRequest) {
+        MIAnalyzerRequest request = (MIAnalyzerRequest) analyzerRequest;
         this.indicatorResults = (MIResult[]) request.getIndicatorResults();
+        this.firstReversalLine = extractFirstReversalLine(request);
+        this.secondReversalLine = extractSecondReversalLine(request);
+        this.allowableGap = extractAllowableGap(request);
     }
 
     @Override
@@ -38,6 +42,22 @@ public class MIAnalyzer implements Analyzer<MIAnalyzerResult> {
             analyze();
         }
         return result;
+    }
+
+    private BigDecimal extractFirstReversalLine(MIAnalyzerRequest request) {
+        return ofNullable(request.getFirstReversalLine())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(27));
+    }
+
+    private BigDecimal extractSecondReversalLine(MIAnalyzerRequest request) {
+        return ofNullable(request.getSecondReversalLine())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(26.5));
+    }
+
+    private Integer extractAllowableGap(MIAnalyzerRequest request) {
+        return ofNullable(request.getAllowableGap()).orElse(25);
     }
 
     private boolean[] findReversalBulges() {
@@ -58,8 +78,8 @@ public class MIAnalyzer implements Analyzer<MIAnalyzerResult> {
     }
 
     private boolean isFirstLineIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(FIRST_REVERSAL_LINE) < 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(FIRST_REVERSAL_LINE) > 0;
+        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(firstReversalLine) < 0
+                && indicatorResults[currentIndex].getIndicatorValue().compareTo(firstReversalLine) > 0;
     }
 
     private Set<Integer> findSecondIntersectionIndexes() {
@@ -74,8 +94,8 @@ public class MIAnalyzer implements Analyzer<MIAnalyzerResult> {
     }
 
     private boolean isSecondLineIntersection(int currentIndex) {
-        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(SECOND_REVERSAL_LINE) > 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(SECOND_REVERSAL_LINE) < 0;
+        return indicatorResults[currentIndex - 1].getIndicatorValue().compareTo(secondReversalLine) > 0
+                && indicatorResults[currentIndex].getIndicatorValue().compareTo(secondReversalLine) < 0;
     }
 
     private boolean isPossibleDefineIntersection(int currentIndex) {
@@ -93,7 +113,7 @@ public class MIAnalyzer implements Analyzer<MIAnalyzerResult> {
     }
 
     private boolean isReversalBulge(int secondIntersectionIndex, Set<Integer> firstIntersectionIndexes) {
-        return IntStream.range(secondIntersectionIndex - ALLOWABLE_GAP, secondIntersectionIndex)
+        return IntStream.range(secondIntersectionIndex - allowableGap, secondIntersectionIndex)
                 .filter(firstIntersectionIndexes::contains)
                 .findAny()
                 .isPresent();

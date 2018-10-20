@@ -36,8 +36,10 @@ public class COGAnalyzer implements Analyzer<COGAnalyzerResult> {
     }
 
     private Signal[] findSignals() {
-        return new DynamicLineCrossAnalyzer(IndicatorResultExtractor.extractIndicatorValues(indicatorResults),
-                IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).analyze();
+        return new DynamicLineCrossAnalyzer(
+                IndicatorResultExtractor.extractIndicatorValues(indicatorResults),
+                IndicatorResultExtractor.extractSignalLineValues(indicatorResults))
+                .analyze();
     }
 
     private void buildCOGAnalyzerResult(Signal[] signals) {

@@ -16,23 +16,27 @@ import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static java.util.Optional.ofNullable;
 import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.SELL;
 import static pro.crypto.model.Trend.*;
 
 public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
 
-    private final static BigDecimal BULLISH_SIGNAL_LINE = new BigDecimal(0.05);
-    private final static BigDecimal BEARER_SIGNAL_LINE = new BigDecimal(-0.05);
+    private final BigDecimal bullishSignalLine;
+    private final BigDecimal bearerSignalLine;
 
     private final Tick[] originalData;
     private final CMFResult[] indicatorResults;
 
     private CMFAnalyzerResult[] result;
 
-    public CMFAnalyzer(AnalyzerRequest request) {
+    public CMFAnalyzer(AnalyzerRequest analyzerRequest) {
+        CMFAnalyzerRequest request = (CMFAnalyzerRequest) analyzerRequest;
         this.originalData = request.getOriginalData();
         this.indicatorResults = (CMFResult[]) request.getIndicatorResults();
+        this.bullishSignalLine = extractBullishSignalLine(request);
+        this.bearerSignalLine = extractBearerSignalLine(request);
     }
 
     @Override
@@ -52,6 +56,18 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
         return result;
     }
 
+    private BigDecimal extractBullishSignalLine(CMFAnalyzerRequest request) {
+        return ofNullable(request.getBullishSignalLine())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(0.05));
+    }
+
+    private BigDecimal extractBearerSignalLine(CMFAnalyzerRequest request) {
+        return ofNullable(request.getBearerSignalLine())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(-0.05));
+    }
+
     private Signal[] findDivergenceSignals() {
         return new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValues(indicatorResults));
     }
@@ -64,13 +80,13 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
     }
 
     private Signal[] findBuySignals(BigDecimal[] indicatorValues) {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, BULLISH_SIGNAL_LINE).analyze())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, bullishSignalLine).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, SELL))
                 .toArray(Signal[]::new);
     }
 
     private Signal[] findSellSignals(BigDecimal[] indicatorValues) {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, BEARER_SIGNAL_LINE).analyze())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, bearerSignalLine).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, BUY))
                 .toArray(Signal[]::new);
     }
@@ -108,16 +124,16 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
     }
 
     private boolean isConsolidationZone(BigDecimal indicatorValue) {
-        return indicatorValue.compareTo(BULLISH_SIGNAL_LINE) <= 0
-                && indicatorValue.compareTo(BEARER_SIGNAL_LINE) >= 0;
+        return indicatorValue.compareTo(bullishSignalLine) <= 0
+                && indicatorValue.compareTo(bearerSignalLine) >= 0;
     }
 
     private boolean isBullishZone(BigDecimal indicatorValue) {
-        return indicatorValue.compareTo(BULLISH_SIGNAL_LINE) > 0;
+        return indicatorValue.compareTo(bullishSignalLine) > 0;
     }
 
     private boolean isBearerZone(BigDecimal indicatorValue) {
-        return indicatorValue.compareTo(BEARER_SIGNAL_LINE) < 0;
+        return indicatorValue.compareTo(bearerSignalLine) < 0;
     }
 
     private void buildCMFAnalyzerResult(Signal[] mergedSignals, Trend[] trends) {

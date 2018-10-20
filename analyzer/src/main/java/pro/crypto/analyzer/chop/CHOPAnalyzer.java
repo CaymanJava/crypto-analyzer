@@ -9,15 +9,21 @@ import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static java.util.Optional.ofNullable;
 
 public class CHOPAnalyzer implements Analyzer<CHOPAnalyzerResult> {
 
     private final CHOPResult[] indicatorResults;
+    private final BigDecimal lowerTrendLine;
+    private final BigDecimal upperTrendLine;
 
     private CHOPAnalyzerResult[] result;
 
-    public CHOPAnalyzer(AnalyzerRequest request) {
+    public CHOPAnalyzer(AnalyzerRequest analyzerRequest) {
+        CHOPAnalyzerRequest request = (CHOPAnalyzerRequest) analyzerRequest;
         this.indicatorResults = (CHOPResult[]) request.getIndicatorResults();
+        this.lowerTrendLine = extractLowerTrendLine(request);
+        this.upperTrendLine = extractUpperTrendLine(request);
     }
 
     @Override
@@ -31,6 +37,18 @@ public class CHOPAnalyzer implements Analyzer<CHOPAnalyzerResult> {
             analyze();
         }
         return result;
+    }
+
+    private BigDecimal extractLowerTrendLine(CHOPAnalyzerRequest request) {
+        return ofNullable(request.getLowerTrendLine())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(38.2));
+    }
+
+    private BigDecimal extractUpperTrendLine(CHOPAnalyzerRequest request) {
+        return ofNullable(request.getUpperTrendLine())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(61.8));
     }
 
     private void buildCHOPAnalyzerResult() {
@@ -48,8 +66,8 @@ public class CHOPAnalyzer implements Analyzer<CHOPAnalyzerResult> {
     }
 
     private boolean tryDefineTrend(int currentIndex) {
-        return indicatorResults[currentIndex].getIndicatorValue().compareTo(new BigDecimal(61.8)) < 0
-                && indicatorResults[currentIndex].getIndicatorValue().compareTo(new BigDecimal(38.2)) > 0;
+        return indicatorResults[currentIndex].getIndicatorValue().compareTo(upperTrendLine) < 0
+                && indicatorResults[currentIndex].getIndicatorValue().compareTo(lowerTrendLine) > 0;
     }
 
 }

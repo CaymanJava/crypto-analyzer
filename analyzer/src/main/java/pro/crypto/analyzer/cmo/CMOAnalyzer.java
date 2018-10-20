@@ -18,24 +18,26 @@ import java.util.stream.Stream;
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static java.util.Optional.ofNullable;
 import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.SELL;
 import static pro.crypto.model.Strength.*;
 
 public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
 
-    private final static BigDecimal OVERBOUGHT_LEVEL = new BigDecimal(50);
-    private final static BigDecimal OVERSOLD_LEVEL = new BigDecimal(-50);
-    private final static BigDecimal ZERO_LEVEL = ZERO;
-
     private final Tick[] originalData;
     private final CMOResult[] indicatorResults;
+    private final BigDecimal oversoldLevel;
+    private final BigDecimal overboughtLevel;
 
     private CMOAnalyzerResult[] result;
 
-    public CMOAnalyzer(AnalyzerRequest request) {
+    public CMOAnalyzer(AnalyzerRequest analyzerRequest) {
+        CMOAnalyzerRequest request = (CMOAnalyzerRequest) analyzerRequest;
         this.originalData = request.getOriginalData();
         this.indicatorResults = (CMOResult[]) request.getIndicatorResults();
+        this.oversoldLevel = extractOversoldLevel(request);
+        this.overboughtLevel = extractOverboughtLevel(request);
     }
 
     @Override
@@ -52,6 +54,18 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
             analyze();
         }
         return result;
+    }
+
+    private BigDecimal extractOversoldLevel(CMOAnalyzerRequest request) {
+        return ofNullable(request.getOversoldLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(-50));
+    }
+
+    private BigDecimal extractOverboughtLevel(CMOAnalyzerRequest request) {
+        return ofNullable(request.getOverboughtLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(50));
     }
 
     private SignalStrength[] findDivergenceSignals() {
@@ -75,21 +89,21 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
     }
 
     private SignalStrength[] findOverboughtSignals(BigDecimal[] indicatorValues) {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, OVERBOUGHT_LEVEL).analyze())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, overboughtLevel).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, BUY))
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findOversoldSignals(BigDecimal[] indicatorValues) {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, OVERSOLD_LEVEL).analyze())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, oversoldLevel).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, SELL))
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findZeroLineSignals(BigDecimal[] indicatorValues) {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, ZERO_LEVEL).analyze())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, ZERO).analyze())
                 .map(signal -> toSignalStrength(signal, NORMAL))
                 .toArray(SignalStrength[]::new);
     }
@@ -117,11 +131,11 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
     }
 
     private SecurityLevel defineSecurityLevel(BigDecimal indicatorValue) {
-        if (indicatorValue.compareTo(OVERBOUGHT_LEVEL) >= 0) {
+        if (indicatorValue.compareTo(overboughtLevel) >= 0) {
             return SecurityLevel.OVERBOUGHT;
         }
 
-        if (indicatorValue.compareTo(OVERSOLD_LEVEL) <= 0) {
+        if (indicatorValue.compareTo(oversoldLevel) <= 0) {
             return SecurityLevel.OVERSOLD;
         }
 

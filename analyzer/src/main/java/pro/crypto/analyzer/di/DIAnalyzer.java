@@ -9,6 +9,7 @@ import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.SignalStrength;
 import pro.crypto.model.tick.Tick;
 
+import java.math.BigDecimal;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -22,6 +23,7 @@ public class DIAnalyzer implements Analyzer<DIAnalyzerResult> {
     private final Tick[] originalData;
     private final DIResult[] indicatorResults;
 
+    private BigDecimal[] indicatorValues;
     private DIAnalyzerResult[] result;
 
     public DIAnalyzer(AnalyzerRequest request) {
@@ -31,6 +33,7 @@ public class DIAnalyzer implements Analyzer<DIAnalyzerResult> {
 
     @Override
     public void analyze() {
+        extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
         SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, crossSignals);
@@ -45,14 +48,18 @@ public class DIAnalyzer implements Analyzer<DIAnalyzerResult> {
         return result;
     }
 
+    private void extractIndicatorValues() {
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
+    }
+
     private SignalStrength[] findDivergenceSignals() {
-        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValues(indicatorResults)))
+        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, indicatorValues))
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findCrossSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(IndicatorResultExtractor.extractIndicatorValues(indicatorResults), ZERO).analyze())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, ZERO).analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }

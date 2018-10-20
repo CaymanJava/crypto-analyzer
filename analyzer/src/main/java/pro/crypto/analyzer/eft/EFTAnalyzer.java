@@ -21,6 +21,7 @@ public class EFTAnalyzer implements Analyzer<EFTAnalyzerResult> {
 
     private final EFTResult[] indicatorResults;
 
+    private BigDecimal[] indicatorValues;
     private EFTAnalyzerResult[] result;
 
     public EFTAnalyzer(AnalyzerRequest request) {
@@ -29,9 +30,9 @@ public class EFTAnalyzer implements Analyzer<EFTAnalyzerResult> {
 
     @Override
     public void analyze() {
-        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
-        SignalStrength[] zeroLineCrossSignals = findZeroLineCrossSignals(indicatorValues);
-        SignalStrength[] triggerCrossSignals = findTriggerCrossSignals(indicatorValues);
+        extractIndicatorValues();
+        SignalStrength[] zeroLineCrossSignals = findZeroLineCrossSignals();
+        SignalStrength[] triggerCrossSignals = findTriggerCrossSignals();
         SignalStrength[] mergedSignals = mergeSignalsStrength(zeroLineCrossSignals, triggerCrossSignals);
         buildEFTAnalyzerResult(mergedSignals);
     }
@@ -44,13 +45,17 @@ public class EFTAnalyzer implements Analyzer<EFTAnalyzerResult> {
         return result;
     }
 
-    private SignalStrength[] findZeroLineCrossSignals(BigDecimal[] indicatorValues) {
+    private void extractIndicatorValues() {
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
+    }
+
+    private SignalStrength[] findZeroLineCrossSignals() {
         return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, ZERO).analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
 
-    private SignalStrength[] findTriggerCrossSignals(BigDecimal[] indicatorValues) {
+    private SignalStrength[] findTriggerCrossSignals() {
         return Stream.of(new DynamicLineCrossAnalyzer(indicatorValues, extractTriggerValues()).analyze())
                 .map(signal -> toSignalStrength(signal, NORMAL))
                 .toArray(SignalStrength[]::new);

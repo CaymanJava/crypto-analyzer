@@ -1,4 +1,4 @@
-package pro.crypto.analyzer.rsi;
+package pro.crypto.analyzer.chop;
 
 import lombok.*;
 import pro.crypto.model.AnalyzerRequest;
@@ -10,14 +10,14 @@ import pro.crypto.model.tick.Tick;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class RSIAnalyzerRequest extends AnalyzerRequest {
+public class CHOPAnalyzerRequest extends AnalyzerRequest {
 
     private Tick[] originalData;
 
     private IndicatorResult[] indicatorResults;
 
-    private Double oversoldLevel;
+    private Double lowerTrendLine;
 
-    private Double overboughtLevel;
+    private Double upperTrendLine;
 
 }

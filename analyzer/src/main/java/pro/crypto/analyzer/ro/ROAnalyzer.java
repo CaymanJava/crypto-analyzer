@@ -9,6 +9,7 @@ import java.util.stream.IntStream;
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static java.util.Optional.ofNullable;
 import static pro.crypto.model.Signal.*;
 import static pro.crypto.model.Strength.NORMAL;
 import static pro.crypto.model.Strength.STRONG;
@@ -16,20 +17,20 @@ import static pro.crypto.model.Trend.*;
 
 public class ROAnalyzer implements Analyzer<ROAnalyzerResult> {
 
-    private final static BigDecimal MIN_UPTREND_ENVELOPE_LEVEL = new BigDecimal(30);
-    private final static BigDecimal MAX_UPTREND_ENVELOPE_LEVEL = new BigDecimal(60);
-    private final static BigDecimal MIN_DOWNTREND_ENVELOPE_LEVEL = new BigDecimal(-60);
-    private final static BigDecimal MAX_DOWNTREND_ENVELOPE_LEVEL = new BigDecimal(-30);
-    private final static BigDecimal BUY_ACCEPTABLE_ENVELOPE_LEVEL = new BigDecimal(38);
-    private final static BigDecimal SELL_ACCEPTABLE_ENVELOPE_LEVEL = new BigDecimal(-38);
-
     private final ROResult[] indicatorResults;
-    private Trend[] trends;
+    private final BigDecimal minUptrendEnvelopeLevel;
+    private final BigDecimal maxUptrendEnvelopeLevel;
+    private final BigDecimal acceptableSignalEnvelopeLevel;
 
+    private Trend[] trends;
     private ROAnalyzerResult[] result;
 
-    public ROAnalyzer(AnalyzerRequest request) {
+    public ROAnalyzer(AnalyzerRequest analyzerRequest) {
+        ROAnalyzerRequest request = (ROAnalyzerRequest) analyzerRequest;
         this.indicatorResults = (ROResult[]) request.getIndicatorResults();
+        this.minUptrendEnvelopeLevel = extractMinUptrendLevel(request);
+        this.maxUptrendEnvelopeLevel = extractMaxUptrendLevel(request);
+        this.acceptableSignalEnvelopeLevel = extractAcceptableSignalLevel(request);
     }
 
     @Override
@@ -45,6 +46,24 @@ public class ROAnalyzer implements Analyzer<ROAnalyzerResult> {
             analyze();
         }
         return result;
+    }
+
+    private BigDecimal extractMinUptrendLevel(ROAnalyzerRequest request) {
+        return ofNullable(request.getMinUptrendEnvelopeLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(30));
+    }
+
+    private BigDecimal extractMaxUptrendLevel(ROAnalyzerRequest request) {
+        return ofNullable(request.getMaxUptrendEnvelopeLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(60));
+    }
+
+    private BigDecimal extractAcceptableSignalLevel(ROAnalyzerRequest request) {
+        return ofNullable(request.getAcceptableSignalEnvelopeLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(38));
     }
 
     private SignalStrength[] defineSignals() {
@@ -83,7 +102,7 @@ public class ROAnalyzer implements Analyzer<ROAnalyzerResult> {
         return indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO) > 0
                 && indicatorResults[currentIndex].getIndicatorValue().compareTo(indicatorResults[currentIndex - 1].getIndicatorValue()) > 0
                 && indicatorResults[currentIndex].getIndicatorValue().compareTo(indicatorResults[currentIndex - 2].getIndicatorValue()) > 0
-                && indicatorResults[currentIndex].getUpperEnvelope().compareTo(BUY_ACCEPTABLE_ENVELOPE_LEVEL) < 0;
+                && indicatorResults[currentIndex].getUpperEnvelope().compareTo(acceptableSignalEnvelopeLevel) < 0;
     }
 
     private Strength defineBuyStrength(int currentIndex) {
@@ -96,7 +115,7 @@ public class ROAnalyzer implements Analyzer<ROAnalyzerResult> {
         return indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO) < 0
                 && indicatorResults[currentIndex].getIndicatorValue().compareTo(indicatorResults[currentIndex - 1].getIndicatorValue()) < 0
                 && indicatorResults[currentIndex].getIndicatorValue().compareTo(indicatorResults[currentIndex - 2].getIndicatorValue()) < 0
-                && indicatorResults[currentIndex].getLowerEnvelope().compareTo(SELL_ACCEPTABLE_ENVELOPE_LEVEL) > 0;
+                && indicatorResults[currentIndex].getLowerEnvelope().compareTo(acceptableSignalEnvelopeLevel.negate()) > 0;
     }
 
     private Strength defineSellStrength(int currentIndex) {
@@ -136,14 +155,14 @@ public class ROAnalyzer implements Analyzer<ROAnalyzerResult> {
 
     private boolean isUptrend(int currentIndex) {
         return indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO) > 0
-                && indicatorResults[currentIndex].getUpperEnvelope().compareTo(MIN_UPTREND_ENVELOPE_LEVEL) > 0
-                && indicatorResults[currentIndex].getUpperEnvelope().compareTo(MAX_UPTREND_ENVELOPE_LEVEL) < 0;
+                && indicatorResults[currentIndex].getUpperEnvelope().compareTo(minUptrendEnvelopeLevel) > 0
+                && indicatorResults[currentIndex].getUpperEnvelope().compareTo(maxUptrendEnvelopeLevel) < 0;
     }
 
     private boolean isDowntrend(int currentIndex) {
         return indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO) < 0
-                && indicatorResults[currentIndex].getLowerEnvelope().compareTo(MIN_DOWNTREND_ENVELOPE_LEVEL) > 0
-                && indicatorResults[currentIndex].getLowerEnvelope().compareTo(MAX_DOWNTREND_ENVELOPE_LEVEL) < 0;
+                && indicatorResults[currentIndex].getLowerEnvelope().compareTo(maxUptrendEnvelopeLevel.negate()) > 0
+                && indicatorResults[currentIndex].getLowerEnvelope().compareTo(minUptrendEnvelopeLevel.negate()) < 0;
     }
 
     private void buildROAnalyzerResult(SignalStrength[] signals) {

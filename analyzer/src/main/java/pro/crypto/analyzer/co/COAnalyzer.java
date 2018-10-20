@@ -20,8 +20,6 @@ import static pro.crypto.model.Strength.*;
 
 public class COAnalyzer implements Analyzer<COAnalyzerResult> {
 
-    private final static BigDecimal ZERO_LEVEL = ZERO;
-
     private final Tick[] originalData;
     private final COResult[] indicatorResults;
 
@@ -62,7 +60,7 @@ public class COAnalyzer implements Analyzer<COAnalyzerResult> {
     }
 
     private SignalStrength[] findCrossSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, ZERO_LEVEL).analyze())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, ZERO).analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
@@ -87,11 +85,11 @@ public class COAnalyzer implements Analyzer<COAnalyzerResult> {
     }
 
     private Strength defineBuyStrength(int currentIndex) {
-        return indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO_LEVEL) > 0 ? NORMAL : STRONG;
+        return indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO) > 0 ? NORMAL : STRONG;
     }
 
     private Strength defineSellStrength(int currentIndex) {
-        return indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO_LEVEL) > 0 ? STRONG : NORMAL;
+        return indicatorResults[currentIndex].getIndicatorValue().compareTo(ZERO) > 0 ? STRONG : NORMAL;
     }
 
     private void buildCOAnalyzerResult(SignalStrength[] mergedSignals) {

@@ -11,23 +11,26 @@ import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static java.util.Optional.ofNullable;
 import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.NEUTRAL;
 import static pro.crypto.model.Signal.SELL;
 
 public class CFOAnalyzer implements Analyzer<CFOAnalyzerResult> {
 
-    private final static BigDecimal OVERBOUGHT_LEVEL = new BigDecimal(0.5);
-    private final static BigDecimal OVERSOLD_LEVEL = new BigDecimal(-0.5);
-
     private final Tick[] originalData;
     private final CFOResult[] indicatorResults;
+    private final BigDecimal oversoldLevel;
+    private final BigDecimal overboughtLevel;
 
     private CFOAnalyzerResult[] result;
 
-    public CFOAnalyzer(AnalyzerRequest request) {
+    public CFOAnalyzer(AnalyzerRequest analyzerRequest) {
+        CFOAnalyzerRequest request = (CFOAnalyzerRequest) analyzerRequest;
         this.originalData = request.getOriginalData();
         this.indicatorResults = (CFOResult[]) request.getIndicatorResults();
+        this.oversoldLevel = extractOversoldLevel(request);
+        this.overboughtLevel = extractOverboughtLevel(request);
     }
 
     @Override
@@ -42,6 +45,18 @@ public class CFOAnalyzer implements Analyzer<CFOAnalyzerResult> {
             analyze();
         }
         return result;
+    }
+
+    private BigDecimal extractOversoldLevel(CFOAnalyzerRequest request) {
+        return ofNullable(request.getOversoldLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(-0.5));
+    }
+
+    private BigDecimal extractOverboughtLevel(CFOAnalyzerRequest request) {
+        return ofNullable(request.getOverboughtLevel())
+                .map(BigDecimal::new)
+                .orElse(new BigDecimal(0.5));
     }
 
     private Signal[] findSignals() {
@@ -80,7 +95,7 @@ public class CFOAnalyzer implements Analyzer<CFOAnalyzerResult> {
 
     private boolean isIndicatorInOversoldLevel(int currentIndex) {
         return indicatorResults[currentIndex].getIndicatorValue()
-                .compareTo(OVERSOLD_LEVEL) <= 0;
+                .compareTo(oversoldLevel) <= 0;
     }
 
     private boolean isIndicatorUnderSignalLine(int currentIndex) {
@@ -90,7 +105,7 @@ public class CFOAnalyzer implements Analyzer<CFOAnalyzerResult> {
 
     private boolean isIndicatorInOverboughtLevel(int currentIndex) {
         return indicatorResults[currentIndex].getIndicatorValue()
-                .compareTo(OVERBOUGHT_LEVEL) >= 0;
+                .compareTo(overboughtLevel) >= 0;
     }
 
     private void buildCFOAnalyzerResult(Signal[] signals) {

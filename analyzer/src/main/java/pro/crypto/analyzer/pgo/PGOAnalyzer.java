@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.pgo;
 
 import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.pgo.PGOResult;
 import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
@@ -51,11 +51,11 @@ public class PGOAnalyzer implements Analyzer<PGOAnalyzerResult> {
     }
 
     private void extractIndicatorValues() {
-        indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
     }
 
     private SignalStrength[] findOverboughtLevelSignals() {
-        return Stream.of(new StaticLineCrossFinder(indicatorValues, OVERBOUGHT_LEVEL).find())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, OVERBOUGHT_LEVEL).analyze())
                 .map(signal -> toSignalStrength(signal, defineOverboughtStrength(signal)))
                 .toArray(SignalStrength[]::new);
     }
@@ -73,7 +73,7 @@ public class PGOAnalyzer implements Analyzer<PGOAnalyzerResult> {
     }
 
     private SignalStrength[] findOversoldLevelSignals() {
-        return Stream.of(new StaticLineCrossFinder(indicatorValues, OVERSOLD_LEVEL).find())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, OVERSOLD_LEVEL).analyze())
                 .map(signal -> toSignalStrength(signal, defineOversoldStrength(signal)))
                 .toArray(SignalStrength[]::new);
     }
@@ -91,7 +91,7 @@ public class PGOAnalyzer implements Analyzer<PGOAnalyzerResult> {
     }
 
     private SignalStrength[] findZeroLineCrossSignals() {
-        return Stream.of(new StaticLineCrossFinder(indicatorValues, BigDecimal.ZERO).find())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, BigDecimal.ZERO).analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }

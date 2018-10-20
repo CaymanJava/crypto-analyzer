@@ -108,7 +108,7 @@ public class RelativeVigorIndex implements Indicator<RVIResult> {
     }
 
     private BigDecimal[] calculateTriangularMovingAverageValues(BigDecimal[] values) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateTriangularMovingAverage(values));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateTriangularMovingAverage(values));
     }
 
     private SimpleIndicatorResult[] calculateTriangularMovingAverage(BigDecimal[] values) {

@@ -83,7 +83,7 @@ public class PriceMomentumOscillator implements Indicator<PMOResult> {
     }
 
     private BigDecimal[] calculateRateOfChangeValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateRateOfChange());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateRateOfChange());
     }
 
     private SimpleIndicatorResult[] calculateRateOfChange() {
@@ -106,7 +106,7 @@ public class PriceMomentumOscillator implements Indicator<PMOResult> {
     }
 
     private BigDecimal[] smoothedRateOfChange(BigDecimal[] rocValues) {
-        return Stream.of(IndicatorResultExtractor.extractIndicatorValue(
+        return Stream.of(IndicatorResultExtractor.extractIndicatorValues(
                 calculateExponentialMovingAverage(rocValues, calculateAlphaCoefficient(smoothingPeriod), smoothingPeriod)))
                 .map(this::multiplyByTen)
                 .toArray(BigDecimal[]::new);
@@ -124,7 +124,7 @@ public class PriceMomentumOscillator implements Indicator<PMOResult> {
     }
 
     private BigDecimal[] calculatePriceMomentumOscillator(BigDecimal[] smoothedRocValues) {
-        return IndicatorResultExtractor.extractIndicatorValue(
+        return IndicatorResultExtractor.extractIndicatorValues(
                 calculateExponentialMovingAverage(smoothedRocValues, calculateAlphaCoefficient(doubleSmoothingPeriod), doubleSmoothingPeriod));
     }
 
@@ -136,7 +136,7 @@ public class PriceMomentumOscillator implements Indicator<PMOResult> {
     }
 
     private BigDecimal[] calculateSignalLine(BigDecimal[] priceMomentumOscillatorValues) {
-        return IndicatorResultExtractor.extractIndicatorValue(
+        return IndicatorResultExtractor.extractIndicatorValues(
                 calculateExponentialMovingAverage(priceMomentumOscillatorValues, null, signalPeriod));
     }
 

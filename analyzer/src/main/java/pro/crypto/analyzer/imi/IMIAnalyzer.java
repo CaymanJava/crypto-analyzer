@@ -2,7 +2,7 @@ package pro.crypto.analyzer.imi;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.imi.IMIResult;
 import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
@@ -55,7 +55,7 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
     }
 
     private void extractIndicatorValues() {
-        indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
     }
 
     private SignalStrength[] findDivergenceSignals() {
@@ -71,7 +71,7 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
     }
 
     private SignalStrength[] findOverboughtSignals() {
-        return Stream.of(new StaticLineCrossFinder(indicatorValues, OVERBOUGHT_LEVEL).find())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, OVERBOUGHT_LEVEL).analyze())
                 .map(signal -> toSignalStrength(signal, defineOverboughtStrength(signal)))
                 .toArray(SignalStrength[]::new);
     }
@@ -89,7 +89,7 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
     }
 
     private SignalStrength[] findOversoldSignals() {
-        return Stream.of(new StaticLineCrossFinder(indicatorValues, OVERSOLD_LEVEL).find())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, OVERSOLD_LEVEL).analyze())
                 .map(signal -> toSignalStrength(signal, defineOversoldStrength(signal)))
                 .toArray(SignalStrength[]::new);
     }

@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.ao;
 
-import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.SignalMerger;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.ao.AOResult;
@@ -89,7 +89,7 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
     }
 
     private Signal[] findCrossZeroSignals() {
-        return new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO).find();
+        return new StaticLineCrossAnalyzer(IndicatorResultExtractor.extractIndicatorValues(indicatorResults), ZERO).analyze();
     }
 
     private Signal[] findTwoPeaksSignals() {

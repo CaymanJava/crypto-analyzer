@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.di;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.di.DIResult;
 import pro.crypto.model.Analyzer;
@@ -46,13 +46,13 @@ public class DIAnalyzer implements Analyzer<DIAnalyzerResult> {
     }
 
     private SignalStrength[] findDivergenceSignals() {
-        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValue(indicatorResults)))
+        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValues(indicatorResults)))
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findCrossSignals() {
-        return Stream.of(new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO).find())
+        return Stream.of(new StaticLineCrossAnalyzer(IndicatorResultExtractor.extractIndicatorValues(indicatorResults), ZERO).analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }

@@ -1,7 +1,8 @@
 package pro.crypto.analyzer.pmo;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.pmo.PMOResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -13,7 +14,6 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
-import static pro.crypto.helper.IndicatorResultExtractor.extractIndicatorValue;
 import static pro.crypto.helper.IndicatorResultExtractor.extractSignalLineValues;
 import static pro.crypto.model.Strength.STRONG;
 import static pro.crypto.model.Strength.WEAK;
@@ -49,7 +49,7 @@ public class PMOAnalyzer implements Analyzer<PMOAnalyzerResult> {
     }
 
     private void extractIndicatorValues() {
-        indicatorValues = extractIndicatorValue(indicatorResults);
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
     }
 
     private SignalStrength[] findDivergenceSignals() {
@@ -59,7 +59,7 @@ public class PMOAnalyzer implements Analyzer<PMOAnalyzerResult> {
     }
 
     private SignalStrength[] findSignalLineCrossSignals() {
-        return Stream.of(new DynamicLineCrossFinder(indicatorValues, extractSignalLineValues(indicatorResults)).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(indicatorValues, extractSignalLineValues(indicatorResults)).analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }

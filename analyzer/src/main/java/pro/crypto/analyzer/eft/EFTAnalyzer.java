@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.eft;
 
-import pro.crypto.helper.DynamicLineCrossFinder;
-import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.eft.EFTResult;
 import pro.crypto.model.Analyzer;
@@ -29,7 +29,7 @@ public class EFTAnalyzer implements Analyzer<EFTAnalyzerResult> {
 
     @Override
     public void analyze() {
-        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
+        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
         SignalStrength[] zeroLineCrossSignals = findZeroLineCrossSignals(indicatorValues);
         SignalStrength[] triggerCrossSignals = findTriggerCrossSignals(indicatorValues);
         SignalStrength[] mergedSignals = mergeSignalsStrength(zeroLineCrossSignals, triggerCrossSignals);
@@ -45,13 +45,13 @@ public class EFTAnalyzer implements Analyzer<EFTAnalyzerResult> {
     }
 
     private SignalStrength[] findZeroLineCrossSignals(BigDecimal[] indicatorValues) {
-        return Stream.of(new StaticLineCrossFinder(indicatorValues, ZERO).find())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, ZERO).analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findTriggerCrossSignals(BigDecimal[] indicatorValues) {
-        return Stream.of(new DynamicLineCrossFinder(indicatorValues, extractTriggerValues()).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(indicatorValues, extractTriggerValues()).analyze())
                 .map(signal -> toSignalStrength(signal, NORMAL))
                 .toArray(SignalStrength[]::new);
     }

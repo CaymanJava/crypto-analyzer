@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.ma;
 
-import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.ma.MAResult;
@@ -41,10 +41,10 @@ public class MAAnalyzer implements Analyzer<MAAnalyzerResult> {
     }
 
     private Signal[] findCrossPriceSignals() {
-        return new DynamicLineCrossFinder(
+        return new DynamicLineCrossAnalyzer(
                 PriceVolumeExtractor.extract(originalData, CLOSE),
-                IndicatorResultExtractor.extractIndicatorValue(indicatorResults))
-                .find();
+                IndicatorResultExtractor.extractIndicatorValues(indicatorResults))
+                .analyze();
     }
 
     private void buildMAAnalyzerResult(Signal[] signals) {

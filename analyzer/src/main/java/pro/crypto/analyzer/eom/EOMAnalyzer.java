@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.eom;
 
-import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.eom.EOMResult;
 import pro.crypto.model.Analyzer;
@@ -37,7 +37,7 @@ public class EOMAnalyzer implements Analyzer<EOMAnalyzerResult> {
     }
 
     private Signal[] findSignals() {
-        return new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO).find();
+        return new StaticLineCrossAnalyzer(IndicatorResultExtractor.extractIndicatorValues(indicatorResults), ZERO).analyze();
     }
 
     private void buildEOMAnalyzerResult(Signal[] signals) {

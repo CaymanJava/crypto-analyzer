@@ -89,11 +89,11 @@ public class CoppockCurve implements Indicator<CCResult> {
     }
 
     private BigDecimal[] calculateLongRateOfChange() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateRateOfChange(longROCPeriod));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateRateOfChange(longROCPeriod));
     }
 
     private BigDecimal[] calculateShortRateOfChange() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateRateOfChange(shortROCPeriod));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateRateOfChange(shortROCPeriod));
     }
 
     private SimpleIndicatorResult[] calculateRateOfChange(int longRocPeriod) {
@@ -127,7 +127,7 @@ public class CoppockCurve implements Indicator<CCResult> {
     }
 
     private BigDecimal[] calculateWeightedMovingAverage(BigDecimal[] notSmoothedCCValues) {
-        BigDecimal[] wmaResult = IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(notSmoothedCCValues));
+        BigDecimal[] wmaResult = IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage(notSmoothedCCValues));
         BigDecimal[] smoothedCC = new BigDecimal[originalData.length];
         System.arraycopy(wmaResult, 0, smoothedCC, longROCPeriod, wmaResult.length);
         return smoothedCC;

@@ -55,7 +55,7 @@ public class DoubleExponentialMovingAverage extends MovingAverage {
     }
 
     private BigDecimal[] calculateExponentialMovingAverageValues(Tick[] data, PriceType priceType) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateExponentialMovingAverage(data, priceType));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateExponentialMovingAverage(data, priceType));
     }
 
     private SimpleIndicatorResult[] calculateExponentialMovingAverage(Tick[] data, PriceType priceType) {

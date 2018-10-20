@@ -10,17 +10,17 @@ import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.NEUTRAL;
 import static pro.crypto.model.Signal.SELL;
 
-public class DynamicLineCrossFinder {
+public class DynamicLineCrossAnalyzer {
 
     private final BigDecimal[] firstLineValues;
     private final BigDecimal[] secondLineValues;
 
-    public DynamicLineCrossFinder(BigDecimal[] firstLineValues, BigDecimal[] secondLineValues) {
+    public DynamicLineCrossAnalyzer(BigDecimal[] firstLineValues, BigDecimal[] secondLineValues) {
         this.firstLineValues = firstLineValues;
         this.secondLineValues = secondLineValues;
     }
 
-    public Signal[] find() {
+    public Signal[] analyze() {
         return IntStream.range(0, firstLineValues.length)
                 .mapToObj(this::findCrossSignal)
                 .toArray(Signal[]::new);

@@ -67,11 +67,11 @@ public class AwesomeOscillator implements Indicator<AOResult> {
     }
 
     private BigDecimal[] calculateSlowMovingAverage(BigDecimal[] medianPrices) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateSimpleMovingAverage(medianPrices, slowPeriod));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateSimpleMovingAverage(medianPrices, slowPeriod));
     }
 
     private BigDecimal[] calculateFastMovingAverage(BigDecimal[] medianPrices) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateSimpleMovingAverage(medianPrices, fastPeriod));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateSimpleMovingAverage(medianPrices, fastPeriod));
     }
 
     private SimpleIndicatorResult[] calculateSimpleMovingAverage(BigDecimal[] medianPrices, int period) {

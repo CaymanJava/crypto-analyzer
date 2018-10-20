@@ -82,7 +82,7 @@ public class RainbowMovingAverage implements Indicator<RMAResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues(Tick[] data, PriceType priceType) {
-        BigDecimal[] maValues = IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(data, priceType));
+        BigDecimal[] maValues = IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage(data, priceType));
         BigDecimal[] result = new BigDecimal[originalData.length];
         System.arraycopy(maValues, 0, result, originalData.length - maValues.length, maValues.length);
         return result;

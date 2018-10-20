@@ -71,7 +71,7 @@ public class QuickStick implements Indicator<QSResult> {
     }
 
     private BigDecimal[] calculateQuickStickValues(BigDecimal[] closeOpenDifference) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(closeOpenDifference));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage(closeOpenDifference));
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] closeOpenDifference) {

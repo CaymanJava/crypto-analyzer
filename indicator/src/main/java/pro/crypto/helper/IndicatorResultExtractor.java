@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 public class IndicatorResultExtractor {
 
-    public static BigDecimal[] extractIndicatorValue(SimpleIndicatorResult[] result) {
+    public static BigDecimal[] extractIndicatorValues(SimpleIndicatorResult[] result) {
         return Stream.of(result)
                 .map(SimpleIndicatorResult::getIndicatorValue)
                 .toArray(BigDecimal[]::new);

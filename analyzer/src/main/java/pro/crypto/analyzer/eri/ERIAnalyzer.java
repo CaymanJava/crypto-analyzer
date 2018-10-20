@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.eri;
 
-import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.eri.ERIResult;
 import pro.crypto.model.Analyzer;
@@ -127,7 +127,7 @@ public class ERIAnalyzer implements Analyzer<ERIAnalyzerResult> {
     }
 
     private SignalStrength[] findCrossLinesSignals() {
-        return Stream.of(new DynamicLineCrossFinder(extractSmoothedLine(), IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(extractSmoothedLine(), IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).analyze())
                 .map(signal -> toSignalStrength(signal, NORMAL))
                 .toArray(SignalStrength[]::new);
     }

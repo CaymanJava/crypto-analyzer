@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.efi;
 
-import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.efi.EFIResult;
 import pro.crypto.model.Analyzer;
@@ -37,7 +37,7 @@ public class EFIAnalyzer implements Analyzer<EFIAnalyzerResult> {
     }
 
     private Signal[] findSignals() {
-        return new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO).find();
+        return new StaticLineCrossAnalyzer(IndicatorResultExtractor.extractIndicatorValues(indicatorResults), ZERO).analyze();
     }
 
     private void buildEFIAnalyzerResult(Signal[] signals) {

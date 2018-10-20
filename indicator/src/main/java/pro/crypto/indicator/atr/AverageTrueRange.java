@@ -109,7 +109,7 @@ public class AverageTrueRange implements Indicator<ATRResult> {
     }
 
     private BigDecimal[] calculateMovingAverage() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverageValues());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverageValues());
     }
 
     private SimpleIndicatorResult[] calculateMovingAverageValues() {

@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.ppo;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.ppo.PPOResult;
 import pro.crypto.model.Analyzer;
@@ -49,7 +49,7 @@ public class PPOAnalyzer implements Analyzer<PPOAnalyzerResult> {
     }
 
     private void extractIndicatorValues() {
-        indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
     }
 
     private SignalStrength[] findDivergenceSignals() {
@@ -59,7 +59,7 @@ public class PPOAnalyzer implements Analyzer<PPOAnalyzerResult> {
     }
 
     private SignalStrength[] findSignalLineCrossSignals() {
-        return Stream.of(new DynamicLineCrossFinder(indicatorValues, extractSignalLineValues(indicatorResults)).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(indicatorValues, extractSignalLineValues(indicatorResults)).analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }

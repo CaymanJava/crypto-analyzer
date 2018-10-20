@@ -77,11 +77,11 @@ public class MassIndex implements Indicator<MIResult> {
     }
 
     private BigDecimal[] calculateSingleMovingAverage(BigDecimal[] highLowDifferential) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateExponentialMovingAverage(highLowDifferential));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateExponentialMovingAverage(highLowDifferential));
     }
 
     private BigDecimal[] calculateDoubleMovingAverage(BigDecimal[] singleMovingAverage) {
-        BigDecimal[] doubleEMA = IndicatorResultExtractor.extractIndicatorValue(calculateExponentialMovingAverage(singleMovingAverage));
+        BigDecimal[] doubleEMA = IndicatorResultExtractor.extractIndicatorValues(calculateExponentialMovingAverage(singleMovingAverage));
         BigDecimal[] result = new BigDecimal[originalData.length];
         System.arraycopy(doubleEMA, 0, result, EXPONENTIAL_MOVING_AVERAGE_PERIOD - 1, doubleEMA.length);
         return result;

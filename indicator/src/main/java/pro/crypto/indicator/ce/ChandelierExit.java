@@ -83,7 +83,7 @@ public class ChandelierExit implements Indicator<CEResult> {
     }
 
     private BigDecimal[] calculateAverageTrueRangeValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateAverageTrueRange());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateAverageTrueRange());
     }
 
     private SimpleIndicatorResult[] calculateAverageTrueRange() {

@@ -136,7 +136,7 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
 
     private BigDecimal[] calculateDirectionalIndicators(BigDecimal[] positiveDirectionalMovements, BigDecimal[] trueRanges) {
         BigDecimal[] ratios = calculateRatios(positiveDirectionalMovements, trueRanges);
-        return IndicatorResultExtractor.extractIndicatorValue(MovingAverageFactory.create(buildMARequest(ratios)).getResult());
+        return IndicatorResultExtractor.extractIndicatorValues(MovingAverageFactory.create(buildMARequest(ratios)).getResult());
     }
 
     private BigDecimal[] calculateRatios(BigDecimal[] directionalMovements, BigDecimal[] trueRanges) {
@@ -157,7 +157,7 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
 
     private BigDecimal[] calculateAverageDirectionalIndexes(BigDecimalTuple[] directionalIndicators) {
         BigDecimal[] directionalMovementIndexValues = calculateDirectionalMovementIndexValues(directionalIndicators);
-        return IndicatorResultExtractor.extractIndicatorValue(MovingAverageFactory.create(buildMARequest(directionalMovementIndexValues)).getResult());
+        return IndicatorResultExtractor.extractIndicatorValues(MovingAverageFactory.create(buildMARequest(directionalMovementIndexValues)).getResult());
     }
 
     private BigDecimal[] calculateDirectionalMovementIndexValues(BigDecimalTuple[] directionalIndicators) {

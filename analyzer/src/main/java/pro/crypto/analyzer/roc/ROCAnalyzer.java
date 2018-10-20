@@ -1,7 +1,8 @@
 package pro.crypto.analyzer.roc;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.roc.ROCResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -13,7 +14,6 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
-import static pro.crypto.helper.IndicatorResultExtractor.extractIndicatorValue;
 import static pro.crypto.model.Strength.STRONG;
 import static pro.crypto.model.Strength.WEAK;
 
@@ -48,7 +48,7 @@ public class ROCAnalyzer implements Analyzer<ROCAnalyzerResult> {
     }
 
     private void extractIndicatorValues() {
-        indicatorValues = extractIndicatorValue(indicatorResults);
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
     }
 
     private SignalStrength[] findDivergenceSignals() {
@@ -58,7 +58,7 @@ public class ROCAnalyzer implements Analyzer<ROCAnalyzerResult> {
     }
 
     private SignalStrength[] findZeroLineCrossSignals() {
-        return Stream.of(new StaticLineCrossFinder(indicatorValues, BigDecimal.ZERO).find())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, BigDecimal.ZERO).analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }

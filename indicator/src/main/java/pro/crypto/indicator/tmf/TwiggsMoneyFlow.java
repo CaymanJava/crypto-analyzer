@@ -146,7 +146,7 @@ public class TwiggsMoneyFlow implements Indicator<TMFResult> {
     }
 
     private BigDecimal[] calculateExponentialMovingAverageValues(BigDecimal[] values) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(values));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage(values));
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] values) {

@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.dpo;
 
-import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.dpo.DPOResult;
 import pro.crypto.model.Analyzer;
@@ -37,7 +37,7 @@ public class DPOAnalyzer implements Analyzer<DPOAnalyzerResult> {
     }
 
     private Signal[] findSignals() {
-        return new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO).find();
+        return new StaticLineCrossAnalyzer(IndicatorResultExtractor.extractIndicatorValues(indicatorResults), ZERO).analyze();
     }
 
     private void buildCOGAnalyzerResult(Signal[] signals) {

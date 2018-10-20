@@ -30,7 +30,7 @@ public class DivergenceTest {
         ADLResult[] result = (ADLResult[]) loadIndicatorResult();
         return DivergenceRequest.builder()
                 .originalData(new OneDayTickGenerator().generate())
-                .indicatorValues(IndicatorResultExtractor.extractIndicatorValue(result))
+                .indicatorValues(IndicatorResultExtractor.extractIndicatorValues(result))
                 .build();
     }
 

@@ -1,9 +1,6 @@
 package pro.crypto.analyzer.cci;
 
-import pro.crypto.helper.StaticLineCrossFinder;
-import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.SignalStrengthMerger;
-import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.*;
 import pro.crypto.indicator.cci.CCIResult;
 import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
@@ -13,7 +10,6 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
 import static pro.crypto.model.Strength.NORMAL;
 import static pro.crypto.model.Strength.WEAK;
 
@@ -26,6 +22,7 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
     private final Tick[] originalData;
     private final CCIResult[] indicatorResults;
 
+    private BigDecimal[] indicatorValues;
     private CCIAnalyzerResult[] result;
 
     public CCIAnalyzer(AnalyzerRequest request) {
@@ -35,10 +32,12 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
 
     @Override
     public void analyze() {
+        extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
         SignalStrength[] mergedSignals = mergeSignal(divergenceSignals, crossSignals);
-        buildCCIAnalyzerResult(mergedSignals);
+        SecurityLevel[] securityLevels = defineSecurityLevels();
+        buildCCIAnalyzerResult(mergedSignals, securityLevels);
     }
 
     @Override
@@ -49,22 +48,25 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
         return result;
     }
 
+    private void extractIndicatorValues() {
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
+    }
+
     private SignalStrength[] findDivergenceSignals() {
-        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValue(indicatorResults)))
+        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, indicatorValues))
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findCrossSignals() {
-        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
-        SignalStrength[] overboughtSignals = findCrossSignals(indicatorValues, OVERBOUGHT_LEVEL, NORMAL);
-        SignalStrength[] oversoldSignals = findCrossSignals(indicatorValues, OVERSOLD_LEVEL, NORMAL);
-        SignalStrength[] zeroLineSignals = findCrossSignals(indicatorValues, ZERO_LEVEL, WEAK);
+        SignalStrength[] overboughtSignals = findCrossSignals(OVERBOUGHT_LEVEL, NORMAL);
+        SignalStrength[] oversoldSignals = findCrossSignals(OVERSOLD_LEVEL, NORMAL);
+        SignalStrength[] zeroLineSignals = findCrossSignals(ZERO_LEVEL, WEAK);
         return mergeSignalsStrength(overboughtSignals, oversoldSignals, zeroLineSignals);
     }
 
-    private SignalStrength[] findCrossSignals(BigDecimal[] indicatorValues, BigDecimal level, Strength strength) {
-        return Stream.of(new StaticLineCrossFinder(indicatorValues, level).find())
+    private SignalStrength[] findCrossSignals(BigDecimal level, Strength strength) {
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, level).analyze())
                 .map(signal -> toSignalStrength(signal, strength))
                 .toArray(SignalStrength[]::new);
     }
@@ -75,36 +77,18 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
                 .toArray(SignalStrength[]::new);
     }
 
-    private void buildCCIAnalyzerResult(SignalStrength[] mergedSignals) {
+    private void buildCCIAnalyzerResult(SignalStrength[] mergedSignals, SecurityLevel[] securityLevels) {
         result = IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> buildCCIAnalyzerResult(mergedSignals[idx], idx))
+                .mapToObj(idx -> buildCCIAnalyzerResult(mergedSignals[idx], securityLevels[idx], idx))
                 .toArray(CCIAnalyzerResult[]::new);
     }
 
-    private CCIAnalyzerResult buildCCIAnalyzerResult(SignalStrength mergedSignal, int currentIndex) {
-        return new CCIAnalyzerResult(indicatorResults[currentIndex].getTime(), mergedSignal, defineSecurityLevel(currentIndex));
+    private CCIAnalyzerResult buildCCIAnalyzerResult(SignalStrength mergedSignal, SecurityLevel securityLevel, int currentIndex) {
+        return new CCIAnalyzerResult(indicatorResults[currentIndex].getTime(), mergedSignal, securityLevel);
     }
 
-    private SecurityLevel defineSecurityLevel(int currentIndex) {
-        return isPossibleDefineSecurityLevel(currentIndex)
-                ? defineSecurityLevel(indicatorResults[currentIndex].getIndicatorValue())
-                : SecurityLevel.UNDEFINED;
-    }
-
-    private boolean isPossibleDefineSecurityLevel(int currentIndex) {
-        return nonNull(indicatorResults[currentIndex].getIndicatorValue());
-    }
-
-    private SecurityLevel defineSecurityLevel(BigDecimal indicatorValue) {
-        if (indicatorValue.compareTo(OVERBOUGHT_LEVEL) >= 0) {
-            return SecurityLevel.OVERBOUGHT;
-        }
-
-        if (indicatorValue.compareTo(OVERSOLD_LEVEL) <= 0) {
-            return SecurityLevel.OVERSOLD;
-        }
-
-        return SecurityLevel.NORMAL;
+    private SecurityLevel[] defineSecurityLevels() {
+        return new SecurityLevelAnalyzer(indicatorValues, OVERBOUGHT_LEVEL, OVERSOLD_LEVEL).analyze();
     }
 
 }

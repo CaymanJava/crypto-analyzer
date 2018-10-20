@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.rma;
 
-import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.rma.RMAResult;
@@ -114,7 +114,7 @@ public class RMAAnalyzer implements Analyzer<RMAAnalyzerResult> {
 
     private SignalStrength[] findHigherLinesCrossSignals(BigDecimal[] closePrices) {
         BigDecimal[] higherValues = extractMaxValues();
-        Signal[] signals = new DynamicLineCrossFinder(closePrices, higherValues).find();
+        Signal[] signals = new DynamicLineCrossAnalyzer(closePrices, higherValues).analyze();
         return IntStream.range(0, indicatorResults.length)
                 .map(idx -> confirmCrossHigherLineSignal(signals, idx))
                 .mapToObj(idx -> toSignalStrength(signals[idx], defineCrossHigherLineStrength(signals[idx], idx)))
@@ -154,7 +154,7 @@ public class RMAAnalyzer implements Analyzer<RMAAnalyzerResult> {
 
     private SignalStrength[] findLowerLinesCrossSignals(BigDecimal[] closePrices) {
         BigDecimal[] lowerValues = extractMinValues();
-        Signal[] signals = new DynamicLineCrossFinder(closePrices, lowerValues).find();
+        Signal[] signals = new DynamicLineCrossAnalyzer(closePrices, lowerValues).analyze();
         return IntStream.range(0, indicatorResults.length)
                 .map(idx -> confirmCrossLowerLineSignal(signals, idx))
                 .mapToObj(idx -> toSignalStrength(signals[idx], defineCrossLowerLineStrength(signals[idx], idx)))

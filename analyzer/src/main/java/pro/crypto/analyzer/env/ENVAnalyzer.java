@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.env;
 
 import pro.crypto.helper.BandAnalyzer;
-import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.env.ENVResult;
 import pro.crypto.model.Analyzer;
@@ -56,21 +56,21 @@ public class ENVAnalyzer implements Analyzer<ENVAnalyzerResult> {
     }
 
     private SignalStrength[] findUpperBandSignals(BigDecimal[] closePrices) {
-        return Stream.of(new DynamicLineCrossFinder(closePrices, extractBandValues(ENVResult::getUpperBand)).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractBandValues(ENVResult::getUpperBand)).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, BUY))
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findLowerBandSignals(BigDecimal[] closePrices) {
-        return Stream.of(new DynamicLineCrossFinder(closePrices, extractBandValues(ENVResult::getLowerBand)).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractBandValues(ENVResult::getLowerBand)).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, SELL))
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findMiddleBandSignals(BigDecimal[] closePrices) {
-        return Stream.of(new DynamicLineCrossFinder(closePrices, extractBandValues(ENVResult::getMiddleBand)).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractBandValues(ENVResult::getMiddleBand)).analyze())
                 .map(signal -> toSignalStrength(signal, NORMAL))
                 .toArray(SignalStrength[]::new);
     }

@@ -65,7 +65,7 @@ public class CommodityChannelIndex implements Indicator<CCIResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues(BigDecimal[] typicalPrices) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(typicalPrices));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage(typicalPrices));
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] typicalPrices) {

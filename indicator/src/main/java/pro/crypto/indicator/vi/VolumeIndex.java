@@ -20,12 +20,12 @@ import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public abstract class VolumeIndex implements Indicator<VIResult> {
 
-    final Tick[] originalData;
-    final int period;
-    final IndicatorType movingAverageType;
-    final PriceType priceType;
+    private final Tick[] originalData;
+    private final int period;
+    private final IndicatorType movingAverageType;
+    private final PriceType priceType;
 
-    VIResult[] result;
+    private VIResult[] result;
 
     VolumeIndex(IndicatorRequest creationRequest) {
         VIRequest request = (VIRequest) creationRequest;
@@ -55,15 +55,6 @@ public abstract class VolumeIndex implements Indicator<VIResult> {
         return result;
     }
 
-    BigDecimal[] calculateVolumeIndexes() {
-        BigDecimal[] negativeVolumeIndexes = new BigDecimal[originalData.length];
-        negativeVolumeIndexes[0] = originalData[0].getBaseVolume();
-        IntStream.range(1, negativeVolumeIndexes.length)
-                .forEach(idx -> negativeVolumeIndexes[idx] = calculateVolumeIndexValue(negativeVolumeIndexes, idx));
-
-        return negativeVolumeIndexes;
-    }
-
     abstract BigDecimal calculateVolumeIndexValue(BigDecimal[] negativeVolumeIndexes, int currentIndex);
 
     boolean isCurrentVolumeMoreThanPrevious(int currentIndex) {
@@ -74,8 +65,17 @@ public abstract class VolumeIndex implements Indicator<VIResult> {
         return previousNegativeVolumeIndex.multiply(calculatePriceRatio(currentIndex));
     }
 
+    private BigDecimal[] calculateVolumeIndexes() {
+        BigDecimal[] negativeVolumeIndexes = new BigDecimal[originalData.length];
+        negativeVolumeIndexes[0] = originalData[0].getBaseVolume();
+        IntStream.range(1, negativeVolumeIndexes.length)
+                .forEach(idx -> negativeVolumeIndexes[idx] = calculateVolumeIndexValue(negativeVolumeIndexes, idx));
+
+        return negativeVolumeIndexes;
+    }
+
     private BigDecimal[] calculateMovingAverageValues(BigDecimal[] negativeVolumeIndexes) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(negativeVolumeIndexes));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage(negativeVolumeIndexes));
     }
 
     private void buildNegativeVolumeIndexResult(BigDecimal[] negativeVolumeIndexes, BigDecimal[] movingAverageValues) {

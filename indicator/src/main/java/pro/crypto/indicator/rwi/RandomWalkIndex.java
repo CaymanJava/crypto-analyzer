@@ -61,7 +61,7 @@ public class RandomWalkIndex implements Indicator<RWIResult> {
     }
 
     private void calculateAverageTrueRangeValues() {
-        atrValues = IndicatorResultExtractor.extractIndicatorValue(calculateAverageTrueRange());
+        atrValues = IndicatorResultExtractor.extractIndicatorValues(calculateAverageTrueRange());
     }
 
     private SimpleIndicatorResult[] calculateAverageTrueRange() {

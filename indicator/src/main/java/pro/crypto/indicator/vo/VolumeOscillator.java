@@ -81,7 +81,7 @@ public class VolumeOscillator implements Indicator<VOResult> {
     }
 
     private BigDecimal[] calculateExponentialMovingAverageValues(BigDecimal[] volumes, int period) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateExponentialMovingAverage(volumes, period));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateExponentialMovingAverage(volumes, period));
     }
 
     private SimpleIndicatorResult[] calculateExponentialMovingAverage(BigDecimal[] volumes, int period) {

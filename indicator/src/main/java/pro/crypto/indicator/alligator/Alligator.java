@@ -94,7 +94,7 @@ public class Alligator implements Indicator<AlligatorResult> {
     }
 
     private BigDecimal[] calculateDisplacedMovingAverage(BigDecimal[] medianPrices, int period, int displaced) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(medianPrices, period, displaced));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage(medianPrices, period, displaced));
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] medianPrices, int period, int displaced) {

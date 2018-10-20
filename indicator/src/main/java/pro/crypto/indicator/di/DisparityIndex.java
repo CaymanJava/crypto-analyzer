@@ -65,7 +65,7 @@ public class DisparityIndex implements Indicator<DIResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage());
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage() {

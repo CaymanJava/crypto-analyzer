@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.cog;
 
-import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cog.COGResult;
 import pro.crypto.model.Analyzer;
@@ -36,8 +36,8 @@ public class COGAnalyzer implements Analyzer<COGAnalyzerResult> {
     }
 
     private Signal[] findSignals() {
-        return new DynamicLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults),
-                IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).find();
+        return new DynamicLineCrossAnalyzer(IndicatorResultExtractor.extractIndicatorValues(indicatorResults),
+                IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).analyze();
     }
 
     private void buildCOGAnalyzerResult(Signal[] signals) {

@@ -65,7 +65,7 @@ public class DetrendedPriceOscillator implements Indicator<DPOResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage());
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage() {

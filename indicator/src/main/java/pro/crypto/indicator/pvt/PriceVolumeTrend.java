@@ -88,7 +88,7 @@ public class PriceVolumeTrend implements Indicator<PVTResult> {
     }
 
     private BigDecimal[] calculateSignalLineValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage());
     }
 
     private MAResult[] calculateMovingAverage() {

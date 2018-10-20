@@ -12,24 +12,15 @@ import static pro.crypto.helper.MathHelper.toBigDecimal;
 class ICDataGenerator {
 
     static AnalyzerRequest generateDataForTenkanKijunCrossTest() {
-        return AnalyzerRequest.builder()
-                .originalData(getTickData())
-                .indicatorResults(getIndicatorDataForTenkanKijunCrossTest())
-                .build();
+        return new AnalyzerRequest(getTickData(), getIndicatorDataForTenkanKijunCrossTest());
     }
 
     static AnalyzerRequest generateDataForPriceKijunCrossSignals() {
-        return AnalyzerRequest.builder()
-                .originalData(getTickData())
-                .indicatorResults(getIndicatorDataForPriceKijunCrossTest())
-                .build();
+        return new AnalyzerRequest(getTickData(), getIndicatorDataForPriceKijunCrossTest());
     }
 
     static AnalyzerRequest generateDataForPriceCloudCross() {
-        return AnalyzerRequest.builder()
-                .originalData(getTickData())
-                .indicatorResults(getIndicatorDataForPriceCloudCrossTest())
-                .build();
+        return new AnalyzerRequest(getTickData(), getIndicatorDataForPriceCloudCrossTest());
     }
 
     private static Tick[] getTickData() {

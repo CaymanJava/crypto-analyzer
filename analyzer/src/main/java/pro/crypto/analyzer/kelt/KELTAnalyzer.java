@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.kelt;
 
-import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.kelt.KELTResult;
 import pro.crypto.model.Analyzer;
@@ -56,20 +56,20 @@ public class KELTAnalyzer implements Analyzer<KELTAnalyzerResult> {
     }
 
     private SignalStrength[] findUpperBandCrossSignals() {
-        return Stream.of(new DynamicLineCrossFinder(closePrices, extractBand(KELTResult::getUpperBand)).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractBand(KELTResult::getUpperBand)).analyze())
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findMiddleBandCrossSignals() {
-        return Stream.of(new DynamicLineCrossFinder(closePrices, extractBand(KELTResult::getMiddleBand)).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractBand(KELTResult::getMiddleBand)).analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
 
     }
 
     private SignalStrength[] findLowerBandCrossSignals() {
-        return Stream.of(new DynamicLineCrossFinder(closePrices, extractBand(KELTResult::getLowerBand)).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractBand(KELTResult::getLowerBand)).analyze())
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }

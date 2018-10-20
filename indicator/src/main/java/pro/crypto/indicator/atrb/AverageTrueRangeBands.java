@@ -68,7 +68,7 @@ public class AverageTrueRangeBands implements Indicator<ATRBResult> {
     }
 
     private BigDecimal[] calculateAverageTrueRangeValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateAverageTrueRange());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateAverageTrueRange());
     }
 
     private SimpleIndicatorResult[] calculateAverageTrueRange() {

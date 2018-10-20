@@ -109,7 +109,7 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
     }
 
     private BigDecimal[] calculateSignalLineValues(BigDecimal[] indicatorValues) {
-        BigDecimal[] emaIndicatorValue = IndicatorResultExtractor.extractIndicatorValue(MovingAverageFactory.create(buildSignalLineMovingAverageRequest(indicatorValues))
+        BigDecimal[] emaIndicatorValue = IndicatorResultExtractor.extractIndicatorValues(MovingAverageFactory.create(buildSignalLineMovingAverageRequest(indicatorValues))
                 .getResult());
         return copyEmaIndicatorValueToResultArray(indicatorValues, emaIndicatorValue);
     }

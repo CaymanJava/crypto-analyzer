@@ -74,7 +74,7 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
     }
 
     private BigDecimal[] calculateAwesomeOscillatorValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateAwesomeOscillator());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateAwesomeOscillator());
     }
 
     private SimpleIndicatorResult[] calculateAwesomeOscillator() {
@@ -95,7 +95,7 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
     }
 
     private BigDecimal[] calculateMovingAverage(BigDecimal[] awesomeOscillatorValues) {
-        BigDecimal[] maValues = IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverageValues(awesomeOscillatorValues));
+        BigDecimal[] maValues = IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverageValues(awesomeOscillatorValues));
         BigDecimal[] result = new BigDecimal[awesomeOscillatorValues.length];
         System.arraycopy(maValues, 0, result, fastPeriod - 1, maValues.length);
         return result;

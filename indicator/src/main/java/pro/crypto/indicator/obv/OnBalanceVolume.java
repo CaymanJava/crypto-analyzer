@@ -97,7 +97,7 @@ public class OnBalanceVolume implements Indicator<OBVResult> {
     }
 
     private BigDecimal[] calculateSignalLineValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverageValues());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverageValues());
     }
 
     private MAResult[] calculateMovingAverageValues() {

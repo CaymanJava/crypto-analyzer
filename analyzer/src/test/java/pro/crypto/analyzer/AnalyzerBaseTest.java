@@ -28,10 +28,7 @@ public class AnalyzerBaseTest {
 
     protected AnalyzerRequest buildAnalyzerRequest(String fileName, Class<? extends IndicatorResult[]> clazz) {
         IndicatorResult[] indicatorResults = loadIndicatorResult(fileName, clazz);
-        return AnalyzerRequest.builder()
-                .originalData(originalData)
-                .indicatorResults(indicatorResults)
-                .build();
+        return new AnalyzerRequest(originalData, indicatorResults);
     }
 
     @SneakyThrows(IOException.class)
@@ -46,7 +43,7 @@ public class AnalyzerBaseTest {
     }
 
     @SneakyThrows(IOException.class)
-    private IndicatorResult[] loadIndicatorResult(String fileName, Class<? extends IndicatorResult[]> clazz) {
+    protected IndicatorResult[] loadIndicatorResult(String fileName, Class<? extends IndicatorResult[]> clazz) {
         ClassLoader classLoader = getClass().getClassLoader();
         URL url = classLoader.getResource("analyzer/request/" + fileName);
         if (nonNull(url)) {

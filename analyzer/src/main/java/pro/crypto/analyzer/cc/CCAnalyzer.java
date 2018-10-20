@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.cc;
 
-import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cc.CCResult;
 import pro.crypto.model.Analyzer;
@@ -37,7 +37,7 @@ public class CCAnalyzer implements Analyzer<CCAnalyzerResult> {
     }
 
     private Signal[] findCrossSignals() {
-        return new StaticLineCrossFinder(IndicatorResultExtractor.extractIndicatorValue(indicatorResults), ZERO).find();
+        return new StaticLineCrossAnalyzer(IndicatorResultExtractor.extractIndicatorValues(indicatorResults), ZERO).analyze();
     }
 
     private void buildCCAnalyzerResult(Signal[] signals) {

@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.cmf;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.StaticLineCrossFinder;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cmf.CMFResult;
 import pro.crypto.model.Analyzer;
@@ -53,24 +53,24 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
     }
 
     private Signal[] findDivergenceSignals() {
-        return new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValue(indicatorResults));
+        return new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValues(indicatorResults));
     }
 
     private Signal[] findIntersectionSignals() {
-        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValue(indicatorResults);
+        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
         Signal[] buySignals = findBuySignals(indicatorValues);
         Signal[] sellSignals = findSellSignals(indicatorValues);
         return mergeSignals(buySignals, sellSignals);
     }
 
     private Signal[] findBuySignals(BigDecimal[] indicatorValues) {
-        return Stream.of(new StaticLineCrossFinder(indicatorValues, BULLISH_SIGNAL_LINE).find())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, BULLISH_SIGNAL_LINE).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, SELL))
                 .toArray(Signal[]::new);
     }
 
     private Signal[] findSellSignals(BigDecimal[] indicatorValues) {
-        return Stream.of(new StaticLineCrossFinder(indicatorValues, BEARER_SIGNAL_LINE).find())
+        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, BEARER_SIGNAL_LINE).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, BUY))
                 .toArray(Signal[]::new);
     }

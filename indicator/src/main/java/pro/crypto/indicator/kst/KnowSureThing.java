@@ -129,7 +129,7 @@ public class KnowSureThing implements Indicator<KSTResult> {
     }
 
     private BigDecimal[] calculateRateOfChangeValues(int period) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateRateOfChange(period));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateRateOfChange(period));
     }
 
     private SimpleIndicatorResult[] calculateRateOfChange(int period) {
@@ -173,7 +173,7 @@ public class KnowSureThing implements Indicator<KSTResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues(BigDecimal[] values, int period) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(values, period));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage(values, period));
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] values, int period) {

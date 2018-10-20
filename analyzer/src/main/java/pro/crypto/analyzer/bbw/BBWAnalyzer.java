@@ -42,7 +42,7 @@ public class BBWAnalyzer implements Analyzer<BBWAnalyzerResult> {
     }
 
     private BigDecimal[] findCavities() {
-        Boolean[] increased = IncreasedQualifier.define(IndicatorResultExtractor.extractIndicatorValue(indicatorResults));
+        Boolean[] increased = IncreasedQualifier.define(IndicatorResultExtractor.extractIndicatorValues(indicatorResults));
         return IntStream.range(1, increased.length)
                 .filter(idx -> isPreviousValueCavity(increased[idx], increased[idx - 1]))
                 .map(idx -> idx - 1)

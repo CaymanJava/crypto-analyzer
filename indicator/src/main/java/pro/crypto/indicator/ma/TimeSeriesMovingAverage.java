@@ -38,7 +38,7 @@ public class TimeSeriesMovingAverage extends MovingAverage {
     }
 
     private BigDecimal[] calculateLinearRegressionValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateLinearRegression());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateLinearRegression());
     }
 
     private SimpleIndicatorResult[] calculateLinearRegression() {

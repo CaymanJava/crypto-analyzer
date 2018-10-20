@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.ce;
 
-import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.ce.CEResult;
 import pro.crypto.model.Analyzer;
@@ -48,13 +48,13 @@ public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
     }
 
     private Signal[] findLongExitSignals(BigDecimal[] closePrices) {
-        return Stream.of(new DynamicLineCrossFinder(closePrices, extractExits(CEResult::getLongChandelierExit)).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractExits(CEResult::getLongChandelierExit)).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, BUY))
                 .toArray(Signal[]::new);
     }
 
     private Signal[] findShortExitSignals(BigDecimal[] closePrices) {
-        return Stream.of(new DynamicLineCrossFinder(closePrices, extractExits(CEResult::getShortChandelierExit)).find())
+        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractExits(CEResult::getShortChandelierExit)).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, SELL))
                 .toArray(Signal[]::new);
     }

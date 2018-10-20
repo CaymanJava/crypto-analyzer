@@ -78,7 +78,7 @@ public class SchaffTrendCycle implements Indicator<STCResult> {
     }
 
     private BigDecimal[] calculateMACDValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMACD());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMACD());
     }
 
     private SimpleIndicatorResult[] calculateMACD() {

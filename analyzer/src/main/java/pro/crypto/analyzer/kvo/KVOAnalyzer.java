@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.kvo;
 
-import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.indicator.kvo.KVOResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -9,7 +9,7 @@ import pro.crypto.model.Signal;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
-import static pro.crypto.helper.IndicatorResultExtractor.extractIndicatorValue;
+import static pro.crypto.helper.IndicatorResultExtractor.extractIndicatorValues;
 import static pro.crypto.helper.IndicatorResultExtractor.extractSignalLineValues;
 
 public class KVOAnalyzer implements Analyzer<KVOAnalyzerResult> {
@@ -37,7 +37,7 @@ public class KVOAnalyzer implements Analyzer<KVOAnalyzerResult> {
     }
 
     private Signal[] findSignalLineCrossSignals() {
-        return new DynamicLineCrossFinder(extractIndicatorValue(indicatorResults), extractSignalLineValues(indicatorResults)).find();
+        return new DynamicLineCrossAnalyzer(extractIndicatorValues(indicatorResults), extractSignalLineValues(indicatorResults)).analyze();
     }
 
     private void buildKVOAnalyzerResult(Signal[] signals) {

@@ -74,7 +74,7 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
     }
 
     private BigDecimal[] calculateLinearRegressionValues() {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateLinearRegression());
+        return IndicatorResultExtractor.extractIndicatorValues(calculateLinearRegression());
     }
 
     private SimpleIndicatorResult[] calculateLinearRegression() {
@@ -115,7 +115,7 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues(BigDecimal[] chandeForecastValues) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(chandeForecastValues));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage(chandeForecastValues));
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] chandeForecastValues) {

@@ -152,7 +152,7 @@ public class StochasticMomentumIndex implements Indicator<SMIResult> {
     }
 
     private BigDecimal[] calculateMovingAverageValues(BigDecimal[] values) {
-        return IndicatorResultExtractor.extractIndicatorValue(calculateMovingAverage(values));
+        return IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage(values));
     }
 
     private SimpleIndicatorResult[] calculateMovingAverage(BigDecimal[] priceDifferences) {

@@ -1,6 +1,6 @@
 package pro.crypto.analyzer.adx;
 
-import pro.crypto.helper.DynamicLineCrossFinder;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.indicator.adx.ADXResult;
 import pro.crypto.model.*;
 import pro.crypto.model.result.AnalyzerResult;
@@ -61,9 +61,9 @@ public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult> {
     }
 
     private Signal[] recognizeSignals() {
-        return new DynamicLineCrossFinder(extractIndex(
+        return new DynamicLineCrossAnalyzer(extractIndex(
                 ADXResult::getPositiveDirectionalIndicator),
-                extractIndex(ADXResult::getNegativeDirectionalIndicator)).find();
+                extractIndex(ADXResult::getNegativeDirectionalIndicator)).analyze();
     }
 
     private BigDecimal[] extractIndex(Function<ADXResult, BigDecimal> directionIndicatorFunction) {

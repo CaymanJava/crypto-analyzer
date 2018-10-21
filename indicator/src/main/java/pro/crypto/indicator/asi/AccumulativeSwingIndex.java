@@ -24,6 +24,9 @@ import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.ACCUMULATIVE_SWING_INDEX;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
+/**
+* Indicator is made for visual analyzing and signal line crossing
+*/
 public class AccumulativeSwingIndex implements Indicator<ASIResult> {
 
     private final Tick[] originalData;

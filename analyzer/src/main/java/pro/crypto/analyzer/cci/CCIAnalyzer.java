@@ -38,7 +38,7 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
         extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignal(divergenceSignals, crossSignals);
+        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, crossSignals);
         SecurityLevel[] securityLevels = defineSecurityLevels();
         buildCCIAnalyzerResult(mergedSignals, securityLevels);
     }
@@ -83,12 +83,6 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
     private SignalStrength[] findCrossSignals(BigDecimal level, Strength strength) {
         return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, level).analyze())
                 .map(signal -> toSignalStrength(signal, strength))
-                .toArray(SignalStrength[]::new);
-    }
-
-    private SignalStrength[] mergeSignal(SignalStrength[] divergenceSignals, SignalStrength[] crossSignals) {
-        return IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new SignalStrengthMerger().merge(divergenceSignals[idx], crossSignals[idx]))
                 .toArray(SignalStrength[]::new);
     }
 

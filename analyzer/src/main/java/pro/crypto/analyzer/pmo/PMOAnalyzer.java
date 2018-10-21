@@ -53,7 +53,7 @@ public class PMOAnalyzer implements Analyzer<PMOAnalyzerResult> {
     }
 
     private SignalStrength[] findDivergenceSignals() {
-        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, indicatorValues))
+        return Stream.of(new DefaultDivergenceAnalyzer(originalData, indicatorValues).analyze())
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }

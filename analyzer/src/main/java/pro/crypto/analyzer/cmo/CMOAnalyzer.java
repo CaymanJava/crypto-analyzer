@@ -30,6 +30,7 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
     private final BigDecimal oversoldLevel;
     private final BigDecimal overboughtLevel;
 
+    private BigDecimal[] indicatorValues;
     private CMOAnalyzerResult[] result;
 
     public CMOAnalyzer(AnalyzerRequest analyzerRequest) {
@@ -42,6 +43,7 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
 
     @Override
     public void analyze() {
+        extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
         SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, crossSignals);
@@ -54,6 +56,10 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
             analyze();
         }
         return result;
+    }
+
+    private void extractIndicatorValues() {
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
     }
 
     private BigDecimal extractOversoldLevel(CMOAnalyzerRequest request) {
@@ -69,46 +75,45 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
     }
 
     private SignalStrength[] findDivergenceSignals() {
-        return Stream.of(new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValues(indicatorResults)))
+        return Stream.of(new DefaultDivergenceAnalyzer(originalData, indicatorValues).analyze())
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findCrossSignals() {
-        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
-        SignalStrength[] securityLevelSignals = findSecurityLevelSignals(indicatorValues);
-        SignalStrength[] zeroLineSignals = findZeroLineSignals(indicatorValues);
-        SignalStrength[] signalLineSignals = findSignalLineSignals(indicatorValues);
+        SignalStrength[] securityLevelSignals = findSecurityLevelSignals();
+        SignalStrength[] zeroLineSignals = findZeroLineSignals();
+        SignalStrength[] signalLineSignals = findSignalLineSignals();
         return mergeSignalsStrength(securityLevelSignals, zeroLineSignals, signalLineSignals);
     }
 
-    private SignalStrength[] findSecurityLevelSignals(BigDecimal[] indicatorValues) {
-        SignalStrength[] oversoldSignals = findOversoldSignals(indicatorValues);
-        SignalStrength[] overboughtSignals = findOverboughtSignals(indicatorValues);
+    private SignalStrength[] findSecurityLevelSignals() {
+        SignalStrength[] oversoldSignals = findOversoldSignals();
+        SignalStrength[] overboughtSignals = findOverboughtSignals();
         return mergeSignalsStrength(oversoldSignals, overboughtSignals);
     }
 
-    private SignalStrength[] findOverboughtSignals(BigDecimal[] indicatorValues) {
+    private SignalStrength[] findOverboughtSignals() {
         return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, overboughtLevel).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, BUY))
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
 
-    private SignalStrength[] findOversoldSignals(BigDecimal[] indicatorValues) {
+    private SignalStrength[] findOversoldSignals() {
         return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, oversoldLevel).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, SELL))
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
 
-    private SignalStrength[] findZeroLineSignals(BigDecimal[] indicatorValues) {
+    private SignalStrength[] findZeroLineSignals() {
         return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, ZERO).analyze())
                 .map(signal -> toSignalStrength(signal, NORMAL))
                 .toArray(SignalStrength[]::new);
     }
 
-    private SignalStrength[] findSignalLineSignals(BigDecimal[] indicatorValues) {
+    private SignalStrength[] findSignalLineSignals() {
         return Stream.of(new DynamicLineCrossAnalyzer(indicatorValues, IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).analyze())
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);

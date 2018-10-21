@@ -1,10 +1,9 @@
-package pro.crypto.analyzer.kst;
+package pro.crypto.analyzer.rvi;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.helper.StaticLineCrossAnalyzer;
-import pro.crypto.indicator.kst.KSTResult;
+import pro.crypto.indicator.rvi.RVIResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.SignalStrength;
@@ -14,35 +13,34 @@ import java.math.BigDecimal;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
-import static pro.crypto.model.Strength.*;
+import static pro.crypto.model.Strength.STRONG;
+import static pro.crypto.model.Strength.WEAK;
 
-public class KSTAnalyzer implements Analyzer<KSTAnalyzerResult> {
+public class RVIAnalyzer implements Analyzer<RVIAnalyzerResult> {
 
     private final Tick[] originalData;
-    private final KSTResult[] indicatorResults;
+    private final RVIResult[] indicatorResults;
 
     private BigDecimal[] indicatorValues;
-    private KSTAnalyzerResult[] result;
+    private RVIAnalyzerResult[] result;
 
-    public KSTAnalyzer(AnalyzerRequest request) {
+    public RVIAnalyzer(AnalyzerRequest request) {
         this.originalData = request.getOriginalData();
-        this.indicatorResults = (KSTResult[]) request.getIndicatorResults();
+        this.indicatorResults = (RVIResult[]) request.getIndicatorResults();
     }
 
     @Override
     public void analyze() {
         extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
-        SignalStrength[] zeroLineCrossSignals = findZeroLineCrossSignals();
         SignalStrength[] signalLineCrossSignals = findSignalLineCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, zeroLineCrossSignals, signalLineCrossSignals);
-        buildKSTAnalyzerResult(mergedSignals);
+        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, signalLineCrossSignals);
+        buildRVIAnalyzerResult(mergedSignals);
     }
 
     @Override
-    public KSTAnalyzerResult[] getResult() {
+    public RVIAnalyzerResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
@@ -59,22 +57,17 @@ public class KSTAnalyzer implements Analyzer<KSTAnalyzerResult> {
                 .toArray(SignalStrength[]::new);
     }
 
-    private SignalStrength[] findZeroLineCrossSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, ZERO).analyze())
-                .map(signal -> toSignalStrength(signal, NORMAL))
-                .toArray(SignalStrength[]::new);
-    }
-
     private SignalStrength[] findSignalLineCrossSignals() {
-        return Stream.of(new DynamicLineCrossAnalyzer(indicatorValues, IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).analyze())
+        return Stream.of(new DynamicLineCrossAnalyzer(indicatorValues,
+                IndicatorResultExtractor.extractSignalLineValues(indicatorResults)).analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
 
-    private void buildKSTAnalyzerResult(SignalStrength[] mergedSignals) {
+    private void buildRVIAnalyzerResult(SignalStrength[] mergedSignals) {
         result = IntStream.range(0, indicatorResults.length)
-                .mapToObj(idx -> new KSTAnalyzerResult(indicatorResults[idx].getTime(), mergedSignals[idx]))
-                .toArray(KSTAnalyzerResult[]::new);
+                .mapToObj(idx -> new RVIAnalyzerResult(indicatorResults[idx].getTime(), mergedSignals[idx]))
+                .toArray(RVIAnalyzerResult[]::new);
     }
 
 }

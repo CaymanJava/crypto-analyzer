@@ -29,6 +29,7 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
     private final Tick[] originalData;
     private final CMFResult[] indicatorResults;
 
+    private BigDecimal[] indicatorValues;
     private CMFAnalyzerResult[] result;
 
     public CMFAnalyzer(AnalyzerRequest analyzerRequest) {
@@ -41,6 +42,7 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
 
     @Override
     public void analyze() {
+        extractIndicatorValues();
         Signal[] divergenceSignals = findDivergenceSignals();
         Signal[] intersectionSignals = findIntersectionSignals();
         Signal[] mergedSignals = mergeSignals(intersectionSignals, divergenceSignals);
@@ -56,6 +58,10 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
         return result;
     }
 
+    private void extractIndicatorValues() {
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
+    }
+
     private BigDecimal extractBullishSignalLine(CMFAnalyzerRequest request) {
         return ofNullable(request.getBullishSignalLine())
                 .map(BigDecimal::new)
@@ -69,23 +75,22 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
     }
 
     private Signal[] findDivergenceSignals() {
-        return new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValues(indicatorResults));
+        return new DefaultDivergenceAnalyzer(originalData, indicatorValues).analyze();
     }
 
     private Signal[] findIntersectionSignals() {
-        BigDecimal[] indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
-        Signal[] buySignals = findBuySignals(indicatorValues);
-        Signal[] sellSignals = findSellSignals(indicatorValues);
+        Signal[] buySignals = findBuySignals();
+        Signal[] sellSignals = findSellSignals();
         return mergeSignals(buySignals, sellSignals);
     }
 
-    private Signal[] findBuySignals(BigDecimal[] indicatorValues) {
+    private Signal[] findBuySignals() {
         return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, bullishSignalLine).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, SELL))
                 .toArray(Signal[]::new);
     }
 
-    private Signal[] findSellSignals(BigDecimal[] indicatorValues) {
+    private Signal[] findSellSignals() {
         return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, bearerSignalLine).analyze())
                 .map(signal -> removeFalsePositiveSignal(signal, BUY))
                 .toArray(Signal[]::new);

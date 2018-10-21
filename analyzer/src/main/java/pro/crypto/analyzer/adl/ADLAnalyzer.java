@@ -1,7 +1,6 @@
 package pro.crypto.analyzer.adl;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.adl.ADLResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -12,6 +11,7 @@ import pro.crypto.model.tick.Tick;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
+import static pro.crypto.helper.IndicatorResultExtractor.extractIndicatorValues;
 import static pro.crypto.model.Signal.NEUTRAL;
 
 public class ADLAnalyzer implements Analyzer<ADLAnalyzerResult> {
@@ -41,7 +41,7 @@ public class ADLAnalyzer implements Analyzer<ADLAnalyzerResult> {
     }
 
     private Signal[] findDivergenceSignals() {
-        return new DefaultDivergenceAnalyzer().analyze(originalData, IndicatorResultExtractor.extractIndicatorValues(indicatorResults));
+        return new DefaultDivergenceAnalyzer(originalData, extractIndicatorValues(indicatorResults)).analyze();
     }
 
     private void buildADLAnalyzerResults(Signal[] signals) {

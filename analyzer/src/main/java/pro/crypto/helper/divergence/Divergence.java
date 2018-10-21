@@ -337,7 +337,7 @@ public class Divergence {
     }
 
     private boolean middleDecreaseIndicatorsCrossLine(int fromIndex, int toIndex) {
-        return middleIndicatorsInAnotherPlane(fromIndex, toIndex) ? true : IntStream.range(fromIndex + 1, toIndex)
+        return middleIndicatorsInAnotherPlane(fromIndex, toIndex) || IntStream.range(fromIndex + 1, toIndex)
                 .mapToObj(idx -> isMiddleDecreaseIndicatorCrossLine(fromIndex, toIndex, idx))
                 .filter(crossLine -> crossLine)
                 .findAny()

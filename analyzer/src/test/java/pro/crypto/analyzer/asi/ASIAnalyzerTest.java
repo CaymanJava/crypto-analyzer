@@ -10,7 +10,7 @@ import static org.junit.Assert.assertArrayEquals;
 public class ASIAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
-    public void testAccumulativeSwingIndexAnalyzerWithLimitHalf() {
+    public void testAccumulativeSwingIndexAnalyzer() {
         AnalyzerResult[] expectedResult = loadAnalyzerExpectedResult("asi_analyzer.json", ASIAnalyzerResult[].class);
         ASIAnalyzerResult[] actualResult = new ASIAnalyzer(buildAnalyzerRequest("asi_indicator.json", ASIResult[].class)).getResult();
         assertArrayEquals(expectedResult, actualResult);

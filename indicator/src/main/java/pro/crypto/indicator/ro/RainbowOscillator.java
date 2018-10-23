@@ -19,7 +19,7 @@ import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.helper.MinMaxFinder.*;
 import static pro.crypto.helper.MinMaxFinder.findMaxValues;
-import static pro.crypto.helper.PriceVolumeExtractor.extract;
+import static pro.crypto.helper.PriceVolumeExtractor.extractPrices;
 import static pro.crypto.model.IndicatorType.RAINBOW_OSCILLATOR;
 
 public class RainbowOscillator implements Indicator<ROResult> {
@@ -96,11 +96,11 @@ public class RainbowOscillator implements Indicator<ROResult> {
     }
 
     private void findMaxPriceValues() {
-        maxPriceValues = findMaxValues(extract(originalData, priceType), highLowLookBack);
+        maxPriceValues = findMaxValues(extractPrices(originalData, priceType), highLowLookBack);
     }
 
     private void findMinPriceValues() {
-        minPriceValues = findMinValues(extract(originalData, priceType), highLowLookBack);
+        minPriceValues = findMinValues(extractPrices(originalData, priceType), highLowLookBack);
     }
 
     private void findMaxRmaValues() {

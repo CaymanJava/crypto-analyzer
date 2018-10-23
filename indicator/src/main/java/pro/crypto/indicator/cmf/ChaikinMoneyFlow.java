@@ -64,7 +64,7 @@ public class ChaikinMoneyFlow implements Indicator<CMFResult> {
     }
 
     private BigDecimal[] calculateVolumesSum() {
-        BigDecimal[] baseVolumes = PriceVolumeExtractor.extractBaseVolume(originalData);
+        BigDecimal[] baseVolumes = PriceVolumeExtractor.extractBaseVolumes(originalData);
         return IntStream.range(0, originalData.length)
                 .mapToObj(idx -> calculateSum(baseVolumes, idx))
                 .toArray(BigDecimal[]::new);

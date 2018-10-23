@@ -32,7 +32,7 @@ public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
 
     @Override
     public void analyze() {
-        BigDecimal[] closePrices = PriceVolumeExtractor.extract(originalData, CLOSE);
+        BigDecimal[] closePrices = PriceVolumeExtractor.extractPrices(originalData, CLOSE);
         Signal[] longExits = findLongExitSignals(closePrices);
         Signal[] shortExits = findShortExitSignals(closePrices);
         Signal[] mergedSignals = mergeSignals(longExits, shortExits);

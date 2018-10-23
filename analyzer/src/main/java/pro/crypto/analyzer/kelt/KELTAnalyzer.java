@@ -52,7 +52,7 @@ public class KELTAnalyzer implements Analyzer<KELTAnalyzerResult> {
     }
 
     private void extractClosePrices() {
-        closePrices = PriceVolumeExtractor.extract(originalData, CLOSE);
+        closePrices = PriceVolumeExtractor.extractPrices(originalData, CLOSE);
     }
 
     private SignalStrength[] findUpperBandCrossSignals() {

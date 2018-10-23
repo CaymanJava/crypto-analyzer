@@ -106,7 +106,7 @@ public class RMAAnalyzer implements Analyzer<RMAAnalyzerResult> {
     }
 
     private SignalStrength[] findCrossLinesSignals() {
-        BigDecimal[] closePrices = PriceVolumeExtractor.extract(originalData, CLOSE);
+        BigDecimal[] closePrices = PriceVolumeExtractor.extractPrices(originalData, CLOSE);
         SignalStrength[] higherLineCrossSignals = findHigherLinesCrossSignals(closePrices);
         SignalStrength[] lowerLineCrossSignals = findLowerLinesCrossSignals(closePrices);
         return mergeSignalsStrength(higherLineCrossSignals, lowerLineCrossSignals);

@@ -38,8 +38,8 @@ public class WilliamsPercentRange implements Indicator<WPRResult> {
 
     @Override
     public void calculate() {
-        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceVolumeExtractor.extract(originalData, HIGH), period);
-        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceVolumeExtractor.extract(originalData, LOW), period);
+        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceVolumeExtractor.extractPrices(originalData, HIGH), period);
+        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceVolumeExtractor.extractPrices(originalData, LOW), period);
         calculateWilliamsPercentRange(maxValues, minValues);
     }
 

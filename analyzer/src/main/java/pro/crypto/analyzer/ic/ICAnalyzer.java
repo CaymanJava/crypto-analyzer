@@ -153,7 +153,7 @@ public class ICAnalyzer implements Analyzer<ICAnalyzerResult> {
 
     private SignalStrength[] findPriceKijunCrossSignals() {
         Signal[] signals = new DynamicLineCrossAnalyzer(
-                PriceVolumeExtractor.extract(originalData, CLOSE), extractLine(ICResult::getBaseLineValue)).analyze();
+                PriceVolumeExtractor.extractPrices(originalData, CLOSE), extractLine(ICResult::getBaseLineValue)).analyze();
         return IntStream.range(0, signals.length)
                 .mapToObj(idx -> toSignalStrength(signals[idx], idx))
                 .toArray(SignalStrength[]::new);

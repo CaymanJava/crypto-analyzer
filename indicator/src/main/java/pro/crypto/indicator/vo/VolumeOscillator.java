@@ -46,7 +46,7 @@ public class VolumeOscillator implements Indicator<VOResult> {
 
     @Override
     public void calculate() {
-        BigDecimal[] volumes = PriceVolumeExtractor.extractBaseVolume(originalData);
+        BigDecimal[] volumes = PriceVolumeExtractor.extractBaseVolumes(originalData);
         BigDecimal[] shortMAValues = calculateExponentialMovingAverageValues(volumes, shortPeriod);
         BigDecimal[] longMAValues = calculateExponentialMovingAverageValues(volumes, longPeriod);
         buildVolumeOscillatorResult(shortMAValues, longMAValues);

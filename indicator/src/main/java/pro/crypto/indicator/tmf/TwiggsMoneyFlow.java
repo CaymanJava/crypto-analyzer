@@ -68,7 +68,7 @@ public class TwiggsMoneyFlow implements Indicator<TMFResult> {
     }
 
     private BigDecimal[] calculateSmoothedVolumeValues() {
-        BigDecimal[] volumes = PriceVolumeExtractor.extractBaseVolume(originalData);
+        BigDecimal[] volumes = PriceVolumeExtractor.extractBaseVolumes(originalData);
         return calculateExponentialMovingAverageValues(volumes);
     }
 

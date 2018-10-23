@@ -1,0 +1,1164 @@
+[
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1435.9779000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1393.7003428571
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1377.6295795918
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1373.3596325073
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1373.3596325073
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1344.7003789849
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1323.4674605584
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1312.2664376214
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1282.5548036754
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1274.4834031503
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1274.4834031503
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1274.4834031503
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1274.4834031503
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1273.0254678606
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1273.0254678606
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1273.0254678606
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1273.0254678606
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1264.4917455840
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1236.8864962149
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1233.6477110413
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1225.7001808925
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1225.7001808925
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1225.7001808925
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1225.7001808925
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1146.0442567945
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1146.0442567945
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1150.5212254002
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1150.6452432003
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 31
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1168.0023941716
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1177.8906235757
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1182.7398202077
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1198.6162744637
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1200.9110923975
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1216.0237934837
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1216.0237934837
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1216.0237934837
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1229.0196874415
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1229.0196874415
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1283.5129836306
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1283.5129836306
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1291.9646043001
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1291.9646043001
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1291.9646043001
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1291.9646043001
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1291.9646043001
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1291.9646043001
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1291.9646043001
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1291.9646043001
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1298.9523044333
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1298.9523044333
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1298.9523044333
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1333.4668132873
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1351.9751256747
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1368.3022434355
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1368.3022434355
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1368.3022434355
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1384.3510581108
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1389.0259426664
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1389.0259426664
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1389.0259426664
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1389.0259426664
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1389.0259426664
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1499.4805997963
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1493.4862712541
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1493.4862712541
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1493.4862712541
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "indicatorValue": 1471.4809896234
+  }
+]

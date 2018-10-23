@@ -48,7 +48,7 @@ public class ENVAnalyzer implements Analyzer<ENVAnalyzerResult> {
     }
 
     private SignalStrength[] findSignals() {
-        BigDecimal[] closePrices = PriceVolumeExtractor.extract(originalData, CLOSE);
+        BigDecimal[] closePrices = PriceVolumeExtractor.extractPrices(originalData, CLOSE);
         SignalStrength[] upperBandSignals = findUpperBandSignals(closePrices);
         SignalStrength[] lowerBandSignals = findLowerBandSignals(closePrices);
         SignalStrength[] middleBandSignals = findMiddleBandSignals(closePrices);

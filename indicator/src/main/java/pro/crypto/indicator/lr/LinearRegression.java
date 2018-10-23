@@ -69,7 +69,7 @@ public class LinearRegression implements Indicator<LRResult> {
     }
 
     private BigDecimal[] extractPrices() {
-        BigDecimal[] prices = PriceVolumeExtractor.extract(originalData, priceType);
+        BigDecimal[] prices = PriceVolumeExtractor.extractPrices(originalData, priceType);
         BigDecimal[] result = new BigDecimal[prices.length];
         System.arraycopy(prices, period - 1, result, period - 1, prices.length - period + 1);
         return result;
@@ -89,7 +89,7 @@ public class LinearRegression implements Indicator<LRResult> {
 
     private BigDecimal calculateAveragePriceValue(int currentIndex) {
         return MathHelper.average(Arrays.copyOfRange(
-                PriceVolumeExtractor.extract(originalData, priceType), currentIndex - period + 1, currentIndex + 1));
+                PriceVolumeExtractor.extractPrices(originalData, priceType), currentIndex - period + 1, currentIndex + 1));
     }
 
     private BigDecimal[] calculateLinearRegression(BigDecimal[] averagePrices) {

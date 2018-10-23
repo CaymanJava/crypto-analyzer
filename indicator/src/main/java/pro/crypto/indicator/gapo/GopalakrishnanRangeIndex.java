@@ -67,11 +67,11 @@ public class GopalakrishnanRangeIndex implements Indicator<GAPOResult> {
     }
 
     private BigDecimal[] findMaxValues() {
-        return MinMaxFinder.findMaxValues(PriceVolumeExtractor.extract(originalData, HIGH), period);
+        return MinMaxFinder.findMaxValues(PriceVolumeExtractor.extractPrices(originalData, HIGH), period);
     }
 
     private BigDecimal[] findMinValues() {
-        return MinMaxFinder.findMinValues(PriceVolumeExtractor.extract(originalData, LOW), period);
+        return MinMaxFinder.findMinValues(PriceVolumeExtractor.extractPrices(originalData, LOW), period);
     }
 
     private BigDecimal calculateLog10Period() {

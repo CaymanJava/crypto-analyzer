@@ -125,8 +125,8 @@ public class IchimokuClouds implements Indicator<ICResult> {
     }
 
     private BigDecimal[] calculateAverageBetweenMaxMin(int period) {
-        BigDecimal[] highValues = PriceVolumeExtractor.extract(originalData, HIGH);
-        BigDecimal[] lowValues = PriceVolumeExtractor.extract(originalData, LOW);
+        BigDecimal[] highValues = PriceVolumeExtractor.extractPrices(originalData, HIGH);
+        BigDecimal[] lowValues = PriceVolumeExtractor.extractPrices(originalData, LOW);
         return IntStream.range(0, originalData.length)
                 .mapToObj(idx -> calculateAverage(period, highValues, lowValues, idx))
                 .toArray(BigDecimal[]::new);
@@ -146,7 +146,7 @@ public class IchimokuClouds implements Indicator<ICResult> {
 
     private BigDecimal[] calculateLaggingSpan() {
         BigDecimal[] laggingSpan = new BigDecimal[originalData.length];
-        System.arraycopy(PriceVolumeExtractor.extract(originalData, CLOSE), displaced, laggingSpan, 0, laggingSpan.length - displaced);
+        System.arraycopy(PriceVolumeExtractor.extractPrices(originalData, CLOSE), displaced, laggingSpan, 0, laggingSpan.length - displaced);
         return laggingSpan;
     }
 

@@ -76,7 +76,7 @@ public class Fractal implements Indicator<FractalResult> {
 
     private boolean[] calculateFractals(PriceType priceType, BiFunction<BigDecimal[], Integer, Boolean> defineFractalFunction) {
         boolean[] fractals = new boolean[originalData.length];
-        BigDecimal[] lowValues = PriceVolumeExtractor.extract(originalData, priceType);
+        BigDecimal[] lowValues = PriceVolumeExtractor.extractPrices(originalData, priceType);
         for (int currentIndex = 2; currentIndex < fractals.length; ) {
             if (isPossibleToDefineFractal(currentIndex)) {
                 boolean fractal = defineFractalFunction.apply(lowValues, currentIndex);

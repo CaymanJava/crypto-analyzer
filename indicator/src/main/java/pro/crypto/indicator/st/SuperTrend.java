@@ -135,8 +135,8 @@ public class SuperTrend implements Indicator<STResult> {
         return bandFunction.apply(averageRange, new BigDecimal(multiplier).multiply(atrValue));
     }
 
-    private BigDecimal calculateAverageRange(Tick originalDatum) {
-        return MathHelper.divide(originalDatum.getHigh().add(originalDatum.getLow()), new BigDecimal(2));
+    private BigDecimal calculateAverageRange(Tick tick) {
+        return MathHelper.average(tick.getHigh(), tick.getLow());
     }
 
     private BigDecimal defineFinalLowerBand(BigDecimal basicLowerBandValue, int currentIndex) {

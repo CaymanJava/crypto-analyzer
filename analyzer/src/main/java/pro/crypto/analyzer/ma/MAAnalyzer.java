@@ -42,7 +42,7 @@ public class MAAnalyzer implements Analyzer<MAAnalyzerResult> {
 
     private Signal[] findCrossPriceSignals() {
         return new DynamicLineCrossAnalyzer(
-                PriceVolumeExtractor.extract(originalData, CLOSE),
+                PriceVolumeExtractor.extractPrices(originalData, CLOSE),
                 IndicatorResultExtractor.extractIndicatorValues(indicatorResults))
                 .analyze();
     }

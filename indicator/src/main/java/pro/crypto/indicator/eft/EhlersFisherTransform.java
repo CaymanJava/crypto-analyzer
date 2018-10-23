@@ -62,8 +62,8 @@ public class EhlersFisherTransform implements Indicator<EFTResult> {
 
     private void calculateValuesForTransform() {
         BigDecimal[] medianPrices = MedianPriceCalculator.calculate(originalData);
-        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceVolumeExtractor.extract(originalData, HIGH), period);
-        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceVolumeExtractor.extract(originalData, LOW), period);
+        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceVolumeExtractor.extractPrices(originalData, HIGH), period);
+        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceVolumeExtractor.extractPrices(originalData, LOW), period);
         calculateValuesForTransform(medianPrices, maxValues, minValues);
     }
 

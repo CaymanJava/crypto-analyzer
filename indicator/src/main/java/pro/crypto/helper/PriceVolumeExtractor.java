@@ -8,13 +8,13 @@ import java.util.stream.Stream;
 
 public class PriceVolumeExtractor {
 
-    public static BigDecimal[] extract(Tick[] ticks, PriceType priceType) {
+    public static BigDecimal[] extractPrices(Tick[] ticks, PriceType priceType) {
         return Stream.of(ticks)
                 .map(tick -> tick.getPriceByType(priceType))
                 .toArray(BigDecimal[]::new);
     }
 
-    public static BigDecimal[] extractBaseVolume(Tick[] ticks) {
+    public static BigDecimal[] extractBaseVolumes(Tick[] ticks) {
         return Stream.of(ticks)
                 .map(Tick::getBaseVolume)
                 .toArray(BigDecimal[]::new);

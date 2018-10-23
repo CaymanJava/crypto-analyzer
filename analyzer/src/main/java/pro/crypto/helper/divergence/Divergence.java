@@ -48,7 +48,7 @@ public class Divergence {
     }
 
     private Boolean[] calculatePriceIncreases() {
-        return IncreasedQualifier.define(PriceVolumeExtractor.extract(originalData, PriceType.CLOSE));
+        return IncreasedQualifier.define(PriceVolumeExtractor.extractPrices(originalData, PriceType.CLOSE));
     }
 
     private Boolean[] calculateIndicatorIncreases() {

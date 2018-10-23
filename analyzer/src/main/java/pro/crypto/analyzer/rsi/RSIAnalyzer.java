@@ -11,7 +11,6 @@ import pro.crypto.model.Signal;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Optional.ofNullable;
@@ -21,7 +20,7 @@ import static pro.crypto.model.Signal.SELL;
 /**
  * This analyzer is made for RSI and for all indicator, which base on it
  */
-public class RSIAnalyzer implements Analyzer<RSIAnalyzerResult>{
+public class RSIAnalyzer implements Analyzer<RSIAnalyzerResult> {
 
     private final RSIResult[] indicatorResults;
     private final BigDecimal oversoldLevel;
@@ -76,15 +75,15 @@ public class RSIAnalyzer implements Analyzer<RSIAnalyzerResult>{
     }
 
     private Signal[] findOverboughtCrossSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, overboughtLevel).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, BUY))
-                .toArray(Signal[]::new);
+        return new StaticLineCrossAnalyzer(indicatorValues, overboughtLevel)
+                .withRemovingFalsePositive(BUY)
+                .analyze();
     }
 
     private Signal[] findOversoldCrossSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, oversoldLevel).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, SELL))
-                .toArray(Signal[]::new);
+        return new StaticLineCrossAnalyzer(indicatorValues, oversoldLevel)
+                .withRemovingFalsePositive(SELL)
+                .analyze();
     }
 
     private SecurityLevel[] defineSecurityLevels() {

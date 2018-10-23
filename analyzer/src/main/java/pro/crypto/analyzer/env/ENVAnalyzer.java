@@ -56,15 +56,19 @@ public class ENVAnalyzer implements Analyzer<ENVAnalyzerResult> {
     }
 
     private SignalStrength[] findUpperBandSignals(BigDecimal[] closePrices) {
-        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractBandValues(ENVResult::getUpperBand)).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, BUY))
+        return Stream.of(
+                new DynamicLineCrossAnalyzer(closePrices, extractBandValues(ENVResult::getUpperBand))
+                        .withRemovingFalsePositive(BUY)
+                        .analyze())
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findLowerBandSignals(BigDecimal[] closePrices) {
-        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractBandValues(ENVResult::getLowerBand)).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, SELL))
+        return Stream.of(
+                new DynamicLineCrossAnalyzer(closePrices, extractBandValues(ENVResult::getLowerBand))
+                        .withRemovingFalsePositive(SELL)
+                        .analyze())
                 .map(signal -> toSignalStrength(signal, WEAK))
                 .toArray(SignalStrength[]::new);
     }

@@ -15,6 +15,9 @@ public class DynamicLineCrossAnalyzer {
     private final BigDecimal[] firstLineValues;
     private final BigDecimal[] secondLineValues;
 
+    private boolean removeFalsePositive;
+    private Signal falsePositiveSignal;
+
     public DynamicLineCrossAnalyzer(BigDecimal[] firstLineValues, BigDecimal[] secondLineValues) {
         this.firstLineValues = firstLineValues;
         this.secondLineValues = secondLineValues;
@@ -23,7 +26,14 @@ public class DynamicLineCrossAnalyzer {
     public Signal[] analyze() {
         return IntStream.range(0, firstLineValues.length)
                 .mapToObj(this::findCrossSignal)
+                .map(this::removeFalsePositive)
                 .toArray(Signal[]::new);
+    }
+
+    public DynamicLineCrossAnalyzer withRemovingFalsePositive(Signal falsePositiveSignal) {
+        removeFalsePositive = true;
+        this.falsePositiveSignal = falsePositiveSignal;
+        return this;
     }
 
     private Signal findCrossSignal(int currentIndex) {
@@ -69,6 +79,13 @@ public class DynamicLineCrossAnalyzer {
     private boolean isCrossDownLine(int currentIndex) {
         return firstLineValues[currentIndex - 1].compareTo(secondLineValues[currentIndex - 1]) > 0
                 && firstLineValues[currentIndex].compareTo(secondLineValues[currentIndex]) <= 0;
+    }
+
+    private Signal removeFalsePositive(Signal signal) {
+        if (removeFalsePositive) {
+            return signal != falsePositiveSignal ? signal : NEUTRAL;
+        }
+        return signal;
     }
 
 }

@@ -15,6 +15,9 @@ public class StaticLineCrossAnalyzer {
     private final BigDecimal[] firstLineValues;
     private final BigDecimal secondLine;
 
+    private boolean removeFalsePositive;
+    private Signal falsePositiveSignal;
+
     public StaticLineCrossAnalyzer(BigDecimal[] firstLineValues, BigDecimal secondLine) {
         this.firstLineValues = firstLineValues;
         this.secondLine = secondLine;
@@ -23,7 +26,14 @@ public class StaticLineCrossAnalyzer {
     public Signal[] analyze() {
         return IntStream.range(0, firstLineValues.length)
                 .mapToObj(this::findCrossSignal)
+                .map(this::removeFalsePositive)
                 .toArray(Signal[]::new);
+    }
+
+    public StaticLineCrossAnalyzer withRemovingFalsePositive(Signal falsePositiveSignal) {
+        removeFalsePositive = true;
+        this.falsePositiveSignal = falsePositiveSignal;
+        return this;
     }
 
     private Signal findCrossSignal(int currentIndex) {
@@ -67,6 +77,13 @@ public class StaticLineCrossAnalyzer {
     private boolean isCrossDownLine(int currentIndex) {
         return firstLineValues[currentIndex - 1].compareTo(secondLine) > 0
                 && firstLineValues[currentIndex].compareTo(secondLine) <= 0;
+    }
+
+    private Signal removeFalsePositive(Signal signal) {
+        if (removeFalsePositive) {
+            return signal != falsePositiveSignal ? signal : NEUTRAL;
+        }
+        return signal;
     }
 
 }

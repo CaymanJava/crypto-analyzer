@@ -15,10 +15,6 @@ public interface Analyzer<T extends AnalyzerResult> {
 
     T[] getResult();
 
-    default Signal removeFalsePositiveSignal(Signal signal, Signal falsePositive) {
-        return signal != falsePositive ? signal : null;
-    }
-
     default SignalStrength toSignalStrength(Signal signal, Strength strength) {
         return nonNull(signal) && signal != NEUTRAL
                 ? new SignalStrength(signal, strength)

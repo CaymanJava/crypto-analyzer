@@ -48,15 +48,15 @@ public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
     }
 
     private Signal[] findLongExitSignals(BigDecimal[] closePrices) {
-        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractExits(CEResult::getLongChandelierExit)).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, BUY))
-                .toArray(Signal[]::new);
+        return new DynamicLineCrossAnalyzer(closePrices, extractExits(CEResult::getLongChandelierExit))
+                .withRemovingFalsePositive(BUY)
+                .analyze();
     }
 
     private Signal[] findShortExitSignals(BigDecimal[] closePrices) {
-        return Stream.of(new DynamicLineCrossAnalyzer(closePrices, extractExits(CEResult::getShortChandelierExit)).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, SELL))
-                .toArray(Signal[]::new);
+        return new DynamicLineCrossAnalyzer(closePrices, extractExits(CEResult::getShortChandelierExit))
+                .withRemovingFalsePositive(SELL)
+                .analyze();
     }
 
     private BigDecimal[] extractExits(Function<CEResult, BigDecimal> extractExitFunction) {

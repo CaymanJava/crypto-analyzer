@@ -94,15 +94,19 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
     }
 
     private SignalStrength[] findOverboughtSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, overboughtLevel).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, BUY))
+        return Stream.of(
+                new StaticLineCrossAnalyzer(indicatorValues, overboughtLevel)
+                        .withRemovingFalsePositive(BUY)
+                        .analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findOversoldSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, oversoldLevel).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, SELL))
+        return Stream.of(
+                new StaticLineCrossAnalyzer(indicatorValues, oversoldLevel)
+                        .withRemovingFalsePositive(SELL)
+                        .analyze())
                 .map(signal -> toSignalStrength(signal, STRONG))
                 .toArray(SignalStrength[]::new);
     }

@@ -1,8 +1,8 @@
 package pro.crypto.analyzer.cmf;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.cmf.CMFResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -12,7 +12,6 @@ import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -85,15 +84,15 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
     }
 
     private Signal[] findBuySignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, bullishSignalLine).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, SELL))
-                .toArray(Signal[]::new);
+        return new StaticLineCrossAnalyzer(indicatorValues, bullishSignalLine)
+                .withRemovingFalsePositive(SELL)
+                .analyze();
     }
 
     private Signal[] findSellSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, bearerSignalLine).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, BUY))
-                .toArray(Signal[]::new);
+        return new StaticLineCrossAnalyzer(indicatorValues, bearerSignalLine)
+                .withRemovingFalsePositive(BUY)
+                .analyze();
     }
 
     private Trend[] defineTrends() {

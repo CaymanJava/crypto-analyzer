@@ -89,15 +89,19 @@ public class SMIAnalyzer implements Analyzer<SMIAnalyzerResult> {
     }
 
     private SignalStrength[] findOversoldSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, oversoldLevel).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, SELL))
+        return Stream.of(
+                new StaticLineCrossAnalyzer(indicatorValues, oversoldLevel)
+                        .withRemovingFalsePositive(SELL)
+                        .analyze())
                 .map(signal -> toSignalStrength(signal, NORMAL))
                 .toArray(SignalStrength[]::new);
     }
 
     private SignalStrength[] findOverboughtSignals() {
-        return Stream.of(new StaticLineCrossAnalyzer(indicatorValues, overboughtLevel).analyze())
-                .map(signal -> removeFalsePositiveSignal(signal, BUY))
+        return Stream.of(
+                new StaticLineCrossAnalyzer(indicatorValues, overboughtLevel)
+                        .withRemovingFalsePositive(BUY)
+                        .analyze())
                 .map(signal -> toSignalStrength(signal, NORMAL))
                 .toArray(SignalStrength[]::new);
     }

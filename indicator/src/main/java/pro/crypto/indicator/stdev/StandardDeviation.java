@@ -15,9 +15,13 @@ import java.math.BigDecimal;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
+import static java.util.Optional.ofNullable;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.STANDARD_DEVIATION;
 
+/**
+ * Indicator is made for visual analyzing and signal line crossing
+ */
 public class StandardDeviation implements Indicator<StDevResult> {
 
     private final Tick[] originalData;
@@ -31,7 +35,7 @@ public class StandardDeviation implements Indicator<StDevResult> {
         StDevRequest request = (StDevRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.priceType = request.getPriceType();
-        this.movingAverageType = isNull(request.getMovingAverageType()) ? SIMPLE_MOVING_AVERAGE : request.getMovingAverageType();
+        this.movingAverageType = ofNullable(request.getMovingAverageType()).orElse(SIMPLE_MOVING_AVERAGE);
         this.period = request.getPeriod();
         checkIncomingData();
     }

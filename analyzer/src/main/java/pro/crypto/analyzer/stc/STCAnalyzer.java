@@ -46,10 +46,6 @@ public class STCAnalyzer implements Analyzer<STCAnalyzerResult> {
         return result;
     }
 
-    private void extractIndicatorValues() {
-        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
-    }
-
     private BigDecimal extractOversoldLevel(STCAnalyzerRequest request) {
         return ofNullable(request.getOversoldLevel())
                 .map(BigDecimal::new)
@@ -60,6 +56,10 @@ public class STCAnalyzer implements Analyzer<STCAnalyzerResult> {
         return ofNullable(request.getOverboughtLevel())
                 .map(BigDecimal::new)
                 .orElse(new BigDecimal(75));
+    }
+
+    private void extractIndicatorValues() {
+        indicatorValues = IndicatorResultExtractor.extractIndicatorValues(indicatorResults);
     }
 
     private Signal[] findSignals() {

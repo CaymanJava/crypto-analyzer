@@ -192,4 +192,11 @@ public class MAAnalyzerTest extends AnalyzerBaseTest {
         assertArrayEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void testTripleExponentialMovingAverageAnalyzer() {
+        AnalyzerResult[] expectedResult = loadAnalyzerExpectedResult("ma_analyzer_27.json", MAAnalyzerResult[].class);
+        MAAnalyzerResult[] actualResult = new MAAnalyzer(buildAnalyzerRequest("ma_indicator_27.json", MAResult[].class)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
+    }
+
 }

@@ -45,6 +45,9 @@ public class MovingAverageFactory {
                 return new WellesWildersMovingAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
             case TIME_SERIES_MOVING_AVERAGE:
                 return new TimeSeriesMovingAverage(request.getOriginalData(), request.getPeriod(), request.getPriceType());
+            case TRIPLE_EXPONENTIAL_MOVING_AVERAGE:
+                return new TripleExponentialMovingAverage(request.getOriginalData(), request.getPeriod(),
+                        request.getPriceType(), request.getAlphaCoefficient());
             default:
                 throw new UnknownTypeException(format("Unknown moving average type {type: {%s}}", request.getIndicatorType()));
         }

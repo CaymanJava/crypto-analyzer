@@ -18,10 +18,10 @@ import java.util.stream.IntStream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
-import static pro.crypto.model.IndicatorType.TRIPLE_EXPONENTIAL_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.TRIPLE_EXPONENTIAL_AVERAGE;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
+public class TripleExponentialAverage implements Indicator<TRIXResult> {
 
     private final static int SIGNAL_LINE_PERIOD = 9;
     private final Tick[] originalData;
@@ -29,7 +29,7 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
 
     private TRIXResult[] result;
 
-    public TripleExponentialMovingAverage(IndicatorRequest creationRequest) {
+    public TripleExponentialAverage(IndicatorRequest creationRequest) {
         TRIXRequest request = (TRIXRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.period = request.getPeriod();
@@ -38,7 +38,7 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
 
     @Override
     public IndicatorType getType() {
-        return TRIPLE_EXPONENTIAL_MOVING_AVERAGE;
+        return TRIPLE_EXPONENTIAL_AVERAGE;
     }
 
     @Override
@@ -49,7 +49,7 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
         BigDecimal[] tripleEMA = calculateDoubleMovingAverage(doubleEMA);
         BigDecimal[] trixValues = calculateTrixValues(tripleEMA);
         BigDecimal[] signalLineValues = calculateSignalLine(trixValues);
-        buildTripleExponentialMovingAverage(trixValues, signalLineValues);
+        buildTripleExponentialAverage(trixValues, signalLineValues);
     }
 
     @Override
@@ -104,7 +104,7 @@ public class TripleExponentialMovingAverage implements Indicator<TRIXResult> {
                 .build();
     }
 
-    private void buildTripleExponentialMovingAverage(BigDecimal[] trixValues, BigDecimal[] signalLineValues) {
+    private void buildTripleExponentialAverage(BigDecimal[] trixValues, BigDecimal[] signalLineValues) {
         int indicatorStartIndex = period * 3 - 3;
         IntStream.range(0, result.length)
                 .forEach(idx -> result[idx] = buildTRIXResult(trixValues, signalLineValues, indicatorStartIndex, idx));

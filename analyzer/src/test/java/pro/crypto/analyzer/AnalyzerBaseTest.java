@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import lombok.SneakyThrows;
 import org.apache.commons.io.FileUtils;
 import org.junit.Before;
-import pro.crypto.indicator.tick.generator.OneDayTickGenerator;
+import pro.crypto.tick.generator.OneDayTickGenerator;
 import pro.crypto.model.AnalyzerRequest;
 import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.result.AnalyzerResult;

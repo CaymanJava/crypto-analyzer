@@ -398,7 +398,7 @@
       }
     },
     "indicatorValue": 13.5745816063,
-    "movingAverageValue": 15.2184195370
+    "signalLineValue": 15.2184195370
   },
   {
     "time": {
@@ -415,7 +415,7 @@
       }
     },
     "indicatorValue": 13.5745816063,
-    "movingAverageValue": 15.0919704654
+    "signalLineValue": 15.0919704654
   },
   {
     "time": {
@@ -432,7 +432,7 @@
       }
     },
     "indicatorValue": 13.3930598495,
-    "movingAverageValue": 14.9612850334
+    "signalLineValue": 14.9612850334
   },
   {
     "time": {
@@ -449,7 +449,7 @@
       }
     },
     "indicatorValue": 13.9852294987,
-    "movingAverageValue": 14.8862038384
+    "signalLineValue": 14.8862038384
   },
   {
     "time": {
@@ -466,7 +466,7 @@
       }
     },
     "indicatorValue": 13.9852294987,
-    "movingAverageValue": 14.8168981200
+    "signalLineValue": 14.8168981200
   },
   {
     "time": {
@@ -483,7 +483,7 @@
       }
     },
     "indicatorValue": 14.1014582434,
-    "movingAverageValue": 14.7618642834
+    "signalLineValue": 14.7618642834
   },
   {
     "time": {
@@ -500,7 +500,7 @@
       }
     },
     "indicatorValue": 14.8167375640,
-    "movingAverageValue": 14.7660853050
+    "signalLineValue": 14.7660853050
   },
   {
     "time": {
@@ -517,7 +517,7 @@
       }
     },
     "indicatorValue": 14.2388299904,
-    "movingAverageValue": 14.7255272039
+    "signalLineValue": 14.7255272039
   },
   {
     "time": {
@@ -534,7 +534,7 @@
       }
     },
     "indicatorValue": 14.2388299904,
-    "movingAverageValue": 14.6880889567
+    "signalLineValue": 14.6880889567
   },
   {
     "time": {
@@ -551,7 +551,7 @@
       }
     },
     "indicatorValue": 14.4130816023,
-    "movingAverageValue": 14.6669345448
+    "signalLineValue": 14.6669345448
   },
   {
     "time": {
@@ -568,7 +568,7 @@
       }
     },
     "indicatorValue": 14.6571681568,
-    "movingAverageValue": 14.6661832842
+    "signalLineValue": 14.6661832842
   },
   {
     "time": {
@@ -585,7 +585,7 @@
       }
     },
     "indicatorValue": 14.6571681568,
-    "movingAverageValue": 14.6654898129
+    "signalLineValue": 14.6654898129
   },
   {
     "time": {
@@ -602,7 +602,7 @@
       }
     },
     "indicatorValue": 14.9681568039,
-    "movingAverageValue": 14.6887718891
+    "signalLineValue": 14.6887718891
   },
   {
     "time": {
@@ -619,7 +619,7 @@
       }
     },
     "indicatorValue": 14.7241730026,
-    "movingAverageValue": 14.6914950517
+    "signalLineValue": 14.6914950517
   },
   {
     "time": {
@@ -636,7 +636,7 @@
       }
     },
     "indicatorValue": 14.7241730026,
-    "movingAverageValue": 14.6940087402
+    "signalLineValue": 14.6940087402
   },
   {
     "time": {
@@ -653,7 +653,7 @@
       }
     },
     "indicatorValue": 14.5547133274,
-    "movingAverageValue": 14.6832937084
+    "signalLineValue": 14.6832937084
   },
   {
     "time": {
@@ -670,7 +670,7 @@
       }
     },
     "indicatorValue": 14.5547133274,
-    "movingAverageValue": 14.6734029099
+    "signalLineValue": 14.6734029099
   },
   {
     "time": {
@@ -687,7 +687,7 @@
       }
     },
     "indicatorValue": 14.5547133274,
-    "movingAverageValue": 14.6642729420
+    "signalLineValue": 14.6642729420
   },
   {
     "time": {
@@ -704,7 +704,7 @@
       }
     },
     "indicatorValue": 14.5879535360,
-    "movingAverageValue": 14.6584022185
+    "signalLineValue": 14.6584022185
   },
   {
     "time": {
@@ -721,7 +721,7 @@
       }
     },
     "indicatorValue": 14.9273766515,
-    "movingAverageValue": 14.6790925595
+    "signalLineValue": 14.6790925595
   },
   {
     "time": {
@@ -738,7 +738,7 @@
       }
     },
     "indicatorValue": 14.9273766515,
-    "movingAverageValue": 14.6981913358
+    "signalLineValue": 14.6981913358
   },
   {
     "time": {
@@ -755,7 +755,7 @@
       }
     },
     "indicatorValue": 14.9767590392,
-    "movingAverageValue": 14.7196196207
+    "signalLineValue": 14.7196196207
   },
   {
     "time": {
@@ -772,7 +772,7 @@
       }
     },
     "indicatorValue": 15.1673408530,
-    "movingAverageValue": 14.7540597155
+    "signalLineValue": 14.7540597155
   },
   {
     "time": {
@@ -789,7 +789,7 @@
       }
     },
     "indicatorValue": 15.1673408530,
-    "movingAverageValue": 14.7858505722
+    "signalLineValue": 14.7858505722
   },
   {
     "time": {
@@ -806,7 +806,7 @@
       }
     },
     "indicatorValue": 14.9749824253,
-    "movingAverageValue": 14.8003991763
+    "signalLineValue": 14.8003991763
   },
   {
     "time": {
@@ -823,7 +823,7 @@
       }
     },
     "indicatorValue": 14.5338580575,
-    "movingAverageValue": 14.7798960133
+    "signalLineValue": 14.7798960133
   },
   {
     "time": {
@@ -840,7 +840,7 @@
       }
     },
     "indicatorValue": 14.5338580575,
-    "movingAverageValue": 14.7609700167
+    "signalLineValue": 14.7609700167
   },
   {
     "time": {
@@ -857,7 +857,7 @@
       }
     },
     "indicatorValue": 14.5338580575,
-    "movingAverageValue": 14.7434998660
+    "signalLineValue": 14.7434998660
   },
   {
     "time": {
@@ -874,7 +874,7 @@
       }
     },
     "indicatorValue": 14.5338580575,
-    "movingAverageValue": 14.7273735730
+    "signalLineValue": 14.7273735730
   },
   {
     "time": {
@@ -891,7 +891,7 @@
       }
     },
     "indicatorValue": 14.5299453496,
-    "movingAverageValue": 14.7121867866
+    "signalLineValue": 14.7121867866
   },
   {
     "time": {
@@ -908,7 +908,7 @@
       }
     },
     "indicatorValue": 14.5299453496,
-    "movingAverageValue": 14.6981682145
+    "signalLineValue": 14.6981682145
   },
   {
     "time": {
@@ -925,7 +925,7 @@
       }
     },
     "indicatorValue": 14.3299848709,
-    "movingAverageValue": 14.6698464188
+    "signalLineValue": 14.6698464188
   },
   {
     "time": {
@@ -942,7 +942,7 @@
       }
     },
     "indicatorValue": 14.7974652981,
-    "movingAverageValue": 14.6796632557
+    "signalLineValue": 14.6796632557
   },
   {
     "time": {
@@ -959,7 +959,7 @@
       }
     },
     "indicatorValue": 14.7974652981,
-    "movingAverageValue": 14.6887249513
+    "signalLineValue": 14.6887249513
   },
   {
     "time": {
@@ -976,7 +976,7 @@
       }
     },
     "indicatorValue": 14.7974652981,
-    "movingAverageValue": 14.6970895934
+    "signalLineValue": 14.6970895934
   },
   {
     "time": {
@@ -993,7 +993,7 @@
       }
     },
     "indicatorValue": 14.9306559855,
-    "movingAverageValue": 14.7150562389
+    "signalLineValue": 14.7150562389
   },
   {
     "time": {
@@ -1010,7 +1010,7 @@
       }
     },
     "indicatorValue": 14.9306559855,
-    "movingAverageValue": 14.7316408348
+    "signalLineValue": 14.7316408348
   },
   {
     "time": {
@@ -1027,7 +1027,7 @@
       }
     },
     "indicatorValue": 15.3806182281,
-    "movingAverageValue": 14.7815621727
+    "signalLineValue": 14.7815621727
   },
   {
     "time": {
@@ -1044,7 +1044,7 @@
       }
     },
     "indicatorValue": 15.3806182281,
-    "movingAverageValue": 14.8276434077
+    "signalLineValue": 14.8276434077
   },
   {
     "time": {
@@ -1061,7 +1061,7 @@
       }
     },
     "indicatorValue": 15.3806182281,
-    "movingAverageValue": 14.8701799323
+    "signalLineValue": 14.8701799323
   },
   {
     "time": {
@@ -1078,7 +1078,7 @@
       }
     },
     "indicatorValue": 15.3806182281,
-    "movingAverageValue": 14.9094444166
+    "signalLineValue": 14.9094444166
   },
   {
     "time": {
@@ -1095,7 +1095,7 @@
       }
     },
     "indicatorValue": 15.1830742618,
-    "movingAverageValue": 14.9304928662
+    "signalLineValue": 14.9304928662
   },
   {
     "time": {
@@ -1112,7 +1112,7 @@
       }
     },
     "indicatorValue": 14.9750215092,
-    "movingAverageValue": 14.9339181464
+    "signalLineValue": 14.9339181464
   },
   {
     "time": {
@@ -1129,7 +1129,7 @@
       }
     },
     "indicatorValue": 14.9750215092,
-    "movingAverageValue": 14.9370799435
+    "signalLineValue": 14.9370799435
   },
   {
     "time": {
@@ -1146,7 +1146,7 @@
       }
     },
     "indicatorValue": 14.9750215092,
-    "movingAverageValue": 14.9399985255
+    "signalLineValue": 14.9399985255
   },
   {
     "time": {
@@ -1163,7 +1163,7 @@
       }
     },
     "indicatorValue": 15.2341822459,
-    "movingAverageValue": 14.9626280424
+    "signalLineValue": 14.9626280424
   },
   {
     "time": {
@@ -1180,7 +1180,7 @@
       }
     },
     "indicatorValue": 15.2341822459,
-    "movingAverageValue": 14.9835168273
+    "signalLineValue": 14.9835168273
   },
   {
     "time": {
@@ -1197,7 +1197,7 @@
       }
     },
     "indicatorValue": 15.2341822459,
-    "movingAverageValue": 15.0027987826
+    "signalLineValue": 15.0027987826
   },
   {
     "time": {
@@ -1214,6 +1214,6 @@
       }
     },
     "indicatorValue": 15.2341822459,
-    "movingAverageValue": 15.0205975105
+    "signalLineValue": 15.0205975105
   }
 ]

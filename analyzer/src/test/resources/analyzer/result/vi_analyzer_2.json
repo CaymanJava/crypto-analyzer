@@ -13,7 +13,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.5471000000
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -29,7 +32,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.5471000000
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -45,7 +51,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.0501200130
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -61,7 +70,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.0501200130
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -77,7 +89,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.1581769234
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -93,7 +108,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.3381555832
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -109,7 +127,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.3381555832
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -125,7 +146,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.3381555832
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -141,7 +165,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.4786306885
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -157,7 +184,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.4786306885
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -173,7 +203,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.2852497116
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -189,7 +222,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.2852497116
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -205,7 +241,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.2852497116
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -221,7 +260,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.3435534303
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -237,7 +279,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.3435534303
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -253,7 +298,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.3435534303
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -269,7 +317,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.8642766450
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -285,7 +336,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.8642766450
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -301,7 +355,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.5727326904
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -317,7 +374,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.5727326904
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -333,7 +393,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 16.1262525034
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -349,7 +412,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 16.1262525034
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -365,7 +431,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 16.1262525034
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -381,7 +450,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.7712289810
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -397,8 +469,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.7712289810,
-    "signalLineValue": 15.5202395458
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -414,8 +488,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.9094420924,
-    "signalLineValue": 15.5501782032
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -431,8 +507,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.9094420924,
-    "signalLineValue": 15.5778138870
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -448,8 +526,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 15.9094420924,
-    "signalLineValue": 15.6033237489
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -465,8 +545,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 16.5535490603,
-    "signalLineValue": 15.6764180036
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -482,8 +564,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 16.5535490603,
-    "signalLineValue": 15.7438896233
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -499,8 +583,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 16.5535490603,
-    "signalLineValue": 15.8061711184
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -516,8 +602,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 16.5535490603,
-    "signalLineValue": 15.8636617293
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -533,8 +621,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.0890726644,
-    "signalLineValue": 15.9579241089
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -550,8 +640,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.0890726644,
-    "signalLineValue": 16.0449355362
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -567,8 +659,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.0890726644,
-    "signalLineValue": 16.1252537768
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -584,8 +678,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 16.8689464824,
-    "signalLineValue": 16.1824609080
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -601,8 +697,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 16.8689464824,
-    "signalLineValue": 16.2352674906
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -618,8 +716,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 16.8689464824,
-    "signalLineValue": 16.2840120284
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -635,8 +735,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.2900499188,
-    "signalLineValue": 16.3613995584
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -652,8 +754,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.2900499188,
-    "signalLineValue": 16.4328342015
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -669,8 +773,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.0892658599,
-    "signalLineValue": 16.4833289444
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -686,8 +792,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.4335399364,
-    "signalLineValue": 16.5564220976
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -703,8 +811,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.4335399364,
-    "signalLineValue": 16.6238927006
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -720,8 +830,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.4335399364,
-    "signalLineValue": 16.6861732572
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -737,8 +849,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.8927286410,
-    "signalLineValue": 16.7789852098
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -754,8 +868,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.8927286410,
-    "signalLineValue": 16.8646577814
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -771,8 +887,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.8927286410,
-    "signalLineValue": 16.9437401552
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -788,8 +906,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.3595997487,
-    "signalLineValue": 16.9757293547
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -805,8 +925,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.3595997487,
-    "signalLineValue": 17.0052578465
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -822,8 +944,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.3595997487,
-    "signalLineValue": 17.0325149159
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -839,8 +963,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.7589793685,
-    "signalLineValue": 17.0883967969
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -856,8 +982,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.9132025578,
-    "signalLineValue": 17.1518433939
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -873,8 +1001,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.5743151111,
-    "signalLineValue": 17.2612642952
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -890,8 +1020,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.5743151111,
-    "signalLineValue": 17.3622682041
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -907,8 +1039,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.3446258846,
-    "signalLineValue": 17.4378341795
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -924,8 +1058,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.3446258846,
-    "signalLineValue": 17.5075873876
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -941,8 +1077,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.3446258846,
-    "signalLineValue": 17.5719749643
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -958,8 +1096,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.9677253654,
-    "signalLineValue": 17.6793403797
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -975,8 +1115,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.9829751795,
-    "signalLineValue": 17.7796199797
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -992,8 +1134,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.9829751795,
-    "signalLineValue": 17.8721857643
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1009,8 +1153,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.5019833053,
-    "signalLineValue": 17.9206317290
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -1026,8 +1172,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.5019833053,
-    "signalLineValue": 17.9653510810
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1043,8 +1191,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.3880833310,
-    "signalLineValue": 17.9978689464
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -1060,8 +1210,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.4626911164,
-    "signalLineValue": 18.0336244979
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -1077,8 +1229,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.0172826405,
-    "signalLineValue": 18.0323674319
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "STRONG"
+    }
   },
   {
     "time": {
@@ -1094,8 +1248,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.0172826405,
-    "signalLineValue": 18.0312070633
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1111,8 +1267,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.0172826405,
-    "signalLineValue": 18.0301359539
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1128,8 +1286,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 18.1665792785,
-    "signalLineValue": 18.0406315942
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "STRONG"
+    }
   },
   {
     "time": {
@@ -1145,8 +1305,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.4603209563,
-    "signalLineValue": 17.9959923144
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "STRONG"
+    }
   },
   {
     "time": {
@@ -1162,8 +1324,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.4603209563,
-    "signalLineValue": 17.9547868253
+    "signalStrength": {
+      "signal": "NEUTRAL",
+      "strength": "UNDEFINED"
+    }
   },
   {
     "time": {
@@ -1179,8 +1343,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.5330095226,
-    "signalLineValue": 17.9223424174
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -1196,8 +1362,10 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.5701698264,
-    "signalLineValue": 17.8952522181
+    "signalStrength": {
+      "signal": "BUY",
+      "strength": "WEAK"
+    }
   },
   {
     "time": {
@@ -1213,7 +1381,9 @@
         "nano": 0
       }
     },
-    "indicatorValue": 17.1064192833,
-    "signalLineValue": 17.8345727616
+    "signalStrength": {
+      "signal": "SELL",
+      "strength": "WEAK"
+    }
   }
 ]

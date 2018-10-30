@@ -6,7 +6,7 @@ import org.apache.commons.io.FileUtils;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
-import pro.crypto.indicator.tick.generator.OneDayTickGenerator;
+import pro.crypto.tick.generator.OneDayTickGenerator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;

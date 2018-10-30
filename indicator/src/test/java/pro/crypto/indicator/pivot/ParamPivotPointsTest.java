@@ -4,7 +4,7 @@ import lombok.Data;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import pro.crypto.indicator.tick.generator.OneDayTickGenerator;
+import pro.crypto.tick.generator.OneDayTickGenerator;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 

@@ -17,6 +17,9 @@ import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.VERTICAL_HORIZONTAL_FILTER;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
+/**
+ * Indicator is made for visual analyzing
+ */
 public class VerticalHorizontalFilter implements Indicator<VHFResult> {
 
     private final Tick[] originalData;

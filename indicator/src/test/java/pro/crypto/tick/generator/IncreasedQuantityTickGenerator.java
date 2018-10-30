@@ -1,4 +1,4 @@
-package pro.crypto.indicator.tick.generator;
+package pro.crypto.tick.generator;
 
 import pro.crypto.model.tick.Tick;
 

@@ -6,7 +6,7 @@ import org.apache.commons.io.FileUtils;
 import org.junit.Test;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.adl.ADLResult;
-import pro.crypto.indicator.tick.generator.OneDayTickGenerator;
+import pro.crypto.tick.generator.OneDayTickGenerator;
 import pro.crypto.model.IndicatorResult;
 
 import java.io.File;

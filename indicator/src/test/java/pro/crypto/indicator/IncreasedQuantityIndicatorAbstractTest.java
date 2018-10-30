@@ -1,7 +1,7 @@
 package pro.crypto.indicator;
 
 import org.junit.Before;
-import pro.crypto.indicator.tick.generator.IncreasedQuantityTickGenerator;
+import pro.crypto.tick.generator.IncreasedQuantityTickGenerator;
 
 public abstract class IncreasedQuantityIndicatorAbstractTest extends IndicatorAbstractTest {
 

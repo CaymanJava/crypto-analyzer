@@ -2,6 +2,7 @@ package pro.crypto.analyzer.ic;
 
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.PriceVolumeExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.ic.ICResult;
 import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
@@ -42,7 +43,7 @@ public class ICAnalyzer implements Analyzer<ICAnalyzerResult> {
         SignalStrength[] tenkanKijunCrossSignals = findTenkanKijunCrossSignals();
         SignalStrength[] priceKijunCrossSignals = findPriceKijunCrossSignals();
         SignalStrength[] priceCloudCrossSignals = findPriceCloudCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(tenkanKijunCrossSignals, priceKijunCrossSignals, priceCloudCrossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(tenkanKijunCrossSignals, priceKijunCrossSignals, priceCloudCrossSignals);
         buildICAnalyzerResult(mergedSignals);
     }
 

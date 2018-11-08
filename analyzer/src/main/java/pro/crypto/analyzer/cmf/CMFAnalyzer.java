@@ -2,6 +2,7 @@ package pro.crypto.analyzer.cmf;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.cmf.CMFResult;
 import pro.crypto.model.Analyzer;
@@ -44,7 +45,7 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
         extractIndicatorValues();
         Signal[] divergenceSignals = findDivergenceSignals();
         Signal[] intersectionSignals = findIntersectionSignals();
-        Signal[] mergedSignals = mergeSignals(intersectionSignals, divergenceSignals);
+        Signal[] mergedSignals = SignalArrayMerger.mergeSignals(intersectionSignals, divergenceSignals);
         Trend[] trends = defineTrends();
         buildCMFAnalyzerResult(mergedSignals, trends);
     }
@@ -80,7 +81,7 @@ public class CMFAnalyzer implements Analyzer<CMFAnalyzerResult> {
     private Signal[] findIntersectionSignals() {
         Signal[] buySignals = findBuySignals();
         Signal[] sellSignals = findSellSignals();
-        return mergeSignals(buySignals, sellSignals);
+        return SignalArrayMerger.mergeSignals(buySignals, sellSignals);
     }
 
     private Signal[] findBuySignals() {

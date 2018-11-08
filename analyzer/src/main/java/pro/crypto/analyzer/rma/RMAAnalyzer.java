@@ -3,6 +3,7 @@ package pro.crypto.analyzer.rma;
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceVolumeExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.rma.RMAResult;
 import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
@@ -39,7 +40,7 @@ public class RMAAnalyzer implements Analyzer<RMAAnalyzerResult> {
         defineTrends();
         SignalStrength[] crossLinesSignals = findCrossLinesSignals();
         SignalStrength[] trendReverseSignals = findTrendReverseSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(crossLinesSignals, trendReverseSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(crossLinesSignals, trendReverseSignals);
         buildRMAAnalyzerResult(mergedSignals);
     }
 
@@ -109,7 +110,7 @@ public class RMAAnalyzer implements Analyzer<RMAAnalyzerResult> {
         BigDecimal[] closePrices = PriceVolumeExtractor.extractPrices(originalData, CLOSE);
         SignalStrength[] higherLineCrossSignals = findHigherLinesCrossSignals(closePrices);
         SignalStrength[] lowerLineCrossSignals = findLowerLinesCrossSignals(closePrices);
-        return mergeSignalsStrength(higherLineCrossSignals, lowerLineCrossSignals);
+        return SignalArrayMerger.mergeSignalsStrength(higherLineCrossSignals, lowerLineCrossSignals);
     }
 
     private SignalStrength[] findHigherLinesCrossSignals(BigDecimal[] closePrices) {

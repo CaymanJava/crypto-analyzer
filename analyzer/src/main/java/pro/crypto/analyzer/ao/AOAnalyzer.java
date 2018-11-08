@@ -1,5 +1,6 @@
 package pro.crypto.analyzer.ao;
 
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.SignalMerger;
 import pro.crypto.helper.IndicatorResultExtractor;
@@ -35,7 +36,7 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
         Signal[] saucerSignals = findSaucerSignals();
         Signal[] crossZeroSignals = findCrossZeroSignals();
         Signal[] twoPeaksSignals = findTwoPeaksSignals();
-        Signal[] signals = mergeSignals(saucerSignals, crossZeroSignals, twoPeaksSignals);
+        Signal[] signals = SignalArrayMerger.mergeSignals(saucerSignals, crossZeroSignals, twoPeaksSignals);
         buildAOAnalyzerResult(signals);
     }
 

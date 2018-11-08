@@ -2,6 +2,7 @@ package pro.crypto.analyzer.kelt;
 
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.PriceVolumeExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.kelt.KELTResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -39,7 +40,7 @@ public class KELTAnalyzer implements Analyzer<KELTAnalyzerResult> {
         SignalStrength[] upperBandCrossSignals = findUpperBandCrossSignals();
         SignalStrength[] middleBandCrossSignals = findMiddleBandCrossSignals();
         SignalStrength[] lowerBandCrossSignals = findLowerBandCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(upperBandCrossSignals, middleBandCrossSignals, lowerBandCrossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(upperBandCrossSignals, middleBandCrossSignals, lowerBandCrossSignals);
         buildKELTAnalyzerResult(mergedSignals);
     }
 

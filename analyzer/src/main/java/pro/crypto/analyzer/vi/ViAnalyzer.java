@@ -2,6 +2,7 @@ package pro.crypto.analyzer.vi;
 
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.vi.VIResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -34,7 +35,7 @@ public class ViAnalyzer implements Analyzer<VIAnalyzerResult> {
         extractIndicatorValues();
         SignalStrength[] signalLineCrossSignals = findSignalLineCrossSignals();
         SignalStrength[] increaseDecreaseSignals = findIncreaseDecreaseSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(signalLineCrossSignals, increaseDecreaseSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(signalLineCrossSignals, increaseDecreaseSignals);
         buildVIAnalyzerResult(mergedSignals);
     }
 

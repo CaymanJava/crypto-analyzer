@@ -1,9 +1,6 @@
 package pro.crypto.analyzer.cmo;
 
-import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.DynamicLineCrossAnalyzer;
-import pro.crypto.helper.StaticLineCrossAnalyzer;
-import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.*;
 import pro.crypto.indicator.cmo.CMOResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -46,7 +43,7 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
         extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, crossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, crossSignals);
         buildCMOAnalyzerResult(mergedSignals);
     }
 
@@ -84,13 +81,13 @@ public class CMOAnalyzer implements Analyzer<CMOAnalyzerResult> {
         SignalStrength[] securityLevelSignals = findSecurityLevelSignals();
         SignalStrength[] zeroLineSignals = findZeroLineSignals();
         SignalStrength[] signalLineSignals = findSignalLineSignals();
-        return mergeSignalsStrength(securityLevelSignals, zeroLineSignals, signalLineSignals);
+        return SignalArrayMerger.mergeSignalsStrength(securityLevelSignals, zeroLineSignals, signalLineSignals);
     }
 
     private SignalStrength[] findSecurityLevelSignals() {
         SignalStrength[] oversoldSignals = findOversoldSignals();
         SignalStrength[] overboughtSignals = findOverboughtSignals();
-        return mergeSignalsStrength(oversoldSignals, overboughtSignals);
+        return SignalArrayMerger.mergeSignalsStrength(oversoldSignals, overboughtSignals);
     }
 
     private SignalStrength[] findOverboughtSignals() {

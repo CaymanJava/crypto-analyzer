@@ -2,6 +2,7 @@ package pro.crypto.analyzer.eri;
 
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.eri.ERIResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -35,7 +36,7 @@ public class ERIAnalyzer implements Analyzer<ERIAnalyzerResult> {
     public void analyze() {
         SignalStrength[] mainSignals = findMainSignals();
         SignalStrength[] crossZeroSignals = findCrossLinesSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(mainSignals, crossZeroSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(mainSignals, crossZeroSignals);
         buildERIAnalyzerResult(mergedSignals);
     }
 

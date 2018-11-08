@@ -1,11 +1,13 @@
 package pro.crypto.indicator.fractal;
 
-import lombok.Value;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import pro.crypto.model.IndicatorResult;
 
 import java.time.LocalDateTime;
 
-@Value
+@Data
+@AllArgsConstructor
 public class FractalResult implements IndicatorResult {
 
     private LocalDateTime time;

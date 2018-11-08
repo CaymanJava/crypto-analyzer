@@ -1,0 +1,10502 @@
+[
+  {
+    "open": 0.03241111,
+    "high": 0.03244399,
+    "low": 0.03230100,
+    "close": 0.03230100,
+    "volume": 62.29335667,
+    "baseVolume": 2.01452017,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240499,
+    "high": 0.03243351,
+    "low": 0.03230100,
+    "close": 0.03239096,
+    "volume": 22.97114045,
+    "baseVolume": 0.74234405,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03230100,
+    "high": 0.03237970,
+    "low": 0.03230000,
+    "close": 0.03230001,
+    "volume": 38.46895857,
+    "baseVolume": 1.24255214,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03230001,
+    "high": 0.03230001,
+    "low": 0.03230001,
+    "close": 0.03230001,
+    "volume": 8.00447147,
+    "baseVolume": 0.25854449,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03243792,
+    "high": 0.03243792,
+    "low": 0.03230003,
+    "close": 0.03242074,
+    "volume": 2.19957361,
+    "baseVolume": 0.07131292,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241000,
+    "high": 0.03241000,
+    "low": 0.03230003,
+    "close": 0.03240393,
+    "volume": 8.35229346,
+    "baseVolume": 0.27053145,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239889,
+    "high": 0.03241297,
+    "low": 0.03230003,
+    "close": 0.03230004,
+    "volume": 0.82995508,
+    "baseVolume": 0.02681931,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03230004,
+    "high": 0.03238691,
+    "low": 0.03230004,
+    "close": 0.03230104,
+    "volume": 2.71503479,
+    "baseVolume": 0.08776938,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03230004,
+    "high": 0.03238685,
+    "low": 0.03230004,
+    "close": 0.03230103,
+    "volume": 11.98891748,
+    "baseVolume": 0.38738458,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03238685,
+    "high": 0.03238690,
+    "low": 0.03230000,
+    "close": 0.03238690,
+    "volume": 21.41643500,
+    "baseVolume": 0.69187014,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03238689,
+    "high": 0.03238689,
+    "low": 0.03230000,
+    "close": 0.03230000,
+    "volume": 10.28255722,
+    "baseVolume": 0.33220978,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03230000,
+    "high": 0.03238689,
+    "low": 0.03226009,
+    "close": 0.03226600,
+    "volume": 153.16729992,
+    "baseVolume": 4.94170796,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03226001,
+    "high": 0.03239196,
+    "low": 0.03226001,
+    "close": 0.03239196,
+    "volume": 3.93196402,
+    "baseVolume": 0.12733060,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239196,
+    "high": 0.03239196,
+    "low": 0.03230000,
+    "close": 0.03230000,
+    "volume": 2.69848045,
+    "baseVolume": 0.08723978,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03235406,
+    "high": 0.03235406,
+    "low": 0.03230000,
+    "close": 0.03230000,
+    "volume": 7.52661041,
+    "baseVolume": 0.24311636,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03230000,
+    "high": 0.03239196,
+    "low": 0.03228500,
+    "close": 0.03229000,
+    "volume": 8.96639642,
+    "baseVolume": 0.28957485,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239196,
+    "high": 0.03239196,
+    "low": 0.03239196,
+    "close": 0.03239196,
+    "volume": 49.91848940,
+    "baseVolume": 1.61695762,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239196,
+    "high": 0.03240000,
+    "low": 0.03239196,
+    "close": 0.03239196,
+    "volume": 3.18991450,
+    "baseVolume": 0.10332799,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239196,
+    "high": 0.03239196,
+    "low": 0.03239196,
+    "close": 0.03239196,
+    "volume": 7.31182618,
+    "baseVolume": 0.23684435,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239196,
+    "high": 0.03240000,
+    "low": 0.03239196,
+    "close": 0.03239196,
+    "volume": 32.00049471,
+    "baseVolume": 1.03656772,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239196,
+    "high": 0.03240000,
+    "low": 0.03239196,
+    "close": 0.03239196,
+    "volume": 40.43916229,
+    "baseVolume": 1.30990507,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239196,
+    "high": 0.03246231,
+    "low": 0.03239196,
+    "close": 0.03239196,
+    "volume": 32.98891669,
+    "baseVolume": 1.06872098,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03228500,
+    "high": 0.03228500,
+    "low": 0.03228500,
+    "close": 0.03228500,
+    "volume": 1.28096900,
+    "baseVolume": 0.04135606,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03238298,
+    "high": 0.03241677,
+    "low": 0.03225649,
+    "close": 0.03241677,
+    "volume": 2.95656398,
+    "baseVolume": 0.09567896,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03225500,
+    "high": 0.03241677,
+    "low": 0.03225500,
+    "close": 0.03241677,
+    "volume": 4.60758600,
+    "baseVolume": 0.14866739,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240797,
+    "high": 0.03240797,
+    "low": 0.03225500,
+    "close": 0.03225500,
+    "volume": 1.48528724,
+    "baseVolume": 0.04802152,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03225500,
+    "high": 0.03240399,
+    "low": 0.03225500,
+    "close": 0.03240399,
+    "volume": 2.10750690,
+    "baseVolume": 0.06799630,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03225500,
+    "high": 0.03240299,
+    "low": 0.03224272,
+    "close": 0.03240198,
+    "volume": 8.88853919,
+    "baseVolume": 0.28685140,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240198,
+    "high": 0.03240318,
+    "low": 0.03224800,
+    "close": 0.03224800,
+    "volume": 5.81558628,
+    "baseVolume": 0.18781060,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239006,
+    "high": 0.03239989,
+    "low": 0.03224272,
+    "close": 0.03239989,
+    "volume": 3.60370889,
+    "baseVolume": 0.11632420,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239687,
+    "high": 0.03239687,
+    "low": 0.03239687,
+    "close": 0.03239687,
+    "volume": 0.73814311,
+    "baseVolume": 0.02391352,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239787,
+    "high": 0.03240392,
+    "low": 0.03223000,
+    "close": 0.03223206,
+    "volume": 21.83970798,
+    "baseVolume": 0.70691556,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240292,
+    "high": 0.03240292,
+    "low": 0.03222755,
+    "close": 0.03230000,
+    "volume": 66.95493054,
+    "baseVolume": 2.15853438,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240091,
+    "high": 0.03240292,
+    "low": 0.03230000,
+    "close": 0.03240192,
+    "volume": 1.60915201,
+    "baseVolume": 0.05206397,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240192,
+    "high": 0.03241427,
+    "low": 0.03230000,
+    "close": 0.03230000,
+    "volume": 29.19098621,
+    "baseVolume": 0.94505531,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03222755,
+    "high": 0.03230000,
+    "low": 0.03220579,
+    "close": 0.03221501,
+    "volume": 6.82098404,
+    "baseVolume": 0.21985161,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03230000,
+    "high": 0.03230000,
+    "low": 0.03222709,
+    "close": 0.03223003,
+    "volume": 4.23386022,
+    "baseVolume": 0.13672636,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03222809,
+    "high": 0.03230000,
+    "low": 0.03222103,
+    "close": 0.03222103,
+    "volume": 3.49648086,
+    "baseVolume": 0.11272018,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03222103,
+    "high": 0.03222103,
+    "low": 0.03220682,
+    "close": 0.03222102,
+    "volume": 11.87242243,
+    "baseVolume": 0.38253139,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229999,
+    "high": 0.03229999,
+    "low": 0.03222202,
+    "close": 0.03222202,
+    "volume": 5.78512014,
+    "baseVolume": 0.18685392,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03222202,
+    "high": 0.03230000,
+    "low": 0.03222202,
+    "close": 0.03230000,
+    "volume": 2.14720372,
+    "baseVolume": 0.06927533,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03226957,
+    "high": 0.03236498,
+    "low": 0.03220580,
+    "close": 0.03230000,
+    "volume": 57.26762133,
+    "baseVolume": 1.84895539,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03236498,
+    "high": 0.03236498,
+    "low": 0.03230000,
+    "close": 0.03230000,
+    "volume": 13.23861372,
+    "baseVolume": 0.42844218,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03236495,
+    "high": 0.03236499,
+    "low": 0.03221500,
+    "close": 0.03236499,
+    "volume": 8.60779223,
+    "baseVolume": 0.27851353,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03236499,
+    "high": 0.03236499,
+    "low": 0.03222507,
+    "close": 0.03223103,
+    "volume": 2.32372695,
+    "baseVolume": 0.07502562,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03223410,
+    "high": 0.03238732,
+    "low": 0.03223001,
+    "close": 0.03238600,
+    "volume": 60.35713035,
+    "baseVolume": 1.94608361,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03238700,
+    "high": 0.03238700,
+    "low": 0.03224202,
+    "close": 0.03238500,
+    "volume": 2.79315443,
+    "baseVolume": 0.09035035,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03238600,
+    "high": 0.03238700,
+    "low": 0.03225001,
+    "close": 0.03238699,
+    "volume": 15.42312283,
+    "baseVolume": 0.49794079,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03238699,
+    "high": 0.03238700,
+    "low": 0.03222708,
+    "close": 0.03238700,
+    "volume": 2.97395281,
+    "baseVolume": 0.09617258,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03238700,
+    "high": 0.03238700,
+    "low": 0.03238700,
+    "close": 0.03238700,
+    "volume": 6.10876097,
+    "baseVolume": 0.19784443,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03238700,
+    "high": 0.03238700,
+    "low": 0.03226001,
+    "close": 0.03238700,
+    "volume": 4.73926621,
+    "baseVolume": 0.15340180,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03233106,
+    "high": 0.03238700,
+    "low": 0.03233106,
+    "close": 0.03238700,
+    "volume": 15.39675045,
+    "baseVolume": 0.49804155,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03233106,
+    "high": 0.03238700,
+    "low": 0.03232490,
+    "close": 0.03233106,
+    "volume": 6.43178413,
+    "baseVolume": 0.20817101,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03233106,
+    "high": 0.03233106,
+    "low": 0.03224756,
+    "close": 0.03225770,
+    "volume": 12.20729744,
+    "baseVolume": 0.39434362,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237961,
+    "high": 0.03238700,
+    "low": 0.03233500,
+    "close": 0.03238700,
+    "volume": 2.76664804,
+    "baseVolume": 0.08951546,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03238700,
+    "high": 0.03240000,
+    "low": 0.03232211,
+    "close": 0.03240000,
+    "volume": 132.16311290,
+    "baseVolume": 4.28182439,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240000,
+    "high": 0.03247994,
+    "low": 0.03240000,
+    "close": 0.03247994,
+    "volume": 26.31316213,
+    "baseVolume": 0.85422761,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247994,
+    "high": 0.03251700,
+    "low": 0.03244001,
+    "close": 0.03251700,
+    "volume": 60.96134989,
+    "baseVolume": 1.98104890,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03263870,
+    "low": 0.03250746,
+    "close": 0.03250746,
+    "volume": 55.98783135,
+    "baseVolume": 1.82320949,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03260453,
+    "low": 0.03242500,
+    "close": 0.03260453,
+    "volume": 2.88226032,
+    "baseVolume": 0.09373302,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03250746,
+    "low": 0.03239000,
+    "close": 0.03250746,
+    "volume": 4.71025700,
+    "baseVolume": 0.15277940,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03250746,
+    "low": 0.03250746,
+    "close": 0.03250746,
+    "volume": 0.41437765,
+    "baseVolume": 0.01347035,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03244168,
+    "high": 0.03249999,
+    "low": 0.03239701,
+    "close": 0.03239701,
+    "volume": 4.86273755,
+    "baseVolume": 0.15776479,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240002,
+    "high": 0.03249997,
+    "low": 0.03240000,
+    "close": 0.03241100,
+    "volume": 4.74804178,
+    "baseVolume": 0.15391485,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03249998,
+    "high": 0.03250000,
+    "low": 0.03249997,
+    "close": 0.03249997,
+    "volume": 30.02020979,
+    "baseVolume": 0.97565583,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03260436,
+    "low": 0.03249997,
+    "close": 0.03250746,
+    "volume": 30.60254179,
+    "baseVolume": 0.99501380,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03251071,
+    "low": 0.03250746,
+    "close": 0.03250746,
+    "volume": 1.36208650,
+    "baseVolume": 0.04427958,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254325,
+    "high": 0.03254325,
+    "low": 0.03244000,
+    "close": 0.03250746,
+    "volume": 34.26711130,
+    "baseVolume": 1.11171226,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03254324,
+    "low": 0.03241604,
+    "close": 0.03254324,
+    "volume": 8.01658025,
+    "baseVolume": 0.26050666,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254324,
+    "high": 0.03254324,
+    "low": 0.03254324,
+    "close": 0.03254324,
+    "volume": 0.99299982,
+    "baseVolume": 0.03231540,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250000,
+    "high": 0.03254324,
+    "low": 0.03244501,
+    "close": 0.03251071,
+    "volume": 7.28951823,
+    "baseVolume": 0.23688115,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254324,
+    "high": 0.03255302,
+    "low": 0.03250000,
+    "close": 0.03255302,
+    "volume": 10.69000000,
+    "baseVolume": 0.34792482,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250000,
+    "high": 0.03250000,
+    "low": 0.03235001,
+    "close": 0.03235205,
+    "volume": 126.35071590,
+    "baseVolume": 4.08897985,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03249999,
+    "high": 0.03249999,
+    "low": 0.03249900,
+    "close": 0.03249900,
+    "volume": 0.31859210,
+    "baseVolume": 0.01035397,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03249900,
+    "high": 0.03249900,
+    "low": 0.03234501,
+    "close": 0.03234501,
+    "volume": 1.55551173,
+    "baseVolume": 0.05045282,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03233304,
+    "high": 0.03249800,
+    "low": 0.03233304,
+    "close": 0.03249590,
+    "volume": 2.89956902,
+    "baseVolume": 0.09379110,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03234703,
+    "high": 0.03249691,
+    "low": 0.03234703,
+    "close": 0.03235200,
+    "volume": 14.81189882,
+    "baseVolume": 0.47933717,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03248996,
+    "high": 0.03248997,
+    "low": 0.03243000,
+    "close": 0.03243000,
+    "volume": 8.47131022,
+    "baseVolume": 0.27523077,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03243000,
+    "high": 0.03245000,
+    "low": 0.03243000,
+    "close": 0.03245000,
+    "volume": 4.40558474,
+    "baseVolume": 0.14294879,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03245000,
+    "high": 0.03245000,
+    "low": 0.03236500,
+    "close": 0.03238500,
+    "volume": 24.08613676,
+    "baseVolume": 0.78109646,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03248949,
+    "high": 0.03248980,
+    "low": 0.03235602,
+    "close": 0.03248980,
+    "volume": 9.18977944,
+    "baseVolume": 0.29812399,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03248979,
+    "high": 0.03248979,
+    "low": 0.03236813,
+    "close": 0.03236813,
+    "volume": 7.76398078,
+    "baseVolume": 0.25144516,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03236813,
+    "high": 0.03248191,
+    "low": 0.03224756,
+    "close": 0.03241434,
+    "volume": 64.48659442,
+    "baseVolume": 2.08169059,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03227001,
+    "high": 0.03244000,
+    "low": 0.03227001,
+    "close": 0.03244000,
+    "volume": 10.00280465,
+    "baseVolume": 0.32302855,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03234002,
+    "high": 0.03244000,
+    "low": 0.03234001,
+    "close": 0.03244000,
+    "volume": 0.63997883,
+    "baseVolume": 0.02072332,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03235016,
+    "high": 0.03250646,
+    "low": 0.03235016,
+    "close": 0.03250545,
+    "volume": 138.93896455,
+    "baseVolume": 4.51434606,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250343,
+    "high": 0.03250746,
+    "low": 0.03239771,
+    "close": 0.03250746,
+    "volume": 40.68311703,
+    "baseVolume": 1.32240437,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239855,
+    "high": 0.03250668,
+    "low": 0.03237502,
+    "close": 0.03238701,
+    "volume": 7.83285427,
+    "baseVolume": 0.25361818,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239100,
+    "high": 0.03254649,
+    "low": 0.03239100,
+    "close": 0.03250746,
+    "volume": 19.62561610,
+    "baseVolume": 0.63857710,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03250746,
+    "low": 0.03241500,
+    "close": 0.03242001,
+    "volume": 2.10359337,
+    "baseVolume": 0.06831493,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250000,
+    "high": 0.03250746,
+    "low": 0.03250000,
+    "close": 0.03250000,
+    "volume": 22.03373802,
+    "baseVolume": 0.71609751,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250000,
+    "high": 0.03251500,
+    "low": 0.03241001,
+    "close": 0.03250746,
+    "volume": 4.74823551,
+    "baseVolume": 0.15430285,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03254000,
+    "low": 0.03242503,
+    "close": 0.03254000,
+    "volume": 8.46657809,
+    "baseVolume": 0.27528871,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251071,
+    "high": 0.03254000,
+    "low": 0.03250001,
+    "close": 0.03250001,
+    "volume": 105.25256124,
+    "baseVolume": 3.42371239,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250001,
+    "high": 0.03255302,
+    "low": 0.03241001,
+    "close": 0.03241001,
+    "volume": 27.45810515,
+    "baseVolume": 0.89251362,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241001,
+    "high": 0.03250746,
+    "low": 0.03241001,
+    "close": 0.03250000,
+    "volume": 48.03249654,
+    "baseVolume": 1.55735947,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250000,
+    "high": 0.03254325,
+    "low": 0.03242500,
+    "close": 0.03250746,
+    "volume": 9.20336448,
+    "baseVolume": 0.29910880,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251396,
+    "high": 0.03254876,
+    "low": 0.03250000,
+    "close": 0.03250000,
+    "volume": 3.82596226,
+    "baseVolume": 0.12443375,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250000,
+    "high": 0.03251395,
+    "low": 0.03250000,
+    "close": 0.03251390,
+    "volume": 6.62534366,
+    "baseVolume": 0.21541537,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251390,
+    "high": 0.03254325,
+    "low": 0.03251390,
+    "close": 0.03251395,
+    "volume": 23.18109520,
+    "baseVolume": 0.75388158,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251395,
+    "high": 0.03251395,
+    "low": 0.03250000,
+    "close": 0.03250000,
+    "volume": 32.11157738,
+    "baseVolume": 1.04380885,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03246684,
+    "high": 0.03250741,
+    "low": 0.03241001,
+    "close": 0.03250741,
+    "volume": 43.75426473,
+    "baseVolume": 1.42059786,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250741,
+    "high": 0.03254324,
+    "low": 0.03242000,
+    "close": 0.03254225,
+    "volume": 40.06282271,
+    "baseVolume": 1.30351153,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254225,
+    "high": 0.03254651,
+    "low": 0.03242001,
+    "close": 0.03242001,
+    "volume": 9.13030182,
+    "baseVolume": 0.29706322,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03254651,
+    "low": 0.03242204,
+    "close": 0.03242206,
+    "volume": 4.76457381,
+    "baseVolume": 0.15500237,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03255302,
+    "low": 0.03242206,
+    "close": 0.03251071,
+    "volume": 6.23278312,
+    "baseVolume": 0.20221232,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03250746,
+    "low": 0.03242501,
+    "close": 0.03242501,
+    "volume": 0.82908579,
+    "baseVolume": 0.02693283,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03242502,
+    "high": 0.03251071,
+    "low": 0.03242502,
+    "close": 0.03250746,
+    "volume": 9.36939230,
+    "baseVolume": 0.30449020,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251071,
+    "high": 0.03251071,
+    "low": 0.03250746,
+    "close": 0.03250746,
+    "volume": 5.24665571,
+    "baseVolume": 0.17056233,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03252000,
+    "low": 0.03250746,
+    "close": 0.03252000,
+    "volume": 2.89551399,
+    "baseVolume": 0.09412939,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03252000,
+    "high": 0.03260451,
+    "low": 0.03250746,
+    "close": 0.03254484,
+    "volume": 46.70851999,
+    "baseVolume": 1.52177539,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03254976,
+    "low": 0.03246002,
+    "close": 0.03246002,
+    "volume": 19.17442775,
+    "baseVolume": 0.62344383,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03246002,
+    "high": 0.03250646,
+    "low": 0.03242502,
+    "close": 0.03250646,
+    "volume": 12.85873358,
+    "baseVolume": 0.41732098,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250646,
+    "high": 0.03250646,
+    "low": 0.03242502,
+    "close": 0.03242502,
+    "volume": 9.88618137,
+    "baseVolume": 0.32056339,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03242502,
+    "high": 0.03250645,
+    "low": 0.03242205,
+    "close": 0.03242502,
+    "volume": 5.89399765,
+    "baseVolume": 0.19117652,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03242502,
+    "high": 0.03242502,
+    "low": 0.03240000,
+    "close": 0.03240000,
+    "volume": 5.28735141,
+    "baseVolume": 0.17143791,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03242205,
+    "high": 0.03242205,
+    "low": 0.03240000,
+    "close": 0.03242205,
+    "volume": 4.91188363,
+    "baseVolume": 0.15922937,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03242205,
+    "high": 0.03254039,
+    "low": 0.03238026,
+    "close": 0.03243243,
+    "volume": 14.58818043,
+    "baseVolume": 0.47367807,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241999,
+    "high": 0.03250746,
+    "low": 0.03238026,
+    "close": 0.03250745,
+    "volume": 131.51351550,
+    "baseVolume": 4.27286006,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250745,
+    "high": 0.03250745,
+    "low": 0.03240001,
+    "close": 0.03245000,
+    "volume": 5.08404777,
+    "baseVolume": 0.16499013,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03245000,
+    "high": 0.03245000,
+    "low": 0.03243001,
+    "close": 0.03243001,
+    "volume": 0.83257888,
+    "baseVolume": 0.02700715,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03244000,
+    "high": 0.03250146,
+    "low": 0.03244000,
+    "close": 0.03244000,
+    "volume": 2.97914655,
+    "baseVolume": 0.09669779,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03250746,
+    "low": 0.03243002,
+    "close": 0.03243002,
+    "volume": 27.38661057,
+    "baseVolume": 0.88845120,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03244000,
+    "high": 0.03244000,
+    "low": 0.03243002,
+    "close": 0.03244000,
+    "volume": 12.40806565,
+    "baseVolume": 0.40249623,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03243002,
+    "high": 0.03250746,
+    "low": 0.03243002,
+    "close": 0.03250746,
+    "volume": 12.15173184,
+    "baseVolume": 0.39461893,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03254037,
+    "low": 0.03244000,
+    "close": 0.03244000,
+    "volume": 51.15292549,
+    "baseVolume": 1.66342962,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250000,
+    "high": 0.03253000,
+    "low": 0.03244000,
+    "close": 0.03244000,
+    "volume": 25.81583018,
+    "baseVolume": 0.83943475,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250000,
+    "high": 0.03253000,
+    "low": 0.03244000,
+    "close": 0.03244000,
+    "volume": 10.87297905,
+    "baseVolume": 0.35283333,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03244400,
+    "high": 0.03254976,
+    "low": 0.03244400,
+    "close": 0.03252046,
+    "volume": 16.37154201,
+    "baseVolume": 0.53203619,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03255301,
+    "high": 0.03255301,
+    "low": 0.03246000,
+    "close": 0.03250746,
+    "volume": 22.90619377,
+    "baseVolume": 0.74506116,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250000,
+    "high": 0.03255300,
+    "low": 0.03245000,
+    "close": 0.03245000,
+    "volume": 19.11061503,
+    "baseVolume": 0.62081965,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03245000,
+    "high": 0.03245000,
+    "low": 0.03244000,
+    "close": 0.03245000,
+    "volume": 13.24593879,
+    "baseVolume": 0.42977206,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03244857,
+    "high": 0.03254325,
+    "low": 0.03243002,
+    "close": 0.03254325,
+    "volume": 2.15719612,
+    "baseVolume": 0.07003402,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251396,
+    "high": 0.03254976,
+    "low": 0.03243002,
+    "close": 0.03251071,
+    "volume": 28.79952452,
+    "baseVolume": 0.93575820,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254625,
+    "high": 0.03270163,
+    "low": 0.03254300,
+    "close": 0.03265307,
+    "volume": 169.54072396,
+    "baseVolume": 5.52924742,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03265307,
+    "high": 0.03278416,
+    "low": 0.03254301,
+    "close": 0.03271000,
+    "volume": 105.93083214,
+    "baseVolume": 3.46548584,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03275000,
+    "high": 0.03275000,
+    "low": 0.03260512,
+    "close": 0.03273688,
+    "volume": 53.93344686,
+    "baseVolume": 1.76398774,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03272481,
+    "high": 0.03282768,
+    "low": 0.03272481,
+    "close": 0.03273014,
+    "volume": 16.80487683,
+    "baseVolume": 0.55025612,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03273014,
+    "high": 0.03275469,
+    "low": 0.03272479,
+    "close": 0.03272479,
+    "volume": 47.05751733,
+    "baseVolume": 1.54013599,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03272479,
+    "high": 0.03272480,
+    "low": 0.03268455,
+    "close": 0.03268455,
+    "volume": 90.44838235,
+    "baseVolume": 2.95982317,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03264500,
+    "high": 0.03268092,
+    "low": 0.03264500,
+    "close": 0.03264500,
+    "volume": 37.86689152,
+    "baseVolume": 1.23643489,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03264824,
+    "high": 0.03266130,
+    "low": 0.03264500,
+    "close": 0.03266130,
+    "volume": 4.68654649,
+    "baseVolume": 0.15303778,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03266130,
+    "high": 0.03268417,
+    "low": 0.03265000,
+    "close": 0.03265000,
+    "volume": 6.94998340,
+    "baseVolume": 0.22701728,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03265000,
+    "high": 0.03265000,
+    "low": 0.03252220,
+    "close": 0.03261433,
+    "volume": 97.77554949,
+    "baseVolume": 3.18447380,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03262085,
+    "high": 0.03281430,
+    "low": 0.03262050,
+    "close": 0.03264660,
+    "volume": 29.31028572,
+    "baseVolume": 0.95704727,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03264007,
+    "high": 0.03274498,
+    "low": 0.03264007,
+    "close": 0.03274498,
+    "volume": 5.62124593,
+    "baseVolume": 0.18383078,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03264009,
+    "high": 0.03277525,
+    "low": 0.03264007,
+    "close": 0.03264323,
+    "volume": 37.67650920,
+    "baseVolume": 1.23297646,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03264323,
+    "high": 0.03277500,
+    "low": 0.03264007,
+    "close": 0.03273000,
+    "volume": 14.67168963,
+    "baseVolume": 0.47993740,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03274200,
+    "high": 0.03274200,
+    "low": 0.03264007,
+    "close": 0.03267981,
+    "volume": 4.56736148,
+    "baseVolume": 0.14951716,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03265039,
+    "high": 0.03277499,
+    "low": 0.03265039,
+    "close": 0.03274222,
+    "volume": 9.41690645,
+    "baseVolume": 0.30837097,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03270948,
+    "high": 0.03274222,
+    "low": 0.03265040,
+    "close": 0.03265040,
+    "volume": 5.26839204,
+    "baseVolume": 0.17219162,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03265040,
+    "high": 0.03273000,
+    "low": 0.03264010,
+    "close": 0.03266369,
+    "volume": 25.55610946,
+    "baseVolume": 0.83479831,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03266369,
+    "high": 0.03275828,
+    "low": 0.03265040,
+    "close": 0.03272878,
+    "volume": 2.45729661,
+    "baseVolume": 0.08034589,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03273206,
+    "high": 0.03273206,
+    "low": 0.03258000,
+    "close": 0.03258000,
+    "volume": 19.35670016,
+    "baseVolume": 0.63139846,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03258101,
+    "high": 0.03269933,
+    "low": 0.03258001,
+    "close": 0.03266673,
+    "volume": 11.72721655,
+    "baseVolume": 0.38270525,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03267326,
+    "high": 0.03277498,
+    "low": 0.03266673,
+    "close": 0.03269614,
+    "volume": 14.42985011,
+    "baseVolume": 0.47152839,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03269614,
+    "high": 0.03277495,
+    "low": 0.03258501,
+    "close": 0.03274117,
+    "volume": 22.21285367,
+    "baseVolume": 0.72670410,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03268875,
+    "high": 0.03277499,
+    "low": 0.03260700,
+    "close": 0.03275845,
+    "volume": 182.44773896,
+    "baseVolume": 5.97642937,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03262000,
+    "high": 0.03289968,
+    "low": 0.03262000,
+    "close": 0.03283182,
+    "volume": 77.17100653,
+    "baseVolume": 2.53336821,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03283105,
+    "high": 0.03283105,
+    "low": 0.03265600,
+    "close": 0.03270000,
+    "volume": 24.81419738,
+    "baseVolume": 0.81299052,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03275208,
+    "high": 0.03276089,
+    "low": 0.03265000,
+    "close": 0.03271930,
+    "volume": 117.40995659,
+    "baseVolume": 3.84599162,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03275985,
+    "high": 0.03275985,
+    "low": 0.03265000,
+    "close": 0.03273565,
+    "volume": 43.67697044,
+    "baseVolume": 1.42807980,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03273238,
+    "high": 0.03279519,
+    "low": 0.03265003,
+    "close": 0.03274874,
+    "volume": 65.20303238,
+    "baseVolume": 2.13774815,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03274000,
+    "high": 0.03274000,
+    "low": 0.03265000,
+    "close": 0.03274000,
+    "volume": 6.20817080,
+    "baseVolume": 0.20315511,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03265000,
+    "high": 0.03274655,
+    "low": 0.03262501,
+    "close": 0.03271379,
+    "volume": 64.28885103,
+    "baseVolume": 2.09837314,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03275636,
+    "high": 0.03275964,
+    "low": 0.03268108,
+    "close": 0.03268108,
+    "volume": 61.66330768,
+    "baseVolume": 2.01562121,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03271981,
+    "high": 0.03279495,
+    "low": 0.03262501,
+    "close": 0.03273615,
+    "volume": 28.65966098,
+    "baseVolume": 0.93701872,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03274271,
+    "high": 0.03275000,
+    "low": 0.03262501,
+    "close": 0.03271551,
+    "volume": 10.67634512,
+    "baseVolume": 0.34956696,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03273998,
+    "high": 0.03273998,
+    "low": 0.03262501,
+    "close": 0.03269999,
+    "volume": 4.62740287,
+    "baseVolume": 0.15132502,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03262501,
+    "high": 0.03269999,
+    "low": 0.03258500,
+    "close": 0.03266728,
+    "volume": 15.17390301,
+    "baseVolume": 0.49517143,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03266728,
+    "high": 0.03268033,
+    "low": 0.03258000,
+    "close": 0.03268033,
+    "volume": 134.16601999,
+    "baseVolume": 4.38261304,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03268033,
+    "high": 0.03269012,
+    "low": 0.03258000,
+    "close": 0.03258000,
+    "volume": 27.76180543,
+    "baseVolume": 0.90661975,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03268353,
+    "high": 0.03269771,
+    "low": 0.03253504,
+    "close": 0.03266065,
+    "volume": 5.68074276,
+    "baseVolume": 0.18537360,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03266065,
+    "high": 0.03269771,
+    "low": 0.03260000,
+    "close": 0.03260000,
+    "volume": 33.47916250,
+    "baseVolume": 1.09456776,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03267270,
+    "high": 0.03267270,
+    "low": 0.03253502,
+    "close": 0.03253502,
+    "volume": 26.93616170,
+    "baseVolume": 0.87652875,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03253502,
+    "high": 0.03260000,
+    "low": 0.03253502,
+    "close": 0.03253503,
+    "volume": 13.82134648,
+    "baseVolume": 0.44998017,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03255952,
+    "high": 0.03255952,
+    "low": 0.03253503,
+    "close": 0.03255952,
+    "volume": 13.59809135,
+    "baseVolume": 0.44270917,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03255952,
+    "high": 0.03260000,
+    "low": 0.03253503,
+    "close": 0.03253503,
+    "volume": 15.93634748,
+    "baseVolume": 0.51866344,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03258232,
+    "high": 0.03263209,
+    "low": 0.03252501,
+    "close": 0.03253502,
+    "volume": 86.69853941,
+    "baseVolume": 2.82368657,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03252501,
+    "high": 0.03259201,
+    "low": 0.03243001,
+    "close": 0.03250473,
+    "volume": 96.07878439,
+    "baseVolume": 3.12441990,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03243001,
+    "high": 0.03250472,
+    "low": 0.03241003,
+    "close": 0.03241003,
+    "volume": 15.70262779,
+    "baseVolume": 0.50951907,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241003,
+    "high": 0.03249999,
+    "low": 0.03241003,
+    "close": 0.03241003,
+    "volume": 17.64993696,
+    "baseVolume": 0.57261503,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03249999,
+    "high": 0.03250473,
+    "low": 0.03241003,
+    "close": 0.03250473,
+    "volume": 5.15970880,
+    "baseVolume": 0.16761628,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250473,
+    "high": 0.03250564,
+    "low": 0.03241003,
+    "close": 0.03250564,
+    "volume": 11.76162026,
+    "baseVolume": 0.38212592,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254975,
+    "high": 0.03255296,
+    "low": 0.03241003,
+    "close": 0.03254516,
+    "volume": 8.64365094,
+    "baseVolume": 0.28116581,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241003,
+    "high": 0.03254000,
+    "low": 0.03241003,
+    "close": 0.03250746,
+    "volume": 3.74249902,
+    "baseVolume": 0.12160748,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241000,
+    "high": 0.03244725,
+    "low": 0.03228286,
+    "close": 0.03228286,
+    "volume": 155.58640542,
+    "baseVolume": 5.03872027,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03224753,
+    "high": 0.03236496,
+    "low": 0.03224753,
+    "close": 0.03232424,
+    "volume": 13.79657804,
+    "baseVolume": 0.44599793,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03234970,
+    "high": 0.03237777,
+    "low": 0.03224754,
+    "close": 0.03237499,
+    "volume": 7.55718166,
+    "baseVolume": 0.24435001,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03236999,
+    "high": 0.03237777,
+    "low": 0.03224755,
+    "close": 0.03237500,
+    "volume": 19.46345754,
+    "baseVolume": 0.62891544,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237500,
+    "high": 0.03237777,
+    "low": 0.03224754,
+    "close": 0.03237777,
+    "volume": 7.45298252,
+    "baseVolume": 0.24109519,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03237777,
+    "low": 0.03226355,
+    "close": 0.03226358,
+    "volume": 9.86203540,
+    "baseVolume": 0.31879889,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03237777,
+    "low": 0.03226563,
+    "close": 0.03237777,
+    "volume": 37.00765366,
+    "baseVolume": 1.19799358,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03237777,
+    "low": 0.03224960,
+    "close": 0.03237777,
+    "volume": 3.95680582,
+    "baseVolume": 0.12809821,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03237777,
+    "low": 0.03225621,
+    "close": 0.03237500,
+    "volume": 27.47523789,
+    "baseVolume": 0.88946749,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03237777,
+    "low": 0.03231001,
+    "close": 0.03237777,
+    "volume": 76.02383267,
+    "baseVolume": 2.46145599,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03237777,
+    "low": 0.03231001,
+    "close": 0.03237777,
+    "volume": 11.19194769,
+    "baseVolume": 0.36199022,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03237777,
+    "low": 0.03231001,
+    "close": 0.03237000,
+    "volume": 11.86149134,
+    "baseVolume": 0.38364245,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237000,
+    "high": 0.03237000,
+    "low": 0.03224755,
+    "close": 0.03237000,
+    "volume": 8.65048637,
+    "baseVolume": 0.27945364,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237000,
+    "high": 0.03237000,
+    "low": 0.03225263,
+    "close": 0.03237000,
+    "volume": 10.87045460,
+    "baseVolume": 0.35175924,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237000,
+    "high": 0.03237000,
+    "low": 0.03237000,
+    "close": 0.03237000,
+    "volume": 3.62200000,
+    "baseVolume": 0.11724414,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237000,
+    "high": 0.03237000,
+    "low": 0.03235000,
+    "close": 0.03235000,
+    "volume": 14.11755960,
+    "baseVolume": 0.45692026,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03235000,
+    "high": 0.03235000,
+    "low": 0.03234000,
+    "close": 0.03235000,
+    "volume": 5.56936271,
+    "baseVolume": 0.18014585,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03235000,
+    "high": 0.03237000,
+    "low": 0.03234000,
+    "close": 0.03237000,
+    "volume": 18.61469675,
+    "baseVolume": 0.60228230,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237000,
+    "high": 0.03237000,
+    "low": 0.03234000,
+    "close": 0.03237000,
+    "volume": 8.78586942,
+    "baseVolume": 0.28428147,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237000,
+    "high": 0.03237776,
+    "low": 0.03235000,
+    "close": 0.03237776,
+    "volume": 6.93055162,
+    "baseVolume": 0.22433475,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237776,
+    "high": 0.03237776,
+    "low": 0.03229504,
+    "close": 0.03237776,
+    "volume": 3.90942796,
+    "baseVolume": 0.12653938,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237776,
+    "high": 0.03237777,
+    "low": 0.03229501,
+    "close": 0.03237777,
+    "volume": 4.67051783,
+    "baseVolume": 0.15115442,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03237777,
+    "low": 0.03229516,
+    "close": 0.03237777,
+    "volume": 5.04139632,
+    "baseVolume": 0.16315496,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237776,
+    "high": 0.03237776,
+    "low": 0.03229510,
+    "close": 0.03229513,
+    "volume": 29.73911822,
+    "baseVolume": 0.96067520,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229513,
+    "high": 0.03237777,
+    "low": 0.03229513,
+    "close": 0.03237777,
+    "volume": 11.29319652,
+    "baseVolume": 0.36530280,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03237777,
+    "low": 0.03229513,
+    "close": 0.03237777,
+    "volume": 4.15928889,
+    "baseVolume": 0.13465346,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03237777,
+    "low": 0.03229510,
+    "close": 0.03237777,
+    "volume": 10.87116208,
+    "baseVolume": 0.35134835,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03237777,
+    "low": 0.03229501,
+    "close": 0.03229510,
+    "volume": 125.19610743,
+    "baseVolume": 4.04325821,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229510,
+    "high": 0.03229510,
+    "low": 0.03229501,
+    "close": 0.03229510,
+    "volume": 152.15431201,
+    "baseVolume": 4.91383068,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229510,
+    "high": 0.03229510,
+    "low": 0.03229501,
+    "close": 0.03229510,
+    "volume": 68.60931289,
+    "baseVolume": 2.21574391,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229510,
+    "high": 0.03229510,
+    "low": 0.03229501,
+    "close": 0.03229510,
+    "volume": 60.86755483,
+    "baseVolume": 1.96572305,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229510,
+    "high": 0.03229510,
+    "low": 0.03229062,
+    "close": 0.03229510,
+    "volume": 121.78210035,
+    "baseVolume": 3.93296305,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229510,
+    "high": 0.03229510,
+    "low": 0.03229501,
+    "close": 0.03229510,
+    "volume": 18.53080152,
+    "baseVolume": 0.59845373,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03228210,
+    "high": 0.03237777,
+    "low": 0.03225060,
+    "close": 0.03237777,
+    "volume": 169.80098739,
+    "baseVolume": 5.48344985,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03237777,
+    "high": 0.03238026,
+    "low": 0.03229590,
+    "close": 0.03238026,
+    "volume": 2.52082471,
+    "baseVolume": 0.08160390,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03238026,
+    "high": 0.03241000,
+    "low": 0.03238026,
+    "close": 0.03238026,
+    "volume": 24.84825095,
+    "baseVolume": 0.80517050,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229600,
+    "high": 0.03241003,
+    "low": 0.03229600,
+    "close": 0.03229600,
+    "volume": 0.40438811,
+    "baseVolume": 0.01308127,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229601,
+    "high": 0.03241003,
+    "low": 0.03229601,
+    "close": 0.03229601,
+    "volume": 5.02519867,
+    "baseVolume": 0.16237345,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241000,
+    "high": 0.03241003,
+    "low": 0.03229604,
+    "close": 0.03232834,
+    "volume": 0.83006612,
+    "baseVolume": 0.02685512,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240500,
+    "high": 0.03241003,
+    "low": 0.03229606,
+    "close": 0.03241001,
+    "volume": 17.71233512,
+    "baseVolume": 0.57370613,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229607,
+    "high": 0.03241003,
+    "low": 0.03229607,
+    "close": 0.03241003,
+    "volume": 1.85175807,
+    "baseVolume": 0.05983461,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229609,
+    "high": 0.03244998,
+    "low": 0.03229607,
+    "close": 0.03244998,
+    "volume": 10.49012555,
+    "baseVolume": 0.33965405,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229607,
+    "high": 0.03243999,
+    "low": 0.03229607,
+    "close": 0.03243999,
+    "volume": 2.54140797,
+    "baseVolume": 0.08215539,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229607,
+    "high": 0.03229612,
+    "low": 0.03229607,
+    "close": 0.03229607,
+    "volume": 5.37360480,
+    "baseVolume": 0.17354628,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03235669,
+    "high": 0.03235669,
+    "low": 0.03229607,
+    "close": 0.03229607,
+    "volume": 0.95917535,
+    "baseVolume": 0.03102444,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229608,
+    "high": 0.03244500,
+    "low": 0.03229607,
+    "close": 0.03244499,
+    "volume": 5.39262904,
+    "baseVolume": 0.17487480,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229607,
+    "high": 0.03243999,
+    "low": 0.03229607,
+    "close": 0.03242500,
+    "volume": 21.53863721,
+    "baseVolume": 0.69766991,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03242502,
+    "high": 0.03242502,
+    "low": 0.03229611,
+    "close": 0.03229611,
+    "volume": 2.54721784,
+    "baseVolume": 0.08239017,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03242502,
+    "high": 0.03242502,
+    "low": 0.03229611,
+    "close": 0.03241500,
+    "volume": 1.89477718,
+    "baseVolume": 0.06136404,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241999,
+    "high": 0.03242501,
+    "low": 0.03240500,
+    "close": 0.03240500,
+    "volume": 19.60734857,
+    "baseVolume": 0.63568649,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240500,
+    "high": 0.03242000,
+    "low": 0.03229615,
+    "close": 0.03229615,
+    "volume": 3.06096002,
+    "baseVolume": 0.09897416,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03242998,
+    "high": 0.03244998,
+    "low": 0.03242998,
+    "close": 0.03244998,
+    "volume": 0.52312086,
+    "baseVolume": 0.01697168,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03235000,
+    "high": 0.03244999,
+    "low": 0.03235000,
+    "close": 0.03244999,
+    "volume": 18.92169103,
+    "baseVolume": 0.61259956,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03245000,
+    "high": 0.03246000,
+    "low": 0.03235000,
+    "close": 0.03235000,
+    "volume": 7.48762000,
+    "baseVolume": 0.24234300,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03244499,
+    "high": 0.03244500,
+    "low": 0.03229612,
+    "close": 0.03229612,
+    "volume": 1.31860206,
+    "baseVolume": 0.04270154,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03229612,
+    "high": 0.03239294,
+    "low": 0.03225061,
+    "close": 0.03227100,
+    "volume": 19.13786830,
+    "baseVolume": 0.61766320,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03236209,
+    "high": 0.03245000,
+    "low": 0.03236209,
+    "close": 0.03236209,
+    "volume": 5.87734504,
+    "baseVolume": 0.19054378,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03236210,
+    "high": 0.03240000,
+    "low": 0.03227102,
+    "close": 0.03236210,
+    "volume": 40.59125783,
+    "baseVolume": 1.31025867,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03236210,
+    "high": 0.03248494,
+    "low": 0.03230152,
+    "close": 0.03247789,
+    "volume": 19.38384997,
+    "baseVolume": 0.62947818,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03249899,
+    "high": 0.03249899,
+    "low": 0.03229101,
+    "close": 0.03247180,
+    "volume": 62.33305030,
+    "baseVolume": 2.01480090,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03245999,
+    "high": 0.03246500,
+    "low": 0.03228201,
+    "close": 0.03240000,
+    "volume": 8.80267565,
+    "baseVolume": 0.28463029,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240000,
+    "high": 0.03257739,
+    "low": 0.03240000,
+    "close": 0.03257739,
+    "volume": 34.45200255,
+    "baseVolume": 1.11879542,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03257739,
+    "high": 0.03265000,
+    "low": 0.03250917,
+    "close": 0.03261978,
+    "volume": 20.57090857,
+    "baseVolume": 0.67119532,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03262304,
+    "high": 0.03263283,
+    "low": 0.03255134,
+    "close": 0.03255134,
+    "volume": 14.31196893,
+    "baseVolume": 0.46679482,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03256760,
+    "high": 0.03263936,
+    "low": 0.03253500,
+    "close": 0.03261860,
+    "volume": 11.36453888,
+    "baseVolume": 0.37062695,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03261860,
+    "high": 0.03263625,
+    "low": 0.03261860,
+    "close": 0.03261860,
+    "volume": 40.42534650,
+    "baseVolume": 1.31861848,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03261860,
+    "high": 0.03261860,
+    "low": 0.03253500,
+    "close": 0.03253500,
+    "volume": 49.08908987,
+    "baseVolume": 1.59781700,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03246330,
+    "high": 0.03255302,
+    "low": 0.03245500,
+    "close": 0.03247000,
+    "volume": 4.81494996,
+    "baseVolume": 0.15646872,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247000,
+    "high": 0.03250746,
+    "low": 0.03245500,
+    "close": 0.03250746,
+    "volume": 22.05397487,
+    "baseVolume": 0.71609112,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03245500,
+    "high": 0.03245500,
+    "low": 0.03239240,
+    "close": 0.03239745,
+    "volume": 23.60081061,
+    "baseVolume": 0.76528923,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239745,
+    "high": 0.03245500,
+    "low": 0.03239745,
+    "close": 0.03245500,
+    "volume": 13.94470889,
+    "baseVolume": 0.45241435,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03245500,
+    "high": 0.03254651,
+    "low": 0.03239000,
+    "close": 0.03254651,
+    "volume": 20.25005641,
+    "baseVolume": 0.65654341,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03239000,
+    "high": 0.03239500,
+    "low": 0.03238805,
+    "close": 0.03239500,
+    "volume": 12.16078878,
+    "baseVolume": 0.39391634,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250000,
+    "high": 0.03250000,
+    "low": 0.03240500,
+    "close": 0.03240500,
+    "volume": 30.07090506,
+    "baseVolume": 0.97445435,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03249999,
+    "high": 0.03250746,
+    "low": 0.03249999,
+    "close": 0.03250746,
+    "volume": 6.67818784,
+    "baseVolume": 0.21704226,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03253643,
+    "high": 0.03263999,
+    "low": 0.03253643,
+    "close": 0.03263999,
+    "volume": 44.83775090,
+    "baseVolume": 1.46094816,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03257738,
+    "high": 0.03257738,
+    "low": 0.03248001,
+    "close": 0.03248001,
+    "volume": 2.37012281,
+    "baseVolume": 0.07714040,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03258471,
+    "high": 0.03263691,
+    "low": 0.03258471,
+    "close": 0.03260753,
+    "volume": 3.35709600,
+    "baseVolume": 0.10952301,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03260753,
+    "high": 0.03263690,
+    "low": 0.03251500,
+    "close": 0.03257166,
+    "volume": 11.81964074,
+    "baseVolume": 0.38536439,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03260426,
+    "high": 0.03260426,
+    "low": 0.03251500,
+    "close": 0.03260426,
+    "volume": 52.94715038,
+    "baseVolume": 1.72164532,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03260426,
+    "high": 0.03260426,
+    "low": 0.03260000,
+    "close": 0.03260000,
+    "volume": 5.40168712,
+    "baseVolume": 0.17609584,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251500,
+    "high": 0.03254650,
+    "low": 0.03247001,
+    "close": 0.03247001,
+    "volume": 8.48866507,
+    "baseVolume": 0.27586904,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247001,
+    "high": 0.03251800,
+    "low": 0.03247001,
+    "close": 0.03251719,
+    "volume": 1.26699073,
+    "baseVolume": 0.04118831,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251719,
+    "high": 0.03256553,
+    "low": 0.03251719,
+    "close": 0.03251719,
+    "volume": 3.71835831,
+    "baseVolume": 0.12097079,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251721,
+    "high": 0.03263689,
+    "low": 0.03251721,
+    "close": 0.03251721,
+    "volume": 47.74696280,
+    "baseVolume": 1.55547609,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251721,
+    "high": 0.03257638,
+    "low": 0.03251721,
+    "close": 0.03251721,
+    "volume": 10.66977000,
+    "baseVolume": 0.34705682,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03246505,
+    "high": 0.03251721,
+    "low": 0.03246505,
+    "close": 0.03246606,
+    "volume": 0.99599414,
+    "baseVolume": 0.03235700,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251721,
+    "high": 0.03254650,
+    "low": 0.03251721,
+    "close": 0.03253000,
+    "volume": 4.15987171,
+    "baseVolume": 0.13535266,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03254650,
+    "low": 0.03247006,
+    "close": 0.03254650,
+    "volume": 26.13802297,
+    "baseVolume": 0.85025819,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254000,
+    "high": 0.03254976,
+    "low": 0.03254000,
+    "close": 0.03254200,
+    "volume": 41.36975927,
+    "baseVolume": 1.34624635,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254000,
+    "high": 0.03254976,
+    "low": 0.03254000,
+    "close": 0.03254200,
+    "volume": 31.17707860,
+    "baseVolume": 1.01455687,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254200,
+    "high": 0.03256278,
+    "low": 0.03246505,
+    "close": 0.03254061,
+    "volume": 8.09489232,
+    "baseVolume": 0.26328523,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254061,
+    "high": 0.03259987,
+    "low": 0.03242601,
+    "close": 0.03243500,
+    "volume": 31.26122235,
+    "baseVolume": 1.01526831,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03243500,
+    "high": 0.03258999,
+    "low": 0.03243500,
+    "close": 0.03255302,
+    "volume": 5.55089045,
+    "baseVolume": 0.18070753,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03250746,
+    "low": 0.03241500,
+    "close": 0.03250746,
+    "volume": 58.98117444,
+    "baseVolume": 1.91196685,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254325,
+    "high": 0.03254325,
+    "low": 0.03240102,
+    "close": 0.03243500,
+    "volume": 10.85560159,
+    "baseVolume": 0.35188691,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03254325,
+    "low": 0.03250000,
+    "close": 0.03250746,
+    "volume": 2.60060802,
+    "baseVolume": 0.08453659,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254325,
+    "high": 0.03254651,
+    "low": 0.03242502,
+    "close": 0.03242502,
+    "volume": 24.21829871,
+    "baseVolume": 0.78653290,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251395,
+    "high": 0.03256000,
+    "low": 0.03246001,
+    "close": 0.03256000,
+    "volume": 46.74249343,
+    "baseVolume": 1.52157674,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03256000,
+    "high": 0.03261499,
+    "low": 0.03256000,
+    "close": 0.03259224,
+    "volume": 64.51737272,
+    "baseVolume": 2.10403965,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03246002,
+    "high": 0.03254325,
+    "low": 0.03246002,
+    "close": 0.03252000,
+    "volume": 5.36690383,
+    "baseVolume": 0.17441463,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247002,
+    "high": 0.03252000,
+    "low": 0.03247001,
+    "close": 0.03252000,
+    "volume": 43.39611317,
+    "baseVolume": 1.41019694,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250977,
+    "high": 0.03254325,
+    "low": 0.03247001,
+    "close": 0.03254325,
+    "volume": 15.01734353,
+    "baseVolume": 0.48867779,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247001,
+    "high": 0.03250746,
+    "low": 0.03247001,
+    "close": 0.03250746,
+    "volume": 6.12739278,
+    "baseVolume": 0.19904523,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03254976,
+    "low": 0.03250746,
+    "close": 0.03254325,
+    "volume": 7.23369069,
+    "baseVolume": 0.23540871,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250001,
+    "high": 0.03251071,
+    "low": 0.03250001,
+    "close": 0.03250746,
+    "volume": 0.95534579,
+    "baseVolume": 0.03105432,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03250746,
+    "low": 0.03250001,
+    "close": 0.03250001,
+    "volume": 10.49225618,
+    "baseVolume": 0.34101797,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251071,
+    "high": 0.03263588,
+    "low": 0.03250001,
+    "close": 0.03263588,
+    "volume": 2.25461621,
+    "baseVolume": 0.07341806,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251396,
+    "high": 0.03251396,
+    "low": 0.03250001,
+    "close": 0.03250746,
+    "volume": 8.42308070,
+    "baseVolume": 0.27378745,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03250746,
+    "high": 0.03251075,
+    "low": 0.03250746,
+    "close": 0.03251075,
+    "volume": 3.17015088,
+    "baseVolume": 0.10305549,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254650,
+    "high": 0.03263680,
+    "low": 0.03251075,
+    "close": 0.03251075,
+    "volume": 18.31564472,
+    "baseVolume": 0.59614657,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03259797,
+    "high": 0.03259797,
+    "low": 0.03251075,
+    "close": 0.03251075,
+    "volume": 4.59954474,
+    "baseVolume": 0.14954813,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03251075,
+    "high": 0.03258500,
+    "low": 0.03247001,
+    "close": 0.03255302,
+    "volume": 103.03815695,
+    "baseVolume": 3.35079587,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247001,
+    "high": 0.03256178,
+    "low": 0.03246004,
+    "close": 0.03246004,
+    "volume": 8.56429653,
+    "baseVolume": 0.27830818,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247000,
+    "high": 0.03247000,
+    "low": 0.03247000,
+    "close": 0.03247000,
+    "volume": 0.12273827,
+    "baseVolume": 0.00398531,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03246005,
+    "high": 0.03247000,
+    "low": 0.03246005,
+    "close": 0.03246005,
+    "volume": 7.92927982,
+    "baseVolume": 0.25744924,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247000,
+    "high": 0.03247000,
+    "low": 0.03246004,
+    "close": 0.03247000,
+    "volume": 42.33068275,
+    "baseVolume": 1.37447221,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247000,
+    "high": 0.03247000,
+    "low": 0.03247000,
+    "close": 0.03247000,
+    "volume": 3.22635605,
+    "baseVolume": 0.10475975,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247000,
+    "high": 0.03257186,
+    "low": 0.03247000,
+    "close": 0.03247000,
+    "volume": 26.02845136,
+    "baseVolume": 0.84521483,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254400,
+    "high": 0.03257892,
+    "low": 0.03247000,
+    "close": 0.03247000,
+    "volume": 50.92942837,
+    "baseVolume": 1.65721039,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247000,
+    "high": 0.03257995,
+    "low": 0.03246004,
+    "close": 0.03253999,
+    "volume": 46.84088354,
+    "baseVolume": 1.52305792,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03253400,
+    "high": 0.03257731,
+    "low": 0.03240002,
+    "close": 0.03256000,
+    "volume": 22.77707703,
+    "baseVolume": 0.74132869,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254797,
+    "high": 0.03254797,
+    "low": 0.03254500,
+    "close": 0.03254500,
+    "volume": 0.83664947,
+    "baseVolume": 0.02723005,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241414,
+    "high": 0.03253900,
+    "low": 0.03241000,
+    "close": 0.03241000,
+    "volume": 4.04033206,
+    "baseVolume": 0.13112450,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241010,
+    "high": 0.03255899,
+    "low": 0.03241010,
+    "close": 0.03255899,
+    "volume": 3.09487924,
+    "baseVolume": 0.10047936,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03253900,
+    "high": 0.03253900,
+    "low": 0.03241000,
+    "close": 0.03241000,
+    "volume": 7.33112431,
+    "baseVolume": 0.23760644,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03252500,
+    "high": 0.03252500,
+    "low": 0.03252500,
+    "close": 0.03252500,
+    "volume": 1.04000000,
+    "baseVolume": 0.03382600,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241002,
+    "high": 0.03254999,
+    "low": 0.03241000,
+    "close": 0.03252797,
+    "volume": 18.51266727,
+    "baseVolume": 0.60044085,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03252897,
+    "high": 0.03252897,
+    "low": 0.03241002,
+    "close": 0.03241002,
+    "volume": 0.96706496,
+    "baseVolume": 0.03136193,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03252897,
+    "high": 0.03254000,
+    "low": 0.03241002,
+    "close": 0.03253989,
+    "volume": 2.05990715,
+    "baseVolume": 0.06695691,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03253989,
+    "high": 0.03253989,
+    "low": 0.03241000,
+    "close": 0.03241100,
+    "volume": 17.32968047,
+    "baseVolume": 0.56166624,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241001,
+    "high": 0.03241001,
+    "low": 0.03241001,
+    "close": 0.03241001,
+    "volume": 1.37048843,
+    "baseVolume": 0.04441751,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03241001,
+    "high": 0.03252999,
+    "low": 0.03241001,
+    "close": 0.03252999,
+    "volume": 4.48978572,
+    "baseVolume": 0.14580605,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03248000,
+    "high": 0.03248000,
+    "low": 0.03241004,
+    "close": 0.03241004,
+    "volume": 1.96031474,
+    "baseVolume": 0.06363633,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03248000,
+    "high": 0.03255889,
+    "low": 0.03248000,
+    "close": 0.03255889,
+    "volume": 28.50578512,
+    "baseVolume": 0.92727691,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03255889,
+    "high": 0.03257995,
+    "low": 0.03248007,
+    "close": 0.03257995,
+    "volume": 26.12860867,
+    "baseVolume": 0.85057244,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03248007,
+    "high": 0.03257996,
+    "low": 0.03248007,
+    "close": 0.03257995,
+    "volume": 6.68529928,
+    "baseVolume": 0.21780466,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03257995,
+    "high": 0.03257995,
+    "low": 0.03248007,
+    "close": 0.03257994,
+    "volume": 2.25072107,
+    "baseVolume": 0.07314686,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03248008,
+    "high": 0.03257994,
+    "low": 0.03248007,
+    "close": 0.03248008,
+    "volume": 4.23496905,
+    "baseVolume": 0.13756034,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03248008,
+    "high": 0.03248008,
+    "low": 0.03248007,
+    "close": 0.03248007,
+    "volume": 4.03990119,
+    "baseVolume": 0.13121626,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03240501,
+    "high": 0.03250000,
+    "low": 0.03240404,
+    "close": 0.03248811,
+    "volume": 354.59132075,
+    "baseVolume": 11.49060440,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03249999,
+    "high": 0.03256000,
+    "low": 0.03239003,
+    "close": 0.03247513,
+    "volume": 61.38489280,
+    "baseVolume": 1.99421828,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247512,
+    "high": 0.03247513,
+    "low": 0.03240102,
+    "close": 0.03247513,
+    "volume": 31.58893321,
+    "baseVolume": 1.02581827,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03247513,
+    "high": 0.03255797,
+    "low": 0.03244833,
+    "close": 0.03244835,
+    "volume": 7.44980127,
+    "baseVolume": 0.24200515,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03244835,
+    "high": 0.03255000,
+    "low": 0.03244835,
+    "close": 0.03255000,
+    "volume": 1.37516126,
+    "baseVolume": 0.04470417,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03255000,
+    "high": 0.03255000,
+    "low": 0.03244835,
+    "close": 0.03255000,
+    "volume": 12.66690262,
+    "baseVolume": 0.41208732,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03254326,
+    "high": 0.03255002,
+    "low": 0.03245002,
+    "close": 0.03255002,
+    "volume": 12.37308300,
+    "baseVolume": 0.40269338,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03255002,
+    "high": 0.03255695,
+    "low": 0.03255002,
+    "close": 0.03255002,
+    "volume": 67.30859057,
+    "baseVolume": 2.19091671,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03255002,
+    "high": 0.03255900,
+    "low": 0.03255002,
+    "close": 0.03255900,
+    "volume": 21.57272604,
+    "baseVolume": 0.70220848,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03255900,
+    "high": 0.03258501,
+    "low": 0.03255003,
+    "close": 0.03255003,
+    "volume": 20.23946420,
+    "baseVolume": 0.65924047,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03255003,
+    "high": 0.03258499,
+    "low": 0.03245002,
+    "close": 0.03245002,
+    "volume": 55.45313592,
+    "baseVolume": 1.80368295,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03258499,
+    "high": 0.03258499,
+    "low": 0.03258499,
+    "close": 0.03258499,
+    "volume": 8.38642368,
+    "baseVolume": 0.27327147,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03258499,
+    "high": 0.03261905,
+    "low": 0.03251226,
+    "close": 0.03261905,
+    "volume": 31.31656833,
+    "baseVolume": 1.02023432,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03261905,
+    "high": 0.03275811,
+    "low": 0.03253460,
+    "close": 0.03271999,
+    "volume": 95.94525419,
+    "baseVolume": 3.13620323,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03270000,
+    "high": 0.03280832,
+    "low": 0.03262683,
+    "close": 0.03275019,
+    "volume": 108.79997778,
+    "baseVolume": 3.55438422,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03273537,
+    "high": 0.03275019,
+    "low": 0.03263000,
+    "close": 0.03273537,
+    "volume": 15.36742522,
+    "baseVolume": 0.50313215,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03263000,
+    "high": 0.03273537,
+    "low": 0.03257992,
+    "close": 0.03261002,
+    "volume": 4.58944497,
+    "baseVolume": 0.15012515,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03275000,
+    "high": 0.03280899,
+    "low": 0.03270000,
+    "close": 0.03270000,
+    "volume": 51.36280604,
+    "baseVolume": 1.68212254,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03270000,
+    "high": 0.03274999,
+    "low": 0.03270000,
+    "close": 0.03273000,
+    "volume": 2.62918664,
+    "baseVolume": 0.08598608,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03275000,
+    "high": 0.03280900,
+    "low": 0.03275000,
+    "close": 0.03280900,
+    "volume": 9.37884926,
+    "baseVolume": 0.30724604,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03280900,
+    "high": 0.03280900,
+    "low": 0.03280000,
+    "close": 0.03280900,
+    "volume": 41.72667438,
+    "baseVolume": 1.36895197,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03282097,
+    "high": 0.03288000,
+    "low": 0.03280900,
+    "close": 0.03280900,
+    "volume": 32.60902564,
+    "baseVolume": 1.07089537,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03280900,
+    "high": 0.03285220,
+    "low": 0.03280000,
+    "close": 0.03281001,
+    "volume": 19.76066319,
+    "baseVolume": 0.64837673,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03281001,
+    "high": 0.03281001,
+    "low": 0.03273000,
+    "close": 0.03276319,
+    "volume": 34.61606631,
+    "baseVolume": 1.13305226,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03274609,
+    "high": 0.03281000,
+    "low": 0.03274609,
+    "close": 0.03281000,
+    "volume": 2.46104756,
+    "baseVolume": 0.08074573,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03281000,
+    "high": 0.03281000,
+    "low": 0.03273000,
+    "close": 0.03279794,
+    "volume": 5.95748379,
+    "baseVolume": 0.19539454,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03279390,
+    "high": 0.03279390,
+    "low": 0.03273000,
+    "close": 0.03273000,
+    "volume": 6.98490104,
+    "baseVolume": 0.22898177,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03273000,
+    "high": 0.03278998,
+    "low": 0.03267802,
+    "close": 0.03269501,
+    "volume": 47.01429882,
+    "baseVolume": 1.53729661,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03270000,
+    "high": 0.03270000,
+    "low": 0.03270000,
+    "close": 0.03270000,
+    "volume": 2.19537971,
+    "baseVolume": 0.07178890,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03270000,
+    "high": 0.03278998,
+    "low": 0.03268512,
+    "close": 0.03278998,
+    "volume": 28.35497542,
+    "baseVolume": 0.92865713,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03275000,
+    "high": 0.03280798,
+    "low": 0.03275000,
+    "close": 0.03275000,
+    "volume": 12.45757149,
+    "baseVolume": 0.40838459,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03280698,
+    "high": 0.03280698,
+    "low": 0.03275002,
+    "close": 0.03280698,
+    "volume": 4.38511620,
+    "baseVolume": 0.14378440,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03280698,
+    "high": 0.03281000,
+    "low": 0.03275009,
+    "close": 0.03281000,
+    "volume": 138.47432360,
+    "baseVolume": 4.54290850,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03275009,
+    "high": 0.03281000,
+    "low": 0.03269012,
+    "close": 0.03273066,
+    "volume": 3.92682153,
+    "baseVolume": 0.12855494,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03273066,
+    "high": 0.03273066,
+    "low": 0.03273066,
+    "close": 0.03273066,
+    "volume": 1.58250000,
+    "baseVolume": 0.05179624,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03271865,
+    "high": 0.03281000,
+    "low": 0.03266663,
+    "close": 0.03281000,
+    "volume": 15.09795889,
+    "baseVolume": 0.49354615,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03280000,
+    "high": 0.03283184,
+    "low": 0.03272530,
+    "close": 0.03275001,
+    "volume": 75.74400482,
+    "baseVolume": 2.48038871,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03283184,
+    "high": 0.03299999,
+    "low": 0.03275003,
+    "close": 0.03288501,
+    "volume": 34.75694077,
+    "baseVolume": 1.14411405,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03289003,
+    "high": 0.03302490,
+    "low": 0.03289003,
+    "close": 0.03293363,
+    "volume": 44.26050748,
+    "baseVolume": 1.45964287,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03300898,
+    "high": 0.03300898,
+    "low": 0.03293363,
+    "close": 0.03300790,
+    "volume": 15.22440756,
+    "baseVolume": 0.50190745,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03300796,
+    "high": 0.03300796,
+    "low": 0.03293363,
+    "close": 0.03293363,
+    "volume": 10.37424468,
+    "baseVolume": 0.34192698,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03300796,
+    "high": 0.03300796,
+    "low": 0.03293363,
+    "close": 0.03293363,
+    "volume": 37.85823622,
+    "baseVolume": 1.24703753,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03293363,
+    "high": 0.03300796,
+    "low": 0.03293363,
+    "close": 0.03293363,
+    "volume": 5.81199782,
+    "baseVolume": 0.19154711,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03293363,
+    "high": 0.03300796,
+    "low": 0.03293363,
+    "close": 0.03300696,
+    "volume": 3.35272201,
+    "baseVolume": 0.11064410,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03293363,
+    "high": 0.03300796,
+    "low": 0.03283189,
+    "close": 0.03285220,
+    "volume": 6.53591626,
+    "baseVolume": 0.21474897,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03286101,
+    "high": 0.03304500,
+    "low": 0.03286101,
+    "close": 0.03300796,
+    "volume": 39.04391876,
+    "baseVolume": 1.28869726,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03291582,
+    "high": 0.03304997,
+    "low": 0.03289000,
+    "close": 0.03304997,
+    "volume": 6.13704300,
+    "baseVolume": 0.20210064,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03296905,
+    "high": 0.03296905,
+    "low": 0.03292000,
+    "close": 0.03296905,
+    "volume": 5.09042497,
+    "baseVolume": 0.16760066,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03304997,
+    "high": 0.03306103,
+    "low": 0.03294000,
+    "close": 0.03306103,
+    "volume": 22.22385302,
+    "baseVolume": 0.73468688,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03306601,
+    "high": 0.03317776,
+    "low": 0.03298409,
+    "close": 0.03317575,
+    "volume": 38.73773858,
+    "baseVolume": 1.28297855,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03308000,
+    "high": 0.03317474,
+    "low": 0.03308000,
+    "close": 0.03308100,
+    "volume": 19.37671030,
+    "baseVolume": 0.64243619,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03308100,
+    "high": 0.03316767,
+    "low": 0.03308100,
+    "close": 0.03316767,
+    "volume": 14.93005069,
+    "baseVolume": 0.49515854,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03316767,
+    "high": 0.03331917,
+    "low": 0.03316665,
+    "close": 0.03331917,
+    "volume": 84.93654166,
+    "baseVolume": 2.82295312,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03331817,
+    "high": 0.03331917,
+    "low": 0.03320001,
+    "close": 0.03331917,
+    "volume": 45.13208315,
+    "baseVolume": 1.50366761,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03322501,
+    "high": 0.03331916,
+    "low": 0.03321416,
+    "close": 0.03321416,
+    "volume": 16.28267991,
+    "baseVolume": 0.54164226,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03321417,
+    "high": 0.03331917,
+    "low": 0.03321417,
+    "close": 0.03331916,
+    "volume": 58.46232357,
+    "baseVolume": 1.94783147,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 10,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03322731,
+    "high": 0.03331916,
+    "low": 0.03322731,
+    "close": 0.03331916,
+    "volume": 67.59902037,
+    "baseVolume": 2.25148667,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03331916,
+    "high": 0.03331917,
+    "low": 0.03296082,
+    "close": 0.03300000,
+    "volume": 386.23768119,
+    "baseVolume": 12.82617959,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03296082,
+    "high": 0.03308000,
+    "low": 0.03289500,
+    "close": 0.03292836,
+    "volume": 317.10479005,
+    "baseVolume": 10.44376319,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03290007,
+    "high": 0.03296081,
+    "low": 0.03290007,
+    "close": 0.03296081,
+    "volume": 99.74343810,
+    "baseVolume": 3.28729919,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03302914,
+    "high": 0.03308097,
+    "low": 0.03297000,
+    "close": 0.03308094,
+    "volume": 21.11432642,
+    "baseVolume": 0.69807211,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03298601,
+    "high": 0.03308096,
+    "low": 0.03298601,
+    "close": 0.03308096,
+    "volume": 18.04748285,
+    "baseVolume": 0.59686753,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03308096,
+    "high": 0.03308096,
+    "low": 0.03299431,
+    "close": 0.03300828,
+    "volume": 53.98226007,
+    "baseVolume": 1.78408367,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03300828,
+    "high": 0.03308096,
+    "low": 0.03300827,
+    "close": 0.03308096,
+    "volume": 6.24741584,
+    "baseVolume": 0.20657252,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03300827,
+    "high": 0.03300831,
+    "low": 0.03296081,
+    "close": 0.03299431,
+    "volume": 73.17702623,
+    "baseVolume": 2.41475611,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03296081,
+    "high": 0.03305000,
+    "low": 0.03285578,
+    "close": 0.03288500,
+    "volume": 38.02024366,
+    "baseVolume": 1.25195599,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03301400,
+    "high": 0.03301431,
+    "low": 0.03288003,
+    "close": 0.03301431,
+    "volume": 6.17414093,
+    "baseVolume": 0.20305786,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03290624,
+    "high": 0.03301431,
+    "low": 0.03290624,
+    "close": 0.03291198,
+    "volume": 301.72718735,
+    "baseVolume": 9.93212040,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 11,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03293645,
+    "high": 0.03301430,
+    "low": 0.03293645,
+    "close": 0.03301430,
+    "volume": 5.35700309,
+    "baseVolume": 0.17653023,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03301430,
+    "high": 0.03301430,
+    "low": 0.03299400,
+    "close": 0.03299400,
+    "volume": 1.23690389,
+    "baseVolume": 0.04081214,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03295866,
+    "high": 0.03299398,
+    "low": 0.03288023,
+    "close": 0.03288023,
+    "volume": 6.15866711,
+    "baseVolume": 0.20285174,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03288023,
+    "high": 0.03297100,
+    "low": 0.03284968,
+    "close": 0.03286003,
+    "volume": 130.30941713,
+    "baseVolume": 4.28223111,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03286003,
+    "high": 0.03297100,
+    "low": 0.03286003,
+    "close": 0.03297100,
+    "volume": 11.56836119,
+    "baseVolume": 0.38057517,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03297100,
+    "high": 0.03300000,
+    "low": 0.03291002,
+    "close": 0.03300000,
+    "volume": 10.67145401,
+    "baseVolume": 0.35209100,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03300000,
+    "high": 0.03301431,
+    "low": 0.03292749,
+    "close": 0.03301431,
+    "volume": 46.02436228,
+    "baseVolume": 1.51647771,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03301431,
+    "high": 0.03301431,
+    "low": 0.03294644,
+    "close": 0.03294644,
+    "volume": 7.48624420,
+    "baseVolume": 0.24678275,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03294644,
+    "high": 0.03301431,
+    "low": 0.03294630,
+    "close": 0.03301331,
+    "volume": 31.11580174,
+    "baseVolume": 1.02562100,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03290969,
+    "high": 0.03301431,
+    "low": 0.03290969,
+    "close": 0.03300000,
+    "volume": 6.58720298,
+    "baseVolume": 0.21688849,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03290969,
+    "high": 0.03301431,
+    "low": 0.03290969,
+    "close": 0.03301200,
+    "volume": 11.04198042,
+    "baseVolume": 0.36424669,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03290969,
+    "high": 0.03298695,
+    "low": 0.03290000,
+    "close": 0.03298693,
+    "volume": 27.91803554,
+    "baseVolume": 0.91940790,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 12,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03290000,
+    "high": 0.03298693,
+    "low": 0.03281400,
+    "close": 0.03297911,
+    "volume": 26.86070221,
+    "baseVolume": 0.88237185,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03293500,
+    "high": 0.03293600,
+    "low": 0.03293500,
+    "close": 0.03293600,
+    "volume": 0.58678334,
+    "baseVolume": 0.01932625,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03293600,
+    "high": 0.03295000,
+    "low": 0.03293600,
+    "close": 0.03293777,
+    "volume": 8.61556713,
+    "baseVolume": 0.28378336,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03293777,
+    "high": 0.03293777,
+    "low": 0.03293777,
+    "close": 0.03293777,
+    "volume": 1.00817794,
+    "baseVolume": 0.03320710,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03293776,
+    "high": 0.03293776,
+    "low": 0.03286428,
+    "close": 0.03286428,
+    "volume": 9.58943975,
+    "baseVolume": 0.31574870,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03286428,
+    "high": 0.03301300,
+    "low": 0.03286428,
+    "close": 0.03286429,
+    "volume": 21.08272152,
+    "baseVolume": 0.69357081,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03286429,
+    "high": 0.03317809,
+    "low": 0.03286429,
+    "close": 0.03317809,
+    "volume": 195.44309328,
+    "baseVolume": 6.45209677,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03319000,
+    "high": 0.03321435,
+    "low": 0.03305004,
+    "close": 0.03306524,
+    "volume": 21.78626775,
+    "baseVolume": 0.72285633,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03319000,
+    "high": 0.03319000,
+    "low": 0.03307003,
+    "close": 0.03319000,
+    "volume": 12.65041184,
+    "baseVolume": 0.41913449,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03319000,
+    "high": 0.03319000,
+    "low": 0.03310000,
+    "close": 0.03310000,
+    "volume": 8.33116005,
+    "baseVolume": 0.27579219,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03307003,
+    "high": 0.03319000,
+    "low": 0.03307003,
+    "close": 0.03307003,
+    "volume": 12.82501064,
+    "baseVolume": 0.42477587,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03313000,
+    "high": 0.03313000,
+    "low": 0.03307003,
+    "close": 0.03307103,
+    "volume": 12.37527585,
+    "baseVolume": 0.40970219,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 13,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03308000,
+    "high": 0.03328000,
+    "low": 0.03308000,
+    "close": 0.03321490,
+    "volume": 26.85692958,
+    "baseVolume": 0.89158696,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03326403,
+    "high": 0.03326519,
+    "low": 0.03320000,
+    "close": 0.03326519,
+    "volume": 12.45666197,
+    "baseVolume": 0.41425410,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03328000,
+    "high": 0.03331817,
+    "low": 0.03316602,
+    "close": 0.03330000,
+    "volume": 232.11481735,
+    "baseVolume": 7.71351388,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03330000,
+    "high": 0.03341334,
+    "low": 0.03322798,
+    "close": 0.03340000,
+    "volume": 220.17289698,
+    "baseVolume": 7.32880260,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03340000,
+    "high": 0.03340001,
+    "low": 0.03323517,
+    "close": 0.03324693,
+    "volume": 26.17256308,
+    "baseVolume": 0.87374215,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03338061,
+    "high": 0.03339499,
+    "low": 0.03323850,
+    "close": 0.03337051,
+    "volume": 11.36585490,
+    "baseVolume": 0.37924998,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03325100,
+    "high": 0.03337961,
+    "low": 0.03325100,
+    "close": 0.03325100,
+    "volume": 74.42842028,
+    "baseVolume": 2.48309820,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03325100,
+    "high": 0.03330000,
+    "low": 0.03316302,
+    "close": 0.03316302,
+    "volume": 35.75602729,
+    "baseVolume": 1.18776489,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03316302,
+    "high": 0.03335807,
+    "low": 0.03316302,
+    "close": 0.03334157,
+    "volume": 43.94283959,
+    "baseVolume": 1.46340233,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03334131,
+    "high": 0.03334131,
+    "low": 0.03316002,
+    "close": 0.03316003,
+    "volume": 9.84600303,
+    "baseVolume": 0.32658678,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03324829,
+    "high": 0.03330980,
+    "low": 0.03316003,
+    "close": 0.03316010,
+    "volume": 161.32253033,
+    "baseVolume": 5.37276306,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03316110,
+    "high": 0.03333655,
+    "low": 0.03316110,
+    "close": 0.03317843,
+    "volume": 40.76222520,
+    "baseVolume": 1.35394126,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 14,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03330000,
+    "high": 0.03333656,
+    "low": 0.03323208,
+    "close": 0.03333656,
+    "volume": 44.35195570,
+    "baseVolume": 1.47735263,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03333656,
+    "high": 0.03333656,
+    "low": 0.03326439,
+    "close": 0.03333655,
+    "volume": 4.63942467,
+    "baseVolume": 0.15462201,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03333656,
+    "high": 0.03339000,
+    "low": 0.03333656,
+    "close": 0.03338998,
+    "volume": 22.41971427,
+    "baseVolume": 0.74816714,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03338692,
+    "high": 0.03339000,
+    "low": 0.03333656,
+    "close": 0.03333656,
+    "volume": 6.53588981,
+    "baseVolume": 0.21808813,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03330000,
+    "high": 0.03339616,
+    "low": 0.03328001,
+    "close": 0.03339616,
+    "volume": 11.87842907,
+    "baseVolume": 0.39581110,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03339616,
+    "high": 0.03339616,
+    "low": 0.03328302,
+    "close": 0.03328500,
+    "volume": 1.49893338,
+    "baseVolume": 0.05002231,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03328600,
+    "high": 0.03347455,
+    "low": 0.03328600,
+    "close": 0.03346443,
+    "volume": 98.84750096,
+    "baseVolume": 3.30839515,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03347454,
+    "high": 0.03347454,
+    "low": 0.03331025,
+    "close": 0.03331025,
+    "volume": 11.17742771,
+    "baseVolume": 0.37402621,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03346544,
+    "high": 0.03347455,
+    "low": 0.03331125,
+    "close": 0.03331125,
+    "volume": 67.46574174,
+    "baseVolume": 2.25795144,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03342991,
+    "high": 0.03342991,
+    "low": 0.03331025,
+    "close": 0.03331126,
+    "volume": 2.90302648,
+    "baseVolume": 0.09674809,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03331126,
+    "high": 0.03341000,
+    "low": 0.03318702,
+    "close": 0.03339999,
+    "volume": 149.28448987,
+    "baseVolume": 4.96537601,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03325125,
+    "high": 0.03339999,
+    "low": 0.03324713,
+    "close": 0.03339999,
+    "volume": 168.32355655,
+    "baseVolume": 5.61560749,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 15,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03339899,
+    "high": 0.03339999,
+    "low": 0.03326000,
+    "close": 0.03326000,
+    "volume": 2.33281669,
+    "baseVolume": 0.07764290,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03326000,
+    "high": 0.03326000,
+    "low": 0.03322109,
+    "close": 0.03322716,
+    "volume": 6.53533435,
+    "baseVolume": 0.21723723,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03322818,
+    "high": 0.03339999,
+    "low": 0.03322110,
+    "close": 0.03322603,
+    "volume": 30.02404800,
+    "baseVolume": 0.99786095,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03334755,
+    "high": 0.03339796,
+    "low": 0.03322611,
+    "close": 0.03323002,
+    "volume": 50.58433747,
+    "baseVolume": 1.68236330,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03324004,
+    "high": 0.03341497,
+    "low": 0.03323006,
+    "close": 0.03326500,
+    "volume": 39.18072685,
+    "baseVolume": 1.30448354,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03327100,
+    "high": 0.03345000,
+    "low": 0.03327100,
+    "close": 0.03336001,
+    "volume": 37.38033767,
+    "baseVolume": 1.24777435,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03346444,
+    "high": 0.03347455,
+    "low": 0.03334503,
+    "close": 0.03334700,
+    "volume": 32.74840105,
+    "baseVolume": 1.09606409,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03347455,
+    "high": 0.03360000,
+    "low": 0.03343984,
+    "close": 0.03343984,
+    "volume": 112.06608010,
+    "baseVolume": 3.75503774,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03359896,
+    "high": 0.03360000,
+    "low": 0.03345713,
+    "close": 0.03346501,
+    "volume": 14.80808270,
+    "baseVolume": 0.49617421,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03348040,
+    "high": 0.03360000,
+    "low": 0.03346501,
+    "close": 0.03353900,
+    "volume": 18.65267251,
+    "baseVolume": 0.62451240,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03350000,
+    "high": 0.03354999,
+    "low": 0.03345713,
+    "close": 0.03345713,
+    "volume": 27.57846453,
+    "baseVolume": 0.92311906,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03345713,
+    "high": 0.03355469,
+    "low": 0.03345713,
+    "close": 0.03355469,
+    "volume": 16.00465216,
+    "baseVolume": 0.53599313,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 16,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03354196,
+    "high": 0.03358305,
+    "low": 0.03345206,
+    "close": 0.03345206,
+    "volume": 44.36790873,
+    "baseVolume": 1.48714148,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03334504,
+    "high": 0.03350400,
+    "low": 0.03334504,
+    "close": 0.03338292,
+    "volume": 4.58349327,
+    "baseVolume": 0.15303831,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03338293,
+    "high": 0.03350198,
+    "low": 0.03338293,
+    "close": 0.03338293,
+    "volume": 7.28565732,
+    "baseVolume": 0.24401568,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03329964,
+    "high": 0.03337499,
+    "low": 0.03322604,
+    "close": 0.03335724,
+    "volume": 14.47347051,
+    "baseVolume": 0.48228673,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03336373,
+    "high": 0.03338999,
+    "low": 0.03317577,
+    "close": 0.03317577,
+    "volume": 233.02791618,
+    "baseVolume": 7.73345101,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03335624,
+    "high": 0.03338000,
+    "low": 0.03320015,
+    "close": 0.03337900,
+    "volume": 158.17484219,
+    "baseVolume": 5.26244332,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03322601,
+    "high": 0.03338000,
+    "low": 0.03322601,
+    "close": 0.03323101,
+    "volume": 2.92933211,
+    "baseVolume": 0.09769956,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03337900,
+    "high": 0.03337900,
+    "low": 0.03322006,
+    "close": 0.03322132,
+    "volume": 15.56338744,
+    "baseVolume": 0.51753900,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03337798,
+    "high": 0.03337798,
+    "low": 0.03322131,
+    "close": 0.03322131,
+    "volume": 10.59957478,
+    "baseVolume": 0.35222564,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03322131,
+    "high": 0.03340474,
+    "low": 0.03322131,
+    "close": 0.03322131,
+    "volume": 51.85008116,
+    "baseVolume": 1.72933604,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03336487,
+    "high": 0.03336487,
+    "low": 0.03322150,
+    "close": 0.03331577,
+    "volume": 1.61891895,
+    "baseVolume": 0.05394154,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03322150,
+    "high": 0.03331577,
+    "low": 0.03322150,
+    "close": 0.03322150,
+    "volume": 2.97482930,
+    "baseVolume": 0.09908400,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 17,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03322150,
+    "high": 0.03331577,
+    "low": 0.03322150,
+    "close": 0.03323264,
+    "volume": 11.02973407,
+    "baseVolume": 0.36707953,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03324375,
+    "high": 0.03331576,
+    "low": 0.03324375,
+    "close": 0.03325084,
+    "volume": 1.76628420,
+    "baseVolume": 0.05881490,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03331577,
+    "high": 0.03345600,
+    "low": 0.03328542,
+    "close": 0.03333706,
+    "volume": 8.42659027,
+    "baseVolume": 0.28111924,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03345600,
+    "high": 0.03345600,
+    "low": 0.03345600,
+    "close": 0.03345600,
+    "volume": 1.63836870,
+    "baseVolume": 0.05481325,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03353898,
+    "high": 0.03353898,
+    "low": 0.03337000,
+    "close": 0.03353105,
+    "volume": 7.07277303,
+    "baseVolume": 0.23688504,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03344396,
+    "high": 0.03345000,
+    "low": 0.03336000,
+    "close": 0.03336000,
+    "volume": 8.54514053,
+    "baseVolume": 0.28546356,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03335133,
+    "high": 0.03345000,
+    "low": 0.03335133,
+    "close": 0.03344498,
+    "volume": 4.38624659,
+    "baseVolume": 0.14629564,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03335133,
+    "high": 0.03335133,
+    "low": 0.03332501,
+    "close": 0.03332501,
+    "volume": 45.44366612,
+    "baseVolume": 1.51548595,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03335131,
+    "high": 0.03335133,
+    "low": 0.03322254,
+    "close": 0.03330000,
+    "volume": 8.20570484,
+    "baseVolume": 0.27328730,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03329999,
+    "high": 0.03330000,
+    "low": 0.03329999,
+    "close": 0.03330000,
+    "volume": 2.08695515,
+    "baseVolume": 0.06949558,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03323200,
+    "high": 0.03335133,
+    "low": 0.03323200,
+    "close": 0.03335133,
+    "volume": 12.84995527,
+    "baseVolume": 0.42793844,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03335133,
+    "high": 0.03335133,
+    "low": 0.03330000,
+    "close": 0.03330000,
+    "volume": 2.85890352,
+    "baseVolume": 0.09529431,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 18,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03334000,
+    "high": 0.03344986,
+    "low": 0.03330000,
+    "close": 0.03335133,
+    "volume": 22.68168724,
+    "baseVolume": 0.75644944,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03340000,
+    "high": 0.03348185,
+    "low": 0.03330010,
+    "close": 0.03348145,
+    "volume": 28.04672649,
+    "baseVolume": 0.93662684,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03333006,
+    "high": 0.03352168,
+    "low": 0.03333006,
+    "close": 0.03350000,
+    "volume": 7.52351479,
+    "baseVolume": 0.25102630,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03350000,
+    "high": 0.03350000,
+    "low": 0.03333002,
+    "close": 0.03333600,
+    "volume": 11.47321819,
+    "baseVolume": 0.38356112,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03335506,
+    "high": 0.03345194,
+    "low": 0.03332263,
+    "close": 0.03336819,
+    "volume": 149.59469129,
+    "baseVolume": 4.98803708,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03335570,
+    "high": 0.03339000,
+    "low": 0.03333680,
+    "close": 0.03339000,
+    "volume": 4.47543360,
+    "baseVolume": 0.14926934,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03339000,
+    "high": 0.03352168,
+    "low": 0.03339000,
+    "close": 0.03340001,
+    "volume": 14.02178693,
+    "baseVolume": 0.46942291,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03340000,
+    "high": 0.03340201,
+    "low": 0.03333682,
+    "close": 0.03340201,
+    "volume": 31.48492565,
+    "baseVolume": 1.05142722,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03352268,
+    "high": 0.03357998,
+    "low": 0.03337384,
+    "close": 0.03338001,
+    "volume": 605.79036029,
+    "baseVolume": 20.33121181,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03338001,
+    "high": 0.03356998,
+    "low": 0.03338001,
+    "close": 0.03353742,
+    "volume": 8.51230609,
+    "baseVolume": 0.28523187,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03353742,
+    "high": 0.03354500,
+    "low": 0.03340100,
+    "close": 0.03354500,
+    "volume": 34.24404552,
+    "baseVolume": 1.14845281,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03340110,
+    "high": 0.03340210,
+    "low": 0.03340110,
+    "close": 0.03340210,
+    "volume": 3.73627599,
+    "baseVolume": 0.12479645,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 19,
+        "minute": 55,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03354190,
+    "high": 0.03354190,
+    "low": 0.03354190,
+    "close": 0.03354190,
+    "volume": 0.04000000,
+    "baseVolume": 0.00134167,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 20,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03340000,
+    "high": 0.03340000,
+    "low": 0.03330000,
+    "close": 0.03336999,
+    "volume": 92.55471443,
+    "baseVolume": 3.08875498,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 20,
+        "minute": 5,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03330010,
+    "high": 0.03341797,
+    "low": 0.03330010,
+    "close": 0.03330010,
+    "volume": 16.53653308,
+    "baseVolume": 0.55111562,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 20,
+        "minute": 10,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03330010,
+    "high": 0.03340914,
+    "low": 0.03330010,
+    "close": 0.03340914,
+    "volume": 40.56387453,
+    "baseVolume": 1.35393345,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 20,
+        "minute": 15,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03330010,
+    "high": 0.03337499,
+    "low": 0.03323400,
+    "close": 0.03330010,
+    "volume": 27.56580571,
+    "baseVolume": 0.91803095,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 20,
+        "minute": 20,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03330000,
+    "high": 0.03333000,
+    "low": 0.03330000,
+    "close": 0.03332332,
+    "volume": 56.53454312,
+    "baseVolume": 1.88261547,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 20,
+        "minute": 25,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03333000,
+    "high": 0.03336994,
+    "low": 0.03332332,
+    "close": 0.03333832,
+    "volume": 8.46498769,
+    "baseVolume": 0.28215036,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 20,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03333000,
+    "high": 0.03333000,
+    "low": 0.03323400,
+    "close": 0.03330000,
+    "volume": 3.96191546,
+    "baseVolume": 0.13173424,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 20,
+        "minute": 35,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03323400,
+    "high": 0.03329999,
+    "low": 0.03323400,
+    "close": 0.03329999,
+    "volume": 4.10725665,
+    "baseVolume": 0.13662837,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 20,
+        "minute": 40,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "open": 0.03327999,
+    "high": 0.03327999,
+    "low": 0.03319990,
+    "close": 0.03319990,
+    "volume": 0.67130463,
+    "baseVolume": 0.02231271,
+    "tickTime": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 20,
+        "minute": 45,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  }
+]

@@ -3,6 +3,7 @@ package pro.crypto.analyzer.rvi;
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.rvi.RVIResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -35,7 +36,7 @@ public class RVIAnalyzer implements Analyzer<RVIAnalyzerResult> {
         extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] signalLineCrossSignals = findSignalLineCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, signalLineCrossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, signalLineCrossSignals);
         buildRVIAnalyzerResult(mergedSignals);
     }
 

@@ -1,9 +1,6 @@
 package pro.crypto.analyzer.co;
 
-import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.IncreaseDecreaseAnalyzer;
-import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.helper.StaticLineCrossAnalyzer;
+import pro.crypto.helper.*;
 import pro.crypto.indicator.co.COResult;
 import pro.crypto.model.*;
 import pro.crypto.model.tick.Tick;
@@ -37,7 +34,7 @@ public class COAnalyzer implements Analyzer<COAnalyzerResult> {
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
         SignalStrength[] increaseDecreaseSignals = findIncreaseDecreaseSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, crossSignals, increaseDecreaseSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, crossSignals, increaseDecreaseSignals);
         buildCOAnalyzerResult(mergedSignals);
     }
 

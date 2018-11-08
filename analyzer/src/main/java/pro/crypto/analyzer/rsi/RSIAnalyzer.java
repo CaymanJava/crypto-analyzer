@@ -2,6 +2,7 @@ package pro.crypto.analyzer.rsi;
 
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.SecurityLevelAnalyzer;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.rsi.RSIResult;
 import pro.crypto.model.Analyzer;
@@ -71,7 +72,7 @@ public class RSIAnalyzer implements Analyzer<RSIAnalyzerResult> {
     private Signal[] findSignals() {
         Signal[] overboughtCrossSignals = findOverboughtCrossSignals();
         Signal[] oversoldCrossSignals = findOversoldCrossSignals();
-        return mergeSignals(overboughtCrossSignals, oversoldCrossSignals);
+        return SignalArrayMerger.mergeSignals(overboughtCrossSignals, oversoldCrossSignals);
     }
 
     private Signal[] findOverboughtCrossSignals() {

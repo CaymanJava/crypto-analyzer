@@ -3,6 +3,7 @@ package pro.crypto.analyzer.asi;
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.asi.ASIResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -35,7 +36,7 @@ public class ASIAnalyzer implements Analyzer<ASIAnalyzerResult> {
         extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] signalLineCrossSignals = findSignalLineCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, signalLineCrossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, signalLineCrossSignals);
         buildASIAnalyzerResult(mergedSignals);
     }
 

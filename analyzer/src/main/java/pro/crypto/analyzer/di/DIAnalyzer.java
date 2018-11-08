@@ -1,6 +1,7 @@
 package pro.crypto.analyzer.di;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.di.DIResult;
@@ -36,7 +37,7 @@ public class DIAnalyzer implements Analyzer<DIAnalyzerResult> {
         extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, crossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, crossSignals);
         buildDIAnalyzerResult(mergedSignals);
     }
 

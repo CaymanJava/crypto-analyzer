@@ -2,6 +2,7 @@ package pro.crypto.analyzer.ce;
 
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.PriceVolumeExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.ce.CEResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -35,7 +36,7 @@ public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {
         BigDecimal[] closePrices = PriceVolumeExtractor.extractPrices(originalData, CLOSE);
         Signal[] longExits = findLongExitSignals(closePrices);
         Signal[] shortExits = findShortExitSignals(closePrices);
-        Signal[] mergedSignals = mergeSignals(longExits, shortExits);
+        Signal[] mergedSignals = SignalArrayMerger.mergeSignals(longExits, shortExits);
         buildCEAnalyzerResult(mergedSignals);
     }
 

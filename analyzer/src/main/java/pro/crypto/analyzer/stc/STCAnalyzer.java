@@ -1,6 +1,7 @@
 package pro.crypto.analyzer.stc;
 
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.stc.STCResult;
 import pro.crypto.model.Analyzer;
@@ -65,7 +66,7 @@ public class STCAnalyzer implements Analyzer<STCAnalyzerResult> {
     private Signal[] findSignals() {
         Signal[] oversoldSignals = findOversoldSignals();
         Signal[] overboughtSignals = findOverboughtSignals();
-        return mergeSignals(oversoldSignals, overboughtSignals);
+        return SignalArrayMerger.mergeSignals(oversoldSignals, overboughtSignals);
     }
 
     private Signal[] findOversoldSignals() {

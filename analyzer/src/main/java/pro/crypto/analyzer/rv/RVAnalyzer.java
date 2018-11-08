@@ -1,6 +1,7 @@
 package pro.crypto.analyzer.rv;
 
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.rv.RVResult;
 import pro.crypto.model.*;
@@ -91,7 +92,7 @@ public class RVAnalyzer implements Analyzer<RVAnalyzerResult> {
     private SignalStrength[] findDoubleSignalLinesSignals() {
         SignalStrength[] bullishSignals = findBullishLineCrossSignals();
         SignalStrength[] bearerSignals = findBearerLineCrossSignals();
-        return mergeSignalsStrength(bullishSignals, bearerSignals);
+        return SignalArrayMerger.mergeSignalsStrength(bullishSignals, bearerSignals);
     }
 
     private SignalStrength[] findBullishLineCrossSignals() {

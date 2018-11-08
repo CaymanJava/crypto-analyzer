@@ -2,6 +2,7 @@ package pro.crypto.analyzer.stoch;
 
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.SecurityLevelAnalyzer;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.stoch.StochResult;
 import pro.crypto.model.*;
@@ -40,7 +41,7 @@ public class StochAnalyzer implements Analyzer<StochAnalyzerResult> {
         slowStochasticValues = extractStochasticValues(StochResult::getSlowStochastic);
         SignalStrength[] securityLevelCrossSignals = findSecurityLevelCrossSignals();
         SignalStrength[] stochasticsCrossSignals = findStochasticCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(securityLevelCrossSignals, stochasticsCrossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(securityLevelCrossSignals, stochasticsCrossSignals);
         SecurityLevel[] securityLevels = findSecurityLevels();
         buildStochAnalyzerResult(mergedSignals, securityLevels);
     }
@@ -74,13 +75,13 @@ public class StochAnalyzer implements Analyzer<StochAnalyzerResult> {
     private SignalStrength[] findSecurityLevelCrossSignals() {
         SignalStrength[] oversoldCrossSignals = findOversoldCrossSignals();
         SignalStrength[] overboughtCrossSignals = findOverboughtCrossSignals();
-        return mergeSignalsStrength(oversoldCrossSignals, overboughtCrossSignals);
+        return SignalArrayMerger.mergeSignalsStrength(oversoldCrossSignals, overboughtCrossSignals);
     }
 
     private SignalStrength[] findOversoldCrossSignals() {
         SignalStrength[] fastStochasticCrossSignals = findStochasticOversoldCrossSignals(fastStochasticValues);
         SignalStrength[] slowStochasticCrossSignals = findStochasticOversoldCrossSignals(slowStochasticValues);
-        return mergeSignalsStrength(fastStochasticCrossSignals, slowStochasticCrossSignals);
+        return SignalArrayMerger.mergeSignalsStrength(fastStochasticCrossSignals, slowStochasticCrossSignals);
     }
 
     private SignalStrength[] findStochasticOversoldCrossSignals(BigDecimal[] stochasticValues) {
@@ -95,7 +96,7 @@ public class StochAnalyzer implements Analyzer<StochAnalyzerResult> {
     private SignalStrength[] findOverboughtCrossSignals() {
         SignalStrength[] fastStochasticCrossSignals = findStochasticOverboughtCrossSignals(fastStochasticValues);
         SignalStrength[] slowStochasticCrossSignals = findStochasticOverboughtCrossSignals(slowStochasticValues);
-        return mergeSignalsStrength(fastStochasticCrossSignals, slowStochasticCrossSignals);
+        return SignalArrayMerger.mergeSignalsStrength(fastStochasticCrossSignals, slowStochasticCrossSignals);
     }
 
     private SignalStrength[] findStochasticOverboughtCrossSignals(BigDecimal[] stochasticValues) {

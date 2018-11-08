@@ -11,8 +11,8 @@ public class ACAnalyzerTest extends AnalyzerBaseTest {
 
     @Test
     public void testAccelerationDecelerationOscillatorAnalyzer() {
-        AnalyzerResult[] expectedResult = loadAnalyzerExpectedResult("ac_analyzer.json", ACAnalyzeResult[].class);
-        ACAnalyzeResult[] actualResult = new ACAnalyzer(buildAnalyzerRequest("ac_indicator.json", ACResult[].class)).getResult();
+        AnalyzerResult[] expectedResult = loadAnalyzerExpectedResult("ac_analyzer.json", ACAnalyzerResult[].class);
+        ACAnalyzerResult[] actualResult = new ACAnalyzer(buildAnalyzerRequest("ac_indicator.json", ACResult[].class)).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 

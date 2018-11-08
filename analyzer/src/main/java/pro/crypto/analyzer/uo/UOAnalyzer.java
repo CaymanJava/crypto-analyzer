@@ -43,7 +43,7 @@ public class UOAnalyzer implements Analyzer<UOAnalyzerResult> {
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] securityLevelCrossSignals = findSecurityLevelsCrossSignals();
         SignalStrength[] middleLineCrossSignals = findMiddleLineCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, securityLevelCrossSignals, middleLineCrossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, securityLevelCrossSignals, middleLineCrossSignals);
         SecurityLevel[] securityLevels = defineSecurityLevels();
         buildUOAnalyzerResult(mergedSignals, securityLevels);
     }
@@ -85,7 +85,7 @@ public class UOAnalyzer implements Analyzer<UOAnalyzerResult> {
     private SignalStrength[] findSecurityLevelsCrossSignals() {
         SignalStrength[] oversoldSignals = findOversoldSignals();
         SignalStrength[] overboughtSignals = findOverboughtSignals();
-        return mergeSignalsStrength(oversoldSignals, overboughtSignals);
+        return SignalArrayMerger.mergeSignalsStrength(oversoldSignals, overboughtSignals);
     }
 
     private SignalStrength[] findOversoldSignals() {

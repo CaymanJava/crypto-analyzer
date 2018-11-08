@@ -2,6 +2,7 @@ package pro.crypto.analyzer.imi;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.imi.IMIResult;
 import pro.crypto.model.*;
@@ -44,7 +45,7 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
         extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossLevelsSignals = findCrossLevelsSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, crossLevelsSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, crossLevelsSignals);
         SecurityLevel[] securityLevels = findSecurityLevels();
         buildIMIAnalyzerResult(mergedSignals, securityLevels);
     }
@@ -82,7 +83,7 @@ public class IMIAnalyzer implements Analyzer<IMIAnalyzerResult> {
     private SignalStrength[] findCrossLevelsSignals() {
         SignalStrength[] overboughtSignals = findOverboughtSignals();
         SignalStrength[] oversoldSignals = findOversoldSignals();
-        return mergeSignalsStrength(overboughtSignals, oversoldSignals);
+        return SignalArrayMerger.mergeSignalsStrength(overboughtSignals, oversoldSignals);
     }
 
     private SignalStrength[] findOverboughtSignals() {

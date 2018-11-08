@@ -1,9 +1,6 @@
 package pro.crypto.analyzer.qs;
 
-import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.IncreaseDecreaseAnalyzer;
-import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.helper.StaticLineCrossAnalyzer;
+import pro.crypto.helper.*;
 import pro.crypto.indicator.qs.QSResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -36,7 +33,7 @@ public class QSAnalyzer implements Analyzer<QSAnalyzerResult> {
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] zeroLineCrossSignals = findZeroLineCrossSignals();
         SignalStrength[] increasedSignals = findIncreasedSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, zeroLineCrossSignals, increasedSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, zeroLineCrossSignals, increasedSignals);
         buildQSAnalyzerResult(mergedSignals);
     }
 

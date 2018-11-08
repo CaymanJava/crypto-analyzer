@@ -7,7 +7,7 @@ import pro.crypto.model.result.SignalResult;
 import java.time.LocalDateTime;
 
 @Value
-public class ACAnalyzeResult implements SignalResult {
+public class ACAnalyzerResult implements SignalResult {
 
     private LocalDateTime time;
 

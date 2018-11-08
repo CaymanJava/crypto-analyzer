@@ -1,6 +1,7 @@
 package pro.crypto.analyzer.pgo;
 
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.pgo.PGOResult;
 import pro.crypto.model.*;
@@ -41,7 +42,7 @@ public class PGOAnalyzer implements Analyzer<PGOAnalyzerResult> {
         SignalStrength[] overboughtLevelSignals = findOverboughtLevelSignals();
         SignalStrength[] oversoldLeverSignals = findOversoldLevelSignals();
         SignalStrength[] zeroLineCrossSignals = findZeroLineCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(overboughtLevelSignals, oversoldLeverSignals, zeroLineCrossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(overboughtLevelSignals, oversoldLeverSignals, zeroLineCrossSignals);
         buildPGOAnalyzerResult(mergedSignals);
     }
 

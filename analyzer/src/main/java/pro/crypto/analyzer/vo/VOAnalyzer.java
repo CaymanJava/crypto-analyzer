@@ -2,6 +2,7 @@ package pro.crypto.analyzer.vo;
 
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.vo.VOResult;
 import pro.crypto.model.Analyzer;
@@ -36,7 +37,7 @@ public class VOAnalyzer implements Analyzer<VOAnalyzerResult> {
         extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] zeroLineCrossSignals = findZeroLineCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, zeroLineCrossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, zeroLineCrossSignals);
         buildVOAnalyzerResult(mergedSignals);
     }
 

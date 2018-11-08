@@ -3,6 +3,7 @@ package pro.crypto.analyzer.pmo;
 import pro.crypto.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.pmo.PMOResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -36,7 +37,7 @@ public class PMOAnalyzer implements Analyzer<PMOAnalyzerResult> {
         extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] signalLineCrossSignals = findSignalLineCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, signalLineCrossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, signalLineCrossSignals);
         buildPMOAnalyzerResult(mergedSignals);
     }
 

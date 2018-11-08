@@ -72,7 +72,7 @@ public class SMIAnalyzer implements Analyzer<SMIAnalyzerResult> {
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] securityLevelSignals = findSecurityLevelSignals();
         SignalStrength[] signalLineCrossSignals = findSignalsLineCrossSignals();
-        return mergeSignalsStrength(divergenceSignals, securityLevelSignals, signalLineCrossSignals);
+        return SignalArrayMerger.mergeSignalsStrength(divergenceSignals, securityLevelSignals, signalLineCrossSignals);
     }
 
     private SignalStrength[] findDivergenceSignals() {
@@ -85,7 +85,7 @@ public class SMIAnalyzer implements Analyzer<SMIAnalyzerResult> {
     private SignalStrength[] findSecurityLevelSignals() {
         SignalStrength[] oversoldSignals = findOversoldSignals();
         SignalStrength[] overboughtSignals = findOverboughtSignals();
-        return mergeSignalsStrength(overboughtSignals, oversoldSignals);
+        return SignalArrayMerger.mergeSignalsStrength(overboughtSignals, oversoldSignals);
     }
 
     private SignalStrength[] findOversoldSignals() {

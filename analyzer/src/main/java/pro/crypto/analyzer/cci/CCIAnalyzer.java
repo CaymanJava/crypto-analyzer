@@ -38,7 +38,7 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
         extractIndicatorValues();
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] crossSignals = findCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, crossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, crossSignals);
         SecurityLevel[] securityLevels = defineSecurityLevels();
         buildCCIAnalyzerResult(mergedSignals, securityLevels);
     }
@@ -77,7 +77,7 @@ public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
         SignalStrength[] overboughtSignals = findCrossSignals(overboughtLevel, NORMAL);
         SignalStrength[] oversoldSignals = findCrossSignals(oversoldLevel, NORMAL);
         SignalStrength[] zeroLineSignals = findCrossSignals(ZERO, WEAK);
-        return mergeSignalsStrength(overboughtSignals, oversoldSignals, zeroLineSignals);
+        return SignalArrayMerger.mergeSignalsStrength(overboughtSignals, oversoldSignals, zeroLineSignals);
     }
 
     private SignalStrength[] findCrossSignals(BigDecimal level, Strength strength) {

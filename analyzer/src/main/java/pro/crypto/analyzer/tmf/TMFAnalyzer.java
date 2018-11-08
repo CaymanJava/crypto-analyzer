@@ -1,9 +1,6 @@
 package pro.crypto.analyzer.tmf;
 
-import pro.crypto.helper.DefaultDivergenceAnalyzer;
-import pro.crypto.helper.DynamicLineCrossAnalyzer;
-import pro.crypto.helper.IndicatorResultExtractor;
-import pro.crypto.helper.StaticLineCrossAnalyzer;
+import pro.crypto.helper.*;
 import pro.crypto.indicator.tmf.TMFResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -38,7 +35,7 @@ public class TMFAnalyzer implements Analyzer<TMFAnalyzerResult> {
         SignalStrength[] divergenceSignals = findDivergenceSignals();
         SignalStrength[] zeroLineCrossSignals = findZeroLineCrossSignals();
         SignalStrength[] signalLineCrossSignals = findSignalLineCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(divergenceSignals, zeroLineCrossSignals, signalLineCrossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(divergenceSignals, zeroLineCrossSignals, signalLineCrossSignals);
         buildTMFAnalyzerResult(mergedSignals);
     }
 

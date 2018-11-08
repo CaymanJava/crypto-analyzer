@@ -12,11 +12,11 @@ import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.Signal.*;
 
-public class ACAnalyzer implements Analyzer<ACAnalyzeResult> {
+public class ACAnalyzer implements Analyzer<ACAnalyzerResult> {
 
     private final ACResult[] indicatorResults;
 
-    private ACAnalyzeResult[] result;
+    private ACAnalyzerResult[] result;
 
     public ACAnalyzer(AnalyzerRequest request) {
         this.indicatorResults = (ACResult[]) request.getIndicatorResults();
@@ -29,7 +29,7 @@ public class ACAnalyzer implements Analyzer<ACAnalyzeResult> {
     }
 
     @Override
-    public ACAnalyzeResult[] getResult() {
+    public ACAnalyzerResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
@@ -55,12 +55,12 @@ public class ACAnalyzer implements Analyzer<ACAnalyzeResult> {
     }
 
     private Signal recognizePositiveCaseSignal(int currentIndex) {
-        if (possibleToRecognizeTrendSignal(currentIndex)) {
+        if (isPossibleToRecognizeTrendSignal(currentIndex)) {
             if (indicatorGrowsTwoPeriods(currentIndex)) {
                 return BUY;
             }
         }
-        if (possibleToRecognizeAgainstTrendSignal(currentIndex)) {
+        if (isPossibleToRecognizeAgainstTrendSignal(currentIndex)) {
             if (indicatorFallsThreePeriods(currentIndex)) {
                 return SELL;
             }
@@ -69,12 +69,12 @@ public class ACAnalyzer implements Analyzer<ACAnalyzeResult> {
     }
 
     private Signal recognizeNegativeCaseSignal(int currentIndex) {
-        if (possibleToRecognizeTrendSignal(currentIndex)) {
+        if (isPossibleToRecognizeTrendSignal(currentIndex)) {
             if (indicatorFallsTwoPeriods(currentIndex)) {
                 return SELL;
             }
         }
-        if (possibleToRecognizeAgainstTrendSignal(currentIndex)) {
+        if (isPossibleToRecognizeAgainstTrendSignal(currentIndex)) {
             if (indicatorGrowsThreePeriods(currentIndex)) {
                 return BUY;
             }
@@ -82,13 +82,13 @@ public class ACAnalyzer implements Analyzer<ACAnalyzeResult> {
         return NEUTRAL;
     }
 
-    private boolean possibleToRecognizeTrendSignal(int currentIndex) {
+    private boolean isPossibleToRecognizeTrendSignal(int currentIndex) {
         return currentIndex - 1 >= 0
                 && nonNull(indicatorResults[currentIndex - 1].getIndicatorValue())
                 && nonNull(indicatorResults[currentIndex - 1].getIncreased());
     }
 
-    private boolean possibleToRecognizeAgainstTrendSignal(int currentIndex) {
+    private boolean isPossibleToRecognizeAgainstTrendSignal(int currentIndex) {
         return currentIndex - 2 >= 0
                 && nonNull(indicatorResults[currentIndex - 2].getIndicatorValue())
                 && nonNull(indicatorResults[currentIndex - 2].getIncreased());
@@ -117,8 +117,8 @@ public class ACAnalyzer implements Analyzer<ACAnalyzeResult> {
 
     private void buildACResult(Signal[] signals) {
         result = IntStream.range(0, signals.length)
-                .mapToObj(idx -> new ACAnalyzeResult(indicatorResults[idx].getTime(), signals[idx]))
-                .toArray(ACAnalyzeResult[]::new);
+                .mapToObj(idx -> new ACAnalyzerResult(indicatorResults[idx].getTime(), signals[idx]))
+                .toArray(ACAnalyzerResult[]::new);
     }
 
 }

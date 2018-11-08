@@ -1,6 +1,7 @@
 package pro.crypto.analyzer.eft;
 
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
+import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.eft.EFTResult;
@@ -33,7 +34,7 @@ public class EFTAnalyzer implements Analyzer<EFTAnalyzerResult> {
         extractIndicatorValues();
         SignalStrength[] zeroLineCrossSignals = findZeroLineCrossSignals();
         SignalStrength[] triggerCrossSignals = findTriggerCrossSignals();
-        SignalStrength[] mergedSignals = mergeSignalsStrength(zeroLineCrossSignals, triggerCrossSignals);
+        SignalStrength[] mergedSignals = SignalArrayMerger.mergeSignalsStrength(zeroLineCrossSignals, triggerCrossSignals);
         buildEFTAnalyzerResult(mergedSignals);
     }
 

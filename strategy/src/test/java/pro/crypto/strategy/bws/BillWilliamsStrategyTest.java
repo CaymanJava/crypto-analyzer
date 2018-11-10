@@ -4,14 +4,13 @@ import org.junit.Test;
 import pro.crypto.model.Position;
 import pro.crypto.model.StrategyRequest;
 import pro.crypto.model.StrategyResult;
+import pro.crypto.strategy.StrategyBaseTest;
 
 import static com.google.common.collect.Sets.newHashSet;
 import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.tick.TimeFrame.FIVE_MIN;
 
 public class BillWilliamsStrategyTest extends StrategyBaseTest {
-
-    // TODO change data to ONE_HOUR
 
     @Test
     public void testBillWilliamsStrategy() throws Exception {

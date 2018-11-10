@@ -80,12 +80,12 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
     }
 
     private Signal tryDefineBuySignal(int currentIndex) {
-        return isRedIndicator(currentIndex - 2) && isRedIndicator(currentIndex - 1) && isGreenIndicator(currentIndex)
+        return isRedBar(currentIndex - 2) && isRedBar(currentIndex - 1) && isGreenBar(currentIndex)
                 ? BUY : null;
     }
 
     private Signal tryDefineSellSignal(int currentIndex) {
-        return isGreenIndicator(currentIndex - 2) && isGreenIndicator(currentIndex - 1) && isRedIndicator(currentIndex)
+        return isGreenBar(currentIndex - 2) && isGreenBar(currentIndex - 1) && isRedBar(currentIndex)
                 ? SELL : null;
     }
 
@@ -160,8 +160,8 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
 
     private boolean isNegativePeak(int index) {
         return isPossibleToDefineThreeValuesSignal(index)
-                && isRedIndicator(index)
-                && isGreenIndicator(index + 1);
+                && isRedBar(index)
+                && isGreenBar(index + 1);
     }
 
     private boolean isPossibleToDefineThreeValuesSignal(int currentIndex) {
@@ -252,15 +252,15 @@ public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
 
     private boolean isPositivePeak(int index) {
         return isPossibleToDefineThreeValuesSignal(index)
-                && isGreenIndicator(index)
-                && isRedIndicator(index + 1);
+                && isGreenBar(index)
+                && isRedBar(index + 1);
     }
 
-    private boolean isRedIndicator(int index) {
-        return !isGreenIndicator(index);
+    private boolean isRedBar(int index) {
+        return !isGreenBar(index);
     }
 
-    private boolean isGreenIndicator(int index) {
+    private boolean isGreenBar(int index) {
         return indicatorResults[index].getIncreased();
     }
 

@@ -11,8 +11,8 @@ public class StochResult implements IndicatorResult {
 
     private LocalDateTime time;
 
-    private BigDecimal fastStochastic;
+    private BigDecimal fastStochastic; // %K
 
-    private BigDecimal slowStochastic;
+    private BigDecimal slowStochastic; // %D
 
 }

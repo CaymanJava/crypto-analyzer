@@ -17,7 +17,6 @@ import java.time.LocalDateTime;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static pro.crypto.model.market.Stock.BITTREX;
 import static pro.crypto.model.tick.TimeFrame.FIVE_MIN;
 
 @RunWith(SpringRunner.class)
@@ -26,23 +25,23 @@ public class DataSupplierTest {
 
     @Autowired
     private DataSupplier dataSupplier;
-    private static final Stock STOCK = BITTREX;
+    private static final Stock BITTREX = Stock.BITTREX;
     private static final String MARKET_NAME = "BTC-ETH";
     private static final long MARKET_ID = 78;
 
     @Test
     @Ignore
     public void getAllStockMarketsTest() throws Exception {
-        MarketData markets = dataSupplier.getAllStockMarkets(STOCK);
-        assertEquals(markets.getStockExchangeName(), STOCK);
+        MarketData markets = dataSupplier.getAllStockMarkets(BITTREX);
+        assertEquals(markets.getStockExchangeName(), BITTREX);
         assertTrue(markets.getMarkets().length > 0);
     }
 
     @Test
     @Ignore
     public void getStockMarketByNameTest() throws Exception {
-        MarketData marketData = dataSupplier.getStockMarketByName(STOCK, MARKET_NAME);
-        assertEquals(marketData.getStockExchangeName(), STOCK);
+        MarketData marketData = dataSupplier.getStockMarketByName(BITTREX, MARKET_NAME);
+        assertEquals(marketData.getStockExchangeName(), BITTREX);
 
         Market[] markets = marketData.getMarkets();
         assertTrue(markets.length == 1);
@@ -58,36 +57,36 @@ public class DataSupplierTest {
     @Test
     @Ignore
     public void getAllMonitoredMarketTest() throws Exception {
-        MarketData monitoredMarket = dataSupplier.getAllMonitoredMarket(STOCK);
-        assertEquals(monitoredMarket.getStockExchangeName(), STOCK);
+        MarketData monitoredMarket = dataSupplier.getAllMonitoredMarket(BITTREX);
+        assertEquals(monitoredMarket.getStockExchangeName(), BITTREX);
     }
 
     @Test
     @Ignore
     public void getTicksByPeriodTest() throws Exception {
-        TickData ticks = dataSupplier.getTicksByPeriod(GetTicksByPeriodRequest.builder()
-                .stock(STOCK)
-                .period(20)
+        TickData marketResponse = dataSupplier.getTicksByPeriod(GetTicksByPeriodRequest.builder()
+                .stock(BITTREX)
+                .period(300)
                 .marketId(MARKET_ID)
                 .timeFrame(FIVE_MIN)
                 .build());
-        assertEquals(ticks.getStockExchangeName(), STOCK);
-        assertEquals(ticks.getMarket().getId(), MARKET_ID);
-        assertEquals(ticks.getTimeFrame(), FIVE_MIN);
-        assertTrue(ticks.getTicks().length > 0);
+        assertEquals(marketResponse.getStockExchangeName(), BITTREX);
+        assertEquals(marketResponse.getMarket().getId(), MARKET_ID);
+        assertEquals(marketResponse.getTimeFrame(), FIVE_MIN);
+        assertTrue(marketResponse.getTicks().length > 0);
     }
 
     @Test
     @Ignore
     public void getTicksByTimeTest() throws Exception {
         TickData ticks = dataSupplier.getTicksByTime(GetTickByTimeRequest.builder()
-                .stock(STOCK)
+                .stock(BITTREX)
                 .marketId(MARKET_ID)
                 .timeFrame(FIVE_MIN)
                 .from(LocalDateTime.now().minusHours(5))
                 .to(LocalDateTime.now())
                 .build());
-        assertEquals(ticks.getStockExchangeName(), STOCK);
+        assertEquals(ticks.getStockExchangeName(), BITTREX);
         assertEquals(ticks.getMarket().getId(), MARKET_ID);
         assertEquals(ticks.getTimeFrame(), FIVE_MIN);
         assertTrue(ticks.getTicks().length > 0);

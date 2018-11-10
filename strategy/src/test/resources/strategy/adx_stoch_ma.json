@@ -477,7 +477,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6396.87525004
   },
   {
     "time": {
@@ -525,7 +528,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6377.99880737
   },
   {
     "time": {
@@ -541,7 +547,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6377.99880737
   },
   {
     "time": {
@@ -557,7 +566,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6377.99880737
   },
   {
     "time": {
@@ -573,7 +585,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6377.99880737
   },
   {
     "time": {
@@ -605,9 +620,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -623,7 +636,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6365.65360149
   },
   {
     "time": {
@@ -639,7 +655,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6366.39999986
   },
   {
     "time": {
@@ -655,9 +674,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -673,9 +690,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -691,9 +706,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -709,9 +722,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -727,9 +738,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -745,9 +754,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -763,9 +770,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -781,9 +786,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -799,12 +802,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG",
-      "ENTRY_SHORT"
-    ],
-    "entryPrice": 6253.8300000297,
-    "stopLose": 6350.1973241401
+    "positions": []
   },
   {
     "time": {
@@ -821,8 +819,9 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6367.20000000
   },
   {
     "time": {
@@ -839,8 +838,9 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6367.20000000
   },
   {
     "time": {
@@ -856,7 +856,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6349.82000000
   },
   {
     "time": {
@@ -872,7 +875,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6349.82000000
   },
   {
     "time": {
@@ -889,8 +895,9 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6349.82000000
   },
   {
     "time": {
@@ -909,8 +916,7 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "entryPrice": 6207.3000000000,
-    "stopLose": 6343.4536955593
+    "stopLose": 6349.82000000
   },
   {
     "time": {
@@ -942,9 +948,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -960,12 +964,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
-    ],
-    "entryPrice": 6461.4302532024,
-    "stopLose": 6331.4711514835
+    "positions": []
   },
   {
     "time": {
@@ -981,9 +980,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -994,514 +991,6 @@
       },
       "time": {
         "hour": 22,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
-    ],
-    "entryPrice": 6451.8800000000,
-    "stopLose": 6351.8880126466
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 10,
-        "day": 31
-      },
-      "time": {
-        "hour": 23,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 0,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 1,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 2,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 3,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 4,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 5,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 6,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 7,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 8,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 9,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 10,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
-    ],
-    "entryPrice": 6458.9500000000,
-    "stopLose": 6369.9564582248
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 11,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 12,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 13,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 14,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 15,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 16,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 17,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 18,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 19,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 20,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 21,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 22,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 1
-      },
-      "time": {
-        "hour": 23,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 0,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 1,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 2,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 3,
         "minute": 0,
         "second": 0,
         "nano": 0
@@ -1510,350 +999,14 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "entryPrice": 6521.5700000000,
-    "stopLose": 6394.9452514134
+    "stopLose": 6368.81999925
   },
   {
     "time": {
       "date": {
         "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 4,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 5,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 6,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 7,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 8,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 9,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 10,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 11,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 12,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 13,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 14,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 15,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 16,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 17,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
-    ],
-    "entryPrice": 6514.3605687728,
-    "stopLose": 6416.5016035424
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 18,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 19,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 20,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 21,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 22,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
+        "month": 10,
+        "day": 31
       },
       "time": {
         "hour": 23,
@@ -1863,15 +1016,16 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6374.00000000
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 0,
@@ -1887,28 +1041,10 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 1,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 2,
         "minute": 0,
         "second": 0,
         "nano": 0
@@ -1921,7 +1057,26 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
+      },
+      "time": {
+        "hour": 2,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6374.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 1
       },
       "time": {
         "hour": 3,
@@ -1937,7 +1092,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 4,
@@ -1947,15 +1102,16 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6374.00000000
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 5,
@@ -1964,16 +1120,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 6,
@@ -1982,19 +1136,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG",
-      "ENTRY_SHORT"
-    ],
-    "entryPrice": 6346.8999000099,
-    "stopLose": 6431.6226773930
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 7,
@@ -2003,14 +1152,17 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6364.53250000
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 8,
@@ -2019,14 +1171,17 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6355.00000002
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 9,
@@ -2036,15 +1191,16 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6355.00000002
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 10,
@@ -2054,15 +1210,16 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6355.00000002
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 11,
@@ -2071,14 +1228,17 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6355.00000002
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 12,
@@ -2088,78 +1248,19 @@
       }
     },
     "positions": [
-      "EXIT_LONG",
-      "ENTRY_SHORT"
+      "ENTRY_LONG"
     ],
-    "entryPrice": 6295.8585690000,
-    "stopLose": 6423.4210707527
+    "stopLose": 6355.00000002
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 13,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 14,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 15,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG",
-      "ENTRY_SHORT"
-    ],
-    "entryPrice": 6289.1730000000,
-    "stopLose": 6407.3139618694
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 16,
         "minute": 0,
         "second": 0,
         "nano": 0
@@ -2172,7 +1273,61 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
+      },
+      "time": {
+        "hour": 14,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 1
+      },
+      "time": {
+        "hour": 15,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6355.00000002
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 1
+      },
+      "time": {
+        "hour": 16,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6379.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 1
       },
       "time": {
         "hour": 17,
@@ -2188,7 +1343,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 18,
@@ -2197,16 +1352,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 19,
@@ -2215,16 +1368,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 20,
@@ -2234,15 +1385,16 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6385.69999999
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 21,
@@ -2251,14 +1403,17 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6385.69999999
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 22,
@@ -2267,14 +1422,17 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6385.69999999
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 3
+        "day": 1
       },
       "time": {
         "hour": 23,
@@ -2283,14 +1441,17 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6385.69999999
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 0,
@@ -2300,72 +1461,19 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6385.69999999
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 1,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 4
-      },
-      "time": {
-        "hour": 2,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 4
-      },
-      "time": {
-        "hour": 3,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_SHORT"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 4
-      },
-      "time": {
-        "hour": 4,
         "minute": 0,
         "second": 0,
         "nano": 0
@@ -2378,7 +1486,58 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
+      },
+      "time": {
+        "hour": 2,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 2
+      },
+      "time": {
+        "hour": 3,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 2
+      },
+      "time": {
+        "hour": 4,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6400.00000006
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 2
       },
       "time": {
         "hour": 5,
@@ -2387,16 +1546,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 6,
@@ -2412,7 +1569,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 7,
@@ -2422,18 +1579,16 @@
       }
     },
     "positions": [
-      "EXIT_LONG",
-      "ENTRY_SHORT"
+      "ENTRY_LONG"
     ],
-    "entryPrice": 6291.4500990000,
-    "stopLose": 6381.8202914510
+    "stopLose": 6400.00000006
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 8,
@@ -2449,7 +1604,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 9,
@@ -2459,15 +1614,16 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6400.00000006
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 10,
@@ -2476,16 +1632,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 11,
@@ -2494,19 +1648,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
-    ],
-    "entryPrice": 6490.0580000000,
-    "stopLose": 6379.1925567580
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 12,
@@ -2515,16 +1664,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 13,
@@ -2533,14 +1680,17 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6405.00000001
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 14,
@@ -2549,14 +1699,17 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6394.79000039
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 15,
@@ -2565,16 +1718,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 16,
@@ -2584,15 +1735,16 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6394.79000039
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 17,
@@ -2604,15 +1756,14 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "entryPrice": 6490.0579996970,
-    "stopLose": 6400.7412964465
+    "stopLose": 6394.79000039
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 18,
@@ -2622,15 +1773,16 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6394.79000039
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 19,
@@ -2640,15 +1792,16 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6420.00000001
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 20,
@@ -2657,19 +1810,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
-    ],
-    "entryPrice": 6580.2373851697,
-    "stopLose": 6405.3413236379
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 21,
@@ -2678,16 +1826,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 22,
@@ -2703,7 +1849,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 4
+        "day": 2
       },
       "time": {
         "hour": 23,
@@ -2719,64 +1865,10 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 0,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 1,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 2,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 3,
         "minute": 0,
         "second": 0,
         "nano": 0
@@ -2789,7 +1881,64 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
+      },
+      "time": {
+        "hour": 1,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6420.00999000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 2,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6420.00999000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 3,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6420.00999000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
       },
       "time": {
         "hour": 4,
@@ -2805,7 +1954,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 5,
@@ -2814,16 +1963,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 6,
@@ -2832,16 +1979,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 7,
@@ -2857,7 +2002,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 8,
@@ -2866,16 +2011,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 9,
@@ -2891,7 +2034,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 10,
@@ -2907,7 +2050,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 11,
@@ -2916,16 +2059,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 12,
@@ -2935,15 +2076,16 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6427.99999998
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 13,
@@ -2952,14 +2094,17 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6427.99999998
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 14,
@@ -2968,14 +2113,17 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6427.99999998
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 15,
@@ -2985,15 +2133,16 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6427.99999998
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 16,
@@ -3003,15 +2152,16 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6427.99999998
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 17,
@@ -3020,16 +2170,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 18,
@@ -3045,10 +2193,29 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 19,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6388.10165992
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 20,
         "minute": 0,
         "second": 0,
         "nano": 0
@@ -3061,25 +2228,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 20,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "EXIT_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 21,
@@ -3088,16 +2237,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 22,
@@ -3107,15 +2254,16 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6383.61000000
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 5
+        "day": 3
       },
       "time": {
         "hour": 23,
@@ -3131,7 +2279,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 6
+        "day": 4
       },
       "time": {
         "hour": 0,
@@ -3147,7 +2295,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 6
+        "day": 4
       },
       "time": {
         "hour": 1,
@@ -3156,16 +2304,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 6
+        "day": 4
       },
       "time": {
         "hour": 2,
@@ -3174,16 +2320,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 6
+        "day": 4
       },
       "time": {
         "hour": 3,
@@ -3192,16 +2336,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 6
+        "day": 4
       },
       "time": {
         "hour": 4,
@@ -3210,16 +2352,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 6
+        "day": 4
       },
       "time": {
         "hour": 5,
@@ -3228,16 +2368,14 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 6
+        "day": 4
       },
       "time": {
         "hour": 6,
@@ -3249,15 +2387,14 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "entryPrice": 6385.5000000099,
-    "stopLose": 6470.4231256164
+    "stopLose": 6389.83105533
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 6
+        "day": 4
       },
       "time": {
         "hour": 7,
@@ -3267,15 +2404,16 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6389.83105533
   },
   {
     "time": {
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 6
+        "day": 4
       },
       "time": {
         "hour": 8,
@@ -3291,7 +2429,7 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 6
+        "day": 4
       },
       "time": {
         "hour": 9,
@@ -3301,6 +2439,837 @@
       }
     },
     "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 10,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 11,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6395.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 12,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6396.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 13,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6396.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 14,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6396.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 15,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 16,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 18,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 19,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 20,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6470.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 21,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6470.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 22,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6476.34735554
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 23,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6476.34735554
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6464.89147779
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 1,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 2,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 3,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 4,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 5,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 6,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 7,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6451.00000001
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6456.50287800
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 9,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6456.50287800
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6451.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6448.21028826
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6462.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6462.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6462.00000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 22,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 23,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 1,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 2,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6451.55000010
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 3,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6451.55000010
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 4,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 5,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 6,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 7,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6450.00000001
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 6
+      },
+      "time": {
+        "hour": 9,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6450.00000001
   },
   {
     "time": {
@@ -3317,8 +3286,9 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6450.00000001
   },
   {
     "time": {
@@ -3334,12 +3304,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
-    ],
-    "entryPrice": 6549.8499999394,
-    "stopLose": 6465.6919833996
+    "positions": []
   },
   {
     "time": {
@@ -3356,11 +3321,9 @@
       }
     },
     "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
+      "ENTRY_LONG"
     ],
-    "entryPrice": 6578.0289998586,
-    "stopLose": 6466.4234980877
+    "stopLose": 6487.17000000
   },
   {
     "time": {
@@ -3408,9 +3371,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3427,8 +3388,9 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6477.00000000
   },
   {
     "time": {
@@ -3445,8 +3407,9 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6477.00000000
   },
   {
     "time": {
@@ -3463,11 +3426,9 @@
       }
     },
     "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
+      "ENTRY_LONG"
     ],
-    "entryPrice": 6578.5339998586,
-    "stopLose": 6482.0442497659
+    "stopLose": 6483.17257105
   },
   {
     "time": {
@@ -3483,9 +3444,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3502,11 +3461,9 @@
       }
     },
     "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
+      "ENTRY_LONG"
     ],
-    "entryPrice": 6578.5339998384,
-    "stopLose": 6486.8523678382
+    "stopLose": 6483.17257105
   },
   {
     "time": {
@@ -3554,9 +3511,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3573,8 +3528,9 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6486.00000000
   },
   {
     "time": {
@@ -3607,8 +3563,9 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6486.00000000
   },
   {
     "time": {
@@ -3625,8 +3582,9 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6565.00000000
   },
   {
     "time": {
@@ -3643,11 +3601,9 @@
       }
     },
     "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
+      "ENTRY_LONG"
     ],
-    "entryPrice": 6681.1500000000,
-    "stopLose": 6497.8833327580
+    "stopLose": 6565.00000000
   },
   {
     "time": {
@@ -3664,8 +3620,9 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6565.00000000
   },
   {
     "time": {
@@ -3713,9 +3670,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3731,9 +3686,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3749,9 +3702,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3767,9 +3718,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3833,9 +3782,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3851,9 +3798,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3869,9 +3814,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3919,9 +3862,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3937,9 +3878,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3955,12 +3894,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
-    ],
-    "entryPrice": 6666.0000000000,
-    "stopLose": 6573.9792597992
+    "positions": []
   },
   {
     "time": {
@@ -3976,9 +3910,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -3994,9 +3926,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4012,9 +3942,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4030,9 +3958,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4048,9 +3974,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4066,9 +3990,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4084,9 +4006,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4102,12 +4022,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG",
-      "ENTRY_SHORT"
-    ],
-    "entryPrice": 6444.2367000000,
-    "stopLose": 6578.8868158199
+    "positions": []
   },
   {
     "time": {
@@ -4123,9 +4038,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4142,8 +4055,9 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6546.97170170
   },
   {
     "time": {
@@ -4159,7 +4073,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6546.97170170
   },
   {
     "time": {
@@ -4192,8 +4109,9 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6546.97170170
   },
   {
     "time": {
@@ -4209,9 +4127,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4227,9 +4143,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4245,9 +4159,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4264,8 +4176,9 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6546.97170170
   },
   {
     "time": {
@@ -4281,9 +4194,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4315,9 +4226,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4333,12 +4242,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG",
-      "ENTRY_SHORT"
-    ],
-    "entryPrice": 6421.3839237339,
-    "stopLose": 6548.1390049648
+    "positions": []
   },
   {
     "time": {
@@ -4354,9 +4258,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4372,9 +4274,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4390,9 +4290,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4440,9 +4338,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4459,8 +4355,9 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6519.99999999
   },
   {
     "time": {
@@ -4477,8 +4374,9 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6519.99999999
   },
   {
     "time": {
@@ -4495,8 +4393,9 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6519.99999999
   },
   {
     "time": {
@@ -4512,7 +4411,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6519.99999999
   },
   {
     "time": {
@@ -4529,8 +4431,9 @@
       }
     },
     "positions": [
-      "EXIT_SHORT"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6519.99999999
   },
   {
     "time": {
@@ -4546,9 +4449,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4564,9 +4465,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4582,9 +4481,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4600,9 +4497,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4618,9 +4513,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4637,11 +4530,9 @@
       }
     },
     "positions": [
-      "EXIT_LONG",
       "ENTRY_SHORT"
     ],
-    "entryPrice": 6364.1297967885,
-    "stopLose": 6497.0879632083
+    "stopLose": 6507.05544400
   },
   {
     "time": {
@@ -4658,8 +4549,9 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6459.42583905
   },
   {
     "time": {
@@ -4676,8 +4568,9 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6459.42583905
   },
   {
     "time": {
@@ -4694,8 +4587,9 @@
       }
     },
     "positions": [
-      "EXIT_LONG"
-    ]
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6459.42583905
   },
   {
     "time": {
@@ -4711,7 +4605,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6459.42583905
   },
   {
     "time": {
@@ -4727,7 +4624,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6459.42583905
   },
   {
     "time": {
@@ -4743,9 +4643,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4761,9 +4659,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4779,9 +4675,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4797,9 +4691,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4815,9 +4707,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4833,7 +4723,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6450.00000000
   },
   {
     "time": {
@@ -4849,7 +4742,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stopLose": 6443.11606529
   },
   {
     "time": {
@@ -4865,9 +4761,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4899,9 +4793,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4917,9 +4809,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4935,9 +4825,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4953,9 +4841,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -4971,9 +4857,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -5021,9 +4905,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -5039,9 +4921,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -5057,9 +4937,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -5075,12 +4953,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG",
-      "ENTRY_SHORT"
-    ],
-    "entryPrice": 6356.8371380382,
-    "stopLose": 6445.8832819064
+    "positions": []
   },
   {
     "time": {
@@ -5096,9 +4969,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -5114,9 +4985,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -5132,12 +5001,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_LONG",
-      "EXIT_SHORT"
-    ],
-    "entryPrice": 6529.9233608329,
-    "stopLose": 6445.8132137700
+    "positions": []
   },
   {
     "time": {
@@ -5153,9 +5017,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -5171,9 +5033,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -5189,9 +5049,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -5239,8 +5097,6 @@
         "nano": 0
       }
     },
-    "positions": [
-      "EXIT_LONG"
-    ]
+    "positions": []
   }
 ]

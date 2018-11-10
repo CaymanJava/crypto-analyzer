@@ -14,6 +14,7 @@ import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static java.util.Optional.ofNullable;
 import static pro.crypto.model.IndicatorType.MODIFIED_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.STOCHASTIC_OSCILLATOR;
 import static pro.crypto.model.tick.PriceType.*;
@@ -30,7 +31,7 @@ public class StochasticOscillator implements Indicator<StochResult> {
     public StochasticOscillator(IndicatorRequest creationRequest) {
         StochRequest request = (StochRequest) creationRequest;
         this.originalData = request.getOriginalData();
-        this.movingAverageType = isNull(request.getMovingAverageType()) ? MODIFIED_MOVING_AVERAGE : request.getMovingAverageType();
+        this.movingAverageType = extractMovingAverageType(request);
         this.fastPeriod = request.getFastPeriod();
         this.slowPeriod = request.getSlowPeriod();
         checkIncomingData();
@@ -55,6 +56,11 @@ public class StochasticOscillator implements Indicator<StochResult> {
             calculate();
         }
         return result;
+    }
+
+    private IndicatorType extractMovingAverageType(StochRequest request) {
+        return ofNullable(request.getMovingAverageType())
+                .orElse(MODIFIED_MOVING_AVERAGE);
     }
 
     private void checkIncomingData() {

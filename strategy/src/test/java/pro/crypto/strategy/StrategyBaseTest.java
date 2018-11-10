@@ -1,4 +1,4 @@
-package pro.crypto.strategy.bws;
+package pro.crypto.strategy;
 
 import com.google.gson.Gson;
 import lombok.SneakyThrows;
@@ -6,7 +6,7 @@ import org.apache.commons.io.FileUtils;
 import org.junit.Before;
 import pro.crypto.model.StrategyResult;
 import pro.crypto.model.tick.Tick;
-import pro.crypto.tick.generator.FiveMinTickGenerator;
+import pro.crypto.tick.generator.OneHourTickGenerator;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,7 +21,7 @@ public abstract class StrategyBaseTest {
 
     @Before
     public void init() {
-        originalData = new FiveMinTickGenerator().generate();
+        originalData = new OneHourTickGenerator().generate();
     }
 
     @SneakyThrows(IOException.class)

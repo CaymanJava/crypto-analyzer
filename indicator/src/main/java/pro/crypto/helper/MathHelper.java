@@ -16,7 +16,10 @@ public class MathHelper {
     }
 
     public static BigDecimal divide(BigDecimal divisible, BigDecimal divisor) {
-        return nonNull(divisible) && nonNull(divisor) && divisor.compareTo(BigDecimal.ZERO) != 0
+        if (nonNull(divisor) && divisor.compareTo(BigDecimal.ZERO) == 0) {
+            return BigDecimal.ZERO;
+        }
+        return nonNull(divisible) && nonNull(divisor)
                 ? divisible.divide(divisor, 10, BigDecimal.ROUND_HALF_UP)
                 : null;
     }

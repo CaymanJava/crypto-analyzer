@@ -78,7 +78,7 @@ public class BillWilliamsStrategy implements Strategy<BWSResult> {
         this.aoSlowPeriod = request.getAoSlowPeriod();
         this.aoFastPeriod = request.getAoFastPeriod();
         this.positions = request.getPositions();
-        checkIncomingData();
+        checkPositions(positions);
     }
 
     @Override
@@ -100,10 +100,6 @@ public class BillWilliamsStrategy implements Strategy<BWSResult> {
             analyze();
         }
         return result;
-    }
-
-    private void checkIncomingData() {
-        checkPositions(positions);
     }
 
     private void initResultArray() {

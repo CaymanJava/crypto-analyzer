@@ -29,7 +29,7 @@ public class ADXStochMAStrategyTest extends StrategyBaseTest {
                 .firstMaPeriod(5)
                 .secondMaPeriod(15)
                 .thirdMaPeriod(30)
-                .positions(newHashSet(Position.values()))
+                .positions(newHashSet(Position.ENTRY_LONG, Position.ENTRY_SHORT))
                 .build();
     }
 

@@ -60,7 +60,7 @@ public class ADXStochMAStrategy implements Strategy<ADXStochMAResult> {
         this.secondMaPeriod = request.getSecondMaPeriod();
         this.thirdMaPeriod = request.getThirdMaPeriod();
         this.positions = request.getPositions();
-        checkIncomingData();
+        checkPositions(positions);
     }
 
     @Override
@@ -86,10 +86,6 @@ public class ADXStochMAStrategy implements Strategy<ADXStochMAResult> {
             analyze();
         }
         return result;
-    }
-
-    private void checkIncomingData() {
-        checkPositions(positions);
     }
 
     private void initResultArray() {

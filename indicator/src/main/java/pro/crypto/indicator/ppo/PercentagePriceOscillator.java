@@ -64,7 +64,7 @@ public class PercentagePriceOscillator implements Indicator<PPOResult> {
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkOriginalDataSize(originalData, fastPeriod + signalPeriod);
+        checkOriginalDataSize(originalData, slowPeriod + signalPeriod);
         checkPriceType(priceType);
         checkMovingAverageType(movingAverageType);
         checkPeriods();
@@ -77,33 +77,33 @@ public class PercentagePriceOscillator implements Indicator<PPOResult> {
     }
 
     private BigDecimal[] calculatePercentagePriceOscillatorValues() {
-        BigDecimal[] slowMAValues = calculateMovingAverage(originalData, slowPeriod);
         BigDecimal[] fastMAValues = calculateMovingAverage(originalData, fastPeriod);
-        return calculatePercentagePriceOscillatorValues(slowMAValues, fastMAValues);
+        BigDecimal[] slowMAValues = calculateMovingAverage(originalData, slowPeriod);
+        return calculatePercentagePriceOscillatorValues(fastMAValues, slowMAValues);
     }
 
-    private BigDecimal[] calculatePercentagePriceOscillatorValues(BigDecimal[] slowMAValues, BigDecimal[] fastMAValues) {
+    private BigDecimal[] calculatePercentagePriceOscillatorValues(BigDecimal[] fastMAValues, BigDecimal[] slowMAValues) {
         return IntStream.range(0, originalData.length)
-                .mapToObj(idx -> calculatePercentagePriceOscillator(slowMAValues[idx], fastMAValues[idx]))
+                .mapToObj(idx -> calculatePercentagePriceOscillator(fastMAValues[idx], slowMAValues[idx]))
                 .toArray(BigDecimal[]::new);
     }
 
-    private BigDecimal calculatePercentagePriceOscillator(BigDecimal slowMAValue, BigDecimal fastMAValue) {
-        return nonNull(slowMAValue) && nonNull(fastMAValue)
-                ? calculatePercentagePriceOscillatorValues(slowMAValue, fastMAValue)
+    private BigDecimal calculatePercentagePriceOscillator(BigDecimal fastMAValue, BigDecimal slowMAValue) {
+        return nonNull(fastMAValue) && nonNull(slowMAValue)
+                ? calculatePercentagePriceOscillatorValues(fastMAValue, slowMAValue)
                 : null;
     }
 
-    private BigDecimal calculatePercentagePriceOscillatorValues(BigDecimal slowMAValue, BigDecimal fastMAValue) {
-        return MathHelper.divide(slowMAValue.subtract(fastMAValue)
+    private BigDecimal calculatePercentagePriceOscillatorValues(BigDecimal fastMAValue, BigDecimal slowMAValue) {
+        return MathHelper.divide(fastMAValue.subtract(slowMAValue)
                         .multiply(new BigDecimal(100)),
-                fastMAValue);
+                slowMAValue);
     }
 
     private BigDecimal[] calculateSignalLineValues(BigDecimal[] ppoValues) {
         BigDecimal[] signalLineValues = calculateMovingAverage(FakeTicksCreator.createWithCloseOnly(ppoValues), signalPeriod);
         BigDecimal[] result = new BigDecimal[originalData.length];
-        System.arraycopy(signalLineValues, 0, result, fastPeriod - 1, signalLineValues.length);
+        System.arraycopy(signalLineValues, 0, result, slowPeriod - 1, signalLineValues.length);
         return result;
     }
 

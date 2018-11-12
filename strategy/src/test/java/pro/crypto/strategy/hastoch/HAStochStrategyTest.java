@@ -27,7 +27,7 @@ public class HAStochStrategyTest extends StrategyBaseTest {
                 .stochSlowPeriod(3)
                 .stochOversoldLevel(30.0)
                 .stochOverboughtLevel(70.0)
-                .positions(newHashSet(Position.values()))
+                .positions(newHashSet(Position.ENTRY_LONG, Position.ENTRY_SHORT))
                 .build();
     }
 

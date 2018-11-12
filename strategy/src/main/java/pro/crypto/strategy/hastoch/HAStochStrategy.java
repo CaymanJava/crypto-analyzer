@@ -88,8 +88,8 @@ public class HAStochStrategy implements Strategy<HAStochResult> {
         return StochRequest.builder()
                 .originalData(originalData)
                 .movingAverageType(stochMovingAverageType)
-                .slowPeriod(stochSlowPeriod)
-                .fastPeriod(stochFastPeriod)
+                .slowStochPeriod(stochSlowPeriod)
+                .fastStochPeriod(stochFastPeriod)
                 .build();
     }
 
@@ -127,7 +127,8 @@ public class HAStochStrategy implements Strategy<HAStochResult> {
     }
 
     private boolean isPossibleDefineEntry(int currentIndex) {
-        return currentIndex > 0
+        return currentIndex > 1
+                && nonNull(stochAnalyzerResults[currentIndex - 2].getSecurityLevel())
                 && nonNull(stochAnalyzerResults[currentIndex - 1].getSecurityLevel())
                 && nonNull(stochAnalyzerResults[currentIndex].getSecurityLevel());
     }
@@ -143,15 +144,21 @@ public class HAStochStrategy implements Strategy<HAStochResult> {
     }
 
     private boolean isLongEntry(int currentIndex) {
-        return isRedCandle(currentIndex - 1) && isGreenCandle(currentIndex)
-                && stochAnalyzerResults[currentIndex - 1].getSecurityLevel() == OVERSOLD
-                && stochAnalyzerResults[currentIndex].getSecurityLevel() != OVERSOLD;
+        return isRedCandle(currentIndex - 2) && isGreenCandle(currentIndex - 1) && isGreenCandle(currentIndex)
+                && ((stochAnalyzerResults[currentIndex - 2].getSecurityLevel() == OVERSOLD
+                && stochAnalyzerResults[currentIndex - 1].getSecurityLevel() != OVERSOLD
+                && stochAnalyzerResults[currentIndex].getSecurityLevel() != OVERSOLD)
+                || (stochAnalyzerResults[currentIndex - 1].getSecurityLevel() == OVERSOLD
+                && stochAnalyzerResults[currentIndex].getSecurityLevel() != OVERSOLD));
     }
 
     private boolean isShortEntry(int currentIndex) {
-        return isGreenCandle(currentIndex - 1) && isRedCandle(currentIndex)
-                && stochAnalyzerResults[currentIndex - 1].getSecurityLevel() == OVERBOUGHT
-                && stochAnalyzerResults[currentIndex].getSecurityLevel() != OVERBOUGHT;
+        return isGreenCandle(currentIndex - 2) && isRedCandle(currentIndex - 1) && isRedCandle(currentIndex)
+                && ((stochAnalyzerResults[currentIndex - 2].getSecurityLevel() == OVERBOUGHT
+                && stochAnalyzerResults[currentIndex - 1].getSecurityLevel() != OVERBOUGHT
+                && stochAnalyzerResults[currentIndex].getSecurityLevel() != OVERBOUGHT)
+                || (stochAnalyzerResults[currentIndex - 1].getSecurityLevel() == OVERBOUGHT
+                && stochAnalyzerResults[currentIndex].getSecurityLevel() != OVERBOUGHT));
     }
 
     private boolean isRedCandle(int index) {

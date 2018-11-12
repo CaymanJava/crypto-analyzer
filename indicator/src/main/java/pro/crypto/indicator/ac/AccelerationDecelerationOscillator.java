@@ -65,9 +65,9 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkOriginalDataSize(originalData, slowPeriod);
         checkOriginalDataSize(originalData, fastPeriod);
-        checkOriginalDataSize(originalData, fastPeriod + smoothedPeriod);
+        checkOriginalDataSize(originalData, slowPeriod);
+        checkOriginalDataSize(originalData, slowPeriod + smoothedPeriod);
         checkPeriod(slowPeriod);
         checkPeriod(fastPeriod);
         checkPeriod(smoothedPeriod);
@@ -97,7 +97,7 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
     private BigDecimal[] calculateMovingAverage(BigDecimal[] awesomeOscillatorValues) {
         BigDecimal[] maValues = IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverageValues(awesomeOscillatorValues));
         BigDecimal[] result = new BigDecimal[awesomeOscillatorValues.length];
-        System.arraycopy(maValues, 0, result, fastPeriod - 1, maValues.length);
+        System.arraycopy(maValues, 0, result, slowPeriod - 1, maValues.length);
         return result;
     }
 

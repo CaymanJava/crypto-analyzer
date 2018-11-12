@@ -24,8 +24,8 @@ public class PreferableStochasticOscillator implements Indicator<StochResult> {
 
     private final Tick[] originalData;
     private final IndicatorType movingAverageType;
-    private final int fastPeriod;
-    private final int slowPeriod;
+    private final int fastStochPeriod;
+    private final int slowStochPeriod;
 
     private StochResult[] result;
 
@@ -33,8 +33,8 @@ public class PreferableStochasticOscillator implements Indicator<StochResult> {
         StochRequest request = (StochRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.movingAverageType = isNull(request.getMovingAverageType()) ? MODIFIED_MOVING_AVERAGE : request.getMovingAverageType();
-        this.fastPeriod = request.getFastPeriod();
-        this.slowPeriod = request.getSlowPeriod();
+        this.fastStochPeriod = request.getFastStochPeriod();
+        this.slowStochPeriod = request.getSlowStochPeriod();
         checkIncomingData();
     }
 
@@ -62,9 +62,9 @@ public class PreferableStochasticOscillator implements Indicator<StochResult> {
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkPeriod(fastPeriod);
-        checkPeriod(slowPeriod);
-        checkOriginalDataSize(originalData, fastPeriod + slowPeriod + slowPeriod);
+        checkPeriod(fastStochPeriod);
+        checkPeriod(slowStochPeriod);
+        checkOriginalDataSize(originalData, fastStochPeriod + slowStochPeriod + slowStochPeriod);
         checkMovingAverageType(movingAverageType);
     }
 
@@ -82,15 +82,15 @@ public class PreferableStochasticOscillator implements Indicator<StochResult> {
         return StochRequest.builder()
                 .originalData(originalData)
                 .movingAverageType(movingAverageType)
-                .fastPeriod(fastPeriod)
-                .slowPeriod(slowPeriod)
+                .fastStochPeriod(fastStochPeriod)
+                .slowStochPeriod(slowStochPeriod)
                 .build();
     }
 
     private BigDecimal[] calculateSlowStochasticOscillator(BigDecimal[] fastStochastic) {
         BigDecimal[] slowStochastic = IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverageResult(fastStochastic));
         return IntStream.range(0, fastStochastic.length)
-                .mapToObj(idx -> nonNull(fastStochastic[idx]) ? slowStochastic[idx - fastPeriod - 1] : null)
+                .mapToObj(idx -> nonNull(fastStochastic[idx]) ? slowStochastic[idx - fastStochPeriod - 1] : null)
                 .toArray(BigDecimal[]::new);
     }
 
@@ -101,7 +101,7 @@ public class PreferableStochasticOscillator implements Indicator<StochResult> {
     private IndicatorRequest buildModifiedMovingAverageRequest(BigDecimal[] fastStochastic) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(fastStochastic))
-                .period(slowPeriod)
+                .period(slowStochPeriod)
                 .priceType(CLOSE)
                 .indicatorType(MODIFIED_MOVING_AVERAGE)
                 .build();

@@ -22,8 +22,8 @@ public class BillWilliamsStrategyTest extends StrategyBaseTest {
     private StrategyRequest buildBWSRequest() {
         return BWSRequest.builder()
                 .originalData(originalData)
-                .acSlowPeriod(5)
-                .acFastPeriod(34)
+                .acFastPeriod(5)
+                .acSlowPeriod(34)
                 .acSmoothedPeriod(5)
                 .alligatorJawPeriod(13)
                 .alligatorJawOffset(8)
@@ -32,8 +32,8 @@ public class BillWilliamsStrategyTest extends StrategyBaseTest {
                 .alligatorLipsPeriod(5)
                 .alligatorLipsOffset(3)
                 .alligatorTimeFrame(FIVE_MIN)
-                .aoSlowPeriod(5)
-                .aoFastPeriod(34)
+                .aoFastPeriod(5)
+                .aoSlowPeriod(34)
                 .positions(newHashSet(Position.values()))
                 .build();
     }

@@ -27,8 +27,8 @@ public class PercentagePriceOscillatorTest extends IndicatorAbstractTest {
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {PERCENTAGE_PRICE_OSCILLATOR}, size: {0}}");
         new PercentagePriceOscillator(PPORequest.builder()
                 .originalData(new Tick[0])
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
                 .priceType(CLOSE)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
@@ -41,8 +41,8 @@ public class PercentagePriceOscillatorTest extends IndicatorAbstractTest {
         expectedException.expectMessage("Incoming tick data is null {indicator: {PERCENTAGE_PRICE_OSCILLATOR}}");
         new PercentagePriceOscillator(PPORequest.builder()
                 .originalData(null)
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
                 .priceType(CLOSE)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
@@ -55,23 +55,9 @@ public class PercentagePriceOscillatorTest extends IndicatorAbstractTest {
         expectedException.expectMessage("Incoming price type is null {indicator: {PERCENTAGE_PRICE_OSCILLATOR}}");
         new PercentagePriceOscillator(PPORequest.builder()
                 .originalData(new Tick[100])
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
-                .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
-                .build()).getResult();
-    }
-
-    @Test
-    public void slowPeriodLessThanZeroTest() {
-        expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Period should be more than 0 {indicator: {PERCENTAGE_PRICE_OSCILLATOR}, period: {-12}}");
-        new PercentagePriceOscillator(PPORequest.builder()
-                .originalData(new Tick[100])
-                .slowPeriod(-12)
-                .fastPeriod(26)
-                .signalPeriod(9)
-                .priceType(CLOSE)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
                 .build()).getResult();
     }
@@ -79,11 +65,25 @@ public class PercentagePriceOscillatorTest extends IndicatorAbstractTest {
     @Test
     public void fastPeriodLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Period should be more than 0 {indicator: {PERCENTAGE_PRICE_OSCILLATOR}, period: {-12}}");
+        new PercentagePriceOscillator(PPORequest.builder()
+                .originalData(new Tick[100])
+                .fastPeriod(-12)
+                .slowPeriod(26)
+                .signalPeriod(9)
+                .priceType(CLOSE)
+                .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
+                .build()).getResult();
+    }
+
+    @Test
+    public void slowPeriodLessThanZeroTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {PERCENTAGE_PRICE_OSCILLATOR}, period: {-26}}");
         new PercentagePriceOscillator(PPORequest.builder()
                 .originalData(new Tick[100])
-                .slowPeriod(12)
-                .fastPeriod(-26)
+                .fastPeriod(12)
+                .slowPeriod(-26)
                 .signalPeriod(9)
                 .priceType(CLOSE)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
@@ -96,8 +96,8 @@ public class PercentagePriceOscillatorTest extends IndicatorAbstractTest {
         expectedException.expectMessage("Period should be more than 0 {indicator: {PERCENTAGE_PRICE_OSCILLATOR}, period: {-9}}");
         new PercentagePriceOscillator(PPORequest.builder()
                 .originalData(new Tick[100])
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(-9)
                 .priceType(CLOSE)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
@@ -110,8 +110,8 @@ public class PercentagePriceOscillatorTest extends IndicatorAbstractTest {
         expectedException.expectMessage("Incoming original indicator type is not a moving average {indicator: {PERCENTAGE_PRICE_OSCILLATOR}}, movingAverageType: {AVERAGE_TRUE_RANGE}");
         new PercentagePriceOscillator(PPORequest.builder()
                 .originalData(new Tick[100])
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
                 .priceType(CLOSE)
                 .movingAverageType(AVERAGE_TRUE_RANGE)
@@ -124,8 +124,8 @@ public class PercentagePriceOscillatorTest extends IndicatorAbstractTest {
         expectedException.expectMessage("Period should be less than tick data size {indicator: {PERCENTAGE_PRICE_OSCILLATOR}, period: {35}, size: {34}}");
         new PercentagePriceOscillator(PPORequest.builder()
                 .originalData(new Tick[34])
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
                 .priceType(CLOSE)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
@@ -136,8 +136,8 @@ public class PercentagePriceOscillatorTest extends IndicatorAbstractTest {
     protected IndicatorRequest buildRequest() {
         return PPORequest.builder()
                 .originalData(originalData)
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
                 .priceType(CLOSE)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)

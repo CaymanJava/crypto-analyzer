@@ -89,8 +89,8 @@ public class SchaffTrendCycle implements Indicator<STCResult> {
         return MACDRequest.builder()
                 .originalData(originalData)
                 .priceType(priceType)
-                .fastPeriod(longCycle)
-                .slowPeriod(shortCycle)
+                .slowPeriod(longCycle)
+                .fastPeriod(shortCycle)
                 .movingAverageType(movingAverageType)
                 .signalPeriod(shortCycle)
                 .build();

@@ -69,7 +69,7 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkOriginalDataSize(originalData, fastPeriod + signalPeriod);
+        checkOriginalDataSize(originalData, slowPeriod + signalPeriod);
         checkPriceType(priceType);
         checkPeriods();
         checkMovingAverageType(movingAverageType);
@@ -82,14 +82,14 @@ public class MovingAverageConvergenceDivergence implements Indicator<MACDResult>
     }
 
     private BigDecimal[] calculateMACD() {
-        MAResult[] slowMovingAverageResult = MovingAverageFactory.create(buildMARequest(slowPeriod)).getResult();
         MAResult[] fastMovingAverageResult = MovingAverageFactory.create(buildMARequest(fastPeriod)).getResult();
-        return calculateMACD(slowMovingAverageResult, fastMovingAverageResult);
+        MAResult[] slowMovingAverageResult = MovingAverageFactory.create(buildMARequest(slowPeriod)).getResult();
+        return calculateMACD(fastMovingAverageResult, slowMovingAverageResult);
     }
 
-    private BigDecimal[] calculateMACD(MAResult[] slowMovingAverageResult, MAResult[] fastMovingAverageResult) {
+    private BigDecimal[] calculateMACD(MAResult[] fastMovingAverageResult, MAResult[] slowMovingAverageResult) {
         return IntStream.range(0, slowMovingAverageResult.length)
-                .mapToObj(idx -> calculateDifference(slowMovingAverageResult[idx].getIndicatorValue(), fastMovingAverageResult[idx].getIndicatorValue()))
+                .mapToObj(idx -> calculateDifference(fastMovingAverageResult[idx].getIndicatorValue(), slowMovingAverageResult[idx].getIndicatorValue()))
                 .toArray(BigDecimal[]::new);
     }
 

@@ -21,9 +21,9 @@ public class MACDRequest implements IndicatorRequest {
 
     private PriceType priceType;
 
-    private int slowPeriod;
-
     private int fastPeriod;
+
+    private int slowPeriod;
 
     private int signalPeriod;
 

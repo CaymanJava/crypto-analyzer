@@ -18,8 +18,8 @@ public class StochRequest implements IndicatorRequest {
 
     private IndicatorType movingAverageType;
 
-    private int fastPeriod;
+    private int fastStochPeriod;
 
-    private int slowPeriod;
+    private int slowStochPeriod;
 
 }

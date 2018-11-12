@@ -110,8 +110,8 @@ public class ADXStochMAStrategy implements Strategy<ADXStochMAResult> {
         return StochRequest.builder()
                 .originalData(originalData)
                 .movingAverageType(stochMovingAverageType)
-                .slowPeriod(stochSlowPeriod)
-                .fastPeriod(stochFastPeriod)
+                .slowStochPeriod(stochSlowPeriod)
+                .fastStochPeriod(stochFastPeriod)
                 .build();
     }
 

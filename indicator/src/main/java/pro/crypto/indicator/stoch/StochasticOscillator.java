@@ -23,8 +23,8 @@ public class StochasticOscillator implements Indicator<StochResult> {
 
     private final Tick[] originalData;
     private final IndicatorType movingAverageType;
-    private final int fastPeriod;
-    private final int slowPeriod;
+    private final int fastStochPeriod;
+    private final int slowStochPeriod;
 
     private StochResult[] result;
 
@@ -32,8 +32,8 @@ public class StochasticOscillator implements Indicator<StochResult> {
         StochRequest request = (StochRequest) creationRequest;
         this.originalData = request.getOriginalData();
         this.movingAverageType = extractMovingAverageType(request);
-        this.fastPeriod = request.getFastPeriod();
-        this.slowPeriod = request.getSlowPeriod();
+        this.fastStochPeriod = request.getFastStochPeriod();
+        this.slowStochPeriod = request.getSlowStochPeriod();
         checkIncomingData();
     }
 
@@ -65,15 +65,15 @@ public class StochasticOscillator implements Indicator<StochResult> {
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkOriginalDataSize(originalData, fastPeriod + slowPeriod);
-        checkPeriod(fastPeriod);
-        checkPeriod(slowPeriod);
+        checkOriginalDataSize(originalData, fastStochPeriod + slowStochPeriod);
+        checkPeriod(fastStochPeriod);
+        checkPeriod(slowStochPeriod);
         checkMovingAverageType(movingAverageType);
     }
 
     private BigDecimal[] calculateFastStochasticOscillator() {
-        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceVolumeExtractor.extractPrices(originalData, LOW), fastPeriod);
-        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceVolumeExtractor.extractPrices(originalData, HIGH), fastPeriod);
+        BigDecimal[] minValues = MinMaxFinder.findMinValues(PriceVolumeExtractor.extractPrices(originalData, LOW), fastStochPeriod);
+        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(PriceVolumeExtractor.extractPrices(originalData, HIGH), fastStochPeriod);
         return calculateFastStochasticOscillator(minValues, maxValues);
     }
 
@@ -101,7 +101,7 @@ public class StochasticOscillator implements Indicator<StochResult> {
     private BigDecimal[] calculateSlowStochasticOscillator(BigDecimal[] fastStochastic) {
         BigDecimal[] slowStochastic = IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverageResult(fastStochastic));
         return IntStream.range(0, result.length)
-                .mapToObj(idx -> nonNull(fastStochastic[idx]) ? slowStochastic[idx - fastPeriod + 1] : null)
+                .mapToObj(idx -> nonNull(fastStochastic[idx]) ? slowStochastic[idx - fastStochPeriod + 1] : null)
                 .toArray(BigDecimal[]::new);
     }
 
@@ -112,7 +112,7 @@ public class StochasticOscillator implements Indicator<StochResult> {
     private IndicatorRequest buildMovingAverageRequest(BigDecimal[] fastStochastic) {
         return MARequest.builder()
                 .originalData(FakeTicksCreator.createWithCloseOnly(fastStochastic))
-                .period(slowPeriod)
+                .period(slowStochPeriod)
                 .priceType(CLOSE)
                 .indicatorType(movingAverageType)
                 .build();

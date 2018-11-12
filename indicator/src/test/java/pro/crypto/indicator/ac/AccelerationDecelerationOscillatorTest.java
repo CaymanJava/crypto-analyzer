@@ -24,8 +24,8 @@ public class AccelerationDecelerationOscillatorTest extends IndicatorAbstractTes
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, size: {0}}");
         new AccelerationDecelerationOscillator(ACRequest.builder()
                 .originalData(new Tick[0])
-                .slowPeriod(5)
-                .fastPeriod(34)
+                .fastPeriod(5)
+                .slowPeriod(34)
                 .smoothedPeriod(5)
                 .build()).getResult();
     }
@@ -36,20 +36,8 @@ public class AccelerationDecelerationOscillatorTest extends IndicatorAbstractTes
         expectedException.expectMessage("Incoming tick data is null {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}}");
         new AccelerationDecelerationOscillator(ACRequest.builder()
                 .originalData(null)
-                .slowPeriod(5)
-                .fastPeriod(34)
-                .smoothedPeriod(5)
-                .build()).getResult();
-    }
-
-    @Test
-    public void originalDataSizeLessThanSlowPeriodTest() {
-        expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Period should be less than tick data size {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, period: {5}, size: {4}}");
-        new AccelerationDecelerationOscillator(ACRequest.builder()
-                .originalData(new Tick[4])
-                .slowPeriod(5)
-                .fastPeriod(34)
+                .fastPeriod(5)
+                .slowPeriod(34)
                 .smoothedPeriod(5)
                 .build()).getResult();
     }
@@ -57,11 +45,23 @@ public class AccelerationDecelerationOscillatorTest extends IndicatorAbstractTes
     @Test
     public void originalDataSizeLessThanFastPeriodTest() {
         expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Period should be less than tick data size {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, period: {5}, size: {4}}");
+        new AccelerationDecelerationOscillator(ACRequest.builder()
+                .originalData(new Tick[4])
+                .fastPeriod(5)
+                .slowPeriod(34)
+                .smoothedPeriod(5)
+                .build()).getResult();
+    }
+
+    @Test
+    public void originalDataSizeLessThanSlowPeriodTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be less than tick data size {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, period: {34}, size: {33}}");
         new AccelerationDecelerationOscillator(ACRequest.builder()
                 .originalData(new Tick[33])
-                .slowPeriod(5)
-                .fastPeriod(34)
+                .fastPeriod(5)
+                .slowPeriod(34)
                 .smoothedPeriod(5)
                 .build()).getResult();
     }
@@ -72,20 +72,8 @@ public class AccelerationDecelerationOscillatorTest extends IndicatorAbstractTes
         expectedException.expectMessage("Period should be less than tick data size {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, period: {39}, size: {38}}");
         new AccelerationDecelerationOscillator(ACRequest.builder()
                 .originalData(new Tick[38])
-                .slowPeriod(5)
-                .fastPeriod(34)
-                .smoothedPeriod(5)
-                .build()).getResult();
-    }
-
-    @Test
-    public void slowPeriodLessThanZeroTest() {
-        expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Period should be more than 0 {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, period: {-5}}");
-        new AccelerationDecelerationOscillator(ACRequest.builder()
-                .originalData(new Tick[100])
-                .slowPeriod(-5)
-                .fastPeriod(34)
+                .fastPeriod(5)
+                .slowPeriod(34)
                 .smoothedPeriod(5)
                 .build()).getResult();
     }
@@ -93,11 +81,23 @@ public class AccelerationDecelerationOscillatorTest extends IndicatorAbstractTes
     @Test
     public void fastPeriodLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
+        expectedException.expectMessage("Period should be more than 0 {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, period: {-5}}");
+        new AccelerationDecelerationOscillator(ACRequest.builder()
+                .originalData(new Tick[100])
+                .slowPeriod(34)
+                .fastPeriod(-5)
+                .smoothedPeriod(5)
+                .build()).getResult();
+    }
+
+    @Test
+    public void slowPeriodLessThanZeroTest() {
+        expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Period should be more than 0 {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, period: {-34}}");
         new AccelerationDecelerationOscillator(ACRequest.builder()
                 .originalData(new Tick[100])
-                .slowPeriod(5)
-                .fastPeriod(-34)
+                .slowPeriod(-34)
+                .fastPeriod(5)
                 .smoothedPeriod(5)
                 .build()).getResult();
     }
@@ -108,8 +108,8 @@ public class AccelerationDecelerationOscillatorTest extends IndicatorAbstractTes
         expectedException.expectMessage("Period should be more than 0 {indicator: {ACCELERATION_DECELERATION_OSCILLATOR}, period: {-5}}");
         new AccelerationDecelerationOscillator(ACRequest.builder()
                 .originalData(new Tick[100])
-                .slowPeriod(5)
-                .fastPeriod(34)
+                .slowPeriod(34)
+                .fastPeriod(5)
                 .smoothedPeriod(-5)
                 .build()).getResult();
     }
@@ -118,8 +118,8 @@ public class AccelerationDecelerationOscillatorTest extends IndicatorAbstractTes
     protected IndicatorRequest buildRequest() {
         return ACRequest.builder()
                 .originalData(originalData)
-                .slowPeriod(5)
-                .fastPeriod(34)
+                .slowPeriod(34)
+                .fastPeriod(5)
                 .smoothedPeriod(5)
                 .build();
     }

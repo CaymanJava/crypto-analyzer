@@ -25,8 +25,8 @@ public class PreferableStochasticOscillatorTest extends IndicatorAbstractTest {
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {PREFERABLE_STOCHASTIC_OSCILLATOR}, size: {0}}");
         new PreferableStochasticOscillator(StochRequest.builder()
                 .originalData(new Tick[0])
-                .fastPeriod(14)
-                .slowPeriod(3)
+                .fastStochPeriod(14)
+                .slowStochPeriod(3)
                 .movingAverageType(MODIFIED_MOVING_AVERAGE)
                 .build()).getResult();
     }
@@ -37,8 +37,8 @@ public class PreferableStochasticOscillatorTest extends IndicatorAbstractTest {
         expectedException.expectMessage("Incoming tick data is null {indicator: {PREFERABLE_STOCHASTIC_OSCILLATOR}}");
         new PreferableStochasticOscillator(StochRequest.builder()
                 .originalData(null)
-                .fastPeriod(14)
-                .slowPeriod(3)
+                .fastStochPeriod(14)
+                .slowStochPeriod(3)
                 .movingAverageType(MODIFIED_MOVING_AVERAGE)
                 .build()).getResult();
     }
@@ -49,8 +49,8 @@ public class PreferableStochasticOscillatorTest extends IndicatorAbstractTest {
         expectedException.expectMessage("Period should be less than tick data size {indicator: {PREFERABLE_STOCHASTIC_OSCILLATOR}, period: {26}, size: {21}}");
         new PreferableStochasticOscillator(StochRequest.builder()
                 .originalData(new Tick[21])
-                .fastPeriod(14)
-                .slowPeriod(6)
+                .fastStochPeriod(14)
+                .slowStochPeriod(6)
                 .movingAverageType(MODIFIED_MOVING_AVERAGE)
                 .build()).getResult();
     }
@@ -61,8 +61,8 @@ public class PreferableStochasticOscillatorTest extends IndicatorAbstractTest {
         expectedException.expectMessage("Period should be more than 0 {indicator: {PREFERABLE_STOCHASTIC_OSCILLATOR}, period: {-14}}");
         new PreferableStochasticOscillator(StochRequest.builder()
                 .originalData(new Tick[100])
-                .fastPeriod(-14)
-                .slowPeriod(6)
+                .fastStochPeriod(-14)
+                .slowStochPeriod(6)
                 .movingAverageType(MODIFIED_MOVING_AVERAGE)
                 .build()).getResult();
     }
@@ -73,8 +73,8 @@ public class PreferableStochasticOscillatorTest extends IndicatorAbstractTest {
         expectedException.expectMessage("Period should be more than 0 {indicator: {PREFERABLE_STOCHASTIC_OSCILLATOR}, period: {-3}}");
         new PreferableStochasticOscillator(StochRequest.builder()
                 .originalData(new Tick[100])
-                .fastPeriod(14)
-                .slowPeriod(-3)
+                .fastStochPeriod(14)
+                .slowStochPeriod(-3)
                 .movingAverageType(MODIFIED_MOVING_AVERAGE)
                 .build()).getResult();
     }
@@ -86,8 +86,8 @@ public class PreferableStochasticOscillatorTest extends IndicatorAbstractTest {
                 " movingAverageType: {AVERAGE_TRUE_RANGE}");
         new PreferableStochasticOscillator(StochRequest.builder()
                 .originalData(new Tick[100])
-                .fastPeriod(14)
-                .slowPeriod(3)
+                .fastStochPeriod(14)
+                .slowStochPeriod(3)
                 .movingAverageType(AVERAGE_TRUE_RANGE)
                 .build()).getResult();
     }
@@ -96,8 +96,8 @@ public class PreferableStochasticOscillatorTest extends IndicatorAbstractTest {
     protected IndicatorRequest buildRequest() {
         return StochRequest.builder()
                 .originalData(originalData)
-                .fastPeriod(14)
-                .slowPeriod(3)
+                .fastStochPeriod(14)
+                .slowStochPeriod(3)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
                 .build();
     }

@@ -43,9 +43,9 @@ public class AwesomeOscillator implements Indicator<AOResult> {
     public void calculate() {
         result = new AOResult[originalData.length];
         BigDecimal[] medianPrices = MedianPriceCalculator.calculate(originalData);
-        BigDecimal[] slowMovingAverage = calculateSlowMovingAverage(medianPrices);
         BigDecimal[] fastMovingAverage = calculateFastMovingAverage(medianPrices);
-        BigDecimal[] awesomeOscillatorValues = calculateAwesomeOscillator(slowMovingAverage, fastMovingAverage);
+        BigDecimal[] slowMovingAverage = calculateSlowMovingAverage(medianPrices);
+        BigDecimal[] awesomeOscillatorValues = calculateAwesomeOscillator(fastMovingAverage, slowMovingAverage);
         Boolean[] increasedFlags = IncreasedQualifier.define(awesomeOscillatorValues);
         buildAwesomeOscillatorResult(awesomeOscillatorValues, increasedFlags);
     }
@@ -60,18 +60,18 @@ public class AwesomeOscillator implements Indicator<AOResult> {
 
     private void checkIncomingData() {
         checkOriginalData(originalData);
-        checkOriginalDataSize(originalData, slowPeriod);
         checkOriginalDataSize(originalData, fastPeriod);
-        checkPeriod(slowPeriod);
+        checkOriginalDataSize(originalData, slowPeriod);
         checkPeriod(fastPeriod);
-    }
-
-    private BigDecimal[] calculateSlowMovingAverage(BigDecimal[] medianPrices) {
-        return IndicatorResultExtractor.extractIndicatorValues(calculateSimpleMovingAverage(medianPrices, slowPeriod));
+        checkPeriod(slowPeriod);
     }
 
     private BigDecimal[] calculateFastMovingAverage(BigDecimal[] medianPrices) {
         return IndicatorResultExtractor.extractIndicatorValues(calculateSimpleMovingAverage(medianPrices, fastPeriod));
+    }
+
+    private BigDecimal[] calculateSlowMovingAverage(BigDecimal[] medianPrices) {
+        return IndicatorResultExtractor.extractIndicatorValues(calculateSimpleMovingAverage(medianPrices, slowPeriod));
     }
 
     private SimpleIndicatorResult[] calculateSimpleMovingAverage(BigDecimal[] medianPrices, int period) {
@@ -87,20 +87,20 @@ public class AwesomeOscillator implements Indicator<AOResult> {
                 .build();
     }
 
-    private BigDecimal[] calculateAwesomeOscillator(BigDecimal[] slowMovingAverage, BigDecimal[] fastMovingAverage) {
+    private BigDecimal[] calculateAwesomeOscillator(BigDecimal[] fastMovingAverage, BigDecimal[] slowMovingAverage) {
         return IntStream.range(0, originalData.length)
-                .mapToObj(idx -> calculateAwesomeOscillator(slowMovingAverage[idx], fastMovingAverage[idx]))
+                .mapToObj(idx -> calculateAwesomeOscillator(fastMovingAverage[idx], slowMovingAverage[idx]))
                 .toArray(BigDecimal[]::new);
     }
 
-    private BigDecimal calculateAwesomeOscillator(BigDecimal slowMAValue, BigDecimal fastMAValue) {
-        return nonNull(slowMAValue) && nonNull(fastMAValue)
-                ? calculateAwesomeOscillatorValue(slowMAValue, fastMAValue)
+    private BigDecimal calculateAwesomeOscillator(BigDecimal fastMAValue, BigDecimal slowMAValue) {
+        return nonNull(fastMAValue) && nonNull(slowMAValue)
+                ? calculateAwesomeOscillatorValue(fastMAValue, slowMAValue)
                 : null;
     }
 
-    private BigDecimal calculateAwesomeOscillatorValue(BigDecimal slowMAValue, BigDecimal fastMAValue) {
-        return MathHelper.scaleAndRound(slowMAValue.subtract(fastMAValue));
+    private BigDecimal calculateAwesomeOscillatorValue(BigDecimal fastMAValue, BigDecimal slowMAValue) {
+        return MathHelper.scaleAndRound(fastMAValue.subtract(slowMAValue));
     }
 
     private void buildAwesomeOscillatorResult(BigDecimal[] awesomeOscillatorValues, Boolean[] increasedFlags) {

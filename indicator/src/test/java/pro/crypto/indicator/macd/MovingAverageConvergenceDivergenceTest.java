@@ -26,8 +26,8 @@ public class MovingAverageConvergenceDivergenceTest extends IndicatorAbstractTes
         expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, size: {0}}");
         new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[0])
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
                 .priceType(CLOSE)
@@ -40,8 +40,8 @@ public class MovingAverageConvergenceDivergenceTest extends IndicatorAbstractTes
         expectedException.expectMessage("Incoming tick data is null {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}}");
         new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(null)
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
                 .priceType(CLOSE)
@@ -54,8 +54,8 @@ public class MovingAverageConvergenceDivergenceTest extends IndicatorAbstractTes
         expectedException.expectMessage("Incoming price type is null {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}}");
         new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[100])
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
                 .build()).getResult();
@@ -93,8 +93,8 @@ public class MovingAverageConvergenceDivergenceTest extends IndicatorAbstractTes
         expectedException.expectMessage("Period should be more than 0 {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, period: {0}}");
         new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[100])
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .priceType(CLOSE)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
                 .build()).getResult();
@@ -106,8 +106,8 @@ public class MovingAverageConvergenceDivergenceTest extends IndicatorAbstractTes
         expectedException.expectMessage("Incoming original indicator type is not a moving average {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}}, movingAverageType: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}");
         new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[100])
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
                 .priceType(CLOSE)
                 .movingAverageType(MOVING_AVERAGE_CONVERGENCE_DIVERGENCE)
@@ -120,8 +120,8 @@ public class MovingAverageConvergenceDivergenceTest extends IndicatorAbstractTes
         expectedException.expectMessage("Period should be less than tick data size {indicator: {MOVING_AVERAGE_CONVERGENCE_DIVERGENCE}, period: {35}, size: {10}}");
         new MovingAverageConvergenceDivergence(MACDRequest.builder()
                 .originalData(new Tick[10])
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
                 .priceType(CLOSE)
                 .movingAverageType(SIMPLE_MOVING_AVERAGE)
@@ -132,8 +132,8 @@ public class MovingAverageConvergenceDivergenceTest extends IndicatorAbstractTes
     protected IndicatorRequest buildRequest() {
         return MACDRequest.builder()
                 .originalData(originalData)
-                .slowPeriod(12)
-                .fastPeriod(26)
+                .fastPeriod(12)
+                .slowPeriod(26)
                 .signalPeriod(9)
                 .movingAverageType(EXPONENTIAL_MOVING_AVERAGE)
                 .priceType(CLOSE)

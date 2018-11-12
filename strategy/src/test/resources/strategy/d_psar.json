@@ -253,9 +253,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -399,9 +397,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_SHORT"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -465,9 +461,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -627,150 +621,7 @@
         "nano": 0
       }
     },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 10,
-        "day": 31
-      },
-      "time": {
-        "hour": 2,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 10,
-        "day": 31
-      },
-      "time": {
-        "hour": 3,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 10,
-        "day": 31
-      },
-      "time": {
-        "hour": 4,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 10,
-        "day": 31
-      },
-      "time": {
-        "hour": 5,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 10,
-        "day": 31
-      },
-      "time": {
-        "hour": 6,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 10,
-        "day": 31
-      },
-      "time": {
-        "hour": 7,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 10,
-        "day": 31
-      },
-      "time": {
-        "hour": 8,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 10,
-        "day": 31
-      },
-      "time": {
-        "hour": 9,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 10,
-        "day": 31
-      },
-      "time": {
-        "hour": 10,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
+    "stopLose": 6365.6536014900,
     "positions": [
       "ENTRY_SHORT"
     ]
@@ -783,6 +634,162 @@
         "day": 31
       },
       "time": {
+        "hour": 2,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6366.3999998600,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 10,
+        "day": 31
+      },
+      "time": {
+        "hour": 3,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 10,
+        "day": 31
+      },
+      "time": {
+        "hour": 4,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6366.3999998600,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 10,
+        "day": 31
+      },
+      "time": {
+        "hour": 5,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6368.9999996500,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 10,
+        "day": 31
+      },
+      "time": {
+        "hour": 6,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 10,
+        "day": 31
+      },
+      "time": {
+        "hour": 7,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 10,
+        "day": 31
+      },
+      "time": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 10,
+        "day": 31
+      },
+      "time": {
+        "hour": 9,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 10,
+        "day": 31
+      },
+      "time": {
+        "hour": 10,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6332.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 10,
+        "day": 31
+      },
+      "time": {
         "hour": 11,
         "minute": 0,
         "second": 0,
@@ -853,7 +860,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6349.8200000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -869,7 +879,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6349.8200000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -885,7 +898,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6339.5031735400,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -901,7 +917,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6397.4556962400,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -949,7 +968,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6365.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -965,7 +987,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6360.0000000100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -981,7 +1006,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6360.0000000100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -997,7 +1025,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6360.0000000100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1013,7 +1044,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6361.3323514100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1029,7 +1063,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6355.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1061,7 +1098,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6355.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1109,6 +1149,7 @@
         "nano": 0
       }
     },
+    "stopLose": 6355.0000000000,
     "positions": [
       "ENTRY_LONG"
     ]
@@ -1127,7 +1168,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6355.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1143,7 +1187,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6355.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1159,7 +1206,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6355.0000000200,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1175,7 +1225,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6360.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1191,7 +1244,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6370.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1207,7 +1263,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6370.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1319,9 +1378,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_LONG"
-    ]
+    "positions": []
   },
   {
     "time": {
@@ -1385,7 +1442,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6391.8634684200,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1401,7 +1461,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6395.9000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1417,7 +1480,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6395.9000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1433,7 +1499,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6400.0000000600,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1449,7 +1518,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6408.5000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1465,7 +1537,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6428.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1481,7 +1556,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6412.9520107100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1497,7 +1575,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6405.9913770100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1513,7 +1594,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6405.9913770100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1529,7 +1613,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6405.9913770100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1545,7 +1632,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6413.1453107100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -1705,6 +1795,263 @@
         "nano": 0
       }
     },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 2
+      },
+      "time": {
+        "hour": 21,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 2
+      },
+      "time": {
+        "hour": 22,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 2
+      },
+      "time": {
+        "hour": 23,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 1,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 2,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 3,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 4,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 5,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 6,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 7,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 9,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 10,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 11,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 12,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6427.9999999800,
     "positions": [
       "ENTRY_SHORT"
     ]
@@ -1714,113 +2061,16 @@
       "date": {
         "year": 2018,
         "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 21,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 22,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 2
-      },
-      "time": {
-        "hour": 23,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "ENTRY_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
         "day": 3
       },
       "time": {
-        "hour": 0,
+        "hour": 13,
         "minute": 0,
         "second": 0,
         "nano": 0
       }
     },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 1,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 2,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 3,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
+    "stopLose": 6421.5700000000,
     "positions": [
       "ENTRY_SHORT"
     ]
@@ -1833,384 +2083,13 @@
         "day": 3
       },
       "time": {
-        "hour": 4,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 5,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 6,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 7,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 8,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "ENTRY_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 9,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 10,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 11,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 12,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 13,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
         "hour": 14,
         "minute": 0,
         "second": 0,
         "nano": 0
       }
     },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 15,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 16,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 17,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": [
-      "ENTRY_LONG"
-    ]
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 18,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 19,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 20,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 21,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 22,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 3
-      },
-      "time": {
-        "hour": 23,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 4
-      },
-      "time": {
-        "hour": 0,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 4
-      },
-      "time": {
-        "hour": 1,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 4
-      },
-      "time": {
-        "hour": 2,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 4
-      },
-      "time": {
-        "hour": 3,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
+    "stopLose": 6384.1946364400,
     "positions": [
       "ENTRY_SHORT"
     ]
@@ -2220,6 +2099,238 @@
       "date": {
         "year": 2018,
         "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 15,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6375.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 16,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6375.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6382.1179425500,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 18,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6388.1016599200,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 19,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6388.1016599200,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 20,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6388.1016599200,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 21,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6383.6100000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 22,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6383.6100000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 3
+      },
+      "time": {
+        "hour": 23,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 1,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 2,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 4
+      },
+      "time": {
+        "hour": 3,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
         "day": 4
       },
       "time": {
@@ -2325,7 +2436,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6375.1930424000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2341,7 +2455,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6395.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2357,7 +2474,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6395.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2373,7 +2493,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6385.1234560100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2389,7 +2512,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6385.1234560100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2405,7 +2531,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6385.1234560100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2437,7 +2566,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6390.0000000500,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2453,7 +2585,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6394.6022485200,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2469,7 +2604,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6400.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2485,7 +2623,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6455.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2501,7 +2642,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6470.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2517,7 +2661,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6470.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2533,7 +2680,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6457.1802342900,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2549,7 +2699,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6457.1802342900,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2565,7 +2718,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6457.1802342900,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2581,7 +2737,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6464.8914777900,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2597,7 +2756,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6464.8914778000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2613,7 +2775,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6451.0000000100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -2693,6 +2858,199 @@
         "nano": 0
       }
     },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 10,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 11,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 12,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 13,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 14,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 15,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 16,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 18,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 19,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 20,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 5
+      },
+      "time": {
+        "hour": 21,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6484.9889997000,
     "positions": [
       "ENTRY_SHORT"
     ]
@@ -2705,198 +3063,6 @@
         "day": 5
       },
       "time": {
-        "hour": 10,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 11,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 12,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 13,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 14,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 15,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 16,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 17,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 18,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 19,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 20,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
-        "hour": 21,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 5
-      },
-      "time": {
         "hour": 22,
         "minute": 0,
         "second": 0,
@@ -2919,7 +3085,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6480.7399997200,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -3095,7 +3264,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6460.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3111,7 +3283,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6461.5006807900,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3127,7 +3302,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6473.0867000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3143,7 +3321,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6473.0000000100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3175,7 +3356,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6470.0000000400,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3191,7 +3375,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6470.0000000400,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3207,7 +3394,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6470.0000000400,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3223,7 +3413,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6477.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3255,7 +3448,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6483.1725710500,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3271,7 +3467,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6491.8000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3287,7 +3486,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6475.3711000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3383,7 +3585,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6512.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3399,7 +3604,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6563.5415914700,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3415,7 +3623,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6563.5415914700,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3431,7 +3642,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6563.5415914700,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3447,8 +3661,9 @@
         "nano": 0
       }
     },
+    "stopLose": 6557.0000000000,
     "positions": [
-      "ENTRY_SHORT"
+      "ENTRY_LONG"
     ]
   },
   {
@@ -3465,7 +3680,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6557.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3481,7 +3699,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6557.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3497,7 +3718,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6574.9999999900,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3513,7 +3737,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6575.1000000100,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3529,7 +3756,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6573.1331955300,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3545,7 +3775,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6568.9999999900,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -3769,6 +4002,23 @@
         "nano": 0
       }
     },
+    "positions": []
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 11,
+        "day": 8
+      },
+      "time": {
+        "hour": 5,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "stopLose": 6578.8483143400,
     "positions": [
       "ENTRY_SHORT"
     ]
@@ -3781,29 +4031,16 @@
         "day": 8
       },
       "time": {
-        "hour": 5,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "positions": []
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 11,
-        "day": 8
-      },
-      "time": {
         "hour": 6,
         "minute": 0,
         "second": 0,
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6575.0445579400,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -3819,7 +4056,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6546.9717017000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -3835,7 +4075,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6546.9717017000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -3851,7 +4094,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6543.5871215900,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -3867,8 +4113,9 @@
         "nano": 0
       }
     },
+    "stopLose": 6540.0000000000,
     "positions": [
-      "ENTRY_LONG"
+      "ENTRY_SHORT"
     ]
   },
   {
@@ -3885,7 +4132,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6540.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -3901,7 +4151,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6546.6666666700,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -3949,7 +4202,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6560.4200000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4061,7 +4317,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6519.9999999900,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4077,7 +4336,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6515.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4093,7 +4355,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6515.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4109,7 +4374,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6515.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4125,7 +4393,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6515.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4141,7 +4412,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6506.2972209900,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4157,7 +4431,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6501.6121474800,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4173,7 +4450,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6492.7630118600,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4189,8 +4469,9 @@
         "nano": 0
       }
     },
+    "stopLose": 6498.6740290000,
     "positions": [
-      "ENTRY_LONG"
+      "ENTRY_SHORT"
     ]
   },
   {
@@ -4207,7 +4488,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6507.0554440000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4319,7 +4603,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6459.4258390500,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4335,7 +4622,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6459.4258390500,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4351,7 +4641,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6450.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4367,7 +4660,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6449.9999999900,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4383,8 +4679,9 @@
         "nano": 0
       }
     },
+    "stopLose": 6450.0000000000,
     "positions": [
-      "ENTRY_LONG"
+      "ENTRY_SHORT"
     ]
   },
   {
@@ -4401,7 +4698,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6450.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4417,7 +4717,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6450.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4433,7 +4736,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6450.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4449,7 +4755,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6450.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4465,7 +4774,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6450.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4481,7 +4793,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6450.0000000000,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4497,7 +4812,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6443.1160652900,
+    "positions": [
+      "ENTRY_SHORT"
+    ]
   },
   {
     "time": {
@@ -4625,7 +4943,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6434.9646678800,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -4641,7 +4962,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6434.9646678800,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -4657,7 +4981,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6434.9646678800,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -4673,7 +5000,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6431.3615000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -4721,7 +5051,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6440.8530915800,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -4737,7 +5070,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6448.7739168700,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -4753,7 +5089,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6448.5697952000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -4769,7 +5108,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6448.5697952000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -4785,7 +5127,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6448.5697952000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {
@@ -4801,7 +5146,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "stopLose": 6448.0000000000,
+    "positions": [
+      "ENTRY_LONG"
+    ]
   },
   {
     "time": {

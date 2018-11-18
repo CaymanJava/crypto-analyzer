@@ -1,4 +1,4 @@
-package pro.crypto.strategy.adxstochma;
+package pro.crypto.strategy.stoch.adx.ma;
 
 import lombok.Builder;
 import lombok.Data;
@@ -11,7 +11,7 @@ import java.util.Set;
 
 @Data
 @Builder
-public class ADXStochMARequest implements StrategyRequest {
+public class StochADXMARequest implements StrategyRequest {
 
     private Tick[] originalData;
 

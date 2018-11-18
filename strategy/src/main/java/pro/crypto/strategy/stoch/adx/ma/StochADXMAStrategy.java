@@ -1,4 +1,4 @@
-package pro.crypto.strategy.adxstochma;
+package pro.crypto.strategy.stoch.adx.ma;
 
 import pro.crypto.helper.PeakValleyFinder;
 import pro.crypto.indicator.adx.ADXRequest;
@@ -26,7 +26,7 @@ import static pro.crypto.model.Position.ENTRY_SHORT;
 import static pro.crypto.model.StrategyType.ADX_STOCH_MA;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class ADXStochMAStrategy implements Strategy<ADXStochMAResult> {
+public class StochADXMAStrategy implements Strategy<StochADXMAResult> {
 
     private final Tick[] originalData;
     private final IndicatorType stochMovingAverageType;
@@ -47,10 +47,10 @@ public class ADXStochMAStrategy implements Strategy<ADXStochMAResult> {
     private MAResult[] thirdMaResult;
     private int lastPeakIndex = 0;
     private int lastValleyIndex = 0;
-    private ADXStochMAResult[] result;
+    private StochADXMAResult[] result;
 
-    public ADXStochMAStrategy(StrategyRequest strategyRequest) {
-        ADXStochMARequest request = (ADXStochMARequest) strategyRequest;
+    public StochADXMAStrategy(StrategyRequest strategyRequest) {
+        StochADXMARequest request = (StochADXMARequest) strategyRequest;
         this.originalData = request.getOriginalData();
         this.stochMovingAverageType = request.getStochMovingAverageType();
         this.stochFastPeriod = request.getStochFastPeriod();
@@ -81,7 +81,7 @@ public class ADXStochMAStrategy implements Strategy<ADXStochMAResult> {
     }
 
     @Override
-    public ADXStochMAResult[] getResult() {
+    public StochADXMAResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
@@ -90,11 +90,11 @@ public class ADXStochMAStrategy implements Strategy<ADXStochMAResult> {
 
     private void initResultArray() {
         result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> ADXStochMAResult.builder()
+                .mapToObj(idx -> StochADXMAResult.builder()
                         .time(originalData[idx].getTickTime())
                         .positions(new HashSet<>())
                         .build())
-                .toArray(ADXStochMAResult[]::new);
+                .toArray(StochADXMAResult[]::new);
     }
 
     private void findPeaksAndValleys() {

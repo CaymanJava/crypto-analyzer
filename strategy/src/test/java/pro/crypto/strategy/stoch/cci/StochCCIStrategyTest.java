@@ -1,4 +1,4 @@
-package pro.crypto.strategy.stochcci;
+package pro.crypto.strategy.stoch.cci;
 
 import org.junit.Test;
 import pro.crypto.model.StrategyRequest;

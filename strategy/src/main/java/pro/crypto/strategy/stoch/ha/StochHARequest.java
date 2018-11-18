@@ -1,4 +1,4 @@
-package pro.crypto.strategy.stochcci;
+package pro.crypto.strategy.stoch.ha;
 
 import lombok.Builder;
 import lombok.Data;
@@ -11,25 +11,19 @@ import java.util.Set;
 
 @Data
 @Builder
-public class StochCCIRequest implements StrategyRequest {
+public class StochHARequest implements StrategyRequest {
 
     private Tick[] originalData;
 
     private IndicatorType stochMovingAverageType;
 
-    private int fastStochPeriod;
+    private int stochFastPeriod;
 
-    private int slowStochPeriod;
+    private int stochSlowPeriod;
 
-    private double stochOversoldLevel;
+    private Double stochOversoldLevel;
 
-    private double stochOverboughtLevel;
-
-    private int cciPeriod;
-
-    private double cciOversoldLevel;
-
-    private double cciOverboughtLevel;
+    private Double stochOverboughtLevel;
 
     private Set<Position> positions;
 

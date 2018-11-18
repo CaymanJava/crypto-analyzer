@@ -1,4 +1,4 @@
-package pro.crypto.strategy.stochcci;
+package pro.crypto.strategy.stoch.cci;
 
 import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.SignalArrayMerger;

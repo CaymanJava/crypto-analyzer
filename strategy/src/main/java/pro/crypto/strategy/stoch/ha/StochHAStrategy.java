@@ -1,4 +1,4 @@
-package pro.crypto.strategy.hastoch;
+package pro.crypto.strategy.stoch.ha;
 
 import pro.crypto.analyzer.stoch.StochAnalyzer;
 import pro.crypto.analyzer.stoch.StochAnalyzerRequest;
@@ -24,7 +24,7 @@ import static pro.crypto.model.SecurityLevel.OVERBOUGHT;
 import static pro.crypto.model.SecurityLevel.OVERSOLD;
 import static pro.crypto.model.StrategyType.HA_STOCH;
 
-public class HAStochStrategy implements Strategy<HAStochResult> {
+public class StochHAStrategy implements Strategy<StochHAResult> {
 
     private final Tick[] originalData;
     private final IndicatorType stochMovingAverageType;
@@ -36,10 +36,10 @@ public class HAStochStrategy implements Strategy<HAStochResult> {
 
     private StochAnalyzerResult[] stochAnalyzerResults;
     private HAResult[] haResults;
-    private HAStochResult[] result;
+    private StochHAResult[] result;
 
-    public HAStochStrategy(StrategyRequest strategyRequest) {
-        HAStochRequest request = (HAStochRequest) strategyRequest;
+    public StochHAStrategy(StrategyRequest strategyRequest) {
+        StochHARequest request = (StochHARequest) strategyRequest;
         this.originalData = request.getOriginalData();
         this.stochMovingAverageType = request.getStochMovingAverageType();
         this.stochFastPeriod = request.getStochFastPeriod();
@@ -64,7 +64,7 @@ public class HAStochStrategy implements Strategy<HAStochResult> {
     }
 
     @Override
-    public HAStochResult[] getResult() {
+    public StochHAResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
@@ -73,11 +73,11 @@ public class HAStochStrategy implements Strategy<HAStochResult> {
 
     private void initResultArray() {
         result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> HAStochResult.builder()
+                .mapToObj(idx -> StochHAResult.builder()
                         .time(originalData[idx].getTickTime())
                         .positions(new HashSet<>())
                         .build())
-                .toArray(HAStochResult[]::new);
+                .toArray(StochHAResult[]::new);
     }
 
     private StochResult[] calculateStochastic() {

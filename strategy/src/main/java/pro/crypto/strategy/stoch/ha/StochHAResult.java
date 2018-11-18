@@ -1,4 +1,4 @@
-package pro.crypto.strategy.hastoch;
+package pro.crypto.strategy.stoch.ha;
 
 import lombok.Builder;
 import lombok.Data;
@@ -10,7 +10,7 @@ import java.util.Set;
 
 @Data
 @Builder
-public class HAStochResult implements StrategyResult {
+public class StochHAResult implements StrategyResult {
 
     private LocalDateTime time;
 

@@ -1,7 +1,6 @@
-package pro.crypto.strategy.adxstochma;
+package pro.crypto.strategy.stoch.adx.ma;
 
 import org.junit.Test;
-import pro.crypto.model.Position;
 import pro.crypto.model.StrategyRequest;
 import pro.crypto.model.StrategyResult;
 import pro.crypto.strategy.StrategyBaseTest;
@@ -9,18 +8,20 @@ import pro.crypto.strategy.StrategyBaseTest;
 import static com.google.common.collect.Sets.newHashSet;
 import static org.junit.Assert.assertArrayEquals;
 import static pro.crypto.model.IndicatorType.MODIFIED_MOVING_AVERAGE;
+import static pro.crypto.model.Position.ENTRY_LONG;
+import static pro.crypto.model.Position.ENTRY_SHORT;
 
-public class ADXStochMAStrategyTest extends StrategyBaseTest {
+public class StochADXMAStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testADXStochMAStrategy() throws Exception {
-        StrategyResult[] expectedResult = loadStrategyExpectedResult("adx_stoch_ma.json", ADXStochMAResult[].class);
-        ADXStochMAResult[] actualResult = new ADXStochMAStrategy(buildADXStochMARequest()).getResult();
+    public void testStochADXMAStrategy() throws Exception {
+        StrategyResult[] expectedResult = loadStrategyExpectedResult("stoch_adx_ma.json", StochADXMAResult[].class);
+        StochADXMAResult[] actualResult = new StochADXMAStrategy(buildADXStochMARequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 
     private StrategyRequest buildADXStochMARequest() {
-        return ADXStochMARequest.builder()
+        return StochADXMARequest.builder()
                 .originalData(originalData)
                 .stochMovingAverageType(MODIFIED_MOVING_AVERAGE)
                 .stochFastPeriod(5)
@@ -29,7 +30,7 @@ public class ADXStochMAStrategyTest extends StrategyBaseTest {
                 .firstMaPeriod(5)
                 .secondMaPeriod(15)
                 .thirdMaPeriod(30)
-                .positions(newHashSet(Position.ENTRY_LONG, Position.ENTRY_SHORT))
+                .positions(newHashSet(ENTRY_LONG, ENTRY_SHORT))
                 .build();
     }
 

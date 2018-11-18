@@ -16,11 +16,11 @@ public class StochHAStrategyTest extends StrategyBaseTest {
     @Test
     public void testStochHAStrategy() throws Exception {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("stoch_ha.json", StochHAResult[].class);
-        StochHAResult[] actualResult = new StochHAStrategy(buildHAStochRequest()).getResult();
+        StochHAResult[] actualResult = new StochHAStrategy(buildStochHARequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 
-    private StrategyRequest buildHAStochRequest() {
+    private StrategyRequest buildStochHARequest() {
         return StochHARequest.builder()
                 .originalData(originalData)
                 .stochMovingAverageType(MODIFIED_MOVING_AVERAGE)

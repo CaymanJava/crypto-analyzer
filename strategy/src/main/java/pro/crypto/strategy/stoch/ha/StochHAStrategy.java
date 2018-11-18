@@ -22,7 +22,7 @@ import static pro.crypto.model.Position.ENTRY_LONG;
 import static pro.crypto.model.Position.ENTRY_SHORT;
 import static pro.crypto.model.SecurityLevel.OVERBOUGHT;
 import static pro.crypto.model.SecurityLevel.OVERSOLD;
-import static pro.crypto.model.StrategyType.HA_STOCH;
+import static pro.crypto.model.StrategyType.STOCH_HA;
 
 public class StochHAStrategy implements Strategy<StochHAResult> {
 
@@ -52,7 +52,7 @@ public class StochHAStrategy implements Strategy<StochHAResult> {
 
     @Override
     public StrategyType getType() {
-        return HA_STOCH;
+        return STOCH_HA;
     }
 
     @Override

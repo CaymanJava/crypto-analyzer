@@ -23,7 +23,7 @@ import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
 import static pro.crypto.model.Position.ENTRY_LONG;
 import static pro.crypto.model.Position.ENTRY_SHORT;
-import static pro.crypto.model.StrategyType.ADX_STOCH_MA;
+import static pro.crypto.model.StrategyType.STOCH_ADX_MA;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class StochADXMAStrategy implements Strategy<StochADXMAResult> {
@@ -65,7 +65,7 @@ public class StochADXMAStrategy implements Strategy<StochADXMAResult> {
 
     @Override
     public StrategyType getType() {
-        return ADX_STOCH_MA;
+        return STOCH_ADX_MA;
     }
 
     @Override

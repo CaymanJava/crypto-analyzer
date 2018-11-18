@@ -48,18 +48,21 @@ public class PeakValleyFinder {
     }
 
     private static Boolean isValley(Tick[] originalData, int currentIndex) {
-        return originalData[currentIndex - 2].getHigh().compareTo(originalData[currentIndex - 1].getHigh()) > 0
-                && originalData[currentIndex - 1].getHigh().compareTo(originalData[currentIndex].getHigh()) < 0;
+        return originalData[currentIndex - 2].getLow().compareTo(originalData[currentIndex - 1].getLow()) > 0
+                && originalData[currentIndex - 1].getLow().compareTo(originalData[currentIndex].getLow()) < 0;
     }
 
     private static boolean isPossibleDefineResult(Tick[] originalData, int currentIndex) {
         return currentIndex > 1
                 && nonNull(originalData[currentIndex - 2])
                 && nonNull(originalData[currentIndex - 2].getHigh())
+                && nonNull(originalData[currentIndex - 2].getLow())
                 && nonNull(originalData[currentIndex - 1])
                 && nonNull(originalData[currentIndex - 1].getHigh())
+                && nonNull(originalData[currentIndex - 1].getLow())
                 && nonNull(originalData[currentIndex])
-                && nonNull(originalData[currentIndex].getHigh());
+                && nonNull(originalData[currentIndex].getHigh())
+                && nonNull(originalData[currentIndex].getLow());
     }
 
 }

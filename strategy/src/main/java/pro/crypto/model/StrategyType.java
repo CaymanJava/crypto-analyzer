@@ -3,9 +3,10 @@ package pro.crypto.model;
 public enum StrategyType {
 
     BILL_WILLIAMS_STRATEGY,
-    ADX_STOCH_MA,
-    HA_STOCH,
+    STOCH_ADX_MA,
+    STOCH_HA,
     DOUBLE_PARABOLIC,
     STOCH_CCI,
+    STOCH_AC_MA
 
 }

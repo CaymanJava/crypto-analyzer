@@ -16,11 +16,11 @@ public class StochADXMAStrategyTest extends StrategyBaseTest {
     @Test
     public void testStochADXMAStrategy() throws Exception {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("stoch_adx_ma.json", StochADXMAResult[].class);
-        StochADXMAResult[] actualResult = new StochADXMAStrategy(buildADXStochMARequest()).getResult();
+        StochADXMAResult[] actualResult = new StochADXMAStrategy(buildStochADXMARequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 
-    private StrategyRequest buildADXStochMARequest() {
+    private StrategyRequest buildStochADXMARequest() {
         return StochADXMARequest.builder()
                 .originalData(originalData)
                 .stochMovingAverageType(MODIFIED_MOVING_AVERAGE)

@@ -5,6 +5,7 @@ public enum StrategyType {
     BILL_WILLIAMS_STRATEGY,
     ADX_STOCH_MA,
     HA_STOCH,
-    DOUBLE_PARABOLIC
+    DOUBLE_PARABOLIC,
+    STOCH_CCI,
 
 }

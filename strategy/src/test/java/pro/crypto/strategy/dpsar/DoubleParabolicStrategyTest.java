@@ -15,13 +15,13 @@ public class DoubleParabolicStrategyTest extends StrategyBaseTest {
 
     @Test
     public void testDoubleParabolicStrategy() throws Exception {
-        StrategyResult[] expectedResult = loadStrategyExpectedResult("d_psar.json", DPSARResult[].class);
-        DPSARResult[] actualResult = new DoubleParabolicStrategy(buildDPSARRequest()).getResult();
+        StrategyResult[] expectedResult = loadStrategyExpectedResult("d_psar.json", DPsarResult[].class);
+        DPsarResult[] actualResult = new DoubleParabolicStrategy(buildDPsarRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 
-    private StrategyRequest buildDPSARRequest() {
-        return DPSARRequest.builder()
+    private StrategyRequest buildDPsarRequest() {
+        return DPsarRequest.builder()
                 .originalData(originalData)
                 .movingAveragePeriod(14)
                 .movingAveragePriceType(CLOSE)

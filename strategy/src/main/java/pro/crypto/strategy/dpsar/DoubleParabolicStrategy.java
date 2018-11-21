@@ -25,7 +25,7 @@ import static pro.crypto.model.Position.ENTRY_LONG;
 import static pro.crypto.model.Position.ENTRY_SHORT;
 import static pro.crypto.model.StrategyType.DOUBLE_PARABOLIC;
 
-public class DoubleParabolicStrategy implements Strategy<DPSARResult> {
+public class DoubleParabolicStrategy implements Strategy<DPsarResult> {
 
     private final Tick[] originalData;
     private final int movingAveragePeriod;
@@ -46,10 +46,10 @@ public class DoubleParabolicStrategy implements Strategy<DPSARResult> {
     private PSARResult[] psarResult;
     private MACDResult[] macdResult;
     private PSARResult[] pswResult;
-    private DPSARResult[] result;
+    private DPsarResult[] result;
 
     public DoubleParabolicStrategy(StrategyRequest strategyRequest) {
-        DPSARRequest request = (DPSARRequest) strategyRequest;
+        DPsarRequest request = (DPsarRequest) strategyRequest;
         this.originalData = request.getOriginalData();
         this.movingAveragePeriod = request.getMovingAveragePeriod();
         this.movingAverageType = request.getMovingAverageType();
@@ -83,7 +83,7 @@ public class DoubleParabolicStrategy implements Strategy<DPSARResult> {
     }
 
     @Override
-    public DPSARResult[] getResult() {
+    public DPsarResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
@@ -92,11 +92,11 @@ public class DoubleParabolicStrategy implements Strategy<DPSARResult> {
 
     private void initResultArray() {
         result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> DPSARResult.builder()
+                .mapToObj(idx -> DPsarResult.builder()
                         .time(originalData[idx].getTickTime())
                         .positions(new HashSet<>())
                         .build())
-                .toArray(DPSARResult[]::new);
+                .toArray(DPsarResult[]::new);
     }
 
     private void calculateMovingAverage() {

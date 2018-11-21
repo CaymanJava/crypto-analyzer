@@ -11,7 +11,7 @@ import java.util.Set;
 
 @Data
 @Builder
-public class DPSARResult implements StrategyResult {
+public class DPsarResult implements StrategyResult {
 
     private LocalDateTime time;
 

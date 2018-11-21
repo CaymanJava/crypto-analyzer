@@ -32,7 +32,7 @@ import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.SELL;
 import static pro.crypto.model.StrategyType.STOCH_AC_MA;
 
-public class StochACMAStrategy implements Strategy<StochACMAResult> {
+public class StochAcMaStrategy implements Strategy<StochAcMaResult> {
 
     private final static int ALLOWABLE_CANDLES_AFTER_FIRST_SIGNAL = 2;
     private final static int ALLOWABLE_CANDLES_AFTER_SECOND_SIGNAL = 4;
@@ -62,10 +62,10 @@ public class StochACMAStrategy implements Strategy<StochACMAResult> {
     private int candlesAfterLastSellSignal = 0;
     private int lastPeakIndex = 0;
     private int lastValleyIndex = 0;
-    private StochACMAResult[] result;
+    private StochAcMaResult[] result;
 
-    public StochACMAStrategy(StrategyRequest strategyRequest) {
-        StochACMARequest request = (StochACMARequest) strategyRequest;
+    public StochAcMaStrategy(StrategyRequest strategyRequest) {
+        StochAcMaRequest request = (StochAcMaRequest) strategyRequest;
         this.originalData = request.getOriginalData();
         this.stochMovingAverageType = request.getStochMovingAverageType();
         this.stochFastPeriod = request.getStochFastPeriod();
@@ -98,20 +98,20 @@ public class StochACMAStrategy implements Strategy<StochACMAResult> {
     }
 
     @Override
-    public StochACMAResult[] getResult() {
+    public StochAcMaResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
         return result;
     }
 
-    private BigDecimal extractStochOversoldLevel(StochACMARequest request) {
+    private BigDecimal extractStochOversoldLevel(StochAcMaRequest request) {
         return ofNullable(request.getStochOversoldLevel())
                 .map(BigDecimal::new)
                 .orElse(new BigDecimal(20));
     }
 
-    private BigDecimal extractStochOverboughtLevel(StochACMARequest request) {
+    private BigDecimal extractStochOverboughtLevel(StochAcMaRequest request) {
         return ofNullable(request.getStochOverboughtLevel())
                 .map(BigDecimal::new)
                 .orElse(new BigDecimal(80));
@@ -119,11 +119,11 @@ public class StochACMAStrategy implements Strategy<StochACMAResult> {
 
     private void initResultArray() {
         result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> StochACMAResult.builder()
+                .mapToObj(idx -> StochAcMaResult.builder()
                         .time(originalData[idx].getTickTime())
                         .positions(new HashSet<>())
                         .build())
-                .toArray(StochACMAResult[]::new);
+                .toArray(StochAcMaResult[]::new);
     }
 
     private void findPeaksAndValleys() {

@@ -1,4 +1,4 @@
-package pro.crypto.strategy.stoch.adx.ma;
+package pro.crypto.strategy.stoch.ha;
 
 import lombok.Builder;
 import lombok.Data;
@@ -11,7 +11,7 @@ import java.util.Set;
 
 @Data
 @Builder
-public class StochADXMARequest implements StrategyRequest {
+public class StochHaRequest implements StrategyRequest {
 
     private Tick[] originalData;
 
@@ -21,13 +21,9 @@ public class StochADXMARequest implements StrategyRequest {
 
     private int stochSlowPeriod;
 
-    private int adxPeriod;
+    private Double stochOversoldLevel;
 
-    private int firstMaPeriod;
-
-    private int secondMaPeriod;
-
-    private int thirdMaPeriod;
+    private Double stochOverboughtLevel;
 
     private Set<Position> positions;
 

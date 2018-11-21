@@ -24,7 +24,7 @@ import static pro.crypto.model.SecurityLevel.OVERBOUGHT;
 import static pro.crypto.model.SecurityLevel.OVERSOLD;
 import static pro.crypto.model.StrategyType.STOCH_HA;
 
-public class StochHAStrategy implements Strategy<StochHAResult> {
+public class StochHaStrategy implements Strategy<StochHaResult> {
 
     private final Tick[] originalData;
     private final IndicatorType stochMovingAverageType;
@@ -36,10 +36,10 @@ public class StochHAStrategy implements Strategy<StochHAResult> {
 
     private StochAnalyzerResult[] stochAnalyzerResults;
     private HAResult[] haResults;
-    private StochHAResult[] result;
+    private StochHaResult[] result;
 
-    public StochHAStrategy(StrategyRequest strategyRequest) {
-        StochHARequest request = (StochHARequest) strategyRequest;
+    public StochHaStrategy(StrategyRequest strategyRequest) {
+        StochHaRequest request = (StochHaRequest) strategyRequest;
         this.originalData = request.getOriginalData();
         this.stochMovingAverageType = request.getStochMovingAverageType();
         this.stochFastPeriod = request.getStochFastPeriod();
@@ -64,7 +64,7 @@ public class StochHAStrategy implements Strategy<StochHAResult> {
     }
 
     @Override
-    public StochHAResult[] getResult() {
+    public StochHaResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
@@ -73,11 +73,11 @@ public class StochHAStrategy implements Strategy<StochHAResult> {
 
     private void initResultArray() {
         result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> StochHAResult.builder()
+                .mapToObj(idx -> StochHaResult.builder()
                         .time(originalData[idx].getTickTime())
                         .positions(new HashSet<>())
                         .build())
-                .toArray(StochHAResult[]::new);
+                .toArray(StochHaResult[]::new);
     }
 
     private StochResult[] calculateStochastic() {

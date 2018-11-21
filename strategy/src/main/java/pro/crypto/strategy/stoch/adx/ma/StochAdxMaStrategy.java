@@ -26,7 +26,7 @@ import static pro.crypto.model.Position.ENTRY_SHORT;
 import static pro.crypto.model.StrategyType.STOCH_ADX_MA;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class StochADXMAStrategy implements Strategy<StochADXMAResult> {
+public class StochAdxMaStrategy implements Strategy<StochAdxMaResult> {
 
     private final Tick[] originalData;
     private final IndicatorType stochMovingAverageType;
@@ -47,10 +47,10 @@ public class StochADXMAStrategy implements Strategy<StochADXMAResult> {
     private MAResult[] thirdMaResult;
     private int lastPeakIndex = 0;
     private int lastValleyIndex = 0;
-    private StochADXMAResult[] result;
+    private StochAdxMaResult[] result;
 
-    public StochADXMAStrategy(StrategyRequest strategyRequest) {
-        StochADXMARequest request = (StochADXMARequest) strategyRequest;
+    public StochAdxMaStrategy(StrategyRequest strategyRequest) {
+        StochAdxMaRequest request = (StochAdxMaRequest) strategyRequest;
         this.originalData = request.getOriginalData();
         this.stochMovingAverageType = request.getStochMovingAverageType();
         this.stochFastPeriod = request.getStochFastPeriod();
@@ -81,7 +81,7 @@ public class StochADXMAStrategy implements Strategy<StochADXMAResult> {
     }
 
     @Override
-    public StochADXMAResult[] getResult() {
+    public StochAdxMaResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
@@ -90,11 +90,11 @@ public class StochADXMAStrategy implements Strategy<StochADXMAResult> {
 
     private void initResultArray() {
         result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> StochADXMAResult.builder()
+                .mapToObj(idx -> StochAdxMaResult.builder()
                         .time(originalData[idx].getTickTime())
                         .positions(new HashSet<>())
                         .build())
-                .toArray(StochADXMAResult[]::new);
+                .toArray(StochAdxMaResult[]::new);
     }
 
     private void findPeaksAndValleys() {

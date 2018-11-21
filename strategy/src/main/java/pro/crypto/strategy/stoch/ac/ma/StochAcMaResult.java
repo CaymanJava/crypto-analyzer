@@ -1,4 +1,4 @@
-package pro.crypto.strategy.stoch.adx.ma;
+package pro.crypto.strategy.stoch.ac.ma;
 
 import lombok.Builder;
 import lombok.Data;
@@ -11,7 +11,7 @@ import java.util.Set;
 
 @Data
 @Builder
-public class StochADXMAResult implements StrategyResult {
+public class StochAcMaResult implements StrategyResult {
 
     private LocalDateTime time;
 

@@ -29,7 +29,7 @@ import static pro.crypto.model.Signal.NEUTRAL;
 import static pro.crypto.model.Signal.SELL;
 import static pro.crypto.model.StrategyType.STOCH_CCI;
 
-public class StochCCIStrategy implements Strategy<StochCCIResult> {
+public class StochCciStrategy implements Strategy<StochCciResult> {
 
     private final Tick[] originalData;
     private final IndicatorType stochMovingAverageType;
@@ -48,10 +48,10 @@ public class StochCCIStrategy implements Strategy<StochCCIResult> {
     private Signal[] cciCrossSignals;
     private Signal stochCurrentSignal;
     private Signal cciCurrentSignal;
-    private StochCCIResult[] result;
+    private StochCciResult[] result;
 
-    public StochCCIStrategy(StrategyRequest strategyRequest) {
-        StochCCIRequest request = (StochCCIRequest) strategyRequest;
+    public StochCciStrategy(StrategyRequest strategyRequest) {
+        StochCciRequest request = (StochCciRequest) strategyRequest;
         this.originalData = request.getOriginalData();
         this.stochMovingAverageType = request.getStochMovingAverageType();
         this.fastStochPeriod = request.getFastStochPeriod();
@@ -79,32 +79,32 @@ public class StochCCIStrategy implements Strategy<StochCCIResult> {
     }
 
     @Override
-    public StochCCIResult[] getResult() {
+    public StochCciResult[] getResult() {
         if (isNull(result)) {
             analyze();
         }
         return result;
     }
 
-    private BigDecimal extractStochOversoldLevel(StochCCIRequest request) {
+    private BigDecimal extractStochOversoldLevel(StochCciRequest request) {
         return ofNullable(request.getStochOversoldLevel())
                 .map(BigDecimal::new)
                 .orElse(new BigDecimal(20));
     }
 
-    private BigDecimal extractStochOverboughtLevel(StochCCIRequest request) {
+    private BigDecimal extractStochOverboughtLevel(StochCciRequest request) {
         return ofNullable(request.getStochOverboughtLevel())
                 .map(BigDecimal::new)
                 .orElse(new BigDecimal(80));
     }
 
-    private BigDecimal extractCCIOversoldLevel(StochCCIRequest request) {
+    private BigDecimal extractCCIOversoldLevel(StochCciRequest request) {
         return ofNullable(request.getCciOversoldLevel())
                 .map(BigDecimal::new)
                 .orElse(new BigDecimal(-100));
     }
 
-    private BigDecimal extractCCIOverboughtLevel(StochCCIRequest request) {
+    private BigDecimal extractCCIOverboughtLevel(StochCciRequest request) {
         return ofNullable(request.getCciOverboughtLevel())
                 .map(BigDecimal::new)
                 .orElse(new BigDecimal(100));
@@ -112,11 +112,11 @@ public class StochCCIStrategy implements Strategy<StochCCIResult> {
 
     private void initResultArray() {
         result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> StochCCIResult.builder()
+                .mapToObj(idx -> StochCciResult.builder()
                         .time(originalData[idx].getTickTime())
                         .positions(new HashSet<>())
                         .build())
-                .toArray(StochCCIResult[]::new);
+                .toArray(StochCciResult[]::new);
     }
 
     private void calculateStochasticCrossSignals() {

@@ -12,7 +12,7 @@ import java.util.Set;
 
 @Data
 @Builder
-public class DPSARRequest implements StrategyRequest {
+public class DPsarRequest implements StrategyRequest {
 
     private Tick[] originalData;
 

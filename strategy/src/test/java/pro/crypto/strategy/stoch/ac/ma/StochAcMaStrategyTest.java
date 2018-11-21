@@ -12,17 +12,17 @@ import static pro.crypto.model.Position.ENTRY_LONG;
 import static pro.crypto.model.Position.ENTRY_SHORT;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
-public class StochACMAStrategyTest extends StrategyBaseTest {
+public class StochAcMaStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testStochACMAStrategy() throws Exception {
-        StrategyResult[] expectedResult = loadStrategyExpectedResult("stoch_ac_ma.json", StochACMAResult[].class);
-        StochACMAResult[] actualResult = new StochACMAStrategy(buildStochACMARequest()).getResult();
+    public void testStochAcMaStrategy() throws Exception {
+        StrategyResult[] expectedResult = loadStrategyExpectedResult("stoch_ac_ma.json", StochAcMaResult[].class);
+        StochAcMaResult[] actualResult = new StochAcMaStrategy(buildStochAcMaRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 
-    private StrategyRequest buildStochACMARequest() {
-        return StochACMARequest.builder()
+    private StrategyRequest buildStochAcMaRequest() {
+        return StochAcMaRequest.builder()
                 .originalData(originalData)
                 .stochMovingAverageType(SIMPLE_MOVING_AVERAGE)
                 .stochFastPeriod(14)

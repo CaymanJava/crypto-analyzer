@@ -1,42 +1,35 @@
-package pro.crypto.strategy.stoch.ac.ma;
+package pro.crypto.strategy.stoch.cci;
 
 import lombok.Builder;
 import lombok.Data;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.Position;
 import pro.crypto.model.StrategyRequest;
-import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.util.Set;
 
 @Data
 @Builder
-public class StochACMARequest implements StrategyRequest {
+public class StochCciRequest implements StrategyRequest {
 
     private Tick[] originalData;
 
     private IndicatorType stochMovingAverageType;
 
-    private int stochFastPeriod;
+    private int fastStochPeriod;
 
-    private int stochSlowPeriod;
+    private int slowStochPeriod;
 
     private double stochOversoldLevel;
 
     private double stochOverboughtLevel;
 
-    private int acSlowPeriod;
+    private int cciPeriod;
 
-    private int acFastPeriod;
+    private double cciOversoldLevel;
 
-    private int acSmoothedPeriod;
-
-    private int maPeriod;
-
-    private IndicatorType movingAverageType;
-
-    private PriceType maPriceType;
+    private double cciOverboughtLevel;
 
     private Set<Position> positions;
 

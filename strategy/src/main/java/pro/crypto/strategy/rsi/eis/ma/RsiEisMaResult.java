@@ -1,4 +1,4 @@
-package pro.crypto.strategy.stoch.cci;
+package pro.crypto.strategy.rsi.eis.ma;
 
 import lombok.Builder;
 import lombok.Data;
@@ -10,7 +10,7 @@ import java.util.Set;
 
 @Data
 @Builder
-public class StochCCIResult implements StrategyResult {
+public class RsiEisMaResult implements StrategyResult {
 
     private LocalDateTime time;
 

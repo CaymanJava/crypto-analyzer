@@ -11,17 +11,17 @@ import static pro.crypto.model.IndicatorType.MODIFIED_MOVING_AVERAGE;
 import static pro.crypto.model.Position.ENTRY_LONG;
 import static pro.crypto.model.Position.ENTRY_SHORT;
 
-public class StochHAStrategyTest extends StrategyBaseTest {
+public class StochHaStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testStochHAStrategy() throws Exception {
-        StrategyResult[] expectedResult = loadStrategyExpectedResult("stoch_ha.json", StochHAResult[].class);
-        StochHAResult[] actualResult = new StochHAStrategy(buildStochHARequest()).getResult();
+    public void testStochHaStrategy() throws Exception {
+        StrategyResult[] expectedResult = loadStrategyExpectedResult("stoch_ha.json", StochHaResult[].class);
+        StochHaResult[] actualResult = new StochHaStrategy(buildStochHaRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 
-    private StrategyRequest buildStochHARequest() {
-        return StochHARequest.builder()
+    private StrategyRequest buildStochHaRequest() {
+        return StochHaRequest.builder()
                 .originalData(originalData)
                 .stochMovingAverageType(MODIFIED_MOVING_AVERAGE)
                 .stochFastPeriod(5)

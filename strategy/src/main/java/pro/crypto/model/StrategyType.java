@@ -8,6 +8,7 @@ public enum StrategyType {
     DOUBLE_PARABOLIC,
     STOCH_CCI,
     STOCH_AC_MA,
-    RSI_EIS_MA
+    RSI_EIS_MA,
+    STC_MA_MACD
 
 }

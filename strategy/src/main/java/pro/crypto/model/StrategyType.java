@@ -9,6 +9,6 @@ public enum StrategyType {
     STOCH_CCI,
     STOCH_AC_MA,
     RSI_EIS_MA,
-    STC_MA_MACD
-
+    STC_MA_MACD,
+    LRSI_MA_PSAR
 }

@@ -20,7 +20,7 @@ public class RsiEisMaRequest implements StrategyRequest {
 
     private int rsiPeriod;
 
-    private double rsiSignalLine;
+    private Double rsiSignalLine;
 
     private int eisMaPeriod;
 

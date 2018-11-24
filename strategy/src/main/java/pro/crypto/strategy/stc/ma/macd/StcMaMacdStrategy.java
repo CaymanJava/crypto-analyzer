@@ -36,8 +36,8 @@ public class StcMaMacdStrategy implements Strategy<StcMaMacdResult> {
     private final int stcPeriod;
     private final int stcShortCycle;
     private final int stcLongCycle;
-    private final double stcOversoldLevel;
-    private final double stcOverboughtLevel;
+    private final Double stcOversoldLevel;
+    private final Double stcOverboughtLevel;
     private final IndicatorType stcMaType;
     private final IndicatorType maType;
     private final PriceType maPriceType;

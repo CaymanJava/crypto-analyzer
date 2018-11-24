@@ -24,9 +24,9 @@ public class StcMaMacdRequest implements StrategyRequest {
 
     private int stcLongCycle;
 
-    private double stcOversoldLevel;
+    private Double stcOversoldLevel;
 
-    private double stcOverboughtLevel;
+    private Double stcOverboughtLevel;
 
     private IndicatorType stcMaType;
 

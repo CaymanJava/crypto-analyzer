@@ -38,6 +38,13 @@ public class RSIAnalyzerTest extends AnalyzerBaseTest {
         assertArrayEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void testLaguerreRelativeStrengthIndexAnalyzer() {
+        AnalyzerResult[] expectedResult = loadAnalyzerExpectedResult("rsi_analyzer_5.json", RSIAnalyzerResult[].class);
+        RSIAnalyzerResult[] actualResult = new RSIAnalyzer(buildRSIAnalyzerRequest("rsi_indicator_5.json", 0.8, 0.2)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
+    }
+
     private AnalyzerRequest buildRSIAnalyzerRequest(String fileName, double overboughtLevel, double oversoldLevel) {
         return RSIAnalyzerRequest.builder()
                 .originalData(originalData)

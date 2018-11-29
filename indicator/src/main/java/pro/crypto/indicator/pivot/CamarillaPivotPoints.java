@@ -10,7 +10,7 @@ import static pro.crypto.model.IndicatorType.CAMARILLA_PIVOT_POINTS;
 
 public class CamarillaPivotPoints extends PivotPoints {
 
-    CamarillaPivotPoints(Tick originalData) {
+    CamarillaPivotPoints(Tick[] originalData) {
         super(originalData);
     }
 
@@ -26,64 +26,68 @@ public class CamarillaPivotPoints extends PivotPoints {
 
     // (H + L + C) / 3
     @Override
-    BigDecimal calculatePivot() {
-        return calculateDefaultPivot();
+    BigDecimal calculatePivot(int currentIndex) {
+        return calculateDefaultPivot(currentIndex);
     }
 
     // (H - L) x 1.1 / 12 + C
     @Override
-    BigDecimal calculateFirstResistance() {
-        return calculateResistance(calculateFirstCoefficient());
+    BigDecimal calculateFirstResistance(int currentIndex) {
+        return calculateResistance(calculateFirstCoefficient(), currentIndex);
     }
 
     // (H - L) x 1.1 / 6 + C
     @Override
-    BigDecimal calculateSecondResistance() {
-        return calculateResistance(calculateSecondCoefficient());
+    BigDecimal calculateSecondResistance(int currentIndex) {
+        return calculateResistance(calculateSecondCoefficient(), currentIndex);
     }
 
     // (H - L) x 1.1 / 4 + C
     @Override
-    BigDecimal calculateThirdResistance() {
-        return calculateResistance(calculateThirdCoefficient());
+    BigDecimal calculateThirdResistance(int currentIndex) {
+        return calculateResistance(calculateThirdCoefficient(), currentIndex);
     }
 
     @Override
         // (H - L) x 1.1 / 2 + C
-    BigDecimal calculateFourthResistance() {
-        return calculateResistance(calculateFourthCoefficient());
+    BigDecimal calculateFourthResistance(int currentIndex) {
+        return calculateResistance(calculateFourthCoefficient(), currentIndex);
     }
 
     // C - (H - L) x 1.1 / 12
     @Override
-    BigDecimal calculateFirstSupport() {
-        return calculateSupport(calculateFirstCoefficient());
+    BigDecimal calculateFirstSupport(int currentIndex) {
+        return calculateSupport(calculateFirstCoefficient(), currentIndex);
     }
 
     // C - (H - L) x 1.1 / 6
     @Override
-    BigDecimal calculateSecondSupport() {
-        return calculateSupport(calculateSecondCoefficient());
+    BigDecimal calculateSecondSupport(int currentIndex) {
+        return calculateSupport(calculateSecondCoefficient(), currentIndex);
     }
 
     // C - (H - L) x 1.1 / 4
     @Override
-    BigDecimal calculateThirdSupport() {
-        return calculateSupport(calculateThirdCoefficient());
+    BigDecimal calculateThirdSupport(int currentIndex) {
+        return calculateSupport(calculateThirdCoefficient(), currentIndex);
     }
 
     // C - (H - L) x 1.1 / 2
     @Override
-    BigDecimal calculateFourthSupport() {
-        return calculateSupport(calculateFourthCoefficient());
+    BigDecimal calculateFourthSupport(int currentIndex) {
+        return calculateSupport(calculateFourthCoefficient(), currentIndex);
     }
 
-    private BigDecimal calculateResistance(BigDecimal coefficient) {
-        return MathHelper.scaleAndRound(originalData.getHigh().subtract(originalData.getLow()).multiply(coefficient).add(originalData.getClose()));
+    private BigDecimal calculateResistance(BigDecimal coefficient, int currentIndex) {
+        return MathHelper.scaleAndRound(originalData[currentIndex - 1].getHigh()
+                .subtract(originalData[currentIndex - 1].getLow()).multiply(coefficient)
+                .add(originalData[currentIndex - 1].getClose()));
     }
 
-    private BigDecimal calculateSupport(BigDecimal coefficient) {
-        return MathHelper.scaleAndRound(originalData.getClose().subtract(originalData.getHigh().subtract(originalData.getLow()).multiply(coefficient)));
+    private BigDecimal calculateSupport(BigDecimal coefficient, int currentIndex) {
+        return MathHelper.scaleAndRound(originalData[currentIndex - 1].getClose()
+                .subtract(originalData[currentIndex - 1].getHigh()
+                        .subtract(originalData[currentIndex - 1].getLow()).multiply(coefficient)));
     }
 
     private BigDecimal calculateFirstCoefficient() {

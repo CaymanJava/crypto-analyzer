@@ -10,11 +10,11 @@ import static pro.crypto.model.IndicatorType.FIBONACCI_PIVOT_POINTS;
 
 public class FibonacciPivotPoints extends PivotPoints {
 
-    private final static Double FIRST_COEFFICIENT = 0.382;
-    private final static Double SECOND_COEFFICIENT = 0.618;
-    private final static Double THIRD_COEFFICIENT = 1.0;
+    private final static BigDecimal FIRST_COEFFICIENT = new BigDecimal(0.382);
+    private final static BigDecimal SECOND_COEFFICIENT = new BigDecimal(0.618);
+    private final static BigDecimal THIRD_COEFFICIENT = new BigDecimal(1.0);
 
-    FibonacciPivotPoints(Tick originalData) {
+    FibonacciPivotPoints(Tick[] originalData) {
         super(originalData);
     }
 
@@ -29,56 +29,66 @@ public class FibonacciPivotPoints extends PivotPoints {
     }
 
     @Override
-    BigDecimal calculatePivot() {
-        return calculateDefaultPivot();
+    BigDecimal calculatePivot(int currentIndex) {
+        return calculateDefaultPivot(currentIndex);
     }
 
     // PP + ((High - Low) x 0.382)
     @Override
-    BigDecimal calculateFirstResistance() {
-        return calculateResistance(FIRST_COEFFICIENT);
+    BigDecimal calculateFirstResistance(int currentIndex) {
+        return calculateResistance(FIRST_COEFFICIENT, currentIndex);
     }
 
     // PP + ((High - Low) x 0.618)
     @Override
-    BigDecimal calculateSecondResistance() {
-        return calculateResistance(SECOND_COEFFICIENT);
+    BigDecimal calculateSecondResistance(int currentIndex) {
+        return calculateResistance(SECOND_COEFFICIENT, currentIndex);
     }
 
     // PP + ((High - Low) x 1.000)
     @Override
-    BigDecimal calculateThirdResistance() {
-        return calculateResistance(THIRD_COEFFICIENT);
+    BigDecimal calculateThirdResistance(int currentIndex) {
+        return calculateResistance(THIRD_COEFFICIENT, currentIndex);
+    }
+
+    @Override
+    BigDecimal calculateFourthResistance(int currentIndex) {
+        return empty();
     }
 
     // PP - ((High - Low) x 0.382)
     @Override
-    BigDecimal calculateFirstSupport() {
-        return calculateSupport(FIRST_COEFFICIENT);
+    BigDecimal calculateFirstSupport(int currentIndex) {
+        return calculateSupport(FIRST_COEFFICIENT, currentIndex);
     }
 
     // PP - ((High - Low) x 0.618)
     @Override
-    BigDecimal calculateSecondSupport() {
-        return calculateSupport(SECOND_COEFFICIENT);
+    BigDecimal calculateSecondSupport(int currentIndex) {
+        return calculateSupport(SECOND_COEFFICIENT, currentIndex);
     }
 
     // S3 = PP - ((High - Low) x 1.000)
     @Override
-    BigDecimal calculateThirdSupport() {
-        return calculateSupport(THIRD_COEFFICIENT);
+    BigDecimal calculateThirdSupport(int currentIndex) {
+        return calculateSupport(THIRD_COEFFICIENT, currentIndex);
     }
 
-    private BigDecimal calculateResistance(Double coefficient) {
-        return MathHelper.scaleAndRound(pivot.add(originalData.getHigh()
-                .subtract(originalData.getLow())
-                .multiply(new BigDecimal(coefficient))));
+    @Override
+    BigDecimal calculateFourthSupport(int currentIndex) {
+        return empty();
     }
 
-    private BigDecimal calculateSupport(Double coefficient) {
-        return MathHelper.scaleAndRound(pivot.subtract(originalData.getHigh()
-                .subtract(originalData.getLow())
-                .multiply(new BigDecimal(coefficient))));
+    private BigDecimal calculateResistance(BigDecimal coefficient, int currentIndex) {
+        return MathHelper.scaleAndRound(pivot.add(originalData[currentIndex - 1].getHigh()
+                .subtract(originalData[currentIndex - 1].getLow())
+                .multiply(coefficient)));
+    }
+
+    private BigDecimal calculateSupport(BigDecimal coefficient, int currentIndex) {
+        return MathHelper.scaleAndRound(pivot.subtract(originalData[currentIndex - 1].getHigh()
+                .subtract(originalData[currentIndex - 1].getLow())
+                .multiply(coefficient)));
     }
 
 }

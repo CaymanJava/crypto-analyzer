@@ -10,7 +10,7 @@ import static pro.crypto.model.IndicatorType.WOODIE_PIVOT_POINTS;
 
 public class WoodiePivotPoints extends PivotPoints {
 
-    WoodiePivotPoints(Tick originalData) {
+    WoodiePivotPoints(Tick[] originalData) {
         super(originalData);
     }
 
@@ -26,34 +26,60 @@ public class WoodiePivotPoints extends PivotPoints {
 
     // (H + L + 2 * C) / 4
     @Override
-    BigDecimal calculatePivot() {
-        return MathHelper.divide(
-                originalData.getHigh().add(originalData.getLow()).add(new BigDecimal(2).multiply(originalData.getClose())),
-                new BigDecimal(4));
+    BigDecimal calculatePivot(int currentIndex) {
+        return MathHelper.average(
+                originalData[currentIndex - 1].getHigh(),
+                originalData[currentIndex - 1].getLow(),
+                originalData[currentIndex - 1].getClose(),
+                originalData[currentIndex - 1].getClose());
     }
 
     // 2 * P - L
     @Override
-    BigDecimal calculateFirstResistance() {
-        return new BigDecimal(2).multiply(pivot).subtract(originalData.getLow());
+    BigDecimal calculateFirstResistance(int currentIndex) {
+        return new BigDecimal(2).multiply(pivot)
+                .subtract(originalData[currentIndex - 1].getLow());
     }
 
     // P + H - L
     @Override
-    BigDecimal calculateSecondResistance() {
-        return pivot.add(originalData.getHigh()).subtract(originalData.getLow());
+    BigDecimal calculateSecondResistance(int currentIndex) {
+        return pivot.add(originalData[currentIndex - 1].getHigh())
+                .subtract(originalData[currentIndex - 1].getLow());
+    }
+
+    @Override
+    BigDecimal calculateThirdResistance(int currentIndex) {
+        return empty();
+    }
+
+    @Override
+    BigDecimal calculateFourthResistance(int currentIndex) {
+        return empty();
     }
 
     // 2 * P - H
     @Override
-    BigDecimal calculateFirstSupport() {
-        return new BigDecimal(2).multiply(pivot).subtract(originalData.getHigh());
+    BigDecimal calculateFirstSupport(int currentIndex) {
+        return new BigDecimal(2).multiply(pivot)
+                .subtract(originalData[currentIndex - 1].getHigh());
     }
 
     // P - H + L
     @Override
-    BigDecimal calculateSecondSupport() {
-        return pivot.subtract(originalData.getHigh()).add(originalData.getLow());
+    BigDecimal calculateSecondSupport(int currentIndex) {
+        return pivot.subtract(originalData[currentIndex - 1].getHigh())
+                .add(originalData[currentIndex - 1].getLow());
+    }
+
+    @Override
+    BigDecimal calculateThirdSupport(int currentIndex) {
+        return empty();
+    }
+
+    @Override
+    BigDecimal calculateFourthSupport(int currentIndex) {
+        return empty();
     }
 
 }

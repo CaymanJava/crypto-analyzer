@@ -5,16 +5,18 @@ import pro.crypto.model.Indicator;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 
 public abstract class PivotPoints implements Indicator<PivotResult> {
 
-    protected final Tick originalData;
+    protected final Tick[] originalData;
     protected PivotResult[] result;
+
     BigDecimal pivot;
 
-    PivotPoints(Tick originalData) {
+    PivotPoints(Tick[] originalData) {
         this.originalData = originalData;
         checkOriginalData(this.originalData);
     }
@@ -28,60 +30,58 @@ public abstract class PivotPoints implements Indicator<PivotResult> {
     }
 
     void calculatePivotPoints() {
-        result = new PivotResult[1];
-        pivot = calculatePivot();
-        BigDecimal firstResistance = calculateFirstResistance();
-        BigDecimal secondResistance = calculateSecondResistance();
-        BigDecimal thirdResistance = calculateThirdResistance();
-        BigDecimal fourthResistance = calculateFourthResistance();
-        BigDecimal firstSupport = calculateFirstSupport();
-        BigDecimal secondSupport = calculateSecondSupport();
-        BigDecimal thirdSupport = calculateThirdSupport();
-        BigDecimal fourthSupport = calculateFourthSupport();
-        result[0] = new PivotResult(originalData.getTickTime(), pivot,
-                firstResistance, secondResistance, thirdResistance, fourthResistance,
-                firstSupport, secondSupport, thirdSupport, fourthSupport);
+        result = new PivotResult[originalData.length];
+        fillInFirstValue();
+        IntStream.range(1, result.length)
+                .forEach(this::calculatePivotPoint);
     }
 
-    BigDecimal calculatePivot() {
-        return null;
-    }
+    abstract BigDecimal calculatePivot(int currentIndex);
 
-    BigDecimal calculateFirstResistance() {
-        return null;
-    }
+    abstract BigDecimal calculateFirstResistance(int currentIndex);
 
-    BigDecimal calculateSecondResistance() {
-        return null;
-    }
+    abstract BigDecimal calculateSecondResistance(int currentIndex);
 
-    BigDecimal calculateThirdResistance() {
-        return null;
-    }
+    abstract BigDecimal calculateThirdResistance(int currentIndex);
 
-    BigDecimal calculateFourthResistance() {
-        return null;
-    }
+    abstract BigDecimal calculateFourthResistance(int currentIndex);
 
-    BigDecimal calculateFirstSupport() {
-        return null;
-    }
+    abstract BigDecimal calculateFirstSupport(int currentIndex);
 
-    BigDecimal calculateSecondSupport() {
-        return null;
-    }
+    abstract BigDecimal calculateSecondSupport(int currentIndex);
 
-    BigDecimal calculateThirdSupport() {
-        return null;
-    }
+    abstract BigDecimal calculateThirdSupport(int currentIndex);
 
-    BigDecimal calculateFourthSupport() {
-        return null;
-    }
+    abstract BigDecimal calculateFourthSupport(int currentIndex);
 
     // (H + L + C) / 3
-    BigDecimal calculateDefaultPivot() {
-        return MathHelper.divide(originalData.getHigh().add(originalData.getLow()).add(originalData.getClose()), new BigDecimal(3));
+    BigDecimal calculateDefaultPivot(int currentIndex) {
+        return MathHelper.average(originalData[currentIndex - 1].getHigh(), originalData[currentIndex - 1].getLow(), originalData[currentIndex - 1].getClose());
+    }
+
+    BigDecimal empty() {
+        return null;
+    }
+
+    private void fillInFirstValue() {
+        result[0] = new PivotResult(originalData[0].getTickTime(), null,
+                null, null, null, null,
+                null, null, null, null);
+    }
+
+    private void calculatePivotPoint(int currentIndex) {
+        pivot = calculatePivot(currentIndex);
+        BigDecimal firstResistance = calculateFirstResistance(currentIndex);
+        BigDecimal secondResistance = calculateSecondResistance(currentIndex);
+        BigDecimal thirdResistance = calculateThirdResistance(currentIndex);
+        BigDecimal fourthResistance = calculateFourthResistance(currentIndex);
+        BigDecimal firstSupport = calculateFirstSupport(currentIndex);
+        BigDecimal secondSupport = calculateSecondSupport(currentIndex);
+        BigDecimal thirdSupport = calculateThirdSupport(currentIndex);
+        BigDecimal fourthSupport = calculateFourthSupport(currentIndex);
+        result[currentIndex] = new PivotResult(originalData[currentIndex].getTickTime(), pivot,
+                firstResistance, secondResistance, thirdResistance, fourthResistance,
+                firstSupport, secondSupport, thirdSupport, fourthSupport);
     }
 
 }

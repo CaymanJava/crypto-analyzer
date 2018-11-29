@@ -1,0 +1,1313 @@
+[
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    }
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5092.9700000000,
+    "firstResistance": 1283.2550000000,
+    "firstSupport": 1243.8150000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5142.6101000000,
+    "firstResistance": 1310.3050500000,
+    "firstSupport": 1276.6550500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 2,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5027.7600000000,
+    "firstResistance": 1262.8800000000,
+    "firstSupport": 1239.1200000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5183.6100000000,
+    "firstResistance": 1311.5350000000,
+    "firstSupport": 1287.7850000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5195.9900000000,
+    "firstResistance": 1327.2650000000,
+    "firstSupport": 1287.6650000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5264.4802000000,
+    "firstResistance": 1332.7101000000,
+    "firstSupport": 1309.8100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5292.6400000000,
+    "firstResistance": 1331.3600000000,
+    "firstSupport": 1299.0500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5143.5800000000,
+    "firstResistance": 1292.7000000000,
+    "firstSupport": 1266.0700000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5146.7100000000,
+    "firstResistance": 1302.7650000000,
+    "firstSupport": 1280.9950000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5103.9898000000,
+    "firstResistance": 1284.3050000000,
+    "firstSupport": 1259.2649000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5076.1399000000,
+    "firstResistance": 1279.2199500000,
+    "firstSupport": 1239.5699500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5013.0100000000,
+    "firstResistance": 1273.4250000000,
+    "firstSupport": 1242.6050000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4891.7398000000,
+    "firstResistance": 1229.6800000000,
+    "firstSupport": 1202.9599000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4886.5300000000,
+    "firstResistance": 1227.0250000000,
+    "firstSupport": 1210.3050000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4749.4701000000,
+    "firstResistance": 1197.3250500000,
+    "firstSupport": 1165.0150500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4752.1100000000,
+    "firstResistance": 1207.0150000000,
+    "firstSupport": 1175.6050000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4860.8700000000,
+    "firstResistance": 1246.3150000000,
+    "firstSupport": 1203.2050000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4875.0500000000,
+    "firstResistance": 1230.6150000000,
+    "firstSupport": 1197.9050000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4830.4800000000,
+    "firstResistance": 1217.1200000000,
+    "firstSupport": 1180.1600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4682.9399000000,
+    "firstResistance": 1181.4000500000,
+    "firstSupport": 1150.7299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4802.4500000000,
+    "firstResistance": 1240.5150000000,
+    "firstSupport": 1187.2150000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4777.5501000000,
+    "firstResistance": 1205.0150500000,
+    "firstSupport": 1166.0550500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4692.5401000000,
+    "firstResistance": 1181.7600500000,
+    "firstSupport": 1148.3100500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4586.1900000000,
+    "firstResistance": 1157.8250000000,
+    "firstSupport": 1117.3450000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4491.9100000000,
+    "firstResistance": 1132.5950000000,
+    "firstSupport": 1100.1650000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4492.6200000000,
+    "firstResistance": 1136.6700000000,
+    "firstSupport": 1102.1800000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4474.1600000000,
+    "firstResistance": 1125.0000000000,
+    "firstSupport": 1101.1900000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4603.5200000000,
+    "firstResistance": 1193.2700000000,
+    "firstSupport": 1135.9300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4830.6100000000,
+    "firstResistance": 1235.4050000000,
+    "firstSupport": 1195.1850000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4857.1500000000,
+    "firstResistance": 1235.1550000000,
+    "firstSupport": 1206.9750000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5107.7899000000,
+    "firstResistance": 1294.0249500000,
+    "firstSupport": 1271.1549500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 4944.1502000000,
+    "firstResistance": 1243.0150000000,
+    "firstSupport": 1218.4651000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5102.1700000000,
+    "firstResistance": 1287.6250000000,
+    "firstSupport": 1267.8750000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 3,
+        "day": 31
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5117.4599000000,
+    "firstResistance": 1305.2900500000,
+    "firstSupport": 1270.6499500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5202.4900000000,
+    "firstResistance": 1333.4850000000,
+    "firstSupport": 1288.7150000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5188.6600000000,
+    "firstResistance": 1313.6700000000,
+    "firstSupport": 1286.7300000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5240.1900000000,
+    "firstResistance": 1340.6350000000,
+    "firstSupport": 1299.8450000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5222.7800000000,
+    "firstResistance": 1314.8500000000,
+    "firstSupport": 1280.4000000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5290.9600000000,
+    "firstResistance": 1348.3100000000,
+    "firstSupport": 1314.1500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5283.2801000000,
+    "firstResistance": 1331.0100500000,
+    "firstSupport": 1295.4300500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5177.8399000000,
+    "firstResistance": 1309.7300500000,
+    "firstSupport": 1269.9898500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5296.5400000000,
+    "firstResistance": 1347.7200000000,
+    "firstSupport": 1313.6400000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 9
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5323.5200000000,
+    "firstResistance": 1338.6700000000,
+    "firstSupport": 1314.1800000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 10
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5396.0800000000,
+    "firstResistance": 1384.3200000000,
+    "firstSupport": 1337.2100000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 11
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5593.9302000000,
+    "firstResistance": 1408.2850000000,
+    "firstSupport": 1376.9351000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 12
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5583.2300000000,
+    "firstResistance": 1412.2850000000,
+    "firstSupport": 1390.2450000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 13
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5643.5900000000,
+    "firstResistance": 1435.2750000000,
+    "firstSupport": 1402.7550000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 14
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5519.7300000000,
+    "firstResistance": 1388.3950000000,
+    "firstSupport": 1359.7850000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 15
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5457.5800000000,
+    "firstResistance": 1374.5100000000,
+    "firstSupport": 1339.0200000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 16
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5312.4498000000,
+    "firstResistance": 1337.1550000000,
+    "firstSupport": 1301.1249000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 17
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5413.5801000000,
+    "firstResistance": 1378.7100500000,
+    "firstSupport": 1338.8200500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 18
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5438.8900000000,
+    "firstResistance": 1385.3150000000,
+    "firstSupport": 1347.7050000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 19
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5613.7199000000,
+    "firstResistance": 1427.9200500000,
+    "firstSupport": 1395.2299500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 20
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5624.3400000000,
+    "firstResistance": 1426.0300000000,
+    "firstSupport": 1398.6400000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 21
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5606.4299000000,
+    "firstResistance": 1409.5549500000,
+    "firstSupport": 1377.7949500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 22
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5504.9601000000,
+    "firstResistance": 1384.7200500000,
+    "firstSupport": 1357.5499500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 23
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5634.0400000000,
+    "firstResistance": 1441.6100000000,
+    "firstSupport": 1397.3800000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 24
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5835.0801000000,
+    "firstResistance": 1487.4600500000,
+    "firstSupport": 1448.8200500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 25
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5868.9400000000,
+    "firstResistance": 1484.9700000000,
+    "firstSupport": 1459.1200000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5916.9698000000,
+    "firstResistance": 1497.3549000000,
+    "firstSupport": 1471.5450000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 27
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5805.3800000000,
+    "firstResistance": 1461.5700000000,
+    "firstSupport": 1423.9600000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 28
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5933.4599000000,
+    "firstResistance": 1504.1099500000,
+    "firstSupport": 1475.2799500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 29
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5933.6599000000,
+    "firstResistance": 1488.1099500000,
+    "firstSupport": 1469.3900500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 4,
+        "day": 30
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5955.3999000000,
+    "firstResistance": 1503.1099500000,
+    "firstSupport": 1456.2600500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5814.1099000000,
+    "firstResistance": 1461.8249500000,
+    "firstSupport": 1432.3650500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 2
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5731.6302000000,
+    "firstResistance": 1452.8951000000,
+    "firstSupport": 1421.6350000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 3
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5677.8600000000,
+    "firstResistance": 1428.3500000000,
+    "firstSupport": 1392.9800000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 4
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5674.3199000000,
+    "firstResistance": 1446.0599500000,
+    "firstSupport": 1406.7699500000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 5
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5512.6798000000,
+    "firstResistance": 1389.2700000000,
+    "firstSupport": 1344.9399000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 6
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5560.3000000000,
+    "firstResistance": 1406.2500000000,
+    "firstSupport": 1382.3500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 7
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5588.6000000000,
+    "firstResistance": 1416.5900000000,
+    "firstSupport": 1387.1500000000
+  },
+  {
+    "time": {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 8
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "pivot": 5588.2599000000,
+    "firstResistance": 1405.6199500000,
+    "firstSupport": 1382.4400500000
+  }
+]

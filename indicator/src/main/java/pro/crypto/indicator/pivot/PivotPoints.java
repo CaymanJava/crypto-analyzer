@@ -64,9 +64,7 @@ public abstract class PivotPoints implements Indicator<PivotResult> {
     }
 
     private void fillInFirstValue() {
-        result[0] = new PivotResult(originalData[0].getTickTime(), null,
-                null, null, null, null,
-                null, null, null, null);
+        result[0] = new PivotResult(originalData[0].getTickTime());
     }
 
     private void calculatePivotPoint(int currentIndex) {

@@ -13,5 +13,6 @@ public enum StrategyType {
     LRSI_MA_PSAR,
     MACD_CCI,
     PIVOT_RSI_MACD_MA,
-    HA_MACD_PSAR
+    HA_MACD_PSAR,
+    CCI_RSI_ATR
 }

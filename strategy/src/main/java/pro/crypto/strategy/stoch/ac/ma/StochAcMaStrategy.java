@@ -230,6 +230,7 @@ public class StochAcMaStrategy implements Strategy<StochAcMaResult> {
         if (peaks[currentIndex]) {
             lastPeakIndex = currentIndex;
         }
+
         if (valleys[currentIndex]) {
             lastValleyIndex = currentIndex;
         }

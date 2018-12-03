@@ -154,6 +154,7 @@ public class LrsiMaPsarStrategy implements Strategy<LrsiMaPsarResult> {
 
     private void findEntry(int currentIndex) {
         if (isPossibleDefineEntry(currentIndex)) {
+            defineLookingPosition(currentIndex);
             defineEntry(currentIndex);
         }
     }
@@ -169,8 +170,6 @@ public class LrsiMaPsarStrategy implements Strategy<LrsiMaPsarResult> {
     }
 
     private void defineEntry(int currentIndex) {
-        defineLookingPosition(currentIndex);
-
         if (positions.contains(ENTRY_LONG) && lookingLongEntry && isLongEntry(currentIndex)) {
             result[currentIndex].getPositions().add(ENTRY_LONG);
             lookingLongEntry = false;

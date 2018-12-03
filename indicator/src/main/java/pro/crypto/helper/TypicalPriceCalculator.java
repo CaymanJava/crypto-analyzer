@@ -19,7 +19,7 @@ public class TypicalPriceCalculator {
         if (isNull(tick) || isNull(tick.getClose()) || isNull(tick.getHigh()) || isNull(tick.getLow())) {
             return null;
         }
-        return MathHelper.divide(tick.getHigh().add(tick.getLow()).add(tick.getClose()), new BigDecimal(3));
+        return MathHelper.average(tick.getHigh(), tick.getLow(), tick.getClose());
     }
 
 }

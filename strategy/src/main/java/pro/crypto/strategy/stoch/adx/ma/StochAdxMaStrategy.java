@@ -163,6 +163,7 @@ public class StochAdxMaStrategy implements Strategy<StochAdxMaResult> {
         if (peaks[currentIndex]) {
             lastPeakIndex = currentIndex;
         }
+
         if (valleys[currentIndex]) {
             lastValleyIndex = currentIndex;
         }

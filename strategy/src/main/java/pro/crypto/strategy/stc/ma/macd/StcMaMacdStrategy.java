@@ -188,6 +188,7 @@ public class StcMaMacdStrategy implements Strategy<StcMaMacdResult> {
         if (peaks[currentIndex]) {
             lastPeakIndex = currentIndex;
         }
+
         if (valleys[currentIndex]) {
             lastValleyIndex = currentIndex;
         }

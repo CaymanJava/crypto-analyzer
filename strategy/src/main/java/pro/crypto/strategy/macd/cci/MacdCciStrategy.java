@@ -8,7 +8,13 @@ import pro.crypto.indicator.cci.CommodityChannelIndex;
 import pro.crypto.indicator.macd.MACDRequest;
 import pro.crypto.indicator.macd.MACDResult;
 import pro.crypto.indicator.macd.MovingAverageConvergenceDivergence;
-import pro.crypto.model.*;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.Position;
+import pro.crypto.model.Signal;
+import pro.crypto.model.Strategy;
+import pro.crypto.model.StrategyRequest;
+import pro.crypto.model.StrategyType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -19,12 +25,16 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.math.BigDecimal.ZERO;
+import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static java.util.Optional.ofNullable;
 import static pro.crypto.helper.IndicatorResultExtractor.extractIndicatorValues;
 import static pro.crypto.helper.IndicatorResultExtractor.extractSignalLineValues;
-import static pro.crypto.model.Position.*;
+import static pro.crypto.model.Position.ENTRY_LONG;
+import static pro.crypto.model.Position.ENTRY_SHORT;
+import static pro.crypto.model.Position.EXIT_LONG;
+import static pro.crypto.model.Position.EXIT_SHORT;
 import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.SELL;
 import static pro.crypto.model.StrategyType.MACD_CCI;
@@ -100,9 +110,9 @@ public class MacdCciStrategy implements Strategy<MacdCciResult> {
     }
 
     private void initResultArray() {
-        result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> MacdCciResult.builder()
-                        .time(originalData[idx].getTickTime())
+        result = stream(originalData)
+                .map(originalDatum -> MacdCciResult.builder()
+                        .time(originalDatum.getTickTime())
                         .positions(new HashSet<>())
                         .build())
                 .toArray(MacdCciResult[]::new);
@@ -153,7 +163,7 @@ public class MacdCciStrategy implements Strategy<MacdCciResult> {
     }
 
     private void findEntries() {
-        if (positions.contains(ENTRY_LONG) || positions.contains(ENTRY_SHORT)) {
+        if (isRequired(ENTRY_LONG) || isRequired(ENTRY_SHORT)) {
             IntStream.range(0, originalData.length)
                     .forEach(this::findEntry);
         }
@@ -193,12 +203,13 @@ public class MacdCciStrategy implements Strategy<MacdCciResult> {
     }
 
     private void defineEntry(int currentIndex) {
-        if (positions.contains(ENTRY_LONG) && isLongEntry(currentIndex)) {
-            result[currentIndex].getPositions().add(ENTRY_LONG);
-        }
+        defineLongEntry(currentIndex);
+        defineShortEntry(currentIndex);
+    }
 
-        if (positions.contains(EXIT_SHORT) && isShortEntry(currentIndex)) {
-            result[currentIndex].getPositions().add(ENTRY_SHORT);
+    private void defineLongEntry(int currentIndex) {
+        if (isRequired(ENTRY_LONG) && isLongEntry(currentIndex)) {
+            result[currentIndex].getPositions().add(ENTRY_LONG);
         }
     }
 
@@ -218,6 +229,12 @@ public class MacdCciStrategy implements Strategy<MacdCciResult> {
                 && macdResults[currentIndex].getIndicatorValue().compareTo(ZERO) > 0;
     }
 
+    private void defineShortEntry(int currentIndex) {
+        if (isRequired(EXIT_SHORT) && isShortEntry(currentIndex)) {
+            result[currentIndex].getPositions().add(ENTRY_SHORT);
+        }
+    }
+
     private boolean isShortEntry(int currentIndex) {
         return isCCIShortEntryCondition(currentIndex)
                 && isMACDShortEntryCondition(currentIndex);
@@ -235,7 +252,7 @@ public class MacdCciStrategy implements Strategy<MacdCciResult> {
     }
 
     private void findExits() {
-        if (positions.contains(EXIT_LONG) || positions.contains(EXIT_SHORT)) {
+        if (isRequired(EXIT_LONG) || isRequired(EXIT_SHORT)) {
             IntStream.range(0, originalData.length)
                     .forEach(this::findExit);
         }
@@ -271,13 +288,17 @@ public class MacdCciStrategy implements Strategy<MacdCciResult> {
     }
 
     private void findExit(int currentIndex) {
-        if (positions.contains(EXIT_LONG) && isLongExit(currentIndex)) {
+        if (isRequired(EXIT_LONG) && isLongExit(currentIndex)) {
             result[currentIndex].getPositions().add(EXIT_LONG);
         }
 
-        if (positions.contains(EXIT_SHORT) && isShortExit(currentIndex)) {
+        if (isRequired(EXIT_SHORT) && isShortExit(currentIndex)) {
             result[currentIndex].getPositions().add(EXIT_SHORT);
         }
+    }
+
+    private boolean isRequired(Position entryLong) {
+        return positions.contains(entryLong);
     }
 
     private boolean isLongExit(int currentIndex) {

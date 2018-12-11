@@ -14,7 +14,13 @@ import pro.crypto.indicator.psar.ParabolicStopAndReverse;
 import pro.crypto.indicator.rsi.LRSIRequest;
 import pro.crypto.indicator.rsi.LaguerreRelativeStrengthIndex;
 import pro.crypto.indicator.rsi.RSIResult;
-import pro.crypto.model.*;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.Position;
+import pro.crypto.model.Strategy;
+import pro.crypto.model.StrategyRequest;
+import pro.crypto.model.StrategyType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -22,9 +28,13 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.IntStream;
 
+import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Position.*;
+import static pro.crypto.model.Position.ENTRY_LONG;
+import static pro.crypto.model.Position.ENTRY_SHORT;
+import static pro.crypto.model.Position.EXIT_LONG;
+import static pro.crypto.model.Position.EXIT_SHORT;
 import static pro.crypto.model.SecurityLevel.OVERBOUGHT;
 import static pro.crypto.model.SecurityLevel.OVERSOLD;
 import static pro.crypto.model.Signal.BUY;
@@ -91,9 +101,9 @@ public class LrsiMaPsarStrategy implements Strategy<LrsiMaPsarResult> {
     }
 
     private void initResultArray() {
-        result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> LrsiMaPsarResult.builder()
-                        .time(originalData[idx].getTickTime())
+        result = stream(originalData)
+                .map(originalDatum -> LrsiMaPsarResult.builder()
+                        .time(originalDatum.getTickTime())
                         .positions(new HashSet<>())
                         .build())
                 .toArray(LrsiMaPsarResult[]::new);
@@ -146,7 +156,7 @@ public class LrsiMaPsarStrategy implements Strategy<LrsiMaPsarResult> {
     }
 
     private void findEntries() {
-        if (positions.contains(ENTRY_LONG) || positions.contains(ENTRY_SHORT)) {
+        if (isRequired(ENTRY_LONG) || isRequired(ENTRY_SHORT)) {
             IntStream.range(0, originalData.length)
                     .forEach(this::findEntry);
         }
@@ -170,14 +180,21 @@ public class LrsiMaPsarStrategy implements Strategy<LrsiMaPsarResult> {
     }
 
     private void defineEntry(int currentIndex) {
-        if (positions.contains(ENTRY_LONG) && lookingLongEntry && isLongEntry(currentIndex)) {
-            result[currentIndex].getPositions().add(ENTRY_LONG);
-            lookingLongEntry = false;
-        }
+        defineLongEntry(currentIndex);
+        defineShortEntry(currentIndex);
+    }
 
-        if (positions.contains(ENTRY_SHORT) && lookingShortEntry && isShortEntry(currentIndex)) {
+    private void defineShortEntry(int currentIndex) {
+        if (isRequired(ENTRY_SHORT) && lookingShortEntry && isShortEntry(currentIndex)) {
             result[currentIndex].getPositions().add(ENTRY_SHORT);
             lookingShortEntry = false;
+        }
+    }
+
+    private void defineLongEntry(int currentIndex) {
+        if (isRequired(ENTRY_LONG) && lookingLongEntry && isLongEntry(currentIndex)) {
+            result[currentIndex].getPositions().add(ENTRY_LONG);
+            lookingLongEntry = false;
         }
     }
 
@@ -242,11 +259,15 @@ public class LrsiMaPsarStrategy implements Strategy<LrsiMaPsarResult> {
     }
 
     private void findExits() {
-        if (positions.contains(EXIT_LONG) || positions.contains(EXIT_SHORT)) {
+        if (isRequired(EXIT_LONG) || isRequired(EXIT_SHORT)) {
             analyzerParabolicStopAndReverse();
             IntStream.range(0, originalData.length)
                     .forEach(this::findExit);
         }
+    }
+
+    private boolean isRequired(Position entryLong) {
+        return positions.contains(entryLong);
     }
 
     private void analyzerParabolicStopAndReverse() {

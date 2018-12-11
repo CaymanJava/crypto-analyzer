@@ -22,9 +22,9 @@ public class StochAcMaRequest implements StrategyRequest {
 
     private int stochSlowPeriod;
 
-    private double stochOversoldLevel;
+    private Double stochOversoldLevel;
 
-    private double stochOverboughtLevel;
+    private Double stochOverboughtLevel;
 
     private int acSlowPeriod;
 

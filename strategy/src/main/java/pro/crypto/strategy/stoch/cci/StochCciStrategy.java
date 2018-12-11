@@ -9,7 +9,13 @@ import pro.crypto.indicator.cci.CommodityChannelIndex;
 import pro.crypto.indicator.stoch.StochRequest;
 import pro.crypto.indicator.stoch.StochResult;
 import pro.crypto.indicator.stoch.StochasticOscillator;
-import pro.crypto.model.*;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.Position;
+import pro.crypto.model.Signal;
+import pro.crypto.model.Strategy;
+import pro.crypto.model.StrategyRequest;
+import pro.crypto.model.StrategyType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -19,6 +25,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.math.BigDecimal.ZERO;
+import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static java.util.Optional.ofNullable;
@@ -111,9 +118,9 @@ public class StochCciStrategy implements Strategy<StochCciResult> {
     }
 
     private void initResultArray() {
-        result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> StochCciResult.builder()
-                        .time(originalData[idx].getTickTime())
+        result = stream(originalData)
+                .map(originalDatum -> StochCciResult.builder()
+                        .time(originalDatum.getTickTime())
                         .positions(new HashSet<>())
                         .build())
                 .toArray(StochCciResult[]::new);
@@ -219,18 +226,30 @@ public class StochCciStrategy implements Strategy<StochCciResult> {
     }
 
     private void defineEntry(int currentIndex) {
-        if (positions.contains(ENTRY_LONG) && isLongEntry()) {
+        defineLongEntry(currentIndex);
+        defineShortEntry(currentIndex);
+    }
+
+    private void defineLongEntry(int currentIndex) {
+        if (isRequired(ENTRY_LONG) && isLongEntry()) {
             result[currentIndex].getPositions().add(ENTRY_LONG);
-            resetCurrentIndicatorSignals();
-        }
-        if (positions.contains(ENTRY_SHORT) && isShortEntry()) {
-            result[currentIndex].getPositions().add(ENTRY_SHORT);
             resetCurrentIndicatorSignals();
         }
     }
 
+    private boolean isRequired(Position entryLong) {
+        return positions.contains(entryLong);
+    }
+
     private boolean isLongEntry() {
         return isEntry(BUY);
+    }
+
+    private void defineShortEntry(int currentIndex) {
+        if (isRequired(ENTRY_SHORT) && isShortEntry()) {
+            result[currentIndex].getPositions().add(ENTRY_SHORT);
+            resetCurrentIndicatorSignals();
+        }
     }
 
     private boolean isShortEntry() {

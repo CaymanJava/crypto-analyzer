@@ -9,13 +9,21 @@ import pro.crypto.indicator.ha.HeikenAshi;
 import pro.crypto.indicator.stoch.StochRequest;
 import pro.crypto.indicator.stoch.StochResult;
 import pro.crypto.indicator.stoch.StochasticOscillator;
-import pro.crypto.model.*;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.Position;
+import pro.crypto.model.SecurityLevel;
+import pro.crypto.model.Strategy;
+import pro.crypto.model.StrategyRequest;
+import pro.crypto.model.StrategyType;
 import pro.crypto.model.tick.Tick;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.IntStream;
 
+import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.Position.ENTRY_LONG;
@@ -72,9 +80,9 @@ public class StochHaStrategy implements Strategy<StochHaResult> {
     }
 
     private void initResultArray() {
-        result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> StochHaResult.builder()
-                        .time(originalData[idx].getTickTime())
+        result = stream(originalData)
+                .map(originalDatum -> StochHaResult.builder()
+                        .time(originalDatum.getTickTime())
                         .positions(new HashSet<>())
                         .build())
                 .toArray(StochHaResult[]::new);
@@ -134,31 +142,42 @@ public class StochHaStrategy implements Strategy<StochHaResult> {
     }
 
     private void defineEntry(int currentIndex) {
-        if (positions.contains(ENTRY_LONG) && isLongEntry(currentIndex)) {
-            result[currentIndex].getPositions().add(ENTRY_LONG);
-        }
+        defineLongEntry(currentIndex);
+        defineShortEntry(currentIndex);
+    }
 
-        if (positions.contains(ENTRY_SHORT) && isShortEntry(currentIndex)) {
+    private void defineShortEntry(int currentIndex) {
+        if (isRequired(ENTRY_SHORT) && isShortEntry(currentIndex)) {
             result[currentIndex].getPositions().add(ENTRY_SHORT);
         }
     }
 
+    private void defineLongEntry(int currentIndex) {
+        if (isRequired(ENTRY_LONG) && isLongEntry(currentIndex)) {
+            result[currentIndex].getPositions().add(ENTRY_LONG);
+        }
+    }
+
+    private boolean isRequired(Position entryLong) {
+        return positions.contains(entryLong);
+    }
+
     private boolean isLongEntry(int currentIndex) {
         return isRedCandle(currentIndex - 2) && isGreenCandle(currentIndex - 1) && isGreenCandle(currentIndex)
-                && ((stochAnalyzerResults[currentIndex - 2].getSecurityLevel() == OVERSOLD
-                && stochAnalyzerResults[currentIndex - 1].getSecurityLevel() != OVERSOLD
-                && stochAnalyzerResults[currentIndex].getSecurityLevel() != OVERSOLD)
-                || (stochAnalyzerResults[currentIndex - 1].getSecurityLevel() == OVERSOLD
-                && stochAnalyzerResults[currentIndex].getSecurityLevel() != OVERSOLD));
+                && isStochCondition(currentIndex, OVERSOLD);
+    }
+
+    private boolean isStochCondition(int currentIndex, SecurityLevel oversold) {
+        return (stochAnalyzerResults[currentIndex - 2].getSecurityLevel() == oversold
+                && stochAnalyzerResults[currentIndex - 1].getSecurityLevel() != oversold
+                && stochAnalyzerResults[currentIndex].getSecurityLevel() != oversold)
+                || (stochAnalyzerResults[currentIndex - 1].getSecurityLevel() == oversold
+                && stochAnalyzerResults[currentIndex].getSecurityLevel() != oversold);
     }
 
     private boolean isShortEntry(int currentIndex) {
         return isGreenCandle(currentIndex - 2) && isRedCandle(currentIndex - 1) && isRedCandle(currentIndex)
-                && ((stochAnalyzerResults[currentIndex - 2].getSecurityLevel() == OVERBOUGHT
-                && stochAnalyzerResults[currentIndex - 1].getSecurityLevel() != OVERBOUGHT
-                && stochAnalyzerResults[currentIndex].getSecurityLevel() != OVERBOUGHT)
-                || (stochAnalyzerResults[currentIndex - 1].getSecurityLevel() == OVERBOUGHT
-                && stochAnalyzerResults[currentIndex].getSecurityLevel() != OVERBOUGHT));
+                && (isStochCondition(currentIndex, OVERBOUGHT));
     }
 
     private boolean isRedCandle(int index) {

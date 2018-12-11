@@ -9,7 +9,12 @@ import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.indicator.rsi.RSIRequest;
 import pro.crypto.indicator.rsi.RSIResult;
 import pro.crypto.indicator.rsi.RelativeStrengthIndex;
-import pro.crypto.model.*;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.Position;
+import pro.crypto.model.Strategy;
+import pro.crypto.model.StrategyRequest;
+import pro.crypto.model.StrategyType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -18,6 +23,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.IntStream;
 
+import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static java.util.Optional.ofNullable;
@@ -109,9 +115,9 @@ public class RsiEisMaStrategy implements Strategy<RsiEisMaResult> {
     }
 
     private void initResultArray() {
-        result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> RsiEisMaResult.builder()
-                        .time(originalData[idx].getTickTime())
+        result = stream(originalData)
+                .map(originalDatum -> RsiEisMaResult.builder()
+                        .time(originalDatum.getTickTime())
                         .positions(new HashSet<>())
                         .build())
                 .toArray(RsiEisMaResult[]::new);
@@ -195,13 +201,18 @@ public class RsiEisMaStrategy implements Strategy<RsiEisMaResult> {
     }
 
     private void defineEntry(int currentIndex) {
-        if (positions.contains(ENTRY_LONG) && isLongEntry(currentIndex)) {
+        defineLongEntry(currentIndex);
+        defineShortEntry(currentIndex);
+    }
+
+    private void defineLongEntry(int currentIndex) {
+        if (isRequired(ENTRY_LONG) && isLongEntry(currentIndex)) {
             result[currentIndex].getPositions().add(ENTRY_LONG);
         }
+    }
 
-        if (positions.contains(ENTRY_SHORT) && isShortEntry(currentIndex)) {
-            result[currentIndex].getPositions().add(ENTRY_SHORT);
-        }
+    private boolean isRequired(Position entryLong) {
+        return positions.contains(entryLong);
     }
 
     private boolean isLongEntry(int currentIndex) {
@@ -223,6 +234,12 @@ public class RsiEisMaStrategy implements Strategy<RsiEisMaResult> {
 
     private boolean isGreenEISBar(int currentIndex) {
         return eisResults[currentIndex - 1].getBarColor() == GREEN;
+    }
+
+    private void defineShortEntry(int currentIndex) {
+        if (isRequired(ENTRY_SHORT) && isShortEntry(currentIndex)) {
+            result[currentIndex].getPositions().add(ENTRY_SHORT);
+        }
     }
 
     private boolean isShortEntry(int currentIndex) {

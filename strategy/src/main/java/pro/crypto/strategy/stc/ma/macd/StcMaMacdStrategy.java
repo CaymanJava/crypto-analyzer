@@ -13,7 +13,13 @@ import pro.crypto.indicator.macd.MovingAverageConvergenceDivergence;
 import pro.crypto.indicator.stc.STCRequest;
 import pro.crypto.indicator.stc.STCResult;
 import pro.crypto.indicator.stc.SchaffTrendCycle;
-import pro.crypto.model.*;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.Position;
+import pro.crypto.model.Strategy;
+import pro.crypto.model.StrategyRequest;
+import pro.crypto.model.StrategyType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -22,9 +28,13 @@ import java.util.Set;
 import java.util.stream.IntStream;
 
 import static java.math.BigDecimal.ZERO;
+import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Position.*;
+import static pro.crypto.model.Position.ENTRY_LONG;
+import static pro.crypto.model.Position.ENTRY_SHORT;
+import static pro.crypto.model.Position.EXIT_LONG;
+import static pro.crypto.model.Position.EXIT_SHORT;
 import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.SELL;
 import static pro.crypto.model.StrategyType.STC_MA_MACD;
@@ -104,9 +114,9 @@ public class StcMaMacdStrategy implements Strategy<StcMaMacdResult> {
     }
 
     private void initResultArray() {
-        result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> StcMaMacdResult.builder()
-                        .time(originalData[idx].getTickTime())
+        result = stream(originalData)
+                .map(originalDatum -> StcMaMacdResult.builder()
+                        .time(originalDatum.getTickTime())
                         .positions(new HashSet<>())
                         .build())
                 .toArray(StcMaMacdResult[]::new);
@@ -171,7 +181,7 @@ public class StcMaMacdStrategy implements Strategy<StcMaMacdResult> {
     }
 
     private void findEntries() {
-        if (positions.contains(ENTRY_LONG) || positions.contains(ENTRY_SHORT)) {
+        if (isRequired(ENTRY_LONG) || isRequired(ENTRY_SHORT)) {
             IntStream.range(0, originalData.length)
                     .forEach(this::findEntry);
         }
@@ -204,15 +214,19 @@ public class StcMaMacdStrategy implements Strategy<StcMaMacdResult> {
     }
 
     private void defineEntry(int currentIndex) {
-        if (positions.contains(ENTRY_LONG) && isLongEntry(currentIndex)) {
+        defineLongEntry(currentIndex);
+        defineShortEntry(currentIndex);
+    }
+
+    private void defineLongEntry(int currentIndex) {
+        if (isRequired(ENTRY_LONG) && isLongEntry(currentIndex)) {
             result[currentIndex].getPositions().add(ENTRY_LONG);
             result[currentIndex].setStopLose(originalData[lastValleyIndex].getLow());
         }
+    }
 
-        if (positions.contains(ENTRY_SHORT) && isShortEntry(currentIndex)) {
-            result[currentIndex].getPositions().add(ENTRY_SHORT);
-            result[currentIndex].setStopLose(originalData[lastPeakIndex].getHigh());
-        }
+    private boolean isRequired(Position entryLong) {
+        return positions.contains(entryLong);
     }
 
     private boolean isLongEntry(int currentIndex) {
@@ -235,6 +249,13 @@ public class StcMaMacdStrategy implements Strategy<StcMaMacdResult> {
     private boolean isMACDBuyCondition(int currentIndex) {
         return macdResults[currentIndex - 1].getIndicatorValue().compareTo(ZERO) > 0
                 && macdResults[currentIndex].getIndicatorValue().compareTo(ZERO) > 0;
+    }
+
+    private void defineShortEntry(int currentIndex) {
+        if (isRequired(ENTRY_SHORT) && isShortEntry(currentIndex)) {
+            result[currentIndex].getPositions().add(ENTRY_SHORT);
+            result[currentIndex].setStopLose(originalData[lastPeakIndex].getHigh());
+        }
     }
 
     private boolean isShortEntry(int currentIndex) {
@@ -260,24 +281,31 @@ public class StcMaMacdStrategy implements Strategy<StcMaMacdResult> {
     }
 
     private void findExits() {
-        if (positions.contains(EXIT_LONG) || positions.contains(EXIT_SHORT)) {
+        if (isRequired(EXIT_LONG) || isRequired(EXIT_SHORT)) {
             IntStream.range(0, originalData.length)
                     .forEach(this::findExit);
         }
     }
 
     private void findExit(int currentIndex) {
-        if (positions.contains(EXIT_LONG) && isLongExit(currentIndex)) {
-            result[currentIndex].getPositions().add(EXIT_LONG);
-        }
+        findLongExit(currentIndex);
+        findShortExit(currentIndex);
+    }
 
-        if (positions.contains(EXIT_SHORT) && isShortExit(currentIndex)) {
-            result[currentIndex].getPositions().add(EXIT_SHORT);
+    private void findLongExit(int currentIndex) {
+        if (isRequired(EXIT_LONG) && isLongExit(currentIndex)) {
+            result[currentIndex].getPositions().add(EXIT_LONG);
         }
     }
 
     private boolean isLongExit(int currentIndex) {
         return stcAnalyzerResults[currentIndex].getSignal() == SELL;
+    }
+
+    private void findShortExit(int currentIndex) {
+        if (isRequired(EXIT_SHORT) && isShortExit(currentIndex)) {
+            result[currentIndex].getPositions().add(EXIT_SHORT);
+        }
     }
 
     private boolean isShortExit(int currentIndex) {

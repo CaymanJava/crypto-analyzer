@@ -17,7 +17,14 @@ import pro.crypto.indicator.ao.AwesomeOscillator;
 import pro.crypto.indicator.fractal.Fractal;
 import pro.crypto.indicator.fractal.FractalRequest;
 import pro.crypto.indicator.fractal.FractalResult;
-import pro.crypto.model.*;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorResult;
+import pro.crypto.model.Position;
+import pro.crypto.model.Signal;
+import pro.crypto.model.Strategy;
+import pro.crypto.model.StrategyRequest;
+import pro.crypto.model.StrategyType;
 import pro.crypto.model.result.SignalResult;
 import pro.crypto.model.tick.Tick;
 import pro.crypto.model.tick.TimeFrame;
@@ -29,10 +36,14 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.math.BigDecimal.ZERO;
+import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.helper.MathHelper.scaleAndRound;
-import static pro.crypto.model.Position.*;
+import static pro.crypto.model.Position.ENTRY_LONG;
+import static pro.crypto.model.Position.ENTRY_SHORT;
+import static pro.crypto.model.Position.EXIT_LONG;
+import static pro.crypto.model.Position.EXIT_SHORT;
 import static pro.crypto.model.Signal.BUY;
 import static pro.crypto.model.Signal.SELL;
 import static pro.crypto.model.StrategyType.BILL_WILLIAMS_STRATEGY;
@@ -103,9 +114,9 @@ public class BillWilliamsStrategy implements Strategy<BWSResult> {
     }
 
     private void initResultArray() {
-        result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> BWSResult.builder()
-                        .time(originalData[idx].getTickTime())
+        result = stream(originalData)
+                .map(originalDatum -> BWSResult.builder()
+                        .time(originalDatum.getTickTime())
                         .positions(new HashSet<>())
                         .build())
                 .toArray(BWSResult[]::new);
@@ -141,7 +152,6 @@ public class BillWilliamsStrategy implements Strategy<BWSResult> {
                 .build();
     }
 
-
     private void findEntries() {
         if (entryPositionsRequired()) {
             AlligatorResult[] alligatorResults = calculateAlligator();
@@ -151,7 +161,7 @@ public class BillWilliamsStrategy implements Strategy<BWSResult> {
     }
 
     private boolean entryPositionsRequired() {
-        return positions.contains(ENTRY_LONG) || positions.contains(ENTRY_SHORT);
+        return isRequired(ENTRY_LONG) || isRequired(ENTRY_SHORT);
     }
 
     private FractalResult[] calculateFractalsWithAlligatorFilter(AlligatorResult[] alligatorResults) {
@@ -207,11 +217,13 @@ public class BillWilliamsStrategy implements Strategy<BWSResult> {
 
     private void recognizeEntry(FractalResult fractalResult, AlligatorResult alligatorResult, int currentIndex) {
         refreshLastFractals(fractalResult, currentIndex);
-        if (positions.contains(ENTRY_LONG) && nonNull(highPriceLastUpFractal)) {
+        defineLongEntry(alligatorResult, currentIndex);
+        defineShortEntry(alligatorResult, currentIndex);
+    }
+
+    private void defineLongEntry(AlligatorResult alligatorResult, int currentIndex) {
+        if (isRequired(ENTRY_LONG) && nonNull(highPriceLastUpFractal)) {
             findLongEntry(alligatorResult, currentIndex);
-        }
-        if (positions.contains(ENTRY_SHORT) && nonNull(lowPriceLastDownFractal)) {
-            findShortEntry(alligatorResult, currentIndex);
         }
     }
 
@@ -276,6 +288,12 @@ public class BillWilliamsStrategy implements Strategy<BWSResult> {
         return originalData[currentIndex].getLow().compareTo(teethValue) > 0;
     }
 
+    private void defineShortEntry(AlligatorResult alligatorResult, int currentIndex) {
+        if (isRequired(ENTRY_SHORT) && nonNull(lowPriceLastDownFractal)) {
+            findShortEntry(alligatorResult, currentIndex);
+        }
+    }
+
     private void findShortEntry(AlligatorResult alligatorResult, int currentIndex) {
         if (isShortEntryPriceAcceptable(currentIndex) && teethOverHighPrice(alligatorResult.getTeethValue(), currentIndex)) {
             lookingShortEntryConfirmation = true;
@@ -335,7 +353,7 @@ public class BillWilliamsStrategy implements Strategy<BWSResult> {
     }
 
     private boolean exitPositionsRequired() {
-        return positions.contains(EXIT_LONG) || positions.contains(EXIT_SHORT);
+        return isRequired(EXIT_LONG) || isRequired(EXIT_SHORT);
     }
 
     private ACAnalyzerResult[] analyzeAccelerationDecelerationOscillator() {
@@ -370,13 +388,17 @@ public class BillWilliamsStrategy implements Strategy<BWSResult> {
             return;
         }
 
-        if (mergedSignal == BUY && positions.contains(EXIT_SHORT)) {
+        if (mergedSignal == BUY && isRequired(EXIT_SHORT)) {
             result[currentIndex].getPositions().add(EXIT_SHORT);
         }
 
-        if (mergedSignal == SELL && positions.contains(EXIT_LONG)) {
+        if (mergedSignal == SELL && isRequired(EXIT_LONG)) {
             result[currentIndex].getPositions().add(EXIT_LONG);
         }
+    }
+
+    private boolean isRequired(Position entryLong) {
+        return positions.contains(entryLong);
     }
 
 }

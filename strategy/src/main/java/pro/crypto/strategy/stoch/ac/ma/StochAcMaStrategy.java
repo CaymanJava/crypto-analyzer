@@ -12,7 +12,13 @@ import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.indicator.stoch.StochRequest;
 import pro.crypto.indicator.stoch.StochResult;
 import pro.crypto.indicator.stoch.StochasticOscillator;
-import pro.crypto.model.*;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.Position;
+import pro.crypto.model.Signal;
+import pro.crypto.model.Strategy;
+import pro.crypto.model.StrategyRequest;
+import pro.crypto.model.StrategyType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -23,6 +29,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.math.BigDecimal.ZERO;
+import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static java.util.Optional.ofNullable;
@@ -118,9 +125,9 @@ public class StochAcMaStrategy implements Strategy<StochAcMaResult> {
     }
 
     private void initResultArray() {
-        result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> StochAcMaResult.builder()
-                        .time(originalData[idx].getTickTime())
+        result = stream(originalData)
+                .map(originalDatum -> StochAcMaResult.builder()
+                        .time(originalDatum.getTickTime())
                         .positions(new HashSet<>())
                         .build())
                 .toArray(StochAcMaResult[]::new);
@@ -194,7 +201,6 @@ public class StochAcMaStrategy implements Strategy<StochAcMaResult> {
                 .analyze();
     }
 
-
     private Signal[] findStochOverboughtSignals(BigDecimal[] fastStochLine) {
         return new StaticLineCrossAnalyzer(fastStochLine, stochOverboughtLevel)
                 .withRemovingFalsePositive(BUY)
@@ -244,12 +250,16 @@ public class StochAcMaStrategy implements Strategy<StochAcMaResult> {
     }
 
     private void defineEntry(int currentIndex) {
-        if (positions.contains(ENTRY_LONG)) {
+        if (isRequired(ENTRY_LONG)) {
             defineLongEntry(currentIndex);
         }
-        if (positions.contains(ENTRY_SHORT)) {
+        if (isRequired(ENTRY_SHORT)) {
             defineShortEntry(currentIndex);
         }
+    }
+
+    private boolean isRequired(Position entryLong) {
+        return positions.contains(entryLong);
     }
 
     private void defineLongEntry(int currentIndex) {

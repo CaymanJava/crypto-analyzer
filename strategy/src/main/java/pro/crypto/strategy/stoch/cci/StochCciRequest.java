@@ -21,15 +21,15 @@ public class StochCciRequest implements StrategyRequest {
 
     private int slowStochPeriod;
 
-    private double stochOversoldLevel;
+    private Double stochOversoldLevel;
 
-    private double stochOverboughtLevel;
+    private Double stochOverboughtLevel;
 
     private int cciPeriod;
 
-    private double cciOversoldLevel;
+    private Double cciOversoldLevel;
 
-    private double cciOverboughtLevel;
+    private Double cciOverboughtLevel;
 
     private Set<Position> positions;
 

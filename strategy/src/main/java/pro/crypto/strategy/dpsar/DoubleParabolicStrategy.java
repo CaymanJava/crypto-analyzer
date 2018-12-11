@@ -10,7 +10,12 @@ import pro.crypto.indicator.macd.MovingAverageConvergenceDivergence;
 import pro.crypto.indicator.psar.PSARRequest;
 import pro.crypto.indicator.psar.PSARResult;
 import pro.crypto.indicator.psar.ParabolicStopAndReverse;
-import pro.crypto.model.*;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.Position;
+import pro.crypto.model.Strategy;
+import pro.crypto.model.StrategyRequest;
+import pro.crypto.model.StrategyType;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -19,6 +24,7 @@ import java.util.Set;
 import java.util.stream.IntStream;
 
 import static java.math.BigDecimal.ZERO;
+import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.Position.ENTRY_LONG;
@@ -91,9 +97,9 @@ public class DoubleParabolicStrategy implements Strategy<DPsarResult> {
     }
 
     private void initResultArray() {
-        result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> DPsarResult.builder()
-                        .time(originalData[idx].getTickTime())
+        result = stream(originalData)
+                .map(originalDatum -> DPsarResult.builder()
+                        .time(originalDatum.getTickTime())
                         .positions(new HashSet<>())
                         .build())
                 .toArray(DPsarResult[]::new);
@@ -189,14 +195,14 @@ public class DoubleParabolicStrategy implements Strategy<DPsarResult> {
     }
 
     private void defineEntry(int currentIndex) {
-        if (positions.contains(ENTRY_LONG) && isLongEntry(currentIndex)) {
+        defineLongEntry(currentIndex);
+        defineShortEntry(currentIndex);
+    }
+
+    private void defineLongEntry(int currentIndex) {
+        if (isRequired(ENTRY_LONG) && isLongEntry(currentIndex)) {
             result[currentIndex].getPositions().add(ENTRY_LONG);
             defineLongStopLose(currentIndex);
-        }
-
-        if (positions.contains(ENTRY_SHORT) && isShortEntry(currentIndex)) {
-            result[currentIndex].getPositions().add(ENTRY_SHORT);
-            defineShortStopLose(currentIndex);
         }
     }
 
@@ -234,6 +240,17 @@ public class DoubleParabolicStrategy implements Strategy<DPsarResult> {
                     originalData[currentIndex - 1].getLow(),
                     originalData[currentIndex].getLow()));
         }
+    }
+
+    private void defineShortEntry(int currentIndex) {
+        if (isRequired(ENTRY_SHORT) && isShortEntry(currentIndex)) {
+            result[currentIndex].getPositions().add(ENTRY_SHORT);
+            defineShortStopLose(currentIndex);
+        }
+    }
+
+    private boolean isRequired(Position entryLong) {
+        return positions.contains(entryLong);
     }
 
     private boolean isShortEntry(int currentIndex) {

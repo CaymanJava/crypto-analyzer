@@ -10,7 +10,12 @@ import pro.crypto.indicator.ma.MovingAverageFactory;
 import pro.crypto.indicator.stoch.StochRequest;
 import pro.crypto.indicator.stoch.StochResult;
 import pro.crypto.indicator.stoch.StochasticOscillator;
-import pro.crypto.model.*;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.Position;
+import pro.crypto.model.Strategy;
+import pro.crypto.model.StrategyRequest;
+import pro.crypto.model.StrategyType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -18,6 +23,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.IntStream;
 
+import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
@@ -89,9 +95,9 @@ public class StochAdxMaStrategy implements Strategy<StochAdxMaResult> {
     }
 
     private void initResultArray() {
-        result = IntStream.range(0, originalData.length)
-                .mapToObj(idx -> StochAdxMaResult.builder()
-                        .time(originalData[idx].getTickTime())
+        result = stream(originalData)
+                .map(originalDatum -> StochAdxMaResult.builder()
+                        .time(originalDatum.getTickTime())
                         .positions(new HashSet<>())
                         .build())
                 .toArray(StochAdxMaResult[]::new);
@@ -178,15 +184,26 @@ public class StochAdxMaStrategy implements Strategy<StochAdxMaResult> {
     }
 
     private void defineEntry(int currentIndex) {
-        if (positions.contains(ENTRY_LONG) && isLongEntry(currentIndex)) {
-            result[currentIndex].getPositions().add(ENTRY_LONG);
-            result[currentIndex].setStopLose(originalData[lastValleyIndex].getLow());
-        }
+        defineLongEntry(currentIndex);
+        defineShortEntry(currentIndex);
+    }
 
-        if (positions.contains(ENTRY_SHORT) && isShortEntry(currentIndex)) {
+    private void defineShortEntry(int currentIndex) {
+        if (isRequired(ENTRY_SHORT) && isShortEntry(currentIndex)) {
             result[currentIndex].getPositions().add(ENTRY_SHORT);
             result[currentIndex].setStopLose(originalData[lastPeakIndex].getHigh());
         }
+    }
+
+    private void defineLongEntry(int currentIndex) {
+        if (isRequired(ENTRY_LONG) && isLongEntry(currentIndex)) {
+            result[currentIndex].getPositions().add(ENTRY_LONG);
+            result[currentIndex].setStopLose(originalData[lastValleyIndex].getLow());
+        }
+    }
+
+    private boolean isRequired(Position entryLong) {
+        return positions.contains(entryLong);
     }
 
     private boolean isLongEntry(int currentIndex) {

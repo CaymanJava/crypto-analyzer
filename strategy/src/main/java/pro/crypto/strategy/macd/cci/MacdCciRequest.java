@@ -28,9 +28,9 @@ public class MacdCciRequest implements StrategyRequest {
 
     private int cciPeriod;
 
-    private double cciOversoldLevel;
+    private Double cciOversoldLevel;
 
-    private double cciOverboughtLevel;
+    private Double cciOverboughtLevel;
 
     private Set<Position> positions;
 

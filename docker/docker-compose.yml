@@ -1,0 +1,12 @@
+postgres:
+  build: postgres
+  hostname: "postgres"
+  environment:
+      - PGDATA=/var/lib/postgresql/data/crypto-analyzer/
+  ports:
+    - "5432:5432"
+
+redis:
+  image: redis
+  ports:
+    - "6379:6379"

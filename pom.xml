@@ -40,6 +40,7 @@
         <junit.version>4.12</junit.version>
         <commons-io-version>2.6</commons-io-version>
         <poi-ooxml-version>4.0.0</poi-ooxml-version>
+        <liquibase-core.version>3.6.1</liquibase-core.version>
     </properties>
     <dependencyManagement>
         <dependencies>

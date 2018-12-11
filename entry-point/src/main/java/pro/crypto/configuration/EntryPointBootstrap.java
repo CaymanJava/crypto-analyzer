@@ -1,4 +1,4 @@
-package pro.crypto;
+package pro.crypto.configuration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

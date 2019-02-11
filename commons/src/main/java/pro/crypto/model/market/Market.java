@@ -36,4 +36,6 @@ public class Market {
 
     private String notice;
 
+    private String logoUrl;
+
 }

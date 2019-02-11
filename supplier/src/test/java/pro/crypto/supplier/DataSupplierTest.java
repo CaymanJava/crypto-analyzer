@@ -31,7 +31,7 @@ public class DataSupplierTest {
 
     @Test
     @Ignore
-    public void getAllStockMarketsTest() throws Exception {
+    public void getAllStockMarketsTest() {
         MarketData markets = dataSupplier.getAllStockMarkets(BITTREX);
         assertEquals(markets.getStockExchangeName(), BITTREX);
         assertTrue(markets.getMarkets().length > 0);
@@ -39,7 +39,7 @@ public class DataSupplierTest {
 
     @Test
     @Ignore
-    public void getStockMarketByNameTest() throws Exception {
+    public void getStockMarketByNameTest() {
         MarketData marketData = dataSupplier.getStockMarketByName(BITTREX, MARKET_NAME);
         assertEquals(marketData.getStockExchangeName(), BITTREX);
 
@@ -56,14 +56,14 @@ public class DataSupplierTest {
 
     @Test
     @Ignore
-    public void getAllMonitoredMarketTest() throws Exception {
+    public void getAllMonitoredMarketTest() {
         MarketData monitoredMarket = dataSupplier.getAllMonitoredMarket(BITTREX);
         assertEquals(monitoredMarket.getStockExchangeName(), BITTREX);
     }
 
     @Test
     @Ignore
-    public void getTicksByPeriodTest() throws Exception {
+    public void getTicksByPeriodTest() {
         TickData marketResponse = dataSupplier.getTicksByPeriod(GetTicksByPeriodRequest.builder()
                 .stock(BITTREX)
                 .period(300)
@@ -78,7 +78,7 @@ public class DataSupplierTest {
 
     @Test
     @Ignore
-    public void getTicksByTimeTest() throws Exception {
+    public void getTicksByTimeTest() {
         TickData ticks = dataSupplier.getTicksByTime(GetTickByTimeRequest.builder()
                 .stock(BITTREX)
                 .marketId(MARKET_ID)

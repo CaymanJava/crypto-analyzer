@@ -5,6 +5,7 @@ import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.stream.Stream;
 
+import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 
 public class MathHelper {
@@ -88,6 +89,9 @@ public class MathHelper {
 
     // http://qaru.site/questions/25608/logarithm-of-a-bigdecimal/186892#186892
     public static BigDecimal ln(BigDecimal value) {
+        if (isNull(value)) {
+            return null;
+        }
         MathContext context = new MathContext(15);
         if (value.compareTo(BigDecimal.ONE) == 0) {
             return BigDecimal.ZERO;

@@ -89,7 +89,9 @@ public class HistoricalVolatility implements Indicator<HVResult> {
 
     // ln(C(i) - C(i-stDev))
     private BigDecimal calculateContinuouslyCompoundedReturnValue(int index) {
-        return MathHelper.ln(MathHelper.divide(originalData[index].getPriceByType(priceType), originalData[index - standardDeviations].getPriceByType(priceType)));
+        return MathHelper.ln(MathHelper.divide(
+                originalData[index].getPriceByType(priceType),
+                originalData[index - standardDeviations].getPriceByType(priceType)));
     }
 
     private BigDecimal[] calculateOneDayVolatilityValues(BigDecimal[] continuouslyCompoundedReturns) {

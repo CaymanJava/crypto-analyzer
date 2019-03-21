@@ -8,7 +8,6 @@ import pro.crypto.model.tick.TickData;
 import pro.crypto.request.GetTickByTimeRequest;
 import pro.crypto.request.GetTicksByPeriodRequest;
 
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Map;
 
@@ -16,10 +15,10 @@ import java.util.Map;
 @Slf4j
 public class DataSupplier implements StockService {
 
-    private final Map<Stock, SpiderClient> spiderClients;
+    private final Map<Stock, StockClient> spiderClients;
 
-    public DataSupplier(List<SpiderClient> spiderClients) {
-        this.spiderClients = createSpidersClientsMap(spiderClients);
+    public DataSupplier(List<StockClient> stockClients) {
+        this.spiderClients = createSpidersClientsMap(stockClients);
     }
 
     public MarketData getAllStockMarkets(Stock stock) {
@@ -52,9 +51,8 @@ public class DataSupplier implements StockService {
 
     public TickData getTicksByTime(GetTickByTimeRequest request) {
         log.debug("Getting ticks by time {stock: {}, request: {}}", request);
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
         TickData ticks = spiderClients.get(request.getStock()).getTicksByTime(request.getMarketId(), request.getTimeFrame(),
-                formatter.format(request.getFrom()), formatter.format(request.getTo()));
+                request.getFrom(), request.getTo());
         log.debug("Got ticks by time {stock: {}, request: {}, ticks: {}}", request, ticks);
         return ticks;
     }

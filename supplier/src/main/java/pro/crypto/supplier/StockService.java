@@ -10,9 +10,9 @@ import static java.util.stream.Collectors.toMap;
 
 public interface StockService {
 
-    default Map<Stock, SpiderClient> createSpidersClientsMap(List<SpiderClient> spiderClients) {
-        return spiderClients.stream()
-                .collect(toMap(SpiderClient::getStock, spiderClient -> spiderClient));
+    default Map<Stock, StockClient> createSpidersClientsMap(List<StockClient> stockClients) {
+        return stockClients.stream()
+                .collect(toMap(StockClient::getStock, stockClient -> stockClient));
     }
 
 }

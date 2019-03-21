@@ -9,11 +9,13 @@ import pro.crypto.model.market.Stock;
 import pro.crypto.model.tick.TickData;
 import pro.crypto.model.tick.TimeFrame;
 
+import java.time.LocalDateTime;
+
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @FeignClient(name = "bittrex", url = "${bittrex.spider.url}")
-public interface BittrexSpiderClient extends SpiderClient {
+public interface BittrexClient extends StockClient {
 
     @Override
     @RequestMapping(method = GET, value = "/market")
@@ -58,8 +60,8 @@ public interface BittrexSpiderClient extends SpiderClient {
     @ResponseBody
     TickData getTicksByTime(@PathVariable("marketId") long marketId,
                             @PathVariable("timeFrame") TimeFrame timeFrame,
-                            @PathVariable("from") String from,
-                            @PathVariable("to") String to);
+                            @PathVariable("from") LocalDateTime from,
+                            @PathVariable("to") LocalDateTime to);
 
     @Override
     default Stock getStock() {

@@ -5,7 +5,9 @@ import pro.crypto.model.market.Stock;
 import pro.crypto.model.tick.TickData;
 import pro.crypto.model.tick.TimeFrame;
 
-public interface SpiderClient {
+import java.time.LocalDateTime;
+
+public interface StockClient {
 
     MarketData getAllMarkets();
 
@@ -23,7 +25,7 @@ public interface SpiderClient {
 
     TickData getTicksByPeriod(long marketId, TimeFrame timeFrame, int period);
 
-    TickData getTicksByTime(long marketId, TimeFrame timeFrame, String from, String to);
+    TickData getTicksByTime(long marketId, TimeFrame timeFrame, LocalDateTime from, LocalDateTime to);
 
     Stock getStock();
 

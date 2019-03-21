@@ -11,10 +11,10 @@ import java.util.Map;
 @Slf4j
 public class MonitorSupervisor implements StockService {
 
-    private final Map<Stock, SpiderClient> spiderClients;
+    private final Map<Stock, StockClient> spiderClients;
 
-    public MonitorSupervisor(List<SpiderClient> spiderClients) {
-        this.spiderClients = createSpidersClientsMap(spiderClients);
+    public MonitorSupervisor(List<StockClient> stockClients) {
+        this.spiderClients = createSpidersClientsMap(stockClients);
     }
 
     public void startMonitorStockMarket(Stock stock, long marketId) {

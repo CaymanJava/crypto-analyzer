@@ -21,7 +21,7 @@ public class BBWRequest implements IndicatorRequest {
 
     private PriceType priceType;
 
-    private int standardDeviationCoefficient;
+    private double standardDeviationCoefficient;
 
     private IndicatorType movingAverageType;
 

@@ -2,12 +2,12 @@ package pro.crypto.indicator.bbw;
 
 import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.MathHelper;
+import pro.crypto.indicator.bb.BBRequest;
+import pro.crypto.indicator.bb.BBResult;
 import pro.crypto.indicator.bb.BollingerBands;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
-import pro.crypto.indicator.bb.BBRequest;
-import pro.crypto.indicator.bb.BBResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -25,7 +25,7 @@ public class BollingerBandsWidth implements Indicator<BBWResult> {
     private final Tick[] originalData;
     private final int period;
     private final PriceType priceType;
-    private final int standardDeviationCoefficient;
+    private final double standardDeviationCoefficient;
     private final IndicatorType movingAverageType;
 
     private BBWResult[] result;
@@ -72,7 +72,7 @@ public class BollingerBandsWidth implements Indicator<BBWResult> {
     private void checkStDevCoefficient() {
         if (standardDeviationCoefficient <= 1) {
             throw new WrongIncomingParametersException(format("Standard Deviation Coefficient should be more than 1 " +
-                            "{indicator: {%s}, standardDeviationCoefficient: {%d}}",
+                            "{indicator: {%s}, standardDeviationCoefficient: {%.2f}}",
                     getType().toString(), standardDeviationCoefficient));
         }
     }

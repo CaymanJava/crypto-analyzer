@@ -77,7 +77,7 @@ public class BollingerBandsWidthTest extends IndicatorAbstractTest {
     public void coefficientLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
         expectedException.expectMessage("Standard Deviation Coefficient should be more than 1 " +
-                "{indicator: {BOLLINGER_BANDS_WIDTH}, standardDeviationCoefficient: {-2}}");
+                "{indicator: {BOLLINGER_BANDS_WIDTH}, standardDeviationCoefficient: {-2,00}}");
         new BollingerBandsWidth(BBWRequest.builder()
                 .originalData(new Tick[100])
                 .period(20)

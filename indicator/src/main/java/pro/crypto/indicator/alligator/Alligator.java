@@ -5,7 +5,11 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MedianPriceCalculator;
 import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
-import pro.crypto.model.*;
+import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.Shift;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 import pro.crypto.model.tick.TimeFrame;
 
@@ -15,7 +19,9 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
-import static pro.crypto.model.IndicatorType.*;
+import static pro.crypto.model.IndicatorType.ALLIGATOR;
+import static pro.crypto.model.IndicatorType.DISPLACED_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.SMOOTHED_MOVING_AVERAGE;
 import static pro.crypto.model.ShiftType.RIGHT;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
@@ -71,13 +77,13 @@ public class Alligator implements Indicator<AlligatorResult> {
     private void checkIncomingData() {
         checkOriginalData(originalData);
         checkOriginalDataSize(originalData, jawPeriod);
-        checkOriginalDataSize(originalData, teethPeriod);
-        checkOriginalDataSize(originalData, lipsPeriod);
         checkPeriod(jawPeriod);
-        checkPeriod(teethPeriod);
-        checkPeriod(lipsPeriod);
         checkDisplaced(jawOffset);
+        checkOriginalDataSize(originalData, teethPeriod);
+        checkPeriod(teethPeriod);
         checkDisplaced(teethOffset);
+        checkOriginalDataSize(originalData, lipsPeriod);
+        checkPeriod(lipsPeriod);
         checkDisplaced(lipsOffset);
     }
 

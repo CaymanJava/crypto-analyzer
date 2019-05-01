@@ -6,4 +6,6 @@ public interface IndicatorRequest {
 
     Tick[] getOriginalData();
 
+    void setOriginalData(Tick[] ticks);
+
 }

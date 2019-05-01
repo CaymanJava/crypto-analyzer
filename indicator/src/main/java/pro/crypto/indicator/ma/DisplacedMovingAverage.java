@@ -1,7 +1,6 @@
 package pro.crypto.indicator.ma;
 
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.helper.IndicatorTypeChecker;
 import pro.crypto.helper.TimeFrameShifter;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.Shift;
@@ -13,7 +12,6 @@ import java.util.stream.IntStream;
 
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.DISPLACED_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.ShiftType.LEFT;
@@ -54,7 +52,7 @@ public class DisplacedMovingAverage extends MovingAverage {
 
     private void checkData(IndicatorType originalIndicatorType, PriceType priceType, Tick[] originalData, int period, Shift shift) {
         checkShiftData(shift);
-        checkOriginalIndicatorType(originalIndicatorType);
+        checkMovingAverageType(originalIndicatorType);
         checkPeriod(period);
         checkIncomingData(originalData, period, priceType);
     }
@@ -79,13 +77,6 @@ public class DisplacedMovingAverage extends MovingAverage {
         if (shift.getValue() <= 0) {
             throw new WrongIncomingParametersException(format("Incoming shift value should be more than zero {indicator: {%s}, shiftValue: {%d}}",
                     getType().toString(), shift.getValue()));
-        }
-    }
-
-    private void checkOriginalIndicatorType(IndicatorType originalIndicatorType) {
-        if (nonNull(originalIndicatorType) && !IndicatorTypeChecker.isMovingAverageType(originalIndicatorType)) {
-            throw new WrongIncomingParametersException(format("Incoming original indicator type is not a moving average {indicator: {%s}}, movingAverageType: {%s}",
-                    getType().toString(), originalIndicatorType.toString()));
         }
     }
 

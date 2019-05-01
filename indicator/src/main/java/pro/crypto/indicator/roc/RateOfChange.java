@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
-import static pro.crypto.model.IndicatorType.RANGE_OF_CHANGE;
+import static pro.crypto.model.IndicatorType.RATE_OF_CHANGE;
 
 public class RateOfChange implements Indicator<ROCResult> {
 
@@ -31,7 +31,7 @@ public class RateOfChange implements Indicator<ROCResult> {
 
     @Override
     public IndicatorType getType() {
-        return RANGE_OF_CHANGE;
+        return RATE_OF_CHANGE;
     }
 
     @Override

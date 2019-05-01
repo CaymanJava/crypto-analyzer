@@ -10,5 +10,11 @@
         </comment>
     </changeSet>
 
+    <changeSet author="dbosenko" id="2">
+        <sqlFile path="002_create_market.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add market schema and table
+        </comment>
+    </changeSet>
 
 </databaseChangeLog>

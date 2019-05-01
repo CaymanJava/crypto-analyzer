@@ -22,7 +22,7 @@ public class RateOfChangeTest extends IndicatorAbstractTest {
     @Test
     public void emptyOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {RANGE_OF_CHANGE}, size: {0}}");
+        expectedException.expectMessage("Incoming tick data size should be > 0 {indicator: {RATE_OF_CHANGE}, size: {0}}");
         new RateOfChange(ROCRequest.builder()
                 .originalData(new Tick[0])
                 .period(14)
@@ -33,7 +33,7 @@ public class RateOfChangeTest extends IndicatorAbstractTest {
     @Test
     public void nullOriginalDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming tick data is null {indicator: {RANGE_OF_CHANGE}}");
+        expectedException.expectMessage("Incoming tick data is null {indicator: {RATE_OF_CHANGE}}");
         new RateOfChange(ROCRequest.builder()
                 .originalData(null)
                 .period(14)
@@ -44,7 +44,7 @@ public class RateOfChangeTest extends IndicatorAbstractTest {
     @Test
     public void periodMoreThanTickDataTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Period should be less than tick data size {indicator: {RANGE_OF_CHANGE}, period: {20}, size: {19}}");
+        expectedException.expectMessage("Period should be less than tick data size {indicator: {RATE_OF_CHANGE}, period: {20}, size: {19}}");
         new RateOfChange(ROCRequest.builder()
                 .originalData(new Tick[19])
                 .period(20)
@@ -55,7 +55,7 @@ public class RateOfChangeTest extends IndicatorAbstractTest {
     @Test
     public void periodLessThanZeroTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Period should be more than 0 {indicator: {RANGE_OF_CHANGE}, period: {-14}");
+        expectedException.expectMessage("Period should be more than 0 {indicator: {RATE_OF_CHANGE}, period: {-14}");
         new RateOfChange(ROCRequest.builder()
                 .originalData(new Tick[100])
                 .period(-14)
@@ -66,7 +66,7 @@ public class RateOfChangeTest extends IndicatorAbstractTest {
     @Test
     public void emptyPriceTypeTest() {
         expectedException.expect(WrongIncomingParametersException.class);
-        expectedException.expectMessage("Incoming price type is null {indicator: {RANGE_OF_CHANGE}}");
+        expectedException.expectMessage("Incoming price type is null {indicator: {RATE_OF_CHANGE}}");
         new RateOfChange(ROCRequest.builder()
                 .originalData(new Tick[100])
                 .period(14)

@@ -8,3 +8,4 @@ log/*
 debug
 gc.log
 *.iml
+transaction-logs/*

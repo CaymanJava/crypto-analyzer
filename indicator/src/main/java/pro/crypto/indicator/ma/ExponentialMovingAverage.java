@@ -40,7 +40,10 @@ public class ExponentialMovingAverage extends MovingAverage {
 
     // α = 2 / (N + 1)
     private BigDecimal calculateAlphaCoefficient(int antiAliasingInterval) {
-        return MathHelper.divide(new BigDecimal(2), new BigDecimal(antiAliasingInterval).add(new BigDecimal(1)));
+        return MathHelper.divide(
+                new BigDecimal(2),
+                new BigDecimal(antiAliasingInterval)
+                        .add(new BigDecimal(1)));
     }
 
     private void fillInInitialIndicatorValue() {

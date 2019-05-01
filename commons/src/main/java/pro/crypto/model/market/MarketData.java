@@ -13,6 +13,6 @@ public class MarketData {
 
     private Stock stockExchangeName;
 
-    private Market[] markets;
+    private StockMarket[] markets;
 
 }

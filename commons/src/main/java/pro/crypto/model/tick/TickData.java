@@ -4,8 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pro.crypto.model.market.Market;
 import pro.crypto.model.market.Stock;
+import pro.crypto.model.market.StockMarket;
 
 
 @AllArgsConstructor
@@ -16,7 +16,7 @@ public class TickData {
 
     private Stock stockExchangeName;
 
-    private Market market;
+    private StockMarket market;
 
     private TimeFrame timeFrame;
 

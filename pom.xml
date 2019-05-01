@@ -20,6 +20,12 @@
         <module>entry-point</module>
         <module>strategy</module>
         <module>file-generator</module>
+        <module>market</module>
+        <module>back-office-api</module>
+        <module>specification</module>
+        <module>front-office-api</module>
+        <module>tick</module>
+        <module>indicator-api</module>
     </modules>
 
     <properties>
@@ -30,20 +36,43 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <hibernate.validator.version>6.0.7.Final</hibernate.validator.version>
         <spring-boot.version>1.5.10.RELEASE</spring-boot.version>
+        <spring-cloud-contract-dependencies.version>1.0.3.RELEASE</spring-cloud-contract-dependencies.version>
         <lombok.version>1.16.20</lombok.version>
         <postgres.version>9.4-1206-jdbc42</postgres.version>
         <feign.version>1.4.3.RELEASE</feign.version>
-        <swagger.version>2.8.0</swagger.version>
-        <jackson.version>2.9.4</jackson.version>
+        <swagger.version>2.9.2</swagger.version>
+        <jackson.version>2.9.8</jackson.version>
         <guava.version>24.0-jre</guava.version>
         <gson.version>2.8.5</gson.version>
         <junit.version>4.12</junit.version>
         <commons-io-version>2.6</commons-io-version>
         <poi-ooxml-version>4.0.0</poi-ooxml-version>
         <liquibase-core.version>3.6.1</liquibase-core.version>
+        <hibernate-validator.version>5.3.6.Final</hibernate-validator.version>
+        <hibernate.version>5.0.12.Final</hibernate.version>
+        <hibernate-jpa-2.1-api.version>1.0.0.Final</hibernate-jpa-2.1-api.version>
+        <hystrix-core.version>1.5.18</hystrix-core.version>
+        <javax-el.version>2.2.4</javax-el.version>
+        <javax-el-api.version>3.0.0</javax-el-api.version>
+        <logback.version>1.2.3</logback.version>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>io.spring.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>Athens-SR2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Camden.SR7</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
@@ -68,11 +97,6 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
-                <version>${jackson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson.datatype</groupId>
-                <artifactId>jackson-datatype-jsr310</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
             <dependency>
@@ -110,6 +134,41 @@
                 <artifactId>poi-ooxml</artifactId>
                 <version>${poi-ooxml-version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jdk8</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jul-to-slf4j</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>log4j-over-slf4j</artifactId>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

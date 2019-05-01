@@ -132,7 +132,7 @@ public class LinearRegression implements Indicator<LRResult> {
                 originalData[currentIndex].getPriceByType(priceType).subtract(averagePrice));
     }
 
-    // (x(i) - x(abg))^2
+    // (x(i) - x(avg))^2
     private BigDecimal calculateDivisor(int coefficient, BigDecimal averageCoefficient) {
         return new BigDecimal(coefficient).subtract(averageCoefficient).pow(2);
     }

@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import pro.crypto.model.market.Market;
 import pro.crypto.model.market.MarketData;
 import pro.crypto.model.market.Stock;
+import pro.crypto.model.market.StockMarket;
 import pro.crypto.model.tick.TickData;
 import pro.crypto.request.GetTickByTimeRequest;
 import pro.crypto.request.GetTicksByPeriodRequest;
@@ -43,10 +43,10 @@ public class DataSupplierTest {
         MarketData marketData = dataSupplier.getStockMarketByName(BITTREX, MARKET_NAME);
         assertEquals(marketData.getStockExchangeName(), BITTREX);
 
-        Market[] markets = marketData.getMarkets();
-        assertTrue(markets.length == 1);
+        StockMarket[] markets = marketData.getMarkets();
+        assertEquals(1, markets.length);
 
-        Market market = markets[0];
+        StockMarket market = markets[0];
         assertEquals(market.getMarketCurrency(), "ETH");
         assertEquals(market.getBaseCurrency(), "BTC");
         assertEquals(market.getMarketCurrencyLong(), "Ethereum");
@@ -89,7 +89,6 @@ public class DataSupplierTest {
         assertEquals(ticks.getStockExchangeName(), BITTREX);
         assertEquals(ticks.getMarket().getId(), MARKET_ID);
         assertEquals(ticks.getTimeFrame(), FIVE_MIN);
-        assertTrue(ticks.getTicks().length > 0);
     }
 
 }

@@ -1,5 +1,7 @@
 package pro.crypto.supplier;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -50,6 +52,9 @@ public interface BittrexClient extends StockClient {
 
     @Override
     @RequestMapping(method = GET, value = "/tick/period/{marketId}/{timeFrame}/{period}")
+    @HystrixCommand(commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "60000")
+    })
     @ResponseBody
     TickData getTicksByPeriod(@PathVariable("marketId") long marketId,
                               @PathVariable("timeFrame") TimeFrame timeFrame,
@@ -57,6 +62,9 @@ public interface BittrexClient extends StockClient {
 
     @Override
     @RequestMapping(method = GET, value = "/tick/time/{marketId}/{timeFrame}/{from}/{to}")
+    @HystrixCommand(commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "60000")
+    })
     @ResponseBody
     TickData getTicksByTime(@PathVariable("marketId") long marketId,
                             @PathVariable("timeFrame") TimeFrame timeFrame,

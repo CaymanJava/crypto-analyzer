@@ -28,7 +28,7 @@
         "nano": 0
       }
     },
-    "pivot": 1276.5800000000,
+    "pivot": 1276.58000000000000000000,
     "firstResistance": 1289.9300000000,
     "secondResistance": 1316.0200000000,
     "thirdResistance": 1329.3700000000,
@@ -50,13 +50,13 @@
         "nano": 0
       }
     },
-    "pivot": 1282.6533666667,
-    "firstResistance": 1304.3067333334,
+    "pivot": 1282.65336666666666666667,
+    "firstResistance": 1304.3067333333,
     "secondResistance": 1316.3033666667,
-    "thirdResistance": 1337.9567333334,
-    "firstSupport": 1270.6567333334,
+    "thirdResistance": 1337.9567333333,
+    "firstSupport": 1270.6567333333,
     "secondSupport": 1249.0033666667,
-    "thirdSupport": 1237.0067333334
+    "thirdSupport": 1237.0067333333
   },
   {
     "time": {
@@ -72,7 +72,7 @@
         "nano": 0
       }
     },
-    "pivot": 1258.9200000000,
+    "pivot": 1258.92000000000000000000,
     "firstResistance": 1266.8400000000,
     "secondResistance": 1282.6800000000,
     "thirdResistance": 1290.6000000000,
@@ -94,13 +94,13 @@
         "nano": 0
       }
     },
-    "pivot": 1293.1966666667,
-    "firstResistance": 1306.1233333334,
+    "pivot": 1293.19666666666666666667,
+    "firstResistance": 1306.1233333333,
     "secondResistance": 1316.9466666667,
-    "thirdResistance": 1329.8733333334,
-    "firstSupport": 1282.3733333334,
+    "thirdResistance": 1329.8733333333,
+    "firstSupport": 1282.3733333333,
     "secondSupport": 1269.4466666667,
-    "thirdSupport": 1258.6233333334
+    "thirdSupport": 1258.6233333333
   },
   {
     "time": {
@@ -116,7 +116,7 @@
         "nano": 0
       }
     },
-    "pivot": 1295.2200000000,
+    "pivot": 1295.22000000000000000000,
     "firstResistance": 1319.7100000000,
     "secondResistance": 1334.8200000000,
     "thirdResistance": 1359.3100000000,
@@ -138,7 +138,7 @@
         "nano": 0
       }
     },
-    "pivot": 1314.0167000000,
+    "pivot": 1314.01670000000000000000,
     "firstResistance": 1328.5034000000,
     "secondResistance": 1336.9168000000,
     "thirdResistance": 1351.4035000000,
@@ -160,13 +160,13 @@
         "nano": 0
       }
     },
-    "pivot": 1325.8933333333,
-    "firstResistance": 1336.8266666666,
+    "pivot": 1325.89333333333333333333,
+    "firstResistance": 1336.8266666667,
     "secondResistance": 1358.2033333333,
-    "thirdResistance": 1369.1366666666,
-    "firstSupport": 1304.5166666666,
+    "thirdResistance": 1369.1366666667,
+    "firstSupport": 1304.5166666667,
     "secondSupport": 1293.5833333333,
-    "thirdSupport": 1272.2066666666
+    "thirdSupport": 1272.2066666667
   },
   {
     "time": {
@@ -182,13 +182,13 @@
         "nano": 0
       }
     },
-    "pivot": 1288.1633333333,
-    "firstResistance": 1297.2366666666,
+    "pivot": 1288.16333333333333333333,
+    "firstResistance": 1297.2366666667,
     "secondResistance": 1314.7933333333,
-    "thirdResistance": 1323.8666666666,
-    "firstSupport": 1270.6066666666,
+    "thirdResistance": 1323.8666666667,
+    "firstSupport": 1270.6066666667,
     "secondSupport": 1261.5333333333,
-    "thirdSupport": 1243.9766666666
+    "thirdSupport": 1243.9766666667
   },
   {
     "time": {
@@ -204,13 +204,13 @@
         "nano": 0
       }
     },
-    "pivot": 1284.7833333333,
-    "firstResistance": 1298.9766666666,
+    "pivot": 1284.78333333333333333333,
+    "firstResistance": 1298.9766666667,
     "secondResistance": 1306.5533333333,
-    "thirdResistance": 1320.7466666666,
-    "firstSupport": 1277.2066666666,
+    "thirdResistance": 1320.7466666667,
+    "firstSupport": 1277.2066666667,
     "secondSupport": 1263.0133333333,
-    "thirdSupport": 1255.4366666666
+    "thirdSupport": 1255.4366666667
   },
   {
     "time": {
@@ -226,13 +226,13 @@
         "nano": 0
       }
     },
-    "pivot": 1278.7666333333,
-    "firstResistance": 1289.8433666666,
+    "pivot": 1278.76663333333333333333,
+    "firstResistance": 1289.8433666667,
     "secondResistance": 1303.8067333333,
-    "thirdResistance": 1314.8834666666,
-    "firstSupport": 1264.8032666666,
+    "thirdResistance": 1314.8834666667,
+    "firstSupport": 1264.8032666667,
     "secondSupport": 1253.7265333333,
-    "thirdSupport": 1239.7631666666
+    "thirdSupport": 1239.7631666667
   },
   {
     "time": {
@@ -248,13 +248,13 @@
         "nano": 0
       }
     },
-    "pivot": 1272.4299666667,
-    "firstResistance": 1286.0099333334,
+    "pivot": 1272.42996666666666666667,
+    "firstResistance": 1286.0099333333,
     "secondResistance": 1312.0799666667,
-    "thirdResistance": 1325.6599333334,
-    "firstSupport": 1246.3599333334,
+    "thirdResistance": 1325.6599333333,
+    "firstSupport": 1246.3599333333,
     "secondSupport": 1232.7799666667,
-    "thirdSupport": 1206.7099333334
+    "thirdSupport": 1206.7099333333
   },
   {
     "time": {
@@ -270,13 +270,13 @@
         "nano": 0
       }
     },
-    "pivot": 1249.7033333333,
-    "firstResistance": 1266.3266666666,
+    "pivot": 1249.70333333333333333333,
+    "firstResistance": 1266.3266666667,
     "secondResistance": 1280.5233333333,
-    "thirdResistance": 1297.1466666666,
-    "firstSupport": 1235.5066666666,
+    "thirdResistance": 1297.1466666667,
+    "firstSupport": 1235.5066666667,
     "secondSupport": 1218.8833333333,
-    "thirdSupport": 1204.6866666666
+    "thirdSupport": 1204.6866666667
   },
   {
     "time": {
@@ -292,7 +292,7 @@
         "nano": 0
       }
     },
-    "pivot": 1225.1833000000,
+    "pivot": 1225.18330000000000000000,
     "firstResistance": 1234.1767000000,
     "secondResistance": 1251.9034000000,
     "thirdResistance": 1260.8968000000,
@@ -314,7 +314,7 @@
         "nano": 0
       }
     },
-    "pivot": 1223.4300000000,
+    "pivot": 1223.43000000000000000000,
     "firstResistance": 1230.6200000000,
     "secondResistance": 1240.1500000000,
     "thirdResistance": 1247.3400000000,
@@ -336,7 +336,7 @@
         "nano": 0
       }
     },
-    "pivot": 1190.6867000000,
+    "pivot": 1190.68670000000000000000,
     "firstResistance": 1203.9634000000,
     "secondResistance": 1222.9967000000,
     "thirdResistance": 1236.2734000000,
@@ -358,13 +358,13 @@
         "nano": 0
       }
     },
-    "pivot": 1183.8866666667,
-    "firstResistance": 1198.7333333334,
+    "pivot": 1183.88666666666666666667,
+    "firstResistance": 1198.7333333333,
     "secondResistance": 1215.2966666667,
-    "thirdResistance": 1230.1433333334,
-    "firstSupport": 1167.3233333334,
+    "thirdResistance": 1230.1433333333,
+    "firstSupport": 1167.3233333333,
     "secondSupport": 1152.4766666667,
-    "thirdSupport": 1135.9133333334
+    "thirdSupport": 1135.9133333333
   },
   {
     "time": {
@@ -380,13 +380,13 @@
         "nano": 0
       }
     },
-    "pivot": 1211.2133333333,
-    "firstResistance": 1238.3066666666,
+    "pivot": 1211.21333333333333333333,
+    "firstResistance": 1238.3066666667,
     "secondResistance": 1254.3233333333,
-    "thirdResistance": 1281.4166666666,
-    "firstSupport": 1195.1966666666,
+    "thirdResistance": 1281.4166666667,
+    "firstSupport": 1195.1966666667,
     "secondSupport": 1168.1033333333,
-    "thirdSupport": 1152.0866666666
+    "thirdSupport": 1152.0866666667
   },
   {
     "time": {
@@ -402,13 +402,13 @@
         "nano": 0
       }
     },
-    "pivot": 1222.7133333333,
-    "firstResistance": 1238.5166666666,
+    "pivot": 1222.71333333333333333333,
+    "firstResistance": 1238.5166666667,
     "secondResistance": 1255.4233333333,
-    "thirdResistance": 1271.2266666666,
-    "firstSupport": 1205.8066666666,
+    "thirdResistance": 1271.2266666667,
+    "firstSupport": 1205.8066666667,
     "secondSupport": 1190.0033333333,
-    "thirdSupport": 1173.0966666666
+    "thirdSupport": 1173.0966666667
   },
   {
     "time": {
@@ -424,13 +424,13 @@
         "nano": 0
       }
     },
-    "pivot": 1210.7866666667,
-    "firstResistance": 1223.4533333334,
+    "pivot": 1210.78666666666666666667,
+    "firstResistance": 1223.4533333333,
     "secondResistance": 1247.7466666667,
-    "thirdResistance": 1260.4133333334,
-    "firstSupport": 1186.4933333334,
+    "thirdResistance": 1260.4133333333,
+    "firstSupport": 1186.4933333333,
     "secondSupport": 1173.8266666667,
-    "thirdSupport": 1149.5333333334
+    "thirdSupport": 1149.5333333333
   },
   {
     "time": {
@@ -446,7 +446,7 @@
         "nano": 0
       }
     },
-    "pivot": 1174.2900000000,
+    "pivot": 1174.29000000000000000000,
     "firstResistance": 1188.5101000000,
     "secondResistance": 1204.9601000000,
     "thirdResistance": 1219.1802000000,
@@ -468,13 +468,13 @@
         "nano": 0
       }
     },
-    "pivot": 1196.1466666667,
-    "firstResistance": 1231.5833333334,
+    "pivot": 1196.14666666666666666667,
+    "firstResistance": 1231.5833333333,
     "secondResistance": 1249.4466666667,
-    "thirdResistance": 1284.8833333334,
-    "firstSupport": 1178.2833333334,
+    "thirdResistance": 1284.8833333333,
+    "firstSupport": 1178.2833333333,
     "secondSupport": 1142.8466666667,
-    "thirdSupport": 1124.9833333334
+    "thirdSupport": 1124.9833333333
   },
   {
     "time": {
@@ -490,13 +490,13 @@
         "nano": 0
       }
     },
-    "pivot": 1197.9300333333,
-    "firstResistance": 1212.1000666666,
+    "pivot": 1197.93003333333333333333,
+    "firstResistance": 1212.1000666667,
     "secondResistance": 1236.8900333333,
-    "thirdResistance": 1251.0600666666,
-    "firstSupport": 1173.1400666666,
+    "thirdResistance": 1251.0600666667,
+    "firstSupport": 1173.1400666667,
     "secondSupport": 1158.9700333333,
-    "thirdSupport": 1134.1800666666
+    "thirdSupport": 1134.1800666667
   },
   {
     "time": {
@@ -512,13 +512,13 @@
         "nano": 0
       }
     },
-    "pivot": 1176.0100333333,
-    "firstResistance": 1187.5100666666,
+    "pivot": 1176.01003333333333333333,
+    "firstResistance": 1187.5100666667,
     "secondResistance": 1209.4600333333,
-    "thirdResistance": 1220.9600666666,
-    "firstSupport": 1154.0600666666,
+    "thirdResistance": 1220.9600666667,
+    "firstSupport": 1154.0600666667,
     "secondSupport": 1142.5600333333,
-    "thirdSupport": 1120.6100666666
+    "thirdSupport": 1120.6100666667
   },
   {
     "time": {
@@ -534,13 +534,13 @@
         "nano": 0
       }
     },
-    "pivot": 1150.3066666667,
-    "firstResistance": 1165.3433333334,
+    "pivot": 1150.30666666666666666667,
+    "firstResistance": 1165.3433333333,
     "secondResistance": 1190.7866666667,
-    "thirdResistance": 1205.8233333334,
-    "firstSupport": 1124.8633333334,
+    "thirdResistance": 1205.8233333333,
+    "firstSupport": 1124.8633333333,
     "secondSupport": 1109.8266666667,
-    "thirdSupport": 1084.3833333334
+    "thirdSupport": 1084.3833333333
   },
   {
     "time": {
@@ -556,13 +556,13 @@
         "nano": 0
       }
     },
-    "pivot": 1126.1833333333,
-    "firstResistance": 1139.0066666666,
+    "pivot": 1126.18333333333333333333,
+    "firstResistance": 1139.0066666667,
     "secondResistance": 1158.6133333333,
-    "thirdResistance": 1171.4366666666,
-    "firstSupport": 1106.5766666666,
+    "thirdResistance": 1171.4366666667,
+    "firstSupport": 1106.5766666667,
     "secondSupport": 1093.7533333333,
-    "thirdSupport": 1074.1466666666
+    "thirdSupport": 1074.1466666667
   },
   {
     "time": {
@@ -578,7 +578,7 @@
         "nano": 0
       }
     },
-    "pivot": 1127.6600000000,
+    "pivot": 1127.66000000000000000000,
     "firstResistance": 1145.6800000000,
     "secondResistance": 1162.1500000000,
     "thirdResistance": 1180.1700000000,
@@ -600,13 +600,13 @@
         "nano": 0
       }
     },
-    "pivot": 1120.6933333333,
-    "firstResistance": 1129.3066666666,
+    "pivot": 1120.69333333333333333333,
+    "firstResistance": 1129.3066666667,
     "secondResistance": 1144.5033333333,
-    "thirdResistance": 1153.1166666666,
-    "firstSupport": 1105.4966666666,
+    "thirdResistance": 1153.1166666667,
+    "firstSupport": 1105.4966666667,
     "secondSupport": 1096.8833333333,
-    "thirdSupport": 1081.6866666666
+    "thirdSupport": 1081.6866666667
   },
   {
     "time": {
@@ -622,13 +622,13 @@
         "nano": 0
       }
     },
-    "pivot": 1145.8966666667,
-    "firstResistance": 1183.3033333334,
+    "pivot": 1145.89666666666666666667,
+    "firstResistance": 1183.3033333333,
     "secondResistance": 1203.2366666667,
-    "thirdResistance": 1240.6433333334,
-    "firstSupport": 1125.9633333334,
+    "thirdResistance": 1240.6433333333,
+    "firstSupport": 1125.9633333333,
     "secondSupport": 1088.5566666667,
-    "thirdSupport": 1068.6233333334
+    "thirdSupport": 1068.6233333333
   },
   {
     "time": {
@@ -644,13 +644,13 @@
         "nano": 0
       }
     },
-    "pivot": 1203.4966666667,
-    "firstResistance": 1227.0933333334,
+    "pivot": 1203.49666666666666666667,
+    "firstResistance": 1227.0933333333,
     "secondResistance": 1243.7166666667,
-    "thirdResistance": 1267.3133333334,
-    "firstSupport": 1186.8733333334,
+    "thirdResistance": 1267.3133333333,
+    "firstSupport": 1186.8733333333,
     "secondSupport": 1163.2766666667,
-    "thirdSupport": 1146.6533333334
+    "thirdSupport": 1146.6533333333
   },
   {
     "time": {
@@ -666,7 +666,7 @@
         "nano": 0
       }
     },
-    "pivot": 1211.8500000000,
+    "pivot": 1211.85000000000000000000,
     "firstResistance": 1230.2800000000,
     "secondResistance": 1240.0300000000,
     "thirdResistance": 1258.4600000000,
@@ -688,13 +688,13 @@
         "nano": 0
       }
     },
-    "pivot": 1275.0166333333,
-    "firstResistance": 1290.1632666666,
+    "pivot": 1275.01663333333333333333,
+    "firstResistance": 1290.1632666667,
     "secondResistance": 1297.8866333333,
-    "thirdResistance": 1313.0332666666,
-    "firstSupport": 1267.2932666666,
+    "thirdResistance": 1313.0332666667,
+    "firstSupport": 1267.2932666667,
     "secondSupport": 1252.1466333333,
-    "thirdSupport": 1244.4232666666
+    "thirdSupport": 1244.4232666667
   },
   {
     "time": {
@@ -710,13 +710,13 @@
         "nano": 0
       }
     },
-    "pivot": 1238.3633666667,
-    "firstResistance": 1247.6666333334,
+    "pivot": 1238.36336666666666666667,
+    "firstResistance": 1247.6666333333,
     "secondResistance": 1262.9132666667,
-    "thirdResistance": 1272.2165333334,
-    "firstSupport": 1223.1167333334,
+    "thirdResistance": 1272.2165333333,
+    "firstSupport": 1223.1167333333,
     "secondSupport": 1213.8134666667,
-    "thirdSupport": 1198.5668333334
+    "thirdSupport": 1198.5668333333
   },
   {
     "time": {
@@ -732,13 +732,13 @@
         "nano": 0
       }
     },
-    "pivot": 1272.9866666667,
-    "firstResistance": 1282.5133333334,
+    "pivot": 1272.98666666666666666667,
+    "firstResistance": 1282.5133333333,
     "secondResistance": 1292.7366666667,
-    "thirdResistance": 1302.2633333334,
-    "firstSupport": 1262.7633333334,
+    "thirdResistance": 1302.2633333333,
+    "firstSupport": 1262.7633333333,
     "secondSupport": 1253.2366666667,
-    "thirdSupport": 1243.0133333334
+    "thirdSupport": 1243.0133333333
   },
   {
     "time": {
@@ -754,13 +754,13 @@
         "nano": 0
       }
     },
-    "pivot": 1276.4599666667,
-    "firstResistance": 1299.4800333334,
+    "pivot": 1276.45996666666666666667,
+    "firstResistance": 1299.4800333333,
     "secondResistance": 1311.1000666667,
-    "thirdResistance": 1334.1201333334,
-    "firstSupport": 1264.8399333334,
+    "thirdResistance": 1334.1201333333,
+    "firstSupport": 1264.8399333333,
     "secondSupport": 1241.8198666667,
-    "thirdSupport": 1230.1998333334
+    "thirdSupport": 1230.1998333333
   },
   {
     "time": {
@@ -776,13 +776,13 @@
         "nano": 0
       }
     },
-    "pivot": 1296.6533333333,
-    "firstResistance": 1325.5466666666,
+    "pivot": 1296.65333333333333333333,
+    "firstResistance": 1325.5466666667,
     "secondResistance": 1341.4233333333,
-    "thirdResistance": 1370.3166666666,
-    "firstSupport": 1280.7766666666,
+    "thirdResistance": 1370.3166666667,
+    "firstSupport": 1280.7766666667,
     "secondSupport": 1251.8833333333,
-    "thirdSupport": 1236.0066666666
+    "thirdSupport": 1236.0066666667
   },
   {
     "time": {
@@ -798,13 +798,13 @@
         "nano": 0
       }
     },
-    "pivot": 1293.6866666667,
-    "firstResistance": 1306.7133333334,
+    "pivot": 1293.68666666666666666667,
+    "firstResistance": 1306.7133333333,
     "secondResistance": 1320.6266666667,
-    "thirdResistance": 1333.6533333334,
-    "firstSupport": 1279.7733333334,
+    "thirdResistance": 1333.6533333333,
+    "firstSupport": 1279.7733333333,
     "secondSupport": 1266.7466666667,
-    "thirdSupport": 1252.8333333334
+    "thirdSupport": 1252.8333333333
   },
   {
     "time": {
@@ -820,13 +820,13 @@
         "nano": 0
       }
     },
-    "pivot": 1306.6466666667,
-    "firstResistance": 1333.8333333334,
+    "pivot": 1306.64666666666666666667,
+    "firstResistance": 1333.8333333333,
     "secondResistance": 1347.4366666667,
-    "thirdResistance": 1374.6233333334,
-    "firstSupport": 1293.0433333334,
+    "thirdResistance": 1374.6233333333,
+    "firstSupport": 1293.0433333333,
     "secondSupport": 1265.8566666667,
-    "thirdSupport": 1252.2533333334
+    "thirdSupport": 1252.2533333333
   },
   {
     "time": {
@@ -842,13 +842,13 @@
         "nano": 0
       }
     },
-    "pivot": 1308.7466666667,
-    "firstResistance": 1320.9533333334,
+    "pivot": 1308.74666666666666666667,
+    "firstResistance": 1320.9533333333,
     "secondResistance": 1343.1966666667,
-    "thirdResistance": 1355.4033333334,
-    "firstSupport": 1286.5033333334,
+    "thirdResistance": 1355.4033333333,
+    "firstSupport": 1286.5033333333,
     "secondSupport": 1274.2966666667,
-    "thirdSupport": 1252.0533333334
+    "thirdSupport": 1252.0533333333
   },
   {
     "time": {
@@ -864,13 +864,13 @@
         "nano": 0
       }
     },
-    "pivot": 1319.8766666667,
-    "firstResistance": 1342.5833333334,
+    "pivot": 1319.87666666666666666667,
+    "firstResistance": 1342.5833333333,
     "secondResistance": 1354.0366666667,
-    "thirdResistance": 1376.7433333334,
-    "firstSupport": 1308.4233333334,
+    "thirdResistance": 1376.7433333333,
+    "firstSupport": 1308.4233333333,
     "secondSupport": 1285.7166666667,
-    "thirdSupport": 1274.2633333334
+    "thirdSupport": 1274.2633333333
   },
   {
     "time": {
@@ -886,7 +886,7 @@
         "nano": 0
       }
     },
-    "pivot": 1324.2167000000,
+    "pivot": 1324.21670000000000000000,
     "firstResistance": 1337.8034000000,
     "secondResistance": 1359.7967000000,
     "thirdResistance": 1373.3834000000,
@@ -908,7 +908,7 @@
         "nano": 0
       }
     },
-    "pivot": 1299.5500000000,
+    "pivot": 1299.55000000000000000000,
     "firstResistance": 1319.9101000000,
     "secondResistance": 1339.2902000000,
     "thirdResistance": 1359.6503000000,
@@ -930,13 +930,13 @@
         "nano": 0
       }
     },
-    "pivot": 1320.6366666667,
-    "firstResistance": 1340.7233333334,
+    "pivot": 1320.63666666666666666667,
+    "firstResistance": 1340.7233333333,
     "secondResistance": 1354.7166666667,
-    "thirdResistance": 1374.8033333334,
-    "firstSupport": 1306.6433333334,
+    "thirdResistance": 1374.8033333333,
+    "firstSupport": 1306.6433333333,
     "secondSupport": 1286.5566666667,
-    "thirdSupport": 1272.5633333334
+    "thirdSupport": 1272.5633333333
   },
   {
     "time": {
@@ -952,13 +952,13 @@
         "nano": 0
       }
     },
-    "pivot": 1333.4766666667,
-    "firstResistance": 1343.8633333334,
+    "pivot": 1333.47666666666666666667,
+    "firstResistance": 1343.8633333333,
     "secondResistance": 1357.9666666667,
-    "thirdResistance": 1368.3533333334,
-    "firstSupport": 1319.3733333334,
+    "thirdResistance": 1368.3533333333,
+    "firstSupport": 1319.3733333333,
     "secondSupport": 1308.9866666667,
-    "thirdSupport": 1294.8833333334
+    "thirdSupport": 1294.8833333333
   },
   {
     "time": {
@@ -974,13 +974,13 @@
         "nano": 0
       }
     },
-    "pivot": 1345.0833333333,
-    "firstResistance": 1376.4466666666,
+    "pivot": 1345.08333333333333333333,
+    "firstResistance": 1376.4466666667,
     "secondResistance": 1392.1933333333,
-    "thirdResistance": 1423.5566666666,
-    "firstSupport": 1329.3366666666,
+    "thirdResistance": 1423.5566666667,
+    "firstSupport": 1329.3366666667,
     "secondSupport": 1297.9733333333,
-    "thirdSupport": 1282.2266666666
+    "thirdSupport": 1282.2266666667
   },
   {
     "time": {
@@ -996,13 +996,13 @@
         "nano": 0
       }
     },
-    "pivot": 1401.7500333333,
-    "firstResistance": 1414.8199666666,
+    "pivot": 1401.75003333333333333333,
+    "firstResistance": 1414.8199666667,
     "secondResistance": 1433.0999333333,
-    "thirdResistance": 1446.1698666666,
-    "firstSupport": 1383.4700666666,
+    "thirdResistance": 1446.1698666667,
+    "firstSupport": 1383.4700666667,
     "secondSupport": 1370.4001333333,
-    "thirdSupport": 1352.1201666666
+    "thirdSupport": 1352.1201666667
   },
   {
     "time": {
@@ -1018,13 +1018,13 @@
         "nano": 0
       }
     },
-    "pivot": 1393.9533333333,
-    "firstResistance": 1408.5766666666,
+    "pivot": 1393.95333333333333333333,
+    "firstResistance": 1408.5766666667,
     "secondResistance": 1415.9933333333,
-    "thirdResistance": 1430.6166666666,
-    "firstSupport": 1386.5366666666,
+    "thirdResistance": 1430.6166666667,
+    "firstSupport": 1386.5366666667,
     "secondSupport": 1371.9133333333,
-    "thirdSupport": 1364.4966666666
+    "thirdSupport": 1364.4966666667
   },
   {
     "time": {
@@ -1040,13 +1040,13 @@
         "nano": 0
       }
     },
-    "pivot": 1408.1833333333,
-    "firstResistance": 1429.8466666666,
+    "pivot": 1408.18333333333333333333,
+    "firstResistance": 1429.8466666667,
     "secondResistance": 1440.7033333333,
-    "thirdResistance": 1462.3666666666,
-    "firstSupport": 1397.3266666666,
+    "thirdResistance": 1462.3666666667,
+    "firstSupport": 1397.3266666667,
     "secondSupport": 1375.6633333333,
-    "thirdSupport": 1364.8066666666
+    "thirdSupport": 1364.8066666667
   },
   {
     "time": {
@@ -1062,13 +1062,13 @@
         "nano": 0
       }
     },
-    "pivot": 1382.7533333333,
-    "firstResistance": 1394.0366666666,
+    "pivot": 1382.75333333333333333333,
+    "firstResistance": 1394.0366666667,
     "secondResistance": 1411.3633333333,
-    "thirdResistance": 1422.6466666666,
-    "firstSupport": 1365.4266666666,
+    "thirdResistance": 1422.6466666667,
+    "firstSupport": 1365.4266666667,
     "secondSupport": 1354.1433333333,
-    "thirdSupport": 1336.8166666666
+    "thirdSupport": 1336.8166666667
   },
   {
     "time": {
@@ -1084,13 +1084,13 @@
         "nano": 0
       }
     },
-    "pivot": 1367.7666666667,
-    "firstResistance": 1381.2533333334,
+    "pivot": 1367.76666666666666666667,
+    "firstResistance": 1381.2533333333,
     "secondResistance": 1403.2566666667,
-    "thirdResistance": 1416.7433333334,
-    "firstSupport": 1345.7633333334,
+    "thirdResistance": 1416.7433333333,
+    "firstSupport": 1345.7633333333,
     "secondSupport": 1332.2766666667,
-    "thirdSupport": 1310.2733333334
+    "thirdSupport": 1310.2733333333
   },
   {
     "time": {
@@ -1106,13 +1106,13 @@
         "nano": 0
       }
     },
-    "pivot": 1331.1266333333,
-    "firstResistance": 1343.1833666666,
+    "pivot": 1331.12663333333333333333,
+    "firstResistance": 1343.1833666667,
     "secondResistance": 1367.1567333333,
-    "thirdResistance": 1379.2134666666,
-    "firstSupport": 1307.1532666666,
+    "thirdResistance": 1379.2134666667,
+    "firstSupport": 1307.1532666667,
     "secondSupport": 1295.0965333333,
-    "thirdSupport": 1271.1231666666
+    "thirdSupport": 1271.1231666667
   },
   {
     "time": {
@@ -1128,7 +1128,7 @@
         "nano": 0
       }
     },
-    "pivot": 1348.5367000000,
+    "pivot": 1348.53670000000000000000,
     "firstResistance": 1368.9934000000,
     "secondResistance": 1388.4267000000,
     "thirdResistance": 1408.8834000000,
@@ -1150,13 +1150,13 @@
         "nano": 0
       }
     },
-    "pivot": 1355.7166666667,
-    "firstResistance": 1377.3033333334,
+    "pivot": 1355.71666666666666666667,
+    "firstResistance": 1377.3033333333,
     "secondResistance": 1393.3266666667,
-    "thirdResistance": 1414.9133333334,
-    "firstSupport": 1339.6933333334,
+    "thirdResistance": 1414.9133333333,
+    "firstSupport": 1339.6933333333,
     "secondSupport": 1318.1066666667,
-    "thirdSupport": 1302.0833333334
+    "thirdSupport": 1302.0833333333
   },
   {
     "time": {
@@ -1172,13 +1172,13 @@
         "nano": 0
       }
     },
-    "pivot": 1400.6966333333,
-    "firstResistance": 1422.4533666666,
+    "pivot": 1400.69663333333333333333,
+    "firstResistance": 1422.4533666667,
     "secondResistance": 1433.3867333333,
-    "thirdResistance": 1455.1434666666,
-    "firstSupport": 1389.7632666666,
+    "thirdResistance": 1455.1434666667,
+    "firstSupport": 1389.7632666667,
     "secondSupport": 1368.0065333333,
-    "thirdSupport": 1357.0731666666
+    "thirdSupport": 1357.0731666667
   },
   {
     "time": {
@@ -1194,13 +1194,13 @@
         "nano": 0
       }
     },
-    "pivot": 1403.6033333333,
-    "firstResistance": 1421.0666666666,
+    "pivot": 1403.60333333333333333333,
+    "firstResistance": 1421.0666666667,
     "secondResistance": 1430.9933333333,
-    "thirdResistance": 1448.4566666666,
-    "firstSupport": 1393.6766666666,
+    "thirdResistance": 1448.4566666667,
+    "firstSupport": 1393.6766666667,
     "secondSupport": 1376.2133333333,
-    "thirdSupport": 1366.2866666666
+    "thirdSupport": 1366.2866666667
   },
   {
     "time": {
@@ -1216,13 +1216,13 @@
         "nano": 0
       }
     },
-    "pivot": 1404.2566333333,
-    "firstResistance": 1414.8532666666,
+    "pivot": 1404.25663333333333333333,
+    "firstResistance": 1414.8532666667,
     "secondResistance": 1436.0166333333,
-    "thirdResistance": 1446.6132666666,
-    "firstSupport": 1383.0932666666,
+    "thirdResistance": 1446.6132666667,
+    "firstSupport": 1383.0932666667,
     "secondSupport": 1372.4966333333,
-    "thirdSupport": 1351.3332666666
+    "thirdSupport": 1351.3332666667
   },
   {
     "time": {
@@ -1238,7 +1238,7 @@
         "nano": 0
       }
     },
-    "pivot": 1379.0667000000,
+    "pivot": 1379.06670000000000000000,
     "firstResistance": 1390.3734000000,
     "secondResistance": 1406.2368000000,
     "thirdResistance": 1417.5435000000,
@@ -1260,7 +1260,7 @@
         "nano": 0
       }
     },
-    "pivot": 1404.8000000000,
+    "pivot": 1404.80000000000000000000,
     "firstResistance": 1434.1900000000,
     "secondResistance": 1449.0300000000,
     "thirdResistance": 1478.4200000000,
@@ -1282,13 +1282,13 @@
         "nano": 0
       }
     },
-    "pivot": 1455.4533666667,
-    "firstResistance": 1480.8267333334,
+    "pivot": 1455.45336666666666666667,
+    "firstResistance": 1480.8267333333,
     "secondResistance": 1494.0933666667,
-    "thirdResistance": 1519.4667333334,
-    "firstSupport": 1442.1867333334,
+    "thirdResistance": 1519.4667333333,
+    "firstSupport": 1442.1867333333,
     "secondSupport": 1416.8133666667,
-    "thirdSupport": 1403.5467333334
+    "thirdSupport": 1403.5467333333
   },
   {
     "time": {
@@ -1304,7 +1304,7 @@
         "nano": 0
       }
     },
-    "pivot": 1464.5300000000,
+    "pivot": 1464.53000000000000000000,
     "firstResistance": 1479.5600000000,
     "secondResistance": 1490.3800000000,
     "thirdResistance": 1505.4100000000,
@@ -1326,13 +1326,13 @@
         "nano": 0
       }
     },
-    "pivot": 1476.6766333333,
-    "firstResistance": 1492.2232666666,
+    "pivot": 1476.67663333333333333333,
+    "firstResistance": 1492.2232666667,
     "secondResistance": 1502.4865333333,
-    "thirdResistance": 1518.0331666666,
-    "firstSupport": 1466.4133666666,
+    "thirdResistance": 1518.0331666667,
+    "firstSupport": 1466.4133666667,
     "secondSupport": 1450.8667333333,
-    "thirdSupport": 1440.6034666666
+    "thirdSupport": 1440.6034666667
   },
   {
     "time": {
@@ -1348,13 +1348,13 @@
         "nano": 0
       }
     },
-    "pivot": 1454.7533333333,
-    "firstResistance": 1468.3866666666,
+    "pivot": 1454.75333333333333333333,
+    "firstResistance": 1468.3866666667,
     "secondResistance": 1492.3633333333,
-    "thirdResistance": 1505.9966666666,
-    "firstSupport": 1430.7766666666,
+    "thirdResistance": 1505.9966666667,
+    "firstSupport": 1430.7766666667,
     "secondSupport": 1417.1433333333,
-    "thirdSupport": 1393.1666666666
+    "thirdSupport": 1393.1666666667
   },
   {
     "time": {
@@ -1370,13 +1370,13 @@
         "nano": 0
       }
     },
-    "pivot": 1480.6699666667,
-    "firstResistance": 1498.7199333334,
+    "pivot": 1480.66996666666666666667,
+    "firstResistance": 1498.7199333333,
     "secondResistance": 1509.4999666667,
-    "thirdResistance": 1527.5499333334,
-    "firstSupport": 1469.8899333334,
+    "thirdResistance": 1527.5499333333,
+    "firstSupport": 1469.8899333333,
     "secondSupport": 1451.8399666667,
-    "thirdSupport": 1441.0599333334
+    "thirdSupport": 1441.0599333333
   },
   {
     "time": {
@@ -1392,13 +1392,13 @@
         "nano": 0
       }
     },
-    "pivot": 1484.9799666667,
-    "firstResistance": 1491.2399333334,
+    "pivot": 1484.97996666666666666667,
+    "firstResistance": 1491.2399333333,
     "secondResistance": 1503.6998666667,
-    "thirdResistance": 1509.9598333334,
-    "firstSupport": 1472.5200333334,
+    "thirdResistance": 1509.9598333333,
+    "firstSupport": 1472.5200333333,
     "secondSupport": 1466.2600666667,
-    "thirdSupport": 1453.8001333334
+    "thirdSupport": 1453.8001333333
   },
   {
     "time": {
@@ -1414,7 +1414,7 @@
         "nano": 0
       }
     },
-    "pivot": 1493.6033000000,
+    "pivot": 1493.60330000000000000000,
     "firstResistance": 1512.6166000000,
     "secondResistance": 1540.4532000000,
     "thirdResistance": 1559.4665000000,
@@ -1436,7 +1436,7 @@
         "nano": 0
       }
     },
-    "pivot": 1456.2933000000,
+    "pivot": 1456.29330000000000000000,
     "firstResistance": 1467.3566000000,
     "secondResistance": 1485.7532000000,
     "thirdResistance": 1496.8165000000,
@@ -1458,13 +1458,13 @@
         "nano": 0
       }
     },
-    "pivot": 1429.1500333333,
-    "firstResistance": 1445.3800666666,
+    "pivot": 1429.15003333333333333333,
+    "firstResistance": 1445.3800666667,
     "secondResistance": 1460.4101333333,
-    "thirdResistance": 1476.6401666666,
-    "firstSupport": 1414.1199666666,
+    "thirdResistance": 1476.6401666667,
+    "firstSupport": 1414.1199666667,
     "secondSupport": 1397.8899333333,
-    "thirdSupport": 1382.8598666666
+    "thirdSupport": 1382.8598666667
   },
   {
     "time": {
@@ -1480,13 +1480,13 @@
         "nano": 0
       }
     },
-    "pivot": 1422.4266666667,
-    "firstResistance": 1434.2733333334,
+    "pivot": 1422.42666666666666666667,
+    "firstResistance": 1434.2733333333,
     "secondResistance": 1457.7966666667,
-    "thirdResistance": 1469.6433333334,
-    "firstSupport": 1398.9033333334,
+    "thirdResistance": 1469.6433333333,
+    "firstSupport": 1398.9033333333,
     "secondSupport": 1387.0566666667,
-    "thirdSupport": 1363.5333333334
+    "thirdSupport": 1363.5333333333
   },
   {
     "time": {
@@ -1502,7 +1502,7 @@
         "nano": 0
       }
     },
-    "pivot": 1414.6433000000,
+    "pivot": 1414.64330000000000000000,
     "firstResistance": 1438.1866000000,
     "secondResistance": 1453.9333000000,
     "thirdResistance": 1477.4766000000,
@@ -1524,13 +1524,13 @@
         "nano": 0
       }
     },
-    "pivot": 1381.8699666667,
-    "firstResistance": 1396.6700333334,
+    "pivot": 1381.86996666666666666667,
+    "firstResistance": 1396.6700333333,
     "secondResistance": 1426.2000666667,
-    "thirdResistance": 1441.0001333334,
-    "firstSupport": 1352.3399333334,
+    "thirdResistance": 1441.0001333333,
+    "firstSupport": 1352.3399333333,
     "secondSupport": 1337.5398666667,
-    "thirdSupport": 1308.0098333334
+    "thirdSupport": 1308.0098333333
   },
   {
     "time": {
@@ -1546,7 +1546,7 @@
         "nano": 0
       }
     },
-    "pivot": 1387.5000000000,
+    "pivot": 1387.50000000000000000000,
     "firstResistance": 1401.1000000000,
     "secondResistance": 1411.4000000000,
     "thirdResistance": 1425.0000000000,
@@ -1568,13 +1568,13 @@
         "nano": 0
       }
     },
-    "pivot": 1393.8166666667,
-    "firstResistance": 1409.9233333334,
+    "pivot": 1393.81666666666666666667,
+    "firstResistance": 1409.9233333333,
     "secondResistance": 1423.2566666667,
-    "thirdResistance": 1439.3633333334,
-    "firstSupport": 1380.4833333334,
+    "thirdResistance": 1439.3633333333,
+    "firstSupport": 1380.4833333333,
     "secondSupport": 1364.3766666667,
-    "thirdSupport": 1351.0433333334
+    "thirdSupport": 1351.0433333333
   },
   {
     "time": {
@@ -1590,12 +1590,12 @@
         "nano": 0
       }
     },
-    "pivot": 1399.9166333333,
-    "firstResistance": 1411.3232666666,
+    "pivot": 1399.91663333333333333333,
+    "firstResistance": 1411.3232666667,
     "secondResistance": 1423.0965333333,
-    "thirdResistance": 1434.5031666666,
-    "firstSupport": 1388.1433666666,
+    "thirdResistance": 1434.5031666667,
+    "firstSupport": 1388.1433666667,
     "secondSupport": 1376.7367333333,
-    "thirdSupport": 1364.9634666666
+    "thirdSupport": 1364.9634666667
   }
 ]

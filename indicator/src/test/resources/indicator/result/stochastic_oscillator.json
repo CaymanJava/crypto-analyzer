@@ -208,7 +208,7 @@
         "nano": 0
       }
     },
-    "fastStochastic": 3.7382485976
+    "fastStochastic": 3.73824859761321512571
   },
   {
     "time": {
@@ -224,7 +224,7 @@
         "nano": 0
       }
     },
-    "fastStochastic": 4.4272341929
+    "fastStochastic": 4.42723419286471211586
   },
   {
     "time": {
@@ -240,8 +240,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 7.3668854850,
-    "slowStochastic": 5.1774560918
+    "fastStochastic": 7.36688548504741064916,
+    "slowStochastic": 5.17745609183333333333
   },
   {
     "time": {
@@ -257,8 +257,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 29.8771250631,
-    "slowStochastic": 13.4106790822
+    "fastStochastic": 29.87712506312068675307,
+    "slowStochastic": 13.41067908226245113991
   },
   {
     "time": {
@@ -274,8 +274,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 29.4955955787,
-    "slowStochastic": 18.7723179144
+    "fastStochastic": 29.49559557874656342928,
+    "slowStochastic": 18.77231791442382190303
   },
   {
     "time": {
@@ -291,8 +291,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 16.8995118667,
-    "slowStochastic": 18.1480492318
+    "fastStochastic": 16.89951186668910957751,
+    "slowStochastic": 18.14804923184558446119
   },
   {
     "time": {
@@ -308,8 +308,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 6.4050179460,
-    "slowStochastic": 14.2337054699
+    "fastStochastic": 6.40501794603742198856,
+    "slowStochastic": 14.23370546990953030365
   },
   {
     "time": {
@@ -325,8 +325,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 36.8349215002,
-    "slowStochastic": 21.7674441467
+    "fastStochastic": 36.83492150022554052486,
+    "slowStochastic": 21.76744414668153371072
   },
   {
     "time": {
@@ -342,8 +342,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 19.6779457647,
-    "slowStochastic": 21.0709446860
+    "fastStochastic": 19.67794576468557055149,
+    "slowStochastic": 21.07094468601621265764
   },
   {
     "time": {
@@ -359,8 +359,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 3.9660449570,
-    "slowStochastic": 15.3693114430
+    "fastStochastic": 3.96604495698551109910,
+    "slowStochastic": 15.36931144300597880479
   },
   {
     "time": {
@@ -376,8 +376,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 2.8364883906,
-    "slowStochastic": 11.1917037589
+    "fastStochastic": 2.83648839061447037922,
+    "slowStochastic": 11.19170375887547599627
   },
   {
     "time": {
@@ -393,8 +393,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 4.0122226651,
-    "slowStochastic": 8.7985433943
+    "fastStochastic": 4.01222266507240600505,
+    "slowStochastic": 8.79854339427445266586
   },
   {
     "time": {
@@ -410,8 +410,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 14.6844751257,
-    "slowStochastic": 10.7605206381
+    "fastStochastic": 14.68447512568470023261,
+    "slowStochastic": 10.76052063807786852144
   },
   {
     "time": {
@@ -427,8 +427,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 3.4389906139,
-    "slowStochastic": 8.3200106300
+    "fastStochastic": 3.43899061394060624711,
+    "slowStochastic": 8.32001063003211443000
   },
   {
     "time": {
@@ -444,8 +444,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 41.8515976512,
-    "slowStochastic": 19.4972063037
+    "fastStochastic": 41.85159765118584610692,
+    "slowStochastic": 19.49720630375002498897
   },
   {
     "time": {
@@ -461,8 +461,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 77.7701517578,
-    "slowStochastic": 38.9215214551
+    "fastStochastic": 77.77015175779760542973,
+    "slowStochastic": 38.92152145509921846922
   },
   {
     "time": {
@@ -478,8 +478,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 85.4419278579,
-    "slowStochastic": 54.4283235894
+    "fastStochastic": 85.44192785785098756959,
+    "slowStochastic": 54.42832358934980816934
   },
   {
     "time": {
@@ -495,8 +495,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 99.8277761836,
-    "slowStochastic": 69.5614744541
+    "fastStochastic": 99.82777618364418938307,
+    "slowStochastic": 69.56147445411460190725
   },
   {
     "time": {
@@ -512,8 +512,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 71.1219512195,
-    "slowStochastic": 70.0816333759
+    "fastStochastic": 71.12195121951219512195,
+    "slowStochastic": 70.08163337591379964548
   },
   {
     "time": {
@@ -529,8 +529,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 93.7500000000,
-    "slowStochastic": 77.9710889173
+    "fastStochastic": 93.75000000000000000000,
+    "slowStochastic": 77.97108891727586643032
   },
   {
     "time": {
@@ -546,8 +546,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 99.8774987471,
-    "slowStochastic": 85.2732255272
+    "fastStochastic": 99.87749874714627763238,
+    "slowStochastic": 85.27322552723267016434
   },
   {
     "time": {
@@ -563,8 +563,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 98.5983140561,
-    "slowStochastic": 89.7149217035
+    "fastStochastic": 98.59831405606743775730,
+    "slowStochastic": 89.71492170351092602866
   },
   {
     "time": {
@@ -580,8 +580,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 90.3303273868,
-    "slowStochastic": 89.9200569313
+    "fastStochastic": 90.33032738678690452852,
+    "slowStochastic": 89.92005693126958552861
   },
   {
     "time": {
@@ -597,8 +597,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 99.9905553457,
-    "slowStochastic": 93.2768897361
+    "fastStochastic": 99.99055534567434831885,
+    "slowStochastic": 93.27688973607117312536
   },
   {
     "time": {
@@ -614,8 +614,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 85.4921348315,
-    "slowStochastic": 90.6819714346
+    "fastStochastic": 85.49213483146067415730,
+    "slowStochastic": 90.68197143453434013601
   },
   {
     "time": {
@@ -631,8 +631,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 99.9102495064,
-    "slowStochastic": 93.7580641252
+    "fastStochastic": 99.91024950637228504757,
+    "slowStochastic": 93.75806412514698843986
   },
   {
     "time": {
@@ -648,8 +648,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 87.2118879354,
-    "slowStochastic": 91.5760053953
+    "fastStochastic": 87.21188793538616860172,
+    "slowStochastic": 91.57600539522671516048
   },
   {
     "time": {
@@ -665,8 +665,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 80.7841157664,
-    "slowStochastic": 87.9787088523
+    "fastStochastic": 80.78411576644792192495,
+    "slowStochastic": 87.97870885230045074864
   },
   {
     "time": {
@@ -682,8 +682,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 88.2869340388,
-    "slowStochastic": 88.0814505811
+    "fastStochastic": 88.28693403884312428597,
+    "slowStochastic": 88.08145058114800859442
   },
   {
     "time": {
@@ -699,8 +699,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 88.4405812143,
-    "slowStochastic": 88.2011607922
+    "fastStochastic": 88.44058121432278152569,
+    "slowStochastic": 88.20116079220626623818
   },
   {
     "time": {
@@ -716,8 +716,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 99.9013431747,
-    "slowStochastic": 92.1012215864
+    "fastStochastic": 99.90134317473110323374,
+    "slowStochastic": 92.10122158638121190337
   },
   {
     "time": {
@@ -733,8 +733,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 87.6996322457,
-    "slowStochastic": 90.6340251395
+    "fastStochastic": 87.69963224570992601452,
+    "slowStochastic": 90.63402513949078327375
   },
   {
     "time": {
@@ -750,8 +750,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 88.6727962826,
-    "slowStochastic": 89.9802821872
+    "fastStochastic": 88.67279628261223205941,
+    "slowStochastic": 89.98028218719793286897
   },
   {
     "time": {
@@ -767,8 +767,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 99.3757132026,
-    "slowStochastic": 93.1120925257
+    "fastStochastic": 99.37571320264529524864,
+    "slowStochastic": 93.11209252568038699553
   },
   {
     "time": {
@@ -784,8 +784,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 71.5505352335,
-    "slowStochastic": 85.9249067616
+    "fastStochastic": 71.55053523346686806331,
+    "slowStochastic": 85.92490676160921401812
   },
   {
     "time": {
@@ -801,8 +801,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 56.8446770487,
-    "slowStochastic": 76.2314968573
+    "fastStochastic": 56.84467704865304696603,
+    "slowStochastic": 76.23149685729049166742
   },
   {
     "time": {
@@ -818,8 +818,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 28.4152737750,
-    "slowStochastic": 60.2927558299
+    "fastStochastic": 28.41527377501152015655,
+    "slowStochastic": 60.29275582986416783046
   },
   {
     "time": {
@@ -835,8 +835,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 49.9646052509,
-    "slowStochastic": 56.8500389702
+    "fastStochastic": 49.96460525091930494227,
+    "slowStochastic": 56.85003897021588020106
   },
   {
     "time": {
@@ -852,8 +852,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 58.2860279139,
-    "slowStochastic": 57.3287019514
+    "fastStochastic": 58.28602791392508241616,
+    "slowStochastic": 57.32870195145228093943
   },
   {
     "time": {
@@ -869,8 +869,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 93.9576867668,
-    "slowStochastic": 69.5383635565
+    "fastStochastic": 93.95768676676599917211,
+    "slowStochastic": 69.53836355655685368366
   },
   {
     "time": {
@@ -886,8 +886,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 93.6878772452,
-    "slowStochastic": 77.5882014527
+    "fastStochastic": 93.68787724518798268391,
+    "slowStochastic": 77.58820145276723001708
   },
   {
     "time": {
@@ -903,8 +903,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 74.5894930728,
-    "slowStochastic": 76.5886319927
+    "fastStochastic": 74.58949307279570753584,
+    "slowStochastic": 76.58863199277672252333
   },
   {
     "time": {
@@ -920,8 +920,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 54.4225604297,
-    "slowStochastic": 69.1999414717
+    "fastStochastic": 54.42256042972247090421,
+    "slowStochastic": 69.19994147175863865029
   },
   {
     "time": {
@@ -937,8 +937,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 94.5658012534,
-    "slowStochastic": 77.6552280656
+    "fastStochastic": 94.56580125335720680394,
+    "slowStochastic": 77.65522806562482803484
   },
   {
     "time": {
@@ -954,8 +954,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 99.2249253425,
-    "slowStochastic": 84.8451271579
+    "fastStochastic": 99.22492534251564148637,
+    "slowStochastic": 84.84512715792176585202
   },
   {
     "time": {
@@ -971,8 +971,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 95.7704147873,
-    "slowStochastic": 88.4868897010
+    "fastStochastic": 95.77041478729537541888,
+    "slowStochastic": 88.48688970104630237431
   },
   {
     "time": {
@@ -988,8 +988,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 97.0334782868,
-    "slowStochastic": 91.3357525629
+    "fastStochastic": 97.03347828676952403646,
+    "slowStochastic": 91.33575256295404292836
   },
   {
     "time": {
@@ -1005,8 +1005,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 74.6649788527,
-    "slowStochastic": 85.7788279928
+    "fastStochastic": 74.66497885268362423304,
+    "slowStochastic": 85.77882799286390336325
   },
   {
     "time": {
@@ -1022,8 +1022,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 97.9637440749,
-    "slowStochastic": 89.8404666868
+    "fastStochastic": 97.96374407486711053074,
+    "slowStochastic": 89.84046668686497241908
   },
   {
     "time": {
@@ -1039,8 +1039,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 89.5386556035,
-    "slowStochastic": 89.7398629924
+    "fastStochastic": 89.53865560352077143017,
+    "slowStochastic": 89.73986299241690542278
   },
   {
     "time": {
@@ -1056,8 +1056,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 81.0405880433,
-    "slowStochastic": 86.8401046760
+    "fastStochastic": 81.04058804333266618363,
+    "slowStochastic": 86.84010467605549234306
   },
   {
     "time": {
@@ -1073,8 +1073,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 61.3048215818,
-    "slowStochastic": 78.3283436446
+    "fastStochastic": 61.30482158177437497965,
+    "slowStochastic": 78.32834364462845322192
   },
   {
     "time": {
@@ -1090,8 +1090,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 40.7275121860,
-    "slowStochastic": 65.7947331584
+    "fastStochastic": 40.72751218604384828465,
+    "slowStochastic": 65.79473315843358490950
   },
   {
     "time": {
@@ -1107,8 +1107,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 27.9737298111,
-    "slowStochastic": 53.1877320426
+    "fastStochastic": 27.97372981112038724648,
+    "slowStochastic": 53.18773204266251902183
   },
   {
     "time": {
@@ -1124,8 +1124,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 35.5803849430,
-    "slowStochastic": 47.3186163427
+    "fastStochastic": 35.58038494298864067454,
+    "slowStochastic": 47.31861634277122623940
   },
   {
     "time": {
@@ -1141,8 +1141,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 0.0454103777,
-    "slowStochastic": 31.5608810210
+    "fastStochastic": 0.04541037766405389648,
+    "slowStochastic": 31.56088102106883545843
   },
   {
     "time": {
@@ -1158,8 +1158,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 15.3722225821,
-    "slowStochastic": 26.1646615414
+    "fastStochastic": 15.37222258210792252381,
+    "slowStochastic": 26.16466154141519781356
   },
   {
     "time": {
@@ -1175,8 +1175,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 19.1229513507,
-    "slowStochastic": 23.8174248112
+    "fastStochastic": 19.12295135065103323185,
+    "slowStochastic": 23.81742481116047628632
   },
   {
     "time": {
@@ -1192,8 +1192,8 @@
         "nano": 0
       }
     },
-    "fastStochastic": 21.0404223619,
-    "slowStochastic": 22.8917573281
+    "fastStochastic": 21.04042236185787393924,
+    "slowStochastic": 22.89175732805960883729
   },
   {
     "time": {
@@ -1209,7 +1209,7 @@
         "nano": 0
       }
     },
-    "fastStochastic": 0.0314073910,
-    "slowStochastic": 15.2716406824
+    "fastStochastic": 0.03140739099621223088,
+    "slowStochastic": 15.27164068237180996849
   }
 ]

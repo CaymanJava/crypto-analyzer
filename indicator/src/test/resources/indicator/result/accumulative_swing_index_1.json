@@ -28,7 +28,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": 362.3208389553
+    "indicatorValue": 362.32083895519806261893
   },
   {
     "time": {
@@ -44,7 +44,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -484.2046341239
+    "indicatorValue": -484.2046341236
   },
   {
     "time": {
@@ -60,7 +60,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": 430.3629537691
+    "indicatorValue": 430.3629537689
   },
   {
     "time": {
@@ -76,7 +76,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": 637.9817913401
+    "indicatorValue": 637.9817913403
   },
   {
     "time": {
@@ -92,7 +92,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": 930.4790736705
+    "indicatorValue": 930.4790736709
   },
   {
     "time": {
@@ -108,7 +108,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": 834.3114759048
+    "indicatorValue": 834.3114759055
   },
   {
     "time": {
@@ -124,7 +124,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -73.5540194867
+    "indicatorValue": -73.5540194862
   },
   {
     "time": {
@@ -140,7 +140,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": 34.3548878684
+    "indicatorValue": 34.3548878688
   },
   {
     "time": {
@@ -156,7 +156,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -184.0491520448
+    "indicatorValue": -184.0491520442
   },
   {
     "time": {
@@ -172,7 +172,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -496.7979649242
+    "indicatorValue": -496.7979649238
   },
   {
     "time": {
@@ -188,7 +188,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -637.1561090180
+    "indicatorValue": -637.1561090178
   },
   {
     "time": {
@@ -204,7 +204,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -1403.6028637332
+    "indicatorValue": -1403.6028637330
   },
   {
     "time": {
@@ -236,7 +236,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -2369.1752690619
+    "indicatorValue": -2369.1752690620
   },
   {
     "time": {
@@ -252,7 +252,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -2391.7991993404
+    "indicatorValue": -2391.7991993403
   },
   {
     "time": {
@@ -268,7 +268,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -1490.5671669239
+    "indicatorValue": -1490.5671669240
   },
   {
     "time": {
@@ -284,7 +284,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -1484.1682058794
+    "indicatorValue": -1484.1682058795
   },
   {
     "time": {
@@ -300,7 +300,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -1804.2927630658
+    "indicatorValue": -1804.2927630657
   },
   {
     "time": {
@@ -316,7 +316,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": -2454.6066564682
+    "indicatorValue": -2454.6066564681
   },
   {
     "time": {
@@ -332,8 +332,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": -1787.4921867718,
-    "signalLineValue": -764.3214785175
+    "indicatorValue": -1787.4921867719,
+    "signalLineValue": -764.32147851728000000000
   },
   {
     "time": {
@@ -349,8 +349,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": -2087.1961156330,
-    "signalLineValue": -890.3095391448
+    "indicatorValue": -2087.1961156326,
+    "signalLineValue": -890.3095391949
   },
   {
     "time": {
@@ -366,8 +366,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": -2438.4241712607,
-    "signalLineValue": -1037.7490278588
+    "indicatorValue": -2438.4241712606,
+    "signalLineValue": -1037.7490279631
   },
   {
     "time": {
@@ -383,8 +383,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": -2971.6145597353,
-    "signalLineValue": -1221.9266974877
+    "indicatorValue": -2971.6145597352,
+    "signalLineValue": -1221.9266976557
   },
   {
     "time": {
@@ -400,8 +400,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": -3373.7504478135,
-    "signalLineValue": -1426.8622926748
+    "indicatorValue": -3373.7504478131,
+    "signalLineValue": -1426.8622929088
   },
   {
     "time": {
@@ -417,8 +417,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": -3315.9905033151,
-    "signalLineValue": -1606.7792650448
+    "indicatorValue": -3315.9905033147,
+    "signalLineValue": -1606.7792653284
   },
   {
     "time": {
@@ -434,8 +434,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": -3515.7659485686,
-    "signalLineValue": -1788.5875205458
+    "indicatorValue": -3515.7659485682,
+    "signalLineValue": -1788.5875208750
   },
   {
     "time": {
@@ -451,8 +451,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": -2450.3489340679,
-    "signalLineValue": -1851.6124170465
+    "indicatorValue": -2450.3489340667,
+    "signalLineValue": -1851.6124173694
   },
   {
     "time": {
@@ -468,8 +468,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": -1285.8985426032,
-    "signalLineValue": -1797.7349052163
+    "indicatorValue": -1285.8985426027,
+    "signalLineValue": -1797.7349054869
   },
   {
     "time": {
@@ -485,8 +485,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": -1058.0932177373,
-    "signalLineValue": -1727.2928397703
+    "indicatorValue": -1058.0932177370,
+    "signalLineValue": -1727.2928399869
   },
   {
     "time": {
@@ -502,8 +502,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 640.2515430031,
-    "signalLineValue": -1501.8124224535
+    "indicatorValue": 640.2515430032,
+    "signalLineValue": -1501.8124225593
   },
   {
     "time": {
@@ -519,8 +519,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": -315.8284128545,
-    "signalLineValue": -1388.8615644416
+    "indicatorValue": -315.8284128542,
+    "signalLineValue": -1388.8615644921
   },
   {
     "time": {
@@ -536,8 +536,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 554.7757032047,
-    "signalLineValue": -1203.7532533112
+    "indicatorValue": 554.7757032052,
+    "signalLineValue": -1203.7532532828
   },
   {
     "time": {
@@ -553,8 +553,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 776.4089328513,
-    "signalLineValue": -1015.1663785140
+    "indicatorValue": 776.4089328517,
+    "signalLineValue": -1015.1663784128
   },
   {
     "time": {
@@ -570,8 +570,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1133.2157770154,
-    "signalLineValue": -810.5585542597
+    "indicatorValue": 1133.2157770161,
+    "signalLineValue": -810.5585540862
   },
   {
     "time": {
@@ -587,8 +587,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1066.2716778506,
-    "signalLineValue": -631.8128179397
+    "indicatorValue": 1066.2716778517,
+    "signalLineValue": -631.8128177112
   },
   {
     "time": {
@@ -604,8 +604,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1552.0667723227,
-    "signalLineValue": -423.8242856170
+    "indicatorValue": 1552.0667723242,
+    "signalLineValue": -423.8242853269
   },
   {
     "time": {
@@ -621,8 +621,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1303.6419828770,
-    "signalLineValue": -259.3036886834
+    "indicatorValue": 1303.6419828784,
+    "signalLineValue": -259.3036883550
   },
   {
     "time": {
@@ -638,8 +638,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1873.6565218628,
-    "signalLineValue": -56.1646210936
+    "indicatorValue": 1873.6565218637,
+    "signalLineValue": -56.1646207151
   },
   {
     "time": {
@@ -655,8 +655,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1704.2987260419,
-    "signalLineValue": 111.4985547570
+    "indicatorValue": 1704.2987260427,
+    "signalLineValue": 111.4985551666
   },
   {
     "time": {
@@ -672,8 +672,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1328.6352663253,
-    "signalLineValue": 227.4163367648
+    "indicatorValue": 1328.6352663266,
+    "signalLineValue": 227.4163371818
   },
   {
     "time": {
@@ -689,8 +689,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1827.1525293089,
-    "signalLineValue": 379.7721645652
+    "indicatorValue": 1827.1525293102,
+    "signalLineValue": 379.7721650036
   },
   {
     "time": {
@@ -706,8 +706,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1914.3833313563,
-    "signalLineValue": 525.9256089630
+    "indicatorValue": 1914.3833313580,
+    "signalLineValue": 525.9256094183
   },
   {
     "time": {
@@ -723,8 +723,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 2467.4296594275,
-    "signalLineValue": 710.8307565523
+    "indicatorValue": 2467.4296594294,
+    "signalLineValue": 710.8307570384
   },
   {
     "time": {
@@ -740,8 +740,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 3286.0552446954,
-    "signalLineValue": 956.0902315154
+    "indicatorValue": 3286.0552446967,
+    "signalLineValue": 956.0902320535
   },
   {
     "time": {
@@ -757,8 +757,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 3439.0183430777,
-    "signalLineValue": 1192.5595753791
+    "indicatorValue": 3439.0183430787,
+    "signalLineValue": 1192.5595759607
   },
   {
     "time": {
@@ -774,8 +774,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 3660.1910243829,
-    "signalLineValue": 1427.5720942378
+    "indicatorValue": 3660.1910243837,
+    "signalLineValue": 1427.5720948581
   },
   {
     "time": {
@@ -791,8 +791,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 2688.5421254077,
-    "signalLineValue": 1547.6644781107
+    "indicatorValue": 2688.5421254081,
+    "signalLineValue": 1547.6644787200
   },
   {
     "time": {
@@ -808,8 +808,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 2401.6969772616,
-    "signalLineValue": 1629.0009065687
+    "indicatorValue": 2401.6969772622,
+    "signalLineValue": 1629.0009071526
   },
   {
     "time": {
@@ -825,8 +825,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1417.9338441091,
-    "signalLineValue": 1608.8992815806
+    "indicatorValue": 1417.9338441093,
+    "signalLineValue": 1608.8992821009
   },
   {
     "time": {
@@ -842,8 +842,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1907.6555677668,
-    "signalLineValue": 1637.3522612060
+    "indicatorValue": 1907.6555677674,
+    "signalLineValue": 1637.3522616882
   },
   {
     "time": {
@@ -859,8 +859,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 2136.6097057674,
-    "signalLineValue": 1684.9005892404
+    "indicatorValue": 2136.6097057681,
+    "signalLineValue": 1684.9005896958
   },
   {
     "time": {
@@ -876,8 +876,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 3429.2177824208,
-    "signalLineValue": 1851.0260361435
+    "indicatorValue": 3429.2177824221,
+    "signalLineValue": 1851.0260366221
   },
   {
     "time": {
@@ -893,8 +893,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 3611.1073568617,
-    "signalLineValue": 2018.6528285258
+    "indicatorValue": 3611.1073568631,
+    "signalLineValue": 2018.6528290260
   },
   {
     "time": {
@@ -910,8 +910,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 3380.4715097441,
-    "signalLineValue": 2148.3498457328
+    "indicatorValue": 3380.4715097455,
+    "signalLineValue": 2148.3498462374
   },
   {
     "time": {
@@ -927,8 +927,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 2969.5511146284,
-    "signalLineValue": 2226.5594903582
+    "indicatorValue": 2969.5511146295,
+    "signalLineValue": 2226.5594908462
   },
   {
     "time": {
@@ -944,8 +944,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 3968.4569117220,
-    "signalLineValue": 2392.4544828027
+    "indicatorValue": 3968.4569117234,
+    "signalLineValue": 2392.4544833107
   },
   {
     "time": {
@@ -961,8 +961,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 5262.0392434102,
-    "signalLineValue": 2665.7482694179
+    "indicatorValue": 5262.0392434109,
+    "signalLineValue": 2665.7482699869
   },
   {
     "time": {
@@ -978,8 +978,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 5434.6906615039,
-    "signalLineValue": 2929.4570685587
+    "indicatorValue": 5434.6906615044,
+    "signalLineValue": 2929.4570691790
   },
   {
     "time": {
@@ -995,8 +995,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 5667.3230870452,
-    "signalLineValue": 3190.2062130722
+    "indicatorValue": 5667.3230870458,
+    "signalLineValue": 3190.2062137377
   },
   {
     "time": {
@@ -1012,8 +1012,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 4872.1464532719,
-    "signalLineValue": 3350.3909977890
+    "indicatorValue": 4872.1464532726,
+    "signalLineValue": 3350.3909984553
   },
   {
     "time": {
@@ -1029,8 +1029,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 5717.2798693108,
-    "signalLineValue": 3575.8089854628
+    "indicatorValue": 5717.2798693116,
+    "signalLineValue": 3575.8089861559
   },
   {
     "time": {
@@ -1046,8 +1046,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 5644.0693810612,
-    "signalLineValue": 3772.7861659172
+    "indicatorValue": 5644.0693810620,
+    "signalLineValue": 3772.7861666231
   },
   {
     "time": {
@@ -1063,8 +1063,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 5507.2120001782,
-    "signalLineValue": 3937.9695786379
+    "indicatorValue": 5507.2120001783,
+    "signalLineValue": 3937.9695793426
   },
   {
     "time": {
@@ -1080,8 +1080,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 4616.0810518231,
-    "signalLineValue": 4002.5516236773
+    "indicatorValue": 4616.0810518227,
+    "signalLineValue": 4002.5516243407
   },
   {
     "time": {
@@ -1097,8 +1097,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 4265.5272884729,
-    "signalLineValue": 4027.5969250764
+    "indicatorValue": 4265.5272884724,
+    "signalLineValue": 4027.5969256866
   },
   {
     "time": {
@@ -1114,8 +1114,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 3939.8962620879,
-    "signalLineValue": 4019.2444809856
+    "indicatorValue": 3939.8962620875,
+    "signalLineValue": 4019.2444815343
   },
   {
     "time": {
@@ -1131,8 +1131,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 4055.1838006702,
-    "signalLineValue": 4022.6672733351
+    "indicatorValue": 4055.1838006698,
+    "signalLineValue": 4022.6672738329
   },
   {
     "time": {
@@ -1148,8 +1148,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 2905.1647467281,
-    "signalLineValue": 3916.2384613199
+    "indicatorValue": 2905.1647467270,
+    "signalLineValue": 3916.2384617276
   },
   {
     "time": {
@@ -1165,8 +1165,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 3180.9541586460,
-    "signalLineValue": 3846.2113849028
+    "indicatorValue": 3180.9541586451,
+    "signalLineValue": 3846.2113852436
   },
   {
     "time": {
@@ -1182,8 +1182,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 3319.9706561079,
-    "signalLineValue": 3796.0932202757
+    "indicatorValue": 3319.9706561070,
+    "signalLineValue": 3796.0932205639
   },
   {
     "time": {
@@ -1199,8 +1199,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 3346.7076679985,
-    "signalLineValue": 3753.2945962664
+    "indicatorValue": 3346.7076679977,
+    "signalLineValue": 3753.2945965100
   },
   {
     "time": {
@@ -1216,7 +1216,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": 2385.4352799483,
-    "signalLineValue": 3623.0222804787
+    "indicatorValue": 2385.4352799474,
+    "signalLineValue": 3623.0222806469
   }
 ]

@@ -21,7 +21,7 @@ public class MathHelper {
             return BigDecimal.ZERO;
         }
         return nonNull(divisible) && nonNull(divisor)
-                ? divisible.divide(divisor, 10, BigDecimal.ROUND_HALF_UP)
+                ? divisible.divide(divisor, 20, BigDecimal.ROUND_HALF_UP)
                 : null;
     }
 

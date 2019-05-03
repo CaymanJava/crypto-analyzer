@@ -141,7 +141,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1299.1350000000,
+    "conversionLineValue": 1299.13500000000000000000,
     "laggingSpanValue": 1309.6700000000
   },
   {
@@ -158,7 +158,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1299.1350000000,
+    "conversionLineValue": 1299.13500000000000000000,
     "laggingSpanValue": 1292.8000000000
   },
   {
@@ -175,7 +175,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1299.1350000000,
+    "conversionLineValue": 1299.13500000000000000000,
     "laggingSpanValue": 1320.2300000000
   },
   {
@@ -192,7 +192,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1290.1750000000,
+    "conversionLineValue": 1290.17500000000000000000,
     "laggingSpanValue": 1298.7100000000
   },
   {
@@ -209,7 +209,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1281.7299500000,
+    "conversionLineValue": 1281.72995000000000000000,
     "laggingSpanValue": 1331.1300000000
   },
   {
@@ -226,7 +226,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1281.7299500000,
+    "conversionLineValue": 1281.72995000000000000000,
     "laggingSpanValue": 1315.8101000000
   },
   {
@@ -243,7 +243,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1262.3400000000,
+    "conversionLineValue": 1262.34000000000000000000,
     "laggingSpanValue": 1300.5300000000
   },
   {
@@ -260,7 +260,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1237.3800000000,
+    "conversionLineValue": 1237.38000000000000000000,
     "laggingSpanValue": 1326.7300000000
   },
   {
@@ -277,7 +277,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1233.7700000000,
+    "conversionLineValue": 1233.77000000000000000000,
     "laggingSpanValue": 1329.7600000000
   },
   {
@@ -294,7 +294,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1233.7700000000,
+    "conversionLineValue": 1233.77000000000000000000,
     "laggingSpanValue": 1360.7000000000
   },
   {
@@ -311,7 +311,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1233.7700000000,
+    "conversionLineValue": 1233.77000000000000000000,
     "laggingSpanValue": 1396.5400000000
   },
   {
@@ -328,7 +328,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1211.9849500000,
+    "conversionLineValue": 1211.98495000000000000000,
     "laggingSpanValue": 1401.1600000000
   },
   {
@@ -345,7 +345,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1201.4899500000,
+    "conversionLineValue": 1201.48995000000000000000,
     "laggingSpanValue": 1418.9900000000
   },
   {
@@ -362,7 +362,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1199.8449500000,
+    "conversionLineValue": 1199.84495000000000000000,
     "laggingSpanValue": 1376.7100000000
   },
   {
@@ -379,7 +379,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1199.8449500000,
+    "conversionLineValue": 1199.84495000000000000000,
     "laggingSpanValue": 1359.2500000000
   },
   {
@@ -396,7 +396,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1187.4450000000,
+    "conversionLineValue": 1187.44500000000000000000,
     "laggingSpanValue": 1319.2100000000
   },
   {
@@ -413,7 +413,7 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1176.4900000000,
+    "conversionLineValue": 1176.49000000000000000000,
     "laggingSpanValue": 1349.5601000000
   },
   {
@@ -430,8 +430,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1174.6300000000,
-    "baseLineValue": 1228.4550000000,
+    "conversionLineValue": 1174.63000000000000000000,
+    "baseLineValue": 1228.45500000000000000000,
     "laggingSpanValue": 1361.2800000000
   },
   {
@@ -448,8 +448,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1172.3600000000,
-    "baseLineValue": 1228.4550000000,
+    "conversionLineValue": 1172.36000000000000000000,
+    "baseLineValue": 1228.45500000000000000000,
     "laggingSpanValue": 1411.5200000000
   },
   {
@@ -466,8 +466,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1165.6050000000,
-    "baseLineValue": 1227.8800000000,
+    "conversionLineValue": 1165.60500000000000000000,
+    "baseLineValue": 1227.88000000000000000000,
     "laggingSpanValue": 1411.1400000000
   },
   {
@@ -484,8 +484,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1165.6050000000,
-    "baseLineValue": 1227.8800000000,
+    "conversionLineValue": 1165.60500000000000000000,
+    "baseLineValue": 1227.88000000000000000000,
     "laggingSpanValue": 1393.6899000000
   },
   {
@@ -502,8 +502,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1165.6050000000,
-    "baseLineValue": 1227.8800000000,
+    "conversionLineValue": 1165.60500000000000000000,
+    "baseLineValue": 1227.88000000000000000000,
     "laggingSpanValue": 1374.5100000000
   },
   {
@@ -520,8 +520,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1195.6150000000,
-    "baseLineValue": 1227.8800000000,
+    "conversionLineValue": 1195.61500000000000000000,
+    "baseLineValue": 1227.88000000000000000000,
     "laggingSpanValue": 1419.3500000000
   },
   {
@@ -538,8 +538,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1195.6150000000,
-    "baseLineValue": 1227.8800000000,
+    "conversionLineValue": 1195.61500000000000000000,
+    "baseLineValue": 1227.88000000000000000000,
     "laggingSpanValue": 1467.5601000000
   },
   {
@@ -556,8 +556,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1195.8500000000,
-    "baseLineValue": 1207.1050000000,
+    "conversionLineValue": 1195.85000000000000000000,
+    "baseLineValue": 1207.10500000000000000000,
     "laggingSpanValue": 1468.7400000000
   },
   {
@@ -574,8 +574,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1198.2850000000,
-    "baseLineValue": 1203.4950000000,
+    "conversionLineValue": 1198.28500000000000000000,
+    "baseLineValue": 1203.49500000000000000000,
     "laggingSpanValue": 1481.9600000000
   },
   {
@@ -592,8 +592,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1210.5100000000,
-    "baseLineValue": 1210.5100000000,
+    "conversionLineValue": 1210.51000000000000000000,
+    "baseLineValue": 1210.51000000000000000000,
     "laggingSpanValue": 1444.4100000000
   },
   {
@@ -610,8 +610,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1210.5100000000,
-    "baseLineValue": 1210.5100000000,
+    "conversionLineValue": 1210.51000000000000000000,
+    "baseLineValue": 1210.51000000000000000000,
     "laggingSpanValue": 1487.9399000000
   },
   {
@@ -628,8 +628,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1250.0750000000,
-    "baseLineValue": 1214.3700000000,
+    "conversionLineValue": 1250.07500000000000000000,
+    "baseLineValue": 1214.37000000000000000000,
     "laggingSpanValue": 1478.7800000000
   },
   {
@@ -646,8 +646,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1262.2050000000,
-    "baseLineValue": 1219.7400000000,
+    "conversionLineValue": 1262.20500000000000000000,
+    "baseLineValue": 1219.74000000000000000000,
     "laggingSpanValue": 1484.7800000000
   },
   {
@@ -664,8 +664,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1280.1950500000,
-    "baseLineValue": 1219.9100000000,
+    "conversionLineValue": 1280.19505000000000000000,
+    "baseLineValue": 1219.91000000000000000000,
     "laggingSpanValue": 1448.9600000000
   },
   {
@@ -682,8 +682,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1287.6350500000,
-    "baseLineValue": 1227.3500000000,
+    "conversionLineValue": 1287.63505000000000000000,
+    "baseLineValue": 1227.35000000000000000000,
     "laggingSpanValue": 1430.3500000000
   },
   {
@@ -700,8 +700,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1299.8249500000,
-    "baseLineValue": 1227.3500000000,
+    "conversionLineValue": 1299.82495000000000000000,
+    "baseLineValue": 1227.35000000000000000000,
     "laggingSpanValue": 1410.7500000000
   },
   {
@@ -718,8 +718,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1299.8249500000,
-    "baseLineValue": 1227.3500000000,
+    "conversionLineValue": 1299.82495000000000000000,
+    "baseLineValue": 1227.35000000000000000000,
     "laggingSpanValue": 1422.4399000000
   },
   {
@@ -736,8 +736,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1307.6700000000,
-    "baseLineValue": 1228.0350000000,
+    "conversionLineValue": 1307.67000000000000000000,
+    "baseLineValue": 1228.03500000000000000000,
     "laggingSpanValue": 1367.1400000000
   },
   {
@@ -754,8 +754,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1320.0099500000,
-    "baseLineValue": 1234.6600000000,
+    "conversionLineValue": 1320.00995000000000000000,
+    "baseLineValue": 1234.66000000000000000000,
     "laggingSpanValue": 1390.8000000000
   },
   {
@@ -772,8 +772,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1349.6099500000,
-    "baseLineValue": 1264.2600000000,
+    "conversionLineValue": 1349.60995000000000000000,
+    "baseLineValue": 1264.26000000000000000000,
     "laggingSpanValue": 1396.5900000000
   },
   {
@@ -790,8 +790,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1349.6099500000,
-    "baseLineValue": 1264.2600000000,
+    "conversionLineValue": 1349.60995000000000000000,
+    "baseLineValue": 1264.26000000000000000000,
     "laggingSpanValue": 1399.5500000000
   },
   {
@@ -808,8 +808,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1349.6099500000,
-    "baseLineValue": 1264.2600000000,
+    "conversionLineValue": 1349.60995000000000000000,
+    "baseLineValue": 1264.26000000000000000000,
     "laggingSpanValue": 1362.6100000000
   },
   {
@@ -826,8 +826,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1349.6099500000,
-    "baseLineValue": 1264.2600000000,
+    "conversionLineValue": 1349.60995000000000000000,
+    "baseLineValue": 1264.26000000000000000000,
     "laggingSpanValue": 1220.5300000000
   },
   {
@@ -844,8 +844,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1349.6099500000,
-    "baseLineValue": 1264.2600000000,
+    "conversionLineValue": 1349.60995000000000000000,
+    "baseLineValue": 1264.26000000000000000000,
     "laggingSpanValue": 1282.4399000000
   },
   {
@@ -862,8 +862,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1360.2900000000,
-    "baseLineValue": 1264.2600000000,
+    "conversionLineValue": 1360.29000000000000000000,
+    "baseLineValue": 1264.26000000000000000000,
     "laggingSpanValue": 1232.4200000000
   },
   {
@@ -880,8 +880,8 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1366.8750000000,
-    "baseLineValue": 1264.2600000000,
+    "conversionLineValue": 1366.87500000000000000000,
+    "baseLineValue": 1264.26000000000000000000,
     "laggingSpanValue": 1272.2900000000
   },
   {
@@ -898,9 +898,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1366.8750000000,
-    "baseLineValue": 1264.2600000000,
-    "leadingSpanAValue": 1201.5425000000,
+    "conversionLineValue": 1366.87500000000000000000,
+    "baseLineValue": 1264.26000000000000000000,
+    "leadingSpanAValue": 1201.54250000000000000000,
     "laggingSpanValue": 1287.8600000000
   },
   {
@@ -917,9 +917,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1369.5499500000,
-    "baseLineValue": 1264.2600000000,
-    "leadingSpanAValue": 1200.4075000000,
+    "conversionLineValue": 1369.54995000000000000000,
+    "baseLineValue": 1264.26000000000000000000,
+    "leadingSpanAValue": 1200.40750000000000000000,
     "laggingSpanValue": 1309.6700000000
   },
   {
@@ -936,9 +936,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1369.0549500000,
-    "baseLineValue": 1299.9650000000,
-    "leadingSpanAValue": 1196.7425000000,
+    "conversionLineValue": 1369.05495000000000000000,
+    "baseLineValue": 1299.96500000000000000000,
+    "leadingSpanAValue": 1196.74250000000000000000,
     "laggingSpanValue": 1292.8000000000
   },
   {
@@ -955,9 +955,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1372.2449500000,
-    "baseLineValue": 1309.4200000000,
-    "leadingSpanAValue": 1196.7425000000,
+    "conversionLineValue": 1372.24495000000000000000,
+    "baseLineValue": 1309.42000000000000000000,
+    "leadingSpanAValue": 1196.74250000000000000000,
     "laggingSpanValue": 1320.2300000000
   },
   {
@@ -974,9 +974,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1372.2449500000,
-    "baseLineValue": 1327.2400500000,
-    "leadingSpanAValue": 1196.7425000000,
+    "conversionLineValue": 1372.24495000000000000000,
+    "baseLineValue": 1327.24005000000000000000,
+    "leadingSpanAValue": 1196.74250000000000000000,
     "laggingSpanValue": 1298.7100000000
   },
   {
@@ -993,9 +993,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1372.2449500000,
-    "baseLineValue": 1327.2400500000,
-    "leadingSpanAValue": 1211.7475000000,
+    "conversionLineValue": 1372.24495000000000000000,
+    "baseLineValue": 1327.24005000000000000000,
+    "leadingSpanAValue": 1211.74750000000000000000,
     "laggingSpanValue": 1331.1300000000
   },
   {
@@ -1012,9 +1012,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1393.8949500000,
-    "baseLineValue": 1361.0799500000,
-    "leadingSpanAValue": 1211.7475000000,
+    "conversionLineValue": 1393.89495000000000000000,
+    "baseLineValue": 1361.07995000000000000000,
+    "leadingSpanAValue": 1211.74750000000000000000,
     "laggingSpanValue": 1315.8101000000
   },
   {
@@ -1031,9 +1031,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1401.7150000000,
-    "baseLineValue": 1364.3949500000,
-    "leadingSpanAValue": 1201.4775000000,
+    "conversionLineValue": 1401.71500000000000000000,
+    "baseLineValue": 1364.39495000000000000000,
+    "leadingSpanAValue": 1201.47750000000000000000,
     "laggingSpanValue": 1300.5300000000
   },
   {
@@ -1050,9 +1050,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1410.5349500000,
-    "baseLineValue": 1377.3499500000,
-    "leadingSpanAValue": 1200.8900000000,
+    "conversionLineValue": 1410.53495000000000000000,
+    "baseLineValue": 1377.34995000000000000000,
+    "leadingSpanAValue": 1200.89000000000000000000,
     "laggingSpanValue": 1326.7300000000
   },
   {
@@ -1069,9 +1069,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1427.3499500000,
-    "baseLineValue": 1383.0649000000,
-    "leadingSpanAValue": 1210.5100000000,
+    "conversionLineValue": 1427.34995000000000000000,
+    "baseLineValue": 1383.06490000000000000000,
+    "leadingSpanAValue": 1210.51000000000000000000,
     "laggingSpanValue": 1329.7600000000
   },
   {
@@ -1088,9 +1088,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1429.6050000000,
-    "baseLineValue": 1385.3199500000,
-    "leadingSpanAValue": 1210.5100000000,
+    "conversionLineValue": 1429.60500000000000000000,
+    "baseLineValue": 1385.31995000000000000000,
+    "leadingSpanAValue": 1210.51000000000000000000,
     "laggingSpanValue": 1360.7000000000
   },
   {
@@ -1107,9 +1107,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1432.5999500000,
-    "baseLineValue": 1388.3149000000,
-    "leadingSpanAValue": 1232.2225000000,
+    "conversionLineValue": 1432.59995000000000000000,
+    "baseLineValue": 1388.31490000000000000000,
+    "leadingSpanAValue": 1232.22250000000000000000,
     "laggingSpanValue": 1396.5400000000
   },
   {
@@ -1126,9 +1126,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1444.5999500000,
-    "baseLineValue": 1400.3149000000,
-    "leadingSpanAValue": 1240.9725000000,
+    "conversionLineValue": 1444.59995000000000000000,
+    "baseLineValue": 1400.31490000000000000000,
+    "leadingSpanAValue": 1240.97250000000000000000,
     "laggingSpanValue": 1401.1600000000
   },
   {
@@ -1145,9 +1145,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1448.4249500000,
-    "baseLineValue": 1400.3149000000,
-    "leadingSpanAValue": 1250.0525250000,
+    "conversionLineValue": 1448.42495000000000000000,
+    "baseLineValue": 1400.31490000000000000000,
+    "leadingSpanAValue": 1250.05252500000000000000,
     "laggingSpanValue": 1418.9900000000
   },
   {
@@ -1164,9 +1164,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1467.1799500000,
-    "baseLineValue": 1400.3149000000,
-    "leadingSpanAValue": 1257.4925250000,
+    "conversionLineValue": 1467.17995000000000000000,
+    "baseLineValue": 1400.31490000000000000000,
+    "leadingSpanAValue": 1257.49252500000000000000,
     "laggingSpanValue": 1376.7100000000
   },
   {
@@ -1183,9 +1183,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1466.0099500000,
-    "baseLineValue": 1410.9949500000,
-    "leadingSpanAValue": 1263.5874750000,
+    "conversionLineValue": 1466.00995000000000000000,
+    "baseLineValue": 1410.99495000000000000000,
+    "leadingSpanAValue": 1263.58747500000000000000,
     "laggingSpanValue": 1359.2500000000
   },
   {
@@ -1202,9 +1202,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1456.2699500000,
-    "baseLineValue": 1417.5799500000,
-    "leadingSpanAValue": 1263.5874750000,
+    "conversionLineValue": 1456.26995000000000000000,
+    "baseLineValue": 1417.57995000000000000000,
+    "leadingSpanAValue": 1263.58747500000000000000,
     "laggingSpanValue": 1319.2100000000
   },
   {
@@ -1221,9 +1221,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1444.2549000000,
-    "baseLineValue": 1417.5799500000,
-    "leadingSpanAValue": 1267.8525000000,
+    "conversionLineValue": 1444.25490000000000000000,
+    "baseLineValue": 1417.57995000000000000000,
+    "leadingSpanAValue": 1267.85250000000000000000,
     "laggingSpanValue": 1349.5601000000
   },
   {
@@ -1240,9 +1240,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1444.2549000000,
-    "baseLineValue": 1420.2549000000,
-    "leadingSpanAValue": 1277.3349750000,
+    "conversionLineValue": 1444.25490000000000000000,
+    "baseLineValue": 1420.25490000000000000000,
+    "leadingSpanAValue": 1277.33497500000000000000,
     "laggingSpanValue": 1361.2800000000
   },
   {
@@ -1259,9 +1259,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1444.2549000000,
-    "baseLineValue": 1420.2549000000,
-    "leadingSpanAValue": 1306.9349750000,
+    "conversionLineValue": 1444.25490000000000000000,
+    "baseLineValue": 1420.25490000000000000000,
+    "leadingSpanAValue": 1306.93497500000000000000,
     "laggingSpanValue": 1411.5200000000
   },
   {
@@ -1278,9 +1278,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1444.2549000000,
-    "baseLineValue": 1420.2549000000,
-    "leadingSpanAValue": 1306.9349750000,
+    "conversionLineValue": 1444.25490000000000000000,
+    "baseLineValue": 1420.25490000000000000000,
+    "leadingSpanAValue": 1306.93497500000000000000,
     "laggingSpanValue": 1411.1400000000
   },
   {
@@ -1297,9 +1297,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1418.6250000000,
-    "baseLineValue": 1420.2549000000,
-    "leadingSpanAValue": 1306.9349750000,
+    "conversionLineValue": 1418.62500000000000000000,
+    "baseLineValue": 1420.25490000000000000000,
+    "leadingSpanAValue": 1306.93497500000000000000,
     "laggingSpanValue": 1393.6899000000
   },
   {
@@ -1316,9 +1316,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1319.6850000000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1306.9349750000,
+    "conversionLineValue": 1319.68500000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1306.93497500000000000000,
     "laggingSpanValue": 1374.5100000000
   },
   {
@@ -1335,9 +1335,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1319.6850000000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1306.9349750000,
+    "conversionLineValue": 1319.68500000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1306.93497500000000000000,
     "laggingSpanValue": 1419.3500000000
   },
   {
@@ -1354,9 +1354,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1311.9050000000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1312.2750000000,
+    "conversionLineValue": 1311.90500000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1312.27500000000000000000,
     "laggingSpanValue": 1467.5601000000
   },
   {
@@ -1373,9 +1373,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1302.5549500000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1315.5675000000,
+    "conversionLineValue": 1302.55495000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1315.56750000000000000000,
     "laggingSpanValue": 1468.7400000000
   },
   {
@@ -1392,10 +1392,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1302.5549500000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1315.5675000000,
-    "leadingSpanBValue": 1264.2600000000,
+    "conversionLineValue": 1302.55495000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1315.56750000000000000000,
+    "leadingSpanBValue": 1264.26000000000000000000,
     "laggingSpanValue": 1481.9600000000
   },
   {
@@ -1412,10 +1412,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1302.5549500000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1316.9049750000,
-    "leadingSpanBValue": 1264.2600000000,
+    "conversionLineValue": 1302.55495000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1316.90497500000000000000,
+    "leadingSpanBValue": 1264.26000000000000000000,
     "laggingSpanValue": 1444.4100000000
   },
   {
@@ -1432,10 +1432,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1302.5549500000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1334.5099750000,
-    "leadingSpanBValue": 1264.2600000000,
+    "conversionLineValue": 1302.55495000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1334.50997500000000000000,
+    "leadingSpanBValue": 1264.26000000000000000000,
     "laggingSpanValue": 1487.9399000000
   },
   {
@@ -1452,10 +1452,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1290.5650000000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1340.8324750000,
-    "leadingSpanBValue": 1266.9550000000,
+    "conversionLineValue": 1290.56500000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1340.83247500000000000000,
+    "leadingSpanBValue": 1266.95500000000000000000,
     "laggingSpanValue": 1478.7800000000
   },
   {
@@ -1472,10 +1472,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1262.2050000000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1349.7425000000,
-    "leadingSpanBValue": 1266.9550000000,
+    "conversionLineValue": 1262.20500000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1349.74250000000000000000,
+    "leadingSpanBValue": 1266.95500000000000000000,
     "laggingSpanValue": 1484.7800000000
   },
   {
@@ -1492,10 +1492,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1280.1950500000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1349.7425000000,
-    "leadingSpanBValue": 1266.9550000000,
+    "conversionLineValue": 1280.19505000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1349.74250000000000000000,
+    "leadingSpanBValue": 1266.95500000000000000000,
     "laggingSpanValue": 1448.9600000000
   },
   {
@@ -1512,10 +1512,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1287.6350500000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1377.4874500000,
-    "leadingSpanBValue": 1288.6050000000,
+    "conversionLineValue": 1287.63505000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1377.48745000000000000000,
+    "leadingSpanBValue": 1288.60500000000000000000,
     "laggingSpanValue": 1430.3500000000
   },
   {
@@ -1532,10 +1532,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1299.8249500000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1383.0549750000,
-    "leadingSpanBValue": 1291.9200000000,
+    "conversionLineValue": 1299.82495000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1383.05497500000000000000,
+    "leadingSpanBValue": 1291.92000000000000000000,
     "laggingSpanValue": 1410.7500000000
   },
   {
@@ -1552,10 +1552,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1299.8249500000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1393.9424500000,
-    "leadingSpanBValue": 1297.7149500000,
+    "conversionLineValue": 1299.82495000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1393.94245000000000000000,
+    "leadingSpanBValue": 1297.71495000000000000000,
     "laggingSpanValue": 1422.4399000000
   },
   {
@@ -1572,10 +1572,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1307.6700000000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1405.2074250000,
-    "leadingSpanBValue": 1297.7149500000,
+    "conversionLineValue": 1307.67000000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1405.20742500000000000000,
+    "leadingSpanBValue": 1297.71495000000000000000,
     "laggingSpanValue": 1367.1400000000
   },
   {
@@ -1592,10 +1592,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1320.0099500000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1407.4624750000,
-    "leadingSpanBValue": 1299.9700000000,
+    "conversionLineValue": 1320.00995000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1407.46247500000000000000,
+    "leadingSpanBValue": 1299.97000000000000000000,
     "laggingSpanValue": 1390.8000000000
   },
   {
@@ -1612,10 +1612,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1349.6099500000,
-    "baseLineValue": 1357.4299500000,
-    "leadingSpanAValue": 1410.4574250000,
-    "leadingSpanBValue": 1302.9649500000,
+    "conversionLineValue": 1349.60995000000000000000,
+    "baseLineValue": 1357.42995000000000000000,
+    "leadingSpanAValue": 1410.45742500000000000000,
+    "leadingSpanBValue": 1302.96495000000000000000,
     "laggingSpanValue": 1396.5900000000
   },
   {
@@ -1632,10 +1632,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1349.6099500000,
-    "baseLineValue": 1334.0549500000,
-    "leadingSpanAValue": 1422.4574250000,
-    "leadingSpanBValue": 1314.9649500000,
+    "conversionLineValue": 1349.60995000000000000000,
+    "baseLineValue": 1334.05495000000000000000,
+    "leadingSpanAValue": 1422.45742500000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000,
     "laggingSpanValue": 1399.5500000000
   },
   {
@@ -1652,10 +1652,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1349.6099500000,
-    "baseLineValue": 1319.6850000000,
-    "leadingSpanAValue": 1424.3699250000,
-    "leadingSpanBValue": 1314.9649500000,
+    "conversionLineValue": 1349.60995000000000000000,
+    "baseLineValue": 1319.68500000000000000000,
+    "leadingSpanAValue": 1424.36992500000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000,
     "laggingSpanValue": 1362.6100000000
   },
   {
@@ -1672,10 +1672,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1349.6099500000,
-    "baseLineValue": 1319.6850000000,
-    "leadingSpanAValue": 1433.7474250000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1349.60995000000000000000,
+    "baseLineValue": 1319.68500000000000000000,
+    "leadingSpanAValue": 1433.74742500000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1691,10 +1691,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1349.6099500000,
-    "baseLineValue": 1311.9050000000,
-    "leadingSpanAValue": 1438.5024500000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1349.60995000000000000000,
+    "baseLineValue": 1311.90500000000000000000,
+    "leadingSpanAValue": 1438.50245000000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1710,10 +1710,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1360.2900000000,
-    "baseLineValue": 1306.7250000000,
-    "leadingSpanAValue": 1436.9249500000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1360.29000000000000000000,
+    "baseLineValue": 1306.72500000000000000000,
+    "leadingSpanAValue": 1436.92495000000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1729,10 +1729,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1366.8750000000,
-    "baseLineValue": 1306.7250000000,
-    "leadingSpanAValue": 1430.9174250000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1366.87500000000000000000,
+    "baseLineValue": 1306.72500000000000000000,
+    "leadingSpanAValue": 1430.91742500000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1748,10 +1748,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1366.8750000000,
-    "baseLineValue": 1306.7250000000,
-    "leadingSpanAValue": 1432.2549000000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1366.87500000000000000000,
+    "baseLineValue": 1306.72500000000000000000,
+    "leadingSpanAValue": 1432.25490000000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1767,10 +1767,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1369.5499500000,
-    "baseLineValue": 1306.7250000000,
-    "leadingSpanAValue": 1432.2549000000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1369.54995000000000000000,
+    "baseLineValue": 1306.72500000000000000000,
+    "leadingSpanAValue": 1432.25490000000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1786,10 +1786,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1369.0549500000,
-    "baseLineValue": 1306.7250000000,
-    "leadingSpanAValue": 1432.2549000000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1369.05495000000000000000,
+    "baseLineValue": 1306.72500000000000000000,
+    "leadingSpanAValue": 1432.25490000000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1805,10 +1805,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1372.2449500000,
-    "baseLineValue": 1309.4200000000,
-    "leadingSpanAValue": 1419.4399500000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1372.24495000000000000000,
+    "baseLineValue": 1309.42000000000000000000,
+    "leadingSpanAValue": 1419.43995000000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1824,10 +1824,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1372.2449500000,
-    "baseLineValue": 1327.2400500000,
-    "leadingSpanAValue": 1338.5574750000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1372.24495000000000000000,
+    "baseLineValue": 1327.24005000000000000000,
+    "leadingSpanAValue": 1338.55747500000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1843,10 +1843,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1372.2449500000,
-    "baseLineValue": 1327.2400500000,
-    "leadingSpanAValue": 1338.5574750000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1372.24495000000000000000,
+    "baseLineValue": 1327.24005000000000000000,
+    "leadingSpanAValue": 1338.55747500000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1862,10 +1862,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1393.8949500000,
-    "baseLineValue": 1361.0799500000,
-    "leadingSpanAValue": 1334.6674750000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1393.89495000000000000000,
+    "baseLineValue": 1361.07995000000000000000,
+    "leadingSpanAValue": 1334.66747500000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1881,10 +1881,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1401.7150000000,
-    "baseLineValue": 1364.3949500000,
-    "leadingSpanAValue": 1329.9924500000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1401.71500000000000000000,
+    "baseLineValue": 1364.39495000000000000000,
+    "leadingSpanAValue": 1329.99245000000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1900,10 +1900,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1410.5349500000,
-    "baseLineValue": 1377.3499500000,
-    "leadingSpanAValue": 1329.9924500000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1410.53495000000000000000,
+    "baseLineValue": 1377.34995000000000000000,
+    "leadingSpanAValue": 1329.99245000000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1919,10 +1919,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1427.3499500000,
-    "baseLineValue": 1383.0649000000,
-    "leadingSpanAValue": 1329.9924500000,
-    "leadingSpanBValue": 1314.9649500000
+    "conversionLineValue": 1427.34995000000000000000,
+    "baseLineValue": 1383.06490000000000000000,
+    "leadingSpanAValue": 1329.99245000000000000000,
+    "leadingSpanBValue": 1314.96495000000000000000
   },
   {
     "time": {
@@ -1938,10 +1938,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1429.6050000000,
-    "baseLineValue": 1385.3199500000,
-    "leadingSpanAValue": 1329.9924500000,
-    "leadingSpanBValue": 1350.6699500000
+    "conversionLineValue": 1429.60500000000000000000,
+    "baseLineValue": 1385.31995000000000000000,
+    "leadingSpanAValue": 1329.99245000000000000000,
+    "leadingSpanBValue": 1350.66995000000000000000
   },
   {
     "time": {
@@ -1957,10 +1957,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1432.5999500000,
-    "baseLineValue": 1388.3149000000,
-    "leadingSpanAValue": 1323.9974750000,
-    "leadingSpanBValue": 1357.4299500000
+    "conversionLineValue": 1432.59995000000000000000,
+    "baseLineValue": 1388.31490000000000000000,
+    "leadingSpanAValue": 1323.99747500000000000000,
+    "leadingSpanBValue": 1357.42995000000000000000
   },
   {
     "time": {
@@ -1976,10 +1976,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1444.5999500000,
-    "baseLineValue": 1400.3149000000,
-    "leadingSpanAValue": 1309.8174750000,
-    "leadingSpanBValue": 1357.4299500000
+    "conversionLineValue": 1444.59995000000000000000,
+    "baseLineValue": 1400.31490000000000000000,
+    "leadingSpanAValue": 1309.81747500000000000000,
+    "leadingSpanBValue": 1357.42995000000000000000
   },
   {
     "time": {
@@ -1995,10 +1995,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1448.4249500000,
-    "baseLineValue": 1400.3149000000,
-    "leadingSpanAValue": 1318.8125000000,
-    "leadingSpanBValue": 1357.4299500000
+    "conversionLineValue": 1448.42495000000000000000,
+    "baseLineValue": 1400.31490000000000000000,
+    "leadingSpanAValue": 1318.81250000000000000000,
+    "leadingSpanBValue": 1357.42995000000000000000
   },
   {
     "time": {
@@ -2014,10 +2014,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1467.1799500000,
-    "baseLineValue": 1400.3149000000,
-    "leadingSpanAValue": 1322.5325000000,
-    "leadingSpanBValue": 1357.4299500000
+    "conversionLineValue": 1467.17995000000000000000,
+    "baseLineValue": 1400.31490000000000000000,
+    "leadingSpanAValue": 1322.53250000000000000000,
+    "leadingSpanBValue": 1357.42995000000000000000
   },
   {
     "time": {
@@ -2033,10 +2033,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1466.0099500000,
-    "baseLineValue": 1410.9949500000,
-    "leadingSpanAValue": 1328.6274500000,
-    "leadingSpanBValue": 1357.4299500000
+    "conversionLineValue": 1466.00995000000000000000,
+    "baseLineValue": 1410.99495000000000000000,
+    "leadingSpanAValue": 1328.62745000000000000000,
+    "leadingSpanBValue": 1357.42995000000000000000
   },
   {
     "time": {
@@ -2052,10 +2052,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1456.2699500000,
-    "baseLineValue": 1417.5799500000,
-    "leadingSpanAValue": 1328.6274500000,
-    "leadingSpanBValue": 1357.4299500000
+    "conversionLineValue": 1456.26995000000000000000,
+    "baseLineValue": 1417.57995000000000000000,
+    "leadingSpanAValue": 1328.62745000000000000000,
+    "leadingSpanBValue": 1357.42995000000000000000
   },
   {
     "time": {
@@ -2071,10 +2071,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1444.2549000000,
-    "baseLineValue": 1417.5799500000,
-    "leadingSpanAValue": 1332.5499750000,
-    "leadingSpanBValue": 1357.4299500000
+    "conversionLineValue": 1444.25490000000000000000,
+    "baseLineValue": 1417.57995000000000000000,
+    "leadingSpanAValue": 1332.54997500000000000000,
+    "leadingSpanBValue": 1357.42995000000000000000
   },
   {
     "time": {
@@ -2090,10 +2090,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1444.2549000000,
-    "baseLineValue": 1420.2549000000,
-    "leadingSpanAValue": 1338.7199500000,
-    "leadingSpanBValue": 1357.4299500000
+    "conversionLineValue": 1444.25490000000000000000,
+    "baseLineValue": 1420.25490000000000000000,
+    "leadingSpanAValue": 1338.71995000000000000000,
+    "leadingSpanBValue": 1357.42995000000000000000
   },
   {
     "time": {
@@ -2109,10 +2109,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1444.2549000000,
-    "baseLineValue": 1420.2549000000,
-    "leadingSpanAValue": 1353.5199500000,
-    "leadingSpanBValue": 1357.4299500000
+    "conversionLineValue": 1444.25490000000000000000,
+    "baseLineValue": 1420.25490000000000000000,
+    "leadingSpanAValue": 1353.51995000000000000000,
+    "leadingSpanBValue": 1357.42995000000000000000
   },
   {
     "time": {
@@ -2128,10 +2128,10 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1444.2549000000,
-    "baseLineValue": 1420.2549000000,
-    "leadingSpanAValue": 1341.8324500000,
-    "leadingSpanBValue": 1357.4299500000
+    "conversionLineValue": 1444.25490000000000000000,
+    "baseLineValue": 1420.25490000000000000000,
+    "leadingSpanAValue": 1341.83245000000000000000,
+    "leadingSpanBValue": 1357.42995000000000000000
   },
   {
     "time": {
@@ -2147,9 +2147,9 @@
         "nano": 0
       }
     },
-    "conversionLineValue": 1418.6250000000,
-    "baseLineValue": 1420.2549000000,
-    "leadingSpanAValue": 1334.6474750000,
-    "leadingSpanBValue": 1357.4299500000
+    "conversionLineValue": 1418.62500000000000000000,
+    "baseLineValue": 1420.25490000000000000000,
+    "leadingSpanAValue": 1334.64747500000000000000,
+    "leadingSpanBValue": 1357.42995000000000000000
   }
 ]

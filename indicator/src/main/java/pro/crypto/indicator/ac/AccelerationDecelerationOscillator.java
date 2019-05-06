@@ -1,5 +1,6 @@
 package pro.crypto.indicator.ac;
 
+import pro.crypto.exception.WrongIncomingParametersException;
 import pro.crypto.helper.FakeTicksCreator;
 import pro.crypto.helper.IncreasedQualifier;
 import pro.crypto.helper.IndicatorResultExtractor;
@@ -17,6 +18,7 @@ import pro.crypto.model.tick.Tick;
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
 
+import static java.lang.String.format;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.IndicatorType.ACCELERATION_DECELERATION_OSCILLATOR;
@@ -68,9 +70,22 @@ public class AccelerationDecelerationOscillator implements Indicator<ACResult> {
         checkOriginalDataSize(originalData, fastPeriod);
         checkOriginalDataSize(originalData, slowPeriod);
         checkOriginalDataSize(originalData, slowPeriod + smoothedPeriod);
+        checkPeriods();
+    }
+
+    private void checkPeriods() {
         checkPeriod(slowPeriod);
         checkPeriod(fastPeriod);
         checkPeriod(smoothedPeriod);
+        checkPeriodLength();
+    }
+
+    private void checkPeriodLength() {
+        if (fastPeriod >= slowPeriod) {
+            throw new WrongIncomingParametersException(format("Fast period should be less than slow period " +
+                            "{indicator: {%s}, fastPeriod: {%d}, slowPeriod: {%d}}",
+                    getType().toString(), fastPeriod, slowPeriod));
+        }
     }
 
     private BigDecimal[] calculateAwesomeOscillatorValues() {

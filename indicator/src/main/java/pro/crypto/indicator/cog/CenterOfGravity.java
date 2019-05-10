@@ -5,7 +5,11 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.MathHelper;
 import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
-import pro.crypto.model.*;
+import pro.crypto.model.BigDecimalTuple;
+import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -104,7 +108,7 @@ public class CenterOfGravity implements Indicator<COGResult> {
     private BigDecimal[] calculateSignalLineValues(BigDecimal[] centerOfGravityValues) {
         BigDecimal[] signalLineValues = new BigDecimal[centerOfGravityValues.length];
         BigDecimal[] movingAverageValues = IndicatorResultExtractor.extractIndicatorValues(calculateMovingAverage(centerOfGravityValues));
-        System.arraycopy(movingAverageValues, 0, signalLineValues, signalLinePeriod - 1, movingAverageValues.length);
+        System.arraycopy(movingAverageValues, 0, signalLineValues, period - 1, movingAverageValues.length);
         return signalLineValues;
     }
 

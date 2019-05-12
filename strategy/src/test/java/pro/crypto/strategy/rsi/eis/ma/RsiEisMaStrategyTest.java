@@ -15,7 +15,7 @@ import static pro.crypto.model.tick.PriceType.CLOSE;
 public class RsiEisMaStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testRsiEisMaStrategy() throws Exception {
+    public void testRsiEisMaStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("rsi_eis_ma.json", RsiEisMaResult[].class);
         RsiEisMaResult[] actualResult = new RsiEisMaStrategy(buildRsiEisMaRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

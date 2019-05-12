@@ -14,7 +14,7 @@ import static pro.crypto.model.Position.ENTRY_SHORT;
 public class StochHaStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testStochHaStrategy() throws Exception {
+    public void testStochHaStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("stoch_ha.json", StochHaResult[].class);
         StochHaResult[] actualResult = new StochHaStrategy(buildStochHaRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

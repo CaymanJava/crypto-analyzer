@@ -13,7 +13,7 @@ import static pro.crypto.model.tick.TimeFrame.FIVE_MIN;
 public class BillWilliamsStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testBillWilliamsStrategy() throws Exception {
+    public void testBillWilliamsStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("bws.json", BWSResult[].class);
         BWSResult[] actualResult = new BillWilliamsStrategy(buildBWSRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

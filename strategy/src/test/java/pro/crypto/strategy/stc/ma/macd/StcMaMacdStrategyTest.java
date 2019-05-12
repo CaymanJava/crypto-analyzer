@@ -14,7 +14,7 @@ import static pro.crypto.model.tick.PriceType.CLOSE;
 public class StcMaMacdStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testRsiEisMaStrategy() throws Exception {
+    public void testRsiEisMaStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("stc_ma_macd.json", StcMaMacdResult[].class);
         StcMaMacdResult[] actualResult = new StcMaMacdStrategy(buildStcMaMacdRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

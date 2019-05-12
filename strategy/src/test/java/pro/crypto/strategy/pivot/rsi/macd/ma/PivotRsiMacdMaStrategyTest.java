@@ -26,7 +26,7 @@ import static pro.crypto.model.tick.PriceType.CLOSE;
 public class PivotRsiMacdMaStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testPivotRsiMacdMaStrategy() throws Exception {
+    public void testPivotRsiMacdMaStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("pivot_rsi_macd_ma.json", PivotRsiMacdMaResult[].class);
         PivotRsiMacdMaResult[] actualResult = new PivotRsiMacdMaStrategy(buildPivotRsiMacdMaRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

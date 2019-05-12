@@ -14,7 +14,7 @@ import static pro.crypto.model.IndicatorType.SMOOTHED_MOVING_AVERAGE;
 public class CciRsiAtrStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testCciRsiAtrStrategy() throws Exception {
+    public void testCciRsiAtrStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("cci_rsi_atr.json", CciRsiAtrResult[].class);
         CciRsiAtrResult[] actualResult = new CciRsiAtrStrategy(buildCciRsiAtrRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

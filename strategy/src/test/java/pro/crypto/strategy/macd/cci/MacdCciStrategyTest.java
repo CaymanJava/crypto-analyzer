@@ -14,7 +14,7 @@ import static pro.crypto.model.tick.PriceType.CLOSE;
 public class MacdCciStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testMacdCciStrategy() throws Exception {
+    public void testMacdCciStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("macd_cci.json", MacdCciResult[].class);
         MacdCciResult[] actualResult = new MacdCciStrategy(buildMacdCciRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

@@ -134,8 +134,8 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
                 .toArray(BigDecimal[]::new);
     }
 
-    private BigDecimal[] calculateDirectionalIndicators(BigDecimal[] positiveDirectionalMovements, BigDecimal[] trueRanges) {
-        BigDecimal[] ratios = calculateRatios(positiveDirectionalMovements, trueRanges);
+    private BigDecimal[] calculateDirectionalIndicators(BigDecimal[] directionalMovements, BigDecimal[] trueRanges) {
+        BigDecimal[] ratios = calculateRatios(directionalMovements, trueRanges);
         return IndicatorResultExtractor.extractIndicatorValues(MovingAverageFactory.create(buildMARequest(ratios)).getResult());
     }
 

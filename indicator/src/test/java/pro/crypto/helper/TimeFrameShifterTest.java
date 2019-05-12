@@ -17,7 +17,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.runners.Parameterized.Parameters;
 import static pro.crypto.model.ShiftType.LEFT;
 import static pro.crypto.model.ShiftType.RIGHT;
-import static pro.crypto.model.tick.TimeFrame.*;
+import static pro.crypto.model.tick.TimeFrame.FIVE_MIN;
+import static pro.crypto.model.tick.TimeFrame.ONE_HOUR;
+import static pro.crypto.model.tick.TimeFrame.THIRTY_MIN;
 
 @RunWith(Parameterized.class)
 public class TimeFrameShifterTest {
@@ -42,7 +44,7 @@ public class TimeFrameShifterTest {
     }
 
     @Test
-    public void shiftTimeTest() throws Exception {
+    public void shiftTimeTest() {
         assertEquals(testHelper.getExpectedValue(), testHelper.getShifter().shiftTime());
     }
 

@@ -26,9 +26,8 @@ public class TrueRangeCalculator {
     private static BigDecimal calculateTrueRange(Tick currentTick, Tick previousTick) {
         BigDecimal firstRange = currentTick.getHigh().subtract(currentTick.getLow());
         BigDecimal secondRange = currentTick.getHigh().subtract(previousTick.getClose());
-        BigDecimal thirdRange = currentTick.getClose().subtract(currentTick.getLow());
+        BigDecimal thirdRange = previousTick.getClose().subtract(currentTick.getLow());
         return MathHelper.max(firstRange, secondRange, thirdRange);
     }
-
 
 }

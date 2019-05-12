@@ -1909,10 +1909,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_LONG"
-    ],
-    "stopLose": 6420.00999000
+    "positions": []
   },
   {
     "time": {
@@ -1928,10 +1925,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_LONG"
-    ],
-    "stopLose": 6420.00999000
+    "positions": []
   },
   {
     "time": {
@@ -2753,7 +2747,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6457.18023429
   },
   {
     "time": {
@@ -2769,7 +2766,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6451.00000001
   },
   {
     "time": {
@@ -3638,7 +3638,10 @@
         "nano": 0
       }
     },
-    "positions": []
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stopLose": 6563.54159147
   },
   {
     "time": {
@@ -4175,10 +4178,7 @@
         "nano": 0
       }
     },
-    "positions": [
-      "ENTRY_SHORT"
-    ],
-    "stopLose": 6546.97170170
+    "positions": []
   },
   {
     "time": {

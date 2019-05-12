@@ -14,7 +14,7 @@ import static pro.crypto.model.Position.ENTRY_SHORT;
 public class StochCciStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testStochCciStrategy() throws Exception {
+    public void testStochCciStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("stoch_cci.json", StochCciResult[].class);
         StochCciResult[] actualResult = new StochCciStrategy(buildStochCciRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

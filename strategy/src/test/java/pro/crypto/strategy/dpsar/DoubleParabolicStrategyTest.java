@@ -14,7 +14,7 @@ import static pro.crypto.model.tick.PriceType.CLOSE;
 public class DoubleParabolicStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testDoubleParabolicStrategy() throws Exception {
+    public void testDoubleParabolicStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("d_psar.json", DPsarResult[].class);
         DPsarResult[] actualResult = new DoubleParabolicStrategy(buildDPsarRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

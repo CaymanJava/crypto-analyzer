@@ -209,7 +209,7 @@
       }
     },
     "positiveDirectionalIndicator": 13.20751923000000000000,
-    "negativeDirectionalIndicator": 30.51786888642857142900
+    "negativeDirectionalIndicator": 25.50773978285714285700
   },
   {
     "time": {
@@ -226,7 +226,7 @@
       }
     },
     "positiveDirectionalIndicator": 11.4465166700,
-    "negativeDirectionalIndicator": 42.4727545000
+    "negativeDirectionalIndicator": 33.9595771600
   },
   {
     "time": {
@@ -243,7 +243,7 @@
       }
     },
     "positiveDirectionalIndicator": 9.9203144500,
-    "negativeDirectionalIndicator": 40.3627291600
+    "negativeDirectionalIndicator": 32.9846421300
   },
   {
     "time": {
@@ -260,7 +260,7 @@
       }
     },
     "positiveDirectionalIndicator": 16.5218550100,
-    "negativeDirectionalIndicator": 34.9810319400
+    "negativeDirectionalIndicator": 28.5866898500
   },
   {
     "time": {
@@ -277,7 +277,7 @@
       }
     },
     "positiveDirectionalIndicator": 19.3693843000,
-    "negativeDirectionalIndicator": 30.3168943500
+    "negativeDirectionalIndicator": 24.7751312000
   },
   {
     "time": {
@@ -294,7 +294,7 @@
       }
     },
     "positiveDirectionalIndicator": 16.7867997300,
-    "negativeDirectionalIndicator": 29.4456374400
+    "negativeDirectionalIndicator": 24.6427760400
   },
   {
     "time": {
@@ -311,7 +311,7 @@
       }
     },
     "positiveDirectionalIndicator": 14.5485597700,
-    "negativeDirectionalIndicator": 42.0612222400
+    "negativeDirectionalIndicator": 34.3356698800
   },
   {
     "time": {
@@ -328,7 +328,7 @@
       }
     },
     "positiveDirectionalIndicator": 18.4298900100,
-    "negativeDirectionalIndicator": 36.4530592700
+    "negativeDirectionalIndicator": 29.7575805600
   },
   {
     "time": {
@@ -345,7 +345,7 @@
       }
     },
     "positiveDirectionalIndicator": 18.9534063900,
-    "negativeDirectionalIndicator": 31.5926513700
+    "negativeDirectionalIndicator": 25.7899031500
   },
   {
     "time": {
@@ -362,7 +362,7 @@
       }
     },
     "positiveDirectionalIndicator": 16.4262855400,
-    "negativeDirectionalIndicator": 35.0534418500
+    "negativeDirectionalIndicator": 30.0243933900
   },
   {
     "time": {
@@ -379,7 +379,7 @@
       }
     },
     "positiveDirectionalIndicator": 14.2361141300,
-    "negativeDirectionalIndicator": 40.0107431500
+    "negativeDirectionalIndicator": 35.6522344800
   },
   {
     "time": {
@@ -396,7 +396,7 @@
       }
     },
     "positiveDirectionalIndicator": 12.3379655800,
-    "negativeDirectionalIndicator": 43.6840974500
+    "negativeDirectionalIndicator": 39.9067232700
   },
   {
     "time": {
@@ -413,7 +413,7 @@
       }
     },
     "positiveDirectionalIndicator": 10.6929035000,
-    "negativeDirectionalIndicator": 39.2976491200
+    "negativeDirectionalIndicator": 36.0239248300
   },
   {
     "time": {
@@ -430,8 +430,8 @@
       }
     },
     "positiveDirectionalIndicator": 9.2671830300,
-    "negativeDirectionalIndicator": 34.0579625700,
-    "averageDirectionalIndex": 43.10458487255000000000
+    "negativeDirectionalIndicator": 31.2207348500,
+    "averageDirectionalIndex": 36.12454951880000000000
   },
   {
     "time": {
@@ -448,8 +448,8 @@
       }
     },
     "positiveDirectionalIndicator": 14.9935397900,
-    "negativeDirectionalIndicator": 29.5169008900,
-    "averageDirectionalIndex": 41.7078550241
+    "negativeDirectionalIndicator": 27.0579702000,
+    "averageDirectionalIndex": 35.1332293845
   },
   {
     "time": {
@@ -466,8 +466,8 @@
       }
     },
     "positiveDirectionalIndicator": 25.7497609200,
-    "negativeDirectionalIndicator": 25.5813141000,
-    "averageDirectionalIndex": 36.1905620332
+    "negativeDirectionalIndicator": 23.4502408400,
+    "averageDirectionalIndex": 31.0719749510
   },
   {
     "time": {
@@ -484,8 +484,8 @@
       }
     },
     "positiveDirectionalIndicator": 23.0167197000,
-    "negativeDirectionalIndicator": 22.1704722200,
-    "averageDirectionalIndex": 31.6148550437
+    "negativeDirectionalIndicator": 20.3235420600,
+    "averageDirectionalIndex": 27.7575825284
   },
   {
     "time": {
@@ -502,8 +502,8 @@
       }
     },
     "positiveDirectionalIndicator": 33.0518263100,
-    "negativeDirectionalIndicator": 19.2144092600,
-    "averageDirectionalIndex": 30.9295234823
+    "negativeDirectionalIndicator": 17.6137364500,
+    "averageDirectionalIndex": 28.1193152685
   },
   {
     "time": {
@@ -520,8 +520,8 @@
       }
     },
     "positiveDirectionalIndicator": 28.6449161400,
-    "negativeDirectionalIndicator": 33.3856994300,
-    "averageDirectionalIndex": 27.8246071145
+    "negativeDirectionalIndicator": 22.9610083200,
+    "averageDirectionalIndex": 25.8386146530
   },
   {
     "time": {
@@ -538,8 +538,8 @@
       }
     },
     "positiveDirectionalIndicator": 32.5961525000,
-    "negativeDirectionalIndicator": 28.9342728400,
-    "averageDirectionalIndex": 24.9081703821
+    "negativeDirectionalIndicator": 19.8995405400,
+    "averageDirectionalIndex": 25.6182669575
   },
   {
     "time": {
@@ -556,8 +556,8 @@
       }
     },
     "positiveDirectionalIndicator": 28.2499988300,
-    "negativeDirectionalIndicator": 28.9332100800,
-    "averageDirectionalIndex": 21.7463844631
+    "negativeDirectionalIndicator": 21.1031087600,
+    "averageDirectionalIndex": 24.1333160118
   },
   {
     "time": {
@@ -574,8 +574,8 @@
       }
     },
     "positiveDirectionalIndicator": 31.7649941500,
-    "negativeDirectionalIndicator": 25.0754487400,
-    "averageDirectionalIndex": 20.4160650536
+    "negativeDirectionalIndicator": 18.2893609300,
+    "averageDirectionalIndex": 24.5051404757
   },
   {
     "time": {
@@ -592,8 +592,8 @@
       }
     },
     "positiveDirectionalIndicator": 27.5296616000,
-    "negativeDirectionalIndicator": 21.7320555700,
-    "averageDirectionalIndex": 19.2631215676
+    "negativeDirectionalIndicator": 15.8507794700,
+    "averageDirectionalIndex": 24.8273883462
   },
   {
     "time": {
@@ -610,8 +610,8 @@
       }
     },
     "positiveDirectionalIndicator": 27.9940404600,
-    "negativeDirectionalIndicator": 18.8344481600,
-    "averageDirectionalIndex": 19.3026882539
+    "negativeDirectionalIndicator": 13.7373422100,
+    "averageDirectionalIndex": 26.0721384800
   },
   {
     "time": {
@@ -628,8 +628,8 @@
       }
     },
     "positiveDirectionalIndicator": 28.4182506400,
-    "negativeDirectionalIndicator": 16.3231884100,
-    "averageDirectionalIndex": 20.3334289731
+    "negativeDirectionalIndicator": 11.9056965800,
+    "averageDirectionalIndex": 28.0558195145
   },
   {
     "time": {
@@ -646,8 +646,8 @@
       }
     },
     "positiveDirectionalIndicator": 24.7618593800,
-    "negativeDirectionalIndicator": 14.1467632900,
-    "averageDirectionalIndex": 21.2599207546
+    "negativeDirectionalIndicator": 10.3182703700,
+    "averageDirectionalIndex": 29.8047948479
   },
   {
     "time": {
@@ -664,8 +664,8 @@
       }
     },
     "positiveDirectionalIndicator": 27.0364445100,
-    "negativeDirectionalIndicator": 12.2605281800,
-    "averageDirectionalIndex": 23.4386843718
+    "negativeDirectionalIndicator": 8.9425009900,
+    "averageDirectionalIndex": 32.5362043886
   },
   {
     "time": {
@@ -682,8 +682,8 @@
       }
     },
     "positiveDirectionalIndicator": 23.4315852400,
-    "negativeDirectionalIndicator": 21.1743372300,
-    "averageDirectionalIndex": 20.9882494176
+    "negativeDirectionalIndicator": 18.2987136700,
+    "averageDirectionalIndex": 29.8380581189
   },
   {
     "time": {
@@ -700,8 +700,8 @@
       }
     },
     "positiveDirectionalIndicator": 26.4461422000,
-    "negativeDirectionalIndicator": 18.3510922700,
-    "averageDirectionalIndex": 20.5992059455
+    "negativeDirectionalIndicator": 15.8588851800,
+    "averageDirectionalIndex": 29.1964506432
   },
   {
     "time": {
@@ -718,8 +718,8 @@
       }
     },
     "positiveDirectionalIndicator": 29.9704867100,
-    "negativeDirectionalIndicator": 15.9042799700,
-    "averageDirectionalIndex": 21.9409367512
+    "negativeDirectionalIndicator": 13.7443671600,
+    "averageDirectionalIndex": 30.2526694520
   },
   {
     "time": {
@@ -736,8 +736,8 @@
       }
     },
     "positiveDirectionalIndicator": 29.7245102600,
-    "negativeDirectionalIndicator": 13.7837093100,
-    "averageDirectionalIndex": 23.9006246985
+    "negativeDirectionalIndicator": 11.9117848700,
+    "averageDirectionalIndex": 31.9232102261
   },
   {
     "time": {
@@ -754,8 +754,8 @@
       }
     },
     "positiveDirectionalIndicator": 39.0653604300,
-    "negativeDirectionalIndicator": 11.9458814000,
-    "averageDirectionalIndex": 27.8023721122
+    "negativeDirectionalIndicator": 10.3235468900,
+    "averageDirectionalIndex": 35.4260990411
   },
   {
     "time": {
@@ -772,8 +772,8 @@
       }
     },
     "positiveDirectionalIndicator": 33.8566457100,
-    "negativeDirectionalIndicator": 16.0095400400,
-    "averageDirectionalIndex": 28.8673885730
+    "negativeDirectionalIndicator": 14.6035168000,
+    "averageDirectionalIndex": 35.9999267340
   },
   {
     "time": {
@@ -790,8 +790,8 @@
       }
     },
     "positiveDirectionalIndicator": 36.5871987300,
-    "negativeDirectionalIndicator": 13.8749347000,
-    "averageDirectionalIndex": 31.0195406487
+    "negativeDirectionalIndicator": 12.6563812300,
+    "averageDirectionalIndex": 37.6795134736
   },
   {
     "time": {
@@ -808,8 +808,8 @@
       }
     },
     "positiveDirectionalIndicator": 31.7089055700,
-    "negativeDirectionalIndicator": 19.0388080200,
-    "averageDirectionalIndex": 30.2125131321
+    "negativeDirectionalIndicator": 15.1916471200,
+    "averageDirectionalIndex": 37.3512610178
   },
   {
     "time": {
@@ -826,8 +826,8 @@
       }
     },
     "positiveDirectionalIndicator": 27.4810514900,
-    "negativeDirectionalIndicator": 22.9584575100,
-    "averageDirectionalIndex": 27.3796943061
+    "negativeDirectionalIndicator": 19.6242514000,
+    "averageDirectionalIndex": 34.5949897282
   },
   {
     "time": {
@@ -844,8 +844,8 @@
       }
     },
     "positiveDirectionalIndicator": 23.8169112900,
-    "negativeDirectionalIndicator": 32.9272131900,
-    "averageDirectionalIndex": 25.8697427524
+    "negativeDirectionalIndicator": 28.6917769200,
+    "averageDirectionalIndex": 31.2201806910
   },
   {
     "time": {
@@ -862,8 +862,8 @@
       }
     },
     "positiveDirectionalIndicator": 24.1606012100,
-    "negativeDirectionalIndicator": 28.5369181000,
-    "averageDirectionalIndex": 23.5277233902
+    "negativeDirectionalIndicator": 24.8662066600,
+    "averageDirectionalIndex": 27.2493864287
   },
   {
     "time": {
@@ -880,8 +880,8 @@
       }
     },
     "positiveDirectionalIndicator": 22.2757116900,
-    "negativeDirectionalIndicator": 24.7319956900,
-    "averageDirectionalIndex": 21.0873975106
+    "negativeDirectionalIndicator": 21.5507124400,
+    "averageDirectionalIndex": 23.8367017628
   },
   {
     "time": {
@@ -898,8 +898,8 @@
       }
     },
     "positiveDirectionalIndicator": 29.8690064000,
-    "negativeDirectionalIndicator": 21.4343962600,
-    "averageDirectionalIndex": 20.4678304665
+    "negativeDirectionalIndicator": 18.6772841100,
+    "averageDirectionalIndex": 23.7323032072
   },
   {
     "time": {
@@ -916,8 +916,8 @@
       }
     },
     "positiveDirectionalIndicator": 26.8113839800,
-    "negativeDirectionalIndicator": 18.5764767600,
-    "averageDirectionalIndex": 20.1579081946
+    "negativeDirectionalIndicator": 16.1869795600,
+    "averageDirectionalIndex": 23.8625104604
   },
   {
     "time": {
@@ -934,8 +934,8 @@
       }
     },
     "positiveDirectionalIndicator": 28.2281364800,
-    "negativeDirectionalIndicator": 16.0996131900,
-    "averageDirectionalIndex": 21.1183227522
+    "negativeDirectionalIndicator": 14.0287156200,
+    "averageDirectionalIndex": 25.1611953372
   },
   {
     "time": {
@@ -952,8 +952,8 @@
       }
     },
     "positiveDirectionalIndicator": 24.4643849500,
-    "negativeDirectionalIndicator": 26.6630482400,
-    "averageDirectionalIndex": 18.8759276153
+    "negativeDirectionalIndicator": 24.8682703400,
+    "averageDirectionalIndex": 21.9155290061
   },
   {
     "time": {
@@ -970,8 +970,8 @@
       }
     },
     "positiveDirectionalIndicator": 28.5028288700,
-    "negativeDirectionalIndicator": 23.1079751400,
-    "averageDirectionalIndex": 17.7528644996
+    "negativeDirectionalIndicator": 21.5525009600,
+    "averageDirectionalIndex": 20.8448305259
   },
   {
     "time": {
@@ -988,8 +988,8 @@
       }
     },
     "positiveDirectionalIndicator": 37.9574648500,
-    "negativeDirectionalIndicator": 20.0269117900,
-    "averageDirectionalIndex": 19.5088927464
+    "negativeDirectionalIndicator": 18.6788341700,
+    "averageDirectionalIndex": 22.6041004082
   },
   {
     "time": {
@@ -1006,8 +1006,8 @@
       }
     },
     "positiveDirectionalIndicator": 36.3161987400,
-    "negativeDirectionalIndicator": 17.3566568800,
-    "averageDirectionalIndex": 21.6176090736
+    "negativeDirectionalIndicator": 16.1883229500,
+    "averageDirectionalIndex": 24.7016215924
   },
   {
     "time": {
@@ -1024,8 +1024,8 @@
       }
     },
     "positiveDirectionalIndicator": 37.4613538500,
-    "negativeDirectionalIndicator": 15.0424359600,
-    "averageDirectionalIndex": 24.4285436493
+    "negativeDirectionalIndicator": 14.0298798900,
+    "averageDirectionalIndex": 27.4755058623
   },
   {
     "time": {
@@ -1042,8 +1042,8 @@
       }
     },
     "positiveDirectionalIndicator": 32.4665066700,
-    "negativeDirectionalIndicator": 20.1306358500,
-    "averageDirectionalIndex": 24.2985378292
+    "negativeDirectionalIndicator": 18.6920402100,
+    "averageDirectionalIndex": 27.4021123033
   },
   {
     "time": {
@@ -1060,8 +1060,8 @@
       }
     },
     "positiveDirectionalIndicator": 31.7430812900,
-    "negativeDirectionalIndicator": 17.4465510700,
-    "averageDirectionalIndex": 24.9339478212
+    "negativeDirectionalIndicator": 16.1997681800,
+    "averageDirectionalIndex": 28.0712311072
   },
   {
     "time": {
@@ -1078,8 +1078,8 @@
       }
     },
     "positiveDirectionalIndicator": 31.7770037800,
-    "negativeDirectionalIndicator": 15.1203442600,
-    "averageDirectionalIndex": 26.3450579550
+    "negativeDirectionalIndicator": 14.0397990900,
+    "averageDirectionalIndex": 29.4901760546
   },
   {
     "time": {
@@ -1096,8 +1096,8 @@
       }
     },
     "positiveDirectionalIndicator": 34.3703940200,
-    "negativeDirectionalIndicator": 13.1042983600,
-    "averageDirectionalIndex": 28.8049960819
+    "negativeDirectionalIndicator": 12.1678258800,
+    "averageDirectionalIndex": 31.9192519631
   },
   {
     "time": {
@@ -1114,8 +1114,8 @@
       }
     },
     "positiveDirectionalIndicator": 29.7876748200,
-    "negativeDirectionalIndicator": 24.6451779100,
-    "averageDirectionalIndex": 26.2239851280
+    "negativeDirectionalIndicator": 20.4434684800,
+    "averageDirectionalIndex": 30.1436738617
   },
   {
     "time": {
@@ -1132,8 +1132,8 @@
       }
     },
     "positiveDirectionalIndicator": 25.8159848400,
-    "negativeDirectionalIndicator": 35.1403001200,
-    "averageDirectionalIndex": 24.7670171108
+    "negativeDirectionalIndicator": 29.6710578100,
+    "averageDirectionalIndex": 27.0508772766
   },
   {
     "time": {
@@ -1150,8 +1150,8 @@
       }
     },
     "positiveDirectionalIndicator": 22.3738535300,
-    "negativeDirectionalIndicator": 31.3370302500,
-    "averageDirectionalIndex": 23.6897911060
+    "negativeDirectionalIndicator": 26.5970202500,
+    "averageDirectionalIndex": 24.5939381341
   },
   {
     "time": {
@@ -1168,8 +1168,8 @@
       }
     },
     "positiveDirectionalIndicator": 19.3906730600,
-    "negativeDirectionalIndicator": 33.7694323300,
-    "averageDirectionalIndex": 24.1375557943
+    "negativeDirectionalIndicator": 29.6614236600,
+    "averageDirectionalIndex": 24.1065402203
   },
   {
     "time": {
@@ -1186,8 +1186,8 @@
       }
     },
     "positiveDirectionalIndicator": 16.8052499900,
-    "negativeDirectionalIndicator": 36.4944662200,
-    "averageDirectionalIndex": 25.8446236680
+    "negativeDirectionalIndicator": 31.4931182500,
+    "averageDirectionalIndex": 24.9470938609
   },
   {
     "time": {
@@ -1204,8 +1204,8 @@
       }
     },
     "positiveDirectionalIndicator": 14.5645499900,
-    "negativeDirectionalIndicator": 31.6285373900,
-    "averageDirectionalIndex": 27.3240824923
+    "negativeDirectionalIndicator": 27.2940358200,
+    "averageDirectionalIndex": 25.6755736841
   },
   {
     "time": {
@@ -1222,8 +1222,8 @@
       }
     },
     "positiveDirectionalIndicator": 16.8572114400,
-    "negativeDirectionalIndicator": 27.4113990700,
-    "averageDirectionalIndex": 26.8597040817
+    "negativeDirectionalIndicator": 23.6548310400,
+    "averageDirectionalIndex": 24.4893980855
   },
   {
     "time": {
@@ -1240,8 +1240,8 @@
       }
     },
     "positiveDirectionalIndicator": 17.2209836400,
-    "negativeDirectionalIndicator": 23.7565458600,
-    "averageDirectionalIndex": 25.4049617719
+    "negativeDirectionalIndicator": 20.5008535700,
+    "averageDirectionalIndex": 22.3834628536
   },
   {
     "time": {
@@ -1258,7 +1258,7 @@
       }
     },
     "positiveDirectionalIndicator": 14.9248524900,
-    "negativeDirectionalIndicator": 34.3464633700,
-    "averageDirectionalIndex": 27.2733245440
+    "negativeDirectionalIndicator": 27.1212751000,
+    "averageDirectionalIndex": 23.2666336057
   }
 ]

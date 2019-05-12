@@ -14,7 +14,7 @@ import static pro.crypto.model.tick.PriceType.CLOSE;
 public class LrsiMaPsarStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testLrsiMaPsarStrategy() throws Exception {
+    public void testLrsiMaPsarStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("lrsi_ma_psar.json", LrsiMaPsarResult[].class);
         LrsiMaPsarResult[] actualResult = new LrsiMaPsarStrategy(buildLrsiMaPsarRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

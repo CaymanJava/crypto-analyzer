@@ -15,7 +15,7 @@ import static pro.crypto.model.tick.PriceType.CLOSE;
 public class StochAcMaStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testStochAcMaStrategy() throws Exception {
+    public void testStochAcMaStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("stoch_ac_ma.json", StochAcMaResult[].class);
         StochAcMaResult[] actualResult = new StochAcMaStrategy(buildStochAcMaRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

@@ -14,7 +14,7 @@ import static pro.crypto.model.tick.PriceType.CLOSE;
 public class HaMacdPsarStrategyTest extends StrategyBaseTest {
 
     @Test
-    public void testHaMacdPsarStrategy() throws Exception {
+    public void testHaMacdPsarStrategy() {
         StrategyResult[] expectedResult = loadStrategyExpectedResult("ha_macd_psar.json", HaMacdPsarResult[].class);
         HaMacdPsarResult[] actualResult = new HaMacdPsarStrategy(buildHaMacdPsarRequest()).getResult();
         assertArrayEquals(expectedResult, actualResult);

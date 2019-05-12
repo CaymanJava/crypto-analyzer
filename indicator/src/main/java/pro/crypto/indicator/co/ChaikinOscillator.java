@@ -97,7 +97,7 @@ public class ChaikinOscillator implements Indicator<COResult> {
 
     private BigDecimal calculateDifference(BigDecimal slowEmaValue, BigDecimal fastEmaValue) {
         return nonNull(slowEmaValue) && nonNull(fastEmaValue)
-                ? scaleAndRound(slowEmaValue.subtract(fastEmaValue))
+                ? scaleAndRound(fastEmaValue.subtract(slowEmaValue))
                 : null;
     }
 

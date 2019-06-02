@@ -26,7 +26,9 @@ public class IndicatorService {
         Tick[] ticks = tickService.getTicksByTime(buildTickTimeFindRequest(request)).getTicks();
         IndicatorRequest indicatorRequest = requestFactory.buildRequest(ticks, request.getIndicatorType(), request.getConfiguration());
         Indicator indicator = indicatorFactory.create(indicatorRequest, request.getIndicatorType());
-        return indicator.getResult();
+        IndicatorResult[] result = indicator.getResult();
+        log.info("Calculated indicator {request: {}}", request);
+        return result;
     }
 
     private TickTimeFindRequest buildTickTimeFindRequest(IndicatorCalculationRequest indicatorCalculationRequest) {

@@ -1,9 +1,9 @@
 package pro.crypto.analyzer.eft;
 
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
+import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.helper.StaticLineCrossAnalyzer;
-import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.eft.EFTResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
@@ -64,7 +64,7 @@ public class EFTAnalyzer implements Analyzer<EFTAnalyzerResult> {
 
     private BigDecimal[] extractTriggerValues() {
         return Stream.of(indicatorResults)
-                .map(EFTResult::getTrigger)
+                .map(EFTResult::getSignalLineValue)
                 .toArray(BigDecimal[]::new);
     }
 

@@ -180,7 +180,7 @@
       }
     },
     "indicatorValue": -0.4189503550,
-    "trigger": -0.1411989406
+    "signalLineValue": -0.1411989406
   },
   {
     "time": {
@@ -197,7 +197,7 @@
       }
     },
     "indicatorValue": -0.7417553536,
-    "trigger": -0.4189503550
+    "signalLineValue": -0.4189503550
   },
   {
     "time": {
@@ -214,7 +214,7 @@
       }
     },
     "indicatorValue": -1.0862365190,
-    "trigger": -0.7417553536
+    "signalLineValue": -0.7417553536
   },
   {
     "time": {
@@ -231,7 +231,7 @@
       }
     },
     "indicatorValue": -1.3696817904,
-    "trigger": -1.0862365190
+    "signalLineValue": -1.0862365190
   },
   {
     "time": {
@@ -248,7 +248,7 @@
       }
     },
     "indicatorValue": -1.6061642512,
-    "trigger": -1.3696817904
+    "signalLineValue": -1.3696817904
   },
   {
     "time": {
@@ -265,7 +265,7 @@
       }
     },
     "indicatorValue": -1.5610311896,
-    "trigger": -1.6061642512
+    "signalLineValue": -1.6061642512
   },
   {
     "time": {
@@ -282,7 +282,7 @@
       }
     },
     "indicatorValue": -1.3064492807,
-    "trigger": -1.5610311896
+    "signalLineValue": -1.5610311896
   },
   {
     "time": {
@@ -299,7 +299,7 @@
       }
     },
     "indicatorValue": -1.0896211008,
-    "trigger": -1.3064492807
+    "signalLineValue": -1.3064492807
   },
   {
     "time": {
@@ -316,7 +316,7 @@
       }
     },
     "indicatorValue": -1.1377743519,
-    "trigger": -1.0896211008
+    "signalLineValue": -1.0896211008
   },
   {
     "time": {
@@ -333,7 +333,7 @@
       }
     },
     "indicatorValue": -1.1356601839,
-    "trigger": -1.1377743519
+    "signalLineValue": -1.1377743519
   },
   {
     "time": {
@@ -350,7 +350,7 @@
       }
     },
     "indicatorValue": -0.9103860220,
-    "trigger": -1.1356601839
+    "signalLineValue": -1.1356601839
   },
   {
     "time": {
@@ -367,7 +367,7 @@
       }
     },
     "indicatorValue": -0.8498148190,
-    "trigger": -0.9103860220
+    "signalLineValue": -0.9103860220
   },
   {
     "time": {
@@ -384,7 +384,7 @@
       }
     },
     "indicatorValue": -0.9139560057,
-    "trigger": -0.8498148190
+    "signalLineValue": -0.8498148190
   },
   {
     "time": {
@@ -401,7 +401,7 @@
       }
     },
     "indicatorValue": -1.0740098545,
-    "trigger": -0.9139560057
+    "signalLineValue": -0.9139560057
   },
   {
     "time": {
@@ -418,7 +418,7 @@
       }
     },
     "indicatorValue": -1.2464103995,
-    "trigger": -1.0740098545
+    "signalLineValue": -1.0740098545
   },
   {
     "time": {
@@ -435,7 +435,7 @@
       }
     },
     "indicatorValue": -1.4268400229,
-    "trigger": -1.2464103995
+    "signalLineValue": -1.2464103995
   },
   {
     "time": {
@@ -452,7 +452,7 @@
       }
     },
     "indicatorValue": -1.4495257510,
-    "trigger": -1.4268400229
+    "signalLineValue": -1.4268400229
   },
   {
     "time": {
@@ -469,7 +469,7 @@
       }
     },
     "indicatorValue": -0.9496395964,
-    "trigger": -1.4495257510
+    "signalLineValue": -1.4495257510
   },
   {
     "time": {
@@ -486,7 +486,7 @@
       }
     },
     "indicatorValue": -0.3806005924,
-    "trigger": -0.9496395964
+    "signalLineValue": -0.9496395964
   },
   {
     "time": {
@@ -503,7 +503,7 @@
       }
     },
     "indicatorValue": 0.1747205267,
-    "trigger": -0.3806005924
+    "signalLineValue": -0.3806005924
   },
   {
     "time": {
@@ -520,7 +520,7 @@
       }
     },
     "indicatorValue": 0.5198781337,
-    "trigger": 0.1747205267
+    "signalLineValue": 0.1747205267
   },
   {
     "time": {
@@ -537,7 +537,7 @@
       }
     },
     "indicatorValue": 0.9010729753,
-    "trigger": 0.5198781337
+    "signalLineValue": 0.5198781337
   },
   {
     "time": {
@@ -554,7 +554,7 @@
       }
     },
     "indicatorValue": 1.2178212577,
-    "trigger": 0.9010729753
+    "signalLineValue": 0.9010729753
   },
   {
     "time": {
@@ -571,7 +571,7 @@
       }
     },
     "indicatorValue": 1.4568190042,
-    "trigger": 1.2178212577
+    "signalLineValue": 1.2178212577
   },
   {
     "time": {
@@ -588,7 +588,7 @@
       }
     },
     "indicatorValue": 1.6630834841,
-    "trigger": 1.4568190042
+    "signalLineValue": 1.4568190042
   },
   {
     "time": {
@@ -605,7 +605,7 @@
       }
     },
     "indicatorValue": 1.8215999445,
-    "trigger": 1.6630834841
+    "signalLineValue": 1.6630834841
   },
   {
     "time": {
@@ -622,7 +622,7 @@
       }
     },
     "indicatorValue": 1.9122588145,
-    "trigger": 1.8215999445
+    "signalLineValue": 1.8215999445
   },
   {
     "time": {
@@ -639,7 +639,7 @@
       }
     },
     "indicatorValue": 1.9498347361,
-    "trigger": 1.9122588145
+    "signalLineValue": 1.9122588145
   },
   {
     "time": {
@@ -656,7 +656,7 @@
       }
     },
     "indicatorValue": 1.9215679231,
-    "trigger": 1.9498347361
+    "signalLineValue": 1.9498347361
   },
   {
     "time": {
@@ -673,7 +673,7 @@
       }
     },
     "indicatorValue": 1.5921645578,
-    "trigger": 1.9215679231
+    "signalLineValue": 1.9215679231
   },
   {
     "time": {
@@ -690,7 +690,7 @@
       }
     },
     "indicatorValue": 1.3466137209,
-    "trigger": 1.5921645578
+    "signalLineValue": 1.5921645578
   },
   {
     "time": {
@@ -707,7 +707,7 @@
       }
     },
     "indicatorValue": 1.3354196574,
-    "trigger": 1.3466137209
+    "signalLineValue": 1.3466137209
   },
   {
     "time": {
@@ -724,7 +724,7 @@
       }
     },
     "indicatorValue": 1.2881085869,
-    "trigger": 1.3354196574
+    "signalLineValue": 1.3354196574
   },
   {
     "time": {
@@ -741,7 +741,7 @@
       }
     },
     "indicatorValue": 1.3788430911,
-    "trigger": 1.2881085869
+    "signalLineValue": 1.2881085869
   },
   {
     "time": {
@@ -758,7 +758,7 @@
       }
     },
     "indicatorValue": 1.3988614077,
-    "trigger": 1.3788430911
+    "signalLineValue": 1.3788430911
   },
   {
     "time": {
@@ -775,7 +775,7 @@
       }
     },
     "indicatorValue": 1.4888531149,
-    "trigger": 1.3988614077
+    "signalLineValue": 1.3988614077
   },
   {
     "time": {
@@ -792,7 +792,7 @@
       }
     },
     "indicatorValue": 1.4539695095,
-    "trigger": 1.4888531149
+    "signalLineValue": 1.4888531149
   },
   {
     "time": {
@@ -809,7 +809,7 @@
       }
     },
     "indicatorValue": 1.2951384210,
-    "trigger": 1.4539695095
+    "signalLineValue": 1.4539695095
   },
   {
     "time": {
@@ -826,7 +826,7 @@
       }
     },
     "indicatorValue": 0.9414329844,
-    "trigger": 1.2951384210
+    "signalLineValue": 1.2951384210
   },
   {
     "time": {
@@ -843,7 +843,7 @@
       }
     },
     "indicatorValue": 0.5950119520,
-    "trigger": 0.9414329844
+    "signalLineValue": 0.9414329844
   },
   {
     "time": {
@@ -860,7 +860,7 @@
       }
     },
     "indicatorValue": 0.2938145587,
-    "trigger": 0.5950119520
+    "signalLineValue": 0.5950119520
   },
   {
     "time": {
@@ -877,7 +877,7 @@
       }
     },
     "indicatorValue": 0.3225959543,
-    "trigger": 0.2938145587
+    "signalLineValue": 0.2938145587
   },
   {
     "time": {
@@ -894,7 +894,7 @@
       }
     },
     "indicatorValue": 0.4868246517,
-    "trigger": 0.3225959543
+    "signalLineValue": 0.3225959543
   },
   {
     "time": {
@@ -911,7 +911,7 @@
       }
     },
     "indicatorValue": 0.7183274356,
-    "trigger": 0.4868246517
+    "signalLineValue": 0.4868246517
   },
   {
     "time": {
@@ -928,7 +928,7 @@
       }
     },
     "indicatorValue": 0.7277140562,
-    "trigger": 0.7183274356
+    "signalLineValue": 0.7183274356
   },
   {
     "time": {
@@ -945,7 +945,7 @@
       }
     },
     "indicatorValue": 0.7794489356,
-    "trigger": 0.7277140562
+    "signalLineValue": 0.7277140562
   },
   {
     "time": {
@@ -962,7 +962,7 @@
       }
     },
     "indicatorValue": 0.9500840595,
-    "trigger": 0.7794489356
+    "signalLineValue": 0.7794489356
   },
   {
     "time": {
@@ -979,7 +979,7 @@
       }
     },
     "indicatorValue": 1.1934769494,
-    "trigger": 0.9500840595
+    "signalLineValue": 0.9500840595
   },
   {
     "time": {
@@ -996,7 +996,7 @@
       }
     },
     "indicatorValue": 1.4429100512,
-    "trigger": 1.1934769494
+    "signalLineValue": 1.1934769494
   },
   {
     "time": {
@@ -1013,7 +1013,7 @@
       }
     },
     "indicatorValue": 1.5413140244,
-    "trigger": 1.4429100512
+    "signalLineValue": 1.4429100512
   },
   {
     "time": {
@@ -1030,7 +1030,7 @@
       }
     },
     "indicatorValue": 1.6484821466,
-    "trigger": 1.5413140244
+    "signalLineValue": 1.5413140244
   },
   {
     "time": {
@@ -1047,7 +1047,7 @@
       }
     },
     "indicatorValue": 1.8085677276,
-    "trigger": 1.6484821466
+    "signalLineValue": 1.6484821466
   },
   {
     "time": {
@@ -1064,7 +1064,7 @@
       }
     },
     "indicatorValue": 1.8442424266,
-    "trigger": 1.8085677276
+    "signalLineValue": 1.8085677276
   },
   {
     "time": {
@@ -1081,7 +1081,7 @@
       }
     },
     "indicatorValue": 1.5528470954,
-    "trigger": 1.8442424266
+    "signalLineValue": 1.8442424266
   },
   {
     "time": {
@@ -1098,7 +1098,7 @@
       }
     },
     "indicatorValue": 1.0688892798,
-    "trigger": 1.5528470954
+    "signalLineValue": 1.5528470954
   },
   {
     "time": {
@@ -1115,7 +1115,7 @@
       }
     },
     "indicatorValue": 0.5002680852,
-    "trigger": 1.0688892798
+    "signalLineValue": 1.0688892798
   },
   {
     "time": {
@@ -1132,7 +1132,7 @@
       }
     },
     "indicatorValue": -0.0089229751,
-    "trigger": 0.5002680852
+    "signalLineValue": 0.5002680852
   },
   {
     "time": {
@@ -1149,7 +1149,7 @@
       }
     },
     "indicatorValue": -0.4341028361,
-    "trigger": -0.0089229751
+    "signalLineValue": -0.0089229751
   },
   {
     "time": {
@@ -1166,7 +1166,7 @@
       }
     },
     "indicatorValue": -0.7948604946,
-    "trigger": -0.4341028361
+    "signalLineValue": -0.4341028361
   },
   {
     "time": {
@@ -1183,7 +1183,7 @@
       }
     },
     "indicatorValue": -1.0459788181,
-    "trigger": -0.7948604946
+    "signalLineValue": -0.7948604946
   },
   {
     "time": {
@@ -1200,7 +1200,7 @@
       }
     },
     "indicatorValue": -1.1722108547,
-    "trigger": -1.0459788181
+    "signalLineValue": -1.0459788181
   },
   {
     "time": {
@@ -1217,6 +1217,6 @@
       }
     },
     "indicatorValue": -1.3796816085,
-    "trigger": -1.1722108547
+    "signalLineValue": -1.1722108547
   }
 ]

@@ -1,5 +1,3 @@
-CREATE SCHEMA crypto_market;
-
 CREATE TABLE crypto_market.market
 (
     id                   SERIAL PRIMARY KEY,

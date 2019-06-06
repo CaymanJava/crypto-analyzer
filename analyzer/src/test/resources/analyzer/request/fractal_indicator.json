@@ -14,7 +14,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1302.6700000000,
+    "low": 1263.2300000000
   },
   {
     "time": {
@@ -31,7 +33,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1294.6500000000,
+    "low": 1261.0000000000
   },
   {
     "time": {
@@ -48,7 +52,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": true
+    "downFractal": true,
+    "high": 1274.7600000000,
+    "low": 1251.0000000000
   },
   {
     "time": {
@@ -65,7 +71,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1304.0200000000,
+    "low": 1280.2700000000
   },
   {
     "time": {
@@ -82,7 +90,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1310.3300000000,
+    "low": 1270.7300000000
   },
   {
     "time": {
@@ -99,7 +109,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1322.4301000000,
+    "low": 1299.5300000000
   },
   {
     "time": {
@@ -116,7 +128,9 @@
       }
     },
     "upFractal": true,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1347.2700000000,
+    "low": 1314.9600000000
   },
   {
     "time": {
@@ -133,7 +147,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1305.7200000000,
+    "low": 1279.0900000000
   },
   {
     "time": {
@@ -150,7 +166,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1292.3600000000,
+    "low": 1270.5900000000
   },
   {
     "time": {
@@ -167,7 +185,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1292.7300000000,
+    "low": 1267.6899000000
   },
   {
     "time": {
@@ -184,7 +204,9 @@
       }
     },
     "upFractal": true,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1298.5000000000,
+    "low": 1258.8500000000
   },
   {
     "time": {
@@ -201,7 +223,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1263.9000000000,
+    "low": 1233.0800000000
   },
   {
     "time": {
@@ -218,7 +242,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1242.9100000000,
+    "low": 1216.1899000000
   },
   {
     "time": {
@@ -235,7 +261,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1232.9600000000,
+    "low": 1216.2400000000
   },
   {
     "time": {
@@ -252,7 +280,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1209.7200000000,
+    "low": 1177.4100000000
   },
   {
     "time": {
@@ -269,7 +299,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": true
+    "downFractal": true,
+    "high": 1200.4500000000,
+    "low": 1169.0400000000
   },
   {
     "time": {
@@ -286,7 +318,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1227.2300000000,
+    "low": 1184.1200000000
   },
   {
     "time": {
@@ -303,7 +337,9 @@
       }
     },
     "upFractal": true,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1239.6200000000,
+    "low": 1206.9100000000
   },
   {
     "time": {
@@ -320,7 +356,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1235.0800000000,
+    "low": 1198.1200000000
   },
   {
     "time": {
@@ -337,7 +375,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": true
+    "downFractal": true,
+    "high": 1190.7400000000,
+    "low": 1160.0699000000
   },
   {
     "time": {
@@ -354,7 +394,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1214.0100000000,
+    "low": 1160.7100000000
   },
   {
     "time": {
@@ -371,7 +413,9 @@
       }
     },
     "upFractal": true,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1222.7200000000,
+    "low": 1183.7600000000
   },
   {
     "time": {
@@ -388,7 +432,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1197.9600000000,
+    "low": 1164.5100000000
   },
   {
     "time": {
@@ -405,7 +451,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1175.7500000000,
+    "low": 1135.2700000000
   },
   {
     "time": {
@@ -422,7 +470,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1145.7900000000,
+    "low": 1113.3600000000
   },
   {
     "time": {
@@ -439,7 +489,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1144.1300000000,
+    "low": 1109.6400000000
   },
   {
     "time": {
@@ -456,7 +508,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1135.8900000000,
+    "low": 1112.0800000000
   },
   {
     "time": {
@@ -473,7 +527,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": true
+    "downFractal": true,
+    "high": 1165.8300000000,
+    "low": 1108.4900000000
   },
   {
     "time": {
@@ -490,7 +546,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1220.1200000000,
+    "low": 1179.9000000000
   },
   {
     "time": {
@@ -507,7 +565,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1221.6000000000,
+    "low": 1193.4200000000
   },
   {
     "time": {
@@ -524,7 +584,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1282.7400000000,
+    "low": 1259.8700000000
   },
   {
     "time": {
@@ -541,7 +603,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1253.6100000000,
+    "low": 1229.0601000000
   },
   {
     "time": {
@@ -558,7 +622,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1283.2100000000,
+    "low": 1263.4600000000
   },
   {
     "time": {
@@ -575,7 +641,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1288.0800000000,
+    "low": 1253.4399000000
   },
   {
     "time": {
@@ -592,7 +660,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1312.5300000000,
+    "low": 1267.7600000000
   },
   {
     "time": {
@@ -609,7 +679,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1307.6000000000,
+    "low": 1280.6600000000
   },
   {
     "time": {
@@ -626,7 +698,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1320.2500000000,
+    "low": 1279.4600000000
   },
   {
     "time": {
@@ -643,7 +717,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1330.9900000000,
+    "low": 1296.5400000000
   },
   {
     "time": {
@@ -660,7 +736,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1331.3300000000,
+    "low": 1297.1700000000
   },
   {
     "time": {
@@ -677,7 +755,9 @@
       }
     },
     "upFractal": true,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1346.2100000000,
+    "low": 1310.6300000000
   },
   {
     "time": {
@@ -694,7 +774,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": true
+    "downFractal": true,
+    "high": 1318.9301000000,
+    "low": 1279.1899000000
   },
   {
     "time": {
@@ -711,7 +793,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1334.6300000000,
+    "low": 1300.5500000000
   },
   {
     "time": {
@@ -728,7 +812,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1347.5800000000,
+    "low": 1323.0900000000
   },
   {
     "time": {
@@ -745,7 +831,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1360.8300000000,
+    "low": 1313.7200000000
   },
   {
     "time": {
@@ -762,7 +850,9 @@
       }
     },
     "upFractal": true,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1420.0300000000,
+    "low": 1388.6801000000
   },
   {
     "time": {
@@ -779,7 +869,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1401.3700000000,
+    "low": 1379.3300000000
   },
   {
     "time": {
@@ -796,7 +888,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1419.0400000000,
+    "low": 1386.5200000000
   },
   {
     "time": {
@@ -813,7 +907,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1400.0800000000,
+    "low": 1371.4700000000
   },
   {
     "time": {
@@ -830,7 +926,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1389.7700000000,
+    "low": 1354.2800000000
   },
   {
     "time": {
@@ -847,7 +945,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": true
+    "downFractal": true,
+    "high": 1355.1000000000,
+    "low": 1319.0699000000
   },
   {
     "time": {
@@ -864,7 +964,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1367.9700000000,
+    "low": 1328.0800000000
   },
   {
     "time": {
@@ -881,7 +983,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1371.7400000000,
+    "low": 1334.1300000000
   },
   {
     "time": {
@@ -898,7 +1002,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1411.6300000000,
+    "low": 1378.9399000000
   },
   {
     "time": {
@@ -915,7 +1021,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1413.5300000000,
+    "low": 1386.1400000000
   },
   {
     "time": {
@@ -932,7 +1040,9 @@
       }
     },
     "upFractal": true,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1425.4200000000,
+    "low": 1393.6600000000
   },
   {
     "time": {
@@ -949,7 +1059,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": true
+    "downFractal": true,
+    "high": 1394.9301000000,
+    "low": 1367.7600000000
   },
   {
     "time": {
@@ -966,7 +1078,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1419.6400000000,
+    "low": 1375.4100000000
   },
   {
     "time": {
@@ -983,7 +1097,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1468.7200000000,
+    "low": 1430.0800000000
   },
   {
     "time": {
@@ -1000,7 +1116,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1475.3500000000,
+    "low": 1449.5000000000
   },
   {
     "time": {
@@ -1017,7 +1135,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1486.9399000000,
+    "low": 1461.1300000000
   },
   {
     "time": {
@@ -1034,7 +1154,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": true
+    "downFractal": true,
+    "high": 1478.7300000000,
+    "low": 1441.1200000000
   },
   {
     "time": {
@@ -1051,7 +1173,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1491.4500000000,
+    "low": 1462.6200000000
   },
   {
     "time": {
@@ -1068,7 +1192,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1497.4399000000,
+    "low": 1478.7200000000
   },
   {
     "time": {
@@ -1085,7 +1211,9 @@
       }
     },
     "upFractal": true,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1521.4399000000,
+    "low": 1474.5900000000
   },
   {
     "time": {
@@ -1102,7 +1230,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1474.6899000000,
+    "low": 1445.2300000000
   },
   {
     "time": {
@@ -1119,7 +1249,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1444.1801000000,
+    "low": 1412.9200000000
   },
   {
     "time": {
@@ -1136,7 +1268,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1445.9500000000,
+    "low": 1410.5800000000
   },
   {
     "time": {
@@ -1153,7 +1287,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1430.3900000000,
+    "low": 1391.1000000000
   },
   {
     "time": {
@@ -1170,7 +1306,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": true
+    "downFractal": true,
+    "high": 1411.4000000000,
+    "low": 1367.0699000000
   },
   {
     "time": {
@@ -1187,7 +1325,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1397.8000000000,
+    "low": 1373.9000000000
   },
   {
     "time": {
@@ -1204,7 +1344,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1407.1500000000,
+    "low": 1377.7100000000
   },
   {
     "time": {
@@ -1221,7 +1363,9 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1411.6899000000,
+    "low": 1388.5100000000
   },
   {
     "time": {
@@ -1238,6 +1382,8 @@
       }
     },
     "upFractal": false,
-    "downFractal": false
+    "downFractal": false,
+    "high": 1387.7100000000,
+    "low": 1362.5601000000
   }
 ]

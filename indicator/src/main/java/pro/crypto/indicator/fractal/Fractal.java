@@ -76,10 +76,10 @@ public class Fractal implements Indicator<FractalResult> {
 
     private boolean[] calculateFractals(PriceType priceType, BiFunction<BigDecimal[], Integer, Boolean> defineFractalFunction) {
         boolean[] fractals = new boolean[originalData.length];
-        BigDecimal[] lowValues = PriceVolumeExtractor.extractPrices(originalData, priceType);
+        BigDecimal[] prices = PriceVolumeExtractor.extractPrices(originalData, priceType);
         for (int currentIndex = 2; currentIndex < fractals.length; ) {
             if (isPossibleToDefineFractal(currentIndex)) {
-                boolean fractal = defineFractalFunction.apply(lowValues, currentIndex);
+                boolean fractal = defineFractalFunction.apply(prices, currentIndex);
                 fractals[currentIndex] = fractal;
                 currentIndex = calculateNextIndex(currentIndex, fractal);
             } else {
@@ -112,7 +112,9 @@ public class Fractal implements Indicator<FractalResult> {
 
     private void buildFractalResult(boolean[] upFractals, boolean[] downFractals) {
         IntStream.range(0, result.length)
-                .forEach(idx -> result[idx] = new FractalResult(originalData[idx].getTickTime(), upFractals[idx], downFractals[idx]));
+                .forEach(idx -> result[idx] = new FractalResult(originalData[idx].getTickTime(),
+                        upFractals[idx], downFractals[idx],
+                        originalData[idx].getHigh(), originalData[idx].getLow()));
     }
 
 }

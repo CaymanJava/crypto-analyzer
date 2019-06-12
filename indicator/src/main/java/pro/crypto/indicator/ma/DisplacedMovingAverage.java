@@ -1,7 +1,6 @@
 package pro.crypto.indicator.ma;
 
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.helper.TimeFrameShifter;
 import pro.crypto.model.IndicatorType;
 import pro.crypto.model.Shift;
 import pro.crypto.model.tick.PriceType;
@@ -14,8 +13,6 @@ import static java.lang.String.format;
 import static java.util.Objects.isNull;
 import static pro.crypto.model.IndicatorType.DISPLACED_MOVING_AVERAGE;
 import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
-import static pro.crypto.model.ShiftType.LEFT;
-import static pro.crypto.model.ShiftType.RIGHT;
 
 public class DisplacedMovingAverage extends MovingAverage {
 
@@ -44,7 +41,7 @@ public class DisplacedMovingAverage extends MovingAverage {
 
     @Override
     public void calculate() {
-        initResultArray(originalData.length + shift.getValue());
+        initResultArray(originalData.length);
         MAResult[] originalResult = MovingAverageFactory.create(buildMovingAverageRequest())
                 .getResult();
         shiftResult(originalResult);
@@ -66,14 +63,6 @@ public class DisplacedMovingAverage extends MovingAverage {
             throw new WrongIncomingParametersException(format("Incoming shift type is null {indicator: {%s}}", getType().toString()));
         }
 
-        if (shift.getType() == LEFT) {
-            throw new WrongIncomingParametersException(format("Left shift type is not available in moving average indicator {indicator: {%s}}", getType().toString()));
-        }
-
-        if (isNull(shift.getTimeFrame())) {
-            throw new WrongIncomingParametersException(format("Incoming shift time frame is null {indicator: {%s}}", getType().toString()));
-        }
-
         if (shift.getValue() <= 0) {
             throw new WrongIncomingParametersException(format("Incoming shift value should be more than zero {indicator: {%s}, shiftValue: {%d}}",
                     getType().toString(), shift.getValue()));
@@ -91,15 +80,25 @@ public class DisplacedMovingAverage extends MovingAverage {
     }
 
     private void shiftResult(MAResult[] intermediateResult) {
-        if (shift.getType() == RIGHT) {
-            fillInRightShift(intermediateResult);
+        switch (shift.getType()) {
+            case LEFT:
+                fillInLeftShift(intermediateResult);
+                break;
+            case RIGHT:
+            default:
+                fillInRightShift(intermediateResult);
+                break;
         }
     }
 
     private void fillInRightShift(MAResult[] originalResult) {
         fillInTime(originalResult);
-        shiftTime(originalResult);
-        fillInShiftedValues(originalResult);
+        fillInRightShiftedValues(originalResult);
+    }
+
+    private void fillInLeftShift(MAResult[] originalResult) {
+        fillInTime(originalResult);
+        fillInLeftShiftedValues(originalResult);
     }
 
     private void fillInTime(MAResult[] originalResult) {
@@ -107,16 +106,16 @@ public class DisplacedMovingAverage extends MovingAverage {
                 .forEach(idx -> result[idx] = new MAResult(originalResult[idx].getTime(), null));
     }
 
-    private void shiftTime(MAResult[] originalResult) {
-        IntStream.rangeClosed(originalResult.length, result.length - 1)
-                .distinct()
-                .forEach(idx -> result[idx] = new MAResult(
-                        new TimeFrameShifter(originalResult[idx - shift.getValue()].getTime(), shift).shiftTime(), null));
+    private void fillInRightShiftedValues(MAResult[] originalResult) {
+        IntStream.range(shift.getValue(), result.length)
+                .filter(idx -> originalResult.length > idx)
+                .forEach(idx -> result[idx].setIndicatorValue(originalResult[idx - shift.getValue()].getIndicatorValue()));
     }
 
-    private void fillInShiftedValues(MAResult[] originalResult) {
-        IntStream.range(shift.getValue(), result.length)
-                .forEach(idx -> result[idx].setIndicatorValue(originalResult[idx - shift.getValue()].getIndicatorValue()));
+    private void fillInLeftShiftedValues(MAResult[] originalResult) {
+        IntStream.range(0, result.length)
+                .filter(idx -> originalResult.length > idx + shift.getValue())
+                .forEach(idx -> result[idx].setIndicatorValue(originalResult[idx + shift.getValue()].getIndicatorValue()));
     }
 
 }

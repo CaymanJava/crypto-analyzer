@@ -102,7 +102,7 @@ public class ChandeForecastOscillator implements Indicator<CFOResult> {
                 : null;
     }
 
-    // CFO =(PRICE(i) − LinearRegression) * r100 / PRICE(i)
+    // CFO =(PRICE(i) − LinearRegression) * 100 / PRICE(i)
     private BigDecimal calculateChandeForecastOscillatorValue(BigDecimal linearRegression, BigDecimal price) {
         return MathHelper.divide(price.subtract(linearRegression).multiply(new BigDecimal(100)), price);
     }

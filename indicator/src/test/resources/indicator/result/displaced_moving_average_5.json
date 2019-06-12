@@ -1144,53 +1144,5 @@
       }
     },
     "indicatorValue": 1431.5910352381
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 5,
-        "day": 9
-      },
-      "time": {
-        "hour": 0,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "indicatorValue": 1428.8583690476
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 5,
-        "day": 10
-      },
-      "time": {
-        "hour": 0,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "indicatorValue": 1426.1836557143
-  },
-  {
-    "time": {
-      "date": {
-        "year": 2018,
-        "month": 5,
-        "day": 11
-      },
-      "time": {
-        "hour": 0,
-        "minute": 0,
-        "second": 0,
-        "nano": 0
-      }
-    },
-    "indicatorValue": 1419.8086090476
   }
 ]

@@ -10,7 +10,14 @@ import pro.crypto.model.Shift;
 import pro.crypto.model.tick.Tick;
 
 import static org.junit.Assert.assertArrayEquals;
-import static pro.crypto.model.IndicatorType.*;
+import static pro.crypto.model.IndicatorType.DISPLACED_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.EXPONENTIAL_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.HULL_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.MOVING_AVERAGE_CONVERGENCE_DIVERGENCE;
+import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.SMOOTHED_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.WEIGHTED_MOVING_AVERAGE;
+import static pro.crypto.model.ShiftType.LEFT;
 import static pro.crypto.model.ShiftType.RIGHT;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 import static pro.crypto.model.tick.TimeFrame.FIFTEEN_MIN;
@@ -50,6 +57,13 @@ public class DisplacedMovingAverageTest extends IndicatorAbstractTest {
     public void testDisplacedWeightedMovingAverage() {
         IndicatorResult[] expectedResult = loadExpectedResult("displaced_moving_average_5.json", MAResult[].class);
         MAResult[] actualResult = MovingAverageFactory.create(buildRequest(WEIGHTED_MOVING_AVERAGE)).getResult();
+        assertArrayEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testDisplacedSimpleMovingAverageWithLeftShift() {
+        IndicatorResult[] expectedResult = loadExpectedResult("displaced_moving_average_6.json", MAResult[].class);
+        MAResult[] actualResult = MovingAverageFactory.create(buildRequestWithLeftShift()).getResult();
         assertArrayEquals(expectedResult, actualResult);
     }
 
@@ -138,6 +152,18 @@ public class DisplacedMovingAverageTest extends IndicatorAbstractTest {
                 .build()).getResult();
     }
 
+    private MARequest buildRequest(IndicatorType originalIndicatorType) {
+        MARequest request = buildRequest();
+        request.setOriginalIndicatorType(originalIndicatorType);
+        return request;
+    }
+
+    private IndicatorRequest buildRequestWithLeftShift() {
+        MARequest request = buildRequest(SIMPLE_MOVING_AVERAGE);
+        request.getShift().setType(LEFT);
+        return request;
+    }
+
     @Override
     protected MARequest buildRequest() {
         return MARequest.builder()
@@ -147,12 +173,6 @@ public class DisplacedMovingAverageTest extends IndicatorAbstractTest {
                 .priceType(CLOSE)
                 .indicatorType(DISPLACED_MOVING_AVERAGE)
                 .build();
-    }
-
-    private IndicatorRequest buildRequest(IndicatorType originalIndicatorType) {
-        MARequest request = buildRequest();
-        request.setOriginalIndicatorType(originalIndicatorType);
-        return request;
     }
 
 }

@@ -29,7 +29,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.34547474287028424409
+    "indicatorValue": 0.34547474287028424409,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -45,7 +46,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1.55105557949159844894
+    "indicatorValue": 1.55105557949159844894,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -61,7 +63,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.26454496039065772003
+    "indicatorValue": 0.26454496039065772003,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -77,7 +80,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.85498134586154483902
+    "indicatorValue": 0.85498134586154483902,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -93,7 +97,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.81886675057928311926
+    "indicatorValue": 0.81886675057928311926,
+    "correlation": "INDICATOR_DOWN_VOLUME_DOWN"
   },
   {
     "time": {
@@ -109,7 +114,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.56486112737959332097
+    "indicatorValue": 0.56486112737959332097,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -125,7 +131,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.14552668034679395925
+    "indicatorValue": 0.14552668034679395925,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -141,7 +148,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.25569229540505558988
+    "indicatorValue": 0.25569229540505558988,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -157,7 +165,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.27177708290144755450
+    "indicatorValue": 0.27177708290144755450,
+    "correlation": "INDICATOR_UP_VOLUME_UP"
   },
   {
     "time": {
@@ -173,7 +182,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1.25856235041676982752
+    "indicatorValue": 1.25856235041676982752,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -189,7 +199,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.51572095513796623216
+    "indicatorValue": 0.51572095513796623216,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -205,7 +216,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.19991710055448356563
+    "indicatorValue": 0.19991710055448356563,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -221,7 +233,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.59440435138113690497
+    "indicatorValue": 0.59440435138113690497,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -237,7 +250,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.87342264897654653388
+    "indicatorValue": 0.87342264897654653388,
+    "correlation": "INDICATOR_UP_VOLUME_UP"
   },
   {
     "time": {
@@ -253,7 +267,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.22943670768185653084
+    "indicatorValue": 0.22943670768185653084,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -269,7 +284,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.59613775746555026239
+    "indicatorValue": 0.59613775746555026239,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -285,7 +301,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.23768693048874420497
+    "indicatorValue": 0.23768693048874420497,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -301,7 +318,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 2.08330984724649117863
+    "indicatorValue": 2.08330984724649117863,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -317,7 +335,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.26381973953584392795
+    "indicatorValue": 0.26381973953584392795,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -333,7 +352,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.56006750231960414891
+    "indicatorValue": 0.56006750231960414891,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -349,7 +369,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.27389305657199218533
+    "indicatorValue": 0.27389305657199218533,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -365,7 +386,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.22310218079880585308
+    "indicatorValue": 0.22310218079880585308,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -381,7 +403,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.30217546929388131999
+    "indicatorValue": 0.30217546929388131999,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -397,7 +420,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.17976718403547671840
+    "indicatorValue": 0.17976718403547671840,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -413,7 +437,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.67832411266198454546
+    "indicatorValue": 0.67832411266198454546,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -429,7 +454,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.13165992699813707562
+    "indicatorValue": 0.13165992699813707562,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -445,7 +471,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.28690126123475618146
+    "indicatorValue": 0.28690126123475618146,
+    "correlation": "INDICATOR_UP_VOLUME_UP"
   },
   {
     "time": {
@@ -461,7 +488,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 11.44564598747865680137
+    "indicatorValue": 11.44564598747865680137,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -477,7 +505,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.19427354929088086302
+    "indicatorValue": 0.19427354929088086302,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -493,7 +522,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.14890748007784599177
+    "indicatorValue": 0.14890748007784599177,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -509,7 +539,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.14409628370942323100
+    "indicatorValue": 0.14409628370942323100,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -525,7 +556,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.22056713114195700560
+    "indicatorValue": 0.22056713114195700560,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -541,7 +573,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.30307386354191182711
+    "indicatorValue": 0.30307386354191182711,
+    "correlation": "INDICATOR_UP_VOLUME_UP"
   },
   {
     "time": {
@@ -557,7 +590,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.22993499983565065904
+    "indicatorValue": 0.22993499983565065904,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -573,7 +607,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.45319583813473071520
+    "indicatorValue": 0.45319583813473071520,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -589,7 +624,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.35598120866049306757
+    "indicatorValue": 0.35598120866049306757,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -605,7 +641,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.24895593877346021294
+    "indicatorValue": 0.24895593877346021294,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -621,7 +658,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.33116242275946711546
+    "indicatorValue": 0.33116242275946711546,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -637,7 +675,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.21331664211546797463
+    "indicatorValue": 0.21331664211546797463,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -653,7 +692,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.54160039795299520957
+    "indicatorValue": 0.54160039795299520957,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -669,7 +709,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.58083945617883310580
+    "indicatorValue": 0.58083945617883310580,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -685,7 +726,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.17519762492399041385
+    "indicatorValue": 0.17519762492399041385,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -701,7 +743,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.23709359786892564038
+    "indicatorValue": 0.23709359786892564038,
+    "correlation": "INDICATOR_UP_VOLUME_UP"
   },
   {
     "time": {
@@ -717,7 +760,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.48475003981611911127
+    "indicatorValue": 0.48475003981611911127,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -733,7 +777,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.12974505449998704904
+    "indicatorValue": 0.12974505449998704904,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -749,7 +794,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.18592280773169029102
+    "indicatorValue": 0.18592280773169029102,
+    "correlation": "INDICATOR_UP_VOLUME_UP"
   },
   {
     "time": {
@@ -765,7 +811,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.87441013227707278907
+    "indicatorValue": 0.87441013227707278907,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -781,7 +828,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.85045709972322402080
+    "indicatorValue": 0.85045709972322402080,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -797,7 +845,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.19546222918547323103
+    "indicatorValue": 0.19546222918547323103,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -813,7 +862,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.27267849025391432741
+    "indicatorValue": 0.27267849025391432741,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -829,7 +879,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.47406328070445223696
+    "indicatorValue": 0.47406328070445223696,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -845,7 +896,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1.21271623120555273203
+    "indicatorValue": 1.21271623120555273203,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -861,7 +913,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.24523058300236008695
+    "indicatorValue": 0.24523058300236008695,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -877,7 +930,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.36024591093668473946
+    "indicatorValue": 0.36024591093668473946,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -893,7 +947,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.25628954102928594808
+    "indicatorValue": 0.25628954102928594808,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -909,7 +964,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.23246133615601556119
+    "indicatorValue": 0.23246133615601556119,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -925,7 +981,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.20975114850153323530
+    "indicatorValue": 0.20975114850153323530,
+    "correlation": "INDICATOR_DOWN_VOLUME_DOWN"
   },
   {
     "time": {
@@ -941,7 +998,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.26906455051127468940
+    "indicatorValue": 0.26906455051127468940,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -957,7 +1015,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.15148201752995904511
+    "indicatorValue": 0.15148201752995904511,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -973,7 +1032,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.34268542917227027047
+    "indicatorValue": 0.34268542917227027047,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -989,7 +1049,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.14622901096337173768
+    "indicatorValue": 0.14622901096337173768,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -1005,7 +1066,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.13136052903770881313
+    "indicatorValue": 0.13136052903770881313,
+    "correlation": "INDICATOR_DOWN_VOLUME_DOWN"
   },
   {
     "time": {
@@ -1021,7 +1083,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.47948937598699798072
+    "indicatorValue": 0.47948937598699798072,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -1037,7 +1100,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.82445441977354012862
+    "indicatorValue": 0.82445441977354012862,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -1053,7 +1117,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.48979671777708836682
+    "indicatorValue": 0.48979671777708836682,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -1069,7 +1134,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.30995836550199321544
+    "indicatorValue": 0.30995836550199321544,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -1085,7 +1151,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.64070159188825146681
+    "indicatorValue": 0.64070159188825146681,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -1101,7 +1168,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.85044287005116458421
+    "indicatorValue": 0.85044287005116458421,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -1117,7 +1185,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.30145176141165193043
+    "indicatorValue": 0.30145176141165193043,
+    "correlation": "INDICATOR_DOWN_VOLUME_UP"
   },
   {
     "time": {
@@ -1133,7 +1202,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.38534535792353303054
+    "indicatorValue": 0.38534535792353303054,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -1149,7 +1219,8 @@
         "nano": 0
       }
     },
-    "indicatorValue": 0.39624573495524694524
+    "indicatorValue": 0.39624573495524694524,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   },
   {
     "time": {
@@ -1165,6 +1236,7 @@
         "nano": 0
       }
     },
-    "indicatorValue": 1.80813556397518207243
+    "indicatorValue": 1.80813556397518207243,
+    "correlation": "INDICATOR_UP_VOLUME_DOWN"
   }
 ]

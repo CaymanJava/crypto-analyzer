@@ -10,18 +10,13 @@ import static pro.crypto.model.IndicatorType.CAMARILLA_PIVOT_POINTS;
 
 public class CamarillaPivotPoints extends PivotPoints {
 
-    CamarillaPivotPoints(Tick[] originalData) {
-        super(originalData);
+    CamarillaPivotPoints(Tick[] oneDayData, Tick[] resultTickData) {
+        super(oneDayData, resultTickData);
     }
 
     @Override
     public IndicatorType getType() {
         return CAMARILLA_PIVOT_POINTS;
-    }
-
-    @Override
-    public void calculate() {
-        calculatePivotPoints();
     }
 
     // (H + L + C) / 3

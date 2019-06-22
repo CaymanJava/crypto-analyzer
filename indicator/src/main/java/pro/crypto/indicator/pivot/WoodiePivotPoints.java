@@ -10,18 +10,13 @@ import static pro.crypto.model.IndicatorType.WOODIE_PIVOT_POINTS;
 
 public class WoodiePivotPoints extends PivotPoints {
 
-    WoodiePivotPoints(Tick[] originalData) {
-        super(originalData);
+    WoodiePivotPoints(Tick[] oneDayData, Tick[] resultTickData) {
+        super(oneDayData, resultTickData);
     }
 
     @Override
     public IndicatorType getType() {
         return WOODIE_PIVOT_POINTS;
-    }
-
-    @Override
-    public void calculate() {
-        calculatePivotPoints();
     }
 
     // (H + L + 2 * C) / 4

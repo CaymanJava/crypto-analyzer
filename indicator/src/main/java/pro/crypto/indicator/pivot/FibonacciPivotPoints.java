@@ -14,18 +14,13 @@ public class FibonacciPivotPoints extends PivotPoints {
     private final static BigDecimal SECOND_COEFFICIENT = new BigDecimal(0.618);
     private final static BigDecimal THIRD_COEFFICIENT = new BigDecimal(1.0);
 
-    FibonacciPivotPoints(Tick[] originalData) {
-        super(originalData);
+    FibonacciPivotPoints(Tick[] oneDayData, Tick[] resultTickData) {
+        super(oneDayData, resultTickData);
     }
 
     @Override
     public IndicatorType getType() {
         return FIBONACCI_PIVOT_POINTS;
-    }
-
-    @Override
-    public void calculate() {
-        calculatePivotPoints();
     }
 
     @Override

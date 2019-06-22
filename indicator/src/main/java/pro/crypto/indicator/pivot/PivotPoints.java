@@ -5,20 +5,38 @@ import pro.crypto.model.Indicator;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.util.Map;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
+import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
+import static java.util.stream.Collectors.toMap;
 
 public abstract class PivotPoints implements Indicator<PivotResult> {
 
     protected final Tick[] originalData;
-    protected PivotResult[] result;
+    private final Tick[] resultTickData;
 
+    protected PivotResult[] result;
     BigDecimal pivot;
 
-    PivotPoints(Tick[] originalData) {
+    private PivotResult[] oneDayPivotPoints;
+    private Map<LocalDateTime, PivotResult> oneDayDataPivotPoints;
+
+    PivotPoints(Tick[] originalData, Tick[] resultTickData) {
         this.originalData = originalData;
+        this.resultTickData = resultTickData;
         checkOriginalData(this.originalData);
+        checkOriginalData(this.resultTickData);
+    }
+
+    @Override
+    public void calculate() {
+        calculatePivotPoints();
     }
 
     @Override
@@ -27,13 +45,6 @@ public abstract class PivotPoints implements Indicator<PivotResult> {
             calculate();
         }
         return result;
-    }
-
-    void calculatePivotPoints() {
-        result = new PivotResult[originalData.length];
-        fillInFirstValue();
-        IntStream.range(1, result.length)
-                .forEach(this::calculatePivotPoint);
     }
 
     abstract BigDecimal calculatePivot(int currentIndex);
@@ -63,8 +74,50 @@ public abstract class PivotPoints implements Indicator<PivotResult> {
         return null;
     }
 
+    private void calculatePivotPoints() {
+        calculateOneDayPivotPoints();
+        groupOneDayPivotPointsByDate();
+        defineOriginalDataPivotPoints();
+    }
+
+    private void calculateOneDayPivotPoints() {
+        oneDayPivotPoints = new PivotResult[originalData.length];
+        fillInFirstValue();
+        IntStream.range(1, oneDayPivotPoints.length)
+                .forEach(this::calculatePivotPoint);
+    }
+
+    private void groupOneDayPivotPointsByDate() {
+        oneDayDataPivotPoints = Stream.of(oneDayPivotPoints)
+                .collect(toMap(PivotResult::getTime, p -> p));
+    }
+
+    private void defineOriginalDataPivotPoints() {
+        initResultArray();
+        fillInResultPivot();
+    }
+
+    private void initResultArray() {
+        result = stream(resultTickData)
+                .map(originalData -> new PivotResult(originalData.getTickTime()))
+                .toArray(PivotResult[]::new);
+    }
+
+    private void fillInResultPivot() {
+        IntStream.range(0, result.length)
+                .forEach(this::copyDayPivotPoints);
+    }
+
+    private void copyDayPivotPoints(int currentIndex) {
+        LocalDateTime startDayPivotPoint = result[currentIndex].getTime().with(LocalTime.MIN);
+        PivotResult oneDayPivot = oneDayDataPivotPoints.get(startDayPivotPoint);
+        if (nonNull(oneDayPivot)) {
+            result[currentIndex].copy(oneDayPivot);
+        }
+    }
+
     private void fillInFirstValue() {
-        result[0] = new PivotResult(originalData[0].getTickTime());
+        oneDayPivotPoints[0] = new PivotResult(originalData[0].getTickTime());
     }
 
     private void calculatePivotPoint(int currentIndex) {
@@ -77,7 +130,7 @@ public abstract class PivotPoints implements Indicator<PivotResult> {
         BigDecimal secondSupport = calculateSecondSupport(currentIndex);
         BigDecimal thirdSupport = calculateThirdSupport(currentIndex);
         BigDecimal fourthSupport = calculateFourthSupport(currentIndex);
-        result[currentIndex] = new PivotResult(originalData[currentIndex].getTickTime(), pivot,
+        oneDayPivotPoints[currentIndex] = new PivotResult(originalData[currentIndex].getTickTime(), pivot,
                 firstResistance, secondResistance, thirdResistance, fourthResistance,
                 firstSupport, secondSupport, thirdSupport, fourthSupport);
     }

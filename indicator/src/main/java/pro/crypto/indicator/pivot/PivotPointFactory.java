@@ -20,15 +20,15 @@ public class PivotPointFactory {
 
         switch (request.getIndicatorType()) {
             case FLOOR_PIVOT_POINTS:
-                return new FloorPivotPoints(request.getOriginalData());
+                return new FloorPivotPoints(request.getOriginalData(), request.getResultData());
             case WOODIE_PIVOT_POINTS:
-                return new WoodiePivotPoints(request.getOriginalData());
+                return new WoodiePivotPoints(request.getOriginalData(), request.getResultData());
             case CAMARILLA_PIVOT_POINTS:
-                return new CamarillaPivotPoints(request.getOriginalData());
+                return new CamarillaPivotPoints(request.getOriginalData(), request.getResultData());
             case DE_MARK_PIVOT_POINTS:
-                return new DeMarkPivotPoints(request.getOriginalData());
+                return new DeMarkPivotPoints(request.getOriginalData(), request.getResultData());
             case FIBONACCI_PIVOT_POINTS:
-                return new FibonacciPivotPoints(request.getOriginalData());
+                return new FibonacciPivotPoints(request.getOriginalData(), request.getResultData());
             default:
                 throw new UnknownTypeException(format("Unknown Pivot Points type {type: {%s}}", request.getIndicatorType()));
         }

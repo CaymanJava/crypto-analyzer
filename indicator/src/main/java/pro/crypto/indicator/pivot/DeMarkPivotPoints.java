@@ -11,18 +11,13 @@ import static pro.crypto.model.IndicatorType.DE_MARK_PIVOT_POINTS;
 
 public class DeMarkPivotPoints extends PivotPoints {
 
-    DeMarkPivotPoints(Tick[] originalData) {
-        super(originalData);
+    DeMarkPivotPoints(Tick[] oneDayData, Tick[] resultTickData) {
+        super(oneDayData, resultTickData);
     }
 
     @Override
     public IndicatorType getType() {
         return DE_MARK_PIVOT_POINTS;
-    }
-
-    @Override
-    public void calculate() {
-        calculatePivotPoints();
     }
 
     @Override

@@ -16,6 +16,8 @@ public class PivotRequest implements IndicatorRequest {
 
     private Tick[] originalData;
 
+    private Tick[] resultData;
+
     private IndicatorType indicatorType;
 
 }

@@ -1,7 +1,6 @@
 package pro.crypto.model;
 
 import pro.crypto.exception.WrongIncomingParametersException;
-import pro.crypto.helper.IndicatorTypeChecker;
 import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
@@ -9,6 +8,7 @@ import static java.lang.String.format;
 import static java.util.Locale.ENGLISH;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static pro.crypto.helper.IndicatorTypeChecker.isMovingAverage;
 
 public interface Indicator<T extends IndicatorResult> {
 
@@ -69,7 +69,7 @@ public interface Indicator<T extends IndicatorResult> {
     }
 
     default void checkMovingAverageType(IndicatorType movingAverageType) {
-        if (nonNull(movingAverageType) && !IndicatorTypeChecker.isMovingAverageType(movingAverageType)) {
+        if (nonNull(movingAverageType) && !isMovingAverage(movingAverageType)) {
             throw new WrongIncomingParametersException(format("Incoming original indicator type is not a moving average {indicator: {%s}}, movingAverageType: {%s}",
                     getType().toString(), movingAverageType.toString()));
         }

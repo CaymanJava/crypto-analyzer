@@ -10,18 +10,13 @@ import static pro.crypto.model.IndicatorType.FLOOR_PIVOT_POINTS;
 
 public class FloorPivotPoints extends PivotPoints {
 
-    FloorPivotPoints(Tick[] originalData) {
-        super(originalData);
+    FloorPivotPoints(Tick[] oneDayData, Tick[] resultTickData) {
+        super(oneDayData, resultTickData);
     }
 
     @Override
     public IndicatorType getType() {
         return FLOOR_PIVOT_POINTS;
-    }
-
-    @Override
-    public void calculate() {
-        calculatePivotPoints();
     }
 
     @Override
@@ -75,7 +70,7 @@ public class FloorPivotPoints extends PivotPoints {
     BigDecimal calculateThirdSupport(int currentIndex) {
         return MathHelper.scaleAndRound(originalData[currentIndex - 1].getLow()
                 .subtract(originalData[currentIndex - 1].getHigh().subtract(pivot)
-                .multiply(new BigDecimal(2))));
+                        .multiply(new BigDecimal(2))));
     }
 
     @Override

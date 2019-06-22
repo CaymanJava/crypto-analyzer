@@ -24,20 +24,15 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 import static java.math.BigDecimal.ZERO;
 import static java.util.Arrays.stream;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static java.util.Optional.ofNullable;
-import static java.util.stream.Collectors.toMap;
 import static pro.crypto.helper.PriceVolumeExtractor.extractPrices;
 import static pro.crypto.model.IndicatorType.FLOOR_PIVOT_POINTS;
 import static pro.crypto.model.Position.ENTRY_LONG;
@@ -64,7 +59,6 @@ public class PivotRsiMacdMaStrategy implements Strategy<PivotRsiMacdMaResult> {
     private final int maPeriod;
     private final Set<Position> positions;
 
-    private Map<LocalDateTime, PivotResult> oneDayDataPivotPoints;
     private PivotResult[] originalDataPivotPoints;
     private BigDecimal[] pivotResults;
     private Signal[] pivotPriceCrossSignals;
@@ -125,59 +119,29 @@ public class PivotRsiMacdMaStrategy implements Strategy<PivotRsiMacdMaResult> {
 
     private void initResultArray() {
         result = stream(originalData)
-                .map(originalDatum -> PivotRsiMacdMaResult.builder()
-                        .time(originalDatum.getTickTime())
+                .map(originalData -> PivotRsiMacdMaResult.builder()
+                        .time(originalData.getTickTime())
                         .positions(new HashSet<>())
                         .build())
                 .toArray(PivotRsiMacdMaResult[]::new);
     }
 
     private void calculatePivotPoints() {
-        PivotResult[] oneDayPivots = calculateOneDayPivotPoints();
-        groupOneDayPivotPointsByDate(oneDayPivots);
-        defineOriginalDataPivotPoints();
+        calculateOneDayPivotPoints();
         extractPivotResults();
         findPivotPriceCrossSignals();
     }
 
-    private void groupOneDayPivotPointsByDate(PivotResult[] oneDayPivots) {
-        oneDayDataPivotPoints = Stream.of(oneDayPivots)
-                .collect(toMap(PivotResult::getTime, p -> p));
-    }
-
-    private PivotResult[] calculateOneDayPivotPoints() {
-        return PivotPointFactory.create(buildPivotRequest()).getResult();
+    private void calculateOneDayPivotPoints() {
+        originalDataPivotPoints =  PivotPointFactory.create(buildPivotRequest()).getResult();
     }
 
     private IndicatorRequest buildPivotRequest() {
         return PivotRequest.builder()
                 .originalData(oneDayTickData)
+                .resultData(originalData)
                 .indicatorType(FLOOR_PIVOT_POINTS)
                 .build();
-    }
-
-    private void defineOriginalDataPivotPoints() {
-        initOriginalDataPivotArray();
-        fillInOriginalDataPivot();
-    }
-
-    private void initOriginalDataPivotArray() {
-        originalDataPivotPoints = stream(originalData)
-                .map(originalDatum -> new PivotResult(originalDatum.getTickTime()))
-                .toArray(PivotResult[]::new);
-    }
-
-    private void fillInOriginalDataPivot() {
-        IntStream.range(0, originalDataPivotPoints.length)
-                .forEach(this::copyDayPivotPoints);
-    }
-
-    private void copyDayPivotPoints(int currentIndex) {
-        LocalDateTime startDayPivotPoint = originalDataPivotPoints[currentIndex].getTime().with(LocalTime.MIN);
-        PivotResult oneDayPivot = oneDayDataPivotPoints.get(startDayPivotPoint);
-        if (nonNull(oneDayPivot)) {
-            originalDataPivotPoints[currentIndex].copy(oneDayPivot);
-        }
     }
 
     private void extractPivotResults() {

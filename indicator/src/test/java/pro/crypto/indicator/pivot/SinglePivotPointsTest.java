@@ -12,7 +12,12 @@ import pro.crypto.model.IndicatorType;
 import pro.crypto.model.tick.Tick;
 
 import static org.junit.Assert.assertArrayEquals;
-import static pro.crypto.model.IndicatorType.*;
+import static pro.crypto.model.IndicatorType.CAMARILLA_PIVOT_POINTS;
+import static pro.crypto.model.IndicatorType.DE_MARK_PIVOT_POINTS;
+import static pro.crypto.model.IndicatorType.FIBONACCI_PIVOT_POINTS;
+import static pro.crypto.model.IndicatorType.FLOOR_PIVOT_POINTS;
+import static pro.crypto.model.IndicatorType.SIMPLE_MOVING_AVERAGE;
+import static pro.crypto.model.IndicatorType.WOODIE_PIVOT_POINTS;
 
 public class SinglePivotPointsTest extends IndicatorAbstractTest {
 
@@ -87,6 +92,7 @@ public class SinglePivotPointsTest extends IndicatorAbstractTest {
     protected PivotRequest buildRequest() {
         return PivotRequest.builder()
                 .originalData(originalData)
+                .resultData(originalData)
                 .build();
     }
 

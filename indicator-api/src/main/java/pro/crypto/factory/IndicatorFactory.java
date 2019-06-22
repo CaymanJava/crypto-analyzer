@@ -48,6 +48,7 @@ import pro.crypto.indicator.mi.MassIndex;
 import pro.crypto.indicator.obv.OnBalanceVolume;
 import pro.crypto.indicator.pgo.PrettyGoodOscillator;
 import pro.crypto.indicator.pivot.PivotPointFactory;
+import pro.crypto.indicator.pivot.PivotRequest;
 import pro.crypto.indicator.pmo.PriceMomentumOscillator;
 import pro.crypto.indicator.ppo.PercentagePriceOscillator;
 import pro.crypto.indicator.psar.ParabolicStopAndReverse;
@@ -80,11 +81,12 @@ import pro.crypto.indicator.wpr.WilliamsPercentRange;
 import pro.crypto.model.Indicator;
 import pro.crypto.model.IndicatorRequest;
 import pro.crypto.model.IndicatorType;
+import pro.crypto.model.tick.Tick;
 
 @Component
 public class IndicatorFactory {
 
-    public Indicator create(IndicatorRequest request, IndicatorType indicatorType) {
+    public Indicator create(IndicatorRequest request, IndicatorType indicatorType, Tick[] additionalTickData) {
         switch (indicatorType) {
             case ACCELERATION_DECELERATION_OSCILLATOR:
                 return new AccelerationDecelerationOscillator(request);
@@ -196,6 +198,7 @@ public class IndicatorFactory {
             case CAMARILLA_PIVOT_POINTS:
             case DE_MARK_PIVOT_POINTS:
             case FIBONACCI_PIVOT_POINTS:
+                switchTickData((PivotRequest) request, additionalTickData);
                 return PivotPointFactory.create(request);
             case PRICE_MOMENTUM_OSCILLATOR:
                 return new PriceMomentumOscillator(request);
@@ -259,6 +262,11 @@ public class IndicatorFactory {
             default:
                 return null;
         }
+    }
+
+    private void switchTickData(PivotRequest request, Tick[] additionalTickData) {
+        request.setResultData(request.getOriginalData());
+        request.setOriginalData(additionalTickData);
     }
 
 }

@@ -6,7 +6,11 @@ import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceDifferencesCalculator;
 import pro.crypto.indicator.ma.MARequest;
 import pro.crypto.indicator.ma.MovingAverageFactory;
-import pro.crypto.model.*;
+import pro.crypto.model.BigDecimalTuple;
+import pro.crypto.model.Indicator;
+import pro.crypto.model.IndicatorRequest;
+import pro.crypto.model.IndicatorType;
+import pro.crypto.model.SimpleIndicatorResult;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -119,7 +123,23 @@ public class RelativeStrengthIndex implements Indicator<RSIResult> {
 
     //RSI = 100 - (100 / (RS + 1))
     //RS = MA(positive) / MA(negative)
+    // If we use MA with price deviation (like TEMA) we'll get sometimes values > 100 and < 0
+    // I don't know how correct it is to use such MA for RSI calculation =)
     private BigDecimal calculateRelativeStrengthIndexValue(BigDecimal averageGain, BigDecimal averageLoss) {
+        BigDecimal rsiValue = calculateRelativeStrengthIndex(averageGain, averageLoss);
+        if (isNull(rsiValue)){
+            return null;
+        }
+        if (rsiValue.compareTo(BigDecimal.ZERO) < 0) {
+            return BigDecimal.ZERO;
+        }
+        if (rsiValue.compareTo(new BigDecimal(100)) > 0) {
+            return new BigDecimal(100);
+        }
+        return rsiValue;
+    }
+
+    private BigDecimal calculateRelativeStrengthIndex(BigDecimal averageGain, BigDecimal averageLoss) {
         BigDecimal relativeValue = MathHelper.divide(new BigDecimal(100),
                 BigDecimal.ONE.add(calculateRelativeStrength(averageGain, averageLoss)));
         return nonNull(relativeValue)

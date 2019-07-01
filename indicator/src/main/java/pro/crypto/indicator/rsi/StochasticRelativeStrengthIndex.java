@@ -97,9 +97,9 @@ public class StochasticRelativeStrengthIndex implements Indicator<RSIResult> {
     }
 
     private BigDecimal[] addEmptyFields(BigDecimal[] relativeStrengthIndexValues, BigDecimal[] values) {
-        return IntStream.range(0, relativeStrengthIndexValues.length)
-                .mapToObj(idx -> nonNull(relativeStrengthIndexValues[idx]) ? values[idx - rsiPeriod + 1] : null)
-                .toArray(BigDecimal[]::new);
+        BigDecimal[] result = new BigDecimal[relativeStrengthIndexValues.length];
+        System.arraycopy(values, 0, result, rsiPeriod - 1, values.length);
+        return result;
     }
 
     private BigDecimal[] extractNonNullValues(BigDecimal[] relativeStrengthIndexValues) {

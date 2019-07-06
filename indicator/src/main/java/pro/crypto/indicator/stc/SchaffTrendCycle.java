@@ -54,8 +54,8 @@ public class SchaffTrendCycle implements Indicator<STCResult> {
     @Override
     public void calculate() {
         BigDecimal[] macdValues = calculateMACDValues();
-        BigDecimal[] firstStochValues = calculateKStoch(macdValues, longCycle - 1);
-        BigDecimal[] secondStochValues = calculateKStoch(firstStochValues, longCycle + period - 2);
+        BigDecimal[] firstStochValues = calculateKStoch(macdValues);
+        BigDecimal[] secondStochValues = calculateKStoch(firstStochValues);
         buildSchaffTrendCycleResult(secondStochValues);
     }
 
@@ -96,24 +96,26 @@ public class SchaffTrendCycle implements Indicator<STCResult> {
                 .build();
     }
 
-    private BigDecimal[] calculateKStoch(BigDecimal[] originalValues, int shift) {
-        BigDecimal[] minValues = getMinValues(originalValues, shift);
-        BigDecimal[] maxMinDiffs = getMaxMinDiff(originalValues, minValues, shift);
+    private BigDecimal[] calculateKStoch(BigDecimal[] originalValues) {
+        BigDecimal[] minValues = getMinValues(originalValues);
+        BigDecimal[] maxMinDiffs = getMaxMinDiff(originalValues, minValues);
         BigDecimal[] kStochValues = calculateKStoch(originalValues, minValues, maxMinDiffs);
         return calculateDStochValues(kStochValues);
     }
 
-    private BigDecimal[] getMinValues(BigDecimal[] originalValues, int shift) {
-        BigDecimal[] minValues = MinMaxFinder.findMinValues(extractNonNullValues(originalValues), period);
+    private BigDecimal[] getMinValues(BigDecimal[] originalValues) {
+        BigDecimal[] nonNullMacdValues = extractNonNullValues(originalValues);
+        BigDecimal[] minValues = MinMaxFinder.findMinValues(nonNullMacdValues, period);
         BigDecimal[] result = new BigDecimal[originalData.length];
-        System.arraycopy(minValues, 0, result, shift, minValues.length);
+        System.arraycopy(minValues, 0, result, originalValues.length - nonNullMacdValues.length, minValues.length);
         return result;
     }
 
-    private BigDecimal[] getMaxMinDiff(BigDecimal[] macdValues, BigDecimal[] minValues, int shift) {
-        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(extractNonNullValues(macdValues), period);
+    private BigDecimal[] getMaxMinDiff(BigDecimal[] macdValues, BigDecimal[] minValues) {
+        BigDecimal[] nonNullMacdValues = extractNonNullValues(macdValues);
+        BigDecimal[] maxValues = MinMaxFinder.findMaxValues(nonNullMacdValues, period);
         BigDecimal[] maxValuesResult = new BigDecimal[originalData.length];
-        System.arraycopy(maxValues, 0, maxValuesResult, shift, maxValues.length);
+        System.arraycopy(maxValues, 0, maxValuesResult, macdValues.length - nonNullMacdValues.length, maxValues.length);
         return IntStream.range(0, originalData.length)
                 .mapToObj(idx -> calculateDifference(maxValuesResult[idx], minValues[idx]))
                 .toArray(BigDecimal[]::new);

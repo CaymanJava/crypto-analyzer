@@ -6,7 +6,7 @@ import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.ce.CEResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -15,8 +15,8 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.SELL;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class CEAnalyzer implements Analyzer<CEAnalyzerResult> {

@@ -5,7 +5,12 @@ import pro.crypto.helper.MathHelper;
 import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.rma.RMAResult;
-import pro.crypto.model.*;
+import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.analyzer.Signal;
+import pro.crypto.model.analyzer.SignalStrength;
+import pro.crypto.model.analyzer.Strength;
+import pro.crypto.model.analyzer.Trend;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -14,12 +19,15 @@ import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.SELL;
-import static pro.crypto.model.Strength.NORMAL;
-import static pro.crypto.model.Strength.STRONG;
-import static pro.crypto.model.Strength.WEAK;
-import static pro.crypto.model.Trend.*;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.SELL;
+import static pro.crypto.model.analyzer.Strength.NORMAL;
+import static pro.crypto.model.analyzer.Strength.STRONG;
+import static pro.crypto.model.analyzer.Strength.WEAK;
+import static pro.crypto.model.analyzer.Trend.CONSOLIDATION;
+import static pro.crypto.model.analyzer.Trend.DOWNTREND;
+import static pro.crypto.model.analyzer.Trend.UNDEFINED;
+import static pro.crypto.model.analyzer.Trend.UPTREND;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class RMAAnalyzer implements Analyzer<RMAAnalyzerResult> {

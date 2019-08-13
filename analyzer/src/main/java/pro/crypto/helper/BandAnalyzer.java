@@ -1,7 +1,7 @@
 package pro.crypto.helper;
 
-import pro.crypto.model.IndicatorBandResult;
 import pro.crypto.model.tick.Tick;
+import pro.crypto.response.IndicatorBandResult;
 
 import java.math.BigDecimal;
 

@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.model.tick.Tick;
+import pro.crypto.response.IndicatorResult;
 
 @Data
 @AllArgsConstructor

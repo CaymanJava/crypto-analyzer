@@ -1,13 +1,18 @@
 package pro.crypto.helper;
 
-import pro.crypto.model.SignalStrength;
-import pro.crypto.model.Strength;
+import pro.crypto.model.analyzer.SignalStrength;
+import pro.crypto.model.analyzer.Strength;
 
 import java.util.Objects;
 import java.util.stream.Stream;
 
-import static pro.crypto.model.Signal.*;
-import static pro.crypto.model.Strength.*;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.NEUTRAL;
+import static pro.crypto.model.analyzer.Signal.SELL;
+import static pro.crypto.model.analyzer.Strength.NORMAL;
+import static pro.crypto.model.analyzer.Strength.STRONG;
+import static pro.crypto.model.analyzer.Strength.UNDEFINED;
+import static pro.crypto.model.analyzer.Strength.WEAK;
 
 public class SignalStrengthMerger {
 
@@ -15,7 +20,7 @@ public class SignalStrengthMerger {
 
     private int sellPoints = 0;
 
-    public SignalStrength merge(SignalStrength ... signals) {
+    public SignalStrength merge(SignalStrength... signals) {
         Stream.of(signals)
                 .filter(Objects::nonNull)
                 .forEach(this::calculateSignalPoints);

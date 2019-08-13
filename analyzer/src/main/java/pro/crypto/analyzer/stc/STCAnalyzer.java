@@ -6,15 +6,15 @@ import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.stc.STCResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Optional.ofNullable;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.SELL;
 
 public class STCAnalyzer implements Analyzer<STCAnalyzerResult> {
 

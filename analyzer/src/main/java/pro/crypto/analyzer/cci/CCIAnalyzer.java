@@ -1,8 +1,16 @@
 package pro.crypto.analyzer.cci;
 
-import pro.crypto.helper.*;
+import pro.crypto.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SecurityLevelAnalyzer;
+import pro.crypto.helper.SignalArrayMerger;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.cci.CCIResult;
-import pro.crypto.model.*;
+import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.analyzer.SecurityLevel;
+import pro.crypto.model.analyzer.SignalStrength;
+import pro.crypto.model.analyzer.Strength;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -12,8 +20,8 @@ import java.util.stream.Stream;
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
 import static java.util.Optional.ofNullable;
-import static pro.crypto.model.Strength.NORMAL;
-import static pro.crypto.model.Strength.WEAK;
+import static pro.crypto.model.analyzer.Strength.NORMAL;
+import static pro.crypto.model.analyzer.Strength.WEAK;
 
 public class CCIAnalyzer implements Analyzer<CCIAnalyzerResult> {
 

@@ -25,7 +25,6 @@
         <module>specification</module>
         <module>front-office-api</module>
         <module>tick</module>
-        <module>indicator-api</module>
     </modules>
 
     <properties>
@@ -55,6 +54,7 @@
         <javax-el.version>2.2.4</javax-el.version>
         <javax-el-api.version>3.0.0</javax-el-api.version>
         <logback.version>1.2.3</logback.version>
+        <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
     </properties>
     <dependencyManagement>
         <dependencies>

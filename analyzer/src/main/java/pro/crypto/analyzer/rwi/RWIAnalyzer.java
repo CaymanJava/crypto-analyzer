@@ -3,16 +3,21 @@ package pro.crypto.analyzer.rwi;
 import pro.crypto.indicator.rwi.RWIResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.Signal;
-import pro.crypto.model.Trend;
+import pro.crypto.model.analyzer.Signal;
+import pro.crypto.model.analyzer.Trend;
 
 import java.util.stream.IntStream;
 
 import static java.math.BigDecimal.ONE;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.*;
-import static pro.crypto.model.Trend.*;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.NEUTRAL;
+import static pro.crypto.model.analyzer.Signal.SELL;
+import static pro.crypto.model.analyzer.Trend.CONSOLIDATION;
+import static pro.crypto.model.analyzer.Trend.DOWNTREND;
+import static pro.crypto.model.analyzer.Trend.UNDEFINED;
+import static pro.crypto.model.analyzer.Trend.UPTREND;
 
 public class RWIAnalyzer implements Analyzer<RWIAnalyzerResult> {
 

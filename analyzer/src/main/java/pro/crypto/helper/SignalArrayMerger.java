@@ -1,13 +1,13 @@
 package pro.crypto.helper;
 
-import pro.crypto.model.Signal;
-import pro.crypto.model.SignalStrength;
-import pro.crypto.model.Strength;
+import pro.crypto.model.analyzer.Signal;
+import pro.crypto.model.analyzer.SignalStrength;
+import pro.crypto.model.analyzer.Strength;
 
 import java.util.stream.IntStream;
 
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.NEUTRAL;
+import static pro.crypto.model.analyzer.Signal.NEUTRAL;
 
 public class SignalArrayMerger {
 

@@ -4,14 +4,16 @@ import lombok.Data;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 
 import java.util.Collection;
 
 import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;
 import static org.junit.runners.Parameterized.Parameters;
-import static pro.crypto.model.Signal.*;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.NEUTRAL;
+import static pro.crypto.model.analyzer.Signal.SELL;
 
 @RunWith(Parameterized.class)
 public class SignalMergerTest {

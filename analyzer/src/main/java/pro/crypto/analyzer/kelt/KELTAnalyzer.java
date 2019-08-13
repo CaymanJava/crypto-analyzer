@@ -6,7 +6,7 @@ import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.kelt.KELTResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.SignalStrength;
+import pro.crypto.model.analyzer.SignalStrength;
 import pro.crypto.model.result.AnalyzerResult;
 import pro.crypto.model.tick.Tick;
 
@@ -16,9 +16,11 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
-import static pro.crypto.helper.BandAnalyzer.*;
-import static pro.crypto.model.Strength.STRONG;
-import static pro.crypto.model.Strength.WEAK;
+import static pro.crypto.helper.BandAnalyzer.isLowerBandCrossPriceRange;
+import static pro.crypto.helper.BandAnalyzer.isMiddleBandCrossPriceRange;
+import static pro.crypto.helper.BandAnalyzer.isUpperBandCrossPriceRange;
+import static pro.crypto.model.analyzer.Strength.STRONG;
+import static pro.crypto.model.analyzer.Strength.WEAK;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class KELTAnalyzer implements Analyzer<KELTAnalyzerResult> {

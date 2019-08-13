@@ -1,0 +1,8587 @@
+[
+  {
+    "tick": {
+      "open": 6503.39000000,
+      "high": 6517.44916128,
+      "low": 6495.74950006,
+      "close": 6500.00000000,
+      "volume": 8.47580725,
+      "baseVolume": 55093.25516336,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6509.96999989,
+      "high": 6509.96999989,
+      "low": 6493.00000000,
+      "close": 6483.00000015,
+      "volume": 0.90408650,
+      "baseVolume": 5870.81144075,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6480.00000000,
+      "high": 6493.00000000,
+      "low": 6414.00000000,
+      "close": 6405.20000000,
+      "volume": 69.72796813,
+      "baseVolume": 448358.78434027,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6425.00000000,
+      "high": 6434.94000000,
+      "low": 6372.99999969,
+      "close": 6375.60999584,
+      "volume": 77.64643638,
+      "baseVolume": 494613.31645841,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6352.48223020,
+      "high": 6394.91224762,
+      "low": 6376.00000001,
+      "close": 6387.49999987,
+      "volume": 13.62621987,
+      "baseVolume": 86856.18439822,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6368.00000000,
+      "high": 6400.02522199,
+      "low": 6363.00000000,
+      "close": 6370.00000000,
+      "volume": 34.84162393,
+      "baseVolume": 222623.58645730,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6363.55356000,
+      "high": 6391.63999120,
+      "low": 6370.00000000,
+      "close": 6391.63999119,
+      "volume": 11.76421031,
+      "baseVolume": 75008.17020865,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6381.00000000,
+      "high": 6391.63998935,
+      "low": 6371.00000013,
+      "close": 6385.00000000,
+      "volume": 9.30915138,
+      "baseVolume": 59366.16068660,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6363.00000000,
+      "high": 6379.99999995,
+      "low": 6360.00000000,
+      "close": 6375.99999999,
+      "volume": 5.65612222,
+      "baseVolume": 35988.67082988,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6350.00000001,
+      "high": 6379.99999918,
+      "low": 6353.90530001,
+      "close": 6354.00000000,
+      "volume": 7.11804343,
+      "baseVolume": 45309.97906287,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6378.99999975,
+      "high": 6378.99999975,
+      "low": 6340.00000001,
+      "close": 6340.00000001,
+      "volume": 8.03876838,
+      "baseVolume": 51134.58891141,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6370.39999976,
+      "high": 6370.39999976,
+      "low": 6340.00000000,
+      "close": 6329.00000000,
+      "volume": 20.88803173,
+      "baseVolume": 132345.26519946,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6334.00000000,
+      "high": 6348.57999916,
+      "low": 6323.00000000,
+      "close": 6317.00000000,
+      "volume": 3.23304338,
+      "baseVolume": 20454.94275695,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6324.00000000,
+      "high": 6350.50999796,
+      "low": 6325.00000000,
+      "close": 6326.00000501,
+      "volume": 8.18436120,
+      "baseVolume": 51961.14629976,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6350.50999796,
+      "high": 6367.39999683,
+      "low": 6340.00000000,
+      "close": 6350.50999796,
+      "volume": 3.85908772,
+      "baseVolume": 24477.99306990,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6350.50999796,
+      "high": 6369.99999999,
+      "low": 6365.99999900,
+      "close": 6359.56709531,
+      "volume": 3.72343946,
+      "baseVolume": 23692.09277658,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6370.00000000,
+      "high": 6372.99999999,
+      "low": 6352.00000006,
+      "close": 6355.00000024,
+      "volume": 6.05322648,
+      "baseVolume": 38520.55406047,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -23.5361791432
+  },
+  {
+    "tick": {
+      "open": 6359.36530351,
+      "high": 6372.99999999,
+      "low": 6352.00000009,
+      "close": 6372.99999999,
+      "volume": 14.96103260,
+      "baseVolume": 95165.89536536,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -18.7243947959
+  },
+  {
+    "tick": {
+      "open": 6372.99999999,
+      "high": 6388.49999998,
+      "low": 6359.00000004,
+      "close": 6384.77290606,
+      "volume": 8.11988881,
+      "baseVolume": 51723.81088236,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -13.6272976642
+  },
+  {
+    "tick": {
+      "open": 6384.77290605,
+      "high": 6391.63999032,
+      "low": 6360.00000000,
+      "close": 6380.00000000,
+      "volume": 1.01691946,
+      "baseVolume": 6477.05040733,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -10.2972250696
+  },
+  {
+    "tick": {
+      "open": 6385.25000000,
+      "high": 6385.25000000,
+      "low": 6373.55000000,
+      "close": 6373.55000000,
+      "volume": 2.86689057,
+      "baseVolume": 18272.90293595,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -8.4573668544
+  },
+  {
+    "tick": {
+      "open": 6380.55000000,
+      "high": 6391.63999091,
+      "low": 6380.55000000,
+      "close": 6391.63999091,
+      "volume": 3.45026056,
+      "baseVolume": 22015.56193065,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -4.9665432500
+  },
+  {
+    "tick": {
+      "open": 6390.63999090,
+      "high": 6391.63999092,
+      "low": 6373.55000000,
+      "close": 6391.63999091,
+      "volume": 0.44651868,
+      "baseVolume": 2853.46479593,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -2.4305036408
+  },
+  {
+    "tick": {
+      "open": 6380.00000000,
+      "high": 6380.00000000,
+      "low": 6358.00000003,
+      "close": 6358.00000003,
+      "volume": 5.49446088,
+      "baseVolume": 34948.12522352,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -4.3549566349
+  },
+  {
+    "tick": {
+      "open": 6356.00000002,
+      "high": 6377.06999968,
+      "low": 6356.00000000,
+      "close": 6356.00000000,
+      "volume": 5.13979841,
+      "baseVolume": 32681.98007452,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -5.8001350876,
+    "macdSignalLineValue": -10.24384468228888888889,
+    "macdBarChartValue": 4.4437095947,
+    "maResult": 6376.54519893880000000000
+  },
+  {
+    "tick": {
+      "open": 6356.10000000,
+      "high": 6373.77999997,
+      "low": 6352.00000010,
+      "close": 6352.00000010,
+      "volume": 3.86674266,
+      "baseVolume": 24584.14602628,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -7.1005020293,
+    "macdSignalLineValue": -9.6151761517,
+    "macdBarChartValue": 2.5146741224,
+    "maResult": 6374.6571067204
+  },
+  {
+    "tick": {
+      "open": 6352.00000000,
+      "high": 6369.45082748,
+      "low": 6342.70728000,
+      "close": 6358.88888888,
+      "volume": 4.98579548,
+      "baseVolume": 31699.34129252,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -7.0587680251,
+    "macdSignalLineValue": -9.1038945264,
+    "macdBarChartValue": 2.0451265013,
+    "maResult": 6373.4441668865
+  },
+  {
+    "tick": {
+      "open": 6352.00000000,
+      "high": 6396.87525004,
+      "low": 6368.13000000,
+      "close": 6369.00000007,
+      "volume": 27.22080989,
+      "baseVolume": 173864.49967296,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -5.7321675190,
+    "macdSignalLineValue": -8.4295491249,
+    "macdBarChartValue": 2.6973816059,
+    "maResult": 6373.1023079006
+  },
+  {
+    "tick": {
+      "open": 6369.00000019,
+      "high": 6379.99999999,
+      "low": 6359.10000000,
+      "close": 6359.10000000,
+      "volume": 11.63765942,
+      "baseVolume": 74129.99534591,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -5.7734766208,
+    "macdSignalLineValue": -7.8983346241,
+    "macdBarChartValue": 2.1248580033,
+    "maResult": 6372.0252072929
+  },
+  {
+    "tick": {
+      "open": 6377.71104701,
+      "high": 6377.75070520,
+      "low": 6350.00000000,
+      "close": 6372.41845153,
+      "volume": 38.13508792,
+      "baseVolume": 241503.98489891,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -4.1796530738,
+    "macdSignalLineValue": -7.1545983140,
+    "macdBarChartValue": 2.9749452402,
+    "maResult": 6372.0554568496
+  },
+  {
+    "tick": {
+      "open": 6355.00000000,
+      "high": 6373.20395497,
+      "low": 6354.00000000,
+      "close": 6373.13573099,
+      "volume": 5.49704024,
+      "baseVolume": 34985.60559552,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -2.8948513464,
+    "macdSignalLineValue": -6.3026489205,
+    "macdBarChartValue": 3.4077975741,
+    "maResult": 6372.1385548604
+  },
+  {
+    "tick": {
+      "open": 6373.13573100,
+      "high": 6377.99880737,
+      "low": 6343.00000006,
+      "close": 6350.00000004,
+      "volume": 14.98425945,
+      "baseVolume": 95158.14705697,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -4.5057523232,
+    "macdSignalLineValue": -5.9432696010,
+    "macdBarChartValue": 1.4375172778,
+    "maResult": 6370.4355891050
+  },
+  {
+    "tick": {
+      "open": 6364.29301092,
+      "high": 6364.29301092,
+      "low": 6343.00000005,
+      "close": 6343.00000005,
+      "volume": 7.31697412,
+      "baseVolume": 46459.09839566,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -6.2859862734,
+    "macdSignalLineValue": -6.0118129355,
+    "macdBarChartValue": -0.2741733379,
+    "maResult": 6368.3251591777
+  },
+  {
+    "tick": {
+      "open": 6359.99999997,
+      "high": 6364.29300926,
+      "low": 6334.00000000,
+      "close": 6351.08506926,
+      "volume": 24.26991448,
+      "baseVolume": 154336.94297884,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -6.4632147397,
+    "macdSignalLineValue": -6.1020932963,
+    "macdBarChartValue": -0.3611214434,
+    "maResult": 6366.9989984148
+  },
+  {
+    "tick": {
+      "open": 6360.94782508,
+      "high": 6360.99999998,
+      "low": 6337.00000000,
+      "close": 6333.00000000,
+      "volume": 11.49630643,
+      "baseVolume": 72995.96379465,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -8.4356096530,
+    "macdSignalLineValue": -6.5687965676,
+    "macdBarChartValue": -1.8668130854,
+    "maResult": 6364.3836908444
+  },
+  {
+    "tick": {
+      "open": 6333.00000000,
+      "high": 6360.80216187,
+      "low": 6331.00000000,
+      "close": 6360.80216184,
+      "volume": 6.94305547,
+      "baseVolume": 44013.09084929,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -6.5018249527,
+    "macdSignalLineValue": -6.5554022446,
+    "macdBarChartValue": 0.0535772919,
+    "maResult": 6364.1081886133
+  },
+  {
+    "tick": {
+      "open": 6360.80216167,
+      "high": 6365.65360149,
+      "low": 6330.00000000,
+      "close": 6354.26599943,
+      "volume": 1.45269773,
+      "baseVolume": 9229.68237379,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -5.7305887622,
+    "macdSignalLineValue": -6.3904395481,
+    "macdBarChartValue": 0.6598507859,
+    "maResult": 6363.3510971377
+  },
+  {
+    "tick": {
+      "open": 6327.00000000,
+      "high": 6364.30997868,
+      "low": 6325.00000000,
+      "close": 6328.00000000,
+      "volume": 6.07214935,
+      "baseVolume": 38394.17578127,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -7.9743367953,
+    "macdSignalLineValue": -6.7072189975,
+    "macdBarChartValue": -1.2671177978,
+    "maResult": 6360.6317819733
+  },
+  {
+    "tick": {
+      "open": 6352.26955695,
+      "high": 6352.26955695,
+      "low": 6330.00000000,
+      "close": 6337.00000000,
+      "volume": 2.85814760,
+      "baseVolume": 18131.73116279,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -8.3286727985,
+    "macdSignalLineValue": -7.0315097577,
+    "macdBarChartValue": -1.2971630408,
+    "maResult": 6358.8139525907
+  },
+  {
+    "tick": {
+      "open": 6328.00000000,
+      "high": 6366.39999986,
+      "low": 6337.00000000,
+      "close": 6366.39999986,
+      "volume": 3.00894302,
+      "baseVolume": 19113.16482310,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -5.1013329447,
+    "macdSignalLineValue": -6.6454743951,
+    "macdBarChartValue": 1.5441414504,
+    "maResult": 6359.3974946883
+  },
+  {
+    "tick": {
+      "open": 6349.00000045,
+      "high": 6365.39999931,
+      "low": 6337.00055500,
+      "close": 6349.99999999,
+      "volume": 3.27212297,
+      "baseVolume": 20755.81323442,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -4.5663490080,
+    "macdSignalLineValue": -6.2296493177,
+    "macdBarChartValue": 1.6633003097,
+    "maResult": 6358.6746104807
+  },
+  {
+    "tick": {
+      "open": 6338.00000000,
+      "high": 6363.60588696,
+      "low": 6316.30000045,
+      "close": 6351.77066938,
+      "volume": 5.22062260,
+      "baseVolume": 33090.48136474,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -3.8869931688,
+    "macdSignalLineValue": -5.7611180879,
+    "macdBarChartValue": 1.8741249191,
+    "maResult": 6358.1435380883
+  },
+  {
+    "tick": {
+      "open": 6320.00000003,
+      "high": 6368.99999965,
+      "low": 6325.00000003,
+      "close": 6350.00000000,
+      "volume": 1.52584520,
+      "baseVolume": 9667.07026253,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -3.5180809599,
+    "macdSignalLineValue": -5.3125106623,
+    "macdBarChartValue": 1.7944297024,
+    "maResult": 6357.5171120815
+  },
+  {
+    "tick": {
+      "open": 6349.99999999,
+      "high": 6367.29999980,
+      "low": 6339.00000800,
+      "close": 6349.99999998,
+      "volume": 3.18938193,
+      "baseVolume": 20243.42782961,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -3.1761643495,
+    "macdSignalLineValue": -4.8852413997,
+    "macdBarChartValue": 1.7090770502,
+    "maResult": 6356.9388726891
+  },
+  {
+    "tick": {
+      "open": 6350.00000000,
+      "high": 6363.19399298,
+      "low": 6332.00000000,
+      "close": 6362.83110594,
+      "volume": 1.91636356,
+      "baseVolume": 12171.90188243,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -1.4356753061,
+    "macdSignalLineValue": -4.1953281810,
+    "macdBarChartValue": 2.7596528749,
+    "maResult": 6357.3921214007
+  },
+  {
+    "tick": {
+      "open": 6358.18871753,
+      "high": 6363.36029465,
+      "low": 6347.65000000,
+      "close": 6347.65000000,
+      "volume": 1.78630930,
+      "baseVolume": 11348.73620402,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -1.8837150149,
+    "macdSignalLineValue": -3.7330055478,
+    "macdBarChartValue": 1.8492905329,
+    "maResult": 6356.6427274468
+  },
+  {
+    "tick": {
+      "open": 6336.00000000,
+      "high": 6367.20000000,
+      "low": 6335.00000006,
+      "close": 6365.99999994,
+      "volume": 7.14525185,
+      "baseVolume": 45415.10773972,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -0.1080704989,
+    "macdSignalLineValue": -3.0080185380,
+    "macdBarChartValue": 2.8999480391,
+    "maResult": 6357.3625176386
+  },
+  {
+    "tick": {
+      "open": 6335.00000006,
+      "high": 6364.37264704,
+      "low": 6332.00000000,
+      "close": 6351.99999954,
+      "volume": 8.83176596,
+      "baseVolume": 55952.58789242,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -0.4333516064,
+    "macdSignalLineValue": -2.4930851517,
+    "macdBarChartValue": 2.0597335453,
+    "maResult": 6356.9500162464
+  },
+  {
+    "tick": {
+      "open": 6333.00000001,
+      "high": 6351.99999951,
+      "low": 6317.00000003,
+      "close": 6330.00000000,
+      "volume": 7.93803242,
+      "baseVolume": 50190.55007542,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -3.0919816640,
+    "macdSignalLineValue": -2.6128644542,
+    "macdBarChartValue": -0.4791172098,
+    "maResult": 6354.8769380736
+  },
+  {
+    "tick": {
+      "open": 6343.84460968,
+      "high": 6343.84460968,
+      "low": 6328.00000000,
+      "close": 6323.00000001,
+      "volume": 0.25803602,
+      "baseVolume": 1634.88373298,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -5.6314794394,
+    "macdSignalLineValue": -3.2165874512,
+    "macdBarChartValue": -2.4148919882,
+    "maResult": 6352.4248659149
+  },
+  {
+    "tick": {
+      "open": 6335.82189769,
+      "high": 6349.81999999,
+      "low": 6325.00000000,
+      "close": 6325.00000000,
+      "volume": 3.26026868,
+      "baseVolume": 20632.44159641,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -7.0259105090,
+    "macdSignalLineValue": -3.9784520628,
+    "macdBarChartValue": -3.0474584462,
+    "maResult": 6350.3152608445
+  },
+  {
+    "tick": {
+      "open": 6345.92524988,
+      "high": 6349.82000000,
+      "low": 6339.00000000,
+      "close": 6339.00000000,
+      "volume": 3.74169505,
+      "baseVolume": 23744.05582277,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -6.2609267914,
+    "macdSignalLineValue": -4.4349470085,
+    "macdBarChartValue": -1.8259797829,
+    "maResult": 6349.4448561642
+  },
+  {
+    "tick": {
+      "open": 6339.00000000,
+      "high": 6339.00000000,
+      "low": 6325.00000000,
+      "close": 6323.00000000,
+      "volume": 7.16351541,
+      "baseVolume": 45338.79918391,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -7.3552361523,
+    "macdSignalLineValue": -5.0190048373,
+    "macdBarChartValue": -2.3362313150,
+    "maResult": 6347.4106364593
+  },
+  {
+    "tick": {
+      "open": 6323.00000000,
+      "high": 6334.50677500,
+      "low": 6317.70000004,
+      "close": 6317.70000004,
+      "volume": 4.16029877,
+      "baseVolume": 26308.10725047,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -8.5190738257,
+    "macdSignalLineValue": -5.7190186350,
+    "macdBarChartValue": -2.8000551907,
+    "maResult": 6345.1252028886
+  },
+  {
+    "tick": {
+      "open": 6270.00000000,
+      "high": 6339.50317354,
+      "low": 6270.00000000,
+      "close": 6321.02985001,
+      "volume": 20.62011533,
+      "baseVolume": 129467.97870948,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -8.7433715088,
+    "macdSignalLineValue": -6.3238892098,
+    "macdBarChartValue": -2.4194822990,
+    "maResult": 6343.2717142056
+  },
+  {
+    "tick": {
+      "open": 6395.00000000,
+      "high": 6397.45569624,
+      "low": 6373.62000000,
+      "close": 6374.00000000,
+      "volume": 10.11474593,
+      "baseVolume": 64560.97199609,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": -2.7969835746,
+    "macdSignalLineValue": -5.6185080828,
+    "macdBarChartValue": 2.8215245082,
+    "maResult": 6345.6354284975
+  },
+  {
+    "tick": {
+      "open": 6367.63000000,
+      "high": 6394.99999999,
+      "low": 6385.60419999,
+      "close": 6379.00000000,
+      "volume": 16.87767501,
+      "baseVolume": 107802.17606731,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": 1.9387163201,
+    "macdSignalLineValue": -4.1070632022,
+    "macdBarChartValue": 6.0457795223,
+    "maResult": 6348.2019339977
+  },
+  {
+    "tick": {
+      "open": 6365.00000000,
+      "high": 6387.99999996,
+      "low": 6365.00000000,
+      "close": 6387.99999996,
+      "volume": 2.60357281,
+      "baseVolume": 16604.50037850,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": 6.1649109016,
+    "macdSignalLineValue": -2.0526683814,
+    "macdBarChartValue": 8.2175792830,
+    "maResult": 6351.2633236871
+  },
+  {
+    "tick": {
+      "open": 6387.99999993,
+      "high": 6387.99999993,
+      "low": 6368.81999925,
+      "close": 6352.80000003,
+      "volume": 3.15550124,
+      "baseVolume": 20117.46919954,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": 5.0233933138,
+    "macdSignalLineValue": -0.6374560424,
+    "macdBarChartValue": 5.6608493562,
+    "maResult": 6351.3815295596
+  },
+  {
+    "tick": {
+      "open": 6368.81999925,
+      "high": 6388.00000000,
+      "low": 6360.00000001,
+      "close": 6382.00000000,
+      "volume": 2.36129500,
+      "baseVolume": 15073.60058733,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": 7.3546060074,
+    "macdSignalLineValue": 0.9609563676,
+    "macdBarChartValue": 6.3936496398,
+    "maResult": 6353.7367965166
+  },
+  {
+    "tick": {
+      "open": 6360.00000000,
+      "high": 6379.99999999,
+      "low": 6374.00000000,
+      "close": 6374.00000000,
+      "volume": 2.50917903,
+      "baseVolume": 15977.11538511,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": 7.8958245115,
+    "macdSignalLineValue": 2.3479299964,
+    "macdBarChartValue": 5.5478945151,
+    "maResult": 6355.2955044769
+  },
+  {
+    "tick": {
+      "open": 6367.00000000,
+      "high": 6386.99999999,
+      "low": 6367.00000000,
+      "close": 6360.44681309,
+      "volume": 2.89241528,
+      "baseVolume": 18423.80731069,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": 6.5691319808,
+    "macdSignalLineValue": 3.1921703933,
+    "macdBarChartValue": 3.3769615875,
+    "maResult": 6355.6917589856
+  },
+  {
+    "tick": {
+      "open": 6386.99999999,
+      "high": 6387.00000000,
+      "low": 6361.33235141,
+      "close": 6377.99999983,
+      "volume": 1.15646734,
+      "baseVolume": 7381.83609082,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": 7.4400657460,
+    "macdSignalLineValue": 4.0417494638,
+    "macdBarChartValue": 3.3983162822,
+    "maResult": 6357.4077775121
+  },
+  {
+    "tick": {
+      "open": 6355.00000000,
+      "high": 6386.99999850,
+      "low": 6355.00000000,
+      "close": 6358.00000000,
+      "volume": 4.50854341,
+      "baseVolume": 28720.52710048,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": 5.6362652632,
+    "macdSignalLineValue": 4.3606526237,
+    "macdBarChartValue": 1.2756126395,
+    "maResult": 6357.4533330881
+  },
+  {
+    "tick": {
+      "open": 6358.00000000,
+      "high": 6384.89999637,
+      "low": 6358.00000000,
+      "close": 6381.19999982,
+      "volume": 5.15340322,
+      "baseVolume": 32833.07764329,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": 6.8278040387,
+    "macdSignalLineValue": 4.8540829067,
+    "macdBarChartValue": 1.9737211320,
+    "maResult": 6359.2799997598
+  },
+  {
+    "tick": {
+      "open": 6370.00000000,
+      "high": 6381.19430340,
+      "low": 6356.50000000,
+      "close": 6355.00000000,
+      "volume": 2.41051784,
+      "baseVolume": 15345.20484296,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": 4.5718850877,
+    "macdSignalLineValue": 4.7976433429,
+    "macdBarChartValue": -0.2257582552,
+    "maResult": 6358.9507690090
+  },
+  {
+    "tick": {
+      "open": 6364.53250000,
+      "high": 6370.00000000,
+      "low": 6364.53250000,
+      "close": 6355.00000000,
+      "volume": 0.70317156,
+      "baseVolume": 4474.83690575,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "macdValue": 2.8993513663,
+    "macdSignalLineValue": 4.4179849476,
+    "macdBarChartValue": -1.5186335813,
+    "maResult": 6358.6468637006
+  },
+  {
+    "tick": {
+      "open": 6368.00000000,
+      "high": 6386.72750356,
+      "low": 6355.00000000,
+      "close": 6386.72750348,
+      "volume": 5.30871214,
+      "baseVolume": 33857.60208273,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 92.2422311173,
+    "macdValue": 5.1967209983,
+    "macdSignalLineValue": 4.5737321577,
+    "macdBarChartValue": 0.6229888406,
+    "maResult": 6360.8069129144
+  },
+  {
+    "tick": {
+      "open": 6355.00000000,
+      "high": 6386.99999503,
+      "low": 6355.00000000,
+      "close": 6386.99999500,
+      "volume": 14.50703164,
+      "baseVolume": 92545.77029572,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 96.1211155586,
+    "macdValue": 6.6869886659,
+    "macdSignalLineValue": 4.9963834593,
+    "macdBarChartValue": 1.6906052066,
+    "maResult": 6362.8217653825
+  },
+  {
+    "tick": {
+      "open": 6355.00000002,
+      "high": 6385.79315600,
+      "low": 6355.00000002,
+      "close": 6375.00000002,
+      "volume": 4.12656638,
+      "baseVolume": 26339.22509601,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 98.0605577793,
+    "macdValue": 6.2188535700,
+    "macdSignalLineValue": 5.2408774814,
+    "macdBarChartValue": 0.9779760886,
+    "maResult": 6363.7585526623
+  },
+  {
+    "tick": {
+      "open": 6375.00000002,
+      "high": 6391.00000000,
+      "low": 6360.00000000,
+      "close": 6391.00000000,
+      "volume": 4.02857402,
+      "baseVolume": 25680.13310728,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.0302788898,
+    "macdValue": 7.5194304503,
+    "macdSignalLineValue": 5.6965880752,
+    "macdBarChartValue": 1.8228423751,
+    "maResult": 6365.8540486114
+  },
+  {
+    "tick": {
+      "open": 6395.00000000,
+      "high": 6395.00000000,
+      "low": 6376.00000000,
+      "close": 6376.00000000,
+      "volume": 2.96824473,
+      "baseVolume": 18941.26187767,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.5151394451,
+    "macdValue": 6.5662630973,
+    "macdSignalLineValue": 5.8705230796,
+    "macdBarChartValue": 0.6957400177,
+    "maResult": 6366.6345064105
+  },
+  {
+    "tick": {
+      "open": 6376.00000000,
+      "high": 6394.99999950,
+      "low": 6376.00000000,
+      "close": 6376.01000000,
+      "volume": 4.22129265,
+      "baseVolume": 26929.66431090,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.7575697219,
+    "macdValue": 5.7462643570,
+    "macdSignalLineValue": 5.8456713351,
+    "macdBarChartValue": -0.0994069781,
+    "maResult": 6367.3556982251
+  },
+  {
+    "tick": {
+      "open": 6376.00000000,
+      "high": 6390.99999996,
+      "low": 6370.00000000,
+      "close": 6373.74256401,
+      "volume": 8.95439265,
+      "baseVolume": 57130.65037128,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.8787848616,
+    "macdValue": 4.7855312449,
+    "macdSignalLineValue": 5.6336433171,
+    "macdBarChartValue": -0.8481120722,
+    "maResult": 6367.8469955932
+  },
+  {
+    "tick": {
+      "open": 6370.00000000,
+      "high": 6390.99999989,
+      "low": 6370.00000003,
+      "close": 6373.00000000,
+      "volume": 8.77004261,
+      "baseVolume": 55884.04622102,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9393924312,
+    "macdValue": 3.9206523207,
+    "macdSignalLineValue": 5.2910451178,
+    "macdBarChartValue": -1.3703927971,
+    "maResult": 6368.2433805476
+  },
+  {
+    "tick": {
+      "open": 6374.00000000,
+      "high": 6386.89999999,
+      "low": 6363.00000000,
+      "close": 6385.99999958,
+      "volume": 5.39352270,
+      "baseVolume": 34372.91469414,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9696962158,
+    "macdValue": 4.6703495037,
+    "macdSignalLineValue": 5.1669059950,
+    "macdBarChartValue": -0.4965564913,
+    "maResult": 6369.6092743193
+  },
+  {
+    "tick": {
+      "open": 6380.00000000,
+      "high": 6385.99999967,
+      "low": 6363.00000000,
+      "close": 6379.99999981,
+      "volume": 0.78408180,
+      "baseVolume": 4999.98045648,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9848481081,
+    "macdValue": 4.4066747545,
+    "macdSignalLineValue": 5.0148597469,
+    "macdBarChartValue": -0.6081849924,
+    "maResult": 6370.4085608955
+  },
+  {
+    "tick": {
+      "open": 6379.99999999,
+      "high": 6379.99999999,
+      "low": 6379.00000000,
+      "close": 6365.99999999,
+      "volume": 5.40877896,
+      "baseVolume": 34489.35075936,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_LONG"
+    ],
+    "stcResult": 49.9924240544,
+    "macdValue": 2.5600187811,
+    "macdSignalLineValue": 4.5238915537,
+    "macdBarChartValue": -1.9638727726,
+    "maResult": 6370.0694408258
+  },
+  {
+    "tick": {
+      "open": 6379.99999999,
+      "high": 6385.00000000,
+      "low": 6370.00000000,
+      "close": 6376.00000000,
+      "volume": 27.23410494,
+      "baseVolume": 173798.81741264,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 24.9962120270,
+    "macdValue": 2.3312191270,
+    "macdSignalLineValue": 4.0853570684,
+    "macdBarChartValue": -1.7541379414,
+    "maResult": 6370.5256376854
+  },
+  {
+    "tick": {
+      "open": 6376.56755619,
+      "high": 6385.76999827,
+      "low": 6360.00000000,
+      "close": 6360.00000000,
+      "volume": 6.10605597,
+      "baseVolume": 38921.91728633,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 12.4981060135,
+    "macdValue": 0.3376979062,
+    "macdSignalLineValue": 3.3358252360,
+    "macdBarChartValue": -2.9981273298,
+    "maResult": 6369.7159732481
+  },
+  {
+    "tick": {
+      "open": 6379.73499802,
+      "high": 6385.75999689,
+      "low": 6361.67000000,
+      "close": 6382.00000000,
+      "volume": 2.69339142,
+      "baseVolume": 17174.89232918,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 6.2490530068,
+    "macdValue": 1.3955672373,
+    "macdSignalLineValue": 2.9477736363,
+    "macdBarChartValue": -1.5522063990,
+    "maResult": 6370.6608983829
+  },
+  {
+    "tick": {
+      "open": 6382.00000000,
+      "high": 6385.70000000,
+      "low": 6385.69999999,
+      "close": 6385.70000000,
+      "volume": 11.13117404,
+      "baseVolume": 70874.72337654,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_SHORT"
+    ],
+    "stcResult": 28.1264659931,
+    "macdValue": 2.5035863493,
+    "macdSignalLineValue": 2.8589361789,
+    "macdBarChartValue": -0.3553498296,
+    "maResult": 6371.8177523534
+  },
+  {
+    "tick": {
+      "open": 6385.00000000,
+      "high": 6394.28169117,
+      "low": 6385.70000000,
+      "close": 6392.17873383,
+      "volume": 3.23406056,
+      "baseVolume": 20662.14011072,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6360.00000000,
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stcResult": 51.5661422310,
+    "macdValue": 3.9276666214,
+    "macdSignalLineValue": 3.0726822674,
+    "macdBarChartValue": 0.8549843540,
+    "maResult": 6373.3839816978
+  },
+  {
+    "tick": {
+      "open": 6391.86346842,
+      "high": 6413.02949940,
+      "low": 6391.86346842,
+      "close": 6408.00000000,
+      "volume": 7.79966018,
+      "baseVolume": 49916.47573807,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 69.5364652224,
+    "macdValue": 6.5731549859,
+    "macdSignalLineValue": 3.7727768111,
+    "macdBarChartValue": 2.8003781748,
+    "maResult": 6376.0467523364
+  },
+  {
+    "tick": {
+      "open": 6408.00000000,
+      "high": 6418.75191358,
+      "low": 6400.00000001,
+      "close": 6400.00000000,
+      "volume": 9.33983210,
+      "baseVolume": 59911.87870664,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 81.6468691543,
+    "macdValue": 7.3509455839,
+    "macdSignalLineValue": 4.4884105657,
+    "macdBarChartValue": 2.8625350182,
+    "maResult": 6377.8893098490
+  },
+  {
+    "tick": {
+      "open": 6429.99999997,
+      "high": 6436.42164183,
+      "low": 6395.90000000,
+      "close": 6400.00000006,
+      "volume": 4.51620116,
+      "baseVolume": 28962.85938896,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 89.2646923383,
+    "macdValue": 7.7071725328,
+    "macdSignalLineValue": 5.1321629591,
+    "macdBarChartValue": 2.5750095737,
+    "maResult": 6379.5901321729
+  },
+  {
+    "tick": {
+      "open": 6400.00000006,
+      "high": 6415.00000000,
+      "low": 6400.00000006,
+      "close": 6410.00000000,
+      "volume": 4.98100449,
+      "baseVolume": 31933.71933745,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 94.6323461691,
+    "macdValue": 8.8742634407,
+    "macdSignalLineValue": 5.8805830554,
+    "macdBarChartValue": 2.9936803853,
+    "maResult": 6381.9293527750
+  },
+  {
+    "tick": {
+      "open": 6410.00000000,
+      "high": 6440.50000000,
+      "low": 6408.50000000,
+      "close": 6413.27155696,
+      "volume": 3.77537433,
+      "baseVolume": 24229.14786996,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 97.3161730846,
+    "macdValue": 9.8255298184,
+    "macdSignalLineValue": 6.6695724080,
+    "macdBarChartValue": 3.1559574104,
+    "maResult": 6384.3402915585
+  },
+  {
+    "tick": {
+      "open": 6440.49999994,
+      "high": 6457.00000000,
+      "low": 6433.87768126,
+      "close": 6453.00000000,
+      "volume": 11.73956939,
+      "baseVolume": 75681.14918712,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 98.6580865423,
+    "macdValue": 14.6548612366,
+    "macdSignalLineValue": 8.2666301737,
+    "macdBarChartValue": 6.3882310629,
+    "maResult": 6389.6218075925
+  },
+  {
+    "tick": {
+      "open": 6445.55000000,
+      "high": 6453.89219937,
+      "low": 6436.00000000,
+      "close": 6423.00000000,
+      "volume": 10.83290802,
+      "baseVolume": 69800.03062705,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.3290432712,
+    "macdValue": 14.2984765076,
+    "macdSignalLineValue": 9.4729994405,
+    "macdBarChartValue": 4.8254770671,
+    "maResult": 6392.1893608546
+  },
+  {
+    "tick": {
+      "open": 6438.88000000,
+      "high": 6449.86195185,
+      "low": 6428.00000000,
+      "close": 6428.00000000,
+      "volume": 1.22882541,
+      "baseVolume": 7917.95877574,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.6645216356,
+    "macdValue": 14.2545938182,
+    "macdSignalLineValue": 10.4293183160,
+    "macdBarChartValue": 3.8252755022,
+    "maResult": 6394.9440254042
+  },
+  {
+    "tick": {
+      "open": 6428.00000000,
+      "high": 6449.86194981,
+      "low": 6412.95201071,
+      "close": 6448.78999831,
+      "volume": 0.90393522,
+      "baseVolume": 5816.07650358,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.8322608178,
+    "macdValue": 16.1822897015,
+    "macdSignalLineValue": 11.5799125931,
+    "macdBarChartValue": 4.6023771084,
+    "maResult": 6399.0860233200
+  },
+  {
+    "tick": {
+      "open": 6412.95201071,
+      "high": 6448.78999779,
+      "low": 6405.99137701,
+      "close": 6416.00000001,
+      "volume": 2.96778114,
+      "baseVolume": 19026.85897794,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9161304082,
+    "macdValue": 13.4721218664,
+    "macdSignalLineValue": 11.9583544478,
+    "macdBarChartValue": 1.5137674186,
+    "maResult": 6400.3870984500
+  },
+  {
+    "tick": {
+      "open": 6416.00000000,
+      "high": 6439.00000000,
+      "low": 6416.00000000,
+      "close": 6432.56100000,
+      "volume": 0.60001533,
+      "baseVolume": 3861.95628216,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9580652048,
+    "macdValue": 13.1058917111,
+    "macdSignalLineValue": 12.1878619005,
+    "macdBarChartValue": 0.9180298106,
+    "maResult": 6402.8620139538
+  },
+  {
+    "tick": {
+      "open": 6432.56000000,
+      "high": 6438.99999991,
+      "low": 6416.00000000,
+      "close": 6420.00000000,
+      "volume": 3.90433563,
+      "baseVolume": 25074.69476763,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9790326002,
+    "macdValue": 11.1334266232,
+    "macdSignalLineValue": 11.9769748450,
+    "macdBarChartValue": -0.8435482218,
+    "maResult": 6404.1803205727
+  },
+  {
+    "tick": {
+      "open": 6434.65999999,
+      "high": 6434.65999999,
+      "low": 6413.14531071,
+      "close": 6413.14531070,
+      "volume": 3.06964768,
+      "baseVolume": 19726.96941598,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_LONG"
+    ],
+    "stcResult": 49.9895162993,
+    "macdValue": 8.7332154890,
+    "macdSignalLineValue": 11.3282229738,
+    "macdBarChartValue": -2.5950074848,
+    "maResult": 6404.8699351979
+  },
+  {
+    "tick": {
+      "open": 6413.14531053,
+      "high": 6415.50000000,
+      "low": 6405.00000001,
+      "close": 6395.91000000,
+      "volume": 9.43286294,
+      "baseVolume": 60412.30786483,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 24.9947581498,
+    "macdValue": 4.9431407879,
+    "macdSignalLineValue": 10.0512065366,
+    "macdBarChartValue": -5.1080657487,
+    "maResult": 6404.1807094134
+  },
+  {
+    "tick": {
+      "open": 6415.49999778,
+      "high": 6419.84384968,
+      "low": 6391.10000001,
+      "close": 6419.84384968,
+      "volume": 0.77131252,
+      "baseVolume": 4943.58884066,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 12.4973790750,
+    "macdValue": 4.8601060012,
+    "macdSignalLineValue": 9.0129864295,
+    "macdBarChartValue": -4.1528804283,
+    "maResult": 6405.3855663570
+  },
+  {
+    "tick": {
+      "open": 6393.00000001,
+      "high": 6430.49999997,
+      "low": 6393.00000000,
+      "close": 6430.49999983,
+      "volume": 1.03623559,
+      "baseVolume": 6638.31678820,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 6.2486895374,
+    "macdValue": 5.8667133011,
+    "macdSignalLineValue": 8.3837318038,
+    "macdBarChartValue": -2.5170185027,
+    "maResult": 6407.3174458549
+  },
+  {
+    "tick": {
+      "open": 6394.79000039,
+      "high": 6430.00000000,
+      "low": 6394.79000039,
+      "close": 6411.00000000,
+      "volume": 8.40727926,
+      "baseVolume": 53833.62176736,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 3.1243447687,
+    "macdValue": 4.2511155693,
+    "macdSignalLineValue": 7.5572085569,
+    "macdBarChartValue": -3.3060929876,
+    "maResult": 6407.6007192507
+  },
+  {
+    "tick": {
+      "open": 6429.79999979,
+      "high": 6448.18584765,
+      "low": 6420.00000000,
+      "close": 6444.99999989,
+      "volume": 8.10991113,
+      "baseVolume": 52228.61173507,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 7.5444198158,
+    "macdValue": 6.8069710618,
+    "macdSignalLineValue": 7.4071610579,
+    "macdBarChartValue": -0.6001899961,
+    "maResult": 6410.4775869922
+  },
+  {
+    "tick": {
+      "open": 6435.00000000,
+      "high": 6448.18584769,
+      "low": 6420.99999999,
+      "close": 6441.66028331,
+      "volume": 2.43275404,
+      "baseVolume": 15643.91664385,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_SHORT"
+    ],
+    "stcResult": 31.7643887852,
+    "macdValue": 8.0348292869,
+    "macdSignalLineValue": 7.5326947037,
+    "macdBarChartValue": 0.5021345832,
+    "maResult": 6412.8762559397
+  },
+  {
+    "tick": {
+      "open": 6441.66028359,
+      "high": 6449.86194928,
+      "low": 6431.00000000,
+      "close": 6431.00000000,
+      "volume": 8.65371579,
+      "baseVolume": 55713.41803261,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6391.10000001,
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stcResult": 54.8793389929,
+    "macdValue": 7.5008521541,
+    "macdSignalLineValue": 7.5263261938,
+    "macdBarChartValue": -0.0254740397,
+    "maResult": 6414.2703900982
+  },
+  {
+    "tick": {
+      "open": 6434.73039571,
+      "high": 6449.86194928,
+      "low": 6440.00000000,
+      "close": 6444.05161017,
+      "volume": 7.16401774,
+      "baseVolume": 46108.96301353,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 71.9392969581,
+    "macdValue": 8.3966554601,
+    "macdSignalLineValue": 7.7003920471,
+    "macdBarChartValue": 0.6962634130,
+    "maResult": 6416.5612531806
+  },
+  {
+    "tick": {
+      "open": 6429.99999990,
+      "high": 6440.00000000,
+      "low": 6420.00000001,
+      "close": 6423.49284000,
+      "volume": 1.44086792,
+      "baseVolume": 9268.22041381,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 73.1887204337,
+    "macdValue": 6.5243436414,
+    "macdSignalLineValue": 7.4651823660,
+    "macdBarChartValue": -0.9408387246,
+    "maResult": 6417.0944521667
+  },
+  {
+    "tick": {
+      "open": 6419.25780000,
+      "high": 6443.99999999,
+      "low": 6420.00000020,
+      "close": 6420.00000020,
+      "volume": 1.21707705,
+      "baseVolume": 7837.46727205,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 53.0586986134,
+    "macdValue": 4.6807176250,
+    "macdSignalLineValue": 6.9082894178,
+    "macdBarChartValue": -2.2275717928,
+    "maResult": 6417.3179558616
+  },
+  {
+    "tick": {
+      "open": 6420.00000020,
+      "high": 6438.00000000,
+      "low": 6416.00000000,
+      "close": 6416.00000000,
+      "volume": 3.61725894,
+      "baseVolume": 23219.94418905,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 26.5293493067,
+    "macdValue": 2.8460942426,
+    "macdSignalLineValue": 6.0958503828,
+    "macdBarChartValue": -3.2497561402,
+    "maResult": 6417.2165746415
+  },
+  {
+    "tick": {
+      "open": 6420.00000000,
+      "high": 6443.99999998,
+      "low": 6428.56000002,
+      "close": 6428.56000002,
+      "volume": 8.76315434,
+      "baseVolume": 56378.49816267,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 13.2646746534,
+    "macdValue": 2.9029942708,
+    "macdSignalLineValue": 5.4572791604,
+    "macdBarChartValue": -2.5542848896,
+    "maResult": 6418.0891458245
+  },
+  {
+    "tick": {
+      "open": 6446.99999974,
+      "high": 6447.00000007,
+      "low": 6430.00000001,
+      "close": 6430.00000001,
+      "volume": 1.69957580,
+      "baseVolume": 10947.30837863,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 6.6323373267,
+    "macdValue": 3.0306536899,
+    "macdSignalLineValue": 4.9719540663,
+    "macdBarChartValue": -1.9413003764,
+    "maResult": 6419.0053653772
+  },
+  {
+    "tick": {
+      "open": 6430.00000001,
+      "high": 6440.00000000,
+      "low": 6420.00999000,
+      "close": 6440.00000000,
+      "volume": 0.32983858,
+      "baseVolume": 2122.77996552,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 3.3161686634,
+    "macdValue": 4.1551922084,
+    "macdSignalLineValue": 4.8086016947,
+    "macdBarChartValue": -0.6534094863,
+    "maResult": 6420.6203372713
+  },
+  {
+    "tick": {
+      "open": 6440.00000000,
+      "high": 6447.00000006,
+      "low": 6440.00000000,
+      "close": 6440.00000000,
+      "volume": 2.18962645,
+      "baseVolume": 14095.44643402,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 3.2518803558,
+    "macdValue": 4.8300535987,
+    "macdSignalLineValue": 4.8128920755,
+    "macdBarChartValue": 0.0171615232,
+    "maResult": 6422.1110805581
+  },
+  {
+    "tick": {
+      "open": 6440.00000001,
+      "high": 6446.99999996,
+      "low": 6415.01000004,
+      "close": 6445.41929690,
+      "volume": 4.00323763,
+      "baseVolume": 25700.31802728,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 9.5455745207,
+    "macdValue": 5.7795079538,
+    "macdSignalLineValue": 5.0062152512,
+    "macdBarChartValue": 0.7732927026,
+    "maResult": 6423.9040202767
+  },
+  {
+    "tick": {
+      "open": 6431.00000000,
+      "high": 6435.80000000,
+      "low": 6411.01000006,
+      "close": 6411.01000006,
+      "volume": 1.22742719,
+      "baseVolume": 7885.18365428,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 4.7727872604,
+    "macdValue": 2.4699617367,
+    "macdSignalLineValue": 4.4989645483,
+    "macdBarChartValue": -2.0290028116,
+    "maResult": 6422.9121725677
+  },
+  {
+    "tick": {
+      "open": 6431.55999990,
+      "high": 6431.56000000,
+      "low": 6411.01000003,
+      "close": 6427.00000000,
+      "volume": 1.59507342,
+      "baseVolume": 10250.23219657,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 2.3863936302,
+    "macdValue": 1.8975603520,
+    "macdSignalLineValue": 3.9786837090,
+    "macdBarChartValue": -2.0811233570,
+    "maResult": 6423.2266208317
+  },
+  {
+    "tick": {
+      "open": 6411.01000003,
+      "high": 6427.00000000,
+      "low": 6411.01000001,
+      "close": 6411.01000001,
+      "volume": 2.62213156,
+      "baseVolume": 16845.23090255,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 1.1931968151,
+    "macdValue": -0.3216939463,
+    "macdSignalLineValue": 3.1186081779,
+    "macdBarChartValue": -3.4403021242,
+    "maResult": 6422.2868807685
+  },
+  {
+    "tick": {
+      "open": 6411.01000001,
+      "high": 6428.00000000,
+      "low": 6411.01000001,
+      "close": 6414.00000000,
+      "volume": 0.57762421,
+      "baseVolume": 3705.81252523,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.5965984076,
+    "macdValue": -1.5158279327,
+    "macdSignalLineValue": 2.1917209558,
+    "macdBarChartValue": -3.7075488885,
+    "maResult": 6421.6494284017
+  },
+  {
+    "tick": {
+      "open": 6411.01000002,
+      "high": 6428.00000000,
+      "low": 6411.01000002,
+      "close": 6427.00000000,
+      "volume": 0.40238800,
+      "baseVolume": 2583.57126617,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.2982992038,
+    "macdValue": -0.8595297521,
+    "macdSignalLineValue": 1.5814708142,
+    "macdBarChartValue": -2.4410005663,
+    "maResult": 6422.0610108323
+  },
+  {
+    "tick": {
+      "open": 6420.57000000,
+      "high": 6428.00000000,
+      "low": 6420.57000000,
+      "close": 6427.99999999,
+      "volume": 1.08062622,
+      "baseVolume": 6943.04529328,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.1491496019,
+    "macdValue": -0.2734586716,
+    "macdSignalLineValue": 1.2104849170,
+    "macdBarChartValue": -1.4839435886,
+    "maResult": 6422.5178561521
+  },
+  {
+    "tick": {
+      "open": 6410.00000250,
+      "high": 6427.99999997,
+      "low": 6410.00000250,
+      "close": 6427.99999997,
+      "volume": 0.53969177,
+      "baseVolume": 3461.29295751,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0745748009,
+    "macdValue": 0.1384783367,
+    "macdSignalLineValue": 0.9960836009,
+    "macdBarChartValue": -0.8576052642,
+    "maResult": 6422.9395595227
+  },
+  {
+    "tick": {
+      "open": 6410.00000000,
+      "high": 6427.99999998,
+      "low": 6410.00000002,
+      "close": 6419.64256451,
+      "volume": 0.41691992,
+      "baseVolume": 2676.69054601,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0372874004,
+    "macdValue": -0.5087488651,
+    "macdSignalLineValue": 0.6951171077,
+    "macdBarChartValue": -1.2038659728,
+    "maResult": 6422.6859445217
+  },
+  {
+    "tick": {
+      "open": 6421.57000000,
+      "high": 6421.57000000,
+      "low": 6360.00000000,
+      "close": 6370.00000000,
+      "volume": 14.51423354,
+      "baseVolume": 92475.52095959,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0186437002,
+    "macdValue": -6.4594933856,
+    "macdSignalLineValue": -0.7358049910,
+    "macdBarChartValue": -5.7236883946,
+    "maResult": 6418.6331795585
+  },
+  {
+    "tick": {
+      "open": 6370.00000000,
+      "high": 6384.19463644,
+      "low": 6359.45310000,
+      "close": 6374.09999999,
+      "volume": 1.06042138,
+      "baseVolume": 6749.36131910,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0093218503,
+    "macdValue": -9.9585391445,
+    "macdSignalLineValue": -2.5803518217,
+    "macdBarChartValue": -7.3781873228,
+    "maResult": 6415.2075503609
+  },
+  {
+    "tick": {
+      "open": 6375.00000000,
+      "high": 6375.00000000,
+      "low": 6375.00000000,
+      "close": 6375.00000000,
+      "volume": 6.45236317,
+      "baseVolume": 41128.25896648,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0046609253,
+    "macdValue": -12.0317426521,
+    "macdSignalLineValue": -4.4706299878,
+    "macdBarChartValue": -7.5611126643,
+    "maResult": 6412.1146618716
+  },
+  {
+    "tick": {
+      "open": 6375.00000000,
+      "high": 6375.00000000,
+      "low": 6373.10000009,
+      "close": 6375.00000000,
+      "volume": 1.65606090,
+      "baseVolume": 10556.51783654,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0023304628,
+    "macdValue": -13.1679884684,
+    "macdSignalLineValue": -6.2101016839,
+    "macdBarChartValue": -6.9578867845,
+    "maResult": 6409.2596878815
+  },
+  {
+    "tick": {
+      "open": 6367.25000000,
+      "high": 6375.00000000,
+      "low": 6352.70000000,
+      "close": 6322.12000013,
+      "volume": 8.37923621,
+      "baseVolume": 53207.70587926,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0011652302,
+    "macdValue": -19.5039611549,
+    "macdSignalLineValue": -8.8688735781,
+    "macdBarChartValue": -10.6350875768,
+    "maResult": 6402.5566349775
+  },
+  {
+    "tick": {
+      "open": 6361.99999999,
+      "high": 6374.99999994,
+      "low": 6369.90000000,
+      "close": 6369.90000001,
+      "volume": 3.98012631,
+      "baseVolume": 25354.06948084,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0005826166,
+    "macdValue": -18.0939185526,
+    "macdSignalLineValue": -10.7138825730,
+    "macdBarChartValue": -7.3800359796,
+    "maResult": 6400.0445861338
+  },
+  {
+    "tick": {
+      "open": 6375.00000000,
+      "high": 6382.11794255,
+      "low": 6360.00000028,
+      "close": 6375.14397653,
+      "volume": 0.92123721,
+      "baseVolume": 5873.47292113,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0002913045,
+    "macdValue": -16.0896468055,
+    "macdSignalLineValue": -11.7890354195,
+    "macdBarChartValue": -4.3006113860,
+    "maResult": 6398.1291546258
+  },
+  {
+    "tick": {
+      "open": 6355.92511740,
+      "high": 6388.10165992,
+      "low": 6349.44325015,
+      "close": 6349.44325015,
+      "volume": 2.53960112,
+      "baseVolume": 16193.70723762,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0001456591,
+    "macdValue": -17.1623384842,
+    "macdSignalLineValue": -12.8636960324,
+    "macdBarChartValue": -4.2986424518,
+    "maResult": 6394.3840850507
+  },
+  {
+    "tick": {
+      "open": 6350.00000001,
+      "high": 6382.45028349,
+      "low": 6374.37000000,
+      "close": 6381.00000001,
+      "volume": 1.54522950,
+      "baseVolume": 9857.06621650,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0000728364,
+    "macdValue": -13.9738855002,
+    "macdSignalLineValue": -13.0857339260,
+    "macdBarChartValue": -0.8881515742,
+    "maResult": 6393.3545400476
+  },
+  {
+    "tick": {
+      "open": 6355.71889422,
+      "high": 6381.00000001,
+      "low": 6351.00000028,
+      "close": 6381.00000001,
+      "volume": 1.47359470,
+      "baseVolume": 9359.05555218,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0000364250,
+    "macdValue": -11.4244887335,
+    "macdSignalLineValue": -12.7534848875,
+    "macdBarChartValue": 1.3289961540,
+    "maResult": 6392.4041908139
+  },
+  {
+    "tick": {
+      "open": 6368.25000000,
+      "high": 6383.61000000,
+      "low": 6357.84000056,
+      "close": 6357.84000056,
+      "volume": 1.79156948,
+      "baseVolume": 11427.10620937,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0000182193,
+    "macdValue": -11.9531899514,
+    "macdSignalLineValue": -12.5934259003,
+    "macdBarChartValue": 0.6402359489,
+    "maResult": 6389.7454069482
+  },
+  {
+    "tick": {
+      "open": 6357.95000004,
+      "high": 6380.00000000,
+      "low": 6357.95000004,
+      "close": 6380.00000000,
+      "volume": 3.67714777,
+      "baseVolume": 23458.58129698,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0000089458,
+    "macdValue": -9.5613491284,
+    "macdSignalLineValue": -11.9870105459,
+    "macdBarChartValue": 2.4256614175,
+    "maResult": 6388.9957602599
+  },
+  {
+    "tick": {
+      "open": 6381.00000000,
+      "high": 6392.48970000,
+      "low": 6381.00000000,
+      "close": 6390.25000000,
+      "volume": 1.30632383,
+      "baseVolume": 8337.89102832,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_SHORT"
+    ],
+    "stcResult": 50.0000044728,
+    "macdValue": -6.5327591982,
+    "macdSignalLineValue": -10.8961602764,
+    "macdBarChartValue": 4.3634010782,
+    "maResult": 6389.0922402399
+  },
+  {
+    "tick": {
+      "open": 6399.99999995,
+      "high": 6400.00000000,
+      "low": 6390.00000000,
+      "close": 6393.90000000,
+      "volume": 2.73393014,
+      "baseVolume": 17477.55333774,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 75.0000022362,
+    "macdValue": -3.8720609947,
+    "macdSignalLineValue": -9.4913404201,
+    "macdBarChartValue": 5.6192794254,
+    "maResult": 6389.4620679138
+  },
+  {
+    "tick": {
+      "open": 6393.60000000,
+      "high": 6393.90000000,
+      "low": 6370.43000039,
+      "close": 6393.90000000,
+      "volume": 2.46254261,
+      "baseVolume": 15713.29936764,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 87.5000011181,
+    "macdValue": -1.9369594961,
+    "macdSignalLineValue": -7.9804642353,
+    "macdBarChartValue": 6.0435047392,
+    "maResult": 6389.8034473050
+  },
+  {
+    "tick": {
+      "open": 6393.90000000,
+      "high": 6398.00000000,
+      "low": 6370.00000000,
+      "close": 6385.56166687,
+      "volume": 4.52855335,
+      "baseVolume": 28824.21060633,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 93.7500005590,
+    "macdValue": -1.4777668449,
+    "macdSignalLineValue": -6.6799247572,
+    "macdBarChartValue": 5.2021579123,
+    "maResult": 6389.4771565023
+  },
+  {
+    "tick": {
+      "open": 6362.00000001,
+      "high": 6392.99999999,
+      "low": 6380.00010000,
+      "close": 6383.03823219,
+      "volume": 2.60890283,
+      "baseVolume": 16658.77710836,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 96.8750002795,
+    "macdValue": -1.4041938815,
+    "macdSignalLineValue": -5.6247785821,
+    "macdBarChartValue": 4.2205847006,
+    "maResult": 6388.9818546321
+  },
+  {
+    "tick": {
+      "open": 6379.25000000,
+      "high": 6385.00000000,
+      "low": 6373.50000000,
+      "close": 6385.00000000,
+      "volume": 1.61275916,
+      "baseVolume": 10295.10613407,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 98.4375001397,
+    "macdValue": -1.1006829679,
+    "macdSignalLineValue": -4.7199594593,
+    "macdBarChartValue": 3.6192764914,
+    "maResult": 6388.6755581219
+  },
+  {
+    "tick": {
+      "open": 6384.99999994,
+      "high": 6389.83105533,
+      "low": 6360.00000000,
+      "close": 6369.08633508,
+      "volume": 1.89450462,
+      "baseVolume": 12060.63742518,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 94.7263652949,
+    "macdValue": -2.6318558960,
+    "macdSignalLineValue": -4.3023387466,
+    "macdBarChartValue": 1.6704828506,
+    "maResult": 6387.1686948110
+  },
+  {
+    "tick": {
+      "open": 6369.08633508,
+      "high": 6387.87359884,
+      "low": 6360.00000000,
+      "close": 6360.00000000,
+      "volume": 2.56571037,
+      "baseVolume": 16364.95361929,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_LONG"
+    ],
+    "stcResult": 74.6715273248,
+    "macdValue": -4.6350532776,
+    "macdSignalLineValue": -4.3688816528,
+    "macdBarChartValue": -0.2661716248,
+    "maResult": 6385.0787952102
+  },
+  {
+    "tick": {
+      "open": 6355.00010000,
+      "high": 6380.00000000,
+      "low": 6355.00010000,
+      "close": 6374.00000000,
+      "volume": 0.53104806,
+      "baseVolume": 3382.11481142,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6389.83105533,
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "stcResult": 52.9746274552,
+    "macdValue": -4.3499785469,
+    "macdSignalLineValue": -4.3651010316,
+    "macdBarChartValue": 0.0151224847,
+    "maResult": 6384.2265801940
+  },
+  {
+    "tick": {
+      "open": 6360.00000000,
+      "high": 6402.24392781,
+      "low": 6375.19304240,
+      "close": 6402.24392781,
+      "volume": 13.69082523,
+      "baseVolume": 87604.75843490,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 55.5995164932,
+    "macdValue": -0.9072687653,
+    "macdSignalLineValue": -3.6735345783,
+    "macdBarChartValue": 2.7662658130,
+    "maResult": 6385.6125300106
+  },
+  {
+    "tick": {
+      "open": 6402.24392781,
+      "high": 6411.34724990,
+      "low": 6410.00000000,
+      "close": 6410.86660579,
+      "volume": 2.66205657,
+      "baseVolume": 17032.60929099,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 73.0172472650,
+    "macdValue": 2.4533532978,
+    "macdSignalLineValue": -2.4481570031,
+    "macdBarChartValue": 4.9015103009,
+    "maResult": 6387.5551512244
+  },
+  {
+    "tick": {
+      "open": 6380.00000003,
+      "high": 6405.00000000,
+      "low": 6395.00000000,
+      "close": 6405.00000000,
+      "volume": 1.04549683,
+      "baseVolume": 6691.02998804,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 86.5086236325,
+    "macdValue": 4.0643246168,
+    "macdSignalLineValue": -1.1456606791,
+    "macdBarChartValue": 5.2099852959,
+    "maResult": 6388.8970626687
+  },
+  {
+    "tick": {
+      "open": 6406.84000000,
+      "high": 6425.80000000,
+      "low": 6406.84000000,
+      "close": 6423.39999991,
+      "volume": 1.65825253,
+      "baseVolume": 10647.35712545,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 93.2543118163,
+    "macdValue": 7.1221733059,
+    "macdSignalLineValue": 0.5079061179,
+    "macdBarChartValue": 6.6142671880,
+    "maResult": 6391.5511347642
+  },
+  {
+    "tick": {
+      "open": 6400.00000000,
+      "high": 6416.92999999,
+      "low": 6396.00000000,
+      "close": 6414.99999975,
+      "volume": 1.34022102,
+      "baseVolume": 8585.00902792,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 96.6271559081,
+    "macdValue": 8.1270520533,
+    "macdSignalLineValue": 2.0317353050,
+    "macdBarChartValue": 6.0953167483,
+    "maResult": 6393.3548936093
+  },
+  {
+    "tick": {
+      "open": 6405.59400000,
+      "high": 6420.09714641,
+      "low": 6385.12345601,
+      "close": 6420.00000000,
+      "volume": 4.16434072,
+      "baseVolume": 26700.07960457,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 98.3135779540,
+    "macdValue": 9.1766706705,
+    "macdSignalLineValue": 3.4607223781,
+    "macdBarChartValue": 5.7159482924,
+    "maResult": 6395.4045171778
+  },
+  {
+    "tick": {
+      "open": 6387.96502916,
+      "high": 6425.79999970,
+      "low": 6400.00000000,
+      "close": 6425.76999809,
+      "volume": 2.86173681,
+      "baseVolume": 18368.13149953,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.1567889770,
+    "macdValue": 10.3168593623,
+    "macdSignalLineValue": 4.8319497749,
+    "macdBarChartValue": 5.4849095874,
+    "maResult": 6397.7403234018
+  },
+  {
+    "tick": {
+      "open": 6412.91845774,
+      "high": 6422.99999977,
+      "low": 6390.00000005,
+      "close": 6394.60224854,
+      "volume": 3.46604844,
+      "baseVolume": 22184.28125434,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.0979021127,
+    "macdValue": 7.3873174125,
+    "macdSignalLineValue": 5.3430233024,
+    "macdBarChartValue": 2.0442941101,
+    "maResult": 6397.4989330278
+  },
+  {
+    "tick": {
+      "open": 6416.58000000,
+      "high": 6425.76999984,
+      "low": 6394.60224852,
+      "close": 6424.54999785,
+      "volume": 2.04491431,
+      "baseVolume": 13098.95537596,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.5489510564,
+    "macdValue": 8.5070798789,
+    "macdSignalLineValue": 5.9758346177,
+    "macdBarChartValue": 2.5312452612,
+    "maResult": 6399.5797841680
+  },
+  {
+    "tick": {
+      "open": 6416.07000000,
+      "high": 6425.00000000,
+      "low": 6400.00000000,
+      "close": 6418.58000000,
+      "volume": 0.69643936,
+      "baseVolume": 4471.96381900,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.7744755282,
+    "macdValue": 8.4078521963,
+    "macdSignalLineValue": 6.4622381334,
+    "macdBarChartValue": 1.9456140629,
+    "maResult": 6401.0413392320
+  },
+  {
+    "tick": {
+      "open": 6470.68339880,
+      "high": 6498.99999999,
+      "low": 6455.00000000,
+      "close": 6444.99000001,
+      "volume": 11.61449830,
+      "baseVolume": 74903.01033407,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.8872377641,
+    "macdValue": 11.0660934984,
+    "macdSignalLineValue": 7.3830092064,
+    "macdBarChartValue": 3.6830842920,
+    "maResult": 6404.4220054457
+  },
+  {
+    "tick": {
+      "open": 6448.50341766,
+      "high": 6482.33117115,
+      "low": 6470.00000000,
+      "close": 6470.00000000,
+      "volume": 8.43848051,
+      "baseVolume": 54647.50073158,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9436188819,
+    "macdValue": 15.4095419654,
+    "macdSignalLineValue": 8.9883157582,
+    "macdBarChartValue": 6.4212262072,
+    "maResult": 6409.4664665653
+  },
+  {
+    "tick": {
+      "open": 6470.00000000,
+      "high": 6515.08651997,
+      "low": 6470.00000000,
+      "close": 6463.17348004,
+      "volume": 13.59140953,
+      "baseVolume": 88189.96445457,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9718094411,
+    "macdValue": 17.2734351825,
+    "macdSignalLineValue": 10.6453396431,
+    "macdBarChartValue": 6.6280955394,
+    "maResult": 6413.5977752941
+  },
+  {
+    "tick": {
+      "open": 6474.69750001,
+      "high": 6512.89999985,
+      "low": 6476.71945912,
+      "close": 6493.03321772,
+      "volume": 19.67860642,
+      "baseVolume": 127817.00950514,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9859047208,
+    "macdValue": 21.4532967740,
+    "macdSignalLineValue": 12.8069310693,
+    "macdBarChartValue": 8.6463657047,
+    "maResult": 6419.7081939422
+  },
+  {
+    "tick": {
+      "open": 6490.00000000,
+      "high": 6490.00000000,
+      "low": 6476.34735554,
+      "close": 6490.00000000,
+      "volume": 5.73717711,
+      "baseVolume": 37095.54659936,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9929523590,
+    "macdValue": 23.4763424048,
+    "macdSignalLineValue": 14.9408133364,
+    "macdBarChartValue": 8.5355290684,
+    "maResult": 6425.1152559466
+  },
+  {
+    "tick": {
+      "open": 6489.99999997,
+      "high": 6495.00000000,
+      "low": 6457.18023429,
+      "close": 6488.00000000,
+      "volume": 1.85450371,
+      "baseVolume": 12022.72956747,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9964761805,
+    "macdValue": 24.0731062383,
+    "macdSignalLineValue": 16.7672719168,
+    "macdBarChartValue": 7.3058343215,
+    "maResult": 6429.9525439507
+  },
+  {
+    "tick": {
+      "open": 6485.00000000,
+      "high": 6488.99999999,
+      "low": 6464.89147779,
+      "close": 6464.89147779,
+      "volume": 3.25051373,
+      "baseVolume": 21065.65984182,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9982380891,
+    "macdValue": 21.3236724397,
+    "macdSignalLineValue": 17.6785520214,
+    "macdBarChartValue": 3.6451204183,
+    "maResult": 6432.6401542460
+  },
+  {
+    "tick": {
+      "open": 6464.89147780,
+      "high": 6489.00000000,
+      "low": 6464.89147780,
+      "close": 6465.00000000,
+      "volume": 3.88785152,
+      "baseVolume": 25147.60112157,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9991190433,
+    "macdValue": 18.9083769124,
+    "macdSignalLineValue": 17.9245169996,
+    "macdBarChartValue": 0.9838599128,
+    "maResult": 6435.1293731502
+  },
+  {
+    "tick": {
+      "open": 6480.00000000,
+      "high": 6497.99999998,
+      "low": 6480.00000000,
+      "close": 6485.00000000,
+      "volume": 12.77941375,
+      "baseVolume": 82904.45477424,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9995595271,
+    "macdValue": 18.9938916858,
+    "macdSignalLineValue": 18.1383919368,
+    "macdBarChartValue": 0.8554997490,
+    "maResult": 6438.9655752156
+  },
+  {
+    "tick": {
+      "open": 6465.73501592,
+      "high": 6497.99999998,
+      "low": 6469.45413448,
+      "close": 6490.40377829,
+      "volume": 3.24662552,
+      "baseVolume": 21037.05186544,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9997797558,
+    "macdValue": 19.1844478407,
+    "macdSignalLineValue": 18.3476031176,
+    "macdBarChartValue": 0.8368447231,
+    "maResult": 6442.9223600675
+  },
+  {
+    "tick": {
+      "open": 6489.00000000,
+      "high": 6489.00000000,
+      "low": 6451.00000001,
+      "close": 6474.00000000,
+      "volume": 3.61949616,
+      "baseVolume": 23464.67707459,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9998898701,
+    "macdValue": 17.0198582652,
+    "macdSignalLineValue": 18.0820541471,
+    "macdBarChartValue": -1.0621958819,
+    "maResult": 6445.3129477546
+  },
+  {
+    "tick": {
+      "open": 6474.00000000,
+      "high": 6490.40000000,
+      "low": 6474.00000000,
+      "close": 6490.39999994,
+      "volume": 3.83484528,
+      "baseVolume": 24882.66641074,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9999449799,
+    "macdValue": 16.9253306936,
+    "macdSignalLineValue": 17.8507094564,
+    "macdBarChartValue": -0.9253787628,
+    "maResult": 6448.7811825381
+  },
+  {
+    "tick": {
+      "open": 6481.19000000,
+      "high": 6487.67607197,
+      "low": 6466.67066533,
+      "close": 6481.14993935,
+      "volume": 2.47873420,
+      "baseVolume": 16070.31023970,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9999725348,
+    "macdValue": 15.4142843886,
+    "macdSignalLineValue": 17.3634244428,
+    "macdBarChartValue": -1.9491400542,
+    "maResult": 6451.2710869082
+  },
+  {
+    "tick": {
+      "open": 6481.14993935,
+      "high": 6487.00000000,
+      "low": 6467.19301982,
+      "close": 6487.00000000,
+      "volume": 2.30443595,
+      "baseVolume": 14920.32828236,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9999863123,
+    "macdValue": 14.6390175243,
+    "macdSignalLineValue": 16.8185430591,
+    "macdBarChartValue": -2.1795255348,
+    "maResult": 6454.0194648383
+  },
+  {
+    "tick": {
+      "open": 6480.47821532,
+      "high": 6486.99999997,
+      "low": 6456.50287800,
+      "close": 6483.00000000,
+      "volume": 1.46464103,
+      "baseVolume": 9485.62168208,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9999932010,
+    "macdValue": 13.2971288891,
+    "macdSignalLineValue": 16.1142602251,
+    "macdBarChartValue": -2.8171313360,
+    "maResult": 6456.2487367738
+  },
+  {
+    "tick": {
+      "open": 6483.00000000,
+      "high": 6487.00000000,
+      "low": 6459.62506003,
+      "close": 6459.63000000,
+      "volume": 1.71921462,
+      "baseVolume": 11130.89251073,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_LONG"
+    ],
+    "stcResult": 49.9999966006,
+    "macdValue": 9.4444125761,
+    "macdSignalLineValue": 14.7802906953,
+    "macdBarChartValue": -5.3358781192,
+    "maResult": 6456.5088339450
+  },
+  {
+    "tick": {
+      "open": 6459.62506003,
+      "high": 6483.99999999,
+      "low": 6459.63000000,
+      "close": 6459.62506003,
+      "volume": 4.14897908,
+      "baseVolume": 26882.01761306,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 24.9999983004,
+    "macdValue": 6.5470619785,
+    "macdSignalLineValue": 13.1336449519,
+    "macdBarChartValue": -6.5865829734,
+    "maResult": 6456.7485436438
+  },
+  {
+    "tick": {
+      "open": 6451.00000000,
+      "high": 6470.00000000,
+      "low": 6451.00000000,
+      "close": 6470.00000000,
+      "volume": 0.48133868,
+      "baseVolume": 3112.34394378,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 12.4999991501,
+    "macdValue": 5.5350706489,
+    "macdSignalLineValue": 11.6139300913,
+    "macdBarChartValue": -6.0788594424,
+    "maResult": 6457.7678864404
+  },
+  {
+    "tick": {
+      "open": 6463.45236000,
+      "high": 6479.05999982,
+      "low": 6450.00846900,
+      "close": 6472.44000000,
+      "volume": 5.68546729,
+      "baseVolume": 36757.76043241,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 6.2499995750,
+    "macdValue": 4.9698650223,
+    "macdSignalLineValue": 10.2851170775,
+    "macdBarChartValue": -5.3152520552,
+    "maResult": 6458.8965105604
+  },
+  {
+    "tick": {
+      "open": 6475.67799800,
+      "high": 6478.99999985,
+      "low": 6448.21028826,
+      "close": 6465.00000000,
+      "volume": 1.53928744,
+      "baseVolume": 9934.58784884,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 3.1249997875,
+    "macdValue": 3.6297261935,
+    "macdSignalLineValue": 8.9540389007,
+    "macdBarChartValue": -5.3243127072,
+    "maResult": 6459.3660097481
+  },
+  {
+    "tick": {
+      "open": 6465.00000000,
+      "high": 6479.00000000,
+      "low": 6465.00000000,
+      "close": 6465.00000000,
+      "volume": 0.41140246,
+      "baseVolume": 2660.72881299,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 1.5624998937,
+    "macdValue": 2.6135875911,
+    "macdSignalLineValue": 7.6859486388,
+    "macdBarChartValue": -5.0723610477,
+    "maResult": 6459.7993936136
+  },
+  {
+    "tick": {
+      "open": 6465.00000000,
+      "high": 6490.40377866,
+      "low": 6465.00000000,
+      "close": 6483.91000000,
+      "volume": 16.48826634,
+      "baseVolume": 106920.42453348,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.7812499469,
+    "macdValue": 3.9476500983,
+    "macdSignalLineValue": 6.9382889307,
+    "macdBarChartValue": -2.9906388324,
+    "maResult": 6461.6540556433
+  },
+  {
+    "tick": {
+      "open": 6475.00000000,
+      "high": 6489.99999999,
+      "low": 6462.00000000,
+      "close": 6484.00000000,
+      "volume": 2.07300588,
+      "baseVolume": 13427.17043082,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.6775877529,
+    "macdValue": 4.7824920762,
+    "macdSignalLineValue": 6.5071295598,
+    "macdBarChartValue": -1.7246374836,
+    "maResult": 6463.3729744400
+  },
+  {
+    "tick": {
+      "open": 6480.51000000,
+      "high": 6490.40377866,
+      "low": 6480.59000000,
+      "close": 6470.00000000,
+      "volume": 9.20718715,
+      "baseVolume": 59663.42080597,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.3387938764,
+    "macdValue": 3.6860249972,
+    "macdSignalLineValue": 5.9429086473,
+    "macdBarChartValue": -2.2568836501,
+    "maResult": 6463.8827456369
+  },
+  {
+    "tick": {
+      "open": 6462.00000001,
+      "high": 6489.99999985,
+      "low": 6460.00001000,
+      "close": 6484.99999995,
+      "volume": 1.89201244,
+      "baseVolume": 12243.66998219,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.1693969382,
+    "macdValue": 4.5036273816,
+    "macdSignalLineValue": 5.6550523942,
+    "macdBarChartValue": -1.1514250126,
+    "maResult": 6465.5071498148
+  },
+  {
+    "tick": {
+      "open": 6460.01000000,
+      "high": 6484.98899970,
+      "low": 6444.72843749,
+      "close": 6444.72843749,
+      "volume": 2.57265385,
+      "baseVolume": 16659.93272861,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0846984691,
+    "macdValue": 0.4830646238,
+    "macdSignalLineValue": 4.6206548401,
+    "macdBarChartValue": -4.1375902163,
+    "maResult": 6463.9087873283
+  },
+  {
+    "tick": {
+      "open": 6464.74000000,
+      "high": 6475.21996067,
+      "low": 6440.00000000,
+      "close": 6440.00000000,
+      "volume": 8.58249442,
+      "baseVolume": 55447.61336595,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0423492345,
+    "macdValue": -2.8338931674,
+    "macdSignalLineValue": 3.1297452386,
+    "macdBarChartValue": -5.9636384060,
+    "maResult": 6462.0696498415
+  },
+  {
+    "tick": {
+      "open": 6440.00000000,
+      "high": 6474.08709211,
+      "low": 6450.00000000,
+      "close": 6471.70130547,
+      "volume": 4.40414285,
+      "baseVolume": 28466.38105942,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0211746172,
+    "macdValue": -1.5347586087,
+    "macdSignalLineValue": 2.1968444691,
+    "macdBarChartValue": -3.7316030778,
+    "maResult": 6462.8105464283
+  },
+  {
+    "tick": {
+      "open": 6464.25000000,
+      "high": 6476.51828993,
+      "low": 6441.00000002,
+      "close": 6441.00000002,
+      "volume": 2.73577287,
+      "baseVolume": 17692.63069346,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0105873086,
+    "macdValue": -4.0099523932,
+    "macdSignalLineValue": 0.9554850966,
+    "macdBarChartValue": -4.9654374898,
+    "maResult": 6461.1328120892
+  },
+  {
+    "tick": {
+      "open": 6480.73999969,
+      "high": 6480.73999972,
+      "low": 6472.89000000,
+      "close": 6478.99999997,
+      "volume": 4.09463455,
+      "baseVolume": 26533.59615392,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 8.2757448415,
+    "macdValue": -1.3999640920,
+    "macdSignalLineValue": 0.4843952589,
+    "macdBarChartValue": -1.8843593509,
+    "maResult": 6462.5072111570
+  },
+  {
+    "tick": {
+      "open": 6475.00000000,
+      "high": 6475.00000000,
+      "low": 6451.55000010,
+      "close": 6451.55000010,
+      "volume": 3.78519770,
+      "baseVolume": 24472.66393233,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 8.3409209456,
+    "macdValue": -2.6109607065,
+    "macdSignalLineValue": -0.1346759342,
+    "macdBarChartValue": -2.4762847723,
+    "maResult": 6461.6643487680
+  },
+  {
+    "tick": {
+      "open": 6468.99999990,
+      "high": 6479.00000000,
+      "low": 6460.00000000,
+      "close": 6470.78000000,
+      "volume": 4.84252206,
+      "baseVolume": 31322.63198162,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 5.6039135071,
+    "macdValue": -1.2470581126,
+    "macdSignalLineValue": -0.3571523699,
+    "macdBarChartValue": -0.8899057427,
+    "maResult": 6462.3655527089
+  },
+  {
+    "tick": {
+      "open": 6478.99999999,
+      "high": 6484.99999994,
+      "low": 6478.99999999,
+      "close": 6484.99999992,
+      "volume": 3.49466267,
+      "baseVolume": 22637.78493603,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_SHORT"
+    ],
+    "stcResult": 49.7151665145,
+    "macdValue": 1.3066784400,
+    "macdSignalLineValue": -0.0243862079,
+    "macdBarChartValue": 1.3310646479,
+    "maResult": 6464.1066640328
+  },
+  {
+    "tick": {
+      "open": 6466.19000000,
+      "high": 6478.99999996,
+      "low": 6460.00000000,
+      "close": 6460.00000000,
+      "volume": 17.06371877,
+      "baseVolume": 110400.49509470,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 48.3944257078,
+    "macdValue": 0.2621832645,
+    "macdSignalLineValue": 0.0329276866,
+    "macdBarChartValue": 0.2292555779,
+    "maResult": 6463.7907667995
+  },
+  {
+    "tick": {
+      "open": 6475.09999993,
+      "high": 6475.09999996,
+      "low": 6465.00000000,
+      "close": 6466.94000000,
+      "volume": 4.79458585,
+      "baseVolume": 31039.60580952,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 34.5024765296,
+    "macdValue": 0.3047005934,
+    "macdSignalLineValue": 0.0872822680,
+    "macdBarChartValue": 0.2174183254,
+    "maResult": 6464.0330155072
+  },
+  {
+    "tick": {
+      "open": 6466.94000000,
+      "high": 6474.06941695,
+      "low": 6454.95980000,
+      "close": 6461.00000000,
+      "volume": 3.94751807,
+      "baseVolume": 25484.36330883,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 20.9407125531,
+    "macdValue": -0.3334281815,
+    "macdSignalLineValue": 0.0031401781,
+    "macdBarChartValue": -0.3365683596,
+    "maResult": 6463.7997066220
+  },
+  {
+    "tick": {
+      "open": 6461.00000000,
+      "high": 6461.00000000,
+      "low": 6450.00000001,
+      "close": 6455.00000000,
+      "volume": 0.72365653,
+      "baseVolume": 4673.76304312,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 10.8519358711,
+    "macdValue": -1.4330375029,
+    "macdSignalLineValue": -0.2840953581,
+    "macdBarChartValue": -1.1489421448,
+    "maResult": 6463.1228061126
+  },
+  {
+    "tick": {
+      "open": 6461.99999999,
+      "high": 6466.99999991,
+      "low": 6455.00000000,
+      "close": 6466.99999991,
+      "volume": 3.37338369,
+      "baseVolume": 21780.70090502,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 5.4259679352,
+    "macdValue": -0.8245442659,
+    "macdSignalLineValue": -0.3921851397,
+    "macdBarChartValue": -0.4323591262,
+    "maResult": 6463.4210517893
+  },
+  {
+    "tick": {
+      "open": 6460.47601750,
+      "high": 6474.06941698,
+      "low": 6460.00000000,
+      "close": 6474.06941698,
+      "volume": 1.91443117,
+      "baseVolume": 12366.44749665,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 6.6060148383,
+    "macdValue": 0.4019923198,
+    "macdSignalLineValue": -0.2333496478,
+    "macdBarChartValue": 0.6353419676,
+    "maResult": 6464.2401568040
+  },
+  {
+    "tick": {
+      "open": 6474.99292408,
+      "high": 6477.19843289,
+      "low": 6461.50068079,
+      "close": 6477.19843289,
+      "volume": 1.00121021,
+      "baseVolume": 6477.20975505,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_SHORT"
+    ],
+    "stcResult": 40.5409907913,
+    "macdValue": 1.5877109290,
+    "macdSignalLineValue": 0.1308624676,
+    "macdBarChartValue": 1.4568484614,
+    "maResult": 6465.2369472722
+  },
+  {
+    "tick": {
+      "open": 6477.19843288,
+      "high": 6505.38280961,
+      "low": 6477.19843288,
+      "close": 6471.00000000,
+      "volume": 9.16736397,
+      "baseVolume": 59484.81945787,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6450.00000001,
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "stcResult": 38.0830354686,
+    "macdValue": 1.6795495000,
+    "macdSignalLineValue": 0.4405998741,
+    "macdBarChartValue": 1.2389496259,
+    "maResult": 6465.6802590205
+  },
+  {
+    "tick": {
+      "open": 6498.23999989,
+      "high": 6499.99999994,
+      "low": 6487.17000000,
+      "close": 6499.99999198,
+      "volume": 14.60511902,
+      "baseVolume": 94773.65652066,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 69.0415177342,
+    "macdValue": 4.9237938061,
+    "macdSignalLineValue": 1.3372386605,
+    "macdBarChartValue": 3.5865551456,
+    "maResult": 6468.3202384789
+  },
+  {
+    "tick": {
+      "open": 6500.00000000,
+      "high": 6512.89999986,
+      "low": 6473.08670000,
+      "close": 6485.00000000,
+      "volume": 9.87571791,
+      "baseVolume": 64016.43555455,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 84.5207588671,
+    "macdValue": 5.3784872099,
+    "macdSignalLineValue": 2.1454883704,
+    "macdBarChartValue": 3.2329988395,
+    "maResult": 6469.6032970574
+  },
+  {
+    "tick": {
+      "open": 6482.16000000,
+      "high": 6497.62349831,
+      "low": 6473.00000001,
+      "close": 6473.00000001,
+      "volume": 3.97486477,
+      "baseVolume": 25746.46668258,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 92.2603794336,
+    "macdValue": 4.2267076578,
+    "macdSignalLineValue": 2.5617322279,
+    "macdBarChartValue": 1.6649754299,
+    "maResult": 6469.8645818999
+  },
+  {
+    "tick": {
+      "open": 6471.00000000,
+      "high": 6490.50000000,
+      "low": 6470.00000008,
+      "close": 6488.00000000,
+      "volume": 3.59346644,
+      "baseVolume": 23266.05678254,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 96.1301897168,
+    "macdValue": 4.9927191353,
+    "macdSignalLineValue": 3.0479296094,
+    "macdBarChartValue": 1.9447895259,
+    "maResult": 6471.2596140614
+  },
+  {
+    "tick": {
+      "open": 6490.50000000,
+      "high": 6506.99999996,
+      "low": 6470.00000004,
+      "close": 6497.95499996,
+      "volume": 7.15127224,
+      "baseVolume": 46442.37698542,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 98.0650948584,
+    "macdValue": 6.5051414082,
+    "macdSignalLineValue": 3.7393719692,
+    "macdBarChartValue": 2.7657694390,
+    "maResult": 6473.3131052844
+  },
+  {
+    "tick": {
+      "open": 6486.93000001,
+      "high": 6498.00000000,
+      "low": 6477.00000000,
+      "close": 6498.00000000,
+      "volume": 2.51756864,
+      "baseVolume": 16315.76791212,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.0325474292,
+    "macdValue": 7.3951459123,
+    "macdSignalLineValue": 4.4705267578,
+    "macdBarChartValue": 2.9246191545,
+    "maResult": 6475.2120971856
+  },
+  {
+    "tick": {
+      "open": 6494.00000000,
+      "high": 6513.39999986,
+      "low": 6490.04048002,
+      "close": 6509.99999997,
+      "volume": 5.91914000,
+      "baseVolume": 38454.43815669,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.5162737146,
+    "macdValue": 9.1611948029,
+    "macdSignalLineValue": 5.4086603668,
+    "macdBarChartValue": 3.7525344361,
+    "maResult": 6477.8880897075
+  },
+  {
+    "tick": {
+      "open": 6508.99999992,
+      "high": 6512.00000000,
+      "low": 6483.17257105,
+      "close": 6480.00000000,
+      "volume": 2.82601801,
+      "baseVolume": 18360.44792266,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 96.8330589275,
+    "macdValue": 6.8226312045,
+    "macdSignalLineValue": 5.6914545343,
+    "macdBarChartValue": 1.1311766702,
+    "maResult": 6478.0505443454
+  },
+  {
+    "tick": {
+      "open": 6504.99999999,
+      "high": 6513.39999979,
+      "low": 6492.69000000,
+      "close": 6507.81329355,
+      "volume": 148.09364293,
+      "baseVolume": 963870.90013770,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 97.9318279144,
+    "macdValue": 8.1277524148,
+    "macdSignalLineValue": 6.1787141104,
+    "macdBarChartValue": 1.9490383044,
+    "maResult": 6480.3399865919
+  },
+  {
+    "tick": {
+      "open": 6507.81329355,
+      "high": 6513.39999984,
+      "low": 6491.80000000,
+      "close": 6491.80000000,
+      "volume": 37.41924699,
+      "baseVolume": 243522.22194462,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 98.5665803489,
+    "macdValue": 7.0501183531,
+    "macdSignalLineValue": 6.3529949589,
+    "macdBarChartValue": 0.6971233942,
+    "maResult": 6481.2215260848
+  },
+  {
+    "tick": {
+      "open": 6493.00000000,
+      "high": 6513.39999983,
+      "low": 6495.00000000,
+      "close": 6495.00000000,
+      "volume": 2.05463376,
+      "baseVolume": 13364.23017399,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 98.8375613239,
+    "macdValue": 6.4865659560,
+    "macdSignalLineValue": 6.3797091583,
+    "macdBarChartValue": 0.1068567977,
+    "maResult": 6482.2814086937
+  },
+  {
+    "tick": {
+      "open": 6480.00000000,
+      "high": 6500.99999988,
+      "low": 6475.37110000,
+      "close": 6480.00000000,
+      "volume": 0.62724364,
+      "baseVolume": 4066.70978736,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_LONG"
+    ],
+    "stcResult": 86.4503643009,
+    "macdValue": 4.2701206949,
+    "macdSignalLineValue": 5.9577914656,
+    "macdBarChartValue": -1.6876707707,
+    "maResult": 6482.1059157173
+  },
+  {
+    "tick": {
+      "open": 6490.00000000,
+      "high": 6507.84950852,
+      "low": 6494.50000000,
+      "close": 6500.00000000,
+      "volume": 7.05688772,
+      "baseVolume": 45859.67608208,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 59.4658237889,
+    "macdValue": 4.8545506206,
+    "macdSignalLineValue": 5.7371432966,
+    "macdBarChartValue": -0.8825926760,
+    "maResult": 6483.4823837390
+  },
+  {
+    "tick": {
+      "open": 6484.01000000,
+      "high": 6504.00000000,
+      "low": 6486.00000000,
+      "close": 6486.00000001,
+      "volume": 0.15910084,
+      "baseVolume": 1033.10419810,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 29.7329118944,
+    "macdValue": 3.5831799378,
+    "macdSignalLineValue": 5.3063506248,
+    "macdBarChartValue": -1.7231706870,
+    "maResult": 6483.6760465291
+  },
+  {
+    "tick": {
+      "open": 6505.34046245,
+      "high": 6515.00000000,
+      "low": 6498.75705790,
+      "close": 6500.00000000,
+      "volume": 3.42177988,
+      "baseVolume": 22258.89153142,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 14.8664559472,
+    "macdValue": 4.1712895896,
+    "macdSignalLineValue": 5.0793384178,
+    "macdBarChartValue": -0.9080488282,
+    "maResult": 6484.9317352576
+  },
+  {
+    "tick": {
+      "open": 6515.00000000,
+      "high": 6600.00000000,
+      "low": 6512.00000000,
+      "close": 6580.00000000,
+      "volume": 25.20997586,
+      "baseVolume": 165506.20476762,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 34.0805476260,
+    "macdValue": 13.3637780010,
+    "macdSignalLineValue": 6.7362263344,
+    "macdBarChartValue": 6.6275516666,
+    "maResult": 6492.2446786993
+  },
+  {
+    "tick": {
+      "open": 6577.33778842,
+      "high": 6582.52559258,
+      "low": 6565.00000000,
+      "close": 6561.00000001,
+      "volume": 10.62702450,
+      "baseVolume": 69907.12106175,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 57.3847891116,
+    "macdValue": 17.2779976939,
+    "macdSignalLineValue": 8.8445806063,
+    "macdBarChartValue": 8.4334170876,
+    "maResult": 6497.5335495694
+  },
+  {
+    "tick": {
+      "open": 6597.00000000,
+      "high": 6615.00000000,
+      "low": 6597.00000000,
+      "close": 6614.99999996,
+      "volume": 11.88079241,
+      "baseVolume": 78434.29724099,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 75.7609957375,
+    "macdValue": 25.5575076565,
+    "macdSignalLineValue": 12.1871660163,
+    "macdBarChartValue": 13.3703416402,
+    "maResult": 6506.5694303687
+  },
+  {
+    "tick": {
+      "open": 6585.00000000,
+      "high": 6602.28654975,
+      "low": 6563.54159147,
+      "close": 6599.99999990,
+      "volume": 7.20405037,
+      "baseVolume": 47413.83515817,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 87.8804978688,
+    "macdValue": 28.9838970645,
+    "macdSignalLineValue": 15.5465122259,
+    "macdBarChartValue": 13.4373848386,
+    "maResult": 6513.7563972557
+  },
+  {
+    "tick": {
+      "open": 6591.00000000,
+      "high": 6601.65999999,
+      "low": 6583.35562061,
+      "close": 6583.35562061,
+      "volume": 3.81977763,
+      "baseVolume": 25197.29846182,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 93.9402489344,
+    "macdValue": 28.7877316215,
+    "macdSignalLineValue": 18.1947561050,
+    "macdBarChartValue": 10.5929755165,
+    "maResult": 6519.1101836676
+  },
+  {
+    "tick": {
+      "open": 6585.00000000,
+      "high": 6589.99999993,
+      "low": 6580.00000000,
+      "close": 6580.00000000,
+      "volume": 13.33951450,
+      "baseVolume": 87785.18941923,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 96.9701244672,
+    "macdValue": 27.5684561456,
+    "macdSignalLineValue": 20.0694961131,
+    "macdBarChartValue": 7.4989600325,
+    "maResult": 6523.7940156932
+  },
+  {
+    "tick": {
+      "open": 6571.68000000,
+      "high": 6580.11100000,
+      "low": 6557.00000000,
+      "close": 6565.00000000,
+      "volume": 9.12264865,
+      "baseVolume": 59871.22177882,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 98.4850622336,
+    "macdValue": 24.3781309735,
+    "macdSignalLineValue": 20.9312230852,
+    "macdBarChartValue": 3.4469078883,
+    "maResult": 6526.9637067937
+  },
+  {
+    "tick": {
+      "open": 6558.00000000,
+      "high": 6591.00000000,
+      "low": 6574.99999999,
+      "close": 6589.00000000,
+      "volume": 5.78392836,
+      "baseVolume": 38082.82702401,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.2425311168,
+    "macdValue": 24.2372115712,
+    "macdSignalLineValue": 21.5924207824,
+    "macdBarChartValue": 2.6447907888,
+    "maResult": 6531.7357293480
+  },
+  {
+    "tick": {
+      "open": 6573.91000000,
+      "high": 6601.34250000,
+      "low": 6580.96000000,
+      "close": 6601.34250000,
+      "volume": 60.09513413,
+      "baseVolume": 394597.78986170,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.6212655584,
+    "macdValue": 24.9127250320,
+    "macdSignalLineValue": 22.2564816323,
+    "macdBarChartValue": 2.6562433997,
+    "maResult": 6537.0900963212
+  },
+  {
+    "tick": {
+      "open": 6596.40700001,
+      "high": 6599.00000000,
+      "low": 6575.10000001,
+      "close": 6588.50000000,
+      "volume": 4.67480581,
+      "baseVolume": 30786.70851867,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.8106327792,
+    "macdValue": 23.3376732264,
+    "macdSignalLineValue": 22.4727199511,
+    "macdBarChartValue": 0.8649532753,
+    "maResult": 6541.0447042965
+  },
+  {
+    "tick": {
+      "open": 6588.52000000,
+      "high": 6588.52000000,
+      "low": 6577.22389618,
+      "close": 6583.00000000,
+      "volume": 3.05773719,
+      "baseVolume": 20122.62436214,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9053163897,
+    "macdValue": 21.0613985651,
+    "macdSignalLineValue": 22.1904556739,
+    "macdBarChartValue": -1.1290571088,
+    "maResult": 6544.2720347352
+  },
+  {
+    "tick": {
+      "open": 6575.55308481,
+      "high": 6588.28011400,
+      "low": 6573.13319553,
+      "close": 6569.00000000,
+      "volume": 4.55573874,
+      "baseVolume": 29954.84399133,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_LONG"
+    ],
+    "stcResult": 87.1174357601,
+    "macdValue": 17.4120877236,
+    "macdSignalLineValue": 21.2347820838,
+    "macdBarChartValue": -3.8226943602,
+    "maResult": 6546.1741859094
+  },
+  {
+    "tick": {
+      "open": 6569.00000000,
+      "high": 6577.14247252,
+      "low": 6568.99999999,
+      "close": 6577.14247252,
+      "volume": 3.13267454,
+      "baseVolume": 20568.16504934,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 43.5587178797,
+    "macdValue": 15.3638984657,
+    "macdSignalLineValue": 20.0606053602,
+    "macdBarChartValue": -4.6967068945,
+    "maResult": 6548.5563618025
+  },
+  {
+    "tick": {
+      "open": 6579.99990000,
+      "high": 6588.47613228,
+      "low": 6572.01036416,
+      "close": 6572.09545167,
+      "volume": 3.00514918,
+      "baseVolume": 19777.58005147,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 21.7793589397,
+    "macdValue": 13.0077307740,
+    "macdSignalLineValue": 18.6500304430,
+    "macdBarChartValue": -5.6422996690,
+    "maResult": 6550.3670610231
+  },
+  {
+    "tick": {
+      "open": 6583.99000000,
+      "high": 6583.99000000,
+      "low": 6550.00000008,
+      "close": 6560.84383021,
+      "volume": 15.38566626,
+      "baseVolume": 100815.25756566,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 10.8896794698,
+    "macdValue": 9.8074166330,
+    "macdSignalLineValue": 16.8815076810,
+    "macdBarChartValue": -7.0740910480,
+    "maResult": 6551.1729663452
+  },
+  {
+    "tick": {
+      "open": 6558.00000000,
+      "high": 6567.31100321,
+      "low": 6546.45000000,
+      "close": 6555.50247941,
+      "volume": 4.32757610,
+      "baseVolume": 28328.72855006,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 5.4448397349,
+    "macdValue": 6.7592119125,
+    "macdSignalLineValue": 14.8570485273,
+    "macdBarChartValue": -8.0978366148,
+    "maResult": 6551.5060058117
+  },
+  {
+    "tick": {
+      "open": 6544.33077169,
+      "high": 6577.00000000,
+      "low": 6553.22026111,
+      "close": 6575.00000000,
+      "volume": 7.15815226,
+      "baseVolume": 46967.16556072,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 2.7224198674,
+    "macdValue": 6.6513081734,
+    "macdSignalLineValue": 13.2159004565,
+    "macdBarChartValue": -6.5645922831,
+    "maResult": 6553.3132361339
+  },
+  {
+    "tick": {
+      "open": 6574.43468588,
+      "high": 6600.00000000,
+      "low": 6577.33234261,
+      "close": 6597.22499988,
+      "volume": 2.38729764,
+      "baseVolume": 15722.64390707,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 1.3612099337,
+    "macdValue": 8.8819226572,
+    "macdSignalLineValue": 12.3491048966,
+    "macdBarChartValue": -3.4671822394,
+    "maResult": 6556.6910641144
+  },
+  {
+    "tick": {
+      "open": 6590.54860818,
+      "high": 6593.71678626,
+      "low": 6578.57498836,
+      "close": 6589.99999999,
+      "volume": 2.51736139,
+      "baseVolume": 16584.54758753,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.6806049669,
+    "macdValue": 9.4019913827,
+    "macdSignalLineValue": 11.7596821938,
+    "macdBarChartValue": -2.3576908111,
+    "maResult": 6559.2532899510
+  },
+  {
+    "tick": {
+      "open": 6585.00000000,
+      "high": 6590.00000000,
+      "low": 6559.38059961,
+      "close": 6559.38059961,
+      "volume": 6.93791692,
+      "baseVolume": 45599.54887820,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.3403024834,
+    "macdValue": 6.1272415363,
+    "macdSignalLineValue": 10.6331940623,
+    "macdBarChartValue": -4.5059525260,
+    "maResult": 6559.2630830017
+  },
+  {
+    "tick": {
+      "open": 6569.79096631,
+      "high": 6582.61400000,
+      "low": 6575.12179077,
+      "close": 6579.58300000,
+      "volume": 6.33052838,
+      "baseVolume": 41626.25620594,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.1701512417,
+    "macdValue": 5.9566381911,
+    "macdSignalLineValue": 9.6978828881,
+    "macdBarChartValue": -3.7412446970,
+    "maResult": 6560.8261535400
+  },
+  {
+    "tick": {
+      "open": 6574.00000000,
+      "high": 6590.00000000,
+      "low": 6585.09951150,
+      "close": 6575.00000000,
+      "volume": 3.48915779,
+      "baseVolume": 22965.67227840,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0850756209,
+    "macdValue": 5.1823904909,
+    "macdSignalLineValue": 8.7947844087,
+    "macdBarChartValue": -3.6123939178,
+    "maResult": 6561.9164494215
+  },
+  {
+    "tick": {
+      "open": 6585.80000000,
+      "high": 6589.99899978,
+      "low": 6575.00000000,
+      "close": 6575.00000000,
+      "volume": 5.82056613,
+      "baseVolume": 38307.54694844,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0425378104,
+    "macdValue": 4.5191478713,
+    "macdSignalLineValue": 7.9396571012,
+    "macdBarChartValue": -3.4205092299,
+    "maResult": 6562.9228763891
+  },
+  {
+    "tick": {
+      "open": 6583.37484177,
+      "high": 6590.00000000,
+      "low": 6580.00000000,
+      "close": 6590.00000000,
+      "volume": 9.67898886,
+      "baseVolume": 63682.23839270,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0212689052,
+    "macdValue": 5.6156925325,
+    "macdSignalLineValue": 7.4748641875,
+    "macdBarChartValue": -1.8591716550,
+    "maResult": 6565.0057320515
+  },
+  {
+    "tick": {
+      "open": 6579.52524420,
+      "high": 6589.76483141,
+      "low": 6574.03470315,
+      "close": 6589.76483141,
+      "volume": 7.32122447,
+      "baseVolume": 48166.59850540,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0106344526,
+    "macdValue": 6.2090085653,
+    "macdSignalLineValue": 7.2216930631,
+    "macdBarChartValue": -1.0126844978,
+    "maResult": 6566.9102781560
+  },
+  {
+    "tick": {
+      "open": 6578.23000000,
+      "high": 6578.84831434,
+      "low": 6562.88507050,
+      "close": 6562.87968356,
+      "volume": 4.51812336,
+      "baseVolume": 29683.93317296,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0053172262,
+    "macdValue": 3.4786548623,
+    "macdSignalLineValue": 6.4730854229,
+    "macdBarChartValue": -2.9944305606,
+    "maResult": 6566.6002324178
+  },
+  {
+    "tick": {
+      "open": 6561.91549450,
+      "high": 6575.04455794,
+      "low": 6560.23408108,
+      "close": 6532.44566551,
+      "volume": 9.45171466,
+      "baseVolume": 61799.78371510,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0026586131,
+    "macdValue": -1.8764473543,
+    "macdSignalLineValue": 4.8031788675,
+    "macdBarChartValue": -6.6796262218,
+    "maResult": 6563.9729580403
+  },
+  {
+    "tick": {
+      "open": 6515.30000000,
+      "high": 6539.91461344,
+      "low": 6509.33000000,
+      "close": 6516.42679420,
+      "volume": 5.56987844,
+      "baseVolume": 36295.49039747,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0013293067,
+    "macdValue": -7.3122828014,
+    "macdSignalLineValue": 2.3800865337,
+    "macdBarChartValue": -9.6923693351,
+    "maResult": 6560.3155608218
+  },
+  {
+    "tick": {
+      "open": 6509.21000000,
+      "high": 6546.97170170,
+      "low": 6517.13905674,
+      "close": 6530.63000000,
+      "volume": 5.49793263,
+      "baseVolume": 35859.74651720,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0006646534,
+    "macdValue": -9.3117070882,
+    "macdSignalLineValue": 0.0417278093,
+    "macdBarChartValue": -9.3534348975,
+    "maResult": 6558.0320561432
+  },
+  {
+    "tick": {
+      "open": 6540.94092728,
+      "high": 6543.58712159,
+      "low": 6523.16442978,
+      "close": 6523.16442978,
+      "volume": 11.08103167,
+      "baseVolume": 72203.89210291,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0003323263,
+    "macdValue": -11.2936142223,
+    "macdSignalLineValue": -2.2253405970,
+    "macdBarChartValue": -9.0682736253,
+    "maResult": 6555.3499310383
+  },
+  {
+    "tick": {
+      "open": 6520.00000000,
+      "high": 6526.66666667,
+      "low": 6520.00000000,
+      "close": 6526.66666667,
+      "volume": 2.23369166,
+      "baseVolume": 14559.32965910,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0001661628,
+    "macdValue": -11.9958295193,
+    "macdSignalLineValue": -4.1794383815,
+    "macdBarChartValue": -7.8163911378,
+    "maResult": 6553.1435260869
+  },
+  {
+    "tick": {
+      "open": 6519.17203465,
+      "high": 6540.00000000,
+      "low": 6528.05083625,
+      "close": 6533.02000000,
+      "volume": 4.70060520,
+      "baseVolume": 30716.31180537,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0000830830,
+    "macdValue": -11.4791924529,
+    "macdSignalLineValue": -5.6393891958,
+    "macdBarChartValue": -5.8398032571,
+    "maResult": 6551.5955625418
+  },
+  {
+    "tick": {
+      "open": 6539.00000000,
+      "high": 6540.00000000,
+      "low": 6524.41411996,
+      "close": 6525.75049610,
+      "volume": 2.13530795,
+      "baseVolume": 13940.09208421,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0000415391,
+    "macdValue": -11.6462970761,
+    "macdSignalLineValue": -6.8407707719,
+    "macdBarChartValue": -4.8055263042,
+    "maResult": 6549.6074805078
+  },
+  {
+    "tick": {
+      "open": 6525.31871693,
+      "high": 6537.64403622,
+      "low": 6522.00000206,
+      "close": 6537.00000000,
+      "volume": 1.91162855,
+      "baseVolume": 12482.25998474,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0000207752,
+    "macdValue": -10.2243184297,
+    "macdSignalLineValue": -7.5174803035,
+    "macdBarChartValue": -2.7068381262,
+    "maResult": 6548.6376743149
+  },
+  {
+    "tick": {
+      "open": 6536.90000000,
+      "high": 6546.66666667,
+      "low": 6536.90000000,
+      "close": 6546.66666667,
+      "volume": 2.75334865,
+      "baseVolume": 18006.10923530,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0000103771,
+    "macdValue": -7.9146957003,
+    "macdSignalLineValue": -7.5969233829,
+    "macdBarChartValue": -0.3177723174,
+    "maResult": 6548.4860583422
+  },
+  {
+    "tick": {
+      "open": 6548.54251569,
+      "high": 6550.35311290,
+      "low": 6541.94557438,
+      "close": 6548.00000000,
+      "volume": 0.43868064,
+      "baseVolume": 2871.84216268,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0000051781,
+    "macdValue": -5.9743467594,
+    "macdSignalLineValue": -7.2724080582,
+    "macdBarChartValue": 1.2980612988,
+    "maResult": 6548.4486692390
+  },
+  {
+    "tick": {
+      "open": 6533.00000000,
+      "high": 6554.22973667,
+      "low": 6530.00000000,
+      "close": 6532.09247950,
+      "volume": 8.50371244,
+      "baseVolume": 55542.33189297,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0000026431,
+    "macdValue": -6.2528584913,
+    "macdSignalLineValue": -7.0684981448,
+    "macdBarChartValue": 0.8156396535,
+    "maResult": 6547.1905007975
+  },
+  {
+    "tick": {
+      "open": 6547.45000000,
+      "high": 6560.42000000,
+      "low": 6552.52354014,
+      "close": 6552.77833936,
+      "volume": 4.52350866,
+      "baseVolume": 29620.52162970,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0000012466,
+    "macdValue": -3.9925893711,
+    "macdSignalLineValue": -6.4533163901,
+    "macdBarChartValue": 2.4607270190,
+    "maResult": 6547.6203345331
+  },
+  {
+    "tick": {
+      "open": 6556.23305511,
+      "high": 6573.69999999,
+      "low": 6550.67383095,
+      "close": 6560.00000000,
+      "volume": 8.47267854,
+      "baseVolume": 55567.38359379,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_SHORT"
+    ],
+    "stcResult": 50.0000006224,
+    "macdValue": -1.5289449855,
+    "macdSignalLineValue": -5.4684421092,
+    "macdBarChartValue": 3.9394971237,
+    "maResult": 6548.5726164921
+  },
+  {
+    "tick": {
+      "open": 6560.00000000,
+      "high": 6565.20912269,
+      "low": 6544.72666106,
+      "close": 6549.49357739,
+      "volume": 7.60336630,
+      "baseVolume": 49793.08451010,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 49.9992600076,
+    "macdValue": -0.9553132315,
+    "macdSignalLineValue": -4.5658163337,
+    "macdBarChartValue": 3.6105031022,
+    "maResult": 6548.6434596381
+  },
+  {
+    "tick": {
+      "open": 6544.15906738,
+      "high": 6551.23816776,
+      "low": 6495.00000000,
+      "close": 6495.00000000,
+      "volume": 19.46588921,
+      "baseVolume": 126393.29000925,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 37.4985195490,
+    "macdValue": -6.5899822663,
+    "macdSignalLineValue": -4.9706495202,
+    "macdBarChartValue": -1.6193327461,
+    "maResult": 6544.5170396659
+  },
+  {
+    "tick": {
+      "open": 6496.00250120,
+      "high": 6514.70943852,
+      "low": 6486.24638761,
+      "close": 6489.00000000,
+      "volume": 13.52028662,
+      "baseVolume": 87651.84835030,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 24.9979642440,
+    "macdValue": -10.9895069752,
+    "macdSignalLineValue": -6.1744210112,
+    "macdBarChartValue": -4.8150859640,
+    "maResult": 6540.2464981531
+  },
+  {
+    "tick": {
+      "open": 6492.46244593,
+      "high": 6519.99999999,
+      "low": 6489.20040324,
+      "close": 6503.77687085,
+      "volume": 5.58951797,
+      "baseVolume": 36358.83346739,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 15.6225940536,
+    "macdValue": -12.1179332974,
+    "macdSignalLineValue": -7.3631234684,
+    "macdBarChartValue": -4.7548098290,
+    "maResult": 6537.4411422067
+  },
+  {
+    "tick": {
+      "open": 6511.00744982,
+      "high": 6511.00744989,
+      "low": 6493.15324974,
+      "close": 6493.15324974,
+      "volume": 2.91798972,
+      "baseVolume": 18972.63214268,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 9.3723626895,
+    "macdValue": -13.7792740065,
+    "macdSignalLineValue": -8.6463535760,
+    "macdBarChartValue": -5.1329204305,
+    "maResult": 6534.0343812477
+  },
+  {
+    "tick": {
+      "open": 6509.71550711,
+      "high": 6515.00000000,
+      "low": 6495.63442909,
+      "close": 6514.94937600,
+      "volume": 3.19414126,
+      "baseVolume": 20764.45597299,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 5.4659738730,
+    "macdValue": -12.1658344431,
+    "macdSignalLineValue": -9.3502497494,
+    "macdBarChartValue": -2.8155846937,
+    "maResult": 6532.5663039210
+  },
+  {
+    "tick": {
+      "open": 6500.94000000,
+      "high": 6515.00000000,
+      "low": 6502.25227659,
+      "close": 6500.95476562,
+      "volume": 3.80449923,
+      "baseVolume": 24754.64908905,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 3.1221428976,
+    "macdValue": -12.3049357885,
+    "macdSignalLineValue": -9.9411869572,
+    "macdBarChartValue": -2.3637488313,
+    "maResult": 6530.1346471286
+  },
+  {
+    "tick": {
+      "open": 6510.00000000,
+      "high": 6515.00000000,
+      "low": 6490.00000000,
+      "close": 6485.00000000,
+      "volume": 1.93300825,
+      "baseVolume": 12562.17981412,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 1.7549091262,
+    "macdValue": -13.8700307805,
+    "macdSignalLineValue": -10.7269557219,
+    "macdBarChartValue": -3.1430750586,
+    "maResult": 6526.6627511956
+  },
+  {
+    "tick": {
+      "open": 6486.75000000,
+      "high": 6506.29722099,
+      "low": 6479.54858094,
+      "close": 6480.07840777,
+      "volume": 2.75940922,
+      "baseVolume": 17904.76257418,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.8774545634,
+    "macdValue": -15.1564454478,
+    "macdSignalLineValue": -11.6128536671,
+    "macdBarChartValue": -3.5435917807,
+    "maResult": 6523.0793401629
+  },
+  {
+    "tick": {
+      "open": 6481.89910541,
+      "high": 6501.61214748,
+      "low": 6481.73761170,
+      "close": 6490.59918369,
+      "volume": 6.72457756,
+      "baseVolume": 43599.75654715,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.4387272781,
+    "macdValue": -14.5026102280,
+    "macdSignalLineValue": -12.1908049793,
+    "macdBarChartValue": -2.3118052487,
+    "maResult": 6520.5808665881
+  },
+  {
+    "tick": {
+      "open": 6479.00000001,
+      "high": 6492.76301186,
+      "low": 6479.00000001,
+      "close": 6478.87220894,
+      "volume": 19.96131646,
+      "baseVolume": 129344.25465736,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.2193636354,
+    "macdValue": -14.9954840550,
+    "macdSignalLineValue": -12.7517407944,
+    "macdBarChartValue": -2.2437432606,
+    "maResult": 6517.3725083075
+  },
+  {
+    "tick": {
+      "open": 6480.42735535,
+      "high": 6481.75000000,
+      "low": 6480.23912059,
+      "close": 6481.42474816,
+      "volume": 0.52008333,
+      "baseVolume": 3370.49554057,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.1096818297,
+    "macdValue": -14.6823619960,
+    "macdSignalLineValue": -13.1378650347,
+    "macdBarChartValue": -1.5444969613,
+    "maResult": 6514.6072959885
+  },
+  {
+    "tick": {
+      "open": 6481.24000000,
+      "high": 6489.98888888,
+      "low": 6478.23179422,
+      "close": 6489.98888888,
+      "volume": 5.19571283,
+      "baseVolume": 33676.47360273,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0548408956,
+    "macdValue": -13.1517839000,
+    "macdSignalLineValue": -13.1406488078,
+    "macdBarChartValue": -0.0111350922,
+    "maResult": 6512.7135723648
+  },
+  {
+    "tick": {
+      "open": 6490.00000000,
+      "high": 6498.67402900,
+      "low": 6483.50000000,
+      "close": 6490.49000000,
+      "volume": 9.98710766,
+      "baseVolume": 64838.15251535,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0274204911,
+    "macdValue": -11.7131920326,
+    "macdSignalLineValue": -12.8551574528,
+    "macdBarChartValue": 1.1419654202,
+    "maResult": 6511.0040667983
+  },
+  {
+    "tick": {
+      "open": 6497.67821330,
+      "high": 6507.05544400,
+      "low": 6485.45140314,
+      "close": 6498.89774905,
+      "volume": 1.91524192,
+      "baseVolume": 12431.04206280,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0137102888,
+    "macdValue": -9.4952010439,
+    "macdSignalLineValue": -12.1831661710,
+    "macdBarChartValue": 2.6879651271,
+    "maResult": 6510.0728115869
+  },
+  {
+    "tick": {
+      "open": 6490.00000000,
+      "high": 6497.67522487,
+      "low": 6490.00000000,
+      "close": 6497.67522487,
+      "volume": 0.39160859,
+      "baseVolume": 2541.90101325,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0068549374,
+    "macdValue": -7.8631617866,
+    "macdSignalLineValue": -11.3191652941,
+    "macdBarChartValue": 3.4560035075,
+    "maResult": 6509.1191510702
+  },
+  {
+    "tick": {
+      "open": 6504.23541499,
+      "high": 6515.00000000,
+      "low": 6498.57082343,
+      "close": 6510.25385495,
+      "volume": 7.05302255,
+      "baseVolume": 45924.49529657,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_SHORT"
+    ],
+    "stcResult": 50.0034274682,
+    "macdValue": -5.1430606422,
+    "macdSignalLineValue": -10.0839443637,
+    "macdBarChartValue": 4.9408837215,
+    "maResult": 6509.2064359840
+  },
+  {
+    "tick": {
+      "open": 6505.00000000,
+      "high": 6515.00000000,
+      "low": 6500.50000001,
+      "close": 6500.50000000,
+      "volume": 2.20455603,
+      "baseVolume": 14345.63696923,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 75.0017137343,
+    "macdValue": -4.2192693975,
+    "macdSignalLineValue": -8.9110093705,
+    "macdBarChartValue": 4.6917399730,
+    "maResult": 6508.5367101391
+  },
+  {
+    "tick": {
+      "open": 6494.99624020,
+      "high": 6502.00000000,
+      "low": 6437.00000000,
+      "close": 6430.09567348,
+      "volume": 11.92845485,
+      "baseVolume": 77068.96085700,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 62.5008013433,
+    "macdValue": -11.2991223626,
+    "macdSignalLineValue": -9.3886319689,
+    "macdBarChartValue": -1.9104903937,
+    "maResult": 6502.5027842422
+  },
+  {
+    "tick": {
+      "open": 6427.53011945,
+      "high": 6457.00000000,
+      "low": 6428.41393615,
+      "close": 6432.20359127,
+      "volume": 3.79120040,
+      "baseVolume": 24414.33939773,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 43.7503173858,
+    "macdValue": -15.6806317603,
+    "macdSignalLineValue": -10.6470319272,
+    "macdBarChartValue": -5.0335998331,
+    "maResult": 6497.0951540136
+  },
+  {
+    "tick": {
+      "open": 6439.00000000,
+      "high": 6459.42583905,
+      "low": 6435.23674908,
+      "close": 6451.35643911,
+      "volume": 15.99137841,
+      "baseVolume": 103031.82199664,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 28.1250615260,
+    "macdValue": -16.1945531454,
+    "macdSignalLineValue": -11.7565361708,
+    "macdBarChartValue": -4.4380169746,
+    "maResult": 6493.5767913287
+  },
+  {
+    "tick": {
+      "open": 6435.00000000,
+      "high": 6450.00000000,
+      "low": 6432.76856984,
+      "close": 6445.79761872,
+      "volume": 8.33153856,
+      "baseVolume": 53674.21734114,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 17.1874266556,
+    "macdValue": -16.7676380192,
+    "macdSignalLineValue": -12.7587565405,
+    "macdBarChartValue": -4.0088814787,
+    "maResult": 6489.9014703588
+  },
+  {
+    "tick": {
+      "open": 6436.00000000,
+      "high": 6449.99999999,
+      "low": 6416.00000000,
+      "close": 6417.59000000,
+      "volume": 19.51980994,
+      "baseVolume": 125326.27150016,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 10.1561057501,
+    "macdValue": -19.8840089498,
+    "macdSignalLineValue": -14.1838070224,
+    "macdBarChartValue": -5.7002019274,
+    "maResult": 6484.3390495620
+  },
+  {
+    "tick": {
+      "open": 6439.23583770,
+      "high": 6440.00000000,
+      "low": 6410.00000000,
+      "close": 6412.82447397,
+      "volume": 17.41235884,
+      "baseVolume": 111670.49796781,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 5.8591935623,
+    "macdValue": -22.0770767089,
+    "macdSignalLineValue": -15.7624609597,
+    "macdBarChartValue": -6.3146157492,
+    "maResult": 6478.8379283626
+  },
+  {
+    "tick": {
+      "open": 6419.60000000,
+      "high": 6449.99999999,
+      "low": 6419.60000000,
+      "close": 6449.99999999,
+      "volume": 13.35968197,
+      "baseVolume": 85763.72545373,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 3.3201116008,
+    "macdValue": -18.9175446954,
+    "macdSignalLineValue": -16.3934777068,
+    "macdBarChartValue": -2.5240669886,
+    "maResult": 6476.6196261801
+  },
+  {
+    "tick": {
+      "open": 6430.00000000,
+      "high": 6450.00000000,
+      "low": 6426.56219680,
+      "close": 6449.99000000,
+      "volume": 6.81608459,
+      "baseVolume": 43840.34351805,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 1.6600558004,
+    "macdValue": -16.2671881246,
+    "macdSignalLineValue": -16.3682197904,
+    "macdBarChartValue": 0.1010316658,
+    "maResult": 6474.5711933970
+  },
+  {
+    "tick": {
+      "open": 6448.12029791,
+      "high": 6450.00000000,
+      "low": 6437.15155570,
+      "close": 6450.00000000,
+      "volume": 2.03449025,
+      "baseVolume": 13105.35800236,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.8300278999,
+    "macdValue": -14.0320727639,
+    "macdSignalLineValue": -15.9009903851,
+    "macdBarChartValue": 1.8689176212,
+    "maResult": 6472.6811015972
+  },
+  {
+    "tick": {
+      "open": 6430.94285555,
+      "high": 6450.00000000,
+      "low": 6435.00000000,
+      "close": 6436.70196213,
+      "volume": 6.78602616,
+      "baseVolume": 43673.95369813,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.4150139503,
+    "macdValue": -13.6178966541,
+    "macdSignalLineValue": -15.4443716389,
+    "macdBarChartValue": 1.8264749848,
+    "maResult": 6469.9134754843
+  },
+  {
+    "tick": {
+      "open": 6435.00000001,
+      "high": 6441.58349173,
+      "low": 6431.28174181,
+      "close": 6441.58349173,
+      "volume": 1.11614534,
+      "baseVolume": 7186.59293847,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.2075069743,
+    "macdValue": -12.4529161374,
+    "macdSignalLineValue": -14.8460805386,
+    "macdBarChartValue": 2.3931644012,
+    "maResult": 6467.7342459647
+  },
+  {
+    "tick": {
+      "open": 6441.58349173,
+      "high": 6450.00000000,
+      "low": 6437.51174710,
+      "close": 6438.00000000,
+      "volume": 5.49689386,
+      "baseVolume": 35412.74102524,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.1037534886,
+    "macdValue": -11.7381838455,
+    "macdSignalLineValue": -14.2245012000,
+    "macdBarChartValue": 2.4863173545,
+    "maResult": 6465.4469962751
+  },
+  {
+    "tick": {
+      "open": 6430.00000000,
+      "high": 6438.11657680,
+      "low": 6405.00000000,
+      "close": 6396.70637211,
+      "volume": 10.21987202,
+      "baseVolume": 65476.06608468,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0518767412,
+    "macdValue": -15.5423971167,
+    "macdSignalLineValue": -14.4880803833,
+    "macdBarChartValue": -1.0543167334,
+    "maResult": 6460.1592559547
+  },
+  {
+    "tick": {
+      "open": 6424.44585798,
+      "high": 6443.11606529,
+      "low": 6412.27347270,
+      "close": 6430.98243912,
+      "volume": 7.44341656,
+      "baseVolume": 47841.97178299,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 0.0259383675,
+    "macdValue": -13.9802557077,
+    "macdSignalLineValue": -14.3865154482,
+    "macdBarChartValue": 0.4062597405,
+    "maResult": 6457.9148854290
+  },
+  {
+    "tick": {
+      "open": 6420.20935543,
+      "high": 6436.36842816,
+      "low": 6422.84629754,
+      "close": 6434.51108554,
+      "volume": 12.73284400,
+      "baseVolume": 81853.56126328,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [
+      "EXIT_SHORT"
+    ],
+    "stcResult": 50.0129691839,
+    "macdValue": -12.1629933854,
+    "macdSignalLineValue": -13.9418110356,
+    "macdBarChartValue": 1.7788176502,
+    "maResult": 6456.1145931298
+  },
+  {
+    "tick": {
+      "open": 6418.98500000,
+      "high": 6439.28134892,
+      "low": 6424.91493662,
+      "close": 6426.30008375,
+      "volume": 1.12027100,
+      "baseVolume": 7205.97488811,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 49.9995257024,
+    "macdValue": -11.5186272039,
+    "macdSignalLineValue": -13.4571742693,
+    "macdBarChartValue": 1.9385470654,
+    "maResult": 6453.8211693314
+  },
+  {
+    "tick": {
+      "open": 6424.26677605,
+      "high": 6446.88339416,
+      "low": 6421.04761418,
+      "close": 6421.04761418,
+      "volume": 2.25230528,
+      "baseVolume": 14474.29148647,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 37.4893245167,
+    "macdValue": -11.3723366552,
+    "macdSignalLineValue": -13.0402067465,
+    "macdBarChartValue": 1.6678700913,
+    "maResult": 6451.3001266274
+  },
+  {
+    "tick": {
+      "open": 6435.15000000,
+      "high": 6450.00000000,
+      "low": 6435.15000000,
+      "close": 6446.83033254,
+      "volume": 1.50525187,
+      "baseVolume": 9699.39086627,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 68.7446622584,
+    "macdValue": -8.1256525900,
+    "macdSignalLineValue": -12.0572959152,
+    "macdBarChartValue": 3.9316433252,
+    "maResult": 6450.9562963130
+  },
+  {
+    "tick": {
+      "open": 6440.00000000,
+      "high": 6450.00000000,
+      "low": 6435.16259191,
+      "close": 6450.00000000,
+      "volume": 0.99517533,
+      "baseVolume": 6409.42923851,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 84.3723311292,
+    "macdValue": -5.3282128373,
+    "macdSignalLineValue": -10.7114792996,
+    "macdBarChartValue": 5.3832664623,
+    "maResult": 6450.8827350582
+  },
+  {
+    "tick": {
+      "open": 6430.34951566,
+      "high": 6450.00000000,
+      "low": 6430.34951566,
+      "close": 6437.51238985,
+      "volume": 3.00630426,
+      "baseVolume": 19384.80691176,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 92.1861655646,
+    "macdValue": -4.6501318438,
+    "macdSignalLineValue": -9.4992098084,
+    "macdBarChartValue": 4.8490779646,
+    "maResult": 6449.8542469653
+  },
+  {
+    "tick": {
+      "open": 6455.00000000,
+      "high": 6476.47893409,
+      "low": 6451.02913001,
+      "close": 6454.94666962,
+      "volume": 8.99974212,
+      "baseVolume": 58133.39344998,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 96.0930827823,
+    "macdValue": -2.1293748406,
+    "macdSignalLineValue": -8.0252428148,
+    "macdBarChartValue": 5.8958679742,
+    "maResult": 6450.2459717849
+  },
+  {
+    "tick": {
+      "open": 6451.98639062,
+      "high": 6465.77484443,
+      "low": 6441.00000000,
+      "close": 6446.72850047,
+      "volume": 2.15561364,
+      "baseVolume": 13909.46900452,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 98.0465413911,
+    "macdValue": -1.2471820072,
+    "macdSignalLineValue": -6.6696306533,
+    "macdBarChartValue": 5.4224486461,
+    "maResult": 6449.9753970684
+  },
+  {
+    "tick": {
+      "open": 6434.96466788,
+      "high": 6449.46591624,
+      "low": 6434.96466788,
+      "close": 6449.46591624,
+      "volume": 3.41181480,
+      "baseVolume": 21991.27090369,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.0232706956,
+    "macdValue": -0.3023189872,
+    "macdSignalLineValue": -5.3961683201,
+    "macdBarChartValue": 5.0938493329,
+    "maResult": 6449.9362062354
+  },
+  {
+    "tick": {
+      "open": 6441.50004168,
+      "high": 6457.71593931,
+      "low": 6443.83619068,
+      "close": 6455.00000000,
+      "volume": 0.95256323,
+      "baseVolume": 6147.84784263,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.5116353478,
+    "macdValue": 0.9732825058,
+    "macdSignalLineValue": -4.1222781549,
+    "macdBarChartValue": 5.0955606607,
+    "maResult": 6450.3257288327
+  },
+  {
+    "tick": {
+      "open": 6449.09791776,
+      "high": 6455.00000000,
+      "low": 6445.68944718,
+      "close": 6447.37255615,
+      "volume": 1.56507151,
+      "baseVolume": 10098.59858976,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.7558176739,
+    "macdValue": 0.9836544064,
+    "macdSignalLineValue": -3.1010916426,
+    "macdBarChartValue": 4.0847460490,
+    "maResult": 6450.0985617033
+  },
+  {
+    "tick": {
+      "open": 6448.01265918,
+      "high": 6448.01265918,
+      "low": 6431.36150000,
+      "close": 6442.15521507,
+      "volume": 0.89256187,
+      "baseVolume": 5746.52895360,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.8779088370,
+    "macdValue": 0.3868327755,
+    "macdSignalLineValue": -2.4035067590,
+    "macdBarChartValue": 2.7903395345,
+    "maResult": 6449.4875350392
+  },
+  {
+    "tick": {
+      "open": 6441.00000000,
+      "high": 6454.41606922,
+      "low": 6440.85309158,
+      "close": 6444.00099831,
+      "volume": 1.67954836,
+      "baseVolume": 10823.53358249,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9389544185,
+    "macdValue": 0.1697509518,
+    "macdSignalLineValue": -1.8888552168,
+    "macdBarChartValue": 2.0586061686,
+    "maResult": 6449.0654937523
+  },
+  {
+    "tick": {
+      "open": 6446.56736497,
+      "high": 6465.27065429,
+      "low": 6451.51387341,
+      "close": 6452.00000000,
+      "volume": 0.99226510,
+      "baseVolume": 6408.31705049,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9694772092,
+    "macdValue": 0.9042562750,
+    "macdSignalLineValue": -1.3302329184,
+    "macdBarChartValue": 2.2344891934,
+    "maResult": 6449.2912250021
+  },
+  {
+    "tick": {
+      "open": 6452.00000000,
+      "high": 6461.76439912,
+      "low": 6448.77391687,
+      "close": 6448.77391687,
+      "volume": 33.28439412,
+      "baseVolume": 214358.06465672,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9847386046,
+    "macdValue": 1.0312814278,
+    "macdSignalLineValue": -0.8579300492,
+    "macdBarChartValue": 1.8892114770,
+    "maResult": 6449.2514320689
+  },
+  {
+    "tick": {
+      "open": 6450.17717727,
+      "high": 6460.00000000,
+      "low": 6448.77391687,
+      "close": 6448.56979515,
+      "volume": 0.39654879,
+      "baseVolume": 2560.20229826,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9923693025,
+    "macdValue": 1.0709573565,
+    "macdSignalLineValue": -0.4721525681,
+    "macdBarChartValue": 1.5431099246,
+    "maResult": 6449.1989984598
+  },
+  {
+    "tick": {
+      "open": 6448.56979520,
+      "high": 6458.77209149,
+      "low": 6448.56979520,
+      "close": 6458.77209149,
+      "volume": 1.70405912,
+      "baseVolume": 11004.20541151,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9961846514,
+    "macdValue": 2.2055327189,
+    "macdSignalLineValue": 0.0633844893,
+    "macdBarChartValue": 2.1421482296,
+    "maResult": 6449.9353902314
+  },
+  {
+    "tick": {
+      "open": 6458.11205448,
+      "high": 6460.00000000,
+      "low": 6458.00000000,
+      "close": 6458.00000000,
+      "volume": 1.99050163,
+      "baseVolume": 12855.30508752,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9980923252,
+    "macdValue": 2.8496849590,
+    "macdSignalLineValue": 0.6206445832,
+    "macdBarChartValue": 2.2290403758,
+    "maResult": 6450.5557448290
+  },
+  {
+    "tick": {
+      "open": 6458.00000000,
+      "high": 6475.00000000,
+      "low": 6458.00000000,
+      "close": 6468.63313195,
+      "volume": 9.21892935,
+      "baseVolume": 59563.10985310,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9990461621,
+    "macdValue": 4.4061212933,
+    "macdSignalLineValue": 1.3777399252,
+    "macdBarChartValue": 3.0283813681,
+    "maResult": 6451.9463130691
+  },
+  {
+    "tick": {
+      "open": 6460.16671843,
+      "high": 6477.83718011,
+      "low": 6448.00000000,
+      "close": 6448.00000000,
+      "volume": 2.93289383,
+      "baseVolume": 18936.22698343,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9995230832,
+    "macdValue": 3.0808127079,
+    "macdSignalLineValue": 1.7183544817,
+    "macdBarChartValue": 1.3624582262,
+    "maResult": 6451.6427505253
+  },
+  {
+    "tick": {
+      "open": 6435.04224977,
+      "high": 6461.72309064,
+      "low": 6438.80510044,
+      "close": 6461.72309064,
+      "volume": 1.61585899,
+      "baseVolume": 10411.84090744,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9997615438,
+    "macdValue": 3.6132683815,
+    "macdSignalLineValue": 2.0973372617,
+    "macdBarChartValue": 1.5159311198,
+    "maResult": 6452.4181613034
+  },
+  {
+    "tick": {
+      "open": 6455.38268611,
+      "high": 6468.72352142,
+      "low": 6455.38268611,
+      "close": 6466.55896511,
+      "volume": 7.15158872,
+      "baseVolume": 46170.04101283,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "stcResult": 99.9998807741,
+    "macdValue": 4.4294887665,
+    "macdSignalLineValue": 2.5637675627,
+    "macdBarChartValue": 1.8657212038,
+    "maResult": 6453.5059154424
+  }
+]

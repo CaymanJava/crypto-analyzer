@@ -1,0 +1,261 @@
+package pro.crypto.factory;
+
+import org.springframework.stereotype.Component;
+import pro.crypto.indicator.ac.ACRequest;
+import pro.crypto.indicator.adl.ADLRequest;
+import pro.crypto.indicator.adx.ADXRequest;
+import pro.crypto.indicator.alligator.AlligatorRequest;
+import pro.crypto.indicator.ao.AORequest;
+import pro.crypto.indicator.aroon.AroonRequest;
+import pro.crypto.indicator.asi.ASIRequest;
+import pro.crypto.indicator.atr.ATRRequest;
+import pro.crypto.indicator.atrb.ATRBRequest;
+import pro.crypto.indicator.bb.BBRequest;
+import pro.crypto.indicator.bbw.BBWRequest;
+import pro.crypto.indicator.cc.CCRequest;
+import pro.crypto.indicator.cci.CCIRequest;
+import pro.crypto.indicator.ce.CERequest;
+import pro.crypto.indicator.cfo.CFORequest;
+import pro.crypto.indicator.chop.CHOPRequest;
+import pro.crypto.indicator.cmf.CMFRequest;
+import pro.crypto.indicator.cmo.CMORequest;
+import pro.crypto.indicator.co.CORequest;
+import pro.crypto.indicator.cog.COGRequest;
+import pro.crypto.indicator.dc.DCRequest;
+import pro.crypto.indicator.di.DIRequest;
+import pro.crypto.indicator.dpo.DPORequest;
+import pro.crypto.indicator.efi.EFIRequest;
+import pro.crypto.indicator.eft.EFTRequest;
+import pro.crypto.indicator.eis.EISRequest;
+import pro.crypto.indicator.env.ENVRequest;
+import pro.crypto.indicator.eom.EOMRequest;
+import pro.crypto.indicator.eri.ERIRequest;
+import pro.crypto.indicator.fractal.FractalRequest;
+import pro.crypto.indicator.gapo.GAPORequest;
+import pro.crypto.indicator.ha.HARequest;
+import pro.crypto.indicator.hlb.HLBRequest;
+import pro.crypto.indicator.hv.HVRequest;
+import pro.crypto.indicator.ic.ICRequest;
+import pro.crypto.indicator.imi.IMIRequest;
+import pro.crypto.indicator.kelt.KELTRequest;
+import pro.crypto.indicator.kst.KSTRequest;
+import pro.crypto.indicator.kvo.KVORequest;
+import pro.crypto.indicator.lr.LRRequest;
+import pro.crypto.indicator.ma.MARequest;
+import pro.crypto.indicator.macd.MACDRequest;
+import pro.crypto.indicator.mfi.MFIRequest;
+import pro.crypto.indicator.mi.MIRequest;
+import pro.crypto.indicator.obv.OBVRequest;
+import pro.crypto.indicator.pgo.PGORequest;
+import pro.crypto.indicator.pivot.PivotRequest;
+import pro.crypto.indicator.pmo.PMORequest;
+import pro.crypto.indicator.ppo.PPORequest;
+import pro.crypto.indicator.psar.PSARRequest;
+import pro.crypto.indicator.pvt.PVTRequest;
+import pro.crypto.indicator.qs.QSRequest;
+import pro.crypto.indicator.rma.RMARequest;
+import pro.crypto.indicator.ro.RORequest;
+import pro.crypto.indicator.roc.ROCRequest;
+import pro.crypto.indicator.rsi.CRSIRequest;
+import pro.crypto.indicator.rsi.LRSIRequest;
+import pro.crypto.indicator.rsi.RSIRequest;
+import pro.crypto.indicator.rsi.StochRSIRequest;
+import pro.crypto.indicator.rv.RVRequest;
+import pro.crypto.indicator.rvi.RVIRequest;
+import pro.crypto.indicator.rwi.RWIRequest;
+import pro.crypto.indicator.si.SIRequest;
+import pro.crypto.indicator.smi.SMIRequest;
+import pro.crypto.indicator.st.STRequest;
+import pro.crypto.indicator.stc.STCRequest;
+import pro.crypto.indicator.stdev.StDevRequest;
+import pro.crypto.indicator.stoch.StochRequest;
+import pro.crypto.indicator.tmf.TMFRequest;
+import pro.crypto.indicator.trix.TRIXRequest;
+import pro.crypto.indicator.uo.UORequest;
+import pro.crypto.indicator.vhf.VHFRequest;
+import pro.crypto.indicator.vi.VIRequest;
+import pro.crypto.indicator.vo.VORequest;
+import pro.crypto.indicator.wpr.WPRRequest;
+import pro.crypto.model.indicator.IndicatorType;
+import pro.crypto.request.IndicatorRequest;
+
+@Component
+public class IndicatorRequestTypeResolver {
+
+    Class<? extends IndicatorRequest> resolve(IndicatorType type) {
+        switch (type) {
+            case ACCELERATION_DECELERATION_OSCILLATOR:
+                return ACRequest.class;
+            case ACCUMULATION_DISTRIBUTION_LINE:
+                return ADLRequest.class;
+            case AVERAGE_DIRECTIONAL_MOVEMENT_INDEX:
+                return ADXRequest.class;
+            case ALLIGATOR:
+                return AlligatorRequest.class;
+            case AWESOME_OSCILLATOR:
+                return AORequest.class;
+            case AVERAGE_TRUE_RANGE:
+                return ATRRequest.class;
+            case AROON_UP_DOWN:
+                return AroonRequest.class;
+            case ACCUMULATIVE_SWING_INDEX:
+                return ASIRequest.class;
+            case AVERAGE_TRUE_RANGE_BANDS:
+                return ATRBRequest.class;
+            case BOLLINGER_BANDS:
+                return BBRequest.class;
+            case BOLLINGER_BANDS_WIDTH:
+                return BBWRequest.class;
+            case COPPOCK_CURVE:
+                return CCRequest.class;
+            case COMMODITY_CHANNEL_INDEX:
+                return CCIRequest.class;
+            case CHANDELIER_EXIT:
+                return CERequest.class;
+            case CHANDE_FORECAST_OSCILLATOR:
+                return CFORequest.class;
+            case CHOPPINESS_INDEX:
+                return CHOPRequest.class;
+            case CHAIKIN_MONEY_FLOW:
+                return CMFRequest.class;
+            case CHANDE_MOMENTUM_OSCILLATOR:
+                return CMORequest.class;
+            case CHAIKIN_OSCILLATOR:
+                return CORequest.class;
+            case CENTER_OF_GRAVITY:
+                return COGRequest.class;
+            case DONCHIAN_CHANNEL:
+                return DCRequest.class;
+            case DISPARITY_INDEX:
+                return DIRequest.class;
+            case DETRENDED_PRICE_OSCILLATOR:
+                return DPORequest.class;
+            case ELDERS_FORCE_INDEX:
+                return EFIRequest.class;
+            case EHLERS_FISHER_TRANSFORM:
+                return EFTRequest.class;
+            case ELDER_IMPULSE_SYSTEM:
+                return EISRequest.class;
+            case MOVING_AVERAGE_ENVELOPES:
+                return ENVRequest.class;
+            case EASE_OF_MOVEMENT:
+                return EOMRequest.class;
+            case ELDER_RAY_INDEX:
+                return ERIRequest.class;
+            case FRACTAL:
+                return FractalRequest.class;
+            case GOPALAKRISHNAN_RANGE_INDEX:
+                return GAPORequest.class;
+            case HEIKEN_ASHI:
+                return HARequest.class;
+            case HIGH_LOW_BANDS:
+                return HLBRequest.class;
+            case HISTORICAL_VOLATILITY:
+                return HVRequest.class;
+            case ICHIMOKU_CLOUDS:
+                return ICRequest.class;
+            case INTRADAY_MOMENTUM_INDEX:
+                return IMIRequest.class;
+            case KELTNER_CHANNEL:
+                return KELTRequest.class;
+            case KNOW_SURE_THING:
+                return KSTRequest.class;
+            case KLINGER_VOLUME_OSCILLATOR:
+                return KVORequest.class;
+            case LINEAR_REGRESSION:
+                return LRRequest.class;
+            case DISPLACED_MOVING_AVERAGE:
+            case EXPONENTIAL_MOVING_AVERAGE:
+            case HULL_MOVING_AVERAGE:
+            case SIMPLE_MOVING_AVERAGE:
+            case SMOOTHED_MOVING_AVERAGE:
+            case WEIGHTED_MOVING_AVERAGE:
+            case MODIFIED_MOVING_AVERAGE:
+            case DOUBLE_EXPONENTIAL_MOVING_AVERAGE:
+            case KAUFMAN_ADAPTIVE_MOVING_AVERAGE:
+            case VARIABLE_INDEX_DYNAMIC_AVERAGE:
+            case TRIANGULAR_MOVING_AVERAGE:
+            case WELLES_WILDERS_MOVING_AVERAGE:
+            case TIME_SERIES_MOVING_AVERAGE:
+            case TRIPLE_EXPONENTIAL_MOVING_AVERAGE:
+                return MARequest.class;
+            case MOVING_AVERAGE_CONVERGENCE_DIVERGENCE:
+                return MACDRequest.class;
+            case MARKET_FACILITATION_INDEX:
+                return MFIRequest.class;
+            case MASS_INDEX:
+                return MIRequest.class;
+            case ON_BALANCE_VOLUME:
+                return OBVRequest.class;
+            case PRETTY_GOOD_OSCILLATOR:
+                return PGORequest.class;
+            case FLOOR_PIVOT_POINTS:
+            case WOODIE_PIVOT_POINTS:
+            case CAMARILLA_PIVOT_POINTS:
+            case DE_MARK_PIVOT_POINTS:
+            case FIBONACCI_PIVOT_POINTS:
+                return PivotRequest.class;
+            case PRICE_MOMENTUM_OSCILLATOR:
+                return PMORequest.class;
+            case PERCENTAGE_PRICE_OSCILLATOR:
+                return PPORequest.class;
+            case PARABOLIC_STOP_AND_REVERSE:
+                return PSARRequest.class;
+            case PRICE_VOLUME_TREND:
+                return PVTRequest.class;
+            case QUICK_STICK:
+                return QSRequest.class;
+            case RAINBOW_MOVING_AVERAGE:
+                return RMARequest.class;
+            case RAINBOW_OSCILLATOR:
+                return RORequest.class;
+            case RATE_OF_CHANGE:
+                return ROCRequest.class;
+            case CONNORS_RELATIVE_STRENGTH_INDEX:
+                return CRSIRequest.class;
+            case LAGUERRE_RELATIVE_STRENGTH_INDEX:
+                return LRSIRequest.class;
+            case RELATIVE_STRENGTH_INDEX:
+                return RSIRequest.class;
+            case STOCHASTIC_RELATIVE_STRENGTH_INDEX:
+                return StochRSIRequest.class;
+            case RELATIVE_VOLATILITY:
+                return RVRequest.class;
+            case RELATIVE_VIGOR_INDEX:
+                return RVIRequest.class;
+            case RANDOM_WALK_INDEX:
+                return RWIRequest.class;
+            case SWING_INDEX:
+                return SIRequest.class;
+            case STOCHASTIC_MOMENTUM_INDEX:
+                return SMIRequest.class;
+            case SUPER_TREND:
+                return STRequest.class;
+            case SCHAFF_TREND_CYCLE:
+                return STCRequest.class;
+            case STANDARD_DEVIATION:
+                return StDevRequest.class;
+            case PREFERABLE_STOCHASTIC_OSCILLATOR:
+            case STOCHASTIC_OSCILLATOR:
+                return StochRequest.class;
+            case TWIGGS_MONEY_FLOW:
+                return TMFRequest.class;
+            case TRIPLE_EXPONENTIAL_AVERAGE:
+                return TRIXRequest.class;
+            case ULTIMATE_OSCILLATOR:
+                return UORequest.class;
+            case VERTICAL_HORIZONTAL_FILTER:
+                return VHFRequest.class;
+            case POSITIVE_VOLUME_INDEX:
+            case NEGATIVE_VOLUME_INDEX:
+                return VIRequest.class;
+            case VOLUME_OSCILLATOR:
+                return VORequest.class;
+            case WILLIAMS_PERCENT_RANGE:
+                return WPRRequest.class;
+            default:
+                return null;
+        }
+    }
+
+}

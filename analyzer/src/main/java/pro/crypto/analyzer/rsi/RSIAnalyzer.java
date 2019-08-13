@@ -7,16 +7,16 @@ import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.rsi.RSIResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.SecurityLevel;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.SecurityLevel;
+import pro.crypto.model.analyzer.Signal;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Optional.ofNullable;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.SELL;
 
 /**
  * This analyzer is made for RSI and for all indicator, which base on it

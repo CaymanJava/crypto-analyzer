@@ -1,8 +1,16 @@
 package pro.crypto.analyzer.uo;
 
-import pro.crypto.helper.*;
+import pro.crypto.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.MathHelper;
+import pro.crypto.helper.SecurityLevelAnalyzer;
+import pro.crypto.helper.SignalArrayMerger;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.uo.UOResult;
-import pro.crypto.model.*;
+import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.analyzer.SecurityLevel;
+import pro.crypto.model.analyzer.SignalStrength;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -11,11 +19,11 @@ import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Optional.ofNullable;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.SELL;
-import static pro.crypto.model.Strength.NORMAL;
-import static pro.crypto.model.Strength.STRONG;
-import static pro.crypto.model.Strength.WEAK;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.SELL;
+import static pro.crypto.model.analyzer.Strength.NORMAL;
+import static pro.crypto.model.analyzer.Strength.STRONG;
+import static pro.crypto.model.analyzer.Strength.WEAK;
 
 public class UOAnalyzer implements Analyzer<UOAnalyzerResult> {
 

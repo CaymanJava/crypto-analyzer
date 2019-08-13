@@ -2,8 +2,12 @@ package pro.crypto.analyzer.adx;
 
 import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.indicator.adx.ADXResult;
-import pro.crypto.model.*;
-import pro.crypto.model.result.AnalyzerResult;
+import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.analyzer.Signal;
+import pro.crypto.model.analyzer.Strength;
+import pro.crypto.model.analyzer.Trend;
+import pro.crypto.model.analyzer.TrendStrength;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -13,7 +17,10 @@ import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static java.util.Optional.ofNullable;
-import static pro.crypto.model.Strength.*;
+import static pro.crypto.model.analyzer.Strength.NORMAL;
+import static pro.crypto.model.analyzer.Strength.STRONG;
+import static pro.crypto.model.analyzer.Strength.UNDEFINED;
+import static pro.crypto.model.analyzer.Strength.WEAK;
 
 public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult> {
 
@@ -100,7 +107,7 @@ public class ADXAnalyzer implements Analyzer<ADXAnalyzerResult> {
                 .toArray(ADXAnalyzerResult[]::new);
     }
 
-    private AnalyzerResult buildADXAnalyzerResult(Strength strength, Signal signal, int currentIndex) {
+    private ADXAnalyzerResult buildADXAnalyzerResult(Strength strength, Signal signal, int currentIndex) {
         return ADXAnalyzerResult.builder()
                 .time(originalData[currentIndex].getTickTime())
                 .signal(signal)

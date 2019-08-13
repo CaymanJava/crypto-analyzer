@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.kelt;
 
 import lombok.Value;
-import pro.crypto.model.SignalStrength;
+import pro.crypto.model.analyzer.SignalStrength;
 import pro.crypto.model.result.CrossBandResult;
 import pro.crypto.model.result.SignalStrengthResult;
 

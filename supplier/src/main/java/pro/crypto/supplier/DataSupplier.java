@@ -43,17 +43,17 @@ public class DataSupplier implements StockService {
     }
 
     public TickData getTicksByPeriod(GetTicksByPeriodRequest request) {
-        log.debug("Getting ticks by period {stock: {}, request: {}}", request);
+        log.debug("Getting ticks by period {request: {}}", request);
         TickData ticks = spiderClients.get(request.getStock()).getTicksByPeriod(request.getMarketId(), request.getTimeFrame(), request.getPeriod());
-        log.debug("Got ticks by period {stock: {}, request: {}, ticks: {}}", request, ticks);
+        log.debug("Got ticks by period {request: {}, ticks: {}}", request, ticks);
         return ticks;
     }
 
     public TickData getTicksByTime(GetTickByTimeRequest request) {
-        log.debug("Getting ticks by time {stock: {}, request: {}}", request);
+        log.debug("Getting ticks by time {request: {}}", request);
         TickData ticks = spiderClients.get(request.getStock()).getTicksByTime(request.getMarketId(), request.getTimeFrame(),
                 request.getFrom(), request.getTo());
-        log.debug("Got ticks by time {stock: {}, request: {}, ticks: {}}", request, ticks);
+        log.debug("Got ticks by time {request: {}, ticks: {}}", request, ticks);
         return ticks;
     }
 

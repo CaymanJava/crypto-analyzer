@@ -3,14 +3,14 @@ package pro.crypto.helper;
 import pro.crypto.helper.divergence.Divergence;
 import pro.crypto.helper.divergence.DivergenceRequest;
 import pro.crypto.helper.divergence.DivergenceResult;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
 import java.util.stream.Stream;
 
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.SELL;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.SELL;
 
 public class DefaultDivergenceAnalyzer {
 

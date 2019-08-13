@@ -1,6 +1,6 @@
 package pro.crypto.helper;
 
-import pro.crypto.model.SecurityLevel;
+import pro.crypto.model.analyzer.SecurityLevel;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;

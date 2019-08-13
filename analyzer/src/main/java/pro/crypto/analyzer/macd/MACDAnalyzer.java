@@ -7,7 +7,7 @@ import pro.crypto.helper.SignalArrayMerger;
 import pro.crypto.indicator.macd.MACDResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.SignalStrength;
+import pro.crypto.model.analyzer.SignalStrength;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -16,8 +16,8 @@ import java.util.stream.Stream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.helper.IndicatorResultExtractor.extractSignalLineValues;
-import static pro.crypto.model.Strength.NORMAL;
-import static pro.crypto.model.Strength.WEAK;
+import static pro.crypto.model.analyzer.Strength.NORMAL;
+import static pro.crypto.model.analyzer.Strength.WEAK;
 
 public class MACDAnalyzer implements Analyzer<MACDAnalyzerResult> {
 

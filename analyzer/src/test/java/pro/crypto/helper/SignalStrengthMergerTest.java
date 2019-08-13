@@ -4,17 +4,22 @@ import lombok.Data;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import pro.crypto.model.Signal;
-import pro.crypto.model.SignalStrength;
-import pro.crypto.model.Strength;
+import pro.crypto.model.analyzer.Signal;
+import pro.crypto.model.analyzer.SignalStrength;
+import pro.crypto.model.analyzer.Strength;
 
 import java.util.Collection;
 
 import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;
 import static org.junit.runners.Parameterized.Parameters;
-import static pro.crypto.model.Signal.*;
-import static pro.crypto.model.Strength.*;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.NEUTRAL;
+import static pro.crypto.model.analyzer.Signal.SELL;
+import static pro.crypto.model.analyzer.Strength.NORMAL;
+import static pro.crypto.model.analyzer.Strength.STRONG;
+import static pro.crypto.model.analyzer.Strength.UNDEFINED;
+import static pro.crypto.model.analyzer.Strength.WEAK;
 
 @RunWith(Parameterized.class)
 public class SignalStrengthMergerTest {
@@ -47,7 +52,7 @@ public class SignalStrengthMergerTest {
                 of(signal(BUY, NORMAL), null, signal(SELL, NORMAL), signal(NEUTRAL, UNDEFINED)),
                 of(signal(BUY, STRONG), signal(SELL, NORMAL), null, signal(BUY, WEAK)),
                 of(signal(BUY, STRONG), null, null, signal(BUY, STRONG)),
-                of(null, signal(BUY, WEAK),null, signal(BUY, WEAK)),
+                of(null, signal(BUY, WEAK), null, signal(BUY, WEAK)),
                 of(null, null, signal(SELL, NORMAL), signal(SELL, NORMAL)),
                 of(null, null, null, signal(NEUTRAL, UNDEFINED))
         );

@@ -1,7 +1,7 @@
 package pro.crypto.analyzer.dpo;
 
 import lombok.Value;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 import pro.crypto.model.result.SignalResult;
 
 import java.time.LocalDateTime;

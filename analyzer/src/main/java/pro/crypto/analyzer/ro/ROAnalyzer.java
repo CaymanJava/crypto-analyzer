@@ -1,7 +1,11 @@
 package pro.crypto.analyzer.ro;
 
 import pro.crypto.indicator.ro.ROResult;
-import pro.crypto.model.*;
+import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.analyzer.SignalStrength;
+import pro.crypto.model.analyzer.Strength;
+import pro.crypto.model.analyzer.Trend;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
@@ -10,10 +14,15 @@ import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static java.util.Optional.ofNullable;
-import static pro.crypto.model.Signal.*;
-import static pro.crypto.model.Strength.NORMAL;
-import static pro.crypto.model.Strength.STRONG;
-import static pro.crypto.model.Trend.*;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.NEUTRAL;
+import static pro.crypto.model.analyzer.Signal.SELL;
+import static pro.crypto.model.analyzer.Strength.NORMAL;
+import static pro.crypto.model.analyzer.Strength.STRONG;
+import static pro.crypto.model.analyzer.Trend.CONSOLIDATION;
+import static pro.crypto.model.analyzer.Trend.DOWNTREND;
+import static pro.crypto.model.analyzer.Trend.UNDEFINED;
+import static pro.crypto.model.analyzer.Trend.UPTREND;
 
 public class ROAnalyzer implements Analyzer<ROAnalyzerResult> {
 

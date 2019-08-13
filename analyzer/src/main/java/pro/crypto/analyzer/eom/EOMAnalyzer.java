@@ -1,11 +1,11 @@
 package pro.crypto.analyzer.eom;
 
-import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.eom.EOMResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 
 import java.util.stream.IntStream;
 

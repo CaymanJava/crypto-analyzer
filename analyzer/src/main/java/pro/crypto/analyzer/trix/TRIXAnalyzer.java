@@ -1,10 +1,14 @@
 package pro.crypto.analyzer.trix;
 
-import pro.crypto.helper.*;
+import pro.crypto.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.helper.DynamicLineCrossAnalyzer;
+import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.trix.TRIXResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.SignalStrength;
+import pro.crypto.model.analyzer.SignalStrength;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -14,7 +18,9 @@ import java.util.stream.Stream;
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
 import static pro.crypto.helper.IndicatorResultExtractor.extractSignalLineValues;
-import static pro.crypto.model.Strength.*;
+import static pro.crypto.model.analyzer.Strength.NORMAL;
+import static pro.crypto.model.analyzer.Strength.STRONG;
+import static pro.crypto.model.analyzer.Strength.WEAK;
 
 public class TRIXAnalyzer implements Analyzer<TRIXAnalyzerResult> {
 

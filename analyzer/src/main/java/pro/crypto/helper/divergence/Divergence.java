@@ -7,7 +7,9 @@ import pro.crypto.model.tick.PriceType;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 import java.util.function.BiFunction;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -17,9 +19,12 @@ import static java.math.BigDecimal.ZERO;
 import static java.util.Arrays.asList;
 import static java.util.Comparator.comparing;
 import static java.util.Objects.nonNull;
-import static java.util.stream.Stream.*;
-import static pro.crypto.helper.divergence.DivergenceClass.*;
-import static pro.crypto.helper.divergence.DivergenceType.*;
+import static java.util.stream.Stream.concat;
+import static java.util.stream.Stream.of;
+import static pro.crypto.helper.divergence.DivergenceClass.CLASSIC;
+import static pro.crypto.helper.divergence.DivergenceClass.EXTENDED;
+import static pro.crypto.helper.divergence.DivergenceClass.HIDDEN;
+import static pro.crypto.helper.divergence.DivergenceType.BEARISH;
 import static pro.crypto.helper.divergence.DivergenceType.BULLISH;
 
 public class Divergence {

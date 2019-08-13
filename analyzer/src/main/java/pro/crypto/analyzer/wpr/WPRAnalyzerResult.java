@@ -1,8 +1,8 @@
 package pro.crypto.analyzer.wpr;
 
 import lombok.Value;
-import pro.crypto.model.SecurityLevel;
-import pro.crypto.model.SignalStrength;
+import pro.crypto.model.analyzer.SecurityLevel;
+import pro.crypto.model.analyzer.SignalStrength;
 import pro.crypto.model.result.SecurityLevelResult;
 import pro.crypto.model.result.SignalStrengthResult;
 

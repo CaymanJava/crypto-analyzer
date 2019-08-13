@@ -4,7 +4,7 @@ import pro.crypto.helper.DefaultDivergenceAnalyzer;
 import pro.crypto.indicator.adl.ADLResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 import pro.crypto.model.result.AnalyzerResult;
 import pro.crypto.model.tick.Tick;
 
@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static pro.crypto.helper.IndicatorResultExtractor.extractIndicatorValues;
-import static pro.crypto.model.Signal.NEUTRAL;
+import static pro.crypto.model.analyzer.Signal.NEUTRAL;
 
 public class ADLAnalyzer implements Analyzer<ADLAnalyzerResult> {
 

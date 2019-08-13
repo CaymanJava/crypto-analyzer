@@ -2,7 +2,7 @@ package pro.crypto.analyzer.fractal;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 import pro.crypto.model.result.SignalResult;
 
 import java.time.LocalDateTime;

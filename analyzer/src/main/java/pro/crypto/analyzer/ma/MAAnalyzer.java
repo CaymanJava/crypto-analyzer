@@ -6,7 +6,7 @@ import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.ma.MAResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 import pro.crypto.model.tick.Tick;
 
 import java.util.stream.IntStream;

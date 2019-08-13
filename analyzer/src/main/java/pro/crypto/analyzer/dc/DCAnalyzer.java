@@ -8,7 +8,9 @@ import pro.crypto.model.tick.Tick;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
-import static pro.crypto.helper.BandAnalyzer.*;
+import static pro.crypto.helper.BandAnalyzer.isLowerBandCrossPriceRange;
+import static pro.crypto.helper.BandAnalyzer.isMiddleBandCrossPriceRange;
+import static pro.crypto.helper.BandAnalyzer.isUpperBandCrossPriceRange;
 
 public class DCAnalyzer implements Analyzer<DCAnalyzerResult> {
 

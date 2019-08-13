@@ -10,36 +10,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>indicator</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1</version>
 
-    <dependencies>
-        <dependency>
-            <groupId>crypto-analyzer</groupId>
-            <artifactId>commons</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot.version}</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>test-jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+    <modules>
+        <module>indicator-calculator</module>
+        <module>indicator-service</module>
+        <module>indicator-api</module>
+        <module>indicator-api-http</module>
+        <module>indicator-starter</module>
+    </modules>
 
 </project>

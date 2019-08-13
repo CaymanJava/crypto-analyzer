@@ -1,8 +1,16 @@
 package pro.crypto.analyzer.co;
 
-import pro.crypto.helper.*;
+import pro.crypto.helper.DefaultDivergenceAnalyzer;
+import pro.crypto.helper.IncreaseDecreaseAnalyzer;
+import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.co.COResult;
-import pro.crypto.model.*;
+import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.analyzer.Signal;
+import pro.crypto.model.analyzer.SignalStrength;
+import pro.crypto.model.analyzer.Strength;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -11,9 +19,11 @@ import java.util.stream.Stream;
 
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
-import static pro.crypto.model.Signal.BUY;
-import static pro.crypto.model.Signal.SELL;
-import static pro.crypto.model.Strength.*;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.SELL;
+import static pro.crypto.model.analyzer.Strength.NORMAL;
+import static pro.crypto.model.analyzer.Strength.STRONG;
+import static pro.crypto.model.analyzer.Strength.WEAK;
 
 public class COAnalyzer implements Analyzer<COAnalyzerResult> {
 

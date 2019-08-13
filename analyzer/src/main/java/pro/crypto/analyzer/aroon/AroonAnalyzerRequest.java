@@ -1,9 +1,13 @@
 package pro.crypto.analyzer.aroon;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.IndicatorResult;
 import pro.crypto.model.tick.Tick;
+import pro.crypto.response.IndicatorResult;
 
 @Data
 @Builder

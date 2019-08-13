@@ -4,7 +4,7 @@ import pro.crypto.helper.DynamicLineCrossAnalyzer;
 import pro.crypto.indicator.kvo.KVOResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 
 import java.util.stream.IntStream;
 

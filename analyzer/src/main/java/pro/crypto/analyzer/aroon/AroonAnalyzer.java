@@ -1,7 +1,11 @@
 package pro.crypto.analyzer.aroon;
 
 import pro.crypto.indicator.aroon.AroonResult;
-import pro.crypto.model.*;
+import pro.crypto.model.Analyzer;
+import pro.crypto.model.AnalyzerRequest;
+import pro.crypto.model.analyzer.Strength;
+import pro.crypto.model.analyzer.Trend;
+import pro.crypto.model.analyzer.TrendStrength;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;

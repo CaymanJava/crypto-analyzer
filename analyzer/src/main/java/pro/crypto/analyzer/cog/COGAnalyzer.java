@@ -5,7 +5,7 @@ import pro.crypto.helper.IndicatorResultExtractor;
 import pro.crypto.indicator.cog.COGResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 
 import java.util.stream.IntStream;
 

@@ -6,8 +6,8 @@ import pro.crypto.helper.PriceVolumeExtractor;
 import pro.crypto.indicator.st.STResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.Signal;
-import pro.crypto.model.Trend;
+import pro.crypto.model.analyzer.Signal;
+import pro.crypto.model.analyzer.Trend;
 import pro.crypto.model.tick.Tick;
 
 import java.math.BigDecimal;
@@ -15,9 +15,9 @@ import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Trend.DOWNTREND;
-import static pro.crypto.model.Trend.UNDEFINED;
-import static pro.crypto.model.Trend.UPTREND;
+import static pro.crypto.model.analyzer.Trend.DOWNTREND;
+import static pro.crypto.model.analyzer.Trend.UNDEFINED;
+import static pro.crypto.model.analyzer.Trend.UPTREND;
 import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class STAnalyzer implements Analyzer<STAnalyzerResult> {

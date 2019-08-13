@@ -1,10 +1,10 @@
 package pro.crypto.helper;
 
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.NEUTRAL;
+import static pro.crypto.model.analyzer.Signal.NEUTRAL;
 
 public class SignalMerger {
 

@@ -7,7 +7,7 @@ import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.eft.EFTResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.SignalStrength;
+import pro.crypto.model.analyzer.SignalStrength;
 
 import java.math.BigDecimal;
 import java.util.stream.IntStream;
@@ -15,8 +15,8 @@ import java.util.stream.Stream;
 
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
-import static pro.crypto.model.Strength.NORMAL;
-import static pro.crypto.model.Strength.STRONG;
+import static pro.crypto.model.analyzer.Strength.NORMAL;
+import static pro.crypto.model.analyzer.Strength.STRONG;
 
 public class EFTAnalyzer implements Analyzer<EFTAnalyzerResult> {
 

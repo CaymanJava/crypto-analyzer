@@ -1,13 +1,13 @@
 package pro.crypto.analyzer.ao;
 
-import pro.crypto.helper.SignalArrayMerger;
-import pro.crypto.helper.StaticLineCrossAnalyzer;
-import pro.crypto.helper.SignalMerger;
 import pro.crypto.helper.IndicatorResultExtractor;
+import pro.crypto.helper.SignalArrayMerger;
+import pro.crypto.helper.SignalMerger;
+import pro.crypto.helper.StaticLineCrossAnalyzer;
 import pro.crypto.indicator.ao.AOResult;
 import pro.crypto.model.Analyzer;
 import pro.crypto.model.AnalyzerRequest;
-import pro.crypto.model.Signal;
+import pro.crypto.model.analyzer.Signal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,8 @@ import java.util.stream.Stream;
 import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static pro.crypto.model.Signal.*;
+import static pro.crypto.model.analyzer.Signal.BUY;
+import static pro.crypto.model.analyzer.Signal.SELL;
 
 public class AOAnalyzer implements Analyzer<AOAnalyzerResult> {
 

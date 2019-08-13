@@ -2,8 +2,8 @@ package pro.crypto.analyzer.adx;
 
 import lombok.Builder;
 import lombok.Value;
-import pro.crypto.model.Signal;
-import pro.crypto.model.TrendStrength;
+import pro.crypto.model.analyzer.Signal;
+import pro.crypto.model.analyzer.TrendStrength;
 import pro.crypto.model.result.EntryPointResult;
 import pro.crypto.model.result.SignalResult;
 import pro.crypto.model.result.TrendStrengthResult;

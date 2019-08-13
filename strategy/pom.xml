@@ -5,33 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>strategy</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1</version>
+    <modules>
+        <module>strategy-api</module>
+        <module>strategy-api-http</module>
+        <module>strategy-calculator</module>
+        <module>strategy-service</module>
+        <module>strategy-starter</module>
+    </modules>
 
     <parent>
         <artifactId>parent</artifactId>
         <groupId>crypto-analyzer</groupId>
         <version>0.0.1</version>
     </parent>
-
-
-    <dependencies>
-        <dependency>
-            <groupId>crypto-analyzer</groupId>
-            <artifactId>analyzer</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>crypto-analyzer</groupId>
-            <artifactId>indicator</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>crypto-analyzer</groupId>
-            <artifactId>indicator</artifactId>
-            <version>0.0.1</version>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 
 </project>

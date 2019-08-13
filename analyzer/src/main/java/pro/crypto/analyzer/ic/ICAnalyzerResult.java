@@ -1,8 +1,8 @@
 package pro.crypto.analyzer.ic;
 
 import lombok.Value;
-import pro.crypto.model.SignalStrength;
-import pro.crypto.model.TrendStrength;
+import pro.crypto.model.analyzer.SignalStrength;
+import pro.crypto.model.analyzer.TrendStrength;
 import pro.crypto.model.result.SignalStrengthResult;
 import pro.crypto.model.result.TrendStrengthResult;
 

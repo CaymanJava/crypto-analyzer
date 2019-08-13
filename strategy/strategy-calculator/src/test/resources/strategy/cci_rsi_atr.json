@@ -1,0 +1,8354 @@
+[
+  {
+    "tick": {
+      "open": 6503.39000000,
+      "high": 6517.44916128,
+      "low": 6495.74950006,
+      "close": 6500.00000000,
+      "volume": 8.47580725,
+      "baseVolume": 55093.25516336,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6509.96999989,
+      "high": 6509.96999989,
+      "low": 6493.00000000,
+      "close": 6483.00000015,
+      "volume": 0.90408650,
+      "baseVolume": 5870.81144075,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6480.00000000,
+      "high": 6493.00000000,
+      "low": 6414.00000000,
+      "close": 6405.20000000,
+      "volume": 69.72796813,
+      "baseVolume": 448358.78434027,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6425.00000000,
+      "high": 6434.94000000,
+      "low": 6372.99999969,
+      "close": 6375.60999584,
+      "volume": 77.64643638,
+      "baseVolume": 494613.31645841,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6352.48223020,
+      "high": 6394.91224762,
+      "low": 6376.00000001,
+      "close": 6387.49999987,
+      "volume": 13.62621987,
+      "baseVolume": 86856.18439822,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6368.00000000,
+      "high": 6400.02522199,
+      "low": 6363.00000000,
+      "close": 6370.00000000,
+      "volume": 34.84162393,
+      "baseVolume": 222623.58645730,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6363.55356000,
+      "high": 6391.63999120,
+      "low": 6370.00000000,
+      "close": 6391.63999119,
+      "volume": 11.76421031,
+      "baseVolume": 75008.17020865,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6381.00000000,
+      "high": 6391.63998935,
+      "low": 6371.00000013,
+      "close": 6385.00000000,
+      "volume": 9.30915138,
+      "baseVolume": 59366.16068660,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6363.00000000,
+      "high": 6379.99999995,
+      "low": 6360.00000000,
+      "close": 6375.99999999,
+      "volume": 5.65612222,
+      "baseVolume": 35988.67082988,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": []
+  },
+  {
+    "tick": {
+      "open": 6350.00000001,
+      "high": 6379.99999918,
+      "low": 6353.90530001,
+      "close": 6354.00000000,
+      "volume": 7.11804343,
+      "baseVolume": 45309.97906287,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 15.73734944357955824973
+  },
+  {
+    "tick": {
+      "open": 6378.99999975,
+      "high": 6378.99999975,
+      "low": 6340.00000001,
+      "close": 6340.00000001,
+      "volume": 8.03876838,
+      "baseVolume": 51134.58891141,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 14.66654206546455160942
+  },
+  {
+    "tick": {
+      "open": 6370.39999976,
+      "high": 6370.39999976,
+      "low": 6340.00000000,
+      "close": 6329.00000000,
+      "volume": 20.88803173,
+      "baseVolume": 132345.26519946,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 13.84416913972982603097
+  },
+  {
+    "tick": {
+      "open": 6334.00000000,
+      "high": 6348.57999916,
+      "low": 6323.00000000,
+      "close": 6317.00000000,
+      "volume": 3.23304338,
+      "baseVolume": 20454.94275695,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 29
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 12.96312658637227017920
+  },
+  {
+    "tick": {
+      "open": 6324.00000000,
+      "high": 6350.50999796,
+      "low": 6325.00000000,
+      "close": 6326.00000501,
+      "volume": 8.18436120,
+      "baseVolume": 51961.14629976,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 17.34651690231358777544,
+    "atrValue": 32.70012951714285714286
+  },
+  {
+    "tick": {
+      "open": 6350.50999796,
+      "high": 6367.39999683,
+      "low": 6340.00000000,
+      "close": 6350.50999796,
+      "volume": 3.85908772,
+      "baseVolume": 24477.99306990,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 28.27664789138452525509,
+    "atrValue": 33.32154825306122448980
+  },
+  {
+    "tick": {
+      "open": 6350.50999796,
+      "high": 6369.99999999,
+      "low": 6365.99999900,
+      "close": 6359.56709531,
+      "volume": 3.72343946,
+      "baseVolume": 23692.09277658,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 31.97038159095856170142,
+    "atrValue": 32.33358066569970845481
+  },
+  {
+    "tick": {
+      "open": 6370.00000000,
+      "high": 6372.99999999,
+      "low": 6352.00000006,
+      "close": 6355.00000024,
+      "volume": 6.05322648,
+      "baseVolume": 38520.55406047,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 31.07376376406360431945,
+    "atrValue": 31.52403918457830070804
+  },
+  {
+    "tick": {
+      "open": 6359.36530351,
+      "high": 6372.99999999,
+      "low": 6352.00000009,
+      "close": 6372.99999999,
+      "volume": 14.96103260,
+      "baseVolume": 95165.89536536,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 38.61297750558972346669,
+    "atrValue": 30.77232209282270780032,
+    "atrSignalLineValue": 32.13032394266000000000
+  },
+  {
+    "tick": {
+      "open": 6372.99999999,
+      "high": 6388.49999998,
+      "low": 6359.00000004,
+      "close": 6384.77290606,
+      "volume": 8.11988881,
+      "baseVolume": 51723.81088236,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 43.13328813217665101308,
+    "atrValue": 30.68144193904965724315,
+    "atrSignalLineValue": 31.72658642704000000000
+  },
+  {
+    "tick": {
+      "open": 6384.77290605,
+      "high": 6391.63999032,
+      "low": 6360.00000000,
+      "close": 6380.00000000,
+      "volume": 1.01691946,
+      "baseVolume": 6477.05040733,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 41.74848163006970481424,
+    "atrValue": 30.74990968054611029721,
+    "atrSignalLineValue": 31.21225871254000000000
+  },
+  {
+    "tick": {
+      "open": 6385.25000000,
+      "high": 6385.25000000,
+      "low": 6373.55000000,
+      "close": 6373.55000000,
+      "volume": 2.86689057,
+      "baseVolume": 18272.90293595,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 39.82846742716321207423,
+    "atrValue": 29.38920184622138813312,
+    "atrSignalLineValue": 30.62338294864000000000
+  },
+  {
+    "tick": {
+      "open": 6380.55000000,
+      "high": 6391.63999091,
+      "low": 6380.55000000,
+      "close": 6391.63999091,
+      "volume": 3.45026056,
+      "baseVolume": 22015.56193065,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 47.37111855495998163495,
+    "atrValue": 28.58211535077700326647,
+    "atrSignalLineValue": 30.03499818188000000000
+  },
+  {
+    "tick": {
+      "open": 6390.63999090,
+      "high": 6391.63999092,
+      "low": 6373.55000000,
+      "close": 6391.63999091,
+      "volume": 0.44651868,
+      "baseVolume": 2853.46479593,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 47.37111855461553651762,
+    "atrValue": 27.83267789143578874744,
+    "atrSignalLineValue": 29.44706934160000000000
+  },
+  {
+    "tick": {
+      "open": 6380.00000000,
+      "high": 6380.00000000,
+      "low": 6358.00000003,
+      "close": 6358.00000003,
+      "volume": 5.49446088,
+      "baseVolume": 34948.12522352,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 36.78501028969488020157,
+    "atrValue": 28.24748596204751812262,
+    "atrSignalLineValue": 28.96027814620000000000
+  },
+  {
+    "tick": {
+      "open": 6356.00000002,
+      "high": 6377.06999968,
+      "low": 6356.00000000,
+      "close": 6356.00000000,
+      "volume": 5.13979841,
+      "baseVolume": 32681.98007452,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 36.24987835555317148100,
+    "atrValue": 27.73480837047269539958,
+    "atrSignalLineValue": 28.35725788420000000000
+  },
+  {
+    "tick": {
+      "open": 6356.10000000,
+      "high": 6373.77999997,
+      "low": 6352.00000010,
+      "close": 6352.00000010,
+      "volume": 3.86674266,
+      "baseVolume": 24584.14602628,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 35.11469413608878556214,
+    "atrValue": 27.30946490615321715675,
+    "atrSignalLineValue": 27.94131049618000000000
+  },
+  {
+    "tick": {
+      "open": 6352.00000000,
+      "high": 6369.45082748,
+      "low": 6342.70728000,
+      "close": 6358.88888888,
+      "volume": 4.98579548,
+      "baseVolume": 31699.34129252,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 38.78310342197495319206,
+    "atrValue": 27.26904223285655878841,
+    "atrSignalLineValue": 27.67869587260000000000
+  },
+  {
+    "tick": {
+      "open": 6352.00000000,
+      "high": 6396.87525004,
+      "low": 6368.13000000,
+      "close": 6369.00000007,
+      "volume": 27.22080989,
+      "baseVolume": 173864.49967296,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 43.95092031749622837452,
+    "atrValue": 28.03456501336680458924,
+    "atrSignalLineValue": 27.71907329698000000000
+  },
+  {
+    "tick": {
+      "open": 6369.00000019,
+      "high": 6379.99999999,
+      "low": 6359.10000000,
+      "close": 6359.10000000,
+      "volume": 11.63765942,
+      "baseVolume": 74129.99534591,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 40.25401120618846310187,
+    "atrValue": 27.52495322598346140429,
+    "atrSignalLineValue": 27.57456674976000000000
+  },
+  {
+    "tick": {
+      "open": 6377.71104701,
+      "high": 6377.75070520,
+      "low": 6350.00000000,
+      "close": 6372.41845153,
+      "volume": 38.13508792,
+      "baseVolume": 241503.98489891,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 46.92700094417118285186,
+    "atrValue": 27.54107836698464273256,
+    "atrSignalLineValue": 27.53582074906000000000
+  },
+  {
+    "tick": {
+      "open": 6355.00000000,
+      "high": 6373.20395497,
+      "low": 6354.00000000,
+      "close": 6373.13573099,
+      "volume": 5.49704024,
+      "baseVolume": 34985.60559552,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 47.27935926742035278833,
+    "atrValue": 26.94556955291431110881,
+    "atrSignalLineValue": 27.46304167842000000000
+  },
+  {
+    "tick": {
+      "open": 6373.13573100,
+      "high": 6377.99880737,
+      "low": 6343.00000006,
+      "close": 6350.00000004,
+      "volume": 14.98425945,
+      "baseVolume": 95158.14705697,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 38.19203499869268313476,
+    "atrValue": 27.52080082127757460104,
+    "atrSignalLineValue": 27.51339339610000000000
+  },
+  {
+    "tick": {
+      "open": 6364.29301092,
+      "high": 6364.29301092,
+      "low": 6343.00000005,
+      "close": 6343.00000005,
+      "volume": 7.31697412,
+      "baseVolume": 46459.09839566,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "rsiResult": 35.87401723139244656925,
+    "atrValue": 27.07595868190060498668,
+    "atrSignalLineValue": 27.32167212982000000000
+  },
+  {
+    "tick": {
+      "open": 6359.99999997,
+      "high": 6364.29300926,
+      "low": 6334.00000000,
+      "close": 6351.08506926,
+      "volume": 24.26991448,
+      "baseVolume": 154336.94297884,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -78.50393298854656436706,
+    "rsiResult": 40.50791396373209894761,
+    "atrValue": 27.30574800890770463049,
+    "atrSignalLineValue": 27.27783108640000000000
+  },
+  {
+    "tick": {
+      "open": 6360.94782508,
+      "high": 6360.99999998,
+      "low": 6337.00000000,
+      "close": 6333.00000000,
+      "volume": 11.49630643,
+      "baseVolume": 72995.96379465,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -100.10522767949879281950,
+    "rsiResult": 34.34038254000602380885,
+    "atrValue": 27.06962314970001144260,
+    "atrSignalLineValue": 27.18354004294000000000
+  },
+  {
+    "tick": {
+      "open": 6333.00000000,
+      "high": 6360.80216187,
+      "low": 6331.00000000,
+      "close": 6360.80216184,
+      "volume": 6.94305547,
+      "baseVolume": 44013.09084929,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -75.23747003528472715444,
+    "rsiResult": 47.89201594994133445966,
+    "atrValue": 27.26480448686429633956,
+    "atrSignalLineValue": 27.24738702974000000000
+  },
+  {
+    "tick": {
+      "open": 6360.80216167,
+      "high": 6365.65360149,
+      "low": 6330.00000000,
+      "close": 6354.26599943,
+      "volume": 1.45269773,
+      "baseVolume": 9229.68237379,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 30
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -77.18168061815480694436,
+    "rsiResult": 45.44208788684384615474,
+    "atrValue": 27.86400427280256088673,
+    "atrSignalLineValue": 27.31602772004000000000
+  },
+  {
+    "tick": {
+      "open": 6327.00000000,
+      "high": 6364.30997868,
+      "low": 6325.00000000,
+      "close": 6328.00000000,
+      "volume": 6.07214935,
+      "baseVolume": 38394.17578127,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -127.27397399667227887973,
+    "rsiResult": 36.99254822692248421970,
+    "atrValue": 28.68157387331666368054,
+    "atrSignalLineValue": 27.63715075832000000000
+  },
+  {
+    "tick": {
+      "open": 6352.26955695,
+      "high": 6352.26955695,
+      "low": 6330.00000000,
+      "close": 6337.00000000,
+      "volume": 2.85814760,
+      "baseVolume": 18131.73116279,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -115.93429181932674828750,
+    "rsiResult": 41.15805514094249918645,
+    "atrValue": 28.36642980736547341764,
+    "atrSignalLineValue": 27.84928711800000000000
+  },
+  {
+    "tick": {
+      "open": 6328.00000000,
+      "high": 6366.39999986,
+      "low": 6337.00000000,
+      "close": 6366.39999986,
+      "volume": 3.00894302,
+      "baseVolume": 19113.16482310,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -23.82212494080656049986,
+    "rsiResult": 52.54527518133062615645,
+    "atrValue": 28.44025623969651103067,
+    "atrSignalLineValue": 28.12341373600000000000
+  },
+  {
+    "tick": {
+      "open": 6349.00000045,
+      "high": 6365.39999931,
+      "low": 6337.00055500,
+      "close": 6349.99999999,
+      "volume": 3.27212297,
+      "baseVolume": 20755.81323442,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -51.95223204940614775512,
+    "rsiResult": 46.91769873578166174498,
+    "atrValue": 28.50876971257533167134,
+    "atrSignalLineValue": 28.37220678116000000000
+  },
+  {
+    "tick": {
+      "open": 6338.00000000,
+      "high": 6363.60588696,
+      "low": 6316.30000045,
+      "close": 6351.77066938,
+      "volume": 5.22062260,
+      "baseVolume": 33090.48136474,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -86.31764018650951720392,
+    "rsiResult": 47.59105403670127244159,
+    "atrValue": 29.85142091239137940910,
+    "atrSignalLineValue": 28.76969010906000000000
+  },
+  {
+    "tick": {
+      "open": 6320.00000003,
+      "high": 6368.99999965,
+      "low": 6325.00000003,
+      "close": 6350.00000000,
+      "volume": 1.52584520,
+      "baseVolume": 9667.07026253,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -59.08784222433192440125,
+    "rsiResult": 46.92960118581942930179,
+    "atrValue": 30.86203367722056659416,
+    "atrSignalLineValue": 29.20578206984000000000
+  },
+  {
+    "tick": {
+      "open": 6349.99999999,
+      "high": 6367.29999980,
+      "low": 6339.00000800,
+      "close": 6349.99999998,
+      "volume": 3.18938193,
+      "baseVolume": 20243.42782961,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -33.35932560003878700618,
+    "rsiResult": 46.92960117780252902023,
+    "atrValue": 30.67903068599052612315,
+    "atrSignalLineValue": 29.66830224558000000000
+  },
+  {
+    "tick": {
+      "open": 6350.00000000,
+      "high": 6363.19399298,
+      "low": 6332.00000000,
+      "close": 6362.83110594,
+      "volume": 1.91636356,
+      "baseVolume": 12171.90188243,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -29.93265937624013199995,
+    "rsiResult": 52.79867238038908027582,
+    "atrValue": 30.71581370699120282864,
+    "atrSignalLineValue": 30.12341373904000000000
+  },
+  {
+    "tick": {
+      "open": 6358.18871753,
+      "high": 6363.36029465,
+      "low": 6347.65000000,
+      "close": 6347.65000000,
+      "volume": 1.78630930,
+      "baseVolume": 11348.73620402,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -30.23916611059443365558,
+    "rsiResult": 46.09695545350869459520,
+    "atrValue": 29.64399091720611691231,
+    "atrSignalLineValue": 30.35045797996000000000
+  },
+  {
+    "tick": {
+      "open": 6336.00000000,
+      "high": 6367.20000000,
+      "low": 6335.00000006,
+      "close": 6365.99999994,
+      "volume": 7.14525185,
+      "baseVolume": 45415.10773972,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -17.11404876569507730737,
+    "rsiResult": 53.94760275044756479954,
+    "atrValue": 29.82656299026282284715,
+    "atrSignalLineValue": 30.34548639554000000000
+  },
+  {
+    "tick": {
+      "open": 6335.00000006,
+      "high": 6364.37264704,
+      "low": 6332.00000000,
+      "close": 6351.99999954,
+      "volume": 8.83176596,
+      "baseVolume": 55952.58789242,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -64.01847983723820410612,
+    "rsiResult": 48.01897080506621664420,
+    "atrValue": 30.12466562952976407235,
+    "atrSignalLineValue": 30.19801278600000000000
+  },
+  {
+    "tick": {
+      "open": 6333.00000001,
+      "high": 6351.99999951,
+      "low": 6317.00000003,
+      "close": 6330.00000000,
+      "volume": 7.93803242,
+      "baseVolume": 50190.55007542,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -159.87212253550306583767,
+    "rsiResult": 40.28835652264352492197,
+    "atrValue": 30.47290376384906663861,
+    "atrSignalLineValue": 30.15678740156000000000
+  },
+  {
+    "tick": {
+      "open": 6343.84460968,
+      "high": 6343.84460968,
+      "low": 6328.00000000,
+      "close": 6323.00000001,
+      "volume": 0.25803602,
+      "baseVolume": 1634.88373298,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -156.08275842261202679074,
+    "rsiResult": 38.11878928654193207635,
+    "atrValue": 29.42802561500270473585,
+    "atrSignalLineValue": 29.89922978318000000000
+  },
+  {
+    "tick": {
+      "open": 6335.82189769,
+      "high": 6349.81999999,
+      "low": 6325.00000000,
+      "close": 6325.00000000,
+      "volume": 3.26026868,
+      "baseVolume": 20632.44159641,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -135.62435153770955668357,
+    "rsiResult": 39.15890116436516460115,
+    "atrValue": 29.24173806964536868329,
+    "atrSignalLineValue": 29.81877921366000000000
+  },
+  {
+    "tick": {
+      "open": 6345.92524988,
+      "high": 6349.82000000,
+      "low": 6339.00000000,
+      "close": 6339.00000000,
+      "volume": 3.74169505,
+      "baseVolume": 23744.05582277,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -77.72672230408115083725,
+    "rsiResult": 46.19310168636237061400,
+    "atrValue": 28.92589963609927092020,
+    "atrSignalLineValue": 29.63864654282000000000
+  },
+  {
+    "tick": {
+      "open": 6339.00000000,
+      "high": 6339.00000000,
+      "low": 6325.00000000,
+      "close": 6323.00000000,
+      "volume": 7.16351541,
+      "baseVolume": 45338.79918391,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -147.33984650624464098991,
+    "rsiResult": 40.27951027380400726295,
+    "atrValue": 27.85976394780646585447,
+    "atrSignalLineValue": 29.18566620648000000000
+  },
+  {
+    "tick": {
+      "open": 6323.00000000,
+      "high": 6334.50677500,
+      "low": 6317.70000004,
+      "close": 6317.70000004,
+      "volume": 4.16029877,
+      "baseVolume": 26308.10725047,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -171.03727156389041493380,
+    "rsiResult": 38.46701831442640919992,
+    "atrValue": 27.07026473439171829344,
+    "atrSignalLineValue": 28.50513840058000000000
+  },
+  {
+    "tick": {
+      "open": 6270.00000000,
+      "high": 6339.50317354,
+      "low": 6270.00000000,
+      "close": 6321.02985001,
+      "volume": 20.62011533,
+      "baseVolume": 129467.97870948,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -228.49175559402979859893,
+    "rsiResult": 40.34103691977870275002,
+    "atrValue": 30.10118679193516698677,
+    "atrSignalLineValue": 28.63977063598000000000
+  },
+  {
+    "tick": {
+      "open": 6395.00000000,
+      "high": 6397.45569624,
+      "low": 6373.62000000,
+      "close": 6374.00000000,
+      "volume": 10.11474593,
+      "baseVolume": 64560.97199609,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 173.49145551082769824382,
+    "rsiResult": 61.21777637802216280886,
+    "atrValue": 33.41009103751122648772,
+    "atrSignalLineValue": 29.47344122954000000000
+  },
+  {
+    "tick": {
+      "open": 6367.63000000,
+      "high": 6394.99999999,
+      "low": 6385.60419999,
+      "close": 6379.00000000,
+      "volume": 16.87767501,
+      "baseVolume": 107802.17606731,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6270.00000000,
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "cciResult": 200.25492217403923447391,
+    "rsiResult": 62.59075021543849143425,
+    "atrValue": 32.52365596268899602431,
+    "atrSignalLineValue": 30.19299249486000000000
+  },
+  {
+    "tick": {
+      "open": 6365.00000000,
+      "high": 6387.99999996,
+      "low": 6365.00000000,
+      "close": 6387.99999996,
+      "volume": 2.60357281,
+      "baseVolume": 16604.50037850,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 156.56126219026033810303,
+    "rsiResult": 65.06434437580807166130,
+    "atrValue": 31.84339481963978202257,
+    "atrSignalLineValue": 30.98971866924000000000
+  },
+  {
+    "tick": {
+      "open": 6387.99999993,
+      "high": 6387.99999993,
+      "low": 6368.81999925,
+      "close": 6352.80000003,
+      "volume": 3.15550124,
+      "baseVolume": 20117.46919954,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 96.97732280495726492007,
+    "rsiResult": 50.54140811501995614735,
+    "atrValue": 30.93886666895122616382,
+    "atrSignalLineValue": 31.76343905614000000000
+  },
+  {
+    "tick": {
+      "open": 6368.81999925,
+      "high": 6388.00000000,
+      "low": 6360.00000001,
+      "close": 6382.00000000,
+      "volume": 2.36129500,
+      "baseVolume": 15073.60058733,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 125.01150506559993199530,
+    "rsiResult": 58.98055961508359515627,
+    "atrValue": 31.24323333331185286640,
+    "atrSignalLineValue": 31.99184836442000000000
+  },
+  {
+    "tick": {
+      "open": 6360.00000000,
+      "high": 6379.99999999,
+      "low": 6374.00000000,
+      "close": 6374.00000000,
+      "volume": 2.50917903,
+      "baseVolume": 15977.11538511,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 10,
+          "day": 31
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 113.27452917938268588049,
+    "rsiResult": 56.06824286347957557619,
+    "atrValue": 29.58300238093243480451,
+    "atrSignalLineValue": 31.22643063310000000000
+  },
+  {
+    "tick": {
+      "open": 6367.00000000,
+      "high": 6386.99999999,
+      "low": 6367.00000000,
+      "close": 6360.44681309,
+      "volume": 2.89241528,
+      "baseVolume": 18423.80731069,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 93.68429197221378726726,
+    "rsiResult": 51.30002362451950532918,
+    "atrValue": 28.89850221015154660419,
+    "atrSignalLineValue": 30.50139988260000000000
+  },
+  {
+    "tick": {
+      "open": 6386.99999999,
+      "high": 6387.00000000,
+      "low": 6361.33235141,
+      "close": 6377.99999983,
+      "volume": 1.15646734,
+      "baseVolume": 7381.83609082,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 109.36199188165415849442,
+    "rsiResult": 56.61009114834320762789,
+    "atrValue": 28.73097968871215041818,
+    "atrSignalLineValue": 29.87891685642000000000
+  },
+  {
+    "tick": {
+      "open": 6355.00000000,
+      "high": 6386.99999850,
+      "low": 6355.00000000,
+      "close": 6358.00000000,
+      "volume": 4.50854341,
+      "baseVolume": 28720.52710048,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 66.87529880245402765704,
+    "rsiResult": 49.74352844427574006282,
+    "atrValue": 28.96448103237556824545,
+    "atrSignalLineValue": 29.48403972910000000000
+  },
+  {
+    "tick": {
+      "open": 6358.00000000,
+      "high": 6384.89999637,
+      "low": 6358.00000000,
+      "close": 6381.19999982,
+      "volume": 5.15340322,
+      "baseVolume": 32833.07764329,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 102.52276386095607937547,
+    "rsiResult": 56.53820347438752026307,
+    "atrValue": 28.81701784220588479935,
+    "atrSignalLineValue": 28.99879663088000000000
+  },
+  {
+    "tick": {
+      "open": 6370.00000000,
+      "high": 6381.19430340,
+      "low": 6356.50000000,
+      "close": 6355.00000000,
+      "volume": 2.41051784,
+      "baseVolume": 15345.20484296,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 50.89370013785821705313,
+    "rsiResult": 48.33781366859204664916,
+    "atrValue": 28.52294512633403588511,
+    "atrSignalLineValue": 28.78678517996000000000
+  },
+  {
+    "tick": {
+      "open": 6364.53250000,
+      "high": 6370.00000000,
+      "low": 6364.53250000,
+      "close": 6355.00000000,
+      "volume": 0.70317156,
+      "baseVolume": 4474.83690575,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 43.39310662053193609282,
+    "rsiResult": 48.33781366859409148479,
+    "atrValue": 27.55702047445303332189,
+    "atrSignalLineValue": 28.51848883282000000000
+  },
+  {
+    "tick": {
+      "open": 6368.00000000,
+      "high": 6386.72750356,
+      "low": 6355.00000000,
+      "close": 6386.72750348,
+      "volume": 5.30871214,
+      "baseVolume": 33857.60208273,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 95.02558983647222480916,
+    "rsiResult": 57.54402438433825312300,
+    "atrValue": 27.85491212342067379890,
+    "atrSignalLineValue": 28.34327531976000000000
+  },
+  {
+    "tick": {
+      "open": 6355.00000000,
+      "high": 6386.99999503,
+      "low": 6355.00000000,
+      "close": 6386.99999500,
+      "volume": 14.50703164,
+      "baseVolume": 92545.77029572,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 89.36718108193731294460,
+    "rsiResult": 57.61609921591017758254,
+    "atrValue": 28.15098947389062567041,
+    "atrSignalLineValue": 28.18057700806000000000
+  },
+  {
+    "tick": {
+      "open": 6355.00000002,
+      "high": 6385.79315600,
+      "low": 6355.00000002,
+      "close": 6375.00000002,
+      "volume": 4.12656638,
+      "baseVolume": 26339.22509601,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 66.40682181337724253467,
+    "rsiResult": 53.19715254492807067179,
+    "atrValue": 28.42591843861272383681,
+    "atrSignalLineValue": 28.10235712734000000000
+  },
+  {
+    "tick": {
+      "open": 6375.00000002,
+      "high": 6391.00000000,
+      "low": 6360.00000000,
+      "close": 6391.00000000,
+      "volume": 4.02857402,
+      "baseVolume": 25680.13310728,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 95.75759526785880661462,
+    "rsiResult": 57.97249898526651682710,
+    "atrValue": 28.60978140728324356275,
+    "atrSignalLineValue": 28.11972438354000000000
+  },
+  {
+    "tick": {
+      "open": 6395.00000000,
+      "high": 6395.00000000,
+      "low": 6376.00000000,
+      "close": 6376.00000000,
+      "volume": 2.96824473,
+      "baseVolume": 18941.26187767,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 96.06252702018516627056,
+    "rsiResult": 52.40298380687687399230,
+    "atrValue": 27.92336844962015473684,
+    "atrSignalLineValue": 28.19299397856000000000
+  },
+  {
+    "tick": {
+      "open": 6376.00000000,
+      "high": 6394.99999950,
+      "low": 6376.00000000,
+      "close": 6376.01000000,
+      "volume": 4.22129265,
+      "baseVolume": 26929.66431090,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 90.58526938613504326794,
+    "rsiResult": 52.40637076959688349271,
+    "atrValue": 27.28598495321871511278,
+    "atrSignalLineValue": 28.07920854452000000000
+  },
+  {
+    "tick": {
+      "open": 6376.00000000,
+      "high": 6390.99999996,
+      "low": 6370.00000000,
+      "close": 6373.74256401,
+      "volume": 8.95439265,
+      "baseVolume": 57130.65037128,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 70.22378312681320933373,
+    "rsiResult": 51.48339478892882975601,
+    "atrValue": 26.83698602513166403330,
+    "atrSignalLineValue": 27.81640785478000000000
+  },
+  {
+    "tick": {
+      "open": 6370.00000000,
+      "high": 6390.99999989,
+      "low": 6370.00000003,
+      "close": 6373.00000000,
+      "volume": 8.77004261,
+      "baseVolume": 55884.04622102,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 65.74361765405483891426,
+    "rsiResult": 51.15555964699138038014,
+    "atrValue": 26.42005844190797374521,
+    "atrSignalLineValue": 27.41523585544000000000
+  },
+  {
+    "tick": {
+      "open": 6374.00000000,
+      "high": 6386.89999999,
+      "low": 6363.00000000,
+      "close": 6385.99999958,
+      "volume": 5.39352270,
+      "baseVolume": 34372.91469414,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 65.07364217197803006958,
+    "rsiResult": 56.53894563469517975144,
+    "atrValue": 26.24005426677168990627,
+    "atrSignalLineValue": 26.94129042734000000000
+  },
+  {
+    "tick": {
+      "open": 6380.00000000,
+      "high": 6385.99999967,
+      "low": 6363.00000000,
+      "close": 6379.99999981,
+      "volume": 0.78408180,
+      "baseVolume": 4999.98045648,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 53.59098616978468989961,
+    "rsiResult": 53.51429264039642122523,
+    "atrValue": 26.00862179557371205582,
+    "atrSignalLineValue": 26.55834109652000000000
+  },
+  {
+    "tick": {
+      "open": 6379.99999999,
+      "high": 6379.99999999,
+      "low": 6379.00000000,
+      "close": 6365.99999999,
+      "volume": 5.40877896,
+      "baseVolume": 34489.35075936,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 46.14745278340834083791,
+    "rsiResult": 46.99614262096090421751,
+    "atrValue": 24.22229166660416119469,
+    "atrSignalLineValue": 25.94560243920000000000
+  },
+  {
+    "tick": {
+      "open": 6379.99999999,
+      "high": 6385.00000000,
+      "low": 6370.00000000,
+      "close": 6376.00000000,
+      "volume": 27.23410494,
+      "baseVolume": 173798.81741264,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 51.80108258389562764913,
+    "rsiResult": 51.66828657304455847686,
+    "atrValue": 23.84927083398957825221,
+    "atrSignalLineValue": 25.34805940096000000000
+  },
+  {
+    "tick": {
+      "open": 6376.56755619,
+      "high": 6385.76999827,
+      "low": 6360.00000000,
+      "close": 6360.00000000,
+      "volume": 6.10605597,
+      "baseVolume": 38921.91728633,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 16.39766346253808135696,
+    "rsiResult": 44.66846123907259613352,
+    "atrValue": 23.98646565084746551991,
+    "atrSignalLineValue": 24.86134084276000000000
+  },
+  {
+    "tick": {
+      "open": 6379.73499802,
+      "high": 6385.75999689,
+      "low": 6361.67000000,
+      "close": 6382.00000000,
+      "volume": 2.69339142,
+      "baseVolume": 17174.89232918,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 46.87769942445345653430,
+    "rsiResult": 54.15694617836413456754,
+    "atrValue": 24.11314645364407512563,
+    "atrSignalLineValue": 24.43595928014000000000
+  },
+  {
+    "tick": {
+      "open": 6382.00000000,
+      "high": 6385.70000000,
+      "low": 6385.69999999,
+      "close": 6385.70000000,
+      "volume": 11.13117404,
+      "baseVolume": 70874.72337654,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 82.70149796786366856603,
+    "rsiResult": 55.58037433618701666710,
+    "atrValue": 22.65506456409806975951,
+    "atrSignalLineValue": 23.76524783384000000000
+  },
+  {
+    "tick": {
+      "open": 6385.00000000,
+      "high": 6394.28169117,
+      "low": 6385.70000000,
+      "close": 6392.17873383,
+      "volume": 3.23406056,
+      "baseVolume": 20662.14011072,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 104.03863522491763723326,
+    "rsiResult": 58.11089011013482511833,
+    "atrValue": 21.64982360737677906240,
+    "atrSignalLineValue": 23.25075422200000000000
+  },
+  {
+    "tick": {
+      "open": 6391.86346842,
+      "high": 6413.02949940,
+      "low": 6391.86346842,
+      "close": 6408.00000000,
+      "volume": 7.79966018,
+      "baseVolume": 49916.47573807,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 168.25139269040675071093,
+    "rsiResult": 63.71906126811552365862,
+    "atrValue": 21.61526699113558055794,
+    "atrSignalLineValue": 22.80395345342000000000
+  },
+  {
+    "tick": {
+      "open": 6408.00000000,
+      "high": 6418.75191358,
+      "low": 6400.00000001,
+      "close": 6400.00000000,
+      "volume": 9.33983210,
+      "baseVolume": 59911.87870664,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 1
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 180.14163759213508775233,
+    "rsiResult": 59.26148389704353033484,
+    "atrValue": 21.41074174676875337523,
+    "atrSignalLineValue": 22.28880867260000000000
+  },
+  {
+    "tick": {
+      "open": 6429.99999997,
+      "high": 6436.42164183,
+      "low": 6395.90000000,
+      "close": 6400.00000006,
+      "volume": 4.51620116,
+      "baseVolume": 28962.85938896,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 202.58905093063980971125,
+    "rsiResult": 59.26148392069222626275,
+    "atrValue": 22.77580603842812813414,
+    "atrSignalLineValue": 22.02134058956000000000
+  },
+  {
+    "tick": {
+      "open": 6400.00000006,
+      "high": 6415.00000000,
+      "low": 6400.00000006,
+      "close": 6410.00000000,
+      "volume": 4.98100449,
+      "baseVolume": 31933.71933745,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 193.02233058091656815892,
+    "rsiResult": 63.23098981521924317895,
+    "atrValue": 22.22039131711183326742,
+    "atrSignalLineValue": 21.93440594016000000000
+  },
+  {
+    "tick": {
+      "open": 6410.00000000,
+      "high": 6440.50000000,
+      "low": 6408.50000000,
+      "close": 6413.27155696,
+      "volume": 3.77537433,
+      "baseVolume": 24229.14786996,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 249.35491715305822752769,
+    "rsiResult": 64.48878172392232301462,
+    "atrValue": 22.91893479446098803403,
+    "atrSignalLineValue": 22.18822817758000000000
+  },
+  {
+    "tick": {
+      "open": 6440.49999994,
+      "high": 6457.00000000,
+      "low": 6433.87768126,
+      "close": 6453.00000000,
+      "volume": 11.73956939,
+      "baseVolume": 75681.14918712,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 348.33844217093619476765,
+    "rsiResult": 75.70326600662862910901,
+    "atrValue": 24.40532824057091746017,
+    "atrSignalLineValue": 22.74624042746000000000
+  },
+  {
+    "tick": {
+      "open": 6445.55000000,
+      "high": 6453.89219937,
+      "low": 6436.00000000,
+      "close": 6423.00000000,
+      "volume": 10.83290802,
+      "baseVolume": 69800.03062705,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 240.42751735858253253569,
+    "rsiResult": 59.84606490544567895648,
+    "atrValue": 23.94010474981585192730,
+    "atrSignalLineValue": 23.25211302808000000000
+  },
+  {
+    "tick": {
+      "open": 6438.88000000,
+      "high": 6449.86195185,
+      "low": 6428.00000000,
+      "close": 6428.00000000,
+      "volume": 1.22882541,
+      "baseVolume": 7917.95877574,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 195.24238858589760986640,
+    "rsiResult": 61.34546857983207602229,
+    "atrValue": 24.14880811411471964678,
+    "atrSignalLineValue": 23.52671344322000000000
+  },
+  {
+    "tick": {
+      "open": 6428.00000000,
+      "high": 6449.86194981,
+      "low": 6412.95201071,
+      "close": 6448.78999831,
+      "volume": 0.90393522,
+      "baseVolume": 5816.07650358,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 175.20890911650201035889,
+    "rsiResult": 67.03286616890716758428,
+    "atrValue": 25.06031747024938252915,
+    "atrSignalLineValue": 24.09469867384000000000
+  },
+  {
+    "tick": {
+      "open": 6412.95201071,
+      "high": 6448.78999779,
+      "low": 6405.99137701,
+      "close": 6416.00000001,
+      "volume": 2.96778114,
+      "baseVolume": 19026.85897794,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 114.34412847271427350963,
+    "rsiResult": 53.29186123403771993351,
+    "atrValue": 26.32733917237442663421,
+    "atrSignalLineValue": 24.77637954942000000000
+  },
+  {
+    "tick": {
+      "open": 6416.00000000,
+      "high": 6439.00000000,
+      "low": 6416.00000000,
+      "close": 6432.56100000,
+      "volume": 0.60001533,
+      "baseVolume": 3861.95628216,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 120.33622351444193327637,
+    "rsiResult": 58.11064096380302600322,
+    "atrValue": 26.08967208863339616034,
+    "atrSignalLineValue": 25.11324831904000000000
+  },
+  {
+    "tick": {
+      "open": 6432.56000000,
+      "high": 6438.99999991,
+      "low": 6416.00000000,
+      "close": 6420.00000000,
+      "volume": 3.90433563,
+      "baseVolume": 25074.69476763,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 97.92749276399544134018,
+    "rsiResult": 53.46240512505726809713,
+    "atrValue": 25.86898121873101072032,
+    "atrSignalLineValue": 25.49902361282000000000
+  },
+  {
+    "tick": {
+      "open": 6434.65999999,
+      "high": 6434.65999999,
+      "low": 6413.14531071,
+      "close": 6413.14531070,
+      "volume": 3.06964768,
+      "baseVolume": 19726.96941598,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 77.46290834867101305754,
+    "rsiResult": 50.98935425139689259823,
+    "atrValue": 25.55796036596450995458,
+    "atrSignalLineValue": 25.78085406320000000000
+  },
+  {
+    "tick": {
+      "open": 6413.14531053,
+      "high": 6415.50000000,
+      "low": 6405.00000001,
+      "close": 6395.91000000,
+      "volume": 9.43286294,
+      "baseVolume": 60412.30786483,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 30.77203406279312966834,
+    "rsiResult": 45.15397152414003134483,
+    "atrValue": 24.48239176768133067211,
+    "atrSignalLineValue": 25.66526892268000000000
+  },
+  {
+    "tick": {
+      "open": 6415.49999778,
+      "high": 6419.84384968,
+      "low": 6391.10000001,
+      "close": 6419.84384968,
+      "volume": 0.77131252,
+      "baseVolume": 4943.58884066,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 41.69765935231810541641,
+    "rsiResult": 53.38519895273914561715,
+    "atrValue": 24.78678161784694990982,
+    "atrSignalLineValue": 25.35715741178000000000
+  },
+  {
+    "tick": {
+      "open": 6393.00000001,
+      "high": 6430.49999997,
+      "low": 6393.00000000,
+      "close": 6430.49999983,
+      "volume": 1.03623559,
+      "baseVolume": 6638.31678820,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 61.00126282055955367069,
+    "rsiResult": 56.60690081687064908705,
+    "atrValue": 25.69486864300073920198,
+    "atrSignalLineValue": 25.27819672264000000000
+  },
+  {
+    "tick": {
+      "open": 6394.79000039,
+      "high": 6430.00000000,
+      "low": 6394.79000039,
+      "close": 6411.00000000,
+      "volume": 8.40727926,
+      "baseVolume": 53833.62176736,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 39.54308221820936241525,
+    "rsiResult": 49.63232358301318664743,
+    "atrValue": 26.41023512850068640184,
+    "atrSignalLineValue": 25.38644750460000000000
+  },
+  {
+    "tick": {
+      "open": 6429.79999979,
+      "high": 6448.18584765,
+      "low": 6420.00000000,
+      "close": 6444.99999989,
+      "volume": 8.10991113,
+      "baseVolume": 52228.61173507,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 112.64089510702527089083,
+    "rsiResult": 59.33823880631292996246,
+    "atrValue": 27.17992173717920880171,
+    "atrSignalLineValue": 25.71083977884000000000
+  },
+  {
+    "tick": {
+      "open": 6435.00000000,
+      "high": 6448.18584769,
+      "low": 6420.99999999,
+      "close": 6441.66028331,
+      "volume": 2.43275404,
+      "baseVolume": 15643.91664385,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 104.22459920812643398101,
+    "rsiResult": 58.11596578925955111574,
+    "atrValue": 27.18034502023783674445,
+    "atrSignalLineValue": 26.25043042936000000000
+  },
+  {
+    "tick": {
+      "open": 6441.66028359,
+      "high": 6449.86194928,
+      "low": 6431.00000000,
+      "close": 6431.00000000,
+      "volume": 8.65371579,
+      "baseVolume": 55713.41803261,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 100.03926919478261037492,
+    "rsiResult": 54.15935203170227572013,
+    "atrValue": 26.58617389593513411985,
+    "atrSignalLineValue": 26.61030888498000000000
+  },
+  {
+    "tick": {
+      "open": 6434.73039571,
+      "high": 6449.86194928,
+      "low": 6440.00000000,
+      "close": 6444.05161017,
+      "volume": 7.16401774,
+      "baseVolume": 46108.96301353,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 116.35027079516064056388,
+    "rsiResult": 58.04501071353108010246,
+    "atrValue": 26.03444356622548168272,
+    "atrSignalLineValue": 26.67822386962000000000
+  },
+  {
+    "tick": {
+      "open": 6429.99999990,
+      "high": 6440.00000000,
+      "low": 6420.00000001,
+      "close": 6423.49284000,
+      "volume": 1.44086792,
+      "baseVolume": 9268.22041381,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 60.97819879212756386567,
+    "rsiResult": 50.54619172856742691078,
+    "atrValue": 25.89281260863794727681,
+    "atrSignalLineValue": 26.57473936564000000000
+  },
+  {
+    "tick": {
+      "open": 6419.25780000,
+      "high": 6443.99999999,
+      "low": 6420.00000020,
+      "close": 6420.00000020,
+      "volume": 1.21707705,
+      "baseVolume": 7837.46727205,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 58.24874630289164694315,
+    "rsiResult": 49.34284390380651497949,
+    "atrValue": 25.75761169302095104275,
+    "atrSignalLineValue": 26.29027735682000000000
+  },
+  {
+    "tick": {
+      "open": 6420.00000020,
+      "high": 6438.00000000,
+      "low": 6416.00000000,
+      "close": 6416.00000000,
+      "volume": 3.61725894,
+      "baseVolume": 23219.94418905,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 40.60276057781996536602,
+    "rsiResult": 47.89205233885107378076,
+    "atrValue": 25.48921085780516882541,
+    "atrSignalLineValue": 25.95205052432000000000
+  },
+  {
+    "tick": {
+      "open": 6420.00000000,
+      "high": 6443.99999998,
+      "low": 6428.56000002,
+      "close": 6428.56000002,
+      "volume": 8.76315434,
+      "baseVolume": 56378.49816267,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 70.85152658879876720616,
+    "rsiResult": 52.74003804370925183956,
+    "atrValue": 25.66855293796194248074,
+    "atrSignalLineValue": 25.76852633274000000000
+  },
+  {
+    "tick": {
+      "open": 6446.99999974,
+      "high": 6447.00000007,
+      "low": 6430.00000001,
+      "close": 6430.00000001,
+      "volume": 1.69957580,
+      "baseVolume": 10947.30837863,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 2
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 73.73541931676346274624,
+    "rsiResult": 53.29359730498127882037,
+    "atrValue": 25.15222773167894658926,
+    "atrSignalLineValue": 25.59208316582000000000
+  },
+  {
+    "tick": {
+      "open": 6430.00000001,
+      "high": 6440.00000000,
+      "low": 6420.00999000,
+      "close": 6440.00000000,
+      "volume": 0.32983858,
+      "baseVolume": 2122.77996552,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 62.65291644465847472739,
+    "rsiResult": 57.16496875250042143797,
+    "atrValue": 24.78349789370187897574,
+    "atrSignalLineValue": 25.37022022284000000000
+  },
+  {
+    "tick": {
+      "open": 6440.00000000,
+      "high": 6447.00000006,
+      "low": 6440.00000000,
+      "close": 6440.00000000,
+      "volume": 2.18962645,
+      "baseVolume": 14095.44643402,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 92.19033698836968023132,
+    "rsiResult": 57.16496875259237598037,
+    "atrValue": 23.51324804843745904890,
+    "atrSignalLineValue": 24.92134749392000000000
+  },
+  {
+    "tick": {
+      "open": 6440.00000001,
+      "high": 6446.99999996,
+      "low": 6415.01000004,
+      "close": 6445.41929690,
+      "volume": 4.00323763,
+      "baseVolume": 25700.31802728,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 65.17994947935190992084,
+    "rsiResult": 59.41560557336702347379,
+    "atrValue": 24.11873032497764054541,
+    "atrSignalLineValue": 24.64725138736000000000
+  },
+  {
+    "tick": {
+      "open": 6431.00000000,
+      "high": 6435.80000000,
+      "low": 6411.01000006,
+      "close": 6411.01000006,
+      "volume": 1.22742719,
+      "baseVolume": 7885.18365428,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -7.07748532949300546204,
+    "rsiResult": 43.34760651272525759230,
+    "atrValue": 24.85377079033638050645,
+    "atrSignalLineValue": 24.48429495782000000000
+  },
+  {
+    "tick": {
+      "open": 6431.55999990,
+      "high": 6431.56000000,
+      "low": 6411.01000003,
+      "close": 6427.00000000,
+      "volume": 1.59507342,
+      "baseVolume": 10250.23219657,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 3.57160305674288003106,
+    "rsiResult": 50.28896157606149677355,
+    "atrValue": 24.54635858888378189885,
+    "atrSignalLineValue": 24.36312112926000000000
+  },
+  {
+    "tick": {
+      "open": 6411.01000003,
+      "high": 6427.00000000,
+      "low": 6411.01000001,
+      "close": 6411.01000001,
+      "volume": 2.62213156,
+      "baseVolume": 16845.23090255,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -40.70911185977599361245,
+    "rsiResult": 44.26302471314180608567,
+    "atrValue": 23.93519011753494033465,
+    "atrSignalLineValue": 24.19345957404000000000
+  },
+  {
+    "tick": {
+      "open": 6411.01000001,
+      "high": 6428.00000000,
+      "low": 6411.01000001,
+      "close": 6414.00000000,
+      "volume": 0.57762421,
+      "baseVolume": 3705.81252523,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -41.82402666435858077157,
+    "rsiResult": 45.61695299432659784518,
+    "atrValue": 23.43910510842530173932,
+    "atrSignalLineValue": 24.17863098604000000000
+  },
+  {
+    "tick": {
+      "open": 6411.01000002,
+      "high": 6428.00000000,
+      "low": 6411.01000002,
+      "close": 6427.00000000,
+      "volume": 0.40238800,
+      "baseVolume": 2583.57126617,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -23.05545061232616387788,
+    "rsiResult": 51.32853406964549352496,
+    "atrValue": 22.97845474210920875794,
+    "atrSignalLineValue": 23.95057586946000000000
+  },
+  {
+    "tick": {
+      "open": 6420.57000000,
+      "high": 6428.00000000,
+      "low": 6420.57000000,
+      "close": 6427.99999999,
+      "volume": 1.08062622,
+      "baseVolume": 6943.04529328,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -4.26527751413610461418,
+    "rsiResult": 51.76154645611970493500,
+    "atrValue": 21.86785083195855098952,
+    "atrSignalLineValue": 23.35339187778000000000
+  },
+  {
+    "tick": {
+      "open": 6410.00000250,
+      "high": 6427.99999997,
+      "low": 6410.00000250,
+      "close": 6427.99999997,
+      "volume": 0.53969177,
+      "baseVolume": 3461.29295751,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -33.62039804918135064609,
+    "rsiResult": 51.76154644592352555842,
+    "atrValue": 21.59157559324722591884,
+    "atrSignalLineValue": 22.76243527866000000000
+  },
+  {
+    "tick": {
+      "open": 6410.00000000,
+      "high": 6427.99999998,
+      "low": 6410.00000002,
+      "close": 6419.64256451,
+      "volume": 0.41691992,
+      "baseVolume": 2676.69054601,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -57.27435064801593027744,
+    "rsiResult": 47.40963067206828449416,
+    "atrValue": 21.33503447658670978178,
+    "atrSignalLineValue": 22.24240415046000000000
+  },
+  {
+    "tick": {
+      "open": 6421.57000000,
+      "high": 6421.57000000,
+      "low": 6360.00000000,
+      "close": 6370.00000000,
+      "volume": 14.51423354,
+      "baseVolume": 92475.52095959,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -294.73886560475308538297,
+    "rsiResult": 30.49053988532629285861,
+    "atrValue": 24.20896058540194479737,
+    "atrSignalLineValue": 22.39637524586000000000
+  },
+  {
+    "tick": {
+      "open": 6370.00000000,
+      "high": 6384.19463644,
+      "low": 6359.45310000,
+      "close": 6374.09999999,
+      "volume": 1.06042138,
+      "baseVolume": 6749.36131910,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6427.99999998,
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "cciResult": -317.08842906426492333440,
+    "rsiResult": 32.69471823745858396031,
+    "atrValue": 24.24700171787323445470,
+    "atrSignalLineValue": 22.65008464102000000000
+  },
+  {
+    "tick": {
+      "open": 6375.00000000,
+      "high": 6375.00000000,
+      "low": 6375.00000000,
+      "close": 6375.00000000,
+      "volume": 6.45236317,
+      "baseVolume": 41128.25896648,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -266.90058411160770198912,
+    "rsiResult": 33.21127980148485870610,
+    "atrValue": 22.57935873873943199365,
+    "atrSignalLineValue": 22.79238622236000000000
+  },
+  {
+    "tick": {
+      "open": 6375.00000000,
+      "high": 6375.00000000,
+      "low": 6373.10000009,
+      "close": 6375.00000000,
+      "volume": 1.65606090,
+      "baseVolume": 10556.51783654,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -233.55044151296222483364,
+    "rsiResult": 33.21127980167505639030,
+    "atrValue": 21.10226167954375827982,
+    "atrSignalLineValue": 22.69452343962000000000
+  },
+  {
+    "tick": {
+      "open": 6367.25000000,
+      "high": 6375.00000000,
+      "low": 6352.70000000,
+      "close": 6322.12000013,
+      "volume": 8.37923621,
+      "baseVolume": 53207.70587926,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -292.23019287977526958574,
+    "rsiResult": 21.33413778485817928326,
+    "atrValue": 21.18781441671920411698,
+    "atrSignalLineValue": 22.66507942766000000000
+  },
+  {
+    "tick": {
+      "open": 6361.99999999,
+      "high": 6374.99999994,
+      "low": 6369.90000000,
+      "close": 6369.90000001,
+      "volume": 3.98012631,
+      "baseVolume": 25354.06948084,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -173.73128197335107514199,
+    "rsiResult": 42.11644369535742799346,
+    "atrValue": 23.45154194481068953720,
+    "atrSignalLineValue": 22.51359569954000000000
+  },
+  {
+    "tick": {
+      "open": 6375.00000000,
+      "high": 6382.11794255,
+      "low": 6360.00000028,
+      "close": 6375.14397653,
+      "volume": 0.92123721,
+      "baseVolume": 5873.47292113,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -149.87431716557595603605,
+    "rsiResult": 43.92305150683929776118,
+    "atrValue": 23.35628482518135457026,
+    "atrSignalLineValue": 22.33545232100000000000
+  },
+  {
+    "tick": {
+      "open": 6355.92511740,
+      "high": 6388.10165992,
+      "low": 6349.44325015,
+      "close": 6349.44325015,
+      "volume": 2.53960112,
+      "baseVolume": 16193.70723762,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -162.95982922854901766207,
+    "rsiResult": 37.54230160703764594449,
+    "atrValue": 24.44929374981125781524,
+    "atrSignalLineValue": 22.70943932322000000000
+  },
+  {
+    "tick": {
+      "open": 6350.00000001,
+      "high": 6382.45028349,
+      "low": 6374.37000000,
+      "close": 6381.00000001,
+      "volume": 1.54522950,
+      "baseVolume": 9857.06621650,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -98.86624671017904865393,
+    "rsiResult": 47.87333008595697620498,
+    "atrValue": 25.06056086339616797129,
+    "atrSignalLineValue": 23.50109915998000000000
+  },
+  {
+    "tick": {
+      "open": 6355.71889422,
+      "high": 6381.00000001,
+      "low": 6351.00000028,
+      "close": 6381.00000001,
+      "volume": 1.47359470,
+      "baseVolume": 9359.05555218,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -112.70998614195607246675,
+    "rsiResult": 47.87333008597742626496,
+    "atrValue": 25.41337792529644168763,
+    "atrSignalLineValue": 24.34621186170000000000
+  },
+  {
+    "tick": {
+      "open": 6368.25000000,
+      "high": 6383.61000000,
+      "low": 6357.84000056,
+      "close": 6357.84000056,
+      "volume": 1.79156948,
+      "baseVolume": 11427.10620937,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -114.86372046401585362587,
+    "rsiResult": 41.63363744965585659414,
+    "atrValue": 25.43885089063241013851,
+    "atrSignalLineValue": 24.74367365086000000000
+  },
+  {
+    "tick": {
+      "open": 6357.95000004,
+      "high": 6380.00000000,
+      "low": 6357.95000004,
+      "close": 6380.00000000,
+      "volume": 3.67714777,
+      "baseVolume": 23458.58129698,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -90.09059585498952160004,
+    "rsiResult": 48.73697538825195794191,
+    "atrValue": 25.20464721558723798576,
+    "atrSignalLineValue": 25.11334612894000000000
+  },
+  {
+    "tick": {
+      "open": 6381.00000000,
+      "high": 6392.48970000,
+      "low": 6381.00000000,
+      "close": 6390.25000000,
+      "volume": 1.30632383,
+      "baseVolume": 8337.89102832,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 3
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -47.73335318827373524743,
+    "rsiResult": 51.75461410694208213457,
+    "atrValue": 24.29643670018814955821,
+    "atrSignalLineValue": 25.08277471902000000000
+  },
+  {
+    "tick": {
+      "open": 6399.99999995,
+      "high": 6400.00000000,
+      "low": 6390.00000000,
+      "close": 6393.90000000,
+      "volume": 2.73393014,
+      "baseVolume": 17477.55333774,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -29.18724561566774079503,
+    "rsiResult": 52.85272476079189973103,
+    "atrValue": 23.27526265017471030405,
+    "atrSignalLineValue": 24.72571507638000000000
+  },
+  {
+    "tick": {
+      "open": 6393.60000000,
+      "high": 6393.90000000,
+      "low": 6370.43000039,
+      "close": 6393.90000000,
+      "volume": 2.46254261,
+      "baseVolume": 15713.29936764,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -46.98123460620586902300,
+    "rsiResult": 52.85272476079189973103,
+    "atrValue": 23.28917243301937385376,
+    "atrSignalLineValue": 24.30087397792000000000
+  },
+  {
+    "tick": {
+      "open": 6393.90000000,
+      "high": 6398.00000000,
+      "low": 6370.00000000,
+      "close": 6385.56166687,
+      "volume": 4.52855335,
+      "baseVolume": 28824.21060633,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -47.47455961036998688885,
+    "rsiResult": 49.66457714701427435240,
+    "atrValue": 23.62566011637513286421,
+    "atrSignalLineValue": 23.93823582306000000000
+  },
+  {
+    "tick": {
+      "open": 6362.00000001,
+      "high": 6392.99999999,
+      "low": 6380.00010000,
+      "close": 6383.03823219,
+      "volume": 2.60890283,
+      "baseVolume": 16658.77710836,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -42.27918314028869733533,
+    "rsiResult": 48.67723593465520117596,
+    "atrValue": 22.86667725020548051677,
+    "atrSignalLineValue": 23.47064183000000000000
+  },
+  {
+    "tick": {
+      "open": 6379.25000000,
+      "high": 6385.00000000,
+      "low": 6373.50000000,
+      "close": 6385.00000000,
+      "volume": 1.61275916,
+      "baseVolume": 10295.10613407,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -49.70630706694027836456,
+    "rsiResult": 49.54369685043535933895,
+    "atrValue": 22.05477173233366047986,
+    "atrSignalLineValue": 23.02230883642000000000
+  },
+  {
+    "tick": {
+      "open": 6384.99999994,
+      "high": 6389.83105533,
+      "low": 6360.00000000,
+      "close": 6369.08633508,
+      "volume": 1.89450462,
+      "baseVolume": 12060.63742518,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -67.76758350263662924834,
+    "rsiResult": 43.00046659346820075078,
+    "atrValue": 22.61022056073839901701,
+    "atrSignalLineValue": 22.88930041854000000000
+  },
+  {
+    "tick": {
+      "open": 6369.08633508,
+      "high": 6387.87359884,
+      "low": 6360.00000000,
+      "close": 6360.00000000,
+      "volume": 2.56571037,
+      "baseVolume": 16364.95361929,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -73.97112885508386144354,
+    "rsiResult": 39.67610077514460339062,
+    "atrValue": 22.98617615211422765865,
+    "atrSignalLineValue": 22.82870116236000000000
+  },
+  {
+    "tick": {
+      "open": 6355.00010000,
+      "high": 6380.00000000,
+      "low": 6355.00010000,
+      "close": 6374.00000000,
+      "volume": 0.53104806,
+      "baseVolume": 3382.11481142,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -69.71437351504440170692,
+    "rsiResult": 46.72692923788948811272,
+    "atrValue": 23.13001356982035425446,
+    "atrSignalLineValue": 22.72957185304000000000
+  },
+  {
+    "tick": {
+      "open": 6360.00000000,
+      "high": 6402.24392781,
+      "low": 6375.19304240,
+      "close": 6402.24392781,
+      "volume": 13.69082523,
+      "baseVolume": 87604.75843490,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -1.62509391335480184434,
+    "rsiResult": 57.78687091321802427965,
+    "atrValue": 23.49529315840461466486,
+    "atrSignalLineValue": 22.85529503468000000000
+  },
+  {
+    "tick": {
+      "open": 6402.24392781,
+      "high": 6411.34724990,
+      "low": 6410.00000000,
+      "close": 6410.86660579,
+      "volume": 2.66205657,
+      "baseVolume": 17032.60929099,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 53.80252024911880148395,
+    "rsiResult": 60.56409834133803586578,
+    "atrValue": 22.46729522494714218880,
+    "atrSignalLineValue": 22.93779973320000000000
+  },
+  {
+    "tick": {
+      "open": 6380.00000003,
+      "high": 6405.00000000,
+      "low": 6395.00000000,
+      "close": 6405.00000000,
+      "volume": 1.04549683,
+      "baseVolume": 6691.02998804,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 30.57192059324335315671,
+    "rsiResult": 57.69462946751609432249,
+    "atrValue": 21.99581740816520346103,
+    "atrSignalLineValue": 22.81491910270000000000
+  },
+  {
+    "tick": {
+      "open": 6406.84000000,
+      "high": 6425.80000000,
+      "low": 6406.84000000,
+      "close": 6423.39999991,
+      "volume": 1.65825253,
+      "baseVolume": 10647.35712545,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 90.84402100733928971094,
+    "rsiResult": 63.68982093623963327367,
+    "atrValue": 21.91040187901054607096,
+    "atrSignalLineValue": 22.59976424806000000000
+  },
+  {
+    "tick": {
+      "open": 6400.00000000,
+      "high": 6416.92999999,
+      "low": 6396.00000000,
+      "close": 6414.99999975,
+      "volume": 1.34022102,
+      "baseVolume": 8585.00902792,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 65.20188789524503914075,
+    "rsiResult": 59.41862847251617340206,
+    "atrValue": 22.30251602408122135161,
+    "atrSignalLineValue": 22.43426473892000000000
+  },
+  {
+    "tick": {
+      "open": 6405.59400000,
+      "high": 6420.09714641,
+      "low": 6385.12345601,
+      "close": 6420.00000000,
+      "volume": 4.16434072,
+      "baseVolume": 26700.07960457,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 64.43299782345110438647,
+    "rsiResult": 61.14210968678006991641,
+    "atrValue": 23.20759990807541982650,
+    "atrSignalLineValue": 22.37672608886000000000
+  },
+  {
+    "tick": {
+      "open": 6387.96502916,
+      "high": 6425.79999970,
+      "low": 6400.00000000,
+      "close": 6425.76999809,
+      "volume": 2.86173681,
+      "baseVolume": 18368.13149953,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6385.12345601,
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "cciResult": 97.43858326717442873315,
+    "rsiResult": 63.14886243268941942833,
+    "atrValue": 23.39277132178431841032,
+    "atrSignalLineValue": 22.56182130822000000000
+  },
+  {
+    "tick": {
+      "open": 6412.91845774,
+      "high": 6422.99999977,
+      "low": 6390.00000005,
+      "close": 6394.60224854,
+      "volume": 3.46604844,
+      "baseVolume": 22184.28125434,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 47.31616592336748598719,
+    "rsiResult": 48.20680863011255042410,
+    "atrValue": 24.27685894451400995244,
+    "atrSignalLineValue": 23.01802961550000000000
+  },
+  {
+    "tick": {
+      "open": 6416.58000000,
+      "high": 6425.76999984,
+      "low": 6394.60224852,
+      "close": 6424.54999785,
+      "volume": 2.04491431,
+      "baseVolume": 13098.95537596,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 94.10733671158240154134,
+    "rsiResult": 58.65198281243767090690,
+    "atrValue": 24.76906554276300924155,
+    "atrSignalLineValue": 23.58976234824000000000
+  },
+  {
+    "tick": {
+      "open": 6416.07000000,
+      "high": 6425.00000000,
+      "low": 6400.00000000,
+      "close": 6418.58000000,
+      "volume": 0.69643936,
+      "baseVolume": 4471.96381900,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 94.62671163910126115515,
+    "rsiResult": 56.14405922635378723673,
+    "atrValue": 24.78556086113708001001,
+    "atrSignalLineValue": 24.08637131566000000000
+  },
+  {
+    "tick": {
+      "open": 6470.68339880,
+      "high": 6498.99999999,
+      "low": 6455.00000000,
+      "close": 6444.99000001,
+      "volume": 11.61449830,
+      "baseVolume": 74903.01033407,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 264.39226793482329321284,
+    "rsiResult": 63.76069486070004950436,
+    "atrValue": 28.75944937034157429501,
+    "atrSignalLineValue": 25.19674120810000000000
+  },
+  {
+    "tick": {
+      "open": 6448.50341766,
+      "high": 6482.33117115,
+      "low": 6470.00000000,
+      "close": 6470.00000000,
+      "volume": 8.43848051,
+      "baseVolume": 54647.50073158,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 261.50937046297290546849,
+    "rsiResult": 69.35991448193547736488,
+    "atrValue": 29.37242949674574755965,
+    "atrSignalLineValue": 26.39267284310000000000
+  },
+  {
+    "tick": {
+      "open": 6470.00000000,
+      "high": 6515.08651997,
+      "low": 6470.00000000,
+      "close": 6463.17348004,
+      "volume": 13.59140953,
+      "baseVolume": 88189.96445457,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 255.63485421039026960138,
+    "rsiResult": 66.25527439408444124670,
+    "atrValue": 30.49486453054962273396,
+    "atrSignalLineValue": 27.63627396030000000000
+  },
+  {
+    "tick": {
+      "open": 6474.69750001,
+      "high": 6512.89999985,
+      "low": 6476.71945912,
+      "close": 6493.03321772,
+      "volume": 19.67860642,
+      "baseVolume": 127817.00950514,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 243.75013297449706729789,
+    "rsiResult": 72.28459132335856976834,
+    "atrValue": 31.86855419336750682439,
+    "atrSignalLineValue": 29.05617169042000000000
+  },
+  {
+    "tick": {
+      "open": 6490.00000000,
+      "high": 6490.00000000,
+      "low": 6476.34735554,
+      "close": 6490.00000000,
+      "volume": 5.73717711,
+      "baseVolume": 37095.54659936,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 195.28844148691368103009,
+    "rsiResult": 70.85565841878108037038,
+    "atrValue": 30.78407619241268490836,
+    "atrSignalLineValue": 30.25587475668000000000
+  },
+  {
+    "tick": {
+      "open": 6489.99999997,
+      "high": 6495.00000000,
+      "low": 6457.18023429,
+      "close": 6488.00000000,
+      "volume": 1.85450371,
+      "baseVolume": 12022.72956747,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 4
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 163.70228898344411227730,
+    "rsiResult": 69.84412579408568848034,
+    "atrValue": 31.28662544366892170062,
+    "atrSignalLineValue": 30.76130997134000000000
+  },
+  {
+    "tick": {
+      "open": 6485.00000000,
+      "high": 6488.99999999,
+      "low": 6464.89147779,
+      "close": 6464.89147779,
+      "volume": 3.25051373,
+      "baseVolume": 21065.65984182,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 134.88851941576008442717,
+    "rsiResult": 59.02607681567356708023,
+    "atrValue": 30.77390378340685586486,
+    "atrSignalLineValue": 31.04160482868000000000
+  },
+  {
+    "tick": {
+      "open": 6464.89147780,
+      "high": 6489.00000000,
+      "low": 6464.89147780,
+      "close": 6465.00000000,
+      "volume": 3.88785152,
+      "baseVolume": 25147.60112157,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 124.30133620984479369101,
+    "rsiResult": 59.05916551498405688602,
+    "atrValue": 30.29780509959208044594,
+    "atrSignalLineValue": 31.00219294248000000000
+  },
+  {
+    "tick": {
+      "open": 6480.00000000,
+      "high": 6497.99999998,
+      "low": 6480.00000000,
+      "close": 6485.00000000,
+      "volume": 12.77941375,
+      "baseVolume": 82904.45477424,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 138.76948135862348650865,
+    "rsiResult": 64.86862985840342010554,
+    "atrValue": 30.49081901962121755694,
+    "atrSignalLineValue": 30.72664590774000000000
+  },
+  {
+    "tick": {
+      "open": 6465.73501592,
+      "high": 6497.99999998,
+      "low": 6469.45413448,
+      "close": 6490.40377829,
+      "volume": 3.24662552,
+      "baseVolume": 21037.05186544,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 123.18391977171770518024,
+    "rsiResult": 66.30405978394086768782,
+    "atrValue": 30.35189376821970201716,
+    "atrSignalLineValue": 30.64020942290000000000
+  },
+  {
+    "tick": {
+      "open": 6489.00000000,
+      "high": 6489.00000000,
+      "low": 6451.00000001,
+      "close": 6474.00000000,
+      "volume": 3.61949616,
+      "baseVolume": 23464.67707459,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 88.94735362388251114976,
+    "rsiResult": 58.27323914199375987983,
+    "atrValue": 30.99845694763258044451,
+    "atrSignalLineValue": 30.58257572370000000000
+  },
+  {
+    "tick": {
+      "open": 6474.00000000,
+      "high": 6490.40000000,
+      "low": 6474.00000000,
+      "close": 6490.39999994,
+      "volume": 3.83484528,
+      "baseVolume": 24882.66641074,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 102.85612836754153835354,
+    "rsiResult": 63.22168758164787520598,
+    "atrValue": 29.95571002280168184133,
+    "atrSignalLineValue": 30.41893697158000000000
+  },
+  {
+    "tick": {
+      "open": 6481.19000000,
+      "high": 6487.67607197,
+      "low": 6466.67066533,
+      "close": 6481.14993935,
+      "volume": 2.47873420,
+      "baseVolume": 16070.31023970,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 85.07847700811852034962,
+    "rsiResult": 58.84803235743271199872,
+    "atrValue": 29.51096892188727599552,
+    "atrSignalLineValue": 30.26156973604000000000
+  },
+  {
+    "tick": {
+      "open": 6481.14993935,
+      "high": 6487.00000000,
+      "low": 6467.19301982,
+      "close": 6487.00000000,
+      "volume": 2.30443595,
+      "baseVolume": 14920.32828236,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 81.87383896465466387802,
+    "rsiResult": 60.75580730494446022013,
+    "atrValue": 28.81782686889532771013,
+    "atrSignalLineValue": 29.92697130588000000000
+  },
+  {
+    "tick": {
+      "open": 6480.47821532,
+      "high": 6486.99999997,
+      "low": 6456.50287800,
+      "close": 6483.00000000,
+      "volume": 1.46464103,
+      "baseVolume": 9485.62168208,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 69.02384041643840570268,
+    "rsiResult": 58.68876842656620548047,
+    "atrValue": 28.93777652111709001655,
+    "atrSignalLineValue": 29.64414785646000000000
+  },
+  {
+    "tick": {
+      "open": 6483.00000000,
+      "high": 6487.00000000,
+      "low": 6459.62506003,
+      "close": 6459.63000000,
+      "volume": 1.71921462,
+      "baseVolume": 11130.89251073,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 54.42725315160581837566,
+    "rsiResult": 48.07166144817692297571,
+    "atrValue": 28.82614533889444072965,
+    "atrSignalLineValue": 29.20968553472000000000
+  },
+  {
+    "tick": {
+      "open": 6459.62506003,
+      "high": 6483.99999999,
+      "low": 6459.63000000,
+      "close": 6459.62506003,
+      "volume": 4.14897908,
+      "baseVolume": 26882.01761306,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 49.60104709153036696614,
+    "rsiResult": 48.06961902868387194940,
+    "atrValue": 28.50784924254483782039,
+    "atrSignalLineValue": 28.92011337866000000000
+  },
+  {
+    "tick": {
+      "open": 6451.00000000,
+      "high": 6470.00000000,
+      "low": 6451.00000000,
+      "close": 6470.00000000,
+      "volume": 0.48133868,
+      "baseVolume": 3112.34394378,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 40.06438722744593824424,
+    "rsiResult": 52.75387678517859665948,
+    "atrValue": 27.82871715379163511893,
+    "atrSignalLineValue": 28.58366302504000000000
+  },
+  {
+    "tick": {
+      "open": 6463.45236000,
+      "high": 6479.05999982,
+      "low": 6450.00846900,
+      "close": 6472.44000000,
+      "volume": 5.68546729,
+      "baseVolume": 36757.76043241,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 43.03158726043834550186,
+    "rsiResult": 53.84187738975222594354,
+    "atrValue": 27.91606098709223261044,
+    "atrSignalLineValue": 28.40330984868000000000
+  },
+  {
+    "tick": {
+      "open": 6475.67799800,
+      "high": 6478.99999985,
+      "low": 6448.21028826,
+      "close": 6465.00000000,
+      "volume": 1.53928744,
+      "baseVolume": 9934.58784884,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 35.03860294913516723702,
+    "rsiResult": 49.94517616914327963420,
+    "atrValue": 28.12132174444278742398,
+    "atrSignalLineValue": 28.24001889336000000000
+  },
+  {
+    "tick": {
+      "open": 6465.00000000,
+      "high": 6479.00000000,
+      "low": 6465.00000000,
+      "close": 6465.00000000,
+      "volume": 0.41140246,
+      "baseVolume": 2660.72881299,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 42.31673829332168587930,
+    "rsiResult": 49.94517616908917837100,
+    "atrValue": 27.11265590555401689370,
+    "atrSignalLineValue": 27.89732100668000000000
+  },
+  {
+    "tick": {
+      "open": 6465.00000000,
+      "high": 6490.40377866,
+      "low": 6465.00000000,
+      "close": 6483.91000000,
+      "volume": 16.48826634,
+      "baseVolume": 106920.42453348,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 58.82187088643382541848,
+    "rsiResult": 59.20873147059107697174,
+    "atrValue": 26.99059324515730140129,
+    "atrSignalLineValue": 27.59386980720000000000
+  },
+  {
+    "tick": {
+      "open": 6475.00000000,
+      "high": 6489.99999999,
+      "low": 6462.00000000,
+      "close": 6484.00000000,
+      "volume": 2.07300588,
+      "baseVolume": 13427.17043082,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 54.59111883991400967448,
+    "rsiResult": 59.24861399248190959531,
+    "atrValue": 27.06269372693177987263,
+    "atrSignalLineValue": 27.44066512184000000000
+  },
+  {
+    "tick": {
+      "open": 6480.51000000,
+      "high": 6490.40377866,
+      "low": 6480.59000000,
+      "close": 6470.00000000,
+      "volume": 9.20718715,
+      "baseVolume": 59663.42080597,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 56.67383527108879369826,
+    "rsiResult": 50.68363711184909485465,
+    "atrValue": 25.83062836500808131030,
+    "atrSignalLineValue": 27.02357859742000000000
+  },
+  {
+    "tick": {
+      "open": 6462.00000001,
+      "high": 6489.99999985,
+      "low": 6460.00001000,
+      "close": 6484.99999995,
+      "volume": 1.89201244,
+      "baseVolume": 12243.66998219,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 50.25061112337850276253,
+    "rsiResult": 57.92460916049949485205,
+    "atrValue": 26.12843989965036121671,
+    "atrSignalLineValue": 26.62500222846000000000
+  },
+  {
+    "tick": {
+      "open": 6460.01000000,
+      "high": 6484.98899970,
+      "low": 6444.72843749,
+      "close": 6444.72843749,
+      "volume": 2.57265385,
+      "baseVolume": 16659.93272861,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -6.65502843710072987089,
+    "rsiResult": 40.28147012903403424642,
+    "atrValue": 27.13866293967533541552,
+    "atrSignalLineValue": 26.63020363528000000000
+  },
+  {
+    "tick": {
+      "open": 6464.74000000,
+      "high": 6475.21996067,
+      "low": 6440.00000000,
+      "close": 6440.00000000,
+      "volume": 8.58249442,
+      "baseVolume": 55447.61336595,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6490.40377866,
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "cciResult": -31.99482569369559731847,
+    "rsiResult": 38.74199939520660632019,
+    "atrValue": 27.71589849184138288584,
+    "atrSignalLineValue": 26.77526468462000000000
+  },
+  {
+    "tick": {
+      "open": 6440.00000000,
+      "high": 6474.08709211,
+      "low": 6450.00000000,
+      "close": 6471.70130547,
+      "volume": 4.40414285,
+      "baseVolume": 28466.38105942,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 6.62613468516247312052,
+    "rsiResult": 52.31716603871999320510,
+    "atrValue": 28.17098375028128410828,
+    "atrSignalLineValue": 26.99692268930000000000
+  },
+  {
+    "tick": {
+      "open": 6464.25000000,
+      "high": 6476.51828993,
+      "low": 6441.00000002,
+      "close": 6441.00000002,
+      "volume": 2.73577287,
+      "baseVolume": 17692.63069346,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -44.77511621469984747955,
+    "rsiResult": 42.24365203601078619180,
+    "atrValue": 28.69579133311833524340,
+    "atrSignalLineValue": 27.56995528292000000000
+  },
+  {
+    "tick": {
+      "open": 6480.73999969,
+      "high": 6480.73999972,
+      "low": 6472.89000000,
+      "close": 6478.99999997,
+      "volume": 4.09463455,
+      "baseVolume": 26533.59615392,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 5
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 47.15750093157113690625,
+    "rsiResult": 54.33565534075723432579,
+    "atrValue": 29.48466335932416844030,
+    "atrSignalLineValue": 28.24119997484000000000
+  },
+  {
+    "tick": {
+      "open": 6475.00000000,
+      "high": 6475.00000000,
+      "low": 6451.55000010,
+      "close": 6451.55000010,
+      "volume": 3.78519770,
+      "baseVolume": 24472.66393233,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -41.24390426682383231158,
+    "rsiResult": 46.51862737372487852405,
+    "atrValue": 29.33933025294387069456,
+    "atrSignalLineValue": 28.68133343750000000000
+  },
+  {
+    "tick": {
+      "open": 6468.99999990,
+      "high": 6479.00000000,
+      "low": 6460.00000000,
+      "close": 6470.78000000,
+      "volume": 4.84252206,
+      "baseVolume": 31322.63198162,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 0.32729931786061879770,
+    "rsiResult": 51.90449495688808723850,
+    "atrValue": 29.20437808487645135923,
+    "atrSignalLineValue": 28.97902935610000000000
+  },
+  {
+    "tick": {
+      "open": 6478.99999999,
+      "high": 6484.99999994,
+      "low": 6478.99999999,
+      "close": 6484.99999992,
+      "volume": 3.49466267,
+      "baseVolume": 22637.78493603,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6451.55000010,
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "cciResult": 75.28842595151503924686,
+    "rsiResult": 55.57994106709804868907,
+    "atrValue": 28.13406536024241911929,
+    "atrSignalLineValue": 28.97164567810000000000
+  },
+  {
+    "tick": {
+      "open": 6466.19000000,
+      "high": 6478.99999996,
+      "low": 6460.00000000,
+      "close": 6460.00000000,
+      "volume": 17.06371877,
+      "baseVolume": 110400.49509470,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -57.38476496065066193976,
+    "rsiResult": 48.36063479530640661118,
+    "atrValue": 27.91020354308224632506,
+    "atrSignalLineValue": 28.81452812010000000000
+  },
+  {
+    "tick": {
+      "open": 6475.09999993,
+      "high": 6475.09999996,
+      "low": 6465.00000000,
+      "close": 6466.94000000,
+      "volume": 4.79458585,
+      "baseVolume": 31039.60580952,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -36.60032803120812211178,
+    "rsiResult": 50.34981975977910811186,
+    "atrValue": 26.99518900143351444470,
+    "atrSignalLineValue": 28.31663324852000000000
+  },
+  {
+    "tick": {
+      "open": 6466.94000000,
+      "high": 6474.06941695,
+      "low": 6454.95980000,
+      "close": 6461.00000000,
+      "volume": 3.94751807,
+      "baseVolume": 25484.36330883,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -78.02364098110788211535,
+    "rsiResult": 48.57051062893008179192,
+    "atrValue": 26.43193385490254912722,
+    "atrSignalLineValue": 27.73515396890000000000
+  },
+  {
+    "tick": {
+      "open": 6461.00000000,
+      "high": 6461.00000000,
+      "low": 6450.00000001,
+      "close": 6455.00000000,
+      "volume": 0.72365653,
+      "baseVolume": 4673.76304312,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -131.87532193335969911691,
+    "rsiResult": 46.71759247195942423273,
+    "atrValue": 25.32965286455236704670,
+    "atrSignalLineValue": 26.96020892484000000000
+  },
+  {
+    "tick": {
+      "open": 6461.99999999,
+      "high": 6466.99999991,
+      "low": 6455.00000000,
+      "close": 6466.99999991,
+      "volume": 3.37338369,
+      "baseVolume": 21780.70090502,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -68.72032759682161190019,
+    "rsiResult": 50.88163319985582333399,
+    "atrValue": 24.37753479637005511479,
+    "atrSignalLineValue": 26.20890281206000000000
+  },
+  {
+    "tick": {
+      "open": 6460.47601750,
+      "high": 6474.06941698,
+      "low": 6460.00000000,
+      "close": 6474.06941698,
+      "volume": 1.91443117,
+      "baseVolume": 12366.44749665,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -13.51687265193973023809,
+    "rsiResult": 53.27201898511707128433,
+    "atrValue": 23.64124066662933689231,
+    "atrSignalLineValue": 25.35511023678000000000
+  },
+  {
+    "tick": {
+      "open": 6474.99292408,
+      "high": 6477.19843289,
+      "low": 6461.50068079,
+      "close": 6477.19843289,
+      "volume": 1.00121021,
+      "baseVolume": 6477.20975505,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 10.99268866018363151865,
+    "rsiResult": 54.36424121928160097769,
+    "atrValue": 23.07384862615581282857,
+    "atrSignalLineValue": 24.57084216172000000000
+  },
+  {
+    "tick": {
+      "open": 6477.19843288,
+      "high": 6505.38280961,
+      "low": 6477.19843288,
+      "close": 6471.00000000,
+      "volume": 9.16736397,
+      "baseVolume": 59484.81945787,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 113.55597920551249423526,
+    "rsiResult": 51.70418208404480119523,
+    "atrValue": 23.43888634785896905510,
+    "atrSignalLineValue": 23.97223266032000000000
+  },
+  {
+    "tick": {
+      "open": 6498.23999989,
+      "high": 6499.99999994,
+      "low": 6487.17000000,
+      "close": 6499.99999198,
+      "volume": 14.60511902,
+      "baseVolume": 94773.65652066,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 185.18529588984163923004,
+    "rsiResult": 61.49768879867885919585,
+    "atrValue": 23.83610874729761412259,
+    "atrSignalLineValue": 23.67352383686000000000
+  },
+  {
+    "tick": {
+      "open": 6500.00000000,
+      "high": 6512.89999986,
+      "low": 6473.08670000,
+      "close": 6485.00000000,
+      "volume": 9.87571791,
+      "baseVolume": 64016.43555455,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6450.00000001,
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "cciResult": 141.50721441714298243972,
+    "rsiResult": 55.07874761585733281965,
+    "atrValue": 24.97733668391921311383,
+    "atrSignalLineValue": 23.79348421438000000000
+  },
+  {
+    "tick": {
+      "open": 6482.16000000,
+      "high": 6497.62349831,
+      "low": 6473.00000001,
+      "close": 6473.00000001,
+      "volume": 3.97486477,
+      "baseVolume": 25746.46668258,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 74.20056261635263967582,
+    "rsiResult": 50.40243211348012752818,
+    "atrValue": 24.95206251363926931999,
+    "atrSignalLineValue": 24.05564858378000000000
+  },
+  {
+    "tick": {
+      "open": 6471.00000000,
+      "high": 6490.50000000,
+      "low": 6470.00000008,
+      "close": 6488.00000000,
+      "volume": 3.59346644,
+      "baseVolume": 23266.05678254,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 80.99464398694369839480,
+    "rsiResult": 55.63406100193976170632,
+    "atrValue": 24.63405804266503579713,
+    "atrSignalLineValue": 24.36769046708000000000
+  },
+  {
+    "tick": {
+      "open": 6490.50000000,
+      "high": 6506.99999996,
+      "low": 6470.00000004,
+      "close": 6497.95499996,
+      "volume": 7.15127224,
+      "baseVolume": 46442.37698542,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 141.98444417656668960978,
+    "rsiResult": 58.83592173667355130339,
+    "atrValue": 25.51733960533181895448,
+    "atrSignalLineValue": 24.78338111858000000000
+  },
+  {
+    "tick": {
+      "open": 6486.93000001,
+      "high": 6498.00000000,
+      "low": 6477.00000000,
+      "close": 6498.00000000,
+      "volume": 2.51756864,
+      "baseVolume": 16315.76791212,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 128.74624817963575383564,
+    "rsiResult": 58.85083741072670308050,
+    "atrValue": 25.19467249066526045773,
+    "atrSignalLineValue": 25.05509386724000000000
+  },
+  {
+    "tick": {
+      "open": 6494.00000000,
+      "high": 6513.39999986,
+      "low": 6490.04048002,
+      "close": 6509.99999997,
+      "volume": 5.91914000,
+      "baseVolume": 38454.43815669,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 201.28830935383037283724,
+    "rsiResult": 62.84036746410071743269,
+    "atrValue": 25.06359015847488471075,
+    "atrSignalLineValue": 25.07234456216000000000
+  },
+  {
+    "tick": {
+      "open": 6508.99999992,
+      "high": 6512.00000000,
+      "low": 6483.17257105,
+      "close": 6480.00000000,
+      "volume": 2.82601801,
+      "baseVolume": 18360.44792266,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 110.21724915045930633445,
+    "rsiResult": 49.50736277711389393633,
+    "atrValue": 25.33243578644096437427,
+    "atrSignalLineValue": 25.14841921672000000000
+  },
+  {
+    "tick": {
+      "open": 6504.99999999,
+      "high": 6513.39999979,
+      "low": 6492.69000000,
+      "close": 6507.81329355,
+      "volume": 148.09364293,
+      "baseVolume": 963870.90013770,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 170.07361061518840290411,
+    "rsiResult": 58.56380874771098846106,
+    "atrValue": 25.90869035812375263325,
+    "atrSignalLineValue": 25.40334567980000000000
+  },
+  {
+    "tick": {
+      "open": 6507.81329355,
+      "high": 6513.39999984,
+      "low": 6491.80000000,
+      "close": 6491.80000000,
+      "volume": 37.41924699,
+      "baseVolume": 243522.22194462,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 127.21481945129463155961,
+    "rsiResult": 52.53583787311381447572,
+    "atrValue": 25.60092674968634173088,
+    "atrSignalLineValue": 25.42006310868000000000
+  },
+  {
+    "tick": {
+      "open": 6493.00000000,
+      "high": 6513.39999983,
+      "low": 6495.00000000,
+      "close": 6495.00000000,
+      "volume": 2.05463376,
+      "baseVolume": 13364.23017399,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 129.38162847026344758878,
+    "rsiResult": 53.59636226825859822214,
+    "atrValue": 25.31514625542303160725,
+    "atrSignalLineValue": 25.44415786162000000000
+  },
+  {
+    "tick": {
+      "open": 6480.00000000,
+      "high": 6500.99999988,
+      "low": 6475.37110000,
+      "close": 6480.00000000,
+      "volume": 0.62724364,
+      "baseVolume": 4066.70978736,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 43.36552587694560491398,
+    "rsiResult": 48.00935211324160773113,
+    "atrValue": 25.33755722860710077816,
+    "atrSignalLineValue": 25.49895127566000000000
+  },
+  {
+    "tick": {
+      "open": 6490.00000000,
+      "high": 6507.84950852,
+      "low": 6494.50000000,
+      "close": 6500.00000000,
+      "volume": 7.05688772,
+      "baseVolume": 45859.67608208,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 6
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 118.21093893427431157507,
+    "rsiResult": 54.96434732134803726100,
+    "atrValue": 25.51698232084945072258,
+    "atrSignalLineValue": 25.53586058254000000000
+  },
+  {
+    "tick": {
+      "open": 6484.01000000,
+      "high": 6504.00000000,
+      "low": 6486.00000000,
+      "close": 6486.00000001,
+      "volume": 0.15910084,
+      "baseVolume": 1033.10419810,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 67.75650680144210170778,
+    "rsiResult": 49.78445325745762659098,
+    "atrValue": 24.98005501221734709954,
+    "atrSignalLineValue": 25.35013351336000000000
+  },
+  {
+    "tick": {
+      "open": 6505.34046245,
+      "high": 6515.00000000,
+      "low": 6498.75705790,
+      "close": 6500.00000000,
+      "volume": 3.42177988,
+      "baseVolume": 22258.89153142,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 123.39904686452801578435,
+    "rsiResult": 54.54422731632661519098,
+    "atrValue": 25.26719393920182230672,
+    "atrSignalLineValue": 25.28338695126000000000
+  },
+  {
+    "tick": {
+      "open": 6515.00000000,
+      "high": 6600.00000000,
+      "low": 6512.00000000,
+      "close": 6580.00000000,
+      "volume": 25.20997586,
+      "baseVolume": 165506.20476762,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 346.70928209682220768097,
+    "rsiResult": 71.62244533132528527037,
+    "atrValue": 30.60525151497312071338,
+    "atrSignalLineValue": 26.34140800316000000000
+  },
+  {
+    "tick": {
+      "open": 6577.33778842,
+      "high": 6582.52559258,
+      "low": 6565.00000000,
+      "close": 6561.00000001,
+      "volume": 10.62702450,
+      "baseVolume": 69907.12106175,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 307.65849497271478555178,
+    "rsiResult": 65.16191117932935694801,
+    "atrValue": 29.67099016247504066242,
+    "atrSignalLineValue": 27.20809458994000000000
+  },
+  {
+    "tick": {
+      "open": 6597.00000000,
+      "high": 6615.00000000,
+      "low": 6597.00000000,
+      "close": 6614.99999996,
+      "volume": 11.88079241,
+      "baseVolume": 78434.29724099,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 361.00600312474898413877,
+    "rsiResult": 72.88549150561525237173,
+    "atrValue": 31.40877657872682347225,
+    "atrSignalLineValue": 28.38645344152000000000
+  },
+  {
+    "tick": {
+      "open": 6585.00000000,
+      "high": 6602.28654975,
+      "low": 6563.54159147,
+      "close": 6599.99999990,
+      "volume": 7.20405037,
+      "baseVolume": 47413.83515817,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 257.53888378487278988712,
+    "rsiResult": 68.21765009413331377620,
+    "atrValue": 32.84089314381776465280,
+    "atrSignalLineValue": 29.95862106784000000000
+  },
+  {
+    "tick": {
+      "open": 6591.00000000,
+      "high": 6601.65999999,
+      "low": 6583.35562061,
+      "close": 6583.35562061,
+      "volume": 3.81977763,
+      "baseVolume": 25197.29846182,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 222.97443550855760687206,
+    "rsiResult": 63.22535641259888568317,
+    "atrValue": 31.80257073211649574903,
+    "atrSignalLineValue": 31.26569642642000000000
+  },
+  {
+    "tick": {
+      "open": 6585.00000000,
+      "high": 6589.99999993,
+      "low": 6580.00000000,
+      "close": 6580.00000000,
+      "volume": 13.33951450,
+      "baseVolume": 87785.18941923,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 182.08647938365504231067,
+    "rsiResult": 62.20560196649660806592,
+    "atrValue": 30.24524424625103176696,
+    "atrSignalLineValue": 31.19369497268000000000
+  },
+  {
+    "tick": {
+      "open": 6571.68000000,
+      "high": 6580.11100000,
+      "low": 6557.00000000,
+      "close": 6565.00000000,
+      "volume": 9.12264865,
+      "baseVolume": 59871.22177882,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 131.63184379091547364461,
+    "rsiResult": 57.59197782345745612149,
+    "atrValue": 29.73565537151881521218,
+    "atrSignalLineValue": 31.20662801448000000000
+  },
+  {
+    "tick": {
+      "open": 6558.00000000,
+      "high": 6591.00000000,
+      "low": 6574.99999999,
+      "close": 6589.00000000,
+      "volume": 5.78392836,
+      "baseVolume": 38082.82702401,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 147.24310410181969112057,
+    "rsiResult": 62.53221909155525502705,
+    "atrValue": 29.46882284498175698274,
+    "atrSignalLineValue": 30.81863726774000000000
+  },
+  {
+    "tick": {
+      "open": 6573.91000000,
+      "high": 6601.34250000,
+      "low": 6580.96000000,
+      "close": 6601.34250000,
+      "volume": 60.09513413,
+      "baseVolume": 394597.78986170,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 145.18119968810502868670,
+    "rsiResult": 64.87062524800788689568,
+    "atrValue": 28.81979978462591719826,
+    "atrSignalLineValue": 30.01441859590000000000
+  },
+  {
+    "tick": {
+      "open": 6596.40700001,
+      "high": 6599.00000000,
+      "low": 6575.10000001,
+      "close": 6588.50000000,
+      "volume": 4.67480581,
+      "baseVolume": 30786.70851867,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 119.34564581692743560015,
+    "rsiResult": 60.50489953248305190865,
+    "atrValue": 28.63570694215263739838,
+    "atrSignalLineValue": 29.38104583790000000000
+  },
+  {
+    "tick": {
+      "open": 6588.52000000,
+      "high": 6588.52000000,
+      "low": 6577.22389618,
+      "close": 6583.00000000,
+      "volume": 3.05773719,
+      "baseVolume": 20122.62436214,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 101.73588590188454466549,
+    "rsiResult": 58.62740098123791842448,
+    "atrValue": 27.39716386199887758421,
+    "atrSignalLineValue": 28.81142976106000000000
+  },
+  {
+    "tick": {
+      "open": 6575.55308481,
+      "high": 6588.28011400,
+      "low": 6573.13319553,
+      "close": 6569.00000000,
+      "volume": 4.55573874,
+      "baseVolume": 29954.84399133,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 84.87313950609280950983,
+    "rsiResult": 53.89721488768415523339,
+    "atrValue": 26.52214633399895775677,
+    "atrSignalLineValue": 28.16872795356000000000
+  },
+  {
+    "tick": {
+      "open": 6569.00000000,
+      "high": 6577.14247252,
+      "low": 6568.99999999,
+      "close": 6577.14247252,
+      "volume": 3.13267454,
+      "baseVolume": 20568.16504934,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 75.26611520043315197313,
+    "rsiResult": 56.18185266071697623342,
+    "atrValue": 25.20931249085617505986,
+    "atrSignalLineValue": 27.31682588272000000000
+  },
+  {
+    "tick": {
+      "open": 6579.99990000,
+      "high": 6588.47613228,
+      "low": 6572.01036416,
+      "close": 6572.09545167,
+      "volume": 3.00514918,
+      "baseVolume": 19777.58005147,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 74.19916915741988395477,
+    "rsiResult": 54.32769046722207132888,
+    "atrValue": 24.58477360722359112701,
+    "atrSignalLineValue": 26.46982064724000000000
+  },
+  {
+    "tick": {
+      "open": 6583.99000000,
+      "high": 6583.99000000,
+      "low": 6550.00000008,
+      "close": 6560.84383021,
+      "volume": 15.38566626,
+      "baseVolume": 100815.25756566,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 51.76574823885423356080,
+    "rsiResult": 50.22202648951040526115,
+    "atrValue": 25.25657548670762033222,
+    "atrSignalLineValue": 25.79399435616000000000
+  },
+  {
+    "tick": {
+      "open": 6558.00000000,
+      "high": 6567.31100321,
+      "low": 6546.45000000,
+      "close": 6555.50247941,
+      "volume": 4.32757610,
+      "baseVolume": 28328.72855006,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 35.88718728548356733731,
+    "rsiResult": 48.29683339300014543432,
+    "atrValue": 24.94260603837136173706,
+    "atrSignalLineValue": 25.30308279144000000000
+  },
+  {
+    "tick": {
+      "open": 6544.33077169,
+      "high": 6577.00000000,
+      "low": 6553.22026111,
+      "close": 6575.00000000,
+      "volume": 7.15815226,
+      "baseVolume": 46967.16556072,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 50.58665875738380212334,
+    "rsiResult": 55.25382883731933980056,
+    "atrValue": 24.85954409920197875584,
+    "atrSignalLineValue": 24.97056234448000000000
+  },
+  {
+    "tick": {
+      "open": 6574.43468588,
+      "high": 6600.00000000,
+      "low": 6577.33234261,
+      "close": 6597.22499988,
+      "volume": 2.38729764,
+      "baseVolume": 15722.64390707,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 81.69879904163854116051,
+    "rsiResult": 61.76918296732426648811,
+    "atrValue": 24.86957666354469455899,
+    "atrSignalLineValue": 24.90261517900000000000
+  },
+  {
+    "tick": {
+      "open": 6590.54860818,
+      "high": 6593.71678626,
+      "low": 6578.57498836,
+      "close": 6589.99999999,
+      "volume": 2.51736139,
+      "baseVolume": 16584.54758753,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 71.50307914260233501762,
+    "rsiResult": 58.68282208718995383144,
+    "atrValue": 24.42532201043435923335,
+    "atrSignalLineValue": 24.87072485966000000000
+  },
+  {
+    "tick": {
+      "open": 6585.00000000,
+      "high": 6590.00000000,
+      "low": 6559.38059961,
+      "close": 6559.38059961,
+      "volume": 6.93791692,
+      "baseVolume": 45599.54887820,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 40.76483362923019061450,
+    "rsiResult": 47.50555617507816570717,
+    "atrValue": 24.86775618040333357383,
+    "atrSignalLineValue": 24.79296099840000000000
+  },
+  {
+    "tick": {
+      "open": 6569.79096631,
+      "high": 6582.61400000,
+      "low": 6575.12179077,
+      "close": 6579.58300000,
+      "volume": 6.33052838,
+      "baseVolume": 41626.25620594,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 53.47503167293908654730,
+    "rsiResult": 53.93741731627909556091,
+    "atrValue": 24.75101648108880974713,
+    "atrSignalLineValue": 24.75464308694000000000
+  },
+  {
+    "tick": {
+      "open": 6574.00000000,
+      "high": 6590.00000000,
+      "low": 6585.09951150,
+      "close": 6575.00000000,
+      "volume": 3.48915779,
+      "baseVolume": 22965.67227840,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 7
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 58.10510889535932216356,
+    "rsiResult": 52.32154061860720377662,
+    "atrValue": 23.72715816101103762234,
+    "atrSignalLineValue": 24.52816589930000000000
+  },
+  {
+    "tick": {
+      "open": 6585.80000000,
+      "high": 6589.99899978,
+      "low": 6575.00000000,
+      "close": 6575.00000000,
+      "volume": 5.82056613,
+      "baseVolume": 38307.54694844,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 50.01051023330714080255,
+    "rsiResult": 52.32154061843068325505,
+    "atrValue": 23.10371827665310636360,
+    "atrSignalLineValue": 24.17499422192000000000
+  },
+  {
+    "tick": {
+      "open": 6583.37484177,
+      "high": 6590.00000000,
+      "low": 6580.00000000,
+      "close": 6590.00000000,
+      "volume": 9.67898886,
+      "baseVolume": 63682.23839270,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 60.41401129270428008855,
+    "rsiResult": 57.46992117389027061390,
+    "atrValue": 22.52488125689217019477,
+    "atrSignalLineValue": 23.79490607120000000000
+  },
+  {
+    "tick": {
+      "open": 6579.52524420,
+      "high": 6589.76483141,
+      "low": 6574.03470315,
+      "close": 6589.76483141,
+      "volume": 7.32122447,
+      "baseVolume": 48166.59850540,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 54.42322332795838876247,
+    "rsiResult": 57.36202192420094887309,
+    "atrValue": 22.05633951354272946657,
+    "atrSignalLineValue": 23.23262273784000000000
+  },
+  {
+    "tick": {
+      "open": 6578.23000000,
+      "high": 6578.84831434,
+      "low": 6562.88507050,
+      "close": 6562.87968356,
+      "volume": 4.51812336,
+      "baseVolume": 29683.93317296,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 17.72100361562827386571,
+    "rsiResult": 46.31613198950009202172,
+    "atrValue": 22.40086961328967736182,
+    "atrSignalLineValue": 22.76259336428000000000
+  },
+  {
+    "tick": {
+      "open": 6561.91549450,
+      "high": 6575.04455794,
+      "low": 6560.23408108,
+      "close": 6532.44566551,
+      "volume": 9.45171466,
+      "baseVolume": 61799.78371510,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -15.43666345790741501835,
+    "rsiResult": 37.28545911588967479655,
+    "atrValue": 21.85869870234041469312,
+    "atrSignalLineValue": 22.38890147254000000000
+  },
+  {
+    "tick": {
+      "open": 6515.30000000,
+      "high": 6539.91461344,
+      "low": 6509.33000000,
+      "close": 6516.42679420,
+      "volume": 5.56987844,
+      "baseVolume": 36295.49039747,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -103.43024956855554944480,
+    "rsiResult": 33.46899953341988133514,
+    "atrValue": 22.48197832645895650075,
+    "atrSignalLineValue": 22.26455348250000000000
+  },
+  {
+    "tick": {
+      "open": 6509.21000000,
+      "high": 6546.97170170,
+      "low": 6517.13905674,
+      "close": 6530.63000000,
+      "volume": 5.49793263,
+      "baseVolume": 35859.74651720,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6546.97170170,
+    "positions": [
+      "ENTRY_SHORT"
+    ],
+    "cciResult": -85.89138936702114189955,
+    "rsiResult": 39.56342760891206082136,
+    "atrValue": 23.05790183885474532213,
+    "atrSignalLineValue": 22.37115759890000000000
+  },
+  {
+    "tick": {
+      "open": 6540.94092728,
+      "high": 6543.58712159,
+      "low": 6523.16442978,
+      "close": 6523.16442978,
+      "volume": 11.08103167,
+      "baseVolume": 72203.89210291,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -97.23813654535978080960,
+    "rsiResult": 37.55432131167019817244,
+    "atrValue": 22.86967255107940637055,
+    "atrSignalLineValue": 22.53382420640000000000
+  },
+  {
+    "tick": {
+      "open": 6520.00000000,
+      "high": 6526.66666667,
+      "low": 6520.00000000,
+      "close": 6526.66666667,
+      "volume": 2.23369166,
+      "baseVolume": 14559.32965910,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -124.34009235279293665662,
+    "rsiResult": 39.16461571935912820503,
+    "atrValue": 21.71231498814516305837,
+    "atrSignalLineValue": 22.39611328138000000000
+  },
+  {
+    "tick": {
+      "open": 6519.17203465,
+      "high": 6540.00000000,
+      "low": 6528.05083625,
+      "close": 6533.02000000,
+      "volume": 4.70060520,
+      "baseVolume": 30716.31180537,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -105.61067723116540453357,
+    "rsiResult": 42.17045847399083625430,
+    "atrValue": 21.11381629827765141134,
+    "atrSignalLineValue": 22.24713680056000000000
+  },
+  {
+    "tick": {
+      "open": 6539.00000000,
+      "high": 6540.00000000,
+      "low": 6524.41411996,
+      "close": 6525.75049610,
+      "volume": 2.13530795,
+      "baseVolume": 13940.09208421,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -130.23753583057873726093,
+    "rsiResult": 39.67804067978261346073,
+    "atrValue": 20.71896370840067631053,
+    "atrSignalLineValue": 21.89453387696000000000
+  },
+  {
+    "tick": {
+      "open": 6525.31871693,
+      "high": 6537.64403622,
+      "low": 6522.00000206,
+      "close": 6537.00000000,
+      "volume": 1.91162855,
+      "baseVolume": 12482.25998474,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -132.63358455166403625659,
+    "rsiResult": 45.24272387111926116846,
+    "atrValue": 20.35646874065777085978,
+    "atrSignalLineValue": 21.35424725732000000000
+  },
+  {
+    "tick": {
+      "open": 6536.90000000,
+      "high": 6546.66666667,
+      "low": 6536.90000000,
+      "close": 6546.66666667,
+      "volume": 2.75334865,
+      "baseVolume": 18006.10923530,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -85.96034180118651913969,
+    "rsiResult": 49.67521425915415693344,
+    "atrValue": 19.60005430703935865551,
+    "atrSignalLineValue": 20.70032360850000000000
+  },
+  {
+    "tick": {
+      "open": 6548.54251569,
+      "high": 6550.35311290,
+      "low": 6541.94557438,
+      "close": 6548.00000000,
+      "volume": 0.43868064,
+      "baseVolume": 2871.84216268,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -69.15699825922220245754,
+    "rsiResult": 50.29188415916247023695,
+    "atrValue": 18.80058889367940446583,
+    "atrSignalLineValue": 20.11797838962000000000
+  },
+  {
+    "tick": {
+      "open": 6533.00000000,
+      "high": 6554.22973667,
+      "low": 6530.00000000,
+      "close": 6532.09247950,
+      "volume": 8.50371244,
+      "baseVolume": 55542.33189297,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -88.73232036635437596647,
+    "rsiResult": 43.26408159924946146980,
+    "atrValue": 19.18838516341658986113,
+    "atrSignalLineValue": 19.73289216264000000000
+  },
+  {
+    "tick": {
+      "open": 6547.45000000,
+      "high": 6560.42000000,
+      "low": 6552.52354014,
+      "close": 6552.77833936,
+      "volume": 4.52350866,
+      "baseVolume": 29620.52162970,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -30.39548179853767689444,
+    "rsiResult": 52.79506341566320303353,
+    "atrValue": 19.84118054460111915676,
+    "atrSignalLineValue": 19.55733552988000000000
+  },
+  {
+    "tick": {
+      "open": 6556.23305511,
+      "high": 6573.69999999,
+      "low": 6550.67383095,
+      "close": 6560.00000000,
+      "volume": 8.47267854,
+      "baseVolume": 55567.38359379,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -6.70359504815026118287,
+    "rsiResult": 55.68289537948820803496,
+    "atrValue": 20.06867972284389635985,
+    "atrSignalLineValue": 19.49977772632000000000
+  },
+  {
+    "tick": {
+      "open": 6560.00000000,
+      "high": 6565.20912269,
+      "low": 6544.72666106,
+      "close": 6549.49357739,
+      "volume": 7.60336630,
+      "baseVolume": 49793.08451010,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -32.87012286392777708845,
+    "rsiResult": 50.67186884228389229290,
+    "atrValue": 20.09823557335504661986,
+    "atrSignalLineValue": 19.59941397958000000000
+  },
+  {
+    "tick": {
+      "open": 6544.15906738,
+      "high": 6551.23816776,
+      "low": 6495.00000000,
+      "close": 6495.00000000,
+      "volume": 19.46588921,
+      "baseVolume": 126393.29000925,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -154.28328324276225015059,
+    "rsiResult": 33.36695574687638876806,
+    "atrValue": 22.67965930097254328987,
+    "atrSignalLineValue": 20.37522806104000000000
+  },
+  {
+    "tick": {
+      "open": 6496.00250120,
+      "high": 6514.70943852,
+      "low": 6486.24638761,
+      "close": 6489.00000000,
+      "volume": 13.52028662,
+      "baseVolume": 87651.84835030,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -189.29751133604703607498,
+    "rsiResult": 32.02880021782534240251,
+    "atrValue": 23.09275870161736162631,
+    "atrSignalLineValue": 21.15610276868000000000
+  },
+  {
+    "tick": {
+      "open": 6492.46244593,
+      "high": 6519.99999999,
+      "low": 6489.20040324,
+      "close": 6503.77687085,
+      "volume": 5.58951797,
+      "baseVolume": 36358.83346739,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -153.48904892731246845794,
+    "rsiResult": 38.75053014954935826181,
+    "atrValue": 23.65756165078755008157,
+    "atrSignalLineValue": 21.91937898992000000000
+  },
+  {
+    "tick": {
+      "open": 6511.00744982,
+      "high": 6511.00744989,
+      "low": 6493.15324974,
+      "close": 6493.15324974,
+      "volume": 2.91798972,
+      "baseVolume": 18972.63214268,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -154.32043634308710212268,
+    "rsiResult": 35.91351519385697642698,
+    "atrValue": 23.24303582930272507574,
+    "atrSignalLineValue": 22.55425021120000000000
+  },
+  {
+    "tick": {
+      "open": 6509.71550711,
+      "high": 6515.00000000,
+      "low": 6495.63442909,
+      "close": 6514.94937600,
+      "volume": 3.19414126,
+      "baseVolume": 20764.45597299,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -117.63527064288863307029,
+    "rsiResult": 45.07956436196380432023,
+    "atrValue": 23.14330114578110185604,
+    "atrSignalLineValue": 23.16326332570000000000
+  },
+  {
+    "tick": {
+      "open": 6500.94000000,
+      "high": 6515.00000000,
+      "low": 6502.25227659,
+      "close": 6500.95476562,
+      "volume": 3.80449923,
+      "baseVolume": 24754.64908905,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 8
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -115.42712198473281886561,
+    "rsiResult": 40.90569811290718053242,
+    "atrValue": 22.40075987893959458061,
+    "atrSignalLineValue": 23.10748344128000000000
+  },
+  {
+    "tick": {
+      "open": 6510.00000000,
+      "high": 6515.00000000,
+      "low": 6490.00000000,
+      "close": 6485.00000000,
+      "volume": 1.93300825,
+      "baseVolume": 12562.17981412,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -130.44894122910605847592,
+    "rsiResult": 36.61166486140304332724,
+    "atrValue": 22.58641988758676639628,
+    "atrSignalLineValue": 23.00621567848000000000
+  },
+  {
+    "tick": {
+      "open": 6486.75000000,
+      "high": 6506.29722099,
+      "low": 6479.54858094,
+      "close": 6480.07840777,
+      "volume": 2.75940922,
+      "baseVolume": 17904.76257418,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -140.26179080375004793964,
+    "rsiResult": 35.34014651777473569107,
+    "atrValue": 22.88372132775914022512,
+    "atrSignalLineValue": 22.85144761388000000000
+  },
+  {
+    "tick": {
+      "open": 6481.89910541,
+      "high": 6501.61214748,
+      "low": 6481.73761170,
+      "close": 6490.59918369,
+      "volume": 6.72457756,
+      "baseVolume": 43599.75654715,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -123.73932234131266249107,
+    "rsiResult": 40.26749745900253067181,
+    "atrValue": 22.78729406934777306618,
+    "atrSignalLineValue": 22.76029926188000000000
+  },
+  {
+    "tick": {
+      "open": 6479.00000001,
+      "high": 6492.76301186,
+      "low": 6479.00000001,
+      "close": 6478.87220894,
+      "volume": 19.96131646,
+      "baseVolume": 129344.25465736,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -131.95056854074678912249,
+    "rsiResult": 36.79484393967681344697,
+    "atrValue": 22.14270248225150356145,
+    "atrSignalLineValue": 22.56017952918000000000
+  },
+  {
+    "tick": {
+      "open": 6480.42735535,
+      "high": 6481.75000000,
+      "low": 6480.23912059,
+      "close": 6481.42474816,
+      "volume": 0.52008333,
+      "baseVolume": 3370.49554057,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -128.52157165941941223179,
+    "rsiResult": 38.08617726149291191052,
+    "atrValue": 20.76663738066211044992,
+    "atrSignalLineValue": 22.23335502952000000000
+  },
+  {
+    "tick": {
+      "open": 6481.24000000,
+      "high": 6489.98888888,
+      "low": 6478.23179422,
+      "close": 6489.98888888,
+      "volume": 5.19571283,
+      "baseVolume": 33676.47360273,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -111.85668919648231490620,
+    "rsiResult": 42.46808792830238198441,
+    "atrValue": 20.12309861490053113207,
+    "atrSignalLineValue": 21.74069077498000000000
+  },
+  {
+    "tick": {
+      "open": 6490.00000000,
+      "high": 6498.67402900,
+      "low": 6483.50000000,
+      "close": 6490.49000000,
+      "volume": 9.98710766,
+      "baseVolume": 64838.15251535,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -95.83551699385047282925,
+    "rsiResult": 42.73159889490594930975,
+    "atrValue": 19.76959364240763605121,
+    "atrSignalLineValue": 21.11786523792000000000
+  },
+  {
+    "tick": {
+      "open": 6497.67821330,
+      "high": 6507.05544400,
+      "low": 6485.45140314,
+      "close": 6498.89774905,
+      "volume": 1.91524192,
+      "baseVolume": 12431.04206280,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -76.22471659960972089022,
+    "rsiResult": 47.23689578702413462793,
+    "atrValue": 19.90062558652137633327,
+    "atrSignalLineValue": 20.54053154134000000000
+  },
+  {
+    "tick": {
+      "open": 6490.00000000,
+      "high": 6497.67522487,
+      "low": 6490.00000000,
+      "close": 6497.67522487,
+      "volume": 0.39160859,
+      "baseVolume": 2541.90101325,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -76.46075639505179973407,
+    "rsiResult": 46.64405258881694026443,
+    "atrValue": 19.11470583391270659518,
+    "atrSignalLineValue": 19.93493221168000000000
+  },
+  {
+    "tick": {
+      "open": 6504.23541499,
+      "high": 6515.00000000,
+      "low": 6498.57082343,
+      "close": 6510.25385495,
+      "volume": 7.05302255,
+      "baseVolume": 45924.49529657,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -41.68650213265875817408,
+    "rsiResult": 53.33898303776803045618,
+    "atrValue": 18.98685364077608469552,
+    "atrSignalLineValue": 19.57897546370000000000
+  },
+  {
+    "tick": {
+      "open": 6505.00000000,
+      "high": 6515.00000000,
+      "low": 6500.50000001,
+      "close": 6500.50000000,
+      "volume": 2.20455603,
+      "baseVolume": 14345.63696923,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -44.82094975879204869580,
+    "rsiResult": 48.13512137241240823423,
+    "atrValue": 18.66636409429207864584,
+    "atrSignalLineValue": 19.28762855958000000000
+  },
+  {
+    "tick": {
+      "open": 6494.99624020,
+      "high": 6502.00000000,
+      "low": 6437.00000000,
+      "close": 6430.09567348,
+      "volume": 11.92845485,
+      "baseVolume": 77068.96085700,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -167.10794633834140108885,
+    "rsiResult": 27.00489769267542617891,
+    "atrValue": 21.97590951612835874257,
+    "atrSignalLineValue": 19.72889173432000000000
+  },
+  {
+    "tick": {
+      "open": 6427.53011945,
+      "high": 6457.00000000,
+      "low": 6428.41393615,
+      "close": 6432.20359127,
+      "volume": 3.79120040,
+      "baseVolume": 24414.33939773,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -202.96795206727057192453,
+    "rsiResult": 28.05553119401239524491,
+    "atrValue": 22.44806339711919026096,
+    "atrSignalLineValue": 20.23837929644000000000
+  },
+  {
+    "tick": {
+      "open": 6439.00000000,
+      "high": 6459.42583905,
+      "low": 6435.23674908,
+      "close": 6451.35643911,
+      "volume": 15.99137841,
+      "baseVolume": 103031.82199664,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -168.41203704260030579082,
+    "rsiResult": 37.18339522609424323016,
+    "atrValue": 22.78907656732496238518,
+    "atrSignalLineValue": 20.97325344312000000000
+  },
+  {
+    "tick": {
+      "open": 6435.00000000,
+      "high": 6450.00000000,
+      "low": 6432.76856984,
+      "close": 6445.79761872,
+      "volume": 8.33153856,
+      "baseVolume": 53674.21734114,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -173.81913411204628122349,
+    "rsiResult": 35.72184932255644134943,
+    "atrValue": 22.48899033180175078624,
+    "atrSignalLineValue": 21.67368078134000000000
+  },
+  {
+    "tick": {
+      "open": 6436.00000000,
+      "high": 6449.99999999,
+      "low": 6416.00000000,
+      "close": 6417.59000000,
+      "volume": 19.51980994,
+      "baseVolume": 125326.27150016,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -193.32148663850801532635,
+    "rsiResult": 29.24142768379032010554,
+    "atrValue": 23.31120530738734001579,
+    "atrSignalLineValue": 22.60264902396000000000
+  },
+  {
+    "tick": {
+      "open": 6439.23583770,
+      "high": 6440.00000000,
+      "low": 6410.00000000,
+      "close": 6412.82447397,
+      "volume": 17.41235884,
+      "baseVolume": 111670.49796781,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -190.65866139948767505370,
+    "rsiResult": 28.27842722818815872770,
+    "atrValue": 23.78897635685967287181,
+    "atrSignalLineValue": 22.96526239210000000000
+  },
+  {
+    "tick": {
+      "open": 6419.60000000,
+      "high": 6449.99999999,
+      "low": 6419.60000000,
+      "close": 6449.99999999,
+      "volume": 13.35968197,
+      "baseVolume": 85763.72545373,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -135.31078391495124852074,
+    "rsiResult": 44.20513232573572358129,
+    "atrValue": 24.74515847565541052382,
+    "atrSignalLineValue": 23.42468140780000000000
+  },
+  {
+    "tick": {
+      "open": 6430.00000000,
+      "high": 6450.00000000,
+      "low": 6426.56219680,
+      "close": 6449.99000000,
+      "volume": 6.81608459,
+      "baseVolume": 43840.34351805,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -120.65984182138486898176,
+    "rsiResult": 44.20219859730232468227,
+    "atrValue": 24.65177595596573834355,
+    "atrSignalLineValue": 23.79722128554000000000
+  },
+  {
+    "tick": {
+      "open": 6448.12029791,
+      "high": 6450.00000000,
+      "low": 6437.15155570,
+      "close": 6450.00000000,
+      "volume": 2.03449025,
+      "baseVolume": 13105.35800236,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -104.75092589792533115486,
+    "rsiResult": 44.20631284338569835647,
+    "atrValue": 23.80868083768247131901,
+    "atrSignalLineValue": 24.06115938672000000000
+  },
+  {
+    "tick": {
+      "open": 6430.94285555,
+      "high": 6450.00000000,
+      "low": 6435.00000000,
+      "close": 6436.70196213,
+      "volume": 6.78602616,
+      "baseVolume": 43673.95369813,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -107.90576947903273057187,
+    "rsiResult": 39.86329697164458628699,
+    "atrValue": 23.17948934927658051051,
+    "atrSignalLineValue": 24.03481619508000000000
+  },
+  {
+    "tick": {
+      "open": 6435.00000001,
+      "high": 6441.58349173,
+      "low": 6431.28174181,
+      "close": 6441.58349173,
+      "volume": 1.11614534,
+      "baseVolume": 7186.59293847,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -104.82055442976285474191,
+    "rsiResult": 42.18020873942416758270,
+    "atrValue": 22.25965081861396761690,
+    "atrSignalLineValue": 23.72895108744000000000
+  },
+  {
+    "tick": {
+      "open": 6441.58349173,
+      "high": 6450.00000000,
+      "low": 6437.51174710,
+      "close": 6438.00000000,
+      "volume": 5.49689386,
+      "baseVolume": 35412.74102524,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -90.39278647700290983190,
+    "rsiResult": 40.89507346656039737292,
+    "atrValue": 21.56169382442725564426,
+    "atrSignalLineValue": 23.09225815720000000000
+  },
+  {
+    "tick": {
+      "open": 6430.00000000,
+      "high": 6438.11657680,
+      "low": 6405.00000000,
+      "close": 6396.70637211,
+      "volume": 10.21987202,
+      "baseVolume": 65476.06608468,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 9
+        },
+        "time": {
+          "hour": 23,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -138.02272133189357456939,
+    "rsiResult": 29.41883215670198695427,
+    "atrValue": 22.38704260839673738396,
+    "atrSignalLineValue": 22.63931148768000000000
+  },
+  {
+    "tick": {
+      "open": 6424.44585798,
+      "high": 6443.11606529,
+      "low": 6412.27347270,
+      "close": 6430.98243912,
+      "volume": 7.44341656,
+      "baseVolume": 47841.97178299,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -98.63231734138690982013,
+    "rsiResult": 43.93059202076839334934,
+    "atrValue": 24.10294622065411328511,
+    "atrSignalLineValue": 22.69816456428000000000
+  },
+  {
+    "tick": {
+      "open": 6420.20935543,
+      "high": 6436.36842816,
+      "low": 6422.84629754,
+      "close": 6434.51108554,
+      "volume": 12.73284400,
+      "baseVolume": 81853.56126328,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 1,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -87.63357853981455373120,
+    "rsiResult": 45.21894911393745281453,
+    "atrValue": 23.34717367775024805046,
+    "atrSignalLineValue": 22.73170142996000000000
+  },
+  {
+    "tick": {
+      "open": 6418.98500000,
+      "high": 6439.28134892,
+      "low": 6424.91493662,
+      "close": 6426.30008375,
+      "volume": 1.12027100,
+      "baseVolume": 7205.97488811,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 2,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -84.65297872781217844166,
+    "rsiResult": 42.68316436480662534669,
+    "atrValue": 22.70569072219665890400,
+    "atrSignalLineValue": 22.82090941068000000000
+  },
+  {
+    "tick": {
+      "open": 6424.26677605,
+      "high": 6446.88339416,
+      "low": 6421.04761418,
+      "close": 6421.04761418,
+      "volume": 2.25230528,
+      "baseVolume": 14474.29148647,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 3,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -81.24463731942337741936,
+    "rsiResult": 41.04710397334246521230,
+    "atrValue": 22.92926852632546898229,
+    "atrSignalLineValue": 23.09442435106000000000
+  },
+  {
+    "tick": {
+      "open": 6435.15000000,
+      "high": 6450.00000000,
+      "low": 6435.15000000,
+      "close": 6446.83033254,
+      "volume": 1.50525187,
+      "baseVolume": 9699.39086627,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 4,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -46.63230506038683171250,
+    "rsiResult": 51.24061100217570140354,
+    "atrValue": 23.35949119015936405498,
+    "atrSignalLineValue": 23.28891406742000000000
+  },
+  {
+    "tick": {
+      "open": 6440.00000000,
+      "high": 6450.00000000,
+      "low": 6435.16259191,
+      "close": 6450.00000000,
+      "volume": 0.99517533,
+      "baseVolume": 6409.42923851,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 5,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -41.58512478877029982475,
+    "rsiResult": 52.36568450984601854743,
+    "atrValue": 22.75077096871940947962,
+    "atrSignalLineValue": 23.01847901704000000000
+  },
+  {
+    "tick": {
+      "open": 6430.34951566,
+      "high": 6450.00000000,
+      "low": 6430.34951566,
+      "close": 6437.51238985,
+      "volume": 3.00630426,
+      "baseVolume": 19384.80691176,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 6,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -51.93535671123351502555,
+    "rsiResult": 47.56168457156145804866,
+    "atrValue": 22.52932192381088023108,
+    "atrSignalLineValue": 22.85490866624000000000
+  },
+  {
+    "tick": {
+      "open": 6455.00000000,
+      "high": 6476.47893409,
+      "low": 6451.02913001,
+      "close": 6454.94666962,
+      "volume": 8.99974212,
+      "baseVolume": 58133.39344998,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 1.67108416974423374320,
+    "rsiResult": 54.09453570559587652994,
+    "atrValue": 23.70340923211010307172,
+    "atrSignalLineValue": 23.05445236822000000000
+  },
+  {
+    "tick": {
+      "open": 6451.98639062,
+      "high": 6465.77484443,
+      "low": 6441.00000000,
+      "close": 6446.72850047,
+      "volume": 2.15561364,
+      "baseVolume": 13909.46900452,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -19.17917084504699459017,
+    "rsiResult": 50.78105600917462856880,
+    "atrValue": 23.77994031767366713803,
+    "atrSignalLineValue": 23.22458672650000000000
+  },
+  {
+    "tick": {
+      "open": 6434.96466788,
+      "high": 6449.46591624,
+      "low": 6434.96466788,
+      "close": 6449.46591624,
+      "volume": 3.41181480,
+      "baseVolume": 21991.27090369,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 9,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -33.64629091102597937728,
+    "rsiResult": 51.87212148590863446481,
+    "atrValue": 23.11717660641126234246,
+    "atrSignalLineValue": 23.17612380974000000000
+  },
+  {
+    "tick": {
+      "open": 6441.50004168,
+      "high": 6457.71593931,
+      "low": 6443.83619068,
+      "close": 6455.00000000,
+      "volume": 0.95256323,
+      "baseVolume": 6147.84784263,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 10,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -9.41268764915773176919,
+    "rsiResult": 54.15495069315846598589,
+    "atrValue": 22.45736032238188646086,
+    "atrSignalLineValue": 23.11744168048000000000
+  },
+  {
+    "tick": {
+      "open": 6449.09791776,
+      "high": 6455.00000000,
+      "low": 6445.68944718,
+      "close": 6447.37255615,
+      "volume": 1.56507151,
+      "baseVolume": 10098.59858976,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 11,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -15.22885171153403844919,
+    "rsiResult": 50.48760182206319468895,
+    "atrValue": 21.51830264364032314223,
+    "atrSignalLineValue": 22.91523782444000000000
+  },
+  {
+    "tick": {
+      "open": 6448.01265918,
+      "high": 6448.01265918,
+      "low": 6431.36150000,
+      "close": 6442.15521507,
+      "volume": 0.89256187,
+      "baseVolume": 5746.52895360,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 12,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -40.91635648781144129948,
+    "rsiResult": 48.01627475901025081902,
+    "atrValue": 21.17064953909458577493,
+    "atrSignalLineValue": 22.40868588584000000000
+  },
+  {
+    "tick": {
+      "open": 6441.00000000,
+      "high": 6454.41606922,
+      "low": 6440.85309158,
+      "close": 6444.00099831,
+      "volume": 1.67954836,
+      "baseVolume": 10823.53358249,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 13,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": -18.50855014723426628623,
+    "rsiResult": 48.99762679418298989087,
+    "atrValue": 20.62724440344497250529,
+    "atrSignalLineValue": 21.77814670300000000000
+  },
+  {
+    "tick": {
+      "open": 6446.56736497,
+      "high": 6465.27065429,
+      "low": 6451.51387341,
+      "close": 6452.00000000,
+      "volume": 0.99226510,
+      "baseVolume": 6408.31705049,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 14,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 20.39213420562134260465,
+    "rsiResult": 53.24748991134857101916,
+    "atrValue": 20.67313094462747446920,
+    "atrSignalLineValue": 21.28933757064000000000
+  },
+  {
+    "tick": {
+      "open": 6452.00000000,
+      "high": 6461.76439912,
+      "low": 6448.77391687,
+      "close": 6448.77391687,
+      "volume": 33.28439412,
+      "baseVolume": 214358.06465672,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 15,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 13.09361183735174077555,
+    "rsiResult": 51.33076600858748257164,
+    "atrValue": 20.12437032358265486426,
+    "atrSignalLineValue": 20.82273957088000000000
+  },
+  {
+    "tick": {
+      "open": 6450.17717727,
+      "high": 6460.00000000,
+      "low": 6448.77391687,
+      "close": 6448.56979515,
+      "volume": 0.39654879,
+      "baseVolume": 2560.20229826,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 16,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 16.54778888443929359842,
+    "rsiResult": 51.20119385963751457064,
+    "atrValue": 19.48877838118389380253,
+    "atrSignalLineValue": 20.41683471838000000000
+  },
+  {
+    "tick": {
+      "open": 6448.56979520,
+      "high": 6458.77209149,
+      "low": 6448.56979520,
+      "close": 6458.77209149,
+      "volume": 1.70405912,
+      "baseVolume": 11004.20541151,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 17,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 39.25156677910118371016,
+    "rsiResult": 57.20095790630636739287,
+    "atrValue": 18.82545823538504424521,
+    "atrSignalLineValue": 19.94779645764000000000
+  },
+  {
+    "tick": {
+      "open": 6458.11205448,
+      "high": 6460.00000000,
+      "low": 6458.00000000,
+      "close": 6458.00000000,
+      "volume": 1.99050163,
+      "baseVolume": 12855.30508752,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 18,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 67.90206196990051440348,
+    "rsiResult": 56.61564279256892806627,
+    "atrValue": 17.62363979000039822770,
+    "atrSignalLineValue": 19.34707553496000000000
+  },
+  {
+    "tick": {
+      "open": 6458.00000000,
+      "high": 6475.00000000,
+      "low": 6458.00000000,
+      "close": 6468.63313195,
+      "volume": 9.21892935,
+      "baseVolume": 59563.10985310,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 19,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 138.10968767921639825978,
+    "rsiResult": 62.48910047276995516536,
+    "atrValue": 17.57909409071465549715,
+    "atrSignalLineValue": 18.72826816418000000000
+  },
+  {
+    "tick": {
+      "open": 6460.16671843,
+      "high": 6477.83718011,
+      "low": 6448.00000000,
+      "close": 6448.00000000,
+      "volume": 2.93289383,
+      "baseVolume": 18936.22698343,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 20,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 102.46454890103749709221,
+    "rsiResult": 48.37022199716316789052,
+    "atrValue": 18.45467166352075153307,
+    "atrSignalLineValue": 18.39432843216000000000
+  },
+  {
+    "tick": {
+      "open": 6435.04224977,
+      "high": 6461.72309064,
+      "low": 6438.80510044,
+      "close": 6461.72309064,
+      "volume": 1.61585899,
+      "baseVolume": 10411.84090744,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 21,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "positions": [],
+    "cciResult": 75.34740441503090560385,
+    "rsiResult": 55.75743310422871017445,
+    "atrValue": 18.77348013041212642357,
+    "atrSignalLineValue": 18.25126878200000000000
+  },
+  {
+    "tick": {
+      "open": 6455.38268611,
+      "high": 6468.72352142,
+      "low": 6455.38268611,
+      "close": 6466.55896511,
+      "volume": 7.15158872,
+      "baseVolume": 46170.04101283,
+      "tickTime": {
+        "date": {
+          "year": 2018,
+          "month": 11,
+          "day": 10
+        },
+        "time": {
+          "hour": 22,
+          "minute": 0,
+          "second": 0,
+          "nano": 0
+        }
+      }
+    },
+    "stopLose": 6438.80510044,
+    "positions": [
+      "ENTRY_LONG"
+    ],
+    "cciResult": 133.77730228241913075071,
+    "rsiResult": 58.10451402213973950889,
+    "atrValue": 18.38543407181126025046,
+    "atrSignalLineValue": 18.16326394930000000000
+  }
+]

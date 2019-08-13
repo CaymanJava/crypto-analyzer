@@ -1,6 +1,6 @@
 package pro.crypto.model.result;
 
-import pro.crypto.model.TrendStrength;
+import pro.crypto.model.analyzer.TrendStrength;
 
 public interface TrendStrengthResult extends AnalyzerResult {
 

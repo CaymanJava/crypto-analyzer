@@ -6,7 +6,9 @@ import pro.crypto.indicator.ic.ICResult;
 import pro.crypto.model.result.AnalyzerResult;
 
 import static org.junit.Assert.assertArrayEquals;
-import static pro.crypto.analyzer.ic.ICDataGenerator.*;
+import static pro.crypto.analyzer.ic.ICDataGenerator.generateDataForPriceCloudCross;
+import static pro.crypto.analyzer.ic.ICDataGenerator.generateDataForPriceKijunCrossSignals;
+import static pro.crypto.analyzer.ic.ICDataGenerator.generateDataForTenkanKijunCrossTest;
 
 public class ICAnalyzerTest extends IncreasedQuantityAnalyzerBaseTest {
 

@@ -331,7 +331,7 @@ public class StcMaMacdStrategy implements Strategy<StcMaMacdResult> {
     }
 
     private void addStcResult(STCResult stcResult, StcMaMacdResult stcMaMacdResult) {
-        stcMaMacdResult.setStcResult(stcResult.getIndicatorValue());
+        stcMaMacdResult.setStcValue(stcResult.getIndicatorValue());
     }
 
     private void addMacdResult(MACDResult macdResult, StcMaMacdResult stcMaMacdResult) {
@@ -341,7 +341,7 @@ public class StcMaMacdStrategy implements Strategy<StcMaMacdResult> {
     }
 
     private void addMaResult(MAResult maResult, StcMaMacdResult stcMaMacdResult) {
-        stcMaMacdResult.setMaResult(maResult.getIndicatorValue());
+        stcMaMacdResult.setMaValue(maResult.getIndicatorValue());
     }
 
 }

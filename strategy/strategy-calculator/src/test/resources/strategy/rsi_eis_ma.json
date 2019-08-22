@@ -123,7 +123,7 @@
     },
     "positions": [],
     "eisBarColor": "BLUE",
-    "fastMaResult": 6430.26199917200000000000
+    "fastMaValue": 6430.26199917200000000000
   },
   {
     "tick": {
@@ -149,7 +149,7 @@
     },
     "positions": [],
     "eisBarColor": "BLUE",
-    "fastMaResult": 6410.1746661147
+    "fastMaValue": 6410.1746661147
   },
   {
     "tick": {
@@ -175,7 +175,7 @@
     },
     "positions": [],
     "eisBarColor": "BLUE",
-    "fastMaResult": 6403.9964411398
+    "fastMaValue": 6403.9964411398
   },
   {
     "tick": {
@@ -201,7 +201,7 @@
     },
     "positions": [],
     "eisBarColor": "BLUE",
-    "fastMaResult": 6397.6642940932
+    "fastMaValue": 6397.6642940932
   },
   {
     "tick": {
@@ -227,7 +227,7 @@
     },
     "positions": [],
     "eisBarColor": "BLUE",
-    "fastMaResult": 6390.4428627255
+    "fastMaValue": 6390.4428627255
   },
   {
     "tick": {
@@ -253,8 +253,8 @@
     },
     "positions": [],
     "eisBarColor": "BLUE",
-    "fastMaResult": 6378.2952418170,
-    "slowMaResult": 6402.79499870400000000000
+    "fastMaValue": 6378.2952418170,
+    "slowMaValue": 6402.79499870400000000000
   },
   {
     "tick": {
@@ -280,8 +280,8 @@
     },
     "positions": [],
     "eisBarColor": "BLUE",
-    "fastMaResult": 6365.5301612147,
-    "slowMaResult": 6391.3777262142
+    "fastMaValue": 6365.5301612147,
+    "slowMaValue": 6391.3777262142
   },
   {
     "tick": {
@@ -307,8 +307,8 @@
     },
     "positions": [],
     "eisBarColor": "BLUE",
-    "fastMaResult": 6353.3534408098,
-    "slowMaResult": 6380.0363214480
+    "fastMaValue": 6353.3534408098,
+    "slowMaValue": 6380.0363214480
   },
   {
     "tick": {
@@ -334,8 +334,8 @@
     },
     "positions": [],
     "eisBarColor": "BLUE",
-    "fastMaResult": 6341.2356272065,
-    "slowMaResult": 6368.5751720938
+    "fastMaValue": 6341.2356272065,
+    "slowMaValue": 6368.5751720938
   },
   {
     "tick": {
@@ -360,10 +360,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 16.41704662123663292923,
+    "rsiValue": 16.41704662123663292923,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6336.1570864743,
-    "slowMaResult": 6360.8342326240
+    "fastMaValue": 6336.1570864743,
+    "slowMaValue": 6360.8342326240
   },
   {
     "tick": {
@@ -388,10 +388,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 24.14576284048099396761,
+    "rsiValue": 24.14576284048099396761,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6340.9413903029,
-    "slowMaResult": 6358.9570990487
+    "fastMaValue": 6340.9413903029,
+    "slowMaValue": 6358.9570990487
   },
   {
     "tick": {
@@ -416,10 +416,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 26.83795477568048403579,
+    "rsiValue": 26.83795477568048403579,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6347.1499586386,
-    "slowMaResult": 6359.0680074598
+    "fastMaValue": 6347.1499586386,
+    "slowMaValue": 6359.0680074598
   },
   {
     "tick": {
@@ -444,10 +444,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 26.33047290407126818258,
+    "rsiValue": 26.33047290407126818258,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6349.7666391724,
-    "slowMaResult": 6358.3283697835
+    "fastMaValue": 6349.7666391724,
+    "slowMaValue": 6358.3283697835
   },
   {
     "tick": {
@@ -472,10 +472,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 31.80376522160536229965,
+    "rsiValue": 31.80376522160536229965,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6357.5110927783,
-    "slowMaResult": 6360.9959389120
+    "fastMaValue": 6357.5110927783,
+    "slowMaValue": 6360.9959389120
   },
   {
     "tick": {
@@ -500,10 +500,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 35.19505403774959901864,
+    "rsiValue": 35.19505403774959901864,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6366.5983638722,
-    "slowMaResult": 6365.3190238480
+    "fastMaValue": 6366.5983638722,
+    "slowMaValue": 6365.3190238480
   },
   {
     "tick": {
@@ -528,10 +528,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 34.44715726485135618538,
+    "rsiValue": 34.44715726485135618538,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6371.0655759148,
-    "slowMaResult": 6367.9882922393
+    "fastMaValue": 6371.0655759148,
+    "slowMaValue": 6367.9882922393
   },
   {
     "tick": {
@@ -556,10 +556,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 33.41380714125546367469,
+    "rsiValue": 33.41380714125546367469,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6371.8937172765,
-    "slowMaResult": 6368.9995118322
+    "fastMaValue": 6371.8937172765,
+    "slowMaValue": 6368.9995118322
   },
   {
     "tick": {
@@ -584,10 +584,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 38.94569908451172374979,
+    "rsiValue": 38.94569908451172374979,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6378.4758084877,
-    "slowMaResult": 6373.1159625736
+    "fastMaValue": 6378.4758084877,
+    "slowMaValue": 6373.1159625736
   },
   {
     "tick": {
@@ -612,10 +612,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 38.94569908455546156737,
+    "rsiValue": 38.94569908455546156737,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6382.8638692951,
-    "slowMaResult": 6376.4839677257
+    "fastMaValue": 6382.8638692951,
+    "slowMaValue": 6376.4839677257
   },
   {
     "tick": {
@@ -640,10 +640,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 33.02793309414901534375,
+    "rsiValue": 33.02793309414901534375,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6374.5759128734,
-    "slowMaResult": 6373.1232463265
+    "fastMaValue": 6374.5759128734,
+    "slowMaValue": 6373.1232463265
   },
   {
     "tick": {
@@ -668,10 +668,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 32.70970847630447110776,
+    "rsiValue": 32.70970847630447110776,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6368.3839419156,
-    "slowMaResult": 6370.0099288126
+    "fastMaValue": 6368.3839419156,
+    "slowMaValue": 6370.0099288126
   },
   {
     "tick": {
@@ -696,10 +696,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 32.04470589845392079592,
+    "rsiValue": 32.04470589845392079592,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6362.9226279771,
-    "slowMaResult": 6366.7353963194
+    "fastMaValue": 6362.9226279771,
+    "slowMaValue": 6366.7353963194
   },
   {
     "tick": {
@@ -724,10 +724,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 34.51397904926862240127,
+    "rsiValue": 34.51397904926862240127,
     "eisBarColor": "RED",
-    "fastMaResult": 6361.5780482781,
-    "slowMaResult": 6365.3087586031
+    "fastMaValue": 6361.5780482781,
+    "slowMaValue": 6365.3087586031
   },
   {
     "tick": {
@@ -752,10 +752,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 38.07090611353581738933,
+    "rsiValue": 38.07090611353581738933,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6364.0520322087,
-    "slowMaResult": 6365.9798934153
+    "fastMaValue": 6364.0520322087,
+    "slowMaValue": 6365.9798934153
   },
   {
     "tick": {
@@ -780,10 +780,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 36.00859793710062164324,
+    "rsiValue": 36.00859793710062164324,
     "eisBarColor": "RED",
-    "fastMaResult": 6362.4013548058,
-    "slowMaResult": 6364.7290037034
+    "fastMaValue": 6362.4013548058,
+    "slowMaValue": 6364.7290037034
   },
   {
     "tick": {
@@ -808,10 +808,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 40.66523904251588552471,
+    "rsiValue": 40.66523904251588552471,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6365.7403870472,
-    "slowMaResult": 6366.1270851264
+    "fastMaValue": 6365.7403870472,
+    "slowMaValue": 6366.1270851264
   },
   {
     "tick": {
@@ -836,10 +836,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 40.91461269823700260021,
+    "rsiValue": 40.91461269823700260021,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6368.2055016948,
-    "slowMaResult": 6367.4013843743
+    "fastMaValue": 6368.2055016948,
+    "slowMaValue": 6367.4013843743
   },
   {
     "tick": {
@@ -864,10 +864,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 35.70244010859687043657,
+    "rsiValue": 35.70244010859687043657,
     "eisBarColor": "RED",
-    "fastMaResult": 6362.1370011432,
-    "slowMaResult": 6364.2374963135
+    "fastMaValue": 6362.1370011432,
+    "slowMaValue": 6364.2374963135
   },
   {
     "tick": {
@@ -894,10 +894,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 34.27953869737444388456,
+    "rsiValue": 34.27953869737444388456,
     "eisBarColor": "RED",
-    "fastMaResult": 6355.7580007788,
-    "slowMaResult": 6360.3761333565
+    "fastMaValue": 6355.7580007788,
+    "slowMaValue": 6360.3761333565
   },
   {
     "tick": {
@@ -922,10 +922,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 37.38363474487940107354,
+    "rsiValue": 37.38363474487940107354,
     "eisBarColor": "RED",
-    "fastMaResult": 6354.2003569392,
-    "slowMaResult": 6358.6868489753
+    "fastMaValue": 6354.2003569392,
+    "slowMaValue": 6358.6868489753
   },
   {
     "tick": {
@@ -950,10 +950,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 33.56473001890553674227,
+    "rsiValue": 33.56473001890553674227,
     "eisBarColor": "RED",
-    "fastMaResult": 6347.1335712928,
-    "slowMaResult": 6354.0165127980
+    "fastMaValue": 6347.1335712928,
+    "slowMaValue": 6354.0165127980
   },
   {
     "tick": {
@@ -978,10 +978,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 43.17508004489896938165,
+    "rsiValue": 43.17508004489896938165,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6351.6897681419,
-    "slowMaResult": 6355.2502671693
+    "fastMaValue": 6351.6897681419,
+    "slowMaValue": 6355.2502671693
   },
   {
     "tick": {
@@ -1006,10 +1006,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 41.64968892130953378145,
+    "rsiValue": 41.64968892130953378145,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6352.5485119046,
-    "slowMaResult": 6355.0713093985
+    "fastMaValue": 6352.5485119046,
+    "slowMaValue": 6355.0713093985
   },
   {
     "tick": {
@@ -1034,10 +1034,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 36.12606059266707266737,
+    "rsiValue": 36.12606059266707266737,
     "eisBarColor": "RED",
-    "fastMaResult": 6344.3656746031,
-    "slowMaResult": 6350.1492531442
+    "fastMaValue": 6344.3656746031,
+    "slowMaValue": 6350.1492531442
   },
   {
     "tick": {
@@ -1062,10 +1062,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 39.10608515756732832881,
+    "rsiValue": 39.10608515756732832881,
     "eisBarColor": "RED",
-    "fastMaResult": 6341.9104497354,
-    "slowMaResult": 6347.7584798453
+    "fastMaValue": 6341.9104497354,
+    "slowMaValue": 6347.7584798453
   },
   {
     "tick": {
@@ -1090,10 +1090,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 47.69144270294873551862,
+    "rsiValue": 47.69144270294873551862,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6350.0736331103,
-    "slowMaResult": 6351.1478471207
+    "fastMaValue": 6350.0736331103,
+    "slowMaValue": 6351.1478471207
   },
   {
     "tick": {
@@ -1118,10 +1118,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 43.96754369476771079258,
+    "rsiValue": 43.96754369476771079258,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6350.0490887369,
-    "slowMaResult": 6350.9391476424
+    "fastMaValue": 6350.0490887369,
+    "slowMaValue": 6350.9391476424
   },
   {
     "tick": {
@@ -1146,10 +1146,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 44.47168266026999281005,
+    "rsiValue": 44.47168266026999281005,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6350.6229489513,
-    "slowMaResult": 6351.0903334129
+    "fastMaValue": 6350.6229489513,
+    "slowMaValue": 6351.0903334129
   },
   {
     "tick": {
@@ -1174,10 +1174,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 44.04491542813322690908,
+    "rsiValue": 44.04491542813322690908,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6350.4152993009,
-    "slowMaResult": 6350.8920909742
+    "fastMaValue": 6350.4152993009,
+    "slowMaValue": 6350.8920909742
   },
   {
     "tick": {
@@ -1202,10 +1202,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 44.04491542312732378370,
+    "rsiValue": 44.04491542312732378370,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6350.2768661939,
-    "slowMaResult": 6350.7298926116
+    "fastMaValue": 6350.2768661939,
+    "slowMaValue": 6350.7298926116
   },
   {
     "tick": {
@@ -1230,10 +1230,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.22089195955652609141,
+    "rsiValue": 48.22089195955652609141,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6354.4616127759,
-    "slowMaResult": 6352.9301132168
+    "fastMaValue": 6354.4616127759,
+    "slowMaValue": 6352.9301132168
   },
   {
     "tick": {
@@ -1258,10 +1258,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 44.03365770313536587223,
+    "rsiValue": 44.03365770313536587223,
     "eisBarColor": "RED",
-    "fastMaResult": 6352.1910751839,
-    "slowMaResult": 6351.9700926319
+    "fastMaValue": 6352.1910751839,
+    "slowMaValue": 6351.9700926319
   },
   {
     "tick": {
@@ -1286,10 +1286,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.71731423472959502161,
+    "rsiValue": 49.71731423472959502161,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6356.7940501026,
-    "slowMaResult": 6354.5209848697
+    "fastMaValue": 6356.7940501026,
+    "slowMaValue": 6354.5209848697
   },
   {
     "tick": {
@@ -1314,10 +1314,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 45.88836059856800173745,
+    "rsiValue": 45.88836059856800173745,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6355.1960332484,
-    "slowMaResult": 6354.0626239007
+    "fastMaValue": 6355.1960332484,
+    "slowMaValue": 6354.0626239007
   },
   {
     "tick": {
@@ -1342,10 +1342,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 40.59723349331561091808,
+    "rsiValue": 40.59723349331561091808,
     "eisBarColor": "RED",
-    "fastMaResult": 6346.7973554989,
-    "slowMaResult": 6349.6876013733
+    "fastMaValue": 6346.7973554989,
+    "slowMaValue": 6349.6876013733
   },
   {
     "tick": {
@@ -1372,10 +1372,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 39.05420650775764284482,
+    "rsiValue": 39.05420650775764284482,
     "eisBarColor": "RED",
-    "fastMaResult": 6338.8649036693,
-    "slowMaResult": 6344.8353102163
+    "fastMaValue": 6338.8649036693,
+    "slowMaValue": 6344.8353102163
   },
   {
     "tick": {
@@ -1400,10 +1400,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 39.75871774860349290233,
+    "rsiValue": 39.75871774860349290233,
     "eisBarColor": "RED",
-    "fastMaResult": 6334.2432691129,
-    "slowMaResult": 6341.2288901770
+    "fastMaValue": 6334.2432691129,
+    "slowMaValue": 6341.2288901770
   },
   {
     "tick": {
@@ -1428,10 +1428,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 44.58746971665129456804,
+    "rsiValue": 44.58746971665129456804,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6335.8288460753,
-    "slowMaResult": 6340.8236374175
+    "fastMaValue": 6335.8288460753,
+    "slowMaValue": 6340.8236374175
   },
   {
     "tick": {
@@ -1456,10 +1456,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 40.58370109298579037047,
+    "rsiValue": 40.58370109298579037047,
     "eisBarColor": "RED",
-    "fastMaResult": 6331.5525640502,
-    "slowMaResult": 6337.5829760689
+    "fastMaValue": 6331.5525640502,
+    "slowMaValue": 6337.5829760689
   },
   {
     "tick": {
@@ -1484,10 +1484,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 39.32403683815050388974,
+    "rsiValue": 39.32403683815050388974,
     "eisBarColor": "RED",
-    "fastMaResult": 6326.9350427135,
-    "slowMaResult": 6333.9678895182
+    "fastMaValue": 6326.9350427135,
+    "slowMaValue": 6333.9678895182
   },
   {
     "tick": {
@@ -1512,10 +1512,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 40.57207314212677853256,
+    "rsiValue": 40.57207314212677853256,
     "eisBarColor": "RED",
-    "fastMaResult": 6324.9666451457,
-    "slowMaResult": 6331.6155186985
+    "fastMaValue": 6324.9666451457,
+    "slowMaValue": 6331.6155186985
   },
   {
     "tick": {
@@ -1540,10 +1540,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 56.05653345429900017226,
+    "rsiValue": 56.05653345429900017226,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6341.3110967638,
-    "slowMaResult": 6339.3217880260
+    "fastMaValue": 6341.3110967638,
+    "slowMaValue": 6339.3217880260
   },
   {
     "tick": {
@@ -1570,10 +1570,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 57.19042087256028814236,
+    "rsiValue": 57.19042087256028814236,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6353.8740645092,
-    "slowMaResult": 6346.5360083849
+    "fastMaValue": 6353.8740645092,
+    "slowMaValue": 6346.5360083849
   },
   {
     "tick": {
@@ -1598,10 +1598,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 59.22970018747337419340,
+    "rsiValue": 59.22970018747337419340,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6365.2493763261,
-    "slowMaResult": 6354.0749159440
+    "fastMaValue": 6365.2493763261,
+    "slowMaValue": 6354.0749159440
   },
   {
     "tick": {
@@ -1626,10 +1626,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.33171483557444826018,
+    "rsiValue": 49.33171483557444826018,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6361.0995842274,
-    "slowMaResult": 6353.8431130505
+    "fastMaValue": 6361.0995842274,
+    "slowMaValue": 6353.8431130505
   },
   {
     "tick": {
@@ -1654,10 +1654,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 55.91342172029903049303,
+    "rsiValue": 55.91342172029903049303,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6368.0663894849,
-    "slowMaResult": 6358.9625470413
+    "fastMaValue": 6368.0663894849,
+    "slowMaValue": 6358.9625470413
   },
   {
     "tick": {
@@ -1682,10 +1682,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 53.84957961855075385309,
+    "rsiValue": 53.84957961855075385309,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6370.0442596566,
-    "slowMaResult": 6361.6966293974
+    "fastMaValue": 6370.0442596566,
+    "slowMaValue": 6361.6966293974
   },
   {
     "tick": {
@@ -1710,10 +1710,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.45196140511420656812,
+    "rsiValue": 50.45196140511420656812,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6366.8451108011,
-    "slowMaResult": 6361.4693900688
+    "fastMaValue": 6366.8451108011,
+    "slowMaValue": 6361.4693900688
   },
   {
     "tick": {
@@ -1738,10 +1738,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.45959811830219099559,
+    "rsiValue": 54.45959811830219099559,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6370.5634071441,
-    "slowMaResult": 6364.4749554799
+    "fastMaValue": 6370.5634071441,
+    "slowMaValue": 6364.4749554799
   },
   {
     "tick": {
@@ -1766,10 +1766,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.54260685909512945654,
+    "rsiValue": 49.54260685909512945654,
     "eisBarColor": "RED",
-    "fastMaResult": 6366.3756047627,
-    "slowMaResult": 6363.2976908472
+    "fastMaValue": 6366.3756047627,
+    "slowMaValue": 6363.2976908472
   },
   {
     "tick": {
@@ -1794,10 +1794,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.65682876130729708792,
+    "rsiValue": 54.65682876130729708792,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6371.3170697818,
-    "slowMaResult": 6366.5526561150
+    "fastMaValue": 6371.3170697818,
+    "slowMaValue": 6366.5526561150
   },
   {
     "tick": {
@@ -1822,10 +1822,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.65873115418496542705,
+    "rsiValue": 48.65873115418496542705,
     "eisBarColor": "RED",
-    "fastMaResult": 6365.8780465212,
-    "slowMaResult": 6364.4521731850
+    "fastMaValue": 6365.8780465212,
+    "slowMaValue": 6364.4521731850
   },
   {
     "tick": {
@@ -1850,10 +1850,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.65873115445561275531,
+    "rsiValue": 48.65873115445561275531,
     "eisBarColor": "RED",
-    "fastMaResult": 6362.2520310141,
-    "slowMaResult": 6362.7335962423
+    "fastMaValue": 6362.2520310141,
+    "slowMaValue": 6362.7335962423
   },
   {
     "tick": {
@@ -1880,10 +1880,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 55.51498404908464336557,
+    "rsiValue": 55.51498404908464336557,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6370.4105218361,
-    "slowMaResult": 6367.0961248310
+    "fastMaValue": 6370.4105218361,
+    "slowMaValue": 6367.0961248310
   },
   {
     "tick": {
@@ -1910,10 +1910,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 55.56986222456187532784,
+    "rsiValue": 55.56986222456187532784,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6375.9403462241,
-    "slowMaResult": 6370.7150103163
+    "fastMaValue": 6375.9403462241,
+    "slowMaValue": 6370.7150103163
   },
   {
     "tick": {
@@ -1938,10 +1938,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.49840294033825660930,
+    "rsiValue": 52.49840294033825660930,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6375.6268974894,
-    "slowMaResult": 6371.4940993533
+    "fastMaValue": 6375.6268974894,
+    "slowMaValue": 6371.4940993533
   },
   {
     "tick": {
@@ -1966,10 +1966,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 55.99116436611088404101,
+    "rsiValue": 55.99116436611088404101,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6380.7512649929,
-    "slowMaResult": 6375.0406267436
+    "fastMaValue": 6380.7512649929,
+    "slowMaValue": 6375.0406267436
   },
   {
     "tick": {
@@ -1994,10 +1994,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.12182945462642963701,
+    "rsiValue": 52.12182945462642963701,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6379.1675099953,
-    "slowMaResult": 6375.2150582448
+    "fastMaValue": 6379.1675099953,
+    "slowMaValue": 6375.2150582448
   },
   {
     "tick": {
@@ -2022,10 +2022,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.12420479713142913577,
+    "rsiValue": 52.12420479713142913577,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6378.1150066635,
-    "slowMaResult": 6375.3595931094
+    "fastMaValue": 6378.1150066635,
+    "slowMaValue": 6375.3595931094
   },
   {
     "tick": {
@@ -2050,10 +2050,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.50030020788641622393,
+    "rsiValue": 51.50030020788641622393,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6376.6575257790,
-    "slowMaResult": 6375.0655878186
+    "fastMaValue": 6376.6575257790,
+    "slowMaValue": 6375.0655878186
   },
   {
     "tick": {
@@ -2078,10 +2078,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.28380786216518861206,
+    "rsiValue": 51.28380786216518861206,
     "eisBarColor": "RED",
-    "fastMaResult": 6375.4383505193,
-    "slowMaResult": 6374.6900263970
+    "fastMaValue": 6375.4383505193,
+    "slowMaValue": 6374.6900263970
   },
   {
     "tick": {
@@ -2106,10 +2106,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.86127916193679789946,
+    "rsiValue": 54.86127916193679789946,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6378.9589002062,
-    "slowMaResult": 6376.7463851575
+    "fastMaValue": 6378.9589002062,
+    "slowMaValue": 6376.7463851575
   },
   {
     "tick": {
@@ -2134,10 +2134,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.92934671655685454416,
+    "rsiValue": 52.92934671655685454416,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6379.3059334075,
-    "slowMaResult": 6377.3379514580
+    "fastMaValue": 6379.3059334075,
+    "slowMaValue": 6377.3379514580
   },
   {
     "tick": {
@@ -2162,10 +2162,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.62645792348186334286,
+    "rsiValue": 48.62645792348186334286,
     "eisBarColor": "RED",
-    "fastMaResult": 6374.8706222683,
-    "slowMaResult": 6375.2765057365
+    "fastMaValue": 6374.8706222683,
+    "slowMaValue": 6375.2765057365
   },
   {
     "tick": {
@@ -2192,10 +2192,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 51.65000461063551185171,
+    "rsiValue": 51.65000461063551185171,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6375.2470815122,
-    "slowMaResult": 6375.4080501480
+    "fastMaValue": 6375.2470815122,
+    "slowMaValue": 6375.4080501480
   },
   {
     "tick": {
@@ -2220,10 +2220,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 46.89442904562908578360,
+    "rsiValue": 46.89442904562908578360,
     "eisBarColor": "RED",
-    "fastMaResult": 6370.1647210081,
-    "slowMaResult": 6372.6065864847
+    "fastMaValue": 6370.1647210081,
+    "slowMaValue": 6372.6065864847
   },
   {
     "tick": {
@@ -2248,10 +2248,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 53.26608436258180056012,
+    "rsiValue": 53.26608436258180056012,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6374.1098140054,
-    "slowMaResult": 6374.3144798511
+    "fastMaValue": 6374.1098140054,
+    "slowMaValue": 6374.3144798511
   },
   {
     "tick": {
@@ -2276,10 +2276,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.26005052238843168437,
+    "rsiValue": 54.26005052238843168437,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6377.9732093369,
-    "slowMaResult": 6376.3845744236
+    "fastMaValue": 6377.9732093369,
+    "slowMaValue": 6376.3845744236
   },
   {
     "tick": {
@@ -2306,10 +2306,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 56.02377394396908163872,
+    "rsiValue": 56.02377394396908163872,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6382.7083841679,
-    "slowMaResult": 6379.2562397702
+    "fastMaValue": 6382.7083841679,
+    "slowMaValue": 6379.2562397702
   },
   {
     "tick": {
@@ -2334,10 +2334,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 60.07270576863215568931,
+    "rsiValue": 60.07270576863215568931,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6391.1389227786,
-    "slowMaResult": 6384.4823779938
+    "fastMaValue": 6391.1389227786,
+    "slowMaValue": 6384.4823779938
   },
   {
     "tick": {
@@ -2362,10 +2362,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.20465199909315620093,
+    "rsiValue": 57.20465199909315620093,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6394.0926151857,
-    "slowMaResult": 6387.3037638131
+    "fastMaValue": 6394.0926151857,
+    "slowMaValue": 6387.3037638131
   },
   {
     "tick": {
@@ -2390,10 +2390,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.20465201550426916624,
+    "rsiValue": 57.20465201550426916624,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6396.0617434771,
-    "slowMaResult": 6389.6121704034
+    "fastMaValue": 6396.0617434771,
+    "slowMaValue": 6389.6121704034
   },
   {
     "tick": {
@@ -2418,10 +2418,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 59.97491939167650710975,
+    "rsiValue": 59.97491939167650710975,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6400.7078289847,
-    "slowMaResult": 6393.3190485119
+    "fastMaValue": 6400.7078289847,
+    "slowMaValue": 6393.3190485119
   },
   {
     "tick": {
@@ -2446,10 +2446,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 60.86740846422659685530,
+    "rsiValue": 60.86740846422659685530,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6404.8957383098,
-    "slowMaResult": 6396.9467773206
+    "fastMaValue": 6404.8957383098,
+    "slowMaValue": 6396.9467773206
   },
   {
     "tick": {
@@ -2474,10 +2474,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 69.70247126466121785259,
+    "rsiValue": 69.70247126466121785259,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6420.9304922065,
-    "slowMaResult": 6407.1382723532
+    "fastMaValue": 6420.9304922065,
+    "slowMaValue": 6407.1382723532
   },
   {
     "tick": {
@@ -2502,10 +2502,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 58.89016802719900439507,
+    "rsiValue": 58.89016802719900439507,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6421.6203281377,
-    "slowMaResult": 6410.0222228344
+    "fastMaValue": 6421.6203281377,
+    "slowMaValue": 6410.0222228344
   },
   {
     "tick": {
@@ -2530,10 +2530,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 60.00375138891062227904,
+    "rsiValue": 60.00375138891062227904,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6423.7468854251,
-    "slowMaResult": 6413.2909095918
+    "fastMaValue": 6423.7468854251,
+    "slowMaValue": 6413.2909095918
   },
   {
     "tick": {
@@ -2558,10 +2558,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 64.33033583938769380036,
+    "rsiValue": 64.33033583938769380036,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6432.0945897201,
-    "slowMaResult": 6419.7452893587
+    "fastMaValue": 6432.0945897201,
+    "slowMaValue": 6419.7452893587
   },
   {
     "tick": {
@@ -2586,10 +2586,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.34510748197744244888,
+    "rsiValue": 54.34510748197744244888,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6426.7297264834,
-    "slowMaResult": 6419.0643276589
+    "fastMaValue": 6426.7297264834,
+    "slowMaValue": 6419.0643276589
   },
   {
     "tick": {
@@ -2614,10 +2614,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.89945393689919863153,
+    "rsiValue": 57.89945393689919863153,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6428.6734843223,
-    "slowMaResult": 6421.5182680846
+    "fastMaValue": 6428.6734843223,
+    "slowMaValue": 6421.5182680846
   },
   {
     "tick": {
@@ -2642,10 +2642,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.43771237865088000529,
+    "rsiValue": 54.43771237865088000529,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6425.7823228815,
-    "slowMaResult": 6421.2422193419
+    "fastMaValue": 6425.7823228815,
+    "slowMaValue": 6421.2422193419
   },
   {
     "tick": {
@@ -2670,10 +2670,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.58984702087240446799,
+    "rsiValue": 52.58984702087240446799,
     "eisBarColor": "RED",
-    "fastMaResult": 6421.5699854877,
-    "slowMaResult": 6419.7700541343
+    "fastMaValue": 6421.5699854877,
+    "slowMaValue": 6419.7700541343
   },
   {
     "tick": {
@@ -2698,10 +2698,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.16294866446313976012,
+    "rsiValue": 48.16294866446313976012,
     "eisBarColor": "RED",
-    "fastMaResult": 6413.0166569918,
-    "slowMaResult": 6415.4318624735
+    "fastMaValue": 6413.0166569918,
+    "slowMaValue": 6415.4318624735
   },
   {
     "tick": {
@@ -2728,10 +2728,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 53.95886123185861069502,
+    "rsiValue": 53.95886123185861069502,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6415.2923878879,
-    "slowMaResult": 6416.2340419656
+    "fastMaValue": 6415.2923878879,
+    "slowMaValue": 6416.2340419656
   },
   {
     "tick": {
@@ -2756,10 +2756,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 56.30157779467735806847,
+    "rsiValue": 56.30157779467735806847,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6420.3615918686,
-    "slowMaResult": 6418.8278524864
+    "fastMaValue": 6420.3615918686,
+    "slowMaValue": 6418.8278524864
   },
   {
     "tick": {
@@ -2786,10 +2786,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 51.17046013809122172768,
+    "rsiValue": 51.17046013809122172768,
     "eisBarColor": "RED",
-    "fastMaResult": 6417.2410612457,
-    "slowMaResult": 6417.4046065798
+    "fastMaValue": 6417.2410612457,
+    "slowMaValue": 6417.4046065798
   },
   {
     "tick": {
@@ -2814,10 +2814,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 58.30553879234820959711,
+    "rsiValue": 58.30553879234820959711,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6426.4940407938,
-    "slowMaResult": 6422.4219508180
+    "fastMaValue": 6426.4940407938,
+    "slowMaValue": 6422.4219508180
   },
   {
     "tick": {
@@ -2844,10 +2844,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 57.41801563651089822420,
+    "rsiValue": 57.41801563651089822420,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6431.5494549659,
-    "slowMaResult": 6425.9198294529
+    "fastMaValue": 6431.5494549659,
+    "slowMaValue": 6425.9198294529
   },
   {
     "tick": {
@@ -2872,10 +2872,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.56297846644741781325,
+    "rsiValue": 54.56297846644741781325,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6431.3663033106,
-    "slowMaResult": 6426.8434968251
+    "fastMaValue": 6431.3663033106,
+    "slowMaValue": 6426.8434968251
   },
   {
     "tick": {
@@ -2900,10 +2900,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.35858003872244283279,
+    "rsiValue": 57.35858003872244283279,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6435.5947389304,
-    "slowMaResult": 6429.9722447060
+    "fastMaValue": 6435.5947389304,
+    "slowMaValue": 6429.9722447060
   },
   {
     "tick": {
@@ -2928,10 +2928,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.93774454062708613997,
+    "rsiValue": 51.93774454062708613997,
     "eisBarColor": "RED",
-    "fastMaResult": 6431.5607726203,
-    "slowMaResult": 6428.7941711231
+    "fastMaValue": 6431.5607726203,
+    "slowMaValue": 6428.7941711231
   },
   {
     "tick": {
@@ -2956,10 +2956,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.05492547758630286492,
+    "rsiValue": 51.05492547758630286492,
     "eisBarColor": "RED",
-    "fastMaResult": 6427.7071818135,
-    "slowMaResult": 6427.1952309553
+    "fastMaValue": 6427.7071818135,
+    "slowMaValue": 6427.1952309553
   },
   {
     "tick": {
@@ -2984,10 +2984,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.00663349537328382989,
+    "rsiValue": 50.00663349537328382989,
     "eisBarColor": "RED",
-    "fastMaResult": 6423.8047878757,
-    "slowMaResult": 6425.1597344180
+    "fastMaValue": 6423.8047878757,
+    "slowMaValue": 6425.1597344180
   },
   {
     "tick": {
@@ -3012,10 +3012,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 53.25240680014221131939,
+    "rsiValue": 53.25240680014221131939,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6425.3898585905,
-    "slowMaResult": 6425.7779645275
+    "fastMaValue": 6425.3898585905,
+    "slowMaValue": 6425.7779645275
   },
   {
     "tick": {
@@ -3040,10 +3040,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 53.62416034589055652928,
+    "rsiValue": 53.62416034589055652928,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6426.9265723970,
-    "slowMaResult": 6426.5456073425
+    "fastMaValue": 6426.9265723970,
+    "slowMaValue": 6426.5456073425
   },
   {
     "tick": {
@@ -3068,10 +3068,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 56.22743535908025666062,
+    "rsiValue": 56.22743535908025666062,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6431.2843815980,
-    "slowMaResult": 6428.9918605530
+    "fastMaValue": 6431.2843815980,
+    "slowMaValue": 6428.9918605530
   },
   {
     "tick": {
@@ -3096,10 +3096,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 56.22743535880445660709,
+    "rsiValue": 56.22743535880445660709,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6434.1895877320,
-    "slowMaResult": 6430.9933404525
+    "fastMaValue": 6434.1895877320,
+    "slowMaValue": 6430.9933404525
   },
   {
     "tick": {
@@ -3124,10 +3124,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.71914513417354128208,
+    "rsiValue": 57.71914513417354128208,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6437.9328241213,
-    "slowMaResult": 6433.6162416248
+    "fastMaValue": 6437.9328241213,
+    "slowMaValue": 6433.6162416248
   },
   {
     "tick": {
@@ -3152,10 +3152,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 46.81106333905716435797,
+    "rsiValue": 46.81106333905716435797,
     "eisBarColor": "RED",
-    "fastMaResult": 6428.9585494342,
-    "slowMaResult": 6429.5060158857
+    "fastMaValue": 6428.9585494342,
+    "slowMaValue": 6429.5060158857
   },
   {
     "tick": {
@@ -3182,10 +3182,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 51.40686001284201350618,
+    "rsiValue": 51.40686001284201350618,
     "eisBarColor": "RED",
-    "fastMaResult": 6428.3056996228,
-    "slowMaResult": 6429.0503766338
+    "fastMaValue": 6428.3056996228,
+    "slowMaValue": 6429.0503766338
   },
   {
     "tick": {
@@ -3210,10 +3210,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 47.03058538771335805847,
+    "rsiValue": 47.03058538771335805847,
     "eisBarColor": "RED",
-    "fastMaResult": 6422.5404664185,
-    "slowMaResult": 6425.7703081567
+    "fastMaValue": 6422.5404664185,
+    "slowMaValue": 6425.7703081567
   },
   {
     "tick": {
@@ -3238,10 +3238,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 47.92334387364438696433,
+    "rsiValue": 47.92334387364438696433,
     "eisBarColor": "RED",
-    "fastMaResult": 6419.6936442790,
-    "slowMaResult": 6423.6302521282
+    "fastMaValue": 6419.6936442790,
+    "slowMaValue": 6423.6302521282
   },
   {
     "tick": {
@@ -3266,10 +3266,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.73243247903704757482,
+    "rsiValue": 51.73243247903704757482,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6422.1290961860,
-    "slowMaResult": 6424.2429335594
+    "fastMaValue": 6422.1290961860,
+    "slowMaValue": 6424.2429335594
   },
   {
     "tick": {
@@ -3294,10 +3294,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.02313658310772109742,
+    "rsiValue": 52.02313658310772109742,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6424.0860641207,
-    "slowMaResult": 6424.9260365468
+    "fastMaValue": 6424.0860641207,
+    "slowMaValue": 6424.9260365468
   },
   {
     "tick": {
@@ -3322,10 +3322,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.02313657620625974162,
+    "rsiValue": 52.02313657620625974162,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6425.3907094038,
-    "slowMaResult": 6425.4849389874
+    "fastMaValue": 6425.3907094038,
+    "slowMaValue": 6425.4849389874
   },
   {
     "tick": {
@@ -3350,10 +3350,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.15371412245357223191,
+    "rsiValue": 49.15371412245357223191,
     "eisBarColor": "RED",
-    "fastMaResult": 6423.4746611059,
-    "slowMaResult": 6424.4226890824
+    "fastMaValue": 6423.4746611059,
+    "slowMaValue": 6424.4226890824
   },
   {
     "tick": {
@@ -3378,10 +3378,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 36.33402855528952486783,
+    "rsiValue": 36.33402855528952486783,
     "eisBarColor": "RED",
-    "fastMaResult": 6405.6497740706,
-    "slowMaResult": 6414.5276547038
+    "fastMaValue": 6405.6497740706,
+    "slowMaValue": 6414.5276547038
   },
   {
     "tick": {
@@ -3406,10 +3406,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 37.77741757061412880228,
+    "rsiValue": 37.77741757061412880228,
     "eisBarColor": "RED",
-    "fastMaResult": 6395.1331827104,
-    "slowMaResult": 6407.1771720286
+    "fastMaValue": 6395.1331827104,
+    "slowMaValue": 6407.1771720286
   },
   {
     "tick": {
@@ -3434,10 +3434,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 38.10911800465503846181,
+    "rsiValue": 38.10911800465503846181,
     "eisBarColor": "RED",
-    "fastMaResult": 6388.4221218069,
-    "slowMaResult": 6401.3267771143
+    "fastMaValue": 6388.4221218069,
+    "slowMaValue": 6401.3267771143
   },
   {
     "tick": {
@@ -3462,10 +3462,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 38.10911800471279584127,
+    "rsiValue": 38.10911800471279584127,
     "eisBarColor": "RED",
-    "fastMaResult": 6383.9480812046,
-    "slowMaResult": 6396.5400903662
+    "fastMaValue": 6383.9480812046,
+    "slowMaValue": 6396.5400903662
   },
   {
     "tick": {
@@ -3490,10 +3490,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 27.95442378486051966838,
+    "rsiValue": 27.95442378486051966838,
     "eisBarColor": "RED",
-    "fastMaResult": 6363.3387208464,
-    "slowMaResult": 6383.0091648687
+    "fastMaValue": 6363.3387208464,
+    "slowMaValue": 6383.0091648687
   },
   {
     "tick": {
@@ -3518,10 +3518,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 42.78850443470163598041,
+    "rsiValue": 42.78850443470163598041,
     "eisBarColor": "RED",
-    "fastMaResult": 6365.5258139009,
-    "slowMaResult": 6380.6256803489
+    "fastMaValue": 6365.5258139009,
+    "slowMaValue": 6380.6256803489
   },
   {
     "tick": {
@@ -3546,10 +3546,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 44.14773577034480943644,
+    "rsiValue": 44.14773577034480943644,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6368.7318681106,
-    "slowMaResult": 6379.6290069273
+    "fastMaValue": 6368.7318681106,
+    "slowMaValue": 6379.6290069273
   },
   {
     "tick": {
@@ -3574,10 +3574,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 39.22866622514534500243,
+    "rsiValue": 39.22866622514534500243,
     "eisBarColor": "RED",
-    "fastMaResult": 6362.3023287904,
-    "slowMaResult": 6374.1406875132
+    "fastMaValue": 6362.3023287904,
+    "slowMaValue": 6374.1406875132
   },
   {
     "tick": {
@@ -3602,10 +3602,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 47.03261818044295107479,
+    "rsiValue": 47.03261818044295107479,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6368.5348858636,
-    "slowMaResult": 6375.3878352399
+    "fastMaValue": 6368.5348858636,
+    "slowMaValue": 6375.3878352399
   },
   {
     "tick": {
@@ -3630,10 +3630,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 47.03261818060283581048,
+    "rsiValue": 47.03261818060283581048,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6372.6899239124,
-    "slowMaResult": 6376.4082288345
+    "fastMaValue": 6372.6899239124,
+    "slowMaValue": 6376.4082288345
   },
   {
     "tick": {
@@ -3658,10 +3658,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 42.39835715347475915777,
+    "rsiValue": 42.39835715347475915777,
     "eisBarColor": "RED",
-    "fastMaResult": 6367.7399494616,
-    "slowMaResult": 6373.0321873300
+    "fastMaValue": 6367.7399494616,
+    "slowMaValue": 6373.0321873300
   },
   {
     "tick": {
@@ -3686,10 +3686,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 47.70763556138260087331,
+    "rsiValue": 47.70763556138260087331,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6371.8266329744,
-    "slowMaResult": 6374.2990623609
+    "fastMaValue": 6371.8266329744,
+    "slowMaValue": 6374.2990623609
   },
   {
     "tick": {
@@ -3714,10 +3714,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.00316034599287221034,
+    "rsiValue": 50.00316034599287221034,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6377.9677553163,
-    "slowMaResult": 6377.1992328407
+    "fastMaValue": 6377.9677553163,
+    "slowMaValue": 6377.1992328407
   },
   {
     "tick": {
@@ -3744,10 +3744,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 50.83089229102125382907,
+    "rsiValue": 50.83089229102125382907,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6383.2785035442,
-    "slowMaResult": 6380.2357359606
+    "fastMaValue": 6383.2785035442,
+    "slowMaValue": 6380.2357359606
   },
   {
     "tick": {
@@ -3772,10 +3772,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.83089229102531249885,
+    "rsiValue": 50.83089229102531249885,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6386.8190023628,
-    "slowMaResult": 6382.7201476041
+    "fastMaValue": 6386.8190023628,
+    "slowMaValue": 6382.7201476041
   },
   {
     "tick": {
@@ -3800,10 +3800,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.69496264062707334543,
+    "rsiValue": 48.69496264062707334543,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6386.3998905319,
-    "slowMaResult": 6383.2367874706
+    "fastMaValue": 6386.3998905319,
+    "slowMaValue": 6383.2367874706
   },
   {
     "tick": {
@@ -3828,10 +3828,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.03710257432301594822,
+    "rsiValue": 48.03710257432301594822,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6385.2793377513,
-    "slowMaResult": 6383.2006865105
+    "fastMaValue": 6385.2793377513,
+    "slowMaValue": 6383.2006865105
   },
   {
     "tick": {
@@ -3856,10 +3856,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.61826624988481900318,
+    "rsiValue": 48.61826624988481900318,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6385.1862251675,
-    "slowMaResult": 6383.5278344177
+    "fastMaValue": 6385.1862251675,
+    "slowMaValue": 6383.5278344177
   },
   {
     "tick": {
@@ -3884,10 +3884,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 44.29087056183719571017,
+    "rsiValue": 44.29087056183719571017,
     "eisBarColor": "RED",
-    "fastMaResult": 6379.8195951383,
-    "slowMaResult": 6380.9021072654
+    "fastMaValue": 6379.8195951383,
+    "slowMaValue": 6380.9021072654
   },
   {
     "tick": {
@@ -3914,10 +3914,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 41.99259009764683738672,
+    "rsiValue": 41.99259009764683738672,
     "eisBarColor": "RED",
-    "fastMaResult": 6373.2130634255,
-    "slowMaResult": 6377.1017241262
+    "fastMaValue": 6373.2130634255,
+    "slowMaValue": 6377.1017241262
   },
   {
     "tick": {
@@ -3942,10 +3942,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 46.59119053952874155262,
+    "rsiValue": 46.59119053952874155262,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6373.4753756170,
-    "slowMaResult": 6376.5377742851
+    "fastMaValue": 6373.4753756170,
+    "slowMaValue": 6376.5377742851
   },
   {
     "tick": {
@@ -3970,10 +3970,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.43851814760093609986,
+    "rsiValue": 54.43851814760093609986,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6383.0648930147,
-    "slowMaResult": 6381.2116203805
+    "fastMaValue": 6383.0648930147,
+    "slowMaValue": 6381.2116203805
   },
   {
     "tick": {
@@ -4000,10 +4000,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 56.53803793860258114959,
+    "rsiValue": 56.53803793860258114959,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6392.3321306065,
-    "slowMaResult": 6386.6034359095
+    "fastMaValue": 6392.3321306065,
+    "slowMaValue": 6386.6034359095
   },
   {
     "tick": {
@@ -4028,10 +4028,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.69144589587586280045,
+    "rsiValue": 54.69144589587586280045,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6396.5547537377,
-    "slowMaResult": 6389.9482657441
+    "fastMaValue": 6396.5547537377,
+    "slowMaValue": 6389.9482657441
   },
   {
     "tick": {
@@ -4056,10 +4056,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 59.19316821095250646691,
+    "rsiValue": 59.19316821095250646691,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6405.5031691285,
-    "slowMaResult": 6396.0303992288
+    "fastMaValue": 6405.5031691285,
+    "slowMaValue": 6396.0303992288
   },
   {
     "tick": {
@@ -4084,10 +4084,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 56.43637756576882924904,
+    "rsiValue": 56.43637756576882924904,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6408.6687793357,
-    "slowMaResult": 6399.4794175054
+    "fastMaValue": 6408.6687793357,
+    "slowMaValue": 6399.4794175054
   },
   {
     "tick": {
@@ -4112,10 +4112,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.69923927028747259479,
+    "rsiValue": 57.69923927028747259479,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6412.4458528905,
-    "slowMaResult": 6403.2104325044
+    "fastMaValue": 6412.4458528905,
+    "slowMaValue": 6403.2104325044
   },
   {
     "tick": {
@@ -4140,10 +4140,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 59.17019447265242841244,
+    "rsiValue": 59.17019447265242841244,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6416.8872346237,
-    "slowMaResult": 6407.3121717018
+    "fastMaValue": 6416.8872346237,
+    "slowMaValue": 6407.3121717018
   },
   {
     "tick": {
@@ -4168,10 +4168,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.21474319112311826397,
+    "rsiValue": 49.21474319112311826397,
     "eisBarColor": "RED",
-    "fastMaResult": 6409.4589059291,
-    "slowMaResult": 6405.0012765815
+    "fastMaValue": 6409.4589059291,
+    "slowMaValue": 6405.0012765815
   },
   {
     "tick": {
@@ -4196,10 +4196,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 56.74541219616634075405,
+    "rsiValue": 56.74541219616634075405,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6414.4892699027,
-    "slowMaResult": 6408.5555895394
+    "fastMaValue": 6414.4892699027,
+    "slowMaValue": 6408.5555895394
   },
   {
     "tick": {
@@ -4224,10 +4224,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.99471306534982210257,
+    "rsiValue": 54.99471306534982210257,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6415.8528466018,
-    "slowMaResult": 6410.3782096231
+    "fastMaValue": 6415.8528466018,
+    "slowMaValue": 6410.3782096231
   },
   {
     "tick": {
@@ -4252,10 +4252,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 60.76194182002763190504,
+    "rsiValue": 60.76194182002763190504,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6425.5652310712,
-    "slowMaResult": 6416.6712624207
+    "fastMaValue": 6425.5652310712,
+    "slowMaValue": 6416.6712624207
   },
   {
     "tick": {
@@ -4280,10 +4280,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 65.29716415140911610489,
+    "rsiValue": 65.29716415140911610489,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6440.3768207141,
-    "slowMaResult": 6426.3673965260
+    "fastMaValue": 6440.3768207141,
+    "slowMaValue": 6426.3673965260
   },
   {
     "tick": {
@@ -4308,10 +4308,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 63.15157952204241184067,
+    "rsiValue": 63.15157952204241184067,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6447.9757071561,
-    "slowMaResult": 6433.0594117104
+    "fastMaValue": 6447.9757071561,
+    "slowMaValue": 6433.0594117104
   },
   {
     "tick": {
@@ -4336,10 +4336,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 68.09060440559542542416,
+    "rsiValue": 68.09060440559542542416,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6462.9948773441,
-    "slowMaResult": 6443.9637400758
+    "fastMaValue": 6462.9948773441,
+    "slowMaValue": 6443.9637400758
   },
   {
     "tick": {
@@ -4364,10 +4364,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 67.10661605474757329259,
+    "rsiValue": 67.10661605474757329259,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6471.9965848961,
-    "slowMaResult": 6452.3339691529
+    "fastMaValue": 6471.9965848961,
+    "slowMaValue": 6452.3339691529
   },
   {
     "tick": {
@@ -4392,10 +4392,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 66.42499127799950921416,
+    "rsiValue": 66.42499127799950921416,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6477.3310565974,
-    "slowMaResult": 6458.8187020342
+    "fastMaValue": 6477.3310565974,
+    "slowMaValue": 6458.8187020342
   },
   {
     "tick": {
@@ -4420,10 +4420,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 58.97166277099155680717,
+    "rsiValue": 58.97166277099155680717,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6473.1845303283,
-    "slowMaResult": 6459.9228430807
+    "fastMaValue": 6473.1845303283,
+    "slowMaValue": 6459.9228430807
   },
   {
     "tick": {
@@ -4448,10 +4448,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 58.99493229126351888688,
+    "rsiValue": 58.99493229126351888688,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6470.4563535522,
-    "slowMaResult": 6460.8459625206
+    "fastMaValue": 6470.4563535522,
+    "slowMaValue": 6460.8459625206
   },
   {
     "tick": {
@@ -4476,10 +4476,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 63.14363284119143430554,
+    "rsiValue": 63.14363284119143430554,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6475.3042357015,
-    "slowMaResult": 6465.2376056987
+    "fastMaValue": 6475.3042357015,
+    "slowMaValue": 6465.2376056987
   },
   {
     "tick": {
@@ -4504,10 +4504,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 64.19762788240697288945,
+    "rsiValue": 64.19762788240697288945,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6480.3374165643,
-    "slowMaResult": 6469.8132734426
+    "fastMaValue": 6480.3374165643,
+    "slowMaValue": 6469.8132734426
   },
   {
     "tick": {
@@ -4532,10 +4532,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 58.70902323681876724159,
+    "rsiValue": 58.70902323681876724159,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6478.2249443762,
-    "slowMaResult": 6470.5744964530
+    "fastMaValue": 6478.2249443762,
+    "slowMaValue": 6470.5744964530
   },
   {
     "tick": {
@@ -4560,10 +4560,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 62.18950945677749290781,
+    "rsiValue": 62.18950945677749290781,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6482.2832962308,
-    "slowMaResult": 6474.1791334506
+    "fastMaValue": 6482.2832962308,
+    "slowMaValue": 6474.1791334506
   },
   {
     "tick": {
@@ -4588,10 +4588,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 59.16049082320120199962,
+    "rsiValue": 59.16049082320120199962,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6481.9055106039,
-    "slowMaResult": 6475.4465527050
+    "fastMaValue": 6481.9055106039,
+    "slowMaValue": 6475.4465527050
   },
   {
     "tick": {
@@ -4616,10 +4616,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 60.47176266951655515979,
+    "rsiValue": 60.47176266951655515979,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6483.6036737359,
-    "slowMaResult": 6477.5471794859
+    "fastMaValue": 6483.6036737359,
+    "slowMaValue": 6477.5471794859
   },
   {
     "tick": {
@@ -4644,10 +4644,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 59.07507025133078861714,
+    "rsiValue": 59.07507025133078861714,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6483.4024491573,
-    "slowMaResult": 6478.5386013976
+    "fastMaValue": 6483.4024491573,
+    "slowMaValue": 6478.5386013976
   },
   {
     "tick": {
@@ -4672,10 +4672,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.57943970493393849453,
+    "rsiValue": 51.57943970493393849453,
     "eisBarColor": "RED",
-    "fastMaResult": 6475.4782994382,
-    "slowMaResult": 6475.1006738708
+    "fastMaValue": 6475.4782994382,
+    "slowMaValue": 6475.1006738708
   },
   {
     "tick": {
@@ -4700,10 +4700,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.57794993801168316914,
+    "rsiValue": 51.57794993801168316914,
     "eisBarColor": "RED",
-    "fastMaResult": 6470.1938863021,
-    "slowMaResult": 6472.2869258997
+    "fastMaValue": 6470.1938863021,
+    "slowMaValue": 6472.2869258997
   },
   {
     "tick": {
@@ -4728,10 +4728,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.54720960321013056765,
+    "rsiValue": 54.54720960321013056765,
     "eisBarColor": "RED",
-    "fastMaResult": 6470.1292575347,
-    "slowMaResult": 6471.8711211907
+    "fastMaValue": 6470.1292575347,
+    "slowMaValue": 6471.8711211907
   },
   {
     "tick": {
@@ -4756,10 +4756,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 55.24233214536487924230,
+    "rsiValue": 55.24233214536487924230,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6470.8995050231,
-    "slowMaResult": 6471.9745537015
+    "fastMaValue": 6470.8995050231,
+    "slowMaValue": 6471.9745537015
   },
   {
     "tick": {
@@ -4784,10 +4784,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.60077066961027614623,
+    "rsiValue": 52.60077066961027614623,
     "eisBarColor": "RED",
-    "fastMaResult": 6468.9330033487,
-    "slowMaResult": 6470.7064530285
+    "fastMaValue": 6468.9330033487,
+    "slowMaValue": 6470.7064530285
   },
   {
     "tick": {
@@ -4812,10 +4812,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.60077066955186185417,
+    "rsiValue": 52.60077066955186185417,
     "eisBarColor": "RED",
-    "fastMaResult": 6467.6220022325,
-    "slowMaResult": 6469.6689161142
+    "fastMaValue": 6467.6220022325,
+    "slowMaValue": 6469.6689161142
   },
   {
     "tick": {
@@ -4840,10 +4840,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 58.45648541793650569795,
+    "rsiValue": 58.45648541793650569795,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6473.0513348217,
-    "slowMaResult": 6472.2582040934
+    "fastMaValue": 6473.0513348217,
+    "slowMaValue": 6472.2582040934
   },
   {
     "tick": {
@@ -4870,10 +4870,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 58.48277433049336372938,
+    "rsiValue": 58.48277433049336372938,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6476.7008898811,
-    "slowMaResult": 6474.3930760764
+    "fastMaValue": 6476.7008898811,
+    "slowMaValue": 6474.3930760764
   },
   {
     "tick": {
@@ -4898,10 +4898,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.87734086233180023594,
+    "rsiValue": 52.87734086233180023594,
     "eisBarColor": "RED",
-    "fastMaResult": 6474.4672599207,
-    "slowMaResult": 6473.5943349716
+    "fastMaValue": 6474.4672599207,
+    "slowMaValue": 6473.5943349716
   },
   {
     "tick": {
@@ -4926,10 +4926,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.56983619377404667302,
+    "rsiValue": 57.56983619377404667302,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6477.9781732638,
-    "slowMaResult": 6475.6680922404
+    "fastMaValue": 6477.9781732638,
+    "slowMaValue": 6475.6680922404
   },
   {
     "tick": {
@@ -4954,10 +4954,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 44.69998921275940604774,
+    "rsiValue": 44.69998921275940604774,
     "eisBarColor": "RED",
-    "fastMaResult": 6466.8949280059,
-    "slowMaResult": 6470.0427004676
+    "fastMaValue": 6466.8949280059,
+    "slowMaValue": 6470.0427004676
   },
   {
     "tick": {
@@ -4984,10 +4984,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 43.47118215864237265137,
+    "rsiValue": 43.47118215864237265137,
     "eisBarColor": "RED",
-    "fastMaResult": 6457.9299520039,
-    "slowMaResult": 6464.5803912917
+    "fastMaValue": 6457.9299520039,
+    "slowMaValue": 6464.5803912917
   },
   {
     "tick": {
@@ -5012,10 +5012,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.83297344492807033323,
+    "rsiValue": 52.83297344492807033323,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6462.5204031593,
-    "slowMaResult": 6465.8751029605
+    "fastMaValue": 6462.5204031593,
+    "slowMaValue": 6465.8751029605
   },
   {
     "tick": {
@@ -5040,10 +5040,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 45.05148707510356330442,
+    "rsiValue": 45.05148707510356330442,
     "eisBarColor": "RED",
-    "fastMaResult": 6455.3469354462,
-    "slowMaResult": 6461.3523569713
+    "fastMaValue": 6455.3469354462,
+    "slowMaValue": 6461.3523569713
   },
   {
     "tick": {
@@ -5068,10 +5068,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.06879297635651425853,
+    "rsiValue": 54.06879297635651425853,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6463.2312902875,
-    "slowMaResult": 6464.5610193347
+    "fastMaValue": 6463.2312902875,
+    "slowMaValue": 6464.5610193347
   },
   {
     "tick": {
@@ -5096,10 +5096,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 47.94766129865947711852,
+    "rsiValue": 47.94766129865947711852,
     "eisBarColor": "RED",
-    "fastMaResult": 6459.3375268917,
-    "slowMaResult": 6462.1953794738
+    "fastMaValue": 6459.3375268917,
+    "slowMaValue": 6462.1953794738
   },
   {
     "tick": {
@@ -5124,10 +5124,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.04359818972011848232,
+    "rsiValue": 52.04359818972011848232,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6463.1516845945,
-    "slowMaResult": 6463.7562195695
+    "fastMaValue": 6463.1516845945,
+    "slowMaValue": 6463.7562195695
   },
   {
     "tick": {
@@ -5152,10 +5152,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.87152804826056615959,
+    "rsiValue": 54.87152804826056615959,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6470.4344563697,
-    "slowMaResult": 6467.6187250878
+    "fastMaValue": 6470.4344563697,
+    "slowMaValue": 6467.6187250878
   },
   {
     "tick": {
@@ -5182,10 +5182,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 49.36056770663005172650,
+    "rsiValue": 49.36056770663005172650,
     "eisBarColor": "RED",
-    "fastMaResult": 6466.9563042465,
-    "slowMaResult": 6466.2335023446
+    "fastMaValue": 6466.9563042465,
+    "slowMaValue": 6466.2335023446
   },
   {
     "tick": {
@@ -5210,10 +5210,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.83670040515234496800,
+    "rsiValue": 50.83670040515234496800,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6466.9508694977,
-    "slowMaResult": 6466.3619564638
+    "fastMaValue": 6466.9508694977,
+    "slowMaValue": 6466.3619564638
   },
   {
     "tick": {
@@ -5238,10 +5238,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.50651975095926227871,
+    "rsiValue": 49.50651975095926227871,
     "eisBarColor": "RED",
-    "fastMaResult": 6464.9672463318,
-    "slowMaResult": 6465.3870552886
+    "fastMaValue": 6464.9672463318,
+    "slowMaValue": 6465.3870552886
   },
   {
     "tick": {
@@ -5268,10 +5268,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 48.13640661985462065938,
+    "rsiValue": 48.13640661985462065938,
     "eisBarColor": "RED",
-    "fastMaResult": 6461.6448308879,
-    "slowMaResult": 6463.4984997816
+    "fastMaValue": 6461.6448308879,
+    "slowMaValue": 6463.4984997816
   },
   {
     "tick": {
@@ -5296,10 +5296,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.05400728055951827535,
+    "rsiValue": 51.05400728055951827535,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6463.4298872286,
-    "slowMaResult": 6464.1351361686
+    "fastMaValue": 6463.4298872286,
+    "slowMaValue": 6464.1351361686
   },
   {
     "tick": {
@@ -5324,10 +5324,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.74070601530252970183,
+    "rsiValue": 52.74070601530252970183,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6466.9763971457,
-    "slowMaResult": 6465.9413690434
+    "fastMaValue": 6466.9763971457,
+    "slowMaValue": 6465.9413690434
   },
   {
     "tick": {
@@ -5354,10 +5354,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 53.50443756880166299142,
+    "rsiValue": 53.50443756880166299142,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6470.3837423938,
-    "slowMaResult": 6467.9881079246
+    "fastMaValue": 6470.3837423938,
+    "slowMaValue": 6467.9881079246
   },
   {
     "tick": {
@@ -5382,10 +5382,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.72131229614332292231,
+    "rsiValue": 51.72131229614332292231,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6470.5891615959,
-    "slowMaResult": 6468.5357246656
+    "fastMaValue": 6470.5891615959,
+    "slowMaValue": 6468.5357246656
   },
   {
     "tick": {
@@ -5410,10 +5410,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 58.66254282138120406011,
+    "rsiValue": 58.66254282138120406011,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6480.3927717239,
-    "slowMaResult": 6474.2565005409
+    "fastMaValue": 6480.3927717239,
+    "slowMaValue": 6474.2565005409
   },
   {
     "tick": {
@@ -5438,10 +5438,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.31282358767210440870,
+    "rsiValue": 54.31282358767210440870,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6481.9285144826,
-    "slowMaResult": 6476.2098640789
+    "fastMaValue": 6481.9285144826,
+    "slowMaValue": 6476.2098640789
   },
   {
     "tick": {
@@ -5466,10 +5466,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.05157158381218285281,
+    "rsiValue": 51.05157158381218285281,
     "eisBarColor": "RED",
-    "fastMaResult": 6478.9523429917,
-    "slowMaResult": 6475.6262524300
+    "fastMaValue": 6478.9523429917,
+    "slowMaValue": 6475.6262524300
   },
   {
     "tick": {
@@ -5494,10 +5494,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.71221755837656633780,
+    "rsiValue": 54.71221755837656633780,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6481.9682286611,
-    "slowMaResult": 6477.8760247155
+    "fastMaValue": 6481.9682286611,
+    "slowMaValue": 6477.8760247155
   },
   {
     "tick": {
@@ -5522,10 +5522,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.01006128956351173736,
+    "rsiValue": 57.01006128956351173736,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6487.2971524274,
-    "slowMaResult": 6481.5267474872
+    "fastMaValue": 6487.2971524274,
+    "slowMaValue": 6481.5267474872
   },
   {
     "tick": {
@@ -5550,10 +5550,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.02067715271330671711,
+    "rsiValue": 57.02067715271330671711,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6490.8647682849,
-    "slowMaResult": 6484.5218843077
+    "fastMaValue": 6490.8647682849,
+    "slowMaValue": 6484.5218843077
   },
   {
     "tick": {
@@ -5578,10 +5578,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 59.86674905275596090792,
+    "rsiValue": 59.86674905275596090792,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6497.2431788466,
-    "slowMaResult": 6489.1542689736
+    "fastMaValue": 6497.2431788466,
+    "slowMaValue": 6489.1542689736
   },
   {
     "tick": {
@@ -5606,10 +5606,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.80844498898683419421,
+    "rsiValue": 50.80844498898683419421,
     "eisBarColor": "RED",
-    "fastMaResult": 6491.4954525644,
-    "slowMaResult": 6487.4898564329
+    "fastMaValue": 6491.4954525644,
+    "slowMaValue": 6487.4898564329
   },
   {
     "tick": {
@@ -5634,10 +5634,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.26448237535300475069,
+    "rsiValue": 57.26448237535300475069,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6496.9347328929,
-    "slowMaResult": 6491.1850268178
+    "fastMaValue": 6496.9347328929,
+    "slowMaValue": 6491.1850268178
   },
   {
     "tick": {
@@ -5662,10 +5662,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.95527273004852550861,
+    "rsiValue": 52.95527273004852550861,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6495.2231552619,
-    "slowMaResult": 6491.2968401237
+    "fastMaValue": 6495.2231552619,
+    "slowMaValue": 6491.2968401237
   },
   {
     "tick": {
@@ -5690,10 +5690,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 53.70499500729409064622,
+    "rsiValue": 53.70499500729409064622,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6495.1487701746,
-    "slowMaResult": 6491.9701419194
+    "fastMaValue": 6495.1487701746,
+    "slowMaValue": 6491.9701419194
   },
   {
     "tick": {
@@ -5718,10 +5718,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.70622687461420063960,
+    "rsiValue": 49.70622687461420063960,
     "eisBarColor": "RED",
-    "fastMaResult": 6490.0991801164,
-    "slowMaResult": 6489.7937524795
+    "fastMaValue": 6490.0991801164,
+    "slowMaValue": 6489.7937524795
   },
   {
     "tick": {
@@ -5746,10 +5746,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.56397802025354099839,
+    "rsiValue": 54.56397802025354099839,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6493.3994534109,
-    "slowMaResult": 6491.6494338469
+    "fastMaValue": 6493.3994534109,
+    "slowMaValue": 6491.6494338469
   },
   {
     "tick": {
@@ -5774,10 +5774,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.86070172344320067422,
+    "rsiValue": 50.86070172344320067422,
     "eisBarColor": "RED",
-    "fastMaResult": 6490.9329689439,
-    "slowMaResult": 6490.6222640584
+    "fastMaValue": 6490.9329689439,
+    "slowMaValue": 6490.6222640584
   },
   {
     "tick": {
@@ -5802,10 +5802,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.20771251088483707247,
+    "rsiValue": 54.20771251088483707247,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6493.9553126293,
-    "slowMaResult": 6492.3273069569
+    "fastMaValue": 6493.9553126293,
+    "slowMaValue": 6492.3273069569
   },
   {
     "tick": {
@@ -5830,10 +5830,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 67.73271210442962697880,
+    "rsiValue": 67.73271210442962697880,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6522.6368750862,
-    "slowMaResult": 6508.2677966011
+    "fastMaValue": 6522.6368750862,
+    "slowMaValue": 6508.2677966011
   },
   {
     "tick": {
@@ -5858,10 +5858,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 62.97537444107660426860,
+    "rsiValue": 62.97537444107660426860,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6535.4245833941,
-    "slowMaResult": 6517.8554699482
+    "fastMaValue": 6535.4245833941,
+    "slowMaValue": 6517.8554699482
   },
   {
     "tick": {
@@ -5886,10 +5886,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 69.52645987713267968642,
+    "rsiValue": 69.52645987713267968642,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6561.9497222494,
-    "slowMaResult": 6535.5181117685
+    "fastMaValue": 6561.9497222494,
+    "slowMaValue": 6535.5181117685
   },
   {
     "tick": {
@@ -5914,10 +5914,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 66.03139497199748689994,
+    "rsiValue": 66.03139497199748689994,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6574.6331481329,
-    "slowMaResult": 6547.2420914288
+    "fastMaValue": 6574.6331481329,
+    "slowMaValue": 6547.2420914288
   },
   {
     "tick": {
@@ -5942,10 +5942,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 62.28958610238545325427,
+    "rsiValue": 62.28958610238545325427,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6577.5406389586,
-    "slowMaResult": 6553.8081876436
+    "fastMaValue": 6577.5406389586,
+    "slowMaValue": 6553.8081876436
   },
   {
     "tick": {
@@ -5970,10 +5970,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 61.53253384338469283969,
+    "rsiValue": 61.53253384338469283969,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6578.3604259724,
-    "slowMaResult": 6558.5703353448
+    "fastMaValue": 6578.3604259724,
+    "slowMaValue": 6558.5703353448
   },
   {
     "tick": {
@@ -5998,10 +5998,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 58.13139583154498147489,
+    "rsiValue": 58.13139583154498147489,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6573.9069506483,
-    "slowMaResult": 6559.7393652821
+    "fastMaValue": 6573.9069506483,
+    "slowMaValue": 6559.7393652821
   },
   {
     "tick": {
@@ -6026,10 +6026,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 61.77224674795339842537,
+    "rsiValue": 61.77224674795339842537,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6578.9379670989,
-    "slowMaResult": 6565.0594806854
+    "fastMaValue": 6578.9379670989,
+    "slowMaValue": 6565.0594806854
   },
   {
     "tick": {
@@ -6054,10 +6054,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 63.52872175998892958898,
+    "rsiValue": 63.52872175998892958898,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6586.4061447326,
-    "slowMaResult": 6571.6563932881
+    "fastMaValue": 6586.4061447326,
+    "slowMaValue": 6571.6563932881
   },
   {
     "tick": {
@@ -6082,10 +6082,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 60.41800339755754618806,
+    "rsiValue": 60.41800339755754618806,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6587.1040964884,
-    "slowMaResult": 6574.7188672357
+    "fastMaValue": 6587.1040964884,
+    "slowMaValue": 6574.7188672357
   },
   {
     "tick": {
@@ -6110,10 +6110,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 59.08369559365141264709,
+    "rsiValue": 59.08369559365141264709,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6585.7360643256,
-    "slowMaResult": 6576.2245277383
+    "fastMaValue": 6585.7360643256,
+    "slowMaValue": 6576.2245277383
   },
   {
     "tick": {
@@ -6138,10 +6138,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 55.71097440613065962702,
+    "rsiValue": 55.71097440613065962702,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6580.1573762171,
-    "slowMaResult": 6574.9109772404
+    "fastMaValue": 6580.1573762171,
+    "slowMaValue": 6574.9109772404
   },
   {
     "tick": {
@@ -6166,10 +6166,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.23982556367067790645,
+    "rsiValue": 57.23982556367067790645,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6579.1524083181,
-    "slowMaResult": 6575.3167036549
+    "fastMaValue": 6579.1524083181,
+    "slowMaValue": 6575.3167036549
   },
   {
     "tick": {
@@ -6194,10 +6194,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 55.95057562158890696386,
+    "rsiValue": 55.95057562158890696386,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6576.8000894354,
-    "slowMaResult": 6574.7310214758
+    "fastMaValue": 6576.8000894354,
+    "slowMaValue": 6574.7310214758
   },
   {
     "tick": {
@@ -6222,10 +6222,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 53.08021671694416485276,
+    "rsiValue": 53.08021671694416485276,
     "eisBarColor": "RED",
-    "fastMaResult": 6571.4813363603,
-    "slowMaResult": 6572.2060776093
+    "fastMaValue": 6571.4813363603,
+    "slowMaValue": 6572.2060776093
   },
   {
     "tick": {
@@ -6250,10 +6250,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.72364901425031804440,
+    "rsiValue": 51.72364901425031804440,
     "eisBarColor": "RED",
-    "fastMaResult": 6566.1550507102,
-    "slowMaResult": 6569.1690597549
+    "fastMaValue": 6566.1550507102,
+    "slowMaValue": 6569.1690597549
   },
   {
     "tick": {
@@ -6278,10 +6278,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 56.13101707991963155373,
+    "rsiValue": 56.13101707991963155373,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6569.1033671401,
-    "slowMaResult": 6570.2292307086
+    "fastMaValue": 6569.1033671401,
+    "slowMaValue": 6570.2292307086
   },
   {
     "tick": {
@@ -6306,10 +6306,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 60.55198260728726978945,
+    "rsiValue": 60.55198260728726978945,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6578.4772447201,
-    "slowMaResult": 6575.1375523761
+    "fastMaValue": 6578.4772447201,
+    "slowMaValue": 6575.1375523761
   },
   {
     "tick": {
@@ -6336,10 +6336,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 58.48845412940910483502,
+    "rsiValue": 58.48845412940910483502,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6582.3181631434,
-    "slowMaResult": 6577.8398155786
+    "fastMaValue": 6582.3181631434,
+    "slowMaValue": 6577.8398155786
   },
   {
     "tick": {
@@ -6364,10 +6364,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.61594819933800114966,
+    "rsiValue": 50.61594819933800114966,
     "eisBarColor": "RED",
-    "fastMaResult": 6574.6723086323,
-    "slowMaResult": 6574.4835944934
+    "fastMaValue": 6574.6723086323,
+    "slowMaValue": 6574.4835944934
   },
   {
     "tick": {
@@ -6392,10 +6392,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 54.92670151064260555782,
+    "rsiValue": 54.92670151064260555782,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6576.3092057549,
-    "slowMaResult": 6575.4107591310
+    "fastMaValue": 6576.3092057549,
+    "slowMaValue": 6575.4107591310
   },
   {
     "tick": {
@@ -6420,10 +6420,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 53.77982307579256593961,
+    "rsiValue": 53.77982307579256593961,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6575.8728038366,
-    "slowMaResult": 6575.3360756526
+    "fastMaValue": 6575.8728038366,
+    "slowMaValue": 6575.3360756526
   },
   {
     "tick": {
@@ -6448,10 +6448,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 53.77982307561156688477,
+    "rsiValue": 53.77982307561156688477,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6575.5818692244,
-    "slowMaResult": 6575.2749709885
+    "fastMaValue": 6575.5818692244,
+    "slowMaValue": 6575.2749709885
   },
   {
     "tick": {
@@ -6476,10 +6476,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.17412797309113954596,
+    "rsiValue": 57.17412797309113954596,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6580.3879128163,
-    "slowMaResult": 6577.9522489906
+    "fastMaValue": 6580.3879128163,
+    "slowMaValue": 6577.9522489906
   },
   {
     "tick": {
@@ -6504,10 +6504,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 57.10332469242522611782,
+    "rsiValue": 57.10332469242522611782,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6583.5135523475,
-    "slowMaResult": 6580.0999912487
+    "fastMaValue": 6583.5135523475,
+    "slowMaValue": 6580.0999912487
   },
   {
     "tick": {
@@ -6532,10 +6532,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.54883584449542267310,
+    "rsiValue": 49.54883584449542267310,
     "eisBarColor": "RED",
-    "fastMaResult": 6576.6355960850,
-    "slowMaResult": 6576.9690262144
+    "fastMaValue": 6576.6355960850,
+    "slowMaValue": 6576.9690262144
   },
   {
     "tick": {
@@ -6562,10 +6562,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 42.66750435489461644014,
+    "rsiValue": 42.66750435489461644014,
     "eisBarColor": "RED",
-    "fastMaResult": 6561.9056192267,
-    "slowMaResult": 6568.8738697227
+    "fastMaValue": 6561.9056192267,
+    "slowMaValue": 6568.8738697227
   },
   {
     "tick": {
@@ -6590,10 +6590,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 39.55375237651457924090,
+    "rsiValue": 39.55375237651457924090,
     "eisBarColor": "RED",
-    "fastMaResult": 6546.7460108845,
-    "slowMaResult": 6559.3380378095
+    "fastMaValue": 6546.7460108845,
+    "slowMaValue": 6559.3380378095
   },
   {
     "tick": {
@@ -6618,10 +6618,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 43.49143072339696122775,
+    "rsiValue": 43.49143072339696122775,
     "eisBarColor": "RED",
-    "fastMaResult": 6541.3740072563,
-    "slowMaResult": 6554.1183945714
+    "fastMaValue": 6541.3740072563,
+    "slowMaValue": 6554.1183945714
   },
   {
     "tick": {
@@ -6646,10 +6646,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 41.94471868480665278335,
+    "rsiValue": 41.94471868480665278335,
     "eisBarColor": "RED",
-    "fastMaResult": 6535.3041480975,
-    "slowMaResult": 6548.4904009730
+    "fastMaValue": 6535.3041480975,
+    "slowMaValue": 6548.4904009730
   },
   {
     "tick": {
@@ -6674,10 +6674,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 42.96938171637656413304,
+    "rsiValue": 42.96938171637656413304,
     "eisBarColor": "RED",
-    "fastMaResult": 6532.4249876217,
-    "slowMaResult": 6544.5224492815
+    "fastMaValue": 6532.4249876217,
+    "slowMaValue": 6544.5224492815
   },
   {
     "tick": {
@@ -6702,10 +6702,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 44.87030982339404662191,
+    "rsiValue": 44.87030982339404662191,
     "eisBarColor": "RED",
-    "fastMaResult": 6532.6233250811,
-    "slowMaResult": 6542.4310948667
+    "fastMaValue": 6532.6233250811,
+    "slowMaValue": 6542.4310948667
   },
   {
     "tick": {
@@ -6730,10 +6730,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 43.10010407356521547763,
+    "rsiValue": 43.10010407356521547763,
     "eisBarColor": "RED",
-    "fastMaResult": 6530.3323820874,
-    "slowMaResult": 6539.3982587273
+    "fastMaValue": 6530.3323820874,
+    "slowMaValue": 6539.3982587273
   },
   {
     "tick": {
@@ -6758,10 +6758,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 46.61033095442188228921,
+    "rsiValue": 46.61033095442188228921,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6532.5549213916,
-    "slowMaResult": 6538.9622116860
+    "fastMaValue": 6532.5549213916,
+    "slowMaValue": 6538.9622116860
   },
   {
     "tick": {
@@ -6786,10 +6786,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.49368174812547066836,
+    "rsiValue": 49.49368174812547066836,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6537.2588364844,
-    "slowMaResult": 6540.3630216831
+    "fastMaValue": 6537.2588364844,
+    "slowMaValue": 6540.3630216831
   },
   {
     "tick": {
@@ -6814,10 +6814,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.89562301379521978567,
+    "rsiValue": 49.89562301379521978567,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6540.8392243229,
-    "slowMaResult": 6541.7515631953
+    "fastMaValue": 6540.8392243229,
+    "slowMaValue": 6541.7515631953
   },
   {
     "tick": {
@@ -6842,10 +6842,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 45.26704614877231539782,
+    "rsiValue": 45.26704614877231539782,
     "eisBarColor": "RED",
-    "fastMaResult": 6537.9236427153,
-    "slowMaResult": 6539.9953661598
+    "fastMaValue": 6537.9236427153,
+    "slowMaValue": 6539.9953661598
   },
   {
     "tick": {
@@ -6870,10 +6870,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 51.55987673696560121111,
+    "rsiValue": 51.55987673696560121111,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6542.8752082635,
-    "slowMaResult": 6542.3195431053
+    "fastMaValue": 6542.8752082635,
+    "slowMaValue": 6542.3195431053
   },
   {
     "tick": {
@@ -6900,10 +6900,10 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "rsiResult": 53.56699129100015041766,
+    "rsiValue": 53.56699129100015041766,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6548.5834721757,
-    "slowMaResult": 6545.5341716316
+    "fastMaValue": 6548.5834721757,
+    "slowMaValue": 6545.5341716316
   },
   {
     "tick": {
@@ -6928,10 +6928,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.30148729358512002761,
+    "rsiValue": 50.30148729358512002761,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6548.8868405805,
-    "slowMaResult": 6546.2540635877
+    "fastMaValue": 6548.8868405805,
+    "slowMaValue": 6546.2540635877
   },
   {
     "tick": {
@@ -6956,10 +6956,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 37.52418058057257276806,
+    "rsiValue": 37.52418058057257276806,
     "eisBarColor": "RED",
-    "fastMaResult": 6530.9245603870,
-    "slowMaResult": 6536.9351429354
+    "fastMaValue": 6530.9245603870,
+    "slowMaValue": 6536.9351429354
   },
   {
     "tick": {
@@ -6986,10 +6986,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 36.42701373006429883845,
+    "rsiValue": 36.42701373006429883845,
     "eisBarColor": "RED",
-    "fastMaResult": 6516.9497069247,
-    "slowMaResult": 6528.2196624017
+    "fastMaValue": 6516.9497069247,
+    "slowMaValue": 6528.2196624017
   },
   {
     "tick": {
@@ -7014,10 +7014,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 41.00224309432809971929,
+    "rsiValue": 41.00224309432809971929,
     "eisBarColor": "RED",
-    "fastMaResult": 6512.5587615665,
-    "slowMaResult": 6523.7755184832
+    "fastMaValue": 6512.5587615665,
+    "slowMaValue": 6523.7755184832
   },
   {
     "tick": {
@@ -7042,10 +7042,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 38.83816117199310474496,
+    "rsiValue": 38.83816117199310474496,
     "eisBarColor": "RED",
-    "fastMaResult": 6506.0902576243,
-    "slowMaResult": 6518.2078332572
+    "fastMaValue": 6506.0902576243,
+    "slowMaValue": 6518.2078332572
   },
   {
     "tick": {
@@ -7070,10 +7070,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 45.22571039451687198113,
+    "rsiValue": 45.22571039451687198113,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6509.0432970829,
-    "slowMaResult": 6517.6153864832
+    "fastMaValue": 6509.0432970829,
+    "slowMaValue": 6517.6153864832
   },
   {
     "tick": {
@@ -7098,10 +7098,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 42.17975225433802821165,
+    "rsiValue": 42.17975225433802821165,
     "eisBarColor": "RED",
-    "fastMaResult": 6506.3471199286,
-    "slowMaResult": 6514.5861826899
+    "fastMaValue": 6506.3471199286,
+    "slowMaValue": 6514.5861826899
   },
   {
     "tick": {
@@ -7126,10 +7126,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 38.95829224453476239871,
+    "rsiValue": 38.95829224453476239871,
     "eisBarColor": "RED",
-    "fastMaResult": 6499.2314132857,
-    "slowMaResult": 6509.2068767463
+    "fastMaValue": 6499.2314132857,
+    "slowMaValue": 6509.2068767463
   },
   {
     "tick": {
@@ -7154,10 +7154,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 37.99431404806813796355,
+    "rsiValue": 37.99431404806813796355,
     "eisBarColor": "RED",
-    "fastMaResult": 6492.8470781138,
-    "slowMaResult": 6503.9107914779
+    "fastMaValue": 6492.8470781138,
+    "slowMaValue": 6503.9107914779
   },
   {
     "tick": {
@@ -7182,10 +7182,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 41.33600120015376227168,
+    "rsiValue": 41.33600120015376227168,
     "eisBarColor": "RED",
-    "fastMaResult": 6492.0977799725,
-    "slowMaResult": 6501.4904991528
+    "fastMaValue": 6492.0977799725,
+    "slowMaValue": 6501.4904991528
   },
   {
     "tick": {
@@ -7210,10 +7210,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 38.82433891258799471588,
+    "rsiValue": 38.82433891258799471588,
     "eisBarColor": "RED",
-    "fastMaResult": 6487.6892562950,
-    "slowMaResult": 6497.3780827505
+    "fastMaValue": 6487.6892562950,
+    "slowMaValue": 6497.3780827505
   },
   {
     "tick": {
@@ -7238,10 +7238,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 39.68343258222340713689,
+    "rsiValue": 39.68343258222340713689,
     "eisBarColor": "RED",
-    "fastMaResult": 6485.6010869167,
-    "slowMaResult": 6494.4774764613
+    "fastMaValue": 6485.6010869167,
+    "slowMaValue": 6494.4774764613
   },
   {
     "tick": {
@@ -7266,10 +7266,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 42.59615363806654033337,
+    "rsiValue": 42.59615363806654033337,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6487.0636875711,
-    "slowMaResult": 6493.6613696283
+    "fastMaValue": 6487.0636875711,
+    "slowMaValue": 6493.6613696283
   },
   {
     "tick": {
@@ -7294,10 +7294,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 42.77030170675699590567,
+    "rsiValue": 42.77030170675699590567,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6488.2057917141,
-    "slowMaResult": 6493.0847569686
+    "fastMaValue": 6488.2057917141,
+    "slowMaValue": 6493.0847569686
   },
   {
     "tick": {
@@ -7322,10 +7322,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 45.74438250753047401179,
+    "rsiValue": 45.74438250753047401179,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6491.7697774927,
-    "slowMaResult": 6494.1416646198
+    "fastMaValue": 6491.7697774927,
+    "slowMaValue": 6494.1416646198
   },
   {
     "tick": {
@@ -7350,10 +7350,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 45.37514000544514874940,
+    "rsiValue": 45.37514000544514874940,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6493.7382599518,
-    "slowMaResult": 6494.7841301198
+    "fastMaValue": 6493.7382599518,
+    "slowMaValue": 6494.7841301198
   },
   {
     "tick": {
@@ -7378,10 +7378,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.85971494445590635085,
+    "rsiValue": 49.85971494445590635085,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6499.2434582845,
-    "slowMaResult": 6497.5968073617
+    "fastMaValue": 6499.2434582845,
+    "slowMaValue": 6497.5968073617
   },
   {
     "tick": {
@@ -7406,10 +7406,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 46.66074438958131320313,
+    "rsiValue": 46.66074438958131320313,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6499.6623055230,
-    "slowMaResult": 6498.1246605687
+    "fastMaValue": 6499.6623055230,
+    "slowMaValue": 6498.1246605687
   },
   {
     "tick": {
@@ -7434,10 +7434,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 31.13345829726152658476,
+    "rsiValue": 31.13345829726152658476,
     "eisBarColor": "RED",
-    "fastMaResult": 6476.4734281753,
-    "slowMaResult": 6485.7557538253
+    "fastMaValue": 6476.4734281753,
+    "slowMaValue": 6485.7557538253
   },
   {
     "tick": {
@@ -7464,10 +7464,10 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "rsiResult": 31.86452363485257993746,
+    "rsiValue": 31.86452363485257993746,
     "eisBarColor": "RED",
-    "fastMaResult": 6461.7168158735,
-    "slowMaResult": 6476.0189969971
+    "fastMaValue": 6461.7168158735,
+    "slowMaValue": 6476.0189969971
   },
   {
     "tick": {
@@ -7492,10 +7492,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 38.27611110996695548602,
+    "rsiValue": 38.27611110996695548602,
     "eisBarColor": "RED",
-    "fastMaResult": 6458.2633569523,
-    "slowMaResult": 6471.5348955631
+    "fastMaValue": 6458.2633569523,
+    "slowMaValue": 6471.5348955631
   },
   {
     "tick": {
@@ -7520,10 +7520,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 37.18249531558881808505,
+    "rsiValue": 37.18249531558881808505,
     "eisBarColor": "RED",
-    "fastMaResult": 6454.1081108749,
-    "slowMaResult": 6466.8553906825
+    "fastMaValue": 6454.1081108749,
+    "slowMaValue": 6466.8553906825
   },
   {
     "tick": {
@@ -7548,10 +7548,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 32.16098084139191735176,
+    "rsiValue": 32.16098084139191735176,
     "eisBarColor": "RED",
-    "fastMaResult": 6441.9354072499,
-    "slowMaResult": 6457.8980469220
+    "fastMaValue": 6441.9354072499,
+    "slowMaValue": 6457.8980469220
   },
   {
     "tick": {
@@ -7576,10 +7576,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 31.38970015039242584042,
+    "rsiValue": 31.38970015039242584042,
     "eisBarColor": "RED",
-    "fastMaResult": 6432.2317628233,
-    "slowMaResult": 6449.7028518398
+    "fastMaValue": 6432.2317628233,
+    "slowMaValue": 6449.7028518398
   },
   {
     "tick": {
@@ -7604,10 +7604,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 42.89478672481690331091,
+    "rsiValue": 42.89478672481690331091,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6438.1545085455,
-    "slowMaResult": 6449.7568787762
+    "fastMaValue": 6438.1545085455,
+    "slowMaValue": 6449.7568787762
   },
   {
     "tick": {
@@ -7632,10 +7632,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 42.89270314042486850656,
+    "rsiValue": 42.89270314042486850656,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6442.0996723637,
-    "slowMaResult": 6449.7992644533
+    "fastMaValue": 6442.0996723637,
+    "slowMaValue": 6449.7992644533
   },
   {
     "tick": {
@@ -7660,10 +7660,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 42.89569031507746271943,
+    "rsiValue": 42.89569031507746271943,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6444.7331149091,
-    "slowMaResult": 6449.8357618254
+    "fastMaValue": 6444.7331149091,
+    "slowMaValue": 6449.8357618254
   },
   {
     "tick": {
@@ -7688,10 +7688,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 39.90629940462941497920,
+    "rsiValue": 39.90629940462941497920,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6442.0560639827,
-    "slowMaResult": 6447.4477982444
+    "fastMaValue": 6442.0560639827,
+    "slowMaValue": 6447.4477982444
   },
   {
     "tick": {
@@ -7716,10 +7716,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 41.51749425686189558975,
+    "rsiValue": 41.51749425686189558975,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6441.8985398985,
-    "slowMaResult": 6446.3815606963
+    "fastMaValue": 6441.8985398985,
+    "slowMaValue": 6446.3815606963
   },
   {
     "tick": {
@@ -7744,10 +7744,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 40.65575416034373535362,
+    "rsiValue": 40.65575416034373535362,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6440.5990265990,
-    "slowMaResult": 6444.8576405697
+    "fastMaValue": 6440.5990265990,
+    "slowMaValue": 6444.8576405697
   },
   {
     "tick": {
@@ -7772,10 +7772,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 32.32864914677307211205,
+    "rsiValue": 32.32864914677307211205,
     "eisBarColor": "RED",
-    "fastMaResult": 6425.9681417693,
-    "slowMaResult": 6436.1028644861
+    "fastMaValue": 6425.9681417693,
+    "slowMaValue": 6436.1028644861
   },
   {
     "tick": {
@@ -7800,10 +7800,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 42.80118137910108226195,
+    "rsiValue": 42.80118137910108226195,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6427.6395742195,
-    "slowMaResult": 6435.1718780559
+    "fastMaValue": 6427.6395742195,
+    "slowMaValue": 6435.1718780559
   },
   {
     "tick": {
@@ -7828,10 +7828,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 43.76600437420567198798,
+    "rsiValue": 43.76600437420567198798,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6429.9300779930,
-    "slowMaResult": 6435.0517339621
+    "fastMaValue": 6429.9300779930,
+    "slowMaValue": 6435.0517339621
   },
   {
     "tick": {
@@ -7856,10 +7856,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 41.99103896405520279941,
+    "rsiValue": 41.99103896405520279941,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6428.7200799120,
-    "slowMaResult": 6433.4605248326
+    "fastMaValue": 6428.7200799120,
+    "slowMaValue": 6433.4605248326
   },
   {
     "tick": {
@@ -7884,10 +7884,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 40.84975291047435354621,
+    "rsiValue": 40.84975291047435354621,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6426.1625913347,
-    "slowMaResult": 6431.2036319867
+    "fastMaValue": 6426.1625913347,
+    "slowMaValue": 6431.2036319867
   },
   {
     "tick": {
@@ -7912,10 +7912,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.28064318090284174840,
+    "rsiValue": 48.28064318090284174840,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6433.0518384031,
-    "slowMaResult": 6434.0448502691
+    "fastMaValue": 6433.0518384031,
+    "slowMaValue": 6434.0448502691
   },
   {
     "tick": {
@@ -7940,10 +7940,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.12678498034507900663,
+    "rsiValue": 49.12678498034507900663,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6438.7012256021,
-    "slowMaResult": 6436.9457865838
+    "fastMaValue": 6438.7012256021,
+    "slowMaValue": 6436.9457865838
   },
   {
     "tick": {
@@ -7968,10 +7968,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 45.93808790865985764039,
+    "rsiValue": 45.93808790865985764039,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6438.3049470181,
-    "slowMaResult": 6437.0488053595
+    "fastMaValue": 6438.3049470181,
+    "slowMaValue": 6437.0488053595
   },
   {
     "tick": {
@@ -7996,10 +7996,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.74488328015954259047,
+    "rsiValue": 50.74488328015954259047,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6443.8521878854,
-    "slowMaResult": 6440.3029624978
+    "fastMaValue": 6443.8521878854,
+    "slowMaValue": 6440.3029624978
   },
   {
     "tick": {
@@ -8024,10 +8024,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.55339292057569619683,
+    "rsiValue": 48.55339292057569619683,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6444.8109587469,
-    "slowMaResult": 6441.4712421291
+    "fastMaValue": 6444.8109587469,
+    "slowMaValue": 6441.4712421291
   },
   {
     "tick": {
@@ -8052,10 +8052,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.33822737492579076413,
+    "rsiValue": 49.33822737492579076413,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6446.3626112446,
-    "slowMaResult": 6442.9248192402
+    "fastMaValue": 6446.3626112446,
+    "slowMaValue": 6442.9248192402
   },
   {
     "tick": {
@@ -8080,10 +8080,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.96677849788068316634,
+    "rsiValue": 50.96677849788068316634,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6449.2417408297,
-    "slowMaResult": 6445.1203066511
+    "fastMaValue": 6449.2417408297,
+    "slowMaValue": 6445.1203066511
   },
   {
     "tick": {
@@ -8108,10 +8108,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.64573255387033663915,
+    "rsiValue": 48.64573255387033663915,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6448.6186792698,
-    "slowMaResult": 6445.5298065600
+    "fastMaValue": 6448.6186792698,
+    "slowMaValue": 6445.5298065600
   },
   {
     "tick": {
@@ -8136,10 +8136,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 47.06679106376538199388,
+    "rsiValue": 47.06679106376538199388,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6446.4641912032,
-    "slowMaResult": 6444.9162444709
+    "fastMaValue": 6446.4641912032,
+    "slowMaValue": 6444.9162444709
   },
   {
     "tick": {
@@ -8164,10 +8164,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 47.71337961855294796163,
+    "rsiValue": 47.71337961855294796163,
     "eisBarColor": "BLUE",
-    "fastMaResult": 6445.6431269055,
-    "slowMaResult": 6444.7498360780
+    "fastMaValue": 6445.6431269055,
+    "slowMaValue": 6444.7498360780
   },
   {
     "tick": {
@@ -8192,10 +8192,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 50.53339617639091846395,
+    "rsiValue": 50.53339617639091846395,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6447.7620846037,
-    "slowMaResult": 6446.0680477002
+    "fastMaValue": 6447.7620846037,
+    "slowMaValue": 6446.0680477002
   },
   {
     "tick": {
@@ -8220,10 +8220,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.37673045532137751185,
+    "rsiValue": 49.37673045532137751185,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6448.0993620258,
-    "slowMaResult": 6446.5600239129
+    "fastMaValue": 6448.0993620258,
+    "slowMaValue": 6446.5600239129
   },
   {
     "tick": {
@@ -8248,10 +8248,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 49.29983985805987364846,
+    "rsiValue": 49.29983985805987364846,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6448.2561730672,
-    "slowMaResult": 6446.9254368651
+    "fastMaValue": 6448.2561730672,
+    "slowMaValue": 6446.9254368651
   },
   {
     "tick": {
@@ -8276,10 +8276,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 53.22083887875249445540,
+    "rsiValue": 53.22083887875249445540,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6451.7614792081,
-    "slowMaResult": 6449.0793740696
+    "fastMaValue": 6451.7614792081,
+    "slowMaValue": 6449.0793740696
   },
   {
     "tick": {
@@ -8304,10 +8304,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 52.88749238302556601830,
+    "rsiValue": 52.88749238302556601830,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6453.8409861387,
-    "slowMaResult": 6450.7013060569
+    "fastMaValue": 6453.8409861387,
+    "slowMaValue": 6450.7013060569
   },
   {
     "tick": {
@@ -8332,10 +8332,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 56.89200041166382159474,
+    "rsiValue": 56.89200041166382159474,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6458.7717014091,
-    "slowMaResult": 6453.9616380375
+    "fastMaValue": 6458.7717014091,
+    "slowMaValue": 6453.9616380375
   },
   {
     "tick": {
@@ -8360,10 +8360,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 48.31083744999997622719,
+    "rsiValue": 48.31083744999997622719,
     "eisBarColor": "RED",
-    "fastMaResult": 6455.1811342727,
-    "slowMaResult": 6452.8777038489
+    "fastMaValue": 6455.1811342727,
+    "slowMaValue": 6452.8777038489
   },
   {
     "tick": {
@@ -8388,10 +8388,10 @@
       }
     },
     "positions": [],
-    "rsiResult": 53.35062505137405211408,
+    "rsiValue": 53.35062505137405211408,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6457.3617863951,
-    "slowMaResult": 6454.4859559927
+    "fastMaValue": 6457.3617863951,
+    "slowMaValue": 6454.4859559927
   },
   {
     "tick": {
@@ -8416,9 +8416,9 @@
       }
     },
     "positions": [],
-    "rsiResult": 55.01513697550249095288,
+    "rsiValue": 55.01513697550249095288,
     "eisBarColor": "GREEN",
-    "fastMaResult": 6460.4275126334,
-    "slowMaResult": 6456.6810485595
+    "fastMaValue": 6460.4275126334,
+    "slowMaValue": 6456.6810485595
   }
 ]

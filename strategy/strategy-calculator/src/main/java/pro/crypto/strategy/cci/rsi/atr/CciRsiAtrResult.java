@@ -19,9 +19,9 @@ public class CciRsiAtrResult implements StrategyResult {
 
     private Set<Position> positions;
 
-    private BigDecimal cciResult;
+    private BigDecimal cciValue;
 
-    private BigDecimal rsiResult;
+    private BigDecimal rsiValue;
 
     private BigDecimal atrValue;
 

@@ -363,7 +363,7 @@ public class PivotRsiMacdMaStrategy implements Strategy<PivotRsiMacdMaResult> {
     }
 
     private void addRsiResult(RSIResult rsiResult, PivotRsiMacdMaResult pivotRsiMacdMaResult) {
-        pivotRsiMacdMaResult.setRsiResult(rsiResult.getIndicatorValue());
+        pivotRsiMacdMaResult.setRsiValue(rsiResult.getIndicatorValue());
     }
 
     private void addMacdResult(MACDResult macdResult, PivotRsiMacdMaResult pivotRsiMacdMaResult) {
@@ -373,7 +373,7 @@ public class PivotRsiMacdMaStrategy implements Strategy<PivotRsiMacdMaResult> {
     }
 
     private void addMaResult(MAResult maResult, PivotRsiMacdMaResult pivotRsiMacdMaResult) {
-        pivotRsiMacdMaResult.setMaResult(maResult.getIndicatorValue());
+        pivotRsiMacdMaResult.setMaValue(maResult.getIndicatorValue());
     }
 
 }

@@ -19,20 +19,20 @@ public class StochAdxMaResult implements StrategyResult {
 
     private BigDecimal stopLose;
 
-    private BigDecimal fastStochastic;
+    private BigDecimal fastStochasticValue;
 
-    private BigDecimal slowStochastic;
+    private BigDecimal slowStochasticValue;
 
-    private BigDecimal positiveAdxResult;
+    private BigDecimal positiveAdxValue;
 
-    private BigDecimal negativeAdxResult;
+    private BigDecimal negativeAdxValue;
 
-    private BigDecimal averageAdxResult;
+    private BigDecimal averageAdxValue;
 
-    private BigDecimal firstMaResult;
+    private BigDecimal firstMaValue;
 
-    private BigDecimal secondMaResult;
+    private BigDecimal secondMaValue;
 
-    private BigDecimal thirdMaResult;
+    private BigDecimal thirdMaValue;
 
 }

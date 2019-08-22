@@ -17,10 +17,10 @@ public class LrsiMaPsarResult implements StrategyResult {
 
     private Set<Position> positions;
 
-    private BigDecimal lrsiResult;
+    private BigDecimal lrsiValue;
 
-    private BigDecimal maResult;
+    private BigDecimal maValue;
 
-    private BigDecimal psarResult;
+    private BigDecimal psarValue;
 
 }

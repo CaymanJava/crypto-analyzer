@@ -211,8 +211,8 @@ public class StochHaStrategy implements Strategy<StochHaResult> {
     }
 
     private void addStochResult(StochResult stochResult, StochHaResult stochHaResult) {
-        stochHaResult.setFastStochastic(stochResult.getFastStochastic());
-        stochHaResult.setSlowStochastic(stochResult.getSlowStochastic());
+        stochHaResult.setFastStochasticValue(stochResult.getFastStochastic());
+        stochHaResult.setSlowStochasticValue(stochResult.getSlowStochastic());
     }
 
 }

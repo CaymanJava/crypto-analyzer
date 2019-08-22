@@ -298,11 +298,11 @@ public class CciRsiAtrStrategy implements Strategy<CciRsiAtrResult> {
     }
 
     private void addCciResult(CCIResult cciResult, CciRsiAtrResult cciRsiAtrResult) {
-        cciRsiAtrResult.setCciResult(cciResult.getIndicatorValue());
+        cciRsiAtrResult.setCciValue(cciResult.getIndicatorValue());
     }
 
     private void addRsiResult(RSIResult rsiResult, CciRsiAtrResult cciRsiAtrResult) {
-        cciRsiAtrResult.setRsiResult(rsiResult.getIndicatorValue());
+        cciRsiAtrResult.setRsiValue(rsiResult.getIndicatorValue());
     }
 
     private void addAtrResult(ATRResult atrResult, CciRsiAtrResult cciRsiAtrResult) {

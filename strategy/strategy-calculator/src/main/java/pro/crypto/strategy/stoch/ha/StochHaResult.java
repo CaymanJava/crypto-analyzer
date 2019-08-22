@@ -25,8 +25,8 @@ public class StochHaResult implements StrategyResult {
 
     private BigDecimal haClose;
 
-    private BigDecimal fastStochastic;
+    private BigDecimal fastStochasticValue;
 
-    private BigDecimal slowStochastic;
+    private BigDecimal slowStochasticValue;
 
 }

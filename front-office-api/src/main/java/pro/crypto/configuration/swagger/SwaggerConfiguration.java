@@ -27,12 +27,6 @@ import java.time.Period;
 @ConditionalOnProperty("swagger.enable")
 public class SwaggerConfiguration {
 
-    ApiInfo apiInfo() {
-        return new ApiInfoBuilder()
-                .title("Front Office API")
-                .build();
-    }
-
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
@@ -49,6 +43,12 @@ public class SwaggerConfiguration {
                 .paths(getPaths())
                 .build()
                 .apiInfo(apiInfo());
+    }
+
+    private ApiInfo apiInfo() {
+        return new ApiInfoBuilder()
+                .title("Front Office API")
+                .build();
     }
 
     private Predicate<String> getPaths() {

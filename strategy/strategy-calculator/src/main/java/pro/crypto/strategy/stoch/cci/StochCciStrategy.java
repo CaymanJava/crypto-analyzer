@@ -280,12 +280,12 @@ public class StochCciStrategy implements Strategy<StochCciResult> {
     }
 
     private void addStochasticResult(StochResult stochasticResult, StochCciResult stochCciResult) {
-        stochCciResult.setFastStochastic(stochasticResult.getFastStochastic());
-        stochCciResult.setSlowStochastic(stochasticResult.getSlowStochastic());
+        stochCciResult.setFastStochasticValue(stochasticResult.getFastStochastic());
+        stochCciResult.setSlowStochasticValue(stochasticResult.getSlowStochastic());
     }
 
     private void addCciResult(CCIResult cciResult, StochCciResult stochCciResult) {
-        stochCciResult.setCciResult(cciResult.getIndicatorValue());
+        stochCciResult.setCciResultValue(cciResult.getIndicatorValue());
     }
 
 }

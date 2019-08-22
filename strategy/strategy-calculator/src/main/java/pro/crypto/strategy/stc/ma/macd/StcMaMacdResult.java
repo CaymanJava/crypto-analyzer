@@ -19,7 +19,7 @@ public class StcMaMacdResult implements StrategyResult {
 
     private Set<Position> positions;
 
-    private BigDecimal stcResult;
+    private BigDecimal stcValue;
 
     private BigDecimal macdValue;
 
@@ -27,6 +27,6 @@ public class StcMaMacdResult implements StrategyResult {
 
     private BigDecimal macdBarChartValue;
 
-    private BigDecimal maResult;
+    private BigDecimal maValue;
 
 }

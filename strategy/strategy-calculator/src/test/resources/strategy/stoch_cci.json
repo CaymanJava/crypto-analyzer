@@ -478,8 +478,8 @@
       }
     },
     "positions": [],
-    "fastStochastic": 29.31357462525744250924,
-    "cciResult": -12.48092467833640511306
+    "fastStochasticValue": 29.31357462525744250924,
+    "cciResultValue": -12.48092467833640511306
   },
   {
     "tick": {
@@ -504,8 +504,8 @@
       }
     },
     "positions": [],
-    "fastStochastic": 27.03642297146069704691,
-    "cciResult": 2.61361719011588423916
+    "fastStochasticValue": 27.03642297146069704691,
+    "cciResultValue": 2.61361719011588423916
   },
   {
     "tick": {
@@ -530,9 +530,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 40.37646524117647058824,
-    "slowStochastic": 32.24215427930000000000,
-    "cciResult": 65.07347976712863484761
+    "fastStochasticValue": 40.37646524117647058824,
+    "slowStochasticValue": 32.24215427930000000000,
+    "cciResultValue": 65.07347976712863484761
   },
   {
     "tick": {
@@ -557,9 +557,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 61.31855539574772199393,
-    "slowStochastic": 42.91048120280000000000,
-    "cciResult": 76.45797272612546547711
+    "fastStochasticValue": 61.31855539574772199393,
+    "slowStochasticValue": 42.91048120280000000000,
+    "cciResultValue": 76.45797272612546547711
   },
   {
     "tick": {
@@ -584,9 +584,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 45.43966135474944315704,
-    "slowStochastic": 49.04489399723333333333,
-    "cciResult": -8.85899190480922560171
+    "fastStochasticValue": 45.43966135474944315704,
+    "slowStochasticValue": 49.04489399723333333333,
+    "cciResultValue": -8.85899190480922560171
   },
   {
     "tick": {
@@ -611,9 +611,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 42.84310924061252419897,
-    "slowStochastic": 49.86710866370000000000,
-    "cciResult": -15.44828361521632295432
+    "fastStochasticValue": 42.84310924061252419897,
+    "slowStochasticValue": 49.86710866370000000000,
+    "cciResultValue": -15.44828361521632295432
   },
   {
     "tick": {
@@ -638,9 +638,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 42.24942281169756327125,
-    "slowStochastic": 43.51073113570000000000,
-    "cciResult": -30.94494074193256302989
+    "fastStochasticValue": 42.24942281169756327125,
+    "slowStochasticValue": 43.51073113570000000000,
+    "cciResultValue": -30.94494074193256302989
   },
   {
     "tick": {
@@ -665,9 +665,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 52.28568418930670802600,
-    "slowStochastic": 45.79273874720000000000,
-    "cciResult": -37.27323664216828975281
+    "fastStochasticValue": 52.28568418930670802600,
+    "slowStochasticValue": 45.79273874720000000000,
+    "cciResultValue": -37.27323664216828975281
   },
   {
     "tick": {
@@ -692,9 +692,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 62.26713282877979684466,
-    "slowStochastic": 52.26741327660000000000,
-    "cciResult": 82.48533057768071062355
+    "fastStochasticValue": 62.26713282877979684466,
+    "slowStochasticValue": 52.26741327660000000000,
+    "cciResultValue": 82.48533057768071062355
   },
   {
     "tick": {
@@ -719,9 +719,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 48.86616286300694055830,
-    "slowStochastic": 54.47299329370000000000,
-    "cciResult": 16.81032194633466529368
+    "fastStochasticValue": 48.86616286300694055830,
+    "slowStochasticValue": 54.47299329370000000000,
+    "cciResultValue": 16.81032194633466529368
   },
   {
     "tick": {
@@ -746,9 +746,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 66.89446262888073468238,
-    "slowStochastic": 59.34258610690000000000,
-    "cciResult": 19.22664023644923376450
+    "fastStochasticValue": 66.89446262888073468238,
+    "slowStochasticValue": 59.34258610690000000000,
+    "cciResultValue": 19.22664023644923376450
   },
   {
     "tick": {
@@ -773,9 +773,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 67.86539600590704139429,
-    "slowStochastic": 61.20867383260000000000,
-    "cciResult": 16.26977523876547549994
+    "fastStochasticValue": 67.86539600590704139429,
+    "slowStochasticValue": 61.20867383260000000000,
+    "cciResultValue": 16.26977523876547549994
   },
   {
     "tick": {
@@ -800,9 +800,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 36.54809970237767062588,
-    "slowStochastic": 57.10265277906666666667,
-    "cciResult": -48.49117374940143700085
+    "fastStochasticValue": 36.54809970237767062588,
+    "slowStochasticValue": 57.10265277906666666667,
+    "cciResultValue": -48.49117374940143700085
   },
   {
     "tick": {
@@ -827,9 +827,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 25.04339120904990732746,
-    "slowStochastic": 43.15229563910000000000,
-    "cciResult": -111.45204932749760628975
+    "fastStochasticValue": 25.04339120904990732746,
+    "slowStochasticValue": 43.15229563910000000000,
+    "cciResultValue": -111.45204932749760628975
   },
   {
     "tick": {
@@ -854,9 +854,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 27.17296432082705718334,
-    "slowStochastic": 29.58815174410000000000,
-    "cciResult": -129.37491502114070445172
+    "fastStochasticValue": 27.17296432082705718334,
+    "slowStochasticValue": 29.58815174410000000000,
+    "cciResultValue": -129.37491502114070445172
   },
   {
     "tick": {
@@ -881,9 +881,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": -1.59045093158885193675,
-    "slowStochastic": 16.87530153276666666667,
-    "cciResult": -166.35769397352452966329
+    "fastStochasticValue": -1.59045093158885193675,
+    "slowStochasticValue": 16.87530153276666666667,
+    "cciResultValue": -166.35769397352452966329
   },
   {
     "tick": {
@@ -908,9 +908,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 45.24030166398439373574,
-    "slowStochastic": 23.60760501773333333333,
-    "cciResult": -99.29805817649533001181
+    "fastStochasticValue": 45.24030166398439373574,
+    "slowStochasticValue": 23.60760501773333333333,
+    "cciResultValue": -99.29805817649533001181
   },
   {
     "tick": {
@@ -935,9 +935,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 36.28547095597520998816,
-    "slowStochastic": 26.64510722946666666667,
-    "cciResult": -96.50617934504737451182
+    "fastStochasticValue": 36.28547095597520998816,
+    "slowStochasticValue": 26.64510722946666666667,
+    "cciResultValue": -96.50617934504737451182
   },
   {
     "tick": {
@@ -962,9 +962,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 4.17389852324748865667,
-    "slowStochastic": 28.56655704773333333333,
-    "cciResult": -141.72362893111846127989
+    "fastStochasticValue": 4.17389852324748865667,
+    "slowStochasticValue": 28.56655704773333333333,
+    "cciResultValue": -141.72362893111846127989
   },
   {
     "tick": {
@@ -989,9 +989,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 16.69559409298995462667,
-    "slowStochastic": 19.05165452406666666667,
-    "cciResult": -122.20178653399197576920
+    "fastStochasticValue": 16.69559409298995462667,
+    "slowStochasticValue": 19.05165452406666666667,
+    "cciResultValue": -122.20178653399197576920
   },
   {
     "tick": {
@@ -1016,9 +1016,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 57.59979942603341237712,
-    "slowStochastic": 26.15643068076666666667,
-    "cciResult": -23.15044000213325807817
+    "fastStochasticValue": 57.59979942603341237712,
+    "slowStochasticValue": 26.15643068076666666667,
+    "cciResultValue": -23.15044000213325807817
   },
   {
     "tick": {
@@ -1043,9 +1043,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 34.78248767981607706140,
-    "slowStochastic": 36.35929373293333333333,
-    "cciResult": -52.54363772273833279394
+    "fastStochasticValue": 34.78248767981607706140,
+    "slowStochasticValue": 36.35929373293333333333,
+    "cciResultValue": -52.54363772273833279394
   },
   {
     "tick": {
@@ -1070,9 +1070,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 44.02179218865513662506,
-    "slowStochastic": 45.46802643150000000000,
-    "cciResult": -91.63473464995264537585
+    "fastStochasticValue": 44.02179218865513662506,
+    "slowStochasticValue": 45.46802643150000000000,
+    "cciResultValue": -91.63473464995264537585
   },
   {
     "tick": {
@@ -1097,9 +1097,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 41.82425710311721542630,
-    "slowStochastic": 40.20951232386666666667,
-    "cciResult": -55.63794065865721756964
+    "fastStochasticValue": 41.82425710311721542630,
+    "slowStochasticValue": 40.20951232386666666667,
+    "cciResultValue": -55.63794065865721756964
   },
   {
     "tick": {
@@ -1124,9 +1124,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 41.82425707829569752624,
-    "slowStochastic": 42.55676879003333333333,
-    "cciResult": -19.23070960619991262346
+    "fastStochasticValue": 41.82425707829569752624,
+    "slowStochasticValue": 42.55676879003333333333,
+    "cciResultValue": -19.23070960619991262346
   },
   {
     "tick": {
@@ -1151,9 +1151,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 57.74863339148112715142,
-    "slowStochastic": 47.13238252430000000000,
-    "cciResult": -10.79561238338536292110
+    "fastStochasticValue": 57.74863339148112715142,
+    "slowStochasticValue": 47.13238252430000000000,
+    "cciResultValue": -10.79561238338536292110
   },
   {
     "tick": {
@@ -1178,9 +1178,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 38.90772874986014672549,
-    "slowStochastic": 46.16020640653333333333,
-    "cciResult": -6.41676632341668248476
+    "fastStochasticValue": 38.90772874986014672549,
+    "slowStochasticValue": 46.16020640653333333333,
+    "cciResultValue": -6.41676632341668248476
   },
   {
     "tick": {
@@ -1207,9 +1207,9 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "fastStochastic": 61.68147134870078905082,
-    "slowStochastic": 52.77927783000000000000,
-    "cciResult": 23.22991442374835503573
+    "fastStochasticValue": 61.68147134870078905082,
+    "slowStochasticValue": 52.77927783000000000000,
+    "cciResultValue": 23.22991442374835503573
   },
   {
     "tick": {
@@ -1234,9 +1234,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 56.04395502009763436805,
-    "slowStochastic": 52.21105170623333333333,
-    "cciResult": -30.61452678259916782781
+    "fastStochasticValue": 56.04395502009763436805,
+    "slowStochasticValue": 52.21105170623333333333,
+    "cciResultValue": -30.61452678259916782781
   },
   {
     "tick": {
@@ -1261,9 +1261,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 22.20464257560719781905,
-    "slowStochastic": 46.64335631480000000000,
-    "cciResult": -201.12913513701089338586
+    "fastStochasticValue": 22.20464257560719781905,
+    "slowStochasticValue": 46.64335631480000000000,
+    "cciResultValue": -201.12913513701089338586
   },
   {
     "tick": {
@@ -1288,9 +1288,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 10.85920440680054563363,
-    "slowStochastic": 29.70260066750000000000,
-    "cciResult": -184.04191912633290379662
+    "fastStochasticValue": 10.85920440680054563363,
+    "slowStochasticValue": 29.70260066750000000000,
+    "cciResultValue": -184.04191912633290379662
   },
   {
     "tick": {
@@ -1315,9 +1315,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 14.10075815773975423251,
-    "slowStochastic": 15.72153504670000000000,
-    "cciResult": -141.29861649754610041585
+    "fastStochasticValue": 14.10075815773975423251,
+    "slowStochasticValue": 15.72153504670000000000,
+    "cciResultValue": -141.29861649754610041585
   },
   {
     "tick": {
@@ -1342,9 +1342,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 43.07400359505128797042,
-    "slowStochastic": 22.67798871986666666667,
-    "cciResult": -38.84830733386690910533
+    "fastStochasticValue": 43.07400359505128797042,
+    "slowStochasticValue": 22.67798871986666666667,
+    "cciResultValue": -38.84830733386690910533
   },
   {
     "tick": {
@@ -1369,9 +1369,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 12.71347182487243756922,
-    "slowStochastic": 23.29607785923333333333,
-    "cciResult": -151.79697532745681380172
+    "fastStochasticValue": 12.71347182487243756922,
+    "slowStochasticValue": 23.29607785923333333333,
+    "cciResultValue": -151.79697532745681380172
   },
   {
     "tick": {
@@ -1396,9 +1396,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 2.65654575190202279927,
-    "slowStochastic": 19.48134039060000000000,
-    "cciResult": -171.68875532390543593604
+    "fastStochasticValue": 2.65654575190202279927,
+    "slowStochasticValue": 19.48134039060000000000,
+    "cciResultValue": -171.68875532390543593604
   },
   {
     "tick": {
@@ -1423,9 +1423,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 51.54530322263491038305,
-    "slowStochastic": 22.30510693313333333333,
-    "cciResult": -216.39059355444600713234
+    "fastStochasticValue": 51.54530322263491038305,
+    "slowStochasticValue": 22.30510693313333333333,
+    "cciResultValue": -216.39059355444600713234
   },
   {
     "tick": {
@@ -1450,9 +1450,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 81.59698080827022909996,
-    "slowStochastic": 45.26627659426666666667,
-    "cciResult": 224.83983449939353276994
+    "fastStochasticValue": 81.59698080827022909996,
+    "slowStochasticValue": 45.26627659426666666667,
+    "cciResultValue": 224.83983449939353276994
   },
   {
     "tick": {
@@ -1477,9 +1477,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 85.51991257789860549900,
-    "slowStochastic": 72.88739886960000000000,
-    "cciResult": 208.91073005858942961832
+    "fastStochasticValue": 85.51991257789860549900,
+    "slowStochasticValue": 72.88739886960000000000,
+    "cciResultValue": 208.91073005858942961832
   },
   {
     "tick": {
@@ -1504,9 +1504,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 92.58118973184622886024,
-    "slowStochastic": 86.56602770600000000000,
-    "cciResult": 152.64641027870735865618
+    "fastStochasticValue": 92.58118973184622886024,
+    "slowStochasticValue": 86.56602770600000000000,
+    "cciResultValue": 152.64641027870735865618
   },
   {
     "tick": {
@@ -1531,9 +1531,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 64.96375012858350378582,
-    "slowStochastic": 81.02161747943333333333,
-    "cciResult": 93.22305774959132098938
+    "fastStochasticValue": 64.96375012858350378582,
+    "slowStochasticValue": 81.02161747943333333333,
+    "cciResultValue": 93.22305774959132098938
   },
   {
     "tick": {
@@ -1558,9 +1558,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 87.87367163967563133842,
-    "slowStochastic": 81.80620383336666666667,
-    "cciResult": 111.93008335920010375245
+    "fastStochasticValue": 87.87367163967563133842,
+    "slowStochasticValue": 81.80620383336666666667,
+    "cciResultValue": 111.93008335920010375245
   },
   {
     "tick": {
@@ -1585,9 +1585,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 81.59698080827022909996,
-    "slowStochastic": 78.14480085883333333333,
-    "cciResult": 96.10208822015090284902
+    "fastStochasticValue": 81.59698080827022909996,
+    "slowStochasticValue": 78.14480085883333333333,
+    "cciResultValue": 96.10208822015090284902
   },
   {
     "tick": {
@@ -1612,9 +1612,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 70.96333530648013978477,
-    "slowStochastic": 80.14466258480000000000,
-    "cciResult": 70.62492919121607541231
+    "fastStochasticValue": 70.96333530648013978477,
+    "slowStochasticValue": 80.14466258480000000000,
+    "cciResultValue": 70.62492919121607541231
   },
   {
     "tick": {
@@ -1639,9 +1639,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 84.73532609059325005183,
-    "slowStochastic": 79.09854740176666666667,
-    "cciResult": 76.02490443050051773383
+    "fastStochasticValue": 84.73532609059325005183,
+    "slowStochasticValue": 79.09854740176666666667,
+    "cciResultValue": 76.02490443050051773383
   },
   {
     "tick": {
@@ -1666,9 +1666,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 69.04359914545942462304,
-    "slowStochastic": 74.91408684750000000000,
-    "cciResult": 40.85695034989347120290
+    "fastStochasticValue": 69.04359914545942462304,
+    "slowStochasticValue": 74.91408684750000000000,
+    "cciResultValue": 40.85695034989347120290
   },
   {
     "tick": {
@@ -1693,9 +1693,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 87.24600241530954740795,
-    "slowStochastic": 80.34164255046666666667,
-    "cciResult": 62.50626419940064359445
+    "fastStochasticValue": 87.24600241530954740795,
+    "slowStochasticValue": 80.34164255046666666667,
+    "cciResultValue": 62.50626419940064359445
   },
   {
     "tick": {
@@ -1720,9 +1720,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 66.68984008368239878362,
-    "slowStochastic": 74.32648054816666666667,
-    "cciResult": 25.29655015734135621767
+    "fastStochasticValue": 66.68984008368239878362,
+    "slowStochasticValue": 74.32648054816666666667,
+    "cciResultValue": 25.29655015734135621767
   },
   {
     "tick": {
@@ -1747,9 +1747,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 66.68984008368239878362,
-    "slowStochastic": 73.54189419423333333333,
-    "cciResult": 20.38683753923543046930
+    "fastStochasticValue": 66.68984008368239878362,
+    "slowStochasticValue": 73.54189419423333333333,
+    "cciResultValue": 20.38683753923543046930
   },
   {
     "tick": {
@@ -1774,9 +1774,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 91.58280635821977288506,
-    "slowStochastic": 74.98749550853333333333,
-    "cciResult": 58.03749424523955867757
+    "fastStochasticValue": 91.58280635821977288506,
+    "slowStochasticValue": 74.98749550853333333333,
+    "cciResultValue": 58.03749424523955867757
   },
   {
     "tick": {
@@ -1801,9 +1801,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 91.79659948637223810908,
-    "slowStochastic": 83.35641530943333333333,
-    "cciResult": 54.87529666364986292227
+    "fastStochasticValue": 91.79659948637223810908,
+    "slowStochasticValue": 83.35641530943333333333,
+    "cciResultValue": 54.87529666364986292227
   },
   {
     "tick": {
@@ -1828,9 +1828,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 82.38156717788763145828,
-    "slowStochastic": 88.58699100750000000000,
-    "cciResult": 36.20796414874170501817
+    "fastStochasticValue": 82.38156717788763145828,
+    "slowStochasticValue": 88.58699100750000000000,
+    "cciResultValue": 36.20796414874170501817
   },
   {
     "tick": {
@@ -1855,9 +1855,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 94.93494882500670885669,
-    "slowStochastic": 89.70437182976666666667,
-    "cciResult": 67.34151845487843832712
+    "fastStochasticValue": 94.93494882500670885669,
+    "slowStochasticValue": 89.70437182976666666667,
+    "cciResultValue": 67.34151845487843832712
   },
   {
     "tick": {
@@ -1882,9 +1882,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 83.16615351612157965958,
-    "slowStochastic": 86.82755650633333333333,
-    "cciResult": 71.52658920938157282718
+    "fastStochasticValue": 83.16615351612157965958,
+    "slowStochasticValue": 86.82755650633333333333,
+    "cciResultValue": 71.52658920938157282718
   },
   {
     "tick": {
@@ -1909,9 +1909,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 83.17399937966083641238,
-    "slowStochastic": 87.09170057360000000000,
-    "cciResult": 71.33307103819066744907
+    "fastStochasticValue": 83.17399937966083641238,
+    "slowStochasticValue": 87.09170057360000000000,
+    "cciResultValue": 71.33307103819066744907
   },
   {
     "tick": {
@@ -1936,9 +1936,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 81.39500004350688249789,
-    "slowStochastic": 82.57838431310000000000,
-    "cciResult": 45.33879452884714083048
+    "fastStochasticValue": 81.39500004350688249789,
+    "slowStochasticValue": 82.57838431310000000000,
+    "cciResultValue": 45.33879452884714083048
   },
   {
     "tick": {
@@ -1963,9 +1963,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 42.39713770855828037647,
-    "slowStochastic": 68.98871237723333333333,
-    "cciResult": 33.04161832154361785207
+    "fastStochasticValue": 42.39713770855828037647,
+    "slowStochasticValue": 68.98871237723333333333,
+    "cciResultValue": 33.04161832154361785207
   },
   {
     "tick": {
@@ -1990,9 +1990,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 77.49999895000000000000,
-    "slowStochastic": 67.09737890070000000000,
-    "cciResult": 45.21202562471065451012
+    "fastStochasticValue": 77.49999895000000000000,
+    "slowStochasticValue": 67.09737890070000000000,
+    "cciResultValue": 45.21202562471065451012
   },
   {
     "tick": {
@@ -2017,9 +2017,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 62.49999952500000000000,
-    "slowStochastic": 60.79904539453333333333,
-    "cciResult": 21.13605095310118492117
+    "fastStochasticValue": 62.49999952500000000000,
+    "slowStochasticValue": 60.79904539453333333333,
+    "cciResultValue": 21.13605095310118492117
   },
   {
     "tick": {
@@ -2044,9 +2044,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 27.49999997500000000000,
-    "slowStochastic": 55.83333281666666666667,
-    "cciResult": 4.71847648581043612107
+    "fastStochasticValue": 27.49999997500000000000,
+    "slowStochasticValue": 55.83333281666666666667,
+    "cciResultValue": 4.71847648581043612107
   },
   {
     "tick": {
@@ -2071,9 +2071,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 52.50000000000000000000,
-    "slowStochastic": 47.49999983333333333333,
-    "cciResult": 33.66939412303103494175
+    "fastStochasticValue": 52.50000000000000000000,
+    "slowStochasticValue": 47.49999983333333333333,
+    "cciResultValue": 33.66939412303103494175
   },
   {
     "tick": {
@@ -2098,9 +2098,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 12.50000000000000000000,
-    "slowStochastic": 30.83333332500000000000,
-    "cciResult": -96.62891253810912705989
+    "fastStochasticValue": 12.50000000000000000000,
+    "slowStochasticValue": 30.83333332500000000000,
+    "cciResultValue": -96.62891253810912705989
   },
   {
     "tick": {
@@ -2127,9 +2127,9 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "fastStochastic": 67.50000000000000000000,
-    "slowStochastic": 44.16666666666666666667,
-    "cciResult": 28.38270673575504560101
+    "fastStochasticValue": 67.50000000000000000000,
+    "slowStochasticValue": 44.16666666666666666667,
+    "cciResultValue": 28.38270673575504560101
   },
   {
     "tick": {
@@ -2154,9 +2154,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 76.75000000000000000000,
-    "slowStochastic": 52.25000000000000000000,
-    "cciResult": 157.93740308394209335278
+    "fastStochasticValue": 76.75000000000000000000,
+    "slowStochasticValue": 52.25000000000000000000,
+    "cciResultValue": 157.93740308394209335278
   },
   {
     "tick": {
@@ -2181,9 +2181,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 92.94683457500000000000,
-    "slowStochastic": 79.06561152500000000000,
-    "cciResult": 198.71227506825753579820
+    "fastStochasticValue": 92.94683457500000000000,
+    "slowStochasticValue": 79.06561152500000000000,
+    "cciResultValue": 198.71227506825753579820
   },
   {
     "tick": {
@@ -2208,9 +2208,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 91.33285750867600970551,
-    "slowStochastic": 87.00989736123333333333,
-    "cciResult": 298.73247965549512195063
+    "fastStochasticValue": 91.33285750867600970551,
+    "slowStochasticValue": 87.00989736123333333333,
+    "cciResultValue": 298.73247965549512195063
   },
   {
     "tick": {
@@ -2235,9 +2235,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 70.58611651481034649752,
-    "slowStochastic": 84.95526953283333333333,
-    "cciResult": 236.83421071144611502262
+    "fastStochasticValue": 70.58611651481034649752,
+    "slowStochasticValue": 84.95526953283333333333,
+    "cciResultValue": 236.83421071144611502262
   },
   {
     "tick": {
@@ -2262,9 +2262,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 55.26786128183875753712,
-    "slowStochastic": 72.39561176843333333333,
-    "cciResult": 216.46508911200893290696
+    "fastStochasticValue": 55.26786128183875753712,
+    "slowStochasticValue": 72.39561176843333333333,
+    "cciResultValue": 216.46508911200893290696
   },
   {
     "tick": {
@@ -2289,9 +2289,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 67.54960814329233724321,
-    "slowStochastic": 64.46786197996666666667,
-    "cciResult": 159.50801564380945233362
+    "fastStochasticValue": 67.54960814329233724321,
+    "slowStochasticValue": 64.46786197996666666667,
+    "cciResultValue": 159.50801564380945233362
   },
   {
     "tick": {
@@ -2316,9 +2316,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 68.15386778947368421053,
-    "slowStochastic": 63.65711240486666666667,
-    "cciResult": 186.75532195684834153504
+    "fastStochasticValue": 68.15386778947368421053,
+    "slowStochasticValue": 63.65711240486666666667,
+    "cciResultValue": 186.75532195684834153504
   },
   {
     "tick": {
@@ -2343,9 +2343,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 96.07843137178008458270,
-    "slowStochastic": 77.26063576816666666667,
-    "cciResult": 242.98572105335897633384
+    "fastStochasticValue": 96.07843137178008458270,
+    "slowStochasticValue": 77.26063576816666666667,
+    "cciResultValue": 242.98572105335897633384
   },
   {
     "tick": {
@@ -2370,9 +2370,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 64.94845360824742268041,
-    "slowStochastic": 76.39358425650000000000,
-    "cciResult": 161.58736730050780912840
+    "fastStochasticValue": 64.94845360824742268041,
+    "slowStochasticValue": 76.39358425650000000000,
+    "cciResultValue": 161.58736730050780912840
   },
   {
     "tick": {
@@ -2397,9 +2397,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 70.10309278350515463918,
-    "slowStochastic": 77.04332592116666666667,
-    "cciResult": 128.89761012008137934920
+    "fastStochasticValue": 70.10309278350515463918,
+    "slowStochasticValue": 77.04332592116666666667,
+    "cciResultValue": 128.89761012008137934920
   },
   {
     "tick": {
@@ -2424,9 +2424,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 91.53608073195876288660,
-    "slowStochastic": 75.52920904123333333333,
-    "cciResult": 116.70250855662894011085
+    "fastStochasticValue": 91.53608073195876288660,
+    "slowStochasticValue": 75.52920904123333333333,
+    "cciResultValue": 116.70250855662894011085
   },
   {
     "tick": {
@@ -2451,9 +2451,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 57.73195877319587628866,
-    "slowStochastic": 73.12371076290000000000,
-    "cciResult": 67.81492204478875549539
+    "fastStochasticValue": 57.73195877319587628866,
+    "slowStochasticValue": 73.12371076290000000000,
+    "cciResultValue": 67.81492204478875549539
   },
   {
     "tick": {
@@ -2478,9 +2478,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 74.80515463917525773196,
-    "slowStochastic": 74.69106471476666666667,
-    "cciResult": 76.77997096939123180412
+    "fastStochasticValue": 74.80515463917525773196,
+    "slowStochasticValue": 74.69106471476666666667,
+    "cciResultValue": 76.77997096939123180412
   },
   {
     "tick": {
@@ -2505,9 +2505,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 61.85567010309278350515,
-    "slowStochastic": 64.79759450516666666667,
-    "cciResult": 58.67485878122925803699
+    "fastStochasticValue": 61.85567010309278350515,
+    "slowStochasticValue": 64.79759450516666666667,
+    "cciResultValue": 58.67485878122925803699
   },
   {
     "tick": {
@@ -2532,9 +2532,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 54.78898010309278350515,
-    "slowStochastic": 63.81660161513333333333,
-    "cciResult": 39.66821345462763403214
+    "fastStochasticValue": 54.78898010309278350515,
+    "slowStochasticValue": 63.81660161513333333333,
+    "cciResultValue": 39.66821345462763403214
   },
   {
     "tick": {
@@ -2561,9 +2561,9 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "fastStochastic": 37.02061855670103092784,
-    "slowStochastic": 51.22175625430000000000,
-    "cciResult": -13.02074681367225058121
+    "fastStochasticValue": 37.02061855670103092784,
+    "slowStochasticValue": 51.22175625430000000000,
+    "cciResultValue": -13.02074681367225058121
   },
   {
     "tick": {
@@ -2588,9 +2588,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 61.69469039175257731959,
-    "slowStochastic": 51.16809635050000000000,
-    "cciResult": -2.92035558556022562644
+    "fastStochasticValue": 61.69469039175257731959,
+    "slowStochasticValue": 51.16809635050000000000,
+    "cciResultValue": -2.92035558556022562644
   },
   {
     "tick": {
@@ -2615,9 +2615,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 72.68041219587628865979,
-    "slowStochastic": 57.13190704810000000000,
-    "cciResult": 19.95409346324341533516
+    "fastStochasticValue": 72.68041219587628865979,
+    "slowStochasticValue": 57.13190704810000000000,
+    "cciResultValue": 19.95409346324341533516
   },
   {
     "tick": {
@@ -2642,9 +2642,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 51.74656456519458722333,
-    "slowStochastic": 62.04055571760000000000,
-    "cciResult": -15.58224740458612330786
+    "fastStochasticValue": 51.74656456519458722333,
+    "slowStochasticValue": 62.04055571760000000000,
+    "cciResultValue": -15.58224740458612330786
   },
   {
     "tick": {
@@ -2669,9 +2669,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 83.16970531792851257813,
-    "slowStochastic": 69.19889402633333333333,
-    "cciResult": 98.42445253791055248100
+    "fastStochasticValue": 83.16970531792851257813,
+    "slowStochasticValue": 69.19889402633333333333,
+    "cciResultValue": 98.42445253791055248100
   },
   {
     "tick": {
@@ -2696,9 +2696,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 78.48567084151472650771,
-    "slowStochastic": 71.13398024153333333333,
-    "cciResult": 87.36791421297086512361
+    "fastStochasticValue": 78.48567084151472650771,
+    "slowStochasticValue": 71.13398024153333333333,
+    "cciResultValue": 87.36791421297086512361
   },
   {
     "tick": {
@@ -2723,9 +2723,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 60.54628223984010352653,
-    "slowStochastic": 74.06721946643333333333,
-    "cciResult": 81.09805851049805530071
+    "fastStochasticValue": 60.54628223984010352653,
+    "slowStochasticValue": 74.06721946643333333333,
+    "cciResultValue": 81.09805851049805530071
   },
   {
     "tick": {
@@ -2750,9 +2750,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 80.35145700764058528189,
-    "slowStochastic": 73.12780336300000000000,
-    "cciResult": 110.77105654810702103359
+    "fastStochasticValue": 80.35145700764058528189,
+    "slowStochasticValue": 73.12780336300000000000,
+    "cciResultValue": 110.77105654810702103359
   },
   {
     "tick": {
@@ -2777,9 +2777,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 49.15453716982618166462,
-    "slowStochastic": 63.35075880576666666667,
-    "cciResult": 9.35348270747202049456
+    "fastStochasticValue": 49.15453716982618166462,
+    "slowStochasticValue": 63.35075880576666666667,
+    "cciResultValue": 9.35348270747202049456
   },
   {
     "tick": {
@@ -2804,9 +2804,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 43.85432502941643778899,
-    "slowStochastic": 57.78677306896666666667,
-    "cciResult": 5.49902288066611878558
+    "fastStochasticValue": 43.85432502941643778899,
+    "slowStochasticValue": 57.78677306896666666667,
+    "cciResultValue": 5.49902288066611878558
   },
   {
     "tick": {
@@ -2833,9 +2833,9 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "fastStochastic": 37.78452199359400940722,
-    "slowStochastic": 43.59779473093333333333,
-    "cciResult": -32.97708881362839201322
+    "fastStochasticValue": 37.78452199359400940722,
+    "slowStochasticValue": 43.59779473093333333333,
+    "cciResultValue": -32.97708881362839201322
   },
   {
     "tick": {
@@ -2860,9 +2860,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 56.84370260346641921145,
-    "slowStochastic": 46.16084987550000000000,
-    "cciResult": 37.28698919104761236221
+    "fastStochasticValue": 56.84370260346641921145,
+    "slowStochasticValue": 46.16084987550000000000,
+    "cciResultValue": 37.28698919104761236221
   },
   {
     "tick": {
@@ -2887,9 +2887,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 61.95037026331673310575,
-    "slowStochastic": 52.19286495346666666667,
-    "cciResult": 59.93598257746682170603
+    "fastStochasticValue": 61.95037026331673310575,
+    "slowStochasticValue": 52.19286495346666666667,
+    "cciResultValue": 59.93598257746682170603
   },
   {
     "tick": {
@@ -2914,9 +2914,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 83.21711321493775622685,
-    "slowStochastic": 67.33706202723333333333,
-    "cciResult": 44.45610154524752902506
+    "fastStochasticValue": 83.21711321493775622685,
+    "slowStochasticValue": 67.33706202723333333333,
+    "cciResultValue": 44.45610154524752902506
   },
   {
     "tick": {
@@ -2941,9 +2941,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 83.21711610393159554416,
-    "slowStochastic": 76.12819986073333333333,
-    "cciResult": 108.96940618820240434931
+    "fastStochasticValue": 83.21711610393159554416,
+    "slowStochasticValue": 76.12819986073333333333,
+    "cciResultValue": 108.96940618820240434931
   },
   {
     "tick": {
@@ -2968,9 +2968,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 92.43957623055209448126,
-    "slowStochastic": 86.29126851646666666667,
-    "cciResult": 60.07735948612091517139
+    "fastStochasticValue": 92.43957623055209448126,
+    "slowStochasticValue": 86.29126851646666666667,
+    "cciResultValue": 60.07735948612091517139
   },
   {
     "tick": {
@@ -2997,9 +2997,9 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "fastStochastic": 33.88247036958786033818,
-    "slowStochastic": 69.84638756803333333333,
-    "cciResult": -64.00919116383307982400
+    "fastStochasticValue": 33.88247036958786033818,
+    "slowStochasticValue": 69.84638756803333333333,
+    "cciResultValue": -64.00919116383307982400
   },
   {
     "tick": {
@@ -3024,9 +3024,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 61.09395695000912279982,
-    "slowStochastic": 62.47200118336666666667,
-    "cciResult": -31.68435803903642872853
+    "fastStochasticValue": 61.09395695000912279982,
+    "slowStochasticValue": 62.47200118336666666667,
+    "cciResultValue": -31.68435803903642872853
   },
   {
     "tick": {
@@ -3051,9 +3051,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 33.88247028449878378243,
-    "slowStochastic": 42.95296586803333333333,
-    "cciResult": -74.89310855983244460698
+    "fastStochasticValue": 33.88247028449878378243,
+    "slowStochasticValue": 42.95296586803333333333,
+    "cciResultValue": -74.89310855983244460698
   },
   {
     "tick": {
@@ -3078,9 +3078,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 38.97079704551468838637,
-    "slowStochastic": 44.64907476000000000000,
-    "cciResult": -63.71527966576431619254
+    "fastStochasticValue": 38.97079704551468838637,
+    "slowStochasticValue": 44.64907476000000000000,
+    "cciResultValue": -63.71527966576431619254
   },
   {
     "tick": {
@@ -3105,9 +3105,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 61.09395695000912279982,
-    "slowStochastic": 44.64907476000000000000,
-    "cciResult": -43.70568800335397340863
+    "fastStochasticValue": 61.09395695000912279982,
+    "slowStochasticValue": 44.64907476000000000000,
+    "cciResultValue": -43.70568800335397340863
   },
   {
     "tick": {
@@ -3132,9 +3132,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 61.55258557467448115595,
-    "slowStochastic": 53.87244652340000000000,
-    "cciResult": -24.81500968452707156728
+    "fastStochasticValue": 61.55258557467448115595,
+    "slowStochasticValue": 53.87244652340000000000,
+    "cciResultValue": -24.81500968452707156728
   },
   {
     "tick": {
@@ -3159,9 +3159,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 60.30293143671603955834,
-    "slowStochastic": 60.98315798713333333333,
-    "cciResult": -56.83817552242383494992
+    "fastStochasticValue": 60.30293143671603955834,
+    "slowStochasticValue": 60.98315798713333333333,
+    "cciResultValue": -56.83817552242383494992
   },
   {
     "tick": {
@@ -3186,9 +3186,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 24.18989705472320898740,
-    "slowStochastic": 48.68180468870000000000,
-    "cciResult": -87.06845044552313974332
+    "fastStochasticValue": 24.18989705472320898740,
+    "slowStochasticValue": 48.68180468870000000000,
+    "cciResultValue": -87.06845044552313974332
   },
   {
     "tick": {
@@ -3213,9 +3213,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 11.12818059270124926896,
-    "slowStochastic": 31.87366969470000000000,
-    "cciResult": -309.69567206293830397410
+    "fastStochasticValue": 11.12818059270124926896,
+    "slowStochasticValue": 31.87366969470000000000,
+    "cciResultValue": -309.69567206293830397410
   },
   {
     "tick": {
@@ -3240,9 +3240,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 16.20073710333148485351,
-    "slowStochastic": 17.17293825026666666667,
-    "cciResult": -299.83993435308939700638
+    "fastStochasticValue": 16.20073710333148485351,
+    "slowStochasticValue": 17.17293825026666666667,
+    "cciResultValue": -299.83993435308939700638
   },
   {
     "tick": {
@@ -3267,9 +3267,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 17.19621488804773779773,
-    "slowStochastic": 14.84171086136666666667,
-    "cciResult": -220.06551194718080273899
+    "fastStochasticValue": 17.19621488804773779773,
+    "slowStochasticValue": 14.84171086136666666667,
+    "cciResultValue": -220.06551194718080273899
   },
   {
     "tick": {
@@ -3294,9 +3294,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 17.75836721525164563145,
-    "slowStochastic": 17.05177306886666666667,
-    "cciResult": -175.10034307301838576160
+    "fastStochasticValue": 17.75836721525164563145,
+    "slowStochasticValue": 17.05177306886666666667,
+    "cciResultValue": -175.10034307301838576160
   },
   {
     "tick": {
@@ -3321,9 +3321,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": -32.42841977444337874644,
-    "slowStochastic": 0.84205410963333333333,
-    "cciResult": -201.46191507351569088105
+    "fastStochasticValue": -32.42841977444337874644,
+    "slowStochasticValue": 0.84205410963333333333,
+    "cciResultValue": -201.46191507351569088105
   },
   {
     "tick": {
@@ -3348,9 +3348,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 18.23966065454107904753,
-    "slowStochastic": 1.18986936510000000000,
-    "cciResult": -110.03006699726146270201
+    "fastStochasticValue": 18.23966065454107904753,
+    "slowStochasticValue": 1.18986936510000000000,
+    "cciResultValue": -110.03006699726146270201
   },
   {
     "tick": {
@@ -3375,9 +3375,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 23.80061136091152921247,
-    "slowStochastic": 3.20395074700000000000,
-    "cciResult": -92.51752511292292867810
+    "fastStochasticValue": 23.80061136091152921247,
+    "slowStochasticValue": 3.20395074700000000000,
+    "cciResultValue": -92.51752511292292867810
   },
   {
     "tick": {
@@ -3402,9 +3402,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 0E-20,
-    "slowStochastic": 14.01342400516666666667,
-    "cciResult": -103.08927955776196424422
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 14.01342400516666666667,
+    "cciResultValue": -103.08927955776196424422
   },
   {
     "tick": {
@@ -3429,9 +3429,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 32.34706966879520146163,
-    "slowStochastic": 18.71589367656666666667,
-    "cciResult": -54.05560276100298990683
+    "fastStochasticValue": 32.34706966879520146163,
+    "slowStochasticValue": 18.71589367656666666667,
+    "cciResultValue": -54.05560276100298990683
   },
   {
     "tick": {
@@ -3456,9 +3456,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 32.34706966879520146163,
-    "slowStochastic": 21.56471311253333333333,
-    "cciResult": -67.26162449643054719579
+    "fastStochasticValue": 32.34706966879520146163,
+    "slowStochasticValue": 21.56471311253333333333,
+    "cciResultValue": -67.26162449643054719579
   },
   {
     "tick": {
@@ -3483,9 +3483,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 8.60704197951795212641,
-    "slowStochastic": 24.43372710570000000000,
-    "cciResult": -72.02611239158526007023
+    "fastStochasticValue": 8.60704197951795212641,
+    "slowStochasticValue": 24.43372710570000000000,
+    "cciResultValue": -72.02611239158526007023
   },
   {
     "tick": {
@@ -3510,9 +3510,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 35.38432132181500807143,
-    "slowStochastic": 25.44614432336666666667,
-    "cciResult": -50.81610229998284408902
+    "fastStochasticValue": 35.38432132181500807143,
+    "slowStochasticValue": 25.44614432336666666667,
+    "cciResultValue": -50.81610229998284408902
   },
   {
     "tick": {
@@ -3537,9 +3537,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 49.69357643177593444415,
-    "slowStochastic": 31.22831324436666666667,
-    "cciResult": -4.07668734866195073919
+    "fastStochasticValue": 49.69357643177593444415,
+    "slowStochasticValue": 31.22831324436666666667,
+    "cciResultValue": -4.07668734866195073919
   },
   {
     "tick": {
@@ -3566,9 +3566,9 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "fastStochastic": 56.59189049303571715932,
-    "slowStochastic": 47.22326274886666666667,
-    "cciResult": 22.36274185964774159709
+    "fastStochasticValue": 56.59189049303571715932,
+    "slowStochasticValue": 47.22326274886666666667,
+    "cciResultValue": 22.36274185964774159709
   },
   {
     "tick": {
@@ -3593,9 +3593,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 56.59189049303571715932,
-    "slowStochastic": 54.29245247260000000000,
-    "cciResult": -0.89341926806222269689
+    "fastStochasticValue": 56.59189049303571715932,
+    "slowStochasticValue": 54.29245247260000000000,
+    "cciResultValue": -0.89341926806222269689
   },
   {
     "tick": {
@@ -3620,9 +3620,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 45.97748352492462492069,
-    "slowStochastic": 53.05375483700000000000,
-    "cciResult": -0.59157038621861347264
+    "fastStochasticValue": 45.97748352492462492069,
+    "slowStochasticValue": 53.05375483700000000000,
+    "cciResultValue": -0.59157038621861347264
   },
   {
     "tick": {
@@ -3647,9 +3647,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 42.76523927498000988135,
-    "slowStochastic": 48.44487109763333333333,
-    "cciResult": 11.66494603544958727336
+    "fastStochasticValue": 42.76523927498000988135,
+    "slowStochasticValue": 48.44487109763333333333,
+    "cciResultValue": 11.66494603544958727336
   },
   {
     "tick": {
@@ -3674,9 +3674,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 45.26250121975037418627,
-    "slowStochastic": 44.66840800656666666667,
-    "cciResult": 3.08018674655251487113
+    "fastStochasticValue": 45.26250121975037418627,
+    "slowStochasticValue": 44.66840800656666666667,
+    "cciResultValue": 3.08018674655251487113
   },
   {
     "tick": {
@@ -3701,9 +3701,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 25.00496134642590775322,
-    "slowStochastic": 37.67756728040000000000,
-    "cciResult": -35.13471848050507953164
+    "fastStochasticValue": 25.00496134642590775322,
+    "slowStochasticValue": 37.67756728040000000000,
+    "cciResultValue": -35.13471848050507953164
   },
   {
     "tick": {
@@ -3728,9 +3728,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 14.63638646127072090716,
-    "slowStochastic": 28.30128300913333333333,
-    "cciResult": -54.90166322946931049669
+    "fastStochasticValue": 14.63638646127072090716,
+    "slowStochasticValue": 28.30128300913333333333,
+    "cciResultValue": -54.90166322946931049669
   },
   {
     "tick": {
@@ -3755,9 +3755,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 48.57264346078212145989,
-    "slowStochastic": 29.40466375616666666667,
-    "cciResult": -47.51246871774189667941
+    "fastStochasticValue": 48.57264346078212145989,
+    "slowStochasticValue": 29.40466375616666666667,
+    "cciResultValue": -47.51246871774189667941
   },
   {
     "tick": {
@@ -3782,9 +3782,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 100.00000000000000000000,
-    "slowStochastic": 54.40300997403333333333,
-    "cciResult": 136.42254715612060517412
+    "fastStochasticValue": 100.00000000000000000000,
+    "slowStochasticValue": 54.40300997403333333333,
+    "cciResultValue": 136.42254715612060517412
   },
   {
     "tick": {
@@ -3809,9 +3809,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 99.22356533997627511944,
-    "slowStochastic": 82.59873626693333333333,
-    "cciResult": 213.55625359946155511622
+    "fastStochasticValue": 99.22356533997627511944,
+    "slowStochasticValue": 82.59873626693333333333,
+    "cciResultValue": 213.55625359946155511622
   },
   {
     "tick": {
@@ -3836,9 +3836,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 89.74662392473274717600,
-    "slowStochastic": 96.32339642156666666667,
-    "cciResult": 132.72901310660568693112
+    "fastStochasticValue": 89.74662392473274717600,
+    "slowStochasticValue": 96.32339642156666666667,
+    "cciResultValue": 132.72901310660568693112
   },
   {
     "tick": {
@@ -3863,9 +3863,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 96.85685928917258648876,
-    "slowStochastic": 95.27568285130000000000,
-    "cciResult": 201.25840939908049733641
+    "fastStochasticValue": 96.85685928917258648876,
+    "slowStochasticValue": 95.27568285130000000000,
+    "cciResultValue": 201.25840939908049733641
   },
   {
     "tick": {
@@ -3890,9 +3890,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 85.85586700427113582808,
-    "slowStochastic": 90.81978340606666666667,
-    "cciResult": 129.95072268272005061495
+    "fastStochasticValue": 85.85586700427113582808,
+    "slowStochasticValue": 90.81978340606666666667,
+    "cciResultValue": 129.95072268272005061495
   },
   {
     "tick": {
@@ -3917,9 +3917,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 92.40407690034753358481,
-    "slowStochastic": 91.70560106460000000000,
-    "cciResult": 109.78560751775892177586
+    "fastStochasticValue": 92.40407690034753358481,
+    "slowStochasticValue": 91.70560106460000000000,
+    "cciResultValue": 109.78560751775892177586
   },
   {
     "tick": {
@@ -3944,9 +3944,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 99.95989049450226388316,
-    "slowStochastic": 92.73994479970000000000,
-    "cciResult": 132.50772023003946911819
+    "fastStochasticValue": 99.95989049450226388316,
+    "slowStochasticValue": 92.73994479970000000000,
+    "cciResultValue": 132.50772023003946911819
   },
   {
     "tick": {
@@ -3971,9 +3971,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 58.29177596686761057116,
-    "slowStochastic": 83.55191445390000000000,
-    "cciResult": 56.90188186947126397118
+    "fastStochasticValue": 58.29177596686761057116,
+    "slowStochasticValue": 83.55191445390000000000,
+    "cciResultValue": 56.90188186947126397118
   },
   {
     "tick": {
@@ -3998,9 +3998,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 98.23445774640924634074,
-    "slowStochastic": 85.49537473593333333333,
-    "cciResult": 102.05390097500969606818
+    "fastStochasticValue": 98.23445774640924634074,
+    "slowStochasticValue": 85.49537473593333333333,
+    "cciResultValue": 102.05390097500969606818
   },
   {
     "tick": {
@@ -4025,9 +4025,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 89.80224548339757542030,
-    "slowStochastic": 82.10949306556666666667,
-    "cciResult": 90.77962542949570566701
+    "fastStochasticValue": 89.80224548339757542030,
+    "slowStochasticValue": 82.10949306556666666667,
+    "cciResultValue": 90.77962542949570566701
   },
   {
     "tick": {
@@ -4052,9 +4052,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 62.49302952033251616983,
-    "slowStochastic": 83.50991091670000000000,
-    "cciResult": 262.59453988028224269912
+    "fastStochasticValue": 62.49302952033251616983,
+    "slowStochasticValue": 83.50991091670000000000,
+    "cciResultValue": 262.59453988028224269912
   },
   {
     "tick": {
@@ -4079,9 +4079,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 79.86109713130780626454,
-    "slowStochastic": 77.38545737833333333333,
-    "cciResult": 234.06304537397902095978
+    "fastStochasticValue": 79.86109713130780626454,
+    "slowStochasticValue": 77.38545737833333333333,
+    "cciResultValue": 234.06304537397902095978
   },
   {
     "tick": {
@@ -4106,9 +4106,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 67.57186528393324029932,
-    "slowStochastic": 69.97533064520000000000,
-    "cciResult": 211.32369264107349794737
+    "fastStochasticValue": 67.57186528393324029932,
+    "slowStochasticValue": 69.97533064520000000000,
+    "cciResultValue": 211.32369264107349794737
   },
   {
     "tick": {
@@ -4133,9 +4133,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 86.22412678468744446619,
-    "slowStochastic": 77.88569639996666666667,
-    "cciResult": 196.10144157001560862671
+    "fastStochasticValue": 86.22412678468744446619,
+    "slowStochasticValue": 77.88569639996666666667,
+    "cciResultValue": 196.10144157001560862671
   },
   {
     "tick": {
@@ -4160,9 +4160,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 84.32938910452168068432,
-    "slowStochastic": 79.37512705770000000000,
-    "cciResult": 143.80681117720783325199
+    "fastStochasticValue": 84.32938910452168068432,
+    "slowStochasticValue": 79.37512705770000000000,
+    "cciResultValue": 143.80681117720783325199
   },
   {
     "tick": {
@@ -4187,9 +4187,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 83.08006389606564952156,
-    "slowStochastic": 84.54452659510000000000,
-    "cciResult": 110.28119264020529105343
+    "fastStochasticValue": 83.08006389606564952156,
+    "slowStochasticValue": 84.54452659510000000000,
+    "cciResultValue": 110.28119264020529105343
   },
   {
     "tick": {
@@ -4214,9 +4214,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 68.64503423250611155509,
-    "slowStochastic": 78.68482907770000000000,
-    "cciResult": 83.24576190877747240668
+    "fastStochasticValue": 68.64503423250611155509,
+    "slowStochasticValue": 78.68482907770000000000,
+    "cciResultValue": 83.24576190877747240668
   },
   {
     "tick": {
@@ -4241,9 +4241,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 68.71282399882129114990,
-    "slowStochastic": 73.47930737580000000000,
-    "cciResult": 73.04193684950161140573
+    "fastStochasticValue": 68.71282399882129114990,
+    "slowStochasticValue": 73.47930737580000000000,
+    "cciResultValue": 73.04193684950161140573
   },
   {
     "tick": {
@@ -4268,9 +4268,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 81.20607608338160277743,
-    "slowStochastic": 72.85464477156666666667,
-    "cciResult": 88.72555307081462442736
+    "fastStochasticValue": 81.20607608338160277743,
+    "slowStochasticValue": 72.85464477156666666667,
+    "cciResultValue": 88.72555307081462442736
   },
   {
     "tick": {
@@ -4295,9 +4295,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 82.35604539343213354933,
-    "slowStochastic": 77.42498182520000000000,
-    "cciResult": 77.37099409630712211786
+    "fastStochasticValue": 82.35604539343213354933,
+    "slowStochasticValue": 77.42498182520000000000,
+    "cciResultValue": 77.37099409630712211786
   },
   {
     "tick": {
@@ -4322,9 +4322,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 68.38600236245153541854,
-    "slowStochastic": 77.31604127976666666667,
-    "cciResult": 44.69035414112322106872
+    "fastStochasticValue": 68.38600236245153541854,
+    "slowStochasticValue": 77.31604127976666666667,
+    "cciResultValue": 44.69035414112322106872
   },
   {
     "tick": {
@@ -4349,9 +4349,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 81.00497227612453713037,
-    "slowStochastic": 77.24900667733333333333,
-    "cciResult": 65.70706192523113598165
+    "fastStochasticValue": 81.00497227612453713037,
+    "slowStochasticValue": 77.24900667733333333333,
+    "cciResultValue": 65.70706192523113598165
   },
   {
     "tick": {
@@ -4376,9 +4376,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 73.88751881808127232768,
-    "slowStochastic": 74.42616448556666666667,
-    "cciResult": 48.49387984894070370448
+    "fastStochasticValue": 73.88751881808127232768,
+    "slowStochasticValue": 74.42616448556666666667,
+    "cciResultValue": 48.49387984894070370448
   },
   {
     "tick": {
@@ -4403,9 +4403,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 78.38884440378809302427,
-    "slowStochastic": 77.76044516600000000000,
-    "cciResult": 48.93540763414814650053
+    "fastStochasticValue": 78.38884440378809302427,
+    "slowStochasticValue": 77.76044516600000000000,
+    "cciResultValue": 48.93540763414814650053
   },
   {
     "tick": {
@@ -4430,9 +4430,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 75.31104685260761376097,
-    "slowStochastic": 75.86247002483333333333,
-    "cciResult": 33.88772717888165890143
+    "fastStochasticValue": 75.31104685260761376097,
+    "slowStochasticValue": 75.86247002483333333333,
+    "cciResultValue": 33.88772717888165890143
   },
   {
     "tick": {
@@ -4457,9 +4457,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 55.66547058350682109216,
-    "slowStochastic": 69.78845394663333333333,
-    "cciResult": 10.01015611132081071192
+    "fastStochasticValue": 55.66547058350682109216,
+    "slowStochasticValue": 69.78845394663333333333,
+    "cciResultValue": 10.01015611132081071192
   },
   {
     "tick": {
@@ -4486,9 +4486,9 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "fastStochastic": 55.66152134101197880700,
-    "slowStochastic": 62.21267959236666666667,
-    "cciResult": -1.26223579979598643202
+    "fastStochasticValue": 55.66152134101197880700,
+    "slowStochasticValue": 62.21267959236666666667,
+    "cciResultValue": -1.26223579979598643202
   },
   {
     "tick": {
@@ -4513,9 +4513,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 62.57891637854942600477,
-    "slowStochastic": 57.96863610103333333333,
-    "cciResult": -38.07331518065123072880
+    "fastStochasticValue": 62.57891637854942600477,
+    "slowStochasticValue": 57.96863610103333333333,
+    "cciResultValue": -38.07331518065123072880
   },
   {
     "tick": {
@@ -4540,9 +4540,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 62.94394862133565650121,
-    "slowStochastic": 60.39479544696666666667,
-    "cciResult": -44.61042803033611138507
+    "fastStochasticValue": 62.94394862133565650121,
+    "slowStochasticValue": 60.39479544696666666667,
+    "cciResultValue": -44.61042803033611138507
   },
   {
     "tick": {
@@ -4567,9 +4567,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 25.10564861490160059139,
-    "slowStochastic": 50.20950453826666666667,
-    "cciResult": -109.65113072333695586470
+    "fastStochasticValue": 25.10564861490160059139,
+    "slowStochasticValue": 50.20950453826666666667,
+    "cciResultValue": -109.65113072333695586470
   },
   {
     "tick": {
@@ -4594,9 +4594,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 25.10564861490160059139,
-    "slowStochastic": 37.71841528370000000000,
-    "cciResult": -61.92793301262826007757
+    "fastStochasticValue": 25.10564861490160059139,
+    "slowStochasticValue": 37.71841528370000000000,
+    "cciResultValue": -61.92793301262826007757
   },
   {
     "tick": {
@@ -4621,9 +4621,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 53.38176333679671677183,
-    "slowStochastic": 34.53102018886666666667,
-    "cciResult": 28.29482215685856291608
+    "fastStochasticValue": 53.38176333679671677183,
+    "slowStochasticValue": 34.53102018886666666667,
+    "cciResultValue": 28.29482215685856291608
   },
   {
     "tick": {
@@ -4648,9 +4648,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 55.32519910868256199007,
-    "slowStochastic": 44.60420368680000000000,
-    "cciResult": 20.64585077259696697177
+    "fastStochasticValue": 55.32519910868256199007,
+    "slowStochasticValue": 44.60420368680000000000,
+    "cciResultValue": 20.64585077259696697177
   },
   {
     "tick": {
@@ -4675,9 +4675,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 43.76348242893582272784,
-    "slowStochastic": 50.82348162480000000000,
-    "cciResult": 47.47321773706360023110
+    "fastStochasticValue": 43.76348242893582272784,
+    "slowStochasticValue": 50.82348162480000000000,
+    "cciResultValue": 47.47321773706360023110
   },
   {
     "tick": {
@@ -4702,9 +4702,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 73.89018819167406900584,
-    "slowStochastic": 57.65962324310000000000,
-    "cciResult": 32.10312990327248185418
+    "fastStochasticValue": 73.89018819167406900584,
+    "slowStochasticValue": 57.65962324310000000000,
+    "cciResultValue": 32.10312990327248185418
   },
   {
     "tick": {
@@ -4729,9 +4729,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 0E-20,
-    "slowStochastic": 39.21789020686666666667,
-    "cciResult": -161.43850104012478544737
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 39.21789020686666666667,
+    "cciResultValue": -161.43850104012478544737
   },
   {
     "tick": {
@@ -4756,9 +4756,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 0E-20,
-    "slowStochastic": 24.63006273056666666667,
-    "cciResult": -185.41821484939609949861
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 24.63006273056666666667,
+    "cciResultValue": -185.41821484939609949861
   },
   {
     "tick": {
@@ -4783,9 +4783,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 54.65742324298531835965,
-    "slowStochastic": 18.21914108100000000000,
-    "cciResult": -62.50895119629775768632
+    "fastStochasticValue": 54.65742324298531835965,
+    "slowStochasticValue": 18.21914108100000000000,
+    "cciResultValue": -62.50895119629775768632
   },
   {
     "tick": {
@@ -4810,9 +4810,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 1.72413796611177171245,
-    "slowStochastic": 18.79385373636666666667,
-    "cciResult": -148.19028417657391768543
+    "fastStochasticValue": 1.72413796611177171245,
+    "slowStochasticValue": 18.79385373636666666667,
+    "cciResultValue": -148.19028417657391768543
   },
   {
     "tick": {
@@ -4839,9 +4839,9 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "fastStochastic": 77.37515124228188172906,
-    "slowStochastic": 44.58557081713333333333,
-    "cciResult": 58.23815448646912206184
+    "fastStochasticValue": 77.37515124228188172906,
+    "slowStochasticValue": 44.58557081713333333333,
+    "cciResultValue": 58.23815448646912206184
   },
   {
     "tick": {
@@ -4866,9 +4866,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 22.91494885316203394343,
-    "slowStochastic": 34.00474602053333333333,
-    "cciResult": -86.48893515883966583062
+    "fastStochasticValue": 22.91494885316203394343,
+    "slowStochasticValue": 34.00474602053333333333,
+    "cciResultValue": -86.48893515883966583062
   },
   {
     "tick": {
@@ -4893,9 +4893,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 61.06685018126773910407,
-    "slowStochastic": 53.78565009223333333333,
-    "cciResult": 4.95074281604001977908
+    "fastStochasticValue": 61.06685018126773910407,
+    "slowStochasticValue": 53.78565009223333333333,
+    "cciResultValue": 4.95074281604001977908
   },
   {
     "tick": {
@@ -4920,9 +4920,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 89.27902057412931270895,
-    "slowStochastic": 57.75360653620000000000,
-    "cciResult": 115.77977115776298232539
+    "fastStochasticValue": 89.27902057412931270895,
+    "slowStochasticValue": 57.75360653620000000000,
+    "cciResultValue": 115.77977115776298232539
   },
   {
     "tick": {
@@ -4949,9 +4949,9 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "fastStochastic": 39.67956477015447635092,
-    "slowStochastic": 63.34181184186666666667,
-    "cciResult": -23.45969437342983678772
+    "fastStochasticValue": 39.67956477015447635092,
+    "slowStochasticValue": 63.34181184186666666667,
+    "cciResultValue": -23.45969437342983678772
   },
   {
     "tick": {
@@ -4976,9 +4976,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 53.44837374539807964469,
-    "slowStochastic": 60.80231969656666666667,
-    "cciResult": 4.28576920928626764748
+    "fastStochasticValue": 53.44837374539807964469,
+    "slowStochasticValue": 60.80231969656666666667,
+    "cciResultValue": 4.28576920928626764748
   },
   {
     "tick": {
@@ -5003,9 +5003,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 41.66354300866220016847,
-    "slowStochastic": 44.93049384140000000000,
-    "cciResult": -46.14245812766879996043
+    "fastStochasticValue": 41.66354300866220016847,
+    "slowStochasticValue": 44.93049384140000000000,
+    "cciResultValue": -46.14245812766879996043
   },
   {
     "tick": {
@@ -5030,9 +5030,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 29.75967357761585726319,
-    "slowStochastic": 41.62386344390000000000,
-    "cciResult": -106.63589047790259897800
+    "fastStochasticValue": 29.75967357761585726319,
+    "slowStochasticValue": 41.62386344390000000000,
+    "cciResultValue": -106.63589047790259897800
   },
   {
     "tick": {
@@ -5057,9 +5057,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 53.56741226115050160805,
-    "slowStochastic": 41.66354294913333333333,
-    "cciResult": -39.95713396136413268502
+    "fastStochasticValue": 53.56741226115050160805,
+    "slowStochasticValue": 41.66354294913333333333,
+    "cciResultValue": -39.95713396136413268502
   },
   {
     "tick": {
@@ -5084,9 +5084,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 67.59298188696553569065,
-    "slowStochastic": 50.30668924190000000000,
-    "cciResult": 13.88127821884253481896
+    "fastStochasticValue": 67.59298188696553569065,
+    "slowStochasticValue": 50.30668924190000000000,
+    "cciResultValue": 13.88127821884253481896
   },
   {
     "tick": {
@@ -5111,9 +5111,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 73.80088136034997817364,
-    "slowStochastic": 64.98709183616666666667,
-    "cciResult": 32.64271803519719473543
+    "fastStochasticValue": 73.80088136034997817364,
+    "slowStochasticValue": 64.98709183616666666667,
+    "cciResultValue": 32.64271803519719473543
   },
   {
     "tick": {
@@ -5138,9 +5138,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 47.41307414733473396846,
-    "slowStochastic": 62.93564579823333333333,
-    "cciResult": 123.13452083508604867006
+    "fastStochasticValue": 47.41307414733473396846,
+    "slowStochasticValue": 62.93564579823333333333,
+    "cciResultValue": 123.13452083508604867006
   },
   {
     "tick": {
@@ -5165,9 +5165,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 91.76722801894288311236,
-    "slowStochastic": 70.99372784220000000000,
-    "cciResult": 186.99369163497042677885
+    "fastStochasticValue": 91.76722801894288311236,
+    "slowStochasticValue": 70.99372784220000000000,
+    "cciResultValue": 186.99369163497042677885
   },
   {
     "tick": {
@@ -5192,9 +5192,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 61.72839518027400994840,
-    "slowStochastic": 66.96956578220000000000,
-    "cciResult": 134.28054202293758513808
+    "fastStochasticValue": 61.72839518027400994840,
+    "slowStochasticValue": 66.96956578220000000000,
+    "cciResultValue": 134.28054202293758513808
   },
   {
     "tick": {
@@ -5219,9 +5219,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 45.26748981258502844667,
-    "slowStochastic": 66.25437100393333333333,
-    "cciResult": 72.53862391802662762783
+    "fastStochasticValue": 45.26748981258502844667,
+    "slowStochasticValue": 66.25437100393333333333,
+    "cciResultValue": 72.53862391802662762783
   },
   {
     "tick": {
@@ -5246,9 +5246,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 65.84362152562561061163,
-    "slowStochastic": 57.61316883950000000000,
-    "cciResult": 79.71558025739231522183
+    "fastStochasticValue": 65.84362152562561061163,
+    "slowStochasticValue": 57.61316883950000000000,
+    "cciResultValue": 79.71558025739231522183
   },
   {
     "tick": {
@@ -5273,9 +5273,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 79.49931422674765420775,
-    "slowStochastic": 63.53680852166666666667,
-    "cciResult": 118.77719756160910262698
+    "fastStochasticValue": 79.49931422674765420775,
+    "slowStochasticValue": 63.53680852166666666667,
+    "cciResultValue": 118.77719756160910262698
   },
   {
     "tick": {
@@ -5300,9 +5300,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 79.27677344484400210257,
-    "slowStochastic": 74.87323639906666666667,
-    "cciResult": 101.75625290797985705405
+    "fastStochasticValue": 79.27677344484400210257,
+    "slowStochasticValue": 74.87323639906666666667,
+    "cciResultValue": 101.75625290797985705405
   },
   {
     "tick": {
@@ -5327,9 +5327,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 95.30386754487042551353,
-    "slowStochastic": 84.69331840550000000000,
-    "cciResult": 156.27778611053489300508
+    "fastStochasticValue": 95.30386754487042551353,
+    "slowStochasticValue": 84.69331840550000000000,
+    "cciResultValue": 156.27778611053489300508
   },
   {
     "tick": {
@@ -5354,9 +5354,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 47.31861208356138505574,
-    "slowStochastic": 73.96641769110000000000,
-    "cciResult": 78.63841266230816054942
+    "fastStochasticValue": 47.31861208356138505574,
+    "slowStochasticValue": 73.96641769110000000000,
+    "cciResultValue": 78.63841266230816054942
   },
   {
     "tick": {
@@ -5381,9 +5381,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 91.18816037347356555238,
-    "slowStochastic": 77.93688000063333333333,
-    "cciResult": 131.96430744388858482515
+    "fastStochasticValue": 91.18816037347356555238,
+    "slowStochasticValue": 77.93688000063333333333,
+    "cciResultValue": 131.96430744388858482515
   },
   {
     "tick": {
@@ -5408,9 +5408,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 65.93059950929952565292,
-    "slowStochastic": 68.14579065543333333333,
-    "cciResult": 95.06669393998098063420
+    "fastStochasticValue": 65.93059950929952565292,
+    "slowStochasticValue": 68.14579065543333333333,
+    "cciResultValue": 95.06669393998098063420
   },
   {
     "tick": {
@@ -5435,9 +5435,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 70.97791813322851293351,
-    "slowStochastic": 76.03222600533333333333,
-    "cciResult": 97.26876139752722198795
+    "fastStochasticValue": 70.97791813322851293351,
+    "slowStochasticValue": 76.03222600533333333333,
+    "cciResultValue": 97.26876139752722198795
   },
   {
     "tick": {
@@ -5462,9 +5462,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 47.31861208356138505574,
-    "slowStochastic": 61.40904324203333333333,
-    "cciResult": 12.50005188344751503712
+    "fastStochasticValue": 47.31861208356138505574,
+    "slowStochasticValue": 61.40904324203333333333,
+    "cciResultValue": 12.50005188344751503712
   },
   {
     "tick": {
@@ -5489,9 +5489,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 78.86435348311755555943,
-    "slowStochastic": 65.72029456663333333333,
-    "cciResult": 86.60823544147160368829
+    "fastStochasticValue": 78.86435348311755555943,
+    "slowStochasticValue": 65.72029456663333333333,
+    "cciResultValue": 86.60823544147160368829
   },
   {
     "tick": {
@@ -5516,9 +5516,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 56.78233451920110690663,
-    "slowStochastic": 60.98843336196666666667,
-    "cciResult": 34.40787821616170629304
+    "fastStochasticValue": 56.78233451920110690663,
+    "slowStochasticValue": 60.98843336196666666667,
+    "cciResultValue": 34.40787821616170629304
   },
   {
     "tick": {
@@ -5543,9 +5543,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 76.92307691952662721839,
-    "slowStochastic": 70.85658830726666666667,
-    "cciResult": 99.75233173507764196987
+    "fastStochasticValue": 76.92307691952662721839,
+    "slowStochasticValue": 70.85658830726666666667,
+    "cciResultValue": 99.75233173507764196987
   },
   {
     "tick": {
@@ -5570,9 +5570,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 86.20689655172413793103,
-    "slowStochastic": 73.30410266350000000000,
-    "cciResult": 371.47857407788585769470
+    "fastStochasticValue": 86.20689655172413793103,
+    "slowStochasticValue": 73.30410266350000000000,
+    "cciResultValue": 371.47857407788585769470
   },
   {
     "tick": {
@@ -5597,9 +5597,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 72.14285715000000000000,
-    "slowStochastic": 78.42427687376666666667,
-    "cciResult": 298.82636688539557906653
+    "fastStochasticValue": 72.14285715000000000000,
+    "slowStochasticValue": 78.42427687376666666667,
+    "cciResultValue": 298.82636688539557906653
   },
   {
     "tick": {
@@ -5624,9 +5624,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 99.99999997394125250466,
-    "slowStochastic": 86.11658455856666666667,
-    "cciResult": 305.60504722593127981978
+    "fastStochasticValue": 99.99999997394125250466,
+    "slowStochasticValue": 86.11658455856666666667,
+    "cciResultValue": 305.60504722593127981978
   },
   {
     "tick": {
@@ -5651,9 +5651,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 89.65517234197384064606,
-    "slowStochastic": 87.26600982196666666667,
-    "cciResult": 180.31918044831841326879
+    "fastStochasticValue": 89.65517234197384064606,
+    "slowStochasticValue": 87.26600982196666666667,
+    "cciResultValue": 180.31918044831841326879
   },
   {
     "tick": {
@@ -5678,9 +5678,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 78.17629006984173519168,
-    "slowStochastic": 89.27715412860000000000,
-    "cciResult": 143.92338968356909654171
+    "fastStochasticValue": 78.17629006984173519168,
+    "slowStochasticValue": 89.27715412860000000000,
+    "cciResultValue": 143.92338968356909654171
   },
   {
     "tick": {
@@ -5705,9 +5705,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 75.86206895885850178175,
-    "slowStochastic": 81.23117712356666666667,
-    "cciResult": 109.95767157865966895322
+    "fastStochasticValue": 75.86206895885850178175,
+    "slowStochasticValue": 81.23117712356666666667,
+    "cciResultValue": 109.95767157865966895322
   },
   {
     "tick": {
@@ -5732,9 +5732,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 65.51724136979785968822,
-    "slowStochastic": 73.18520013283333333333,
-    "cciResult": 71.24286787085412174355
+    "fastStochasticValue": 65.51724136979785968822,
+    "slowStochasticValue": 73.18520013283333333333,
+    "cciResultValue": 71.24286787085412174355
   },
   {
     "tick": {
@@ -5759,9 +5759,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 82.06896551229488703787,
-    "slowStochastic": 74.48275861366666666667,
-    "cciResult": 88.10753792053030546135
+    "fastStochasticValue": 82.06896551229488703787,
+    "slowStochasticValue": 74.48275861366666666667,
+    "cciResultValue": 88.10753792053030546135
   },
   {
     "tick": {
@@ -5786,9 +5786,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 90.58103448016028537384,
-    "slowStochastic": 79.38908045410000000000,
-    "cciResult": 91.39766904459233844876
+    "fastStochasticValue": 90.58103448016028537384,
+    "slowStochasticValue": 79.38908045410000000000,
+    "cciResultValue": 91.39766904459233844876
   },
   {
     "tick": {
@@ -5813,9 +5813,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 81.02112098569851943258,
-    "slowStochastic": 84.55704032606666666667,
-    "cciResult": 72.37526966430717891384
+    "fastStochasticValue": 81.02112098569851943258,
+    "slowStochasticValue": 84.55704032606666666667,
+    "cciResultValue": 72.37526966430717891384
   },
   {
     "tick": {
@@ -5840,9 +5840,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 77.08210836008877818274,
-    "slowStochastic": 82.89475460863333333333,
-    "cciResult": 59.28741949472004833736
+    "fastStochasticValue": 77.08210836008877818274,
+    "slowStochasticValue": 82.89475460863333333333,
+    "cciResultValue": 59.28741949472004833736
   },
   {
     "tick": {
@@ -5867,9 +5867,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 67.05553076762761863769,
-    "slowStochastic": 75.05292003780000000000,
-    "cciResult": 45.24099264261015188209
+    "fastStochasticValue": 67.05553076762761863769,
+    "slowStochasticValue": 75.05292003780000000000,
+    "cciResultValue": 45.24099264261015188209
   },
   {
     "tick": {
@@ -5894,9 +5894,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 72.88704023307495797790,
-    "slowStochastic": 72.34155978693333333333,
-    "cciResult": 37.24727910558032246331
+    "fastStochasticValue": 72.88704023307495797790,
+    "slowStochasticValue": 72.34155978693333333333,
+    "cciResultValue": 37.24727910558032246331
   },
   {
     "tick": {
@@ -5921,9 +5921,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 69.27244407855393833225,
-    "slowStochastic": 69.73833835976666666667,
-    "cciResult": 38.99377889879041805085
+    "fastStochasticValue": 69.27244407855393833225,
+    "slowStochasticValue": 69.73833835976666666667,
+    "cciResultValue": 38.99377889879041805085
   },
   {
     "tick": {
@@ -5948,9 +5948,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 61.21421153500457283557,
-    "slowStochastic": 67.79123194886666666667,
-    "cciResult": 10.55109803521188874935
+    "fastStochasticValue": 61.21421153500457283557,
+    "slowStochasticValue": 67.79123194886666666667,
+    "cciResultValue": 10.55109803521188874935
   },
   {
     "tick": {
@@ -5977,9 +5977,9 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "fastStochastic": 57.38882094609353794236,
-    "slowStochastic": 62.62515885323333333333,
-    "cciResult": -15.28728329819482362980
+    "fastStochasticValue": 57.38882094609353794236,
+    "slowStochasticValue": 62.62515885323333333333,
+    "cciResultValue": -15.28728329819482362980
   },
   {
     "tick": {
@@ -6004,9 +6004,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 68.99224806201550387597,
-    "slowStochastic": 62.53176018103333333333,
-    "cciResult": 4.72467585929117125873
+    "fastStochasticValue": 68.99224806201550387597,
+    "slowStochasticValue": 62.53176018103333333333,
+    "cciResultValue": 4.72467585929117125873
   },
   {
     "tick": {
@@ -6031,9 +6031,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 86.22093013953488372093,
-    "slowStochastic": 70.86733304920000000000,
-    "cciResult": 72.93981513109923993636
+    "fastStochasticValue": 86.22093013953488372093,
+    "slowStochasticValue": 70.86733304920000000000,
+    "cciResultValue": 72.93981513109923993636
   },
   {
     "tick": {
@@ -6058,9 +6058,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 78.49331790957827107509,
-    "slowStochastic": 77.90216537036666666667,
-    "cciResult": 53.76148742891709905064
+    "fastStochasticValue": 78.49331790957827107509,
+    "slowStochasticValue": 77.90216537036666666667,
+    "cciResultValue": 53.76148742891709905064
   },
   {
     "tick": {
@@ -6087,9 +6087,9 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "fastStochastic": 46.00058214563106796117,
-    "slowStochastic": 70.23827673156666666667,
-    "cciResult": -62.31060598142147364898
+    "fastStochasticValue": 46.00058214563106796117,
+    "slowStochasticValue": 70.23827673156666666667,
+    "cciResultValue": -62.31060598142147364898
   },
   {
     "tick": {
@@ -6114,9 +6114,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 48.33406272793581327498,
-    "slowStochastic": 57.60932092770000000000,
-    "cciResult": -7.28170544923762893375
+    "fastStochasticValue": 48.33406272793581327498,
+    "slowStochasticValue": 57.60932092770000000000,
+    "cciResultValue": -7.28170544923762893375
   },
   {
     "tick": {
@@ -6141,9 +6141,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 41.64843180160466812546,
-    "slowStochastic": 45.32769222506666666667,
-    "cciResult": 17.89180728693544030053
+    "fastStochasticValue": 41.64843180160466812546,
+    "slowStochasticValue": 45.32769222506666666667,
+    "cciResultValue": 17.89180728693544030053
   },
   {
     "tick": {
@@ -6168,9 +6168,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 51.13138280898167423033,
-    "slowStochastic": 47.03795911283333333333,
-    "cciResult": 4.86014092318899646771
+    "fastStochasticValue": 51.13138280898167423033,
+    "slowStochasticValue": 47.03795911283333333333,
+    "cciResultValue": 4.86014092318899646771
   },
   {
     "tick": {
@@ -6195,9 +6195,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 78.88063757994577750044,
-    "slowStochastic": 57.22015073016666666667,
-    "cciResult": 61.80190689835364471416
+    "fastStochasticValue": 78.88063757994577750044,
+    "slowStochasticValue": 57.22015073016666666667,
+    "cciResultValue": 61.80190689835364471416
   },
   {
     "tick": {
@@ -6222,9 +6222,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 78.90846911691032472560,
-    "slowStochastic": 69.64016316860000000000,
-    "cciResult": 47.13563652650617775571
+    "fastStochasticValue": 78.90846911691032472560,
+    "slowStochasticValue": 69.64016316860000000000,
+    "cciResultValue": 47.13563652650617775571
   },
   {
     "tick": {
@@ -6249,9 +6249,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 29.93065274855399189325,
-    "slowStochastic": 62.57325314846666666667,
-    "cciResult": -83.07088258005371535515
+    "fastStochasticValue": 29.93065274855399189325,
+    "slowStochasticValue": 62.57325314846666666667,
+    "cciResultValue": -83.07088258005371535515
   },
   {
     "tick": {
@@ -6276,9 +6276,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": -25.51229127840779705789,
-    "slowStochastic": 27.77561019570000000000,
-    "cciResult": -166.45709002632096556013
+    "fastStochasticValue": -25.51229127840779705789,
+    "slowStochasticValue": 27.77561019570000000000,
+    "cciResultValue": -166.45709002632096556013
   },
   {
     "tick": {
@@ -6303,9 +6303,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 7.71285879635919032740,
-    "slowStochastic": 4.04374008883333333333,
-    "cciResult": -300.51677218096033092082
+    "fastStochasticValue": 7.71285879635919032740,
+    "slowStochasticValue": 4.04374008883333333333,
+    "cciResultValue": -300.51677218096033092082
   },
   {
     "tick": {
@@ -6330,9 +6330,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 23.49178339031653248042,
-    "slowStochastic": 1.89745030276666666667,
-    "cciResult": -197.46982815938118901569
+    "fastStochasticValue": 23.49178339031653248042,
+    "slowStochasticValue": 1.89745030276666666667,
+    "cciResultValue": -197.46982815938118901569
   },
   {
     "tick": {
@@ -6357,9 +6357,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 15.25800130142274181096,
-    "slowStochastic": 15.48754782936666666667,
-    "cciResult": -170.19487443701115485669
+    "fastStochasticValue": 15.25800130142274181096,
+    "slowStochasticValue": 15.48754782936666666667,
+    "cciResultValue": -170.19487443701115485669
   },
   {
     "tick": {
@@ -6384,9 +6384,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 19.12062056909672438513,
-    "slowStochastic": 19.29013508693333333333,
-    "cciResult": -157.55738471074099085667
+    "fastStochasticValue": 19.12062056909672438513,
+    "slowStochasticValue": 19.29013508693333333333,
+    "cciResultValue": -157.55738471074099085667
   },
   {
     "tick": {
@@ -6411,9 +6411,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 26.12771589279805889489,
-    "slowStochastic": 20.16877925443333333333,
-    "cciResult": -104.27630107055397395768
+    "fastStochasticValue": 26.12771589279805889489,
+    "slowStochasticValue": 20.16877925443333333333,
+    "cciResultValue": -104.27630107055397395768
   },
   {
     "tick": {
@@ -6438,9 +6438,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 18.11017547149001874931,
-    "slowStochastic": 21.11950397780000000000,
-    "cciResult": -100.92801425139171769248
+    "fastStochasticValue": 18.11017547149001874931,
+    "slowStochasticValue": 21.11950397780000000000,
+    "cciResultValue": -100.92801425139171769248
   },
   {
     "tick": {
@@ -6465,9 +6465,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 30.51726039483842505790,
-    "slowStochastic": 24.91838391970000000000,
-    "cciResult": -83.12474089162713713161
+    "fastStochasticValue": 30.51726039483842505790,
+    "slowStochasticValue": 24.91838391970000000000,
+    "cciResultValue": -83.12474089162713713161
   },
   {
     "tick": {
@@ -6492,9 +6492,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 41.17863314216389103342,
-    "slowStochastic": 29.93535633616666666667,
-    "cciResult": -44.04366376442579047829
+    "fastStochasticValue": 41.17863314216389103342,
+    "slowStochasticValue": 29.93535633616666666667,
+    "cciResultValue": -44.04366376442579047829
   },
   {
     "tick": {
@@ -6519,9 +6519,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 42.64916731002536671446,
-    "slowStochastic": 38.11502028233333333333,
-    "cciResult": -31.69639802630856247221
+    "fastStochasticValue": 42.64916731002536671446,
+    "slowStochasticValue": 38.11502028233333333333,
+    "cciResultValue": -31.69639802630856247221
   },
   {
     "tick": {
@@ -6546,9 +6546,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 25.10475295025918164773,
-    "slowStochastic": 36.31085113413333333333,
-    "cciResult": -50.50296925613225715211
+    "fastStochasticValue": 25.10475295025918164773,
+    "slowStochasticValue": 36.31085113413333333333,
+    "cciResultValue": -50.50296925613225715211
   },
   {
     "tick": {
@@ -6575,9 +6575,9 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "fastStochastic": 51.48713594345617872805,
-    "slowStochastic": 39.74701873456666666667,
-    "cciResult": 3.51247940047840072634
+    "fastStochasticValue": 51.48713594345617872805,
+    "slowStochasticValue": 39.74701873456666666667,
+    "cciResultValue": 3.51247940047840072634
   },
   {
     "tick": {
@@ -6602,9 +6602,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 62.81145407214577910004,
-    "slowStochastic": 46.46778098863333333333,
-    "cciResult": 29.35843361845691429293
+    "fastStochasticValue": 62.81145407214577910004,
+    "slowStochasticValue": 46.46778098863333333333,
+    "cciResultValue": 29.35843361845691429293
   },
   {
     "tick": {
@@ -6629,9 +6629,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 49.78750141316474525846,
-    "slowStochastic": 54.69536380960000000000,
-    "cciResult": 3.99294279746489338357
+    "fastStochasticValue": 49.78750141316474525846,
+    "slowStochasticValue": 54.69536380960000000000,
+    "cciResultValue": 3.99294279746489338357
   },
   {
     "tick": {
@@ -6656,9 +6656,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 0E-20,
-    "slowStochastic": 37.53298516176666666667,
-    "cciResult": -123.00192796314055396408
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 37.53298516176666666667,
+    "cciResultValue": -123.00192796314055396408
   },
   {
     "tick": {
@@ -6683,9 +6683,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 2.65399182406240650798,
-    "slowStochastic": 17.48049774573333333333,
-    "cciResult": -165.71603695087501492522
+    "fastStochasticValue": 2.65399182406240650798,
+    "slowStochasticValue": 17.48049774573333333333,
+    "cciResultValue": -165.71603695087501492522
   },
   {
     "tick": {
@@ -6710,9 +6710,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 16.89626301791264310889,
-    "slowStochastic": 6.51675161400000000000,
-    "cciResult": -127.64949265500014750477
+    "fastStochasticValue": 16.89626301791264310889,
+    "slowStochasticValue": 6.51675161400000000000,
+    "cciResultValue": -127.64949265500014750477
   },
   {
     "tick": {
@@ -6737,9 +6737,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 6.67210776791063004755,
-    "slowStochastic": 8.74078753663333333333,
-    "cciResult": -136.73523612978355275484
+    "fastStochasticValue": 6.67210776791063004755,
+    "slowStochasticValue": 8.74078753663333333333,
+    "cciResultValue": -136.73523612978355275484
   },
   {
     "tick": {
@@ -6764,9 +6764,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 30.99610278486912860803,
-    "slowStochastic": 18.18815785690000000000,
-    "cciResult": -96.97252076783458931201
+    "fastStochasticValue": 30.99610278486912860803,
+    "slowStochasticValue": 18.18815785690000000000,
+    "cciResultValue": -96.97252076783458931201
   },
   {
     "tick": {
@@ -6791,9 +6791,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 16.56383003764532633473,
-    "slowStochastic": 18.07734686346666666667,
-    "cciResult": -96.98092804201523970300
+    "fastStochasticValue": 16.56383003764532633473,
+    "slowStochasticValue": 18.07734686346666666667,
+    "cciResultValue": -96.98092804201523970300
   },
   {
     "tick": {
@@ -6818,9 +6818,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": -1.42519854363962180792,
-    "slowStochastic": 15.37824475963333333333,
-    "cciResult": -119.31943664752260287258
+    "fastStochasticValue": -1.42519854363962180792,
+    "slowStochasticValue": 15.37824475963333333333,
+    "cciResultValue": -119.31943664752260287258
   },
   {
     "tick": {
@@ -6845,9 +6845,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 0.56273908067028757120,
-    "slowStochastic": 5.23379019156666666667,
-    "cciResult": -130.49382135967625987117
+    "fastStochasticValue": 0.56273908067028757120,
+    "slowStochasticValue": 5.23379019156666666667,
+    "cciResultValue": -130.49382135967625987117
   },
   {
     "tick": {
@@ -6872,9 +6872,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 11.73705384528667919212,
-    "slowStochastic": 3.62486479410000000000,
-    "cciResult": -104.99062175956241667872
+    "fastStochasticValue": 11.73705384528667919212,
+    "slowStochasticValue": 3.62486479410000000000,
+    "cciResultValue": -104.99062175956241667872
   },
   {
     "tick": {
@@ -6899,9 +6899,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": -0.13494305177084330555,
-    "slowStochastic": 4.05494995806666666667,
-    "cciResult": -114.08675165861210736554
+    "fastStochasticValue": -0.13494305177084330555,
+    "slowStochasticValue": 4.05494995806666666667,
+    "cciResultValue": -114.08675165861210736554
   },
   {
     "tick": {
@@ -6926,9 +6926,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 2.56045211247316834477,
-    "slowStochastic": 4.72085430200000000000,
-    "cciResult": -107.15447177709273475498
+    "fastStochasticValue": 2.56045211247316834477,
+    "slowStochasticValue": 4.72085430200000000000,
+    "cciResultValue": -107.15447177709273475498
   },
   {
     "tick": {
@@ -6953,9 +6953,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 12.31519390688555097164,
-    "slowStochastic": 4.91356765586666666667,
-    "cciResult": -84.70992967661436757318
+    "fastStochasticValue": 12.31519390688555097164,
+    "slowStochasticValue": 4.91356765586666666667,
+    "cciResultValue": -84.70992967661436757318
   },
   {
     "tick": {
@@ -6980,9 +6980,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 12.84009234397073764132,
-    "slowStochastic": 9.23857945443333333333,
-    "cciResult": -65.57057193916172369744
+    "fastStochasticValue": 12.84009234397073764132,
+    "slowStochasticValue": 9.23857945443333333333,
+    "cciResultValue": -65.57057193916172369744
   },
   {
     "tick": {
@@ -7007,9 +7007,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 21.64695006396997252376,
-    "slowStochastic": 15.60074543826666666667,
-    "cciResult": -43.92083414692967895151
+    "fastStochasticValue": 21.64695006396997252376,
+    "slowStochasticValue": 15.60074543826666666667,
+    "cciResultValue": -43.92083414692967895151
   },
   {
     "tick": {
@@ -7034,9 +7034,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 20.36639370477193791719,
-    "slowStochastic": 18.28447870423333333333,
-    "cciResult": -46.16467180826871610639
+    "fastStochasticValue": 20.36639370477193791719,
+    "slowStochasticValue": 18.28447870423333333333,
+    "cciResultValue": -46.16467180826871610639
   },
   {
     "tick": {
@@ -7063,9 +7063,9 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "fastStochastic": 33.54212061672854459890,
-    "slowStochastic": 25.18515479516666666667,
-    "cciResult": 0.60221130402427389122
+    "fastStochasticValue": 33.54212061672854459890,
+    "slowStochasticValue": 25.18515479516666666667,
+    "cciResultValue": 0.60221130402427389122
   },
   {
     "tick": {
@@ -7090,9 +7090,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 23.32525849878031074261,
-    "slowStochastic": 25.74459094010000000000,
-    "cciResult": -3.13923048735550730503
+    "fastStochasticValue": 23.32525849878031074261,
+    "slowStochasticValue": 25.74459094010000000000,
+    "cciResultValue": -3.13923048735550730503
   },
   {
     "tick": {
@@ -7117,9 +7117,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": -5.05071435296640192780,
-    "slowStochastic": 17.27222158750000000000,
-    "cciResult": -197.41107308417298989169
+    "fastStochasticValue": -5.05071435296640192780,
+    "slowStochasticValue": 17.27222158750000000000,
+    "cciResultValue": -197.41107308417298989169
   },
   {
     "tick": {
@@ -7144,9 +7144,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 2.77031320754248521528,
-    "slowStochastic": 7.01495245113333333333,
-    "cciResult": -259.96091817873388719873
+    "fastStochasticValue": 2.77031320754248521528,
+    "slowStochasticValue": 7.01495245113333333333,
+    "cciResultValue": -259.96091817873388719873
   },
   {
     "tick": {
@@ -7171,9 +7171,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 18.67913412464783259229,
-    "slowStochastic": 5.46624432640000000000,
-    "cciResult": -189.03519298513098766923
+    "fastStochasticValue": 18.67913412464783259229,
+    "slowStochasticValue": 5.46624432640000000000,
+    "cciResultValue": -189.03519298513098766923
   },
   {
     "tick": {
@@ -7198,9 +7198,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 18.98070715253046734714,
-    "slowStochastic": 13.47671816156666666667,
-    "cciResult": -174.28788012687735508064
+    "fastStochasticValue": 18.98070715253046734714,
+    "slowStochasticValue": 13.47671816156666666667,
+    "cciResultValue": -174.28788012687735508064
   },
   {
     "tick": {
@@ -7225,9 +7225,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 1.52884615399315828404,
-    "slowStochastic": 13.06289581040000000000,
-    "cciResult": -182.40088903352434484660
+    "fastStochasticValue": 1.52884615399315828404,
+    "slowStochasticValue": 13.06289581040000000000,
+    "cciResultValue": -182.40088903352434484660
   },
   {
     "tick": {
@@ -7252,9 +7252,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 2.68997520952380952381,
-    "slowStochastic": 7.73317617200000000000,
-    "cciResult": -162.99512036118150671025
+    "fastStochasticValue": 2.68997520952380952381,
+    "slowStochasticValue": 7.73317617200000000000,
+    "cciResultValue": -162.99512036118150671025
   },
   {
     "tick": {
@@ -7279,9 +7279,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 38.09523808571428571429,
-    "slowStochastic": 14.10468648306666666667,
-    "cciResult": -94.00326022332094314929
+    "fastStochasticValue": 38.09523808571428571429,
+    "slowStochasticValue": 14.10468648306666666667,
+    "cciResultValue": -94.00326022332094314929
   },
   {
     "tick": {
@@ -7306,9 +7306,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 38.08571428571428571429,
-    "slowStochastic": 26.29030919366666666667,
-    "cciResult": -77.10578160236746417643
+    "fastStochasticValue": 38.08571428571428571429,
+    "slowStochasticValue": 26.29030919366666666667,
+    "cciResultValue": -77.10578160236746417643
   },
   {
     "tick": {
@@ -7333,9 +7333,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 38.09523809523809523810,
-    "slowStochastic": 38.09206348890000000000,
-    "cciResult": -60.49669530348659009429
+    "fastStochasticValue": 38.09523809523809523810,
+    "slowStochasticValue": 38.09206348890000000000,
+    "cciResultValue": -60.49669530348659009429
   },
   {
     "tick": {
@@ -7360,9 +7360,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 25.43044012380952380952,
-    "slowStochastic": 33.87046416826666666667,
-    "cciResult": -66.30108718189708955615
+    "fastStochasticValue": 25.43044012380952380952,
+    "slowStochasticValue": 33.87046416826666666667,
+    "cciResultValue": -66.30108718189708955615
   },
   {
     "tick": {
@@ -7387,9 +7387,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 30.07951593333333333333,
-    "slowStochastic": 31.20173138413333333333,
-    "cciResult": -65.86534556501128216260
+    "fastStochasticValue": 30.07951593333333333333,
+    "slowStochasticValue": 31.20173138413333333333,
+    "cciResultValue": -65.86534556501128216260
   },
   {
     "tick": {
@@ -7414,9 +7414,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 26.66666666666666666667,
-    "slowStochastic": 27.39220757460000000000,
-    "cciResult": -51.66711758809244067420
+    "fastStochasticValue": 26.66666666666666666667,
+    "slowStochasticValue": 27.39220757460000000000,
+    "cciResultValue": -51.66711758809244067420
   },
   {
     "tick": {
@@ -7441,9 +7441,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": -7.53966171818181818182,
-    "slowStochastic": 16.40217362726666666667,
-    "cciResult": -116.06203361369117079489
+    "fastStochasticValue": -7.53966171818181818182,
+    "slowStochasticValue": 16.40217362726666666667,
+    "cciResultValue": -116.06203361369117079489
   },
   {
     "tick": {
@@ -7468,9 +7468,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 23.62039920000000000000,
-    "slowStochastic": 14.24913471616666666667,
-    "cciResult": -70.84118069742123350332
+    "fastStochasticValue": 23.62039920000000000000,
+    "slowStochasticValue": 14.24913471616666666667,
+    "cciResultValue": -70.84118069742123350332
   },
   {
     "tick": {
@@ -7495,9 +7495,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 26.82825958181818181818,
-    "slowStochastic": 14.30299902120000000000,
-    "cciResult": -60.45609508326316003757
+    "fastStochasticValue": 26.82825958181818181818,
+    "slowStochasticValue": 14.30299902120000000000,
+    "cciResultValue": -60.45609508326316003757
   },
   {
     "tick": {
@@ -7522,9 +7522,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 19.36371250000000000000,
-    "slowStochastic": 23.27079042726666666667,
-    "cciResult": -60.85248023382299809612
+    "fastStochasticValue": 19.36371250000000000000,
+    "slowStochasticValue": 23.27079042726666666667,
+    "cciResultValue": -60.85248023382299809612
   },
   {
     "tick": {
@@ -7549,9 +7549,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 14.58874016363636363636,
-    "slowStochastic": 20.26023741516666666667,
-    "cciResult": -60.91079866962701431681
+    "fastStochasticValue": 14.58874016363636363636,
+    "slowStochasticValue": 20.26023741516666666667,
+    "cciResultValue": -60.91079866962701431681
   },
   {
     "tick": {
@@ -7578,9 +7578,9 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "fastStochastic": 38.02757503636363636364,
-    "slowStochastic": 23.99334256666666666667,
-    "cciResult": 1.19986034917127829492
+    "fastStochasticValue": 38.02757503636363636364,
+    "slowStochasticValue": 23.99334256666666666667,
+    "cciResultValue": 1.19986034917127829492
   },
   {
     "tick": {
@@ -7605,9 +7605,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 40.90909090909090909091,
-    "slowStochastic": 31.17513536970000000000,
-    "cciResult": 27.90353540795407087621
+    "fastStochasticValue": 40.90909090909090909091,
+    "slowStochasticValue": 31.17513536970000000000,
+    "cciResultValue": 27.90353540795407087621
   },
   {
     "tick": {
@@ -7632,9 +7632,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 33.51792768041237113402,
-    "slowStochastic": 37.48486454196666666667,
-    "cciResult": 16.88797825734291655858
+    "fastStochasticValue": 33.51792768041237113402,
+    "slowStochasticValue": 37.48486454196666666667,
+    "cciResultValue": 16.88797825734291655858
   },
   {
     "tick": {
@@ -7659,9 +7659,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 69.87606944041937937074,
-    "slowStochastic": 48.10102934330000000000,
-    "cciResult": 192.77713310216148178307
+    "fastStochasticValue": 69.87606944041937937074,
+    "slowStochasticValue": 48.10102934330000000000,
+    "cciResultValue": 192.77713310216148178307
   },
   {
     "tick": {
@@ -7686,9 +7686,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 58.37873913656733433810,
-    "slowStochastic": 53.92424541913333333333,
-    "cciResult": 102.69024895714195123096
+    "fastStochasticValue": 58.37873913656733433810,
+    "slowStochasticValue": 53.92424541913333333333,
+    "cciResultValue": 102.69024895714195123096
   },
   {
     "tick": {
@@ -7713,9 +7713,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 62.20842099297734505431,
-    "slowStochastic": 63.48774319000000000000,
-    "cciResult": 53.79586727122565488693
+    "fastStochasticValue": 62.20842099297734505431,
+    "slowStochasticValue": 63.48774319000000000000,
+    "cciResultValue": 53.79586727122565488693
   },
   {
     "tick": {
@@ -7740,9 +7740,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 69.95067936665701893373,
-    "slowStochastic": 63.51261316540000000000,
-    "cciResult": 106.01215289336201006617
+    "fastStochasticValue": 69.95067936665701893373,
+    "slowStochasticValue": 63.51261316540000000000,
+    "cciResultValue": 106.01215289336201006617
   },
   {
     "tick": {
@@ -7767,9 +7767,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 59.27978178388641945122,
-    "slowStochastic": 63.81296071450000000000,
-    "cciResult": 78.60663569272980091430
+    "fastStochasticValue": 59.27978178388641945122,
+    "slowStochasticValue": 63.81296071450000000000,
+    "cciResultValue": 78.60663569272980091430
   },
   {
     "tick": {
@@ -7794,9 +7794,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 51.98065072321505850816,
-    "slowStochastic": 60.40370395793333333333,
-    "cciResult": 0.79550701055797131721
+    "fastStochasticValue": 51.98065072321505850816,
+    "slowStochasticValue": 60.40370395793333333333,
+    "cciResultValue": 0.79550701055797131721
   },
   {
     "tick": {
@@ -7821,9 +7821,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 54.56292655524684531568,
-    "slowStochastic": 55.27445302076666666667,
-    "cciResult": 50.35150461202913390822
+    "fastStochasticValue": 54.56292655524684531568,
+    "slowStochasticValue": 55.27445302076666666667,
+    "cciResultValue": 50.35150461202913390822
   },
   {
     "tick": {
@@ -7848,9 +7848,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 65.75363860465759779771,
-    "slowStochastic": 57.43240529436666666667,
-    "cciResult": 121.20407936840360332700
+    "fastStochasticValue": 65.75363860465759779771,
+    "slowStochasticValue": 57.43240529436666666667,
+    "cciResultValue": 121.20407936840360332700
   },
   {
     "tick": {
@@ -7875,9 +7875,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 61.24030447192137193214,
-    "slowStochastic": 60.51895654393333333333,
-    "cciResult": 88.71458994245424171273
+    "fastStochasticValue": 61.24030447192137193214,
+    "slowStochasticValue": 60.51895654393333333333,
+    "cciResultValue": 88.71458994245424171273
   },
   {
     "tick": {
@@ -7902,9 +7902,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 60.95473541217156110505,
-    "slowStochastic": 62.64955949626666666667,
-    "cciResult": 75.26303119430013326614
+    "fastStochasticValue": 60.95473541217156110505,
+    "slowStochasticValue": 62.64955949626666666667,
+    "cciResultValue": 75.26303119430013326614
   },
   {
     "tick": {
@@ -7929,9 +7929,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 75.22788661383072955110,
-    "slowStochastic": 65.80764216596666666667,
-    "cciResult": 88.13862169417929802801
+    "fastStochasticValue": 75.22788661383072955110,
+    "slowStochasticValue": 65.80764216596666666667,
+    "cciResultValue": 88.13862169417929802801
   },
   {
     "tick": {
@@ -7956,9 +7956,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 74.14772012865644006975,
-    "slowStochastic": 70.11011405156666666667,
-    "cciResult": 100.97306734230240413952
+    "fastStochasticValue": 74.14772012865644006975,
+    "slowStochasticValue": 70.11011405156666666667,
+    "cciResultValue": 100.97306734230240413952
   },
   {
     "tick": {
@@ -7983,9 +7983,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 87.78016391418381177060,
-    "slowStochastic": 79.05192355223333333333,
-    "cciResult": 153.77457056972351529020
+    "fastStochasticValue": 87.78016391418381177060,
+    "slowStochasticValue": 79.05192355223333333333,
+    "cciResultValue": 153.77457056972351529020
   },
   {
     "tick": {
@@ -8010,9 +8010,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 47.46010183142105942841,
-    "slowStochastic": 69.79599529143333333333,
-    "cciResult": 77.20456867353514223624
+    "fastStochasticValue": 47.46010183142105942841,
+    "slowStochasticValue": 69.79599529143333333333,
+    "cciResultValue": 77.20456867353514223624
   },
   {
     "tick": {
@@ -8037,9 +8037,9 @@
       }
     },
     "positions": [],
-    "fastStochastic": 71.62491171377755941936,
-    "slowStochastic": 68.95505915313333333333,
-    "cciResult": 41.11206541943096640941
+    "fastStochasticValue": 71.62491171377755941936,
+    "slowStochasticValue": 68.95505915313333333333,
+    "cciResultValue": 41.11206541943096640941
   },
   {
     "tick": {
@@ -8064,8 +8064,8 @@
       }
     },
     "positions": [],
-    "fastStochastic": 80.14033948788803499840,
-    "slowStochastic": 66.40845101103333333333,
-    "cciResult": 119.12454829135604736812
+    "fastStochasticValue": 80.14033948788803499840,
+    "slowStochasticValue": 66.40845101103333333333,
+    "cciResultValue": 119.12454829135604736812
   }
 ]

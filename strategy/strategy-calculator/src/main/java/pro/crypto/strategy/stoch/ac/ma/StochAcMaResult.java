@@ -19,14 +19,14 @@ public class StochAcMaResult implements StrategyResult {
 
     private BigDecimal stopLose;
 
-    private BigDecimal acResult;
+    private BigDecimal acValue;
 
     private Boolean acIncreased;
 
-    private BigDecimal fastStochasticAc;
+    private BigDecimal fastStochasticAcValue;
 
-    private BigDecimal slowStochasticAc;
+    private BigDecimal slowStochasticAcValue;
 
-    private BigDecimal maResult;
+    private BigDecimal maValue;
 
 }

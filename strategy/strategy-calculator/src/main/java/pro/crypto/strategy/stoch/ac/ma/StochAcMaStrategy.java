@@ -402,13 +402,13 @@ public class StochAcMaStrategy implements Strategy<StochAcMaResult> {
     }
 
     private void addAcResult(ACResult acResult, StochAcMaResult stochAcMaResult) {
-        stochAcMaResult.setAcResult(acResult.getIndicatorValue());
+        stochAcMaResult.setAcValue(acResult.getIndicatorValue());
         stochAcMaResult.setAcIncreased(acResult.getIncreased());
     }
 
     private void addStochAcResult(StochResult stochAcResult, StochAcMaResult stochAcMaResult) {
-        stochAcMaResult.setFastStochasticAc(extractFastStochasticResult(stochAcResult));
-        stochAcMaResult.setSlowStochasticAc(extractSlowStochasticResult(stochAcResult));
+        stochAcMaResult.setFastStochasticAcValue(extractFastStochasticResult(stochAcResult));
+        stochAcMaResult.setSlowStochasticAcValue(extractSlowStochasticResult(stochAcResult));
     }
 
     private BigDecimal extractSlowStochasticResult(StochResult result) {
@@ -420,7 +420,7 @@ public class StochAcMaStrategy implements Strategy<StochAcMaResult> {
     }
 
     private void addMaResult(MAResult maResult, StochAcMaResult stochAcMaResult) {
-        stochAcMaResult.setMaResult(maResult.getIndicatorValue());
+        stochAcMaResult.setMaValue(maResult.getIndicatorValue());
     }
 
 }

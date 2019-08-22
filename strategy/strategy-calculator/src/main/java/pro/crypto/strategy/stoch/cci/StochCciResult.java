@@ -17,10 +17,10 @@ public class StochCciResult implements StrategyResult {
 
     private Set<Position> positions;
 
-    private BigDecimal fastStochastic;
+    private BigDecimal fastStochasticValue;
 
-    private BigDecimal slowStochastic;
+    private BigDecimal slowStochasticValue;
 
-    private BigDecimal cciResult;
+    private BigDecimal cciResultValue;
 
 }

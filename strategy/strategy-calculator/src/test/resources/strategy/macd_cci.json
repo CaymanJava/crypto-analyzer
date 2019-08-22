@@ -758,7 +758,7 @@
     "macdValue": -4.1796530738,
     "macdSignalLineValue": -4.7484005679,
     "macdBarChartValue": 0.5687474941,
-    "cciMacdResult": 67.61450970704998845890
+    "cciMacdValue": 67.61450970704998845890
   },
   {
     "tick": {
@@ -786,7 +786,7 @@
     "macdValue": -2.8948513464,
     "macdSignalLineValue": -3.5127010869,
     "macdBarChartValue": 0.6178497405,
-    "cciMacdResult": 91.66271132742573401523
+    "cciMacdValue": 91.66271132742573401523
   },
   {
     "tick": {
@@ -814,7 +814,7 @@
     "macdValue": -4.5057523232,
     "macdSignalLineValue": -4.1747352444,
     "macdBarChartValue": -0.3310170788,
-    "cciMacdResult": 52.14221041510008698081
+    "cciMacdValue": 52.14221041510008698081
   },
   {
     "tick": {
@@ -844,7 +844,7 @@
     "macdValue": -6.2859862734,
     "macdSignalLineValue": -5.5822359304,
     "macdBarChartValue": -0.7037503430,
-    "cciMacdResult": -25.00899510728250856250
+    "cciMacdValue": -25.00899510728250856250
   },
   {
     "tick": {
@@ -872,7 +872,7 @@
     "macdValue": -6.4632147397,
     "macdSignalLineValue": -6.1695551366,
     "macdBarChartValue": -0.2936596031,
-    "cciMacdResult": -52.23603238465511102807
+    "cciMacdValue": -52.23603238465511102807
   },
   {
     "tick": {
@@ -900,7 +900,7 @@
     "macdValue": -8.4356096530,
     "macdSignalLineValue": -7.6802581475,
     "macdBarChartValue": -0.7553515055,
-    "cciMacdResult": -152.07492339065502125636
+    "cciMacdValue": -152.07492339065502125636
   },
   {
     "tick": {
@@ -930,7 +930,7 @@
     "macdValue": -6.5018249527,
     "macdSignalLineValue": -6.8946360176,
     "macdBarChartValue": 0.3928110649,
-    "cciMacdResult": -48.31722591650290860973
+    "cciMacdValue": -48.31722591650290860973
   },
   {
     "tick": {
@@ -960,7 +960,7 @@
     "macdValue": -5.7305887622,
     "macdSignalLineValue": -6.1186045140,
     "macdBarChartValue": 0.3880157518,
-    "cciMacdResult": 2.71362502319295453528
+    "cciMacdValue": 2.71362502319295453528
   },
   {
     "tick": {
@@ -990,7 +990,7 @@
     "macdValue": -7.9743367953,
     "macdSignalLineValue": -7.3557593682,
     "macdBarChartValue": -0.6185774271,
-    "cciMacdResult": -119.28673120643655156402
+    "cciMacdValue": -119.28673120643655156402
   },
   {
     "tick": {
@@ -1020,7 +1020,7 @@
     "macdValue": -8.3286727985,
     "macdSignalLineValue": -8.0043683217,
     "macdBarChartValue": -0.3243044768,
-    "cciMacdResult": -116.84653618925125507322
+    "cciMacdValue": -116.84653618925125507322
   },
   {
     "tick": {
@@ -1050,7 +1050,7 @@
     "macdValue": -5.1013329447,
     "macdSignalLineValue": -6.0690114037,
     "macdBarChartValue": 0.9676784590,
-    "cciMacdResult": 52.72273786192351386505
+    "cciMacdValue": 52.72273786192351386505
   },
   {
     "tick": {
@@ -1078,7 +1078,7 @@
     "macdValue": -4.5663490080,
     "macdSignalLineValue": -5.0672364732,
     "macdBarChartValue": 0.5008874652,
-    "cciMacdResult": 71.51597812277676622981
+    "cciMacdValue": 71.51597812277676622981
   },
   {
     "tick": {
@@ -1106,7 +1106,7 @@
     "macdValue": -3.8869931688,
     "macdSignalLineValue": -4.2804076036,
     "macdBarChartValue": 0.3934144348,
-    "cciMacdResult": 92.46583842807865384334
+    "cciMacdValue": 92.46583842807865384334
   },
   {
     "tick": {
@@ -1134,7 +1134,7 @@
     "macdValue": -3.5180809599,
     "macdSignalLineValue": -3.7721898411,
     "macdBarChartValue": 0.2541088812,
-    "cciMacdResult": 92.14983205002969293726
+    "cciMacdValue": 92.14983205002969293726
   },
   {
     "tick": {
@@ -1162,7 +1162,7 @@
     "macdValue": -3.1761643495,
     "macdSignalLineValue": -3.3748395134,
     "macdBarChartValue": 0.1986751639,
-    "cciMacdResult": 99.38800449312258551291
+    "cciMacdValue": 99.38800449312258551291
   },
   {
     "tick": {
@@ -1190,7 +1190,7 @@
     "macdValue": -1.4356753061,
     "macdSignalLineValue": -2.0820633752,
     "macdBarChartValue": 0.6463880691,
-    "cciMacdResult": 158.12834212105804032261
+    "cciMacdValue": 158.12834212105804032261
   },
   {
     "tick": {
@@ -1218,7 +1218,7 @@
     "macdValue": -1.8837150149,
     "macdSignalLineValue": -1.9498311350,
     "macdBarChartValue": 0.0661161201,
-    "cciMacdResult": 119.59995986583863813699
+    "cciMacdValue": 119.59995986583863813699
   },
   {
     "tick": {
@@ -1246,7 +1246,7 @@
     "macdValue": -0.1080704989,
     "macdSignalLineValue": -0.7219907109,
     "macdBarChartValue": 0.6139202120,
-    "cciMacdResult": 145.96456703590512688403
+    "cciMacdValue": 145.96456703590512688403
   },
   {
     "tick": {
@@ -1274,7 +1274,7 @@
     "macdValue": -0.4333516064,
     "macdSignalLineValue": -0.5295646412,
     "macdBarChartValue": 0.0962130348,
-    "cciMacdResult": 113.91209828940467339481
+    "cciMacdValue": 113.91209828940467339481
   },
   {
     "tick": {
@@ -1304,7 +1304,7 @@
     "macdValue": -3.0919816640,
     "macdSignalLineValue": -2.2378426564,
     "macdBarChartValue": -0.8541390076,
-    "cciMacdResult": 28.98761951618474851842
+    "cciMacdValue": 28.98761951618474851842
   },
   {
     "tick": {
@@ -1334,7 +1334,7 @@
     "macdValue": -5.6314794394,
     "macdSignalLineValue": -4.5002671784,
     "macdBarChartValue": -1.1312122610,
-    "cciMacdResult": -57.83082657314528781872
+    "cciMacdValue": -57.83082657314528781872
   },
   {
     "tick": {
@@ -1362,7 +1362,7 @@
     "macdValue": -7.0259105090,
     "macdSignalLineValue": -6.1840293988,
     "macdBarChartValue": -0.8418811102,
-    "cciMacdResult": -96.62243474510845304087
+    "cciMacdValue": -96.62243474510845304087
   },
   {
     "tick": {
@@ -1390,7 +1390,7 @@
     "macdValue": -6.2609267914,
     "macdSignalLineValue": -6.2352943272,
     "macdBarChartValue": -0.0256324642,
-    "cciMacdResult": -81.50579965014191768076
+    "cciMacdValue": -81.50579965014191768076
   },
   {
     "tick": {
@@ -1418,7 +1418,7 @@
     "macdValue": -7.3552361523,
     "macdSignalLineValue": -6.9819222106,
     "macdBarChartValue": -0.3733139417,
-    "cciMacdResult": -126.03970341418016870791
+    "cciMacdValue": -126.03970341418016870791
   },
   {
     "tick": {
@@ -1448,7 +1448,7 @@
     "macdValue": -8.5190738257,
     "macdSignalLineValue": -8.0066899540,
     "macdBarChartValue": -0.5123838717,
-    "cciMacdResult": -138.82868413647903318521
+    "cciMacdValue": -138.82868413647903318521
   },
   {
     "tick": {
@@ -1476,7 +1476,7 @@
     "macdValue": -8.7433715088,
     "macdSignalLineValue": -8.4978109905,
     "macdBarChartValue": -0.2455605183,
-    "cciMacdResult": -117.75368802858705308737
+    "cciMacdValue": -117.75368802858705308737
   },
   {
     "tick": {
@@ -1506,7 +1506,7 @@
     "macdValue": -2.7969835746,
     "macdSignalLineValue": -4.6972593799,
     "macdBarChartValue": 1.9002758053,
-    "cciMacdResult": 38.92677169604638025427
+    "cciMacdValue": 38.92677169604638025427
   },
   {
     "tick": {
@@ -1534,7 +1534,7 @@
     "macdValue": 1.9387163201,
     "macdSignalLineValue": -0.2732755799,
     "macdBarChartValue": 2.2119919000,
-    "cciMacdResult": 134.96892616748603869349
+    "cciMacdValue": 134.96892616748603869349
   },
   {
     "tick": {
@@ -1564,7 +1564,7 @@
     "macdValue": 6.1649109016,
     "macdSignalLineValue": 4.0188487411,
     "macdBarChartValue": 2.1460621605,
-    "cciMacdResult": 181.32509145740695167972
+    "cciMacdValue": 181.32509145740695167972
   },
   {
     "tick": {
@@ -1592,7 +1592,7 @@
     "macdValue": 5.0233933138,
     "macdSignalLineValue": 4.6885451229,
     "macdBarChartValue": 0.3348481909,
-    "cciMacdResult": 133.16314654433977429173
+    "cciMacdValue": 133.16314654433977429173
   },
   {
     "tick": {
@@ -1620,7 +1620,7 @@
     "macdValue": 7.3546060074,
     "macdSignalLineValue": 6.4659190459,
     "macdBarChartValue": 0.8886869615,
-    "cciMacdResult": 135.52624564172716879947
+    "cciMacdValue": 135.52624564172716879947
   },
   {
     "tick": {
@@ -1648,7 +1648,7 @@
     "macdValue": 7.8958245115,
     "macdSignalLineValue": 7.4191893563,
     "macdBarChartValue": 0.4766351552,
-    "cciMacdResult": 118.45828011956329087521
+    "cciMacdValue": 118.45828011956329087521
   },
   {
     "tick": {
@@ -1678,7 +1678,7 @@
     "macdValue": 6.5691319808,
     "macdSignalLineValue": 6.8524844393,
     "macdBarChartValue": -0.2833524585,
-    "cciMacdResult": 86.22282797704513426542
+    "cciMacdValue": 86.22282797704513426542
   },
   {
     "tick": {
@@ -1706,7 +1706,7 @@
     "macdValue": 7.4400657460,
     "macdSignalLineValue": 7.2442053104,
     "macdBarChartValue": 0.1958604356,
-    "cciMacdResult": 81.23512444339541456853
+    "cciMacdValue": 81.23512444339541456853
   },
   {
     "tick": {
@@ -1734,7 +1734,7 @@
     "macdValue": 5.6362652632,
     "macdSignalLineValue": 6.1722452789,
     "macdBarChartValue": -0.5359800157,
-    "cciMacdResult": 54.43090505542537555978
+    "cciMacdValue": 54.43090505542537555978
   },
   {
     "tick": {
@@ -1762,7 +1762,7 @@
     "macdValue": 6.8278040387,
     "macdSignalLineValue": 6.6092844521,
     "macdBarChartValue": 0.2185195866,
-    "cciMacdResult": 60.14992903995811731925
+    "cciMacdValue": 60.14992903995811731925
   },
   {
     "tick": {
@@ -1790,7 +1790,7 @@
     "macdValue": 4.5718850877,
     "macdSignalLineValue": 5.2510182092,
     "macdBarChartValue": -0.6791331215,
-    "cciMacdResult": 28.89979782913894471357
+    "cciMacdValue": 28.89979782913894471357
   },
   {
     "tick": {
@@ -1820,7 +1820,7 @@
     "macdValue": 2.8993513663,
     "macdSignalLineValue": 3.6832403139,
     "macdBarChartValue": -0.7838889476,
-    "cciMacdResult": -1.83803382502570566309
+    "cciMacdValue": -1.83803382502570566309
   },
   {
     "tick": {
@@ -1850,7 +1850,7 @@
     "macdValue": 5.1967209983,
     "macdSignalLineValue": 4.6922274368,
     "macdBarChartValue": 0.5044935615,
-    "cciMacdResult": 24.63826901321398647963
+    "cciMacdValue": 24.63826901321398647963
   },
   {
     "tick": {
@@ -1878,7 +1878,7 @@
     "macdValue": 6.6869886659,
     "macdSignalLineValue": 6.0220682562,
     "macdBarChartValue": 0.6649204097,
-    "cciMacdResult": 53.38713199776549688729
+    "cciMacdValue": 53.38713199776549688729
   },
   {
     "tick": {
@@ -1906,7 +1906,7 @@
     "macdValue": 6.2188535700,
     "macdSignalLineValue": 6.1532584654,
     "macdBarChartValue": 0.0655951046,
-    "cciMacdResult": 24.05246769797729777720
+    "cciMacdValue": 24.05246769797729777720
   },
   {
     "tick": {
@@ -1934,7 +1934,7 @@
     "macdValue": 7.5194304503,
     "macdSignalLineValue": 7.0640397887,
     "macdBarChartValue": 0.4553906616,
-    "cciMacdResult": 86.92199469769938784653
+    "cciMacdValue": 86.92199469769938784653
   },
   {
     "tick": {
@@ -1962,7 +1962,7 @@
     "macdValue": 6.5662630973,
     "macdSignalLineValue": 6.7321886611,
     "macdBarChartValue": -0.1659255638,
-    "cciMacdResult": 24.43436219401399148627
+    "cciMacdValue": 24.43436219401399148627
   },
   {
     "tick": {
@@ -1992,7 +1992,7 @@
     "macdValue": 5.7462643570,
     "macdSignalLineValue": 6.0749057917,
     "macdBarChartValue": -0.3286414347,
-    "cciMacdResult": -31.49458754742541843218
+    "cciMacdValue": -31.49458754742541843218
   },
   {
     "tick": {
@@ -2020,7 +2020,7 @@
     "macdValue": 4.7855312449,
     "macdSignalLineValue": 5.2153227605,
     "macdBarChartValue": -0.4297915156,
-    "cciMacdResult": -79.06807001069517671404
+    "cciMacdValue": -79.06807001069517671404
   },
   {
     "tick": {
@@ -2048,7 +2048,7 @@
     "macdValue": 3.9206523207,
     "macdSignalLineValue": 4.3522091340,
     "macdBarChartValue": -0.4315568133,
-    "cciMacdResult": -113.66022028196367602341
+    "cciMacdValue": -113.66022028196367602341
   },
   {
     "tick": {
@@ -2078,7 +2078,7 @@
     "macdValue": 4.6703495037,
     "macdSignalLineValue": 4.5643027138,
     "macdBarChartValue": 0.1060467899,
-    "cciMacdResult": -57.74540433057937825245
+    "cciMacdValue": -57.74540433057937825245
   },
   {
     "tick": {
@@ -2106,7 +2106,7 @@
     "macdValue": 4.4066747545,
     "macdSignalLineValue": 4.4592174076,
     "macdBarChartValue": -0.0525426531,
-    "cciMacdResult": -63.09117177557117509948
+    "cciMacdValue": -63.09117177557117509948
   },
   {
     "tick": {
@@ -2134,7 +2134,7 @@
     "macdValue": 2.5600187811,
     "macdSignalLineValue": 3.1930849899,
     "macdBarChartValue": -0.6330662088,
-    "cciMacdResult": -144.50800163434682381381
+    "cciMacdValue": -144.50800163434682381381
   },
   {
     "tick": {
@@ -2162,7 +2162,7 @@
     "macdValue": 2.3312191270,
     "macdSignalLineValue": 2.6185077480,
     "macdBarChartValue": -0.2872886210,
-    "cciMacdResult": -134.90905262051092192436
+    "cciMacdValue": -134.90905262051092192436
   },
   {
     "tick": {
@@ -2190,7 +2190,7 @@
     "macdValue": 0.3376979062,
     "macdSignalLineValue": 1.0979678535,
     "macdBarChartValue": -0.7602699473,
-    "cciMacdResult": -180.67430729458874884635
+    "cciMacdValue": -180.67430729458874884635
   },
   {
     "tick": {
@@ -2218,7 +2218,7 @@
     "macdValue": 1.3955672373,
     "macdSignalLineValue": 1.2963674427,
     "macdBarChartValue": 0.0991997946,
-    "cciMacdResult": -121.26270888433217818545
+    "cciMacdValue": -121.26270888433217818545
   },
   {
     "tick": {
@@ -2248,7 +2248,7 @@
     "macdValue": 2.5035863493,
     "macdSignalLineValue": 2.1011800471,
     "macdBarChartValue": 0.4024063022,
-    "cciMacdResult": -65.51759114100143520155
+    "cciMacdValue": -65.51759114100143520155
   },
   {
     "tick": {
@@ -2276,7 +2276,7 @@
     "macdValue": 3.9276666214,
     "macdSignalLineValue": 3.3188377633,
     "macdBarChartValue": 0.6088288581,
-    "cciMacdResult": -5.52948235610715625871
+    "cciMacdValue": -5.52948235610715625871
   },
   {
     "tick": {
@@ -2306,7 +2306,7 @@
     "macdValue": 6.5731549859,
     "macdSignalLineValue": 5.4883825784,
     "macdBarChartValue": 1.0847724075,
-    "cciMacdResult": 99.55119929232579380791
+    "cciMacdValue": 99.55119929232579380791
   },
   {
     "tick": {
@@ -2334,7 +2334,7 @@
     "macdValue": 7.3509455839,
     "macdSignalLineValue": 6.7300912487,
     "macdBarChartValue": 0.6208543352,
-    "cciMacdResult": 132.15728054338759240600
+    "cciMacdValue": 132.15728054338759240600
   },
   {
     "tick": {
@@ -2364,7 +2364,7 @@
     "macdValue": 7.7071725328,
     "macdSignalLineValue": 7.3814787714,
     "macdBarChartValue": 0.3256937614,
-    "cciMacdResult": 136.51104502394492888685
+    "cciMacdValue": 136.51104502394492888685
   },
   {
     "tick": {
@@ -2392,7 +2392,7 @@
     "macdValue": 8.8742634407,
     "macdSignalLineValue": 8.3766685509,
     "macdBarChartValue": 0.4975948898,
-    "cciMacdResult": 153.07611478343971598374
+    "cciMacdValue": 153.07611478343971598374
   },
   {
     "tick": {
@@ -2420,7 +2420,7 @@
     "macdValue": 9.8255298184,
     "macdSignalLineValue": 9.3425760626,
     "macdBarChartValue": 0.4829537558,
-    "cciMacdResult": 142.72562932876419417078
+    "cciMacdValue": 142.72562932876419417078
   },
   {
     "tick": {
@@ -2448,7 +2448,7 @@
     "macdValue": 14.6548612366,
     "macdSignalLineValue": 12.8840995119,
     "macdBarChartValue": 1.7707617247,
-    "cciMacdResult": 194.58861977890148051508
+    "cciMacdValue": 194.58861977890148051508
   },
   {
     "tick": {
@@ -2476,7 +2476,7 @@
     "macdValue": 14.2984765076,
     "macdSignalLineValue": 13.8270175090,
     "macdBarChartValue": 0.4714589986,
-    "cciMacdResult": 145.92501846445348648808
+    "cciMacdValue": 145.92501846445348648808
   },
   {
     "tick": {
@@ -2504,7 +2504,7 @@
     "macdValue": 14.2545938182,
     "macdSignalLineValue": 14.1120683818,
     "macdBarChartValue": 0.1425254364,
-    "cciMacdResult": 119.72453128361868828114
+    "cciMacdValue": 119.72453128361868828114
   },
   {
     "tick": {
@@ -2532,7 +2532,7 @@
     "macdValue": 16.1822897015,
     "macdSignalLineValue": 15.4922159283,
     "macdBarChartValue": 0.6900737732,
-    "cciMacdResult": 125.68276154130292315445
+    "cciMacdValue": 125.68276154130292315445
   },
   {
     "tick": {
@@ -2562,7 +2562,7 @@
     "macdValue": 13.4721218664,
     "macdSignalLineValue": 14.1454865537,
     "macdBarChartValue": -0.6733646873,
-    "cciMacdResult": 72.58729473196824411705
+    "cciMacdValue": 72.58729473196824411705
   },
   {
     "tick": {
@@ -2590,7 +2590,7 @@
     "macdValue": 13.1058917111,
     "macdSignalLineValue": 13.4524233253,
     "macdBarChartValue": -0.3465316142,
-    "cciMacdResult": 57.26320132739495424874
+    "cciMacdValue": 57.26320132739495424874
   },
   {
     "tick": {
@@ -2618,7 +2618,7 @@
     "macdValue": 11.1334266232,
     "macdSignalLineValue": 11.9064255239,
     "macdBarChartValue": -0.7729989007,
-    "cciMacdResult": 15.89742921984081330972
+    "cciMacdValue": 15.89742921984081330972
   },
   {
     "tick": {
@@ -2648,7 +2648,7 @@
     "macdValue": 8.7332154890,
     "macdSignalLineValue": 9.7909521673,
     "macdBarChartValue": -1.0577366783,
-    "cciMacdResult": -42.05966018630516866097
+    "cciMacdValue": -42.05966018630516866097
   },
   {
     "tick": {
@@ -2676,7 +2676,7 @@
     "macdValue": 4.9431407879,
     "macdSignalLineValue": 6.5590779144,
     "macdBarChartValue": -1.6159371265,
-    "cciMacdResult": -126.70698033567042330514
+    "cciMacdValue": -126.70698033567042330514
   },
   {
     "tick": {
@@ -2704,7 +2704,7 @@
     "macdValue": 4.8601060012,
     "macdSignalLineValue": 5.4264299723,
     "macdBarChartValue": -0.5663239711,
-    "cciMacdResult": -121.04362939856776377984
+    "cciMacdValue": -121.04362939856776377984
   },
   {
     "tick": {
@@ -2734,7 +2734,7 @@
     "macdValue": 5.8667133011,
     "macdSignalLineValue": 5.7199521915,
     "macdBarChartValue": 0.1467611096,
-    "cciMacdResult": -94.72982882889626077203
+    "cciMacdValue": -94.72982882889626077203
   },
   {
     "tick": {
@@ -2762,7 +2762,7 @@
     "macdValue": 4.2511155693,
     "macdSignalLineValue": 4.7407277767,
     "macdBarChartValue": -0.4896122074,
-    "cciMacdResult": -113.82816065551216130299
+    "cciMacdValue": -113.82816065551216130299
   },
   {
     "tick": {
@@ -2792,7 +2792,7 @@
     "macdValue": 6.8069710618,
     "macdSignalLineValue": 6.1182233001,
     "macdBarChartValue": 0.6887477617,
-    "cciMacdResult": -60.58860341412992001629
+    "cciMacdValue": -60.58860341412992001629
   },
   {
     "tick": {
@@ -2820,7 +2820,7 @@
     "macdValue": 8.0348292869,
     "macdSignalLineValue": 7.3959606246,
     "macdBarChartValue": 0.6388686623,
-    "cciMacdResult": -34.95923149067664080336
+    "cciMacdValue": -34.95923149067664080336
   },
   {
     "tick": {
@@ -2848,7 +2848,7 @@
     "macdValue": 7.5008521541,
     "macdSignalLineValue": 7.4658883109,
     "macdBarChartValue": 0.0349638432,
-    "cciMacdResult": -37.52390317751198806839
+    "cciMacdValue": -37.52390317751198806839
   },
   {
     "tick": {
@@ -2876,7 +2876,7 @@
     "macdValue": 8.3966554601,
     "macdSignalLineValue": 8.0863997437,
     "macdBarChartValue": 0.3102557164,
-    "cciMacdResult": -14.73420486799494464360
+    "cciMacdValue": -14.73420486799494464360
   },
   {
     "tick": {
@@ -2904,7 +2904,7 @@
     "macdValue": 6.5243436414,
     "macdSignalLineValue": 7.0450290088,
     "macdBarChartValue": -0.5206853674,
-    "cciMacdResult": -47.84119282153902183144
+    "cciMacdValue": -47.84119282153902183144
   },
   {
     "tick": {
@@ -2932,7 +2932,7 @@
     "macdValue": 4.6807176250,
     "macdSignalLineValue": 5.4688214196,
     "macdBarChartValue": -0.7881037946,
-    "cciMacdResult": -86.64739783386516880551
+    "cciMacdValue": -86.64739783386516880551
   },
   {
     "tick": {
@@ -2960,7 +2960,7 @@
     "macdValue": 2.8460942426,
     "macdSignalLineValue": 3.7203366349,
     "macdBarChartValue": -0.8742423923,
-    "cciMacdResult": -128.18644243295205132836
+    "cciMacdValue": -128.18644243295205132836
   },
   {
     "tick": {
@@ -2988,7 +2988,7 @@
     "macdValue": 2.9029942708,
     "macdSignalLineValue": 3.1754417255,
     "macdBarChartValue": -0.2724474547,
-    "cciMacdResult": -116.60513896664317202967
+    "cciMacdValue": -116.60513896664317202967
   },
   {
     "tick": {
@@ -3016,7 +3016,7 @@
     "macdValue": 3.0306536899,
     "macdSignalLineValue": 3.0789163684,
     "macdBarChartValue": -0.0482626785,
-    "cciMacdResult": -101.16669498382672645391
+    "cciMacdValue": -101.16669498382672645391
   },
   {
     "tick": {
@@ -3046,7 +3046,7 @@
     "macdValue": 4.1551922084,
     "macdSignalLineValue": 3.7964335951,
     "macdBarChartValue": 0.3587586133,
-    "cciMacdResult": -50.05448402814920530037
+    "cciMacdValue": -50.05448402814920530037
   },
   {
     "tick": {
@@ -3074,7 +3074,7 @@
     "macdValue": 4.8300535987,
     "macdSignalLineValue": 4.4855135975,
     "macdBarChartValue": 0.3445400012,
-    "cciMacdResult": -21.17977362767132583225
+    "cciMacdValue": -21.17977362767132583225
   },
   {
     "tick": {
@@ -3104,7 +3104,7 @@
     "macdValue": 5.7795079538,
     "macdSignalLineValue": 5.3481765017,
     "macdBarChartValue": 0.4313314521,
-    "cciMacdResult": 15.92582406606585299112
+    "cciMacdValue": 15.92582406606585299112
   },
   {
     "tick": {
@@ -3134,7 +3134,7 @@
     "macdValue": 2.4699617367,
     "macdSignalLineValue": 3.4293666584,
     "macdBarChartValue": -0.9594049217,
-    "cciMacdResult": -103.69915554859597213267
+    "cciMacdValue": -103.69915554859597213267
   },
   {
     "tick": {
@@ -3162,7 +3162,7 @@
     "macdValue": 1.8975603520,
     "macdSignalLineValue": 2.4081624541,
     "macdBarChartValue": -0.5106021021,
-    "cciMacdResult": -110.11447895356094788449
+    "cciMacdValue": -110.11447895356094788449
   },
   {
     "tick": {
@@ -3190,7 +3190,7 @@
     "macdValue": -0.3216939463,
     "macdSignalLineValue": 0.5882581872,
     "macdBarChartValue": -0.9099521335,
-    "cciMacdResult": -155.81120469177490884515
+    "cciMacdValue": -155.81120469177490884515
   },
   {
     "tick": {
@@ -3218,7 +3218,7 @@
     "macdValue": -1.5158279327,
     "macdSignalLineValue": -0.8144658927,
     "macdBarChartValue": -0.7013620400,
-    "cciMacdResult": -162.31358538202346489594
+    "cciMacdValue": -162.31358538202346489594
   },
   {
     "tick": {
@@ -3246,7 +3246,7 @@
     "macdValue": -0.8595297521,
     "macdSignalLineValue": -0.8445084656,
     "macdBarChartValue": -0.0150212865,
-    "cciMacdResult": -125.00582161661611206763
+    "cciMacdValue": -125.00582161661611206763
   },
   {
     "tick": {
@@ -3276,7 +3276,7 @@
     "macdValue": -0.2734586716,
     "macdSignalLineValue": -0.4638086029,
     "macdBarChartValue": 0.1903499313,
-    "cciMacdResult": -94.54123980245292706382
+    "cciMacdValue": -94.54123980245292706382
   },
   {
     "tick": {
@@ -3304,7 +3304,7 @@
     "macdValue": 0.1384783367,
     "macdSignalLineValue": -0.0622839765,
     "macdBarChartValue": 0.2007623132,
-    "cciMacdResult": -67.74755216927452827963
+    "cciMacdValue": -67.74755216927452827963
   },
   {
     "tick": {
@@ -3332,7 +3332,7 @@
     "macdValue": -0.5087488651,
     "macdSignalLineValue": -0.3599272356,
     "macdBarChartValue": -0.1488216295,
-    "cciMacdResult": -76.16132119863177971040
+    "cciMacdValue": -76.16132119863177971040
   },
   {
     "tick": {
@@ -3360,7 +3360,7 @@
     "macdValue": -6.4594933856,
     "macdSignalLineValue": -4.4263046689,
     "macdBarChartValue": -2.0331887167,
-    "cciMacdResult": -202.10320783116492892788
+    "cciMacdValue": -202.10320783116492892788
   },
   {
     "tick": {
@@ -3390,7 +3390,7 @@
     "macdValue": -9.9585391445,
     "macdSignalLineValue": -8.1144609860,
     "macdBarChartValue": -1.8440781585,
-    "cciMacdResult": -223.70445699452075298226
+    "cciMacdValue": -223.70445699452075298226
   },
   {
     "tick": {
@@ -3418,7 +3418,7 @@
     "macdValue": -12.0317426521,
     "macdSignalLineValue": -10.7259820967,
     "macdBarChartValue": -1.3057605554,
-    "cciMacdResult": -197.08072778604910497070
+    "cciMacdValue": -197.08072778604910497070
   },
   {
     "tick": {
@@ -3446,7 +3446,7 @@
     "macdValue": -13.1679884684,
     "macdSignalLineValue": -12.3539863445,
     "macdBarChartValue": -0.8140021239,
-    "cciMacdResult": -155.68608715166649324620
+    "cciMacdValue": -155.68608715166649324620
   },
   {
     "tick": {
@@ -3474,7 +3474,7 @@
     "macdValue": -19.5039611549,
     "macdSignalLineValue": -17.1206362181,
     "macdBarChartValue": -2.3833249368,
-    "cciMacdResult": -174.75428787936809633861
+    "cciMacdValue": -174.75428787936809633861
   },
   {
     "tick": {
@@ -3502,7 +3502,7 @@
     "macdValue": -18.0939185526,
     "macdSignalLineValue": -17.7694911078,
     "macdBarChartValue": -0.3244274448,
-    "cciMacdResult": -127.71884163458370302206
+    "cciMacdValue": -127.71884163458370302206
   },
   {
     "tick": {
@@ -3532,7 +3532,7 @@
     "macdValue": -16.0896468055,
     "macdSignalLineValue": -16.6495949063,
     "macdBarChartValue": 0.5599481008,
-    "cciMacdResult": -90.40433044291770088789
+    "cciMacdValue": -90.40433044291770088789
   },
   {
     "tick": {
@@ -3560,7 +3560,7 @@
     "macdValue": -17.1623384842,
     "macdSignalLineValue": -16.9914239582,
     "macdBarChartValue": -0.1709145260,
-    "cciMacdResult": -86.24681874386997046835
+    "cciMacdValue": -86.24681874386997046835
   },
   {
     "tick": {
@@ -3588,7 +3588,7 @@
     "macdValue": -13.9738855002,
     "macdSignalLineValue": -14.9797316529,
     "macdBarChartValue": 1.0058461527,
-    "cciMacdResult": -47.94729965187511054384
+    "cciMacdValue": -47.94729965187511054384
   },
   {
     "tick": {
@@ -3616,7 +3616,7 @@
     "macdValue": -11.4244887335,
     "macdSignalLineValue": -12.6095697066,
     "macdBarChartValue": 1.1850809731,
-    "cciMacdResult": -16.40166163838621613630
+    "cciMacdValue": -16.40166163838621613630
   },
   {
     "tick": {
@@ -3644,7 +3644,7 @@
     "macdValue": -11.9531899514,
     "macdSignalLineValue": -12.1719832031,
     "macdBarChartValue": 0.2187932517,
-    "cciMacdResult": -15.34354834268443931032
+    "cciMacdValue": -15.34354834268443931032
   },
   {
     "tick": {
@@ -3674,7 +3674,7 @@
     "macdValue": -9.5613491284,
     "macdSignalLineValue": -10.4315604866,
     "macdBarChartValue": 0.8702113582,
-    "cciMacdResult": 28.10898482009857936860
+    "cciMacdValue": 28.10898482009857936860
   },
   {
     "tick": {
@@ -3702,7 +3702,7 @@
     "macdValue": -6.5327591982,
     "macdSignalLineValue": -7.8323596277,
     "macdBarChartValue": 1.2996004295,
-    "cciMacdResult": 92.96627332056047622298
+    "cciMacdValue": 92.96627332056047622298
   },
   {
     "tick": {
@@ -3730,7 +3730,7 @@
     "macdValue": -3.8720609947,
     "macdSignalLineValue": -5.1921605390,
     "macdBarChartValue": 1.3200995443,
-    "cciMacdResult": 152.71787537354485639774
+    "cciMacdValue": 152.71787537354485639774
   },
   {
     "tick": {
@@ -3758,7 +3758,7 @@
     "macdValue": -1.9369594961,
     "macdSignalLineValue": -3.0220265104,
     "macdBarChartValue": 1.0850670143,
-    "cciMacdResult": 167.20108261952951701551
+    "cciMacdValue": 167.20108261952951701551
   },
   {
     "tick": {
@@ -3786,7 +3786,7 @@
     "macdValue": -1.4777668449,
     "macdSignalLineValue": -1.9925200667,
     "macdBarChartValue": 0.5147532218,
-    "cciMacdResult": 139.10055270485956354050
+    "cciMacdValue": 139.10055270485956354050
   },
   {
     "tick": {
@@ -3814,7 +3814,7 @@
     "macdValue": -1.4041938815,
     "macdSignalLineValue": -1.6003026099,
     "macdBarChartValue": 0.1961087284,
-    "cciMacdResult": 111.39343890701127135590
+    "cciMacdValue": 111.39343890701127135590
   },
   {
     "tick": {
@@ -3844,7 +3844,7 @@
     "macdValue": -1.1006829679,
     "macdSignalLineValue": -1.2672228486,
     "macdBarChartValue": 0.1665398807,
-    "cciMacdResult": 96.11589090380753959336
+    "cciMacdValue": 96.11589090380753959336
   },
   {
     "tick": {
@@ -3872,7 +3872,7 @@
     "macdValue": -2.6318558960,
     "macdSignalLineValue": -2.1769782135,
     "macdBarChartValue": -0.4548776825,
-    "cciMacdResult": 67.56329708410342076954
+    "cciMacdValue": 67.56329708410342076954
   },
   {
     "tick": {
@@ -3900,7 +3900,7 @@
     "macdValue": -4.6350532776,
     "macdSignalLineValue": -3.8156949229,
     "macdBarChartValue": -0.8193583547,
-    "cciMacdResult": 36.29106018419086697941
+    "cciMacdValue": 36.29106018419086697941
   },
   {
     "tick": {
@@ -3928,7 +3928,7 @@
     "macdValue": -4.3499785469,
     "macdSignalLineValue": -4.1718840056,
     "macdBarChartValue": -0.1780945413,
-    "cciMacdResult": 33.23152443255801963153
+    "cciMacdValue": 33.23152443255801963153
   },
   {
     "tick": {
@@ -3956,7 +3956,7 @@
     "macdValue": -0.9072687653,
     "macdSignalLineValue": -1.9954738454,
     "macdBarChartValue": 1.0882050801,
-    "cciMacdResult": 79.65709050953974058131
+    "cciMacdValue": 79.65709050953974058131
   },
   {
     "tick": {
@@ -3984,7 +3984,7 @@
     "macdValue": 2.4533532978,
     "macdSignalLineValue": 0.9704109167,
     "macdBarChartValue": 1.4829423811,
-    "cciMacdResult": 135.60563938451732598360
+    "cciMacdValue": 135.60563938451732598360
   },
   {
     "tick": {
@@ -4014,7 +4014,7 @@
     "macdValue": 4.0643246168,
     "macdSignalLineValue": 3.0330200501,
     "macdBarChartValue": 1.0313045667,
-    "cciMacdResult": 151.86204696324723588087
+    "cciMacdValue": 151.86204696324723588087
   },
   {
     "tick": {
@@ -4042,7 +4042,7 @@
     "macdValue": 7.1221733059,
     "macdSignalLineValue": 5.7591222206,
     "macdBarChartValue": 1.3630510853,
-    "cciMacdResult": 196.32621354760675044667
+    "cciMacdValue": 196.32621354760675044667
   },
   {
     "tick": {
@@ -4070,7 +4070,7 @@
     "macdValue": 8.1270520533,
     "macdSignalLineValue": 7.3377421091,
     "macdBarChartValue": 0.7893099442,
-    "cciMacdResult": 169.34172468303608592534
+    "cciMacdValue": 169.34172468303608592534
   },
   {
     "tick": {
@@ -4098,7 +4098,7 @@
     "macdValue": 9.1766706705,
     "macdSignalLineValue": 8.5636944834,
     "macdBarChartValue": 0.6129761871,
-    "cciMacdResult": 143.37883352472190109231
+    "cciMacdValue": 143.37883352472190109231
   },
   {
     "tick": {
@@ -4126,7 +4126,7 @@
     "macdValue": 10.3168593623,
     "macdSignalLineValue": 9.7324710693,
     "macdBarChartValue": 0.5843882930,
-    "cciMacdResult": 128.77189352440534567258
+    "cciMacdValue": 128.77189352440534567258
   },
   {
     "tick": {
@@ -4156,7 +4156,7 @@
     "macdValue": 7.3873174125,
     "macdSignalLineValue": 8.1690352981,
     "macdBarChartValue": -0.7817178856,
-    "cciMacdResult": 72.93580392286942285824
+    "cciMacdValue": 72.93580392286942285824
   },
   {
     "tick": {
@@ -4184,7 +4184,7 @@
     "macdValue": 8.5070798789,
     "macdSignalLineValue": 8.3943983520,
     "macdBarChartValue": 0.1126815269,
-    "cciMacdResult": 76.27484482392162584023
+    "cciMacdValue": 76.27484482392162584023
   },
   {
     "tick": {
@@ -4212,7 +4212,7 @@
     "macdValue": 8.4078521963,
     "macdSignalLineValue": 8.4033675815,
     "macdBarChartValue": 0.0044846148,
-    "cciMacdResult": 65.58079765143504946879
+    "cciMacdValue": 65.58079765143504946879
   },
   {
     "tick": {
@@ -4240,7 +4240,7 @@
     "macdValue": 11.0660934984,
     "macdSignalLineValue": 10.1785181928,
     "macdBarChartValue": 0.8875753056,
-    "cciMacdResult": 90.42313375419211893596
+    "cciMacdValue": 90.42313375419211893596
   },
   {
     "tick": {
@@ -4268,7 +4268,7 @@
     "macdValue": 15.4095419654,
     "macdSignalLineValue": 13.6658673745,
     "macdBarChartValue": 1.7436745909,
-    "cciMacdResult": 136.12291580236072219150
+    "cciMacdValue": 136.12291580236072219150
   },
   {
     "tick": {
@@ -4298,7 +4298,7 @@
     "macdValue": 17.2734351825,
     "macdSignalLineValue": 16.0709125798,
     "macdBarChartValue": 1.2025226027,
-    "cciMacdResult": 159.32260425379651883081
+    "cciMacdValue": 159.32260425379651883081
   },
   {
     "tick": {
@@ -4326,7 +4326,7 @@
     "macdValue": 21.4532967740,
     "macdSignalLineValue": 19.6591687093,
     "macdBarChartValue": 1.7941280647,
-    "cciMacdResult": 195.01247293255480354638
+    "cciMacdValue": 195.01247293255480354638
   },
   {
     "tick": {
@@ -4354,7 +4354,7 @@
     "macdValue": 23.4763424048,
     "macdSignalLineValue": 22.2039511730,
     "macdBarChartValue": 1.2723912318,
-    "cciMacdResult": 173.08170030253894455097
+    "cciMacdValue": 173.08170030253894455097
   },
   {
     "tick": {
@@ -4382,7 +4382,7 @@
     "macdValue": 24.0731062383,
     "macdSignalLineValue": 23.4500545499,
     "macdBarChartValue": 0.6230516884,
-    "cciMacdResult": 138.17723362907687827803
+    "cciMacdValue": 138.17723362907687827803
   },
   {
     "tick": {
@@ -4412,7 +4412,7 @@
     "macdValue": 21.3236724397,
     "macdSignalLineValue": 22.0324664764,
     "macdBarChartValue": -0.7087940367,
-    "cciMacdResult": 87.31099537156284603775
+    "cciMacdValue": 87.31099537156284603775
   },
   {
     "tick": {
@@ -4440,7 +4440,7 @@
     "macdValue": 18.9083769124,
     "macdSignalLineValue": 19.9497401004,
     "macdBarChartValue": -1.0413631880,
-    "cciMacdResult": 50.51856380792474257443
+    "cciMacdValue": 50.51856380792474257443
   },
   {
     "tick": {
@@ -4468,7 +4468,7 @@
     "macdValue": 18.9938916858,
     "macdSignalLineValue": 19.3125078240,
     "macdBarChartValue": -0.3186161382,
-    "cciMacdResult": 44.43305064295153777236
+    "cciMacdValue": 44.43305064295153777236
   },
   {
     "tick": {
@@ -4496,7 +4496,7 @@
     "macdValue": 19.1844478407,
     "macdSignalLineValue": 19.2271345018,
     "macdBarChartValue": -0.0426866611,
-    "cciMacdResult": 39.99864018732618038244
+    "cciMacdValue": 39.99864018732618038244
   },
   {
     "tick": {
@@ -4526,7 +4526,7 @@
     "macdValue": 17.0198582652,
     "macdSignalLineValue": 17.7556170107,
     "macdBarChartValue": -0.7357587455,
-    "cciMacdResult": 5.98791009300468786853
+    "cciMacdValue": 5.98791009300468786853
   },
   {
     "tick": {
@@ -4554,7 +4554,7 @@
     "macdValue": 16.9253306936,
     "macdSignalLineValue": 17.2020927993,
     "macdBarChartValue": -0.2767621057,
-    "cciMacdResult": -6.39812864291946825319
+    "cciMacdValue": -6.39812864291946825319
   },
   {
     "tick": {
@@ -4582,7 +4582,7 @@
     "macdValue": 15.4142843886,
     "macdSignalLineValue": 16.0102205255,
     "macdBarChartValue": -0.5959361369,
-    "cciMacdResult": -48.12186430184905570039
+    "cciMacdValue": -48.12186430184905570039
   },
   {
     "tick": {
@@ -4610,7 +4610,7 @@
     "macdValue": 14.6390175243,
     "macdSignalLineValue": 15.0960851914,
     "macdBarChartValue": -0.4570676671,
-    "cciMacdResult": -84.39636181047927937482
+    "cciMacdValue": -84.39636181047927937482
   },
   {
     "tick": {
@@ -4638,7 +4638,7 @@
     "macdValue": 13.2971288891,
     "macdSignalLineValue": 13.8967809899,
     "macdBarChartValue": -0.5996521008,
-    "cciMacdResult": -126.85598510381114834922
+    "cciMacdValue": -126.85598510381114834922
   },
   {
     "tick": {
@@ -4666,7 +4666,7 @@
     "macdValue": 9.4444125761,
     "macdSignalLineValue": 10.9285353807,
     "macdBarChartValue": -1.4841228046,
-    "cciMacdResult": -183.11173733834015984564
+    "cciMacdValue": -183.11173733834015984564
   },
   {
     "tick": {
@@ -4694,7 +4694,7 @@
     "macdValue": 6.5470619785,
     "macdSignalLineValue": 8.0075531126,
     "macdBarChartValue": -1.4604911341,
-    "cciMacdResult": -183.57320674281225587316
+    "cciMacdValue": -183.57320674281225587316
   },
   {
     "tick": {
@@ -4722,7 +4722,7 @@
     "macdValue": 5.5350706489,
     "macdSignalLineValue": 6.3592314701,
     "macdBarChartValue": -0.8241608212,
-    "cciMacdResult": -156.07076863649718571697
+    "cciMacdValue": -156.07076863649718571697
   },
   {
     "tick": {
@@ -4750,7 +4750,7 @@
     "macdValue": 4.9698650223,
     "macdSignalLineValue": 5.4329871716,
     "macdBarChartValue": -0.4631221493,
-    "cciMacdResult": -134.13053263129072643827
+    "cciMacdValue": -134.13053263129072643827
   },
   {
     "tick": {
@@ -4778,7 +4778,7 @@
     "macdValue": 3.6297261935,
     "macdSignalLineValue": 4.2308131862,
     "macdBarChartValue": -0.6010869927,
-    "cciMacdResult": -124.17836100794336152285
+    "cciMacdValue": -124.17836100794336152285
   },
   {
     "tick": {
@@ -4806,7 +4806,7 @@
     "macdValue": 2.6135875911,
     "macdSignalLineValue": 3.1526627895,
     "macdBarChartValue": -0.5390751984,
-    "cciMacdResult": -111.89845005322378623618
+    "cciMacdValue": -111.89845005322378623618
   },
   {
     "tick": {
@@ -4836,7 +4836,7 @@
     "macdValue": 3.9476500983,
     "macdSignalLineValue": 3.6826543287,
     "macdBarChartValue": 0.2649957696,
-    "cciMacdResult": -81.98877325808031915366
+    "cciMacdValue": -81.98877325808031915366
   },
   {
     "tick": {
@@ -4864,7 +4864,7 @@
     "macdValue": 4.7824920762,
     "macdSignalLineValue": 4.4158794937,
     "macdBarChartValue": 0.3666125825,
-    "cciMacdResult": -63.34544711809238107431
+    "cciMacdValue": -63.34544711809238107431
   },
   {
     "tick": {
@@ -4892,7 +4892,7 @@
     "macdValue": 3.6860249972,
     "macdSignalLineValue": 3.9293098294,
     "macdBarChartValue": -0.2432848322,
-    "cciMacdResult": -68.92924601140103279421
+    "cciMacdValue": -68.92924601140103279421
   },
   {
     "tick": {
@@ -4920,7 +4920,7 @@
     "macdValue": 4.5036273816,
     "macdSignalLineValue": 4.3121881975,
     "macdBarChartValue": 0.1914391841,
-    "cciMacdResult": -51.31126184369384796339
+    "cciMacdValue": -51.31126184369384796339
   },
   {
     "tick": {
@@ -4948,7 +4948,7 @@
     "macdValue": 0.4830646238,
     "macdSignalLineValue": 1.7594391484,
     "macdBarChartValue": -1.2763745246,
-    "cciMacdResult": -110.84051350213412523403
+    "cciMacdValue": -110.84051350213412523403
   },
   {
     "tick": {
@@ -4976,7 +4976,7 @@
     "macdValue": -2.8338931674,
     "macdSignalLineValue": -1.3027823955,
     "macdBarChartValue": -1.5311107719,
-    "cciMacdResult": -169.57606988201511636385
+    "cciMacdValue": -169.57606988201511636385
   },
   {
     "tick": {
@@ -5004,7 +5004,7 @@
     "macdValue": -1.5347586087,
     "macdSignalLineValue": -1.4574332043,
     "macdBarChartValue": -0.0773254044,
-    "cciMacdResult": -137.39451406415715415726
+    "cciMacdValue": -137.39451406415715415726
   },
   {
     "tick": {
@@ -5032,7 +5032,7 @@
     "macdValue": -4.0099523932,
     "macdSignalLineValue": -3.1591126636,
     "macdBarChartValue": -0.8508397296,
-    "cciMacdResult": -161.57534849496923761337
+    "cciMacdValue": -161.57534849496923761337
   },
   {
     "tick": {
@@ -5062,7 +5062,7 @@
     "macdValue": -1.3999640920,
     "macdSignalLineValue": -1.9863469492,
     "macdBarChartValue": 0.5863828572,
-    "cciMacdResult": -82.79830242747934188744
+    "cciMacdValue": -82.79830242747934188744
   },
   {
     "tick": {
@@ -5090,7 +5090,7 @@
     "macdValue": -2.6109607065,
     "macdSignalLineValue": -2.4027561207,
     "macdBarChartValue": -0.2082045858,
-    "cciMacdResult": -91.54841687322731784129
+    "cciMacdValue": -91.54841687322731784129
   },
   {
     "tick": {
@@ -5118,7 +5118,7 @@
     "macdValue": -1.2470581126,
     "macdSignalLineValue": -1.6322907820,
     "macdBarChartValue": 0.3852326694,
-    "cciMacdResult": -52.37913566046367960998
+    "cciMacdValue": -52.37913566046367960998
   },
   {
     "tick": {
@@ -5148,7 +5148,7 @@
     "macdValue": 1.3066784400,
     "macdSignalLineValue": 0.3270220327,
     "macdBarChartValue": 0.9796564073,
-    "cciMacdResult": 12.36331763590496603040
+    "cciMacdValue": 12.36331763590496603040
   },
   {
     "tick": {
@@ -5178,7 +5178,7 @@
     "macdValue": 0.2621832645,
     "macdSignalLineValue": 0.2837961872,
     "macdBarChartValue": -0.0216129227,
-    "cciMacdResult": -8.17996788940768441205
+    "cciMacdValue": -8.17996788940768441205
   },
   {
     "tick": {
@@ -5206,7 +5206,7 @@
     "macdValue": 0.3047005934,
     "macdSignalLineValue": 0.2977324580,
     "macdBarChartValue": 0.0069681354,
-    "cciMacdResult": -2.81116869080965955210
+    "cciMacdValue": -2.81116869080965955210
   },
   {
     "tick": {
@@ -5234,7 +5234,7 @@
     "macdValue": -0.3334281815,
     "macdSignalLineValue": -0.1230413017,
     "macdBarChartValue": -0.2103868798,
-    "cciMacdResult": -13.71331113500787566376
+    "cciMacdValue": -13.71331113500787566376
   },
   {
     "tick": {
@@ -5262,7 +5262,7 @@
     "macdValue": -1.4330375029,
     "macdSignalLineValue": -0.9963721025,
     "macdBarChartValue": -0.4366654004,
-    "cciMacdResult": -40.09562922910723587178
+    "cciMacdValue": -40.09562922910723587178
   },
   {
     "tick": {
@@ -5290,7 +5290,7 @@
     "macdValue": -0.8245442659,
     "macdSignalLineValue": -0.8818202114,
     "macdBarChartValue": 0.0572759455,
-    "cciMacdResult": -6.88168133818887508586
+    "cciMacdValue": -6.88168133818887508586
   },
   {
     "tick": {
@@ -5320,7 +5320,7 @@
     "macdValue": 0.4019923198,
     "macdSignalLineValue": -0.0259451906,
     "macdBarChartValue": 0.4279375104,
-    "cciMacdResult": 76.37096335172146540590
+    "cciMacdValue": 76.37096335172146540590
   },
   {
     "tick": {
@@ -5348,7 +5348,7 @@
     "macdValue": 1.5877109290,
     "macdSignalLineValue": 1.0498255558,
     "macdBarChartValue": 0.5378853732,
-    "cciMacdResult": 129.74193976666587719965
+    "cciMacdValue": 129.74193976666587719965
   },
   {
     "tick": {
@@ -5378,7 +5378,7 @@
     "macdValue": 1.6795495000,
     "macdSignalLineValue": 1.4696415186,
     "macdBarChartValue": 0.2099079814,
-    "cciMacdResult": 114.45050589891810901248
+    "cciMacdValue": 114.45050589891810901248
   },
   {
     "tick": {
@@ -5406,7 +5406,7 @@
     "macdValue": 4.9237938061,
     "macdSignalLineValue": 3.7724097103,
     "macdBarChartValue": 1.1513840958,
-    "cciMacdResult": 209.99986338193510657226
+    "cciMacdValue": 209.99986338193510657226
   },
   {
     "tick": {
@@ -5434,7 +5434,7 @@
     "macdValue": 5.3784872099,
     "macdSignalLineValue": 4.8431280434,
     "macdBarChartValue": 0.5353591665,
-    "cciMacdResult": 186.63364738831215009411
+    "cciMacdValue": 186.63364738831215009411
   },
   {
     "tick": {
@@ -5462,7 +5462,7 @@
     "macdValue": 4.2267076578,
     "macdSignalLineValue": 4.4321811197,
     "macdBarChartValue": -0.2054734619,
-    "cciMacdResult": 114.46795225111953690997
+    "cciMacdValue": 114.46795225111953690997
   },
   {
     "tick": {
@@ -5490,7 +5490,7 @@
     "macdValue": 4.9927191353,
     "macdSignalLineValue": 4.8058731301,
     "macdBarChartValue": 0.1868460052,
-    "cciMacdResult": 118.49233383947705348520
+    "cciMacdValue": 118.49233383947705348520
   },
   {
     "tick": {
@@ -5518,7 +5518,7 @@
     "macdValue": 6.5051414082,
     "macdSignalLineValue": 5.9387186488,
     "macdBarChartValue": 0.5664227594,
-    "cciMacdResult": 132.02359950282724206752
+    "cciMacdValue": 132.02359950282724206752
   },
   {
     "tick": {
@@ -5546,7 +5546,7 @@
     "macdValue": 7.3951459123,
     "macdSignalLineValue": 6.9096701578,
     "macdBarChartValue": 0.4854757545,
-    "cciMacdResult": 124.07631505671047959734
+    "cciMacdValue": 124.07631505671047959734
   },
   {
     "tick": {
@@ -5574,7 +5574,7 @@
     "macdValue": 9.1611948029,
     "macdSignalLineValue": 8.4106865879,
     "macdBarChartValue": 0.7505082150,
-    "cciMacdResult": 136.39173062251369324577
+    "cciMacdValue": 136.39173062251369324577
   },
   {
     "tick": {
@@ -5604,7 +5604,7 @@
     "macdValue": 6.8226312045,
     "macdSignalLineValue": 7.3519829990,
     "macdBarChartValue": -0.5293517945,
-    "cciMacdResult": 73.01820015855875868782
+    "cciMacdValue": 73.01820015855875868782
   },
   {
     "tick": {
@@ -5632,7 +5632,7 @@
     "macdValue": 8.1277524148,
     "macdSignalLineValue": 7.8691626095,
     "macdBarChartValue": 0.2585898053,
-    "cciMacdResult": 93.07998137037114379347
+    "cciMacdValue": 93.07998137037114379347
   },
   {
     "tick": {
@@ -5660,7 +5660,7 @@
     "macdValue": 7.0501183531,
     "macdSignalLineValue": 7.3231331052,
     "macdBarChartValue": -0.2730147521,
-    "cciMacdResult": 61.28350147644936997177
+    "cciMacdValue": 61.28350147644936997177
   },
   {
     "tick": {
@@ -5688,7 +5688,7 @@
     "macdValue": 6.4865659560,
     "macdSignalLineValue": 6.7654216724,
     "macdBarChartValue": -0.2788557164,
-    "cciMacdResult": 37.67892835919158617593
+    "cciMacdValue": 37.67892835919158617593
   },
   {
     "tick": {
@@ -5718,7 +5718,7 @@
     "macdValue": 4.2701206949,
     "macdSignalLineValue": 5.1018876874,
     "macdBarChartValue": -0.8317669925,
-    "cciMacdResult": -51.24911804544295561715
+    "cciMacdValue": -51.24911804544295561715
   },
   {
     "tick": {
@@ -5746,7 +5746,7 @@
     "macdValue": 4.8545506206,
     "macdSignalLineValue": 4.9369963095,
     "macdBarChartValue": -0.0824456889,
-    "cciMacdResult": -43.69793190006598116604
+    "cciMacdValue": -43.69793190006598116604
   },
   {
     "tick": {
@@ -5774,7 +5774,7 @@
     "macdValue": 3.5831799378,
     "macdSignalLineValue": 4.0344520617,
     "macdBarChartValue": -0.4512721239,
-    "cciMacdResult": -115.99498132327650470741
+    "cciMacdValue": -115.99498132327650470741
   },
   {
     "tick": {
@@ -5804,7 +5804,7 @@
     "macdValue": 4.1712895896,
     "macdSignalLineValue": 4.1256770803,
     "macdBarChartValue": 0.0456125093,
-    "cciMacdResult": -81.79942215120659288971
+    "cciMacdValue": -81.79942215120659288971
   },
   {
     "tick": {
@@ -5834,7 +5834,7 @@
     "macdValue": 13.3637780010,
     "macdSignalLineValue": 10.2844110274,
     "macdBarChartValue": 3.0793669736,
-    "cciMacdResult": 247.88353814575985463896
+    "cciMacdValue": 247.88353814575985463896
   },
   {
     "tick": {
@@ -5864,7 +5864,7 @@
     "macdValue": 17.2779976939,
     "macdSignalLineValue": 14.9468021384,
     "macdBarChartValue": 2.3311955555,
-    "cciMacdResult": 252.45394881108224299081
+    "cciMacdValue": 252.45394881108224299081
   },
   {
     "tick": {
@@ -5892,7 +5892,7 @@
     "macdValue": 25.5575076565,
     "macdSignalLineValue": 22.0206058171,
     "macdBarChartValue": 3.5369018394,
-    "cciMacdResult": 261.23967990195977262948
+    "cciMacdValue": 261.23967990195977262948
   },
   {
     "tick": {
@@ -5920,7 +5920,7 @@
     "macdValue": 28.9838970645,
     "macdSignalLineValue": 26.6627999820,
     "macdBarChartValue": 2.3210970825,
-    "cciMacdResult": 199.80765926212500094644
+    "cciMacdValue": 199.80765926212500094644
   },
   {
     "tick": {
@@ -5948,7 +5948,7 @@
     "macdValue": 28.7877316215,
     "macdSignalLineValue": 28.0794210750,
     "macdBarChartValue": 0.7083105465,
-    "cciMacdResult": 145.32880932072564790040
+    "cciMacdValue": 145.32880932072564790040
   },
   {
     "tick": {
@@ -5976,7 +5976,7 @@
     "macdValue": 27.5684561456,
     "macdSignalLineValue": 27.7387777887,
     "macdBarChartValue": -0.1703216431,
-    "cciMacdResult": 107.99837240832513623396
+    "cciMacdValue": 107.99837240832513623396
   },
   {
     "tick": {
@@ -6006,7 +6006,7 @@
     "macdValue": 24.3781309735,
     "macdSignalLineValue": 25.4983465786,
     "macdBarChartValue": -1.1202156051,
-    "cciMacdResult": 70.24895008069177538642
+    "cciMacdValue": 70.24895008069177538642
   },
   {
     "tick": {
@@ -6034,7 +6034,7 @@
     "macdValue": 24.2372115712,
     "macdSignalLineValue": 24.6575899070,
     "macdBarChartValue": -0.4203783358,
-    "cciMacdResult": 59.51895300833593118540
+    "cciMacdValue": 59.51895300833593118540
   },
   {
     "tick": {
@@ -6062,7 +6062,7 @@
     "macdValue": 24.9127250320,
     "macdSignalLineValue": 24.8276799903,
     "macdBarChartValue": 0.0850450417,
-    "cciMacdResult": 56.19284142854933767987
+    "cciMacdValue": 56.19284142854933767987
   },
   {
     "tick": {
@@ -6090,7 +6090,7 @@
     "macdValue": 23.3376732264,
     "macdSignalLineValue": 23.8343421477,
     "macdBarChartValue": -0.4966689213,
-    "cciMacdResult": 38.48067987118174811625
+    "cciMacdValue": 38.48067987118174811625
   },
   {
     "tick": {
@@ -6120,7 +6120,7 @@
     "macdValue": 21.0613985651,
     "macdSignalLineValue": 21.9857130926,
     "macdBarChartValue": -0.9243145275,
-    "cciMacdResult": 14.08534852927386472972
+    "cciMacdValue": 14.08534852927386472972
   },
   {
     "tick": {
@@ -6148,7 +6148,7 @@
     "macdValue": 17.4120877236,
     "macdSignalLineValue": 18.9366295133,
     "macdBarChartValue": -1.5245417897,
-    "cciMacdResult": -29.71072708103624280305
+    "cciMacdValue": -29.71072708103624280305
   },
   {
     "tick": {
@@ -6176,7 +6176,7 @@
     "macdValue": 15.3638984657,
     "macdSignalLineValue": 16.5548088149,
     "macdBarChartValue": -1.1909103492,
-    "cciMacdResult": -70.61895960566143449662
+    "cciMacdValue": -70.61895960566143449662
   },
   {
     "tick": {
@@ -6204,7 +6204,7 @@
     "macdValue": 13.0077307740,
     "macdSignalLineValue": 14.1900901210,
     "macdBarChartValue": -1.1823593470,
-    "cciMacdResult": -123.13719045886427242873
+    "cciMacdValue": -123.13719045886427242873
   },
   {
     "tick": {
@@ -6232,7 +6232,7 @@
     "macdValue": 9.8074166330,
     "macdSignalLineValue": 11.2683077957,
     "macdBarChartValue": -1.4608911627,
-    "cciMacdResult": -154.93800594388919730015
+    "cciMacdValue": -154.93800594388919730015
   },
   {
     "tick": {
@@ -6260,7 +6260,7 @@
     "macdValue": 6.7592119125,
     "macdSignalLineValue": 8.2622438736,
     "macdBarChartValue": -1.5030319611,
-    "cciMacdResult": -157.33473727312392483748
+    "cciMacdValue": -157.33473727312392483748
   },
   {
     "tick": {
@@ -6288,7 +6288,7 @@
     "macdValue": 6.6513081734,
     "macdSignalLineValue": 7.1882867401,
     "macdBarChartValue": -0.5369785667,
-    "cciMacdResult": -125.23192645819523436648
+    "cciMacdValue": -125.23192645819523436648
   },
   {
     "tick": {
@@ -6318,7 +6318,7 @@
     "macdValue": 8.8819226572,
     "macdSignalLineValue": 8.3173773515,
     "macdBarChartValue": 0.5645453057,
-    "cciMacdResult": -88.39579301715812181047
+    "cciMacdValue": -88.39579301715812181047
   },
   {
     "tick": {
@@ -6346,7 +6346,7 @@
     "macdValue": 9.4019913827,
     "macdSignalLineValue": 9.0404533723,
     "macdBarChartValue": 0.3615380104,
-    "cciMacdResult": -72.48465643569189093904
+    "cciMacdValue": -72.48465643569189093904
   },
   {
     "tick": {
@@ -6374,7 +6374,7 @@
     "macdValue": 6.1272415363,
     "macdSignalLineValue": 7.0983121483,
     "macdBarChartValue": -0.9710706120,
-    "cciMacdResult": -92.93787920631854932903
+    "cciMacdValue": -92.93787920631854932903
   },
   {
     "tick": {
@@ -6402,7 +6402,7 @@
     "macdValue": 5.9566381911,
     "macdSignalLineValue": 6.3371961768,
     "macdBarChartValue": -0.3805579857,
-    "cciMacdResult": -83.64751523245621245589
+    "cciMacdValue": -83.64751523245621245589
   },
   {
     "tick": {
@@ -6430,7 +6430,7 @@
     "macdValue": 5.1823904909,
     "macdSignalLineValue": 5.5673257195,
     "macdBarChartValue": -0.3849352286,
-    "cciMacdResult": -83.21328925986528498787
+    "cciMacdValue": -83.21328925986528498787
   },
   {
     "tick": {
@@ -6458,7 +6458,7 @@
     "macdValue": 4.5191478713,
     "macdSignalLineValue": 4.8685404874,
     "macdBarChartValue": -0.3493926161,
-    "cciMacdResult": -85.00306265213218226743
+    "cciMacdValue": -85.00306265213218226743
   },
   {
     "tick": {
@@ -6486,7 +6486,7 @@
     "macdValue": 5.6156925325,
     "macdSignalLineValue": 5.3666418508,
     "macdBarChartValue": 0.2490506817,
-    "cciMacdResult": -67.59696979762310622190
+    "cciMacdValue": -67.59696979762310622190
   },
   {
     "tick": {
@@ -6514,7 +6514,7 @@
     "macdValue": 6.2090085653,
     "macdSignalLineValue": 5.9282196605,
     "macdBarChartValue": 0.2807889048,
-    "cciMacdResult": -51.32297946003504763438
+    "cciMacdValue": -51.32297946003504763438
   },
   {
     "tick": {
@@ -6542,7 +6542,7 @@
     "macdValue": 3.4786548623,
     "macdSignalLineValue": 4.2951764617,
     "macdBarChartValue": -0.8165215994,
-    "cciMacdResult": -106.34211626858410777129
+    "cciMacdValue": -106.34211626858410777129
   },
   {
     "tick": {
@@ -6570,7 +6570,7 @@
     "macdValue": -1.8764473543,
     "macdSignalLineValue": 0.1807605844,
     "macdBarChartValue": -2.0572079387,
-    "cciMacdResult": -240.78750741227389899843
+    "cciMacdValue": -240.78750741227389899843
   },
   {
     "tick": {
@@ -6598,7 +6598,7 @@
     "macdValue": -7.3122828014,
     "macdSignalLineValue": -4.8146016728,
     "macdBarChartValue": -2.4976811286,
-    "cciMacdResult": -272.39696404178453175049
+    "cciMacdValue": -272.39696404178453175049
   },
   {
     "tick": {
@@ -6626,7 +6626,7 @@
     "macdValue": -9.3117070882,
     "macdSignalLineValue": -7.8126719497,
     "macdBarChartValue": -1.4990351385,
-    "cciMacdResult": -204.89644031081748605575
+    "cciMacdValue": -204.89644031081748605575
   },
   {
     "tick": {
@@ -6654,7 +6654,7 @@
     "macdValue": -11.2936142223,
     "macdSignalLineValue": -10.1333001314,
     "macdBarChartValue": -1.1603140909,
-    "cciMacdResult": -162.67335096473938096885
+    "cciMacdValue": -162.67335096473938096885
   },
   {
     "tick": {
@@ -6682,7 +6682,7 @@
     "macdValue": -11.9958295193,
     "macdSignalLineValue": -11.3749863900,
     "macdBarChartValue": -0.6208431293,
-    "cciMacdResult": -129.73197665808648310392
+    "cciMacdValue": -129.73197665808648310392
   },
   {
     "tick": {
@@ -6710,7 +6710,7 @@
     "macdValue": -11.4791924529,
     "macdSignalLineValue": -11.4444570986,
     "macdBarChartValue": -0.0347353543,
-    "cciMacdResult": -101.87841097184526550464
+    "cciMacdValue": -101.87841097184526550464
   },
   {
     "tick": {
@@ -6740,7 +6740,7 @@
     "macdValue": -11.6462970761,
     "macdSignalLineValue": -11.5790170836,
     "macdBarChartValue": -0.0672799925,
-    "cciMacdResult": -88.18430433373999319082
+    "cciMacdValue": -88.18430433373999319082
   },
   {
     "tick": {
@@ -6768,7 +6768,7 @@
     "macdValue": -10.2243184297,
     "macdSignalLineValue": -10.6758846477,
     "macdBarChartValue": 0.4515662180,
-    "cciMacdResult": -64.46111022912052333794
+    "cciMacdValue": -64.46111022912052333794
   },
   {
     "tick": {
@@ -6796,7 +6796,7 @@
     "macdValue": -7.9146957003,
     "macdSignalLineValue": -8.8350920161,
     "macdBarChartValue": 0.9203963158,
-    "cciMacdResult": -36.63109498543909941566
+    "cciMacdValue": -36.63109498543909941566
   },
   {
     "tick": {
@@ -6824,7 +6824,7 @@
     "macdValue": -5.9743467594,
     "macdSignalLineValue": -6.9279285116,
     "macdBarChartValue": 0.9535817522,
-    "cciMacdResult": -11.27813623879220675394
+    "cciMacdValue": -11.27813623879220675394
   },
   {
     "tick": {
@@ -6852,7 +6852,7 @@
     "macdValue": -6.2528584913,
     "macdSignalLineValue": -6.4778818314,
     "macdBarChartValue": 0.2250233401,
-    "cciMacdResult": -6.94803079806567899934
+    "cciMacdValue": -6.94803079806567899934
   },
   {
     "tick": {
@@ -6882,7 +6882,7 @@
     "macdValue": -3.9925893711,
     "macdSignalLineValue": -4.8210201912,
     "macdBarChartValue": 0.8284308201,
-    "cciMacdResult": 37.45155103808378441175
+    "cciMacdValue": 37.45155103808378441175
   },
   {
     "tick": {
@@ -6910,7 +6910,7 @@
     "macdValue": -1.5289449855,
     "macdSignalLineValue": -2.6263033874,
     "macdBarChartValue": 1.0973584019,
-    "cciMacdResult": 98.99255969347713150685
+    "cciMacdValue": 98.99255969347713150685
   },
   {
     "tick": {
@@ -6938,7 +6938,7 @@
     "macdValue": -0.9553132315,
     "macdSignalLineValue": -1.5123099501,
     "macdBarChartValue": 0.5569967186,
-    "cciMacdResult": 127.92453222078837035362
+    "cciMacdValue": 127.92453222078837035362
   },
   {
     "tick": {
@@ -6968,7 +6968,7 @@
     "macdValue": -6.5899822663,
     "macdSignalLineValue": -4.8974248276,
     "macdBarChartValue": -1.6925574387,
-    "cciMacdResult": 22.96404780810582271774
+    "cciMacdValue": 22.96404780810582271774
   },
   {
     "tick": {
@@ -6998,7 +6998,7 @@
     "macdValue": -10.9895069752,
     "macdSignalLineValue": -8.9588129260,
     "macdBarChartValue": -2.0306940492,
-    "cciMacdResult": -66.48165156386664827126
+    "cciMacdValue": -66.48165156386664827126
   },
   {
     "tick": {
@@ -7026,7 +7026,7 @@
     "macdValue": -12.1179332974,
     "macdSignalLineValue": -11.0648931736,
     "macdBarChartValue": -1.0530401238,
-    "cciMacdResult": -81.21777285034089025598
+    "cciMacdValue": -81.21777285034089025598
   },
   {
     "tick": {
@@ -7054,7 +7054,7 @@
     "macdValue": -13.7792740065,
     "macdSignalLineValue": -12.8744803955,
     "macdBarChartValue": -0.9047936110,
-    "cciMacdResult": -105.34888015830201056445
+    "cciMacdValue": -105.34888015830201056445
   },
   {
     "tick": {
@@ -7084,7 +7084,7 @@
     "macdValue": -12.1658344431,
     "macdSignalLineValue": -12.4020497606,
     "macdBarChartValue": 0.2362153175,
-    "cciMacdResult": -74.14320282816373176248
+    "cciMacdValue": -74.14320282816373176248
   },
   {
     "tick": {
@@ -7112,7 +7112,7 @@
     "macdValue": -12.3049357885,
     "macdSignalLineValue": -12.3373071125,
     "macdBarChartValue": 0.0323713240,
-    "cciMacdResult": -74.41420006913380234413
+    "cciMacdValue": -74.41420006913380234413
   },
   {
     "tick": {
@@ -7140,7 +7140,7 @@
     "macdValue": -13.8700307805,
     "macdSignalLineValue": -13.3591228912,
     "macdBarChartValue": -0.5109078893,
-    "cciMacdResult": -96.36980728709616595218
+    "cciMacdValue": -96.36980728709616595218
   },
   {
     "tick": {
@@ -7168,7 +7168,7 @@
     "macdValue": -15.1564454478,
     "macdSignalLineValue": -14.5573379289,
     "macdBarChartValue": -0.5991075189,
-    "cciMacdResult": -103.30527727676485014753
+    "cciMacdValue": -103.30527727676485014753
   },
   {
     "tick": {
@@ -7198,7 +7198,7 @@
     "macdValue": -14.5026102280,
     "macdSignalLineValue": -14.5208527950,
     "macdBarChartValue": 0.0182425670,
-    "cciMacdResult": -79.63010204382271431585
+    "cciMacdValue": -79.63010204382271431585
   },
   {
     "tick": {
@@ -7226,7 +7226,7 @@
     "macdValue": -14.9954840550,
     "macdSignalLineValue": -14.8372736350,
     "macdBarChartValue": -0.1582104200,
-    "cciMacdResult": -77.57254090447565719559
+    "cciMacdValue": -77.57254090447565719559
   },
   {
     "tick": {
@@ -7254,7 +7254,7 @@
     "macdValue": -14.6823619960,
     "macdSignalLineValue": -14.7339992090,
     "macdBarChartValue": 0.0516372130,
-    "cciMacdResult": -66.31719369435072139071
+    "cciMacdValue": -66.31719369435072139071
   },
   {
     "tick": {
@@ -7282,7 +7282,7 @@
     "macdValue": -13.1517839000,
     "macdSignalLineValue": -13.6791890030,
     "macdBarChartValue": 0.5274051030,
-    "cciMacdResult": -36.83871324725751166753
+    "cciMacdValue": -36.83871324725751166753
   },
   {
     "tick": {
@@ -7312,7 +7312,7 @@
     "macdValue": -11.7131920326,
     "macdSignalLineValue": -12.3685243561,
     "macdBarChartValue": 0.6553323235,
-    "cciMacdResult": 5.70859314223898512413
+    "cciMacdValue": 5.70859314223898512413
   },
   {
     "tick": {
@@ -7340,7 +7340,7 @@
     "macdValue": -9.4952010439,
     "macdSignalLineValue": -10.4529754813,
     "macdBarChartValue": 0.9577744374,
-    "cciMacdResult": 114.64552029301673966624
+    "cciMacdValue": 114.64552029301673966624
   },
   {
     "tick": {
@@ -7368,7 +7368,7 @@
     "macdValue": -7.8631617866,
     "macdSignalLineValue": -8.7264330182,
     "macdBarChartValue": 0.8632712316,
-    "cciMacdResult": 189.32462439270762819640
+    "cciMacdValue": 189.32462439270762819640
   },
   {
     "tick": {
@@ -7396,7 +7396,7 @@
     "macdValue": -5.1430606422,
     "macdSignalLineValue": -6.3375181009,
     "macdBarChartValue": 1.1944574587,
-    "cciMacdResult": 223.40529249272230328175
+    "cciMacdValue": 223.40529249272230328175
   },
   {
     "tick": {
@@ -7424,7 +7424,7 @@
     "macdValue": -4.2192693975,
     "macdSignalLineValue": -4.9253522986,
     "macdBarChartValue": 0.7060829011,
-    "cciMacdResult": 174.48403563301591791086
+    "cciMacdValue": 174.48403563301591791086
   },
   {
     "tick": {
@@ -7454,7 +7454,7 @@
     "macdValue": -11.2991223626,
     "macdSignalLineValue": -9.1745323413,
     "macdBarChartValue": -2.1245900213,
-    "cciMacdResult": 4.09644157888914557118
+    "cciMacdValue": 4.09644157888914557118
   },
   {
     "tick": {
@@ -7484,7 +7484,7 @@
     "macdValue": -15.6806317603,
     "macdSignalLineValue": -13.5119319540,
     "macdBarChartValue": -2.1686998063,
-    "cciMacdResult": -89.78918750510016465050
+    "cciMacdValue": -89.78918750510016465050
   },
   {
     "tick": {
@@ -7512,7 +7512,7 @@
     "macdValue": -16.1945531454,
     "macdSignalLineValue": -15.3003460816,
     "macdBarChartValue": -0.8942070638,
-    "cciMacdResult": -88.01410341349942633276
+    "cciMacdValue": -88.01410341349942633276
   },
   {
     "tick": {
@@ -7540,7 +7540,7 @@
     "macdValue": -16.7676380192,
     "macdSignalLineValue": -16.2785407067,
     "macdBarChartValue": -0.4890973125,
-    "cciMacdResult": -90.63401979665955656933
+    "cciMacdValue": -90.63401979665955656933
   },
   {
     "tick": {
@@ -7568,7 +7568,7 @@
     "macdValue": -19.8840089498,
     "macdSignalLineValue": -18.6821862021,
     "macdBarChartValue": -1.2018227477,
-    "cciMacdResult": -134.24903548170535668450
+    "cciMacdValue": -134.24903548170535668450
   },
   {
     "tick": {
@@ -7598,7 +7598,7 @@
     "macdValue": -22.0770767089,
     "macdSignalLineValue": -20.9454465400,
     "macdBarChartValue": -1.1316301689,
-    "cciMacdResult": -145.89956854855828912786
+    "cciMacdValue": -145.89956854855828912786
   },
   {
     "tick": {
@@ -7628,7 +7628,7 @@
     "macdValue": -18.9175446954,
     "macdSignalLineValue": -19.5935119769,
     "macdBarChartValue": 0.6759672815,
-    "cciMacdResult": -84.53822221764778420883
+    "cciMacdValue": -84.53822221764778420883
   },
   {
     "tick": {
@@ -7656,7 +7656,7 @@
     "macdValue": -16.2671881246,
     "macdSignalLineValue": -17.3759627420,
     "macdBarChartValue": 1.1087746174,
-    "cciMacdResult": -41.40414407858235985345
+    "cciMacdValue": -41.40414407858235985345
   },
   {
     "tick": {
@@ -7686,7 +7686,7 @@
     "macdValue": -14.0320727639,
     "macdSignalLineValue": -15.1467027566,
     "macdBarChartValue": 1.1146299927,
-    "cciMacdResult": -7.29561450494531915001
+    "cciMacdValue": -7.29561450494531915001
   },
   {
     "tick": {
@@ -7714,7 +7714,7 @@
     "macdValue": -13.6178966541,
     "macdSignalLineValue": -14.1274986883,
     "macdBarChartValue": 0.5096020342,
-    "cciMacdResult": 0.88536249806097192871
+    "cciMacdValue": 0.88536249806097192871
   },
   {
     "tick": {
@@ -7742,7 +7742,7 @@
     "macdValue": -12.4529161374,
     "macdSignalLineValue": -13.0111103210,
     "macdBarChartValue": 0.5581941836,
-    "cciMacdResult": 23.29535555642903309011
+    "cciMacdValue": 23.29535555642903309011
   },
   {
     "tick": {
@@ -7770,7 +7770,7 @@
     "macdValue": -11.7381838455,
     "macdSignalLineValue": -12.1624926707,
     "macdBarChartValue": 0.4243088252,
-    "cciMacdResult": 42.48334541208251311561
+    "cciMacdValue": 42.48334541208251311561
   },
   {
     "tick": {
@@ -7798,7 +7798,7 @@
     "macdValue": -15.5423971167,
     "macdSignalLineValue": -14.4157623014,
     "macdBarChartValue": -1.1266348153,
-    "cciMacdResult": -13.44102108753238356127
+    "cciMacdValue": -13.44102108753238356127
   },
   {
     "tick": {
@@ -7826,7 +7826,7 @@
     "macdValue": -13.9802557077,
     "macdSignalLineValue": -14.1254245723,
     "macdBarChartValue": 0.1451688646,
-    "cciMacdResult": 45.74059749696967315535
+    "cciMacdValue": 45.74059749696967315535
   },
   {
     "tick": {
@@ -7854,7 +7854,7 @@
     "macdValue": -12.1629933854,
     "macdSignalLineValue": -12.8171371144,
     "macdBarChartValue": 0.6541437290,
-    "cciMacdResult": 101.32366747821560071693
+    "cciMacdValue": 101.32366747821560071693
   },
   {
     "tick": {
@@ -7884,7 +7884,7 @@
     "macdValue": -11.5186272039,
     "macdSignalLineValue": -11.9514638407,
     "macdBarChartValue": 0.4328366368,
-    "cciMacdResult": 99.39392702337527749124
+    "cciMacdValue": 99.39392702337527749124
   },
   {
     "tick": {
@@ -7912,7 +7912,7 @@
     "macdValue": -11.3723366552,
     "macdSignalLineValue": -11.5653790504,
     "macdBarChartValue": 0.1930423952,
-    "cciMacdResult": 88.22371744505270184160
+    "cciMacdValue": 88.22371744505270184160
   },
   {
     "tick": {
@@ -7940,7 +7940,7 @@
     "macdValue": -8.1256525900,
     "macdSignalLineValue": -9.2722280768,
     "macdBarChartValue": 1.1465754868,
-    "cciMacdResult": 141.89325655656149002285
+    "cciMacdValue": 141.89325655656149002285
   },
   {
     "tick": {
@@ -7968,7 +7968,7 @@
     "macdValue": -5.3282128373,
     "macdSignalLineValue": -6.6428845838,
     "macdBarChartValue": 1.3146717465,
-    "cciMacdResult": 179.76438942259310022148
+    "cciMacdValue": 179.76438942259310022148
   },
   {
     "tick": {
@@ -7996,7 +7996,7 @@
     "macdValue": -4.6501318438,
     "macdSignalLineValue": -5.3143827571,
     "macdBarChartValue": 0.6642509133,
-    "cciMacdResult": 174.35686352608839843273
+    "cciMacdValue": 174.35686352608839843273
   },
   {
     "tick": {
@@ -8024,7 +8024,7 @@
     "macdValue": -2.1293748406,
     "macdSignalLineValue": -3.1910441461,
     "macdBarChartValue": 1.0616693055,
-    "cciMacdResult": 174.93582161784382672039
+    "cciMacdValue": 174.93582161784382672039
   },
   {
     "tick": {
@@ -8052,7 +8052,7 @@
     "macdValue": -1.2471820072,
     "macdSignalLineValue": -1.8951360535,
     "macdBarChartValue": 0.6479540463,
-    "cciMacdResult": 144.57187004138474398119
+    "cciMacdValue": 144.57187004138474398119
   },
   {
     "tick": {
@@ -8080,7 +8080,7 @@
     "macdValue": -0.3023189872,
     "macdSignalLineValue": -0.8332580093,
     "macdBarChartValue": 0.5309390221,
-    "cciMacdResult": 127.19022043811811358370
+    "cciMacdValue": 127.19022043811811358370
   },
   {
     "tick": {
@@ -8108,7 +8108,7 @@
     "macdValue": 0.9732825058,
     "macdSignalLineValue": 0.3711023341,
     "macdBarChartValue": 0.6021801717,
-    "cciMacdResult": 119.80873077013933801322
+    "cciMacdValue": 119.80873077013933801322
   },
   {
     "tick": {
@@ -8136,7 +8136,7 @@
     "macdValue": 0.9836544064,
     "macdSignalLineValue": 0.7794703823,
     "macdBarChartValue": 0.2041840241,
-    "cciMacdResult": 100.73471327272716690407
+    "cciMacdValue": 100.73471327272716690407
   },
   {
     "tick": {
@@ -8166,7 +8166,7 @@
     "macdValue": 0.3868327755,
     "macdSignalLineValue": 0.5177119778,
     "macdBarChartValue": -0.1308792023,
-    "cciMacdResult": 81.23730280850300580356
+    "cciMacdValue": 81.23730280850300580356
   },
   {
     "tick": {
@@ -8194,7 +8194,7 @@
     "macdValue": 0.1697509518,
     "macdSignalLineValue": 0.2857379605,
     "macdBarChartValue": -0.1159870087,
-    "cciMacdResult": 70.93162689608456259070
+    "cciMacdValue": 70.93162689608456259070
   },
   {
     "tick": {
@@ -8222,7 +8222,7 @@
     "macdValue": 0.9042562750,
     "macdSignalLineValue": 0.6980835035,
     "macdBarChartValue": 0.2061727715,
-    "cciMacdResult": 72.78006727988349590322
+    "cciMacdValue": 72.78006727988349590322
   },
   {
     "tick": {
@@ -8250,7 +8250,7 @@
     "macdValue": 1.0312814278,
     "macdSignalLineValue": 0.9202154530,
     "macdBarChartValue": 0.1110659748,
-    "cciMacdResult": 68.42512890722684230151
+    "cciMacdValue": 68.42512890722684230151
   },
   {
     "tick": {
@@ -8278,7 +8278,7 @@
     "macdValue": 1.0709573565,
     "macdSignalLineValue": 1.0207100553,
     "macdBarChartValue": 0.0502473012,
-    "cciMacdResult": 65.37327278585106604536
+    "cciMacdValue": 65.37327278585106604536
   },
   {
     "tick": {
@@ -8306,7 +8306,7 @@
     "macdValue": 2.2055327189,
     "macdSignalLineValue": 1.8105918310,
     "macdBarChartValue": 0.3949408879,
-    "cciMacdResult": 90.99749207308315178621
+    "cciMacdValue": 90.99749207308315178621
   },
   {
     "tick": {
@@ -8334,7 +8334,7 @@
     "macdValue": 2.8496849590,
     "macdSignalLineValue": 2.5033205830,
     "macdBarChartValue": 0.3463643760,
-    "cciMacdResult": 114.09108036900526660701
+    "cciMacdValue": 114.09108036900526660701
   },
   {
     "tick": {
@@ -8364,7 +8364,7 @@
     "macdValue": 4.4061212933,
     "macdSignalLineValue": 3.7718543899,
     "macdBarChartValue": 0.6342669034,
-    "cciMacdResult": 172.67916961483310164084
+    "cciMacdValue": 172.67916961483310164084
   },
   {
     "tick": {
@@ -8392,7 +8392,7 @@
     "macdValue": 3.0808127079,
     "macdSignalLineValue": 3.3111599352,
     "macdBarChartValue": -0.2303472273,
-    "cciMacdResult": 113.00184962997944775099
+    "cciMacdValue": 113.00184962997944775099
   },
   {
     "tick": {
@@ -8420,7 +8420,7 @@
     "macdValue": 3.6132683815,
     "macdSignalLineValue": 3.5125655661,
     "macdBarChartValue": 0.1007028154,
-    "cciMacdResult": 113.22193004325974868373
+    "cciMacdValue": 113.22193004325974868373
   },
   {
     "tick": {
@@ -8448,6 +8448,6 @@
     "macdValue": 4.4294887665,
     "macdSignalLineValue": 4.1238476997,
     "macdBarChartValue": 0.3056410668,
-    "cciMacdResult": 126.69805165157706919632
+    "cciMacdValue": 126.69805165157706919632
   }
 ]

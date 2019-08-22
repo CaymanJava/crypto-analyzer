@@ -272,10 +272,10 @@ public class RsiEisMaStrategy implements Strategy<RsiEisMaResult> {
 
     private void addIndicatorsResult(int index) {
         RsiEisMaResult rsiEisMaResult = result[index];
-        rsiEisMaResult.setRsiResult(rsiResults[index].getIndicatorValue());
+        rsiEisMaResult.setRsiValue(rsiResults[index].getIndicatorValue());
         rsiEisMaResult.setEisBarColor(eisResults[index].getBarColor());
-        rsiEisMaResult.setFastMaResult(fastMaResults[index].getIndicatorValue());
-        rsiEisMaResult.setSlowMaResult(slowMaResults[index].getIndicatorValue());
+        rsiEisMaResult.setFastMaValue(fastMaResults[index].getIndicatorValue());
+        rsiEisMaResult.setSlowMaValue(slowMaResults[index].getIndicatorValue());
     }
 
 }

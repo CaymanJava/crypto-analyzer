@@ -41,7 +41,7 @@ public class PivotRsiMacdMaResult implements StrategyResult {
 
     private BigDecimal fourthSupport;
 
-    private BigDecimal rsiResult;
+    private BigDecimal rsiValue;
 
     private BigDecimal macdValue;
 
@@ -49,6 +49,6 @@ public class PivotRsiMacdMaResult implements StrategyResult {
 
     private BigDecimal macdBarChartValue;
 
-    private BigDecimal maResult;
+    private BigDecimal maValue;
 
 }

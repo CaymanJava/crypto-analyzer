@@ -718,7 +718,7 @@
       }
     },
     "positions": [],
-    "maResult": 6374.16791046833333333333
+    "maValue": 6374.16791046833333333333
   },
   {
     "tick": {
@@ -743,7 +743,7 @@
       }
     },
     "positions": [],
-    "maResult": 6369.93910150133333333333
+    "maValue": 6369.93910150133333333333
   },
   {
     "tick": {
@@ -768,7 +768,7 @@
       }
     },
     "positions": [],
-    "maResult": 6365.50576816433333333333
+    "maValue": 6365.50576816433333333333
   },
   {
     "tick": {
@@ -793,7 +793,7 @@
       }
     },
     "positions": [],
-    "maResult": 6363.43243483266666666667
+    "maValue": 6363.43243483266666666667
   },
   {
     "tick": {
@@ -818,7 +818,7 @@
       }
     },
     "positions": [],
-    "maResult": 6362.61493728000000000000
+    "maValue": 6362.61493728000000000000
   },
   {
     "tick": {
@@ -843,7 +843,7 @@
       }
     },
     "positions": [],
-    "maResult": 6360.79827061766666666667
+    "maValue": 6360.79827061766666666667
   },
   {
     "tick": {
@@ -868,7 +868,7 @@
       }
     },
     "positions": [],
-    "maResult": 6360.49167601233333333333
+    "maValue": 6360.49167601233333333333
   },
   {
     "tick": {
@@ -893,7 +893,7 @@
       }
     },
     "positions": [],
-    "maResult": 6359.24587628700000000000
+    "maValue": 6359.24587628700000000000
   },
   {
     "tick": {
@@ -918,9 +918,9 @@
       }
     },
     "positions": [],
-    "acResult": 1.0474816348,
+    "acValue": 1.0474816348,
     "acIncreased": false,
-    "maResult": 6357.34587628700000000000
+    "maValue": 6357.34587628700000000000
   },
   {
     "tick": {
@@ -945,9 +945,9 @@
       }
     },
     "positions": [],
-    "acResult": 0.1653020746,
+    "acValue": 0.1653020746,
     "acIncreased": false,
-    "maResult": 6356.04587628733333333333
+    "maValue": 6356.04587628733333333333
   },
   {
     "tick": {
@@ -972,9 +972,9 @@
       }
     },
     "positions": [],
-    "acResult": 1.0474127387,
+    "acValue": 1.0474127387,
     "acIncreased": true,
-    "maResult": 6356.45920961600000000000
+    "maValue": 6356.45920961600000000000
   },
   {
     "tick": {
@@ -999,9 +999,9 @@
       }
     },
     "positions": [],
-    "acResult": 2.2646515214,
+    "acValue": 2.2646515214,
     "acIncreased": true,
-    "maResult": 6356.79254294866666666667
+    "maValue": 6356.79254294866666666667
   },
   {
     "tick": {
@@ -1026,9 +1026,9 @@
       }
     },
     "positions": [],
-    "acResult": 1.3791110569,
+    "acValue": 1.3791110569,
     "acIncreased": false,
-    "maResult": 6357.55156526133333333333
+    "maValue": 6357.55156526133333333333
   },
   {
     "tick": {
@@ -1053,9 +1053,9 @@
       }
     },
     "positions": [],
-    "acResult": 1.7572933633,
+    "acValue": 1.7572933633,
     "acIncreased": true,
-    "maResult": 6358.65156526133333333333
+    "maValue": 6358.65156526133333333333
   },
   {
     "tick": {
@@ -1080,9 +1080,9 @@
       }
     },
     "positions": [],
-    "acResult": 3.1774519295,
+    "acValue": 3.1774519295,
     "acIncreased": true,
-    "maResult": 6359.45156509366666666667
+    "maValue": 6359.45156509366666666667
   },
   {
     "tick": {
@@ -1107,9 +1107,9 @@
       }
     },
     "positions": [],
-    "acResult": 1.6955636587,
+    "acValue": 1.6955636587,
     "acIncreased": false,
-    "maResult": 6359.86226869300000000000
+    "maValue": 6359.86226869300000000000
   },
   {
     "tick": {
@@ -1134,9 +1134,9 @@
       }
     },
     "positions": [],
-    "acResult": 1.7519885150,
+    "acValue": 1.7519885150,
     "acIncreased": true,
-    "maResult": 6359.46503218266666666667
+    "maValue": 6359.46503218266666666667
   },
   {
     "tick": {
@@ -1161,9 +1161,9 @@
       }
     },
     "positions": [],
-    "acResult": 2.3080892821,
+    "acValue": 2.3080892821,
     "acIncreased": true,
-    "maResult": 6359.83169883933333333333
+    "maValue": 6359.83169883933333333333
   },
   {
     "tick": {
@@ -1188,9 +1188,9 @@
       }
     },
     "positions": [],
-    "acResult": 1.2585363119,
+    "acValue": 1.2585363119,
     "acIncreased": false,
-    "maResult": 6359.13169882433333333333
+    "maValue": 6359.13169882433333333333
   },
   {
     "tick": {
@@ -1215,9 +1215,9 @@
       }
     },
     "positions": [],
-    "acResult": -1.6919126675,
+    "acValue": -1.6919126675,
     "acIncreased": false,
-    "maResult": 6357.30593528900000000000
+    "maValue": 6357.30593528900000000000
   },
   {
     "tick": {
@@ -1242,9 +1242,9 @@
       }
     },
     "positions": [],
-    "acResult": -2.6843505121,
+    "acValue": -2.6843505121,
     "acIncreased": false,
-    "maResult": 6355.40593528933333333333
+    "maValue": 6355.40593528933333333333
   },
   {
     "tick": {
@@ -1269,10 +1269,10 @@
       }
     },
     "positions": [],
-    "acResult": -4.4197824432,
+    "acValue": -4.4197824432,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "maResult": 6353.78760195600000000000
+    "fastStochasticAcValue": 0E-20,
+    "maValue": 6353.78760195600000000000
   },
   {
     "tick": {
@@ -1297,10 +1297,10 @@
       }
     },
     "positions": [],
-    "acResult": -3.5630556039,
+    "acValue": -3.5630556039,
     "acIncreased": true,
-    "fastStochasticAc": 11.27682518757843349165,
-    "maResult": 6352.03293559233333333333
+    "fastStochasticAcValue": 11.27682518757843349165,
+    "maValue": 6352.03293559233333333333
   },
   {
     "tick": {
@@ -1325,11 +1325,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.5217541905,
+    "acValue": -3.5217541905,
     "acIncreased": true,
-    "fastStochasticAc": 11.82046266634851108336,
-    "slowStochasticAc": 7.69909595130000000000,
-    "maResult": 6349.74493589533333333333
+    "fastStochasticAcValue": 11.82046266634851108336,
+    "slowStochasticAcValue": 7.69909595130000000000,
+    "maValue": 6349.74493589533333333333
   },
   {
     "tick": {
@@ -1354,11 +1354,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.2778436738,
+    "acValue": -2.2778436738,
     "acIncreased": true,
-    "fastStochasticAc": 28.19366448792037277673,
-    "slowStochasticAc": 17.09698411393333333333,
-    "maResult": 6348.40160256233333333333
+    "fastStochasticAcValue": 28.19366448792037277673,
+    "slowStochasticAcValue": 17.09698411393333333333,
+    "maValue": 6348.40160256233333333333
   },
   {
     "tick": {
@@ -1383,11 +1383,11 @@
       }
     },
     "positions": [],
-    "acResult": -4.3260408564,
+    "acValue": -4.3260408564,
     "acIncreased": false,
-    "fastStochasticAc": 1.23389094243100130336,
-    "slowStochasticAc": 13.74933936556666666667,
-    "maResult": 6347.23593089600000000000
+    "fastStochasticAcValue": 1.23389094243100130336,
+    "slowStochasticAcValue": 13.74933936556666666667,
+    "maValue": 6347.23593089600000000000
   },
   {
     "tick": {
@@ -1415,11 +1415,11 @@
       "ENTRY_LONG"
     ],
     "stopLose": 6270.00000000,
-    "acResult": 4.8017114009,
+    "acValue": 4.8017114009,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 43.14251847680000000000,
-    "maResult": 6347.96926422600000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 43.14251847680000000000,
+    "maValue": 6347.96926422600000000000
   },
   {
     "tick": {
@@ -1444,11 +1444,11 @@
       }
     },
     "positions": [],
-    "acResult": 11.2877114730,
+    "acValue": 11.2877114730,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 67.07796364746666666667,
-    "maResult": 6348.63963459666666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 67.07796364746666666667,
+    "maValue": 6348.63963459666666666667
   },
   {
     "tick": {
@@ -1473,11 +1473,11 @@
       }
     },
     "positions": [],
-    "acResult": 15.3636357960,
+    "acValue": 15.3636357960,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6349.27296792633333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6349.27296792633333333333
   },
   {
     "tick": {
@@ -1502,11 +1502,11 @@
       }
     },
     "positions": [],
-    "acResult": 18.8063806729,
+    "acValue": 18.8063806729,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6349.06296792733333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6349.06296792733333333333
   },
   {
     "tick": {
@@ -1531,11 +1531,11 @@
       }
     },
     "positions": [],
-    "acResult": 22.1476817782,
+    "acValue": 22.1476817782,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6349.38235287633333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6349.38235287633333333333
   },
   {
     "tick": {
@@ -1560,11 +1560,11 @@
       }
     },
     "positions": [],
-    "acResult": 12.0361429448,
+    "acValue": 12.0361429448,
     "acIncreased": false,
-    "fastStochasticAc": 61.94014321752547746521,
-    "slowStochasticAc": 87.31338107250000000000,
-    "maResult": 6349.41116184333333333333
+    "fastStochasticAcValue": 61.94014321752547746521,
+    "slowStochasticAcValue": 87.31338107250000000000,
+    "maValue": 6349.41116184333333333333
   },
   {
     "tick": {
@@ -1589,11 +1589,11 @@
       }
     },
     "positions": [],
-    "acResult": 4.0389813065,
+    "acValue": 4.0389813065,
     "acIncreased": false,
-    "fastStochasticAc": 31.83880734423458911948,
-    "slowStochasticAc": 64.59298352060000000000,
-    "maResult": 6349.75938894500000000000
+    "fastStochasticAcValue": 31.83880734423458911948,
+    "slowStochasticAcValue": 64.59298352060000000000,
+    "maValue": 6349.75938894500000000000
   },
   {
     "tick": {
@@ -1618,11 +1618,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.2057476760,
+    "acValue": -0.2057476760,
     "acIncreased": false,
-    "fastStochasticAc": 15.86163712156469060372,
-    "slowStochasticAc": 36.54686256110000000000,
-    "maResult": 6350.92605560433333333333
+    "fastStochasticAcValue": 15.86163712156469060372,
+    "slowStochasticAcValue": 36.54686256110000000000,
+    "maValue": 6350.92605560433333333333
   },
   {
     "tick": {
@@ -1647,11 +1647,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.1787691857,
+    "acValue": -3.1787691857,
     "acIncreased": false,
-    "fastStochasticAc": 4.67117692211049686356,
-    "slowStochasticAc": 17.45720712930000000000,
-    "maResult": 6351.15655329566666666667
+    "fastStochasticAcValue": 4.67117692211049686356,
+    "slowStochasticAcValue": 17.45720712930000000000,
+    "maValue": 6351.15655329566666666667
   },
   {
     "tick": {
@@ -1676,11 +1676,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.3483182099,
+    "acValue": -2.3483182099,
     "acIncreased": true,
-    "fastStochasticAc": 7.47051207643613679609,
-    "slowStochasticAc": 9.33444204003333333333,
-    "maResult": 6352.76321995633333333333
+    "fastStochasticAcValue": 7.47051207643613679609,
+    "slowStochasticAcValue": 9.33444204003333333333,
+    "maValue": 6352.76321995633333333333
   },
   {
     "tick": {
@@ -1705,11 +1705,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.7424943735,
+    "acValue": -2.7424943735,
     "acIncreased": false,
-    "fastStochasticAc": 5.98157843064493643594,
-    "slowStochasticAc": 6.04108914306666666667,
-    "maResult": 6352.56981456166666666667
+    "fastStochasticAcValue": 5.98157843064493643594,
+    "slowStochasticAcValue": 6.04108914306666666667,
+    "maValue": 6352.56981456166666666667
   },
   {
     "tick": {
@@ -1734,11 +1734,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.6381590718,
+    "acValue": -3.6381590718,
     "acIncreased": false,
-    "fastStochasticAc": 2.59835684650170252638,
-    "slowStochasticAc": 5.35014911786666666667,
-    "maResult": 6352.59428124733333333333
+    "fastStochasticAcValue": 2.59835684650170252638,
+    "slowStochasticAcValue": 5.35014911786666666667,
+    "maValue": 6352.59428124733333333333
   },
   {
     "tick": {
@@ -1763,11 +1763,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.3463818745,
+    "acValue": -3.3463818745,
     "acIncreased": true,
-    "fastStochasticAc": 3.70049575355008240991,
-    "slowStochasticAc": 4.09347701023333333333,
-    "maResult": 6354.55186469666666666667
+    "fastStochasticAcValue": 3.70049575355008240991,
+    "slowStochasticAcValue": 4.09347701023333333333,
+    "maValue": 6354.55186469666666666667
   },
   {
     "tick": {
@@ -1792,11 +1792,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.6113343069,
+    "acValue": -2.6113343069,
     "acIncreased": true,
-    "fastStochasticAc": 3.98212635714766695304,
-    "slowStochasticAc": 3.42699298573333333333,
-    "maResult": 6356.21853119666666666667
+    "fastStochasticAcValue": 3.98212635714766695304,
+    "slowStochasticAcValue": 3.42699298573333333333,
+    "maValue": 6356.21853119666666666667
   },
   {
     "tick": {
@@ -1821,11 +1821,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.1223044070,
+    "acValue": -2.1223044070,
     "acIncreased": true,
-    "fastStochasticAc": 5.87863189576771160441,
-    "slowStochasticAc": 4.52041800216666666667,
-    "maResult": 6356.50519786866666666667
+    "fastStochasticAcValue": 5.87863189576771160441,
+    "slowStochasticAcValue": 4.52041800216666666667,
+    "maValue": 6356.50519786866666666667
   },
   {
     "tick": {
@@ -1850,11 +1850,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.6640313797,
+    "acValue": -0.6640313797,
     "acIncreased": true,
-    "fastStochasticAc": 11.53395659812272516993,
-    "slowStochasticAc": 7.13157161700000000000,
-    "maResult": 6357.87186453566666666667
+    "fastStochasticAcValue": 11.53395659812272516993,
+    "slowStochasticAcValue": 7.13157161700000000000,
+    "maValue": 6357.87186453566666666667
   },
   {
     "tick": {
@@ -1882,11 +1882,11 @@
       "ENTRY_LONG"
     ],
     "stopLose": 6356.50000000,
-    "acResult": 1.7644643945,
+    "acValue": 1.7644643945,
     "acIncreased": true,
-    "fastStochasticAc": 20.95189952395909555922,
-    "slowStochasticAc": 12.78816267260000000000,
-    "maResult": 6358.67950888966666666667
+    "fastStochasticAcValue": 20.95189952395909555922,
+    "slowStochasticAcValue": 12.78816267260000000000,
+    "maValue": 6358.67950888966666666667
   },
   {
     "tick": {
@@ -1911,11 +1911,11 @@
       }
     },
     "positions": [],
-    "acResult": 2.7856006577,
+    "acValue": 2.7856006577,
     "acIncreased": true,
-    "fastStochasticAc": 24.91196531797410825949,
-    "slowStochasticAc": 19.13260714670000000000,
-    "maResult": 6359.54650888966666666667
+    "fastStochasticAcValue": 24.91196531797410825949,
+    "slowStochasticAcValue": 19.13260714670000000000,
+    "maValue": 6359.54650888966666666667
   },
   {
     "tick": {
@@ -1940,11 +1940,11 @@
       }
     },
     "positions": [],
-    "acResult": 2.8972882910,
+    "acValue": 2.8972882910,
     "acIncreased": true,
-    "fastStochasticAc": 41.69530072776816523754,
-    "slowStochasticAc": 29.18638852323333333333,
-    "maResult": 6360.33792769066666666667
+    "fastStochasticAcValue": 41.69530072776816523754,
+    "slowStochasticAcValue": 29.18638852323333333333,
+    "maValue": 6360.33792769066666666667
   },
   {
     "tick": {
@@ -1969,11 +1969,11 @@
       }
     },
     "positions": [],
-    "acResult": 2.6969485596,
+    "acValue": 2.6969485596,
     "acIncreased": false,
-    "fastStochasticAc": 82.51910632384222219348,
-    "slowStochasticAc": 49.70879078986666666667,
-    "maResult": 6360.67689082600000000000
+    "fastStochasticAcValue": 82.51910632384222219348,
+    "slowStochasticAcValue": 49.70879078986666666667,
+    "maValue": 6360.67689082600000000000
   },
   {
     "tick": {
@@ -1998,11 +1998,11 @@
       }
     },
     "positions": [],
-    "acResult": 0.5295512495,
+    "acValue": 0.5295512495,
     "acIncreased": false,
-    "fastStochasticAc": 63.77084979710426748325,
-    "slowStochasticAc": 62.66175228290000000000,
-    "maResult": 6361.95522414533333333333
+    "fastStochasticAcValue": 63.77084979710426748325,
+    "slowStochasticAcValue": 62.66175228290000000000,
+    "maValue": 6361.95522414533333333333
   },
   {
     "tick": {
@@ -2027,11 +2027,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.4164944930,
+    "acValue": -2.4164944930,
     "acIncreased": false,
-    "fastStochasticAc": 18.69289906233134783071,
-    "slowStochasticAc": 54.99428506110000000000,
-    "maResult": 6362.42189080766666666667
+    "fastStochasticAcValue": 18.69289906233134783071,
+    "slowStochasticAcValue": 54.99428506110000000000,
+    "maValue": 6362.42189080766666666667
   },
   {
     "tick": {
@@ -2056,11 +2056,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.6092385133,
+    "acValue": -3.6092385133,
     "acIncreased": false,
-    "fastStochasticAc": 0.44251842138025397853,
-    "slowStochasticAc": 27.63542242693333333333,
-    "maResult": 6362.88855748933333333333
+    "fastStochasticAcValue": 0.44251842138025397853,
+    "slowStochasticAcValue": 27.63542242693333333333,
+    "maValue": 6362.88855748933333333333
   },
   {
     "tick": {
@@ -2085,11 +2085,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.7999944432,
+    "acValue": -3.7999944432,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 6.37847249456666666667,
-    "maResult": 6364.42189082266666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 6.37847249456666666667,
+    "maValue": 6364.42189082266666666667
   },
   {
     "tick": {
@@ -2117,11 +2117,11 @@
       "ENTRY_SHORT"
     ],
     "stopLose": 6385.76999827,
-    "acResult": -3.9068025281,
+    "acValue": -3.9068025281,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0.14750614046666666667,
-    "maResult": 6365.65522415566666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0.14750614046666666667,
+    "maValue": 6365.65522415566666666667
   },
   {
     "tick": {
@@ -2146,11 +2146,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.9370212309,
+    "acValue": -2.9370212309,
     "acIncreased": true,
-    "fastStochasticAc": 14.25291523854580525936,
-    "slowStochasticAc": 4.75097174616666666667,
-    "maResult": 6367.55522415566666666667
+    "fastStochasticAcValue": 14.25291523854580525936,
+    "slowStochasticAcValue": 4.75097174616666666667,
+    "maValue": 6367.55522415566666666667
   },
   {
     "tick": {
@@ -2175,11 +2175,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.7475320390,
+    "acValue": -0.7475320390,
     "acIncreased": true,
-    "fastStochasticAc": 46.43192710231765166122,
-    "slowStochasticAc": 20.22828078030000000000,
-    "maResult": 6369.11189082233333333333
+    "fastStochasticAcValue": 46.43192710231765166122,
+    "slowStochasticAcValue": 20.22828078030000000000,
+    "maValue": 6369.11189082233333333333
   },
   {
     "tick": {
@@ -2207,11 +2207,11 @@
       "ENTRY_LONG"
     ],
     "stopLose": 6360.00000000,
-    "acResult": 0.2831689135,
+    "acValue": 0.2831689135,
     "acIncreased": true,
-    "fastStochasticAc": 61.58018099697002029395,
-    "slowStochasticAc": 40.75500777926666666667,
-    "maResult": 6371.41784861666666666667
+    "fastStochasticAcValue": 61.58018099697002029395,
+    "slowStochasticAcValue": 40.75500777926666666667,
+    "maValue": 6371.41784861666666666667
   },
   {
     "tick": {
@@ -2236,11 +2236,11 @@
       }
     },
     "positions": [],
-    "acResult": 2.9780470526,
+    "acValue": 2.9780470526,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 69.33736936643333333333,
-    "maResult": 6374.42784861533333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 69.33736936643333333333,
+    "maValue": 6374.42784861533333333333
   },
   {
     "tick": {
@@ -2265,11 +2265,11 @@
       }
     },
     "positions": [],
-    "acResult": 6.3786240512,
+    "acValue": 6.3786240512,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 87.19339366566666666667,
-    "maResult": 6377.06018694833333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 87.19339366566666666667,
+    "maValue": 6377.06018694833333333333
   },
   {
     "tick": {
@@ -2294,11 +2294,11 @@
       }
     },
     "positions": [],
-    "acResult": 9.5183028272,
+    "acValue": 9.5183028272,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6377.92685361700000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6377.92685361700000000000
   },
   {
     "tick": {
@@ -2323,11 +2323,11 @@
       }
     },
     "positions": [],
-    "acResult": 8.2179961093,
+    "acValue": 8.2179961093,
     "acIncreased": false,
-    "fastStochasticAc": 90.31436488960839820040,
-    "slowStochasticAc": 96.77145496320000000000,
-    "maResult": 6378.96018695033333333333
+    "fastStochasticAcValue": 90.31436488960839820040,
+    "slowStochasticAcValue": 96.77145496320000000000,
+    "maValue": 6378.96018695033333333333
   },
   {
     "tick": {
@@ -2352,11 +2352,11 @@
       }
     },
     "positions": [],
-    "acResult": 8.0777449990,
+    "acValue": 8.0777449990,
     "acIncreased": false,
-    "fastStochasticAc": 89.26967208021728767848,
-    "slowStochasticAc": 93.19467898993333333333,
-    "maResult": 6379.80257218366666666667
+    "fastStochasticAcValue": 89.26967208021728767848,
+    "slowStochasticAcValue": 93.19467898993333333333,
+    "maValue": 6379.80257218366666666667
   },
   {
     "tick": {
@@ -2381,11 +2381,11 @@
       }
     },
     "positions": [],
-    "acResult": 8.1047104251,
+    "acValue": 8.1047104251,
     "acIncreased": true,
-    "fastStochasticAc": 89.47053028867339126467,
-    "slowStochasticAc": 89.68485575283333333333,
-    "maResult": 6383.14257218266666666667
+    "fastStochasticAcValue": 89.47053028867339126467,
+    "slowStochasticAcValue": 89.68485575283333333333,
+    "maValue": 6383.14257218266666666667
   },
   {
     "tick": {
@@ -2410,11 +2410,11 @@
       }
     },
     "positions": [],
-    "acResult": 9.0007557127,
+    "acValue": 9.0007557127,
     "acIncreased": true,
-    "fastStochasticAc": 96.14493070405826403951,
-    "slowStochasticAc": 91.62837769096666666667,
-    "maResult": 6384.50923884933333333333
+    "fastStochasticAcValue": 96.14493070405826403951,
+    "slowStochasticAcValue": 91.62837769096666666667,
+    "maValue": 6384.50923884933333333333
   },
   {
     "tick": {
@@ -2439,11 +2439,11 @@
       }
     },
     "positions": [],
-    "acResult": 8.3048591412,
+    "acValue": 8.3048591412,
     "acIncreased": false,
-    "fastStochasticAc": 90.96138425818048894727,
-    "slowStochasticAc": 92.19228175030000000000,
-    "maResult": 6386.30923884933333333333
+    "fastStochasticAcValue": 90.96138425818048894727,
+    "slowStochasticAcValue": 92.19228175030000000000,
+    "maValue": 6386.30923884933333333333
   },
   {
     "tick": {
@@ -2468,11 +2468,11 @@
       }
     },
     "positions": [],
-    "acResult": 7.4462628679,
+    "acValue": 7.4462628679,
     "acIncreased": false,
-    "fastStochasticAc": 84.56593148088782507404,
-    "slowStochasticAc": 90.55741548103333333333,
-    "maResult": 6389.25401169000000000000
+    "fastStochasticAcValue": 84.56593148088782507404,
+    "slowStochasticAcValue": 90.55741548103333333333,
+    "maValue": 6389.25401169000000000000
   },
   {
     "tick": {
@@ -2497,11 +2497,11 @@
       }
     },
     "positions": [],
-    "acResult": 3.5327675191,
+    "acValue": 3.5327675191,
     "acIncreased": false,
-    "fastStochasticAc": 55.41535690267775875709,
-    "slowStochasticAc": 76.98089088056666666667,
-    "maResult": 6390.52067836266666666667
+    "fastStochasticAcValue": 55.41535690267775875709,
+    "slowStochasticAcValue": 76.98089088056666666667,
+    "maValue": 6390.52067836266666666667
   },
   {
     "tick": {
@@ -2526,11 +2526,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.7551726876,
+    "acValue": -2.7551726876,
     "acIncreased": false,
-    "fastStochasticAc": 1.46000651971587581379,
-    "slowStochasticAc": 47.14709830110000000000,
-    "maResult": 6393.00604502933333333333
+    "fastStochasticAcValue": 1.46000651971587581379,
+    "slowStochasticAcValue": 47.14709830110000000000,
+    "maValue": 6393.00604502933333333333
   },
   {
     "tick": {
@@ -2555,11 +2555,11 @@
       }
     },
     "positions": [],
-    "acResult": -6.7880811943,
+    "acValue": -6.7880811943,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 18.95845447413333333333,
-    "maResult": 6394.29937836866666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 18.95845447413333333333,
+    "maValue": 6394.29937836866666666667
   },
   {
     "tick": {
@@ -2584,11 +2584,11 @@
       }
     },
     "positions": [],
-    "acResult": -8.7298448322,
+    "acValue": -8.7298448322,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0.48666883990000000000,
-    "maResult": 6396.23755539200000000000
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0.48666883990000000000,
+    "maValue": 6396.23755539200000000000
   },
   {
     "tick": {
@@ -2613,11 +2613,11 @@
       }
     },
     "positions": [],
-    "acResult": -9.8873055203,
+    "acValue": -9.8873055203,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0E-20,
-    "maResult": 6397.60122205866666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0E-20,
+    "maValue": 6397.60122205866666666667
   },
   {
     "tick": {
@@ -2642,11 +2642,11 @@
       }
     },
     "positions": [],
-    "acResult": -10.2426815449,
+    "acValue": -10.2426815449,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0E-20,
-    "maResult": 6398.70510026533333333333
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0E-20,
+    "maValue": 6398.70510026533333333333
   },
   {
     "tick": {
@@ -2671,11 +2671,11 @@
       }
     },
     "positions": [],
-    "acResult": -9.7009197403,
+    "acValue": -9.7009197403,
     "acIncreased": true,
-    "fastStochasticAc": 2.74157296214908634025,
-    "slowStochasticAc": 0.91385765403333333333,
-    "maResult": 6400.15510042633333333333
+    "fastStochasticAcValue": 2.74157296214908634025,
+    "slowStochasticAcValue": 0.91385765403333333333,
+    "maValue": 6400.15510042633333333333
   },
   {
     "tick": {
@@ -2700,11 +2700,11 @@
       }
     },
     "positions": [],
-    "acResult": -9.2602217948,
+    "acValue": -9.2602217948,
     "acIncreased": true,
-    "fastStochasticAc": 5.10542756446480217613,
-    "slowStochasticAc": 2.61566684220000000000,
-    "maResult": 6401.35510042566666666667
+    "fastStochasticAcValue": 5.10542756446480217613,
+    "slowStochasticAcValue": 2.61566684220000000000,
+    "maValue": 6401.35510042566666666667
   },
   {
     "tick": {
@@ -2729,11 +2729,11 @@
       }
     },
     "positions": [],
-    "acResult": -5.3366849891,
+    "acValue": -5.3366849891,
     "acIncreased": true,
-    "fastStochasticAc": 25.49438798342757873602,
-    "slowStochasticAc": 11.11379617000000000000,
-    "maResult": 6403.15510042200000000000
+    "fastStochasticAcValue": 25.49438798342757873602,
+    "slowStochasticAcValue": 11.11379617000000000000,
+    "maValue": 6403.15510042200000000000
   },
   {
     "tick": {
@@ -2758,11 +2758,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.1488905891,
+    "acValue": -0.1488905891,
     "acIncreased": true,
-    "fastStochasticAc": 52.45316011209774818935,
-    "slowStochasticAc": 27.68432522000000000000,
-    "maResult": 6405.34377653233333333333
+    "fastStochasticAcValue": 52.45316011209774818935,
+    "slowStochasticAcValue": 27.68432522000000000000,
+    "maValue": 6405.34377653233333333333
   },
   {
     "tick": {
@@ -2790,11 +2790,11 @@
       "ENTRY_LONG"
     ],
     "stopLose": 6391.10000001,
-    "acResult": 4.9249578396,
+    "acValue": 4.9249578396,
     "acIncreased": true,
-    "fastStochasticAc": 78.81980324751855312745,
-    "slowStochasticAc": 52.25578378100000000000,
-    "maResult": 6407.17677653233333333333
+    "fastStochasticAcValue": 78.81980324751855312745,
+    "slowStochasticAcValue": 52.25578378100000000000,
+    "maValue": 6407.17677653233333333333
   },
   {
     "tick": {
@@ -2819,11 +2819,11 @@
       }
     },
     "positions": [],
-    "acResult": 7.7372304728,
+    "acValue": 7.7372304728,
     "acIncreased": true,
-    "fastStochasticAc": 96.93960143823598456864,
-    "slowStochasticAc": 76.07085493263333333333,
-    "maResult": 6409.52041140433333333333
+    "fastStochasticAcValue": 96.93960143823598456864,
+    "slowStochasticAcValue": 76.07085493263333333333,
+    "maValue": 6409.52041140433333333333
   },
   {
     "tick": {
@@ -2848,11 +2848,11 @@
       }
     },
     "positions": [],
-    "acResult": 6.7795795345,
+    "acValue": 6.7795795345,
     "acIncreased": false,
-    "fastStochasticAc": 94.67377294528884339748,
-    "slowStochasticAc": 90.14439254366666666667,
-    "maResult": 6411.20350607100000000000
+    "fastStochasticAcValue": 94.67377294528884339748,
+    "slowStochasticAcValue": 90.14439254366666666667,
+    "maValue": 6411.20350607100000000000
   },
   {
     "tick": {
@@ -2877,11 +2877,11 @@
       }
     },
     "positions": [],
-    "acResult": 2.4893970224,
+    "acValue": 2.4893970224,
     "acIncreased": false,
-    "fastStochasticAc": 70.81279682996298847901,
-    "slowStochasticAc": 87.47539040450000000000,
-    "maResult": 6412.33683942500000000000
+    "fastStochasticAcValue": 70.81279682996298847901,
+    "slowStochasticAcValue": 87.47539040450000000000,
+    "maValue": 6412.33683942500000000000
   },
   {
     "tick": {
@@ -2906,11 +2906,11 @@
       }
     },
     "positions": [],
-    "acResult": -1.6070526199,
+    "acValue": -1.6070526199,
     "acIncreased": false,
-    "fastStochasticAc": 48.02931692045439880395,
-    "slowStochasticAc": 71.17196223190000000000,
-    "maResult": 6413.53683943133333333333
+    "fastStochasticAcValue": 48.02931692045439880395,
+    "slowStochasticAcValue": 71.17196223190000000000,
+    "maValue": 6413.53683943133333333333
   },
   {
     "tick": {
@@ -2935,11 +2935,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.9510113034,
+    "acValue": -3.9510113034,
     "acIncreased": false,
-    "fastStochasticAc": 34.99277546690038717853,
-    "slowStochasticAc": 51.27829640576666666667,
-    "maResult": 6415.62217276566666666667
+    "fastStochasticAcValue": 34.99277546690038717853,
+    "slowStochasticAcValue": 51.27829640576666666667,
+    "maValue": 6415.62217276566666666667
   },
   {
     "tick": {
@@ -2964,11 +2964,11 @@
       }
     },
     "positions": [],
-    "acResult": -5.3290472843,
+    "acValue": -5.3290472843,
     "acIncreased": false,
-    "fastStochasticAc": 27.32846665635994993649,
-    "slowStochasticAc": 36.78351968123333333333,
-    "maResult": 6417.42217276600000000000
+    "fastStochasticAcValue": 27.32846665635994993649,
+    "slowStochasticAcValue": 36.78351968123333333333,
+    "maValue": 6417.42217276600000000000
   },
   {
     "tick": {
@@ -2993,11 +2993,11 @@
       }
     },
     "positions": [],
-    "acResult": -4.6260066809,
+    "acValue": -4.6260066809,
     "acIncreased": true,
-    "fastStochasticAc": 31.23861150416512474456,
-    "slowStochasticAc": 31.18661787580000000000,
-    "maResult": 6420.08883943266666666667
+    "fastStochasticAcValue": 31.23861150416512474456,
+    "slowStochasticAcValue": 31.18661787580000000000,
+    "maValue": 6420.08883943266666666667
   },
   {
     "tick": {
@@ -3022,11 +3022,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.4454763056,
+    "acValue": -2.4454763056,
     "acIncreased": true,
-    "fastStochasticAc": 43.36620352549101450546,
-    "slowStochasticAc": 33.97776056200000000000,
-    "maResult": 6422.02217276600000000000
+    "fastStochasticAcValue": 43.36620352549101450546,
+    "slowStochasticAcValue": 33.97776056200000000000,
+    "maValue": 6422.02217276600000000000
   },
   {
     "tick": {
@@ -3051,11 +3051,11 @@
       }
     },
     "positions": [],
-    "acResult": -1.6544511022,
+    "acValue": -1.6544511022,
     "acIncreased": true,
-    "fastStochasticAc": 46.14290242812153196109,
-    "slowStochasticAc": 40.24923915260000000000,
-    "maResult": 6424.01281599600000000000
+    "fastStochasticAcValue": 46.14290242812153196109,
+    "slowStochasticAcValue": 40.24923915260000000000,
+    "maValue": 6424.01281599600000000000
   },
   {
     "tick": {
@@ -3080,11 +3080,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.7838472332,
+    "acValue": -3.7838472332,
     "acIncreased": false,
-    "fastStochasticAc": 32.21879653128304455448,
-    "slowStochasticAc": 40.57596749496666666667,
-    "maResult": 6424.64052487033333333333
+    "fastStochasticAcValue": 32.21879653128304455448,
+    "slowStochasticAcValue": 40.57596749496666666667,
+    "maValue": 6424.64052487033333333333
   },
   {
     "tick": {
@@ -3109,11 +3109,11 @@
       }
     },
     "positions": [],
-    "acResult": -6.4797353195,
+    "acValue": -6.4797353195,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 26.12056631980000000000,
-    "maResult": 6425.27385820366666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 26.12056631980000000000,
+    "maValue": 6425.27385820366666666667
   },
   {
     "tick": {
@@ -3138,11 +3138,11 @@
       }
     },
     "positions": [],
-    "acResult": -7.4583933700,
+    "acValue": -7.4583933700,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 10.73959884376666666667,
-    "maResult": 6425.64085820400000000000
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 10.73959884376666666667,
+    "maValue": 6425.64085820400000000000
   },
   {
     "tick": {
@@ -3167,11 +3167,11 @@
       }
     },
     "positions": [],
-    "acResult": -9.4854876778,
+    "acValue": -9.4854876778,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0E-20,
-    "maResult": 6426.10752486866666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0E-20,
+    "maValue": 6426.10752486866666666667
   },
   {
     "tick": {
@@ -3196,11 +3196,11 @@
       }
     },
     "positions": [],
-    "acResult": -8.3965385533,
+    "acValue": -8.3965385533,
     "acIncreased": true,
-    "fastStochasticAc": 6.32274833146510912397,
-    "slowStochasticAc": 2.10758277716666666667,
-    "maResult": 6426.67419153533333333333
+    "fastStochasticAcValue": 6.32274833146510912397,
+    "slowStochasticAcValue": 2.10758277716666666667,
+    "maValue": 6426.67419153533333333333
   },
   {
     "tick": {
@@ -3225,11 +3225,11 @@
       }
     },
     "positions": [],
-    "acResult": -5.2976029184,
+    "acValue": -5.2976029184,
     "acIncreased": true,
-    "fastStochasticAc": 25.74772489248018500793,
-    "slowStochasticAc": 10.69015774130000000000,
-    "maResult": 6427.16513963633333333333
+    "fastStochasticAcValue": 25.74772489248018500793,
+    "slowStochasticAcValue": 10.69015774130000000000,
+    "maValue": 6427.16513963633333333333
   },
   {
     "tick": {
@@ -3254,11 +3254,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.2977117786,
+    "acValue": -3.2977117786,
     "acIncreased": true,
-    "fastStochasticAc": 51.67294762426108457438,
-    "slowStochasticAc": 27.91447361606666666667,
-    "maResult": 6426.33180630200000000000
+    "fastStochasticAcValue": 51.67294762426108457438,
+    "slowStochasticAcValue": 27.91447361606666666667,
+    "maValue": 6426.33180630200000000000
   },
   {
     "tick": {
@@ -3283,11 +3283,11 @@
       }
     },
     "positions": [],
-    "acResult": -1.3317765403,
+    "acValue": -1.3317765403,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 59.14022417223333333333,
-    "maResult": 6426.21989178566666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 59.14022417223333333333,
+    "maValue": 6426.21989178566666666667
   },
   {
     "tick": {
@@ -3315,11 +3315,11 @@
       "ENTRY_SHORT"
     ],
     "stopLose": 6427.99999998,
-    "acResult": -4.6418948586,
+    "acValue": -4.6418948586,
     "acIncreased": false,
-    "fastStochasticAc": 59.40353708293237902310,
-    "slowStochasticAc": 70.35882823573333333333,
-    "maResult": 6424.28655845233333333333
+    "fastStochasticAcValue": 59.40353708293237902310,
+    "slowStochasticAcValue": 70.35882823573333333333,
+    "maValue": 6424.28655845233333333333
   },
   {
     "tick": {
@@ -3344,11 +3344,11 @@
       }
     },
     "positions": [],
-    "acResult": -9.7227861880,
+    "acValue": -9.7227861880,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 53.13451236096666666667,
-    "maResult": 6421.79689184166666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 53.13451236096666666667,
+    "maValue": 6421.79689184166666666667
   },
   {
     "tick": {
@@ -3373,11 +3373,11 @@
       }
     },
     "positions": [],
-    "acResult": -13.1382265282,
+    "acValue": -13.1382265282,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 19.80117902763333333333,
-    "maResult": 6420.43022517466666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 19.80117902763333333333,
+    "maValue": 6420.43022517466666666667
   },
   {
     "tick": {
@@ -3402,11 +3402,11 @@
       }
     },
     "positions": [],
-    "acResult": -14.4402661218,
+    "acValue": -14.4402661218,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0E-20,
-    "maResult": 6418.51152517466666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0E-20,
+    "maValue": 6418.51152517466666666667
   },
   {
     "tick": {
@@ -3431,11 +3431,11 @@
       }
     },
     "positions": [],
-    "acResult": -15.9117747340,
+    "acValue": -15.9117747340,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0E-20,
-    "maResult": 6415.24885851233333333333
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0E-20,
+    "maValue": 6415.24885851233333333333
   },
   {
     "tick": {
@@ -3460,11 +3460,11 @@
       }
     },
     "positions": [],
-    "acResult": -11.1584007538,
+    "acValue": -11.1584007538,
     "acIncreased": true,
-    "fastStochasticAc": 32.60202036413095910355,
-    "slowStochasticAc": 10.86734012136666666667,
-    "maResult": 6413.80734815600000000000
+    "fastStochasticAcValue": 32.60202036413095910355,
+    "slowStochasticAcValue": 10.86734012136666666667,
+    "maValue": 6413.80734815600000000000
   },
   {
     "tick": {
@@ -3489,11 +3489,11 @@
       }
     },
     "positions": [],
-    "acResult": -4.8663726206,
+    "acValue": -4.8663726206,
     "acIncreased": true,
-    "fastStochasticAc": 75.75722552676793340198,
-    "slowStochasticAc": 36.11974863030000000000,
-    "maResult": 6413.11514737366666666667
+    "fastStochasticAcValue": 75.75722552676793340198,
+    "slowStochasticAcValue": 36.11974863030000000000,
+    "maValue": 6413.11514737366666666667
   },
   {
     "tick": {
@@ -3518,11 +3518,11 @@
       }
     },
     "positions": [],
-    "acResult": -1.2498167880,
+    "acValue": -1.2498167880,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 69.45308196363333333333,
-    "maResult": 6410.76846072266666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 69.45308196363333333333,
+    "maValue": 6410.76846072266666666667
   },
   {
     "tick": {
@@ -3547,11 +3547,11 @@
       }
     },
     "positions": [],
-    "acResult": 2.3566812953,
+    "acValue": 2.3566812953,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 91.91907517560000000000,
-    "maResult": 6409.11846072866666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 91.91907517560000000000,
+    "maValue": 6409.11846072866666666667
   },
   {
     "tick": {
@@ -3576,11 +3576,11 @@
       }
     },
     "positions": [],
-    "acResult": 3.5893999187,
+    "acValue": 3.5893999187,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6408.11846072900000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6408.11846072900000000000
   },
   {
     "tick": {
@@ -3605,11 +3605,11 @@
       }
     },
     "positions": [],
-    "acResult": 2.9565050508,
+    "acValue": 2.9565050508,
     "acIncreased": false,
-    "fastStochasticAc": 96.75458079232999597082,
-    "slowStochasticAc": 98.91819359743333333333,
-    "maResult": 6405.21312741800000000000
+    "fastStochasticAcValue": 96.75458079232999597082,
+    "slowStochasticAcValue": 98.91819359743333333333,
+    "maValue": 6405.21312741800000000000
   },
   {
     "tick": {
@@ -3634,11 +3634,11 @@
       }
     },
     "positions": [],
-    "acResult": 2.3321930412,
+    "acValue": 2.3321930412,
     "acIncreased": false,
-    "fastStochasticAc": 93.55317359138704146231,
-    "slowStochasticAc": 96.76925146123333333333,
-    "maResult": 6403.15778464100000000000
+    "fastStochasticAcValue": 93.55317359138704146231,
+    "slowStochasticAcValue": 96.76925146123333333333,
+    "maValue": 6403.15778464100000000000
   },
   {
     "tick": {
@@ -3663,11 +3663,11 @@
       }
     },
     "positions": [],
-    "acResult": 4.6115303580,
+    "acValue": 4.6115303580,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 96.76925146123333333333,
-    "maResult": 6401.79945130766666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 96.76925146123333333333,
+    "maValue": 6401.79945130766666666667
   },
   {
     "tick": {
@@ -3692,11 +3692,11 @@
       }
     },
     "positions": [],
-    "acResult": 6.0877840769,
+    "acValue": 6.0877840769,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 97.85105786380000000000,
-    "maResult": 6400.12773096866666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 97.85105786380000000000,
+    "maValue": 6400.12773096866666666667
   },
   {
     "tick": {
@@ -3721,11 +3721,11 @@
       }
     },
     "positions": [],
-    "acResult": 7.9692858570,
+    "acValue": 7.9692858570,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6399.14130296866666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6399.14130296866666666667
   },
   {
     "tick": {
@@ -3750,11 +3750,11 @@
       }
     },
     "positions": [],
-    "acResult": 8.5684174592,
+    "acValue": 8.5684174592,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6397.99335852433333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6397.99335852433333333333
   },
   {
     "tick": {
@@ -3779,11 +3779,11 @@
       }
     },
     "positions": [],
-    "acResult": 9.2288218116,
+    "acValue": 9.2288218116,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6396.89463293066666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6396.89463293066666666667
   },
   {
     "tick": {
@@ -3808,11 +3808,11 @@
       }
     },
     "positions": [],
-    "acResult": 6.0102561166,
+    "acValue": 6.0102561166,
     "acIncreased": false,
-    "fastStochasticAc": 87.19773538721657882473,
-    "slowStochasticAc": 95.73257846240000000000,
-    "maResult": 6395.44263293000000000000
+    "fastStochasticAcValue": 87.19773538721657882473,
+    "slowStochasticAcValue": 95.73257846240000000000,
+    "maValue": 6395.44263293000000000000
   },
   {
     "tick": {
@@ -3837,11 +3837,11 @@
       }
     },
     "positions": [],
-    "acResult": 1.2073745686,
+    "acValue": 1.2073745686,
     "acIncreased": false,
-    "fastStochasticAc": 60.65453635350246079283,
-    "slowStochasticAc": 82.61742391356666666667,
-    "maResult": 6393.41217743233333333333
+    "fastStochasticAcValue": 60.65453635350246079283,
+    "slowStochasticAcValue": 82.61742391356666666667,
+    "maValue": 6393.41217743233333333333
   },
   {
     "tick": {
@@ -3869,11 +3869,11 @@
       "ENTRY_SHORT"
     ],
     "stopLose": 6389.83105533,
-    "acResult": -0.1970048426,
+    "acValue": -0.1970048426,
     "acIncreased": false,
-    "fastStochasticAc": 33.12737401715428321071,
-    "slowStochasticAc": 60.32654858596666666667,
-    "maResult": 6390.74551076566666666667
+    "fastStochasticAcValue": 33.12737401715428321071,
+    "slowStochasticAcValue": 60.32654858596666666667,
+    "maValue": 6390.74551076566666666667
   },
   {
     "tick": {
@@ -3898,11 +3898,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.0748730484,
+    "acValue": -2.0748730484,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 31.26063679023333333333,
-    "maResult": 6388.54551076566666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 31.26063679023333333333,
+    "maValue": 6388.54551076566666666667
   },
   {
     "tick": {
@@ -3927,11 +3927,11 @@
       }
     },
     "positions": [],
-    "acResult": 0.0895370344,
+    "acValue": 0.0895370344,
     "acIncreased": true,
-    "fastStochasticAc": 19.14781060181590924509,
-    "slowStochasticAc": 17.42506153966666666667,
-    "maResult": 6387.10633179600000000000
+    "fastStochasticAcValue": 19.14781060181590924509,
+    "slowStochasticAcValue": 17.42506153966666666667,
+    "maValue": 6387.10633179600000000000
   },
   {
     "tick": {
@@ -3959,11 +3959,11 @@
       "ENTRY_LONG"
     ],
     "stopLose": 6355.00010000,
-    "acResult": 6.1804749137,
+    "acValue": 6.1804749137,
     "acIncreased": true,
-    "fastStochasticAc": 73.03229664587743480542,
-    "slowStochasticAc": 30.72670241590000000000,
-    "maResult": 6387.10155198700000000000
+    "fastStochasticAcValue": 73.03229664587743480542,
+    "slowStochasticAcValue": 30.72670241590000000000,
+    "maValue": 6387.10155198700000000000
   },
   {
     "tick": {
@@ -3988,11 +3988,11 @@
       }
     },
     "positions": [],
-    "acResult": 9.4084278768,
+    "acValue": 9.4084278768,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 64.06003574923333333333,
-    "maResult": 6386.36821865366666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 64.06003574923333333333,
+    "maValue": 6386.36821865366666666667
   },
   {
     "tick": {
@@ -4017,11 +4017,11 @@
       }
     },
     "positions": [],
-    "acResult": 14.1702482334,
+    "acValue": 14.1702482334,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 91.01076554863333333333,
-    "maResult": 6386.78121865033333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 91.01076554863333333333,
+    "maValue": 6386.78121865033333333333
   },
   {
     "tick": {
@@ -4046,11 +4046,11 @@
       }
     },
     "positions": [],
-    "acResult": 16.1578221783,
+    "acValue": 16.1578221783,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6386.81455197533333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6386.81455197533333333333
   },
   {
     "tick": {
@@ -4075,11 +4075,11 @@
       }
     },
     "positions": [],
-    "acResult": 12.7111300475,
+    "acValue": 12.7111300475,
     "acIncreased": false,
-    "fastStochasticAc": 81.09609090732424314176,
-    "slowStochasticAc": 93.69869696910000000000,
-    "maResult": 6386.58121864200000000000
+    "fastStochasticAcValue": 81.09609090732424314176,
+    "slowStochasticAcValue": 93.69869696910000000000,
+    "maValue": 6386.58121864200000000000
   },
   {
     "tick": {
@@ -4104,11 +4104,11 @@
       }
     },
     "positions": [],
-    "acResult": 7.8486095697,
+    "acValue": 7.8486095697,
     "acIncreased": false,
-    "fastStochasticAc": 54.42685513422080175597,
-    "slowStochasticAc": 78.50764868050000000000,
-    "maResult": 6386.50688524533333333333
+    "fastStochasticAcValue": 54.42685513422080175597,
+    "slowStochasticAcValue": 78.50764868050000000000,
+    "maValue": 6386.50688524533333333333
   },
   {
     "tick": {
@@ -4133,11 +4133,11 @@
       }
     },
     "positions": [],
-    "acResult": 4.8083106061,
+    "acValue": 4.8083106061,
     "acIncreased": false,
-    "fastStochasticAc": 37.75187139869617486146,
-    "slowStochasticAc": 57.75827248006666666667,
-    "maResult": 6385.39362686433333333333
+    "fastStochasticAcValue": 37.75187139869617486146,
+    "slowStochasticAcValue": 57.75827248006666666667,
+    "maValue": 6385.39362686433333333333
   },
   {
     "tick": {
@@ -4162,11 +4162,11 @@
       }
     },
     "positions": [],
-    "acResult": 1.1932754515,
+    "acValue": 1.1932754515,
     "acIncreased": false,
-    "fastStochasticAc": 17.92465929619728392057,
-    "slowStochasticAc": 36.70112860970000000000,
-    "maResult": 6385.55720797566666666667
+    "fastStochasticAcValue": 17.92465929619728392057,
+    "slowStochasticAcValue": 36.70112860970000000000,
+    "maValue": 6385.55720797566666666667
   },
   {
     "tick": {
@@ -4191,11 +4191,11 @@
       }
     },
     "positions": [],
-    "acResult": 1.3643053492,
+    "acValue": 1.3643053492,
     "acIncreased": true,
-    "fastStochasticAc": 18.86269887604800962227,
-    "slowStochasticAc": 24.84640985696666666667,
-    "maResult": 6387.17654130900000000000
+    "fastStochasticAcValue": 18.86269887604800962227,
+    "slowStochasticAcValue": 24.84640985696666666667,
+    "maValue": 6387.17654130900000000000
   },
   {
     "tick": {
@@ -4223,11 +4223,11 @@
       "ENTRY_LONG"
     ],
     "stopLose": 6390.00000005,
-    "acResult": 11.4622991005,
+    "acValue": 11.4622991005,
     "acIncreased": true,
-    "fastStochasticAc": 74.24668695759327223505,
-    "slowStochasticAc": 37.01134837660000000000,
-    "maResult": 6389.53954130966666666667
+    "fastStochasticAcValue": 74.24668695759327223505,
+    "slowStochasticAcValue": 37.01134837660000000000,
+    "maValue": 6389.53954130966666666667
   },
   {
     "tick": {
@@ -4252,11 +4252,11 @@
       }
     },
     "positions": [],
-    "acResult": 17.1485939407,
+    "acValue": 17.1485939407,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 64.36979527786666666667,
-    "maResult": 6392.70620797633333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 64.36979527786666666667,
+    "maValue": 6392.70620797633333333333
   },
   {
     "tick": {
@@ -4281,11 +4281,11 @@
       }
     },
     "positions": [],
-    "acResult": 24.2331631376,
+    "acValue": 24.2331631376,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 91.41556231920000000000,
-    "maResult": 6395.64532397766666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 91.41556231920000000000,
+    "maValue": 6395.64532397766666666667
   },
   {
     "tick": {
@@ -4310,11 +4310,11 @@
       }
     },
     "positions": [],
-    "acResult": 27.1737154168,
+    "acValue": 27.1737154168,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6401.34243123066666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6401.34243123066666666667
   },
   {
     "tick": {
@@ -4339,11 +4339,11 @@
       }
     },
     "positions": [],
-    "acResult": 25.2194963091,
+    "acValue": 25.2194963091,
     "acIncreased": false,
-    "fastStochasticAc": 92.47811387986464246300,
-    "slowStochasticAc": 97.49270462663333333333,
-    "maResult": 6405.34576456366666666667
+    "fastStochasticAcValue": 92.47811387986464246300,
+    "slowStochasticAcValue": 97.49270462663333333333,
+    "maValue": 6405.34576456366666666667
   },
   {
     "tick": {
@@ -4368,11 +4368,11 @@
       }
     },
     "positions": [],
-    "acResult": 12.5468635145,
+    "acValue": 12.5468635145,
     "acIncreased": false,
-    "fastStochasticAc": 43.70052269385769207438,
-    "slowStochasticAc": 78.72621219123333333333,
-    "maResult": 6409.10763201266666666667
+    "fastStochasticAcValue": 43.70052269385769207438,
+    "slowStochasticAcValue": 78.72621219123333333333,
+    "maValue": 6409.10763201266666666667
   },
   {
     "tick": {
@@ -4397,11 +4397,11 @@
       }
     },
     "positions": [],
-    "acResult": 2.9275496375,
+    "acValue": 2.9275496375,
     "acIncreased": false,
-    "fastStochasticAc": 6.67530722465182116605,
-    "slowStochasticAc": 47.61798126613333333333,
-    "maResult": 6412.95590626733333333333
+    "fastStochasticAcValue": 6.67530722465182116605,
+    "slowStochasticAcValue": 47.61798126613333333333,
+    "maValue": 6412.95590626733333333333
   },
   {
     "tick": {
@@ -4426,11 +4426,11 @@
       }
     },
     "positions": [],
-    "acResult": -5.9690062340,
+    "acValue": -5.9690062340,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 16.79194330616666666667,
-    "maResult": 6415.75590626700000000000
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 16.79194330616666666667,
+    "maValue": 6415.75590626700000000000
   },
   {
     "tick": {
@@ -4455,11 +4455,11 @@
       }
     },
     "positions": [],
-    "acResult": -9.3185882488,
+    "acValue": -9.3185882488,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 2.22510240823333333333,
-    "maResult": 6419.22257293333333333333
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 2.22510240823333333333,
+    "maValue": 6419.22257293333333333333
   },
   {
     "tick": {
@@ -4484,11 +4484,11 @@
       }
     },
     "positions": [],
-    "acResult": -8.4688066621,
+    "acValue": -8.4688066621,
     "acIncreased": true,
-    "fastStochasticAc": 2.32865974833224615914,
-    "slowStochasticAc": 0.77621991610000000000,
-    "maResult": 6423.64136552433333333333
+    "fastStochasticAcValue": 2.32865974833224615914,
+    "slowStochasticAcValue": 0.77621991610000000000,
+    "maValue": 6423.64136552433333333333
   },
   {
     "tick": {
@@ -4513,11 +4513,11 @@
       }
     },
     "positions": [],
-    "acResult": -8.4032218353,
+    "acValue": -8.4032218353,
     "acIncreased": true,
-    "fastStochasticAc": 2.50838210130012549152,
-    "slowStochasticAc": 1.61234728320000000000,
-    "maResult": 6426.77469885766666666667
+    "fastStochasticAcValue": 2.50838210130012549152,
+    "slowStochasticAcValue": 1.61234728320000000000,
+    "maValue": 6426.77469885766666666667
   },
   {
     "tick": {
@@ -4542,11 +4542,11 @@
       }
     },
     "positions": [],
-    "acResult": -6.3178282998,
+    "acValue": -6.3178282998,
     "acIncreased": true,
-    "fastStochasticAc": 8.22299402224011947936,
-    "slowStochasticAc": 4.35334529063333333333,
-    "maResult": 6430.11303218900000000000
+    "fastStochasticAcValue": 8.22299402224011947936,
+    "slowStochasticAcValue": 4.35334529063333333333,
+    "maValue": 6430.11303218900000000000
   },
   {
     "tick": {
@@ -4571,11 +4571,11 @@
       }
     },
     "positions": [],
-    "acResult": -6.0992371969,
+    "acValue": -6.0992371969,
     "acIncreased": true,
-    "fastStochasticAc": 8.82200006171374711328,
-    "slowStochasticAc": 6.51779206176666666667,
-    "maResult": 6433.02136350066666666667
+    "fastStochasticAcValue": 8.82200006171374711328,
+    "slowStochasticAcValue": 6.51779206176666666667,
+    "maValue": 6433.02136350066666666667
   },
   {
     "tick": {
@@ -4600,11 +4600,11 @@
       }
     },
     "positions": [],
-    "acResult": -7.9817619661,
+    "acValue": -7.9817619661,
     "acIncreased": false,
-    "fastStochasticAc": 3.66331020083058968153,
-    "slowStochasticAc": 6.90276809493333333333,
-    "maResult": 6436.12469683400000000000
+    "fastStochasticAcValue": 3.66331020083058968153,
+    "slowStochasticAcValue": 6.90276809493333333333,
+    "maValue": 6436.12469683400000000000
   },
   {
     "tick": {
@@ -4629,11 +4629,11 @@
       }
     },
     "positions": [],
-    "acResult": -9.3300025045,
+    "acValue": -9.3300025045,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 4.16177008750000000000,
-    "maResult": 6439.37264127166666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 4.16177008750000000000,
+    "maValue": 6439.37264127166666666667
   },
   {
     "tick": {
@@ -4658,11 +4658,11 @@
       }
     },
     "positions": [],
-    "acResult": -7.6062235731,
+    "acValue": -7.6062235731,
     "acIncreased": true,
-    "fastStochasticAc": 4.72220099639267480688,
-    "slowStochasticAc": 2.79517039906666666667,
-    "maResult": 6441.92570019866666666667
+    "fastStochasticAcValue": 4.72220099639267480688,
+    "slowStochasticAcValue": 2.79517039906666666667,
+    "maValue": 6441.92570019866666666667
   },
   {
     "tick": {
@@ -4687,11 +4687,11 @@
       }
     },
     "positions": [],
-    "acResult": -7.8682123071,
+    "acValue": -7.8682123071,
     "acIncreased": false,
-    "fastStochasticAc": 4.00449674893811896480,
-    "slowStochasticAc": 2.90889924843333333333,
-    "maResult": 6444.41320219966666666667
+    "fastStochasticAcValue": 4.00449674893811896480,
+    "slowStochasticAcValue": 2.90889924843333333333,
+    "maValue": 6444.41320219966666666667
   },
   {
     "tick": {
@@ -4716,11 +4716,11 @@
       }
     },
     "positions": [],
-    "acResult": -8.9497075854,
+    "acValue": -8.9497075854,
     "acIncreased": false,
-    "fastStochasticAc": 1.10072485031331748395,
-    "slowStochasticAc": 3.27580753186666666667,
-    "maResult": 6447.77699103033333333333
+    "fastStochasticAcValue": 1.10072485031331748395,
+    "slowStochasticAcValue": 3.27580753186666666667,
+    "maValue": 6447.77699103033333333333
   },
   {
     "tick": {
@@ -4745,11 +4745,11 @@
       }
     },
     "positions": [],
-    "acResult": -9.3993001595,
+    "acValue": -9.3993001595,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 1.70174053310000000000,
-    "maResult": 6451.52499103033333333333
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 1.70174053310000000000,
+    "maValue": 6451.52499103033333333333
   },
   {
     "tick": {
@@ -4774,11 +4774,11 @@
       }
     },
     "positions": [],
-    "acResult": -9.1690207944,
+    "acValue": -9.1690207944,
     "acIncreased": true,
-    "fastStochasticAc": 1.86811203910380542783,
-    "slowStochasticAc": 0.98961229646666666667,
-    "maResult": 6454.55832436366666666667
+    "fastStochasticAcValue": 1.86811203910380542783,
+    "slowStochasticAcValue": 0.98961229646666666667,
+    "maValue": 6454.55832436366666666667
   },
   {
     "tick": {
@@ -4803,11 +4803,11 @@
       }
     },
     "positions": [],
-    "acResult": -7.8107637494,
+    "acValue": -7.8107637494,
     "acIncreased": true,
-    "fastStochasticAc": 46.30904653071251809264,
-    "slowStochasticAc": 16.05905285660000000000,
-    "maResult": 6456.65019343666666666667
+    "fastStochasticAcValue": 46.30904653071251809264,
+    "slowStochasticAcValue": 16.05905285660000000000,
+    "maValue": 6456.65019343666666666667
   },
   {
     "tick": {
@@ -4832,11 +4832,11 @@
       }
     },
     "positions": [],
-    "acResult": -5.8059128001,
+    "acValue": -5.8059128001,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 49.39238618993333333333,
-    "maResult": 6459.08497324366666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 49.39238618993333333333,
+    "maValue": 6459.08497324366666666667
   },
   {
     "tick": {
@@ -4861,11 +4861,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.0045273693,
+    "acValue": -3.0045273693,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 82.10301551023333333333,
-    "maResult": 6461.71830657700000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 82.10301551023333333333,
+    "maValue": 6461.71830657700000000000
   },
   {
     "tick": {
@@ -4890,11 +4890,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.6998763400,
+    "acValue": -0.6998763400,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6463.27163991333333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6463.27163991333333333333
   },
   {
     "tick": {
@@ -4919,11 +4919,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.1036478626,
+    "acValue": -0.1036478626,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6465.60497325333333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6465.60497325333333333333
   },
   {
     "tick": {
@@ -4951,11 +4951,11 @@
       "ENTRY_SHORT"
     ],
     "stopLose": 6490.40377866,
-    "acResult": -2.2643376404,
+    "acValue": -2.2643376404,
     "acIncreased": false,
-    "fastStochasticAc": 76.75591008798202588459,
-    "slowStochasticAc": 92.25197002933333333333,
-    "maResult": 6466.42925450300000000000
+    "fastStochasticAcValue": 76.75591008798202588459,
+    "slowStochasticAcValue": 92.25197002933333333333,
+    "maValue": 6466.42925450300000000000
   },
   {
     "tick": {
@@ -4980,11 +4980,11 @@
       }
     },
     "positions": [],
-    "acResult": -6.3424763840,
+    "acValue": -6.3424763840,
     "acIncreased": false,
-    "fastStochasticAc": 32.88444616758544025141,
-    "slowStochasticAc": 69.88011875186666666667,
-    "maResult": 6466.90358790000000000000
+    "fastStochasticAcValue": 32.88444616758544025141,
+    "slowStochasticAcValue": 69.88011875186666666667,
+    "maValue": 6466.90358790000000000000
   },
   {
     "tick": {
@@ -5009,11 +5009,11 @@
       }
     },
     "positions": [],
-    "acResult": -7.9970746835,
+    "acValue": -7.9970746835,
     "acIncreased": false,
-    "fastStochasticAc": 15.08474533269308174654,
-    "slowStochasticAc": 41.57503386276666666667,
-    "maResult": 6469.47355646433333333333
+    "fastStochasticAcValue": 15.08474533269308174654,
+    "slowStochasticAcValue": 41.57503386276666666667,
+    "maValue": 6469.47355646433333333333
   },
   {
     "tick": {
@@ -5038,11 +5038,11 @@
       }
     },
     "positions": [],
-    "acResult": -10.8796544418,
+    "acValue": -10.8796544418,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 15.98973050010000000000,
-    "maResult": 6470.02188987000000000000
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 15.98973050010000000000,
+    "maValue": 6470.02188987000000000000
   },
   {
     "tick": {
@@ -5067,11 +5067,11 @@
       }
     },
     "positions": [],
-    "acResult": -8.3839598785,
+    "acValue": -8.3839598785,
     "acIncreased": true,
-    "fastStochasticAc": 23.15973496264585502602,
-    "slowStochasticAc": 12.74816009843333333333,
-    "maResult": 6472.03588986900000000000
+    "fastStochasticAcValue": 23.15973496264585502602,
+    "slowStochasticAcValue": 12.74816009843333333333,
+    "maValue": 6472.03588986900000000000
   },
   {
     "tick": {
@@ -5096,11 +5096,11 @@
       }
     },
     "positions": [],
-    "acResult": -6.1118493561,
+    "acValue": -6.1118493561,
     "acIncreased": true,
-    "fastStochasticAc": 44.24463785037849431977,
-    "slowStochasticAc": 22.46812427100000000000,
-    "maResult": 6472.25455653866666666667
+    "fastStochasticAcValue": 44.24463785037849431977,
+    "slowStochasticAcValue": 22.46812427100000000000,
+    "maValue": 6472.25455653866666666667
   },
   {
     "tick": {
@@ -5125,11 +5125,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.7638858657,
+    "acValue": -2.7638858657,
     "acIncreased": true,
-    "fastStochasticAc": 75.31332239315045573353,
-    "slowStochasticAc": 47.57256506873333333333,
-    "maResult": 6472.28055653866666666667
+    "fastStochasticAcValue": 75.31332239315045573353,
+    "slowStochasticAcValue": 47.57256506873333333333,
+    "maValue": 6472.28055653866666666667
   },
   {
     "tick": {
@@ -5154,11 +5154,11 @@
       }
     },
     "positions": [],
-    "acResult": 0.7350890495,
+    "acValue": 0.7350890495,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 73.18598674783333333333,
-    "maResult": 6473.00810720133333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 73.18598674783333333333,
+    "maValue": 6473.00810720133333333333
   },
   {
     "tick": {
@@ -5183,11 +5183,11 @@
       }
     },
     "positions": [],
-    "acResult": 1.3551839387,
+    "acValue": 1.3551839387,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 91.77110746440000000000,
-    "maResult": 6471.90699994400000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 91.77110746440000000000,
+    "maValue": 6471.90699994400000000000
   },
   {
     "tick": {
@@ -5212,11 +5212,11 @@
       }
     },
     "positions": [],
-    "acResult": 0.2208094160,
+    "acValue": 0.2208094160,
     "acIncreased": false,
-    "fastStochasticAc": 90.72832441736233525884,
-    "slowStochasticAc": 96.90944147246666666667,
-    "maResult": 6471.13833327733333333333
+    "fastStochasticAcValue": 90.72832441736233525884,
+    "slowStochasticAcValue": 96.90944147246666666667,
+    "maValue": 6471.13833327733333333333
   },
   {
     "tick": {
@@ -5241,11 +5241,11 @@
       }
     },
     "positions": [],
-    "acResult": 0.3478288174,
+    "acValue": 0.3478288174,
     "acIncreased": true,
-    "fastStochasticAc": 91.76650242552012761343,
-    "slowStochasticAc": 94.16494228096666666667,
-    "maResult": 6470.23833327733333333333
+    "fastStochasticAcValue": 91.76650242552012761343,
+    "slowStochasticAcValue": 94.16494228096666666667,
+    "maValue": 6470.23833327733333333333
   },
   {
     "tick": {
@@ -5273,11 +5273,11 @@
       "ENTRY_SHORT"
     ],
     "stopLose": 6484.99999994,
-    "acResult": -1.3791305945,
+    "acValue": -1.3791305945,
     "acIncreased": false,
-    "fastStochasticAc": 77.65140455342690826156,
-    "slowStochasticAc": 86.71541046543333333333,
-    "maResult": 6469.90861735100000000000
+    "fastStochasticAcValue": 77.65140455342690826156,
+    "slowStochasticAcValue": 86.71541046543333333333,
+    "maValue": 6469.90861735100000000000
   },
   {
     "tick": {
@@ -5302,11 +5302,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.5842510147,
+    "acValue": -3.5842510147,
     "acIncreased": false,
-    "fastStochasticAc": 59.62811440752239367107,
-    "slowStochasticAc": 76.34867379550000000000,
-    "maResult": 6469.97528401466666666667
+    "fastStochasticAcValue": 59.62811440752239367107,
+    "slowStochasticAcValue": 76.34867379550000000000,
+    "maValue": 6469.97528401466666666667
   },
   {
     "tick": {
@@ -5331,11 +5331,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.5041413448,
+    "acValue": -2.5041413448,
     "acIncreased": true,
-    "fastStochasticAc": 68.45626265361192851925,
-    "slowStochasticAc": 68.57859387153333333333,
-    "maResult": 6469.61093124733333333333
+    "fastStochasticAcValue": 68.45626265361192851925,
+    "slowStochasticAcValue": 68.57859387153333333333,
+    "maValue": 6469.61093124733333333333
   },
   {
     "tick": {
@@ -5360,11 +5360,11 @@
       }
     },
     "positions": [],
-    "acResult": -1.5888360695,
+    "acValue": -1.5888360695,
     "acIncreased": true,
-    "fastStochasticAc": 75.93740173231706385106,
-    "slowStochasticAc": 68.00725959783333333333,
-    "maResult": 6469.17075306733333333333
+    "fastStochasticAcValue": 75.93740173231706385106,
+    "slowStochasticAcValue": 68.00725959783333333333,
+    "maValue": 6469.17075306733333333333
   },
   {
     "tick": {
@@ -5389,11 +5389,11 @@
       }
     },
     "positions": [],
-    "acResult": 3.3330609562,
+    "acValue": 3.3330609562,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 81.46455479530000000000,
-    "maResult": 6469.07075306733333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 81.46455479530000000000,
+    "maValue": 6469.07075306733333333333
   },
   {
     "tick": {
@@ -5418,11 +5418,11 @@
       }
     },
     "positions": [],
-    "acResult": 8.6816532310,
+    "acValue": 8.6816532310,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 91.97913391076666666667,
-    "maResult": 6469.39075280200000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 91.97913391076666666667,
+    "maValue": 6469.39075280200000000000
   },
   {
     "tick": {
@@ -5447,11 +5447,11 @@
       }
     },
     "positions": [],
-    "acResult": 11.2864911268,
+    "acValue": 11.2864911268,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6469.51908815700000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6469.51908815700000000000
   },
   {
     "tick": {
@@ -5476,11 +5476,11 @@
       }
     },
     "positions": [],
-    "acResult": 10.4934738237,
+    "acValue": 10.4934738237,
     "acIncreased": false,
-    "fastStochasticAc": 95.44199457483074935966,
-    "slowStochasticAc": 98.48066485826666666667,
-    "maResult": 6469.05242149066666666667
+    "fastStochasticAcValue": 95.44199457483074935966,
+    "slowStochasticAcValue": 98.48066485826666666667,
+    "maValue": 6469.05242149066666666667
   },
   {
     "tick": {
@@ -5505,11 +5505,11 @@
       }
     },
     "positions": [],
-    "acResult": 7.6061837485,
+    "acValue": 7.6061837485,
     "acIncreased": false,
-    "fastStochasticAc": 75.25135367636217848408,
-    "slowStochasticAc": 90.23111608373333333333,
-    "maResult": 6469.21908815733333333333
+    "fastStochasticAcValue": 75.25135367636217848408,
+    "slowStochasticAcValue": 90.23111608373333333333,
+    "maValue": 6469.21908815733333333333
   },
   {
     "tick": {
@@ -5534,11 +5534,11 @@
       }
     },
     "positions": [],
-    "acResult": 3.2321997791,
+    "acValue": 3.2321997791,
     "acIncreased": false,
-    "fastStochasticAc": 45.83800007383108318017,
-    "slowStochasticAc": 72.17711610833333333333,
-    "maResult": 6470.49658815600000000000
+    "fastStochasticAcValue": 45.83800007383108318017,
+    "slowStochasticAcValue": 72.17711610833333333333,
+    "maValue": 6470.49658815600000000000
   },
   {
     "tick": {
@@ -5563,11 +5563,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.1894233877,
+    "acValue": -0.1894233877,
     "acIncreased": false,
-    "fastStochasticAc": 22.82890520659358579868,
-    "slowStochasticAc": 47.97275298560000000000,
-    "maResult": 6471.77575282166666666667
+    "fastStochasticAcValue": 22.82890520659358579868,
+    "slowStochasticAcValue": 47.97275298560000000000,
+    "maValue": 6471.77575282166666666667
   },
   {
     "tick": {
@@ -5592,11 +5592,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.0171578852,
+    "acValue": -0.0171578852,
     "acIncreased": true,
-    "fastStochasticAc": 23.98732420721128943530,
-    "slowStochasticAc": 30.88474316253333333333,
-    "maResult": 6473.10908615400000000000
+    "fastStochasticAcValue": 23.98732420721128943530,
+    "slowStochasticAcValue": 30.88474316253333333333,
+    "maValue": 6473.10908615400000000000
   },
   {
     "tick": {
@@ -5621,11 +5621,11 @@
       }
     },
     "positions": [],
-    "acResult": 1.2117640137,
+    "acValue": 1.2117640137,
     "acIncreased": true,
-    "fastStochasticAc": 32.25134954775182294153,
-    "slowStochasticAc": 26.35585965386666666667,
-    "maResult": 6473.36108615400000000000
+    "fastStochasticAcValue": 32.25134954775182294153,
+    "slowStochasticAcValue": 26.35585965386666666667,
+    "maValue": 6473.36108615400000000000
   },
   {
     "tick": {
@@ -5650,11 +5650,11 @@
       }
     },
     "positions": [],
-    "acResult": 4.0689631276,
+    "acValue": 4.0689631276,
     "acIncreased": true,
-    "fastStochasticAc": 51.46491055710032197252,
-    "slowStochasticAc": 35.90119477070000000000,
-    "maResult": 6474.78819593900000000000
+    "fastStochasticAcValue": 51.46491055710032197252,
+    "slowStochasticAcValue": 35.90119477070000000000,
+    "maValue": 6474.78819593900000000000
   },
   {
     "tick": {
@@ -5679,11 +5679,11 @@
       }
     },
     "positions": [],
-    "acResult": 4.6246100533,
+    "acValue": 4.6246100533,
     "acIncreased": true,
-    "fastStochasticAc": 55.20142162300972206660,
-    "slowStochasticAc": 46.30589390930000000000,
-    "maResult": 6475.68152927233333333333
+    "fastStochasticAcValue": 55.20142162300972206660,
+    "slowStochasticAcValue": 46.30589390930000000000,
+    "maValue": 6475.68152927233333333333
   },
   {
     "tick": {
@@ -5708,11 +5708,11 @@
       }
     },
     "positions": [],
-    "acResult": 4.6053179743,
+    "acValue": 4.6053179743,
     "acIncreased": false,
-    "fastStochasticAc": 51.55281553432012354580,
-    "slowStochasticAc": 52.73971590480000000000,
-    "maResult": 6476.05119593900000000000
+    "fastStochasticAcValue": 51.55281553432012354580,
+    "slowStochasticAcValue": 52.73971590480000000000,
+    "maValue": 6476.05119593900000000000
   },
   {
     "tick": {
@@ -5737,11 +5737,11 @@
       }
     },
     "positions": [],
-    "acResult": 0.0134982153,
+    "acValue": 0.0134982153,
     "acIncreased": false,
-    "fastStochasticAc": 12.44499856485561739277,
-    "slowStochasticAc": 39.73307857406666666667,
-    "maResult": 6475.91786260566666666667
+    "fastStochasticAcValue": 12.44499856485561739277,
+    "slowStochasticAcValue": 39.73307857406666666667,
+    "maValue": 6475.91786260566666666667
   },
   {
     "tick": {
@@ -5766,11 +5766,11 @@
       }
     },
     "positions": [],
-    "acResult": -1.1465806781,
+    "acValue": -1.1465806781,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 21.33260469973333333333,
-    "maResult": 6476.91786260566666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 21.33260469973333333333,
+    "maValue": 6476.91786260566666666667
   },
   {
     "tick": {
@@ -5795,11 +5795,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.0108381242,
+    "acValue": -3.0108381242,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 4.14833285496666666667,
-    "maResult": 6476.95119594100000000000
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 4.14833285496666666667,
+    "maValue": 6476.95119594100000000000
   },
   {
     "tick": {
@@ -5824,11 +5824,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.2086577639,
+    "acValue": -2.2086577639,
     "acIncreased": true,
-    "fastStochasticAc": 5.61070075548475595500,
-    "slowStochasticAc": 1.87023358516666666667,
-    "maResult": 6478.79358135800000000000
+    "fastStochasticAcValue": 5.61070075548475595500,
+    "slowStochasticAcValue": 1.87023358516666666667,
+    "maValue": 6478.79358135800000000000
   },
   {
     "tick": {
@@ -5856,11 +5856,11 @@
       "ENTRY_LONG"
     ],
     "stopLose": 6486.00000000,
-    "acResult": 5.4125414957,
+    "acValue": 5.4125414957,
     "acIncreased": true,
-    "fastStochasticAc": 62.37548164169804381982,
-    "slowStochasticAc": 22.66206079906666666667,
-    "maResult": 6483.46024802466666666667
+    "fastStochasticAcValue": 62.37548164169804381982,
+    "slowStochasticAcValue": 22.66206079906666666667,
+    "maValue": 6483.46024802466666666667
   },
   {
     "tick": {
@@ -5885,11 +5885,11 @@
       }
     },
     "positions": [],
-    "acResult": 15.9616834758,
+    "acValue": 15.9616834758,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 55.99539413240000000000,
-    "maResult": 6486.43687117600000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 55.99539413240000000000,
+    "maValue": 6486.43687117600000000000
   },
   {
     "tick": {
@@ -5914,11 +5914,11 @@
       }
     },
     "positions": [],
-    "acResult": 25.6036598083,
+    "acValue": 25.6036598083,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 87.45849388056666666667,
-    "maResult": 6492.23687117400000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 87.45849388056666666667,
+    "maValue": 6492.23687117400000000000
   },
   {
     "tick": {
@@ -5943,11 +5943,11 @@
       }
     },
     "positions": [],
-    "acResult": 28.9649122200,
+    "acValue": 28.9649122200,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6496.27020450500000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6496.27020450500000000000
   },
   {
     "tick": {
@@ -5972,11 +5972,11 @@
       }
     },
     "positions": [],
-    "acResult": 28.7416990435,
+    "acValue": 28.7416990435,
     "acIncreased": false,
-    "fastStochasticAc": 99.30192982464135334929,
-    "slowStochasticAc": 99.76730994153333333333,
-    "maResult": 6500.66372518866666666667
+    "fastStochasticAcValue": 99.30192982464135334929,
+    "slowStochasticAcValue": 99.76730994153333333333,
+    "maValue": 6500.66372518866666666667
   },
   {
     "tick": {
@@ -6001,11 +6001,11 @@
       }
     },
     "positions": [],
-    "acResult": 18.7085315604,
+    "acValue": 18.7085315604,
     "acIncreased": false,
-    "fastStochasticAc": 67.92450357162493047534,
-    "slowStochasticAc": 89.07547779876666666667,
-    "maResult": 6504.30439185533333333333
+    "fastStochasticAcValue": 67.92450357162493047534,
+    "slowStochasticAcValue": 89.07547779876666666667,
+    "maValue": 6504.30439185533333333333
   },
   {
     "tick": {
@@ -6030,11 +6030,11 @@
       }
     },
     "positions": [],
-    "acResult": 5.9789979584,
+    "acValue": 5.9789979584,
     "acIncreased": false,
-    "fastStochasticAc": 28.11454300784107633757,
-    "slowStochasticAc": 65.11365880136666666667,
-    "maResult": 6506.97105852466666666667
+    "fastStochasticAcValue": 28.11454300784107633757,
+    "slowStochasticAcValue": 65.11365880136666666667,
+    "maValue": 6506.97105852466666666667
   },
   {
     "tick": {
@@ -6059,11 +6059,11 @@
       }
     },
     "positions": [],
-    "acResult": -5.2358207950,
+    "acValue": -5.2358207950,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 32.01301552650000000000,
-    "maResult": 6511.27105852466666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 32.01301552650000000000,
+    "maValue": 6511.27105852466666666667
   },
   {
     "tick": {
@@ -6088,11 +6088,11 @@
       }
     },
     "positions": [],
-    "acResult": -7.5963359685,
+    "acValue": -7.5963359685,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 9.37151433593333333333,
-    "maResult": 6515.75114185800000000000
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 9.37151433593333333333,
+    "maValue": 6515.75114185800000000000
   },
   {
     "tick": {
@@ -6117,11 +6117,11 @@
       }
     },
     "positions": [],
-    "acResult": -8.8506982380,
+    "acValue": -8.8506982380,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0E-20,
-    "maResult": 6520.00114185800000000000
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0E-20,
+    "maValue": 6520.00114185800000000000
   },
   {
     "tick": {
@@ -6146,11 +6146,11 @@
       }
     },
     "positions": [],
-    "acResult": -7.8333646700,
+    "acValue": -7.8333646700,
     "acIncreased": true,
-    "fastStochasticAc": 2.69024764026989332597,
-    "slowStochasticAc": 0.89674921343333333333,
-    "maResult": 6524.26780852466666666667
+    "fastStochasticAcValue": 2.69024764026989332597,
+    "slowStochasticAcValue": 0.89674921343333333333,
+    "maValue": 6524.26780852466666666667
   },
   {
     "tick": {
@@ -6175,11 +6175,11 @@
       }
     },
     "positions": [],
-    "acResult": -4.9501938958,
+    "acValue": -4.9501938958,
     "acIncreased": true,
-    "fastStochasticAc": 10.31453491021149760967,
-    "slowStochasticAc": 4.33492751683333333333,
-    "maResult": 6527.66780852766666666667
+    "fastStochasticAcValue": 10.31453491021149760967,
+    "slowStochasticAcValue": 4.33492751683333333333,
+    "maValue": 6527.66780852766666666667
   },
   {
     "tick": {
@@ -6204,11 +6204,11 @@
       }
     },
     "positions": [],
-    "acResult": -6.7837190455,
+    "acValue": -6.7837190455,
     "acIncreased": false,
-    "fastStochasticAc": 5.46594162428157938161,
-    "slowStochasticAc": 6.15690805826666666667,
-    "maResult": 6531.10357704566666666667
+    "fastStochasticAcValue": 5.46594162428157938161,
+    "slowStochasticAcValue": 6.15690805826666666667,
+    "maValue": 6531.10357704566666666667
   },
   {
     "tick": {
@@ -6233,11 +6233,11 @@
       }
     },
     "positions": [],
-    "acResult": -8.4924882480,
+    "acValue": -8.4924882480,
     "acIncreased": false,
-    "fastStochasticAc": 0.94725428377745428488,
-    "slowStochasticAc": 5.57591027276666666667,
-    "maResult": 6534.26681100500000000000
+    "fastStochasticAcValue": 0.94725428377745428488,
+    "slowStochasticAcValue": 5.57591027276666666667,
+    "maValue": 6534.26681100500000000000
   },
   {
     "tick": {
@@ -6262,11 +6262,11 @@
       }
     },
     "positions": [],
-    "acResult": -11.3578683325,
+    "acValue": -11.3578683325,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 2.13773196936666666667,
-    "maResult": 6537.26160534533333333333
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 2.13773196936666666667,
+    "maValue": 6537.26160534533333333333
   },
   {
     "tick": {
@@ -6291,11 +6291,11 @@
       }
     },
     "positions": [],
-    "acResult": -14.0261134340,
+    "acValue": -14.0261134340,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0.31575142793333333333,
-    "maResult": 6539.11168825966666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0.31575142793333333333,
+    "maValue": 6539.11168825966666666667
   },
   {
     "tick": {
@@ -6320,11 +6320,11 @@
       }
     },
     "positions": [],
-    "acResult": -13.6472659498,
+    "acValue": -13.6472659498,
     "acIncreased": true,
-    "fastStochasticAc": 0.88122457754098969002,
-    "slowStochasticAc": 0.29374152583333333333,
-    "maResult": 6542.11168825966666666667
+    "fastStochasticAcValue": 0.88122457754098969002,
+    "slowStochasticAcValue": 0.29374152583333333333,
+    "maValue": 6542.11168825966666666667
   },
   {
     "tick": {
@@ -6349,11 +6349,11 @@
       }
     },
     "positions": [],
-    "acResult": -8.5799603522,
+    "acValue": -8.5799603522,
     "acIncreased": true,
-    "fastStochasticAc": 12.73423344873016950765,
-    "slowStochasticAc": 4.53848600876666666667,
-    "maResult": 6546.25252158866666666667
+    "fastStochasticAcValue": 12.73423344873016950765,
+    "slowStochasticAcValue": 4.53848600876666666667,
+    "maValue": 6546.25252158866666666667
   },
   {
     "tick": {
@@ -6378,11 +6378,11 @@
       }
     },
     "positions": [],
-    "acResult": -5.5268727089,
+    "acValue": -5.5268727089,
     "acIncreased": true,
-    "fastStochasticAc": 25.96405345637316975198,
-    "slowStochasticAc": 13.19317049420000000000,
-    "maResult": 6549.65252158833333333333
+    "fastStochasticAcValue": 25.96405345637316975198,
+    "slowStochasticAcValue": 13.19317049420000000000,
+    "maValue": 6549.65252158833333333333
   },
   {
     "tick": {
@@ -6407,11 +6407,11 @@
       }
     },
     "positions": [],
-    "acResult": -2.9996170908,
+    "acValue": -2.9996170908,
     "acIncreased": true,
-    "fastStochasticAc": 55.11839512870194779211,
-    "slowStochasticAc": 31.27222734460000000000,
-    "maResult": 6551.70004157666666666667
+    "fastStochasticAcValue": 55.11839512870194779211,
+    "slowStochasticAcValue": 31.27222734460000000000,
+    "maValue": 6551.70004157666666666667
   },
   {
     "tick": {
@@ -6439,11 +6439,11 @@
       "ENTRY_LONG"
     ],
     "stopLose": 6559.38059961,
-    "acResult": 0.2677732239,
+    "acValue": 0.2677732239,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 60.36081619503333333333,
-    "maResult": 6554.41947491000000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 60.36081619503333333333,
+    "maValue": 6554.41947491000000000000
   },
   {
     "tick": {
@@ -6468,11 +6468,11 @@
       }
     },
     "positions": [],
-    "acResult": 1.6473713681,
+    "acValue": 1.6473713681,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 85.03946504290000000000,
-    "maResult": 6556.58614157766666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 85.03946504290000000000,
+    "maValue": 6556.58614157766666666667
   },
   {
     "tick": {
@@ -6497,11 +6497,11 @@
       }
     },
     "positions": [],
-    "acResult": -1.9245583801,
+    "acValue": -1.9245583801,
     "acIncreased": false,
-    "fastStochasticAc": 77.21036646731288694768,
-    "slowStochasticAc": 92.40345548910000000000,
-    "maResult": 6559.75280824433333333333
+    "fastStochasticAcValue": 77.21036646731288694768,
+    "slowStochasticAcValue": 92.40345548910000000000,
+    "maValue": 6559.75280824433333333333
   },
   {
     "tick": {
@@ -6526,11 +6526,11 @@
       }
     },
     "positions": [],
-    "acResult": -4.0316124090,
+    "acValue": -4.0316124090,
     "acIncreased": false,
-    "fastStochasticAc": 63.76693601451602099168,
-    "slowStochasticAc": 80.32576749393333333333,
-    "maResult": 6562.49236512600000000000
+    "fastStochasticAcValue": 63.76693601451602099168,
+    "slowStochasticAcValue": 80.32576749393333333333,
+    "maValue": 6562.49236512600000000000
   },
   {
     "tick": {
@@ -6555,11 +6555,11 @@
       }
     },
     "positions": [],
-    "acResult": -4.3081878891,
+    "acValue": -4.3081878891,
     "acIncreased": false,
-    "fastStochasticAc": 62.00232856702008668865,
-    "slowStochasticAc": 67.65987701626666666667,
-    "maResult": 6565.75785950633333333333
+    "fastStochasticAcValue": 62.00232856702008668865,
+    "slowStochasticAcValue": 67.65987701626666666667,
+    "maValue": 6565.75785950633333333333
   },
   {
     "tick": {
@@ -6587,11 +6587,11 @@
       "ENTRY_SHORT"
     ],
     "stopLose": 6590.00000000,
-    "acResult": -5.7830095813,
+    "acValue": -5.7830095813,
     "acIncreased": false,
-    "fastStochasticAc": 52.59266817035834920657,
-    "slowStochasticAc": 59.45397758396666666667,
-    "maResult": 6568.02051562500000000000
+    "fastStochasticAcValue": 52.59266817035834920657,
+    "slowStochasticAcValue": 59.45397758396666666667,
+    "maValue": 6568.02051562500000000000
   },
   {
     "tick": {
@@ -6616,11 +6616,11 @@
       }
     },
     "positions": [],
-    "acResult": -8.1616630012,
+    "acValue": -8.1616630012,
     "acIncreased": false,
-    "fastStochasticAc": 37.41637872398521129645,
-    "slowStochasticAc": 50.67045848713333333333,
-    "maResult": 6569.76870447533333333333
+    "fastStochasticAcValue": 37.41637872398521129645,
+    "slowStochasticAcValue": 50.67045848713333333333,
+    "maValue": 6569.76870447533333333333
   },
   {
     "tick": {
@@ -6645,11 +6645,11 @@
       }
     },
     "positions": [],
-    "acResult": -15.1140325677,
+    "acValue": -15.1140325677,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 30.00301563143333333333,
-    "maResult": 6570.31626428200000000000
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 30.00301563143333333333,
+    "maValue": 6570.31626428200000000000
   },
   {
     "tick": {
@@ -6674,11 +6674,11 @@
       }
     },
     "positions": [],
-    "acResult": -19.6340264531,
+    "acValue": -19.6340264531,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 12.47212624133333333333,
-    "maResult": 6571.80393094833333333333
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 12.47212624133333333333,
+    "maValue": 6571.80393094833333333333
   },
   {
     "tick": {
@@ -6703,11 +6703,11 @@
       }
     },
     "positions": [],
-    "acResult": -21.4160030438,
+    "acValue": -21.4160030438,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0E-20,
-    "maResult": 6572.57607860766666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0E-20,
+    "maValue": 6572.57607860766666666667
   },
   {
     "tick": {
@@ -6732,11 +6732,11 @@
       }
     },
     "positions": [],
-    "acResult": -21.7942063419,
+    "acValue": -21.7942063419,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0E-20,
-    "maResult": 6570.79830083000000000000
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0E-20,
+    "maValue": 6570.79830083000000000000
   },
   {
     "tick": {
@@ -6761,11 +6761,11 @@
       }
     },
     "positions": [],
-    "acResult": -18.9916546264,
+    "acValue": -18.9916546264,
     "acIncreased": true,
-    "fastStochasticAc": 11.95547394535843295848,
-    "slowStochasticAc": 3.98515798180000000000,
-    "maResult": 6569.86563416300000000000
+    "fastStochasticAcValue": 11.95547394535843295848,
+    "slowStochasticAcValue": 3.98515798180000000000,
+    "maValue": 6569.86563416300000000000
   },
   {
     "tick": {
@@ -6790,11 +6790,11 @@
       }
     },
     "positions": [],
-    "acResult": -10.6040394121,
+    "acValue": -10.6040394121,
     "acIncreased": true,
-    "fastStochasticAc": 47.73640694425767812366,
-    "slowStochasticAc": 19.89729362986666666667,
-    "maResult": 6566.89065070100000000000
+    "fastStochasticAcValue": 47.73640694425767812366,
+    "slowStochasticAcValue": 19.89729362986666666667,
+    "maValue": 6566.89065070100000000000
   },
   {
     "tick": {
@@ -6819,11 +6819,11 @@
       }
     },
     "positions": [],
-    "acResult": -5.8272857653,
+    "acValue": -5.8272857653,
     "acIncreased": true,
-    "fastStochasticAc": 68.11367721972327945328,
-    "slowStochasticAc": 42.60185270310000000000,
-    "maResult": 6564.79065070433333333333
+    "fastStochasticAcValue": 68.11367721972327945328,
+    "slowStochasticAcValue": 42.60185270310000000000,
+    "maValue": 6564.79065070433333333333
   },
   {
     "tick": {
@@ -6848,11 +6848,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.3619144140,
+    "acValue": -0.3619144140,
     "acIncreased": true,
-    "fastStochasticAc": 91.42853861221613142011,
-    "slowStochasticAc": 69.09287425873333333333,
-    "maResult": 6563.56768557300000000000
+    "fastStochasticAcValue": 91.42853861221613142011,
+    "slowStochasticAcValue": 69.09287425873333333333,
+    "maValue": 6563.56768557300000000000
   },
   {
     "tick": {
@@ -6877,11 +6877,11 @@
       }
     },
     "positions": [],
-    "acResult": 5.1960120687,
+    "acValue": 5.1960120687,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 86.51407194396666666667,
-    "maResult": 6562.50101890633333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 86.51407194396666666667,
+    "maValue": 6562.50101890633333333333
   },
   {
     "tick": {
@@ -6906,11 +6906,11 @@
       }
     },
     "positions": [],
-    "acResult": 6.6382724657,
+    "acValue": 6.6382724657,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 97.14284620406666666667,
-    "maResult": 6561.40410155633333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 97.14284620406666666667,
+    "maValue": 6561.40410155633333333333
   },
   {
     "tick": {
@@ -6935,11 +6935,11 @@
       }
     },
     "positions": [],
-    "acResult": 9.1727188237,
+    "acValue": 9.1727188237,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6560.19671286833333333333
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6560.19671286833333333333
   },
   {
     "tick": {
@@ -6964,11 +6964,11 @@
       }
     },
     "positions": [],
-    "acResult": 11.7440285639,
+    "acValue": 11.7440285639,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6558.81862953500000000000
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6558.81862953500000000000
   },
   {
     "tick": {
@@ -6993,11 +6993,11 @@
       }
     },
     "positions": [],
-    "acResult": 10.1866649745,
+    "acValue": 10.1866649745,
     "acIncreased": false,
-    "fastStochasticAc": 95.35645333222150491507,
-    "slowStochasticAc": 98.45215111073333333333,
-    "maResult": 6557.51841544800000000000
+    "fastStochasticAcValue": 95.35645333222150491507,
+    "slowStochasticAcValue": 98.45215111073333333333,
+    "maValue": 6557.51841544800000000000
   },
   {
     "tick": {
@@ -7022,11 +7022,11 @@
       }
     },
     "positions": [],
-    "acResult": 3.5684154494,
+    "acValue": 3.5684154494,
     "acIncreased": false,
-    "fastStochasticAc": 75.62300718131670544022,
-    "slowStochasticAc": 90.32648683783333333333,
-    "maResult": 6554.58508211466666666667
+    "fastStochasticAcValue": 75.62300718131670544022,
+    "slowStochasticAcValue": 90.32648683783333333333,
+    "maValue": 6554.58508211466666666667
   },
   {
     "tick": {
@@ -7051,11 +7051,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.8009910834,
+    "acValue": -3.8009910834,
     "acIncreased": false,
-    "fastStochasticAc": 53.64985757013798081822,
-    "slowStochasticAc": 74.87643936123333333333,
-    "maResult": 6551.91841544800000000000
+    "fastStochasticAcValue": 53.64985757013798081822,
+    "slowStochasticAcValue": 74.87643936123333333333,
+    "maValue": 6551.91841544800000000000
   },
   {
     "tick": {
@@ -7080,11 +7080,11 @@
       }
     },
     "positions": [],
-    "acResult": -10.4069511147,
+    "acValue": -10.4069511147,
     "acIncreased": false,
-    "fastStochasticAc": 33.95305465294693499248,
-    "slowStochasticAc": 54.40863980146666666667,
-    "maResult": 6549.47289539233333333333
+    "fastStochasticAcValue": 33.95305465294693499248,
+    "slowStochasticAcValue": 54.40863980146666666667,
+    "maValue": 6549.47289539233333333333
   },
   {
     "tick": {
@@ -7109,11 +7109,11 @@
       }
     },
     "positions": [],
-    "acResult": -15.3290270849,
+    "acValue": -15.3290270849,
     "acIncreased": false,
-    "fastStochasticAc": 19.27704089126625929949,
-    "slowStochasticAc": 35.62665103813333333333,
-    "maResult": 6546.84148866133333333333
+    "fastStochasticAcValue": 19.27704089126625929949,
+    "slowStochasticAcValue": 35.62665103813333333333,
+    "maValue": 6546.84148866133333333333
   },
   {
     "tick": {
@@ -7138,11 +7138,11 @@
       }
     },
     "positions": [],
-    "acResult": -16.1441465948,
+    "acValue": -16.1441465948,
     "acIncreased": false,
-    "fastStochasticAc": 9.26450215526250839630,
-    "slowStochasticAc": 20.83153256650000000000,
-    "maResult": 6545.31167352100000000000
+    "fastStochasticAcValue": 9.26450215526250839630,
+    "slowStochasticAcValue": 20.83153256650000000000,
+    "maValue": 6545.31167352100000000000
   },
   {
     "tick": {
@@ -7167,11 +7167,11 @@
       }
     },
     "positions": [],
-    "acResult": -10.5869487092,
+    "acValue": -10.5869487092,
     "acIncreased": true,
-    "fastStochasticAc": 19.92671752087147794496,
-    "slowStochasticAc": 16.15608685580000000000,
-    "maResult": 6543.49341639466666666667
+    "fastStochasticAcValue": 19.92671752087147794496,
+    "slowStochasticAcValue": 16.15608685580000000000,
+    "maValue": 6543.49341639466666666667
   },
   {
     "tick": {
@@ -7196,11 +7196,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.4471974808,
+    "acValue": -3.4471974808,
     "acIncreased": true,
-    "fastStochasticAc": 45.52807432450114088504,
-    "slowStochasticAc": 24.90643133353333333333,
-    "maResult": 6540.49341639466666666667
+    "fastStochasticAcValue": 45.52807432450114088504,
+    "slowStochasticAcValue": 24.90643133353333333333,
+    "maValue": 6540.49341639466666666667
   },
   {
     "tick": {
@@ -7225,11 +7225,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.1669988573,
+    "acValue": -0.1669988573,
     "acIncreased": true,
-    "fastStochasticAc": 57.29004370698584843581,
-    "slowStochasticAc": 40.91494518413333333333,
-    "maResult": 6536.58852999100000000000
+    "fastStochasticAcValue": 57.29004370698584843581,
+    "slowStochasticAcValue": 40.91494518413333333333,
+    "maValue": 6536.58852999100000000000
   },
   {
     "tick": {
@@ -7254,11 +7254,11 @@
       }
     },
     "positions": [],
-    "acResult": 1.0833361265,
+    "acValue": 1.0833361265,
     "acIncreased": true,
-    "fastStochasticAc": 61.77343129575730406752,
-    "slowStochasticAc": 54.86384977573333333333,
-    "maResult": 6533.27516944766666666667
+    "fastStochasticAcValue": 61.77343129575730406752,
+    "slowStochasticAcValue": 54.86384977573333333333,
+    "maValue": 6533.27516944766666666667
   },
   {
     "tick": {
@@ -7283,11 +7283,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.7695040569,
+    "acValue": -0.7695040569,
     "acIncreased": false,
-    "fastStochasticAc": 55.12961120765093812506,
-    "slowStochasticAc": 58.06436207013333333333,
-    "maResult": 6530.59155642533333333333
+    "fastStochasticAcValue": 55.12961120765093812506,
+    "slowStochasticAcValue": 58.06436207013333333333,
+    "maValue": 6530.59155642533333333333
   },
   {
     "tick": {
@@ -7312,11 +7312,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.4209856501,
+    "acValue": -3.4209856501,
     "acIncreased": false,
-    "fastStochasticAc": 45.62206337380551228530,
-    "slowStochasticAc": 54.17503529240000000000,
-    "maResult": 6527.31961469733333333333
+    "fastStochasticAcValue": 45.62206337380551228530,
+    "slowStochasticAcValue": 54.17503529240000000000,
+    "maValue": 6527.31961469733333333333
   },
   {
     "tick": {
@@ -7341,11 +7341,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.0063387887,
+    "acValue": -3.0063387887,
     "acIncreased": true,
-    "fastStochasticAc": 47.10888299911415028200,
-    "slowStochasticAc": 49.28685252686666666667,
-    "maResult": 6524.48591099333333333333
+    "fastStochasticAcValue": 47.10888299911415028200,
+    "slowStochasticAcValue": 49.28685252686666666667,
+    "maValue": 6524.48591099333333333333
   },
   {
     "tick": {
@@ -7370,11 +7370,11 @@
       }
     },
     "positions": [],
-    "acResult": 0.0005629007,
+    "acValue": 0.0005629007,
     "acIncreased": true,
-    "fastStochasticAc": 61.31489511065307534603,
-    "slowStochasticAc": 51.34861382786666666667,
-    "maResult": 6521.66891099333333333333
+    "fastStochasticAcValue": 61.31489511065307534603,
+    "slowStochasticAcValue": 51.34861382786666666667,
+    "maValue": 6521.66891099333333333333
   },
   {
     "tick": {
@@ -7399,11 +7399,11 @@
       }
     },
     "positions": [],
-    "acResult": 3.1837740011,
+    "acValue": 3.1837740011,
     "acIncreased": true,
-    "fastStochasticAc": 98.04874958700169304500,
-    "slowStochasticAc": 68.82417589893333333333,
-    "maResult": 6518.63216929500000000000
+    "fastStochasticAcValue": 98.04874958700169304500,
+    "slowStochasticAcValue": 68.82417589893333333333,
+    "maValue": 6518.63216929500000000000
   },
   {
     "tick": {
@@ -7428,11 +7428,11 @@
       }
     },
     "positions": [],
-    "acResult": 6.0582117441,
+    "acValue": 6.0582117441,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 86.45454823256666666667,
-    "maResult": 6515.56251574366666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 86.45454823256666666667,
+    "maValue": 6515.56251574366666666667
   },
   {
     "tick": {
@@ -7457,11 +7457,11 @@
       }
     },
     "positions": [],
-    "acResult": 10.2569455980,
+    "acValue": 10.2569455980,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 99.34958319566666666667,
-    "maResult": 6513.80832145666666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 99.34958319566666666667,
+    "maValue": 6513.80832145666666666667
   },
   {
     "tick": {
@@ -7486,11 +7486,11 @@
       }
     },
     "positions": [],
-    "acResult": 12.3426923541,
+    "acValue": 12.3426923541,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 100.00000000000000000000,
-    "maResult": 6512.74346593966666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 100.00000000000000000000,
+    "maValue": 6512.74346593966666666667
   },
   {
     "tick": {
@@ -7515,11 +7515,11 @@
       }
     },
     "positions": [],
-    "acResult": 7.2514518369,
+    "acValue": 7.2514518369,
     "acIncreased": false,
-    "fastStochasticAc": 82.12774493395802061876,
-    "slowStochasticAc": 94.04258164466666666667,
-    "maResult": 6509.86576191566666666667
+    "fastStochasticAcValue": 82.12774493395802061876,
+    "slowStochasticAcValue": 94.04258164466666666667,
+    "maValue": 6509.86576191566666666667
   },
   {
     "tick": {
@@ -7547,11 +7547,11 @@
       "ENTRY_SHORT"
     ],
     "stopLose": 6507.05544400,
-    "acResult": -1.5672176470,
+    "acValue": -1.5672176470,
     "acIncreased": false,
-    "fastStochasticAc": 39.33655584620779779915,
-    "slowStochasticAc": 73.82143359340000000000,
-    "maResult": 6506.58488162466666666667
+    "fastStochasticAcValue": 39.33655584620779779915,
+    "slowStochasticAcValue": 73.82143359340000000000,
+    "maValue": 6506.58488162466666666667
   },
   {
     "tick": {
@@ -7576,11 +7576,11 @@
       }
     },
     "positions": [],
-    "acResult": -7.4863751797,
+    "acValue": -7.4863751797,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 40.48810026006666666667,
-    "maResult": 6504.19128193566666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 40.48810026006666666667,
+    "maValue": 6504.19128193566666666667
   },
   {
     "tick": {
@@ -7605,11 +7605,11 @@
       }
     },
     "positions": [],
-    "acResult": -13.7244182651,
+    "acValue": -13.7244182651,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 13.11218528206666666667,
-    "maResult": 6501.49564700400000000000
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 13.11218528206666666667,
+    "maValue": 6501.49564700400000000000
   },
   {
     "tick": {
@@ -7634,11 +7634,11 @@
       }
     },
     "positions": [],
-    "acResult": -19.0145111030,
+    "acValue": -19.0145111030,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 0E-20,
-    "maResult": 6497.64798033733333333333
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 0E-20,
+    "maValue": 6497.64798033733333333333
   },
   {
     "tick": {
@@ -7663,11 +7663,11 @@
       }
     },
     "positions": [],
-    "acResult": -16.8344963820,
+    "acValue": -16.8344963820,
     "acIncreased": true,
-    "fastStochasticAc": 6.95219751972618583785,
-    "slowStochasticAc": 2.31739917323333333333,
-    "maResult": 6493.88377959966666666667
+    "fastStochasticAcValue": 6.95219751972618583785,
+    "slowStochasticAcValue": 2.31739917323333333333,
+    "maValue": 6493.88377959966666666667
   },
   {
     "tick": {
@@ -7692,11 +7692,11 @@
       }
     },
     "positions": [],
-    "acResult": -9.1719312098,
+    "acValue": -9.1719312098,
     "acIncreased": true,
-    "fastStochasticAc": 31.38857681191404537178,
-    "slowStochasticAc": 12.78025811053333333333,
-    "maResult": 6490.98377959933333333333
+    "fastStochasticAcValue": 31.38857681191404537178,
+    "slowStochasticAcValue": 12.78025811053333333333,
+    "maValue": 6490.98377959933333333333
   },
   {
     "tick": {
@@ -7721,11 +7721,11 @@
       }
     },
     "positions": [],
-    "acResult": -3.4076361118,
+    "acValue": -3.4076361118,
     "acIncreased": true,
-    "fastStochasticAc": 49.77125913843646857855,
-    "slowStochasticAc": 29.37067782336666666667,
-    "maResult": 6487.76122404366666666667
+    "fastStochasticAcValue": 49.77125913843646857855,
+    "slowStochasticAcValue": 29.37067782336666666667,
+    "maValue": 6487.76122404366666666667
   },
   {
     "tick": {
@@ -7750,11 +7750,11 @@
       }
     },
     "positions": [],
-    "acResult": 2.2706590986,
+    "acValue": 2.2706590986,
     "acIncreased": true,
-    "fastStochasticAc": 67.87968267234156855357,
-    "slowStochasticAc": 49.67983954090000000000,
-    "maResult": 6484.49455737700000000000
+    "fastStochasticAcValue": 67.87968267234156855357,
+    "slowStochasticAcValue": 49.67983954090000000000,
+    "maValue": 6484.49455737700000000000
   },
   {
     "tick": {
@@ -7779,11 +7779,11 @@
       }
     },
     "positions": [],
-    "acResult": 6.0300812836,
+    "acValue": 6.0300812836,
     "acIncreased": true,
-    "fastStochasticAc": 79.86870519516727481367,
-    "slowStochasticAc": 65.83988233530000000000,
-    "maResult": 6481.31487346466666666667
+    "fastStochasticAcValue": 79.86870519516727481367,
+    "slowStochasticAcValue": 65.83988233530000000000,
+    "maValue": 6481.31487346466666666667
   },
   {
     "tick": {
@@ -7808,11 +7808,11 @@
       }
     },
     "positions": [],
-    "acResult": 8.1274144381,
+    "acValue": 8.1274144381,
     "acIncreased": true,
-    "fastStochasticAc": 86.55722624701864775655,
-    "slowStochasticAc": 78.10187137150000000000,
-    "maResult": 6477.60837854366666666667
+    "fastStochasticAcValue": 86.55722624701864775655,
+    "slowStochasticAcValue": 78.10187137150000000000,
+    "maValue": 6477.60837854366666666667
   },
   {
     "tick": {
@@ -7837,11 +7837,11 @@
       }
     },
     "positions": [],
-    "acResult": 9.1945241252,
+    "acValue": 9.1945241252,
     "acIncreased": true,
-    "fastStochasticAc": 89.96030295492699139342,
-    "slowStochasticAc": 85.46207813236666666667,
-    "maResult": 6473.54171187700000000000
+    "fastStochasticAcValue": 89.96030295492699139342,
+    "slowStochasticAcValue": 85.46207813236666666667,
+    "maValue": 6473.54171187700000000000
   },
   {
     "tick": {
@@ -7866,11 +7866,11 @@
       }
     },
     "positions": [],
-    "acResult": 5.9815025980,
+    "acValue": 5.9815025980,
     "acIncreased": false,
-    "fastStochasticAc": 79.71378485711333825959,
-    "slowStochasticAc": 85.41043801970000000000,
-    "maResult": 6468.44880503433333333333
+    "fastStochasticAcValue": 79.71378485711333825959,
+    "slowStochasticAcValue": 85.41043801970000000000,
+    "maValue": 6468.44880503433333333333
   },
   {
     "tick": {
@@ -7895,11 +7895,11 @@
       }
     },
     "positions": [],
-    "acResult": 3.2195929091,
+    "acValue": 3.2195929091,
     "acIncreased": false,
-    "fastStochasticAc": 78.81908697775320395316,
-    "slowStochasticAc": 82.83105826326666666667,
-    "maResult": 6466.31488633833333333333
+    "fastStochasticAcValue": 78.81908697775320395316,
+    "slowStochasticAcValue": 82.83105826326666666667,
+    "maValue": 6466.31488633833333333333
   },
   {
     "tick": {
@@ -7924,11 +7924,11 @@
       }
     },
     "positions": [],
-    "acResult": 2.0984994719,
+    "acValue": 2.0984994719,
     "acIncreased": false,
-    "fastStochasticAc": 74.84485167289149906213,
-    "slowStochasticAc": 77.79257450260000000000,
-    "maResult": 6464.49858918966666666667
+    "fastStochasticAcValue": 74.84485167289149906213,
+    "slowStochasticAcValue": 77.79257450260000000000,
+    "maValue": 6464.49858918966666666667
   },
   {
     "tick": {
@@ -7953,11 +7953,11 @@
       }
     },
     "positions": [],
-    "acResult": 3.1986779252,
+    "acValue": 3.1986779252,
     "acIncreased": true,
-    "fastStochasticAc": 78.74494412341307496117,
-    "slowStochasticAc": 77.46962759136666666667,
-    "maResult": 6461.91602961966666666667
+    "fastStochasticAcValue": 78.74494412341307496117,
+    "slowStochasticAcValue": 77.46962759136666666667,
+    "maValue": 6461.91602961966666666667
   },
   {
     "tick": {
@@ -7982,11 +7982,11 @@
       }
     },
     "positions": [],
-    "acResult": 3.5551337677,
+    "acValue": 3.5551337677,
     "acIncreased": true,
-    "fastStochasticAc": 80.00856707122540683672,
-    "slowStochasticAc": 77.86612095583333333333,
-    "maResult": 6459.51250843433333333333
+    "fastStochasticAcValue": 80.00856707122540683672,
+    "slowStochasticAcValue": 77.86612095583333333333,
+    "maValue": 6459.51250843433333333333
   },
   {
     "tick": {
@@ -8011,11 +8011,11 @@
       }
     },
     "positions": [],
-    "acResult": 7.6325746612,
+    "acValue": 7.6325746612,
     "acIncreased": true,
-    "fastStochasticAc": 94.46294617534969497486,
-    "slowStochasticAc": 84.40548579000000000000,
-    "maResult": 6457.24187365233333333333
+    "fastStochasticAcValue": 94.46294617534969497486,
+    "slowStochasticAcValue": 84.40548579000000000000,
+    "maValue": 6457.24187365233333333333
   },
   {
     "tick": {
@@ -8040,11 +8040,11 @@
       }
     },
     "positions": [],
-    "acResult": 8.9196663022,
+    "acValue": 8.9196663022,
     "acIncreased": true,
-    "fastStochasticAc": 98.94403316896242642644,
-    "slowStochasticAc": 91.13851547183333333333,
-    "maResult": 6455.54338146500000000000
+    "fastStochasticAcValue": 98.94403316896242642644,
+    "slowStochasticAcValue": 91.13851547183333333333,
+    "maValue": 6455.54338146500000000000
   },
   {
     "tick": {
@@ -8069,11 +8069,11 @@
       }
     },
     "positions": [],
-    "acResult": 8.9638425962,
+    "acValue": 8.9638425962,
     "acIncreased": true,
-    "fastStochasticAc": 98.74400626145643796868,
-    "slowStochasticAc": 97.38366186860000000000,
-    "maResult": 6453.96046112666666666667
+    "fastStochasticAcValue": 98.74400626145643796868,
+    "slowStochasticAcValue": 97.38366186860000000000,
+    "maValue": 6453.96046112666666666667
   },
   {
     "tick": {
@@ -8098,11 +8098,11 @@
       }
     },
     "positions": [],
-    "acResult": 11.5582610121,
+    "acValue": 11.5582610121,
     "acIncreased": true,
-    "fastStochasticAc": 100.00000000000000000000,
-    "slowStochasticAc": 99.22934647680000000000,
-    "maResult": 6453.12273652166666666667
+    "fastStochasticAcValue": 100.00000000000000000000,
+    "slowStochasticAcValue": 99.22934647680000000000,
+    "maValue": 6453.12273652166666666667
   },
   {
     "tick": {
@@ -8127,11 +8127,11 @@
       }
     },
     "positions": [],
-    "acResult": 11.3438052616,
+    "acValue": 11.3438052616,
     "acIncreased": false,
-    "fastStochasticAc": 97.73296874779926072539,
-    "slowStochasticAc": 98.82565833643333333333,
-    "maResult": 6451.66038041433333333333
+    "fastStochasticAcValue": 97.73296874779926072539,
+    "slowStochasticAcValue": 98.82565833643333333333,
+    "maValue": 6451.66038041433333333333
   },
   {
     "tick": {
@@ -8156,11 +8156,11 @@
       }
     },
     "positions": [],
-    "acResult": 8.5371311380,
+    "acValue": 8.5371311380,
     "acIncreased": false,
-    "fastStochasticAc": 68.06336120354121820277,
-    "slowStochasticAc": 88.59877665043333333333,
-    "maResult": 6450.68017065766666666667
+    "fastStochasticAcValue": 68.06336120354121820277,
+    "slowStochasticAcValue": 88.59877665043333333333,
+    "maValue": 6450.68017065766666666667
   },
   {
     "tick": {
@@ -8185,11 +8185,11 @@
       }
     },
     "positions": [],
-    "acResult": 7.3133646445,
+    "acValue": 7.3133646445,
     "acIncreased": false,
-    "fastStochasticAc": 55.12681424831926970015,
-    "slowStochasticAc": 73.64104806656666666667,
-    "maResult": 6449.79934571900000000000
+    "fastStochasticAcValue": 55.12681424831926970015,
+    "slowStochasticAcValue": 73.64104806656666666667,
+    "maValue": 6449.79934571900000000000
   },
   {
     "tick": {
@@ -8214,11 +8214,11 @@
       }
     },
     "positions": [],
-    "acResult": 6.3600551243,
+    "acValue": 6.3600551243,
     "acIncreased": false,
-    "fastStochasticAc": 45.04929256715599423942,
-    "slowStochasticAc": 56.07982267300000000000,
-    "maResult": 6448.37880129466666666667
+    "fastStochasticAcValue": 45.04929256715599423942,
+    "slowStochasticAcValue": 56.07982267300000000000,
+    "maValue": 6448.37880129466666666667
   },
   {
     "tick": {
@@ -8243,11 +8243,11 @@
       }
     },
     "positions": [],
-    "acResult": 0.9846675760,
+    "acValue": 0.9846675760,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 33.39203560516666666667,
-    "maResult": 6446.76764179700000000000
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 33.39203560516666666667,
+    "maValue": 6446.76764179700000000000
   },
   {
     "tick": {
@@ -8272,11 +8272,11 @@
       }
     },
     "positions": [],
-    "acResult": -0.0445633638,
+    "acValue": -0.0445633638,
     "acIncreased": false,
-    "fastStochasticAc": 0E-20,
-    "slowStochasticAc": 15.01643085573333333333,
-    "maResult": 6444.93775010566666666667
+    "fastStochasticAcValue": 0E-20,
+    "slowStochasticAcValue": 15.01643085573333333333,
+    "maValue": 6444.93775010566666666667
   },
   {
     "tick": {
@@ -8304,11 +8304,11 @@
       "ENTRY_LONG"
     ],
     "stopLose": 6431.36150000,
-    "acResult": 2.4482624302,
+    "acValue": 2.4482624302,
     "acIncreased": true,
-    "fastStochasticAc": 21.48464643813621614054,
-    "slowStochasticAc": 7.16154881270000000000,
-    "maResult": 6443.41524261000000000000
+    "fastStochasticAcValue": 21.48464643813621614054,
+    "slowStochasticAcValue": 7.16154881270000000000,
+    "maValue": 6443.41524261000000000000
   },
   {
     "tick": {
@@ -8333,11 +8333,11 @@
       }
     },
     "positions": [],
-    "acResult": 3.0704806079,
+    "acValue": 3.0704806079,
     "acIncreased": true,
-    "fastStochasticAc": 26.84729054565539250515,
-    "slowStochasticAc": 16.11064566126666666667,
-    "maResult": 6441.36591134066666666667
+    "fastStochasticAcValue": 26.84729054565539250515,
+    "slowStochasticAcValue": 16.11064566126666666667,
+    "maValue": 6441.36591134066666666667
   },
   {
     "tick": {
@@ -8362,11 +8362,11 @@
       }
     },
     "positions": [],
-    "acResult": 4.1133568843,
+    "acValue": 4.1133568843,
     "acIncreased": true,
-    "fastStochasticAc": 35.83541483861752640251,
-    "slowStochasticAc": 28.05578394080000000000,
-    "maResult": 6439.63490451233333333333
+    "fastStochasticAcValue": 35.83541483861752640251,
+    "slowStochasticAcValue": 28.05578394080000000000,
+    "maValue": 6439.63490451233333333333
   },
   {
     "tick": {
@@ -8391,11 +8391,11 @@
       }
     },
     "positions": [],
-    "acResult": 5.8508641800,
+    "acValue": 5.8508641800,
     "acIncreased": true,
-    "fastStochasticAc": 50.81027991809716141409,
-    "slowStochasticAc": 37.83099510080000000000,
-    "maResult": 6440.59078511266666666667
+    "fastStochasticAcValue": 50.81027991809716141409,
+    "slowStochasticAcValue": 37.83099510080000000000,
+    "maValue": 6440.59078511266666666667
   },
   {
     "tick": {
@@ -8420,11 +8420,11 @@
       }
     },
     "positions": [],
-    "acResult": 6.1722167419,
+    "acValue": 6.1722167419,
     "acIncreased": true,
-    "fastStochasticAc": 53.57988627848881857693,
-    "slowStochasticAc": 46.74186034506666666667,
-    "maResult": 6441.45066540366666666667
+    "fastStochasticAcValue": 53.57988627848881857693,
+    "slowStochasticAcValue": 46.74186034506666666667,
+    "maValue": 6441.45066540366666666667
   },
   {
     "tick": {
@@ -8449,11 +8449,11 @@
       }
     },
     "positions": [],
-    "acResult": 6.2210131048,
+    "acValue": 6.2210131048,
     "acIncreased": true,
-    "fastStochasticAc": 54.00044218211306003984,
-    "slowStochasticAc": 52.79686945956666666667,
-    "maResult": 6442.02655516500000000000
+    "fastStochasticAcValue": 54.00044218211306003984,
+    "slowStochasticAcValue": 52.79686945956666666667,
+    "maValue": 6442.02655516500000000000
   },
   {
     "tick": {
@@ -8478,11 +8478,11 @@
       }
     },
     "positions": [],
-    "acResult": 6.0915407625,
+    "acValue": 6.0915407625,
     "acIncreased": false,
-    "fastStochasticAc": 52.88457299280666603268,
-    "slowStochasticAc": 53.48830048446666666667,
-    "maResult": 6442.09996787433333333333
+    "fastStochasticAcValue": 52.88457299280666603268,
+    "slowStochasticAcValue": 53.48830048446666666667,
+    "maValue": 6442.09996787433333333333
   },
   {
     "tick": {
@@ -8507,11 +8507,11 @@
       }
     },
     "positions": [],
-    "acResult": 3.2841346574,
+    "acValue": 3.2841346574,
     "acIncreased": false,
-    "fastStochasticAc": 29.22892760755787609193,
-    "slowStochasticAc": 45.37131426083333333333,
-    "maResult": 6443.57107089566666666667
+    "fastStochasticAcValue": 29.22892760755787609193,
+    "slowStochasticAcValue": 45.37131426083333333333,
+    "maValue": 6443.57107089566666666667
   },
   {
     "tick": {
@@ -8536,10 +8536,10 @@
       }
     },
     "positions": [],
-    "acResult": 2.4313214379,
+    "acValue": 2.4313214379,
     "acIncreased": false,
-    "fastStochasticAc": 28.85076835560490028629,
-    "slowStochasticAc": 36.98808965200000000000,
-    "maResult": 6445.36222060033333333333
+    "fastStochasticAcValue": 28.85076835560490028629,
+    "slowStochasticAcValue": 36.98808965200000000000,
+    "maValue": 6445.36222060033333333333
   }
 ]

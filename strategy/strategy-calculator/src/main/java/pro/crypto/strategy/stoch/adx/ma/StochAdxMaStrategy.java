@@ -275,26 +275,26 @@ public class StochAdxMaStrategy implements Strategy<StochAdxMaResult> {
     }
 
     private void addStochasticResult(StochResult stochResult, StochAdxMaResult stochAdxMaResult) {
-        stochAdxMaResult.setFastStochastic(stochResult.getFastStochastic());
-        stochAdxMaResult.setSlowStochastic(stochResult.getSlowStochastic());
+        stochAdxMaResult.setFastStochasticValue(stochResult.getFastStochastic());
+        stochAdxMaResult.setSlowStochasticValue(stochResult.getSlowStochastic());
     }
 
     private void addAdxResult(ADXResult adxResult, StochAdxMaResult stochAdxMaResult) {
-        stochAdxMaResult.setPositiveAdxResult(adxResult.getPositiveDirectionalIndicator());
-        stochAdxMaResult.setNegativeAdxResult(adxResult.getNegativeDirectionalIndicator());
-        stochAdxMaResult.setAverageAdxResult(adxResult.getAverageDirectionalIndex());
+        stochAdxMaResult.setPositiveAdxValue(adxResult.getPositiveDirectionalIndicator());
+        stochAdxMaResult.setNegativeAdxValue(adxResult.getNegativeDirectionalIndicator());
+        stochAdxMaResult.setAverageAdxValue(adxResult.getAverageDirectionalIndex());
     }
 
     private void addFirstMaResult(MAResult firstMaResult, StochAdxMaResult stochAdxMaResult) {
-        stochAdxMaResult.setFirstMaResult(firstMaResult.getIndicatorValue());
+        stochAdxMaResult.setFirstMaValue(firstMaResult.getIndicatorValue());
     }
 
     private void addSecondMaResult(MAResult secondMaResult, StochAdxMaResult stochAdxMaResult) {
-        stochAdxMaResult.setSecondMaResult(secondMaResult.getIndicatorValue());
+        stochAdxMaResult.setSecondMaValue(secondMaResult.getIndicatorValue());
     }
 
     private void addThirdMaResult(MAResult thirdMaResult, StochAdxMaResult stochAdxMaResult) {
-        stochAdxMaResult.setThirdMaResult(thirdMaResult.getIndicatorValue());
+        stochAdxMaResult.setThirdMaValue(thirdMaResult.getIndicatorValue());
     }
 
 }

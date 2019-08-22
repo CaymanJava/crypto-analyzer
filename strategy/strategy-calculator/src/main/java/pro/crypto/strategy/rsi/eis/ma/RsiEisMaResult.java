@@ -18,12 +18,12 @@ public class RsiEisMaResult implements StrategyResult {
 
     private Set<Position> positions;
 
-    private BigDecimal rsiResult;
+    private BigDecimal rsiValue;
 
     private BarColor eisBarColor;
 
-    private BigDecimal fastMaResult;
+    private BigDecimal fastMaValue;
 
-    private BigDecimal slowMaResult;
+    private BigDecimal slowMaValue;
 
 }

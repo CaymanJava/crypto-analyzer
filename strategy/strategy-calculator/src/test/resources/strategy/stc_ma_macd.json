@@ -609,7 +609,7 @@
     "macdValue": -5.8001350876,
     "macdSignalLineValue": -10.24384468228888888889,
     "macdBarChartValue": 4.4437095947,
-    "maResult": 6376.54519893880000000000
+    "maValue": 6376.54519893880000000000
   },
   {
     "tick": {
@@ -637,7 +637,7 @@
     "macdValue": -7.1005020293,
     "macdSignalLineValue": -9.6151761517,
     "macdBarChartValue": 2.5146741224,
-    "maResult": 6374.6571067204
+    "maValue": 6374.6571067204
   },
   {
     "tick": {
@@ -665,7 +665,7 @@
     "macdValue": -7.0587680251,
     "macdSignalLineValue": -9.1038945264,
     "macdBarChartValue": 2.0451265013,
-    "maResult": 6373.4441668865
+    "maValue": 6373.4441668865
   },
   {
     "tick": {
@@ -693,7 +693,7 @@
     "macdValue": -5.7321675190,
     "macdSignalLineValue": -8.4295491249,
     "macdBarChartValue": 2.6973816059,
-    "maResult": 6373.1023079006
+    "maValue": 6373.1023079006
   },
   {
     "tick": {
@@ -721,7 +721,7 @@
     "macdValue": -5.7734766208,
     "macdSignalLineValue": -7.8983346241,
     "macdBarChartValue": 2.1248580033,
-    "maResult": 6372.0252072929
+    "maValue": 6372.0252072929
   },
   {
     "tick": {
@@ -749,7 +749,7 @@
     "macdValue": -4.1796530738,
     "macdSignalLineValue": -7.1545983140,
     "macdBarChartValue": 2.9749452402,
-    "maResult": 6372.0554568496
+    "maValue": 6372.0554568496
   },
   {
     "tick": {
@@ -777,7 +777,7 @@
     "macdValue": -2.8948513464,
     "macdSignalLineValue": -6.3026489205,
     "macdBarChartValue": 3.4077975741,
-    "maResult": 6372.1385548604
+    "maValue": 6372.1385548604
   },
   {
     "tick": {
@@ -805,7 +805,7 @@
     "macdValue": -4.5057523232,
     "macdSignalLineValue": -5.9432696010,
     "macdBarChartValue": 1.4375172778,
-    "maResult": 6370.4355891050
+    "maValue": 6370.4355891050
   },
   {
     "tick": {
@@ -833,7 +833,7 @@
     "macdValue": -6.2859862734,
     "macdSignalLineValue": -6.0118129355,
     "macdBarChartValue": -0.2741733379,
-    "maResult": 6368.3251591777
+    "maValue": 6368.3251591777
   },
   {
     "tick": {
@@ -861,7 +861,7 @@
     "macdValue": -6.4632147397,
     "macdSignalLineValue": -6.1020932963,
     "macdBarChartValue": -0.3611214434,
-    "maResult": 6366.9989984148
+    "maValue": 6366.9989984148
   },
   {
     "tick": {
@@ -889,7 +889,7 @@
     "macdValue": -8.4356096530,
     "macdSignalLineValue": -6.5687965676,
     "macdBarChartValue": -1.8668130854,
-    "maResult": 6364.3836908444
+    "maValue": 6364.3836908444
   },
   {
     "tick": {
@@ -917,7 +917,7 @@
     "macdValue": -6.5018249527,
     "macdSignalLineValue": -6.5554022446,
     "macdBarChartValue": 0.0535772919,
-    "maResult": 6364.1081886133
+    "maValue": 6364.1081886133
   },
   {
     "tick": {
@@ -945,7 +945,7 @@
     "macdValue": -5.7305887622,
     "macdSignalLineValue": -6.3904395481,
     "macdBarChartValue": 0.6598507859,
-    "maResult": 6363.3510971377
+    "maValue": 6363.3510971377
   },
   {
     "tick": {
@@ -973,7 +973,7 @@
     "macdValue": -7.9743367953,
     "macdSignalLineValue": -6.7072189975,
     "macdBarChartValue": -1.2671177978,
-    "maResult": 6360.6317819733
+    "maValue": 6360.6317819733
   },
   {
     "tick": {
@@ -1001,7 +1001,7 @@
     "macdValue": -8.3286727985,
     "macdSignalLineValue": -7.0315097577,
     "macdBarChartValue": -1.2971630408,
-    "maResult": 6358.8139525907
+    "maValue": 6358.8139525907
   },
   {
     "tick": {
@@ -1029,7 +1029,7 @@
     "macdValue": -5.1013329447,
     "macdSignalLineValue": -6.6454743951,
     "macdBarChartValue": 1.5441414504,
-    "maResult": 6359.3974946883
+    "maValue": 6359.3974946883
   },
   {
     "tick": {
@@ -1057,7 +1057,7 @@
     "macdValue": -4.5663490080,
     "macdSignalLineValue": -6.2296493177,
     "macdBarChartValue": 1.6633003097,
-    "maResult": 6358.6746104807
+    "maValue": 6358.6746104807
   },
   {
     "tick": {
@@ -1085,7 +1085,7 @@
     "macdValue": -3.8869931688,
     "macdSignalLineValue": -5.7611180879,
     "macdBarChartValue": 1.8741249191,
-    "maResult": 6358.1435380883
+    "maValue": 6358.1435380883
   },
   {
     "tick": {
@@ -1113,7 +1113,7 @@
     "macdValue": -3.5180809599,
     "macdSignalLineValue": -5.3125106623,
     "macdBarChartValue": 1.7944297024,
-    "maResult": 6357.5171120815
+    "maValue": 6357.5171120815
   },
   {
     "tick": {
@@ -1141,7 +1141,7 @@
     "macdValue": -3.1761643495,
     "macdSignalLineValue": -4.8852413997,
     "macdBarChartValue": 1.7090770502,
-    "maResult": 6356.9388726891
+    "maValue": 6356.9388726891
   },
   {
     "tick": {
@@ -1169,7 +1169,7 @@
     "macdValue": -1.4356753061,
     "macdSignalLineValue": -4.1953281810,
     "macdBarChartValue": 2.7596528749,
-    "maResult": 6357.3921214007
+    "maValue": 6357.3921214007
   },
   {
     "tick": {
@@ -1197,7 +1197,7 @@
     "macdValue": -1.8837150149,
     "macdSignalLineValue": -3.7330055478,
     "macdBarChartValue": 1.8492905329,
-    "maResult": 6356.6427274468
+    "maValue": 6356.6427274468
   },
   {
     "tick": {
@@ -1225,7 +1225,7 @@
     "macdValue": -0.1080704989,
     "macdSignalLineValue": -3.0080185380,
     "macdBarChartValue": 2.8999480391,
-    "maResult": 6357.3625176386
+    "maValue": 6357.3625176386
   },
   {
     "tick": {
@@ -1253,7 +1253,7 @@
     "macdValue": -0.4333516064,
     "macdSignalLineValue": -2.4930851517,
     "macdBarChartValue": 2.0597335453,
-    "maResult": 6356.9500162464
+    "maValue": 6356.9500162464
   },
   {
     "tick": {
@@ -1281,7 +1281,7 @@
     "macdValue": -3.0919816640,
     "macdSignalLineValue": -2.6128644542,
     "macdBarChartValue": -0.4791172098,
-    "maResult": 6354.8769380736
+    "maValue": 6354.8769380736
   },
   {
     "tick": {
@@ -1309,7 +1309,7 @@
     "macdValue": -5.6314794394,
     "macdSignalLineValue": -3.2165874512,
     "macdBarChartValue": -2.4148919882,
-    "maResult": 6352.4248659149
+    "maValue": 6352.4248659149
   },
   {
     "tick": {
@@ -1337,7 +1337,7 @@
     "macdValue": -7.0259105090,
     "macdSignalLineValue": -3.9784520628,
     "macdBarChartValue": -3.0474584462,
-    "maResult": 6350.3152608445
+    "maValue": 6350.3152608445
   },
   {
     "tick": {
@@ -1365,7 +1365,7 @@
     "macdValue": -6.2609267914,
     "macdSignalLineValue": -4.4349470085,
     "macdBarChartValue": -1.8259797829,
-    "maResult": 6349.4448561642
+    "maValue": 6349.4448561642
   },
   {
     "tick": {
@@ -1393,7 +1393,7 @@
     "macdValue": -7.3552361523,
     "macdSignalLineValue": -5.0190048373,
     "macdBarChartValue": -2.3362313150,
-    "maResult": 6347.4106364593
+    "maValue": 6347.4106364593
   },
   {
     "tick": {
@@ -1421,7 +1421,7 @@
     "macdValue": -8.5190738257,
     "macdSignalLineValue": -5.7190186350,
     "macdBarChartValue": -2.8000551907,
-    "maResult": 6345.1252028886
+    "maValue": 6345.1252028886
   },
   {
     "tick": {
@@ -1449,7 +1449,7 @@
     "macdValue": -8.7433715088,
     "macdSignalLineValue": -6.3238892098,
     "macdBarChartValue": -2.4194822990,
-    "maResult": 6343.2717142056
+    "maValue": 6343.2717142056
   },
   {
     "tick": {
@@ -1477,7 +1477,7 @@
     "macdValue": -2.7969835746,
     "macdSignalLineValue": -5.6185080828,
     "macdBarChartValue": 2.8215245082,
-    "maResult": 6345.6354284975
+    "maValue": 6345.6354284975
   },
   {
     "tick": {
@@ -1505,7 +1505,7 @@
     "macdValue": 1.9387163201,
     "macdSignalLineValue": -4.1070632022,
     "macdBarChartValue": 6.0457795223,
-    "maResult": 6348.2019339977
+    "maValue": 6348.2019339977
   },
   {
     "tick": {
@@ -1533,7 +1533,7 @@
     "macdValue": 6.1649109016,
     "macdSignalLineValue": -2.0526683814,
     "macdBarChartValue": 8.2175792830,
-    "maResult": 6351.2633236871
+    "maValue": 6351.2633236871
   },
   {
     "tick": {
@@ -1561,7 +1561,7 @@
     "macdValue": 5.0233933138,
     "macdSignalLineValue": -0.6374560424,
     "macdBarChartValue": 5.6608493562,
-    "maResult": 6351.3815295596
+    "maValue": 6351.3815295596
   },
   {
     "tick": {
@@ -1589,7 +1589,7 @@
     "macdValue": 7.3546060074,
     "macdSignalLineValue": 0.9609563676,
     "macdBarChartValue": 6.3936496398,
-    "maResult": 6353.7367965166
+    "maValue": 6353.7367965166
   },
   {
     "tick": {
@@ -1617,7 +1617,7 @@
     "macdValue": 7.8958245115,
     "macdSignalLineValue": 2.3479299964,
     "macdBarChartValue": 5.5478945151,
-    "maResult": 6355.2955044769
+    "maValue": 6355.2955044769
   },
   {
     "tick": {
@@ -1645,7 +1645,7 @@
     "macdValue": 6.5691319808,
     "macdSignalLineValue": 3.1921703933,
     "macdBarChartValue": 3.3769615875,
-    "maResult": 6355.6917589856
+    "maValue": 6355.6917589856
   },
   {
     "tick": {
@@ -1673,7 +1673,7 @@
     "macdValue": 7.4400657460,
     "macdSignalLineValue": 4.0417494638,
     "macdBarChartValue": 3.3983162822,
-    "maResult": 6357.4077775121
+    "maValue": 6357.4077775121
   },
   {
     "tick": {
@@ -1701,7 +1701,7 @@
     "macdValue": 5.6362652632,
     "macdSignalLineValue": 4.3606526237,
     "macdBarChartValue": 1.2756126395,
-    "maResult": 6357.4533330881
+    "maValue": 6357.4533330881
   },
   {
     "tick": {
@@ -1729,7 +1729,7 @@
     "macdValue": 6.8278040387,
     "macdSignalLineValue": 4.8540829067,
     "macdBarChartValue": 1.9737211320,
-    "maResult": 6359.2799997598
+    "maValue": 6359.2799997598
   },
   {
     "tick": {
@@ -1757,7 +1757,7 @@
     "macdValue": 4.5718850877,
     "macdSignalLineValue": 4.7976433429,
     "macdBarChartValue": -0.2257582552,
-    "maResult": 6358.9507690090
+    "maValue": 6358.9507690090
   },
   {
     "tick": {
@@ -1785,7 +1785,7 @@
     "macdValue": 2.8993513663,
     "macdSignalLineValue": 4.4179849476,
     "macdBarChartValue": -1.5186335813,
-    "maResult": 6358.6468637006
+    "maValue": 6358.6468637006
   },
   {
     "tick": {
@@ -1810,11 +1810,11 @@
       }
     },
     "positions": [],
-    "stcResult": 92.2422311173,
+    "stcValue": 92.2422311173,
     "macdValue": 5.1967209983,
     "macdSignalLineValue": 4.5737321577,
     "macdBarChartValue": 0.6229888406,
-    "maResult": 6360.8069129144
+    "maValue": 6360.8069129144
   },
   {
     "tick": {
@@ -1839,11 +1839,11 @@
       }
     },
     "positions": [],
-    "stcResult": 96.1211155586,
+    "stcValue": 96.1211155586,
     "macdValue": 6.6869886659,
     "macdSignalLineValue": 4.9963834593,
     "macdBarChartValue": 1.6906052066,
-    "maResult": 6362.8217653825
+    "maValue": 6362.8217653825
   },
   {
     "tick": {
@@ -1868,11 +1868,11 @@
       }
     },
     "positions": [],
-    "stcResult": 98.0605577793,
+    "stcValue": 98.0605577793,
     "macdValue": 6.2188535700,
     "macdSignalLineValue": 5.2408774814,
     "macdBarChartValue": 0.9779760886,
-    "maResult": 6363.7585526623
+    "maValue": 6363.7585526623
   },
   {
     "tick": {
@@ -1897,11 +1897,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.0302788898,
+    "stcValue": 99.0302788898,
     "macdValue": 7.5194304503,
     "macdSignalLineValue": 5.6965880752,
     "macdBarChartValue": 1.8228423751,
-    "maResult": 6365.8540486114
+    "maValue": 6365.8540486114
   },
   {
     "tick": {
@@ -1926,11 +1926,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.5151394451,
+    "stcValue": 99.5151394451,
     "macdValue": 6.5662630973,
     "macdSignalLineValue": 5.8705230796,
     "macdBarChartValue": 0.6957400177,
-    "maResult": 6366.6345064105
+    "maValue": 6366.6345064105
   },
   {
     "tick": {
@@ -1955,11 +1955,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.7575697219,
+    "stcValue": 99.7575697219,
     "macdValue": 5.7462643570,
     "macdSignalLineValue": 5.8456713351,
     "macdBarChartValue": -0.0994069781,
-    "maResult": 6367.3556982251
+    "maValue": 6367.3556982251
   },
   {
     "tick": {
@@ -1984,11 +1984,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.8787848616,
+    "stcValue": 99.8787848616,
     "macdValue": 4.7855312449,
     "macdSignalLineValue": 5.6336433171,
     "macdBarChartValue": -0.8481120722,
-    "maResult": 6367.8469955932
+    "maValue": 6367.8469955932
   },
   {
     "tick": {
@@ -2013,11 +2013,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9393924312,
+    "stcValue": 99.9393924312,
     "macdValue": 3.9206523207,
     "macdSignalLineValue": 5.2910451178,
     "macdBarChartValue": -1.3703927971,
-    "maResult": 6368.2433805476
+    "maValue": 6368.2433805476
   },
   {
     "tick": {
@@ -2042,11 +2042,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9696962158,
+    "stcValue": 99.9696962158,
     "macdValue": 4.6703495037,
     "macdSignalLineValue": 5.1669059950,
     "macdBarChartValue": -0.4965564913,
-    "maResult": 6369.6092743193
+    "maValue": 6369.6092743193
   },
   {
     "tick": {
@@ -2071,11 +2071,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9848481081,
+    "stcValue": 99.9848481081,
     "macdValue": 4.4066747545,
     "macdSignalLineValue": 5.0148597469,
     "macdBarChartValue": -0.6081849924,
-    "maResult": 6370.4085608955
+    "maValue": 6370.4085608955
   },
   {
     "tick": {
@@ -2102,11 +2102,11 @@
     "positions": [
       "EXIT_LONG"
     ],
-    "stcResult": 49.9924240544,
+    "stcValue": 49.9924240544,
     "macdValue": 2.5600187811,
     "macdSignalLineValue": 4.5238915537,
     "macdBarChartValue": -1.9638727726,
-    "maResult": 6370.0694408258
+    "maValue": 6370.0694408258
   },
   {
     "tick": {
@@ -2131,11 +2131,11 @@
       }
     },
     "positions": [],
-    "stcResult": 24.9962120270,
+    "stcValue": 24.9962120270,
     "macdValue": 2.3312191270,
     "macdSignalLineValue": 4.0853570684,
     "macdBarChartValue": -1.7541379414,
-    "maResult": 6370.5256376854
+    "maValue": 6370.5256376854
   },
   {
     "tick": {
@@ -2160,11 +2160,11 @@
       }
     },
     "positions": [],
-    "stcResult": 12.4981060135,
+    "stcValue": 12.4981060135,
     "macdValue": 0.3376979062,
     "macdSignalLineValue": 3.3358252360,
     "macdBarChartValue": -2.9981273298,
-    "maResult": 6369.7159732481
+    "maValue": 6369.7159732481
   },
   {
     "tick": {
@@ -2189,11 +2189,11 @@
       }
     },
     "positions": [],
-    "stcResult": 6.2490530068,
+    "stcValue": 6.2490530068,
     "macdValue": 1.3955672373,
     "macdSignalLineValue": 2.9477736363,
     "macdBarChartValue": -1.5522063990,
-    "maResult": 6370.6608983829
+    "maValue": 6370.6608983829
   },
   {
     "tick": {
@@ -2220,11 +2220,11 @@
     "positions": [
       "EXIT_SHORT"
     ],
-    "stcResult": 28.1264659931,
+    "stcValue": 28.1264659931,
     "macdValue": 2.5035863493,
     "macdSignalLineValue": 2.8589361789,
     "macdBarChartValue": -0.3553498296,
-    "maResult": 6371.8177523534
+    "maValue": 6371.8177523534
   },
   {
     "tick": {
@@ -2252,11 +2252,11 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "stcResult": 51.5661422310,
+    "stcValue": 51.5661422310,
     "macdValue": 3.9276666214,
     "macdSignalLineValue": 3.0726822674,
     "macdBarChartValue": 0.8549843540,
-    "maResult": 6373.3839816978
+    "maValue": 6373.3839816978
   },
   {
     "tick": {
@@ -2281,11 +2281,11 @@
       }
     },
     "positions": [],
-    "stcResult": 69.5364652224,
+    "stcValue": 69.5364652224,
     "macdValue": 6.5731549859,
     "macdSignalLineValue": 3.7727768111,
     "macdBarChartValue": 2.8003781748,
-    "maResult": 6376.0467523364
+    "maValue": 6376.0467523364
   },
   {
     "tick": {
@@ -2310,11 +2310,11 @@
       }
     },
     "positions": [],
-    "stcResult": 81.6468691543,
+    "stcValue": 81.6468691543,
     "macdValue": 7.3509455839,
     "macdSignalLineValue": 4.4884105657,
     "macdBarChartValue": 2.8625350182,
-    "maResult": 6377.8893098490
+    "maValue": 6377.8893098490
   },
   {
     "tick": {
@@ -2339,11 +2339,11 @@
       }
     },
     "positions": [],
-    "stcResult": 89.2646923383,
+    "stcValue": 89.2646923383,
     "macdValue": 7.7071725328,
     "macdSignalLineValue": 5.1321629591,
     "macdBarChartValue": 2.5750095737,
-    "maResult": 6379.5901321729
+    "maValue": 6379.5901321729
   },
   {
     "tick": {
@@ -2368,11 +2368,11 @@
       }
     },
     "positions": [],
-    "stcResult": 94.6323461691,
+    "stcValue": 94.6323461691,
     "macdValue": 8.8742634407,
     "macdSignalLineValue": 5.8805830554,
     "macdBarChartValue": 2.9936803853,
-    "maResult": 6381.9293527750
+    "maValue": 6381.9293527750
   },
   {
     "tick": {
@@ -2397,11 +2397,11 @@
       }
     },
     "positions": [],
-    "stcResult": 97.3161730846,
+    "stcValue": 97.3161730846,
     "macdValue": 9.8255298184,
     "macdSignalLineValue": 6.6695724080,
     "macdBarChartValue": 3.1559574104,
-    "maResult": 6384.3402915585
+    "maValue": 6384.3402915585
   },
   {
     "tick": {
@@ -2426,11 +2426,11 @@
       }
     },
     "positions": [],
-    "stcResult": 98.6580865423,
+    "stcValue": 98.6580865423,
     "macdValue": 14.6548612366,
     "macdSignalLineValue": 8.2666301737,
     "macdBarChartValue": 6.3882310629,
-    "maResult": 6389.6218075925
+    "maValue": 6389.6218075925
   },
   {
     "tick": {
@@ -2455,11 +2455,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.3290432712,
+    "stcValue": 99.3290432712,
     "macdValue": 14.2984765076,
     "macdSignalLineValue": 9.4729994405,
     "macdBarChartValue": 4.8254770671,
-    "maResult": 6392.1893608546
+    "maValue": 6392.1893608546
   },
   {
     "tick": {
@@ -2484,11 +2484,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.6645216356,
+    "stcValue": 99.6645216356,
     "macdValue": 14.2545938182,
     "macdSignalLineValue": 10.4293183160,
     "macdBarChartValue": 3.8252755022,
-    "maResult": 6394.9440254042
+    "maValue": 6394.9440254042
   },
   {
     "tick": {
@@ -2513,11 +2513,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.8322608178,
+    "stcValue": 99.8322608178,
     "macdValue": 16.1822897015,
     "macdSignalLineValue": 11.5799125931,
     "macdBarChartValue": 4.6023771084,
-    "maResult": 6399.0860233200
+    "maValue": 6399.0860233200
   },
   {
     "tick": {
@@ -2542,11 +2542,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9161304082,
+    "stcValue": 99.9161304082,
     "macdValue": 13.4721218664,
     "macdSignalLineValue": 11.9583544478,
     "macdBarChartValue": 1.5137674186,
-    "maResult": 6400.3870984500
+    "maValue": 6400.3870984500
   },
   {
     "tick": {
@@ -2571,11 +2571,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9580652048,
+    "stcValue": 99.9580652048,
     "macdValue": 13.1058917111,
     "macdSignalLineValue": 12.1878619005,
     "macdBarChartValue": 0.9180298106,
-    "maResult": 6402.8620139538
+    "maValue": 6402.8620139538
   },
   {
     "tick": {
@@ -2600,11 +2600,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9790326002,
+    "stcValue": 99.9790326002,
     "macdValue": 11.1334266232,
     "macdSignalLineValue": 11.9769748450,
     "macdBarChartValue": -0.8435482218,
-    "maResult": 6404.1803205727
+    "maValue": 6404.1803205727
   },
   {
     "tick": {
@@ -2631,11 +2631,11 @@
     "positions": [
       "EXIT_LONG"
     ],
-    "stcResult": 49.9895162993,
+    "stcValue": 49.9895162993,
     "macdValue": 8.7332154890,
     "macdSignalLineValue": 11.3282229738,
     "macdBarChartValue": -2.5950074848,
-    "maResult": 6404.8699351979
+    "maValue": 6404.8699351979
   },
   {
     "tick": {
@@ -2660,11 +2660,11 @@
       }
     },
     "positions": [],
-    "stcResult": 24.9947581498,
+    "stcValue": 24.9947581498,
     "macdValue": 4.9431407879,
     "macdSignalLineValue": 10.0512065366,
     "macdBarChartValue": -5.1080657487,
-    "maResult": 6404.1807094134
+    "maValue": 6404.1807094134
   },
   {
     "tick": {
@@ -2689,11 +2689,11 @@
       }
     },
     "positions": [],
-    "stcResult": 12.4973790750,
+    "stcValue": 12.4973790750,
     "macdValue": 4.8601060012,
     "macdSignalLineValue": 9.0129864295,
     "macdBarChartValue": -4.1528804283,
-    "maResult": 6405.3855663570
+    "maValue": 6405.3855663570
   },
   {
     "tick": {
@@ -2718,11 +2718,11 @@
       }
     },
     "positions": [],
-    "stcResult": 6.2486895374,
+    "stcValue": 6.2486895374,
     "macdValue": 5.8667133011,
     "macdSignalLineValue": 8.3837318038,
     "macdBarChartValue": -2.5170185027,
-    "maResult": 6407.3174458549
+    "maValue": 6407.3174458549
   },
   {
     "tick": {
@@ -2747,11 +2747,11 @@
       }
     },
     "positions": [],
-    "stcResult": 3.1243447687,
+    "stcValue": 3.1243447687,
     "macdValue": 4.2511155693,
     "macdSignalLineValue": 7.5572085569,
     "macdBarChartValue": -3.3060929876,
-    "maResult": 6407.6007192507
+    "maValue": 6407.6007192507
   },
   {
     "tick": {
@@ -2776,11 +2776,11 @@
       }
     },
     "positions": [],
-    "stcResult": 7.5444198158,
+    "stcValue": 7.5444198158,
     "macdValue": 6.8069710618,
     "macdSignalLineValue": 7.4071610579,
     "macdBarChartValue": -0.6001899961,
-    "maResult": 6410.4775869922
+    "maValue": 6410.4775869922
   },
   {
     "tick": {
@@ -2807,11 +2807,11 @@
     "positions": [
       "EXIT_SHORT"
     ],
-    "stcResult": 31.7643887852,
+    "stcValue": 31.7643887852,
     "macdValue": 8.0348292869,
     "macdSignalLineValue": 7.5326947037,
     "macdBarChartValue": 0.5021345832,
-    "maResult": 6412.8762559397
+    "maValue": 6412.8762559397
   },
   {
     "tick": {
@@ -2839,11 +2839,11 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "stcResult": 54.8793389929,
+    "stcValue": 54.8793389929,
     "macdValue": 7.5008521541,
     "macdSignalLineValue": 7.5263261938,
     "macdBarChartValue": -0.0254740397,
-    "maResult": 6414.2703900982
+    "maValue": 6414.2703900982
   },
   {
     "tick": {
@@ -2868,11 +2868,11 @@
       }
     },
     "positions": [],
-    "stcResult": 71.9392969581,
+    "stcValue": 71.9392969581,
     "macdValue": 8.3966554601,
     "macdSignalLineValue": 7.7003920471,
     "macdBarChartValue": 0.6962634130,
-    "maResult": 6416.5612531806
+    "maValue": 6416.5612531806
   },
   {
     "tick": {
@@ -2897,11 +2897,11 @@
       }
     },
     "positions": [],
-    "stcResult": 73.1887204337,
+    "stcValue": 73.1887204337,
     "macdValue": 6.5243436414,
     "macdSignalLineValue": 7.4651823660,
     "macdBarChartValue": -0.9408387246,
-    "maResult": 6417.0944521667
+    "maValue": 6417.0944521667
   },
   {
     "tick": {
@@ -2926,11 +2926,11 @@
       }
     },
     "positions": [],
-    "stcResult": 53.0586986134,
+    "stcValue": 53.0586986134,
     "macdValue": 4.6807176250,
     "macdSignalLineValue": 6.9082894178,
     "macdBarChartValue": -2.2275717928,
-    "maResult": 6417.3179558616
+    "maValue": 6417.3179558616
   },
   {
     "tick": {
@@ -2955,11 +2955,11 @@
       }
     },
     "positions": [],
-    "stcResult": 26.5293493067,
+    "stcValue": 26.5293493067,
     "macdValue": 2.8460942426,
     "macdSignalLineValue": 6.0958503828,
     "macdBarChartValue": -3.2497561402,
-    "maResult": 6417.2165746415
+    "maValue": 6417.2165746415
   },
   {
     "tick": {
@@ -2984,11 +2984,11 @@
       }
     },
     "positions": [],
-    "stcResult": 13.2646746534,
+    "stcValue": 13.2646746534,
     "macdValue": 2.9029942708,
     "macdSignalLineValue": 5.4572791604,
     "macdBarChartValue": -2.5542848896,
-    "maResult": 6418.0891458245
+    "maValue": 6418.0891458245
   },
   {
     "tick": {
@@ -3013,11 +3013,11 @@
       }
     },
     "positions": [],
-    "stcResult": 6.6323373267,
+    "stcValue": 6.6323373267,
     "macdValue": 3.0306536899,
     "macdSignalLineValue": 4.9719540663,
     "macdBarChartValue": -1.9413003764,
-    "maResult": 6419.0053653772
+    "maValue": 6419.0053653772
   },
   {
     "tick": {
@@ -3042,11 +3042,11 @@
       }
     },
     "positions": [],
-    "stcResult": 3.3161686634,
+    "stcValue": 3.3161686634,
     "macdValue": 4.1551922084,
     "macdSignalLineValue": 4.8086016947,
     "macdBarChartValue": -0.6534094863,
-    "maResult": 6420.6203372713
+    "maValue": 6420.6203372713
   },
   {
     "tick": {
@@ -3071,11 +3071,11 @@
       }
     },
     "positions": [],
-    "stcResult": 3.2518803558,
+    "stcValue": 3.2518803558,
     "macdValue": 4.8300535987,
     "macdSignalLineValue": 4.8128920755,
     "macdBarChartValue": 0.0171615232,
-    "maResult": 6422.1110805581
+    "maValue": 6422.1110805581
   },
   {
     "tick": {
@@ -3100,11 +3100,11 @@
       }
     },
     "positions": [],
-    "stcResult": 9.5455745207,
+    "stcValue": 9.5455745207,
     "macdValue": 5.7795079538,
     "macdSignalLineValue": 5.0062152512,
     "macdBarChartValue": 0.7732927026,
-    "maResult": 6423.9040202767
+    "maValue": 6423.9040202767
   },
   {
     "tick": {
@@ -3129,11 +3129,11 @@
       }
     },
     "positions": [],
-    "stcResult": 4.7727872604,
+    "stcValue": 4.7727872604,
     "macdValue": 2.4699617367,
     "macdSignalLineValue": 4.4989645483,
     "macdBarChartValue": -2.0290028116,
-    "maResult": 6422.9121725677
+    "maValue": 6422.9121725677
   },
   {
     "tick": {
@@ -3158,11 +3158,11 @@
       }
     },
     "positions": [],
-    "stcResult": 2.3863936302,
+    "stcValue": 2.3863936302,
     "macdValue": 1.8975603520,
     "macdSignalLineValue": 3.9786837090,
     "macdBarChartValue": -2.0811233570,
-    "maResult": 6423.2266208317
+    "maValue": 6423.2266208317
   },
   {
     "tick": {
@@ -3187,11 +3187,11 @@
       }
     },
     "positions": [],
-    "stcResult": 1.1931968151,
+    "stcValue": 1.1931968151,
     "macdValue": -0.3216939463,
     "macdSignalLineValue": 3.1186081779,
     "macdBarChartValue": -3.4403021242,
-    "maResult": 6422.2868807685
+    "maValue": 6422.2868807685
   },
   {
     "tick": {
@@ -3216,11 +3216,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.5965984076,
+    "stcValue": 0.5965984076,
     "macdValue": -1.5158279327,
     "macdSignalLineValue": 2.1917209558,
     "macdBarChartValue": -3.7075488885,
-    "maResult": 6421.6494284017
+    "maValue": 6421.6494284017
   },
   {
     "tick": {
@@ -3245,11 +3245,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.2982992038,
+    "stcValue": 0.2982992038,
     "macdValue": -0.8595297521,
     "macdSignalLineValue": 1.5814708142,
     "macdBarChartValue": -2.4410005663,
-    "maResult": 6422.0610108323
+    "maValue": 6422.0610108323
   },
   {
     "tick": {
@@ -3274,11 +3274,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.1491496019,
+    "stcValue": 0.1491496019,
     "macdValue": -0.2734586716,
     "macdSignalLineValue": 1.2104849170,
     "macdBarChartValue": -1.4839435886,
-    "maResult": 6422.5178561521
+    "maValue": 6422.5178561521
   },
   {
     "tick": {
@@ -3303,11 +3303,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0745748009,
+    "stcValue": 0.0745748009,
     "macdValue": 0.1384783367,
     "macdSignalLineValue": 0.9960836009,
     "macdBarChartValue": -0.8576052642,
-    "maResult": 6422.9395595227
+    "maValue": 6422.9395595227
   },
   {
     "tick": {
@@ -3332,11 +3332,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0372874004,
+    "stcValue": 0.0372874004,
     "macdValue": -0.5087488651,
     "macdSignalLineValue": 0.6951171077,
     "macdBarChartValue": -1.2038659728,
-    "maResult": 6422.6859445217
+    "maValue": 6422.6859445217
   },
   {
     "tick": {
@@ -3361,11 +3361,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0186437002,
+    "stcValue": 0.0186437002,
     "macdValue": -6.4594933856,
     "macdSignalLineValue": -0.7358049910,
     "macdBarChartValue": -5.7236883946,
-    "maResult": 6418.6331795585
+    "maValue": 6418.6331795585
   },
   {
     "tick": {
@@ -3390,11 +3390,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0093218503,
+    "stcValue": 0.0093218503,
     "macdValue": -9.9585391445,
     "macdSignalLineValue": -2.5803518217,
     "macdBarChartValue": -7.3781873228,
-    "maResult": 6415.2075503609
+    "maValue": 6415.2075503609
   },
   {
     "tick": {
@@ -3419,11 +3419,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0046609253,
+    "stcValue": 0.0046609253,
     "macdValue": -12.0317426521,
     "macdSignalLineValue": -4.4706299878,
     "macdBarChartValue": -7.5611126643,
-    "maResult": 6412.1146618716
+    "maValue": 6412.1146618716
   },
   {
     "tick": {
@@ -3448,11 +3448,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0023304628,
+    "stcValue": 0.0023304628,
     "macdValue": -13.1679884684,
     "macdSignalLineValue": -6.2101016839,
     "macdBarChartValue": -6.9578867845,
-    "maResult": 6409.2596878815
+    "maValue": 6409.2596878815
   },
   {
     "tick": {
@@ -3477,11 +3477,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0011652302,
+    "stcValue": 0.0011652302,
     "macdValue": -19.5039611549,
     "macdSignalLineValue": -8.8688735781,
     "macdBarChartValue": -10.6350875768,
-    "maResult": 6402.5566349775
+    "maValue": 6402.5566349775
   },
   {
     "tick": {
@@ -3506,11 +3506,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0005826166,
+    "stcValue": 0.0005826166,
     "macdValue": -18.0939185526,
     "macdSignalLineValue": -10.7138825730,
     "macdBarChartValue": -7.3800359796,
-    "maResult": 6400.0445861338
+    "maValue": 6400.0445861338
   },
   {
     "tick": {
@@ -3535,11 +3535,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0002913045,
+    "stcValue": 0.0002913045,
     "macdValue": -16.0896468055,
     "macdSignalLineValue": -11.7890354195,
     "macdBarChartValue": -4.3006113860,
-    "maResult": 6398.1291546258
+    "maValue": 6398.1291546258
   },
   {
     "tick": {
@@ -3564,11 +3564,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0001456591,
+    "stcValue": 0.0001456591,
     "macdValue": -17.1623384842,
     "macdSignalLineValue": -12.8636960324,
     "macdBarChartValue": -4.2986424518,
-    "maResult": 6394.3840850507
+    "maValue": 6394.3840850507
   },
   {
     "tick": {
@@ -3593,11 +3593,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0000728364,
+    "stcValue": 0.0000728364,
     "macdValue": -13.9738855002,
     "macdSignalLineValue": -13.0857339260,
     "macdBarChartValue": -0.8881515742,
-    "maResult": 6393.3545400476
+    "maValue": 6393.3545400476
   },
   {
     "tick": {
@@ -3622,11 +3622,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0000364250,
+    "stcValue": 0.0000364250,
     "macdValue": -11.4244887335,
     "macdSignalLineValue": -12.7534848875,
     "macdBarChartValue": 1.3289961540,
-    "maResult": 6392.4041908139
+    "maValue": 6392.4041908139
   },
   {
     "tick": {
@@ -3651,11 +3651,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0000182193,
+    "stcValue": 0.0000182193,
     "macdValue": -11.9531899514,
     "macdSignalLineValue": -12.5934259003,
     "macdBarChartValue": 0.6402359489,
-    "maResult": 6389.7454069482
+    "maValue": 6389.7454069482
   },
   {
     "tick": {
@@ -3680,11 +3680,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0000089458,
+    "stcValue": 0.0000089458,
     "macdValue": -9.5613491284,
     "macdSignalLineValue": -11.9870105459,
     "macdBarChartValue": 2.4256614175,
-    "maResult": 6388.9957602599
+    "maValue": 6388.9957602599
   },
   {
     "tick": {
@@ -3711,11 +3711,11 @@
     "positions": [
       "EXIT_SHORT"
     ],
-    "stcResult": 50.0000044728,
+    "stcValue": 50.0000044728,
     "macdValue": -6.5327591982,
     "macdSignalLineValue": -10.8961602764,
     "macdBarChartValue": 4.3634010782,
-    "maResult": 6389.0922402399
+    "maValue": 6389.0922402399
   },
   {
     "tick": {
@@ -3740,11 +3740,11 @@
       }
     },
     "positions": [],
-    "stcResult": 75.0000022362,
+    "stcValue": 75.0000022362,
     "macdValue": -3.8720609947,
     "macdSignalLineValue": -9.4913404201,
     "macdBarChartValue": 5.6192794254,
-    "maResult": 6389.4620679138
+    "maValue": 6389.4620679138
   },
   {
     "tick": {
@@ -3769,11 +3769,11 @@
       }
     },
     "positions": [],
-    "stcResult": 87.5000011181,
+    "stcValue": 87.5000011181,
     "macdValue": -1.9369594961,
     "macdSignalLineValue": -7.9804642353,
     "macdBarChartValue": 6.0435047392,
-    "maResult": 6389.8034473050
+    "maValue": 6389.8034473050
   },
   {
     "tick": {
@@ -3798,11 +3798,11 @@
       }
     },
     "positions": [],
-    "stcResult": 93.7500005590,
+    "stcValue": 93.7500005590,
     "macdValue": -1.4777668449,
     "macdSignalLineValue": -6.6799247572,
     "macdBarChartValue": 5.2021579123,
-    "maResult": 6389.4771565023
+    "maValue": 6389.4771565023
   },
   {
     "tick": {
@@ -3827,11 +3827,11 @@
       }
     },
     "positions": [],
-    "stcResult": 96.8750002795,
+    "stcValue": 96.8750002795,
     "macdValue": -1.4041938815,
     "macdSignalLineValue": -5.6247785821,
     "macdBarChartValue": 4.2205847006,
-    "maResult": 6388.9818546321
+    "maValue": 6388.9818546321
   },
   {
     "tick": {
@@ -3856,11 +3856,11 @@
       }
     },
     "positions": [],
-    "stcResult": 98.4375001397,
+    "stcValue": 98.4375001397,
     "macdValue": -1.1006829679,
     "macdSignalLineValue": -4.7199594593,
     "macdBarChartValue": 3.6192764914,
-    "maResult": 6388.6755581219
+    "maValue": 6388.6755581219
   },
   {
     "tick": {
@@ -3885,11 +3885,11 @@
       }
     },
     "positions": [],
-    "stcResult": 94.7263652949,
+    "stcValue": 94.7263652949,
     "macdValue": -2.6318558960,
     "macdSignalLineValue": -4.3023387466,
     "macdBarChartValue": 1.6704828506,
-    "maResult": 6387.1686948110
+    "maValue": 6387.1686948110
   },
   {
     "tick": {
@@ -3916,11 +3916,11 @@
     "positions": [
       "EXIT_LONG"
     ],
-    "stcResult": 74.6715273248,
+    "stcValue": 74.6715273248,
     "macdValue": -4.6350532776,
     "macdSignalLineValue": -4.3688816528,
     "macdBarChartValue": -0.2661716248,
-    "maResult": 6385.0787952102
+    "maValue": 6385.0787952102
   },
   {
     "tick": {
@@ -3948,11 +3948,11 @@
     "positions": [
       "ENTRY_SHORT"
     ],
-    "stcResult": 52.9746274552,
+    "stcValue": 52.9746274552,
     "macdValue": -4.3499785469,
     "macdSignalLineValue": -4.3651010316,
     "macdBarChartValue": 0.0151224847,
-    "maResult": 6384.2265801940
+    "maValue": 6384.2265801940
   },
   {
     "tick": {
@@ -3977,11 +3977,11 @@
       }
     },
     "positions": [],
-    "stcResult": 55.5995164932,
+    "stcValue": 55.5995164932,
     "macdValue": -0.9072687653,
     "macdSignalLineValue": -3.6735345783,
     "macdBarChartValue": 2.7662658130,
-    "maResult": 6385.6125300106
+    "maValue": 6385.6125300106
   },
   {
     "tick": {
@@ -4006,11 +4006,11 @@
       }
     },
     "positions": [],
-    "stcResult": 73.0172472650,
+    "stcValue": 73.0172472650,
     "macdValue": 2.4533532978,
     "macdSignalLineValue": -2.4481570031,
     "macdBarChartValue": 4.9015103009,
-    "maResult": 6387.5551512244
+    "maValue": 6387.5551512244
   },
   {
     "tick": {
@@ -4035,11 +4035,11 @@
       }
     },
     "positions": [],
-    "stcResult": 86.5086236325,
+    "stcValue": 86.5086236325,
     "macdValue": 4.0643246168,
     "macdSignalLineValue": -1.1456606791,
     "macdBarChartValue": 5.2099852959,
-    "maResult": 6388.8970626687
+    "maValue": 6388.8970626687
   },
   {
     "tick": {
@@ -4064,11 +4064,11 @@
       }
     },
     "positions": [],
-    "stcResult": 93.2543118163,
+    "stcValue": 93.2543118163,
     "macdValue": 7.1221733059,
     "macdSignalLineValue": 0.5079061179,
     "macdBarChartValue": 6.6142671880,
-    "maResult": 6391.5511347642
+    "maValue": 6391.5511347642
   },
   {
     "tick": {
@@ -4093,11 +4093,11 @@
       }
     },
     "positions": [],
-    "stcResult": 96.6271559081,
+    "stcValue": 96.6271559081,
     "macdValue": 8.1270520533,
     "macdSignalLineValue": 2.0317353050,
     "macdBarChartValue": 6.0953167483,
-    "maResult": 6393.3548936093
+    "maValue": 6393.3548936093
   },
   {
     "tick": {
@@ -4122,11 +4122,11 @@
       }
     },
     "positions": [],
-    "stcResult": 98.3135779540,
+    "stcValue": 98.3135779540,
     "macdValue": 9.1766706705,
     "macdSignalLineValue": 3.4607223781,
     "macdBarChartValue": 5.7159482924,
-    "maResult": 6395.4045171778
+    "maValue": 6395.4045171778
   },
   {
     "tick": {
@@ -4151,11 +4151,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.1567889770,
+    "stcValue": 99.1567889770,
     "macdValue": 10.3168593623,
     "macdSignalLineValue": 4.8319497749,
     "macdBarChartValue": 5.4849095874,
-    "maResult": 6397.7403234018
+    "maValue": 6397.7403234018
   },
   {
     "tick": {
@@ -4180,11 +4180,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.0979021127,
+    "stcValue": 99.0979021127,
     "macdValue": 7.3873174125,
     "macdSignalLineValue": 5.3430233024,
     "macdBarChartValue": 2.0442941101,
-    "maResult": 6397.4989330278
+    "maValue": 6397.4989330278
   },
   {
     "tick": {
@@ -4209,11 +4209,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.5489510564,
+    "stcValue": 99.5489510564,
     "macdValue": 8.5070798789,
     "macdSignalLineValue": 5.9758346177,
     "macdBarChartValue": 2.5312452612,
-    "maResult": 6399.5797841680
+    "maValue": 6399.5797841680
   },
   {
     "tick": {
@@ -4238,11 +4238,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.7744755282,
+    "stcValue": 99.7744755282,
     "macdValue": 8.4078521963,
     "macdSignalLineValue": 6.4622381334,
     "macdBarChartValue": 1.9456140629,
-    "maResult": 6401.0413392320
+    "maValue": 6401.0413392320
   },
   {
     "tick": {
@@ -4267,11 +4267,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.8872377641,
+    "stcValue": 99.8872377641,
     "macdValue": 11.0660934984,
     "macdSignalLineValue": 7.3830092064,
     "macdBarChartValue": 3.6830842920,
-    "maResult": 6404.4220054457
+    "maValue": 6404.4220054457
   },
   {
     "tick": {
@@ -4296,11 +4296,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9436188819,
+    "stcValue": 99.9436188819,
     "macdValue": 15.4095419654,
     "macdSignalLineValue": 8.9883157582,
     "macdBarChartValue": 6.4212262072,
-    "maResult": 6409.4664665653
+    "maValue": 6409.4664665653
   },
   {
     "tick": {
@@ -4325,11 +4325,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9718094411,
+    "stcValue": 99.9718094411,
     "macdValue": 17.2734351825,
     "macdSignalLineValue": 10.6453396431,
     "macdBarChartValue": 6.6280955394,
-    "maResult": 6413.5977752941
+    "maValue": 6413.5977752941
   },
   {
     "tick": {
@@ -4354,11 +4354,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9859047208,
+    "stcValue": 99.9859047208,
     "macdValue": 21.4532967740,
     "macdSignalLineValue": 12.8069310693,
     "macdBarChartValue": 8.6463657047,
-    "maResult": 6419.7081939422
+    "maValue": 6419.7081939422
   },
   {
     "tick": {
@@ -4383,11 +4383,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9929523590,
+    "stcValue": 99.9929523590,
     "macdValue": 23.4763424048,
     "macdSignalLineValue": 14.9408133364,
     "macdBarChartValue": 8.5355290684,
-    "maResult": 6425.1152559466
+    "maValue": 6425.1152559466
   },
   {
     "tick": {
@@ -4412,11 +4412,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9964761805,
+    "stcValue": 99.9964761805,
     "macdValue": 24.0731062383,
     "macdSignalLineValue": 16.7672719168,
     "macdBarChartValue": 7.3058343215,
-    "maResult": 6429.9525439507
+    "maValue": 6429.9525439507
   },
   {
     "tick": {
@@ -4441,11 +4441,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9982380891,
+    "stcValue": 99.9982380891,
     "macdValue": 21.3236724397,
     "macdSignalLineValue": 17.6785520214,
     "macdBarChartValue": 3.6451204183,
-    "maResult": 6432.6401542460
+    "maValue": 6432.6401542460
   },
   {
     "tick": {
@@ -4470,11 +4470,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9991190433,
+    "stcValue": 99.9991190433,
     "macdValue": 18.9083769124,
     "macdSignalLineValue": 17.9245169996,
     "macdBarChartValue": 0.9838599128,
-    "maResult": 6435.1293731502
+    "maValue": 6435.1293731502
   },
   {
     "tick": {
@@ -4499,11 +4499,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9995595271,
+    "stcValue": 99.9995595271,
     "macdValue": 18.9938916858,
     "macdSignalLineValue": 18.1383919368,
     "macdBarChartValue": 0.8554997490,
-    "maResult": 6438.9655752156
+    "maValue": 6438.9655752156
   },
   {
     "tick": {
@@ -4528,11 +4528,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9997797558,
+    "stcValue": 99.9997797558,
     "macdValue": 19.1844478407,
     "macdSignalLineValue": 18.3476031176,
     "macdBarChartValue": 0.8368447231,
-    "maResult": 6442.9223600675
+    "maValue": 6442.9223600675
   },
   {
     "tick": {
@@ -4557,11 +4557,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9998898701,
+    "stcValue": 99.9998898701,
     "macdValue": 17.0198582652,
     "macdSignalLineValue": 18.0820541471,
     "macdBarChartValue": -1.0621958819,
-    "maResult": 6445.3129477546
+    "maValue": 6445.3129477546
   },
   {
     "tick": {
@@ -4586,11 +4586,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9999449799,
+    "stcValue": 99.9999449799,
     "macdValue": 16.9253306936,
     "macdSignalLineValue": 17.8507094564,
     "macdBarChartValue": -0.9253787628,
-    "maResult": 6448.7811825381
+    "maValue": 6448.7811825381
   },
   {
     "tick": {
@@ -4615,11 +4615,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9999725348,
+    "stcValue": 99.9999725348,
     "macdValue": 15.4142843886,
     "macdSignalLineValue": 17.3634244428,
     "macdBarChartValue": -1.9491400542,
-    "maResult": 6451.2710869082
+    "maValue": 6451.2710869082
   },
   {
     "tick": {
@@ -4644,11 +4644,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9999863123,
+    "stcValue": 99.9999863123,
     "macdValue": 14.6390175243,
     "macdSignalLineValue": 16.8185430591,
     "macdBarChartValue": -2.1795255348,
-    "maResult": 6454.0194648383
+    "maValue": 6454.0194648383
   },
   {
     "tick": {
@@ -4673,11 +4673,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9999932010,
+    "stcValue": 99.9999932010,
     "macdValue": 13.2971288891,
     "macdSignalLineValue": 16.1142602251,
     "macdBarChartValue": -2.8171313360,
-    "maResult": 6456.2487367738
+    "maValue": 6456.2487367738
   },
   {
     "tick": {
@@ -4704,11 +4704,11 @@
     "positions": [
       "EXIT_LONG"
     ],
-    "stcResult": 49.9999966006,
+    "stcValue": 49.9999966006,
     "macdValue": 9.4444125761,
     "macdSignalLineValue": 14.7802906953,
     "macdBarChartValue": -5.3358781192,
-    "maResult": 6456.5088339450
+    "maValue": 6456.5088339450
   },
   {
     "tick": {
@@ -4733,11 +4733,11 @@
       }
     },
     "positions": [],
-    "stcResult": 24.9999983004,
+    "stcValue": 24.9999983004,
     "macdValue": 6.5470619785,
     "macdSignalLineValue": 13.1336449519,
     "macdBarChartValue": -6.5865829734,
-    "maResult": 6456.7485436438
+    "maValue": 6456.7485436438
   },
   {
     "tick": {
@@ -4762,11 +4762,11 @@
       }
     },
     "positions": [],
-    "stcResult": 12.4999991501,
+    "stcValue": 12.4999991501,
     "macdValue": 5.5350706489,
     "macdSignalLineValue": 11.6139300913,
     "macdBarChartValue": -6.0788594424,
-    "maResult": 6457.7678864404
+    "maValue": 6457.7678864404
   },
   {
     "tick": {
@@ -4791,11 +4791,11 @@
       }
     },
     "positions": [],
-    "stcResult": 6.2499995750,
+    "stcValue": 6.2499995750,
     "macdValue": 4.9698650223,
     "macdSignalLineValue": 10.2851170775,
     "macdBarChartValue": -5.3152520552,
-    "maResult": 6458.8965105604
+    "maValue": 6458.8965105604
   },
   {
     "tick": {
@@ -4820,11 +4820,11 @@
       }
     },
     "positions": [],
-    "stcResult": 3.1249997875,
+    "stcValue": 3.1249997875,
     "macdValue": 3.6297261935,
     "macdSignalLineValue": 8.9540389007,
     "macdBarChartValue": -5.3243127072,
-    "maResult": 6459.3660097481
+    "maValue": 6459.3660097481
   },
   {
     "tick": {
@@ -4849,11 +4849,11 @@
       }
     },
     "positions": [],
-    "stcResult": 1.5624998937,
+    "stcValue": 1.5624998937,
     "macdValue": 2.6135875911,
     "macdSignalLineValue": 7.6859486388,
     "macdBarChartValue": -5.0723610477,
-    "maResult": 6459.7993936136
+    "maValue": 6459.7993936136
   },
   {
     "tick": {
@@ -4878,11 +4878,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.7812499469,
+    "stcValue": 0.7812499469,
     "macdValue": 3.9476500983,
     "macdSignalLineValue": 6.9382889307,
     "macdBarChartValue": -2.9906388324,
-    "maResult": 6461.6540556433
+    "maValue": 6461.6540556433
   },
   {
     "tick": {
@@ -4907,11 +4907,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.6775877529,
+    "stcValue": 0.6775877529,
     "macdValue": 4.7824920762,
     "macdSignalLineValue": 6.5071295598,
     "macdBarChartValue": -1.7246374836,
-    "maResult": 6463.3729744400
+    "maValue": 6463.3729744400
   },
   {
     "tick": {
@@ -4936,11 +4936,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.3387938764,
+    "stcValue": 0.3387938764,
     "macdValue": 3.6860249972,
     "macdSignalLineValue": 5.9429086473,
     "macdBarChartValue": -2.2568836501,
-    "maResult": 6463.8827456369
+    "maValue": 6463.8827456369
   },
   {
     "tick": {
@@ -4965,11 +4965,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.1693969382,
+    "stcValue": 0.1693969382,
     "macdValue": 4.5036273816,
     "macdSignalLineValue": 5.6550523942,
     "macdBarChartValue": -1.1514250126,
-    "maResult": 6465.5071498148
+    "maValue": 6465.5071498148
   },
   {
     "tick": {
@@ -4994,11 +4994,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0846984691,
+    "stcValue": 0.0846984691,
     "macdValue": 0.4830646238,
     "macdSignalLineValue": 4.6206548401,
     "macdBarChartValue": -4.1375902163,
-    "maResult": 6463.9087873283
+    "maValue": 6463.9087873283
   },
   {
     "tick": {
@@ -5023,11 +5023,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0423492345,
+    "stcValue": 0.0423492345,
     "macdValue": -2.8338931674,
     "macdSignalLineValue": 3.1297452386,
     "macdBarChartValue": -5.9636384060,
-    "maResult": 6462.0696498415
+    "maValue": 6462.0696498415
   },
   {
     "tick": {
@@ -5052,11 +5052,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0211746172,
+    "stcValue": 0.0211746172,
     "macdValue": -1.5347586087,
     "macdSignalLineValue": 2.1968444691,
     "macdBarChartValue": -3.7316030778,
-    "maResult": 6462.8105464283
+    "maValue": 6462.8105464283
   },
   {
     "tick": {
@@ -5081,11 +5081,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0105873086,
+    "stcValue": 0.0105873086,
     "macdValue": -4.0099523932,
     "macdSignalLineValue": 0.9554850966,
     "macdBarChartValue": -4.9654374898,
-    "maResult": 6461.1328120892
+    "maValue": 6461.1328120892
   },
   {
     "tick": {
@@ -5110,11 +5110,11 @@
       }
     },
     "positions": [],
-    "stcResult": 8.2757448415,
+    "stcValue": 8.2757448415,
     "macdValue": -1.3999640920,
     "macdSignalLineValue": 0.4843952589,
     "macdBarChartValue": -1.8843593509,
-    "maResult": 6462.5072111570
+    "maValue": 6462.5072111570
   },
   {
     "tick": {
@@ -5139,11 +5139,11 @@
       }
     },
     "positions": [],
-    "stcResult": 8.3409209456,
+    "stcValue": 8.3409209456,
     "macdValue": -2.6109607065,
     "macdSignalLineValue": -0.1346759342,
     "macdBarChartValue": -2.4762847723,
-    "maResult": 6461.6643487680
+    "maValue": 6461.6643487680
   },
   {
     "tick": {
@@ -5168,11 +5168,11 @@
       }
     },
     "positions": [],
-    "stcResult": 5.6039135071,
+    "stcValue": 5.6039135071,
     "macdValue": -1.2470581126,
     "macdSignalLineValue": -0.3571523699,
     "macdBarChartValue": -0.8899057427,
-    "maResult": 6462.3655527089
+    "maValue": 6462.3655527089
   },
   {
     "tick": {
@@ -5199,11 +5199,11 @@
     "positions": [
       "EXIT_SHORT"
     ],
-    "stcResult": 49.7151665145,
+    "stcValue": 49.7151665145,
     "macdValue": 1.3066784400,
     "macdSignalLineValue": -0.0243862079,
     "macdBarChartValue": 1.3310646479,
-    "maResult": 6464.1066640328
+    "maValue": 6464.1066640328
   },
   {
     "tick": {
@@ -5228,11 +5228,11 @@
       }
     },
     "positions": [],
-    "stcResult": 48.3944257078,
+    "stcValue": 48.3944257078,
     "macdValue": 0.2621832645,
     "macdSignalLineValue": 0.0329276866,
     "macdBarChartValue": 0.2292555779,
-    "maResult": 6463.7907667995
+    "maValue": 6463.7907667995
   },
   {
     "tick": {
@@ -5257,11 +5257,11 @@
       }
     },
     "positions": [],
-    "stcResult": 34.5024765296,
+    "stcValue": 34.5024765296,
     "macdValue": 0.3047005934,
     "macdSignalLineValue": 0.0872822680,
     "macdBarChartValue": 0.2174183254,
-    "maResult": 6464.0330155072
+    "maValue": 6464.0330155072
   },
   {
     "tick": {
@@ -5286,11 +5286,11 @@
       }
     },
     "positions": [],
-    "stcResult": 20.9407125531,
+    "stcValue": 20.9407125531,
     "macdValue": -0.3334281815,
     "macdSignalLineValue": 0.0031401781,
     "macdBarChartValue": -0.3365683596,
-    "maResult": 6463.7997066220
+    "maValue": 6463.7997066220
   },
   {
     "tick": {
@@ -5315,11 +5315,11 @@
       }
     },
     "positions": [],
-    "stcResult": 10.8519358711,
+    "stcValue": 10.8519358711,
     "macdValue": -1.4330375029,
     "macdSignalLineValue": -0.2840953581,
     "macdBarChartValue": -1.1489421448,
-    "maResult": 6463.1228061126
+    "maValue": 6463.1228061126
   },
   {
     "tick": {
@@ -5344,11 +5344,11 @@
       }
     },
     "positions": [],
-    "stcResult": 5.4259679352,
+    "stcValue": 5.4259679352,
     "macdValue": -0.8245442659,
     "macdSignalLineValue": -0.3921851397,
     "macdBarChartValue": -0.4323591262,
-    "maResult": 6463.4210517893
+    "maValue": 6463.4210517893
   },
   {
     "tick": {
@@ -5373,11 +5373,11 @@
       }
     },
     "positions": [],
-    "stcResult": 6.6060148383,
+    "stcValue": 6.6060148383,
     "macdValue": 0.4019923198,
     "macdSignalLineValue": -0.2333496478,
     "macdBarChartValue": 0.6353419676,
-    "maResult": 6464.2401568040
+    "maValue": 6464.2401568040
   },
   {
     "tick": {
@@ -5404,11 +5404,11 @@
     "positions": [
       "EXIT_SHORT"
     ],
-    "stcResult": 40.5409907913,
+    "stcValue": 40.5409907913,
     "macdValue": 1.5877109290,
     "macdSignalLineValue": 0.1308624676,
     "macdBarChartValue": 1.4568484614,
-    "maResult": 6465.2369472722
+    "maValue": 6465.2369472722
   },
   {
     "tick": {
@@ -5436,11 +5436,11 @@
     "positions": [
       "ENTRY_LONG"
     ],
-    "stcResult": 38.0830354686,
+    "stcValue": 38.0830354686,
     "macdValue": 1.6795495000,
     "macdSignalLineValue": 0.4405998741,
     "macdBarChartValue": 1.2389496259,
-    "maResult": 6465.6802590205
+    "maValue": 6465.6802590205
   },
   {
     "tick": {
@@ -5465,11 +5465,11 @@
       }
     },
     "positions": [],
-    "stcResult": 69.0415177342,
+    "stcValue": 69.0415177342,
     "macdValue": 4.9237938061,
     "macdSignalLineValue": 1.3372386605,
     "macdBarChartValue": 3.5865551456,
-    "maResult": 6468.3202384789
+    "maValue": 6468.3202384789
   },
   {
     "tick": {
@@ -5494,11 +5494,11 @@
       }
     },
     "positions": [],
-    "stcResult": 84.5207588671,
+    "stcValue": 84.5207588671,
     "macdValue": 5.3784872099,
     "macdSignalLineValue": 2.1454883704,
     "macdBarChartValue": 3.2329988395,
-    "maResult": 6469.6032970574
+    "maValue": 6469.6032970574
   },
   {
     "tick": {
@@ -5523,11 +5523,11 @@
       }
     },
     "positions": [],
-    "stcResult": 92.2603794336,
+    "stcValue": 92.2603794336,
     "macdValue": 4.2267076578,
     "macdSignalLineValue": 2.5617322279,
     "macdBarChartValue": 1.6649754299,
-    "maResult": 6469.8645818999
+    "maValue": 6469.8645818999
   },
   {
     "tick": {
@@ -5552,11 +5552,11 @@
       }
     },
     "positions": [],
-    "stcResult": 96.1301897168,
+    "stcValue": 96.1301897168,
     "macdValue": 4.9927191353,
     "macdSignalLineValue": 3.0479296094,
     "macdBarChartValue": 1.9447895259,
-    "maResult": 6471.2596140614
+    "maValue": 6471.2596140614
   },
   {
     "tick": {
@@ -5581,11 +5581,11 @@
       }
     },
     "positions": [],
-    "stcResult": 98.0650948584,
+    "stcValue": 98.0650948584,
     "macdValue": 6.5051414082,
     "macdSignalLineValue": 3.7393719692,
     "macdBarChartValue": 2.7657694390,
-    "maResult": 6473.3131052844
+    "maValue": 6473.3131052844
   },
   {
     "tick": {
@@ -5610,11 +5610,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.0325474292,
+    "stcValue": 99.0325474292,
     "macdValue": 7.3951459123,
     "macdSignalLineValue": 4.4705267578,
     "macdBarChartValue": 2.9246191545,
-    "maResult": 6475.2120971856
+    "maValue": 6475.2120971856
   },
   {
     "tick": {
@@ -5639,11 +5639,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.5162737146,
+    "stcValue": 99.5162737146,
     "macdValue": 9.1611948029,
     "macdSignalLineValue": 5.4086603668,
     "macdBarChartValue": 3.7525344361,
-    "maResult": 6477.8880897075
+    "maValue": 6477.8880897075
   },
   {
     "tick": {
@@ -5668,11 +5668,11 @@
       }
     },
     "positions": [],
-    "stcResult": 96.8330589275,
+    "stcValue": 96.8330589275,
     "macdValue": 6.8226312045,
     "macdSignalLineValue": 5.6914545343,
     "macdBarChartValue": 1.1311766702,
-    "maResult": 6478.0505443454
+    "maValue": 6478.0505443454
   },
   {
     "tick": {
@@ -5697,11 +5697,11 @@
       }
     },
     "positions": [],
-    "stcResult": 97.9318279144,
+    "stcValue": 97.9318279144,
     "macdValue": 8.1277524148,
     "macdSignalLineValue": 6.1787141104,
     "macdBarChartValue": 1.9490383044,
-    "maResult": 6480.3399865919
+    "maValue": 6480.3399865919
   },
   {
     "tick": {
@@ -5726,11 +5726,11 @@
       }
     },
     "positions": [],
-    "stcResult": 98.5665803489,
+    "stcValue": 98.5665803489,
     "macdValue": 7.0501183531,
     "macdSignalLineValue": 6.3529949589,
     "macdBarChartValue": 0.6971233942,
-    "maResult": 6481.2215260848
+    "maValue": 6481.2215260848
   },
   {
     "tick": {
@@ -5755,11 +5755,11 @@
       }
     },
     "positions": [],
-    "stcResult": 98.8375613239,
+    "stcValue": 98.8375613239,
     "macdValue": 6.4865659560,
     "macdSignalLineValue": 6.3797091583,
     "macdBarChartValue": 0.1068567977,
-    "maResult": 6482.2814086937
+    "maValue": 6482.2814086937
   },
   {
     "tick": {
@@ -5786,11 +5786,11 @@
     "positions": [
       "EXIT_LONG"
     ],
-    "stcResult": 86.4503643009,
+    "stcValue": 86.4503643009,
     "macdValue": 4.2701206949,
     "macdSignalLineValue": 5.9577914656,
     "macdBarChartValue": -1.6876707707,
-    "maResult": 6482.1059157173
+    "maValue": 6482.1059157173
   },
   {
     "tick": {
@@ -5815,11 +5815,11 @@
       }
     },
     "positions": [],
-    "stcResult": 59.4658237889,
+    "stcValue": 59.4658237889,
     "macdValue": 4.8545506206,
     "macdSignalLineValue": 5.7371432966,
     "macdBarChartValue": -0.8825926760,
-    "maResult": 6483.4823837390
+    "maValue": 6483.4823837390
   },
   {
     "tick": {
@@ -5844,11 +5844,11 @@
       }
     },
     "positions": [],
-    "stcResult": 29.7329118944,
+    "stcValue": 29.7329118944,
     "macdValue": 3.5831799378,
     "macdSignalLineValue": 5.3063506248,
     "macdBarChartValue": -1.7231706870,
-    "maResult": 6483.6760465291
+    "maValue": 6483.6760465291
   },
   {
     "tick": {
@@ -5873,11 +5873,11 @@
       }
     },
     "positions": [],
-    "stcResult": 14.8664559472,
+    "stcValue": 14.8664559472,
     "macdValue": 4.1712895896,
     "macdSignalLineValue": 5.0793384178,
     "macdBarChartValue": -0.9080488282,
-    "maResult": 6484.9317352576
+    "maValue": 6484.9317352576
   },
   {
     "tick": {
@@ -5902,11 +5902,11 @@
       }
     },
     "positions": [],
-    "stcResult": 34.0805476260,
+    "stcValue": 34.0805476260,
     "macdValue": 13.3637780010,
     "macdSignalLineValue": 6.7362263344,
     "macdBarChartValue": 6.6275516666,
-    "maResult": 6492.2446786993
+    "maValue": 6492.2446786993
   },
   {
     "tick": {
@@ -5931,11 +5931,11 @@
       }
     },
     "positions": [],
-    "stcResult": 57.3847891116,
+    "stcValue": 57.3847891116,
     "macdValue": 17.2779976939,
     "macdSignalLineValue": 8.8445806063,
     "macdBarChartValue": 8.4334170876,
-    "maResult": 6497.5335495694
+    "maValue": 6497.5335495694
   },
   {
     "tick": {
@@ -5960,11 +5960,11 @@
       }
     },
     "positions": [],
-    "stcResult": 75.7609957375,
+    "stcValue": 75.7609957375,
     "macdValue": 25.5575076565,
     "macdSignalLineValue": 12.1871660163,
     "macdBarChartValue": 13.3703416402,
-    "maResult": 6506.5694303687
+    "maValue": 6506.5694303687
   },
   {
     "tick": {
@@ -5989,11 +5989,11 @@
       }
     },
     "positions": [],
-    "stcResult": 87.8804978688,
+    "stcValue": 87.8804978688,
     "macdValue": 28.9838970645,
     "macdSignalLineValue": 15.5465122259,
     "macdBarChartValue": 13.4373848386,
-    "maResult": 6513.7563972557
+    "maValue": 6513.7563972557
   },
   {
     "tick": {
@@ -6018,11 +6018,11 @@
       }
     },
     "positions": [],
-    "stcResult": 93.9402489344,
+    "stcValue": 93.9402489344,
     "macdValue": 28.7877316215,
     "macdSignalLineValue": 18.1947561050,
     "macdBarChartValue": 10.5929755165,
-    "maResult": 6519.1101836676
+    "maValue": 6519.1101836676
   },
   {
     "tick": {
@@ -6047,11 +6047,11 @@
       }
     },
     "positions": [],
-    "stcResult": 96.9701244672,
+    "stcValue": 96.9701244672,
     "macdValue": 27.5684561456,
     "macdSignalLineValue": 20.0694961131,
     "macdBarChartValue": 7.4989600325,
-    "maResult": 6523.7940156932
+    "maValue": 6523.7940156932
   },
   {
     "tick": {
@@ -6076,11 +6076,11 @@
       }
     },
     "positions": [],
-    "stcResult": 98.4850622336,
+    "stcValue": 98.4850622336,
     "macdValue": 24.3781309735,
     "macdSignalLineValue": 20.9312230852,
     "macdBarChartValue": 3.4469078883,
-    "maResult": 6526.9637067937
+    "maValue": 6526.9637067937
   },
   {
     "tick": {
@@ -6105,11 +6105,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.2425311168,
+    "stcValue": 99.2425311168,
     "macdValue": 24.2372115712,
     "macdSignalLineValue": 21.5924207824,
     "macdBarChartValue": 2.6447907888,
-    "maResult": 6531.7357293480
+    "maValue": 6531.7357293480
   },
   {
     "tick": {
@@ -6134,11 +6134,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.6212655584,
+    "stcValue": 99.6212655584,
     "macdValue": 24.9127250320,
     "macdSignalLineValue": 22.2564816323,
     "macdBarChartValue": 2.6562433997,
-    "maResult": 6537.0900963212
+    "maValue": 6537.0900963212
   },
   {
     "tick": {
@@ -6163,11 +6163,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.8106327792,
+    "stcValue": 99.8106327792,
     "macdValue": 23.3376732264,
     "macdSignalLineValue": 22.4727199511,
     "macdBarChartValue": 0.8649532753,
-    "maResult": 6541.0447042965
+    "maValue": 6541.0447042965
   },
   {
     "tick": {
@@ -6192,11 +6192,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9053163897,
+    "stcValue": 99.9053163897,
     "macdValue": 21.0613985651,
     "macdSignalLineValue": 22.1904556739,
     "macdBarChartValue": -1.1290571088,
-    "maResult": 6544.2720347352
+    "maValue": 6544.2720347352
   },
   {
     "tick": {
@@ -6223,11 +6223,11 @@
     "positions": [
       "EXIT_LONG"
     ],
-    "stcResult": 87.1174357601,
+    "stcValue": 87.1174357601,
     "macdValue": 17.4120877236,
     "macdSignalLineValue": 21.2347820838,
     "macdBarChartValue": -3.8226943602,
-    "maResult": 6546.1741859094
+    "maValue": 6546.1741859094
   },
   {
     "tick": {
@@ -6252,11 +6252,11 @@
       }
     },
     "positions": [],
-    "stcResult": 43.5587178797,
+    "stcValue": 43.5587178797,
     "macdValue": 15.3638984657,
     "macdSignalLineValue": 20.0606053602,
     "macdBarChartValue": -4.6967068945,
-    "maResult": 6548.5563618025
+    "maValue": 6548.5563618025
   },
   {
     "tick": {
@@ -6281,11 +6281,11 @@
       }
     },
     "positions": [],
-    "stcResult": 21.7793589397,
+    "stcValue": 21.7793589397,
     "macdValue": 13.0077307740,
     "macdSignalLineValue": 18.6500304430,
     "macdBarChartValue": -5.6422996690,
-    "maResult": 6550.3670610231
+    "maValue": 6550.3670610231
   },
   {
     "tick": {
@@ -6310,11 +6310,11 @@
       }
     },
     "positions": [],
-    "stcResult": 10.8896794698,
+    "stcValue": 10.8896794698,
     "macdValue": 9.8074166330,
     "macdSignalLineValue": 16.8815076810,
     "macdBarChartValue": -7.0740910480,
-    "maResult": 6551.1729663452
+    "maValue": 6551.1729663452
   },
   {
     "tick": {
@@ -6339,11 +6339,11 @@
       }
     },
     "positions": [],
-    "stcResult": 5.4448397349,
+    "stcValue": 5.4448397349,
     "macdValue": 6.7592119125,
     "macdSignalLineValue": 14.8570485273,
     "macdBarChartValue": -8.0978366148,
-    "maResult": 6551.5060058117
+    "maValue": 6551.5060058117
   },
   {
     "tick": {
@@ -6368,11 +6368,11 @@
       }
     },
     "positions": [],
-    "stcResult": 2.7224198674,
+    "stcValue": 2.7224198674,
     "macdValue": 6.6513081734,
     "macdSignalLineValue": 13.2159004565,
     "macdBarChartValue": -6.5645922831,
-    "maResult": 6553.3132361339
+    "maValue": 6553.3132361339
   },
   {
     "tick": {
@@ -6397,11 +6397,11 @@
       }
     },
     "positions": [],
-    "stcResult": 1.3612099337,
+    "stcValue": 1.3612099337,
     "macdValue": 8.8819226572,
     "macdSignalLineValue": 12.3491048966,
     "macdBarChartValue": -3.4671822394,
-    "maResult": 6556.6910641144
+    "maValue": 6556.6910641144
   },
   {
     "tick": {
@@ -6426,11 +6426,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.6806049669,
+    "stcValue": 0.6806049669,
     "macdValue": 9.4019913827,
     "macdSignalLineValue": 11.7596821938,
     "macdBarChartValue": -2.3576908111,
-    "maResult": 6559.2532899510
+    "maValue": 6559.2532899510
   },
   {
     "tick": {
@@ -6455,11 +6455,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.3403024834,
+    "stcValue": 0.3403024834,
     "macdValue": 6.1272415363,
     "macdSignalLineValue": 10.6331940623,
     "macdBarChartValue": -4.5059525260,
-    "maResult": 6559.2630830017
+    "maValue": 6559.2630830017
   },
   {
     "tick": {
@@ -6484,11 +6484,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.1701512417,
+    "stcValue": 0.1701512417,
     "macdValue": 5.9566381911,
     "macdSignalLineValue": 9.6978828881,
     "macdBarChartValue": -3.7412446970,
-    "maResult": 6560.8261535400
+    "maValue": 6560.8261535400
   },
   {
     "tick": {
@@ -6513,11 +6513,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0850756209,
+    "stcValue": 0.0850756209,
     "macdValue": 5.1823904909,
     "macdSignalLineValue": 8.7947844087,
     "macdBarChartValue": -3.6123939178,
-    "maResult": 6561.9164494215
+    "maValue": 6561.9164494215
   },
   {
     "tick": {
@@ -6542,11 +6542,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0425378104,
+    "stcValue": 0.0425378104,
     "macdValue": 4.5191478713,
     "macdSignalLineValue": 7.9396571012,
     "macdBarChartValue": -3.4205092299,
-    "maResult": 6562.9228763891
+    "maValue": 6562.9228763891
   },
   {
     "tick": {
@@ -6571,11 +6571,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0212689052,
+    "stcValue": 0.0212689052,
     "macdValue": 5.6156925325,
     "macdSignalLineValue": 7.4748641875,
     "macdBarChartValue": -1.8591716550,
-    "maResult": 6565.0057320515
+    "maValue": 6565.0057320515
   },
   {
     "tick": {
@@ -6600,11 +6600,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0106344526,
+    "stcValue": 0.0106344526,
     "macdValue": 6.2090085653,
     "macdSignalLineValue": 7.2216930631,
     "macdBarChartValue": -1.0126844978,
-    "maResult": 6566.9102781560
+    "maValue": 6566.9102781560
   },
   {
     "tick": {
@@ -6629,11 +6629,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0053172262,
+    "stcValue": 0.0053172262,
     "macdValue": 3.4786548623,
     "macdSignalLineValue": 6.4730854229,
     "macdBarChartValue": -2.9944305606,
-    "maResult": 6566.6002324178
+    "maValue": 6566.6002324178
   },
   {
     "tick": {
@@ -6658,11 +6658,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0026586131,
+    "stcValue": 0.0026586131,
     "macdValue": -1.8764473543,
     "macdSignalLineValue": 4.8031788675,
     "macdBarChartValue": -6.6796262218,
-    "maResult": 6563.9729580403
+    "maValue": 6563.9729580403
   },
   {
     "tick": {
@@ -6687,11 +6687,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0013293067,
+    "stcValue": 0.0013293067,
     "macdValue": -7.3122828014,
     "macdSignalLineValue": 2.3800865337,
     "macdBarChartValue": -9.6923693351,
-    "maResult": 6560.3155608218
+    "maValue": 6560.3155608218
   },
   {
     "tick": {
@@ -6716,11 +6716,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0006646534,
+    "stcValue": 0.0006646534,
     "macdValue": -9.3117070882,
     "macdSignalLineValue": 0.0417278093,
     "macdBarChartValue": -9.3534348975,
-    "maResult": 6558.0320561432
+    "maValue": 6558.0320561432
   },
   {
     "tick": {
@@ -6745,11 +6745,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0003323263,
+    "stcValue": 0.0003323263,
     "macdValue": -11.2936142223,
     "macdSignalLineValue": -2.2253405970,
     "macdBarChartValue": -9.0682736253,
-    "maResult": 6555.3499310383
+    "maValue": 6555.3499310383
   },
   {
     "tick": {
@@ -6774,11 +6774,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0001661628,
+    "stcValue": 0.0001661628,
     "macdValue": -11.9958295193,
     "macdSignalLineValue": -4.1794383815,
     "macdBarChartValue": -7.8163911378,
-    "maResult": 6553.1435260869
+    "maValue": 6553.1435260869
   },
   {
     "tick": {
@@ -6803,11 +6803,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0000830830,
+    "stcValue": 0.0000830830,
     "macdValue": -11.4791924529,
     "macdSignalLineValue": -5.6393891958,
     "macdBarChartValue": -5.8398032571,
-    "maResult": 6551.5955625418
+    "maValue": 6551.5955625418
   },
   {
     "tick": {
@@ -6832,11 +6832,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0000415391,
+    "stcValue": 0.0000415391,
     "macdValue": -11.6462970761,
     "macdSignalLineValue": -6.8407707719,
     "macdBarChartValue": -4.8055263042,
-    "maResult": 6549.6074805078
+    "maValue": 6549.6074805078
   },
   {
     "tick": {
@@ -6861,11 +6861,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0000207752,
+    "stcValue": 0.0000207752,
     "macdValue": -10.2243184297,
     "macdSignalLineValue": -7.5174803035,
     "macdBarChartValue": -2.7068381262,
-    "maResult": 6548.6376743149
+    "maValue": 6548.6376743149
   },
   {
     "tick": {
@@ -6890,11 +6890,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0000103771,
+    "stcValue": 0.0000103771,
     "macdValue": -7.9146957003,
     "macdSignalLineValue": -7.5969233829,
     "macdBarChartValue": -0.3177723174,
-    "maResult": 6548.4860583422
+    "maValue": 6548.4860583422
   },
   {
     "tick": {
@@ -6919,11 +6919,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0000051781,
+    "stcValue": 0.0000051781,
     "macdValue": -5.9743467594,
     "macdSignalLineValue": -7.2724080582,
     "macdBarChartValue": 1.2980612988,
-    "maResult": 6548.4486692390
+    "maValue": 6548.4486692390
   },
   {
     "tick": {
@@ -6948,11 +6948,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0000026431,
+    "stcValue": 0.0000026431,
     "macdValue": -6.2528584913,
     "macdSignalLineValue": -7.0684981448,
     "macdBarChartValue": 0.8156396535,
-    "maResult": 6547.1905007975
+    "maValue": 6547.1905007975
   },
   {
     "tick": {
@@ -6977,11 +6977,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0000012466,
+    "stcValue": 0.0000012466,
     "macdValue": -3.9925893711,
     "macdSignalLineValue": -6.4533163901,
     "macdBarChartValue": 2.4607270190,
-    "maResult": 6547.6203345331
+    "maValue": 6547.6203345331
   },
   {
     "tick": {
@@ -7008,11 +7008,11 @@
     "positions": [
       "EXIT_SHORT"
     ],
-    "stcResult": 50.0000006224,
+    "stcValue": 50.0000006224,
     "macdValue": -1.5289449855,
     "macdSignalLineValue": -5.4684421092,
     "macdBarChartValue": 3.9394971237,
-    "maResult": 6548.5726164921
+    "maValue": 6548.5726164921
   },
   {
     "tick": {
@@ -7037,11 +7037,11 @@
       }
     },
     "positions": [],
-    "stcResult": 49.9992600076,
+    "stcValue": 49.9992600076,
     "macdValue": -0.9553132315,
     "macdSignalLineValue": -4.5658163337,
     "macdBarChartValue": 3.6105031022,
-    "maResult": 6548.6434596381
+    "maValue": 6548.6434596381
   },
   {
     "tick": {
@@ -7066,11 +7066,11 @@
       }
     },
     "positions": [],
-    "stcResult": 37.4985195490,
+    "stcValue": 37.4985195490,
     "macdValue": -6.5899822663,
     "macdSignalLineValue": -4.9706495202,
     "macdBarChartValue": -1.6193327461,
-    "maResult": 6544.5170396659
+    "maValue": 6544.5170396659
   },
   {
     "tick": {
@@ -7095,11 +7095,11 @@
       }
     },
     "positions": [],
-    "stcResult": 24.9979642440,
+    "stcValue": 24.9979642440,
     "macdValue": -10.9895069752,
     "macdSignalLineValue": -6.1744210112,
     "macdBarChartValue": -4.8150859640,
-    "maResult": 6540.2464981531
+    "maValue": 6540.2464981531
   },
   {
     "tick": {
@@ -7124,11 +7124,11 @@
       }
     },
     "positions": [],
-    "stcResult": 15.6225940536,
+    "stcValue": 15.6225940536,
     "macdValue": -12.1179332974,
     "macdSignalLineValue": -7.3631234684,
     "macdBarChartValue": -4.7548098290,
-    "maResult": 6537.4411422067
+    "maValue": 6537.4411422067
   },
   {
     "tick": {
@@ -7153,11 +7153,11 @@
       }
     },
     "positions": [],
-    "stcResult": 9.3723626895,
+    "stcValue": 9.3723626895,
     "macdValue": -13.7792740065,
     "macdSignalLineValue": -8.6463535760,
     "macdBarChartValue": -5.1329204305,
-    "maResult": 6534.0343812477
+    "maValue": 6534.0343812477
   },
   {
     "tick": {
@@ -7182,11 +7182,11 @@
       }
     },
     "positions": [],
-    "stcResult": 5.4659738730,
+    "stcValue": 5.4659738730,
     "macdValue": -12.1658344431,
     "macdSignalLineValue": -9.3502497494,
     "macdBarChartValue": -2.8155846937,
-    "maResult": 6532.5663039210
+    "maValue": 6532.5663039210
   },
   {
     "tick": {
@@ -7211,11 +7211,11 @@
       }
     },
     "positions": [],
-    "stcResult": 3.1221428976,
+    "stcValue": 3.1221428976,
     "macdValue": -12.3049357885,
     "macdSignalLineValue": -9.9411869572,
     "macdBarChartValue": -2.3637488313,
-    "maResult": 6530.1346471286
+    "maValue": 6530.1346471286
   },
   {
     "tick": {
@@ -7240,11 +7240,11 @@
       }
     },
     "positions": [],
-    "stcResult": 1.7549091262,
+    "stcValue": 1.7549091262,
     "macdValue": -13.8700307805,
     "macdSignalLineValue": -10.7269557219,
     "macdBarChartValue": -3.1430750586,
-    "maResult": 6526.6627511956
+    "maValue": 6526.6627511956
   },
   {
     "tick": {
@@ -7269,11 +7269,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.8774545634,
+    "stcValue": 0.8774545634,
     "macdValue": -15.1564454478,
     "macdSignalLineValue": -11.6128536671,
     "macdBarChartValue": -3.5435917807,
-    "maResult": 6523.0793401629
+    "maValue": 6523.0793401629
   },
   {
     "tick": {
@@ -7298,11 +7298,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.4387272781,
+    "stcValue": 0.4387272781,
     "macdValue": -14.5026102280,
     "macdSignalLineValue": -12.1908049793,
     "macdBarChartValue": -2.3118052487,
-    "maResult": 6520.5808665881
+    "maValue": 6520.5808665881
   },
   {
     "tick": {
@@ -7327,11 +7327,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.2193636354,
+    "stcValue": 0.2193636354,
     "macdValue": -14.9954840550,
     "macdSignalLineValue": -12.7517407944,
     "macdBarChartValue": -2.2437432606,
-    "maResult": 6517.3725083075
+    "maValue": 6517.3725083075
   },
   {
     "tick": {
@@ -7356,11 +7356,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.1096818297,
+    "stcValue": 0.1096818297,
     "macdValue": -14.6823619960,
     "macdSignalLineValue": -13.1378650347,
     "macdBarChartValue": -1.5444969613,
-    "maResult": 6514.6072959885
+    "maValue": 6514.6072959885
   },
   {
     "tick": {
@@ -7385,11 +7385,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0548408956,
+    "stcValue": 0.0548408956,
     "macdValue": -13.1517839000,
     "macdSignalLineValue": -13.1406488078,
     "macdBarChartValue": -0.0111350922,
-    "maResult": 6512.7135723648
+    "maValue": 6512.7135723648
   },
   {
     "tick": {
@@ -7414,11 +7414,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0274204911,
+    "stcValue": 0.0274204911,
     "macdValue": -11.7131920326,
     "macdSignalLineValue": -12.8551574528,
     "macdBarChartValue": 1.1419654202,
-    "maResult": 6511.0040667983
+    "maValue": 6511.0040667983
   },
   {
     "tick": {
@@ -7443,11 +7443,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0137102888,
+    "stcValue": 0.0137102888,
     "macdValue": -9.4952010439,
     "macdSignalLineValue": -12.1831661710,
     "macdBarChartValue": 2.6879651271,
-    "maResult": 6510.0728115869
+    "maValue": 6510.0728115869
   },
   {
     "tick": {
@@ -7472,11 +7472,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0068549374,
+    "stcValue": 0.0068549374,
     "macdValue": -7.8631617866,
     "macdSignalLineValue": -11.3191652941,
     "macdBarChartValue": 3.4560035075,
-    "maResult": 6509.1191510702
+    "maValue": 6509.1191510702
   },
   {
     "tick": {
@@ -7503,11 +7503,11 @@
     "positions": [
       "EXIT_SHORT"
     ],
-    "stcResult": 50.0034274682,
+    "stcValue": 50.0034274682,
     "macdValue": -5.1430606422,
     "macdSignalLineValue": -10.0839443637,
     "macdBarChartValue": 4.9408837215,
-    "maResult": 6509.2064359840
+    "maValue": 6509.2064359840
   },
   {
     "tick": {
@@ -7532,11 +7532,11 @@
       }
     },
     "positions": [],
-    "stcResult": 75.0017137343,
+    "stcValue": 75.0017137343,
     "macdValue": -4.2192693975,
     "macdSignalLineValue": -8.9110093705,
     "macdBarChartValue": 4.6917399730,
-    "maResult": 6508.5367101391
+    "maValue": 6508.5367101391
   },
   {
     "tick": {
@@ -7561,11 +7561,11 @@
       }
     },
     "positions": [],
-    "stcResult": 62.5008013433,
+    "stcValue": 62.5008013433,
     "macdValue": -11.2991223626,
     "macdSignalLineValue": -9.3886319689,
     "macdBarChartValue": -1.9104903937,
-    "maResult": 6502.5027842422
+    "maValue": 6502.5027842422
   },
   {
     "tick": {
@@ -7590,11 +7590,11 @@
       }
     },
     "positions": [],
-    "stcResult": 43.7503173858,
+    "stcValue": 43.7503173858,
     "macdValue": -15.6806317603,
     "macdSignalLineValue": -10.6470319272,
     "macdBarChartValue": -5.0335998331,
-    "maResult": 6497.0951540136
+    "maValue": 6497.0951540136
   },
   {
     "tick": {
@@ -7619,11 +7619,11 @@
       }
     },
     "positions": [],
-    "stcResult": 28.1250615260,
+    "stcValue": 28.1250615260,
     "macdValue": -16.1945531454,
     "macdSignalLineValue": -11.7565361708,
     "macdBarChartValue": -4.4380169746,
-    "maResult": 6493.5767913287
+    "maValue": 6493.5767913287
   },
   {
     "tick": {
@@ -7648,11 +7648,11 @@
       }
     },
     "positions": [],
-    "stcResult": 17.1874266556,
+    "stcValue": 17.1874266556,
     "macdValue": -16.7676380192,
     "macdSignalLineValue": -12.7587565405,
     "macdBarChartValue": -4.0088814787,
-    "maResult": 6489.9014703588
+    "maValue": 6489.9014703588
   },
   {
     "tick": {
@@ -7677,11 +7677,11 @@
       }
     },
     "positions": [],
-    "stcResult": 10.1561057501,
+    "stcValue": 10.1561057501,
     "macdValue": -19.8840089498,
     "macdSignalLineValue": -14.1838070224,
     "macdBarChartValue": -5.7002019274,
-    "maResult": 6484.3390495620
+    "maValue": 6484.3390495620
   },
   {
     "tick": {
@@ -7706,11 +7706,11 @@
       }
     },
     "positions": [],
-    "stcResult": 5.8591935623,
+    "stcValue": 5.8591935623,
     "macdValue": -22.0770767089,
     "macdSignalLineValue": -15.7624609597,
     "macdBarChartValue": -6.3146157492,
-    "maResult": 6478.8379283626
+    "maValue": 6478.8379283626
   },
   {
     "tick": {
@@ -7735,11 +7735,11 @@
       }
     },
     "positions": [],
-    "stcResult": 3.3201116008,
+    "stcValue": 3.3201116008,
     "macdValue": -18.9175446954,
     "macdSignalLineValue": -16.3934777068,
     "macdBarChartValue": -2.5240669886,
-    "maResult": 6476.6196261801
+    "maValue": 6476.6196261801
   },
   {
     "tick": {
@@ -7764,11 +7764,11 @@
       }
     },
     "positions": [],
-    "stcResult": 1.6600558004,
+    "stcValue": 1.6600558004,
     "macdValue": -16.2671881246,
     "macdSignalLineValue": -16.3682197904,
     "macdBarChartValue": 0.1010316658,
-    "maResult": 6474.5711933970
+    "maValue": 6474.5711933970
   },
   {
     "tick": {
@@ -7793,11 +7793,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.8300278999,
+    "stcValue": 0.8300278999,
     "macdValue": -14.0320727639,
     "macdSignalLineValue": -15.9009903851,
     "macdBarChartValue": 1.8689176212,
-    "maResult": 6472.6811015972
+    "maValue": 6472.6811015972
   },
   {
     "tick": {
@@ -7822,11 +7822,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.4150139503,
+    "stcValue": 0.4150139503,
     "macdValue": -13.6178966541,
     "macdSignalLineValue": -15.4443716389,
     "macdBarChartValue": 1.8264749848,
-    "maResult": 6469.9134754843
+    "maValue": 6469.9134754843
   },
   {
     "tick": {
@@ -7851,11 +7851,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.2075069743,
+    "stcValue": 0.2075069743,
     "macdValue": -12.4529161374,
     "macdSignalLineValue": -14.8460805386,
     "macdBarChartValue": 2.3931644012,
-    "maResult": 6467.7342459647
+    "maValue": 6467.7342459647
   },
   {
     "tick": {
@@ -7880,11 +7880,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.1037534886,
+    "stcValue": 0.1037534886,
     "macdValue": -11.7381838455,
     "macdSignalLineValue": -14.2245012000,
     "macdBarChartValue": 2.4863173545,
-    "maResult": 6465.4469962751
+    "maValue": 6465.4469962751
   },
   {
     "tick": {
@@ -7909,11 +7909,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0518767412,
+    "stcValue": 0.0518767412,
     "macdValue": -15.5423971167,
     "macdSignalLineValue": -14.4880803833,
     "macdBarChartValue": -1.0543167334,
-    "maResult": 6460.1592559547
+    "maValue": 6460.1592559547
   },
   {
     "tick": {
@@ -7938,11 +7938,11 @@
       }
     },
     "positions": [],
-    "stcResult": 0.0259383675,
+    "stcValue": 0.0259383675,
     "macdValue": -13.9802557077,
     "macdSignalLineValue": -14.3865154482,
     "macdBarChartValue": 0.4062597405,
-    "maResult": 6457.9148854290
+    "maValue": 6457.9148854290
   },
   {
     "tick": {
@@ -7969,11 +7969,11 @@
     "positions": [
       "EXIT_SHORT"
     ],
-    "stcResult": 50.0129691839,
+    "stcValue": 50.0129691839,
     "macdValue": -12.1629933854,
     "macdSignalLineValue": -13.9418110356,
     "macdBarChartValue": 1.7788176502,
-    "maResult": 6456.1145931298
+    "maValue": 6456.1145931298
   },
   {
     "tick": {
@@ -7998,11 +7998,11 @@
       }
     },
     "positions": [],
-    "stcResult": 49.9995257024,
+    "stcValue": 49.9995257024,
     "macdValue": -11.5186272039,
     "macdSignalLineValue": -13.4571742693,
     "macdBarChartValue": 1.9385470654,
-    "maResult": 6453.8211693314
+    "maValue": 6453.8211693314
   },
   {
     "tick": {
@@ -8027,11 +8027,11 @@
       }
     },
     "positions": [],
-    "stcResult": 37.4893245167,
+    "stcValue": 37.4893245167,
     "macdValue": -11.3723366552,
     "macdSignalLineValue": -13.0402067465,
     "macdBarChartValue": 1.6678700913,
-    "maResult": 6451.3001266274
+    "maValue": 6451.3001266274
   },
   {
     "tick": {
@@ -8056,11 +8056,11 @@
       }
     },
     "positions": [],
-    "stcResult": 68.7446622584,
+    "stcValue": 68.7446622584,
     "macdValue": -8.1256525900,
     "macdSignalLineValue": -12.0572959152,
     "macdBarChartValue": 3.9316433252,
-    "maResult": 6450.9562963130
+    "maValue": 6450.9562963130
   },
   {
     "tick": {
@@ -8085,11 +8085,11 @@
       }
     },
     "positions": [],
-    "stcResult": 84.3723311292,
+    "stcValue": 84.3723311292,
     "macdValue": -5.3282128373,
     "macdSignalLineValue": -10.7114792996,
     "macdBarChartValue": 5.3832664623,
-    "maResult": 6450.8827350582
+    "maValue": 6450.8827350582
   },
   {
     "tick": {
@@ -8114,11 +8114,11 @@
       }
     },
     "positions": [],
-    "stcResult": 92.1861655646,
+    "stcValue": 92.1861655646,
     "macdValue": -4.6501318438,
     "macdSignalLineValue": -9.4992098084,
     "macdBarChartValue": 4.8490779646,
-    "maResult": 6449.8542469653
+    "maValue": 6449.8542469653
   },
   {
     "tick": {
@@ -8143,11 +8143,11 @@
       }
     },
     "positions": [],
-    "stcResult": 96.0930827823,
+    "stcValue": 96.0930827823,
     "macdValue": -2.1293748406,
     "macdSignalLineValue": -8.0252428148,
     "macdBarChartValue": 5.8958679742,
-    "maResult": 6450.2459717849
+    "maValue": 6450.2459717849
   },
   {
     "tick": {
@@ -8172,11 +8172,11 @@
       }
     },
     "positions": [],
-    "stcResult": 98.0465413911,
+    "stcValue": 98.0465413911,
     "macdValue": -1.2471820072,
     "macdSignalLineValue": -6.6696306533,
     "macdBarChartValue": 5.4224486461,
-    "maResult": 6449.9753970684
+    "maValue": 6449.9753970684
   },
   {
     "tick": {
@@ -8201,11 +8201,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.0232706956,
+    "stcValue": 99.0232706956,
     "macdValue": -0.3023189872,
     "macdSignalLineValue": -5.3961683201,
     "macdBarChartValue": 5.0938493329,
-    "maResult": 6449.9362062354
+    "maValue": 6449.9362062354
   },
   {
     "tick": {
@@ -8230,11 +8230,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.5116353478,
+    "stcValue": 99.5116353478,
     "macdValue": 0.9732825058,
     "macdSignalLineValue": -4.1222781549,
     "macdBarChartValue": 5.0955606607,
-    "maResult": 6450.3257288327
+    "maValue": 6450.3257288327
   },
   {
     "tick": {
@@ -8259,11 +8259,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.7558176739,
+    "stcValue": 99.7558176739,
     "macdValue": 0.9836544064,
     "macdSignalLineValue": -3.1010916426,
     "macdBarChartValue": 4.0847460490,
-    "maResult": 6450.0985617033
+    "maValue": 6450.0985617033
   },
   {
     "tick": {
@@ -8288,11 +8288,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.8779088370,
+    "stcValue": 99.8779088370,
     "macdValue": 0.3868327755,
     "macdSignalLineValue": -2.4035067590,
     "macdBarChartValue": 2.7903395345,
-    "maResult": 6449.4875350392
+    "maValue": 6449.4875350392
   },
   {
     "tick": {
@@ -8317,11 +8317,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9389544185,
+    "stcValue": 99.9389544185,
     "macdValue": 0.1697509518,
     "macdSignalLineValue": -1.8888552168,
     "macdBarChartValue": 2.0586061686,
-    "maResult": 6449.0654937523
+    "maValue": 6449.0654937523
   },
   {
     "tick": {
@@ -8346,11 +8346,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9694772092,
+    "stcValue": 99.9694772092,
     "macdValue": 0.9042562750,
     "macdSignalLineValue": -1.3302329184,
     "macdBarChartValue": 2.2344891934,
-    "maResult": 6449.2912250021
+    "maValue": 6449.2912250021
   },
   {
     "tick": {
@@ -8375,11 +8375,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9847386046,
+    "stcValue": 99.9847386046,
     "macdValue": 1.0312814278,
     "macdSignalLineValue": -0.8579300492,
     "macdBarChartValue": 1.8892114770,
-    "maResult": 6449.2514320689
+    "maValue": 6449.2514320689
   },
   {
     "tick": {
@@ -8404,11 +8404,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9923693025,
+    "stcValue": 99.9923693025,
     "macdValue": 1.0709573565,
     "macdSignalLineValue": -0.4721525681,
     "macdBarChartValue": 1.5431099246,
-    "maResult": 6449.1989984598
+    "maValue": 6449.1989984598
   },
   {
     "tick": {
@@ -8433,11 +8433,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9961846514,
+    "stcValue": 99.9961846514,
     "macdValue": 2.2055327189,
     "macdSignalLineValue": 0.0633844893,
     "macdBarChartValue": 2.1421482296,
-    "maResult": 6449.9353902314
+    "maValue": 6449.9353902314
   },
   {
     "tick": {
@@ -8462,11 +8462,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9980923252,
+    "stcValue": 99.9980923252,
     "macdValue": 2.8496849590,
     "macdSignalLineValue": 0.6206445832,
     "macdBarChartValue": 2.2290403758,
-    "maResult": 6450.5557448290
+    "maValue": 6450.5557448290
   },
   {
     "tick": {
@@ -8491,11 +8491,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9990461621,
+    "stcValue": 99.9990461621,
     "macdValue": 4.4061212933,
     "macdSignalLineValue": 1.3777399252,
     "macdBarChartValue": 3.0283813681,
-    "maResult": 6451.9463130691
+    "maValue": 6451.9463130691
   },
   {
     "tick": {
@@ -8520,11 +8520,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9995230832,
+    "stcValue": 99.9995230832,
     "macdValue": 3.0808127079,
     "macdSignalLineValue": 1.7183544817,
     "macdBarChartValue": 1.3624582262,
-    "maResult": 6451.6427505253
+    "maValue": 6451.6427505253
   },
   {
     "tick": {
@@ -8549,11 +8549,11 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9997615438,
+    "stcValue": 99.9997615438,
     "macdValue": 3.6132683815,
     "macdSignalLineValue": 2.0973372617,
     "macdBarChartValue": 1.5159311198,
-    "maResult": 6452.4181613034
+    "maValue": 6452.4181613034
   },
   {
     "tick": {
@@ -8578,10 +8578,10 @@
       }
     },
     "positions": [],
-    "stcResult": 99.9998807741,
+    "stcValue": 99.9998807741,
     "macdValue": 4.4294887665,
     "macdSignalLineValue": 2.5637675627,
     "macdBarChartValue": 1.8657212038,
-    "maResult": 6453.5059154424
+    "maValue": 6453.5059154424
   }
 ]

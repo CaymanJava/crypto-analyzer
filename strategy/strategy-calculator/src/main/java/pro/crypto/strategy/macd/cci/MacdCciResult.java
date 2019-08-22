@@ -23,6 +23,6 @@ public class MacdCciResult implements StrategyResult {
 
     private BigDecimal macdBarChartValue;
 
-    private BigDecimal cciMacdResult;
+    private BigDecimal cciMacdValue;
 
 }

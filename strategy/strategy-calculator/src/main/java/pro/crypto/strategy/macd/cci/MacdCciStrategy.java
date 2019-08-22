@@ -329,7 +329,7 @@ public class MacdCciStrategy implements Strategy<MacdCciResult> {
     }
 
     private void addCciMacdResult(BigDecimal cciMacdResult, MacdCciResult macdCciResult) {
-        macdCciResult.setCciMacdResult(cciMacdResult);
+        macdCciResult.setCciMacdValue(cciMacdResult);
     }
 
 }

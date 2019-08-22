@@ -305,15 +305,15 @@ public class LrsiMaPsarStrategy implements Strategy<LrsiMaPsarResult> {
     }
 
     private void addLrsiResult(RSIResult lrsiResult, LrsiMaPsarResult lrsiMaPsarResult) {
-        lrsiMaPsarResult.setLrsiResult(lrsiResult.getIndicatorValue());
+        lrsiMaPsarResult.setLrsiValue(lrsiResult.getIndicatorValue());
     }
 
     private void addMaResult(MAResult maResult, LrsiMaPsarResult lrsiMaPsarResult) {
-        lrsiMaPsarResult.setMaResult(maResult.getIndicatorValue());
+        lrsiMaPsarResult.setMaValue(maResult.getIndicatorValue());
     }
 
     private void addPsarResult(PSARResult psarResult, LrsiMaPsarResult lrsiMaPsarResult) {
-        lrsiMaPsarResult.setPsarResult(psarResult.getIndicatorValue());
+        lrsiMaPsarResult.setPsarValue(psarResult.getIndicatorValue());
     }
 
 }

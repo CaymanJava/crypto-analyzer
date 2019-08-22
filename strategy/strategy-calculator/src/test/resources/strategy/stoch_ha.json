@@ -138,7 +138,7 @@
     "haHigh": 6438.3195097725,
     "haLow": 6376.0000000100,
     "haClose": 6377.72361942500000000000,
-    "fastStochastic": 10.03813384611836569124
+    "fastStochasticValue": 10.03813384611836569124
   },
   {
     "tick": {
@@ -167,7 +167,7 @@
     "haHigh": 6408.0215645988,
     "haLow": 6363.0000000000,
     "haClose": 6375.25630549750000000000,
-    "fastStochastic": 4.76287678113843944972
+    "fastStochasticValue": 4.76287678113843944972
   },
   {
     "tick": {
@@ -196,8 +196,8 @@
     "haHigh": 6391.6399912000,
     "haLow": 6370.0000000000,
     "haClose": 6379.20838559750000000000,
-    "fastStochastic": 22.03076245384615384615,
-    "slowStochastic": 12.27725769370000000000
+    "fastStochasticValue": 22.03076245384615384615,
+    "slowStochasticValue": 12.27725769370000000000
   },
   {
     "tick": {
@@ -226,8 +226,8 @@
     "haHigh": 6391.6399893500,
     "haLow": 6371.0000001300,
     "haClose": 6382.15999737000000000000,
-    "fastStochastic": 30.58103975535168195719,
-    "slowStochastic": 18.37851838091722731906
+    "fastStochasticValue": 30.58103975535168195719,
+    "slowStochasticValue": 18.37851838091722731906
   },
   {
     "tick": {
@@ -256,8 +256,8 @@
     "haHigh": 6383.7918288465,
     "haLow": 6360.0000000000,
     "haClose": 6369.74999998500000000000,
-    "fastStochastic": 39.97479387871347568758,
-    "slowStochastic": 25.57727688018264344190
+    "fastStochasticValue": 39.97479387871347568758,
+    "slowStochasticValue": 25.57727688018264344190
   },
   {
     "tick": {
@@ -286,8 +286,8 @@
     "haHigh": 6379.9999991800,
     "haLow": 6353.9053000100,
     "haClose": 6359.47632480000000000000,
-    "fastStochastic": 0.20533423721112721622,
-    "slowStochastic": 17.11996266585880470001
+    "fastStochasticValue": 0.20533423721112721622,
+    "slowStochasticValue": 17.11996266585880470001
   },
   {
     "tick": {
@@ -316,8 +316,8 @@
     "haHigh": 6378.9999997500,
     "haLow": 6340.0000000100,
     "haClose": 6359.49999988000000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 11.41330844390586980001
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 11.41330844390586980001
   },
   {
     "tick": {
@@ -346,8 +346,8 @@
     "haHigh": 6370.3999997600,
     "haLow": 6340.0000000000,
     "haClose": 6352.44999988000000000000,
-    "fastStochastic": -21.30132120176357085170,
-    "slowStochastic": 0.50843189534938958277
+    "fastStochasticValue": -21.30132120176357085170,
+    "slowStochasticValue": 0.50843189534938958277
   },
   {
     "tick": {
@@ -376,8 +376,8 @@
     "haHigh": 6358.1309048120,
     "haLow": 6323.0000000000,
     "haClose": 6330.64499979000000000000,
-    "fastStochastic": -10.52631579870729456027,
-    "slowStochastic": -3.16981733600283846491
+    "fastStochasticValue": -10.52631579870729456027,
+    "slowStochasticValue": -3.16981733600283846491
   },
   {
     "tick": {
@@ -406,8 +406,8 @@
     "haHigh": 6350.5099979600,
     "haLow": 6325.0000000000,
     "haClose": 6331.37750074250000000000,
-    "fastStochastic": 5.26316675992625865157,
-    "slowStochastic": -0.35882263735980609275
+    "fastStochasticValue": 5.26316675992625865157,
+    "slowStochasticValue": -0.35882263735980609275
   },
   {
     "tick": {
@@ -436,8 +436,8 @@
     "haHigh": 6367.3999968300,
     "haLow": 6337.8827265218,
     "haClose": 6352.10499818750000000000,
-    "fastStochastic": 49.12499657645087757344,
-    "slowStochastic": 16.13578376724375512931
+    "fastStochasticValue": 49.12499657645087757344,
+    "slowStochasticValue": 16.13578376724375512931
   },
   {
     "tick": {
@@ -468,8 +468,8 @@
     "haHigh": 6369.9999999900,
     "haLow": 6344.9938623547,
     "haClose": 6361.51927306500000000000,
-    "fastStochastic": 77.14577108681403081931,
-    "slowStochastic": 36.47244620710051369264
+    "fastStochasticValue": 77.14577108681403081931,
+    "slowStochasticValue": 36.47244620710051369264
   },
   {
     "tick": {
@@ -498,8 +498,8 @@
     "haHigh": 6372.9999999900,
     "haLow": 6352.0000000600,
     "haClose": 6362.50000007250000000000,
-    "fastStochastic": 64.00000049280000009856,
-    "slowStochastic": 45.64829763566700916128
+    "fastStochasticValue": 64.00000049280000009856,
+    "slowStochasticValue": 45.64829763566700916128
   },
   {
     "tick": {
@@ -528,8 +528,8 @@
     "haHigh": 6372.9999999900,
     "haLow": 6352.0000000900,
     "haClose": 6364.34132589500000000000,
-    "fastStochastic": 100.00000000000000000000,
-    "slowStochastic": 63.76553175711133944085
+    "fastStochasticValue": 100.00000000000000000000,
+    "slowStochasticValue": 63.76553175711133944085
   },
   {
     "tick": {
@@ -558,8 +558,8 @@
     "haHigh": 6388.4999999800,
     "haLow": 6359.0000000400,
     "haClose": 6376.31822651750000000000,
-    "fastStochastic": 92.31527026487227639789,
-    "slowStochastic": 73.28211125969831842653
+    "fastStochasticValue": 92.31527026487227639789,
+    "slowStochasticValue": 73.28211125969831842653
   },
   {
     "tick": {
@@ -588,8 +588,8 @@
     "haHigh": 6391.6399903200,
     "haLow": 6360.0000000000,
     "haClose": 6379.10322409250000000000,
-    "fastStochastic": 70.63573869808513923686,
-    "slowStochastic": 72.39998707249392536331
+    "fastStochasticValue": 70.63573869808513923686,
+    "slowStochasticValue": 72.39998707249392536331
   },
   {
     "tick": {
@@ -618,8 +618,8 @@
     "haHigh": 6385.2500000000,
     "haLow": 6373.5500000000,
     "haClose": 6379.40000000000000000000,
-    "fastStochastic": 54.36429171312314040917,
-    "slowStochastic": 66.38808861937033037860
+    "fastStochasticValue": 54.36429171312314040917,
+    "slowStochasticValue": 66.38808861937033037860
   },
   {
     "tick": {
@@ -648,8 +648,8 @@
     "haHigh": 6391.6399909100,
     "haLow": 6376.6543099495,
     "haClose": 6386.09499545500000000000,
-    "fastStochastic": 100.00000000000000000000,
-    "slowStochastic": 77.59205907958022025240
+    "fastStochasticValue": 100.00000000000000000000,
+    "slowStochasticValue": 77.59205907958022025240
   },
   {
     "tick": {
@@ -678,8 +678,8 @@
     "haHigh": 6391.6399909200,
     "haLow": 6373.5500000000,
     "haClose": 6386.86749318250000000000,
-    "fastStochastic": 99.99999996936273653763,
-    "slowStochastic": 85.06137270950772568081
+    "fastStochasticValue": 99.99999996936273653763,
+    "slowStochasticValue": 85.06137270950772568081
   },
   {
     "tick": {
@@ -708,8 +708,8 @@
     "haHigh": 6384.1210729424,
     "haLow": 6358.0000000300,
     "haClose": 6369.00000001500000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 56.70758180633848378721
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 56.70758180633848378721
   },
   {
     "tick": {
@@ -740,8 +740,8 @@
     "haHigh": 6377.0699996800,
     "haLow": 6356.0000000000,
     "haClose": 6361.26749992500000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 37.80505453755898919147
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 37.80505453755898919147
   },
   {
     "tick": {
@@ -770,8 +770,8 @@
     "haHigh": 6373.7799999700,
     "haLow": 6352.0000001000,
     "haClose": 6358.47000004250000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 25.20336969170599279431
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 25.20336969170599279431
   },
   {
     "tick": {
@@ -800,8 +800,8 @@
     "haHigh": 6369.4508274800,
     "haLow": 6342.7072800000,
     "haClose": 6355.76174909000000000000,
-    "fastStochastic": 33.06910362365838038061,
-    "slowStochastic": 27.82528100235678865641
+    "fastStochasticValue": 33.06910362365838038061,
+    "slowStochasticValue": 27.82528100235678865641
   },
   {
     "tick": {
@@ -830,8 +830,8 @@
     "haHigh": 6396.8752500400,
     "haLow": 6359.7268791061,
     "haClose": 6371.50131252750000000000,
-    "fastStochastic": 48.53923831848286851548,
-    "slowStochastic": 34.72993344106548194277
+    "fastStochasticValue": 48.53923831848286851548,
+    "slowStochasticValue": 34.72993344106548194277
   },
   {
     "tick": {
@@ -862,8 +862,8 @@
     "haHigh": 6379.9999999900,
     "haLow": 6359.1000000000,
     "haClose": 6366.80000004500000000000,
-    "fastStochastic": 30.26275488613455155426,
-    "slowStochastic": 33.24087392275517181327
+    "fastStochasticValue": 30.26275488613455155426,
+    "slowStochasticValue": 33.24087392275517181327
   },
   {
     "tick": {
@@ -892,8 +892,8 @@
     "haHigh": 6377.7507052000,
     "haLow": 6350.0000000000,
     "haClose": 6369.47005093500000000000,
-    "fastStochastic": 54.85007377618170016253,
-    "slowStochastic": 40.44394054056401459636
+    "fastStochasticValue": 54.85007377618170016253,
+    "slowStochasticValue": 40.44394054056401459636
   },
   {
     "tick": {
@@ -922,8 +922,8 @@
     "haHigh": 6373.2039549700,
     "haLow": 6354.0000000000,
     "haClose": 6363.83492149000000000000,
-    "fastStochastic": 56.17425014732931645965,
-    "slowStochastic": 45.68737707615244855079
+    "fastStochasticValue": 56.17425014732931645965,
+    "slowStochasticValue": 45.68737707615244855079
   },
   {
     "tick": {
@@ -952,8 +952,8 @@
     "haHigh": 6377.9988073700,
     "haLow": 6343.0000000600,
     "haClose": 6361.03363461750000000000,
-    "fastStochastic": 12.99297911860937225112,
-    "slowStochastic": 34.78924442363808978423
+    "fastStochasticValue": 12.99297911860937225112,
+    "slowStochasticValue": 34.78924442363808978423
   },
   {
     "tick": {
@@ -982,8 +982,8 @@
     "haHigh": 6364.2930109200,
     "haLow": 6343.0000000500,
     "haClose": 6353.64650548500000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 23.19282961575872652282
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 23.19282961575872652282
   },
   {
     "tick": {
@@ -1012,8 +1012,8 @@
     "haHigh": 6364.2930092600,
     "haLow": 6334.0000000000,
     "haClose": 6352.34451962250000000000,
-    "fastStochastic": 38.83075538008611254774,
-    "slowStochastic": 28.40547153720118853113
+    "fastStochasticValue": 38.83075538008611254774,
+    "slowStochasticValue": 28.40547153720118853113
   },
   {
     "tick": {
@@ -1042,8 +1042,8 @@
     "haHigh": 6360.9999999800,
     "haLow": 6337.0000000000,
     "haClose": 6347.98695626500000000000,
-    "fastStochastic": -2.27278887718633178943,
-    "slowStochastic": 18.17938473240534842428
+    "fastStochasticValue": -2.27278887718633178943,
+    "slowStochasticValue": 18.17938473240534842428
   },
   {
     "tick": {
@@ -1072,8 +1072,8 @@
     "haHigh": 6360.8021618700,
     "haLow": 6331.0000000000,
     "haClose": 6346.40108092750000000000,
-    "fastStochastic": 63.41046402599385789478,
-    "slowStochastic": 33.25641116360151824778
+    "fastStochasticValue": 63.41046402599385789478,
+    "slowStochasticValue": 33.25641116360151824778
   },
   {
     "tick": {
@@ -1102,8 +1102,8 @@
     "haHigh": 6365.6536014900,
     "haLow": 6330.0000000000,
     "haClose": 6352.68044064750000000000,
-    "fastStochastic": 68.06044387074344898109,
-    "slowStochastic": 44.85775539931549515888
+    "fastStochasticValue": 68.06044387074344898109,
+    "slowStochasticValue": 44.85775539931549515888
   },
   {
     "tick": {
@@ -1132,8 +1132,8 @@
     "haHigh": 6364.3099786800,
     "haLow": 6325.0000000000,
     "haClose": 6336.07749467000000000000,
-    "fastStochastic": 7.37942000227936016992,
-    "slowStochastic": 32.36497693363678349589
+    "fastStochasticValue": 7.37942000227936016992,
+    "slowStochasticValue": 32.36497693363678349589
   },
   {
     "tick": {
@@ -1162,8 +1162,8 @@
     "haHigh": 6352.2695569500,
     "haLow": 6330.0000000000,
     "haClose": 6342.88477847500000000000,
-    "fastStochastic": 29.51768000911744067967,
-    "slowStochastic": 31.41587795879700255715
+    "fastStochasticValue": 29.51768000911744067967,
+    "slowStochasticValue": 31.41587795879700255715
   },
   {
     "tick": {
@@ -1192,8 +1192,8 @@
     "haHigh": 6366.3999998600,
     "haLow": 6337.0000000000,
     "haClose": 6349.44999993000000000000,
-    "fastStochastic": 100.00000000000000000000,
-    "slowStochastic": 54.27725197253133503810
+    "fastStochasticValue": 100.00000000000000000000,
+    "slowStochasticValue": 54.27725197253133503810
   },
   {
     "tick": {
@@ -1222,8 +1222,8 @@
     "haHigh": 6365.3999993100,
     "haLow": 6337.0005550000,
     "haClose": 6350.35013868750000000000,
-    "fastStochastic": 60.38647361000256776329,
-    "slowStochastic": 56.31365918502174594650
+    "fastStochasticValue": 60.38647361000256776329,
+    "slowStochasticValue": 56.31365918502174594650
   },
   {
     "tick": {
@@ -1252,8 +1252,8 @@
     "haHigh": 6363.6058869600,
     "haLow": 6316.3000004500,
     "haClose": 6342.41913919750000000000,
-    "fastStochastic": 70.79973921700291692678,
-    "slowStochastic": 61.14235252901546960659
+    "fastStochasticValue": 70.79973921700291692678,
+    "slowStochasticValue": 61.14235252901546960659
   },
   {
     "tick": {
@@ -1282,8 +1282,8 @@
     "haHigh": 6368.9999996500,
     "haLow": 6325.0000000300,
     "haClose": 6340.99999992750000000000,
-    "fastStochastic": 63.94686918704924762124,
-    "slowStochastic": 62.07719141502672894481
+    "fastStochasticValue": 63.94686918704924762124,
+    "slowStochasticValue": 62.07719141502672894481
   },
   {
     "tick": {
@@ -1312,8 +1312,8 @@
     "haHigh": 6367.2999998000,
     "haLow": 6339.0000080000,
     "haClose": 6351.57500194250000000000,
-    "fastStochastic": 63.94686914909858290852,
-    "slowStochastic": 62.70041732638401359938
+    "fastStochasticValue": 63.94686914909858290852,
+    "slowStochasticValue": 62.70041732638401359938
   },
   {
     "tick": {
@@ -1342,8 +1342,8 @@
     "haHigh": 6363.1939929800,
     "haLow": 6332.0000000000,
     "haClose": 6352.00627473000000000000,
-    "fastStochastic": 88.29431915816803276156,
-    "slowStochastic": 71.23171793697868665344
+    "fastStochasticValue": 88.29431915816803276156,
+    "slowStochasticValue": 71.23171793697868665344
   },
   {
     "tick": {
@@ -1372,8 +1372,8 @@
     "haHigh": 6363.3602946500,
     "haLow": 6347.6500000000,
     "haClose": 6354.21225304500000000000,
-    "fastStochastic": 59.48766608330422896857,
-    "slowStochastic": 67.31703398575386742515
+    "fastStochasticValue": 59.48766608330422896857,
+    "slowStochasticValue": 67.31703398575386742515
   },
   {
     "tick": {
@@ -1402,8 +1402,8 @@
     "haHigh": 6367.2000000000,
     "haLow": 6335.0000000600,
     "haClose": 6351.05000000000000000000,
-    "fastStochastic": 93.18181878202479857203,
-    "slowStochastic": 75.93862891784417780744
+    "fastStochasticValue": 93.18181878202479857203,
+    "slowStochasticValue": 75.93862891784417780744
   },
   {
     "tick": {
@@ -1434,8 +1434,8 @@
     "haHigh": 6364.3726470400,
     "haLow": 6332.0000000000,
     "haClose": 6345.84316166000000000000,
-    "fastStochastic": 56.65722281392194228851,
-    "slowStochastic": 69.51149354987009930113
+    "fastStochasticValue": 56.65722281392194228851,
+    "slowStochasticValue": 69.51149354987009930113
   },
   {
     "tick": {
@@ -1464,8 +1464,8 @@
     "haHigh": 6351.9999995100,
     "haLow": 6317.0000000300,
     "haClose": 6332.99999988750000000000,
-    "fastStochastic": 25.89641429834447069622,
-    "slowStochastic": 54.97313379936155643283
+    "fastStochasticValue": 25.89641429834447069622,
+    "slowStochasticValue": 54.97313379936155643283
   },
   {
     "tick": {
@@ -1494,8 +1494,8 @@
     "haHigh": 6343.8446096800,
     "haLow": 6328.0000000000,
     "haClose": 6334.67230484250000000000,
-    "fastStochastic": 11.95219120236186725241,
-    "slowStochastic": 40.63281960036166003936
+    "fastStochasticValue": 11.95219120236186725241,
+    "slowStochasticValue": 40.63281960036166003936
   },
   {
     "tick": {
@@ -1524,8 +1524,8 @@
     "haHigh": 6349.8199999900,
     "haLow": 6325.0000000000,
     "haClose": 6333.91047442000000000000,
-    "fastStochastic": 15.93625492984238342421,
-    "slowStochastic": 32.40063137685523450098
+    "fastStochasticValue": 15.93625492984238342421,
+    "slowStochasticValue": 32.40063137685523450098
   },
   {
     "tick": {
@@ -1554,8 +1554,8 @@
     "haHigh": 6349.8200000000,
     "haLow": 6335.8323564480,
     "haClose": 6343.43631247000000000000,
-    "fastStochastic": 46.44030122563336998550,
-    "slowStochastic": 37.08052132644794632915
+    "fastStochasticValue": 46.44030122563336998550,
+    "slowStochasticValue": 37.08052132644794632915
   },
   {
     "tick": {
@@ -1584,8 +1584,8 @@
     "haHigh": 6339.6343344590,
     "haLow": 6325.0000000000,
     "haClose": 6331.50000000000000000000,
-    "fastStochastic": 17.14285731183673720443,
-    "slowStochastic": 30.43463332157754328758
+    "fastStochasticValue": 17.14285731183673720443,
+    "slowStochasticValue": 30.43463332157754328758
   },
   {
     "tick": {
@@ -1614,8 +1614,8 @@
     "haHigh": 6335.5671672295,
     "haLow": 6317.7000000400,
     "haClose": 6323.22669377000000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 20.28975554771836219172
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 20.28975554771836219172
   },
   {
     "tick": {
@@ -1644,8 +1644,8 @@
     "haHigh": 6339.5031735400,
     "haLow": 6270.0000000000,
     "haClose": 6300.13325588750000000000,
-    "fastStochastic": 63.93115761713856176397,
-    "slowStochastic": 34.83688957085842871580
+    "fastStochasticValue": 63.93115761713856176397,
+    "slowStochasticValue": 34.83688957085842871580
   },
   {
     "tick": {
@@ -1674,8 +1674,8 @@
     "haHigh": 6397.4556962400,
     "haLow": 6314.7650931937,
     "haClose": 6385.01892406000000000000,
-    "fastStochastic": 81.59698080827022909996,
-    "slowStochastic": 50.42358664999569551052
+    "fastStochasticValue": 81.59698080827022909996,
+    "slowStochasticValue": 50.42358664999569551052
   },
   {
     "tick": {
@@ -1704,8 +1704,8 @@
     "haHigh": 6394.9999999900,
     "haLow": 6349.8920086269,
     "haClose": 6381.80854999500000000000,
-    "fastStochastic": 85.51991257789860549900,
-    "slowStochastic": 62.12236195929666550668
+    "fastStochasticValue": 85.51991257789860549900,
+    "slowStochasticValue": 62.12236195929666550668
   },
   {
     "tick": {
@@ -1734,8 +1734,8 @@
     "haHigh": 6387.9999999600,
     "haLow": 6365.0000000000,
     "haClose": 6376.49999998000000000000,
-    "fastStochastic": 92.58118973184622886024,
-    "slowStochastic": 72.27530455014651995787
+    "fastStochasticValue": 92.58118973184622886024,
+    "slowStochasticValue": 72.27530455014651995787
   },
   {
     "tick": {
@@ -1764,8 +1764,8 @@
     "haHigh": 6387.9999999300,
     "haLow": 6368.8199992500,
     "haClose": 6374.40499978500000000000,
-    "fastStochastic": 64.96375012858350378582,
-    "slowStochastic": 69.83811974295884790052
+    "fastStochasticValue": 64.96375012858350378582,
+    "slowStochasticValue": 69.83811974295884790052
   },
   {
     "tick": {
@@ -1794,8 +1794,8 @@
     "haHigh": 6388.0000000000,
     "haLow": 6360.0000000100,
     "haClose": 6374.70499981500000000000,
-    "fastStochastic": 58.73605940978126092625,
-    "slowStochastic": 66.13743296523298557576
+    "fastStochasticValue": 58.73605940978126092625,
+    "slowStochasticValue": 66.13743296523298557576
   },
   {
     "tick": {
@@ -1824,8 +1824,8 @@
     "haHigh": 6379.9999999900,
     "haLow": 6371.9999999975,
     "haClose": 6371.99999999750000000000,
-    "fastStochastic": 39.99999999428571428245,
-    "slowStochastic": 57.42495530825056181132
+    "fastStochasticValue": 39.99999999428571428245,
+    "slowStochasticValue": 57.42495530825056181132
   },
   {
     "tick": {
@@ -1854,8 +1854,8 @@
     "haHigh": 6386.9999999900,
     "haLow": 6367.0000000000,
     "haClose": 6370.36170327000000000000,
-    "fastStochastic": 1.59576100056991464306,
-    "slowStochastic": 38.81522387235701275523
+    "fastStochasticValue": 1.59576100056991464306,
+    "slowStochasticValue": 38.81522387235701275523
   },
   {
     "tick": {
@@ -1884,8 +1884,8 @@
     "haHigh": 6387.0000000000,
     "haLow": 6361.3323514100,
     "haClose": 6378.33308780750000000000,
-    "fastStochastic": 64.28571366581632630922,
-    "slowStochastic": 47.30538713684345060656
+    "fastStochasticValue": 64.28571366581632630922,
+    "slowStochasticValue": 47.30538713684345060656
   },
   {
     "tick": {
@@ -1914,8 +1914,8 @@
     "haHigh": 6386.9999985000,
     "haLow": 6355.0000000000,
     "haClose": 6363.74999962500000000000,
-    "fastStochastic": 9.09090909090909090909,
-    "slowStochastic": 34.56722778819866404074
+    "fastStochasticValue": 9.09090909090909090909,
+    "slowStochasticValue": 34.56722778819866404074
   },
   {
     "tick": {
@@ -1944,8 +1944,8 @@
     "haHigh": 6384.8999963700,
     "haLow": 6358.0000000000,
     "haClose": 6370.52499904750000000000,
-    "fastStochastic": 81.87499943750000000000,
-    "slowStochastic": 50.33648500463244269383
+    "fastStochasticValue": 81.87499943750000000000,
+    "slowStochasticValue": 50.33648500463244269383
   },
   {
     "tick": {
@@ -1974,8 +1974,8 @@
     "haHigh": 6381.1943034000,
     "haLow": 6356.5000000000,
     "haClose": 6365.67357585000000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 33.55765666975496179589
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 33.55765666975496179589
   },
   {
     "tick": {
@@ -2004,8 +2004,8 @@
     "haHigh": 6370.0000000000,
     "haLow": 6363.5162500000,
     "haClose": 6363.51625000000000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 22.37177111316997453059
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 22.37177111316997453059
   },
   {
     "tick": {
@@ -2034,8 +2034,8 @@
     "haHigh": 6386.7275035600,
     "haLow": 6355.0000000000,
     "haClose": 6374.11375176000000000000,
-    "fastStochastic": 99.14845302258373543361,
-    "slowStochastic": 47.96399841630789483160
+    "fastStochasticValue": 99.14845302258373543361,
+    "slowStochasticValue": 47.96399841630789483160
   },
   {
     "tick": {
@@ -2066,8 +2066,8 @@
     "haHigh": 6386.9999950300,
     "haLow": 6355.0000000000,
     "haClose": 6370.99999750750000000000,
-    "fastStochastic": 99.99999990624998543945,
-    "slowStochastic": 65.30933224628859170088
+    "fastStochasticValue": 99.99999990624998543945,
+    "slowStochasticValue": 65.30933224628859170088
   },
   {
     "tick": {
@@ -2096,8 +2096,8 @@
     "haHigh": 6385.7931560000,
     "haLow": 6355.0000000200,
     "haClose": 6367.69828901500000000000,
-    "fastStochastic": 62.50000976953276733056,
-    "slowStochastic": 64.37289142070331691077
+    "fastStochasticValue": 62.50000976953276733056,
+    "slowStochasticValue": 64.37289142070331691077
   },
   {
     "tick": {
@@ -2126,8 +2126,8 @@
     "haHigh": 6391.0000000000,
     "haLow": 6360.0000000000,
     "haClose": 6379.25000000500000000000,
-    "fastStochastic": 100.00000000000000000000,
-    "slowStochastic": 76.24859428046887794051
+    "fastStochasticValue": 100.00000000000000000000,
+    "slowStochasticValue": 76.24859428046887794051
   },
   {
     "tick": {
@@ -2156,8 +2156,8 @@
     "haHigh": 6395.0000000000,
     "haLow": 6374.1605865574,
     "haClose": 6385.50000000000000000000,
-    "fastStochastic": 52.50000000000000000000,
-    "slowStochastic": 68.33239618697925196034
+    "fastStochasticValue": 52.50000000000000000000,
+    "slowStochasticValue": 68.33239618697925196034
   },
   {
     "tick": {
@@ -2186,8 +2186,8 @@
     "haHigh": 6394.9999995000,
     "haLow": 6376.0000000000,
     "haClose": 6380.75249987500000000000,
-    "fastStochastic": 52.52500000000000000000,
-    "slowStochastic": 63.06326412465283464023
+    "fastStochasticValue": 52.52500000000000000000,
+    "slowStochasticValue": 63.06326412465283464023
   },
   {
     "tick": {
@@ -2216,8 +2216,8 @@
     "haHigh": 6390.9999999600,
     "haLow": 6370.0000000000,
     "haClose": 6377.68564099250000000000,
-    "fastStochastic": 46.85640999842820499921,
-    "slowStochastic": 57.66097941591129142656
+    "fastStochasticValue": 46.85640999842820499921,
+    "slowStochasticValue": 57.66097941591129142656
   },
   {
     "tick": {
@@ -2246,8 +2246,8 @@
     "haHigh": 6390.9999998900,
     "haLow": 6370.0000000300,
     "haClose": 6375.99999998000000000000,
-    "fastStochastic": 37.14285714285714285714,
-    "slowStochastic": 50.82160532489324190342
+    "fastStochasticValue": 37.14285714285714285714,
+    "slowStochasticValue": 50.82160532489324190342
   },
   {
     "tick": {
@@ -2276,8 +2276,8 @@
     "haHigh": 6386.8999999900,
     "haLow": 6363.0000000000,
     "haClose": 6377.47499989250000000000,
-    "fastStochastic": 71.87499868750000000000,
-    "slowStochastic": 57.83940311242882793561
+    "fastStochasticValue": 71.87499868750000000000,
+    "slowStochasticValue": 57.83940311242882793561
   },
   {
     "tick": {
@@ -2306,8 +2306,8 @@
     "haHigh": 6385.9999996700,
     "haLow": 6363.0000000000,
     "haClose": 6377.24999987000000000000,
-    "fastStochastic": 53.12500023632812869263,
-    "slowStochastic": 56.26793548706192818795
+    "fastStochasticValue": 53.12500023632812869263,
+    "slowStochasticValue": 56.26793548706192818795
   },
   {
     "tick": {
@@ -2336,8 +2336,8 @@
     "haHigh": 6379.9999999900,
     "haLow": 6376.2499999925,
     "haClose": 6376.24999999250000000000,
-    "fastStochastic": 10.71428569387755099125,
-    "slowStochastic": 41.08338555600046912238
+    "fastStochasticValue": 10.71428569387755099125,
+    "slowStochasticValue": 41.08338555600046912238
   },
   {
     "tick": {
@@ -2366,8 +2366,8 @@
     "haHigh": 6385.0000000000,
     "haLow": 6370.0000000000,
     "haClose": 6377.74999999750000000000,
-    "fastStochastic": 46.42857161096938847167,
-    "slowStochastic": 42.86511424099010890548
+    "fastStochasticValue": 46.42857161096938847167,
+    "slowStochasticValue": 42.86511424099010890548
   },
   {
     "tick": {
@@ -2396,8 +2396,8 @@
     "haHigh": 6385.7699982700,
     "haLow": 6360.0000000000,
     "haClose": 6370.58438861500000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 28.57674282732673927032
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 28.57674282732673927032
   },
   {
     "tick": {
@@ -2426,8 +2426,8 @@
     "haHigh": 6385.7599968900,
     "haLow": 6361.6700000000,
     "haClose": 6377.29124872750000000000,
-    "fastStochastic": 84.61538568934912605712,
-    "slowStochastic": 47.25629044800086819925
+    "fastStochasticValue": 84.61538568934912605712,
+    "slowStochasticValue": 47.25629044800086819925
   },
   {
     "tick": {
@@ -2458,8 +2458,8 @@
     "haHigh": 6385.7000000000,
     "haLow": 6375.6115536889,
     "haClose": 6384.77499999750000000000,
-    "fastStochastic": 99.72837301242085027117,
-    "slowStochastic": 64.74698463614086222322
+    "fastStochasticValue": 99.72837301242085027117,
+    "slowStochasticValue": 64.74698463614086222322
   },
   {
     "tick": {
@@ -2488,8 +2488,8 @@
     "haHigh": 6394.2816911700,
     "haLow": 6380.1932768432,
     "haClose": 6389.29010625000000000000,
-    "fastStochastic": 93.86565461554503584311,
-    "slowStochastic": 74.45320796260892009652
+    "fastStochasticValue": 93.86565461554503584311,
+    "slowStochasticValue": 74.45320796260892009652
   },
   {
     "tick": {
@@ -2518,8 +2518,8 @@
     "haHigh": 6413.0294994000,
     "haLow": 6384.7416915466,
     "haClose": 6401.18910906000000000000,
-    "fastStochastic": 90.51565740407498547874,
-    "slowStochastic": 79.80735777643094189059
+    "fastStochasticValue": 90.51565740407498547874,
+    "slowStochasticValue": 79.80735777643094189059
   },
   {
     "tick": {
@@ -2548,8 +2548,8 @@
     "haHigh": 6418.7519135800,
     "haLow": 6392.9654003033,
     "haClose": 6406.68797839750000000000,
-    "fastStochastic": 67.14911536082389338847,
-    "slowStochastic": 75.58794363789525905655
+    "fastStochasticValue": 67.14911536082389338847,
+    "slowStochasticValue": 75.58794363789525905655
   },
   {
     "tick": {
@@ -2578,8 +2578,8 @@
     "haHigh": 6436.4216418300,
     "haLow": 6395.9000000000,
     "haClose": 6415.58041046500000000000,
-    "fastStochastic": 28.19309381803718047783,
-    "slowStochastic": 59.78966036460923286364
+    "fastStochasticValue": 28.19309381803718047783,
+    "slowStochasticValue": 59.78966036460923286364
   },
   {
     "tick": {
@@ -2608,8 +2608,8 @@
     "haHigh": 6415.0000000000,
     "haLow": 6400.0000000600,
     "haClose": 6406.25000003000000000000,
-    "fastStochastic": 47.90854381536884094984,
-    "slowStochastic": 55.82928818152910222571
+    "fastStochasticValue": 47.90854381536884094984,
+    "slowStochasticValue": 55.82928818152910222571
   },
   {
     "tick": {
@@ -2638,8 +2638,8 @@
     "haHigh": 6440.5000000000,
     "haLow": 6406.9767749689,
     "haClose": 6418.06788924000000000000,
-    "fastStochastic": 44.01647865203302393875,
-    "slowStochastic": 51.89168500503040946339
+    "fastStochasticValue": 44.01647865203302393875,
+    "slowStochasticValue": 51.89168500503040946339
   },
   {
     "tick": {
@@ -2668,8 +2668,8 @@
     "haHigh": 6457.0000000000,
     "haLow": 6412.5223321045,
     "haClose": 6446.09442030000000000000,
-    "fastStochastic": 93.45335515548281505728,
-    "slowStochastic": 65.74557505518121132802
+    "fastStochasticValue": 93.45335515548281505728,
+    "slowStochasticValue": 65.74557505518121132802
   },
   {
     "tick": {
@@ -2698,8 +2698,8 @@
     "haHigh": 6453.8921993700,
     "haLow": 6429.3083762023,
     "haClose": 6439.61054984250000000000,
-    "fastStochastic": 44.35351882160392798691,
-    "slowStochastic": 58.61488964398878354765
+    "fastStochasticValue": 44.35351882160392798691,
+    "slowStochasticValue": 58.61488964398878354765
   },
   {
     "tick": {
@@ -2728,8 +2728,8 @@
     "haHigh": 6449.8619518500,
     "haLow": 6428.0000000000,
     "haClose": 6436.18548796250000000000,
-    "fastStochastic": 49.12280696398891961122,
-    "slowStochastic": 55.45086208398882890217
+    "fastStochasticValue": 49.12280696398891961122,
+    "slowStochasticValue": 55.45086208398882890217
   },
   {
     "tick": {
@@ -2758,8 +2758,8 @@
     "haHigh": 6449.8619498100,
     "haLow": 6412.9520107100,
     "haClose": 6434.90098970750000000000,
-    "fastStochastic": 83.07216146391752577320,
-    "slowStochastic": 64.65796187729839452585
+    "fastStochasticValue": 83.07216146391752577320,
+    "slowStochasticValue": 64.65796187729839452585
   },
   {
     "tick": {
@@ -2788,8 +2788,8 @@
     "haHigh": 6448.7899977900,
     "haLow": 6405.9913770100,
     "haClose": 6420.93334638000000000000,
-    "fastStochastic": 19.62143342305504569748,
-    "slowStochastic": 49.64578572588394491639
+    "fastStochasticValue": 19.62143342305504569748,
+    "slowStochasticValue": 49.64578572588394491639
   },
   {
     "tick": {
@@ -2818,8 +2818,8 @@
     "haHigh": 6439.0000000000,
     "haLow": 6416.0000000000,
     "haClose": 6425.89025000000000000000,
-    "fastStochastic": 55.46798923474682491860,
-    "slowStochastic": 51.58652022883823825046
+    "fastStochasticValue": 55.46798923474682491860,
+    "slowStochasticValue": 51.58652022883823825046
   },
   {
     "tick": {
@@ -2848,8 +2848,8 @@
     "haHigh": 6438.9999999100,
     "haLow": 6416.0000000000,
     "haClose": 6426.88999997750000000000,
-    "fastStochastic": 31.93170602639862742223,
-    "slowStochastic": 45.03491549469170130772
+    "fastStochasticValue": 31.93170602639862742223,
+    "slowStochasticValue": 45.03491549469170130772
   },
   {
     "tick": {
@@ -2878,8 +2878,8 @@
     "haHigh": 6434.6599999900,
     "haLow": 6413.1453107100,
     "haClose": 6423.90265534750000000000,
-    "fastStochastic": 16.30690741744771565873,
-    "slowStochastic": 35.45891280227703942472
+    "fastStochasticValue": 16.30690741744771565873,
+    "slowStochasticValue": 35.45891280227703942472
   },
   {
     "tick": {
@@ -2908,8 +2908,8 @@
     "haHigh": 6425.4129263544,
     "haLow": 6405.0000000100,
     "haClose": 6407.38882763500000000000,
-    "fastStochastic": -20.75816503957813171645,
-    "slowStochastic": 16.71988685499198237766
+    "fastStochasticValue": -20.75816503957813171645,
+    "slowStochasticValue": 16.71988685499198237766
   },
   {
     "tick": {
@@ -2938,8 +2938,8 @@
     "haHigh": 6419.8438496800,
     "haLow": 6391.1000000100,
     "haClose": 6411.57192428750000000000,
-    "fastStochastic": 60.00803690188059225509,
-    "slowStochastic": 31.14927020395485233680
+    "fastStochasticValue": 60.00803690188059225509,
+    "slowStochasticValue": 31.14927020395485233680
   },
   {
     "tick": {
@@ -2968,8 +2968,8 @@
     "haHigh": 6430.4999999700,
     "haLow": 6393.0000000000,
     "haClose": 6411.74999995250000000000,
-    "fastStochastic": 82.25469708195135090178,
-    "slowStochastic": 48.18441249662035185846
+    "fastStochasticValue": 82.25469708195135090178,
+    "slowStochasticValue": 48.18441249662035185846
   },
   {
     "tick": {
@@ -2998,8 +2998,8 @@
     "haHigh": 6430.0000000000,
     "haLow": 6394.7900003900,
     "haClose": 6407.64500019500000000000,
-    "fastStochastic": 45.68411386395046550227,
-    "slowStochastic": 47.35097961906372307306
+    "fastStochasticValue": 45.68411386395046550227,
+    "slowStochasticValue": 47.35097961906372307306
   },
   {
     "tick": {
@@ -3028,8 +3028,8 @@
     "haHigh": 6448.1858476500,
     "haLow": 6410.2566002459,
     "haClose": 6435.74646183250000000000,
-    "fastStochastic": 94.41919864255868654734,
-    "slowStochastic": 63.04038596022871089782
+    "fastStochasticValue": 94.41919864255868654734,
+    "slowStochasticValue": 63.04038596022871089782
   },
   {
     "tick": {
@@ -3058,8 +3058,8 @@
     "haHigh": 6448.1858476900,
     "haLow": 6420.9999999900,
     "haClose": 6436.46153274750000000000,
-    "fastStochastic": 88.56885787773590611942,
-    "slowStochastic": 71.54987659939777597169
+    "fastStochasticValue": 88.56885787773590611942,
+    "slowStochasticValue": 71.54987659939777597169
   },
   {
     "tick": {
@@ -3088,8 +3088,8 @@
     "haHigh": 6449.8619492800,
     "haLow": 6429.7315318934,
     "haClose": 6438.38055821750000000000,
-    "fastStochastic": 66.82852150016901425508,
-    "slowStochastic": 69.97609156632152206615
+    "fastStochasticValue": 66.82852150016901425508,
+    "slowStochasticValue": 69.97609156632152206615
   },
   {
     "tick": {
@@ -3118,8 +3118,8 @@
     "haHigh": 6449.8619492800,
     "haLow": 6434.0560450555,
     "haClose": 6442.16098879000000000000,
-    "fastStochastic": 89.44954876827494092338,
-    "slowStochastic": 76.46724396697266168523
+    "fastStochasticValue": 89.44954876827494092338,
+    "slowStochasticValue": 76.46724396697266168523
   },
   {
     "tick": {
@@ -3148,8 +3148,8 @@
     "haHigh": 6440.0000000000,
     "haLow": 6420.0000000100,
     "haClose": 6428.37320997750000000000,
-    "fastStochastic": 11.69662424662721147050,
-    "slowStochastic": 54.87703739352417828032
+    "fastStochasticValue": 11.69662424662721147050,
+    "slowStochasticValue": 54.87703739352417828032
   },
   {
     "tick": {
@@ -3180,8 +3180,8 @@
     "haHigh": 6443.9999999900,
     "haLow": 6420.0000002000,
     "haClose": 6425.81445009750000000000,
-    "fastStochastic": 6.3626121082082E-7,
-    "slowStochastic": 36.58469180776985579382
+    "fastStochasticValue": 6.3626121082082E-7,
+    "slowStochasticValue": 36.58469180776985579382
   },
   {
     "tick": {
@@ -3210,8 +3210,8 @@
     "haHigh": 6438.0000000000,
     "haLow": 6416.0000000000,
     "haClose": 6422.50000005000000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 24.38979453851323719588
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 24.38979453851323719588
   },
   {
     "tick": {
@@ -3240,8 +3240,8 @@
     "haHigh": 6443.9999999800,
     "haLow": 6426.0138284120,
     "haClose": 6430.28000000500000000000,
-    "fastStochastic": 37.09178085450135669213,
-    "slowStochastic": 28.62378997717594369463
+    "fastStochasticValue": 37.09178085450135669213,
+    "slowStochasticValue": 28.62378997717594369463
   },
   {
     "tick": {
@@ -3272,8 +3272,8 @@
     "haHigh": 6447.0000000700,
     "haLow": 6428.1469142085,
     "haClose": 6438.49999995750000000000,
-    "fastStochastic": 45.16129025286160265483,
-    "slowStochastic": 34.13629006907116334803
+    "fastStochasticValue": 45.16129025286160265483,
+    "slowStochasticValue": 34.13629006907116334803
   },
   {
     "tick": {
@@ -3302,8 +3302,8 @@
     "haHigh": 6440.0000000000,
     "haLow": 6420.0099900000,
     "haClose": 6432.50249750250000000000,
-    "fastStochastic": 77.41935466389177979121,
-    "slowStochastic": 48.56397826734470216242
+    "fastStochasticValue": 77.41935466389177979121,
+    "slowStochasticValue": 48.56397826734470216242
   },
   {
     "tick": {
@@ -3332,8 +3332,8 @@
     "haHigh": 6447.0000000600,
     "haLow": 6432.9129772928,
     "haClose": 6441.75000001500000000000,
-    "fastStochastic": 77.41935466389177979121,
-    "slowStochastic": 58.18243706619372803868
+    "fastStochasticValue": 77.41935466389177979121,
+    "slowStochasticValue": 58.18243706619372803868
   },
   {
     "tick": {
@@ -3362,8 +3362,8 @@
     "haHigh": 6446.9999999600,
     "haLow": 6415.0100000400,
     "haClose": 6436.85732422750000000000,
-    "fastStochastic": 95.05875846040128934629,
-    "slowStochastic": 70.47454419759624847455
+    "fastStochasticValue": 95.05875846040128934629,
+    "slowStochasticValue": 70.47454419759624847455
   },
   {
     "tick": {
@@ -3394,8 +3394,8 @@
     "haHigh": 6437.0944064407,
     "haLow": 6411.0100000600,
     "haClose": 6422.20500003000000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 46.98302946506416564970
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 46.98302946506416564970
   },
   {
     "tick": {
@@ -3424,8 +3424,8 @@
     "haHigh": 6431.5600000000,
     "haLow": 6411.0100000300,
     "haClose": 6425.28249998250000000000,
-    "fastStochastic": 44.42900793740288307524,
-    "slowStochastic": 46.13168895584373812488
+    "fastStochasticValue": 44.42900793740288307524,
+    "slowStochasticValue": 46.13168895584373812488
   },
   {
     "tick": {
@@ -3454,8 +3454,8 @@
     "haHigh": 6427.4661016090,
     "haLow": 6411.0100000100,
     "haClose": 6415.00750001250000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 30.75445930389582541659
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 30.75445930389582541659
   },
   {
     "tick": {
@@ -3484,8 +3484,8 @@
     "haHigh": 6428.0000000000,
     "haLow": 6411.0100000100,
     "haClose": 6416.00500000500000000000,
-    "fastStochastic": 8.30786327911623128524,
-    "slowStochastic": 23.27226062896929403947
+    "fastStochasticValue": 8.30786327911623128524,
+    "slowStochasticValue": 23.27226062896929403947
   },
   {
     "tick": {
@@ -3514,8 +3514,8 @@
     "haHigh": 6428.0000000000,
     "haLow": 6411.0100000200,
     "haClose": 6419.25500001000000000000,
-    "fastStochastic": 64.50181523376434660499,
-    "slowStochastic": 37.01544549723431156131
+    "fastStochasticValue": 64.50181523376434660499,
+    "slowStochasticValue": 37.01544549723431156131
   },
   {
     "tick": {
@@ -3546,8 +3546,8 @@
     "haHigh": 6428.0000000000,
     "haLow": 6418.9379502090,
     "haClose": 6424.28499999750000000000,
-    "fastStochastic": 82.67639896967221361055,
-    "slowStochastic": 52.23576332138027891106
+    "fastStochasticValue": 82.67639896967221361055,
+    "slowStochasticValue": 52.23576332138027891106
   },
   {
     "tick": {
@@ -3576,8 +3576,8 @@
     "haHigh": 6427.9999999700,
     "haLow": 6410.0000025000,
     "haClose": 6419.00000123500000000000,
-    "fastStochastic": 99.99999983333331018518,
-    "slowStochastic": 68.15717549203128933577
+    "fastStochasticValue": 99.99999983333331018518,
+    "slowStochasticValue": 68.15717549203128933577
   },
   {
     "tick": {
@@ -3606,8 +3606,8 @@
     "haHigh": 6427.9999999800,
     "haLow": 6410.0000000200,
     "haClose": 6416.91064112750000000000,
-    "fastStochastic": 53.56980278174422531305,
-    "slowStochastic": 63.29471792193560132820
+    "fastStochasticValue": 53.56980278174422531305,
+    "slowStochasticValue": 63.29471792193560132820
   },
   {
     "tick": {
@@ -3636,8 +3636,8 @@
     "haHigh": 6421.5700000000,
     "haLow": 6360.0000000000,
     "haClose": 6393.28500000000000000000,
-    "fastStochastic": 14.70588235294117647059,
-    "slowStochastic": 47.09843939893745970900
+    "fastStochasticValue": 14.70588235294117647059,
+    "slowStochasticValue": 47.09843939893745970900
   },
   {
     "tick": {
@@ -3666,8 +3666,8 @@
     "haHigh": 6405.9465948242,
     "haLow": 6359.4531000000,
     "haClose": 6371.93693410750000000000,
-    "fastStochastic": 21.36770589187840733863,
-    "slowStochastic": 38.52152822991777558554
+    "fastStochasticValue": 21.36770589187840733863,
+    "slowStochasticValue": 38.52152822991777558554
   },
   {
     "tick": {
@@ -3696,8 +3696,8 @@
     "haHigh": 6388.9417644659,
     "haLow": 6375.0000000000,
     "haClose": 6375.00000000000000000000,
-    "fastStochastic": 22.68067557327338670991,
-    "slowStochastic": 33.24124401103631262700
+    "fastStochasticValue": 22.68067557327338670991,
+    "slowStochasticValue": 33.24124401103631262700
   },
   {
     "tick": {
@@ -3726,8 +3726,8 @@
     "haHigh": 6381.9708822330,
     "haLow": 6373.1000000900,
     "haClose": 6374.52500002250000000000,
-    "fastStochastic": 22.68067557327338670991,
-    "slowStochastic": 29.72105453178200398797
+    "fastStochasticValue": 22.68067557327338670991,
+    "slowStochasticValue": 29.72105453178200398797
   },
   {
     "tick": {
@@ -3756,8 +3756,8 @@
     "haHigh": 6378.2479411278,
     "haLow": 6352.7000000000,
     "haClose": 6354.26750003250000000000,
-    "fastStochastic": -44.40249727021925366633,
-    "slowStochastic": 5.01320393111491810320
+    "fastStochasticValue": -44.40249727021925366633,
+    "slowStochasticValue": 5.01320393111491810320
   },
   {
     "tick": {
@@ -3786,8 +3786,8 @@
     "haHigh": 6374.9999999400,
     "haLow": 6366.2577205802,
     "haClose": 6369.19999998500000000000,
-    "fastStochastic": 54.61247359615496485471,
-    "slowStochastic": 21.54629381946160035370
+    "fastStochasticValue": 54.61247359615496485471,
+    "slowStochasticValue": 21.54629381946160035370
   },
   {
     "tick": {
@@ -3818,8 +3818,8 @@
     "haHigh": 6382.1179425500,
     "haLow": 6360.0000002800,
     "haClose": 6373.06547984000000000000,
-    "fastStochastic": 76.29349500514270329214,
-    "slowStochastic": 39.79536088135530133318
+    "fastStochasticValue": 76.29349500514270329214,
+    "slowStochasticValue": 39.79536088135530133318
   },
   {
     "tick": {
@@ -3848,8 +3848,8 @@
     "haHigh": 6388.1016599200,
     "haLow": 6349.4432501500,
     "haClose": 6360.72831940500000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 26.53024058757020088879
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 26.53024058757020088879
   },
   {
     "tick": {
@@ -3878,8 +3878,8 @@
     "haHigh": 6382.4502834900,
     "haLow": 6365.5627447332,
     "haClose": 6371.95507087750000000000,
-    "fastStochastic": 81.62971536529398218958,
-    "slowStochastic": 44.89673218014479465572
+    "fastStochasticValue": 81.62971536529398218958,
+    "slowStochasticValue": 44.89673218014479465572
   },
   {
     "tick": {
@@ -3908,8 +3908,8 @@
     "haHigh": 6381.0000000100,
     "haLow": 6351.0000002800,
     "haClose": 6367.17972363000000000000,
-    "fastStochastic": 81.62971536529398218958,
-    "slowStochastic": 57.14105990852785716701
+    "fastStochasticValue": 81.62971536529398218958,
+    "slowStochasticValue": 57.14105990852785716701
   },
   {
     "tick": {
@@ -3938,8 +3938,8 @@
     "haHigh": 6383.6100000000,
     "haLow": 6357.8400005600,
     "haClose": 6366.88500028000000000000,
-    "fastStochastic": 21.72037199656389280391,
-    "slowStochastic": 45.33416393787320237931
+    "fastStochasticValue": 21.72037199656389280391,
+    "slowStochasticValue": 45.33416393787320237931
   },
   {
     "tick": {
@@ -3968,8 +3968,8 @@
     "haHigh": 6380.0000000000,
     "haLow": 6357.9500000400,
     "haClose": 6368.97500002000000000000,
-    "fastStochastic": 79.04295606518426119937,
-    "slowStochastic": 56.57042798031022198600
+    "fastStochasticValue": 79.04295606518426119937,
+    "slowStochasticValue": 56.57042798031022198600
   },
   {
     "tick": {
@@ -3998,8 +3998,8 @@
     "haHigh": 6392.4897000000,
     "haLow": 6368.2010790095,
     "haClose": 6386.18492500000000000000,
-    "fastStochastic": 94.60179269766958920762,
-    "slowStochastic": 69.24754955276334439321
+    "fastStochasticValue": 94.60179269766958920762,
+    "slowStochasticValue": 69.24754955276334439321
   },
   {
     "tick": {
@@ -4028,8 +4028,8 @@
     "haHigh": 6400.0000000000,
     "haLow": 6377.1930020048,
     "haClose": 6395.97499998750000000000,
-    "fastStochastic": 87.55102033702623866056,
-    "slowStochastic": 75.34870648085097581566
+    "fastStochasticValue": 87.55102033702623866056,
+    "slowStochasticValue": 75.34870648085097581566
   },
   {
     "tick": {
@@ -4058,8 +4058,8 @@
     "haHigh": 6393.9000000000,
     "haLow": 6370.4300003900,
     "haClose": 6387.95750009750000000000,
-    "fastStochastic": 85.53130910572896345371,
-    "slowStochastic": 78.74290735581030502834
+    "fastStochasticValue": 85.53130910572896345371,
+    "slowStochasticValue": 78.74290735581030502834
   },
   {
     "tick": {
@@ -4088,8 +4088,8 @@
     "haHigh": 6398.0000000000,
     "haLow": 6370.0000000000,
     "haClose": 6386.86541671750000000000,
-    "fastStochastic": 65.66389264272427361971,
-    "slowStochastic": 74.38323578478162789213
+    "fastStochasticValue": 65.66389264272427361971,
+    "slowStochasticValue": 74.38323578478162789213
   },
   {
     "tick": {
@@ -4120,8 +4120,8 @@
     "haHigh": 6392.9999999900,
     "haLow": 6379.5095830475,
     "haClose": 6379.50958304750000000000,
-    "fastStochastic": 43.46077396666666666667,
-    "slowStochastic": 64.07574851207664081698
+    "fastStochasticValue": 43.46077396666666666667,
+    "slowStochasticValue": 64.07574851207664081698
   },
   {
     "tick": {
@@ -4150,8 +4150,8 @@
     "haHigh": 6385.0000000000,
     "haLow": 6373.5000000000,
     "haClose": 6380.68750000000000000000,
-    "fastStochastic": 50.00000000000000000000,
-    "slowStochastic": 59.38383234138442721132
+    "fastStochasticValue": 50.00000000000000000000,
+    "slowStochasticValue": 59.38383234138442721132
   },
   {
     "tick": {
@@ -4180,8 +4180,8 @@
     "haHigh": 6389.8310553300,
     "haLow": 6360.0000000000,
     "haClose": 6375.97934758750000000000,
-    "fastStochastic": 23.91140810526315789474,
-    "slowStochastic": 47.55969092934400410579
+    "fastStochasticValue": 23.91140810526315789474,
+    "slowStochasticValue": 47.55969092934400410579
   },
   {
     "tick": {
@@ -4210,8 +4210,8 @@
     "haHigh": 6387.8735988400,
     "haLow": 6360.0000000000,
     "haClose": 6369.23998348000000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 31.70646061956266940386
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 31.70646061956266940386
   },
   {
     "tick": {
@@ -4240,8 +4240,8 @@
     "haHigh": 6380.0000000000,
     "haLow": 6355.0001000000,
     "haClose": 6366.00005000000000000000,
-    "fastStochastic": 49.99986843386426502014,
-    "slowStochastic": 37.80426322432986794262
+    "fastStochasticValue": 49.99986843386426502014,
+    "slowStochasticValue": 37.80426322432986794262
   },
   {
     "tick": {
@@ -4270,8 +4270,8 @@
     "haHigh": 6402.2439278100,
     "haLow": 6370.0559601522,
     "haClose": 6384.92022450500000000000,
-    "fastStochastic": 100.00000000000000000000,
-    "slowStochastic": 58.53617548288657862841
+    "fastStochasticValue": 100.00000000000000000000,
+    "slowStochasticValue": 58.53617548288657862841
   },
   {
     "tick": {
@@ -4300,8 +4300,8 @@
     "haHigh": 6411.3472499000,
     "haLow": 6377.4880923286,
     "haClose": 6408.61444587500000000000,
-    "fastStochastic": 99.14699481543786121470,
-    "slowStochastic": 72.07311526040367282384
+    "fastStochasticValue": 99.14699481543786121470,
+    "slowStochasticValue": 72.07311526040367282384
   },
   {
     "tick": {
@@ -4330,8 +4330,8 @@
     "haHigh": 6405.0000000000,
     "haLow": 6393.0512691018,
     "haClose": 6396.25000000750000000000,
-    "fastStochastic": 88.73545527810271731242,
-    "slowStochastic": 77.62722859963668765337
+    "fastStochasticValue": 88.73545527810271731242,
+    "slowStochasticValue": 77.62722859963668765337
   },
   {
     "tick": {
@@ -4360,8 +4360,8 @@
     "haHigh": 6425.8000000000,
     "haLow": 6394.6506345547,
     "haClose": 6415.71999997750000000000,
-    "fastStochastic": 96.61016457650363912943,
-    "slowStochastic": 83.95487392525900481206
+    "fastStochasticValue": 96.61016457650363912943,
+    "slowStochasticValue": 83.95487392525900481206
   },
   {
     "tick": {
@@ -4390,8 +4390,8 @@
     "haHigh": 6416.9299999900,
     "haLow": 6396.0000000000,
     "haClose": 6406.98249993500000000000,
-    "fastStochastic": 78.65906040951175456554,
-    "slowStochastic": 82.18960275334325472989
+    "fastStochasticValue": 78.65906040951175456554,
+    "slowStochasticValue": 82.18960275334325472989
   },
   {
     "tick": {
@@ -4420,8 +4420,8 @@
     "haHigh": 6420.0971464100,
     "haLow": 6385.1234560100,
     "haClose": 6407.70365060500000000000,
-    "fastStochastic": 85.74116817440074755967,
-    "slowStochastic": 83.37345789369575233982
+    "fastStochasticValue": 85.74116817440074755967,
+    "slowStochasticValue": 83.37345789369575233982
   },
   {
     "tick": {
@@ -4450,8 +4450,8 @@
     "haHigh": 6425.7999997000,
     "haLow": 6400.0000000000,
     "haClose": 6409.88375673750000000000,
-    "fastStochastic": 99.92624272601090267797,
-    "slowStochastic": 88.89105283780080245254
+    "fastStochasticValue": 99.92624272601090267797,
+    "slowStochasticValue": 88.89105283780080245254
   },
   {
     "tick": {
@@ -4480,8 +4480,8 @@
     "haHigh": 6422.9999997700,
     "haLow": 6390.0000000500,
     "haClose": 6405.13017652500000000000,
-    "fastStochastic": 23.30284630948559600085,
-    "slowStochastic": 67.02831732836240030198
+    "fastStochasticValue": 23.30284630948559600085,
+    "slowStochasticValue": 67.02831732836240030198
   },
   {
     "tick": {
@@ -4510,8 +4510,8 @@
     "haHigh": 6425.7699998400,
     "haLow": 6394.6022485200,
     "haClose": 6415.37556155250000000000,
-    "fastStochastic": 96.92697132891528621418,
-    "slowStochastic": 76.99453532854669560605
+    "fastStochasticValue": 96.92697132891528621418,
+    "slowStochasticValue": 76.99453532854669560605
   },
   {
     "tick": {
@@ -4540,8 +4540,8 @@
     "haHigh": 6425.0000000000,
     "haLow": 6400.0000000000,
     "haClose": 6414.91250000000000000000,
-    "fastStochastic": 82.25021340302573775535,
-    "slowStochastic": 78.74642802003970965582
+    "fastStochasticValue": 82.25021340302573775535,
+    "slowStochasticValue": 78.74642802003970965582
   },
   {
     "tick": {
@@ -4570,8 +4570,8 @@
     "haHigh": 6498.9999999900,
     "haLow": 6412.9900084751,
     "haClose": 6467.41834970000000000000,
-    "fastStochastic": 50.44954127547681171127,
-    "slowStochastic": 69.31413243851874367430
+    "fastStochasticValue": 50.44954127547681171127,
+    "slowStochasticValue": 69.31413243851874367430
   },
   {
     "tick": {
@@ -4600,8 +4600,8 @@
     "haHigh": 6482.3311711500,
     "haLow": 6440.2041790876,
     "haClose": 6467.70864720250000000000,
-    "fastStochastic": 73.39449540737311673800,
-    "slowStochastic": 70.67425342813686802887
+    "fastStochasticValue": 73.39449540737311673800,
+    "slowStochasticValue": 70.67425342813686802887
   },
   {
     "tick": {
@@ -4630,8 +4630,8 @@
     "haHigh": 6515.0865199700,
     "haLow": 6453.9564131451,
     "haClose": 6479.56500000250000000000,
-    "fastStochastic": 56.91301503072665174837,
-    "slowStochastic": 66.08717396233346260204
+    "fastStochasticValue": 56.91301503072665174837,
+    "slowStochasticValue": 66.08717396233346260204
   },
   {
     "tick": {
@@ -4660,8 +4660,8 @@
     "haHigh": 6512.8999998500,
     "haLow": 6466.7607065738,
     "haClose": 6489.33754417500000000000,
-    "fastStochastic": 80.83763219554409122690,
-    "slowStochastic": 71.00399337340367214366
+    "fastStochasticValue": 80.83763219554409122690,
+    "slowStochasticValue": 71.00399337340367214366
   },
   {
     "tick": {
@@ -4690,8 +4690,8 @@
     "haHigh": 6490.0000000000,
     "haLow": 6476.3473555400,
     "haClose": 6486.58683888500000000000,
-    "fastStochastic": 58.24933781732541898782,
-    "slowStochastic": 66.75244152137758775838
+    "fastStochasticValue": 58.24933781732541898782,
+    "slowStochasticValue": 66.75244152137758775838
   },
   {
     "tick": {
@@ -4720,8 +4720,8 @@
     "haHigh": 6495.0000000000,
     "haLow": 6457.1802342900,
     "haClose": 6482.54505856500000000000,
-    "fastStochastic": 53.22352374717189769510,
-    "slowStochastic": 62.24280226330902440395
+    "fastStochasticValue": 53.22352374717189769510,
+    "slowStochasticValue": 62.24280226330902440395
   },
   {
     "tick": {
@@ -4750,8 +4750,8 @@
     "haHigh": 6488.9999999900,
     "haLow": 6464.8914777900,
     "haClose": 6475.94573889250000000000,
-    "fastStochastic": 13.31676416376219556550,
-    "slowStochastic": 45.93412289679341479113
+    "fastStochasticValue": 13.31676416376219556550,
+    "slowStochasticValue": 45.93412289679341479113
   },
   {
     "tick": {
@@ -4780,8 +4780,8 @@
     "haHigh": 6489.0000000000,
     "haLow": 6464.8914778000,
     "haClose": 6470.94573890000000000000,
-    "fastStochastic": 14.03409657490310517380,
-    "slowStochastic": 35.30078078949664491869
+    "fastStochasticValue": 14.03409657490310517380,
+    "slowStochasticValue": 35.30078078949664491869
   },
   {
     "tick": {
@@ -4810,8 +4810,8 @@
     "haHigh": 6497.9999999800,
     "haLow": 6475.0671842600,
     "haClose": 6485.74999999500000000000,
-    "fastStochastic": 68.15268348494040559496,
-    "slowStochastic": 46.25141502131123181078
+    "fastStochasticValue": 68.15268348494040559496,
+    "slowStochasticValue": 46.25141502131123181078
   },
   {
     "tick": {
@@ -4840,8 +4840,8 @@
     "haHigh": 6497.9999999800,
     "haLow": 6469.4541344800,
     "haClose": 6480.89823216750000000000,
-    "fastStochastic": 81.39082485752504572987,
-    "slowStochastic": 57.96455163338250311714
+    "fastStochasticValue": 81.39082485752504572987,
+    "slowStochasticValue": 57.96455163338250311714
   },
   {
     "tick": {
@@ -4870,8 +4870,8 @@
     "haHigh": 6489.0000000000,
     "haLow": 6451.0000000100,
     "haClose": 6475.75000000250000000000,
-    "fastStochastic": 48.93617022272521503578,
-    "slowStochastic": 54.95509116316340709002
+    "fastStochasticValue": 48.93617022272521503578,
+    "slowStochasticValue": 54.95509116316340709002
   },
   {
     "tick": {
@@ -4900,8 +4900,8 @@
     "haHigh": 6490.4000000000,
     "haLow": 6474.0000000000,
     "haClose": 6482.19999998500000000000,
-    "fastStochastic": 83.82978713861475774805,
-    "slowStochastic": 64.57998982164719064270
+    "fastStochasticValue": 83.82978713861475774805,
+    "slowStochasticValue": 64.57998982164719064270
   },
   {
     "tick": {
@@ -4930,8 +4930,8 @@
     "haHigh": 6487.6760719700,
     "haLow": 6466.6706653300,
     "haClose": 6479.17166916250000000000,
-    "fastStochastic": 64.14880714732902583872,
-    "slowStochastic": 64.43626226354113570804
+    "fastStochasticValue": 64.14880714732902583872,
+    "slowStochasticValue": 64.43626226354113570804
   },
   {
     "tick": {
@@ -4960,8 +4960,8 @@
     "haHigh": 6487.0000000000,
     "haLow": 6467.1930198200,
     "haClose": 6480.58573979250000000000,
-    "fastStochastic": 76.59574470846536896285,
-    "slowStochastic": 68.48942307851588012631
+    "fastStochasticValue": 76.59574470846536896285,
+    "slowStochasticValue": 68.48942307851588012631
   },
   {
     "tick": {
@@ -4990,8 +4990,8 @@
     "haHigh": 6486.9999999700,
     "haLow": 6456.5028780000,
     "haClose": 6476.74527332250000000000,
-    "fastStochastic": 81.21827410690819139769,
-    "slowStochastic": 72.73237342131331721677
+    "fastStochasticValue": 81.21827410690819139769,
+    "slowStochasticValue": 72.73237342131331721677
   },
   {
     "tick": {
@@ -5022,8 +5022,8 @@
     "haHigh": 6487.0000000000,
     "haLow": 6459.6250600300,
     "haClose": 6472.31376500750000000000,
-    "fastStochastic": 9.22533187330771031240,
-    "slowStochastic": 51.56335957197811491531
+    "fastStochasticValue": 9.22533187330771031240,
+    "slowStochasticValue": 51.56335957197811491531
   },
   {
     "tick": {
@@ -5052,8 +5052,8 @@
     "haHigh": 6483.9999999900,
     "haLow": 6459.6300000000,
     "haClose": 6465.72003001250000000000,
-    "fastStochastic": 10.01559876413266997677,
-    "slowStochastic": 37.71410596936296660246
+    "fastStochasticValue": 10.01559876413266997677,
+    "slowStochasticValue": 37.71410596936296660246
   },
   {
     "tick": {
@@ -5082,8 +5082,8 @@
     "haHigh": 6470.5486154790,
     "haLow": 6451.0000000000,
     "haClose": 6460.50000000000000000000,
-    "fastStochastic": 52.77777777777777777778,
-    "slowStochastic": 42.73532990550123699423
+    "fastStochasticValue": 52.77777777777777777778,
+    "slowStochasticValue": 42.73532990550123699423
   },
   {
     "tick": {
@@ -5112,8 +5112,8 @@
     "haHigh": 6479.0599998200,
     "haLow": 6450.0084690000,
     "haClose": 6466.24020720500000000000,
-    "fastStochastic": 60.63963938124107380146,
-    "slowStochastic": 48.70343306408118259664
+    "fastStochasticValue": 60.63963938124107380146,
+    "slowStochasticValue": 48.70343306408118259664
   },
   {
     "tick": {
@@ -5142,8 +5142,8 @@
     "haHigh": 6478.9999998500,
     "haLow": 6448.2102882600,
     "haClose": 6466.97207152750000000000,
-    "fastStochastic": 43.28393016307576200617,
-    "slowStochastic": 46.89693209707937573315
+    "fastStochasticValue": 43.28393016307576200617,
+    "slowStochasticValue": 46.89693209707937573315
   },
   {
     "tick": {
@@ -5172,8 +5172,8 @@
     "haHigh": 6479.0000000000,
     "haLow": 6465.0000000000,
     "haClose": 6468.50000000000000000000,
-    "fastStochastic": 46.91211783616117994365,
-    "slowStochastic": 46.90199401010664380332
+    "fastStochasticValue": 46.91211783616117994365,
+    "slowStochasticValue": 46.90199401010664380332
   },
   {
     "tick": {
@@ -5202,8 +5202,8 @@
     "haHigh": 6490.4037786600,
     "haLow": 6465.0000000000,
     "haClose": 6476.07844466500000000000,
-    "fastStochastic": 84.60952483798306479997,
-    "slowStochastic": 59.47117095273211746887
+    "fastStochasticValue": 84.60952483798306479997,
+    "slowStochasticValue": 59.47117095273211746887
   },
   {
     "tick": {
@@ -5232,8 +5232,8 @@
     "haHigh": 6489.9999999900,
     "haLow": 6462.0000000000,
     "haClose": 6477.74999999750000000000,
-    "fastStochastic": 84.82282788342156210902,
-    "slowStochastic": 67.92172326296193234892
+    "fastStochasticValue": 84.82282788342156210902,
+    "slowStochasticValue": 67.92172326296193234892
   },
   {
     "tick": {
@@ -5262,8 +5262,8 @@
     "haHigh": 6490.4037786600,
     "haLow": 6474.7605067275,
     "haClose": 6480.37594466500000000000,
-    "fastStochastic": 51.64235414854420292283,
-    "slowStochastic": 62.49526689148935587356
+    "fastStochasticValue": 51.64235414854420292283,
+    "slowStochasticValue": 62.49526689148935587356
   },
   {
     "tick": {
@@ -5292,8 +5292,8 @@
     "haHigh": 6489.9999998500,
     "haLow": 6460.0000100000,
     "haClose": 6474.25000245250000000000,
-    "fastStochastic": 82.22661548826559187482,
-    "slowStochastic": 69.07238309041476787398
+    "fastStochasticValue": 82.22661548826559187482,
+    "slowStochasticValue": 69.07238309041476787398
   },
   {
     "tick": {
@@ -5322,8 +5322,8 @@
     "haHigh": 6484.9889997000,
     "haLow": 6444.7284374900,
     "haClose": 6458.61396867000000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 46.04825539360984524932
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 46.04825539360984524932
   },
   {
     "tick": {
@@ -5352,8 +5352,8 @@
     "haHigh": 6475.2199606700,
     "haLow": 6440.0000000000,
     "haClose": 6454.98999016750000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 30.69883692907323016621
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 30.69883692907323016621
   },
   {
     "tick": {
@@ -5382,8 +5382,8 @@
     "haHigh": 6474.0870921100,
     "haLow": 6450.0000000000,
     "haClose": 6458.94709939500000000000,
-    "fastStochastic": 62.89470018476586969442,
-    "slowStochastic": 41.43079134763744334228
+    "fastStochasticValue": 62.89470018476586969442,
+    "slowStochasticValue": 41.43079134763744334228
   },
   {
     "tick": {
@@ -5412,8 +5412,8 @@
     "haHigh": 6476.5182899300,
     "haLow": 6441.0000000200,
     "haClose": 6455.69207249250000000000,
-    "fastStochastic": 2.00000004600000013800,
-    "slowStochastic": 28.28719424709162894085
+    "fastStochasticValue": 2.00000004600000013800,
+    "slowStochasticValue": 28.28719424709162894085
   },
   {
     "tick": {
@@ -5442,8 +5442,8 @@
     "haHigh": 6480.7399997200,
     "haLow": 6457.8642525375,
     "haClose": 6478.34249984500000000000,
-    "fastStochastic": 86.68785754309625159325,
-    "slowStochastic": 47.75408201242650315832
+    "fastStochasticValue": 86.68785754309625159325,
+    "slowStochasticValue": 47.75408201242650315832
   },
   {
     "tick": {
@@ -5472,8 +5472,8 @@
     "haHigh": 6475.0000000000,
     "haLow": 6451.5500001000,
     "haClose": 6463.27500005000000000000,
-    "fastStochastic": 28.35051590422544067705,
-    "slowStochastic": 41.28622664302614899790
+    "fastStochasticValue": 28.35051590422544067705,
+    "slowStochasticValue": 41.28622664302614899790
   },
   {
     "tick": {
@@ -5502,8 +5502,8 @@
     "haHigh": 6479.0000000000,
     "haLow": 6460.0000000000,
     "haClose": 6469.69499997500000000000,
-    "fastStochastic": 74.93709160747678616616,
-    "slowStochastic": 52.50318163117636138732
+    "fastStochasticValue": 74.93709160747678616616,
+    "slowStochasticValue": 52.50318163117636138732
   },
   {
     "tick": {
@@ -5532,8 +5532,8 @@
     "haHigh": 6484.9999999400,
     "haLow": 6467.6920940479,
     "haClose": 6481.99999996000000000000,
-    "fastStochastic": 99.99999995454545446281,
-    "slowStochastic": 68.33545440563272574582
+    "fastStochasticValue": 99.99999995454545446281,
+    "slowStochasticValue": 68.33545440563272574582
   },
   {
     "tick": {
@@ -5562,8 +5562,8 @@
     "haHigh": 6478.9999999600,
     "haLow": 6460.0000000000,
     "haClose": 6466.29749999000000000000,
-    "fastStochastic": 25.26158427628859444563,
-    "slowStochastic": 53.97749769585134864576
+    "fastStochasticValue": 25.26158427628859444563,
+    "slowStochasticValue": 53.97749769585134864576
   },
   {
     "tick": {
@@ -5592,8 +5592,8 @@
     "haHigh": 6475.0999999600,
     "haLow": 6465.0000000000,
     "haClose": 6470.53499997250000000000,
-    "fastStochastic": 46.00896853098460283879,
-    "slowStochastic": 51.32132130756243337677
+    "fastStochasticValue": 46.00896853098460283879,
+    "slowStochasticValue": 51.32132130756243337677
   },
   {
     "tick": {
@@ -5622,8 +5622,8 @@
     "haHigh": 6474.0694169500,
     "haLow": 6454.9598000000,
     "haClose": 6464.24230423750000000000,
-    "fastStochastic": 20.10705658439102918967,
-    "slowStochastic": 40.91656639983863198107
+    "fastStochasticValue": 20.10705658439102918967,
+    "slowStochasticValue": 40.91656639983863198107
   },
   {
     "tick": {
@@ -5652,8 +5652,8 @@
     "haHigh": 6467.3978454862,
     "haLow": 6450.0000000100,
     "haClose": 6456.75000000250000000000,
-    "fastStochastic": 14.28571428571428571429,
-    "slowStochastic": 32.03961569513051655881
+    "fastStochasticValue": 14.28571428571428571429,
+    "slowStochasticValue": 32.03961569513051655881
   },
   {
     "tick": {
@@ -5682,8 +5682,8 @@
     "haHigh": 6466.9999999100,
     "haLow": 6455.0000000000,
     "haClose": 6462.74999995250000000000,
-    "fastStochastic": 58.62068941141498174382,
-    "slowStochastic": 40.89997360055867162048
+    "fastStochasticValue": 58.62068941141498174382,
+    "slowStochasticValue": 40.89997360055867162048
   },
   {
     "tick": {
@@ -5712,8 +5712,8 @@
     "haHigh": 6474.0694169800,
     "haLow": 6460.0000000000,
     "haClose": 6467.15371286500000000000,
-    "fastStochastic": 95.89409170496831016926,
-    "slowStochastic": 59.23134630202855113674
+    "fastStochasticValue": 95.89409170496831016926,
+    "slowStochasticValue": 59.23134630202855113674
   },
   {
     "tick": {
@@ -5742,8 +5742,8 @@
     "haHigh": 6477.1984328900,
     "haLow": 6461.5006807900,
     "haClose": 6472.72261766250000000000,
-    "fastStochastic": 100.00000000000000000000,
-    "slowStochastic": 72.82089753468570075783
+    "fastStochasticValue": 100.00000000000000000000,
+    "slowStochasticValue": 72.82089753468570075783
   },
   {
     "tick": {
@@ -5772,8 +5772,8 @@
     "haHigh": 6505.3828096100,
     "haLow": 6468.7527273847,
     "haClose": 6482.69491884250000000000,
-    "fastStochastic": 37.91790294077099331559,
-    "slowStochastic": 61.18656600338079827708
+    "fastStochasticValue": 37.91790294077099331559,
+    "slowStochasticValue": 61.18656600338079827708
   },
   {
     "tick": {
@@ -5802,8 +5802,8 @@
     "haHigh": 6499.9999999400,
     "haLow": 6475.7238231136,
     "haClose": 6496.35249795250000000000,
-    "fastStochastic": 89.31616225520774406054,
-    "slowStochastic": 70.56309808732311353823
+    "fastStochasticValue": 89.31616225520774406054,
+    "slowStochasticValue": 70.56309808732311353823
   },
   {
     "tick": {
@@ -5832,8 +5832,8 @@
     "haHigh": 6512.8999998600,
     "haLow": 6473.0867000000,
     "haClose": 6492.74667496500000000000,
-    "fastStochastic": 47.25897933112017214285,
-    "slowStochastic": 62.79505850192213307310
+    "fastStochasticValue": 47.25897933112017214285,
+    "slowStochasticValue": 62.79505850192213307310
   },
   {
     "tick": {
@@ -5862,8 +5862,8 @@
     "haHigh": 6497.6234983100,
     "haLow": 6473.0000000100,
     "haClose": 6481.44587458250000000000,
-    "fastStochastic": 22.37251276488554462089,
-    "slowStochastic": 49.32087658957660358903
+    "fastStochasticValue": 22.37251276488554462089,
+    "slowStochasticValue": 49.32087658957660358903
   },
   {
     "tick": {
@@ -5892,8 +5892,8 @@
     "haHigh": 6490.5000000000,
     "haLow": 6470.0000000800,
     "haClose": 6479.87500002000000000000,
-    "fastStochastic": 41.95804198673121764757,
-    "slowStochastic": 46.86659838862814160854
+    "fastStochasticValue": 41.95804198673121764757,
+    "slowStochasticValue": 46.86659838862814160854
   },
   {
     "tick": {
@@ -5922,8 +5922,8 @@
     "haHigh": 6506.9999999600,
     "haLow": 6470.0000000400,
     "haClose": 6491.36374999000000000000,
-    "fastStochastic": 65.16317025010187983726,
-    "slowStochastic": 52.96545567578605435145
+    "fastStochasticValue": 65.16317025010187983726,
+    "slowStochasticValue": 52.96545567578605435145
   },
   {
     "tick": {
@@ -5952,8 +5952,8 @@
     "haHigh": 6498.0000000000,
     "haLow": 6477.0000000000,
     "haClose": 6489.98250000250000000000,
-    "fastStochastic": 65.26806544867719768676,
-    "slowStochastic": 57.06632560008310212989
+    "fastStochasticValue": 65.26806544867719768676,
+    "slowStochasticValue": 57.06632560008310212989
   },
   {
     "tick": {
@@ -5982,8 +5982,8 @@
     "haHigh": 6513.3999998600,
     "haLow": 6488.4939557720,
     "haClose": 6501.86011996250000000000,
-    "fastStochastic": 92.16589883847607813193,
-    "slowStochastic": 68.76618334621409413057
+    "fastStochasticValue": 92.16589883847607813193,
+    "slowStochasticValue": 68.76618334621409413057
   },
   {
     "tick": {
@@ -6012,8 +6012,8 @@
     "haHigh": 6512.0000000000,
     "haLow": 6483.1725710500,
     "haClose": 6496.04314274250000000000,
-    "fastStochastic": 23.04147465777570134561,
-    "slowStochastic": 53.52461378340129653558
+    "fastStochasticValue": 23.04147465777570134561,
+    "slowStochasticValue": 53.52461378340129653558
   },
   {
     "tick": {
@@ -6042,8 +6042,8 @@
     "haHigh": 6513.3999997900,
     "haLow": 6492.6900000000,
     "haClose": 6504.72582333250000000000,
-    "fastStochastic": 87.12740476227955892190,
-    "slowStochastic": 64.72554410969405066435
+    "fastStochasticValue": 87.12740476227955892190,
+    "slowStochasticValue": 64.72554410969405066435
   },
   {
     "tick": {
@@ -6072,8 +6072,8 @@
     "haHigh": 6513.3999998400,
     "haLow": 6491.8000000000,
     "haClose": 6501.20332334750000000000,
-    "fastStochastic": 40.65934081572273940113,
-    "slowStochastic": 56.70347634503694690994
+    "fastStochasticValue": 40.65934081572273940113,
+    "slowStochasticValue": 56.70347634503694690994
   },
   {
     "tick": {
@@ -6102,8 +6102,8 @@
     "haHigh": 6513.3999998300,
     "haLow": 6495.0000000000,
     "haClose": 6499.09999995750000000000,
-    "fastStochastic": 39.12813433237558917602,
-    "slowStochastic": 50.84502900748316099863
+    "fastStochasticValue": 39.12813433237558917602,
+    "slowStochasticValue": 50.84502900748316099863
   },
   {
     "tick": {
@@ -6132,8 +6132,8 @@
     "haHigh": 6500.9999998800,
     "haLow": 6475.3711000000,
     "haClose": 6484.09277497000000000000,
-    "fastStochastic": 12.17205866978874979729,
-    "slowStochastic": 37.95403889491835726485
+    "fastStochasticValue": 12.17205866978874979729,
+    "slowStochasticValue": 37.95403889491835726485
   },
   {
     "tick": {
@@ -6162,8 +6162,8 @@
     "haHigh": 6507.8495085200,
     "haLow": 6491.9927974952,
     "haClose": 6498.08737713000000000000,
-    "fastStochastic": 64.76364055658150746020,
-    "slowStochastic": 46.89057278213940732997
+    "fastStochasticValue": 64.76364055658150746020,
+    "slowStochasticValue": 46.89057278213940732997
   },
   {
     "tick": {
@@ -6192,8 +6192,8 @@
     "haHigh": 6504.0000000000,
     "haLow": 6486.0000000000,
     "haClose": 6490.00250000250000000000,
-    "fastStochastic": 27.94953326212236803956,
-    "slowStochastic": 40.57689294213372756650
+    "fastStochasticValue": 27.94953326212236803956,
+    "slowStochasticValue": 40.57689294213372756650
   },
   {
     "tick": {
@@ -6222,8 +6222,8 @@
     "haHigh": 6515.0000000000,
     "haLow": 6492.5212936576,
     "haClose": 6504.77438008750000000000,
-    "fastStochastic": 62.14883582436050458125,
-    "slowStochastic": 47.76754056954265323808
+    "fastStochasticValue": 62.14883582436050458125,
+    "slowStochasticValue": 47.76754056954265323808
   },
   {
     "tick": {
@@ -6252,8 +6252,8 @@
     "haHigh": 6600.0000000000,
     "haLow": 6498.6478368726,
     "haClose": 6551.75000000000000000000,
-    "fastStochastic": 83.95235775971704797202,
-    "slowStochastic": 59.82914629960078481606
+    "fastStochasticValue": 83.95235775971704797202,
+    "slowStochasticValue": 59.82914629960078481606
   },
   {
     "tick": {
@@ -6282,8 +6282,8 @@
     "haHigh": 6582.5255925800,
     "haLow": 6525.1989184363,
     "haClose": 6571.46584525250000000000,
-    "fastStochastic": 65.78947369298245614035,
-    "slowStochastic": 61.81592209739467525749
+    "fastStochasticValue": 65.78947369298245614035,
+    "slowStochasticValue": 61.81592209739467525749
   },
   {
     "tick": {
@@ -6312,8 +6312,8 @@
     "haHigh": 6615.0000000000,
     "haLow": 6548.3323818444,
     "haClose": 6605.99999999000000000000,
-    "fastStochastic": 99.99999996899224806202,
-    "slowStochastic": 74.54394805459386619233
+    "fastStochasticValue": 99.99999996899224806202,
+    "slowStochasticValue": 74.54394805459386619233
   },
   {
     "tick": {
@@ -6342,8 +6342,8 @@
     "haHigh": 6602.2865497500,
     "haLow": 6563.5415914700,
     "haClose": 6587.70703528000000000000,
-    "fastStochastic": 87.09599066488183801742,
-    "slowStochastic": 78.72796225802319013403
+    "fastStochasticValue": 87.09599066488183801742,
+    "slowStochasticValue": 78.72796225802319013403
   },
   {
     "tick": {
@@ -6372,8 +6372,8 @@
     "haHigh": 6601.6599999900,
     "haLow": 6582.4366130986,
     "haClose": 6589.84281030250000000000,
-    "fastStochastic": 69.27730156310679611650,
-    "slowStochastic": 75.57774202638439212819
+    "fastStochasticValue": 69.27730156310679611650,
+    "slowStochasticValue": 75.57774202638439212819
   },
   {
     "tick": {
@@ -6402,8 +6402,8 @@
     "haHigh": 6589.9999999300,
     "haLow": 6580.0000000000,
     "haClose": 6583.74999998250000000000,
-    "fastStochastic": 31.98390506073429861668,
-    "slowStochastic": 61.04646303783436095769
+    "fastStochasticValue": 31.98390506073429861668,
+    "slowStochasticValue": 61.04646303783436095769
   },
   {
     "tick": {
@@ -6434,8 +6434,8 @@
     "haHigh": 6584.9448558416,
     "haLow": 6557.0000000000,
     "haClose": 6568.44775000000000000000,
-    "fastStochastic": 13.79310344827586206897,
-    "slowStochastic": 45.29534317464819466145
+    "fastStochasticValue": 13.79310344827586206897,
+    "slowStochasticValue": 45.29534317464819466145
   },
   {
     "tick": {
@@ -6464,8 +6464,8 @@
     "haHigh": 6591.0000000000,
     "haLow": 6574.9999999900,
     "haClose": 6578.24999999750000000000,
-    "fastStochastic": 70.66115695863980010974,
-    "slowStochastic": 53.75061443597872981088
+    "fastStochasticValue": 70.66115695863980010974,
+    "slowStochasticValue": 53.75061443597872981088
   },
   {
     "tick": {
@@ -6494,8 +6494,8 @@
     "haHigh": 6601.3425000000,
     "haLow": 6577.4731514592,
     "haClose": 6589.38875000000000000000,
-    "fastStochastic": 99.28907301820176287913,
-    "slowStochastic": 68.93010063005307416696
+    "fastStochasticValue": 99.28907301820176287913,
+    "slowStochasticValue": 68.93010063005307416696
   },
   {
     "tick": {
@@ -6524,8 +6524,8 @@
     "haHigh": 6599.0000000000,
     "haLow": 6575.1000000100,
     "haClose": 6589.75175000500000000000,
-    "fastStochastic": 71.03794328240401420759,
-    "slowStochastic": 69.63271484750338751384
+    "fastStochasticValue": 71.03794328240401420759,
+    "slowStochasticValue": 69.63271484750338751384
   },
   {
     "tick": {
@@ -6554,8 +6554,8 @@
     "haHigh": 6588.5200000000,
     "haLow": 6577.2238961800,
     "haClose": 6584.31597404500000000000,
-    "fastStochastic": 58.63449286801601172690,
-    "slowStochastic": 65.96664085434092891819
+    "fastStochasticValue": 58.63449286801601172690,
+    "slowStochasticValue": 65.96664085434092891819
   },
   {
     "tick": {
@@ -6584,8 +6584,8 @@
     "haHigh": 6588.2801140000,
     "haLow": 6573.1331955300,
     "haClose": 6576.49159858500000000000,
-    "fastStochastic": -14.65188740968628355551,
-    "slowStochastic": 39.09379809966519142696
+    "fastStochasticValue": -14.65188740968628355551,
+    "slowStochasticValue": 39.09379809966519142696
   },
   {
     "tick": {
@@ -6614,8 +6614,8 @@
     "haHigh": 6580.9726303956,
     "haLow": 6568.9999999900,
     "haClose": 6573.07123625750000000000,
-    "fastStochastic": 25.17576726438099489391,
-    "slowStochastic": 34.45445448790379258261
+    "fastStochasticValue": 25.17576726438099489391,
+    "slowStochasticValue": 34.45445448790379258261
   },
   {
     "tick": {
@@ -6644,8 +6644,8 @@
     "haHigh": 6588.4761322800,
     "haLow": 6572.0103641600,
     "haClose": 6578.14546202750000000000,
-    "fastStochastic": 10.31817226322727591226,
-    "slowStochastic": 26.40902707967828702583
+    "fastStochasticValue": 10.31817226322727591226,
+    "slowStochasticValue": 26.40902707967828702583
   },
   {
     "tick": {
@@ -6674,8 +6674,8 @@
     "haHigh": 6583.9900000000,
     "haLow": 6550.0000000800,
     "haClose": 6569.70595757250000000000,
-    "fastStochastic": 28.15116862025164822482,
-    "slowStochastic": 26.98974092653607409216
+    "fastStochasticValue": 28.15116862025164822482,
+    "slowStochasticValue": 26.98974092653607409216
   },
   {
     "tick": {
@@ -6704,8 +6704,8 @@
     "haHigh": 6573.6448276248,
     "haLow": 6546.4500000000,
     "haClose": 6556.81587065500000000000,
-    "fastStochastic": 21.54012020351447863477,
-    "slowStochastic": 25.17320068552887560636
+    "fastStochasticValue": 21.54012020351447863477,
+    "slowStochasticValue": 25.17320068552887560636
   },
   {
     "tick": {
@@ -6734,8 +6734,8 @@
     "haHigh": 6577.0000000000,
     "haLow": 6553.2202611100,
     "haClose": 6562.38775820000000000000,
-    "fastStochastic": 67.93392218390457129166,
-    "slowStochastic": 39.42677451832077416813
+    "fastStochasticValue": 67.93392218390457129166,
+    "slowStochasticValue": 39.42677451832077416813
   },
   {
     "tick": {
@@ -6764,8 +6764,8 @@
     "haHigh": 6600.0000000000,
     "haLow": 6563.8090536700,
     "haClose": 6587.24800709250000000000,
-    "fastStochastic": 94.81792694677871148459,
-    "slowStochastic": 57.89049199447341994028
+    "fastStochasticValue": 94.81792694677871148459,
+    "slowStochasticValue": 57.89049199447341994028
   },
   {
     "tick": {
@@ -6794,8 +6794,8 @@
     "haHigh": 6593.7167862600,
     "haLow": 6575.5285303813,
     "haClose": 6588.21009569750000000000,
-    "fastStochastic": 81.32586366013071895425,
-    "slowStochastic": 65.70228254969251961160
+    "fastStochasticValue": 81.32586366013071895425,
+    "slowStochasticValue": 65.70228254969251961160
   },
   {
     "tick": {
@@ -6824,8 +6824,8 @@
     "haHigh": 6590.0000000000,
     "haLow": 6559.3805996100,
     "haClose": 6573.44029980500000000000,
-    "fastStochastic": 24.14677798319327731092,
-    "slowStochastic": 51.85044769419277217804
+    "fastStochasticValue": 24.14677798319327731092,
+    "slowStochasticValue": 51.85044769419277217804
   },
   {
     "tick": {
@@ -6854,8 +6854,8 @@
     "haHigh": 6582.6140000000,
     "haLow": 6575.1217907700,
     "haClose": 6576.77743927000000000000,
-    "fastStochastic": 56.35503642290637847551,
-    "slowStochastic": 53.35197727043064094386
+    "fastStochasticValue": 56.35503642290637847551,
+    "slowStochasticValue": 53.35197727043064094386
   },
   {
     "tick": {
@@ -6884,8 +6884,8 @@
     "haHigh": 6590.0000000000,
     "haLow": 6577.2161228461,
     "haClose": 6581.02487787500000000000,
-    "fastStochastic": 38.45305504274579470226,
-    "slowStochastic": 48.38566986120235886333
+    "fastStochasticValue": 38.45305504274579470226,
+    "slowStochasticValue": 48.38566986120235886333
   },
   {
     "tick": {
@@ -6914,8 +6914,8 @@
     "haHigh": 6589.9989997800,
     "haLow": 6575.0000000000,
     "haClose": 6581.44974994500000000000,
-    "fastStochastic": 45.48961871978873344108,
-    "slowStochastic": 47.42031948073115038925
+    "fastStochasticValue": 45.48961871978873344108,
+    "slowStochasticValue": 47.42031948073115038925
   },
   {
     "tick": {
@@ -6944,8 +6944,8 @@
     "haHigh": 6590.0000000000,
     "haLow": 6580.0000000000,
     "haClose": 6585.84371044250000000000,
-    "fastStochastic": 100.00000000000000000000,
-    "slowStochastic": 64.94687965382076692617
+    "fastStochasticValue": 100.00000000000000000000,
+    "slowStochasticValue": 64.94687965382076692617
   },
   {
     "tick": {
@@ -6974,8 +6974,8 @@
     "haHigh": 6589.7648314100,
     "haLow": 6574.0347031500,
     "haClose": 6583.27240254250000000000,
-    "fastStochastic": 98.52700145691309209825,
-    "slowStochastic": 76.14025358818487531686
+    "fastStochasticValue": 98.52700145691309209825,
+    "slowStochasticValue": 76.14025358818487531686
   },
   {
     "tick": {
@@ -7004,8 +7004,8 @@
     "haHigh": 6583.1684101701,
     "haLow": 6562.8850705000,
     "haClose": 6570.71076710000000000000,
-    "fastStochastic": -0.01986706253468223106,
-    "slowStochastic": 50.75354670461168946755
+    "fastStochasticValue": -0.01986706253468223106,
+    "slowStochasticValue": 50.75354670461168946755
   },
   {
     "tick": {
@@ -7036,8 +7036,8 @@
     "haHigh": 6576.9395886351,
     "haLow": 6557.4099497575,
     "haClose": 6557.40994975750000000000,
-    "fastStochastic": -93.35648479284374802698,
-    "slowStochastic": 2.71686953879321030271
+    "fastStochasticValue": -93.35648479284374802698,
+    "slowStochasticValue": 2.71686953879321030271
   },
   {
     "tick": {
@@ -7066,8 +7066,8 @@
     "haHigh": 6567.1747691963,
     "haLow": 6509.3300000000,
     "haClose": 6520.24285191000000000000,
-    "fastStochastic": 8.79731523490764844428,
-    "slowStochastic": 4.74368477083135634990
+    "fastStochasticValue": 8.79731523490764844428,
+    "slowStochasticValue": 4.74368477083135634990
   },
   {
     "tick": {
@@ -7096,8 +7096,8 @@
     "haHigh": 6546.9717017000,
     "haLow": 6517.1390567400,
     "haClose": 6525.98768961000000000000,
-    "fastStochastic": 26.48106501451794365115,
-    "slowStochastic": 11.98947818539355211698
+    "fastStochasticValue": 26.48106501451794365115,
+    "slowStochasticValue": 11.98947818539355211698
   },
   {
     "tick": {
@@ -7126,8 +7126,8 @@
     "haHigh": 6543.5871215900,
     "haLow": 6523.1644297800,
     "haClose": 6532.71422710750000000000,
-    "fastStochastic": 19.90041028949379442045,
-    "slowStochastic": 14.62645555342696621814
+    "fastStochasticValue": 19.90041028949379442045,
+    "slowStochasticValue": 14.62645555342696621814
   },
   {
     "tick": {
@@ -7156,8 +7156,8 @@
     "haHigh": 6533.7812385946,
     "haLow": 6520.0000000000,
     "haClose": 6523.33333333500000000000,
-    "fastStochastic": 26.38177477482092303640,
-    "slowStochastic": 18.54489529389161849089
+    "fastStochasticValue": 26.38177477482092303640,
+    "slowStochasticValue": 18.54489529389161849089
   },
   {
     "tick": {
@@ -7186,8 +7186,8 @@
     "haHigh": 6540.0000000000,
     "haLow": 6528.0508362500,
     "haClose": 6530.06071772500000000000,
-    "fastStochastic": 62.93551813572764166504,
-    "slowStochastic": 33.34176957450362621561
+    "fastStochasticValue": 62.93551813572764166504,
+    "slowStochasticValue": 33.34176957450362621561
   },
   {
     "tick": {
@@ -7218,8 +7218,8 @@
     "haHigh": 6540.0000000000,
     "haLow": 6524.4141199600,
     "haClose": 6532.29115401500000000000,
-    "fastStochastic": 28.86582591502138132911,
-    "slowStochastic": 31.84978835467621125344
+    "fastStochasticValue": 28.86582591502138132911,
+    "slowStochasticValue": 31.84978835467621125344
   },
   {
     "tick": {
@@ -7248,8 +7248,8 @@
     "haHigh": 6537.6440362200,
     "haLow": 6522.0000020600,
     "haClose": 6530.49068880250000000000,
-    "fastStochastic": 72.07322832984980597626,
-    "slowStochastic": 45.25760167973407616105
+    "fastStochasticValue": 72.07322832984980597626,
+    "slowStochasticValue": 45.25760167973407616105
   },
   {
     "tick": {
@@ -7278,8 +7278,8 @@
     "haHigh": 6546.6666666700,
     "haLow": 6530.6453833663,
     "haClose": 6541.78333333500000000000,
-    "fastStochastic": 100.00000000000000000000,
-    "slowStochastic": 63.50506778648938410737
+    "fastStochasticValue": 100.00000000000000000000,
+    "slowStochasticValue": 63.50506778648938410737
   },
   {
     "tick": {
@@ -7308,8 +7308,8 @@
     "haHigh": 6550.3531129000,
     "haLow": 6536.2143583507,
     "haClose": 6547.21030074250000000000,
-    "fastStochastic": 91.70068881231799254660,
-    "slowStochastic": 72.90360812843225358711
+    "fastStochasticValue": 91.70068881231799254660,
+    "slowStochasticValue": 72.90360812843225358711
   },
   {
     "tick": {
@@ -7338,8 +7338,8 @@
     "haHigh": 6554.2297366700,
     "haLow": 6530.0000000000,
     "haClose": 6537.33055404250000000000,
-    "fastStochastic": 31.31418102607826592960,
-    "slowStochastic": 59.04046576098092436794
+    "fastStochasticValue": 31.31418102607826592960,
+    "slowStochasticValue": 59.04046576098092436794
   },
   {
     "tick": {
@@ -7368,8 +7368,8 @@
     "haHigh": 6560.4200000000,
     "haLow": 6539.5214417946,
     "haClose": 6553.29296987500000000000,
-    "fastStochastic": 80.11020028701230065709,
-    "slowStochastic": 66.06371060299138313099
+    "fastStochasticValue": 80.11020028701230065709,
+    "slowStochasticValue": 66.06371060299138313099
   },
   {
     "tick": {
@@ -7398,8 +7398,8 @@
     "haHigh": 6573.6999999900,
     "haLow": 6546.4072058348,
     "haClose": 6560.15172151250000000000,
-    "fastStochastic": 68.64988559923338343232,
-    "slowStochastic": 66.92576893507204989810
+    "fastStochasticValue": 68.64988559923338343232,
+    "slowStochasticValue": 66.92576893507204989810
   },
   {
     "tick": {
@@ -7428,8 +7428,8 @@
     "haHigh": 6565.2091226900,
     "haLow": 6544.7266610600,
     "haClose": 6554.85734028500000000000,
-    "fastStochastic": 44.60772859144341615365,
-    "slowStochastic": 59.48642215386250531662
+    "fastStochasticValue": 44.60772859144341615365,
+    "slowStochasticValue": 59.48642215386250531662
   },
   {
     "tick": {
@@ -7458,8 +7458,8 @@
     "haHigh": 6554.0684019794,
     "haLow": 6495.0000000000,
     "haClose": 6521.34930878500000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 39.65761476924167021108
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 39.65761476924167021108
   },
   {
     "tick": {
@@ -7488,8 +7488,8 @@
     "haHigh": 6537.7088553822,
     "haLow": 6486.2463876100,
     "haClose": 6496.48958183250000000000,
-    "fastStochastic": 3.14865482975718789857,
-    "slowStochastic": 27.48796145608017610691
+    "fastStochasticValue": 3.14865482975718789857,
+    "slowStochasticValue": 27.48796145608017610691
   },
   {
     "tick": {
@@ -7518,8 +7518,8 @@
     "haHigh": 6519.9999999900,
     "haLow": 6489.2004032400,
     "haClose": 6501.35993000250000000000,
-    "fastStochastic": 20.04546497613755860727,
-    "slowStochastic": 25.00712929609930360703
+    "fastStochasticValue": 20.04546497613755860727,
+    "slowStochasticValue": 25.00712929609930360703
   },
   {
     "tick": {
@@ -7548,8 +7548,8 @@
     "haHigh": 6511.0074498900,
     "haLow": 6493.1532497400,
     "haClose": 6502.08034979750000000000,
-    "fastStochastic": 8.74698947928083850765,
-    "slowStochastic": 19.58708269049314857390
+    "fastStochasticValue": 8.74698947928083850765,
+    "slowStochasticValue": 19.58708269049314857390
   },
   {
     "tick": {
@@ -7578,8 +7578,8 @@
     "haHigh": 6515.0000000000,
     "haLow": 6495.6344290900,
     "haClose": 6508.82482805000000000000,
-    "fastStochastic": 44.16402862601079253558,
-    "slowStochastic": 27.77939800233236322779
+    "fastStochasticValue": 44.16402862601079253558,
+    "slowStochasticValue": 27.77939800233236322779
   },
   {
     "tick": {
@@ -7608,8 +7608,8 @@
     "haHigh": 6515.0000000000,
     "haLow": 6502.2522765900,
     "haClose": 6504.78676055250000000000,
-    "fastStochastic": 43.57571522837994977295,
-    "slowStochastic": 33.04483707768155874284
+    "fastStochasticValue": 43.57571522837994977295,
+    "slowStochasticValue": 33.04483707768155874284
   },
   {
     "tick": {
@@ -7638,8 +7638,8 @@
     "haHigh": 6515.0000000000,
     "haLow": 6490.0000000000,
     "haClose": 6500.00000000000000000000,
-    "fastStochastic": -13.63785141115524507638,
-    "slowStochastic": 17.48394091473595746977
+    "fastStochasticValue": -13.63785141115524507638,
+    "slowStochasticValue": 17.48394091473595746977
   },
   {
     "tick": {
@@ -7668,8 +7668,8 @@
     "haHigh": 6506.2972209900,
     "haLow": 6479.5485809400,
     "haClose": 6488.16855242500000000000,
-    "fastStochastic": 1.49451515354939927192,
-    "slowStochastic": 12.15413232767377140382
+    "fastStochasticValue": 1.49451515354939927192,
+    "slowStochasticValue": 12.15413232767377140382
   },
   {
     "tick": {
@@ -7698,8 +7698,8 @@
     "haHigh": 6501.6121474800,
     "haLow": 6481.7376117000,
     "haClose": 6488.96201207000000000000,
-    "fastStochastic": 31.17111541091579649732,
-    "slowStochastic": 18.49312668875444643499
+    "fastStochasticValue": 31.17111541091579649732,
+    "slowStochasticValue": 18.49312668875444643499
   },
   {
     "tick": {
@@ -7728,8 +7728,8 @@
     "haHigh": 6492.7630118600,
     "haLow": 6479.0000000100,
     "haClose": 6482.40880520500000000000,
-    "fastStochastic": -0.35497519454304866515,
-    "slowStochastic": 12.21042606098861473494
+    "fastStochasticValue": -0.35497519454304866515,
+    "slowStochasticValue": 12.21042606098861473494
   },
   {
     "tick": {
@@ -7758,8 +7758,8 @@
     "haHigh": 6487.3418076608,
     "haLow": 6480.2391205900,
     "haClose": 6480.96030602500000000000,
-    "fastStochastic": 6.73541152964872542490,
-    "slowStochastic": 10.38542121720865163159
+    "fastStochasticValue": 6.73541152964872542490,
+    "slowStochasticValue": 10.38542121720865163159
   },
   {
     "tick": {
@@ -7788,8 +7788,8 @@
     "haHigh": 6489.9888888800,
     "haLow": 6478.2317942200,
     "haClose": 6484.86239299500000000000,
-    "fastStochastic": 41.89173660657646219003,
-    "slowStochastic": 20.88752634699792181774
+    "fastStochasticValue": 41.89173660657646219003,
+    "slowStochasticValue": 20.88752634699792181774
   },
   {
     "tick": {
@@ -7820,8 +7820,8 @@
     "haHigh": 6498.6740290000,
     "haLow": 6483.5000000000,
     "haClose": 6490.66600725000000000000,
-    "fastStochastic": 52.42951483103467872923,
-    "slowStochastic": 31.40152250834350745490
+    "fastStochasticValue": 52.42951483103467872923,
+    "slowStochasticValue": 31.40152250834350745490
   },
   {
     "tick": {
@@ -7850,8 +7850,8 @@
     "haHigh": 6507.0554440000,
     "haLow": 6485.4514031400,
     "haClose": 6497.27070237250000000000,
-    "fastStochastic": 71.69791122129017208729,
-    "slowStochastic": 44.83365207932572899903
+    "fastStochasticValue": 71.69791122129017208729,
+    "slowStochasticValue": 44.83365207932572899903
   },
   {
     "tick": {
@@ -7880,8 +7880,8 @@
     "haHigh": 6497.6752248700,
     "haLow": 6490.0000000000,
     "haClose": 6493.83761243500000000000,
-    "fastStochastic": 67.45651851311107624761,
-    "slowStochastic": 52.37460755725417808189
+    "fastStochasticValue": 67.45651851311107624761,
+    "slowStochasticValue": 52.37460755725417808189
   },
   {
     "tick": {
@@ -7910,8 +7910,8 @@
     "haHigh": 6515.0000000000,
     "haLow": 6493.1330733318,
     "haClose": 6507.01502334250000000000,
-    "fastStochastic": 87.09171429686227131424,
-    "slowStochastic": 63.94697647045687582601
+    "fastStochasticValue": 87.09171429686227131424,
+    "slowStochasticValue": 63.94697647045687582601
   },
   {
     "tick": {
@@ -7940,8 +7940,8 @@
     "haHigh": 6515.0000000000,
     "haLow": 6500.0740483372,
     "haClose": 6505.25000000250000000000,
-    "fastStochastic": 53.96825396825396825397,
-    "slowStochastic": 60.62073563638923996866
+    "fastStochasticValue": 53.96825396825396825397,
+    "slowStochasticValue": 60.62073563638923996866
   },
   {
     "tick": {
@@ -7970,8 +7970,8 @@
     "haHigh": 6502.6620241699,
     "haLow": 6437.0000000000,
     "haClose": 6466.02297842000000000000,
-    "fastStochastic": -8.85170066666666666667,
-    "slowStochastic": 37.46325686870393775688
+    "fastStochasticValue": -8.85170066666666666667,
+    "slowStochasticValue": 37.46325686870393775688
   },
   {
     "tick": {
@@ -8000,8 +8000,8 @@
     "haHigh": 6484.3425012950,
     "haLow": 6428.4139361500,
     "haClose": 6436.28691171750000000000,
-    "fastStochastic": 4.37674950389836897523,
-    "slowStochastic": 26.43442108043541482966
+    "fastStochasticValue": 4.37674950389836897523,
+    "slowStochasticValue": 26.43442108043541482966
   },
   {
     "tick": {
@@ -8030,8 +8030,8 @@
     "haHigh": 6460.3147065063,
     "haLow": 6435.2367490800,
     "haClose": 6446.25475681000000000000,
-    "fastStochastic": 26.49676164947876886310,
-    "slowStochastic": 26.45520127011653284081
+    "fastStochasticValue": 26.49676164947876886310,
+    "slowStochasticValue": 26.45520127011653284081
   },
   {
     "tick": {
@@ -8060,8 +8060,8 @@
     "haHigh": 6453.2847316582,
     "haLow": 6432.7685698400,
     "haClose": 6440.89154714000000000000,
-    "fastStochastic": 20.07676731917869713857,
-    "slowStochastic": 24.32905661980392094006
+    "fastStochasticValue": 20.07676731917869713857,
+    "slowStochasticValue": 24.32905661980392094006
   },
   {
     "tick": {
@@ -8090,8 +8090,8 @@
     "haHigh": 6449.9999999900,
     "haLow": 6416.0000000000,
     "haClose": 6429.89749999750000000000,
-    "fastStochastic": 1.84883720930232558140,
-    "slowStochastic": 16.83565014963672248717
+    "fastStochasticValue": 1.84883720930232558140,
+    "slowStochasticValue": 16.83565014963672248717
   },
   {
     "tick": {
@@ -8120,8 +8120,8 @@
     "haHigh": 6440.0000000000,
     "haLow": 6410.0000000000,
     "haClose": 6425.51507791750000000000,
-    "fastStochastic": 5.71456959414025364937,
-    "slowStochastic": 13.12862329780456620790
+    "fastStochasticValue": 5.71456959414025364937,
+    "slowStochasticValue": 13.12862329780456620790
   },
   {
     "tick": {
@@ -8150,8 +8150,8 @@
     "haHigh": 6449.9999999900,
     "haLow": 6419.6000000000,
     "haClose": 6434.79999999500000000000,
-    "fastStochastic": 80.92932919061897038246,
-    "slowStochastic": 35.72885859540936759942
+    "fastStochasticValue": 80.92932919061897038246,
+    "slowStochasticValue": 35.72885859540936759942
   },
   {
     "tick": {
@@ -8182,8 +8182,8 @@
     "haHigh": 6450.0000000000,
     "haLow": 6426.5621968000,
     "haClose": 6439.13804920000000000000,
-    "fastStochastic": 99.97500000000000000000,
-    "slowStochastic": 57.14423906360624506628
+    "fastStochasticValue": 99.97500000000000000000,
+    "slowStochasticValue": 57.14423906360624506628
   },
   {
     "tick": {
@@ -8212,8 +8212,8 @@
     "haHigh": 6450.0000000000,
     "haLow": 6436.2700118008,
     "haClose": 6446.31796340250000000000,
-    "fastStochastic": 100.00000000000000000000,
-    "slowStochastic": 71.42949270907083004419
+    "fastStochasticValue": 100.00000000000000000000,
+    "slowStochasticValue": 71.42949270907083004419
   },
   {
     "tick": {
@@ -8242,8 +8242,8 @@
     "haHigh": 6450.0000000000,
     "haLow": 6435.0000000000,
     "haClose": 6438.16120442000000000000,
-    "fastStochastic": 66.75490532500000000000,
-    "slowStochastic": 69.87129691438055336279
+    "fastStochasticValue": 66.75490532500000000000,
+    "slowStochasticValue": 69.87129691438055336279
   },
   {
     "tick": {
@@ -8272,8 +8272,8 @@
     "haHigh": 6441.5834917300,
     "haLow": 6431.2817418100,
     "haClose": 6437.36218132000000000000,
-    "fastStochastic": 72.31411753289473684211,
-    "slowStochastic": 70.68557045388528118923
+    "fastStochasticValue": 72.31411753289473684211,
+    "slowStochasticValue": 70.68557045388528118923
   },
   {
     "tick": {
@@ -8302,8 +8302,8 @@
     "haHigh": 6450.0000000000,
     "haLow": 6437.5117471000,
     "haClose": 6441.77380970750000000000,
-    "fastStochastic": 48.80066234193825810433,
-    "slowStochastic": 63.39060108323627349426
+    "fastStochasticValue": 48.80066234193825810433,
+    "slowStochasticValue": 63.39060108323627349426
   },
   {
     "tick": {
@@ -8332,8 +8332,8 @@
     "haHigh": 6440.1593491865,
     "haLow": 6405.0000000000,
     "haClose": 6417.45573722750000000000,
-    "fastStochastic": -18.43028420000000000000,
-    "slowStochastic": 36.11697265549084899617
+    "fastStochasticValue": -18.43028420000000000000,
+    "slowStochasticValue": 36.11697265549084899617
   },
   {
     "tick": {
@@ -8362,8 +8362,8 @@
     "haHigh": 6443.1160652900,
     "haLow": 6412.2734727000,
     "haClose": 6427.70445877250000000000,
-    "fastStochastic": 57.73875360000000000000,
-    "slowStochastic": 43.32423297032723266411
+    "fastStochasticValue": 57.73875360000000000000,
+    "slowStochasticValue": 43.32423297032723266411
   },
   {
     "tick": {
@@ -8392,8 +8392,8 @@
     "haHigh": 6436.3684281600,
     "haLow": 6422.8462975400,
     "haClose": 6428.48379166750000000000,
-    "fastStochastic": 65.58019008888888888889,
-    "slowStochastic": 50.74288534318111807237
+    "fastStochasticValue": 65.58019008888888888889,
+    "slowStochasticValue": 50.74288534318111807237
   },
   {
     "tick": {
@@ -8422,8 +8422,8 @@
     "haHigh": 6439.2813489200,
     "haLow": 6424.9149366200,
     "haClose": 6427.37034232250000000000,
-    "fastStochastic": 47.33351944444444444444,
-    "slowStochastic": 49.60643004360222686306
+    "fastStochasticValue": 47.33351944444444444444,
+    "slowStochasticValue": 49.60643004360222686306
   },
   {
     "tick": {
@@ -8452,8 +8452,8 @@
     "haHigh": 6446.8833941600,
     "haLow": 6421.0476141800,
     "haClose": 6428.31134964250000000000,
-    "fastStochastic": 38.31498020121299548470,
-    "slowStochastic": 45.84261342947248307027
+    "fastStochasticValue": 38.31498020121299548470,
+    "slowStochasticValue": 45.84261342947248307027
   },
   {
     "tick": {
@@ -8482,8 +8482,8 @@
     "haHigh": 6450.0000000000,
     "haLow": 6428.0907344841,
     "haClose": 6441.78258313500000000000,
-    "fastStochastic": 91.59830578946501656939,
-    "slowStochastic": 61.09451088280332756998
+    "fastStochasticValue": 91.59830578946501656939,
+    "slowStochasticValue": 61.09451088280332756998
   },
   {
     "tick": {
@@ -8512,8 +8512,8 @@
     "haHigh": 6450.0000000000,
     "haLow": 6434.9366588096,
     "haClose": 6443.79064797750000000000,
-    "fastStochastic": 100.00000000000000000000,
-    "slowStochastic": 74.06300725520221837999
+    "fastStochasticValue": 100.00000000000000000000,
+    "slowStochasticValue": 74.06300725520221837999
   },
   {
     "tick": {
@@ -8542,8 +8542,8 @@
     "haHigh": 6450.0000000000,
     "haLow": 6430.3495156600,
     "haClose": 6437.05285529250000000000,
-    "fastStochastic": 56.86845903602979825170,
-    "slowStochastic": 68.33149118214474500389
+    "fastStochasticValue": 56.86845903602979825170,
+    "slowStochasticValue": 68.33149118214474500389
   },
   {
     "tick": {
@@ -8572,8 +8572,8 @@
     "haHigh": 6476.4789340900,
     "haLow": 6438.2082543431,
     "haClose": 6459.36368343000000000000,
-    "fastStochastic": 61.15505727635486859905,
-    "slowStochastic": 65.93934654688145286894
+    "fastStochasticValue": 61.15505727635486859905,
+    "slowStochasticValue": 65.93934654688145286894
   },
   {
     "tick": {
@@ -8602,8 +8602,8 @@
     "haHigh": 6465.7748444300,
     "haLow": 6441.0000000000,
     "haClose": 6451.37243388000000000000,
-    "fastStochastic": 35.50659290199943671824,
-    "slowStochastic": 55.79509533192078081871
+    "fastStochasticValue": 35.50659290199943671824,
+    "slowStochasticValue": 55.79509533192078081871
   },
   {
     "tick": {
@@ -8632,8 +8632,8 @@
     "haHigh": 6450.0792013833,
     "haLow": 6434.9646678800,
     "haClose": 6442.21529206000000000000,
-    "fastStochastic": 41.44080118635911447800,
-    "slowStochastic": 51.01033061673355870514
+    "fastStochasticValue": 41.44080118635911447800,
+    "slowStochasticValue": 51.01033061673355870514
   },
   {
     "tick": {
@@ -8662,8 +8662,8 @@
     "haHigh": 6457.7159393100,
     "haLow": 6443.8361906800,
     "haClose": 6449.51304291750000000000,
-    "fastStochastic": 53.43766554830160255285,
-    "slowStochastic": 51.81944226058957332104
+    "fastStochasticValue": 53.43766554830160255285,
+    "slowStochasticValue": 51.81944226058957332104
   },
   {
     "tick": {
@@ -8692,8 +8692,8 @@
     "haHigh": 6455.0000000000,
     "haLow": 6445.6894471800,
     "haClose": 6449.28998027250000000000,
-    "fastStochastic": 29.88825144405701877875,
-    "slowStochastic": 44.50904532174538847361
+    "fastStochasticValue": 29.88825144405701877875,
+    "slowStochasticValue": 44.50904532174538847361
   },
   {
     "tick": {
@@ -8722,8 +8722,8 @@
     "haHigh": 6448.5600625461,
     "haLow": 6431.3615000000,
     "haClose": 6442.38550835750000000000,
-    "fastStochastic": 31.36491163175214818841,
-    "slowStochastic": 40.12766742508097504521
+    "fastStochasticValue": 31.36491163175214818841,
+    "slowStochasticValue": 40.12766742508097504521
   },
   {
     "tick": {
@@ -8752,8 +8752,8 @@
     "haHigh": 6454.4160692200,
     "haLow": 6440.8530915800,
     "haClose": 6445.06753977750000000000,
-    "fastStochastic": 47.95965553023180594465,
-    "slowStochastic": 42.73833012679791867836
+    "fastStochasticValue": 47.95965553023180594465,
+    "slowStochasticValue": 42.73833012679791867836
   },
   {
     "tick": {
@@ -8782,8 +8782,8 @@
     "haHigh": 6465.2706542900,
     "haLow": 6445.2701626147,
     "haClose": 6453.83797316750000000000,
-    "fastStochastic": 60.86409535163903965356,
-    "slowStochastic": 48.78025186841162567009
+    "fastStochasticValue": 60.86409535163903965356,
+    "slowStochasticValue": 48.78025186841162567009
   },
   {
     "tick": {
@@ -8812,8 +8812,8 @@
     "haHigh": 6461.7643991200,
     "haLow": 6448.7739168700,
     "haClose": 6452.82805821500000000000,
-    "fastStochastic": 51.35019505672254263703,
-    "slowStochastic": 49.63689959784859799240
+    "fastStochasticValue": 51.35019505672254263703,
+    "slowStochasticValue": 49.63689959784859799240
   },
   {
     "tick": {
@@ -8842,8 +8842,8 @@
     "haHigh": 6460.0000000000,
     "haLow": 6448.7739168700,
     "haClose": 6451.88022232250000000000,
-    "fastStochastic": 50.74822864300930933067,
-    "slowStochastic": 50.00734261290216843849
+    "fastStochasticValue": 50.74822864300930933067,
+    "slowStochasticValue": 50.00734261290216843849
   },
   {
     "tick": {
@@ -8872,8 +8872,8 @@
     "haHigh": 6458.7720914900,
     "haLow": 6448.5697952000,
     "haClose": 6453.67094334500000000000,
-    "fastStochastic": 73.38570242582577563082,
-    "slowStochastic": 57.80012921721003750260
+    "fastStochasticValue": 73.38570242582577563082,
+    "slowStochasticValue": 57.80012921721003750260
   },
   {
     "tick": {
@@ -8902,8 +8902,8 @@
     "haHigh": 6460.0000000000,
     "haLow": 6452.6032930164,
     "haClose": 6458.52801362000000000000,
-    "fastStochastic": 56.46538749402741053844,
-    "slowStochastic": 57.35521530948249518121
+    "fastStochasticValue": 56.46538749402741053844,
+    "slowStochasticValue": 57.35521530948249518121
   },
   {
     "tick": {
@@ -8932,8 +8932,8 @@
     "haHigh": 6475.0000000000,
     "haLow": 6455.5656533182,
     "haClose": 6464.90828298750000000000,
-    "fastStochastic": 75.91063671969730631826,
-    "slowStochastic": 63.54035577955409889356
+    "fastStochasticValue": 75.91063671969730631826,
+    "slowStochasticValue": 63.54035577955409889356
   },
   {
     "tick": {
@@ -8962,8 +8962,8 @@
     "haHigh": 6477.8371801100,
     "haLow": 6448.0000000000,
     "haClose": 6458.50097463500000000000,
-    "fastStochastic": 0E-20,
-    "slowStochastic": 42.36023718636939926237
+    "fastStochasticValue": 0E-20,
+    "slowStochasticValue": 42.36023718636939926237
   },
   {
     "tick": {
@@ -8992,8 +8992,8 @@
     "haHigh": 6461.7230906400,
     "haLow": 6438.8051004400,
     "haClose": 6449.32338287250000000000,
-    "fastStochastic": 58.71578043947971886275,
-    "slowStochastic": 47.81208493740617246250
+    "fastStochasticValue": 58.71578043947971886275,
+    "slowStochasticValue": 47.81208493740617246250
   },
   {
     "tick": {
@@ -9022,7 +9022,7 @@
     "haHigh": 6468.7235214200,
     "haLow": 6454.3461771333,
     "haClose": 6461.51196468750000000000,
-    "fastStochastic": 71.10526752519307921365,
-    "slowStochastic": 55.57647913333514137955
+    "fastStochasticValue": 71.10526752519307921365,
+    "slowStochasticValue": 55.57647913333514137955
   }
 ]

@@ -1,4 +1,4 @@
-package pro.crypto.boandary.web.market;
+package pro.crypto.front.office.web.market;
 
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import pro.crypto.front.office.response.MarketResponse;
 import pro.crypto.request.MarketFindRequest;
-import pro.crypto.response.MarketResponse;
 import pro.crypto.service.MarketService;
 
 import javax.validation.Valid;

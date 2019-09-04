@@ -1,6 +1,6 @@
 package pro.crypto.proxy;
 
-import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Validated
-@FeignClient(name = "api-indicator", url = "${pro.crypto.entry.point.api.url}", path = "/tick")
+@FeignClient(name = "api-tick", url = "${pro.crypto.entry.point.api.url}", path = "/tick")
 public interface HttpTickProxy {
 
     @RequestMapping(value = "/time", method = GET)

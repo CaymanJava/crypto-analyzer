@@ -1,4 +1,4 @@
-package pro.crypto.response;
+package pro.crypto.front.office.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.model.tick.Tick;
 import pro.crypto.model.tick.TimeFrame;
+import pro.crypto.response.TickDataSnapshot;
 
 @AllArgsConstructor
 @NoArgsConstructor

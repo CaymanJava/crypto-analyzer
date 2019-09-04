@@ -1,4 +1,4 @@
-package pro.crypto.configuration.swagger;
+package pro.crypto.front.office.configuration.swagger;
 
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;

@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import pro.crypto.exception.MarketNotFoundException;
 import pro.crypto.model.Market;
 import pro.crypto.model.market.Stock;
 import pro.crypto.model.market.StockMarket;
@@ -14,6 +15,7 @@ import pro.crypto.snapshot.MarketSnapshot;
 
 import javax.transaction.Transactional;
 
+import static java.lang.String.format;
 import static java.util.Objects.isNull;
 
 @Service
@@ -28,7 +30,7 @@ public class RepositoryMarketService implements MarketService {
     @Override
     public MarketSnapshot findById(Long marketId) {
         log.trace("Getting market by id {marketId: {}}", marketId);
-        MarketSnapshot marketSnapshot = marketMapper.toSnapshot(marketRepository.findOne(marketId));
+        MarketSnapshot marketSnapshot = marketMapper.toSnapshot(getById(marketId));
         log.trace("Found market by id {marketId: {}}", marketId);
         return marketSnapshot;
     }
@@ -52,6 +54,11 @@ public class RepositoryMarketService implements MarketService {
             updatedMarket.update(market);
             log.info("Updated market {market: {}, stock: {}}", market.getMarketName(), stock);
         }
+    }
+
+    private Market getById(Long marketId) {
+        return marketRepository.findById(marketId)
+                .orElseThrow(() -> new MarketNotFoundException(format("Market with id %d hasn't found", marketId)));
     }
 
 }

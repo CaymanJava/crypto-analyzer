@@ -12,7 +12,7 @@ public class MathHelper {
 
     public static BigDecimal scaleAndRound(BigDecimal value) {
         return nonNull(value)
-                ? value.setScale(10, BigDecimal.ROUND_HALF_UP)
+                ? value.setScale(10, RoundingMode.HALF_UP)
                 : null;
     }
 
@@ -21,7 +21,7 @@ public class MathHelper {
             return BigDecimal.ZERO;
         }
         return nonNull(divisible) && nonNull(divisor)
-                ? divisible.divide(divisor, 20, BigDecimal.ROUND_HALF_UP)
+                ? divisible.divide(divisor, 20, RoundingMode.HALF_UP)
                 : null;
     }
 

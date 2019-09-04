@@ -36,6 +36,9 @@ import static pro.crypto.model.strategy.Position.ENTRY_LONG;
 import static pro.crypto.model.strategy.Position.ENTRY_SHORT;
 import static pro.crypto.model.strategy.StrategyType.HA_MACD_PSAR;
 
+/**
+ * http://fox-trader.ru/strategiya-torgovli-heiken-ashi-macd.html
+ */
 public class HaMacdPsarStrategy implements Strategy<HaMacdPsarResult> {
 
     private final Tick[] originalData;
@@ -126,13 +129,14 @@ public class HaMacdPsarStrategy implements Strategy<HaMacdPsarResult> {
     }
 
     private void calculateAndAnalyzeParabolic() {
-        psarResults = new ParabolicStopAndReverse(buildPSARRequest()).getResult();
-        psarAnalyzerResults = new PSARAnalyzer(new AnalyzerRequest(originalData, psarResults)).getResult();
+        Tick[] haTicks = builtTicksFromHaResult();
+        psarResults = new ParabolicStopAndReverse(buildPSARRequest(haTicks)).getResult();
+        psarAnalyzerResults = new PSARAnalyzer(new AnalyzerRequest(haTicks, psarResults)).getResult();
     }
 
-    private IndicatorRequest buildPSARRequest() {
+    private IndicatorRequest buildPSARRequest(Tick[] ticks) {
         return PSARRequest.builder()
-                .originalData(builtTicksFromHaResult())
+                .originalData(ticks)
                 .minAccelerationFactor(psarMinAccelerationFactor)
                 .maxAccelerationFactor(psarMaxAccelerationFactor)
                 .build();

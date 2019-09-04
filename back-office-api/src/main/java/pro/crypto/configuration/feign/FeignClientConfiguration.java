@@ -10,11 +10,10 @@ import feign.codec.EncodeException;
 import feign.codec.Encoder;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
-import org.springframework.cloud.netflix.feign.support.SpringEncoder;
+import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
+import org.springframework.cloud.openfeign.support.SpringEncoder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.convert.converter.Converter;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -26,6 +25,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Function;
 
 import static java.util.Objects.nonNull;
 
@@ -37,24 +37,25 @@ public class FeignClientConfiguration {
 
     @Bean
     public Encoder feignEncoder() {
-        return new FeignClientConfiguration.PageableQueryEncoder(new FeignClientConfiguration.PageableQueryEncoder(new SpringEncoder(messageConverters)));
+        return new PageableQueryEncoder(new SpringEncoder(messageConverters));
     }
 
     @Bean
     public Module myJacksonModule() {
-        return new FeignClientConfiguration.MyJacksonModule();
+        return new MyJacksonModule();
     }
 
-    @JsonDeserialize(as = FeignClientConfiguration.SimplePageImpl.class)
+    @JsonDeserialize(as = SimplePageImpl.class)
     private interface PageMixIn {
     }
 
-    public static class MyJacksonModule extends SimpleModule {
+    private static class MyJacksonModule extends SimpleModule {
 
         @Override
         public void setupModule(SetupContext context) {
-            context.setMixInAnnotations(Page.class, FeignClientConfiguration.PageMixIn.class);
+            context.setMixInAnnotations(Page.class, PageMixIn.class);
         }
+
     }
 
     public static class SimplePageImpl<T> implements Page<T> {
@@ -66,7 +67,7 @@ public class FeignClientConfiguration {
                 @JsonProperty("page") int number,
                 @JsonProperty("size") int size,
                 @JsonProperty("totalElements") long totalElements) {
-            delegate = new PageImpl<>(content, new PageRequest(number, size), totalElements);
+            delegate = new PageImpl<>(content, PageRequest.of(number, size), totalElements);
         }
 
         @JsonProperty
@@ -83,8 +84,8 @@ public class FeignClientConfiguration {
 
         @JsonIgnore
         @Override
-        public <S> Page<S> map(Converter<? super T, ? extends S> converter) {
-            return delegate.map(converter);
+        public <U> Page<U> map(Function<? super T, ? extends U> function) {
+            return delegate.map(function);
         }
 
         @JsonProperty("page")
@@ -166,7 +167,7 @@ public class FeignClientConfiguration {
         }
     }
 
-    private class PageableQueryEncoder implements Encoder {
+    private static class PageableQueryEncoder implements Encoder {
 
         private final Encoder delegate;
 
@@ -195,6 +196,7 @@ public class FeignClientConfiguration {
                 delegate.encode(object, bodyType, template);
             }
         }
+
     }
 
 }

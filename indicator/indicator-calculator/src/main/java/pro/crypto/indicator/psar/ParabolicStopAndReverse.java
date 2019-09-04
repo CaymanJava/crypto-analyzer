@@ -8,6 +8,7 @@ import pro.crypto.model.tick.Tick;
 import pro.crypto.request.IndicatorRequest;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.stream.IntStream;
 
 import static java.lang.String.format;
@@ -31,9 +32,9 @@ public class ParabolicStopAndReverse implements Indicator<PSARResult> {
     public ParabolicStopAndReverse(IndicatorRequest creationRequest) {
         PSARRequest request = (PSARRequest) creationRequest;
         this.originalData = request.getOriginalData();
-        this.minAccelerationFactor = new BigDecimal(request.getMinAccelerationFactor()).setScale(3,BigDecimal.ROUND_HALF_UP);
-        this.maxAccelerationFactor = new BigDecimal(request.getMaxAccelerationFactor()).setScale(3,BigDecimal.ROUND_HALF_UP);
-        this.deltaAccelerationFactor = new BigDecimal(0.02).setScale(2, BigDecimal.ROUND_HALF_UP);
+        this.minAccelerationFactor = new BigDecimal(request.getMinAccelerationFactor()).setScale(3, RoundingMode.HALF_UP);
+        this.maxAccelerationFactor = new BigDecimal(request.getMaxAccelerationFactor()).setScale(3, RoundingMode.HALF_UP);
+        this.deltaAccelerationFactor = new BigDecimal(0.02).setScale(2, RoundingMode.HALF_UP);
         checkIncomingData();
         initAuxiliaryArrays();
     }

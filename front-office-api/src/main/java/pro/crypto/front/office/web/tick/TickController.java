@@ -1,4 +1,4 @@
-package pro.crypto.boandary.web.tick;
+package pro.crypto.front.office.web.tick;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import pro.crypto.front.office.response.TickDataResponse;
 import pro.crypto.request.TickPeriodFindRequest;
 import pro.crypto.request.TickTimeFindRequest;
-import pro.crypto.response.TickDataResponse;
 import pro.crypto.service.TickService;
 
 import javax.validation.Valid;

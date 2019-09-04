@@ -1,4 +1,4 @@
-package pro.crypto.configuration.web;
+package pro.crypto.front.office.configuration.web;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
@@ -13,23 +13,25 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Objects;
+
+import static java.util.Objects.isNull;
 
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class ApiCORSFilter implements Filter {
 
     @Override
+    public void init(FilterConfig filterConfig) {
+
+    }
+
+    @Override
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
         HttpServletResponse response = (HttpServletResponse) res;
 
-        if(Objects.isNull(response.getHeader("Access-Control-Allow-Origin"))) {
-            response.addHeader("Access-Control-Allow-Origin", "*");
-            response.addHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-            response.addHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-            response.addHeader("Access-Control-Expose-Headers", "Content-Disposition, Content-Length");
+        if (isNull(response.getHeader("Access-Control-Allow-Origin"))) {
+            addAccessControlHeaders(response);
             HttpServletRequest request = (HttpServletRequest) req;
-
             if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
                 response.setStatus(HttpServletResponse.SC_OK);
                 return;
@@ -39,13 +41,15 @@ public class ApiCORSFilter implements Filter {
     }
 
     @Override
-    public void init(FilterConfig filterConfig) {
+    public void destroy() {
 
     }
 
-    @Override
-    public void destroy() {
-
+    private void addAccessControlHeaders(HttpServletResponse response) {
+        response.addHeader("Access-Control-Allow-Origin", "*");
+        response.addHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+        response.addHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+        response.addHeader("Access-Control-Expose-Headers", "Content-Disposition, Content-Length");
     }
 
 }

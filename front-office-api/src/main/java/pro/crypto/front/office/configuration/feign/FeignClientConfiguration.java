@@ -1,4 +1,4 @@
-package pro.crypto.configuration.feign;
+package pro.crypto.front.office.configuration.feign;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -10,11 +10,10 @@ import feign.codec.EncodeException;
 import feign.codec.Encoder;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
-import org.springframework.cloud.netflix.feign.support.SpringEncoder;
+import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
+import org.springframework.cloud.openfeign.support.SpringEncoder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.convert.converter.Converter;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -26,6 +25,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Function;
 
 import static java.util.Objects.nonNull;
 
@@ -37,7 +37,7 @@ public class FeignClientConfiguration {
 
     @Bean
     public Encoder feignEncoder() {
-        return new PageableQueryEncoder(new PageableQueryEncoder(new SpringEncoder(messageConverters)));
+        return new PageableQueryEncoder(new SpringEncoder(messageConverters));
     }
 
     @Bean
@@ -52,12 +52,12 @@ public class FeignClientConfiguration {
     public static class MyJacksonModule extends SimpleModule {
 
         @Override
-        public void setupModule(SetupContext context) {
+        public void setupModule(Module.SetupContext context) {
             context.setMixInAnnotations(Page.class, PageMixIn.class);
         }
     }
 
-    public static class SimplePageImpl<T> implements Page<T> {
+    private static class SimplePageImpl<T> implements Page<T> {
 
         private final Page<T> delegate;
 
@@ -66,7 +66,7 @@ public class FeignClientConfiguration {
                 @JsonProperty("page") int number,
                 @JsonProperty("size") int size,
                 @JsonProperty("totalElements") long totalElements) {
-            delegate = new PageImpl<>(content, new PageRequest(number, size), totalElements);
+            delegate = new PageImpl<>(content, PageRequest.of(number, size), totalElements);
         }
 
         @JsonProperty
@@ -83,8 +83,8 @@ public class FeignClientConfiguration {
 
         @JsonIgnore
         @Override
-        public <S> Page<S> map(Converter<? super T, ? extends S> converter) {
-            return delegate.map(converter);
+        public <U> Page<U> map(Function<? super T, ? extends U> function) {
+            return delegate.map(function);
         }
 
         @JsonProperty("page")
@@ -166,7 +166,7 @@ public class FeignClientConfiguration {
         }
     }
 
-    private class PageableQueryEncoder implements Encoder {
+    private static class PageableQueryEncoder implements Encoder {
 
         private final Encoder delegate;
 
@@ -176,12 +176,10 @@ public class FeignClientConfiguration {
 
         @Override
         public void encode(Object object, Type bodyType, RequestTemplate template) throws EncodeException {
-
             if (object instanceof Pageable) {
                 Pageable pageable = (Pageable) object;
                 template.query("page", pageable.getPageNumber() + "");
                 template.query("size", pageable.getPageSize() + "");
-
                 if (nonNull(pageable.getSort())) {
                     Collection<String> existingSorts = template.queries().get("sort");
                     List<String> sortQueries = nonNull(existingSorts) ? new ArrayList<>(existingSorts) : new ArrayList<>();
@@ -190,11 +188,11 @@ public class FeignClientConfiguration {
                     }
                     template.query("sort", sortQueries);
                 }
-
             } else {
                 delegate.encode(object, bodyType, template);
             }
         }
+
     }
 
 }

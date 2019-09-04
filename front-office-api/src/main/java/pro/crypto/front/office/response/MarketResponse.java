@@ -1,4 +1,4 @@
-package pro.crypto.response;
+package pro.crypto.front.office.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,7 +1,6 @@
 package pro.crypto;
 
 import org.springframework.data.jpa.domain.Specification;
-import org.springframework.data.jpa.domain.Specifications;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Expression;
@@ -32,14 +31,8 @@ public final class SpecificationsBuilder<T> {
         return new SpecificationsBuilder<>();
     }
 
-    public Specifications<T> build() {
+    public Specification<T> build() {
         return tryBuild().orElse(null);
-    }
-
-    public Optional<Specifications<T>> tryBuild() {
-        return specificationsList.stream()
-                .map(Specifications::where)
-                .reduce(Specifications::and);
     }
 
     public SpecificationsBuilder<T> like(List<SingularAttribute<T, String>> attributes, String value) {
@@ -109,7 +102,7 @@ public final class SpecificationsBuilder<T> {
     }
 
     public SpecificationsBuilder<T> startsWith(BiFunction<Root<T>, CriteriaBuilder, Expression<String>> attributeProvider, String value) {
-        return predicate((root, builder) -> builder.like(builder.lower(attributeProvider.apply(root, builder)),  normalizeString(value) + "%"), () -> hasText(value));
+        return predicate((root, builder) -> builder.like(builder.lower(attributeProvider.apply(root, builder)), normalizeString(value) + "%"), () -> hasText(value));
     }
 
     public <K> SpecificationsBuilder<T> equal(SingularAttribute<T, K> attribute, K value) {
@@ -225,6 +218,12 @@ public final class SpecificationsBuilder<T> {
         });
 
         return this;
+    }
+
+    private Optional<Specification<T>> tryBuild() {
+        return specificationsList.stream()
+                .map(Specification::where)
+                .reduce(Specification::and);
     }
 
     private String normalizeString(String value) {

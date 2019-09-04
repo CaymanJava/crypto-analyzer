@@ -1,4 +1,4 @@
-package pro.crypto.configuration.swagger;
+package pro.crypto.front.office.configuration.swagger;
 
 import com.fasterxml.classmate.ResolvedType;
 import org.springframework.core.annotation.Order;

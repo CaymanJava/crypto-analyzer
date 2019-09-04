@@ -1,4 +1,4 @@
-package pro.crypto.boandary.web.strategy;
+package pro.crypto.front.office.web.strategy;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

@@ -1,6 +1,6 @@
 package pro.crypto.proxy;
 
-import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -17,7 +17,7 @@ import pro.crypto.snapshot.MarketSnapshot;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Validated
-@FeignClient(name = "api-indicator", url = "${pro.crypto.entry.point.api.url}", path = "/market")
+@FeignClient(name = "api-market", url = "${pro.crypto.entry.point.api.url}", path = "/market")
 public interface HttpMarketProxy {
 
     @RequestMapping(value = "/{marketId}", method = GET)

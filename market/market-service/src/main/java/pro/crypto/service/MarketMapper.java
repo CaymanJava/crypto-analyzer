@@ -9,7 +9,7 @@ import pro.crypto.snapshot.MarketSnapshot;
 @Component
 public class MarketMapper {
 
-    public Market toMarket(StockMarket market, Stock stockExchangeName) {
+    Market toMarket(StockMarket market, Stock stockExchangeName) {
         return Market.builder()
                 .stock(stockExchangeName)
                 .marketId(market.getId())
@@ -40,7 +40,7 @@ public class MarketMapper {
                 .build();
     }
 
-    public MarketSnapshot toSnapshot(Market market) {
+    MarketSnapshot toSnapshot(Market market) {
         return MarketSnapshot.builder()
                 .id(market.getId())
                 .marketId(market.getMarketId())

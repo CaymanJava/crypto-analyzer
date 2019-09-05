@@ -10,4 +10,11 @@
         </comment>
     </changeSet>
 
+    <changeSet author="dbosenko" id="2">
+        <sqlFile path="002_create_member.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add member table
+        </comment>
+    </changeSet>
+
 </databaseChangeLog>

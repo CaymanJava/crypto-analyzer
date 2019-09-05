@@ -1,3 +1,4 @@
-CREATE SCHEMA strategy;
-CREATE SCHEMA crypto_market;
-CREATE SCHEMA liquibase;
+CREATE SCHEMA IF NOT EXISTS liquibase;
+CREATE SCHEMA IF NOT EXISTS crypto_market;
+CREATE SCHEMA IF NOT EXISTS crypto_strategy;
+CREATE SCHEMA IF NOT EXISTS crypto_member;

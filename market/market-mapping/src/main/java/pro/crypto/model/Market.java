@@ -8,7 +8,6 @@ import pro.crypto.model.market.Status;
 import pro.crypto.model.market.Stock;
 import pro.crypto.model.market.StockMarket;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -32,8 +31,7 @@ public class Market {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private long id;
+    private Long id;
 
     private long marketId;
 

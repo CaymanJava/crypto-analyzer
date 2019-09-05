@@ -30,6 +30,7 @@
         <module>specification</module>
         <module>front-office-api</module>
         <module>tick</module>
+        <module>member</module>
     </modules>
 
     <properties>

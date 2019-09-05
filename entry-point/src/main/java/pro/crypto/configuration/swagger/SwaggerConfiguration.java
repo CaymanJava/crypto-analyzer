@@ -56,7 +56,8 @@ public class SwaggerConfiguration {
                 PathSelectors.ant("/tick/**"),
                 PathSelectors.ant("/indicator/**"),
                 PathSelectors.ant("/strategy/**"),
-                PathSelectors.ant("/market/**")
+                PathSelectors.ant("/market/**"),
+                PathSelectors.ant("/member/**")
         );
     }
 

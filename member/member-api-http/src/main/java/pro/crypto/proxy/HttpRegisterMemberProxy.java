@@ -13,7 +13,7 @@ import pro.crypto.snapshot.MemberSnapshot;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @Validated
-@FeignClient(name = "api-member", url = "${pro.crypto.entry.point.api.url}", path = "/member/register")
+@FeignClient(name = "api-member-register", url = "${pro.crypto.entry.point.api.url}", path = "/member/register")
 public interface HttpRegisterMemberProxy {
 
     @RequestMapping(method = POST)

@@ -18,6 +18,7 @@ public class MemberMapper {
 
     MemberSnapshot toSnapshot(Member member) {
         return MemberSnapshot.builder()
+                .id(member.getId())
                 .email(member.getEmail())
                 .phone(member.getPhone())
                 .name(member.getName())

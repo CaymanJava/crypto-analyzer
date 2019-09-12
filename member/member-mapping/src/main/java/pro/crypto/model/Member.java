@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import pro.crypto.MemberStatus;
 import pro.crypto.request.MemberUpdateRequest;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -15,6 +16,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.PrePersist;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
@@ -33,6 +35,8 @@ public class Member {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true)
+    @Email
     @NotNull
     private String email;
 
@@ -53,6 +57,8 @@ public class Member {
     private MemberStatus status;
 
     private LocalDateTime registrationDate;
+
+    private LocalDateTime activationDate;
 
     private LocalDateTime lastLoggedIn;
 

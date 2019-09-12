@@ -18,6 +18,7 @@ import pro.crypto.request.MemberFindRequest;
 import pro.crypto.request.MemberUpdateRequest;
 import pro.crypto.request.PinActivationRequest;
 import pro.crypto.request.TokenActivationRequest;
+import pro.crypto.response.ActivationResult;
 import pro.crypto.service.MemberService;
 import pro.crypto.snapshot.MemberSnapshot;
 
@@ -61,13 +62,13 @@ public class MemberController {
 
     @PutMapping(value = "/activate/token")
     @ResponseStatus(HttpStatus.OK)
-    public Long activateByToken(@RequestBody TokenActivationRequest request) {
+    public ActivationResult activateByToken(@RequestBody TokenActivationRequest request) {
         return memberService.activateByToken(request);
     }
 
     @PutMapping(value = "/activate/pin")
     @ResponseStatus(HttpStatus.OK)
-    public Long activateByPin(@RequestBody PinActivationRequest request) {
+    public ActivationResult activateByPin(@RequestBody PinActivationRequest request) {
         return memberService.activateByPin(request);
     }
 

@@ -14,9 +14,13 @@ import pro.crypto.request.MemberFindRequest;
 import pro.crypto.request.MemberUpdateRequest;
 import pro.crypto.request.PinActivationRequest;
 import pro.crypto.request.TokenActivationRequest;
+import pro.crypto.response.ActivationResult;
 import pro.crypto.snapshot.MemberSnapshot;
 
 import static java.lang.String.format;
+import static java.time.LocalDateTime.now;
+import static pro.crypto.MemberStatus.ACTIVE;
+import static pro.crypto.response.ActivationStatus.SUCCESS;
 
 @Service
 @Slf4j
@@ -56,24 +60,43 @@ public class RepositoryMemberService implements MemberService {
         log.trace("Updating member {memberId: {}, request: {}}", memberId, request);
         Member member = findMemberById(memberId);
         member.update(request);
-        log.trace("Updated member {memberId: {}, request: {}}", memberId, request);
+        log.info("Updated member {memberId: {}, request: {}}", memberId, request);
     }
 
     @Override
-    public Long activateByToken(TokenActivationRequest request) {
-        // TODO
-        return null;
+    public ActivationResult activateByToken(TokenActivationRequest request) {
+        log.trace("Activating member by token {request: {}}", request);
+        ActivationResult activationResult = memberRepository.findByActivationToken(request.getToken())
+                .map(this::activateMember)
+                .orElseGet(ActivationResult::failed);
+        log.info("Activated member by token {request: {}, activationResult: {}}", request, activationResult);
+        return activationResult;
     }
 
     @Override
-    public Long activateByPin(PinActivationRequest request) {
-        // TODO
-        return null;
+    public ActivationResult activateByPin(PinActivationRequest request) {
+        log.trace("Activating member by pin {request: {}}", request);
+        ActivationResult activationResult = memberRepository.findByActivationPin(request.getPin())
+                .map(this::activateMember)
+                .orElseGet(ActivationResult::failed);
+        log.info("Activated member by pin {request: {}, activationResult: {}}", request, activationResult);
+        return activationResult;
+    }
+
+    private ActivationResult activateMember(Member member) {
+        member.setActivationDate(now());
+        member.setActivationToken(null);
+        member.setActivationPin(null);
+        member.setStatus(ACTIVE);
+        return ActivationResult.builder()
+                .memberId(member.getId())
+                .status(SUCCESS)
+                .build();
     }
 
     private Member findMemberById(Long id) {
         return memberRepository.findById(id)
-                .orElseThrow(() -> new MemberNotFoundException(format("Can not found member with ID %d", id)));
+                .orElseThrow(() -> new MemberNotFoundException(format("Cannot found member with ID %d", id)));
     }
 
 }

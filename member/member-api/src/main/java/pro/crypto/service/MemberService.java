@@ -7,6 +7,7 @@ import pro.crypto.request.MemberFindRequest;
 import pro.crypto.request.MemberUpdateRequest;
 import pro.crypto.request.PinActivationRequest;
 import pro.crypto.request.TokenActivationRequest;
+import pro.crypto.response.ActivationResult;
 import pro.crypto.snapshot.MemberSnapshot;
 
 public interface MemberService {
@@ -19,8 +20,8 @@ public interface MemberService {
 
     void update(Long memberId, MemberUpdateRequest request);
 
-    Long activateByToken(TokenActivationRequest request);
+    ActivationResult activateByToken(TokenActivationRequest request);
 
-    Long activateByPin(PinActivationRequest request);
+    ActivationResult activateByPin(PinActivationRequest request);
 
 }

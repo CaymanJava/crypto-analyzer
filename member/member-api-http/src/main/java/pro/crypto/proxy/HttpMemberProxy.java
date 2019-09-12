@@ -16,6 +16,7 @@ import pro.crypto.request.MemberCreationRequest;
 import pro.crypto.request.MemberUpdateRequest;
 import pro.crypto.request.PinActivationRequest;
 import pro.crypto.request.TokenActivationRequest;
+import pro.crypto.response.ActivationResult;
 import pro.crypto.snapshot.MemberSnapshot;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
@@ -51,11 +52,11 @@ public interface HttpMemberProxy {
     @RequestMapping(value = "/activate/token", method = PUT)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
-    Long activateByToken(@RequestBody TokenActivationRequest request);
+    ActivationResult activateByToken(@RequestBody TokenActivationRequest request);
 
     @RequestMapping(value = "/activate/pin", method = PUT)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
-    Long activateByPin(@RequestBody PinActivationRequest request);
+    ActivationResult activateByPin(@RequestBody PinActivationRequest request);
 
 }

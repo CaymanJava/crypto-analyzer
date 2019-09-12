@@ -14,6 +14,8 @@ import java.time.LocalDateTime;
 @Builder
 public class MemberSnapshot {
 
+    private Long id;
+
     private String email;
 
     private String phone;

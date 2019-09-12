@@ -1,5 +1,7 @@
-package pro.crypto.front.office.web.indicator;
+package pro.crypto.front.office.api.web;
 
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +16,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
+import static pro.crypto.front.office.configuration.swagger.SwaggerConstants.AUTHORIZATION_HEADER_DESCRIPTION;
 
 @RestController
 @RequestMapping("/indicator")
@@ -25,6 +28,9 @@ public class IndicatorController {
     @GetMapping(produces = APPLICATION_JSON_UTF8_VALUE)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "Authorization", value = AUTHORIZATION_HEADER_DESCRIPTION, required = true, dataType = "string", paramType = "header", example = "Bearer some_example_access_token")
+    })
     public Object[] calculate(@Valid @NotNull IndicatorCalculationRequest request) {
         return indicatorService.calculate(request);
     }

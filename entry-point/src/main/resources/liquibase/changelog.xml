@@ -17,4 +17,11 @@
         </comment>
     </changeSet>
 
+    <changeSet author="dbosenko" id="3">
+        <sqlFile path="003_add_activation_date.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add activation date column
+        </comment>
+    </changeSet>
+
 </databaseChangeLog>

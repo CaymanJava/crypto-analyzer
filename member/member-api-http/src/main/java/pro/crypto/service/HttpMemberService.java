@@ -10,6 +10,7 @@ import pro.crypto.request.MemberFindRequest;
 import pro.crypto.request.MemberUpdateRequest;
 import pro.crypto.request.PinActivationRequest;
 import pro.crypto.request.TokenActivationRequest;
+import pro.crypto.response.ActivationResult;
 import pro.crypto.snapshot.MemberSnapshot;
 
 @Service
@@ -39,12 +40,12 @@ public class HttpMemberService implements MemberService {
     }
 
     @Override
-    public Long activateByToken(TokenActivationRequest request) {
+    public ActivationResult activateByToken(TokenActivationRequest request) {
         return memberProxy.activateByToken(request);
     }
 
     @Override
-    public Long activateByPin(PinActivationRequest request) {
+    public ActivationResult activateByPin(PinActivationRequest request) {
         return memberProxy.activateByPin(request);
     }
 

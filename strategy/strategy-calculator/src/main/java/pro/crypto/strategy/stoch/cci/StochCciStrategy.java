@@ -40,8 +40,8 @@ public class StochCciStrategy implements Strategy<StochCciResult> {
 
     private final Tick[] originalData;
     private final IndicatorType stochMovingAverageType;
-    private final int fastStochPeriod;
-    private final int slowStochPeriod;
+    private final int stochFastPeriod;
+    private final int stochSlowPeriod;
     private final BigDecimal stochOversoldLevel;
     private final BigDecimal stochOverboughtLevel;
     private final int cciPeriod;
@@ -64,8 +64,8 @@ public class StochCciStrategy implements Strategy<StochCciResult> {
         StochCciRequest request = (StochCciRequest) strategyRequest;
         this.originalData = request.getOriginalData();
         this.stochMovingAverageType = request.getStochMovingAverageType();
-        this.fastStochPeriod = request.getFastStochPeriod();
-        this.slowStochPeriod = request.getSlowStochPeriod();
+        this.stochFastPeriod = request.getStochFastPeriod();
+        this.stochSlowPeriod = request.getStochSlowPeriod();
         this.stochOversoldLevel = extractStochOversoldLevel(request);
         this.stochOverboughtLevel = extractStochOverboughtLevel(request);
         this.cciOversoldLevel = extractCCIOversoldLevel(request);
@@ -148,8 +148,8 @@ public class StochCciStrategy implements Strategy<StochCciResult> {
         return StochRequest.builder()
                 .originalData(originalData)
                 .movingAverageType(stochMovingAverageType)
-                .fastStochPeriod(fastStochPeriod)
-                .slowStochPeriod(slowStochPeriod)
+                .fastStochPeriod(stochFastPeriod)
+                .slowStochPeriod(stochSlowPeriod)
                 .build();
     }
 

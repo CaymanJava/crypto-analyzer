@@ -92,6 +92,11 @@ public class StochHaStrategy implements Strategy<StochHaResult> {
                 .toArray(StochHaResult[]::new);
     }
 
+    private void calculateAndAnalyzerStochastic() {
+        stochResults = calculateStochastic();
+        stochAnalyzerResults = new StochAnalyzer(buildStochAnalyzerRequest()).getResult();
+    }
+
     private StochResult[] calculateStochastic() {
         return new StochasticOscillator(buildStochRequest()).getResult();
     }
@@ -103,11 +108,6 @@ public class StochHaStrategy implements Strategy<StochHaResult> {
                 .slowStochPeriod(stochSlowPeriod)
                 .fastStochPeriod(stochFastPeriod)
                 .build();
-    }
-
-    private void calculateAndAnalyzerStochastic() {
-        stochResults = calculateStochastic();
-        stochAnalyzerResults = new StochAnalyzer(buildStochAnalyzerRequest()).getResult();
     }
 
     private AnalyzerRequest buildStochAnalyzerRequest() {
@@ -167,7 +167,9 @@ public class StochHaStrategy implements Strategy<StochHaResult> {
     }
 
     private boolean isLongEntry(int currentIndex) {
-        return isRedCandle(currentIndex - 2) && isGreenCandle(currentIndex - 1) && isGreenCandle(currentIndex)
+        return isRedCandle(currentIndex - 2)
+                && isGreenCandle(currentIndex - 1)
+                && isGreenCandle(currentIndex)
                 && isStochCondition(currentIndex, OVERSOLD);
     }
 
@@ -180,7 +182,9 @@ public class StochHaStrategy implements Strategy<StochHaResult> {
     }
 
     private boolean isShortEntry(int currentIndex) {
-        return isGreenCandle(currentIndex - 2) && isRedCandle(currentIndex - 1) && isRedCandle(currentIndex)
+        return isGreenCandle(currentIndex - 2)
+                && isRedCandle(currentIndex - 1)
+                && isRedCandle(currentIndex)
                 && (isStochCondition(currentIndex, OVERBOUGHT));
     }
 

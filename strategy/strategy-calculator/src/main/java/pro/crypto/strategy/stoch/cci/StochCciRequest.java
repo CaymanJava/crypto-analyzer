@@ -17,9 +17,9 @@ public class StochCciRequest implements StrategyRequest {
 
     private IndicatorType stochMovingAverageType;
 
-    private int fastStochPeriod;
+    private int stochFastPeriod;
 
-    private int slowStochPeriod;
+    private int stochSlowPeriod;
 
     private Double stochOversoldLevel;
 

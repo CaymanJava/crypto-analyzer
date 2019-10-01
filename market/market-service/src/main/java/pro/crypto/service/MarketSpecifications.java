@@ -22,6 +22,7 @@ class MarketSpecifications {
                 .equal(Market_.stock, request.getStock())
                 .equal(Market_.active, request.getActive())
                 .equal(Market_.status, request.getStatus())
+                .in(Market_.id, request.getIds())
                 .build();
     }
 

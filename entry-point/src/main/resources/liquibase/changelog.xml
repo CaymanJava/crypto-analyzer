@@ -24,4 +24,11 @@
         </comment>
     </changeSet>
 
+    <changeSet author="dbosenko" id="4">
+        <sqlFile path="004_create_member_strategy.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add member strategy table
+        </comment>
+    </changeSet>
+
 </databaseChangeLog>

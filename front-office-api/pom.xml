@@ -53,6 +53,12 @@
             <version>0.0.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>crypto-analyzer</groupId>
+            <artifactId>member-strategy-api-http</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
         <!--SWAGGER-->
         <dependency>
             <groupId>io.springfox</groupId>

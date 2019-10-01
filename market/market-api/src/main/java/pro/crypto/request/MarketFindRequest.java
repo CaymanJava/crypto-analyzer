@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import pro.crypto.model.market.Status;
 import pro.crypto.model.market.Stock;
 
+import java.util.Set;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -20,5 +22,7 @@ public class MarketFindRequest {
     private Boolean active;
 
     private Status status;
+
+    private Set<Long> ids;
 
 }

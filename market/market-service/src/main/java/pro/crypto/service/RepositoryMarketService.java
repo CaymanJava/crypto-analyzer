@@ -44,6 +44,7 @@ public class RepositoryMarketService implements MarketService {
         return markets;
     }
 
+    @Override
     public void save(StockMarket market, Stock stock) {
         log.trace("Saving or updating market {market: {}, stock: {}}", market.getMarketName(), stock);
         Market updatedMarket = marketRepository.findOneByStockAndMarketId(stock, market.getId());

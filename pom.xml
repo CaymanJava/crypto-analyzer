@@ -31,6 +31,7 @@
         <module>front-office-api</module>
         <module>tick</module>
         <module>member</module>
+        <module>member-strategy</module>
     </modules>
 
     <properties>

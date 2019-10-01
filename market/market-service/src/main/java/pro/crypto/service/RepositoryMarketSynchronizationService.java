@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 public class RepositoryMarketSynchronizationService implements MarketSynchronizationService {
 
     private DataSupplier dataSupplier;
-    private RepositoryMarketService marketService;
+    private MarketService marketService;
 
     @Async
     @Override

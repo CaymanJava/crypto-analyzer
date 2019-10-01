@@ -14,6 +14,8 @@ import pro.crypto.model.market.Status;
 import pro.crypto.model.market.Stock;
 import pro.crypto.snapshot.MarketSnapshot;
 
+import java.util.Set;
+
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Validated
@@ -32,6 +34,7 @@ public interface HttpMarketProxy {
                                  @RequestParam("stock") Stock stock,
                                  @RequestParam("active") Boolean active,
                                  @RequestParam("status") Status status,
+                                 @RequestParam("ids") Set<Long> ids,
                                  Pageable pageable);
 
     @RequestMapping(value = "/synchronize", method = GET)

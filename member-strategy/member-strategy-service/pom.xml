@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>member-strategy</artifactId>
+        <groupId>crypto-analyzer</groupId>
+        <version>0.0.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>member-strategy-service</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>crypto-analyzer</groupId>
+            <artifactId>member-strategy-mapping</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>crypto-analyzer</groupId>
+            <artifactId>specification</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

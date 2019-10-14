@@ -1,4 +1,4 @@
-package pro.crypto.front.office.service.member.strategy;
+package pro.crypto.front.office.service.strategy;
 
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -36,9 +36,13 @@ public class MemberStrategyProcessingService {
         if (isEmpty(memberStrategySnapshots.getContent())) {
             return new PageImpl<>(emptyList());
         }
-        Set<Long> marketIds = extractMarketIds(memberStrategySnapshots);
-        Map<Long, MarketSnapshot> markets = getMarketsMap(marketIds);
+        Map<Long, MarketSnapshot> markets = getMarketsMap(memberStrategySnapshots);
         return memberStrategySnapshots.map(memberStrategy -> toResponse(memberStrategy, markets.get(memberStrategy.getMarketId())));
+    }
+
+    private Map<Long, MarketSnapshot> getMarketsMap(Page<MemberStrategySnapshot> memberStrategySnapshots) {
+        Set<Long> marketIds = extractMarketIds(memberStrategySnapshots);
+        return getMarketsMap(marketIds);
     }
 
     private Set<Long> extractMarketIds(Page<MemberStrategySnapshot> memberStrategySnapshots) {
@@ -47,15 +51,15 @@ public class MemberStrategyProcessingService {
                 .collect(toSet());
     }
 
+    private Map<Long, MarketSnapshot> getMarketsMap(Set<Long> marketIds) {
+        return marketService.findAll(buildMarketFindRequest(marketIds), PageRequest.of(0, MAX_VALUE)).getContent().stream()
+                .collect(toMap(MarketSnapshot::getId, identity()));
+    }
+
     private MarketFindRequest buildMarketFindRequest(Set<Long> marketIds) {
         return MarketFindRequest.builder()
                 .ids(marketIds)
                 .build();
-    }
-
-    private Map<Long, MarketSnapshot> getMarketsMap(Set<Long> marketIds) {
-        return marketService.findAll(buildMarketFindRequest(marketIds), PageRequest.of(0, MAX_VALUE)).getContent().stream()
-                .collect(toMap(MarketSnapshot::getId, identity()));
     }
 
     private MemberStrategyResponse toResponse(MemberStrategySnapshot memberStrategy, MarketSnapshot marketSnapshot) {
@@ -75,8 +79,6 @@ public class MemberStrategyProcessingService {
                 .strategyName(memberStrategy.getStrategyName())
                 .customStrategyName(memberStrategy.getCustomStrategyName())
                 .status(memberStrategy.getStatus())
-                .lastSignalTickTime(memberStrategy.getLastSignalTickTime())
-                .lastSignalPosition(memberStrategy.getLastSignalPosition())
                 .build();
     }
 

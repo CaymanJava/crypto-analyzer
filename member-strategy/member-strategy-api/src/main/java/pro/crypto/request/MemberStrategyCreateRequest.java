@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.model.market.Stock;
+import pro.crypto.model.notification.Destination;
 import pro.crypto.model.strategy.StrategyType;
 import pro.crypto.model.tick.TimeFrame;
 import pro.crypto.model.update.UpdateTimeUnit;
@@ -54,6 +55,9 @@ public class MemberStrategyCreateRequest {
 
     @NotNull
     private Boolean immediatelyStart;
+
+    @NotNull
+    private Destination notificationDestination;
 
     public boolean isImmediatelyStart() {
         return ofNullable(immediatelyStart)

@@ -32,6 +32,7 @@
         <module>tick</module>
         <module>member</module>
         <module>member-strategy</module>
+        <module>monitoring</module>
     </modules>
 
     <properties>
@@ -67,6 +68,8 @@
         <javax-el-api.version>3.0.0</javax-el-api.version>
         <logback.version>1.2.3</logback.version>
         <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
+        <akka.version>2.6.0-M8</akka.version>
+        <vavr.version>0.10.2</vavr.version>
     </properties>
     <dependencyManagement>
         <dependencies>

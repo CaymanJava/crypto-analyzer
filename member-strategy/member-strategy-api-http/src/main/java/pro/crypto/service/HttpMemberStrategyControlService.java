@@ -2,20 +2,20 @@ package pro.crypto.service;
 
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang.NotImplementedException;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Service;
 import pro.crypto.proxy.MemberStrategyControlProxy;
 import pro.crypto.request.MemberStrategyStatusChangeRequest;
 
-@RestController
-@RequestMapping("/member")
+import java.util.Set;
+
+@Service
 @AllArgsConstructor
 public class HttpMemberStrategyControlService implements MemberStrategyControlService {
 
     private final MemberStrategyControlProxy memberStrategyControlProxy;
 
     @Override
-    public void scheduleNextExecution(Long strategyId) {
+    public void scheduleNextExecution(Set<Long> strategyIds) {
         throw new NotImplementedException("scheduleNextExecution() is not implemented in http service");
     }
 
@@ -27,6 +27,11 @@ public class HttpMemberStrategyControlService implements MemberStrategyControlSe
     @Override
     public void noteFailedCycle(Long strategyId) {
         throw new NotImplementedException("scheduleNextExecution() is not implemented in http service");
+    }
+
+    @Override
+    public Set<Long> getStrategyIdsForMonitoring() {
+        throw new NotImplementedException("getStrategyIdsForMonitoring() is not implemented in http service");
     }
 
 }

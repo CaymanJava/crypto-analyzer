@@ -11,6 +11,7 @@ import javax.persistence.criteria.SetJoin;
 import javax.persistence.metamodel.SetAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -19,6 +20,7 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 import static java.util.Objects.nonNull;
+import static org.springframework.util.CollectionUtils.isEmpty;
 import static org.springframework.util.StringUtils.hasText;
 
 // TODO remove unused
@@ -52,11 +54,11 @@ public final class SpecificationsBuilder<T> {
     }
 
     public <K> SpecificationsBuilder<T> in(SingularAttribute<T, K> attribute, List<K> values) {
-        return predicate((root, builder) -> root.get(attribute).in(values), () -> nonNull(values));
+        return predicate((root, builder) -> root.get(attribute).in(values), () -> nonEmpty(values));
     }
 
     public <K> SpecificationsBuilder<T> in(SingularAttribute<T, K> attribute, Set<K> values) {
-        return predicate((root, builder) -> root.get(attribute).in(values), () -> nonNull(values));
+        return predicate((root, builder) -> root.get(attribute).in(values), () -> nonEmpty(values));
     }
 
     public <K> SpecificationsBuilder<T> inOr(SingularAttribute<T, K> attribute, Set<K> firstValues,
@@ -65,30 +67,23 @@ public final class SpecificationsBuilder<T> {
             Predicate first = root.get(attribute).in(firstValues);
             Predicate second = attributeProvider.apply(root).in(secondValues);
             return builder.or(first, second);
-        }, () -> nonNull(firstValues) && nonNull(secondValues));
+        }, () -> nonEmpty(firstValues) && nonEmpty(secondValues));
     }
 
     public <K> SpecificationsBuilder<T> in(Function<Root<T>, Expression<K>> attributeProvider, Set<K> values) {
         if (nonNull(values) && values.isEmpty()) {
             values.add(null);
         }
-        return predicate((root, builder) -> attributeProvider.apply(root).in(values), () -> nonNull(values));
+        return predicate((root, builder) -> attributeProvider.apply(root).in(values), () -> nonEmpty(values));
     }
 
     public <K> SpecificationsBuilder<T> notIn(SingularAttribute<T, K> attribute, Set<K> values) {
-        return predicate((root, builder) -> root.get(attribute).in(values).not(), () -> nonNull(values));
+        return predicate((root, builder) -> root.get(attribute).in(values).not(), () -> nonEmpty(values));
     }
 
     public <K> SpecificationsBuilder<T> contains(SetAttribute<T, K> attribute, Set<K> values) {
         return predicate((root, builder) -> {
             SetJoin<Object, Object> setJoin = root.joinSet(attribute.getName());
-            return builder.isTrue(setJoin.in(values));
-        });
-    }
-
-    public <K> SpecificationsBuilder<T> localizedMembers(Set<K> values) {
-        return predicate((root, builder) -> {
-            SetJoin<Object, Object> setJoin = root.joinSet("clubIdsAccess");
             return builder.isTrue(setJoin.in(values));
         });
     }
@@ -228,6 +223,10 @@ public final class SpecificationsBuilder<T> {
 
     private String normalizeString(String value) {
         return value.trim().toLowerCase();
+    }
+
+    private boolean nonEmpty(Collection<?> collection) {
+        return !isEmpty(collection);
     }
 
 }

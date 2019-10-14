@@ -7,14 +7,18 @@ import pro.crypto.MemberStrategyProperties;
 import pro.crypto.exception.MemberStrategyNotFoundException;
 import pro.crypto.model.MemberStrategy;
 import pro.crypto.repository.MemberStrategyRepository;
+import pro.crypto.request.MemberStrategyFindRequest;
 import pro.crypto.request.MemberStrategyStatusChangeRequest;
 
 import javax.transaction.Transactional;
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Set;
 
 import static java.lang.String.format;
 import static java.time.LocalDateTime.now;
 import static java.util.Optional.ofNullable;
+import static pro.crypto.model.strategy.MemberStrategyStatus.ACTIVE;
 import static pro.crypto.model.strategy.MemberStrategyStatus.STOPPED;
 
 @Slf4j
@@ -28,13 +32,11 @@ public class MemberStrategySupervisor implements MemberStrategyControlService {
     private final MemberStrategyProperties memberStrategyProperties;
 
     @Override
-    public void scheduleNextExecution(Long strategyId) {
-        log.trace("Scheduling next execution {strategyId: {}}", strategyId);
-        MemberStrategy strategy = findStrategy(strategyId);
-        strategy.setCycleCount(strategy.getCycleCount() + 1);
-        strategy.setNextExecutionTime(defineNextExecutionTime(strategy));
-        strategy.setLastExecutionTime(now());
-        log.info("Scheduled next execution {strategyId: {}}", strategyId);
+    public void scheduleNextExecution(Set<Long> strategyIds) {
+        log.trace("Scheduling next execution {strategyIdsSize: {}}", strategyIds.size());
+        List<MemberStrategy> memberStrategies = findMemberStrategies(strategyIds);
+        memberStrategies.forEach(this::scheduleNextExecution);
+        log.info("Scheduled next execution {strategyIdsSize: {}}", strategyIds.size());
     }
 
     @Override
@@ -56,6 +58,28 @@ public class MemberStrategySupervisor implements MemberStrategyControlService {
             strategy.setStoppedReason("Failed cycles allowed value was exceeded");
             log.info("Stopped member strategy after allowed failed cycles exceeded {strategyId: {}}", strategyId);
         }
+    }
+
+    @Override
+    public Set<Long> getStrategyIdsForMonitoring() {
+        log.trace("Getting member strategy ids for monitoring");
+        Set<Long> idsForMonitoring = repository.findIdsForMonitoring(ACTIVE, now());
+        log.info("Found member strategy ids for monitoring {size: {}}", idsForMonitoring.size());
+        return idsForMonitoring;
+    }
+
+    private List<MemberStrategy> findMemberStrategies(Set<Long> strategyIds) {
+        return repository.findAll(MemberStrategySpecifications.build(null, buildFindRequestWithIds(strategyIds)));
+    }
+
+    private MemberStrategyFindRequest buildFindRequestWithIds(Set<Long> strategyIds) {
+        return MemberStrategyFindRequest.builder().ids(strategyIds).build();
+    }
+
+    private void scheduleNextExecution(MemberStrategy strategy) {
+        strategy.setCycleCount(strategy.getCycleCount() + 1);
+        strategy.setNextExecutionTime(defineNextExecutionTime(strategy));
+        strategy.setLastExecutionTime(now());
     }
 
     private LocalDateTime defineNextExecutionTime(MemberStrategy strategy) {

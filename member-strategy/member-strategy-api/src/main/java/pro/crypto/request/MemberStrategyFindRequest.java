@@ -9,6 +9,8 @@ import pro.crypto.model.strategy.MemberStrategyStatus;
 import pro.crypto.model.strategy.StrategyType;
 import pro.crypto.model.tick.TimeFrame;
 
+import java.util.Set;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -24,5 +26,7 @@ public class MemberStrategyFindRequest {
     private StrategyType type;
 
     private TimeFrame timeFrame;
+
+    private Set<Long> ids;
 
 }

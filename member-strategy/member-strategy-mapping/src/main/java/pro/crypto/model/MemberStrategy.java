@@ -5,8 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.model.market.Stock;
+import pro.crypto.model.notification.Destination;
 import pro.crypto.model.strategy.MemberStrategyStatus;
-import pro.crypto.model.strategy.Position;
 import pro.crypto.model.strategy.StrategyType;
 import pro.crypto.model.tick.TimeFrame;
 import pro.crypto.model.update.UpdateTimeUnit;
@@ -94,8 +94,10 @@ public class MemberStrategy {
 
     private LocalDateTime lastSignalTickTime;
 
+    private Integer lastSignalPositionHash;
+
     @Enumerated(STRING)
-    private Position lastSignalPosition;
+    private Destination notificationDestination;
 
     public void update(MemberStrategyUpdateRequest request) {
         marketId = ofNullable(request.getMarketId()).orElse(marketId);
@@ -111,7 +113,8 @@ public class MemberStrategy {
         status = ofNullable(request.getStatus()).orElse(status);
         failedCount = ofNullable(request.getFailedCount()).orElse(failedCount);
         lastSignalTickTime = ofNullable(request.getLastSignalTickTime()).orElse(lastSignalTickTime);
-        lastSignalPosition = ofNullable(request.getLastSignalPosition()).orElse(lastSignalPosition);
+        lastSignalPositionHash = ofNullable(request.getLastSignalPositionHash()).orElse(lastSignalPositionHash);
+        notificationDestination = ofNullable(request.getNotificationDestination()).orElse(notificationDestination);
     }
 
 }

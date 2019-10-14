@@ -21,6 +21,7 @@ public class MemberStrategyMapper {
                 .stock(request.getStock())
                 .strategyName(request.getStrategyName())
                 .customStrategyName(request.getCustomStrategyName())
+                .notificationDestination(request.getNotificationDestination())
                 .build();
     }
 
@@ -46,7 +47,8 @@ public class MemberStrategyMapper {
                 .nextExecutionTime(memberStrategy.getNextExecutionTime())
                 .lastExecutionTime(memberStrategy.getLastExecutionTime())
                 .lastSignalTickTime(memberStrategy.getLastSignalTickTime())
-                .lastSignalPosition(memberStrategy.getLastSignalPosition())
+                .lastSignalPositionHash(memberStrategy.getLastSignalPositionHash())
+                .notificationDestination(memberStrategy.getNotificationDestination())
                 .build();
     }
 

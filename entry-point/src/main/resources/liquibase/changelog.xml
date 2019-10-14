@@ -31,4 +31,25 @@
         </comment>
     </changeSet>
 
+    <changeSet author="dbosenko" id="5">
+        <sqlFile path="005_add_notification_destination.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add notification destination to member strategy
+        </comment>
+    </changeSet>
+
+    <changeSet author="dbosenko" id="6">
+        <sqlFile path="006_create_signal.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add signal table
+        </comment>
+    </changeSet>
+
+    <changeSet author="dbosenko" id="7">
+        <sqlFile path="007_add_positions.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add signal position table
+        </comment>
+    </changeSet>
+
 </databaseChangeLog>

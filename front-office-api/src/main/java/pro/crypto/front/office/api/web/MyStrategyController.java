@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import pro.crypto.front.office.api.Identity;
 import pro.crypto.front.office.api.exception.InvalidMemberStrategyException;
 import pro.crypto.front.office.api.response.MemberStrategyResponse;
-import pro.crypto.front.office.service.member.strategy.MemberStrategyProcessingService;
+import pro.crypto.front.office.service.strategy.MemberStrategyProcessingService;
 import pro.crypto.request.MemberStrategyCreateRequest;
 import pro.crypto.request.MemberStrategyFindRequest;
 import pro.crypto.request.MemberStrategyUpdateRequest;

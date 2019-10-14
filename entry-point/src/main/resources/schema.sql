@@ -3,3 +3,4 @@ CREATE SCHEMA IF NOT EXISTS crypto_market;
 CREATE SCHEMA IF NOT EXISTS crypto_strategy;
 CREATE SCHEMA IF NOT EXISTS crypto_member;
 CREATE SCHEMA IF NOT EXISTS crypto_member_strategy;
+CREATE SCHEMA IF NOT EXISTS crypto_monitoring;

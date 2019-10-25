@@ -31,7 +31,7 @@ public class RepositoryMarketService implements MarketService {
     public MarketSnapshot findById(Long marketId) {
         log.trace("Getting market by id {marketId: {}}", marketId);
         MarketSnapshot marketSnapshot = marketMapper.toSnapshot(getById(marketId));
-        log.trace("Found market by id {marketId: {}}", marketId);
+        log.info("Found market by id {marketId: {}}", marketId);
         return marketSnapshot;
     }
 

@@ -52,4 +52,11 @@
         </comment>
     </changeSet>
 
+    <changeSet author="dbosenko" id="8">
+        <sqlFile path="008_create_quartz_table.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add signal position table
+        </comment>
+    </changeSet>
+
 </databaseChangeLog>

@@ -213,8 +213,12 @@ public class Divergence {
 
     private BigDecimal calculateInternalOrdinateCatheter(Triangular externalTriangular, int fromIndex, int middleIndex) {
         BigDecimal ratio = MathHelper.divide(externalTriangular.getAbscissaCatheter(), new BigDecimal(middleIndex - fromIndex));
-        BigDecimal internalHypotenuse = MathHelper.divide(externalTriangular.getHypotenuse(), ratio);
+        BigDecimal internalHypotenuse = calculateInternalHypotenuse(externalTriangular, ratio);
         return calculateOrdinateInternalCatheter(internalHypotenuse, new BigDecimal(middleIndex - fromIndex));
+    }
+
+    private BigDecimal calculateInternalHypotenuse(Triangular externalTriangular, BigDecimal ratio) {
+        return MathHelper.divide(externalTriangular.getHypotenuse(), ratio);
     }
 
     private BigDecimal calculateOrdinateInternalCatheter(BigDecimal hypotenuse, BigDecimal catheter) {

@@ -59,4 +59,18 @@
         </comment>
     </changeSet>
 
+    <changeSet author="dbosenko" id="9">
+        <sqlFile path="009_add_last_positions_to_member_strategy.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add last signal positions to member strategy
+        </comment>
+    </changeSet>
+
+    <changeSet author="dbosenko" id="10">
+        <sqlFile path="010_add_settings.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add settings
+        </comment>
+    </changeSet>
+
 </databaseChangeLog>

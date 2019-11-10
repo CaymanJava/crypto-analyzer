@@ -5,7 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>supplier</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1</version>
+    <modules>
+        <module>supplier-api</module>
+        <module>supplier-service</module>
+        <module>supplier-starter</module>
+        <module>supplier-api-http</module>
+    </modules>
 
     <parent>
         <artifactId>parent</artifactId>

@@ -112,6 +112,18 @@
         </dependency>
 
         <dependency>
+            <groupId>crypto-analyzer</groupId>
+            <artifactId>supplier-starter</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>crypto-analyzer</groupId>
+            <artifactId>settings-starter</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>${postgres.version}</version>

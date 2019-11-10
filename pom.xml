@@ -34,6 +34,7 @@
         <module>member-strategy</module>
         <module>monitoring</module>
         <module>scheduler</module>
+        <module>settings</module>
     </modules>
 
     <properties>

@@ -7,12 +7,14 @@ import lombok.NoArgsConstructor;
 import pro.crypto.model.market.Stock;
 import pro.crypto.model.notification.Destination;
 import pro.crypto.model.strategy.MemberStrategyStatus;
+import pro.crypto.model.strategy.Position;
 import pro.crypto.model.strategy.StrategyType;
 import pro.crypto.model.tick.TimeFrame;
 import pro.crypto.model.update.UpdateTimeUnit;
 
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -75,7 +77,7 @@ public class MemberStrategySnapshot {
 
     private LocalDateTime lastSignalTickTime;
 
-    private Integer lastSignalPositionHash;
+    private Set<Position> lastSignalPositions;
 
     private Destination notificationDestination;
 

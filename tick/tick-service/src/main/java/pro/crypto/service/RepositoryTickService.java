@@ -11,7 +11,6 @@ import pro.crypto.request.TickPeriodFindRequest;
 import pro.crypto.request.TickTimeFindRequest;
 import pro.crypto.response.TickDataSnapshot;
 import pro.crypto.snapshot.MarketSnapshot;
-import pro.crypto.supplier.DataSupplier;
 
 @Slf4j
 @Service

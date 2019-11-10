@@ -47,7 +47,7 @@ public class MemberStrategyMapper {
                 .nextExecutionTime(memberStrategy.getNextExecutionTime())
                 .lastExecutionTime(memberStrategy.getLastExecutionTime())
                 .lastSignalTickTime(memberStrategy.getLastSignalTickTime())
-                .lastSignalPositionHash(memberStrategy.getLastSignalPositionHash())
+                .lastSignalPositions(memberStrategy.getLastSignalPositions())
                 .notificationDestination(memberStrategy.getNotificationDestination())
                 .build();
     }

@@ -11,7 +11,6 @@ import javax.persistence.criteria.SetJoin;
 import javax.persistence.metamodel.SetAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -20,8 +19,8 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 import static java.util.Objects.nonNull;
-import static org.springframework.util.CollectionUtils.isEmpty;
 import static org.springframework.util.StringUtils.hasText;
+import static pro.crypto.helper.CollectionHelper.nonEmpty;
 
 // TODO remove unused
 
@@ -223,10 +222,6 @@ public final class SpecificationsBuilder<T> {
 
     private String normalizeString(String value) {
         return value.trim().toLowerCase();
-    }
-
-    private boolean nonEmpty(Collection<?> collection) {
-        return !isEmpty(collection);
     }
 
 }

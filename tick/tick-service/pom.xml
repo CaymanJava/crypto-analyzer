@@ -31,7 +31,7 @@
 
         <dependency>
             <groupId>crypto-analyzer</groupId>
-            <artifactId>supplier</artifactId>
+            <artifactId>supplier-api</artifactId>
             <version>0.0.1</version>
         </dependency>
 

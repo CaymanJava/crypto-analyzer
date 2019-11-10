@@ -17,13 +17,13 @@ import pro.crypto.service.SignalService;
 import pro.crypto.snapshot.MemberStrategySnapshot;
 import pro.crypto.snapshot.SignalSnapshot;
 
-import java.util.Collection;
+import java.util.Objects;
 import java.util.Set;
 
 import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
 import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROTOTYPE;
 import static org.springframework.util.CollectionUtils.isEmpty;
+import static pro.crypto.helper.CollectionHelper.nonEmpty;
 
 @Slf4j
 @Component
@@ -53,15 +53,25 @@ public class DecisionMakerActor extends AbstractActor {
     }
 
     private void handleStrategySignals(DecisionMakerMessage message, StrategyResult lastResult) {
-        if (isNeedProcessSignal(lastResult, lastResult.getPositions(), message.getMemberStrategy())) {
+        if (isNeedProcessSignal(lastResult, message.getMemberStrategy())) {
             processSignal(lastResult, lastResult.getPositions(), message.getMemberStrategy());
         }
     }
 
-    private boolean isNeedProcessSignal(StrategyResult lastResult, Set<Position> positions, MemberStrategySnapshot memberStrategy) {
-        return isFirstStrategySignal(memberStrategy)
-                || isLastSignalTimeChangeOrEmpty(lastResult, memberStrategy)
-                || isLastSignalChanged(memberStrategy, lastResult, positions);
+    private boolean isNeedProcessSignal(StrategyResult lastResult, MemberStrategySnapshot memberStrategy) {
+        if (isFirstStrategySignal(memberStrategy)) {
+            return true;
+        }
+
+        if (isAnotherTickTime(memberStrategy, lastResult)) {
+            return true;
+        }
+
+        return isLastSignalChanged(memberStrategy, lastResult.getPositions());
+    }
+
+    private boolean isAnotherTickTime(MemberStrategySnapshot memberStrategy, StrategyResult result) {
+        return !Objects.equals(memberStrategy.getLastSignalTickTime(), result.getTick().getTickTime());
     }
 
     private void processSignal(StrategyResult lastResult, Set<Position> positions, MemberStrategySnapshot memberStrategy) {
@@ -90,39 +100,25 @@ public class DecisionMakerActor extends AbstractActor {
                 .build();
     }
 
-    private boolean isLastSignalTimeChangeOrEmpty(StrategyResult lastResult, MemberStrategySnapshot memberStrategy) {
-        return isNull(memberStrategy.getLastSignalTickTime()) || isLastSignalTimeDiffer(lastResult, memberStrategy);
-    }
-
     private boolean isFirstStrategySignal(MemberStrategySnapshot memberStrategy) {
-        return isNull(memberStrategy.getLastSignalPositionHash());
+        return isNull(memberStrategy.getLastSignalTickTime())
+                || isEmpty(memberStrategy.getLastSignalPositions());
     }
 
-    private boolean isLastSignalChanged(MemberStrategySnapshot memberStrategy, StrategyResult result, Set<Position> positions) {
-        return nonNull(memberStrategy.getLastSignalTickTime())
-                && nonNull(memberStrategy.getLastSignalPositionHash())
-                && memberStrategy.getLastSignalTickTime().equals(result.getTick().getTickTime())
-                && !memberStrategy.getLastSignalPositionHash().equals(positions.hashCode());
-    }
-
-    private boolean isLastSignalTimeDiffer(StrategyResult lastResult, MemberStrategySnapshot memberStrategy) {
-        return nonNull(memberStrategy.getLastSignalTickTime())
-                && !lastResult.getTick().getTickTime().equals(memberStrategy.getLastSignalTickTime());
+    private boolean isLastSignalChanged(MemberStrategySnapshot memberStrategy, Set<Position> positions) {
+        return nonEmpty(memberStrategy.getLastSignalPositions())
+                && !memberStrategy.getLastSignalPositions().containsAll(positions);
     }
 
     private MemberStrategyUpdateRequest buildUpdateRequest(StrategyResult lastResult, Set<Position> positions) {
         return MemberStrategyUpdateRequest.builder()
                 .lastSignalTickTime(lastResult.getTick().getTickTime())
-                .lastSignalPositionHash(positions.hashCode())
+                .lastSignalPositions(positions)
                 .build();
     }
 
     private boolean hasSignals(StrategyResult result) {
         return nonEmpty(result.getPositions());
-    }
-
-    private boolean nonEmpty(Collection<?> collection) {
-        return !isEmpty(collection);
     }
 
 }

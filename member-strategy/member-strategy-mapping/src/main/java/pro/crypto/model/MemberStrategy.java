@@ -7,22 +7,29 @@ import lombok.NoArgsConstructor;
 import pro.crypto.model.market.Stock;
 import pro.crypto.model.notification.Destination;
 import pro.crypto.model.strategy.MemberStrategyStatus;
+import pro.crypto.model.strategy.Position;
 import pro.crypto.model.strategy.StrategyType;
 import pro.crypto.model.tick.TimeFrame;
 import pro.crypto.model.update.UpdateTimeUnit;
 import pro.crypto.request.MemberStrategyUpdateRequest;
 
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
+import java.util.Set;
 
 import static java.util.Optional.ofNullable;
 import static javax.persistence.EnumType.STRING;
+import static javax.persistence.FetchType.EAGER;
 
 @Entity
 @Table(schema = "crypto_member_strategy")
@@ -94,7 +101,13 @@ public class MemberStrategy {
 
     private LocalDateTime lastSignalTickTime;
 
-    private Integer lastSignalPositionHash;
+    @ElementCollection(targetClass = Position.class, fetch = EAGER)
+    @CollectionTable(name = "member_strategy_position",
+            schema = "crypto_member_strategy",
+            joinColumns = @JoinColumn(name = "member_strategy_id"))
+    @Column(name = "position")
+    @Enumerated(STRING)
+    private Set<Position> lastSignalPositions;
 
     @Enumerated(STRING)
     private Destination notificationDestination;
@@ -106,6 +119,7 @@ public class MemberStrategy {
         strategyType = ofNullable(request.getStrategyType()).orElse(strategyType);
         timeFrame = ofNullable(request.getTimeFrame()).orElse(timeFrame);
         updateTimeUnit = ofNullable(request.getUpdateTimeUnit()).orElse(updateTimeUnit);
+        updateTimeValue = ofNullable(request.getUpdateTimeValue()).orElse(updateTimeValue);
         marketName = ofNullable(request.getMarketName()).orElse(marketName);
         stock = ofNullable(request.getStock()).orElse(stock);
         strategyName = ofNullable(request.getStrategyName()).orElse(strategyName);
@@ -113,7 +127,7 @@ public class MemberStrategy {
         status = ofNullable(request.getStatus()).orElse(status);
         failedCount = ofNullable(request.getFailedCount()).orElse(failedCount);
         lastSignalTickTime = ofNullable(request.getLastSignalTickTime()).orElse(lastSignalTickTime);
-        lastSignalPositionHash = ofNullable(request.getLastSignalPositionHash()).orElse(lastSignalPositionHash);
+        lastSignalPositions = ofNullable(request.getLastSignalPositions()).orElse(lastSignalPositions);
         notificationDestination = ofNullable(request.getNotificationDestination()).orElse(notificationDestination);
     }
 

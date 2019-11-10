@@ -6,7 +6,6 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import pro.crypto.model.market.MarketData;
 import pro.crypto.model.market.Stock;
-import pro.crypto.supplier.DataSupplier;
 
 import java.util.stream.Stream;
 

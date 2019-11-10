@@ -13,7 +13,7 @@ import pro.crypto.service.MemberStrategyControlService;
 import java.util.Set;
 
 import static org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROTOTYPE;
-import static org.springframework.util.CollectionUtils.isEmpty;
+import static pro.crypto.helper.CollectionHelper.nonEmpty;
 
 @Slf4j
 @Component
@@ -34,11 +34,11 @@ public class StrategyMonitoringActor extends AbstractActor {
     private void startMonitoring() {
         log.trace("Prepare strategy ids for monitoring");
         Set<Long> strategyIdsForMonitoring = memberStrategyControlService.getStrategyIdsForMonitoring();
-        if (!isEmpty(strategyIdsForMonitoring)){
+        if (nonEmpty(strategyIdsForMonitoring)) {
             memberStrategyControlService.scheduleNextExecution(strategyIdsForMonitoring);
             strategyIdsForMonitoring.forEach(this::calculate);
+            log.info("Sent strategy ids to calculation {strategyIdsSize: {}}", strategyIdsForMonitoring.size());
         }
-        log.info("Sent strategy ids to calculation {strategyIdsSize: {}}", strategyIdsForMonitoring.size());
     }
 
     private void calculate(Long strategyId) {

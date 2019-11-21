@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Validated
-@FeignClient(name = "api-tick", url = "${pro.crypto.entry.point.api.url}", path = "/tick")
+@FeignClient(name = "api-ticks", url = "${pro.crypto.entry.point.api.url}", path = "/ticks")
 public interface HttpTickProxy {
 
     @RequestMapping(value = "/time", method = GET)

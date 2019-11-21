@@ -13,6 +13,7 @@ import java.util.stream.IntStream;
 
 import static pro.crypto.model.indicator.IndicatorType.SIMPLE_MOVING_AVERAGE;
 import static pro.crypto.model.indicator.IndicatorType.TRIANGULAR_MOVING_AVERAGE;
+import static pro.crypto.model.tick.PriceType.CLOSE;
 
 public class TriangularMovingAverage extends MovingAverage {
 
@@ -73,7 +74,7 @@ public class TriangularMovingAverage extends MovingAverage {
         return MARequest.builder()
                 .originalData(data)
                 .period(period)
-                .priceType(priceType)
+                .priceType(CLOSE)
                 .indicatorType(SIMPLE_MOVING_AVERAGE)
                 .build();
     }

@@ -19,7 +19,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.PUT;
 
 @Validated
 @FeignClient(name = "api-settings", url = "${pro.crypto.entry.point.api.url}", path = "/settings")
-public interface SettingProxy {
+public interface HttpSettingProxy {
 
     @RequestMapping(value = "/type/{type}", method = GET)
     @ResponseBody

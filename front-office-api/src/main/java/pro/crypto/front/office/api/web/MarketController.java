@@ -24,7 +24,7 @@ import static pro.crypto.front.office.configuration.swagger.SwaggerConstants.AUT
 import static pro.crypto.model.market.Status.AVAILABLE;
 
 @RestController
-@RequestMapping("/market")
+@RequestMapping("/markets")
 @AllArgsConstructor
 public class MarketController {
 

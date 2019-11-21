@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import pro.crypto.SettingKey;
 import pro.crypto.SettingType;
-import pro.crypto.proxy.SettingProxy;
+import pro.crypto.proxy.HttpSettingProxy;
 import pro.crypto.request.BatchSettingUpdateRequest;
 import pro.crypto.request.SettingUpdateRequest;
 import pro.crypto.snapshot.SettingSnapshot;
@@ -15,7 +15,7 @@ import java.util.Map;
 @AllArgsConstructor
 public class HttpSettingService implements SettingService {
 
-    private final SettingProxy settingProxy;
+    private final HttpSettingProxy settingProxy;
 
     @Override
     public Map<SettingKey, String> getSettings(SettingType type) {

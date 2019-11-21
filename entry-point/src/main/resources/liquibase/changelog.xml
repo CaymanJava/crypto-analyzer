@@ -73,4 +73,11 @@
         </comment>
     </changeSet>
 
+    <changeSet author="dbosenko" id="11">
+        <sqlFile path="011_add_notification.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add notifications
+        </comment>
+    </changeSet>
+
 </databaseChangeLog>

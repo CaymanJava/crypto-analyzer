@@ -31,7 +31,7 @@ public class MemberStrategyController {
 
     private final MemberStrategyService memberStrategyService;
 
-    @GetMapping(value = "/{memberId}/strategy", produces = APPLICATION_JSON_UTF8_VALUE)
+    @GetMapping(value = "/{memberId}/strategies", produces = APPLICATION_JSON_UTF8_VALUE)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public Page<MemberStrategySnapshot> findAll(@PathVariable("memberId") Long memberId,

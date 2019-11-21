@@ -18,7 +18,7 @@ import pro.crypto.snapshot.SignalSnapshot;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Validated
-@FeignClient(name = "api-signal", url = "${pro.crypto.entry.point.api.url}", path = "/signal")
+@FeignClient(name = "api-signals", url = "${pro.crypto.entry.point.api.url}", path = "/signals")
 public interface SignalProxy {
 
     @RequestMapping(value = "/{memberId}", method = GET)

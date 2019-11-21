@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Validated
-@FeignClient(name = "api-strategy", url = "${pro.crypto.entry.point.api.url}", path = "/strategy")
+@FeignClient(name = "api-strategy", url = "${pro.crypto.entry.point.api.url}", path = "/strategies")
 public interface HttpStrategyProxy {
 
     @RequestMapping(method = GET)

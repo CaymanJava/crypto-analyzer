@@ -24,10 +24,10 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 import static org.springframework.web.bind.annotation.RequestMethod.PUT;
 
 @Validated
-@FeignClient(name = "api-member-strategy", url = "${pro.crypto.entry.point.api.url}", path = "/member")
+@FeignClient(name = "api-member-strategies", url = "${pro.crypto.entry.point.api.url}", path = "/member")
 public interface MemberStrategyProxy {
 
-    @RequestMapping(value = "/{memberId}/strategy", method = GET)
+    @RequestMapping(value = "/{memberId}/strategies", method = GET)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     Page<MemberStrategySnapshot> findAll(@PathVariable("memberId") Long memberId,

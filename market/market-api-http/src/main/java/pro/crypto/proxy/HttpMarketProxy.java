@@ -19,7 +19,7 @@ import java.util.Set;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Validated
-@FeignClient(name = "api-market", url = "${pro.crypto.entry.point.api.url}", path = "/market")
+@FeignClient(name = "api-market", url = "${pro.crypto.entry.point.api.url}", path = "/markets")
 public interface HttpMarketProxy {
 
     @RequestMapping(value = "/{marketId}", method = GET)

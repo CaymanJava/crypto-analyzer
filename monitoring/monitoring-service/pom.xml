@@ -12,6 +12,7 @@
     <artifactId>monitoring-service</artifactId>
 
     <dependencies>
+
         <dependency>
             <groupId>crypto-analyzer</groupId>
             <artifactId>monitoring-mapping</artifactId>
@@ -38,6 +39,12 @@
 
         <dependency>
             <groupId>crypto-analyzer</groupId>
+            <artifactId>notification-api</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>crypto-analyzer</groupId>
             <artifactId>specification</artifactId>
             <version>0.0.1</version>
         </dependency>
@@ -53,6 +60,7 @@
             <artifactId>vavr</artifactId>
             <version>${vavr.version}</version>
         </dependency>
+
     </dependencies>
 
 </project>

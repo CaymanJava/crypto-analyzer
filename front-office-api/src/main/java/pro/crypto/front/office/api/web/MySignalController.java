@@ -21,7 +21,7 @@ import javax.validation.constraints.NotNull;
 import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 
 @RestController
-@RequestMapping("/me/signal")
+@RequestMapping("/me/signals")
 @AllArgsConstructor
 public class MySignalController {
 

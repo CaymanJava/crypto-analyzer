@@ -53,10 +53,10 @@ public class SwaggerConfiguration {
 
     private Predicate<String> getPaths() {
         return Predicates.or(
-                PathSelectors.ant("/tick/**"),
-                PathSelectors.ant("/indicator/**"),
-                PathSelectors.ant("/strategy/**"),
-                PathSelectors.ant("/market/**"),
+                PathSelectors.ant("/ticks/**"),
+                PathSelectors.ant("/indicators/**"),
+                PathSelectors.ant("/strategies/**"),
+                PathSelectors.ant("/markets/**"),
                 PathSelectors.ant("/member/**"),
                 PathSelectors.ant("/monitoring/**")
         );

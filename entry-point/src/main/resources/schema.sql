@@ -6,3 +6,4 @@ CREATE SCHEMA IF NOT EXISTS crypto_member_strategy;
 CREATE SCHEMA IF NOT EXISTS crypto_monitoring;
 CREATE SCHEMA IF NOT EXISTS crypto_scheduler;
 CREATE SCHEMA IF NOT EXISTS crypto_settings;
+CREATE SCHEMA IF NOT EXISTS crypto_notification;

@@ -21,7 +21,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 import static pro.crypto.front.office.configuration.swagger.SwaggerConstants.AUTHORIZATION_HEADER_DESCRIPTION;
 
 @RestController
-@RequestMapping("/tick")
+@RequestMapping("/ticks")
 @AllArgsConstructor
 public class TickController {
 

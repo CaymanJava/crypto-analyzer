@@ -1,4 +1,4 @@
-package pro.crypto.request;
+package pro.crypto.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,14 +6,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@AllArgsConstructor
 @NoArgsConstructor
-@Data
-@ToString(exclude = "body")
+@AllArgsConstructor
 @Builder
-public class SmsSendRequest {
+@ToString(exclude = "body")
+@Data
+public class SmsQueue {
 
     private Long memberId;
+
+    private String memberName;
+
+    private String phone;
 
     private String body;
 

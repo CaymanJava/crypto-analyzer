@@ -80,4 +80,11 @@
         </comment>
     </changeSet>
 
+    <changeSet author="dbosenko" id="12">
+        <sqlFile path="012_add_sms_settings.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add notifications
+        </comment>
+    </changeSet>
+
 </databaseChangeLog>

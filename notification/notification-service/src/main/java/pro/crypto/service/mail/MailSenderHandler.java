@@ -1,4 +1,4 @@
-package pro.crypto.service;
+package pro.crypto.service.mail;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -7,6 +7,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.stereotype.Component;
 import pro.crypto.SettingKey;
+import pro.crypto.service.SettingService;
 
 import javax.annotation.PostConstruct;
 import java.util.Map;
@@ -30,11 +31,6 @@ public class MailSenderHandler {
 
     @Getter
     private JavaMailSender javaMailSender;
-
-    // TODO change settings event
-    public void onNotificationSettingsChange() {
-        initMailSender();
-    }
 
     @PostConstruct
     private void init() {

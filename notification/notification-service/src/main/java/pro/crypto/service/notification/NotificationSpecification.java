@@ -1,4 +1,4 @@
-package pro.crypto.service;
+package pro.crypto.service.notification;
 
 import org.springframework.data.jpa.domain.Specification;
 import pro.crypto.SpecificationsBuilder;

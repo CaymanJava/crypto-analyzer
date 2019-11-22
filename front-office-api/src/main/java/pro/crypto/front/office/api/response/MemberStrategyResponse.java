@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.model.market.Stock;
+import pro.crypto.model.notification.Destination;
 import pro.crypto.model.strategy.MemberStrategyStatus;
 import pro.crypto.model.strategy.Position;
 import pro.crypto.model.strategy.StrategyType;
@@ -53,5 +54,7 @@ public class MemberStrategyResponse {
     private LocalDateTime lastSignalTickTime;
 
     private Position lastSignalPosition;
+
+    private Destination notificationDestination;
 
 }

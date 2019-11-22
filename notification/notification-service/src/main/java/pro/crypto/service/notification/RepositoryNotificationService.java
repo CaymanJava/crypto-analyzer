@@ -1,4 +1,4 @@
-package pro.crypto.service;
+package pro.crypto.service.notification;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -9,6 +9,7 @@ import pro.crypto.model.Notification;
 import pro.crypto.repository.NotificationRepository;
 import pro.crypto.request.NotificationCreateRequest;
 import pro.crypto.request.NotificationFindRequest;
+import pro.crypto.service.NotificationService;
 import pro.crypto.snapshot.NotificationSnapshot;
 
 @Slf4j

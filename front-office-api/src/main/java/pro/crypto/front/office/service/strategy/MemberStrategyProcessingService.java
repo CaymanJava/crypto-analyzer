@@ -79,6 +79,7 @@ public class MemberStrategyProcessingService {
                 .strategyName(memberStrategy.getStrategyName())
                 .customStrategyName(memberStrategy.getCustomStrategyName())
                 .status(memberStrategy.getStatus())
+                .notificationDestination(memberStrategy.getNotificationDestination())
                 .build();
     }
 

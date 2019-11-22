@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Data
-@ConfigurationProperties(prefix = "notification.email.retry")
+@ConfigurationProperties(prefix = "notification.retry")
 public class MessageRetryConfig {
 
     private boolean enabled;

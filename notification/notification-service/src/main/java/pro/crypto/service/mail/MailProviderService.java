@@ -1,6 +1,5 @@
-package pro.crypto.service;
+package pro.crypto.service.mail;
 
-import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -16,6 +15,9 @@ import pro.crypto.model.EmailQueue;
 import pro.crypto.properties.MailProperties;
 import pro.crypto.request.NotificationCreateRequest;
 import pro.crypto.request.RawEmailSendRequest;
+import pro.crypto.service.MailService;
+import pro.crypto.service.MemberService;
+import pro.crypto.service.NotificationService;
 import pro.crypto.snapshot.MemberSnapshot;
 
 import javax.mail.MessagingException;
@@ -24,29 +26,37 @@ import java.io.File;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-import static java.lang.String.format;
 import static java.time.LocalDateTime.now;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.notification.NotificationType.EMAIL;
 
 @Service
-@AllArgsConstructor
 @MessageEndpoint
 @Slf4j
 public class MailProviderService implements MailService {
 
-    @Qualifier("mailMessagingTemplate")
     private final MessagingTemplate messagingTemplate;
     private final MemberService memberService;
     private final MailProperties mailProperties;
     private final MailSenderHandler mailHandler;
     private final NotificationService notificationService;
 
+    public MailProviderService(@Qualifier("mailMessagingTemplate") MessagingTemplate messagingTemplate, MemberService memberService,
+                               MailProperties mailProperties, MailSenderHandler mailHandler,
+                               NotificationService notificationService) {
+        this.messagingTemplate = messagingTemplate;
+        this.memberService = memberService;
+        this.mailProperties = mailProperties;
+        this.mailHandler = mailHandler;
+        this.notificationService = notificationService;
+    }
+
     @Override
     public void sendRawEmail(RawEmailSendRequest request) {
         log.trace("Sending raw email {request: {}}", request);
         EmailQueue emailQueue = buildEmailQueue(request);
         queueEmailMessage(emailQueue);
+        log.info("Sent raw email {request: {}}", request);
     }
 
     @ServiceActivator
@@ -58,7 +68,7 @@ public class MailProviderService implements MailService {
         MemberSnapshot member = memberService.findById(request.getMemberId());
         return EmailQueue.builder()
                 .memberId(member.getId())
-                .memberName(format("%s %s", member.getName(), member.getSurname()))
+                .memberName(member.getFullName())
                 .email(member.getEmail())
                 .subject(request.getSubject())
                 .body(request.getBody())

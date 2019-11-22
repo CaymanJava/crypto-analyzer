@@ -9,6 +9,10 @@ import static pro.crypto.SettingKey.NOTIFICATIONS_EMAIL_PASSWORD;
 import static pro.crypto.SettingKey.NOTIFICATIONS_EMAIL_REQUIRE_SECURE_CONNECTION;
 import static pro.crypto.SettingKey.NOTIFICATIONS_EMAIL_SMTP_HOST;
 import static pro.crypto.SettingKey.NOTIFICATIONS_EMAIL_SMTP_PORT;
+import static pro.crypto.SettingKey.NOTIFICATIONS_SMS_API_KEY;
+import static pro.crypto.SettingKey.NOTIFICATIONS_SMS_COMMAND;
+import static pro.crypto.SettingKey.NOTIFICATIONS_SMS_FROM;
+import static pro.crypto.SettingKey.NOTIFICATION_SMS_API_VERSION;
 
 public enum SettingType {
 
@@ -19,6 +23,12 @@ public enum SettingType {
             NOTIFICATIONS_EMAIL_SMTP_PORT,
             NOTIFICATIONS_EMAIL_REQUIRE_SECURE_CONNECTION,
             NOTIFICATIONS_EMAIL_OUTCOMING
+    )),
+    NOTIFICATION_SMS(newHashSet(
+            NOTIFICATION_SMS_API_VERSION,
+            NOTIFICATIONS_SMS_API_KEY,
+            NOTIFICATIONS_SMS_COMMAND,
+            NOTIFICATIONS_SMS_FROM
     ));
 
     private Set<SettingKey> settingKeys;

@@ -8,6 +8,8 @@ import pro.crypto.MemberStatus;
 
 import java.time.LocalDateTime;
 
+import static java.lang.String.format;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -29,5 +31,9 @@ public class MemberSnapshot {
     private LocalDateTime registrationDate;
 
     private LocalDateTime lastLoggedIn;
+
+    public String getFullName() {
+        return format("%s %s", name, surname);
+    }
 
 }

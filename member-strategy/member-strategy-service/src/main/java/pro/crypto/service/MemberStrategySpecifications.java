@@ -23,6 +23,8 @@ class MemberStrategySpecifications {
                 .equal(MemberStrategy_.strategyType, request.getType())
                 .equal(MemberStrategy_.timeFrame, request.getTimeFrame())
                 .in(MemberStrategy_.id, request.getIds())
+                .in(MemberStrategy_.marketId, request.getMarketIds())
+                .in(MemberStrategy_.status, request.getStatuses())
                 .build();
     }
 

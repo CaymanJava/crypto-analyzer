@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import pro.crypto.MemberStrategyProperties;
 import pro.crypto.exception.MemberStrategyNotFoundException;
 import pro.crypto.model.MemberStrategy;
+import pro.crypto.model.strategy.MemberStrategyStatus;
 import pro.crypto.repository.MemberStrategyRepository;
 import pro.crypto.request.MemberStrategyFindRequest;
 import pro.crypto.request.MemberStrategyStatusChangeRequest;
@@ -15,10 +16,12 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Set;
 
+import static com.google.common.collect.Sets.newHashSet;
 import static java.lang.String.format;
 import static java.time.LocalDateTime.now;
 import static java.util.Optional.ofNullable;
 import static pro.crypto.model.strategy.MemberStrategyStatus.ACTIVE;
+import static pro.crypto.model.strategy.MemberStrategyStatus.PAUSED;
 import static pro.crypto.model.strategy.MemberStrategyStatus.STOPPED;
 
 @Slf4j
@@ -40,12 +43,19 @@ public class MemberStrategySupervisor implements MemberStrategyControlService {
     }
 
     @Override
-    public void changeStatus(Long strategyId, MemberStrategyStatusChangeRequest request) {
-        log.trace("Changing member strategy status {strategyId: {}, request: {}}", strategyId, request);
-        MemberStrategy strategy = findStrategy(strategyId);
-        strategy.setStatus(ofNullable(request.getStatus()).orElse(strategy.getStatus()));
-        strategy.setStoppedReason(request.getStoppedReason());
-        log.trace("Changed member strategy status {strategyId: {}, request: {}}", strategyId, request);
+    public void changeStatus(Long memberStrategyId, MemberStrategyStatusChangeRequest request) {
+        log.trace("Changing member strategy status {memberStrategyId: {}, request: {}}", memberStrategyId, request);
+        MemberStrategy strategy = findStrategy(memberStrategyId);
+        changeStatus(request.getStatus(), request.getStoppedReason(), strategy);
+        log.info("Changed member strategy status {memberStrategyId: {}, request: {}}", memberStrategyId, request);
+    }
+
+    @Override
+    public void stopMonitoring(Set<Long> marketIds, String reason) {
+        log.trace("Stopping monitoring deleted markets member strategies {marketSize: {}}", marketIds);
+        List<MemberStrategy> memberStrategies = findMemberStrategiesByMarketIds(marketIds);
+        memberStrategies.forEach(memberStrategy -> changeStatus(STOPPED, reason, memberStrategy));
+        log.info("Stopped monitoring deleted markets member strategies {}", memberStrategies.size());
     }
 
     @Override
@@ -68,12 +78,30 @@ public class MemberStrategySupervisor implements MemberStrategyControlService {
         return idsForMonitoring;
     }
 
+    private void changeStatus(MemberStrategyStatus status, String reason, MemberStrategy strategy) {
+        strategy.setStatus(ofNullable(status).orElse(strategy.getStatus()));
+        strategy.setStoppedReason(reason);
+    }
+
     private List<MemberStrategy> findMemberStrategies(Set<Long> strategyIds) {
         return repository.findAll(MemberStrategySpecifications.build(null, buildFindRequestWithIds(strategyIds)));
     }
 
+    private List<MemberStrategy> findMemberStrategiesByMarketIds(Set<Long> marketIds) {
+        return repository.findAll(MemberStrategySpecifications.build(null, buildFindRequestWithMarketIds(marketIds)));
+    }
+
+    private MemberStrategyFindRequest buildFindRequestWithMarketIds(Set<Long> marketIds) {
+        return MemberStrategyFindRequest.builder()
+                .marketIds(marketIds)
+                .statuses(newHashSet(ACTIVE, PAUSED))
+                .build();
+    }
+
     private MemberStrategyFindRequest buildFindRequestWithIds(Set<Long> strategyIds) {
-        return MemberStrategyFindRequest.builder().ids(strategyIds).build();
+        return MemberStrategyFindRequest.builder()
+                .ids(strategyIds)
+                .build();
     }
 
     private void scheduleNextExecution(MemberStrategy strategy) {

@@ -13,6 +13,6 @@ public interface MarketService {
 
     Page<MarketSnapshot> findAll(MarketFindRequest request, Pageable pageable);
 
-    void save(StockMarket market, Stock stock);
+    Long save(StockMarket market, Stock stock);
 
 }

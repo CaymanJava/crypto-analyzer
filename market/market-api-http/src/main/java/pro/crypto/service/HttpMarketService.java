@@ -29,7 +29,7 @@ public class HttpMarketService implements MarketService {
     }
 
     @Override
-    public void save(StockMarket market, Stock stock) {
+    public Long save(StockMarket market, Stock stock) {
         throw new NotImplementedException("save() is not implemented in http service");
     }
 

@@ -29,4 +29,8 @@ public class MemberStrategyFindRequest {
 
     private Set<Long> ids;
 
+    private Set<Long> marketIds;
+
+    private Set<MemberStrategyStatus> statuses;
+
 }

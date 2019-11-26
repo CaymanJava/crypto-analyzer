@@ -45,15 +45,17 @@ public class RepositoryMarketService implements MarketService {
     }
 
     @Override
-    public void save(StockMarket market, Stock stock) {
+    public Long save(StockMarket market, Stock stock) {
         log.trace("Saving or updating market {market: {}, stock: {}}", market.getMarketName(), stock);
         Market updatedMarket = marketRepository.findOneByStockAndMarketId(stock, market.getId());
         if (isNull(updatedMarket)) {
-            marketRepository.save(marketMapper.toMarket(market, stock));
+            Market savedMarket = marketRepository.save(marketMapper.toMarket(market, stock));
             log.info("Saved market {market: {}, stock: {}}", market.getMarketName(), stock);
+            return savedMarket.getId();
         } else {
             updatedMarket.update(market);
             log.info("Updated market {market: {}, stock: {}}", market.getMarketName(), stock);
+            return updatedMarket.getId();
         }
     }
 

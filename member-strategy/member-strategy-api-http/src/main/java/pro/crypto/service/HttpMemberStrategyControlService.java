@@ -25,6 +25,11 @@ public class HttpMemberStrategyControlService implements MemberStrategyControlSe
     }
 
     @Override
+    public void stopMonitoring(Set<Long> marketIds, String reason) {
+        throw new NotImplementedException("stopMonitoring() is not implemented in http service");
+    }
+
+    @Override
     public void noteFailedCycle(Long strategyId) {
         throw new NotImplementedException("scheduleNextExecution() is not implemented in http service");
     }

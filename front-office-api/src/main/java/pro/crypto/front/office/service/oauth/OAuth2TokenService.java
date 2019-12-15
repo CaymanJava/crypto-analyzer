@@ -8,6 +8,15 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.oauth2.common.OAuth2AccessToken;
+import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration;
+import org.springframework.security.oauth2.provider.OAuth2Authentication;
+import org.springframework.security.oauth2.provider.OAuth2Request;
+import org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -15,13 +24,24 @@ import org.springframework.web.client.RestTemplate;
 import pro.crypto.front.office.api.exception.InvalidCredentialsException;
 import pro.crypto.front.office.api.request.AccessTokenRequest;
 import pro.crypto.front.office.api.request.RefreshTokenRequest;
+import pro.crypto.front.office.api.request.SocialAccessTokenRequest;
 import pro.crypto.front.office.api.response.AccessTokenInfo;
+import pro.crypto.request.MemberUpdateRequest;
+import pro.crypto.request.SocialUserAccessRequest;
+import pro.crypto.service.MemberService;
+import pro.crypto.service.SocialIntegrationService;
+import pro.crypto.snapshot.SocialAccessSnapshot;
 
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
+import static com.google.common.collect.Sets.newHashSet;
 import static java.lang.String.format;
+import static java.util.Collections.emptyList;
 import static java.util.Collections.singletonList;
 import static java.util.Objects.isNull;
+import static pro.crypto.MemberStatus.ACTIVE;
 
 @Slf4j
 @Service
@@ -29,7 +49,10 @@ import static java.util.Objects.isNull;
 public class OAuth2TokenService implements TokenService {
 
     private final RestTemplate restTemplate;
+    private final MemberService memberService;
     private final ResourceServerProperties resourceServerProperties;
+    private final SocialIntegrationService socialIntegrationService;
+    private final AuthorizationServerEndpointsConfiguration configuration;
 
     @Override
     public AccessTokenInfo getTokenInfo(AccessTokenRequest request) {
@@ -47,6 +70,57 @@ public class OAuth2TokenService implements TokenService {
         HttpHeaders headers = buildHeaders();
         ResponseEntity<Map> responseEntity = restTemplate.exchange(resourceServerProperties.getTokenInfoUri(), HttpMethod.POST, new HttpEntity<>(vars, headers), Map.class);
         return handleRefreshResponse(responseEntity);
+    }
+
+    @Override
+    public ResponseEntity getSocialTokenInfo(SocialAccessTokenRequest request) {
+        log.trace("Getting social access token {provider: {}}", request.getProvider());
+        SocialAccessSnapshot socialAccessSnapshot = socialIntegrationService.processSocialAccess(toSocialUserAccessRequest(request));
+        log.info("Got social access token {socialAccessSnapshot: {}}", socialAccessSnapshot);
+        return socialAccessSnapshot.isRegistrationCompleted()
+                ? ResponseEntity.ok(getTokenInfoByMemberId(socialAccessSnapshot.getMemberId()))
+                : ResponseEntity.ok(socialAccessSnapshot);
+    }
+
+    @Override
+    public AccessTokenInfo completeSocialTokenProcess(Long memberId, MemberUpdateRequest request) {
+        log.trace("Completing social token process {memberId: {}, request: {}}", memberId, request);
+        if (request.dataCompleted()) {
+            request.setStatus(ACTIVE);
+        }
+        memberService.update(memberId, request);
+        log.info("Completed social token process {memberId: {}, request: {}}", memberId, request);
+        return getTokenInfoByMemberId(memberId);
+    }
+
+    private AccessTokenInfo getTokenInfoByMemberId(Long memberId) {
+        OAuth2Request oAuth2Request = new OAuth2Request(new HashMap<>(), resourceServerProperties.getClientId(), new HashSet<>(), true, new HashSet<>(),
+                newHashSet(resourceServerProperties.getResourceId()), null, new HashSet<>(), new HashMap<>());
+        Authentication authentication = new UsernamePasswordAuthenticationToken(mapMemberIdToAuthorizedUser(memberId), null, emptyList());
+        OAuth2Authentication auth2Authentication = new OAuth2Authentication(oAuth2Request, authentication);
+        AuthorizationServerTokenServices tokenService = configuration.getEndpointsConfigurer().getTokenServices();
+        OAuth2AccessToken token = tokenService.createAccessToken(auth2Authentication);
+        return buildAccessTokenInfo(token);
+    }
+
+    private AccessTokenInfo buildAccessTokenInfo(OAuth2AccessToken token) {
+        return AccessTokenInfo.builder()
+                .accessToken(token.getValue())
+                .tokenType(token.getTokenType())
+                .expiresIn(token.getExpiresIn())
+                .refreshToken(token.getRefreshToken().getValue())
+                .build();
+    }
+
+    private UserDetails mapMemberIdToAuthorizedUser(Long memberId) {
+        return new User(memberId.toString(), "", true, true, true, true, emptyList());
+    }
+
+    private SocialUserAccessRequest toSocialUserAccessRequest(SocialAccessTokenRequest request) {
+        return SocialUserAccessRequest.builder()
+                .authCode(request.getAuthCode())
+                .provider(request.getProvider())
+                .build();
     }
 
     private MultiValueMap<String, String> buildLoginMap(AccessTokenRequest tokenInfoRequest) {

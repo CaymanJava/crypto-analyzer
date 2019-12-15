@@ -36,6 +36,7 @@
         <module>scheduler</module>
         <module>settings</module>
         <module>notification</module>
+        <module>social</module>
     </modules>
 
     <properties>
@@ -49,6 +50,8 @@
         <spring-boot.version>2.1.7.RELEASE</spring-boot.version>
         <spring-core.version>5.1.9.RELEASE</spring-core.version>
         <spring-cloud-contract-dependencies.version>2.1.2.RELEASE</spring-cloud-contract-dependencies.version>
+        <spring.social.facebook.version>1.5.22.RELEASE</spring.social.facebook.version>
+        <spring.social.google.version>1.0.0.RELEASE</spring.social.google.version>
         <lombok.version>1.18.10</lombok.version>
         <postgres.version>9.4-1206-jdbc42</postgres.version>
         <feign.version>2.1.2.RELEASE</feign.version>
@@ -131,12 +134,6 @@
                 <version>${spring-boot.version}</version>
             </dependency>
 
-
-<!--            <dependency>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-starter-amqp</artifactId>-->
-<!--                <version>${spring-boot.version}</version>-->
-<!--            </dependency>-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-integration</artifactId>
@@ -155,11 +152,17 @@
                 <version>${spring.version}</version>
             </dependency>
 
-<!--            <dependency>-->
-<!--                <groupId>org.springframework</groupId>-->
-<!--                <artifactId>spring-messaging</artifactId>-->
-<!--                <version>${spring.version}</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-social-facebook</artifactId>
+                <version>${spring.social.facebook.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.social</groupId>
+                <artifactId>spring-social-google</artifactId>
+                <version>${spring.social.google.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.hibernate.validator</groupId>

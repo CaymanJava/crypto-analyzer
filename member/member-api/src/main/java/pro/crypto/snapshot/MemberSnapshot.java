@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.MemberStatus;
+import pro.crypto.RegisterPlace;
 
 import java.time.LocalDateTime;
 
@@ -31,6 +32,10 @@ public class MemberSnapshot {
     private LocalDateTime registrationDate;
 
     private LocalDateTime lastLoggedIn;
+
+    private String avatarUrl;
+
+    private RegisterPlace registerPlace;
 
     public String getFullName() {
         return format("%s %s", name, surname);

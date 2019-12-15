@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.MemberStatus;
+import pro.crypto.helper.StringHelper;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -21,5 +22,9 @@ public class MemberUpdateRequest {
     private String surname;
 
     private MemberStatus status;
+
+    public boolean dataCompleted() {
+        return StringHelper.nonEmpty(email, phone, name, surname);
+    }
 
 }

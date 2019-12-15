@@ -7,4 +7,6 @@ public interface RegisterMemberService {
 
     MemberSnapshot register(MemberRegisterRequest request);
 
+    MemberSnapshot registerSocial(MemberRegisterRequest request);
+
 }

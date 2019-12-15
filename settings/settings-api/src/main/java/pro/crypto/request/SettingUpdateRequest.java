@@ -17,6 +17,7 @@ public class SettingUpdateRequest {
 
     @NotNull
     private SettingKey key;
+
     @NotBlank
     private String value;
 

@@ -8,6 +8,7 @@ import pro.crypto.request.MemberCreationRequest;
 import pro.crypto.request.MemberRegisterRequest;
 import pro.crypto.snapshot.MemberSnapshot;
 
+import static java.util.Optional.ofNullable;
 import static pro.crypto.MemberStatus.ACTIVE;
 
 @Component
@@ -26,13 +27,15 @@ public class MemberMapper {
                 .status(member.getStatus())
                 .registrationDate(member.getRegistrationDate())
                 .lastLoggedIn(member.getLastLoggedIn())
+                .avatarUrl(member.getAvatarUrl())
+                .registerPlace(member.getRegisterPlace())
                 .build();
     }
 
     Member fromCreationRequest(MemberCreationRequest request) {
         return Member.builder()
                 .email(request.getEmail())
-                .password(passwordEncoder.encode(request.getPassword()))
+                .password(encodePassword(request.getPassword()))
                 .phone(request.getPhone())
                 .name(request.getName())
                 .surname(request.getSurname())
@@ -43,11 +46,18 @@ public class MemberMapper {
     Member fromRegistrationRequest(MemberRegisterRequest request) {
         return Member.builder()
                 .email(request.getEmail())
-                .password(passwordEncoder.encode(request.getPassword()))
+                .password(encodePassword(request.getPassword()))
                 .phone(request.getPhone())
                 .name(request.getName())
                 .surname(request.getSurname())
+                .avatarUrl(request.getAvatarUrl())
                 .build();
+    }
+
+    private String encodePassword(String password) {
+        return ofNullable(password)
+                .map(passwordEncoder::encode)
+                .orElse(null);
     }
 
 }

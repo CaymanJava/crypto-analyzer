@@ -21,4 +21,6 @@ public class MemberRegisterRequest {
 
     private String surname;
 
+    private String avatarUrl;
+
 }

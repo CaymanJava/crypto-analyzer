@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pro.crypto.MemberStatus;
+import pro.crypto.RegisterPlace;
 import pro.crypto.request.MemberUpdateRequest;
 
 import javax.persistence.Column;
@@ -40,7 +41,6 @@ public class Member {
     @NotNull
     private String email;
 
-    @NotNull
     private String password;
 
     private String phone;
@@ -61,6 +61,11 @@ public class Member {
     private LocalDateTime activationDate;
 
     private LocalDateTime lastLoggedIn;
+
+    private String avatarUrl;
+
+    @Enumerated(EnumType.STRING)
+    private RegisterPlace registerPlace;
 
     @PrePersist
     public void prePersist() {

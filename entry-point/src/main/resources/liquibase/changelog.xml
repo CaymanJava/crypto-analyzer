@@ -87,4 +87,11 @@
         </comment>
     </changeSet>
 
+    <changeSet author="dbosenko" id="13">
+        <sqlFile path="013_add_member_social.sql" relativeToChangelogFile="true"/>
+        <comment>
+            Add social integration
+        </comment>
+    </changeSet>
+
 </databaseChangeLog>

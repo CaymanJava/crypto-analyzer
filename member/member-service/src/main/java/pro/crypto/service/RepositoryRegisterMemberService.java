@@ -13,6 +13,8 @@ import pro.crypto.snapshot.MemberSnapshot;
 
 import static pro.crypto.MemberStatus.ACTIVE;
 import static pro.crypto.MemberStatus.REGISTER_NOT_COMPLETED;
+import static pro.crypto.RegisterPlace.SOCIAL;
+import static pro.crypto.RegisterPlace.WEB;
 
 @Service
 @Slf4j
@@ -29,9 +31,21 @@ public class RepositoryRegisterMemberService implements RegisterMemberService {
         log.trace("Registering member {request: {}}", request);
         Member member = memberMapper.fromRegistrationRequest(request);
         member.setStatus(defineMemberStatus());
+        member.setRegisterPlace(WEB);
         Member savedMember = memberRepository.save(member);
         continueRegistrationProcess(savedMember);
         log.info("Registered member {request: {}, memberId: {}", request, savedMember.getId());
+        return memberMapper.toSnapshot(savedMember);
+    }
+
+    @Override
+    public MemberSnapshot registerSocial(MemberRegisterRequest request) {
+        log.trace("Registering social member {request: {}}", request);
+        Member member = memberMapper.fromRegistrationRequest(request);
+        member.setStatus(REGISTER_NOT_COMPLETED);
+        member.setRegisterPlace(SOCIAL);
+        Member savedMember = memberRepository.save(member);
+        log.info("Registered social member {request: {}, memberId: {}", request, savedMember.getId());
         return memberMapper.toSnapshot(savedMember);
     }
 
@@ -42,7 +56,7 @@ public class RepositoryRegisterMemberService implements RegisterMemberService {
     }
 
     private void continueRegistrationProcess(Member member) {
-        if (member.getStatus() == REGISTER_NOT_COMPLETED) {
+        if (member.getStatus() == REGISTER_NOT_COMPLETED && member.getRegisterPlace() != SOCIAL) {
             // TODO generate url, token and send email
         }
     }

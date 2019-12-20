@@ -79,7 +79,7 @@ public class AroonUpDown implements Indicator<AroonResult> {
     }
 
     private BigDecimal[] calculateAroonDownValues() {
-        final Integer[] daysAfterMinValues = calculateDaysAfterMinValues();
+        Integer[] daysAfterMinValues = calculateDaysAfterMinValues();
         return IntStream.range(0, originalData.length)
                 .mapToObj(idx -> calculateAroon(daysAfterMinValues[idx]))
                 .toArray(BigDecimal[]::new);
@@ -125,12 +125,16 @@ public class AroonUpDown implements Indicator<AroonResult> {
 
     private void calculateAroonOscillatorValues(BigDecimal[] aroonUpValues, BigDecimal[] aroonDownValues) {
         IntStream.range(0, result.length)
-                .forEach(idx -> result[idx] = new AroonResult(
-                        originalData[idx].getTickTime(),
-                        aroonUpValues[idx],
-                        aroonDownValues[idx],
-                        calculateAroonOscillator(aroonUpValues[idx], aroonDownValues[idx])
-                ));
+                .forEach(idx -> result[idx] = buildAroonResult(aroonUpValues[idx], aroonDownValues[idx], idx));
+    }
+
+    private AroonResult buildAroonResult(BigDecimal aroonUpValue, BigDecimal aroonDownValue, int idx) {
+        return new AroonResult(
+                originalData[idx].getTickTime(),
+                aroonUpValue,
+                aroonDownValue,
+                calculateAroonOscillator(aroonUpValue, aroonDownValue)
+        );
     }
 
     private BigDecimal calculateAroonOscillator(BigDecimal aroonUpValue, BigDecimal aroonDownValue) {

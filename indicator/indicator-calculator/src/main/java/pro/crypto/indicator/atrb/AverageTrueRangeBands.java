@@ -17,7 +17,7 @@ import java.util.function.BiFunction;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
+import static java.util.Optional.ofNullable;
 import static pro.crypto.model.indicator.IndicatorType.AVERAGE_TRUE_RANGE_BANDS;
 
 public class AverageTrueRangeBands implements Indicator<ATRBResult> {
@@ -88,9 +88,9 @@ public class AverageTrueRangeBands implements Indicator<ATRBResult> {
     }
 
     private ATRBResult buildATRBResult(BigDecimal atrValue, BigDecimal middleBandValue, int currentIndex) {
-        return nonNull(atrValue)
-                ? calculateAndBuildATRBResult(atrValue, middleBandValue, currentIndex)
-                : buildEmptyATRBResult(currentIndex);
+        return ofNullable(atrValue)
+                .map(value -> calculateAndBuildATRBResult(value, middleBandValue, currentIndex))
+                .orElseGet(() -> buildEmptyATRBResult(currentIndex));
     }
 
     private ATRBResult calculateAndBuildATRBResult(BigDecimal atrValue, BigDecimal middleBandValue, int currentIndex) {

@@ -89,14 +89,18 @@ public class StandardDeviation implements Indicator<StDevResult> {
     // Σ (x - MAResult)^2
     private BigDecimal[] calculateDivisibleValues(BigDecimal[] averagePrices) {
         return IntStream.range(0, averagePrices.length)
-                .mapToObj(idx -> calculateSumOfDifferenceBetweenPriceAndMovingAverage(averagePrices[idx], idx))
+                .mapToObj(idx -> tryCalculateSumOfDifferenceBetweenPriceAndMovingAverage(averagePrices[idx], idx))
                 .toArray(BigDecimal[]::new);
     }
 
+    private BigDecimal tryCalculateSumOfDifferenceBetweenPriceAndMovingAverage(BigDecimal averagePrice, int currentIndex) {
+        return ofNullable(averagePrice)
+                .map(price -> calculateSumOfDifferenceBetweenPriceAndMovingAverage(price, currentIndex))
+                .orElse(null);
+    }
+
     private BigDecimal calculateSumOfDifferenceBetweenPriceAndMovingAverage(BigDecimal averagePrice, int currentIndex) {
-        return isNull(averagePrice)
-                ? null
-                : IntStream.range(currentIndex - period + 1, currentIndex + 1)
+        return IntStream.range(currentIndex - period + 1, currentIndex + 1)
                 .mapToObj(idx -> calculateDifference(averagePrice, idx).pow(2))
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
@@ -107,15 +111,21 @@ public class StandardDeviation implements Indicator<StDevResult> {
 
     private void calculateStandardDeviation(BigDecimal[] divisibleValues) {
         IntStream.range(0, result.length)
-                .forEach(idx -> result[idx] = calculateStandardDeviationValue(divisibleValues[idx], idx));
+                .forEach(idx -> result[idx] = buildStandardDeviation(divisibleValues[idx], idx));
     }
 
-    private StDevResult calculateStandardDeviationValue(BigDecimal divisibleValue, int currentIndex) {
-        return isNull(divisibleValue)
-                ? new StDevResult(originalData[currentIndex].getTickTime(), null)
-                : new StDevResult(
-                originalData[currentIndex].getTickTime(),
-                MathHelper.scaleAndRound(MathHelper.sqrt(MathHelper.divide(divisibleValue, getDivisor()))));
+    private StDevResult buildStandardDeviation(BigDecimal divisibleValue, int currentIndex) {
+        return new StDevResult(originalData[currentIndex].getTickTime(), tryCalculateStandardDeviationValue(divisibleValue));
+    }
+
+    private BigDecimal tryCalculateStandardDeviationValue(BigDecimal divisibleValue) {
+        return ofNullable(divisibleValue)
+                .map(this::calculateStandardDeviationValue)
+                .orElse(null);
+    }
+
+    private BigDecimal calculateStandardDeviationValue(BigDecimal divisibleValue) {
+        return MathHelper.scaleAndRound(MathHelper.sqrt(MathHelper.divide(divisibleValue, getDivisor())));
     }
 
     private BigDecimal getDivisor() {

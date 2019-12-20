@@ -54,7 +54,7 @@ public class BollingerBands implements Indicator<BBResult> {
         result = new BBResult[originalData.length];
         BigDecimal[] middleBand = calculateMiddleBand();
         BigDecimalTuple[] lowerAndUpperBands = calculateLowerAndUpperBandValues(middleBand);
-        buildBollingerBandsResult(middleBand, lowerAndUpperBands);
+        buildBollingerBandsResults(middleBand, lowerAndUpperBands);
     }
 
     @Override
@@ -136,14 +136,18 @@ public class BollingerBands implements Indicator<BBResult> {
         return bandFunction.apply(middleBandValue, standardDeviationValue.multiply(new BigDecimal(standardDeviationCoefficient)));
     }
 
-    private void buildBollingerBandsResult(BigDecimal[] middleBand, BigDecimalTuple[] lowerAndUpperBands) {
+    private void buildBollingerBandsResults(BigDecimal[] middleBand, BigDecimalTuple[] lowerAndUpperBands) {
         IntStream.range(0, result.length)
-                .forEach(idx -> result[idx] = new BBResult(
-                        originalData[idx].getTickTime(),
-                        lowerAndUpperBands[idx].getRight(),
-                        middleBand[idx],
-                        lowerAndUpperBands[idx].getLeft()
-                ));
+                .forEach(idx -> result[idx] = buildBollingerBandsResult(middleBand[idx], lowerAndUpperBands[idx], idx));
+    }
+
+    private BBResult buildBollingerBandsResult(BigDecimal middleBand, BigDecimalTuple lowerAndUpperBand, int idx) {
+        return new BBResult(
+                originalData[idx].getTickTime(),
+                lowerAndUpperBand.getRight(),
+                middleBand,
+                lowerAndUpperBand.getLeft()
+        );
     }
 
 }

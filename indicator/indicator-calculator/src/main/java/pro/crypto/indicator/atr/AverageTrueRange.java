@@ -56,7 +56,6 @@ public class AverageTrueRange implements Indicator<ATRResult> {
         buildAverageTrueRangeResult();
     }
 
-
     @Override
     public ATRResult[] getResult() {
         if (isNull(result)) {
@@ -96,10 +95,14 @@ public class AverageTrueRange implements Indicator<ATRResult> {
 
     private BigDecimal calculateAverageTrueRange(BigDecimal trueRangeValue, int currentIndex) {
         return MathHelper.divide(
-                indicatorValues[currentIndex - 1]
-                        .multiply(new BigDecimal(period - 1))
-                        .add(trueRangeValue),
+                calculateDivisible(trueRangeValue, indicatorValues[currentIndex - 1]),
                 new BigDecimal(period));
+    }
+
+    private BigDecimal calculateDivisible(BigDecimal trueRangeValue, BigDecimal indicatorValue) {
+        return indicatorValue
+                .multiply(new BigDecimal(period - 1))
+                .add(trueRangeValue);
     }
 
     private void calculateSignalLineValues() {

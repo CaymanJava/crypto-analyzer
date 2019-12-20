@@ -17,6 +17,7 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.stream.IntStream;
 
+import static java.math.BigDecimal.ZERO;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static pro.crypto.model.indicator.IndicatorType.AVERAGE_DIRECTIONAL_MOVEMENT_INDEX;
@@ -76,7 +77,7 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
 
     private BigDecimal calculateUpMovement(int currentIndex) {
         if (currentIndex == 0) {
-            return BigDecimal.ZERO;
+            return ZERO;
         }
         return originalData[currentIndex].getHigh().subtract(originalData[currentIndex - 1].getHigh());
     }
@@ -87,7 +88,7 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
 
     private BigDecimal calculateDownMovement(int currentIndex) {
         if (currentIndex == 0) {
-            return BigDecimal.ZERO;
+            return ZERO;
         }
         return originalData[currentIndex - 1].getLow().subtract(originalData[currentIndex].getLow());
     }
@@ -112,9 +113,9 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
     }
 
     private BigDecimal calculatePositiveDirectionalMovement(BigDecimal upMovementValue, BigDecimal downMovementValue) {
-        return upMovementValue.compareTo(downMovementValue) > 0 && upMovementValue.compareTo(BigDecimal.ZERO) > 0
+        return upMovementValue.compareTo(downMovementValue) > 0 && upMovementValue.compareTo(ZERO) > 0
                 ? upMovementValue
-                : BigDecimal.ZERO;
+                : ZERO;
     }
 
     private BigDecimal[] calculateNegativeDirectionalMovements(BigDecimal[] upMovementValues, BigDecimal[] downMovementValues) {
@@ -122,9 +123,9 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
     }
 
     private BigDecimal calculateNegativeDirectionalMovement(BigDecimal upMovementValue, BigDecimal downMovementValue) {
-        return downMovementValue.compareTo(upMovementValue) > 0 && downMovementValue.compareTo(BigDecimal.ZERO) > 0
+        return downMovementValue.compareTo(upMovementValue) > 0 && downMovementValue.compareTo(ZERO) > 0
                 ? downMovementValue
-                : BigDecimal.ZERO;
+                : ZERO;
     }
 
     private BigDecimal[] calculateDirectionalMovements(BigDecimal[] upMovementValues, BigDecimal[] downMovementValues,
@@ -200,12 +201,12 @@ public class AverageDirectionalMovementIndex implements Indicator<ADXResult> {
                 .forEach(idx -> result[idx] = buildADXResult(directionalIndicators, averageDirectionalIndexes, idx));
     }
 
-    private ADXResult buildADXResult(BigDecimalTuple[] directionalIndicators, BigDecimal[] averageDirectionalIndexes, int idx) {
+    private ADXResult buildADXResult(BigDecimalTuple[] directionalIndicators, BigDecimal[] averageDirectionalIndexes, int index) {
         return new ADXResult(
-                originalData[idx].getTickTime(),
-                directionalIndicators[idx].getLeft(),
-                directionalIndicators[idx].getRight(),
-                extractAverageDirectionalIndex(directionalIndicators, averageDirectionalIndexes, idx));
+                originalData[index].getTickTime(),
+                directionalIndicators[index].getLeft(),
+                directionalIndicators[index].getRight(),
+                extractAverageDirectionalIndex(directionalIndicators, averageDirectionalIndexes, index));
     }
 
     private BigDecimal extractAverageDirectionalIndex(BigDecimalTuple[] directionalIndicators, BigDecimal[] averageDirectionalIndexes, int currentIndex) {
